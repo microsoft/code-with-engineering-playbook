@@ -1,0 +1,32 @@
+# CSE Software Engineering
+
+An engineer...
+
+* Has responsibilities to their team – mentor, coach, and lead​
+* Knows their **playbook**. Follows their playbook.  Fixes their playbook if it is broken.  If they find a better playbook, they copy it. If somebody could use your playbook, give them yours.​
+* Leads by example.  Models the behaviors we desire both interpersonally and technically. (this is what most people think of as a “developer”)​
+* Strives to understand how their work fits into a broader context and ensures the outcome
+
+This is the playbook. You are invited to contribute via standard VSO git pull requests to Flex.
+
+## The Basics
+
+* [Source Control](../Engineering/SourceControl.md)
+* [Unit Testing](../Engineering/UnitTesting.md)
+* [Continuous Integration / Continuous Delivery](../Engineering/CICD.md)
+* [Code Reviews](../Engineering/CodeReviews.md)
+* [Retrospectives](../Engineering/Retrospectives.md)
+
+## Seeking Contributions for
+
+- Component Tests
+- DevOps
+    - Component Versioning
+    - Logging
+    - Performance
+    - Telemetry
+- Security
+    - Secrets Management
+    - Threat Model
+- Open Source Software (OSS)
+- Regulatory Compliance
