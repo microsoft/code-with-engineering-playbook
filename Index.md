@@ -7,15 +7,15 @@ An engineer...
 * Leads by example.  Models the behaviors we desire both interpersonally and technically. (this is what most people think of as a “developer”)​
 * Strives to understand how their work fits into a broader context and ensures the outcome
 
-This is the playbook. You are invited to contribute via standard VSO git pull requests to Flex.
+This is the playbook. You are invited to contribute via standard git pull requests to GitHub.
 
 ## The Basics
 
-* [Source Control](../Engineering/SourceControl.md)
-* [Unit Testing](../Engineering/UnitTesting.md)
-* [Continuous Integration / Continuous Delivery](../Engineering/CICD.md)
-* [Code Reviews](../Engineering/CodeReviews.md)
-* [Retrospectives](../Engineering/Retrospectives.md)
+* [Source Control](./Engineering/SourceControl.md)
+* [Unit Testing](./Engineering/UnitTesting.md)
+* [Continuous Integration / Continuous Delivery](./Engineering/CICD.md)
+* [Code Reviews](./Engineering/CodeReviews.md)
+* [Retrospectives](./Engineering/Retrospectives.md)
 
 ## Seeking Contributions for
 
@@ -28,5 +28,4 @@ This is the playbook. You are invited to contribute via standard VSO git pull re
 - Security
     - Secrets Management
     - Threat Model
-- Open Source Software (OSS)
 - Regulatory Compliance
