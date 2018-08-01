@@ -34,6 +34,12 @@ The following guidelines are framed prescriptively in terms of VSTS git, but app
 
 *   Code review policies should be enforced on the master branch.
     *   Git should be configured to deny commits directly to master, enforcing that all changes are made through topic branch PRs.
+        * For github the following branch protection settings should be enabled for master:
+             * Protect this branch
+             * Require pull request reviews before merging
+             * Require status checks to pass before merging
+             * Require branches to be up to date before merging
+             * Include Administrators
     *   Our minimum number of reviewers is 1.
         *   Developers may not approve their own changes.
         *   Do not allow pull request completion if some reviewers have voted "Waiting" or "Reject".
