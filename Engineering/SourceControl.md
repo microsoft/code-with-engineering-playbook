@@ -23,9 +23,9 @@ Consistency is crucial, therefore the team has to agree on their approach before
 
 ## Resources
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
-* [VSTS](https://www.visualstudio.com/team-services/) --> Question: Do we have a an account for hosting [CSE](../CSE.md) projects or is the plan to host them on individual/regional accounts?
+* [VSTS](https://www.visualstudio.com/team-services/)
 * [the GitHub Hello World](https://guides.github.com/activities/hello-world/)
-* [[CSE](../CSE.md) Git details](SourceControlDetails.md) provides details and best practices on how to use Git as part of a [CSE](../CSE.md) project.
+* [CSE Git details](SourceControlDetails.md) provides details and best practices on how to use Git as part of a [CSE](../CSE.md) project.
 
 ## Q&A
 ### Q: I just committed a secret - how can I remove it from the git history?

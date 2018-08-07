@@ -1,6 +1,6 @@
 # Code Reviews
 
-Developers working on [[CSE](../CSE.md)](../CSE.md) projects will conduct peer code reviews on every pull request (or check-in to a shared branch).
+Developers working on [CSE](../CSE.md) projects will conduct peer code reviews on every pull request (or check-in to a shared branch).
 
 ## Goals
 
