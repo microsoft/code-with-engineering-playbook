@@ -1,4 +1,4 @@
-# Code-With Customer/Partner Engineering Playbook
+# CSE Code-With Customer/Partner Engineering Playbook
 
 An engineer working for a [CSE](./CSE.md) project...
 
