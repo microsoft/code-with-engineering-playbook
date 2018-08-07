@@ -2,11 +2,11 @@
 
 ## C# Style Guide
 
-CSE developers follow Microsoft's [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions) and, where applicable, Microsoft's [Secure Coding Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines).
+[CSE](../CSE.md) developers follow Microsoft's [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions) and, where applicable, Microsoft's [Secure Coding Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines).
 
 ## Linters
 
-CSE projects should check code style with the [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers). The minimum rules set teams should adopt is the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set.
+[CSE](../CSE.md) projects should check code style with the [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers). The minimum rules set teams should adopt is the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set.
 
 Documentation on setting up code analysis for a project is provided [here](https://docs.microsoft.com/en-us/visualstudio/code-quality/code-analysis-for-managed-code-overview).
 

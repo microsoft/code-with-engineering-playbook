@@ -1,7 +1,7 @@
 # Unit Testing
 
 ## Goals
-Unit tests play an integral role in building quality software and enabling agile methodologies. CSE recommends all efforts follow [Test Driven Development](http://deviq.com/test-driven-development/) where ever possible, i.e. code should have unit tests unless it's developed for an environment with unit testing capabilities, e.g. Azure Stream Analytics. With TDD, engineers start with coding the test(s), which will initially fail. The implementation of the unit is finished when the unit satisfies the tests.
+Unit tests play an integral role in building quality software and enabling agile methodologies. [CSE](../CSE.md) recommends all efforts follow [Test Driven Development](http://deviq.com/test-driven-development/) where ever possible, i.e. code should have unit tests unless it's developed for an environment with unit testing capabilities, e.g. Azure Stream Analytics. With TDD, engineers start with coding the test(s), which will initially fail. The implementation of the unit is finished when the unit satisfies the tests.
 
 ### Unit tests have several goals:
 - Ensure code fulfills functional and non-functional requirements
@@ -40,7 +40,7 @@ For more complex applications, unit tests also ensure:
 - Stateful applications restore state when re-started
 
 ## Specific Guidance
-Languages and Platforms provide their own unit test tools and frameworks. In CSE, we prefer:
+Languages and Platforms provide their own unit test tools and frameworks. In [CSE](../CSE.md), we prefer:
 - .NET / Visual Studio: https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code
 - .NET / NUnit: http://nunit.org/ 
 - .NET Core: https://docs.microsoft.com/en-us/dotnet/core/testing/

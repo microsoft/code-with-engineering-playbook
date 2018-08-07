@@ -16,7 +16,7 @@ All developers should run ```gofmt``` in a pre-commit hook to ensure standard fo
 
 ### ```go vet```
 
-```go vet``` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. CSE Go code should be able to build with no ```go vet``` errors.
+```go vet``` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. [CSE](../CSE.md) Go code should be able to build with no ```go vet``` errors.
 
 ### What about ```golint```?
 

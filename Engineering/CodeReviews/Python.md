@@ -2,11 +2,11 @@
 
 ## Python Style Guide
 
-CSE developers follow [Google's Python Style Guide](https://google.github.io/styleguide/pyguide.html).
+[CSE](../CSE.md) developers follow [Google's Python Style Guide](https://google.github.io/styleguide/pyguide.html).
 
 ## Linters
 
-CSE projects should check Python code with automated tools. ```pylint``` is the minimum, but we prefer to run three different tools:
+[CSE](../CSE.md) projects should check Python code with automated tools. ```pylint``` is the minimum, but we prefer to run three different tools:
 
 ### [```Pyflakes```](https://github.com/PyCQA/pyflakes)
 

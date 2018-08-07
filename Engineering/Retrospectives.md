@@ -1,6 +1,6 @@
 # Retrospectives
 
-Development teams working on CSE projects will conduct [agile retrospectives](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649) for each iteration and project milestone.
+Development teams working on [CSE](../CSE.md) projects will conduct [agile retrospectives](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649) for each iteration and project milestone.
  
 ## Goals
 
@@ -28,15 +28,15 @@ Within that script, the facilitator can make choices with regard to which activi
 
 ### Project or Milestone Retrospective
 
-These are the most intense retrospectives, in that they cover more project working time and should be the strictest with regard to following the ceremony described in the retrospective book. The goal of most project or milestone retrospectives is to identify proposed changes that the engineering crew or all of CSE might try in the next project. Teams should cover the overall project or milestone, including the development phase, how the on-site hack went, how well the customer engineering team engaged, how well the wrap up activities went, how well the whole CSE team worked together, etc.
+These are the most intense retrospectives, in that they cover more project working time and should be the strictest with regard to following the ceremony described in the retrospective book. The goal of most project or milestone retrospectives is to identify proposed changes that the engineering crew or all of [CSE](../CSE.md) might try in the next project. Teams should cover the overall project or milestone, including the development phase, how the on-site hack went, how well the customer engineering team engaged, how well the wrap up activities went, how well the whole [CSE](../CSE.md) team worked together, etc.
 
 A project or milestone retrospective will usually take **3-4 hours**, depending on how long or complex the milestone was and how many people are involved in the retrospective.
 
-We recommend that project and milestone retrospectives bring in an experienced facilitator to work with the team. CSE will maintain a list of experienced facilitators for teams to request.
+We recommend that project and milestone retrospectives bring in an experienced facilitator to work with the team. [CSE](../CSE.md) will maintain a list of experienced facilitators for teams to request.
 
 1. Set the stage.
     1. Thank everyone for being here.
-    1. Walk through the standard CSE retrospective introduction slide deck, reminding everyone of the purpose, script, and expected behaviors.
+    1. Walk through the standard [CSE](../CSE.md) retrospective introduction slide deck, reminding everyone of the purpose, script, and expected behaviors.
     1. Each participant introduces themselves and their role on the project.
     1. Do one Set the Stage activity: 4.1-4.3.
     1. Run a quick Working Agreement activity (4.4) to give participants a chance to add any items to the standard working agreement.
