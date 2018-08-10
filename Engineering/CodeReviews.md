@@ -1,6 +1,6 @@
 # Code Reviews
 
-Developers working on CSE projects will conduct peer code reviews on every pull request (or check-in to a shared branch).
+Developers working on [CSE](../CSE.md) projects will conduct peer code reviews on every pull request (or check-in to a shared branch).
 
 ## Goals
 
@@ -46,8 +46,8 @@ The following guidelines are framed prescriptively in terms of VSTS git, but app
         *   Each team may choose to _maintain or reset_ votes when code changes as part of a review.
     *   Every pull request _must_ be linked to a work item.
     *   All code review comments must be resolved before completing the pull request.
-    *   Enforce the standard merge strategy described in CSE's [Source Control](../Engineering/SourceControl.md) guidance.
-    *   Per CSE's [CI/CD](../Engineering/CICD.md) guidance, execute a build on every pull request and update to a pull request to verify that:
+    *   Enforce the standard merge strategy described in [CSE](../CSE.md)'s [Source Control](../Engineering/SourceControl.md) guidance.
+    *   Per [CSE](../CSE.md)'s [CI/CD](../Engineering/CICD.md) guidance, execute a build on every pull request and update to a pull request to verify that:
         *   The project builds without warnings.
         *   All unit tests pass.
         *   The code passes all configured lint rules.

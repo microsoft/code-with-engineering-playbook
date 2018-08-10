@@ -19,7 +19,7 @@ A public repository needs to have the following files in the root directory of t
 
 It's also important to reference the Microsoft Open Source Code of Conduct in the [README.md](Templates/README.md) and/or [CONTRIBUTING.md](Templates/CONTRIBUTING.md) files.
 
-Links to CSE template files: [LICENSE](Templates/LICENSE), [README.md](Templates/README.md) and [CONTRIBUTING.md](Templates/CONTRIBUTING.md) 
+Links to [CSE](../CSE.md) template files: [LICENSE](Templates/LICENSE), [README.md](Templates/README.md) and [CONTRIBUTING.md](Templates/CONTRIBUTING.md) 
 
 To start to contribute by creating your own branch (e.g. `user/your_alias/feature_name`) and committing early and often - just ensure your commit comments are useful to others and describe the *WHAT* and *WHY* (instead of the *HOW*). 
 
