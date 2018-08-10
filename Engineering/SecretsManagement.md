@@ -55,4 +55,57 @@ Secrets can then be accessed like so:
 
 When running in Azure ConfigurationManager will load these settings from the process environment. No secrets file need to be uploaded to the server and no code needs to be changed.
 
+#### Node
+
+Use the [dotenv](https://www.npmjs.com/package/dotenv) package.
+
+```bash
+$ cat .env
+MY_SECRET=mySecret
+```
+
+```node
+require('dotenv').config()
+let mySecret = process.env("MY_SECRET")
+```
+
+Secrets are loaded into the environment from the .env file if it exists. If not just use existing environment i.e. ApplicationSettings.
+
+#### Python
+
+Load config settings into environment manually.
+
+```bash
+$ cat secrets.json
+{
+  "MY_SECRET" : "mySecret"
+}
+```
+
+
+```Python
+
+import os
+import json
+
+try:
+  config = json.loads(open("./secrets.json", "r").read())
+
+  # Works for all versions
+  for k,v in config.items():
+    os.environ[k] = v
+
+  # Python >= 3.5 one-liner
+  # os.environ = { **os.environ, **config }
+
+except IOError:
+  pass # No secrets.json
+except json.decoder.JSONDecodeError:
+  pass # Malformed secrets.json
+
+print(os.environ["MY_SECRET"])
+
+```
+
+Settings file doesn't *have* to be JSON. You might prefer yaml, key=value etc
 
