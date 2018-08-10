@@ -16,13 +16,23 @@ Each developer may maintain their own version of the file or, if required, it ma
 In a production system, assuming Azure, the secrets would be created in the environment of the running process. This can be done by manually editing the 'Applications Settings' section of the resource but is suggested that a script using
 the Azure CLI to do the same is a useful time-saving utility. See [here](https://docs.microsoft.com/en-us/cli/azure/webapp/config/appsettings?view=azure-cli-latest) for more details.
 
-### Keeping secrets secret
+*It is best practice to maintain separate secrets configurations for each separate environment that you run. e.g. dev, test, prod, local etc*
+
+### Keeping Secrets Secret
 
 It should be obvious, but all the care taken to protect secrets is all for nothing if we aren't careful about how we use secrets once we have them. Primarily: **DON'T LOG SECRETS!!**. Don't put them in logging or reporting. Don't send them to other applications, don't use them in URLs, forms or in any other way other than to make a request to the service that requires that secret.
 
+### Enhanced-Security Applications
+
+The techniques outlined below provide 'good' security and a common pattern for a wide range of languages. They rely on 
+the fact that Azure keeps application settings (the environment) encrypted until just before your app is run. Encryption keys are regularly rotated. They do *not* prevent secrets from existing in plaintext in memory at runtime. Particularly in garbage collected languages those values my exist for longer than the lifetime of the variable.
+
+*If you are working on an application with enhanced security requirements you should consider using additional techniques to maintain encryption on secrets throughout the application lifetime.*
+
+
 ### Techniques for Secrets Management
 
-Below we outline a number of techniques that developers can use to make the loading of secrets transparent to the 
+Below we outline a number of techniques that we can use to make the loading of secrets transparent to the 
 developer.
 
 #### C#/.NET
