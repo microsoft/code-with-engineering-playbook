@@ -26,7 +26,8 @@ Consistency is crucial, therefore the team has to agree on their approach before
 * [VSTS](https://www.visualstudio.com/team-services/)
 * [the GitHub Hello World](https://guides.github.com/activities/hello-world/)
 * [CSE Git details](SourceControlDetails.md) provides details and best practices on how to use Git as part of a [CSE](../CSE.md) project.
+* [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 
 ## Q&A
 ### Q: I just committed a secret - how can I remove it from the git history?
-A: use `git reset` to remove them from the commit history. If you already pushed your changes to a public branch, ensure that all contributors that pulled these changes will pull the now updated branch.
+A: use `git reset` to remove them from the commit history. If you already pushed your changes to a public branch, ensure that all contributors that pulled these changes will pull the now updated branch. See also GitHub's [recommendation how to removed sensitive data from a repo](https://help.github.com/articles/removing-sensitive-data-from-a-repository/). The [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) works well. 
