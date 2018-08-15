@@ -1,4 +1,4 @@
-# Engineering practices and principles
+# Engineering Practices And Principles
 
 While working on the project we try to stick with best practices in architecture for development and design that help us to produce better quality code and make the overall process more effective.
 
@@ -7,10 +7,6 @@ While working on the project we try to stick with best practices in architecture
 * Increase overall efficiency for each team member in person and the whole team in general
 * Reduce the number of mistakes and avoid common pitfalls
 * Strive to be better engineer and learn by other people's shared experience
-
-## Evidence and Measures
-
-
 
 ## General Guidance
 
