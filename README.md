@@ -16,6 +16,7 @@ This is the playbook. You are invited to contribute via standard git pull reques
 * [Continuous Integration / Continuous Delivery](./Engineering/CICD.md)
 * [Code Reviews](./Engineering/CodeReviews.md)
 * [Retrospectives](./Engineering/Retrospectives.md)
+* [Engineering Practices And Principles](./Engineering/PracticiesAndPrinciples.md)
 
 ## Seeking Contributions for
 
