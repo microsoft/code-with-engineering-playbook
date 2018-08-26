@@ -37,7 +37,7 @@ developer.
 
 #### C#/.NET
 
-Use the 'file' attribute of the appSettings element to load secrets from a local file.
+Use the 'file' attribute of the appSettings element to load secrets from a local file. A full description of this attribute can be found [here](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration).
 
 
 ``` XML
