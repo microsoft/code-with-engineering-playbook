@@ -10,7 +10,7 @@ the repo is initially private.
 ### General Approach
 
 The general approach is to keep secrets in a separate configuration file during development which is never checked in 
-to the repo. Best practice would be to add this file name to the .gitignore to prevent it being accidentally checked in.
+to the repo. Best practice would be to add this file name to the [.gitignore](https://git-scm.com/docs/gitignore) to prevent it being accidentally checked in.
 Each developer may maintain their own version of the file or, if required, it may be circulated via private channels e.g. a Teams chat.
 
 In a production system, assuming Azure, the secrets would be created in the environment of the running process. This can be done by manually editing the 'Applications Settings' section of the resource but is suggested that a script using
