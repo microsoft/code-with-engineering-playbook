@@ -26,6 +26,5 @@ This is the playbook. You are invited to contribute via standard git pull reques
     - Performance
     - Telemetry
 - Security
-    - Secrets Management
     - Threat Model
 - Regulatory Compliance
