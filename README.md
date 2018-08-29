@@ -23,7 +23,7 @@ This is the playbook. You are invited to contribute via standard git pull reques
 - Component Tests
 - DevOps
     - Component Versioning
-    - Logging
+    - [Logging](./Engineering/DevOps-Logging.md)
     - Performance
     - Telemetry
 - Security

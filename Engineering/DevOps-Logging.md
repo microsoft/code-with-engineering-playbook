@@ -6,7 +6,7 @@ Logging refers to recording application actions in order to provide a better und
 
 Logging should be taken care since the beginning of the software development. We should avoid a scenario where production has issues but our application does not provide any information to help us identity the problem.
 
-A good exercise during the sofware development is to ask ourselves what can go wrong in this operation/action and add logging information which enables a DevOps team to identity and solve it without having to call software engineers. A few guidelines:
+A good exercise during the software development is to ask ourselves what can go wrong in this operation/action and add log information which enables a DevOps team to identity and solve it without having to call software engineers. A few guidelines:
 
 - When interacting with an external system we should know when calls failed. On a more detailed level we might want to log all calls made to the external system. Doing so allows us to answer questions as *"Are you calling our system? When? What were the inputs and outputs?"*.
   
