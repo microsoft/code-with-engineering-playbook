@@ -4,7 +4,7 @@
 
 There are mainly two ways to use ILogger:
 
-- By injecting into the class constructor, which makes writing unit test simpler.
+- By injecting into the class constructor, which makes writing unit test simpler. It is recommended if instances of the class will be created using dependency injection (like mvc controllers). Not intended to be used in classes that will be instanciated directly, because it would require us to pass ILogger through the call stack (i.e. `var msg = new Message(this.logger)`).
 
 ```c#
 public class MyController
