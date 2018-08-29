@@ -4,13 +4,13 @@ Logging refers to recording application actions in order to provide a better und
 
 ## General Approach
 
-Logging should be taken care since the beginning of the software development. We should avoid a scenario where production has issues but our application does not provide any information to help us identity the problem.
+Logging should be taken care since the beginning of the software development. We should avoid a scenario where production has issues but our application does not provide enough information to help us identity the problem.
 
-A good exercise during the software development is to ask ourselves what can go wrong in this operation/action and add log information which enables a DevOps team to identity and solve it without having to call software engineers. A few guidelines:
+A good exercise during software development is to ask ourselves what can go wrong in this operation/action? Once problem areas have been identified add log information that enables a DevOps team to identity and solve it without having to call you (or software engineers responsible for the code). A few guidelines:
 
-- When interacting with an external system we should know when calls failed. On a more detailed level we might want to log all calls made to the external system. Doing so allows us to answer questions as *"Are you calling our system? When? What were the inputs and outputs?"*.
+- When interacting with an external system we should know when a call fails. On a more detailed level we might want to log all calls made to external system. Doing so allows us to answer questions as *"Are you calling our system? When? What were the inputs and outputs?"*.
   
-- Be able to identity which settings our application is using. For instance, `using API located at http://xyz` or `connecting to database located at xyz`. This information helps identity why reading from the database is failing.
+- Be able to identity which configuration settings our application is running. For instance, `using API located at http://xyz` or `setting min io threads to 5`. This information helps identity why reading files asynchronously is taking longer than expected.
 
 - Log when important events occurred, i.e. when an order is created. Not finding logs for "order created" in the last 30 minutes might indicate a problem.
 
@@ -18,9 +18,9 @@ A good exercise during the software development is to ask ourselves what can go 
 
 ## Logging Levels
 
-Each language/logging library defines its own logging level. They all have an order of importance that usually goes from critical &rarr; error &rarr; warning &rarr; info &rarr; debug. As a user of the logging library we can define what is the minimum log level that will be processed. For instance, setting "warning" as minimum log level will cause logs in warning, error and critical levels to be processed.
+Each language/logging library defines its own logging level. They all have an order of importance that usually goes from critical &rarr; error &rarr; warning &rarr; info &rarr; debug. As a user of the logging library we can define what is the minimum log level that will be processed. For instance, setting "warning" as minimum log level will cause logs in warning, error and critical levels to be processed, the rest will be discarded.
 
-When running in production we only enable low logging levels during troubleshooting sessions in order to minimize the amount of data being collected.
+Be concious about logging levels for production environment. You might want to enable debug logging during a troubleshooting session, otherwise use a higher level to avoid collecting too much data and slowing down the system.
 
 ## Logging Categories
 
@@ -28,7 +28,7 @@ A few logging libraries additional have the concept of categories. Categories al
 
 ## Sink/Output
 
-Most logging libraries have the concept of sink or output. A sink defines where logs will be written to. This enable us to have distinct destinations during development (console) and production (file). Common sinks are:
+Most logging libraries have the concept of sink or output. A sink defines where logs will be written to. This enable us to have distinct destinations during development (console) and production (file). Sink distinctions can also be use based on log category. Common sinks are:
 
 - Debug: when using and IDE displays logged content into a output/debug window
 - Console: well suited during development or when using a log collector based on stdout
@@ -38,21 +38,21 @@ Most logging libraries have the concept of sink or output. A sink defines where 
 
 ## Semantic/Structured Logging
 
-Basic logging writes text to a sink. For instance:
+Basic logging writes content to a sink as simple text. For instance:
 
 ```C#
 log.Debug("Adding {0}x SKU #{1} to basket {2}", qty, productId, basketId);
 ```
 
-Outputs: "Adding 2x SKU #13991 to basket abgt1."
+Outputs: "Adding 2x SKU #13991 to basket AB904."
 
 Semantic logging allows you to add dimensions to the information being logged.
 
 ```C#
-log.Debug("Adding {qty}x SKU #{productId} to basket {basketId}", qty, productId, basketId);
+log.Debug("Adding {qty}x SKU #{productId} to basket {basketId}", 2, 13991, "AB904");
 ```
 
-When using a semantic capable library and sink (Log Analytics, Application Insights, Elasticsearch, etc) custom dimensions (qty, productId, basketId) will be searchable. This allow us for instance to search for logs where the product '13991' was added to a basket, like in the example using Application Insights:
+When using semantic capable library and sink (Log Analytics, Application Insights, Elasticsearch, etc) custom dimensions (qty, productId, basketId) will be searchable. We can then search for logs where the product '13991' was added to a basket, like in the example below using Application Insights:
 
 ```sql
 traces
@@ -78,9 +78,9 @@ There are many log managements systems, both open source and SaaS. To name a few
 
 ## GDPR
 
-General Data Protection Regulation requires paying attention to log content. Email addresses, usernames, phone numbers, IP addresses are among the type of information considered personal, which has restricting rules regarding storage.
+General Data Protection Regulation requires paying attention to log content. Email addresses, usernames, phone numbers, IP addresses are among the type of information considered personal, which has restrict rules regarding storage.
 It is important to pay attention to what is logged. A technique to overcome this is anonymizing sensitive data (for instance replacing last digits of IP address).
-Also pay attention to log transmission and data at rest, ensuring that encryption is in place.
+Moreover, pay attention to log transmission and data at rest, ensuring that encryption is in place.
 
 ## Anti-patterns
 
@@ -88,7 +88,7 @@ A few anti-patterns regarding logging:
 
 - Logging too much: excessive logging might cause performance problems (i.e. inside a long for loop).
 
-- Meaningless logging: 'reading new configuration file', 'file xxx.txt opened', 'finished reading file' logs add too much noise and are hard to correlate to the same action. Rather use a consistent log describing the whole action 'read configuration from file xxx.txt'
+- Meaningless logging: 'reading new configuration file', 'file xxx.txt opened', 'finished reading file' logs add too much noise and are hard to correlate to the same action. Prefer using a consistent log describing the whole action 'read configuration from file xxx.txt'
 
 - Logging without context: 'login failed' does not help us narrow down the problem, where '{login} via {web} by user #{1231} {failed}' does.
   

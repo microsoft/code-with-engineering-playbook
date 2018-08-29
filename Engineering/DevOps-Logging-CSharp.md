@@ -130,18 +130,27 @@ WebHost.CreateDefaultBuilder also reads logging configuration from the `Logging`
 }
 ```
 
-### Adding Serilog to ASP.NET Core Project
+An option to handle application errors in a single place is through  [app.UseExceptionHandler](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/error-handling). A few more resources can be found here:
+- [Centralized exception handling and request validation in ASP.NET Core](https://www.strathweb.com/2018/07/centralized-exception-handling-and-request-validation-in-asp-net-core/) 
+- [Error handling in ASP.NET Core applications](https://blog.dudak.me/2017/error-handling-in-asp-net-core-applications/)
 
-Serilog is one of the newest logging providers out there with a high adaption rate. Detailed instructions on how to add Serilog to a ASP.NET Core project can be found [here](https://github.com/serilog/serilog-aspnetcore). For a quick implementation based on configuration files follow the steps below (assuming you start from a ASP.NET Core project using default WebHost builder):
+### ASP.NET Core and Application Insights
+
+Application Insights integrates well with ASP.NET Core. With [little effort](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-dotnetcore-quick-start) request, error, dependency, traces, metrics and many more information becomes available on Application Insights Portal. If you double down on Application Insights as your Log Management system you can use a sink that output application logs to it. This way application and web logs will be available in a single searcheable database.
+
+### Adding a custom provider to ASP.NET Core Project
+
+This section demonstrates how to add Serilog to an ASP.NET Core project. Adding another provider requires similar steps. Detailed instructions can be found [here](https://github.com/serilog/serilog-aspnetcore). For a quick implementation based on configuration files follow the steps below (assuming you start from a ASP.NET Core project using default WebHost builder):
 
 1. Add required nuget packages 
-```
+
+```text
 Serilog.AspNetCore
 Serilog.Settings.Configuration
 Serilog.Sinks.ColoredConsole (optional, in case console sink is needed)
 ```
 
-2. Remove the console and debug providers by modifying the Program.cs file and clearing the registered providers.
+1. Remove the console and debug providers by modifying the Program.cs file and clearing the registered providers.
 
 ```C#
  public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
@@ -263,7 +272,7 @@ public class Application
 
 Keep in mind that the default console log flushes content of a separated thread. If your console application is quick you might not see any log. This issue is tracked [here](https://github.com/aspnet/Logging/issues/631)
 
-## High performance logging
+## High Performance Logging
 
-For high-performance workloads it is recommended to use the [LoggerMessage pattern](
+For high performance workloads it is recommended to use the [LoggerMessage pattern](
 https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/loggermessage). It has less computational and memory requirements compared to using ILogger extension methods.
