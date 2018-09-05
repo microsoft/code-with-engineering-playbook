@@ -119,7 +119,7 @@ print(os.environ["MY_SECRET"])
 
 Settings file doesn't *have* to be JSON. You might prefer yaml, key=value etc
 
-##### Databricks
+#### Databricks
 
 Databricks has the option of using dbutils as a secure way to retrieve credentials and not reveal them within the notebooks running on Databricks
  
