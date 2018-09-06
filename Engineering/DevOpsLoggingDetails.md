@@ -1,6 +1,6 @@
 # Logging and Monitoring
 
-This sections is designed to give a more depth understading of Logging and Monitoring practices.
+This sections is designed to give a deeper understading of logging and monitoring practices.
 
 ## Logging
 
