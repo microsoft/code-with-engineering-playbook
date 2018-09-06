@@ -1,4 +1,6 @@
-# Logging with .NET/C#
+# Logging and Monitoring with .NET/C#
+
+## Logging
 
 .NET Core introduced a generic logging interface, [ILogger](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger), which is well integrated in the framework and ecosystem. The common usage scenario is to inject the concrete ILogger into the application using dependency injection, while not having any class dependent on the actual log provider (as we might change the provider in the future).
 
@@ -39,7 +41,7 @@ public class MyController
 }
 ```
 
-## Logging Levels for ILogger
+### Logging Levels for ILogger
 
 Logging levels for ILogger are listed below, in order of high to low importance:
 
@@ -52,7 +54,7 @@ Logging levels for ILogger are listed below, in order of high to low importance:
 |Debug|Track important information during development or troubleshooting production system| ```Using API located at http://myapi:8080``` or ```Listening on port 8080```|
 |Trace|Track important for development purposes, might contain sensitive information|```Using connection string: server=dbserver;UserID=sa;password=mysecret```|
 
-## Logging Providers
+### Logging Providers
 
 Even though .NET Core has built-in logging providers (debug, console, event source, [etc](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-2.1#built-in-logging-providers)) it is often recommended to use a specialized library that offers more configuration and sink options. Most popular libraries are:
 
@@ -64,9 +66,9 @@ Even though .NET Core has built-in logging providers (debug, console, event sour
 
 A complete logging providers list can be found [here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-2.1#third-party-logging-providers).
 
-## Logging in a Library
+### Logging in a Library
 
-When developing a class library we don't pick the logging provider. Instead our responsibility is to provide logging support and deciding a category strategy:
+When developing a class library we most often cannot choose the logging provider. Our responsibility instead is to provide logging support which includes deciding a category strategy:
 
 - One category per class: each class has a unique category ("MyLibrary.MyClass") which allows log control at the class level. Library wide rules are still supported by defining a rule using the main namespace as category (i.e. "MyLibrary")
 - Custom categories: allows grouping classes with same category name ("MyLibrary.Models", "MyLibrary.Repositories")
@@ -98,7 +100,7 @@ namespace MyLibrary
 
 Another way to implement logging in libraries without taking dependency on ILogger can be found in the [LibLog](https://github.com/damianh/LibLog) repository.
 
-## Logging in a ASP.NET Core Application
+### Logging in a ASP.NET Core Application
 
 When developing an ASP.NET Core application we are responsible for choosing a log provider. By default, logging is enabled with debug and console providers as you can see in the [WebHost.CreateDefaultBuilder](https://github.com/aspnet/MetaPackages/blob/master/src/Microsoft.AspNetCore/WebHost.cs#L188) implementation.
 
@@ -134,11 +136,11 @@ An option to handle application errors in a single place is through  [app.UseExc
 - [Centralized exception handling and request validation in ASP.NET Core](https://www.strathweb.com/2018/07/centralized-exception-handling-and-request-validation-in-asp-net-core/) 
 - [Error handling in ASP.NET Core applications](https://blog.dudak.me/2017/error-handling-in-asp-net-core-applications/)
 
-### ASP.NET Core and Application Insights
+#### ASP.NET Core and Application Insights
 
 Application Insights integrates well with ASP.NET Core. With [little effort](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-dotnetcore-quick-start) request, error, dependency, traces, metrics and many more information becomes available on Application Insights Portal. If you double down on Application Insights as your Log Management system you can use a sink that output application logs to it. This way application and web logs will be available in a single searcheable database.
 
-### Adding a custom provider to ASP.NET Core Project
+#### Adding a custom provider to ASP.NET Core Project
 
 This section demonstrates how to add Serilog to an ASP.NET Core project. Adding another provider requires similar steps. Detailed instructions can be found [here](https://github.com/serilog/serilog-aspnetcore). For a quick implementation based on configuration files follow the steps below (assuming you start from a ASP.NET Core project using default WebHost builder):
 
@@ -201,9 +203,9 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 }
 ```
 
-## Logging in a .NET Core Console Application
+### Logging in a .NET Core Console Application
 
-Unlike ASP.NET Core, .NET Core Console apps don't have dependency injection by default. Adding it is simple and allows adding logging based on ILogger as in the web application. The code below illustrates a way to add dependency injection to a console app:
+Unlike ASP.NET Core, .NET Core Console apps don't have dependency injection by default. Adding it is simple and allows using ILogger as in the web application. The code below illustrates a way to add dependency injection to a console app:
 
 ```C#
 public class Program
@@ -246,7 +248,7 @@ The actual application code resides in the Application class. The Program class 
 ```C#
 public class Application
 {
-    private readonly ILogger<Application> logger;
+    private readonly ILogger logger;
 
     public Application(ILogger<Application> logger)
     {
@@ -272,7 +274,22 @@ public class Application
 
 Keep in mind that the default console log flushes content of a separated thread. If your console application is quick you might not see any log. This issue is tracked [here](https://github.com/aspnet/Logging/issues/631)
 
-## High Performance Logging
+### High Performance Logging
 
 For high performance workloads it is recommended to use the [LoggerMessage pattern](
 https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/loggermessage). It has less computational and memory requirements compared to using ILogger extension methods.
+
+## Monitoring
+
+As we previously discussed, monitoring allow us to validate the performance and health of a running system through key performance indicators.
+
+In .NET a great option to add monitoring capabilities is Application Insights. By [adding Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-asp-net-core) to an ASP.NET Core application we get out of the box requests, [errors](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-asp-net-exceptions), [dependencies](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-asp-net-dependencies) and [many more metrics](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-devops).
+
+A few additional features of Application Insights:
+- [add annotations to new releases](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-annotations), making easier to correlate changes in KPIs with new releases
+- [add custom metrics](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-api-custom-events-metrics), to track domain specific events and metrics
+- [receive logs](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-asp-net-trace-logs) from multiple frameworks. Here is the [sink for Serilog](https://github.com/serilog/serilog-sinks-applicationinsights).
+- [add correlation across services](https://docs.microsoft.com/en-us/azure/application-insights/application-insights-correlation)
+- [add custom telemetry properties](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-api-filtering-sampling#add-properties) for a whole application
+- [integrate releases with monitoring](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-vsts-continuous-monitoring), allowing gated deployments based on metrics
+- [monitor web availability](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-monitor-web-app-availability)

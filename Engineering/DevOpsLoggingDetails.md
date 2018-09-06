@@ -1,32 +1,20 @@
-# Logging
+# Logging and Monitoring
 
-Logging refers to recording application actions in order to provide a better understanding of what is happening during its execution.
+This sections is designed to give a more depth understading of Logging and Monitoring practices.
 
-## General Approach
+## Logging
 
-Logging should be taken care since the beginning of the software development. We should avoid a scenario where production has issues but our application does not provide enough information to help us identity the problem.
-
-A good exercise during software development is to ask ourselves what can go wrong in this operation/action? Once problem areas have been identified add log information that enables a DevOps team to identity and solve it without having to call you (or software engineers responsible for the code). A few guidelines:
-
-- When interacting with an external system we should know when a call fails. On a more detailed level we might want to log all calls made to external system. Doing so allows us to answer questions as *"Are you calling our system? When? What were the inputs and outputs?"*.
-  
-- Be able to identity which configuration settings our application is running. For instance, `using API located at http://xyz` or `setting min io threads to 5`. This information helps identity why reading files asynchronously is taking longer than expected.
-
-- Log when important events occurred, i.e. when an order is created. Not finding logs for "order created" in the last 30 minutes might indicate a problem.
-
-- Adding more information about errors. For instance, when a SQL call fails by default we only know the low level reason (stored procedured failed). By catching the error and logging "Failed to update basket" we also know in which scenario the stored procedure was called
-
-## Logging Levels
+### Logging Levels
 
 Each language/logging library defines its own logging level. They all have an order of importance that usually goes from critical &rarr; error &rarr; warning &rarr; info &rarr; debug. As a user of the logging library we can define what is the minimum log level that will be processed. For instance, setting "warning" as minimum log level will cause logs in warning, error and critical levels to be processed, the rest will be discarded.
 
 Be concious about logging levels for production environment. You might want to enable debug logging during a troubleshooting session, otherwise use a higher level to avoid collecting too much data and slowing down the system.
 
-## Logging Categories
+### Logging Categories
 
 A few logging libraries additional have the concept of categories. Categories allow us to define different logging levels for each subsystem of an application. It enables a scenario where we turn debug logging for the authentication subsystem to troubleshoot login failures while leaving all other subsystems on a higher log level to minimize data being collected.
 
-## Sink/Output
+### Sink/Output
 
 Most logging libraries have the concept of sink or output. A sink defines where logs will be written to. This enable us to have distinct destinations during development (console) and production (file). Sink distinctions can also be use based on log category. Common sinks are:
 
@@ -36,7 +24,7 @@ Most logging libraries have the concept of sink or output. A sink defines where 
 - Log Management Services: DataDog, Splunk, Elasticsearch, Application Insights, Azure Log Analytics.
 - Many others: databases, Microsoft Teams, Slack, ...
 
-## Semantic/Structured Logging
+### Semantic/Structured Logging
 
 Basic logging writes content to a sink as simple text. For instance:
 
@@ -60,11 +48,11 @@ traces
 | where productId == '13991'
 ```
 
-## Logging Configuration
+### Logging Configuration
 
 Most logging libraries offer configuration via code or settings files. Whenever possible rely on setting files, because it enable us to change logging levels and/or sinks without making changes to application code (i.e. enable verbose logging to troubleshoot a problem in production).
 
-## Logging in Production
+### Logging in Production
 
 In a production environment it is highly recommended to have a single logging destination (known as Log Management System), that allow us to look at logged data as a whole. Log management systems allow us to build dashboards and alerts to better understand and react to a running system. Additionally, it allows us to search through millions of log entries using a SQL like syntax, which is very important when investigating issues.
 
@@ -75,14 +63,9 @@ There are many log managements systems, both open source and SaaS. To name a few
 - Logstash
 - DataDog
 - Splunk
+- Elasticsearch
 
-## GDPR
-
-General Data Protection Regulation requires paying attention to log content. Email addresses, usernames, phone numbers, IP addresses are among the type of information considered personal, which has restrict rules regarding storage.
-It is important to pay attention to what is logged. A technique to overcome this is anonymizing sensitive data (for instance replacing last digits of IP address).
-Moreover, pay attention to log transmission and data at rest, ensuring that encryption is in place.
-
-## Anti-patterns
+### Logging Anti-patterns
 
 A few anti-patterns regarding logging:
 
@@ -111,9 +94,22 @@ public void NotifyUser(User user, Notification notification)
 }
 ```
 
-## Logging tips per language
+## Monitoring
 
-- [.NET/C#](./DevOps-Logging-CSharp.md)
+Logging helps you understand application behavior and faults. However, in order to understand the performance and health of a running system, application metrics are used. Common metrics will report:
+
+- Amount of requests per second being handled
+- Operation execution time
+- Length of a queue
+- CPU/memory usage
+- Page views
+- Domain specific metrics suchs as "amount of orders in status pending", "amount of users created"
+
+With these metrics in hand we understand when a system is under heavy load or experiencing availability degradation. Moreover, We perceive the effects of a new release comparing metrics from before and after a deployment.
+
+## Logging and Monitoring details per Language
+
+- [.NET/C#](./DevOpsLoggingDetailsCSharp.md)
 - JavaScript (pending)
 - Go (pending)
 - Python (pending)
