@@ -119,3 +119,13 @@ print(os.environ["MY_SECRET"])
 
 Settings file doesn't *have* to be JSON. You might prefer yaml, key=value etc
 
+#### Databricks
+
+Databricks has the option of using dbutils as a secure way to retrieve credentials and not reveal them within the notebooks running on Databricks
+ 
+The following steps lay out a clear pathway to creating new secrets and then utilizing them within a notebook on Databricks: 
+ 
+1) Install and configure the Databricks CLI on your local machine following the instructions from here: https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html#set-up-the-cli [Follow the Setup the CLI section only]
+2) Get the Databricks personal access token following instructions here: https://docs.databricks.com/api/latest/authentication.html#token-management 
+3) Create a scope for the secrets by following the instructions on https://docs.azuredatabricks.net/user-guide/secrets/secret-scopes.html#create-a-databricks-backed-secret-scope [Follow the Create a Databricks backed Secret Scope section only]
+4) Create secrets by following the steps listed here: https://docs.azuredatabricks.net/user-guide/secrets/secrets.html 
