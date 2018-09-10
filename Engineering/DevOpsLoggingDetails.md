@@ -12,7 +12,7 @@ Be concious about logging levels for production environment. You might want to e
 
 ### Logging Categories
 
-A few logging libraries additional have the concept of categories. Categories allow us to define different logging levels for each subsystem of an application. It enables a scenario where we turn debug logging for the authentication subsystem to troubleshoot login failures while leaving all other subsystems on a higher log level to minimize data being collected.
+A few logging libraries have the additional concept of categories. Categories allow us to define different logging levels for each subsystem of an application. It enables a scenario where we turn debug logging for the authentication subsystem to troubleshoot login failures while leaving all other subsystems on a higher log level to minimize data being collected.
 
 ### Sink/Output
 
