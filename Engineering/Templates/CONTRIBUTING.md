@@ -20,8 +20,9 @@ some changes or improvements or alternatives.
 Some things that will increase the chance that your pull request is accepted:
 
 * Write tests.
-* Follow our [style guide][style].
+* Follow our [engineering playbook][playbook] and the [style guide][style] for this project.
 * Write a [good commit message][commit].
 
+[playbook]: https://github.com/cloudbeatsch/code-with-engineering-playbook
 [style]: https://github.com/xyz
 [commit]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
