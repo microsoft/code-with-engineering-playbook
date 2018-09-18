@@ -18,6 +18,44 @@ All developers should run ```gofmt``` in a pre-commit hook to ensure standard fo
 
 ```go vet``` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. [CSE](../CSE.md) Go code should be able to build with no ```go vet``` errors.
 
+### ```gometalinter```
+
+```gometalinter``` is a tool that concurrently runs numerous linters and normalises their output to a standard format.
+In order to automate the linting process, you can include a `gometalinter.json` settings file in your project and run the tool with
+```sh 
+gometalinter --config ./gometalinter.json ./...
+```
+
+`gometalinter.json`:
+```json
+{
+    "Vendor": true,
+    "Deadline": "5m",
+    "Sort": ["linter", "severity", "path", "line"],
+    "EnableGC": true,
+    "WarnUnmatchedDirective": true,
+    "DisableAll": true,
+    "Linters": {
+        "goimports": {
+            "Command": "goimports -l --local github.com/{your-org}/{your-repo}"
+        }
+    },
+    "Enable": [
+        "deadcode",
+        "gofmt",
+        "gocyclo",
+        "goimports",
+        "golint",
+        "gosimple",
+        "ineffassign",
+        "misspell",
+        "unused",
+        "vet"
+    ]
+}
+```
+For more details visit [gometalinter](https://github.com/alecthomas/gometalinter)
+
 ### What about ```golint```?
 
 [```golint```](https://github.com/golang/lint) can be an effetive tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process.
