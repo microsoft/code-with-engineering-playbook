@@ -11,18 +11,18 @@ With TDD, an engineer follows the pattern of RED/GREEN/REFACTOR to build only th
 Development continues in this cycle (RED/GREEN/REFACTOR) writing additional tests until all functional requirements are complete.
 
 ### Unit tests have several goals:
-- Ensure code fulfills functional requirements. 
-- Ensure focus is delivering required functionality not unnecessary requirements.
-- Support fast code evolution and refactoring while reducing the risk of regressions.
-- Provide confidence to potential contributors.
+- Ensure code fulfills functional and non-functional requirements
+- Ensure focus is delivering required functionality not unnecessary requirements
+- Support fast code evolution and refactoring while reducing the risk of regressions
+- Provide confidence to potential contributors
 - Developer Documentation of API usage
 
->Note: Non-functional requiements should be validated with integration tests (i.e. Server response time in less than 2 seconds.)
+>Note: Developers should be careful that the unit test is only exercising the unit under test for requirement validation. For example, if there is a data access abstraction, the actual data storage and server communication responses should not be tested with unit tests, but rather should be tested with an integration test. During unit testing, these dependencies (server and database responses) should be mocked to keep tests fast and predictable.
 
 ## Evidence and Measures
 The [CICD already requires badges in place](../CICD) for every repo to quickly assess code coverage and test pass/fail.
 
-Unit tests should be run before every commit. The team should decide on the importance of runnning integration and end-to-end testing as part of the merge process. 
+Unit tests should be run before every commit. The team should decide on the importance of running integration and end-to-end testing as part of the merge process. 
 >Note: Ignoring tests is never a valid method for getting tests to not be RED. The team should decide when ignored tests are allowed or when they should be refactored out of the code base.
 
 ## General Guidance
@@ -40,18 +40,19 @@ Unit testing represents only the foundational testing in the system development.
 Good unit tests follow a few general principles:
 - Run incredibly fast
 - Test only the current system under test
-- Test one thing generally with a single assertion
+- Use mocks to manage all external dependencies
+- Test only one thing generally with a single assertion
 - Have only one reason to fail
 
 Consider an integration test:
-- Ensure transactions commit or roll back as designed
-- Ensure CRUD operations work as designed
-- All data created for or during a test is localized to the test to allow for parallel test execution
-- All data created during or for a test gets cleaned up after tests completed
+- To combine a unit and its dependencies to test the resulting combination
+- To ensure transactions commit or roll back as designed
+- To ensure CRUD operations work as designed
+>Note: All data created for or during a test is localized to the test to allow for parallel test execution. Additionally, all data created during or for a test run gets cleaned up after tests have completed.
 
 For more complex applications, integration load tests can also ensure:
-- that multi-threading works as intended
-- the unit can deals appropriately with transient outages of external dependencies (retry, fail-fast, …)
+- The unit performs correctly when used in multi-threaded context
+- The unit deals appropriately with transient outages of external dependencies (retry, fail-fast, …)
 - Stateful applications restore state when re-started
 
 ## Specific Guidance
