@@ -78,4 +78,4 @@ The Go language team maintains a list of common [Code Review Comments](https://g
 1. [ ] Does this code have meaningful [Doc Comments](https://github.com/golang/go/wiki/CodeReviewComments#doc-comments)?
 1. [ ] Does this code have meaningful [Package Comments](https://github.com/golang/go/wiki/CodeReviewComments#package-comments)?
 1. [ ] Does this code use [Contexts](https://github.com/golang/go/wiki/CodeReviewComments#contexts) correctly?
-1. [ ] Do unit tests failure with [meaningful messages](https://github.com/golang/go/wiki/CodeReviewComments#useful-test-failures)?
+1. [ ] Do unit tests fail with [meaningful messages](https://github.com/golang/go/wiki/CodeReviewComments#useful-test-failures)?
