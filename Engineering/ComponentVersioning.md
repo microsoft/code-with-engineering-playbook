@@ -27,7 +27,7 @@ Updating the major / minor version indicates changes of the API / interfaces / c
 * Minor Version: A backwards-compatible minor change
 * Build / Revision: No API change, just a different build.
 
-## Semanting Versioning
+## Semantic Versioning
 
 Semantic Versioning is a concept of calculating the version number automatically based on a certain source code respository.
 
