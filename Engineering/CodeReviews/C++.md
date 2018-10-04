@@ -6,7 +6,7 @@
 
 ## Modern vs Traditional C++
 
-Older style c++ and modern c++ are link compatible so can exist interchangeably in the same program although they can look very different. Prefer modern c++ where possible as it addresses many of the issues associated with making C++ difficult to work with (such as memory management). If you are working on legacy code be aware of any environmental compiler restrictions and use modern C++ features as allowed by the available compiler.  
+Older style C++ and modern C++ are link compatible so can exist interchangeably in the same program although they can look very different. Prefer modern C++ where possible as it addresses many of the issues associated with making C++ difficult to work with (such as memory management). If you are working on legacy code be aware of any environmental compiler restrictions and use modern C++ features as allowed by the available compiler.  
 
 If you are not familiar with the concepts see How to Adopt Modern C++17 into Your C++ Code : Build 2018  https://www.youtube.com/watch?v=UsrHQAzSXkA&t=1474s
 
