@@ -1,0 +1,29 @@
+# C++ Code Reviews
+
+## C++ Style Guide
+
+[CSE](../CSE.md) developers follow [The C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) and, where applicable, Microsoft's [Security Best Practices for C++](https://docs.microsoft.com/en-us/cpp/security/security-best-practices-for-cpp).
+
+## Modern vs Traditional C++
+
+Older style c++ and modern c++ are link compatible so can exist interchangeably in the same program although they can look very different. Prefer modern c++ where possible as it addresses many of the issues associated with making C++ difficult to work with (such as memory management). If you are working on legacy code be aware of any environmental compiler restrictions and use modern C++ features as allowed by the available compiler.  
+
+If you are not familiar with the concepts see How to Adopt Modern C++17 into Your C++ Code : Build 2018  https://www.youtube.com/watch?v=UsrHQAzSXkA&t=1474s
+
+## Tool Support
+
+The [The C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are a portable set of guidelines,rules, and best practices about coding in C++ created by C++ experts and designers. Visual Studio currently supports a subset of these rules as part of its code analysis tools for C++. The core guideline checkers are installed by default in Visual Studio 2017. [CSE](../CSE.md) projects should use the static code analysis tools as part of their build process and run this when code is checked into the source code repo. For instructions on how to configure code analysis for natice C++ projects in Visual Studio see https://docs.microsoft.com/en-us/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp. 
+
+To help maintain a common coding style many code editors and IDEs support [EditorConfig](https://editorconfig.org/). [CSE](../CSE.md) projects should add this example editorconfig file and any proposed modifications should be agreed and pushed back to this repository (TBD). 
+
+## Starter Code Review Checklist
+
+1. [ ] Does the code compile warning-free using the pre-agreed warning-level? (For VC compiler level 4 is suggested and use the 'treat warnings as errors' projct setting).
+1. [ ] Is the code standards compliant C++ where appropriate? (Suggestion is to test with multiple compilers, GCC and Clang are good VC++ alternatives)
+1. [ ] Does the static code analysis run with no warnings? 
+1. [ ] Do the unit tests pass and provide a satisfactory code-coverage? 
+1. [ ] Is the code exception-safe?
+1. [ ] Does the code exploit STL usage style vs hand-rolling algorithms? (STL usage would be considered less error-prone and generally higher performance).
+1. [ ] Check that the code does not leak memory. This can be done by inspection or building in tools like the vc debug heap into the running code.
+1. In environments where modern C++ can be used check that it is being used appropriately. 
+
