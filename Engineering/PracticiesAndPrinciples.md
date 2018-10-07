@@ -6,7 +6,7 @@ While working on the project we try to stick with best practices in architecture
 
 * Increase overall efficiency for each team member in person and the whole team in general
 * Reduce the number of mistakes and avoid common pitfalls
-* Strive to be better engineer and learn by other people's shared experience
+* Strive to be better engineers and learn from other people's shared experiences
 
 ## General Guidance
 
@@ -18,6 +18,8 @@ While working on the project we try to stick with best practices in architecture
 * Remember to tether to ‘Done’ for a backlog item. Our goal is not to write code, it is to ship incremental customer value. Our job is likely not done until our code is in production adding that value.
 * We all own our code and each one of us has an obligation to make all parts of the system great
 * Keeping backlog item details up to date is how you communicate the state of things with the rest of your team. Discipline around updating status, assignment, comments etc is essential
+* Automate agile workflows using tools like Standup bots (in Microsoft Teams or other communication tools) to "give back" more time to developers for development.
+* The above can also be done towards making retrospectives more efficient by deploying a "suggestion box" bot to capture highlights, lowlights, etc. during the sprint that can be "deposited" during the sprint. This serves the purpose of enhancing the quality of comments because there is no need to think back at the end of the sprint about what happened. It also saves time at the end of the sprint in having to document different points for the retrospective. 
 * Treat project/component as your own product: constantly see how to improve it (from dev prospective and public functionality)
 * Report product issues found not related to your task
 
