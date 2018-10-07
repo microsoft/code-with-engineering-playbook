@@ -24,5 +24,13 @@ We follow the [PEP 257](https://www.python.org/dev/peps/pep-0257/) Docstring con
 
 Flake8 is an option for teams who want a single wrapper for running Pyflakes and pycodestyle.
 
+## Secure Coding
+
+[CSE](../CSE.md) projects should follow secure coding practices adhering to the ethos of "Secure by Design". Security vulnerabilities can be addressed during the development phase by utilizing tools like:
+
+### [```Bandit```](https://github.com/PyCQA/bandit)
+
+Bandit is a tool designed to find common security issues in Python code.
+
 ## Starter Code Review Checklist
 
