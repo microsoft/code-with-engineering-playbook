@@ -15,11 +15,15 @@ There are many different options when working with Source Control. In [CSE](../C
 ## General Guidance
 Consistency is crucial, therefore the team has to agree on their approach before they start to code. At a minimum, the team should do the following:
 * agree on their **branch**, **release** and **merge strategy**
+* agree on tooling for **conflict resolution** and other source control operations (by OS)
+  * VSCode extensions
+  * [CodeFlow](https://www.1eswiki.com/wiki/CodeFlow) 
 * define their approach to commit history (linear or non-linear)
 * lock the default branch and merge using PRs
 * agree on how to name branches (e.g. `user/your_alias/feature_name`)
 * for public repositories:
   * default branch contains the [LICENSE](./Templates/LICENSE), [README.md](./Templates/README.md) and [CONTRIBUTING.md](./Templates/CONTRIBUTING.md) file
+* minimize code in formats that are not amenable to source control (e.g. Jupyter notebooks) [recommendations being compiled on https://github.com/atg-abhishek/cse-aiethics-ml-best-practices/blob/master/ML_Best_Practices.md will be merged here]
 
 ## Resources
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
