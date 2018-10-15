@@ -149,7 +149,7 @@ This section demonstrates how to add Serilog to an ASP.NET Core project. Adding 
 ```text
 Serilog.AspNetCore
 Serilog.Settings.Configuration
-Serilog.Sinks.ColoredConsole (optional, in case console sink is needed)
+Serilog.Sinks.Console (optional, in case console sink is needed)
 ```
 
 1. Remove the console and debug providers by modifying the Program.cs file and clearing the registered providers.
@@ -157,17 +157,16 @@ Serilog.Sinks.ColoredConsole (optional, in case console sink is needed)
 ```C#
  public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .ConfigureLogging((hostingContext, config) =>
-                {
-                    config.ClearProviders();
-                }) // this will remove Console and Debug loggers
                 .UseStartup<Startup>()
+                .ConfigureLogging((logging) => {
+                    logging.ClearProviders();
+                });  // this will remove Console and Debug loggers
 ```
 
 3. Add Serilog to the services collection
 
 ```C#
-public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IServiceProvider serviceProvider)
+public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
 {
     if (env.IsDevelopment())
     {
@@ -193,6 +192,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
     }
   },
   "Serilog": {
+    "MinimumLevel": "Debug",
     "Using": [ "Serilog.Sinks.Console" ],
     "WriteTo": [
       {
