@@ -75,6 +75,7 @@ Every code review should include the following general code review checklist ite
 ## Language Specific Guidance
 
 *   [C#](../Engineering/CodeReviews/CSharp.md)
+*   [C++](../Engineering/CodeReviews/C++.md)
 *   [Go](../Engineering/CodeReviews/Go.md)
 *   [Java](../Engineering/CodeReviews/Java.md)
 *   [JavaScript](../Engineering/CodeReviews/JavaScript.md)
