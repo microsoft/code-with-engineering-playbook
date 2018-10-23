@@ -11,7 +11,7 @@ Unit tests play an integral role in building quality software and enabling agile
 - Developer Documentation of API usage
 
 ## Evidence and Measures
-The [CICD already requires badges in place](../CICD) for every repo to quickly assess code coverage and test pass/fail.
+The [CICD already requires badges in place](CICD.md) for every repo to quickly assess code coverage and test pass/fail.
 
 The team should also keep in an eye on tests that may not be running as part of every merge, i.e. integration and e2e test.
 
