@@ -12,13 +12,25 @@ We use [`Prettier`](https://prettier.io/) to do code formatting for TypeScript. 
 }
 ```
 
-For higher level style guidance not covered by prettier, we follow the [AirBnB Style Guide](https://github.com/airbnb/javascript).
-
 ## Linter
 
 All developers should run `TSLint` in a pre-commit hook to ensure standard formatting. We highly recommend using an editor integration like [vscode-tslint](https://github.com/Microsoft/vscode-tslint) to provide realtime feedback.
 
-Since `Prettier` does not support integration with `TSLint`, we need to add a tslint.json file to the root of our project:
+Recommended: [lint-staged and husky](https://github.com/okonet/lint-staged#installation-and-setup)
+
+-   `husky` is a very popular tool for running pre-commit hooks and preventing commits whose hooks fail.
+-   `lint-staged` ensures that only staged files get checked to determine if the pre-commit hooks need to be run.
+
+Recommended: [tslint-microsoft-contrib](https://www.npmjs.com/package/tslint-microsoft-contrib)
+
+-   This set of TSLint rules is already used by many Microsoft projects.
+
+## Formatting/Linting Conflicts
+
+Since `Prettier` does not support integration with `TSLint`, we need to do one of the following:
+
+1. Use [tslint-config-prettier](https://www.npmjs.com/package/tslint-config-prettier)
+1. Disable some of the rules in TSLint as shown below with a sample tslint.json file (placed in the root of our project):
 
 ```json
 {
