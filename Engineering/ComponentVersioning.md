@@ -4,7 +4,7 @@
 
 Larger applications consists of multiple components that reference each other and rely on compatibility of the interfaces/contracts of the components.
 
-To achieve the goal of losely coupled applications, each component should be versioned independently hence allowing developers to detect breaking changes or seamless updates just by looking at the version number.
+To achieve the goal of loosely coupled applications, each component should be versioned independently hence allowing developers to detect breaking changes or seamless updates just by looking at the version number.
 
 ## Version Numbers and Versioning schemes
 
@@ -29,7 +29,7 @@ Updating the major / minor version indicates changes of the API / interfaces / c
 
 ## Semantic Versioning
 
-Semantic Versioning is a concept of calculating the version number automatically based on a certain source code respository.
+Semantic Versioning is a concept of calculating the version number automatically based on a certain source code repository.
 
 The `semver` tool looks at a GIT source control branch and comes up with a *repeatable* and *unqiue* version number based on 
 - number of commits since last major or minor release
