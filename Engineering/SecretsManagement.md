@@ -25,7 +25,7 @@ It should be obvious, but all the care taken to protect secrets is all for nothi
 ### Enhanced-Security Applications
 
 The techniques outlined below provide 'good' security and a common pattern for a wide range of languages. They rely on 
-the fact that Azure keeps application settings (the environment) encrypted until just before your app is run. Encryption keys are regularly rotated. They do *not* prevent secrets from existing in plaintext in memory at runtime. Particularly in garbage collected languages those values my exist for longer than the lifetime of the variable.
+the fact that Azure keeps application settings (the environment) encrypted until just before your app is run. Encryption keys are regularly rotated. They do *not* prevent secrets from existing in plaintext in memory at runtime. Particularly in garbage collected languages those values may exist for longer than the lifetime of the variable.
 
 *If you are working on an application with enhanced security requirements you should consider using additional techniques to maintain encryption on secrets throughout the application lifetime.*
 

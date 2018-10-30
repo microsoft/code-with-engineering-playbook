@@ -1,6 +1,6 @@
 ## Continuous Integration and Delivery
 
-Continuous Integration is the engineering practice of frequently committing code in a shared repository, ideally several times a day, and performing and automated build on it. These changes are built with other simultaneous changes to the system, which enables early detection of integration issues between multiple developers working on a project. Build breaks due to integration failures are treated as the highest priority issue for all of the developers on a team and generally work stops until they are fixed.
+Continuous Integration is the engineering practice of frequently committing code in a shared repository, ideally several times a day, and performing an automated build on it. These changes are built with other simultaneous changes to the system, which enables early detection of integration issues between multiple developers working on a project. Build breaks due to integration failures are treated as the highest priority issue for all of the developers on a team and generally work stops until they are fixed.
 
 Paired with a test driven development approach, continuous integration also allows us to also test the integrated build such that we can verify that not only does the code base still build correctly, but also is still functionally correct. This is also a best practice for building robust and flexible software systems.
 
@@ -30,12 +30,12 @@ You can easily create a Jenkins VM using this [template](https://ms.portal.azure
 
 Travis CI can be used for open source projects at no cost but developers must purchase an enterprise plan for private projects.
 This service is ideal for validation of PR's on GitHub because it is lightweight and easy to set up with no need for dedicated server setup.
-It also support a Build matrix feature which allows to accelerate the build and testing process by breaking them into parts.
+It also supports a Build matrix feature which allows accelerating the build and testing process by breaking them into parts.
 
 **CircleCI**
 
 CircleCI is a free service for open source projects with no dedicated server required. It is also ideal for validation of PR's on GitHub.
-CircleCI also allows workflows, parallelism and splitting your tests across any number of containers with wide array of packages pre-installed on the build containers.
+CircleCI also allows workflows, parallelism and splitting your tests across any number of containers with a wide array of packages pre-installed on the build containers.
 
 **AppVeyor**
 

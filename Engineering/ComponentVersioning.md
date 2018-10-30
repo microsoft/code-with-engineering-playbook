@@ -4,7 +4,7 @@
 
 Larger applications consists of multiple components that reference each other and rely on compatibility of the interfaces/contracts of the components.
 
-To achieve the goal of losely coupled applications, each component should be versioned independently hence allowing developers to detect breaking changes or seamless updates just by looking at the version number.
+To achieve the goal of loosely coupled applications, each component should be versioned independently hence allowing developers to detect breaking changes or seamless updates just by looking at the version number.
 
 ## Version Numbers and Versioning schemes
 

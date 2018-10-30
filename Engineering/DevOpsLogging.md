@@ -20,13 +20,13 @@ Services that CSE develop use logging and monitoring for understanding service p
 
 ## General Guidance
 
-Logging should be taken care since the beginning of the software development. We should avoid a scenario where production has issues but our application does not provide enough information to help us identity the problem.
+Logging should be taken care since the beginning of the software development. We should avoid a scenario where production has issues but our application does not provide enough information to help us identify the problem.
 
 A good exercise during software development is to ask ourselves what can go wrong in this operation/action? Once problem areas have been identified add log information. A few guidelines:
 
 - When interacting with an external system we should know when a call fails. On a more detailed level we might want to log all calls made to external system. Doing so allows us to answer questions as *"Are you calling our system? When? What were the inputs and outputs?"*.
   
-- Be able to identity which configuration settings our application is running. For instance, `using API located at http://xyz` or `setting min io threads to 5`. This information helps identity why reading files asynchronously is taking longer than expected.
+- Be able to identify which configuration settings our application is running. For instance, `using API located at http://xyz` or `setting min io threads to 5`. This information helps identify why reading files asynchronously is taking longer than expected.
 
 - Log when important events occurred, i.e. when an order is created. Not finding logs for "order created" in the last 30 minutes might indicate a problem.
 
