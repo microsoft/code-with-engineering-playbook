@@ -1,6 +1,6 @@
 # Logging and Monitoring
 
-This sections is designed to give a deeper understading of logging and monitoring practices.
+This section is designed to give a deeper understanding of logging and monitoring practices.
 
 ## Logging
 
@@ -8,7 +8,7 @@ This sections is designed to give a deeper understading of logging and monitorin
 
 Each language/logging library defines its own logging level. They all have an order of importance that usually goes from critical &rarr; error &rarr; warning &rarr; info &rarr; debug. As a user of the logging library we can define what is the minimum log level that will be processed. For instance, setting "warning" as minimum log level will cause logs in warning, error and critical levels to be processed, the rest will be discarded.
 
-Be concious about logging levels for production environment. You might want to enable debug logging during a troubleshooting session, otherwise use a higher level to avoid collecting too much data and slowing down the system.
+Be conscious about logging levels for production environment. You might want to enable debug logging during a troubleshooting session, otherwise use a higher level to avoid collecting too much data and slowing down the system.
 
 ### Logging Categories
 
@@ -16,9 +16,9 @@ A few logging libraries have the additional concept of categories. Categories al
 
 ### Sink/Output
 
-Most logging libraries have the concept of sink or output. A sink defines where logs will be written to. This enable us to have distinct destinations during development (console) and production (file). Sink distinctions can also be use based on log category. Common sinks are:
+Most logging libraries have the concept of sink or output. A sink defines where logs will be written to. This enables us to have distinct destinations during development (console) and production (file). Sink distinctions can also be used based on log category. Common sinks are:
 
-- Debug: when using and IDE displays logged content into a output/debug window
+- Debug: when using and IDE displays logged content into an output/debug window
 - Console: well suited during development or when using a log collector based on stdout
 - File: suited for scenarios where logged data will be collected and moved to a logging system. Important to use rolling files to prevent using all available disk space.
 - Log Management Services: DataDog, Splunk, Elasticsearch, Application Insights, Azure Log Analytics.
@@ -50,11 +50,11 @@ traces
 
 ### Logging Configuration
 
-Most logging libraries offer configuration via code or settings files. Whenever possible rely on setting files, because it enable us to change logging levels and/or sinks without making changes to application code (i.e. enable verbose logging to troubleshoot a problem in production).
+Most logging libraries offer configuration via code or settings files. Whenever possible rely on setting files, because it enables us to change logging levels and/or sinks without making changes to application code (i.e. enable verbose logging to troubleshoot a problem in production).
 
 ### Logging in Production
 
-In a production environment it is highly recommended to have a single logging destination (known as Log Management System), that allow us to look at logged data as a whole. Log management systems allow us to build dashboards and alerts to better understand and react to a running system. Additionally, it allows us to search through millions of log entries using a SQL like syntax, which is very important when investigating issues.
+In a production environment it is highly recommended to have a single logging destination (known as Log Management System), that allows us to look at logged data as a whole. Log management systems allow us to build dashboards and alerts to better understand and react to a running system. Additionally, it allows us to search through millions of log entries using a SQL like syntax, which is very important when investigating issues.
 
 There are many log managements systems, both open source and SaaS. To name a few:
 
@@ -75,7 +75,7 @@ A few anti-patterns regarding logging:
 
 - Logging without context: 'login failed' does not help us narrow down the problem, where '{login} via {web} by user #{1231} {failed}' does.
   
-- Logging in every catch block: instead of repeating the same pattern of `try..catch..log` use a pattern where unhandled exceptions are caught in a single place. If the exception will be handled by the caller, but we still need to be aware of its occurence it, log before throwing a more specific exception.
+- Logging in every catch block: instead of repeating the same pattern of `try..catch..log` use a pattern where unhandled exceptions are caught in a single place. If the exception will be handled by the caller, but we still need to be aware of its occurrence, log before throwing a more specific exception.
 
 ```C#
 public void NotifyUser(User user, Notification notification)
@@ -103,7 +103,7 @@ Logging helps you understand application behavior and faults. However, in order 
 - Length of a queue
 - CPU/memory usage
 - Page views
-- Domain specific metrics suchs as "amount of orders in status pending", "amount of users created"
+- Domain specific metrics such as "amount of orders in status pending", "amount of users created"
 
 With these metrics in hand we understand when a system is under heavy load or experiencing availability degradation. Moreover, We perceive the effects of a new release comparing metrics from before and after a deployment.
 

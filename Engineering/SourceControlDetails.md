@@ -2,11 +2,11 @@
 [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
 ## Tools
-It's recommended to use a shell/terminal to work with Git commands and not just to relay on [GUI clients](https://git-scm.com/downloads/guis/). If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and simply use your favorite shell/terminal. 
+It's recommended to use a shell/terminal to work with Git commands and not just to rely on [GUI clients](https://git-scm.com/downloads/guis/). If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and simply use your favorite shell/terminal. 
 
 # Working with repositories
 ## Contributing to an existing repository
-When working on an existing project, `git clone` the repository and ensure you understand the teams branch, merge and release strategy (e.g. through the projects [CONTRIBUTING.md file](https://blog.github.com/2012-09-17-contributing-guidelines/)).
+When working on an existing project, `git clone` the repository and ensure you understand the team's branch, merge and release strategy (e.g. through the projects [CONTRIBUTING.md file](https://blog.github.com/2012-09-17-contributing-guidelines/)).
 
 ## Creating a new repository
 If you create a new repository, agree on your branch, merge and release strategies upfront and document them in your [CONTRIBUTING.md](https://blog.github.com/2012-09-17-contributing-guidelines/). Also lock the default branches and define who can approve and merge Pull Requests into your default branches.
@@ -146,7 +146,7 @@ TBD - lock branch
 # More Git greatness
 
 ## Working with secrets (such as storage keys)
-The best way to avoid leaking secrets is to store them in local/private files which will excluded from being tracked in git. This is done by configuring the [.gitignore](https://git-scm.com/docs/gitignore) file.
+The best way to avoid leaking secrets is to store them in local/private files which will be excluded from being tracked in git. This is done by configuring the [.gitignore](https://git-scm.com/docs/gitignore) file.
 E.g. the following pattern will exclude all files with the extension `.private.config`:
 ```
 # remove private configuration
@@ -186,7 +186,7 @@ git submodule foreach git pull origin
 ```
 
 ## Stashing
-`git stash` is super handy if you have un-committed changes in your working directory but you won't to work on a different branch. You can simply run `git stash` and save the un-committed work and reverts back to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
+`git stash` is super handy if you have un-committed changes in your working directory but you want to work on a different branch. You can simply run `git stash` and save the un-committed work and reverts back to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
 ```
 git stash
 ...

@@ -6,7 +6,7 @@ While working on the project we try to stick with best practices in architecture
 
 * Increase overall efficiency for each team member in person and the whole team in general
 * Reduce the number of mistakes and avoid common pitfalls
-* Strive to be better engineer and learn by other people's shared experience
+* Strive to be a better engineer and learn by other people's shared experience
 
 ## General Guidance
 
@@ -18,7 +18,7 @@ While working on the project we try to stick with best practices in architecture
 * Remember to tether to ‘Done’ for a backlog item. Our goal is not to write code, it is to ship incremental customer value. Our job is likely not done until our code is in production adding that value.
 * We all own our code and each one of us has an obligation to make all parts of the system great
 * Keeping backlog item details up to date is how you communicate the state of things with the rest of your team. Discipline around updating status, assignment, comments etc is essential
-* Treat project/component as your own product: constantly see how to improve it (from dev prospective and public functionality)
+* Treat project/component as your own product: constantly see how to improve it (from developer's perspective and public functionality)
 * Report product issues found not related to your task
 
 ## Additional Guidance
