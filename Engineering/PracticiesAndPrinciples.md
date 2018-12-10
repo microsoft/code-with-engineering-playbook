@@ -26,4 +26,4 @@ While working on the project we try to stick with best practices in architecture
 * [Avoid Technical Debt](https://martinfowler.com/bliki/TechnicalDebt.html)
 * [Use Done-Done checklist](BestPractices/DoneDone.md)
 * [Deliver using Minimal Valuable Slices](BestPractices/MinimalSlices.md)
-* [Follow Minimalism Rules](BestPractices/MinimalismRules.md)
+* [Learn about the Agile Manifesto](BestPractices/AgileManifesto.md)
