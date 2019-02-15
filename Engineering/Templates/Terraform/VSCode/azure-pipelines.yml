@@ -1,0 +1,43 @@
+name: terraform ci
+resources:
+- repo: self
+queue:
+  name: Hosted VS2017
+steps:
+- task: AzureCLI@1
+  displayName: 'ensure backend'
+  inputs:
+    azureSubscription: 'Microsoft Azure Subscription'
+    scriptPath: 'create-backend.bat'
+    arguments: '$(glb-org) infrax $(env-name) $(env-location)'
+- task: TerraformInstaller@0
+  displayName: 'terraform install'
+  inputs:
+    terraformVersion: 0.11.11
+- task: TerraformCLI@0
+  displayName: 'terraform init'
+  inputs:
+    command: init
+    backendType: azurerm
+    backendServiceArm: 'Microsoft Azure Subscription'
+    backendAzureRmResourceGroupName: '$(TfBackend.ResourceGroupName)'
+    backendAzureRmStorageAccountName: '$(TfBackend.StorageAccountName)'
+    backendAzureRmContainerName: '$(TfBackend.ContainerName)'
+    backendAzureRmKey: '$(Build.SourceBranchName)'
+- task: TerraformCLI@0
+  displayName: 'terraform validate'
+  inputs:
+    commandOptions: '-var "env=$(env-name)" -var "location=$(env-location)" -var "org=$(glb-org)"'
+    backendServiceArm: 'Microsoft Azure Subscription'
+- task: CopyFiles@2
+  displayName: 'stage artifacts'
+  inputs:
+    Contents: |
+     ?(*.tf|*.vars|*.tfvars|*.bat|*.sh|*.csv|*.yaml)
+     **\?(*.tf|*.vars|*.tfvars)
+     !.terraform\**
+    TargetFolder: '$(build.artifactstagingdirectory)'
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifacts'
+
+
