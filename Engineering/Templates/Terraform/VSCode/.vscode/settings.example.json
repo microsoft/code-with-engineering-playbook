@@ -1,0 +1,17 @@
+{
+    "terraform" : {
+        "azurerm" : {
+            "tenant_id" : "Tenant to use when executing terraform commands",
+            "subscription_id" : "Subscription to use when executing terraform commands",
+            "client_id" : "Service principal app id to use when executing terraform commands",
+            "client_secret" : "Service principal password to use when executing terraform commands",
+            "backend" : {            
+                "storage_account_name" : "name of the storage account",
+                "access_key" : "primary/secondary access key to the storage account",
+                "resource_group_name" : "resource group to which the storage account is assigned",
+                "container_name" : "storage account blob container name to store the state",
+                "key" : "the name of the blob file to store the state"
+            }
+        }
+    }
+}

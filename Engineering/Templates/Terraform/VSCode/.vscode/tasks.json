@@ -1,0 +1,93 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "terraform init",
+            "type": "shell",
+            "command": "terraform",
+            "problemMatcher": [],
+            "args": [
+                "init",
+                "-backend-config=\"storage_account_name=${config:terraform.azurerm.backend.storage_account_name}\"",
+                "-backend-config=\"container_name=${config:terraform.azurerm.backend.container_name}\"",
+                "-backend-config=\"key=${config:terraform.azurerm.backend.key}\"",
+                "-backend-config=\"access_key=${config:terraform.azurerm.backend.access_key}\"",
+                "-backend-config=\"resource_group_name=${config:terraform.azurerm.backend.resource_group_name}\""
+            ]
+        },
+        {
+            "label": "terraform validate",
+            "type": "shell",
+            "command": "terraform",
+            "problemMatcher": [],
+            "args": [
+                "validate",
+                "-var=env=${config:terraform.tfvars.env}",
+                "-var=org=${config:terraform.tfvars.org}",
+                "-var=location=${config:terraform.tfvars.location}"
+            ]
+        },
+        {
+            "label": "terraform plan",
+            "type": "shell",
+            "command": "terraform",
+            "problemMatcher": [],
+            "args": [
+                "plan",
+                "-var=env=${config:terraform.tfvars.env}",
+                "-var=org=${config:terraform.tfvars.org}",
+                "-var=location=${config:terraform.tfvars.location}"
+            ],
+            "options": {
+                "env": {
+                    "ARM_TENANT_ID" : "${config:terraform.azurerm.tenant_id}",
+                    "ARM_SUBSCRIPTION_ID" : "${config:terraform.azurerm.subscription_id}",
+                    "ARM_CLIENT_ID" : "${config:terraform.azurerm.client_id}",
+                    "ARM_CLIENT_SECRET" : "${config:terraform.azurerm.client_secret}"
+                }
+            }
+        },
+        {
+            "label": "terraform apply",
+            "type": "shell",
+            "command": "terraform",
+            "problemMatcher": [],
+            "args": [
+                "apply",
+                "-var=env=${config:terraform.tfvars.env}",
+                "-var=org=${config:terraform.tfvars.org}",
+                "-var=location=${config:terraform.tfvars.location}"
+            ],
+            "options": {
+                "env": {
+                    "ARM_TENANT_ID" : "${config:terraform.azurerm.tenant_id}",
+                    "ARM_SUBSCRIPTION_ID" : "${config:terraform.azurerm.subscription_id}",
+                    "ARM_CLIENT_ID" : "${config:terraform.azurerm.client_id}",
+                    "ARM_CLIENT_SECRET" : "${config:terraform.azurerm.client_secret}"
+                }
+            }
+        },
+        {
+            "label": "terraform destroy",
+            "type": "shell",
+            "command": "terraform",
+            "problemMatcher": [],
+            "args": [
+                "destroy",
+                "-var=env=${config:terraform.tfvars.env}",
+                "-var=org=${config:terraform.tfvars.org}",
+                "-var=location=${config:terraform.tfvars.location}"
+            ],
+            "options": {
+                "env": {
+                    "ARM_TENANT_ID" : "${config:terraform.azurerm.tenant_id}",
+                    "ARM_SUBSCRIPTION_ID" : "${config:terraform.azurerm.subscription_id}",
+                    "ARM_CLIENT_ID" : "${config:terraform.azurerm.client_id}",
+                    "ARM_CLIENT_SECRET" : "${config:terraform.azurerm.client_secret}"
+                }
+            }
+        }
+    ]
+}
