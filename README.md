@@ -18,6 +18,10 @@ This is the playbook. You are invited to contribute via standard git pull reques
 * [Retrospectives](./Engineering/Retrospectives.md)
 * [Engineering Practices And Principles](./Engineering/PracticiesAndPrinciples.md)
 
+## Azure
+
+* [Resource Naming Conventions](./Engineering/BestPractices/Azure/ResourceNamingConventions.md)
+
 ## Seeking Contributions for
 
 - Component Tests
