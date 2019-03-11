@@ -11,4 +11,4 @@ Below is an example Done-Done checklist you should follow to ensure everything i
 * [if applicable] Customer value demo screencast is recorded and sent to the team
 YES/NO
 * [if applicable] Is Relevant architectural review is done YES/NO
-* Is the code coverage fail under check passing YES/NO 
+* Does the code coverage meet the minimum threshold YES/NO 
