@@ -24,7 +24,9 @@ All developers should run ```gofmt``` in a pre-commit hook to ensure standard fo
 [```golint```](https://github.com/golang/lint) can be an effetive tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process.
 
 
-### Automation - ```gometalinter```
+### Automation
+
+#### ```gometalinter```
 
 ```gometalinter``` is a tool that concurrently runs numerous linters and normalises their output to a standard format.
 In order to automate the linting process, you can include a `gometalinter.json` settings file in your project and run the tool with
@@ -64,6 +66,12 @@ gometalinter --config ./gometalinter.json ./...
 **Note:** You can see that `golint` is included in the `gometalinter.json` file. Make sure you include [`//nolint: golint`](https://github.com/alecthomas/gometalinter#comment-directives) in your code if you encounter false positive results.
 
 For more details visit [gometalinter](https://github.com/alecthomas/gometalinter)
+
+#### `golangci-lint`
+
+[`golangci-lint`](https://github.com/golangci/golangci-lint/) is an alternative to `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
+
+One awesome feature of `golangci-lint` is that is can be easily introduced to an existing large codebase using the `--new-from-rev COMMITID`. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions. 
 
 ## Starter Code Review Checklist
 
