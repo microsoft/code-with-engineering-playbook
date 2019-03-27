@@ -10,7 +10,7 @@ Developers working on [CSE](../CSE.md) projects will conduct peer code reviews o
 
 ## Evidence and Measures
 
-Many of these items can be automated or enforced by policy in modern version control and work item tracking systems. Verification of the policies on the master branch in VSTS, for example, may be sufficient evidence that a project team is conducting code reviews.
+Many of these items can be automated or enforced by policy in modern version control and work item tracking systems. Verification of the policies on the master branch in Azure DevOps, for example, may be sufficient evidence that a project team is conducting code reviews.
 
 -   [ ] The master branches in all repositories have branch policies defined in line with the general guidance below.
 -   [ ] All builds produced out of project repositories include appropriate linters, run unit tests, and complete with neither errors nor warnings.
@@ -30,7 +30,7 @@ The goal of code reviews is to identify and remove defects before they can be in
 -   The "readability" and maintainability of the overall design decisions reflected in the code.
 -   The checklist of common errors that the team maintains for each programming language.
 
-The following guidelines are framed prescriptively in terms of VSTS git, but apply equally to other version control and code review environments. Pull request is used as the generic term for a request to commit code to a shared branch.
+The following guidelines are framed prescriptively in terms of Azure DevOps git, but apply equally to other version control and code review environments. Pull request is used as the generic term for a request to commit code to a shared branch.
 
 -   Code review policies should be enforced on the master branch.
     -   Git should be configured to deny commits directly to master, enforcing that all changes are made through topic branch PRs.

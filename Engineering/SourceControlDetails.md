@@ -59,7 +59,7 @@ git merge topic
          /        
 D---E---F-----------G---H master
 
-Create a PR topic --> master in VSTS and approve using the squash merge option
+Create a PR topic --> master in Azure DevOps and approve using the squash merge option
 ```
 
 # Write good commit comments
@@ -91,13 +91,13 @@ are making this change as opposed to how (the code explains that).
 Are there side effects or other unintuitive consequences of this
 change? Here's the place to explain them.
 
-VSTS understands Markdown, so you can use that sparingly throughout.
+Azure DevOps understands Markdown, so you can use that sparingly throughout.
 
 Further paragraphs come after blank lines.
 
  - Bullet points are okay, too
  - Typically a hyphen or asterisk is used for the bullet, preceded
-   by a single space (no blank lines between them on VSTS)
+   by a single space (no blank lines between them on Azure DevOps)
 
 Put issue references to them at the bottom,
 like this:
@@ -120,7 +120,7 @@ Let's use the following naming conventions for branches:
  * release branches: `release/release_name`
 
 ## Restrict access to default branches
-* In VSTS it's recommended to specify the **minimum number of required reviewers** as well as the **commit strategy** if you want to enforce [squash merging](https://docs.microsoft.com/en-us/vsts/git/merging-with-squash?view=vsts). Here some details on [VSTS branch policies](https://docs.microsoft.com/en-us/vsts/git/branch-policies?view=vsts)
+* In Azure DevOps it's recommended to specify the **minimum number of required reviewers** as well as the **commit strategy** if you want to enforce [squash merging](https://docs.microsoft.com/en-us/vsts/git/merging-with-squash?view=vsts). Here some details on [Azure DevOps branch policies](https://docs.microsoft.com/en-us/vsts/git/branch-policies?view=vsts)
 * In GitHub it's recommended to protect these branches by limiting the push access to reviewers only. Here some details how to [enable branch restrictions in GitHub](https://help.github.com/articles/enabling-branch-restrictions/)
 
 # Release strategy

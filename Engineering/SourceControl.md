@@ -1,5 +1,5 @@
 # Source Control
-There are many different options when working with Source Control. In [CSE](../CSE.md) we use [VSTS](https://csesd.visualstudio.com/_projects) for private repositories and [GitHub](https://github.com/) for public repositories.
+There are many different options when working with Source Control. In [CSE](../CSE.md) we use [Azure DevOps](https://csesd.visualstudio.com/_projects) for private repositories and [GitHub](https://github.com/) for public repositories.
 
 ## Goals
 * Following industry best practice to work in geo-distributed teams which encourage contributions from all across [CSE](../CSE.md) as well as the broader OSS community
@@ -23,7 +23,7 @@ Consistency is crucial, therefore the team has to agree on their approach before
 
 ## Resources
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
-* [VSTS](https://www.visualstudio.com/team-services/)
+* [Azure DevOps](https://www.visualstudio.com/team-services/)
 * [the GitHub Hello World](https://guides.github.com/activities/hello-world/)
 * [CSE Git details](SourceControlDetails.md) provides details and best practices on how to use Git as part of a [CSE](../CSE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)

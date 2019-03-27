@@ -53,4 +53,4 @@ Recommendation is to run semver during your CI process to make each build unique
 ## Resources
 - Semantic Versioning: https://semver.org/
 - Versioning in C#: https://docs.microsoft.com/en-us/dotnet/csharp/versioning
-- SemVer Task for VSTS: https://marketplace.visualstudio.com/items?itemName=geeklearningio.gl-vsts-tasks-semver
+- SemVer Task for Azure DevOps: https://marketplace.visualstudio.com/items?itemName=geeklearningio.gl-vsts-tasks-semver
