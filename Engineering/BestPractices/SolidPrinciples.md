@@ -42,7 +42,7 @@ The rest of this document details each of the principles.
 ## Single Responsibility Principle (SRP)
 In short: A class, should have only ***one***, single reason to change. If your class is doing multiple things, it will be harder to maintain, because more moving parts usually lead to more points of failure and more complex unit-tests. Also, classes with multiple responsibilities tend to have less meaningful names, and are instantly harder to understand.
 
-> Classnames ending in ***-Tools*** and ***-Helper*** say nothing about the responsibilities within them.
+> Classnames ending in ***-Tools*** and ***-Helper*** say very little about the responsibilities within them.
 
 Let's look at an example:
 
@@ -94,7 +94,7 @@ Keep responsibilities to ONE class. This means you will only have ONE reason to 
 ----
 
 ## Open Closed Principle
-This principle states that a classs and entities should be **Open** for extensability, but **Closed** for changes. This principle essentially states that once you go live with a new method inside your class, you do not modify it. Consider that you have a library v1.0 running the following class: 
+This principle states that a classs and entities should be **Open** for extensability, but **Closed** for changes. Once you go live with a new method inside your class, you should not modify it. Consider that you have a library v1.0 running the following class: 
 
 ```csharp
 public class IdentityManager
@@ -138,6 +138,9 @@ In the above code, you can see that instead of *modifying* the **SignIn()** meth
 
 > **Note** <br />
 > The **[Obsolete]** Attribute is a construct of the C# language and allows the developer to notify the library client that he should update his code, but without breaking anything. If your language supports this kind of constructs, use them! 
+
+This principle also includes changes to code that isn't broken, for example, calculations that are based on one mathematical principle, that you'd like to change to a different principle, would break OCP, because the *expected outcome* may differ to the end user. 
+
 ----
 ## Liskovs Substitution Principle (LSP)
 Sometimes, something that sounds right in natural language does not quite work in code. For example, in mathematics, a `square` is a `rectangle`. It is a specialization of a rectangle. This inference of "is a" would lead you to model this in code by using inheritance, however, if you let yourself derive a `square` from a `rectangle`, you would run in to some unexpected behavior: 
