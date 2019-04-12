@@ -142,7 +142,7 @@ In the above code, you can see that instead of *modifying* the **SignIn()** meth
 This principle also includes changes to code that isn't broken, for example, calculations that are based on one mathematical principle, that you'd like to change to a different principle, would break OCP, because the *expected outcome* may differ to the end user. 
 
 ----
-## Liskovs Substitution Principle (LSP)
+## Liskov Substitution Principle (LSP)
 Sometimes, something that sounds right in natural language does not quite work in code. For example, in mathematics, a `square` is a `rectangle`. It is a specialization of a rectangle. This inference of "is a" would lead you to model this in code by using inheritance, however, if you let yourself derive a `square` from a `rectangle`, you would run in to some unexpected behavior: 
 
 ```csharp
