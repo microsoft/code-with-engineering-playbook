@@ -10,7 +10,7 @@ Here's the short version:
 | ------------ | ----------| ------------------ |
 | SRP          | Single Responsibility | Write classes that only need ONE single reason to be changed | 
 | OCP          | Open Closed | Never change a method after putting it in production. Instead extend the class with new methods! | 
-| LSP | Liskovs Substitution | A class that inherits another class must behave like it's superclass. That is not always the case! | 
+| LSP | Liskov Substitution | A class that inherits another class must behave like its superclass. That is not always the case! | 
 | ISP | Interface Segregation | Keep your interfaces small and well defined. Choose multiple interfaces instead of making one large superclass where all methods aren't going to be implemented. This usually breaks SRP anyway! |
 | DIP | Dependency Inversion | Don't use **new()** but instead inject dependencies using constructors or accessors.
 
