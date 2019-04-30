@@ -24,5 +24,21 @@ We follow the [PEP 257](https://www.python.org/dev/peps/pep-0257/) Docstring con
 
 Flake8 is an option for teams who want a single wrapper for running Pyflakes and pycodestyle.
 
+## Unit Testing
+
+### [```Pytest```](https://docs.pytest.org/en/latest/)
+Pytest is a simple unit testing framework that provides the basics for unit testing: asserts, fixtures, etc... 
+
+```bash
+pip3 install pytest
+```
+
+### [```Pytest-mock```](https://github.com/pytest-dev/pytest-mock/)
+Mocking/stubbing framework that works with Pytest. Use this to mock out OS calls, off-box calls, and other calls that would unnecessarily broaden the scope of unit tests.
+
+```bash
+pip3 install pytest-mock
+```
+
 ## Starter Code Review Checklist
 
