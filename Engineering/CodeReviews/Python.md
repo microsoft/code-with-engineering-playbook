@@ -2,7 +2,7 @@
 
 ## Python Style Guide
 
-[CSE](../CSE.md) developers follow [Google's Python Style Guide](https://google.github.io/styleguide/pyguide.html).
+[CSE](../CSE.md) developers follow [Google's Python Style Guide](https://google.github.io/styleguide/pyguide.html). Note the use of strong typing throughout. Older versions of python allow you to get away without this but type checking avoids common errors that are tricky to debug. 
 
 ## Linters
 
