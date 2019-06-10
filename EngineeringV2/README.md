@@ -6,8 +6,9 @@ The following outline will use the implementation of a given story as a means to
 
 The proposed outline is intended to accomplish the following goals
 
-1. Organize the content as an idea-to-delivery value stream narrative from an engineering perspective
-2. Extensible heirarchy to allow IC's to share deep subject matter expertise
+1. Author as idea-to-delivery value stream narrative from an engineering perspective.
+2. Organize for quick reference and discoverability.
+3. Extensible heirarchy to allow teams to share deep subject matter expertise.
 
 ### Proposed Structure/Pattern
 
