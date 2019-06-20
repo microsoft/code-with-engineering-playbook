@@ -16,6 +16,6 @@ What positive impact has been observed as a result of this practice?
 
 How might one measure the impact of this ceremony positive or negative?
 
-## Faciliation Guidance
+## Facilitation Guidance
 
 How might one go about running the ceremony? Is there a general pattern that the ceremony should follow?
