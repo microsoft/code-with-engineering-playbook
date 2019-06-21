@@ -9,23 +9,120 @@ An engineer working for a [CSE](./CSE.md) project...
 
 This is the playbook. You are invited to contribute via standard git pull requests to GitHub.
 
-## How to Contribute
-
-1. Create your own fork of the repo (origin)
-2. Create a new branch for your change
-3. Commit your changes
-4. Push changes back to your fork's branch
-5. Submit a PR back to Microsoft repo (upstream) into master
-
-See also: [Contributing](Contributing.md)
-
 ## Outline
+
+The following outlines each section and what content would be included within each section.
+
+### Goals
 
 The proposed outline is intended to accomplish the following goals
 
 1. Author as idea-to-delivery value stream narrative from an engineering perspective.
 2. Organize for quick reference and discoverability.
 3. Extensible heirarchy to allow teams to share deep subject matter expertise.
+
+### Working Heirarchy
+
+The working heirarchy is rooted in CSE's one week sprint cycle. Each section within then allows for deep dive information, recipes, and use cases.
+
+Project Start
+  - Team Agreements
+    - Working Agreements
+    - Definition of Ready
+    - Definition of Done
+    - Estimation Baselines
+  - Source Control - Repository organization strategies (How many repositories? How should I decide?)
+    - Setting up a new repository (readme, license, ignores, etc)
+      - Recipe for ADO
+      - Recipe for GitHub
+  - Versioning (extend)
+    - Recipe for implementing Semantic Versioning
+      - ADO Pipelines
+      - Jenkins
+  - Building a Product Backlog
+    - Guide to creating stories
+      - INVEST
+      - User story and acceptance criteria examples
+      - Defining stories for ML
+    - Recipes
+      - Managing product backlog in ADO
+Day 1
+  - Sprint Planning
+    - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
+    - Capacity Planning
+    - Tasking
+    - Dividing work WIP Limits
+  - Test-First Development
+    - Conceptual (Purpose, Goals, Impact, and Measures)
+    - Developing Test Cases
+    - Unit Testing
+      - Conceptual (Purpose, Goals, Impact, and Measures)
+    - Load Testing
+  - Feature Branching (creating branch for new story)
+Day 2
+  - Commit best practices (move some existing content here)
+    - Link work items
+    - How often to commit
+    - When to push
+  - Continuous Integration (extend)
+    - Conceptual (Purpose, Goals, Impact, and Measures)
+      - Recipes for ADO
+  - Scrum of Scrums
+    - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
+  - Daily Standups
+    - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
+      - What should be in my standup update
+    - Recipes
+      - How to run efficient standups for remote teams
+Day 3
+  - Pull Requests (separate from code reviews)
+    - Conceptual requirements for pull request (it should build, have 1 reviewer, linked work item, build changes)
+      - Add emphasis on importance of protecting master, effect this has on crew efficiency
+    - Recipe for Setup in
+      - Azure DevOps
+      - GitHub
+    - Code Reviews
+      - Conceptual
+        - Add to checklist (breaking changes & backward compatibility, security, fault tolerance, etc)
+  - Code Merging
+    - prescribe strategy (i.e. squash /w or w/o rebase)
+Day 4
+  - Continuous Deployment (extend, much more explanation needed)
+    - Conceptual, Purpose, Goals, Impact and Measures
+      - Which environments (ci, test, stage)? For each environment...
+        - Conceptually whats is the purpose for each env
+        - When should deployment trigger
+        - Pre-deployment approvers
+        - Sign off for promotion
+    - Recipies for Setting up CD Pipelines
+      - ADO
+  - Asserting Test Cases and Automation
+Day 5
+  - Sprint Demo
+  - Retrospectives
+    - Conceptual
+      - Inputs (Requirements to have ready before meeting)
+      - Participants required
+      - Outputs (Decsions, actions to conclude meeting)
+    - Guide for retrospective facilitator
+      - Timeline for 1 hour retro
+      - Tips for sticking to time
+      - Voting for action items
+    - Recipes
+      - Remote retros using ADO Retrospectives
+      - Remote retros using Retrium
+  - Grooming
+    - Conceptual
+      - Inputs (Requirements to have ready before meeting)
+      - Participants required
+      - Outputs (Decsions, actions to conclude meeting)
+    - Definition of ready for stories
+      - Examples of well defined acceptance criteria
+      - Can the story be tested as written
+      - Can it be completed within a sprint
+      - Is it dependent on other stories
+    - Estimation
+      - Resolving estimation conflicts (two people are sizing differently))
 
 ### Structure/Pattern
 
@@ -45,8 +142,9 @@ At a conceptual level each section consist of the following parts
    2. What problem was the team try to solve with their implementation?
    3. What worked well?
    4. Opportunities for improvement
+   5. External Reference Material (???)
 
-#### Example Directory Heirarchy
+### Example Directory Heirarchy
 
 The following illustrates how the directory structure could be organized.
 
@@ -67,151 +165,3 @@ The following illustrates how the directory structure could be organized.
     - /case-studies
         - contoso-ci-pipeline-for-terraform.md
 ```
-
-### Working Playbook Outline
-
-The following outlines each section and what content would be included within each section.
-
-- Team Agreements
-  - Working Agreements
-  - Definition of Ready
-  - Definition of Done
-  - Estimation Baselines
-    - Pick stories to use as markers for relative sizing
-    - Pick sizing scale (fibonacci, currency denominations, etc)
-    - Pick coversion ratio for points:days/hours:engineers (i.e. 1point = 1 day for 1 engineer)
-- Aglie Ceremonies
-  - Grooming
-    - Conceptual
-      - Inputs (Requirements to have ready before meeting)
-      - Participants required
-      - Outputs (Decsions, actions to conclude meeting)
-    - Definition of ready for stories
-      - Examples of well defined acceptance criteria
-      - Can the story be tested as written
-      - Can it be completed within a sprint
-      - Is it dependent on other stories
-    - Estimation
-      - Resolving estimation conflicts (two people are sizing differently)
-    - Recipes
-      - Using "Magic Estimation" strategy
-  - Planning
-    - Conceptual
-      - Inputs (Requirements to have ready before meeting)
-      - Participants required
-      - Outputs (Decsions, actions to conclude meeting)
-    - Determining team capacity
-    - Tasking stories in sprint backlog
-      - Size of tasks
-      - Hour estimates
-      - Updating todo hours
-    - Dividing work into WIP (work-in-progress) or Workstreams
-  - Daily Standups
-    - Conceptual
-      - Inputs (Requirements to have ready before meeting)
-      - Participants required
-      - Outputs (Decsions, actions to conclude meeting)
-    - What should be in my standup update
-    - Recipes
-      - How to run efficient standups for remote teams
-  - Scrum of Scrums
-    - Conceptual
-      - Inputs (Requirements to have ready before meeting)
-      - Participants required
-      - Outputs (Decsions, actions to conclude meeting)
-  - Retrospectives
-    - Conceptual
-      - Inputs (Requirements to have ready before meeting)
-      - Participants required
-      - Outputs (Decsions, actions to conclude meeting)
-    - Guide for retrospective facilitator
-      - Timeline for 1 hour retro
-      - Tips for sticking to time
-      - Voting for action items
-    - Recipes
-      - Remote retros using ADO Retrospectives
-      - Remote retros using Retrium
-- Backlog Management
-  - Product Backlog
-  - Sprint Backlog
-  - Defect Triage
-    - Define criteria for defect
-    - Severity definition (what constitutes Sev1, Sev2, etc)
-    - Iteration Defects vs Regression
-  - Software Inventory Guidance (how far ahead should I plan)
-  - User Story States
-  - Defect States
-  - Recipes
-    - Managing product backlog in ADO
-    - Configuring ADO states for Stories and Defects
-    - Queries for Defect Triage
-    - Queries for Grooming & Planning
-- Testing (NEW)
-  - Designing test cases
-  - Automation Testing (aka End-to-End or Integration)
-  - Load Testing
-- Feature/Story Implementation Design (NEW)
-  - What should be considered durign design?
-    - Sequences (how does each part of the system participate in the story)
-    - System Interfaces/Contracts
-    - Database schema changes
-    - Backwards Compatibility
-    - Security & Threat Modeling
-    - Authorization (Roles/Permissioning)
-  - Conducting design reviews
-- Source Control (extend/refactor, would make some of the existing content more opinionated)
-  - Repository organization strategies (How many repositories? How should I decide?)
-  - Setting up a new repository (readme, license, ignores, etc)
-    - Recipe for ADO
-    - Recipe for GitHub
-  - Branching for a new feature or story (move some existing content here and make more opinionated)
-  - Commit best practices (move some existing content here)
-    - Link work items
-    - How often to commit
-    - When to push
-  - Merge (move existing content here and make more opinionated)
-    - squash (/w rebase?)
-- Versioning (extend)
-  - Recipe for implementing Semantic Versioning
-    - ADO Pipelines
-    - Jenkins
-- Continuous Integration (extend)
-  - Conceptual ()
-  - Deploying from CI builds for e2e testing
-  - Static code analysis
-    - Recipies for ADO using
-      - Sonarqube
-  - Recipes for ADO & Jenkins
-    - Recipes for setting up CI pipelines for specific frameworks & languages
-      - .NET Core
-      - Node
-      - Python
-      - C++
-      - GO
-- Pull Requests (separate from code reviews)
-  - Conceptual requirements for pull request (it should build, have 1 reviewer, linked work item, build changes)
-    - Add emphasis on importance of protecting master, effect this has on crew efficiency
-  - Testing before merging (deploy and test end to end)
-    - Assert designed tests
-    - Verify automated end-to-end tests against deployed changes
-  - Recipe for Setup in
-    - Azure DevOps
-    - GitHub
-  - Code Reviews (extend)
-    - Conceptual (extend)
-      - Add to checklist (breaking changes & backward compatibility, security, fault tolerance, etc)
-- Continuous Deployment (extend, much more explanation needed)
-  - Conceptual
-    - Which environments (ci, test, stage)? For each environment...
-      - Conceptually whats is the purpose for each env
-      - When should deployment trigger
-      - Pre-deployment approvers
-      - Sign off for promotion
-  - Recipies for Setting up CD Pipelines
-    - ADO
-    - Jenkins
-- Production Readiness
-  - Threat Model
-  - Operational Playbooks/Runbooks
-  - Observability
-  - Data Flow (Firewall and Networking requirements)
