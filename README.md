@@ -72,7 +72,7 @@ The following illustrates how the directory structure could be organized.
 
 The following outlines each section and what content would be included within each section.
 
-- Team Baselines
+- Team Agreements
   - Working Agreements
   - Definition of Ready
   - Definition of Done
@@ -92,9 +92,6 @@ The following outlines each section and what content would be included within ea
       - Can it be completed within a sprint
       - Is it dependent on other stories
     - Estimation
-      - Provide guidance on what scale to use (fibonacci, currency denominations, etc)
-      - How to establish baseline estimates (if using relative sizing)
-      - How is that scale converted to time (if using time-based sizing)
       - Resolving estimation conflicts (two people are sizing differently)
     - Recipes
       - Using "Magic Estimation" strategy

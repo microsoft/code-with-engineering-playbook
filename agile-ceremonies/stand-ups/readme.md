@@ -1,5 +1,10 @@
 # Standups
 
+## Content TODO's
+
+- Complete outline below
+- Define what should and should NOT be in the standup update
+
 ## Goals
 
 What are the intended outcomes of the ceremonies?
