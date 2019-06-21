@@ -25,41 +25,41 @@ The proposed outline is intended to accomplish the following goals
 
 The working heirarchy is rooted in CSE's one week sprint cycle. Each section within then allows for deep dive information, recipes, and use cases.
 
-Project Start
-  - Team Agreements
-    - Working Agreements
-    - Definition of Ready
-    - Definition of Done
-    - Estimation Baselines
-  - Source Control - Repository organization strategies (How many repositories? How should I decide?)
+- [Project Start](0000-pre-sprint)
+  - [Team Agreements](0000-pre-sprint/team-agreements)
+    - [Working Agreements](0000-pre-sprint/team-agreements/working-agreements)
+    - [Definition of Ready](0000-pre-sprint/team-agreements/definition-of-ready)
+    - [Definition of Done](0000-pre-sprint/team-agreements/definition-of-done)
+    - [Estimation ](0000-pre-sprint/team-agreements/estimation)
+  - [Repository organization strategies (How many repositories? How should I decide?)](0000-pre-sprint/source-control-repositories)
     - Setting up a new repository (readme, license, ignores, etc)
       - Recipe for ADO
       - Recipe for GitHub
-  - Versioning (extend)
+  - [Versioning (extend)](0000-pre-sprint/versioning)
     - Recipe for implementing Semantic Versioning
       - ADO Pipelines
       - Jenkins
-  - Building a Product Backlog
+  - [Building a Product Backlog](0000-pre-sprint/product-backlog)
     - Guide to creating stories
       - INVEST
       - User story and acceptance criteria examples
       - Defining stories for ML
     - Recipes
       - Managing product backlog in ADO
-Day 1
-  - Sprint Planning
+- [Day 1](0010-day-one)
+  - [Sprint Planning](0010-day-one/sprint-planning)
     - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
     - Capacity Planning
     - Tasking
     - Dividing work WIP Limits
-  - Test-First Development
+  - [Test-First Development](0010-day-one/test-first-development)
     - Conceptual (Purpose, Goals, Impact, and Measures)
     - Developing Test Cases
     - Unit Testing
       - Conceptual (Purpose, Goals, Impact, and Measures)
     - Load Testing
-  - Feature Branching (creating branch for new story)
-Day 2
+  - [Feature Branching (creating branch for new story)](0010-day-one/feature-branching)
+- Day 2
   - Commit best practices (move some existing content here)
     - Link work items
     - How often to commit
@@ -74,7 +74,7 @@ Day 2
       - What should be in my standup update
     - Recipes
       - How to run efficient standups for remote teams
-Day 3
+- Day 3
   - Pull Requests (separate from code reviews)
     - Conceptual requirements for pull request (it should build, have 1 reviewer, linked work item, build changes)
       - Add emphasis on importance of protecting master, effect this has on crew efficiency
@@ -86,7 +86,7 @@ Day 3
         - Add to checklist (breaking changes & backward compatibility, security, fault tolerance, etc)
   - Code Merging
     - prescribe strategy (i.e. squash /w or w/o rebase)
-Day 4
+- Day 4
   - Continuous Deployment (extend, much more explanation needed)
     - Conceptual, Purpose, Goals, Impact and Measures
       - Which environments (ci, test, stage)? For each environment...
@@ -97,7 +97,7 @@ Day 4
     - Recipies for Setting up CD Pipelines
       - ADO
   - Asserting Test Cases and Automation
-Day 5
+- Day 5
   - Sprint Demo
   - Retrospectives
     - Conceptual
