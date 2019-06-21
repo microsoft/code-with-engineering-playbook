@@ -53,7 +53,7 @@ git checkout master
 git merge topic
 ```
 ### Rebase topic branch before squash merge into master
-[Squash merging](https://docs.microsoft.com/en-us/vsts/git/merging-with-squash?view=vsts) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on `topic` being added to the history of `master`, a squash merge takes all the file changes and adds them to a single new commit on `master`. 
+[Squash merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on `topic` being added to the history of `master`, a squash merge takes all the file changes and adds them to a single new commit on `master`. 
 ```
           A---B---C topic
          /        
@@ -120,7 +120,7 @@ Let's use the following naming conventions for branches:
  * release branches: `release/release_name`
 
 ## Restrict access to default branches
-* In Azure DevOps it's recommended to specify the **minimum number of required reviewers** as well as the **commit strategy** if you want to enforce [squash merging](https://docs.microsoft.com/en-us/vsts/git/merging-with-squash?view=vsts). Here some details on [Azure DevOps branch policies](https://docs.microsoft.com/en-us/vsts/git/branch-policies?view=vsts)
+* In Azure DevOps it's recommended to specify the **minimum number of required reviewers** as well as the **commit strategy** if you want to enforce [squash merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops). Here some details on [Azure DevOps branch policies](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops)
 * In GitHub it's recommended to protect these branches by limiting the push access to reviewers only. Here some details how to [enable branch restrictions in GitHub](https://help.github.com/articles/enabling-branch-restrictions/)
 
 # Release strategy
