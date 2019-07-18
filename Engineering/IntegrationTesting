@@ -1,0 +1,43 @@
+Integration Testing
+
+Goals
+
+Integration testing (sometimes called integration and testing, abbreviated I&T) is the phase in software testing in which individual software modules are combined and tested as a group. It occurs after unit testing and before validation testing. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan (during ADS) to those aggregates, and delivers as its output the integrated system ready for system testing. 
+
+Evidence and Measures
+
+Integration tests should run in a different build pipeline because it takes them long time to complete, and require real resources to be used (e.g. databases). Usually they can run during the nightly builds, or manually upon request.
+
+General Guidance
+
+Integration testing does not happen at the end of the development cycle, but rather it is conducted simultaneously during the development process. So in most of the times, all the modules are not actually available to test and here is what the challenge comes to test something which does not exist!
+
+If -
+
+1. a test uses the database
+2. a test uses the network
+3. a test uses an external system (e.g. a queue or a mail server)
+4. a test reads/writes files or performs other I/O
+
+…then it is an integration test and not a unit test.
+
+Writing Tests
+
+- Integration tests should make use of extensive logging. Integration tests scope may span several software modules, not to mention different devices and hardware components, in any functional flow. As a result, if an integration test fails, it may be much more complex to identify the cause.
+- A developer should try to avoid a "Big Bang" approach where all or most of the units are combined together and tested at one go. Try to prefer a top-down to bottom-up approaches depends on your system design. 
+- Integration testing means testing two or more integrated systems in order to ensure that the system works properly. Not only the integration links should be tested but an exhaustive testing considering the environment should be done to ensure that the integrated system works properly.
+- Remember that rather than testing the business logic (which was already done during the unit test step), during this step we are only making sure that all components can integrate as expected.
+- Integration tests should run after unit tests have completed. Developers working on specific business logic in the code must be able to run unit tests and get near-immediate feedback to ensure that they haven't broken anything before committing code. If their test suite takes too long and they can't afford to wait for it to finish before committing code, they are likely to just stop running tests altogether (both unit tests and integration tests). 
+- Avoid running integration tests in parallel with unit tests.
+- If available, consult with the Test Plan and the QA manager.
+- Each test should be focused on a specific test scenario. Make sure to document the test, explaining the scenario, and what parts are integrated.
+- Mock only components which are not relevant for the test.
+- It's preferred to automate integration tests, but also manual tests are ok, just document well the testing process and the prerequisites. 
+
+Resources
+
+- https://en.wikipedia.org/wiki/Integration_testing
+- https://www.guru99.com/integration-testing.html
+- https://martinfowler.com/bliki/IntegrationTest.html
+- https://techbeacon.com/6-best-practices-integration-testing-ci-environment
+  
