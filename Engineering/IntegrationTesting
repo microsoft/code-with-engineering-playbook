@@ -21,7 +21,7 @@ If -
 
 …then it is an integration test and not a unit test.
 
-Writing Tests
+## Writing Tests
 
 - Integration tests should make use of extensive logging. Integration tests scope may span several software modules, not to mention different devices and hardware components, in any functional flow. As a result, if an integration test fails, it may be much more complex to identify the cause.
 - A developer should try to avoid a "Big Bang" approach where all or most of the units are combined together and tested at one go. Try to prefer a top-down to bottom-up approaches depends on your system design. 
