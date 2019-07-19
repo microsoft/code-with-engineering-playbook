@@ -15,7 +15,7 @@ Integration testing does not happen at the end of the development cycle, but rat
 If a test tests separately developed modules that interact with each other, such as:
 
 1. a test that makes database calls
-2. a test uses the network
+2. a test that makes network calls
 3. a test uses an external system (e.g. a queue or a mail server)
 4. a test reads/writes files or performs other I/O
 
