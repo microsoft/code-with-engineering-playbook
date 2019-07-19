@@ -4,7 +4,7 @@ Goals
 
 Integration testing (sometimes called integration and testing, abbreviated I&T) is the phase in software testing in which individual software modules are combined and tested as a group. It occurs after unit testing and before validation testing. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan (during ADS) to those aggregates, and delivers as its output the integrated system ready for system testing. 
 
-Evidence and Measures
+## Evidence and Measures
 
 Integration tests should run in a different build pipeline because it takes them long time to complete, and require real resources to be used (e.g. databases). Usually they can run during the nightly builds, or manually upon request.
 
