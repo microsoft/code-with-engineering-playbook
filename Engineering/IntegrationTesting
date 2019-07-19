@@ -10,7 +10,7 @@ Integration tests should run in a different build pipeline because it takes them
 
 ## General Guidance
 
-Integration testing does not happen at the end of the development cycle, but rather it is conducted simultaneously during the development process. So in most of the times, all the modules are not actually available to test and here is what the challenge comes to test something which does not exist!
+Integration testing does not happen at the end of the development cycle, but rather it is conducted simultaneously during the development process. So in most of the times, all the modules are not actually available to test, which poses a challenge: testing something which does not exist!
 
 If a test tests separately developed modules that interact with each other, such as:
 
