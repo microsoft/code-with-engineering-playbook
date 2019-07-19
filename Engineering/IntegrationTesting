@@ -34,7 +34,7 @@ If a test tests separately developed modules that interact with each other, such
 - Mock only components which are not relevant for the test.
 - It's preferred to automate integration tests, but also manual tests are ok, just document well the testing process and the prerequisites. 
 
-Resources
+## Resources
 
 - https://en.wikipedia.org/wiki/Integration_testing
 - https://www.guru99.com/integration-testing.html
