@@ -32,7 +32,7 @@ If a test tests separately developed modules that interact with each other, such
 - If available, consult with the Test Plan and the QA manager.
 - Each test should be focused on a specific test scenario. Make sure to document the test, explaining the scenario, and what parts are integrated.
 - Mock only components which are not relevant for the test.
-- It's preferred to automate integration tests, but also manual tests are ok, just document well the testing process and the prerequisites. 
+- While it is preferred to automate integration tests, manual tests are also acceptable. Be sure to document the process and prerequisites thoroughly.
 
 ## Resources
 
