@@ -6,11 +6,11 @@
 - Provide guidance on criteria to determine if story can be estimated (see [definition of ready](../../team-agreements/definition-of-ready/readme.md))
     - Examples of well defined acceptance criteria
     - Can the story be tested as written
-    - Can it be completed within a sprint
     - Is it dependent on other stories
 - Provide guidance on managing timeline for grooming
   - time boxing story AC discussions
 - Provide guidance on estimate negotiation and how to resolve conflicts
+- How far out in advance should we groom stories? When to stop grooming?
 
 ## Goals
 

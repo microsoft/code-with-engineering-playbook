@@ -1,5 +1,7 @@
 # Scrum of Scrums
 
+For those that may be unfamiliar (until the content below is completed)... [Scrum of Scrums](https://www.agilealliance.org/glossary/scrum-of-scrums)
+
 ## Goals
 
 What are the intended outcomes of the ceremonies?

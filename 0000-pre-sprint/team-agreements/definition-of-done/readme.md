@@ -2,7 +2,7 @@
 
 ## Content TODO's
 
-- Solidify reccomended checklist as opposed to providing example (see [cobalt](https://github.com/microsoft/cobalt/wiki/Definition-of-Done) definition of done)
+- Solidify recommended checklist as opposed to providing example (see [cobalt](https://github.com/microsoft/cobalt/wiki/Definition-of-Done) definition of done)
 
 Software Engineering is not just implementing functionality and writing code, but also other associated tasks and activities to ensure all requirements are fulfilled when you finished your work. This is closely relevant to `done-done` term, which stands for a simple list of activities like writing code/unit tests/release notes/design docs and so on that adds verifiable/demonstrable value to the product.
 

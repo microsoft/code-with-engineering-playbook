@@ -7,7 +7,7 @@ An engineer working for a [CSE](./CSE.md) project...
 * Leads by example. Models the behaviors we desire both interpersonally and technically (this is what most people think of as a "developer").
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 
-This is the playbook. You are invited to contribute via standard git pull requests to GitHub.
+This is the playbook. You are invited to contribute by submitting a pull request.
 
 ## Outline
 
@@ -23,7 +23,10 @@ The proposed outline is intended to accomplish the following goals
 
 ### Working Heirarchy
 
-The working heirarchy is rooted in CSE's one week sprint cycle. Each section within then allows for deep dive information, recipes, and use cases.
+The working heirarchy is rooted in CSE's one week sprint cycle, though the ordering and general guidance should still easily apply to sprint cycles of any reasonable length. Each section within then allows for deep dive information, recipes, and use cases.
+
+
+
 
 - [Project Start](0000-pre-sprint)
   - [Team Agreements](0000-pre-sprint/team-agreements)
@@ -33,8 +36,6 @@ The working heirarchy is rooted in CSE's one week sprint cycle. Each section wit
     - [Estimation ](0000-pre-sprint/team-agreements/estimation)
   - [Repository organization strategies (How many repositories? How should I decide?)](0000-pre-sprint/source-control-repositories)
     - Setting up a new repository (readme, license, ignores, etc)
-      - Recipe for ADO
-      - Recipe for GitHub
   - [Versioning (extend)](0000-pre-sprint/versioning)
     - Recipe for implementing Semantic Versioning
       - ADO Pipelines
@@ -165,3 +166,9 @@ The following illustrates how the directory structure could be organized.
     - /case-studies
         - contoso-ci-pipeline-for-terraform.md
 ```
+
+### Assumptions
+
+This workflow makes the following assumptions about the development environment
+
+* Team is using git for version control.

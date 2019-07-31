@@ -6,8 +6,6 @@
 - Determining team capacity
 - Tasking sprint stories
   - size of tasks
-  - hour estimates
-  - updating todo hours
 - WIP limits / dividing up into workstreams
 
 ## Goals
