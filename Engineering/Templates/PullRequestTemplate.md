@@ -2,7 +2,7 @@ Thank you for contributing.
 Before submitting this PR, please make sure:
 
 -------------------------------------
-* [ ] Have I followed the guidelines in Contributing as Developers?
+* [ ] I have followed the guidelines in [Contributing as Developers](https://github.com/microsoft/code-with-engineering-playbook/blob/master/CONTRIBUTING.md)
 * [ ] Have I added an explanation of what my changes do and why I would like you to include them?
 * [ ] I have updated the documentation accordingly.
 * [ ] I have added tests to cover my changes.
