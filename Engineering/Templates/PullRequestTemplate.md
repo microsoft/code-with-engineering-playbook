@@ -9,7 +9,7 @@ Before submitting this PR, please make sure:
 * [ ] All new and existing tests passed.
 * [ ] My code follows the code style of this project.
 * [ ] I ran lint checks locally prior to submission.
-* [ ] Have I checked to ensure there aren't other open Pull Requests for the same update/change?
+* [ ] I have checked to ensure there aren't other open Pull Requests for the same update/change
 * [ ] Does this introduce a breaking change?
 
 ## Link to the design document that prompted this PR?
