@@ -14,7 +14,7 @@ Before submitting this PR, please make sure:
 
 ## Link to the design document that prompted this PR?
 -------------------------------------
-<!-- Please provide a ink to the design document relevant to this area -->
+<!-- Please provide a link to the design document relevant to this area -->
 
 Link to Design Document: 
 
