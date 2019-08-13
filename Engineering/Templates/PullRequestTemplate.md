@@ -2,19 +2,19 @@ Thank you for contributing.
 Before submitting this PR, please make sure:
 
 -------------------------------------
-* [ ] Have I followed the guidelines in Contributing as Developers?
-* [ ] Have I added an explanation of what my changes do and why I would like you to include them?
+* [ ] I have followed the guidelines in [Contributing as Developers](https://github.com/microsoft/code-with-engineering-playbook/blob/master/CONTRIBUTING.md).
+* [ ] I have added an explanation of what my changes do and why I would like you to include them.
 * [ ] I have updated the documentation accordingly.
 * [ ] I have added tests to cover my changes.
 * [ ] All new and existing tests passed.
 * [ ] My code follows the code style of this project.
 * [ ] I ran lint checks locally prior to submission.
-* [ ] Have I checked to ensure there aren't other open Pull Requests for the same update/change?
-* [ ] Does this introduce a breaking change?
+* [ ] I have checked to ensure there aren't other open Pull Requests for the same update/change.
+* [ ] This does not introduce a breaking change.
 
 ## Link to the design document that prompted this PR?
 -------------------------------------
-<!-- Please provide a ink to the design document relevant to this area -->
+<!-- Please provide a link to the design document relevant to this area. -->
 
 Link to Design Document: 
 
@@ -36,7 +36,7 @@ Issue Number: N/A
 
 ## Any relevant logs, error output, etc?
 -------------------------------------
-If it’s long, please upload to (StorageAccount)/pr-support/attachments/(PR Number)/(yourFiles) using (Azure Storage Explorer or portal.azure.com) and insert the link here.
+If it’s long, please upload to (StorageAccount)/pr-support/attachments/(PR Number)/(yourFiles) using [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) or [portal.azure.com](portal.azure.com) and insert the link here.
 
 
 ## Other information or known dependencies
