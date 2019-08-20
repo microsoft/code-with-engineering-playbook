@@ -70,7 +70,7 @@ The working heirarchy is rooted in CSE's one week sprint cycle, though the order
       - Recipes for ADO
   - Scrum of Scrums
     - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
-  - Daily Standups
+  - [Daily Standups](0020-day-two/standups)
     - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
       - What should be in my standup update
     - Recipes
