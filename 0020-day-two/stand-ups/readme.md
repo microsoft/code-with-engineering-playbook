@@ -6,7 +6,7 @@ The stand-up is a ceremony that is held each day of the sprint. In this ceremony
 2. What are you working on today?
 3. Do you have any impediments/blockers?
 
-After that point, the stand-up is concluded. There may be a parking lot discussion after. However, participation for the parking lot discussion is optional for those not needed to answer questions.
+After that point, the stand-up is concluded. There may be a parking lot discussion after. However, participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
 
 The term parking lot refers to a bucket of comments, concerns, or questions that will be discussed and/or addressed at a later point with potentially fewer contributors. This is part of a strategy to avoid letting the discussion in a meeting shift to a subject that is not aligned with the meeting goals and/or decisions.
 
@@ -35,7 +35,7 @@ Both stand-up length and time to start are important as the stand-up has to be s
 
 ### Stand-up Length
 
-While the length can depend on the team size, if everyone is sticking to one line answers to the 3 key questions, it should fairly easy to complete within 5-10mins.
+While the length can depend on the team size, if everyone is sticking to one line answers to the 3 key questions, it should be fairly easy to conclude within 5-10mins.
 
 - 1-5 min = Excellent
 - 5-10 min = Great
@@ -44,7 +44,7 @@ While the length can depend on the team size, if everyone is sticking to one lin
 
 ### Time to Start
 
-How long after the scheduled start time, did contributors begin providing updates?
+How long after the scheduled start time did contributors begin providing updates?
 
 - 0-1 min = Excellent
 - 1-3 min = Great
@@ -78,7 +78,7 @@ If a contributor is not working on an existing sprint task they need to either c
 
 As contributors are answering the three questions, if another contributor has a question or issue to share, they should reserve until after all contributors have answered finished. Once each member has answered all three questions, the scrum master should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
 
-**Parking lot discussions are optional** for those not needed to answer a question. Those not needed to answer a parking lot question can leave the meeting once all contributors have answered the 3 questions.
+**Parking lot discussions are optional for participants**. Ensure discussion leaders call out necessary parties for their discussion points upfront, allowing those not needed to leave the meeting.
 
 ### Start On Time
 
