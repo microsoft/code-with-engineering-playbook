@@ -61,13 +61,9 @@ How many tasks are being generated after the stand-up that didn't exist before? 
 
 The scrum master should facilitate the stand-up meeting.
 
-### Answer 3 Simple Questions
-
-Each contributor should only answer the following 3 questions in 1 sentence or less:
-
 ### Speak to Tasks
 
-When answering what was worked on and what will be worked on, refer directly to tasks. This has two benefits
+When answering what was worked on and what will be worked on, refer directly to tasks. This has two benefits:
 
 1. The answer will naturally be short (e.g. "I finished task 114 yesterday; which was to update the build of the api container image. I will be starting on task 115 today; which is to update the release pipeline for the same container image.").
 2. Unplanned work will be easily identifiable. If the person is unable to refer to a task, that typically indicates they are working on something unplanned or out of scope for the sprint (e.g. Yesterday, I was attempting to optimize some of the unit tests from last sprint to run faster).
