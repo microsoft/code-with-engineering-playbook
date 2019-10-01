@@ -28,7 +28,7 @@ Each section consist of the following parts
    1. Tool specific implementations of the concept
    2. Named patterns or games that implement the concept (usually applies to agile cermonies)
 4. Case Studies
-   1. Specific project examples how teams implemented the concept
+   1. Examples that illustrate how a team implemented the concept
    2. What problem was the team try to solve with their implementation?
    3. What worked well?
    4. Opportunities for improvement
