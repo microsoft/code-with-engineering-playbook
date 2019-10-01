@@ -4,26 +4,26 @@ An engineer working for a [CSE](./CSE.md) project...
 
 * Has responsibilities to their team – mentor, coach, and lead.
 * Knows their **playbook**. Follows their playbook. Fixes their playbook if it is broken. If they find a better playbook, they copy it. If somebody could use your playbook, give them yours.
-* Leads by example. Models the behaviors we desire both interpersonally and technically (this is what most people think of as a "developer").
+* Leads by example. Models the behaviors we desire both interpersonally and technically.
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 
 This is the playbook. You are invited to contribute by submitting a pull request.
 
 ## Outline
 
-The following outlines each section and what content would be included within each section.
+The following outlines each section and what content should be included within each section.
 
 ### Goals
 
 The proposed outline is intended to accomplish the following goals
 
-1. Author as idea-to-delivery value stream narrative from an engineering perspective.
-2. Organize for quick reference and discoverability.
-3. Extensible heirarchy to allow teams to share deep subject matter expertise.
+1. Organize for quick reference and discoverability.
+2. Author as idea-to-delivery value stream narrative from an engineering perspective.
+3. Extensible hierarchy to allow teams to share deep subject matter expertise.
 
-### Working Heirarchy
+### Working Hierarchy
 
-The working heirarchy is rooted in CSE's one week sprint cycle, though the ordering and general guidance should still easily apply to sprint cycles of any reasonable length. Each section within then allows for deep dive information, recipes, and use cases.
+The working hierarchy is rooted in CSE's one week sprint cycle, though the ordering and general guidance should still easily apply to sprint cycles of any reasonable length. Each section within then allows for deep dive information, recipes, and use cases.
 
 
 
@@ -127,14 +127,14 @@ The working heirarchy is rooted in CSE's one week sprint cycle, though the order
 
 ### Structure/Pattern
 
-At a conceptual level each section consist of the following parts
+Each section consist of the following parts
 
 1. Conceptual Overview
    1. Explain why this will positively impact the project
    2. What are potential consequences of not using this in my project?
    3. Describe how the concept works
 2. Double-Click
-   1. Dive into specific areas of whats described in the conceptual overview (i.e Grooming > Estimation > establish baseline estimates)
+   1. Dive into specific areas of what is described in the conceptual overview (i.e Grooming > Estimation > establish baseline estimates)
 3. Recipes
    1. Tool specific implementations of the concept
    2. Named patterns or games that implement the concept (usually applies to agile cermonies)
@@ -145,7 +145,7 @@ At a conceptual level each section consist of the following parts
    4. Opportunities for improvement
    5. External Reference Material (???)
 
-### Example Directory Heirarchy
+### Example Directory Hierarchy
 
 The following illustrates how the directory structure could be organized.
 
