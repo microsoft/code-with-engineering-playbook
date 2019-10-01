@@ -11,22 +11,19 @@ This our playbook. All contributions welcome! Please feel free to submit a pull 
 
 ## Outline
 
-The following outlines each section and what content should be included within each section.
+The following outlines each section and its contents.
 
 ### Goals
 
 The proposed outline is intended to accomplish the following goals
 
 1. Organize for quick reference and discoverability.
-2. Author as idea-to-delivery value stream narrative from an engineering perspective.
+2. Define content with a logical structure which reflects the engineering process (our Agile Lifecycle below).
 3. Extensible hierarchy to allow teams to share deep subject matter expertise.
 
-### Working Hierarchy
+### Agile Lifecycle
 
-The working hierarchy is rooted in CSE's one week sprint cycle, though the ordering and general guidance should still easily apply to sprint cycles of any reasonable length. Each section within then allows for deep dive information, recipes, and use cases.
-
-
-
+Our Agile Lifecycle is rooted in CSE's one week sprint cycle, though the ordering and general guidance should still easily apply to sprint cycles of any reasonable length. Each section within then allows for deep dive information, recipes, and use cases.
 
 - [Project Start](0000-pre-sprint)
   - [Team Agreements](0000-pre-sprint/team-agreements)
