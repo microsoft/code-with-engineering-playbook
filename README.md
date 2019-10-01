@@ -7,7 +7,7 @@ An engineer working for a [CSE](./CSE.md) project...
 * Leads by example. Models the behaviors we desire both interpersonally and technically.
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 
-This is the playbook. You are invited to contribute by submitting a pull request.
+This our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
 
 ## Outline
 
