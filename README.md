@@ -127,3 +127,6 @@ Our Agile Lifecycle is rooted in CSE's one week sprint cycle, though the orderin
 This workflow makes the following assumptions about the development environment
 
 * Team is using git for version control.
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
