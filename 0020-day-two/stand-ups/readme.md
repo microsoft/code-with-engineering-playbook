@@ -4,7 +4,7 @@ The stand-up is a ceremony that is held each day of the sprint. In this ceremony
 
 1. What did you work on yesterday?
 2. What are you working on today?
-3. Do you have any impediments/blockers?
+3. Do you have any impediments/blockers? (defer discussion / resolution to "the parking lot", described below)
 
 After that point, the stand-up is concluded. There may be a parking lot discussion after. However, participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
 
