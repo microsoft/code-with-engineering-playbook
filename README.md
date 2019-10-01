@@ -125,48 +125,6 @@ The working hierarchy is rooted in CSE's one week sprint cycle, though the order
     - Estimation
       - Resolving estimation conflicts (two people are sizing differently))
 
-### Structure/Pattern
-
-Each section consist of the following parts
-
-1. Conceptual Overview
-   1. Explain why this will positively impact the project
-   2. What are potential consequences of not using this in my project?
-   3. Describe how the concept works
-2. Double-Click
-   1. Dive into specific areas of what is described in the conceptual overview (i.e Grooming > Estimation > establish baseline estimates)
-3. Recipes
-   1. Tool specific implementations of the concept
-   2. Named patterns or games that implement the concept (usually applies to agile cermonies)
-4. Case Studies
-   1. Specific project examples how teams implemented the concept
-   2. What problem was the team try to solve with their implementation?
-   3. What worked well?
-   4. Opportunities for improvement
-   5. External Reference Material (???)
-
-### Example Directory Hierarchy
-
-The following illustrates how the directory structure could be organized.
-
-```
-- /continuous-integration
-    - README.md (Conceptual)
-    - /e2e-testing-in-ci
-        - README.md
-    - /static-code-analysis
-        - README.md
-    - /recipes
-        - /azure-devops
-            - versioning-ci-builds-in-azure-devops.md
-            - sonar-qube-integration.md
-            - ci-pipeline-for-dotnet-core.md
-            - ci-pipeline-for-python.md
-        - /jenkins
-    - /case-studies
-        - contoso-ci-pipeline-for-terraform.md
-```
-
 ### Assumptions
 
 This workflow makes the following assumptions about the development environment
