@@ -1,6 +1,6 @@
 # Scrum of Scrums
 
-For those that may be unfamiliar (until the content below is completed)... [Scrum of Scrums](https://www.agilealliance.org/glossary/scrum-of-scrums)
+] This content is under construction. For now, for those who are unfamiliar: [Scrum of Scrums](https://www.agilealliance.org/glossary/scrum-of-scrums)
 
 ## Goals
 
