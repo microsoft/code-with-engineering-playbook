@@ -18,12 +18,12 @@ The following outlines each section and its contents.
 The proposed outline is intended to accomplish the following goals
 
 1. Organize for quick reference and discoverability.
-2. Define content with a logical structure which reflects the engineering process (our Agile Lifecycle below).
+2. Define content with a logical structure which reflects the engineering process.
 3. Extensible hierarchy to allow teams to share deep subject matter expertise.
 
-### Agile Lifecycle
+### Organization
 
-Our Agile Lifecycle is rooted in CSE's one week sprint cycle, though the ordering and general guidance should still easily apply to sprint cycles of any reasonable length. Each section within then allows for deep dive information, recipes, and use cases.
+The topics of this repository are organized (and indexed below) by the typical ordering in which they first become applicable within an Agile sprint. This approach has been taken in an effort to enhance topic relevance and discoverability.
 
 - [Project Start](0000-pre-sprint)
   - [Team Agreements](0000-pre-sprint/team-agreements)
