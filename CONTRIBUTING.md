@@ -12,9 +12,9 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Adding a new section
+#Adding a new section
 
-### Structure/Pattern
+##Structure/Pattern
 
 Each section consist of the following parts
 
@@ -32,9 +32,9 @@ Each section consist of the following parts
    2. What problem was the team try to solve with their implementation?
    3. What worked well?
    4. Opportunities for improvement
-   5. External Reference Material (???)
+   5. External Reference Material
 
-### Example Directory Hierarchy
+## Example Directory Hierarchy
 
 The following illustrates how the directory structure could be organized.
 

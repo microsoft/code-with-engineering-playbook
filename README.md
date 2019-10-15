@@ -9,124 +9,38 @@ An engineer working for a [CSE](./CSE.md) project...
 
 This our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
 
-## Outline
+## Why Have A Playbook
+* To increase overall efficiency for team members and the whole team in general.
+* Reduce the number of mistakes and avoid common pitfalls.
+* Strive to be a better engineer and learn from other people's shared experience.
 
-The following outlines each section and its contents.
+## "The" Checklist
+If you do nothing else follow the [Tech Lead's Checklist](0000-pre-sprint/team-agreements/readme.md)! It's here to help follow the Engineering Fundamentals. 
 
-### Goals
+## Structure of a Sprint
+A [breakdown of sections](STRUCTURE.md) according to the structure of an Agile sprint. 
 
-The proposed outline is intended to accomplish the following goals
+## General Guidance
 
-1. Organize for quick reference and discoverability.
-2. Define content with a logical structure which reflects the engineering process.
-3. Extensible hierarchy to allow teams to share deep subject matter expertise.
+* Keep the code quality bar high. 
+* Value quality and precision over ‘getting things done’.
+* Work diligently on the one important thing.
+* As a distributed team take time to share context via wiki, teams and backlog items.
+* Make the simple thing work now. Build fewer features today, but ensure they work amazingly. Then add more features tomorrow.
+* Avoid adding scope to a backlog item, instead add a new backlog item.
+* Our goal is to ship incremental customer value.
+* Keep backlog item details up to date to communicate the state of things with the rest of your team.
+* Report product issues found and provide feedback!
+* We all own our code and each one of us has an obligation to make all parts of the solution great.
 
-### Organization
-
-The topics of this repository are organized (and indexed below) by the typical ordering in which they first become applicable within an Agile sprint. This approach has been taken in an effort to enhance topic relevance and discoverability.
-
-- [Project Start](0000-pre-sprint)
-  - [Team Agreements](0000-pre-sprint/team-agreements)
-    - [Working Agreements](0000-pre-sprint/team-agreements/working-agreements)
-    - [Definition of Ready](0000-pre-sprint/team-agreements/definition-of-ready)
-    - [Definition of Done](0000-pre-sprint/team-agreements/definition-of-done)
-    - [Estimation ](0000-pre-sprint/team-agreements/estimation)
-  - [Repository organization strategies (How many repositories? How should I decide?)](0000-pre-sprint/source-control-repositories)
-    - Setting up a new repository (readme, license, ignores, etc)
-  - [Versioning (extend)](0000-pre-sprint/versioning)
-    - Recipe for implementing Semantic Versioning
-      - ADO Pipelines
-      - Jenkins
-  - [Building a Product Backlog](0000-pre-sprint/product-backlog)
-    - Guide to creating stories
-      - INVEST
-      - User story and acceptance criteria examples
-      - Defining stories for ML
-    - Recipes
-      - Managing product backlog in ADO
-- [Day 1](0010-day-one)
-  - [Sprint Planning](0010-day-one/sprint-planning)
-    - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
-    - Capacity Planning
-    - Tasking
-    - Dividing work WIP Limits
-  - [Test-First Development](0010-day-one/test-first-development)
-    - Conceptual (Purpose, Goals, Impact, and Measures)
-    - Developing Test Cases
-    - [Unit Testing](0010-day-one/test-first-development/unit-testing)
-      - Conceptual (Purpose, Goals, Impact, and Measures)
-    - Load Testing
-  - [Feature Branching (creating branch for new story)](0010-day-one/feature-branching)
-- Day 2
-  - Commit best practices (move some existing content here)
-    - Link work items
-    - How often to commit
-    - When to push
-  - Continuous Integration (extend)
-    - Conceptual (Purpose, Goals, Impact, and Measures)
-      - Recipes for ADO
-  - Scrum of Scrums
-    - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
-  - [Daily Standups](0020-day-two/standups)
-    - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
-      - What should be in my standup update
-    - Recipes
-      - How to run efficient standups for remote teams
-- Day 3
-  - Pull Requests (separate from code reviews)
-    - Conceptual requirements for pull request (it should build, have 1 reviewer, linked work item, build changes)
-      - Add emphasis on importance of protecting master, effect this has on crew efficiency
-    - Recipe for Setup in
-      - Azure DevOps
-      - GitHub
-    - Code Reviews
-      - Conceptual
-        - Add to checklist (breaking changes & backward compatibility, security, fault tolerance, etc)
-  - Code Merging
-    - prescribe strategy (i.e. squash /w or w/o rebase)
-- Day 4
-  - Continuous Deployment (extend, much more explanation needed)
-    - Conceptual, Purpose, Goals, Impact and Measures
-      - Which environments (ci, test, stage)? For each environment...
-        - Conceptually whats is the purpose for each env
-        - When should deployment trigger
-        - Pre-deployment approvers
-        - Sign off for promotion
-    - Recipies for Setting up CD Pipelines
-      - ADO
-  - Asserting Test Cases and Automation
-- Day 5
-  - Sprint Demo
-  - Retrospectives
-    - Conceptual
-      - Inputs (Requirements to have ready before meeting)
-      - Participants required
-      - Outputs (Decsions, actions to conclude meeting)
-    - Guide for retrospective facilitator
-      - Timeline for 1 hour retro
-      - Tips for sticking to time
-      - Voting for action items
-    - Recipes
-      - Remote retros using ADO Retrospectives
-      - Remote retros using Retrium
-  - Grooming
-    - Conceptual
-      - Inputs (Requirements to have ready before meeting)
-      - Participants required
-      - Outputs (Decsions, actions to conclude meeting)
-    - Definition of ready for stories
-      - Examples of well defined acceptance criteria
-      - Can the story be tested as written
-      - Can it be completed within a sprint
-      - Is it dependent on other stories
-    - Estimation
-      - Resolving estimation conflicts (two people are sizing differently))
-
-### Assumptions
-
-This workflow makes the following assumptions about the development environment
-
-* Team is using git for version control.
+## QuickLinks
+* [Tech Lead's Checklist](0000-pre-sprint/team-agreements/readme.md)
+* [Structure of a Sprint](STRUCTURE.md)
+* [Source Control](source-control-repositories/readme.md)
+* [Unit Testing](0010-day-one/test-first-development/unit-testing/readme.md)
+* [CI](0020-day-two/continuous-integration/readme.md)
+* [CD](0040-day-four/continuous-deployment/readme.md)
+* [Code Reviews](0030-day-three/pull-requests/code-reviews/readme.md)
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
