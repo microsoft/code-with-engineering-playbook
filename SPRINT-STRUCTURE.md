@@ -45,10 +45,9 @@ This layout structures the playbook content to make it easy day to day to find r
     - Load Testing
   - [Feature Branching (creating branch for new story)](source-control/feature-branching/readme.md)
 - Day 2
-  - Commit best practices (move some existing content here)
-    - Link work items
-    - How often to commit
-    - When to push
+  - [Source Control](source-control/readme.md) 
+    - Commit best practices
+    - [Git guide](source-control/git.md)
   - [Continuous Integration](continuous-integration/readme.md)
     - Conceptual (Purpose, Goals, Impact, and Measures)
       - Recipes for ADO

@@ -21,6 +21,13 @@ Consistency is important, so agree to the approach as a team before starting to 
 * for public repositories:
   * default branch contains the [LICENSE](../resources/templates/LICENSE), [README.md](../resources/templates/README.md) and [CONTRIBUTING.md](../resources/templates/CONTRIBUTING.md) file
 
+## Commit Best Practices
+TODO: Add more content and details here! 
+* Link work items
+* How often to commit
+* When to push
+
+
 ## Resources
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
 * [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/)
