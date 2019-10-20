@@ -1,9 +1,15 @@
-# Grooming
+# Backlog Grooming
+
+Grooming can also be called "Backlog Refinement".
+
+## Sections within Backlog Grooming
+* [Estimation](estimation/readme.md)
+* [Minimal Slices](minimal-slices.md)
 
 ## Content TODO's
 
 - Complete outline below
-- Provide guidance on criteria to determine if story can be estimated (see [definition of ready](../TECH_LEADS_CHECKLIST.md/definition-of-ready/readme.md))
+- Provide guidance on criteria to determine if story can be estimated (see [definition of ready](../team-agreements/definition-of-ready/readme.md**))
     - Examples of well defined acceptance criteria
     - Can the story be tested as written
     - Is it dependent on other stories
@@ -31,3 +37,6 @@ How might one measure the impact of this ceremony positive or negative?
 ## Facilitation Guidance
 
 How might one go about running the ceremony? Is there a general pattern that the ceremony should follow?
+
+## Useful Links
+* Always try and delivery in [Minimal Slices](minimal-slices.md)

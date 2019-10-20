@@ -1,4 +1,4 @@
-# Team Estimation Agreements
+# Estimation
 
 ## Content TODO's
 

@@ -17,10 +17,10 @@ This layout structures the playbook content to make it easy day to day to find r
     - [Working Agreements](team-agreements/working-agreements/readme.md)
     - [Definition of Ready](team-agreements/definition-of-ready/readme.md)
     - [Definition of Done](team-agreements/definition-of-done/readme.md)
-    - [Estimation ](team-agreements/estimation/readme.md)
-  - [Repository organization strategies (How many repositories? How should I decide?)](source-control-repositories/readme.md)
+    - [Estimation ](backlog-grooming/estimation/readme.md)
+  - [Repository organization strategies (How many repositories? How should I decide?)](source-control/readme.md)
     - Setting up a new repository (readme, license, ignores, etc)
-  - [Versioning (extend)](versioning/readme.md)
+  - [Versioning (extend)](source-control/versioning/readme.md)
     - Recipe for implementing Semantic Versioning
       - ADO Pipelines
       - Jenkins
@@ -43,7 +43,7 @@ This layout structures the playbook content to make it easy day to day to find r
     - [Unit Testing](test-first-development/unit-testing/readme.md)
       - Conceptual (Purpose, Goals, Impact, and Measures)
     - Load Testing
-  - [Feature Branching (creating branch for new story)](feature-branching/readme.md)
+  - [Feature Branching (creating branch for new story)](source-control/feature-branching/readme.md)
 - Day 2
   - Commit best practices (move some existing content here)
     - Link work items

@@ -116,7 +116,7 @@ Let's use the following naming conventions for branches:
  * release branches: `release/release_name`
 
 ## Release Strategy/Versioning
-Please see [versioning](../../versioning/readme.md).
+Please see [versioning](../versioning/readme.md).
 
 ## Working with secrets (such as storage keys)
 The best way to avoid leaking secrets is to store them in local/private files which will be excluded from being tracked in git. This is done by configuring the [.gitignore](https://git-scm.com/docs/gitignore) file.
