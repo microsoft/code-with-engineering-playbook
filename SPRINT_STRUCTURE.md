@@ -12,15 +12,15 @@ This index structure is intended to accomplish the following goals
 
 This layout structures the playbook content to make it easy day to day to find relevant resources during an Agile sprint. 
 
-- [Project Start](0000-pre-sprint)
-  - [Team Agreements](0000-pre-sprint/team-agreements)
-    - [Working Agreements](0000-pre-sprint/team-agreements/working-agreements)
-    - [Definition of Ready](0000-pre-sprint/team-agreements/definition-of-ready)
-    - [Definition of Done](0000-pre-sprint/team-agreements/definition-of-done)
-    - [Estimation ](0000-pre-sprint/team-agreements/estimation)
-  - [Repository organization strategies (How many repositories? How should I decide?)](0000-pre-sprint/source-control-repositories)
+- Project Start
+  - [Team Agreements](team-agreements)
+    - [Working Agreements](team-agreements/working-agreements)
+    - [Definition of Ready](team-agreements/definition-of-ready)
+    - [Definition of Done](team-agreements/definition-of-done)
+    - [Estimation ](team-agreements/estimation)
+  - [Repository organization strategies (How many repositories? How should I decide?)](source-control-repositories)
     - Setting up a new repository (readme, license, ignores, etc)
-  - [Versioning (extend)](0000-pre-sprint/versioning)
+  - [Versioning (extend)](versioning)
     - Recipe for implementing Semantic Versioning
       - ADO Pipelines
       - Jenkins
@@ -32,18 +32,18 @@ This layout structures the playbook content to make it easy day to day to find r
     - Recipes
       - Managing product backlog in ADO
 - [Day 1](0010-day-one)
-  - [Sprint Planning](0010-day-one/sprint-planning)
+  - [Sprint Planning](sprint-planning)
     - Purpose, Goals, Participants, Facilitation Guidance, Impact, and Measures
     - Capacity Planning
     - Tasking
     - Dividing work WIP Limits
-  - [Test-First Development](0010-day-one/test-first-development)
+  - [Test-First Development](test-first-development)
     - Conceptual (Purpose, Goals, Impact, and Measures)
     - Developing Test Cases
-    - [Unit Testing](0010-day-one/test-first-development/unit-testing)
+    - [Unit Testing](test-first-development/unit-testing)
       - Conceptual (Purpose, Goals, Impact, and Measures)
     - Load Testing
-  - [Feature Branching (creating branch for new story)](0010-day-one/feature-branching)
+  - [Feature Branching (creating branch for new story)](feature-branching)
 - Day 2
   - Commit best practices (move some existing content here)
     - Link work items

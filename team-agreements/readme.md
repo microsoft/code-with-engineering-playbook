@@ -8,7 +8,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] PRs reference related work items. 
 - [ ] Commit history is consistent and commit messages are informative (what, why).
 - [ ] Secrets are not part of the commit history or made public. 
-- [ ] Public repositories follow the [OSS guidelines](../../0000-pre-sprint/source-control-repositories/recipes/git.md#Required files in default branch for public repositories).
+- [ ] Public repositories follow the [OSS guidelines](../source-control-repositories/recipes/git.md#Required files in default branch for public repositories).
 
 More details on [Source Control](../source-control-repositories/readme.md)
 
@@ -20,7 +20,7 @@ More details on [Source Control](../source-control-repositories/readme.md)
 - [ ] Unit tests cover the majority of all components (>90% if possible). 
 - [ ] Integration tests run to test the solution e2e. 
 
-More details on [Unit Testing](../../0010-day-one/test-first-development/unit-testing/readme.md)
+More details on [Unit Testing](../test-first-development/unit-testing/readme.md)
 
 ## CI/CD
 - [ ] Project runs CI with automated build and test on each PR. 
@@ -28,9 +28,10 @@ More details on [Unit Testing](../../0010-day-one/test-first-development/unit-te
 - [ ] Master is always shippable. 
 
 ## Security - TO DO! 
-- [ ] Robust treatment of secrets. 
-- [ ]  
-- [ ] 
+- [ ] Access control. 
+- [ ] Separation of concerns. 
+- [ ] Robust treatment of secrets.
+- [ ] Encryption for data in transit (and if necessary at rest) and password hashing.
 
 ## Observability - TO DO! 
 - [ ] Solution faults and errors are logged. 
@@ -58,7 +59,7 @@ More details on [Unit Testing](../../0010-day-one/test-first-development/unit-te
 - [ ] Linters, unit tests and successful builds for PR merges. 
 - [ ] Bug fixes suggest how to catch the bug in a code review within associated work item. And if possible link to original PR that introduced bug. 
 
-More details on [Code Reviews](../../0030-day-three/pull-requests/code-reviews/readme.md)
+More details on [Code Reviews](../pull-requests/code-reviews/readme.md)
 
 ## Retrospectives
 - [ ] Set time for retrospectives each week/at the end of each sprint. 
@@ -66,4 +67,4 @@ More details on [Code Reviews](../../0030-day-three/pull-requests/code-reviews/r
 - [ ] Experiments have owners and are added to project backlog. 
 - [ ] Longer retrospective for Milestones and project completion. 
 
-More details on [Retrospectives](../../0050-day-five/retrospectives/readme.md)
+More details on [Retrospectives](../retrospectives/readme.md)
