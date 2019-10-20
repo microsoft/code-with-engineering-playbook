@@ -15,10 +15,10 @@ This our playbook. All contributions welcome! Please feel free to submit a pull 
 * Strive to be a better engineer and learn from other people's shared experience.
 
 ## "The" Checklist
-If you do nothing else follow the [Tech Lead's Checklist](0000-pre-sprint/team-agreements/readme.md)! It's here to help follow the Engineering Fundamentals. 
+If you do nothing else follow the [Tech Lead's Checklist](team-agreements/readme.md)! It's here to help follow the Engineering Fundamentals. 
 
 ## Structure of a Sprint
-A [breakdown of sections](STRUCTURE.md) according to the structure of an Agile sprint. 
+A [breakdown of sections](SPRINT_STRUCTURE.md) according to the structure of an Agile sprint. 
 
 ## General Guidance
 
@@ -34,13 +34,13 @@ A [breakdown of sections](STRUCTURE.md) according to the structure of an Agile s
 * We all own our code and each one of us has an obligation to make all parts of the solution great.
 
 ## QuickLinks
-* [Tech Lead's Checklist](0000-pre-sprint/team-agreements/readme.md)
-* [Structure of a Sprint](STRUCTURE.md)
+* [Tech Lead's Checklist](team-agreements/readme.md)
+* [Structure of a Sprint](SPRINT_STRUCTURE.md)
 * [Source Control](source-control-repositories/readme.md)
-* [Unit Testing](0010-day-one/test-first-development/unit-testing/readme.md)
-* [CI](0020-day-two/continuous-integration/readme.md)
-* [CD](0040-day-four/continuous-deployment/readme.md)
-* [Code Reviews](0030-day-three/pull-requests/code-reviews/readme.md)
+* [Unit Testing](test-first-development/unit-testing/readme.md)
+* [CI](continuous-integration/readme.md)
+* [CD](continuous-deployment/readme.md)
+* [Code Reviews](pull-requests/code-reviews/readme.md)
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
