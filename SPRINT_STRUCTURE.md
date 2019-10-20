@@ -13,7 +13,7 @@ This index structure is intended to accomplish the following goals
 This layout structures the playbook content to make it easy day to day to find relevant resources during an Agile sprint. 
 
 - Project Start
-  - [Team Agreements](team-agreements/readme.md)
+  - [Team Agreements](TECH_LEADS_CHECKLIST.md)
     - [Working Agreements](team-agreements/working-agreements/readme.md)
     - [Definition of Ready](team-agreements/definition-of-ready/readme.md)
     - [Definition of Done](team-agreements/definition-of-done/readme.md)
