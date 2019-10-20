@@ -2,10 +2,6 @@
 
 Grooming can also be called "Backlog Refinement".
 
-## Sections within Backlog Grooming
-* [Estimation](estimation/readme.md)
-* [Minimal Slices](minimal-slices.md)
-
 ## Content TODO's
 
 - Complete outline below
@@ -39,4 +35,4 @@ How might one measure the impact of this ceremony positive or negative?
 How might one go about running the ceremony? Is there a general pattern that the ceremony should follow?
 
 ## Useful Links
-* Always try and delivery in [Minimal Slices](minimal-slices.md)
+* Always try and delivery in [Minimal Slices](../minimal-slices.md)
