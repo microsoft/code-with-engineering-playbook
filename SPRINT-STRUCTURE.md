@@ -13,18 +13,18 @@ This index structure is intended to accomplish the following goals
 This layout structures the playbook content to make it easy day to day to find relevant resources during an Agile sprint. 
 
 - Project Start
-  - [Team Agreements](TECH_LEADS_CHECKLIST.md)
+  - [Team Agreements](team-agreements/readme.md)
     - [Working Agreements](team-agreements/working-agreements/readme.md)
     - [Definition of Ready](team-agreements/definition-of-ready/readme.md)
     - [Definition of Done](team-agreements/definition-of-done/readme.md)
-    - [Estimation ](backlog-grooming/estimation/readme.md)
+    - [Estimation](sprint-planning/estimation/readme.md)
   - [Repository organization strategies (How many repositories? How should I decide?)](source-control/readme.md)
     - Setting up a new repository (readme, license, ignores, etc)
   - [Versioning (extend)](source-control/versioning/readme.md)
     - Recipe for implementing Semantic Versioning
       - ADO Pipelines
       - Jenkins
-  - [Building a Product Backlog](0000-pre-sprint/product-backlog)
+  - [Building a Product Backlog](backlog-management/readme.md)
     - Guide to creating stories
       - INVEST
       - User story and acceptance criteria examples
@@ -96,7 +96,7 @@ This layout structures the playbook content to make it easy day to day to find r
     - Recipes
       - Remote retros using ADO Retrospectives
       - Remote retros using Retrium
-  - Grooming
+  - [Grooming](backlog-management/grooming/readme.md)
     - Conceptual
       - Inputs (Requirements to have ready before meeting)
       - Participants required
@@ -106,7 +106,7 @@ This layout structures the playbook content to make it easy day to day to find r
       - Can the story be tested as written
       - Can it be completed within a sprint
       - Is it dependent on other stories
-    - Estimation
+    - [Estimation](sprint-planning/estimation/readme.md)
       - Resolving estimation conflicts (two people are sizing differently))
 
 ### Assumptions
