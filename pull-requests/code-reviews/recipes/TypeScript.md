@@ -84,7 +84,7 @@ You will then need to exclude YAML files from `Prettier` by adding a .prettierig
 
 ## Code Review Checklist
 
-In addition to the [general Code Review checklist](../CodeReviews.md), you should also look for these additional TypeScript related code review items:
+In addition to the [Code Review checklist](../readme.md), you should also look for these additional TypeScript related code review items:
 
 1.  [ ] Does the code stick to our formating and code standards? Does running prettier and TSLint over the code should yield no warnings or errors respectively?
 1.  [ ] Does the change reimplement code that would be better served by pulling in a well known module from the ecosystem?
