@@ -17,6 +17,7 @@ In a production system, assuming Azure, the secrets would be created in the envi
 the Azure CLI to do the same is a useful time-saving utility. See [here](https://docs.microsoft.com/en-us/cli/azure/webapp/config/appsettings?view=azure-cli-latest) for more details.
 
 *It is best practice to maintain separate secrets configurations for each separate environment that you run. e.g. dev, test, prod, local etc*
+When using a branch-based deployment strategy (e.g. 'master' deploys to production, 'development' deploys to staging, and so forth), a simple way to manage separate secrets configurations on a per environment basis is described in the [secrets-per-branch recipe](./recipes/azure-devops/secrets-per-branch.md).
 
 ### Keeping Secrets Secret
 
