@@ -94,6 +94,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 
 ## Language Specific Guidance
 
+-   [Bash](recipes/Bash.md)
 -   [C#](recipes/CSharp.md)
 -   [Go](recipes/Go.md)
 -   [Java](recipes/Java.md)
