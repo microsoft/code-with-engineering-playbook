@@ -26,50 +26,9 @@ All developers should run ```gofmt``` in a pre-commit hook to ensure standard fo
 
 ### Automation
 
-#### ```gometalinter```
-
-```gometalinter``` is a tool that concurrently runs numerous linters and normalises their output to a standard format.
-In order to automate the linting process, you can include a `gometalinter.json` settings file in your project and run the tool with
-```sh 
-gometalinter --config ./gometalinter.json ./...
-```
-
-`gometalinter.json`:
-```json
-{
-    "Vendor": true,
-    "Deadline": "5m",
-    "Sort": ["linter", "severity", "path", "line"],
-    "EnableGC": true,
-    "WarnUnmatchedDirective": true,
-    "DisableAll": true,
-    "Linters": {
-        "goimports": {
-            "Command": "goimports -l --local github.com/{your-org}/{your-repo}"
-        }
-    },
-    "Enable": [
-        "deadcode",
-        "gofmt",
-        "gocyclo",
-        "goimports",
-        "golint",
-        "gosimple",
-        "ineffassign",
-        "misspell",
-        "unused",
-        "vet"
-    ]
-}
-```
-
-**Note:** You can see that `golint` is included in the `gometalinter.json` file. Make sure you include [`//nolint: golint`](https://github.com/alecthomas/gometalinter#comment-directives) in your code if you encounter false positive results.
-
-For more details visit [gometalinter](https://github.com/alecthomas/gometalinter)
-
 #### `golangci-lint`
 
-[`golangci-lint`](https://github.com/golangci/golangci-lint/) is an alternative to `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
+[`golangci-lint`](https://github.com/golangci/golangci-lint/) is the replacement for the now depricated `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
 
 One awesome feature of `golangci-lint` is that is can be easily introduced to an existing large codebase using the `--new-from-rev COMMITID`. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions. 
 
@@ -78,12 +37,12 @@ One awesome feature of `golangci-lint` is that is can be easily introduced to an
 The Go language team maintains a list of common [Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments) for go that form the basis for a solid checklist for a team working in Go.
 
 1. [ ] Does this code [handle errors](https://golang.org/doc/effective_go.html#errors) correctly? This includes not throwing away errors with ```_``` assignments and returning errors, instead of [in-band error values](https://github.com/golang/go/wiki/CodeReviewComments#in-band-errors)?
-1. [ ] Does this code follow Go standards for method [receiver types](https://github.com/golang/go/wiki/CodeReviewComments#receiver-type)?
-1. [ ] Does this code [pass values](https://github.com/golang/go/wiki/CodeReviewComments#pass-values) when it should?
-1. [ ] Are interfaces in this code defined in the [correct packages](https://github.com/golang/go/wiki/CodeReviewComments#interfaces)?
-1. [ ] Do goroutines in this code have [clear lifetimes](https://github.com/golang/go/wiki/CodeReviewComments#goroutine-lifetimes)?
-1. [ ] Is parallelism in this code handled via goroutines and channels with [synchronous methods](https://github.com/golang/go/wiki/CodeReviewComments#synchronous-functions)?
-1. [ ] Does this code have meaningful [Doc Comments](https://github.com/golang/go/wiki/CodeReviewComments#doc-comments)?
-1. [ ] Does this code have meaningful [Package Comments](https://github.com/golang/go/wiki/CodeReviewComments#package-comments)?
-1. [ ] Does this code use [Contexts](https://github.com/golang/go/wiki/CodeReviewComments#contexts) correctly?
-1. [ ] Do unit tests fail with [meaningful messages](https://github.com/golang/go/wiki/CodeReviewComments#useful-test-failures)?
+2. [ ] Does this code follow Go standards for method [receiver types](https://github.com/golang/go/wiki/CodeReviewComments#receiver-type)?
+3. [ ] Does this code [pass values](https://github.com/golang/go/wiki/CodeReviewComments#pass-values) when it should?
+4. [ ] Are interfaces in this code defined in the [correct packages](https://github.com/golang/go/wiki/CodeReviewComments#interfaces)?
+5. [ ] Do goroutines in this code have [clear lifetimes](https://github.com/golang/go/wiki/CodeReviewComments#goroutine-lifetimes)?
+6. [ ] Is parallelism in this code handled via goroutines and channels with [synchronous methods](https://github.com/golang/go/wiki/CodeReviewComments#synchronous-functions)?
+7. [ ] Does this code have meaningful [Doc Comments](https://github.com/golang/go/wiki/CodeReviewComments#doc-comments)?
+8. [ ] Does this code have meaningful [Package Comments](https://github.com/golang/go/wiki/CodeReviewComments#package-comments)?
+9. [ ] Does this code use [Contexts](https://github.com/golang/go/wiki/CodeReviewComments#contexts) correctly?
+10. [ ] Do unit tests fail with [meaningful messages](https://github.com/golang/go/wiki/CodeReviewComments#useful-test-failures)?
