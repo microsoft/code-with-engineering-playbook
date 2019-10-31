@@ -22,7 +22,7 @@ To start to contribute by creating your own branch (e.g. `your_alias/feature_nam
 
 # Commit history
 Agree if you want a linear or non-linear commit history. There are pros and cons to both approaches:
-*  Pro linear: [A tidy, linear Git history](www.bitsnbites.eu/a-tidy-linear-git-history/)
+*  Pro linear: [A tidy, linear Git history](https://www.bitsnbites.eu/a-tidy-linear-git-history/)
 *  Con linear: [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
 
 ## Approach for non-linear commit history
