@@ -7,7 +7,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] Merges are done through PRs.
 - [ ] PRs reference related work items. 
 - [ ] Commit history is consistent and commit messages are informative (what, why).
-- [ ] Secrets are not part of the commit history or made public. 
+- [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](./continuous-integration/credential-scanning/README.md))
 - [ ] Public repositories follow the [OSS guidelines](source-control/git.md#Required files in default branch for public repositories
 ).
 
