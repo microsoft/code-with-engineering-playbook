@@ -11,7 +11,7 @@ Unit tests play an integral role in building quality software and enabling agile
 - Developer Documentation of API usage
 
 ## Evidence and Measures
-The [CICD already requires badges in place](../Engineering/CICD.md) for every repo to quickly assess code coverage and test pass/fail.
+The [CICD already requires badges in place](../../continuous-integration/CICD.md) for every repo to quickly assess code coverage and test pass/fail.
 
 The team should also keep in an eye on tests that may not be running as part of every merge, i.e. integration and e2e test.
 
@@ -47,6 +47,8 @@ Languages and Platforms provide their own unit test tools and frameworks. In [CS
 - Java: https://junit.org/junit5/
 - Go: https://golang.org/pkg/testing/
 - JavaScript / Node: https://mochajs.org/
+- Python: https://docs.python.org/3/library/unittest.html
+- Python: https://docs.pytest.org/en/latest/
 		
 ## Resources
 - .NET Tutorial: https://docs.microsoft.com/en-us/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code

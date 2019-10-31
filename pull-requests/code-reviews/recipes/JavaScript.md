@@ -20,7 +20,7 @@ All developers should run `eslint` in a pre-commit hook to ensure standard forma
 
 ## Code Review Checklist
 
-In addition to the [general Code Review checklist](../CodeReviews.md), you should also look for these additional JavaScript related code review items:
+In addition to the [Code Review checklist](../readme.md), you should also look for these additional JavaScript related code review items:
 
 1.  [ ] Does the code stick to our formatting and code standards? Does running prettier and ESLint over the code should yield no warnings or errors respectively?
 1.  [ ] Does the change reimplement code that would be better served by pulling in a well known module from the ecosystem?

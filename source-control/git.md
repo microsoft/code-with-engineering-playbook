@@ -1,8 +1,8 @@
-# Git - The basics
+# Git Guidance
 [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
-## Tools
-It's recommended to use a shell/terminal to work with Git commands and not just to rely on [GUI clients](https://git-scm.com/downloads/guis/). If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and simply use your favorite shell/terminal. 
+# Tools
+Use a shell/terminal to work with Git commands and not just to rely on [GUI clients](https://git-scm.com/downloads/guis/). If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and simply use your favorite shell/terminal. 
 
 # Working with repositories
 ## Contributing to an existing repository
@@ -15,16 +15,13 @@ If you create a new repository, agree on your branch, merge and release strategi
 A public repository needs to have the following files in the root directory of the default branch:
 * a [LICENSE](Templates/LICENSE) file 
 * a [README.md](Templates/README.md) file
-* a [CONTRIBUTING.md](Templates/CONTRIBUTING.md) file 
+* a [CONTRIBUTING.md](Templates/CONTRIBUTING.md) file
+* reference the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
 
-It's also important to reference the Microsoft Open Source Code of Conduct in the [README.md](Templates/README.md) and/or [CONTRIBUTING.md](Templates/CONTRIBUTING.md) files.
-
-Links to [CSE](../CSE.md) template files: [LICENSE](Templates/LICENSE), [README.md](Templates/README.md) and [CONTRIBUTING.md](Templates/CONTRIBUTING.md) 
-
-To start to contribute by creating your own branch (e.g. `user/your_alias/feature_name`) and committing early and often - just ensure your commit comments are useful to others and describe the *WHAT* and *WHY* (instead of the *HOW*). 
+To start to contribute by creating your own branch (e.g. `your_alias/feature_name`) and commit early and often - make your commit comments useful to others by including the *WHAT* and *WHY* (instead of the *HOW*). 
 
 # Commit history
-Agree if you want a linear or non-linear commit history. There are pros and cons to both approaches as highlighted in the following two blog posts:
+Agree if you want a linear or non-linear commit history. There are pros and cons to both approaches:
 *  Pro linear: [A tidy, linear Git history](www.bitsnbites.eu/a-tidy-linear-git-history/)
 *  Con linear: [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
 
@@ -112,38 +109,14 @@ You can specify the default git editor, which allows you to write your commit me
 git config --global core.editor "code --wait"
 ```
 
-# Branch strategies
 ## Naming branches
 Let's use the following naming conventions for branches:
  * personal branches: `user/your_alias/feature_name` 
  * feature branches for staging (testing, integration,...): `staging/feature_name` 
  * release branches: `release/release_name`
 
-## Restrict access to default branches
-* In VSTS it's recommended to specify the **minimum number of required reviewers** as well as the **commit strategy** if you want to enforce [squash merging](https://docs.microsoft.com/en-us/vsts/git/merging-with-squash?view=vsts). Here some details on [VSTS branch policies](https://docs.microsoft.com/en-us/vsts/git/branch-policies?view=vsts)
-* In GitHub it's recommended to protect these branches by limiting the push access to reviewers only. Here some details how to [enable branch restrictions in GitHub](https://help.github.com/articles/enabling-branch-restrictions/)
-
-# Release strategy
-It is important that the team agrees on the project's release strategy upfront. The two most common approaches are the use of `tags` and/or `branches`. While using `tags` is lightweight and straightforward, `branches` provide extra flexibility in multi customer deployment that might require individual bug fixes in-between major releases.
-## Using tags for releases
-To create a git tag you simply use the `git tag` command. By default, the `git push` command doesn’t transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. This process is just like sharing remote branches — you can run `git push origin <tagname>`:
-
-```
-git tag -a v1.1 -m "version 1.1"
-git push origin v1.1
-```
-
-To checkout a specific version, you simply run `git push origin <tagname>`. Note that this will put you into a 'detached HEAD' state:
-```
-git checkout v1.1
-```
-Refer to the CI/CD section to see how to integrate specific version into your CI/CD pipeline
-
-## Using branches for releases
-TBD - lock branch
-
-
-# More Git greatness
+## Release Strategy/Versioning
+Please see [versioning](versioning/readme.md).
 
 ## Working with secrets (such as storage keys)
 The best way to avoid leaking secrets is to store them in local/private files which will be excluded from being tracked in git. This is done by configuring the [.gitignore](https://git-scm.com/docs/gitignore) file.
@@ -198,4 +171,3 @@ Or you can simply move the current state into a new branch:
 ```
 git stash branch <new_branch_to_save_changes>
 ```
-
