@@ -22,7 +22,7 @@ To start to contribute by creating your own branch (e.g. `your_alias/feature_nam
 
 # Commit history
 Agree if you want a linear or non-linear commit history. There are pros and cons to both approaches:
-*  Pro linear: [A tidy, linear Git history](www.bitsnbites.eu/a-tidy-linear-git-history/)
+*  Pro linear: [A tidy, linear Git history](https://www.bitsnbites.eu/a-tidy-linear-git-history/)
 *  Con linear: [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
 
 ## Approach for non-linear commit history
@@ -50,13 +50,13 @@ git checkout master
 git merge topic
 ```
 ### Rebase topic branch before squash merge into master
-[Squash merging](https://docs.microsoft.com/en-us/vsts/git/merging-with-squash?view=vsts) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on `topic` being added to the history of `master`, a squash merge takes all the file changes and adds them to a single new commit on `master`. 
+[Squash merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on `topic` being added to the history of `master`, a squash merge takes all the file changes and adds them to a single new commit on `master`. 
 ```
           A---B---C topic
          /        
 D---E---F-----------G---H master
 
-Create a PR topic --> master in VSTS and approve using the squash merge option
+Create a PR topic --> master in Azure DevOps and approve using the squash merge option
 ```
 
 # Write good commit comments
@@ -88,13 +88,13 @@ are making this change as opposed to how (the code explains that).
 Are there side effects or other unintuitive consequences of this
 change? Here's the place to explain them.
 
-VSTS understands Markdown, so you can use that sparingly throughout.
+Azure DevOps understands Markdown, so you can use that sparingly throughout.
 
 Further paragraphs come after blank lines.
 
  - Bullet points are okay, too
  - Typically a hyphen or asterisk is used for the bullet, preceded
-   by a single space (no blank lines between them on VSTS)
+   by a single space (no blank lines between them on Azure DevOps)
 
 Put issue references to them at the bottom,
 like this:
