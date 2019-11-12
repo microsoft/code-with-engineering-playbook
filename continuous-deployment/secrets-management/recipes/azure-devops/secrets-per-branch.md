@@ -15,7 +15,7 @@ A solution to these limitations is to manage secrets in the Git repository joint
 echo ".env" >> .gitignore
 ENCRYPTION_KEY="$(< /dev/urandom tr -dc '_A-Z-a-z-0-9' | head -c128)"
 
-# now let's add some secret to our dotenv file
+# now let's add some secret to our .env file
 echo "MY_SECRET=..." >> .env
 
 # also update our secrets documentation file
