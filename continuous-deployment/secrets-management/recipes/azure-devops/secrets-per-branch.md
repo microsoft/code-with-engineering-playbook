@@ -13,7 +13,7 @@ A solution to these limitations is to manage secrets in the Git repository joint
 ```sh
 # first, make sure that we never commit our plain text secrets and generate a strong encryption key
 echo ".env" >> .gitignore
-ENCRYPTION_KEY="$(< /dev/urandom tr -dc '_A-Z-a-z-0-9' | head -c128)"
+ENCRYPTION_KEY="$(LC_ALL=C < /dev/urandom tr -dc '_A-Z-a-z-0-9' | head -c128)"
 
 # now let's add some secret to our .env file
 echo "MY_SECRET=..." >> .env
