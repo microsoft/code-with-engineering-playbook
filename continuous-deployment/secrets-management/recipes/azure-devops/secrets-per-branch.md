@@ -30,7 +30,7 @@ git add .env.enc .env.template
 git commit -m "Update secrets"
 ```
 
-When running the CI/CD, the build server can now easily access the secrets by decrypting them. E.g. for Azure Devops, configure `ENCRYPTION_KEY` as a [secret pipeline variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables#secret-variables) and then add the following step to `azure-pipelines.yml`:
+When running the CI/CD, the build server can now easily access the secrets by decrypting them. E.g. for Azure DevOps, configure `ENCRYPTION_KEY` as a [secret pipeline variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables#secret-variables) and then add the following step to `azure-pipelines.yml`:
 
 ```yaml
 steps:
