@@ -11,7 +11,7 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Recommended Practices
 
-1. Ensure health of the services are <b>monitored</b> and provide insights into system's performance and behavior. 
+1. Ensure health of the services are **monitored** and provide insights into system's performance and behavior. 
 2. <b>Faults, crashes and failures</b> are logged as discrete events. This helps engineers identify problem area(s) during failures.
 3. Logging configuration (eg: verbose) can be controlled without code changes.
 4. Ensure that <b>metrics</b> around latency, duration are collected and are aggregatable.
