@@ -33,7 +33,7 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 - [ ] Robust treatment of secrets.
 - [ ] Encryption for data in transit (and if necessary at rest) and password hashing.
 
-## Observability - TO DO! 
+## Observability 
 - [ ] Solution faults and errors are logged. 
 - [ ] Additional information and metrics collected depending on use case. 
 - [ ] Metrics collected to identify health of the services. 
