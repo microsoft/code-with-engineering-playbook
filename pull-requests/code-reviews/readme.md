@@ -104,7 +104,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 
 ## Resources
 
--   [Best Kept Secrets of Peer Code Review](https://smartbear.com/SmartBear/media/pdfs/best-kept-secrets-of-peer-code-review.pdf)
+-   [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
 
 ## Q&A
 
