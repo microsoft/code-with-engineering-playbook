@@ -20,10 +20,8 @@ The term parking lot refers to a bucket of comments, concerns, or questions that
 The entire team should attend the stand-up. Anyone that worked on a task towards the sprint work should answer the three questions. It would be up to the team to decide if they would like updates from members that are not directly working against sprint task work (i.e. Product Owners and Program Managers).
 
 - Scrum Master (Required)
-- Product Owner (Optional)
-- Program Manager (Required)
-- Dev Manager (Required)
-- Tech Lead + Contributors (Required)
+- Product Owner/Program Manager (Optional)
+- Project Lead + Contributors (Required)
 
 ## Impact
 

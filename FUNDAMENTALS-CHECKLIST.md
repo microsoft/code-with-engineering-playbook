@@ -1,4 +1,4 @@
-# Tech Lead's Engineering Fundamentals Checklist
+# Engineering Fundamentals Checklist
 
 This checklist helps to ensure that our projects meet our Engineering Fundamentals. 
 
@@ -44,7 +44,7 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 ## Agile/Scrum
 - [ ] Scrum Master (fixed/rotating) to run standup daily.
 - [ ] Agile process clearly defined within team.
-- [ ] Tech Lead (+ PO/Others) have responsability for backlog management and grooming.
+- [ ] Project Lead (+ PO/Others) have responsability for backlog management and grooming.
 - [ ] Working agreement between members of team and customer.
 
 ## Design Reviews
