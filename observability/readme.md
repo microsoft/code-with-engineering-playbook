@@ -22,9 +22,9 @@ Discrete events with the goal of helping engineers identify problem area(s) duri
 - Ensure service versions are included in logs, thus having the capability of identifying problematic releases.
 - Log a raised exception only once. In your handlers, only catch expected exceptions that you can handle gracefully, including those for which you would set a specific return code. If you’re only going to log and rethrow (even without clobbering the stack trace), let the top level exception handler get it. If you have cleanup work to do on a catch, do only what is needed and then throw; to maintain the original stack trace. Don’t log a warning or stack trace for expected exceptions. Proper, expected 404s and 403s are not warnings.
 - Fine tune logging levels in production (>= warning for instance). During a new release the verbosity can be increased to facilitate bug identification.
-- If sampling is used prefer implementing at the service level as opposed to defining in the logging system. This way we can ensure that exceptions (and other important information) will be logged. Another benefit is the reduced amount of roundtrips.
+- If sampling is used, prefer implementing at the service level as opposed to defining in the logging system. This way we can ensure that exceptions (and other important information) will be logged. Another benefit is the reduced amount of roundtrips.
 - Exclude health checks and non-business driven requests, unless they fail.
-- Ensure a downstream system mal-function won't cause massive repetitive logs being stored.
+- Ensure a downstream system malfunction won't cause massive repetitive logs being stored.
 - Don't reinvent the wheel, use existing tools to collect and analyse the data.
 - Ensure personal identifiable information policies and restrictions are followed.
 
@@ -61,7 +61,7 @@ Produces the information required to observe series of correlated operations in 
 Metrics provide a near real-time indication of how the system is running. As opposed to logs and traces, the amount of data collected using metrics remains constant as the system load increases.
 
 - Measurements that need to be alerted upon are good candidates for metrics: queue length, retries, latency, requests/sec, cpu, memory. These metrics can be use to automatically scale components.
-- Use metrics to collect business success measurements: visits, sold items, session time, games played, jobs done. Ask stakeholders what they need.
+- Use metrics to collect business success measurements. For instance visits, sold items, session time, games played, jobs done. Ask stakeholders what they need.
 - Whenever applicable add release/version dimensions to metrics, allowing the comparison between versions (did the change provide improvements?).
 
 ## Recommended Practices
