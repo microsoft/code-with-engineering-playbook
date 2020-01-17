@@ -3,12 +3,12 @@ Before submitting this PR, please make sure:
 
 -------------------------------------
 * [ ] I have followed the guidelines in [Contributing as Developers](https://github.com/microsoft/code-with-engineering-playbook/blob/master/CONTRIBUTING.md).
-* [ ] I have added an explanation of what my changes do and why I would like you to include them.
+* [ ] I have explained my changes and reasons why they should be included.
 * [ ] I have updated the documentation accordingly.
 * [ ] I have added tests to cover my changes.
 * [ ] All new and existing tests passed.
 * [ ] My code follows the code style of this project.
-* [ ] I ran lint checks locally prior to submission.
+* [ ] I have run linting checks prior to submission.
 * [ ] I have checked to ensure there aren't other open Pull Requests for the same update/change.
 * [ ] This does not introduce a breaking change.
 
