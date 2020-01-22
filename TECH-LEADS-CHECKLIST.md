@@ -51,7 +51,7 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 
 - [ ] Scrum Master (fixed/rotating) to run standup daily.
 - [ ] Agile process clearly defined within team.
-- [ ] Tech Lead (+ PO/Others) have responsability for backlog management and grooming.
+- [ ] Tech Lead (+ PO/Others) have responsibility for backlog management and grooming.
 - [ ] Working agreement between members of team and customer.
 
 ## Design Reviews
@@ -62,6 +62,8 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 - [ ] Document major design decisions and alternatives.
 - [ ] Stories and/or PRs link to the design document.
 - [ ] Each user story includes a task for design review by default, which is assigned or removed during sprint planning.
+- [ ] Project advisors are invited to design reviews or asked to give feedback to the design decisions captured in documentation.
+- [ ] Discover all the reviews that the customer's processes require and plan for them.
 
 ## Code Reviews
 
