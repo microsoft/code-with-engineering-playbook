@@ -69,3 +69,10 @@ More details on [Code Reviews](pull-requests/code-reviews/readme.md)
 - [ ] Longer retrospective for Milestones and project completion. 
 
 More details on [Retrospectives](retrospectives/readme.md)
+
+## Engineering Feedback
+- [ ] Submit business and technical blockers that prevent project success
+- [ ] Add suggestions for improvements to leveraged services and components
+- [ ] Ensure feedback is detailed and repeatable
+
+More details on [Engineering Feedback](engineering-feedback/readme.md)

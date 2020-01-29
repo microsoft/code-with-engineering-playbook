@@ -30,7 +30,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * Avoid adding scope to a backlog item, instead add a new backlog item.
 * Our goal is to ship incremental customer value.
 * Keep backlog item details up to date to communicate the state of things with the rest of your team.
-* Report product issues found and provide feedback!
+* Report product issues found and provide clear and repeatable engineering feedback!
 * We all own our code and each one of us has an obligation to make all parts of the solution great.
 
 ## QuickLinks
@@ -42,6 +42,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [CD](continuous-deployment/readme.md)
 * [Code Reviews](pull-requests/code-reviews/readme.md)
 * [Observability](observability/readme.md)
+* [Engineering Feedback](engineering-feedback/readme.md)
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
