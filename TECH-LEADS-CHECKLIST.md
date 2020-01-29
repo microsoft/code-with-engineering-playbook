@@ -56,10 +56,8 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 
 ## Design Reviews
 
-- [ ] Process for conducting design reviews.
-- [ ] Including design review process in the [Working Agreement](/team-agreements/working-agreements/readme.md)
-- [ ] Design reviews for each major component of the solution.
-- [ ] Document major design decisions and alternatives.
+- [ ] Process for conducting design reviews is included in the [Working Agreement](/team-agreements/working-agreements/readme.md)
+- [ ] Design reviews for each major component of the solution are carried out and documented, including alternatives.
 - [ ] Stories and/or PRs link to the design document.
 - [ ] Each user story includes a task for design review by default, which is assigned or removed during sprint planning.
 - [ ] Project advisors are invited to design reviews or asked to give feedback to the design decisions captured in documentation.

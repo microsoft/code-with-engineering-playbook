@@ -16,9 +16,7 @@ There are many different options when working with Source Control. In [CSE](../C
 
 ## General Guidance
 
-Consistency is important, so agree to the approach as a team before starting to code. Consider this as a design decision
-which means that there should be a design proposal and review, and the outcome will be captured in the same way
-that all design decisions are documented (see [Working Agreements](../team-agreements/working-agreements/readme.md)).
+Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../team-agreements/working-agreements/readme.md)).
 
 The team should at least be doing the following:
 
