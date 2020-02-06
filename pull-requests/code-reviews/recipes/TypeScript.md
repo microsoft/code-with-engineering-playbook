@@ -34,24 +34,16 @@ module.exports = {
 };
 ```
 
-Add a `.eslintignore` with files & folders to omit:
-
-```ignore
-# don't ever lint node_modules
-node_modules
-# don't lint build output
-dist
-# don't lint nyc coverage
-coverage
-```
-
 Add the following to the `scripts` of your `package.json`:
 
 ```json
 "scripts": {
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore"
 }
 ```
+
+This will lint all `.js`, `.jsx`, `.ts`, `.tsx` files in your project and omit any files or
+directories specified in your `.gitignore`.
 
 You can run linting with: 
 
