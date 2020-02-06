@@ -11,10 +11,10 @@ linting TypeScript code with ESLint can be found in the [typescript-eslint](http
 repository.
 
 To [install and configure linting with ESLint](https://github.com/typescript-eslint/typescript-eslint/tree/master/docs/getting-started/linting),
-install the following dependencies:
+install the following packages as dev-dependencies:
 
 ```bash
-npm i -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 Add a `.eslintrc.js` to the root of your project:
@@ -63,10 +63,10 @@ npm run lint
 
 Prettier is an opinionated code formatter. You can find a getting started guide [here](https://prettier.io/docs/en/integrating-with-linters.html).
 
-Install with `npm`:
+Install with `npm` as a dev-dependency:
 
 ```bash
-npm i -D prettier eslint-config-prettier eslint-plugin-prettier
+npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 Add `prettier` to your `.eslintrc.js`:
