@@ -1,92 +1,111 @@
 # TypeScript Code Reviews
 
-## Style Guide
+TypeScript projects should have linting configured, and should refuse PR's that do not comply with
+the project's linting standard.
 
-We use [`Prettier`](https://prettier.io/) to do code formatting for TypeScript. Using an automated code formatting tool like Prettier enforces a well accepted style guide that was collaboratively built by a wide range of companies including Microsoft, Facebook, and AirBnB. It is highly recommended that you use one of the native editor integrations and enable format on save. In addition, by default, we use the following overrides (shown here in the config format for VSCode) to standardize on single quotes and a 4-space indent:
+## Setting up [ESLint](https://eslint.org/docs/about/)
+
+Per guidance outlined in [Palantir's 2019 TSLint roadmap](https://medium.com/palantir/tslint-in-2019-1a144c2317a9),
+TypeScript code should be linted with [ESLint](https://github.com/eslint/eslint). Resources for
+linting TypeScript code with ESLint can be found in the [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
+repository.
+
+To [install and configure linting with ESLint](https://github.com/typescript-eslint/typescript-eslint/tree/master/docs/getting-started/linting),
+install the following dependencies:
+
+```bash
+npm i -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
+
+Add a `.eslintrc.js` to the root of your project:
+
+```javascript
+module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    '@typescript-eslint',
+  ],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+};
+```
+
+Add a `.eslintignore` with files & folders to omit:
+
+```ignore
+# don't ever lint node_modules
+node_modules
+# don't lint build output
+dist
+# don't lint nyc coverage
+coverage
+```
+
+Add the following to the `scripts` of your `package.json`:
 
 ```json
-{
-    ...
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4
+"scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
 }
 ```
 
-## Linter
+You can run linting with: 
 
-All developers should run `TSLint` in a pre-commit hook to ensure standard formatting. We highly recommend using an editor integration like [vscode-tslint](https://github.com/Microsoft/vscode-tslint) to provide realtime feedback.
+```bash
+npm run lint
+```
 
-Recommended: [lint-staged and husky](https://github.com/okonet/lint-staged#installation-and-setup)
+## Setting up [Prettier](https://prettier.io/docs/en/)
 
--   `husky` is a very popular tool for running pre-commit hooks and preventing commits whose hooks fail.
--   `lint-staged` ensures that only staged files get checked to determine if the pre-commit hooks need to be run.
+Prettier is an opinionated code formatter. You can find a getting started guide [here](https://prettier.io/docs/en/integrating-with-linters.html).
 
-Recommended: [tslint-microsoft-contrib](https://www.npmjs.com/package/tslint-microsoft-contrib)
+Install with `npm`:
 
--   This set of TSLint rules is already used by many Microsoft projects.
+```bash
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier
+```
 
-## Formatting/Linting Conflicts
+Add `prettier` to your `.eslintrc.js`:
 
-Since `Prettier` does not support integration with `TSLint`, we need to do one of the following:
+```javascript
+module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    '@typescript-eslint',
+  ],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
+  ],
+};
+```
 
-1. Use [tslint-config-prettier](https://www.npmjs.com/package/tslint-config-prettier)
-1. Disable some of the rules in TSLint as shown below with a sample tslint.json file (placed in the root of our project):
+This will apply the `prettier` ruleset when linting with ESLint.
+
+## Autoformatting with VS Code
+
+VS Code can be configured to automatically perform `eslint --fix` on save.
+
+Create a `.vscode` folder in the root of your project and add the following to your
+`.vscode/settings.json`:
 
 ```json
 {
-    "defaultSeverity": "error",
-    "extends": ["tslint:recommended"],
-    "jsRules": {},
-    "rules": {
-        "quotemark": {
-            "options": "single"
-        },
-        "arrow-parens": {
-            "options": "ban-single-arg-parens"
-        },
-        "no-console": false,
-        "trailing-comma": {
-            "options": [
-                {
-                    "esSpecCompliant": true
-                }
-            ]
-        },
-        "jsdoc-format": false,
-        "curly": {
-            "options": ["ignore-same-line"]
-        }
-    },
-    "rulesDirectory": []
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 }
-```
-
-## YAML
-
-A 4-space indent makes YAML difficult to read, so you might consider adding the following to the `VSCode` User or Workspace Settings.
-
-```json
-{
-    ...
-    "[yaml]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.autoIndent": false
-    }
-}
-```
-
-You will then need to exclude YAML files from `Prettier` by adding a .prettierignore file to the root of our project:
-
-```
-**/*.yaml
 ```
 
 ## Code Review Checklist
 
-In addition to the [Code Review checklist](../readme.md), you should also look for these additional TypeScript related code review items:
-
-1.  [ ] Does the code stick to our formating and code standards? Does running prettier and TSLint over the code should yield no warnings or errors respectively?
-1.  [ ] Does the change reimplement code that would be better served by pulling in a well known module from the ecosystem?
-
-If you have great suggestions for things folks should be thinking about during a TypeScript code review, please feel free to submit a pull request.
+In addition to the [Code Review checklist](../readme.md), TypeScript code should compile without
+error and should not raise linting errors.
