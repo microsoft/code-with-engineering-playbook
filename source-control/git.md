@@ -40,7 +40,7 @@ Agree if you want a linear or non-linear commit history. There are pros and cons
 
 Merging `topic` into `master`
 
-```bash
+```
   A---B---C topic
  /         \
 D---E---F---G---H master
@@ -96,7 +96,7 @@ This section is merely a tl;dr summary.
 
 Here an example:
 
-```md
+```
 Summarize changes in around 50 characters or less
 
 More detailed explanatory text, if necessary. Wrap it to about 72
