@@ -20,10 +20,11 @@ A Correlation ID is a unique identifier that is added to the very first interact
 
 1. Assign each external request a Correlation ID that binds the message to a transaction. 
 2. Correlation ID for a transaction must be assigned as early as you can.
-3. Propagate Correlation ID to downward all components/services.
+3. Propagate Correlation ID to all downstream components/services.
 4. All components/services of the transaction use this Correlation ID in their logs.
 5. For a HTTP Reqest, Correlation ID is, typically passed in the header.
-6. Based on the usecase, there can be additional correlation IDs that may be needed. For instance, tracking logs based on both Session ID and User ID may be required. While adding multiple correlation ID, remember to propagate them through the components. 
+6. Where possible also add it to an outgoing request.
+7. Based on the usecase, there can be additional correlation IDs that may be needed. For instance, tracking logs based on both Session ID and User ID may be required. While adding multiple correlation ID, remember to propagate them through the components. 
 
 ## Use Cases
 
@@ -31,9 +32,11 @@ A Correlation ID is a unique identifier that is added to the very first interact
 
 Log correlation is the ability to track disparate events through different parts of the application. Having a Correlation ID provides more context making it easy to building rules on collected logs.
 
-### Trace Observers
+### Secondary reporting/observer systems
 
-For developing a secondary observation system, for example generates reporting
+Using Correlation ID helps a secondary systems to correlate data without application context. Some examples - generating metrics based on tracing data, integrating runtime/system diagnostics etc. For example, feeding AppInsights data and correlating it to infrastructure issues.
+
+Trace Observers are secondary reporting systems that work with 
 
 ### Troubleshooting Errors
 
