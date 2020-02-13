@@ -1,44 +1,28 @@
-Thank you for contributing.
-Before submitting this PR, please make sure:
+### Link to the design document that prompted this PR?
+- Provide a link to the design document relevant to this area. 
 
--------------------------------------
-* [ ] I have followed the guidelines in [Contributing as Developers](https://github.com/microsoft/code-with-engineering-playbook/blob/master/CONTRIBUTING.md).
-* [ ] I have explained my changes and reasons why they should be included.
-* [ ] I have updated the documentation accordingly.
-* [ ] I have added tests to cover my changes.
-* [ ] All new and existing tests passed.
-* [ ] My code follows the code style of this project.
-* [ ] I have run linting checks prior to submission.
-* [ ] I have checked to ensure there aren't other open Pull Requests for the same update/change.
-* [ ] This does not introduce a breaking change.
+### What are you trying to address ?
+-  Describe the current behavior that you are modifying, and link to issue number
 
-## Link to the design document that prompted this PR?
--------------------------------------
-<!-- Please provide a link to the design document relevant to this area. -->
+### Description of new changes
+- Write a detailed description of all changes
+- If you have only done mechanical (not logical) changes point that out here
+-  Describe the new behavior that is introduces
+- If this introduces a breaking change, please describe the impact and migration path for existing applications below.
 
-Link to Design Document: 
+### How did you test it?
+- Besides writing tests with your change, you should state the manual validation that you have done
+  * [ ] Ran it on specific OS
+  * [ ] Ran it using specific test set
+  * [ ] Description of test scenarios that you have tried.
 
+### Any relevant logs or outputs?
 
-## What is the current behavior?
--------------------------------------
-<!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
-
-Issue Number: N/A
+- If you are printing something show a screenshot 
+- When you want to share long logs upload to:
+<br>(StorageAccount)/pr-support/attachments/(PR Number)/(yourFiles) using [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) or [portal.azure.com](portal.azure.com) and insert the link here.
 
 
-## What is the new behavior?
--------------------------------------
-<!-- Please describe the behavior or changes that are being added by this PR. -->
-
--
-
-<!-- If this introduces a breaking change, please describe the impact and migration path for existing applications below. -->
-
-## Any relevant logs, error output, etc?
--------------------------------------
-If it’s long, please upload to (StorageAccount)/pr-support/attachments/(PR Number)/(yourFiles) using [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) or [portal.azure.com](portal.azure.com) and insert the link here.
-
-
-## Other information or known dependencies
--------------------------------------
-<!-- Any other information or known dependencies that is important to this PR such as screenshots of how the component looks before and after the change. -->
+### Other information or known dependencies
+- Any other information or known dependencies that is important to this PR.
+- ToDos that are to be done after this PR.
