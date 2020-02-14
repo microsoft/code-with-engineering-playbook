@@ -1,9 +1,9 @@
 # Code Reviews
 
-Developers working on [CSE](../../CSE.md) projects should conduct peer code reviews on every pull request (or check-in to a shared branch).
+Developers working on [CSE](../CSE.md) projects should conduct peer code reviews on every pull request (or check-in to a shared branch).
 
 ## Goals
-Code reviews should be considered as a way to have a conversation about code where reviewer's who haven't written the code will
+Code reviews is a way to have a conversation about code where reviewers who haven't written the code will
 1.  Improve code quality by catching bugs before shipping it.
 2.  Grow by learning about unfamiliar design patterns or languages and even break some bad habits. 
 3.  Develop a shared understanding of the project's code.
@@ -33,7 +33,7 @@ To ensure that the code review process is healthy and meets the goals stated abo
 5. Be open to receive feedback, discuss design/code logic and address all comments as follows:
    - Resolve the comment if you will make the requested change
    - Mark the comment as won't fix if you are not going to make the requested changes and explain clearly the reasoning
-   - Ask clarification questions on the review itself(not in a private chat) if you don't understand a reviewer's comment
+   - Ask clarification questions on the review itself (not in a private chat) if you don't understand a reviewer's comment
    - If a comments thread went beyong 5 or 6 replies and there has been no conclusion, then make direct communication with you reviewer (call them or knock on door)
    - Mark the comment as pending and clearly state that you are going to address it in a future PR.
 6. If the reviewer's haven't looked at your code in 24-48 hours, ping them to ensure a timely review process.
@@ -117,7 +117,6 @@ Code reviews should use the below guidance and checklists to ensure positive and
 -   [Bash](recipes/Bash.md)
 -   [C#](recipes/CSharp.md)
 -   [Go](recipes/Go.md)
--   [Java](recipes/Java.md)
 -   [JavaScript](recipes/JavaScript.md)
 -   [TypeScript](recipes/TypeScript.md)
 -   [Python](recipes/Python.md)

@@ -1,4 +1,4 @@
-### Link to the design document that prompted this PR?
+### Link to the design document that prompted this PR
 - Provide a link to the design document relevant to this area. 
 
 ### What are you trying to address ?
@@ -7,7 +7,7 @@
 ### Description of new changes
 - Write a detailed description of all changes
 - If you have only done mechanical (not logical) changes point that out here
--  Describe the new behavior that is introduces
+- Describe the new behavior that is introduced
 - If this introduces a breaking change, please describe the impact and migration path for existing applications below.
 
 ### How did you test it?
@@ -25,4 +25,4 @@
 
 ### Other information or known dependencies
 - Any other information or known dependencies that is important to this PR.
-- ToDos that are to be done after this PR.
+- TODO that are to be done after this PR.
