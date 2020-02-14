@@ -1,53 +1,108 @@
 # Python Code Reviews
 
-## Python Style Guide
+## Style Guide
 
-[CSE](../CSE.md) developers follow [Google's Python Style Guide](https://google.github.io/styleguide/pyguide.html). Note the use of strong typing throughout. Older versions of python allow you to get away without this but type checking avoids common errors that are tricky to debug. 
+[CSE](../CSE.md) developers follow the [PEP8 style guide](https://pep8.org/) with [type hints](https://www.python.org/dev/peps/pep-0484/). The use of type hints throughout paired with type hint checking avoids common errors that are tricky to debug.
 
-## Linters
+## Linters and related tools
 
-[CSE](../CSE.md) projects should check Python code with automated tools. ```pylint``` is the minimum, but we prefer to run three different tools:
+[CSE](../CSE.md) projects should check Python code with automated tools.
 
-### [```Black```](https://black.readthedocs.io/en/stable/)
+### Pylint
 
-Black is a code formatting tool. It removes all need from `pycodestyle` nagging about formatting so the team can focus on content vs style. 
+[Pylint](https://www.pylint.org/) is the most common linter used for python.  It verifies adherance to the PEP8 style guide but also performs a few more checks.
 
-### [```Pyflakes```](https://github.com/PyCQA/pyflakes)
+```bash
+pip install pylint
+```
 
-Pyflakes is a fast static analysis tool that identifies common errors in Python code.
+### Black
 
-### [```pycodestyle```](https://github.com/PyCQA/pycodestyle)
+[Black](https://black.readthedocs.io/en/stable/) is an unappologetic code formatting tool. It removes all need from `pycodestyle` nagging about formatting so the team can focus on content vs style. It is however not possible to configure black for your own style needs.
 
-[PEP 8](https://www.python.org/dev/peps/pep-0008/) is the accepted style guide.
+```bash
+pip install black
+```
 
-### [```pydocstyle```](https://github.com/PyCQA/pydocstyle)
+### Pyflakes
 
-[PEP 257](https://www.python.org/dev/peps/pep-0257/) are the encouraged Docstring conventions.
+[Pyflakes](https://github.com/PyCQA/pyflakes) is a fast static linter that verifies logicstic errors like the syntax tree of each file.
 
-### [```Flake8```](https://pypi.org/project/flake8/)
+```bash
+pip install pyflakes
+```
 
-Flake8 is an option for teams who want a single wrapper for running Pyflakes and pycodestyle.
+### Pycodestyle
+
+[pycodestyle](https://github.com/PyCQA/pycodestyle) is the PEP8 official linter.
+
+```bash
+pip install pycodestyle
+```
+
+### Pydocstyle
+
+[pydocstyle](https://github.com/PyCQA/pydocstyle) verifies the use of docstring conventions per [PEP 257](https://www.python.org/dev/peps/pep-0257/).
+
+```bash
+pip install pydocstyle
+```
+
+### Flake8
+
+[Flake8](https://pypi.org/project/flake8/) is an option for teams who want a single wrapper for running Pyflakes and pycodestyle.
+
+```bash
+pip install flake8
+```
+
+## VS Code Extensions
+
+### Python
+
+The [Python language extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is the base extension you should have installed for python development with VS Code. It enables among other things, intellisense, debugging, linting (with the above linters), testing with pytest, code formatting with black or autopep8 etc.
+
+### Pyright
+
+The [Pyright extension](https://marketplace.visualstudio.com/items?itemName=ms-pyright.pyright) augments VS Code with static type checking when you use type hints
+
+```python
+def add(first_value: int, second_value: int) -> int:
+    return first_value + second_value
+```
 
 ## Unit Testing
 
-### [```Unittest``](https://docs.python.org/3/library/unittest.html)
-Unittest is a simple unit testing framework that provides the basics for unit testing: asserts, fixtures, mocks, etc. There is no need to install `unittest` and tests can be run using:
+### Unittest
+
+[Unittest](https://docs.python.org/3/library/unittest.html) is pythons built in unit testing framework that provides the basics for unit testing: asserts, fixtures, mocks, etc. Tests can be run using:
 
 ```bash
 python -m unittest
 ```
 
-### [```Pytest```](https://docs.pytest.org/en/latest/)
-Pytest is a simple unit testing framework that provides the basics for unit testing: asserts, fixtures, etc... 
+### Pytest
 
-```bash 
-pip3 install pytest
-```
-
-### [```Pytest-mock```](https://github.com/pytest-dev/pytest-mock/)
-Mocking/stubbing framework that works with Pytest. Use this to mock out OS calls, off-box calls, and other calls that would unnecessarily broaden the scope of unit tests.
+[Pytest](https://docs.pytest.org/en/latest/) is a unit testing framework on top of unittest that provides a simpler way to create unit tests in python without the need for unittest classes.  It is usually the preferred unittest framework for python.
 
 ```bash
-pip3 install pytest-mock
+pip install pytest
 ```
 
+You can optionally parameterizise test functions
+
+### Pytest-mock
+
+[Pytest-mock](https://github.com/pytest-dev/pytest-mock/) is a mocking/stubbing framework that works with Pytest. Use this to mock out OS calls, off-box calls, and other calls that would unnecessarily broaden the scope of unit tests.
+
+```bash
+pip install pytest-mock
+```
+
+## Code Review Checklist
+
+In addition to the [Code Review Checklist](../readme.md) you should also look for these python specific code review items
+
+1. [ ] Are all new packages used included in requirements.txt
+2. [ ] Do funcitons use type hints, and are there any type hint errors?
+3. [ ] Is the code readable and using pythonic constructs wherever possible.
