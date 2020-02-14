@@ -23,7 +23,7 @@ Building observable systems enables development teams at CSE to measure how well
 3. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.
 4. Ensure that **metrics** around latency and duration are collected and can be aggregated.
 5. Don't attempt to monitor everything. If the data is not actionable, it is useless and becomes a noise.
-6. As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure GDPR compliance is followed regarding PII.
+6. As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.,)
 7. Start small and add where there is customer impact.
 
 ## What is collected
