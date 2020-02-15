@@ -2,29 +2,29 @@
 
 ## Style Guide
 
-[CSE](../CSE.md) developers follow the [PEP8 style guide](https://pep8.org/) with [type hints](https://www.python.org/dev/peps/pep-0484/). The use of type hints throughout paired with linting and type hint checking avoids common errors that are tricky to debug.
+[CSE](../../../CSE.md) developers follow the [PEP8 style guide](https://pep8.org/) with [type hints](https://www.python.org/dev/peps/pep-0484/). The use of type hints throughout paired with linting and type hint checking avoids common errors that are tricky to debug.
 
-[CSE](../CSE.md) projects should check Python code with automated tools.
+[CSE](../../../CSE.md) projects should check Python code with automated tools.
 
 Linting should be added to build validation, and both linting and code formatting can be added to your pre-commit hooks and VS Code.
 
 ## Linters
 
-The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/).  Both check adherance to **PEP8** but vary a bit in what other rules they check.  In general **Pylint** tends to be a bit more stringent and give a few more false positives but both are good options for linting python code.
+The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/).  Both check adherance to `PEP8` but vary a bit in what other rules they check.  In general `Pylint` tends to be a bit more stringent and give a few more false positives but both are good options for linting python code.
 
-Both **Pylint** and **Flake8** can be configured in VS Code using the  VS Code **python extension**
+Both `Pylint` and `Flake8` can be configured in VS Code using the  VS Code `python extension`
 
 ### Flake8
 
 Flake8 is a simple and fast wrapper around [Pyflakes](https://github.com/PyCQA/pyflakes) (for logig errors), [pycodestyle](https://github.com/PyCQA/pycodestyle) (for pep8) and [pydocstyle](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)).
 
-Install Flake8
+Install `Flake8`
 
 ```bash
 pip install flake8
 ```
 
-Run Flake8
+Run `Flake8`
 
 ```bash
 flake8 .    # lint the whole project
@@ -32,13 +32,13 @@ flake8 .    # lint the whole project
 
 ### Pylint
 
-Install Pylint
+Install `Pylint`
 
 ```bash
 pip install pylint
 ```
 
-Run Pylint
+Run `Pylint`
 
 ```bash
 pylint src  # lint the source directory
@@ -105,7 +105,61 @@ def add(first_value: int, second_value: int) -> int:
 
 ## Build validation
 
-Linting and testing should be validated as part of the Pull Request. This is an example of a [build validation YAML configuration](\build-validation\build-python.yml) with **Flake8** and **PyTest** that can be used in an AzDO pipeline to protect your develop and master branches.
+To automate linting with `flake8` and testing with `pytest` in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file.
+
+```yaml
+trigger:
+  branches:
+    include:
+    - develop
+    - master
+  paths:
+    include:
+    - src/*
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: LintAndTest
+  displayName: Lint and Test
+
+  steps:
+
+  - checkout: self
+    lfs: true
+
+  - task: UsePythonVersion@0
+    displayName: 'Set Python version to 3.6'
+    inputs:
+      versionSpec: '3.6'
+
+  - script: pip3 install --user -r requirements.txt
+    displayName: 'Install dependencies'
+
+  - script: |
+      # Install Flake8
+      pip3 install --user flake8
+      # Install PyTest
+      pip3 install --user pytest
+    displayName: 'Install Flake8 and PyTest'
+
+  - script: |
+      python3 -m flake8
+    displayName: 'Run Flake8 linter'
+
+  - script: |
+      # Run PyTest tester
+      python3 -m pytest --junitxml=./test-results.xml
+    displayName: 'Run PyTest Tester'
+
+  - task: PublishTestResults@2
+    displayName: 'Publish PyTest results'
+    condition: succeededOrFailed()
+    inputs:
+      testResultsFiles: '**/test-*.xml'
+      testRunTitle: 'Publish test results for Python $(python.version)'
+```
 
 ## Pre-commit hooks
 
@@ -119,7 +173,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
     pip install pre-commit
     ```
 
-2. Add a **.pre-commit-config.yaml** file in the root of the repository, with the desired pre-commit actions
+2. Add a `.pre-commit-config.yaml` file in the root of the repository, with the desired pre-commit actions
 
     ```yaml
     repos:
