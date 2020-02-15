@@ -36,3 +36,9 @@ fi
 
 # ... implementation of my_script here can assume that all of its dependencies exist since it's always running in Docker ...
 ```
+
+## Code Review Checklist
+
+In addition to the [Code Review Checklist](../readme.md) you should also look for these bash specific code review items
+
+> TODO: Add checklist
