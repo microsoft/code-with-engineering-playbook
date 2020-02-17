@@ -6,7 +6,7 @@
 
 We also ensure all used providers are versioned to prevent breaking changes in future. [docs on versioning providers](https://www.terraform.io/docs/configuration/providers.html#provider-versions).
 
-## Linter
+## Linting
 
 ### tflint
 

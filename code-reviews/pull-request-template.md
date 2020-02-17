@@ -26,7 +26,7 @@
 
 - If you are printing something show a screenshot
 - When you want to share long logs upload to:
-  
+
   (StorageAccount)/pr-support/attachments/(PR Number)/(yourFiles) using [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) or [portal.azure.com](portal.azure.com) and insert the link here.
 
 ### Other information or known dependencies
