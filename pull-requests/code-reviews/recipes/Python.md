@@ -2,17 +2,17 @@
 
 ## Style Guide
 
-[CSE](../../../CSE.md) developers follow the [PEP8 style guide](https://pep8.org/) with [type hints](https://www.python.org/dev/peps/pep-0484/). The use of type hints throughout paired with linting and type hint checking avoids common errors that are tricky to debug.
+[CSE](../../CSE.md) developers follow the [PEP8 style guide](https://pep8.org/) with [type hints](https://www.python.org/dev/peps/pep-0484/). The use of type hints throughout paired with linting and type hint checking avoids common errors that are tricky to debug.
 
-[CSE](../../../CSE.md) projects should check Python code with automated tools.
+[CSE](../../CSE.md) projects should check Python code with automated tools.
 
 Linting should be added to build validation, and both linting and code formatting can be added to your pre-commit hooks and VS Code.
 
 ## Linters
 
-The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/).  Both check adherance to `PEP8` but vary a bit in what other rules they check.  In general `Pylint` tends to be a bit more stringent and give a few more false positives but both are good options for linting python code.
+The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherance to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give a few more false positives but both are good options for linting python code.
 
-Both `Pylint` and `Flake8` can be configured in VS Code using the  VS Code `python extension`
+Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `python extension`
 
 ### Flake8
 
@@ -203,5 +203,6 @@ At the next attempted commit any lint failures will block the commit.
 In addition to the [Code Review Checklist](../readme.md) you should also look for these python specific code review items
 
 * [ ] Are all new packages used included in requirements.txt
-* [ ] Do funcitons use type hints, and are there any type hint errors?
+* [ ] Does the code pass all lint checks?
+* [ ] Do functions use type hints, and are there any type hint errors?
 * [ ] Is the code readable and using pythonic constructs wherever possible.
