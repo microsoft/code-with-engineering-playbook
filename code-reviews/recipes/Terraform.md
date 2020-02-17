@@ -1,12 +1,21 @@
-# Basic Style guide
+# Terraform Code Reviews
 
-1. Adhere to the [hashicorp style guide](https://www.terraform.io/docs/configuration/style.html) 
-2. Ensure all used providers are versioned to prevent breaking changes in future. [docs on versioning providers](https://www.terraform.io/docs/configuration/providers.html#provider-versions).
+## Style guide
 
-# Linter and CI
+[CSE](../../CSE.md) developers adhere to the [hashicorp style guide](https://www.terraform.io/docs/configuration/style.html).
+
+We also ensure all used providers are versioned to prevent breaking changes in future. [docs on versioning providers](https://www.terraform.io/docs/configuration/providers.html#provider-versions).
+
+## Linter
+
+### tflint
+
+> TODO: add information and an example of installation and usage of tflint
+
+## Build Validation
 
 Ensure you enforce the style guides during build. The following example script can be used to install terraform and a linter
-then check for formatting and common errors. 
+then check for formatting and common errors.
 
 ```shell
 #! /bin/bash
@@ -29,7 +38,7 @@ wget -q https://github.com/wata727/tflint/releases/download/v${TF_LINT_VERSION}/
 sudo unzip -q -o -d /usr/local/bin/ /tmp/tflint.zip
 
 echo -e "\n\n>>> Terraform verion"
-terraform -version 
+terraform -version
 
 echo -e "\n\n>>> Terraform Format (if this fails use 'terraform fmt -recursive' command to resolve"
 terraform fmt -recursive -diff -check
@@ -43,3 +52,11 @@ terraform init
 echo -e "\n\n>>> Terraform validate"
 terraform validate
 ```
+
+> TODO: Add example of how to use this in an AzDO build validation pipeline
+
+## Code Review Checklist
+
+In addition to the [Code Review Checklist](../readme.md) you should also look for these terraform specific code review items
+
+> TODO: Add checklist
