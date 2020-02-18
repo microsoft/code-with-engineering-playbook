@@ -12,6 +12,19 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
+## Permissions & Contributions
+
+There are two ways in which you can help update the content:
+
+* **One-off:** \
+If you are not a regular contributor to the project, but you would like to contribute some changes, the best way to do it is:
+
+  1. Fork the repo
+  1. Create a PR
+
+* **Periodic and regular contributions:** \
+If you plan to update the content semi-regularly or regularly, you can be added to the project's Contributors group. Please contact one of the project's administrators to be added to the group.
+
 ## Git guidance
 
 Consistent with the practices suggested in this playbook, please follow the specifics regarding git as described in this section.
@@ -25,6 +38,15 @@ In this repo, we will the following branch naming conventions:
 |  Feature | feature/\<issue#>-\<short description> | feature/498-reorganize-scm-section |
 | Bug Fix | fix/\<bug#>-\<short description> | bug/978-correct-grammar-myfile.md |
 | Personal | users/\<alias>/\<short description> | johndo/rewrite-grooming-section
+
+> **Note:**
+>
+> * Use of personal branches should be minimized since most work should refer back to a feature/bug fix in the backlog.
+> * Mind the capitalization of the branch prefix (feature, fix, users). Tools that diplay branches as a hierarchy are typically case sensitive, and will display different hierarchies for the same words with different capitalization.
+
+### Linting
+
+Please install the [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) and ensure that all rules are followed. This will help ensure consistency in the look and feel of the documentation in this repo.
 
 ### Merging strategy
 
@@ -89,9 +111,9 @@ see the [LICENSE](LICENSE) file, and grant you a license to any code in the repo
 Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
 may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
 The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft's general trademark guidelines can be found at <http://go.microsoft.com/fwlink/?LinkID=254653>.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+Privacy information can be found at <https://privacy.microsoft.com/en-us/>
 
 Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
