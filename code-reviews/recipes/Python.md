@@ -161,6 +161,8 @@ jobs:
       testRunTitle: 'Publish test results for Python $(python.version)'
 ```
 
+To perform a PR validation on GitHub you can use a similar YAML configuration with [GitHub Actions](https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions)
+
 ## Pre-commit hooks
 
 Pre-commit hooks allow you to format and lint code locally before the pull request is issued.
