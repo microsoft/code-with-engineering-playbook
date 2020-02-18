@@ -12,9 +12,32 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-# Adding a new section
+## Git guidance
 
-## Structure/Pattern
+Consistent with the practices suggested in this playbook, please follow the specifics regarding git as described in this section.
+
+### Branch naming convention
+
+In this repo, we will the following branch naming conventions:
+
+| Branch Type       | Pattern     | Example     |
+| ------------- | ---------- | ----------- |
+|  Feature | feature/\<issue#>-\<short description> | feature/498-reorganize-scm-section |
+| Bug Fix | fix/\<bug#>-\<short description> | bug/978-correct-grammar-myfile.md |
+| Personal | users/\<alias>/\<short description> | johndo/rewrite-grooming-section
+
+### Merging strategy
+
+A merging strategy has not been formally adopted.
+For the time being, and until one is adopted, familiarize yourself with the [git guidance in this repo](https://github.com/microsoft/code-with-engineering-playbook/blob/master/source-control/git.md), decide whether you'll favor liner or non-linear commit history and follow that procedure.
+
+### Releases
+
+No release strategy has been established as of now.
+
+## Adding a new section
+
+### Structure/Pattern
 
 Each section consist of the following parts
 
@@ -34,11 +57,11 @@ Each section consist of the following parts
    4. Opportunities for improvement
    5. External Reference Material
 
-## Example Directory Hierarchy
+### Example Directory Hierarchy
 
 The following illustrates how the directory structure could be organized.
 
-```
+```text
 - /continuous-integration
     - README.md (Conceptual)
     - /e2e-testing-in-ci
@@ -56,7 +79,7 @@ The following illustrates how the directory structure could be organized.
         - contoso-ci-pipeline-for-terraform.md
 ```
 
-# Legal Notices
+## Legal Notices
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
 in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
