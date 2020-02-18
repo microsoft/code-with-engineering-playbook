@@ -4,7 +4,7 @@
 
 [CSE](../../CSE.md) developers follow [Google's Bash Style Guide](https://google.github.io/styleguide/shell.xml).
 
-## Linter
+## Linting
 
 [CSE](../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
 
