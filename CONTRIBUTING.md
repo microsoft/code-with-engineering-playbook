@@ -41,7 +41,7 @@ In this repo, we use the following branch naming conventions:
 > **Note:**
 >
 > * Please, do not use personal branches. Work should refer back to a feature/bug fix in the backlog.
-> * Mind the capitalization of the branch prefix (feature, fix, users). Tools that diplay branches as a hierarchy are typically case sensitive, and will display different hierarchies for the same words with different capitalization.
+> * Mind the capitalization of the branch prefix (feature, fix). Tools that diplay branches as a hierarchy are typically case sensitive, and will display different hierarchies for the same words with different capitalization.
 
 ### Linting
 
