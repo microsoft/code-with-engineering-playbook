@@ -49,7 +49,7 @@ If you use VSCode as your preferred editor, please install the [markdownlint ext
 
 ### Merging strategy
 
-The preferred merging strategy for this repo is **non-linear**.
+The preferred merging strategy for this repo is **linear**.
 You can familiarize yourself with merging strategies described in the ["git guidance in this repo"](https://github.com/microsoft/code-with-engineering-playbook/blob/master/source-control/git.md) document.
 
 ## Adding a new section
@@ -108,7 +108,7 @@ may be either trademarks or registered trademarks of Microsoft in the United Sta
 The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
 Microsoft's general trademark guidelines can be found at <http://go.microsoft.com/fwlink/?LinkID=254653>.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+Privacy information can be found at <https://privacy.microsoft.com/en-us/>
 
 Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
