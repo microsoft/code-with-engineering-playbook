@@ -20,7 +20,7 @@ There are two ways in which you can help update the content:
 If you are not a regular contributor to the project, but you would like to contribute some changes, the best way to do it is:
 
   1. Fork the repo
-  1. Create a PR
+  2. Create a PR
 
 * **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added to the project's Contributors group. Please contact one of the project's administrators to be added to the group.
@@ -31,31 +31,26 @@ Consistent with the practices suggested in this playbook, please follow the spec
 
 ### Branch naming convention
 
-In this repo, we will the following branch naming conventions:
+In this repo, we use the following branch naming conventions:
 
-| Branch Type       | Pattern     | Example     |
-| ------------- | ---------- | ----------- |
-|  Feature | feature/\<issue#>-\<short description> | feature/498-reorganize-scm-section |
+| Branch Type | Pattern | Example |
+| - | - | - |
+| Feature | feature/\<issue#>-\<short description> | feature/498-reorganize-scm-section |
 | Bug Fix | fix/\<bug#>-\<short description> | bug/978-correct-grammar-myfile.md |
-| Personal | users/\<alias>/\<short description> | johndo/rewrite-grooming-section
 
 > **Note:**
 >
-> * Use of personal branches should be minimized since most work should refer back to a feature/bug fix in the backlog.
+> * Please, do not use personal branches. Work should refer back to a feature/bug fix in the backlog.
 > * Mind the capitalization of the branch prefix (feature, fix, users). Tools that diplay branches as a hierarchy are typically case sensitive, and will display different hierarchies for the same words with different capitalization.
 
 ### Linting
 
-Please install the [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) and ensure that all rules are followed. This will help ensure consistency in the look and feel of the documentation in this repo.
+If you use VSCode as your preferred editor, please install the [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) and ensure that all rules are followed. This will help ensure consistency in the look and feel of the documentation in this repo.
 
 ### Merging strategy
 
-A merging strategy has not been formally adopted.
-For the time being, and until one is adopted, familiarize yourself with the [git guidance in this repo](https://github.com/microsoft/code-with-engineering-playbook/blob/master/source-control/git.md), decide whether you'll favor liner or non-linear commit history and follow that procedure.
-
-### Releases
-
-No release strategy has been established as of now.
+The preferred merging strategy for this repo is **non-linear**.
+You can familiarize yourself with merging strategies described in the ["git guidance in this repo"](https://github.com/microsoft/code-with-engineering-playbook/blob/master/source-control/git.md) document.
 
 ## Adding a new section
 
@@ -113,7 +108,7 @@ may be either trademarks or registered trademarks of Microsoft in the United Sta
 The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
 Microsoft's general trademark guidelines can be found at <http://go.microsoft.com/fwlink/?LinkID=254653>.
 
-Privacy information can be found at <https://privacy.microsoft.com/en-us/>
+Privacy information can be found at https://privacy.microsoft.com/en-us/
 
 Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
