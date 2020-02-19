@@ -22,6 +22,22 @@ To ensure that the code review process is healthy and meets the goals stated abo
 2. In the daily standup meeting check tasks pending for review and make sure they have reviewers assigned.
 3. Junior teams and teams new to the process can consider creating separate tasks for reviews together with the tasks themselves.
 
+### Size guidance
+
+We should always aim to have Pull Requests as smaller as possible, without losing context and technical feasibility. Having small Pull Requests, have multiple benefits:
+
+1. It's easier to review, a clear benefit for the reviewers.
+2. It's easier to deploy, at least in terms of a bigger Pull Request. This is aligned with the strategy of release fast and release often.
+3. Minimizes possible conflicts, or stale Pull Requests difficult to merge and keep in sync with master either because it's very dynamic or because it has some refactoring.
+
+However, we should be aware to avoid having Pull Requests that include code without context or very loose coupled. 
+
+There are times where seem a big Pull Request is unavoidable, however, there are some strategies to keep Pull Requests small depending on the "cause" of the ineluctability:
+
+#### Minimum Working Components
+#### Layers
+#### Feature Flag
+
 ### Reviewee's guidance
 
 1. When starting to work on a task, break your code into the smallest logically separable units. [TODO: More on size here]
