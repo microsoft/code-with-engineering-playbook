@@ -36,7 +36,7 @@ Good unit tests follow a few general principles:
 
 For more complex applications, unit tests also ensure:
 - that multi-threading works as intended,
-- the unit can deals appropriately with transient outages of external dependencies (retry, fail-fast, …)
+- the unit deals appropriately with transient outages of external dependencies (retry, fail-fast, …)
 - Stateful applications restore state when re-started
 
 ## Specific Guidance

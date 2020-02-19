@@ -2,15 +2,17 @@
 
 ## Style Guide
 
-[CSE](../../../CSE.md) developers follow [Google's Bash Style Guide](https://google.github.io/styleguide/shell.xml).
+[CSE](../../CSE.md) developers follow [Google's Bash Style Guide](https://google.github.io/styleguide/shell.xml).
 
-## Linter
+## Linting
 
-[CSE](../../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../../continuous-integration/readme.md).
+[CSE](../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
+
+## Build Validation
 
 To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
 
-```
+```yaml
 - bash: |
     echo "This checks for formatting and common bash errors. See wiki for error details and ignore options: https://github.com/koalaman/shellcheck/wiki/SC1000"
     export scversion="stable"
@@ -20,7 +22,6 @@ To automate this process in Azure Devops you can add the following snippet to yo
     shellcheck ./scripts/*.sh
   displayName: "Validate Scripts: Shellcheck"
   ```
-
 
 ## Dependencies
 
@@ -35,3 +36,9 @@ fi
 
 # ... implementation of my_script here can assume that all of its dependencies exist since it's always running in Docker ...
 ```
+
+## Code Review Checklist
+
+In addition to the [Code Review Checklist](../readme.md) you should also look for these bash specific code review items
+
+> TODO: Add checklist
