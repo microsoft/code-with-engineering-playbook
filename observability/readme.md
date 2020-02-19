@@ -18,13 +18,13 @@ Building observable systems enables development teams at CSE to measure how well
 ## Recommended Practices
 
 1. **Correlation Id**: Include unique identifier at the start of the interaction to tie down aggregated data from various system components and provide a holistic view. Read more guidelines about using [correlation id](correlation-id.md).
-1. Ensure health of the services are **monitored** and provide insights into system's performance and behavior.
-2. **Faults, crashes, and failures** are logged as discrete events. This helps engineers identify problem area(s) during failures.
-3. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.
-4. Ensure that **metrics** around latency and duration are collected and can be aggregated.
-5. Don't attempt to monitor everything. If the data is not actionable, it is useless and becomes a noise.
-6. As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.,)
-7. Start small and add where there is customer impact.
+2. Ensure health of the services are **monitored** and provide insights into system's performance and behavior.
+3. **Faults, crashes, and failures** are logged as discrete events. This helps engineers identify problem area(s) during failures.
+4. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.
+5. Ensure that **metrics** around latency and duration are collected and can be aggregated.
+6. Don't attempt to monitor everything. If the data is not actionable, it is useless and becomes noise.
+7. As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.,)
+8. Start small and add where there is customer impact.
 
 ## What is collected
 
