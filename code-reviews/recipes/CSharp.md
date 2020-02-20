@@ -23,6 +23,9 @@ We recommend using a common setup for your solution that you can refer to in all
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+  <PropertyGroup>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
   <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)../.editorconfig')" >
     <AdditionalFiles Include="$(MSBuildThisFileDirectory)../.editorconfig" />
   </ItemGroup>
@@ -36,19 +39,19 @@ You can then reference the common.props in your other project files to ensure a 
 </Project>
 ```
 
-The [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019) allows for configuration and overrides of rules. You can have an .editorconfig file on project level to customize rules for different projects (test projects for example).
+The [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019) allows for configuration and overrides of rules. You can have an .editorconfig file at project level to customize rules for different projects (test projects for example).
 
-Details about the configuration of different rules can be found [here](https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019).
+[Details about the configuration of different rules](https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019).
 
 ### FxCop analyzers
 
 Microsoft's FxCop analyzers check your code for security, performance, and design issues, among others. [Install FxCop analyzers in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019).
 
-You can install the FxCop analyzers using nuget or a VSIX extension. We reocommend using the nuget package ([see Project setup](#project-setup)). Which allows for consistent use accross all developers on a project as well as CI validation.
+You can install the FxCop analyzers using nuget or a VSIX extension. We recommend using the nuget package ([see Project setup](#project-setup)). Which allows for consistent use accross all developers on a project as well as CI validation.
 
 ### StyleCop analyzer
 
-The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure, the team is following the same rules without having subjective discussions around braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
+The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions around braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
 
 The minimum rules set teams should adopt is the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set.
 
@@ -73,12 +76,11 @@ If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enab
 ## Code Review Checklist
 
 * [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
-* [ ] Is the code subject to concurrency issues? Are shared objects property
-protected?
+* [ ] Is the code subject to concurrency issues? Are shared objects properly protected?
 * [ ] Is dependency injection (DI) used? Is it setup correctly?
-* [ ] Are the [middlewares](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
+* [ ] Are [middlewares](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
 * [ ] Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed ([using pattern](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement))?
-* [ ] Is the code creating a lot of short lived objects. Could we optimize GC pressure?
+* [ ] Is the code creating a lot of short-lived objects. Could we optimize GC pressure?
 * [ ] Is the code written in a way that causes boxing operations to happen?
 * [ ] Does the code [handle exceptions correctly](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)?
 * [ ] Is package management being used (NuGet) instead of committing DLLs?
