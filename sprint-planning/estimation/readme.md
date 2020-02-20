@@ -1,12 +1,18 @@
-# Estimation
+# Goals for Estimation
 
-When a team adopts agile, the process of estimating new work becomes more effective.
-Over time, as the team works together, they get a sense for how to approach the
-stories and the effort that will be required to complete each story. With a few
-successful sprints completed, the team can start to see patterns of success and
-where the team has had failures. The team can start to look at their velocity against
-their estimates and begin to predict with greater accuracy what effort will be
-needed to complete the next story.
+When a team adopts agile, as the team works together, the process of estimating
+new work becomes more effective. Over time, they get a sense for how their team
+approaches the stories and the effort that will be required to complete each story.
+With a few successful sprints completed, the team can start to see patterns of
+success and where the team has had failures. The team can start to look at their
+velocity against their estimates and begin to predict with greater accuracy what
+effort will be needed to complete the next story.
+
+If the makeup of the team is regularly changing, the process of estimation becomes
+challenging as the patterns that drive the estimation process also change. Initially,
+it will take three to five or more sprints to find a good rhythm to the team estimations.
+When the team changes to a new project or a team is reorganized to join with another
+team, the estimation model is essentially reset and a new baseline must be formed.
 
 ## Sizing
 
