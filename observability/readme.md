@@ -11,9 +11,9 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Pillars of Observability
 
-1. [Logging](/observability/pillars.md#Logging)
-2. [Tracing](/observability/pillars.md#Tracing)
-3. [Metrics](/observability/pillars.md#Metrics)
+1. [Logging](pillars.md#Logging)
+2. [Tracing](pillars.md#Tracing)
+3. [Metrics](pillars.md#Metrics)
 
 ## Recommended Practices
 
