@@ -75,7 +75,7 @@ To make sure a design is reviewed in a timely manner, its important to directly 
 
 1. Make it the designer's responsibility to find reviewers for their design
 2. The designer should ask a team member directly (face-to-face conversation, async messaging, etc) if they are available to review. Only if they agree, then assign them as a reviewer
-3. Indicate to the reviewer's if the design is ready to be merged once approved.
+3. Indicate if the design is ready to be merged once approved.
 
 ### Indicate Design Completeness
 
