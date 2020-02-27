@@ -124,7 +124,7 @@ Many of the code quality assurance items can be automated or enforced by policie
 * The project team regularly updates their code review checklists to reflect common issues they have encountered.
 * Software engineering managers should review a sample of pull requests and/or be co-reviewers with other developers to help everyone improve their skills as code reviewers.
 
-Team can collect metrics of code reviews to measure their efficiency. Some useful metrics include:
+The team can collect metrics of code reviews to measure their efficiency. Some useful metrics include:
 
 * Defect Removal Efficiency (DRE) - a measure of the development team ability to remove defects prior to release
 * Time metrics:
