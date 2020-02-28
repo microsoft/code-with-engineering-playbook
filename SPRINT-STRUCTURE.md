@@ -65,7 +65,7 @@ This layout structures the playbook content to make it easy day to day to find r
     - Recipe for Setup in
       - Azure DevOps
       - GitHub
-    - [Code Reviews](pull-requests/code-reviews/readme.md)
+    - [Code Reviews](code-reviews/readme.md)
       - Conceptual
         - Add to checklist (breaking changes & backward compatibility, security, fault tolerance, etc)
   - Code Merging

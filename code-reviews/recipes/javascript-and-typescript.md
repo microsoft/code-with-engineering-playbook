@@ -1,9 +1,16 @@
-# TypeScript Code Reviews
+# JavaScript/TypeScript Code Reviews
 
-TypeScript projects should have linting configured, and should refuse PR's that do not comply with
-the project's linting standard.
+## Style Guide
 
-## Setting up [ESLint](https://eslint.org/docs/about/)
+[CSE](../../CSE.md) developers use [prettier](https://prettier.io/) to do code formatting for JavaScript.
+
+Using an automated code formatting tool like Prettier enforces a well accepted style guide that was collaboratively built by a wide range of companies including Microsoft, Facebook, and AirBnB.
+
+For higher level style guidance not covered by prettier, we follow the [AirBnB Style Guide](https://github.com/airbnb/javascript).
+
+## Linting
+
+### eslint
 
 Per guidance outlined in [Palantir's 2019 TSLint roadmap](https://medium.com/palantir/tslint-in-2019-1a144c2317a9),
 TypeScript code should be linted with [ESLint](https://github.com/eslint/eslint). Resources for
@@ -45,15 +52,17 @@ Add the following to the `scripts` of your `package.json`:
 This will lint all `.js`, `.jsx`, `.ts`, `.tsx` files in your project and omit any files or
 directories specified in your `.gitignore`.
 
-You can run linting with: 
+You can run linting with:
 
 ```bash
 npm run lint
 ```
 
-## Setting up [Prettier](https://prettier.io/docs/en/)
+## Setting up Prettier
 
-Prettier is an opinionated code formatter. You can find a getting started guide [here](https://prettier.io/docs/en/integrating-with-linters.html).
+[Prettier](https://prettier.io/docs/en/) is an opinionated code formatter.
+
+[Getting started guide](https://prettier.io/docs/en/integrating-with-linters.html).
 
 Install with `npm` as a dev-dependency:
 
@@ -97,7 +106,32 @@ Create a `.vscode` folder in the root of your project and add the following to y
 }
 ```
 
+By default, we use the following overrides should be added to the VS Code configuration to standardize on single quotes, a four space drop, and to do ESLinting:
+
+```json
+{
+    "prettier.singleQuote": true,
+    "prettier.eslintIntegration": true,
+    "prettier.tabWidth": 4
+}
+```
+
+## Build Validation
+
+To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
+
+> TODO: Add example of yaml for automating linting and testing
+
+## Pre-commit hooks
+
+All developers should run `eslint` in a pre-commit hook to ensure standard formatting. We highly recommend using an editor integration like [vscode-eslint](https://github.com/Microsoft/vscode-eslint) to provide realtime feedback.
+
+> TODO: Show example
+
 ## Code Review Checklist
 
-In addition to the [Code Review checklist](../readme.md), TypeScript code should compile without
-error and should not raise linting errors.
+In addition to the [Code Review checklist](../readme.md), you should also look for these additional JavaScript related code review items:
+
+* [ ] Does the code stick to our formatting and code standards? Does running prettier and ESLint over the code should yield no warnings or errors respectively?
+* [ ] Does the change reimplement code that would be better served by pulling in a well known module from the ecosystem?
+* [ ] Does TypeScript code compile without raising linting errors

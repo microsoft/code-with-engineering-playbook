@@ -71,7 +71,7 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 - [ ] Linters, unit tests and successful builds for PR merges.
 - [ ] Bug fixes suggest how to catch the bug in a code review within associated work item. And if possible link to original PR that introduced bug.
 
-More details on [Code Reviews](pull-requests/code-reviews/readme.md)
+More details on [Code Reviews](code-reviews/readme.md)
 
 ## Retrospectives
 
