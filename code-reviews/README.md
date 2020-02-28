@@ -85,11 +85,11 @@ Code reviews should use the below guidance and checklists to ensure positive and
 
 1. Complexity
     * Are functions too complex?
+    * Is the single responsibility principle followed? Function or class should do one ‘thing’.
     * Should a function be broken into multiple functions?
-    * If a method has greater than 3 arguments, potentially overly complex.
-    * Single responsibility principle – function or class should do one ‘thing’
+    * If a method has greater than 3 arguments, it is potentially overly complex.
+    * Does the code add functionality that isn’t needed?
     * Can the code be understood easily by code readers?
-    * Does the code add functionality that isn’t needed? Is it overly complex?
 1. Naming/readability
     * Did the developer pick good names for functions, variables, etc?
 1. Error Handling
@@ -97,7 +97,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 1. Functionality
     * Is there parallel programming in this PR that could cause race conditions? Carefully read through this logic.
     * Could the code be optimized? For example: are there more calls to the database than need be?
-    * If you may not fully understand how the code could affect the system, ask for help.
+    * How does the functionality fit in the bigger picture? Can it have negative effects to the overall system?
     * Are there security flaws?
     * Does a variable name reveal any customer specific information?
     * Is PII and EUII treated correctly? And not logging any PII information.
