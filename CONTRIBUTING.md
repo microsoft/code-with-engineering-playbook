@@ -12,45 +12,30 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Permissions & Contributions
+## Contributions
 
-There are two ways in which you can help update the content:
-
-* **One-off:** \
-If you are not a regular contributor to the project, but you would like to contribute some changes, the best way to do it is:
+To help update the content:
 
   1. Fork the repo
-  2. Create a PR
-
-* **Periodic and regular contributions:** \
-If you plan to update the content semi-regularly or regularly, you can be added to the project's Contributors group. Please contact one of the project's administrators to be added to the group.
+  2. Write in your contributions
+  3. Create a PR into this repo
 
 ## Git guidance
 
 Consistent with the practices suggested in this playbook, please follow the specifics regarding git as described in this section.
 
-### Branch naming convention
-
-In this repo, we use the following branch naming conventions:
-
-| Branch Type | Pattern | Example |
-| - | - | - |
-| Feature | feature/\<issue#>-\<short description> | feature/498-reorganize-scm-section |
-| Bug Fix | fix/\<bug#>-\<short description> | bug/978-correct-grammar-myfile.md |
-
-> **Note:**
->
-> * Please, do not use personal branches. Work should refer back to a feature/bug fix in the backlog.
-> * Mind the capitalization of the branch prefix (feature, fix). Tools that diplay branches as a hierarchy are typically case sensitive, and will display different hierarchies for the same words with different capitalization.
-
 ### Linting
 
 If you use VSCode as your preferred editor, please install the [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) and ensure that all rules are followed. This will help ensure consistency in the look and feel of the documentation in this repo.
 
+### Contributions and Pull requests
+
+When creating pull requests, follow guidance similar to the one suggested in this repo, as described in the ["Pull Requeste Template"](./code-reviews/pull-request-template.md) section, under "Code Reviews". This includes linking to the work item that prompted the pull request.
+
 ### Merging strategy
 
 The preferred merging strategy for this repo is **linear**.
-You can familiarize yourself with merging strategies described in the ["git guidance in this repo"](https://github.com/microsoft/code-with-engineering-playbook/blob/master/source-control/git.md) document.
+You can familiarize yourself with merging strategies described in the ["git guidance in this repo"](./source-control/git.md) document.
 
 ## Adding a new section
 
