@@ -156,7 +156,7 @@ E.g. the following pattern will exclude all files with the extension `.private.c
 *.private.config
 ```
 
-For more details on proper management of credentials and secrets in source control, and handling an accidental commit of secrets to source control, please refer to the the [Secrets Management](./SecretsManagement.md) document which has further information, split by language as well.
+For more details on proper management of credentials and secrets in source control, and handling an accidental commit of secrets to source control, please refer to the the [Secrets Management](../continuous-deployment/secrets-management/readme.md) document which has further information, split by language as well.
 
 ### Reverting and deleting commits
 
