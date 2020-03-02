@@ -84,9 +84,10 @@ Make a best effort to begin answering the 3 questions as close to the scheduled 
 
 ### Same Time Everyday
 
-Stand-up should be held at the same time each day. The meeting time should be mutually agreed-upon by the contributors, and should take into consideration time zones, working schedules, and other factors so that every team member can reasonably participate. 
+Stand-up should be held at the same time each day. The meeting time should be mutually agreed-upon by the contributors, and should take into consideration time zones, working schedules, and other factors so that every team member can reasonably participate.
 
 ### Schedule Stand-ups for Mid-Morning
+
 ```
              ((((
             ((((
@@ -97,6 +98,7 @@ Stand-up should be held at the same time each day. The meeting time should be mu
           : .___, :
            `-----'
 ```
+
 Many teams find that the ideal time for stand-ups is between 9 and 10am. This provides ample time for team members to get into the office, settle in (`grab a coffee ;)`), and catch up with where they left off the day before. It's also early enough to help developers to plan their day around new work items.
 
 For teams distributed across time zones, consider scheduling standup between 9 and 10am within the time zone that has the most team members.
