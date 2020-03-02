@@ -126,6 +126,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 * [JavaScript and TypeScript](recipes/javascript-and-typescript.md)
 * [Python](recipes/Python.md)
 * [Terraform](recipes/Terraform.md)
+* [Markdown](recipes/Markdown.md)
 
 ## Evidence and Measures
 
