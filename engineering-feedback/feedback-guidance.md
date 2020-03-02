@@ -47,7 +47,7 @@ Describe the impact to the customer and engagement that this feedback implies.
 
 Provide a timeframe that this feedback item needs to be resolved within (if relevant).
 
-## Repro Steps 
+## Repro Steps
 
 The repro steps are important since they help confirm and replay the issue, and are essential in demonstrating success once there is a resolution.
 
@@ -58,7 +58,6 @@ Provide a clear set of all conditions and pre-requisites required before followi
 - Platform (eg. AKS 1.16.4 cluster with Azure CNI, Ubuntu 19.04 VM)
 - Services (eg. Azure Key Vault, Azure Monitor)
 - Networking (eg. VNET with subnet)
-
 
 ### Steps
 
@@ -83,4 +82,3 @@ Describe what you expected to happen. What was the outcome that was expected?
 ### Describe the steps you took
 
 Provide a clear description of the steps taken and the outcome/description at each point.
-

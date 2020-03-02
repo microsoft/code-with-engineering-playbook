@@ -7,4 +7,5 @@ Having credentials included in a project's source code not only exposes the proj
 Ideally, credential scanning should be run as part of a developer's workflow (e.g. via a [git pre-commit hook](https://githooks.com)), however, to protect against developer error, credential scanning must also be enforced as part of the continuous integration process to ensure that no credentials ever get merged to a project's master branch.
 
 To implement credential scanning for a project, consider building on-top of one of the following recipes:
+
 - [detect-secrets](./recipes/detect-secrets.md)

@@ -22,7 +22,7 @@ Our tooling at Microsoft has made setting up integration and delivery systems li
 
 **Jenkins**
 
-Jenkins is one of the most commonly used tools across the open source community. It is well-known with hundreds of plugins for every build requirement. 
+Jenkins is one of the most commonly used tools across the open source community. It is well-known with hundreds of plugins for every build requirement.
 Jenkins is free but requires a dedicated server.
 You can easily create a Jenkins VM using this [template](https://ms.portal.azure.com/#create/azure-oss.jenkinsjenkins)
 

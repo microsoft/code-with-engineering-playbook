@@ -1,7 +1,7 @@
 # Retrospectives
 
 Development teams working on [CSE](../CSE.md) projects will conduct [agile retrospectives](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649) for each iteration and project milestone.
- 
+
 ## Goals
 
 1. Continually learn from our engagement, improving our ability to deliver value to our customers.
@@ -54,7 +54,6 @@ We recommend that project and milestone retrospectives bring in an experienced f
     1. See the Recommended Activity Recipes section for ideas on selecting activities.
     1. Thank everyone for participating.
 1. Follow up on proposed changes and experiments.
-
 
 ### Iteration Retrospective
 
@@ -113,10 +112,9 @@ Give participants a chance to vent before getting into the more analytical parts
 1. Generate Insights: Five Whys (6.3) or Identify Themes (6.8) to dig into thorny issues or find the underlying connections in the data
 1. Decide What to Do: SMART Goals (7.2) to capture what the team wants to accomplish with proposed changes
 1. Close the Retrospective: Appreciations (8.2) to give people the best chance of leaving with positive energy
- 
+
 ## Resources
 
 * [*Agile Retrospectives: Making Good Teams Great*](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649)
 
 ## Q&A
-
