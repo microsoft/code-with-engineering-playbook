@@ -2,12 +2,13 @@
 
 ## The Need
 
-In a distributed system architecture (microservice architecture), it is highly difficult to understand a single end to end customer transaction flow through the various components. 
+In a distributed system architecture (microservice architecture), it is highly difficult to understand a single end to end customer transaction flow through the various components.
 
 Here are some the general challenges -
+
 * It becomes challenging to understand the end-to-end behavior of a client request entering the application.
-*  Aggregation: Consolidating logs from multiple components and making sense out of these logs is difficult, if not impossible.
-*  Cyclic dependencies on services, course of events and asynchronous requests are not easily deciphered.
+* Aggregation: Consolidating logs from multiple components and making sense out of these logs is difficult, if not impossible.
+* Cyclic dependencies on services, course of events and asynchronous requests are not easily deciphered.
 * While troubleshooting a request, the diagnostic context of the logs are very important to get to the root of the problem.
 
 ## Solution
@@ -18,13 +19,13 @@ A Correlation ID is a unique identifier that is added to the very first interact
 
 ### Recommended Practices
 
-1. Assign each external request a Correlation ID that binds the message to a transaction. 
+1. Assign each external request a Correlation ID that binds the message to a transaction.
 2. The Correlation ID for a transaction must be assigned as early as you can.
 3. Propagate Correlation ID to all downstream components/services.
 4. All components/services of the transaction use this Correlation ID in their logs.
 5. For a HTTP Request, Correlation ID is typically passed in the header.
 6. Where possible also add it to an outgoing response.
-7. Based on the usecase, there can be additional correlation IDs that may be needed. For instance, tracking logs based on both Session ID and User ID may be required. While adding multiple correlation ID, remember to propagate them through the components. 
+7. Based on the usecase, there can be additional correlation IDs that may be needed. For instance, tracking logs based on both Session ID and User ID may be required. While adding multiple correlation ID, remember to propagate them through the components.
 
 ## Use Cases
 
