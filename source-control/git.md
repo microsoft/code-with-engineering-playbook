@@ -6,7 +6,7 @@
 
 ## Tools
 
-Use a shell/terminal to work with Git commands and not just to rely on [GUI clients](https://git-scm.com/downloads/guis/). If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and simply use your favorite shell/terminal.
+Use a shell/terminal to work with Git commands instead of relying on [GUI clients](https://git-scm.com/downloads/guis/). If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and use your favorite shell/terminal.
 
 ## Working with repositories
 
@@ -27,7 +27,7 @@ A public repository needs to have the following files in the root directory of t
 * a [CONTRIBUTING.md](Templates/CONTRIBUTING.md) file
 * reference the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
 
-To start to contribute by creating your own branch (e.g. `your_alias/feature_name`) and commit early and often - make your commit comments useful to others by including the *WHAT* and *WHY* (instead of the *HOW*).
+To start to contribute by creating your own branch (e.g. `your_alias/feature_name`) and commit often - make your commit comments useful to others by including the *WHAT* and *WHY* (instead of the *HOW*).
 
 ## Commit history
 
@@ -40,7 +40,7 @@ Agree if you want a linear or non-linear commit history. There are pros and cons
 
 Merging `topic` into `master`
 
-```
+```md
   A---B---C topic
  /         \
 D---E---F---G---H master
@@ -69,7 +69,7 @@ git merge topic
 
 #### Rebase topic branch before squash merge into master
 
-[Squash merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on `topic` being added to the history of `master`, a squash merge takes all the file changes and adds them to a single new commit on `master`.
+[Squash merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of adding each commit on `topic` to the history of `master`, a squash merge takes all the file changes and adds them to a single new commit on `master`.
 
 ```bash
           A---B---C topic
@@ -81,7 +81,7 @@ Create a PR topic --> master in Azure DevOps and approve using the squash merge 
 
 ## Write good commit comments
 
-In a nutshell, if you use `git commit -m` then you're most likely not write the best commit messages ;-)
+If you use `git commit -m` then you're probably not write the best commit messages ;-)
 
 See [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) for the reasoning and [A Note About Git Commit Messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) for more context.
 This section is merely a tl;dr summary.
@@ -96,14 +96,14 @@ This section is merely a tl;dr summary.
 
 Here an example:
 
-```
+```md
 Summarize changes in around 50 characters or less
 
 More detailed explanatory text, if necessary. Wrap it to about 72
-characters or so. In some contexts, the first line is treated as the
+characters or so. Some tools treat the first line as the
 subject of the commit and the rest of the text as the body. The
 blank line separating the summary from the body is critical (unless
-you omit the body entirely); various tools like `log`, `shortlog`
+you omit the body entirely); some tools like `log`, `shortlog`
 and `rebase` can get confused if you run the two together.
 ```
 
@@ -117,8 +117,9 @@ Azure DevOps understands Markdown, so you can use that sparingly throughout.
 Further paragraphs come after blank lines.
 
 * Bullet points are okay, too
-* Typically a hyphen or asterisk is used for the bullet, preceded
-  by a single space (no blank lines between them on Azure DevOps)
+* Use a hyphen or asterisk for the bullet, preceded
+  by a single space
+* Don't add any blank lines between bullet
 
 Put issue references to them at the bottom,
 like this:
@@ -148,7 +149,7 @@ Please see [versioning](versioning/readme.md).
 
 ### Working with secrets (such as storage keys)
 
-The best way to avoid leaking secrets is to store them in local/private files which will be excluded from being tracked in git. This is done by configuring the [.gitignore](https://git-scm.com/docs/gitignore) file.
+The best way to avoid leaking secrets is to store them in local/private files and exclude these from  git tracking with a [.gitignore](https://git-scm.com/docs/gitignore) file.
 E.g. the following pattern will exclude all files with the extension `.private.config`:
 
 ```bash
@@ -156,15 +157,15 @@ E.g. the following pattern will exclude all files with the extension `.private.c
 *.private.config
 ```
 
-For more details on proper management of credentials and secrets in source control, and handling an accidental commit of secrets to source control, please refer to the the [Secrets Management](../continuous-deployment/secrets-management/readme.md) document which has further information, split by language as well.
+For more details on proper management of credentials and secrets in source control, and handling an accidental commit of secrets to source control, please refer to the [Secrets Management](../continuous-deployment/secrets-management/readme.md) document which has further information, split by language as well.
 
-Additionally [credential scanning](../continuous-integration/credential-scanning/recipes/detect-secrets.md) can be applied in your CI/CD pipeline
+As an extra security measure, apply [credential scanning](../continuous-integration/credential-scanning/recipes/detect-secrets.md) in your CI/CD pipeline
 
 ### Reverting and deleting commits
 
-There are two options to "undo" a commit: `git revert` and `git reset`. `git revert` creates a new commit that undoes commits while `git reset` allows to delete commits entirely from the commit history.
+To "undo" a commit, run the following two commands: `git revert` and `git reset`. `git revert` creates a new commit that undoes commits while `git reset` allows to delete commits entirely from the commit history.
 
->If you accidentally committed secrets/keys only `git reset` will remove them from the commit history!
+> If you have committed secrets/keys, `git reset` will remove them from the commit history!
 
 To **delete** the latest commit use `HEAD~`:
 
@@ -178,7 +179,7 @@ To delete commits back to a specific commit, use the respective commit id:
 git reset --hard <sha1-commit-id>
 ```
 
-after you deleted the unwanted commits, just push using `force`:
+after you deleted the unwanted commits, push using `force`:
 
 ```bash
 git push origin HEAD --force
@@ -186,7 +187,7 @@ git push origin HEAD --force
 
 ### Multi service development and deployments
 
-Submodules can be very useful in more complex deployment and/or development scenarios
+Submodules can be useful in more complex deployment and/or development scenarios
 
 Adding a submodule to your repo
 
@@ -205,7 +206,7 @@ git submodule foreach git pull origin
 
 ### Stashing
 
-`git stash` is super handy if you have un-committed changes in your working directory but you want to work on a different branch. You can simply run `git stash` and save the un-committed work and reverts back to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
+`git stash` is super handy if you have un-committed changes in your working directory but you want to work on a different branch. You can run `git stash` and save the un-committed work and reverts back to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
 
 ```bash
 git stash
@@ -213,7 +214,7 @@ git stash
 git stash pop
 ```
 
-Or you can simply move the current state into a new branch:
+Or you can move the current state into a new branch:
 
 ```bash
 git stash branch <new_branch_to_save_changes>

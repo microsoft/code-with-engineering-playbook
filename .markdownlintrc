@@ -1,3 +1,4 @@
 {
-  "no-trailing-punctuation": false
+  "no-trailing-punctuation": false,
+  "line-length": false,
 }
