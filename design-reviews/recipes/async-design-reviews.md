@@ -91,3 +91,10 @@ It helps the reviewer to understand if the design is ready to be accepted or if 
 1. Mark the PR as a Draft. Some ALM tools support opening a pull request as a Draft such as Azure DevOps.
 2. Prefix the title with "DRAFT", "WIP", or "work-in-progress".
 3. Set the pull request to automatically merge after approvals and checks have passed. This can indicate to the reviewer the design is complete from the designers perspective.
+
+### Practice Inclusive Behaviors
+
+The designated reviewers are not the only team members that can provide feedback on the design. If other team members voluntarily committed time to providing feedback or asking questions, be sure to respond. Utilize face-to-face conversation (in person or virtual) to resolve feedback or questions from others as needed. This aids in building team cohesiveness in ensuring everyone understands and is willing to commit to a given design. **This practice demonstrates inclusive behavior**; which will promote trust and respect within the team.
+
+1. Respond to all PR comments **objectively and respectively** irrespective of the authors level, position, or title.
+2. After two round trips of question/response, resort to synchronous communication for resolution (i.e. virtual or physical face-to-face conversation).
