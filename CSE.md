@@ -4,6 +4,6 @@ Our team, CSE (Commercial Software Engineering), works side by side with custome
 
 We are very community focused in our work, with one foot in Microsoft and one foot in the open source communities that we help. We make pull requests on open source projects to add support for Microsoft platforms and/or improve existing implementations. We build frameworks and other tools to make it easier for developers to use Microsoft platforms. We source all the ideas for this work by maintaining very deep connections with these communities and the customers and partners that use them.
 
-If you like variety, coding in many languages, using any available tech across our industry, digging in with our customers, hackfests, occasional travel, and telling the story of what you’ve done in [blog posts](https://www.microsoft.com/developerblog/) and at conferences, then come talk to us. 
+If you like variety, coding in many languages, using any available tech across our industry, digging in with our customers, hackfests, occasional travel, and telling the story of what you’ve done in [blog posts](https://www.microsoft.com/developerblog/) and at conferences, then come talk to us.
 
 > You can checkout some of our work on our [Developer Blog](https://www.microsoft.com/developerblog/)
