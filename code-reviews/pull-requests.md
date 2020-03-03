@@ -24,6 +24,26 @@ The requirements of pull requests can and should be enforced by policies, which 
 1. Once convinced the criteria above are met, create and submit a new pull request adhering to the [pull request template](./pull-request-template.md)
 1. Follow the [code review](./README.md) process to merge the changes to the main codebase
 
+## Size guidance
+
+We should always aim to have PRs be as small as possible, without losing context and technical feasibility. Small pull requests have multiple advantages:
+
+1. They are easier to review; a clear benefit for the reviewers.
+2. They are easier to deploy; this is aligned with the strategy of release fast and release often.
+3. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
+
+However, we should avoid having PRs that include code that is without context or loosely coupled. 
+
+<!-- TODO: Expand the topics below
+
+There are times where seem a big PR is unavoidable; however, there are some strategies to keep PRs small depending on the "cause" of the ineluctability:
+
+### Minimum Working Components
+### Layers
+### Feature Flag
+
+-->
+
 ## Resources
 
 * [Review code with pull requests (Azure DevOps)](https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)

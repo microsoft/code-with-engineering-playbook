@@ -83,6 +83,7 @@ More details on [Code Reviews](code-reviews/readme.md)
 More details on [Retrospectives](retrospectives/readme.md)
 
 ## Engineering Feedback
+
 - [ ] Submit business and technical blockers that prevent project success
 - [ ] Add suggestions for improvements to leveraged services and components
 - [ ] Ensure feedback is detailed and repeatable
