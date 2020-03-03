@@ -12,9 +12,9 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-# Adding a new section
+## Adding a new section
 
-## Structure/Pattern
+### Structure/Pattern
 
 Each section consist of the following parts
 
@@ -34,11 +34,11 @@ Each section consist of the following parts
    4. Opportunities for improvement
    5. External Reference Material
 
-## Example Directory Hierarchy
+### Example Directory Hierarchy
 
 The following illustrates how the directory structure could be organized.
 
-```
+```plaintext
 - /continuous-integration
     - README.md (Conceptual)
     - /e2e-testing-in-ci
@@ -56,7 +56,7 @@ The following illustrates how the directory structure could be organized.
         - contoso-ci-pipeline-for-terraform.md
 ```
 
-# Legal Notices
+## Legal Notices
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
 in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
