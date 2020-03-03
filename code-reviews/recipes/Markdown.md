@@ -79,7 +79,7 @@ Write Good is also available as an [extension for VS Code](https://marketplace.v
 
 ### Write Good Linter
 
-The [`Write Good Linter Extension`](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter) integrates with VS Code to give grammar advice while editing the document.
+The [`Write Good Linter Extension`](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter) integrates with VS Code to give grammar and language advice while editing the document.
 
 ### markdownlint extension
 
@@ -126,6 +126,11 @@ Apart from the items on the [Code Review Checklist](../readme.md) you should als
 - [ ] Is the documentation up to date with the code?
 
 ## Writing Style Guidelines
+
+The following are some examples of writing style guidelines.
+
+Agree in your team which guidelines you should apply to your project documentation.
+Save your guidelines together with your documentation so they are easy to refer back to.
 
 ### Wording
 
