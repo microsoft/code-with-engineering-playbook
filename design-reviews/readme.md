@@ -16,6 +16,6 @@ See the [async design review recipe](./recipes/async-design-reviews.md) for guid
 
 ## Design Review Recipes
 
-* [Milestone/epic design review](recipes/milestone-epic-design-review-recipe.md)
+* [Milestone/epic design review](./recipes/milestone-epic-design-review-recipe.md)
 * Feature/story design review
 * Task design review
