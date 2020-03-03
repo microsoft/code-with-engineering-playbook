@@ -2,9 +2,11 @@
 
 ## Why is it important to submit Microsoft Engineering Feedback?
 
-Engineering Feedback captures "voice of the customer" and is an important mechanism for helping Microsoft Product Group continuously improve the platform and cloud services and enable all customers to be as productive as possible.
+Engineering Feedback captures "voice of the customer" and is an important mechanism to provide actionable insights and help Microsoft Product Group continuously improve the platform and cloud services to enable all customers to be as productive as possible.
 
 > Please note that Engineering Feedback is an asynchronous (i.e. not real-time) method to capture and aggregate friction points across multiple customers and code-with engagements. Therefore, if you need to report a service outage or an immediately-blocking bug, you should file an official [Azure support ticket](https://azure.microsoft.com/en-us/support/create-ticket/) and, if possible, reference the ticket id in the feedback that you submit later.
+
+Even if the feedback has been raised directly with a product group or on through online channels like GitHub or Stack Overflow, it is important to raise it with Microsoft Engineering feedback so it can be consolidated with other customer projects that have the same feedback to help with prioritization. 
 
 ## When should Engineering Feedback be submitted?
 
@@ -24,7 +26,15 @@ Good engineering feedback provides enough information for those who are not part
 
 ### Examples of Good Engineering Feedback
 
-* Coming soon
+Include details about the scenario and verbatim as much as possible in the main content. 
+
+For the executive summary here is an evolution of transforming a fictitious feedback with the above high-quality engineering feedback guidance in mind:
+* Initial feedback - Emailing directly from Teams is difficult
+* Making it goal oriented - **Customer is attempting to communicate with their organization by emailing through Teams and is finding it difficult to do so.**
+* Adding specifics - Customer is attempting to communicate with their organization by emailing through Teams and is finding it difficult to do so. **There are too many steps to email a Team/Channel. A user must go to Team/Channel, select a channel, click on the ellipsis. This is a clunky process and makes it difficult to centralize work within Teams.**
+* Making it actionable - Customer is attempting to communicate with their organization by emailing through Teams and is finding it difficult to do so. There are too many steps to email a Team/Channel. A user must go to Team/Channel, select a channel, click on the ellipsis. This is a clunky process and makes it difficult to centralize work within Teams. **Customer would like an easy way to email a channel or team from within the UI.**
+
+For real workd examples please follow [Feedback Examples](feedback-examples.md).
 
 ## How to submit Engineering Feedback
 
