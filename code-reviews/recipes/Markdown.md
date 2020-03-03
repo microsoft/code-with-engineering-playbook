@@ -2,19 +2,21 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers treat documentation like other source code and follow the same rules and checklists when reviewing documentation as other code.
+[CSE](../../CSE.md) developers treat documentation like other source code and follow the same rules and checklists when reviewing documentation as code.
 
-Documentation should both use proper markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style) to ensure the document is easy to read and understand.
+Documentation should both use good markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style) to ensure the document is easy to read and understand.
 
 ## Linting
 
-Linting tools exist both for verifying proper markdown syntax as well as grammar and proper English language. A good setup could include a markdown linter as a PR build check, and grammar tools for use while editing the document.
+Linting tools exist both for verifying proper markdown syntax as well as grammar and proper English language.
+
+A good setup includes a markdown linter used during editing and PR build verification, and a grammar linter used while editing the document.
 
 ### markdownlint
 
 [`markdownlint`](https://github.com/markdownlint/markdownlint) is a linter for markdown that verifies markdown syntax, and also enforces rules that make the text more readable.
 
-It exists as a [ruby gem](https://github.com/markdownlint/markdownlint), an [nmp package](https://github.com/DavidAnson/markdownlint), a [Node.js CLI](https://github.com/igorshubovych/markdownlint-cli) and a [VS Code extension](https://github.com/DavidAnson/vscode-markdownlint).
+It's available as a [ruby gem](https://github.com/markdownlint/markdownlint), an [nmp package](https://github.com/DavidAnson/markdownlint), a [Node.js CLI](https://github.com/igorshubovych/markdownlint-cli) and a [VS Code extension](https://github.com/DavidAnson/vscode-markdownlint).
 
 Installing the Node.js CLI
 
@@ -36,7 +38,7 @@ markdownlint **/*.md --ignore node_modules --fix
 
 ### proselint
 
-[`proselint`](http://proselint.com/) is a command line utility used to lint the contents of the document.  It checks for jargon, spelling errors, redundancy, corporate speak and other text related issues.
+[`proselint`](http://proselint.com/) is a command line utility that lints the text contents of the document.  It checks for jargon, spelling errors, redundancy, corporate speak and other language related issues.
 
 It's available both as a [python package](https://github.com/amperser/proselint/#checks) and a [node package](https://www.npmjs.com/package/proselint).
 
@@ -56,14 +58,19 @@ proselint document.md
 [`write-good`](https://github.com/btford/write-good) is a linter for English text that helps writing better documentation.
 
 ```bash
-pip install proselint
-npm install -g proselint
+npm install -g write-good
 ```
 
-Run proselint
+Run write-good
 
 ```bash
-proselint document.md
+write-good *.md
+```
+
+Run write-good without installing it
+
+```bash
+npx write-good *.md
 ```
 
 Write Good is also available as an [extension for VS Code](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
