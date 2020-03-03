@@ -24,13 +24,27 @@ To help update the content:
 
 Consistent with the practices suggested in this playbook, please follow the specifics regarding git as described in this section.
 
+### Branch naming convention
+
+In this repo, we use the following branch naming conventions:
+
+| Branch Type | Pattern | Example |
+| - | - | - |
+| Feature | feature/\<issue#>-\<short description> | feature/498-reorganize-scm-section |
+| Bug Fix | fix/\<bug#>-\<short description> | bug/978-correct-grammar-myfile.md |
+
+> **Note:**
+>
+> * Please, do not use personal branches. Work should refer back to a feature/bug fix in the backlog.
+> * Mind the capitalization of the branch prefix (feature, fix). Tools that diplay branches as a hierarchy are typically case sensitive, and will display different hierarchies for the same words with different capitalization.
+
 ### Linting
 
 If you use VSCode as your preferred editor, please install the [markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) and ensure that all rules are followed. This will help ensure consistency in the look and feel of the documentation in this repo.
 
 ### Contributions and Pull requests
 
-When creating pull requests, follow guidance similar to the one suggested in this repo, as described in the ["Pull Requeste Template"](./code-reviews/pull-request-template.md) section, under "Code Reviews". This includes linking to the work item that prompted the pull request.
+When creating pull requests, follow guidance similar to the one suggested in this repo, as described in the ["Pull Request Template"](./code-reviews/pull-request-template.md) section, under "Code Reviews". This includes linking to the work item that prompted the pull request.
 
 ### Merging strategy
 
