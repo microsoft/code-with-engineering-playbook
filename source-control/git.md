@@ -6,7 +6,9 @@
 
 ## Tools
 
-Use a shell/terminal to work with Git commands instead of relying on [GUI clients](https://git-scm.com/downloads/guis/). If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and use your favorite shell/terminal.
+Use a shell/terminal to work with Git commands instead of relying on [GUI clients](https://git-scm.com/downloads/guis/).
+
+If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and use your favorite shell/terminal.
 
 ## Working with repositories
 
@@ -27,7 +29,7 @@ A public repository needs to have the following files in the root directory of t
 * a [CONTRIBUTING.md](Templates/CONTRIBUTING.md) file
 * reference the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
 
-To start to contribute by creating your own branch (e.g. `your_alias/feature_name`) and commit often - make your commit comments useful to others by including the *WHAT* and *WHY* (instead of the *HOW*).
+To start to contribute by creating your own branch, or fork the repository, and commit often - make your commit comments useful to others by including the *WHAT* and *WHY* (instead of the *HOW*).
 
 ## Commit history
 
@@ -81,7 +83,7 @@ Create a PR topic --> master in Azure DevOps and approve using the squash merge 
 
 ## Write good commit comments
 
-If you use `git commit -m` then you're probably not write the best commit messages ;-)
+If you use `git commit -m` then you're probably not writing the best commit messages ;-)
 
 See [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/) for the reasoning and [A Note About Git Commit Messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) for more context.
 This section is merely a tl;dr summary.
@@ -140,7 +142,7 @@ git config --global core.editor "code --wait"
 Let's use the following naming conventions for branches:
 
 * personal branches: `user/your_alias/feature_name`
-* feature branches for staging (testing, integration,...): `staging/feature_name`
+* feature branches for staging (testing, integration, …): `staging/feature_name`
 * release branches: `release/release_name`
 
 ### Release Strategy/Versioning
@@ -210,7 +212,7 @@ git submodule foreach git pull origin
 
 ```bash
 git stash
-...
+…
 git stash pop
 ```
 

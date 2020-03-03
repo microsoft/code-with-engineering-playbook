@@ -4,14 +4,15 @@ Secrets Management refers to the way in which we protect configuration settings 
 made public, would allow unauthorized access to resources. Examples of secrets are usernames, passwords, api keys, SAS
 tokens etc.
 
-We should assume any repo we work on may go public at any time and follow the appropriate procedures, even if
+We should assume any repo we work on may go public at any time and protect our secrets, even if
 the repo is initially private.
 
 ## General Approach
 
-The general approach is to keep secrets in a separate configuration file during development which is never checked in
-to the repo. Best practice would be to add this file name to the [.gitignore](https://git-scm.com/docs/gitignore) to prevent that it's checked in.
-Each developer may maintain their own version of the file or, if required, circulate it via private channels e.g. a Teams chat.
+The general approach is to keep secrets in separate configuration files that are not checked in
+to the repo. Add the files to the [.gitignore](https://git-scm.com/docs/gitignore) to prevent that they're checked in.
+
+Each developer maintains their own local version of the file or, if required, circulate them via private channels e.g. a Teams chat.
 
 In a production system, assuming Azure, create the secrets in the environment of the running process. We can do this by manually editing the 'Applications Settings' section of the resource, but a script using
 the Azure CLI to do the same is a useful time-saving utility. See [az webapp config appsettings](https://docs.microsoft.com/en-us/cli/azure/webapp/config/appsettings?view=azure-cli-latest) for more details.
@@ -27,17 +28,17 @@ The [secrets-per-branch recipe](./recipes/azure-devops/secrets-per-branch.md) de
 The care taken to protect our secrets applies both to how we get and store them, but also to how we use them.
 
 - **Don't log secrets**
-- Don't put them in logging or reporting
-- Don't send them to other applications, don't use them in URLs, forms or in any other way other than to make a request to the service that requires that secret
+- Don't put them in reporting
+- Don't send them to other applications, as part of URLs, forms, or in any other way other than to make a request to the service that requires that secret
 
 ## Enhanced-Security Applications
 
-The techniques outlined below provide 'good' security and a common pattern for a wide range of languages. They rely on
+The techniques outlined below provide *good* security and a common pattern for a wide range of languages. They rely on
 the fact that Azure keeps application settings (the environment) encrypted until your app runs.
 
 They do *not* prevent secrets from existing in plaintext in memory at runtime. In particular, for garbage collected languages those values may exist for longer than the lifetime of the variable, and may be visible when debugging a memory dump of the process.
 
-*If you are working on an application with enhanced security requirements you should consider using additional techniques to maintain encryption on secrets throughout the application lifetime.*
+> If you are working on an application with enhanced security requirements you should consider using additional techniques to maintain encryption on secrets throughout the application lifetime.
 
 Always rotate encryption keys on a regular basis.
 
@@ -53,16 +54,16 @@ Use the [`file`](https://docs.microsoft.com/en-us/dotnet/framework/configure-app
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <appSettings file="..\..\secrets.config">
-  ...
+  …
   </appSettings>
   <startup>
       <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
   </startup>
-  ...
+  …
 </configuration>
 ```
 
-Accessing secrets:
+Access secrets:
 
 ```C#
 static void Main(string[] args)
