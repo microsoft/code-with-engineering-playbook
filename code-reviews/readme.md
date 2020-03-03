@@ -28,7 +28,7 @@ We should always aim to have Pull Requests be as small as possible, without losi
 
 1. It's easier to review; a clear benefit for the reviewers.
 2. It's easier to deploy, at least in terms of a bigger Pull Request. This is aligned with the strategy of release fast and release often.
-3. Minimizes possible conflicts, or stale Pull Requests difficult to merge and keep in sync with master either because it's very dynamic or because it has some refactoring.
+3. Minimizes possible conflicts and stale Pull Requests, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
 
 However, we should be aware to avoid having Pull Requests that include code without context or very loose coupled. 
 
