@@ -19,4 +19,4 @@ jobs:
     - name: Run Markdownlint
       run: |
         npm i -g markdownlint-cli
-        markdownlint "**/*.md" --ignore node_modules
+        markdownlint "**/*.md"
