@@ -24,7 +24,7 @@ To ensure that the code review process is healthy and meets the goals stated abo
 
 ### Size guidance
 
-We should always aim to have Pull Requests as smaller as possible, without losing context and technical feasibility. Small pull requests have multiple benefits:
+We should always aim to have Pull Requests be as small as possible, without losing context and technical feasibility. Small pull requests have multiple advantages:
 
 1. It's easier to review, a clear benefit for the reviewers.
 2. It's easier to deploy, at least in terms of a bigger Pull Request. This is aligned with the strategy of release fast and release often.
