@@ -1,4 +1,4 @@
-## Credential scanning
+# Credential scanning
 
 Credential scanning is the engineering practice of automatically inspecting a project to ensure that no secrets are included in the project's source code. Secrets include database passwords, storage connection strings, admin logins, service principals, etc. See also [Secrets management](../../continuous-deployment/secrets-management/readme.md).
 
