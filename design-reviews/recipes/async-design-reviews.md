@@ -9,7 +9,7 @@ Allow team members to review designs as their work schedule allows.
 This in turn results in the following benefits:
 
 - **Higher Participation & Accessibility**. They do not need to be online and available at the same time as others to review.
-- **Reduced Time Constraint**. Reviewers can spend longer than the duration of a single meeting to think through approach and provide feedback.
+- **Reduced Time Constraint**. Reviewers can spend longer than the duration of a single meeting to think through the approach and provide feedback.
 
 ## Measures
 
@@ -45,36 +45,11 @@ Design documentation must live in a source control repository that supports pull
 1. The designer branches the repo with the documentation.
 2. The designer works on adding or updating documentation relevant to the design.
 3. The designer submits pull request and requests specific team members to review.
-4. Reviewers provide feedback to Designer. Designer incorporates feedback.
+4. Reviewers provide feedback to Designer who incorporates the feedback.
 5. (OPTIONAL) Design review meeting might be held to give deeper explanation of design to reviewers.
 6. Design is approved/accepted and merged to master.
 
-```mermaid
-sequenceDiagram
-    participant repo as Source Code Repo
-    participant des as Designer
-    participant pr as Design Pull Request
-    participant rev as Reviewers
-
-    activate repo
-    activate des
-    des ->> repo: create branch
-    note over des: works on design
-    activate pr
-    des ->> pr: create design PR
-    des ->> rev: request review
-    activate rev
-    rev ->> pr: review design PR
-    note over des,rev: design review meeting (optional)
-    des ->> pr: incorporate feedback
-    rev ->> pr: approve design
-    deactivate rev
-    des ->> pr: complete
-    pr ->> repo: merge design
-    deactivate pr
-    deactivate des
-    deactivate repo
-```
+![Async Design Review Workflow](assets/async-design-reviews-sequence.png)
 
 ### Tips for Faster Review Cycles
 
