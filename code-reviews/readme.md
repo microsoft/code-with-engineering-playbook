@@ -30,12 +30,14 @@ We should always aim to have Pull Requests be as small as possible, without losi
 2. It's easier to deploy, at least in terms of a bigger Pull Request. This is aligned with the strategy of release fast and release often.
 3. Minimizes possible conflicts and stale Pull Requests, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
 
-However, we should be aware to avoid having Pull Requests that include code without context or very loose coupled. 
+However, we should be aware to avoid having Pull Requests that include code without context or very loose coupled.
 
 There are times where seem a big Pull Request is unavoidable, however, there are some strategies to keep Pull Requests small depending on the "cause" of the ineluctability:
 
 #### Minimum Working Components
+
 #### Layers
+
 #### Feature Flag
 
 ### Reviewee's guidance

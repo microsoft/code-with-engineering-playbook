@@ -16,27 +16,27 @@ For a much deeper understanding of all of these concepts, the books [Continuous 
 
 ## Tools
 
-**Azure Pipelines**
+### Azure Pipelines
 
 Our tooling at Microsoft has made setting up integration and delivery systems like this easy. If you are unfamiliar with it, take a few moments now to read through [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) (Previously VSTS) and for a practical walkthrough of how this works in practice, one example you can read through is [CI/CD on Kubernetes with VSTS](https://medium.com/@timfpark/application-ci-cd-on-kubernetes-with-visual-studio-team-services-ccacecdea8a5).
 
-**Jenkins**
+### Jenkins
 
 Jenkins is one of the most commonly used tools across the open source community. It is well-known with hundreds of plugins for every build requirement.
 Jenkins is free but requires a dedicated server.
 You can easily create a Jenkins VM using this [template](https://ms.portal.azure.com/#create/azure-oss.jenkinsjenkins)
 
-**TravisCI**
+### TravisCI
 
 Travis CI can be used for open source projects at no cost but developers must purchase an enterprise plan for private projects.
 This service is ideal for validation of PR's on GitHub because it is lightweight and easy to set up with no need for dedicated server setup.
 It also supports a Build matrix feature which allows accelerating the build and testing process by breaking them into parts.
 
-**CircleCI**
+### CircleCI
 
 CircleCI is a free service for open source projects with no dedicated server required. It is also ideal for validation of PR's on GitHub.
 CircleCI also allows workflows, parallelism and splitting your tests across any number of containers with a wide array of packages pre-installed on the build containers.
 
-**AppVeyor**
+### AppVeyor
 
 AppVeyor is another free CI service for open source projects which also supports Windows-based builds.
