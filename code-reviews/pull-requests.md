@@ -17,6 +17,7 @@ The requirements of pull requests can and should be enforced by policies, which 
 1. Implement changes based on the well-defined description and acceptance criteria of the task at hand
 1. Then, before creating a new pull request:
     * Make sure the code conforms with the agreed coding conventions
+        * This can be partially automated using linters
     * Ensure the code compiles and runs without errors or warnings
     * Write and/or update tests to cover the changes and make sure all new and existing tests pass
     * Write and/or update the documentation to match the changes
