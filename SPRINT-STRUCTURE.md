@@ -1,6 +1,6 @@
 # Structure of a Sprint
 
-### Goals
+## Goals
 
 This index structure is intended to accomplish the following goals
 

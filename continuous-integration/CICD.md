@@ -1,4 +1,4 @@
-## Continuous Integration and Delivery
+# Continuous Integration and Delivery
 
 Continuous Integration is the engineering practice of frequently committing code in a shared repository, ideally several times a day, and performing an automated build on it. These changes are built with other simultaneous changes to the system, which enables early detection of integration issues between multiple developers working on a project. Build breaks due to integration failures are treated as the highest priority issue for all of the developers on a team and generally work stops until they are fixed.
 
@@ -14,7 +14,7 @@ Our expectation is that CI/CD should be used in all of the engineering projects 
 
 For a much deeper understanding of all of these concepts, the books [Continuous Integration](https://www.amazon.com/Continuous-Integration-Improving-Software-Reducing/dp/0321336380) and [Continuous Delivery](https://www.amazon.com/gp/product/0321601912) provide a comprehensive background.
 
-### Tools
+## Tools
 
 **Azure Pipelines**
 
