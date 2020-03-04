@@ -69,7 +69,7 @@ Provide a clear set of repeatable steps that will allow for this feedback to be 
 
 ## Notes
 
-Include items like architecture diagrams, screen shots, logs, traces etc which can help with understanding your notes and the feedback item.
+Include items like architecture diagrams, screen shots, logs, traces etc which can help with understanding your notes and the feedback item. Also include details about the scenario customer/partner verbatim as much as possible in the main content.
 
 ### What didn't work
 

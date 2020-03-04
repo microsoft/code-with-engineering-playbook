@@ -1,6 +1,6 @@
 # Engineering Feedback Examples
 
-The following are real world examples of Engineering Feedback that have led to product improvements and unblocked customers.
+The following are real-world examples of Engineering Feedback that have led to product improvements and unblocked customers.
 
 ## Windows Server Container support for Azure Kubernetes Service
 
@@ -24,10 +24,7 @@ Customer scenario was to receive a total of 250 messages per second from 50 prod
 
 ## Stream Analytics - No support for zero-downtime scale-down
 
-In order to update the Streaming Unit number in Stream Analytics you need to stop the service and wait for minutes for it to restart. This unacceptable by customers who need near real-time analysis​. In order to have a job re-started, up to 2 minutes are needed and this is not acceptable for a real-time streaming solution.
-It would also be optimal if scale-up and scale-down could be done automatically, by setting threshold values that when reached increase or decrease automatically the amount of RU available. This feedback is for customers' request for zero down-time scale-down capability in stream analytics.
-
-In near-real-time stream processing scenarios, customers need to be able to scale their data processing solution to meet demand as it changes. Some of the time, changes in demand can be predicted, but there will often be situations where data flowing into a stream processing system spikes or dips unexpectedly. Customers building PaaS-based stream processing systems have told us that they expect the services being deployed to support zero-downtime scale changes. Currently, Azure Stream Analytics requires a job to be stopped and restarted to execute a planned scale-down. Job restarts can take up to two minutes to complete, which is not acceptable to our customers in near-real-time scenarios.​
+In order to update the Streaming Unit number in Stream Analytics you need to stop the service and wait for minutes for it to restart. This unacceptable by customers who need near real-time analysis​. In order to have a job re-started, up to 2 minutes are needed and this is not acceptable for a real-time streaming solution. It would also be optimal if scale-up and scale-down could be done automatically, by setting threshold values that when reached increase or decrease automatically the amount of RU available. This feedback is for customers' request for zero down-time scale-down capability in stream analytics.
 
 Problem Statement: In order to update the "Streaming Unit" number, partners must stop the service and wait until it restarts. The partner needs to be able to update the number without stopping the service.
 
