@@ -132,9 +132,9 @@ Many of the code quality assurance items can be automated or enforced by policie
 
 The team can collect metrics of code reviews to measure their efficiency. Some useful metrics include:
 
-* Defect Removal Efficiency (DRE) - a measure of the development team ability to remove defects prior to release
+* Defect Removal Efficiency (DRE) - a measure of the development team's ability to remove defects prior to release
 * Time metrics:
-  * Time used preparing to code inspection sessions
+  * Time used preparing for code inspection sessions
   * Time used in review sessions
 * Lines of code (LOC) inspected per time unit/meeting
 
@@ -155,10 +155,10 @@ For more information, see links under [resources](#resources).
 
 ## Resources
 
+* [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 * [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
 * [A Guide to Code Inspections](http://www.ganssle.com/inspections.pdf)
 * [Defect Removal Effectiveness](https://www.westfallteam.com/sites/default/files/papers/defect_removal_effectiveness.pdf)
-* [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 
 ## Q&A
 

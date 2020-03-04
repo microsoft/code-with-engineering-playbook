@@ -25,7 +25,7 @@ The requirements of pull requests can and should be enforced by policies, which 
 1. Once convinced the criteria above are met, create and submit a new pull request adhering to the [pull request template](./pull-request-template.md)
 1. Follow the [code review](./README.md) process to merge the changes to the main codebase
 
-## Size guidance
+## Size Guidance
 
 We should always aim to have pull requests be as small as possible, without losing context and technical feasibility. Small PRs have multiple advantages:
 
