@@ -1,4 +1,4 @@
-## Azure DevOps: managing settings on a per-branch basis
+# Azure DevOps: managing settings on a per-branch basis
 
 When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) for CI/CD, it is very convenient to leverage the built-in [pipeline variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables) for [secrets management](../../readme.md).
 
