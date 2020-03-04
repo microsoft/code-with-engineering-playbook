@@ -4,7 +4,7 @@ The following are real world examples of Engineering Feedback that have led to p
 
 ## Windows Server Container support for Azure Kubernetes Service
 
-The Azure Kubernetes Service should have first class Windows container support so solutions that require Windows workloads can be deployed on a wildly popular container orchestration platform. The need was to be able to deploy Windows Server containers on AKS the managed Azure Kubernetes Service. According to this FAQ (and in parallel confirmation) it is [not available yet](https://docs.microsoft.com/en-us/azure/aks/faq#can-i-run-windows-server-containers-on-aks).
+The Azure Kubernetes Service should have first class Windows container support so solutions that require Windows workloads can be deployed on a wildly popular container orchestration platform. The need was to be able to deploy Windows Server containers on AKS the managed Azure Kubernetes Service. According to [this FAQ](https://docs.microsoft.com/en-us/azure/aks/faq#can-i-run-windows-server-containers-on-aks) (and in parallel confirmation) it is not available yet.
 
  We tried to deploy anyway as a test, and it did not work – the deployment would be pending without success.
 
