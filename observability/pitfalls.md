@@ -13,7 +13,7 @@ It is recommended to collect and measure *what you want* **and** *not what you c
 
 ## Context
 
-Every data logged must contain rich context, which is useful for getting the overall view of the system and easy to pinpoint errors/failures during troubleshooting. While logging data, care must also be taken to avoid data silos. 
+Every data logged must contain rich context, which is useful for getting the overall view of the system and easy to pinpoint errors/failures during troubleshooting. While logging data, care must also be taken to avoid data silos.
 
 ## Personally Identifiable Informations
 
