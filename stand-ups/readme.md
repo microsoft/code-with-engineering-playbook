@@ -88,7 +88,7 @@ Stand-up should be held at the same time each day. The meeting time should be mu
 
 ### Schedule Stand-ups for Mid-Morning
 
-```
+```plaintext
              ((((
             ((((
              ))))

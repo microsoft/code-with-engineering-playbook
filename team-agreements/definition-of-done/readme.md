@@ -8,12 +8,12 @@ Software Engineering is not just implementing functionality and writing code, bu
 
 Below is an example Done-Done checklist you should follow to ensure everything is done (may vary depending on project/client):
 
-* Is covered by unit and integration tests YES/NO
-* Is continuously tested in each environment YES/NO
-* Does the code coverage meet the minimum threshold YES/NO
-* Is sufficient diagnostic/user telemetry and dashboarding YES/NO
-* Is sufficient public documentation YES/NO
-* Feature owner sign off YES/NO
-* [if applicable] Customer value demo screencast is recorded and sent to the team
+- Is covered by unit and integration tests YES/NO
+- Is continuously tested in each environment YES/NO
+- Does the code coverage meet the minimum threshold YES/NO
+- Is sufficient diagnostic/user telemetry and dashboarding YES/NO
+- Is sufficient public documentation YES/NO
+- Feature owner sign off YES/NO
+- [if applicable] Customer value demo screencast is recorded and sent to the team
 YES/NO
-* [if applicable] Is Relevant architectural review is done YES/NO
+- [if applicable] Is Relevant architectural review is done YES/NO
