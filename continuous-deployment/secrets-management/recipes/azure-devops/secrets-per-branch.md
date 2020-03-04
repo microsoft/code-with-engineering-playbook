@@ -35,3 +35,5 @@ steps:
   - script: echo "$(ENCRYPTION_KEY)" | openssl enc -aes-256-cbc -md sha512 -pass stdin -in .env.enc -out .env -d
     displayName: Decrypt secrets
 ```
+
+You can also use [variable groups linked directly to Azure key vault](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault) for your pipelines to manage all secrets in one location.
