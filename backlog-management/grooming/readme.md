@@ -36,4 +36,4 @@ How might one go about running the ceremony? Is there a general pattern that the
 
 ## Useful Links
 
-* Always try and delivery in [Minimal Slices](../minimal-slices.md)
+- Always try and delivery in [Minimal Slices](../minimal-slices.md)
