@@ -87,7 +87,7 @@ The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemNa
 
 ## Build validation
 
-To automate linting with `markdownlint` for PR validation in GitHub actions, use the following YAML.
+To automate linting with `markdownlint` for PR [validation in GitHub actions](.github\workflows\markdownlint.yml) as we do in this repo, use the following YAML.
 
 ```yaml
 name: Markdownlint
@@ -114,7 +114,7 @@ jobs:
     - name: Run Markdownlint
       run: |
         npm i -g markdownlint-cli
-        markdownlint "**/*.md"
+        markdownlint "**/*.md" --ignore node_modules
 ```
 
 ## Code Review Checklist
@@ -184,7 +184,18 @@ Save your guidelines together with your documentation so they are easy to refer 
   def add(num1: int, num2: int):
     return num1 + num2
   ```
+
+- Use check boxes for task lists
+  - [ ] Item 1
+  - [ ] Item 2
+  - [x] Item 3
 - Add a References section to the end of the document with links to external references
+- Prefer tables over lists for comparisons and reports to make research and results more readable
+
+  | Option     | Pros             | Cons               |
+  | ---------- | ---------------- | ------------------ |
+  | Option 1   | Some pros        | Some cons          |
+  | Option 2   | Some pros        | Some cons          |
 
 ### General
 
