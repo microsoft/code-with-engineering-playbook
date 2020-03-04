@@ -142,6 +142,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 * [C#](recipes/CSharp.md)
 * [Go](recipes/Go.md)
 * [JavaScript and TypeScript](recipes/javascript-and-typescript.md)
+* [Markdown](recipes/Markdown.md)
 * [Python](recipes/Python.md)
 * [Terraform](recipes/Terraform.md)
 
