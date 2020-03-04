@@ -26,7 +26,9 @@ You divided your feature into smaller User Stories (which in turn will be divide
 3. As a user I have the ability to select build configuration (debug, release)
 4. As a user I have the ability to select target platform (arm, x86, x64)
 5. ...
+
 You also divided your stories into smaller tasks and started sending PRs based on those tasks. E.g. you may have the following tasks for the first user story above:
+
 1. Enable UWP platform on backend
 2. Add `build` button to the UI (build first solution file found)
 3. Add `select solution file` dropdown to the UI
