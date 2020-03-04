@@ -10,13 +10,13 @@ Documentation should both use good markdown syntax to ensure it's properly parse
 
 Linting tools exist both for verifying proper markdown syntax as well as grammar and proper English language.
 
-A good setup includes a markdown linter used during editing and PR build verification, and a grammar linter used while editing the document.
+A good setup includes a markdown linter used during editing and PR build verification, and a grammar linter used while editing the document. The following are a list of linters that could be used in this setup.
 
 ### markdownlint
 
 [`markdownlint`](https://github.com/markdownlint/markdownlint) is a linter for markdown that verifies markdown syntax, and also enforces rules that make the text more readable.
 
-It's available as a [ruby gem](https://github.com/markdownlint/markdownlint), an [nmp package](https://github.com/DavidAnson/markdownlint), a [Node.js CLI](https://github.com/igorshubovych/markdownlint-cli) and a [VS Code extension](https://github.com/DavidAnson/vscode-markdownlint).
+It's available as a [ruby gem](https://github.com/markdownlint/markdownlint), an [npm package](https://github.com/DavidAnson/markdownlint), a [Node.js CLI](https://github.com/igorshubovych/markdownlint-cli) and a [VS Code extension](https://github.com/DavidAnson/vscode-markdownlint).
 
 Installing the Node.js CLI
 
@@ -124,6 +124,7 @@ Apart from the items on the [Code Review Checklist](../readme.md) you should als
 - [ ] Is the document easy to read and understand and does it follow [good writing guidelines](#writing-style-guidelines)?
 - [ ] Is there a single source of truth or is content repeated in more than one document?
 - [ ] Is the documentation up to date with the code?
+- [ ] Is the documentation technically, and ethically correct?
 
 ## Writing Style Guidelines
 
@@ -134,18 +135,22 @@ Save your guidelines together with your documentation so they are easy to refer 
 
 ### Wording
 
-- Use inclusive language, and avoid jargon and uncommon words. The docs should be easy to understand.
-- Be clear and consise, stick to the goal of the document.
+- Use inclusive language, and avoid jargon and uncommon words. The docs should be easy to understand
+- Be clear and consise, stick to the goal of the document
+- Use active voice
+- Spell check and grammar check the text
+- Always follow chronological order
 
 ### Document Organization
 
 - Organize documents by topic rather than type, this makes it easier to find the documentation
 - Each folder should have a top-level readme.md and any other documents within that folder should link directly or indirectly from that readme.md
-- Document names with more than one word should use underscores instead of spaces, for example `machine_learning_pipeline_desgin.md`. The same applies to images.
+- Document names with more than one word should use underscores instead of spaces, for example `machine_learning_pipeline_design.md`. The same applies to images
 
 ### Headings
 
-- Start with a H1 and respect the order H1 > H2 > H3 etc.
+- Start with a H1 (single # in markdown) and respect the order H1 > H2 > H3 etc
+- Follow each heading with text before proceeding with the next heading
 - Avoid putting numbers in headings. Numbers shift, and can create outdated titles
 - Avoid using symbols and special characters in headers, this causes problems with anchor links
 - Avoid links in headers
@@ -153,12 +158,12 @@ Save your guidelines together with your documentation so they are easy to refer 
 ### Links
 
 - Avoid duplication of content, instead link to the `single source of truth`
-- Link but don't summarize. Summarizing content on another page leads to the content living in two places.
+- Link but don't summarize. Summarizing content on another page leads to the content living in two places
 - Use meaningful anchor texts, e.g. instead of writing `Follow the instructions [here](../recipes/Markdown.md)` write `Follow the [Markdown guidelines](../recipes/Markdown.md)`
 
 ### Lists
 
-- List items should start with capital letters
+- List items should start with capital letters if possible
 - Use ordered lists when the items describe a sequence to follow, otherwise use unordered lists
 - For ordered lists, prefix each item with `1.` When rendered, the list items will appear with sequential numbering. This avoids number-gaps in list
 - Do not add commas (,) or semicolons (;) to the end of list items, and avoid periods (.) unless the list item represents a complete sentence
@@ -167,9 +172,20 @@ Save your guidelines together with your documentation so they are easy to refer 
 
 - Place images in a separate directory named `img`
 - Name images appropriately, avoiding generic names like `screenshot.png`
-- Avoid adding large images or videos to source control, link to an external location instead.
+- Avoid adding large images or videos to source control, link to an external location instead
 
-### Emphasis
+### Emphasis and special sections
 
-- Use **bold** or _italic_ or `tics` to emphasise.
+- Use **bold** or _italic_ to emphasise
   > For sections that everyone reading this document needs to be aware of, use blocks
+- Use `backticks` for code, a single backtick for inline code like `pip install flake8` and 3 backticks for codeblocks followed by the language for syntax highlighting
+
+  ```python
+  def add(num1: int, num2: int):
+    return num1 + num2
+  ```
+- Add a References section to the end of the document with links to external references
+
+### General
+
+- Always use markdown syntax, don't mix with HTML
