@@ -25,7 +25,7 @@ There are two ways in which you can help update the content:
 If you are not a regular contributor to the project, but you would like to
 contribute some changes, the best way to do it is:
 
-  1. Fork the repo
+  1. Fork the repo or create a new feature branch
   2. Write in your contributions
   3. Create a PR into this repo
 
@@ -63,6 +63,8 @@ If you use VSCode as your preferred editor, please install the [markdownlint
 extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 and ensure that all rules are followed. This will help ensure consistency in the
 look and feel of the documentation in this repo.
+
+You can find information about other linters, general writing guidelines and code review check lists for Markdown in the [Markdown code review recipe](code-reviews/recipes/Markdown.md).
 
 ### Contributions and Pull requests
 
