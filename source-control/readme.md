@@ -20,12 +20,15 @@ Consistency is important, so agree to the approach as a team before starting to 
 
 The team should at least be doing the following:
 
-* agree on their **branch**, **release** and **merge strategy**
-* define approach to commit history (linear or non-linear)
-* lock the default branch and merge using PRs
-* agree branch naming (e.g. `user/your_alias/feature_name`)
-* for public repositories:
-  * default branch contains the [LICENSE](../resources/templates/LICENSE), [README.md](../resources/templates/README.md) and [CONTRIBUTING.md](../resources/templates/CONTRIBUTING.md) file
+* Agree on the **branch**, **release** and **merge strategy**
+* Define the commit history approach ([linear or non-linear](./git.md#Commit-history))
+* Lock the default branch and merge using [pull requests (PRs)](../code-reviews/pull-requests#Pull-Requests)
+* Agree on [branch naming](./git.md#Naming-branches) (e.g. `user/your_alias/feature_name`)
+* Establish [branch/PR policies](../code-reviews/pull-requests#Pull-Requests)
+* For public repositories the default branch should contain the following files:
+  * [LICENSE](../resources/templates/LICENSE)
+  * [README.md](../resources/templates/README.md)
+  * [CONTRIBUTING.md](../resources/templates/CONTRIBUTING.md)
 
 ## Commit Best Practices
 
