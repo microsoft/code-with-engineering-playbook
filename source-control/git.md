@@ -184,7 +184,7 @@ git push origin HEAD --force
 
 ### Multi service development and deployments
 
-Submodules can be very useful in more complex deployment and/or development scenarios
+Submodules can be useful in more complex deployment and/or development scenarios
 
 Adding a submodule to your repo
 
@@ -211,8 +211,71 @@ git stash
 git stash pop
 ```
 
-Or you can simply move the current state into a new branch:
+Or you can move the current state into a new branch:
 
 ```bash
 git stash branch <new_branch_to_save_changes>
+```
+
+### Working with images, video and other binary content
+
+Avoid committing frequently changed binary files, such as large images, video or compiled code to your git repository. Binary content is not diffed like text content, so the repository will take longer and longer to clone.
+
+One solution to this problem is `Git LFS (Git Large File Storage)` - an open source Git extension for versioning large files. `Git LFS` replaces the binary files with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or Azure DevOps.
+
+#### Benefits of Git LFS
+
+* Uses the end to end Git workflow for all files
+* Binary files tracked by Git LFS can be as big as you need them to be
+* Git LFS supports file locking to help the team collaborate on large, undiffable assets
+* Git LFS is fully supported in Azure DevOps Services
+
+#### Limitations of Git LFS
+
+* Everyone contributing to the repository needs to install Git LFS
+* If not set up properly:
+  * Binary files committed through Git LFS are not visible as Git will only download the data describing the large file
+  * Committing large binaries will push the full binary to the repository
+* Git cannot merge the changes from two different versions of a binary file. File locking mitiages this
+* Azure Repos do not support using SSH for repositories with Git LFS tracked files
+
+#### Common commands
+
+Install git lfs
+
+```bash
+git lfs install       # windows
+sudo apt-get git-lfs  # linux
+```
+
+Track .mp4 files with Git LFS
+
+```bash
+git lfs track '*.mp4'
+```
+
+Add a `.gitattributes` file listing the files and patterns to track
+
+```bash
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+docs/images/* filter=lfs diff=lfs merge=lfs -text
+```
+
+List all patterns tracked
+
+```bash
+git lfs track
+```
+
+List all files tracked
+
+```bash
+git lfs ls-files
+```
+
+Download files to your working directory
+
+```bash
+git lfs pull
+git lfs pull --include="path/to/file"
 ```
