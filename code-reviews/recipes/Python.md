@@ -165,7 +165,7 @@ To perform a PR validation on GitHub you can use a similar YAML configuration wi
 
 ## Pre-commit hooks
 
-Pre-commit hooks allow you to format and lint code locally before the submitting the pull request.
+Pre-commit hooks allow you to format and lint code locally before submitting the pull request.
 
 Adding pre-commit hooks for your python repository is easy using the pre-commit package
 
