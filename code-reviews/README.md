@@ -157,7 +157,6 @@ For more information, see links under [resources](#resources).
 
 ## Resources
 
-* [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 * [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
 * [A Guide to Code Inspections](http://www.ganssle.com/inspections.pdf)
 * [Defect Removal Effectiveness](https://www.westfallteam.com/sites/default/files/papers/defect_removal_effectiveness.pdf)
