@@ -1,4 +1,4 @@
-# What to watch for when building Observable Systems
+# Things to watch for when building Observable Systems
 
 ## Observability as an after thought
 
@@ -6,14 +6,16 @@ One of the design goals when building a system must be to have a monitorable sys
 
 ## Metric Fatigue
 
-It is recommended to collect and measure *what you want* **and** *not what you can*. Don't attempt to monitor everything. If the data is not actionable, it is useless and becomes noise. On the contrary, it is sometimes very difficult to forecast every possible scenario that could go wrong. There is a balance between collecting what is needed and logging every single activity in the system. A general rule of thumb is to follow these principles
+1. It is recommended to collect and measure *what you need* **and** *not what you can*. Don't attempt to monitor everything.
+2. If the data is not actionable, it is useless and becomes noise. On the contrary, it is sometimes very difficult to forecast every possible scenario that could go wrong.
+3. There must be a balance between collecting what is needed vs. logging every single activity in the system. A general rule of thumb is to follow these principles
 
-- rules that catch incidents must be simple, relevant and reliable
-- any data that is collected but not aggregated or alerted on must be reviewed if it is still required.
+   - rules that catch incidents must be simple, relevant and reliable
+   - any data that is collected but not aggregated or alerted on must be reviewed if it is still required.
 
 ## Context
 
-Every data logged must contain rich context, which is useful for getting the overall view of the system and easy to pinpoint errors/failures during troubleshooting. While logging data, care must also be taken to avoid data silos.
+Every data logged must contain rich context, which is useful for getting an overall view of the system and easy to traceback errors/failures during troubleshooting. While logging data, care must also be taken to avoid data silos.
 
 ## Personally Identifiable Informations
 
