@@ -1,6 +1,6 @@
 # Structure of a Sprint
 
-### Goals
+## Goals
 
 This index structure is intended to accomplish the following goals
 
@@ -8,9 +8,9 @@ This index structure is intended to accomplish the following goals
 2. Provide content in a logical structure which reflects the engineering process.
 3. Extensible hierarchy to allow teams to share deep subject matter expertise.
 
-### A Week In The Life Of....
+## A Week In The Life Of....
 
-This layout structures the playbook content to make it easy day to day to find relevant resources during an Agile sprint. 
+This layout structures the playbook content to make it easy day to day to find relevant resources during an Agile sprint.
 
 - Project Start
   - [Team Agreements](team-agreements/readme.md)
@@ -45,7 +45,7 @@ This layout structures the playbook content to make it easy day to day to find r
     - Load Testing
   - [Feature Branching (creating branch for new story)](source-control/feature-branching/readme.md)
 - Day 2
-  - [Source Control](source-control/readme.md) 
+  - [Source Control](source-control/readme.md)
     - Commit best practices
     - [Git guide](source-control/git.md)
   - [Continuous Integration](continuous-integration/readme.md)
@@ -108,8 +108,8 @@ This layout structures the playbook content to make it easy day to day to find r
     - [Estimation](sprint-planning/estimation/readme.md)
       - Resolving estimation conflicts (two people are sizing differently))
 
-### Assumptions
+## Assumptions
 
 This workflow makes the following assumptions about the development environment
 
-* Team is using git for version control.
+- Team is using git for version control.

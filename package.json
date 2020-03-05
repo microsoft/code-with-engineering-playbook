@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint": "markdownlint \"**/*.md\" --ignore node_modules"
+  },
+  "dependencies": {
+    "markdownlint-cli": "^0.22.0"
+  }
+}
