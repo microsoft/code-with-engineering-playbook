@@ -10,13 +10,13 @@ Linting should be added to build validation, and both linting and code formattin
 
 ## Linting
 
-The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherance to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give a few more false positives but both are good options for linting python code.
+The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherance to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give more false positives but both are good options for linting python code.
 
 Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `python extension`
 
 ### Flake8
 
-Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA/pyflakes) (for logig errors), [`pycodestyle`](https://github.com/PyCQA/pycodestyle) (for pep8) and [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)).
+Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA/pyflakes) (for detecting coding errors), [`pycodestyle`](https://github.com/PyCQA/pycodestyle) (for pep8) and [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)).
 
 Install `Flake8`
 
@@ -48,7 +48,7 @@ pylint src  # lint the source directory
 
 ### Black
 
-[`Black`](https://github.com/psf/black) is an unappologetic code formatting tool. It removes all need from `pycodestyle` nagging about formatting so the team can focus on content vs style. It is however not possible to configure black for your own style needs.
+[`Black`](https://github.com/psf/black) is an unappologetic code formatting tool. It removes all need from `pycodestyle` nagging about formatting so the team can focus on content vs style. It's not possible to configure black for your own style needs.
 
 ```bash
 pip install black
@@ -92,7 +92,7 @@ yapf [file/folder] --in-place
 
 ### Python
 
-The [`Python language extension`](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is the base extension you should have installed for python development with VS Code. It enables among other things, intellisense, debugging, linting (with the above linters), testing with pytest or unittest, and code formatting with the formatters mentioned above.
+The [`Python language extension`](https://marketplace.visualstudio.com/items?itemName=ms-python.python) is the base extension you should have installed for python development with VS Code. It enables intellisense, debugging, linting (with the above linters), testing with pytest or unittest, and code formatting with the formatters mentioned above.
 
 ### Pyright
 
@@ -165,7 +165,7 @@ To perform a PR validation on GitHub you can use a similar YAML configuration wi
 
 ## Pre-commit hooks
 
-Pre-commit hooks allow you to format and lint code locally before the pull request is issued.
+Pre-commit hooks allow you to format and lint code locally before the submitting the pull request.
 
 Adding pre-commit hooks for your python repository is easy using the pre-commit package
 
@@ -198,7 +198,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 At the next attempted commit any lint failures will block the commit.
 
-> Note: Installing pre-commit hooks is volontary and done by each developer individually. Thus it is not a replacement for build validation on the server
+> Note: Installing pre-commit hooks is volontary and done by each developer individually. Thus it's not a replacement for build validation on the server
 
 ## Code Review Checklist
 
