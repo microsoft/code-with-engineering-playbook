@@ -44,7 +44,9 @@ As an author of a PR, you should:
       * In AzDO this can be enforced by setting groups as required reviewers, see [Automatically include code reviewers](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops#automatically-include-code-reviewers)
 1. Be open to receive feedback, discuss design/code logic and address all comments as follows:
    * Resolve a comment, if the requested change has been made.
-   * Mark the comment as "won't fix", if you are not going to make the requested changes and provide a clear reasoning - "I'll do it later" is not an acceptible reason!
+   * Mark the comment as "won't fix", if you are not going to make the requested changes and provide a clear reasoning
+     * If the requested change is within the scope of the task, "I'll do it later" is not an acceptible reason!
+     * If the requested change is out of scope, create a new work item (task or bug) for it
    * If you don't understand a comment, ask questions in the review itself as opposed to a private chat
    * If a thread gets bloated without a conclusion, have a meeting with the reviewer (call them or knock on door)
 1. If the reviewers have not responded in a reasonable time (generally a day or two), ping them or raise the issue in a daily meeting.
@@ -62,7 +64,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
     * Read every line changed.
     * If we have a stakeholder review, it’s not necessary to run the PR unless it aids your understanding of the code.
     * AzDO orders the files for you, but you should read the code in some logical sequence to aid understanding.
-    * If you don’t fully understand a change in a file because you don’t have context, click to view the whole file and read through surrounding code.
+    * If you don’t fully understand a change in a file because you don’t have context, click to view the whole file and read through the surrounding code or checkout the changes and view them in IDE.
     * Ask the author to clarify.
 1. Be considerate
     * Be positive – encouraging, appreciation for good practices.
