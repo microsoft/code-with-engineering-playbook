@@ -22,9 +22,11 @@ Building observable systems enables development teams at CSE to measure how well
 3. **Faults, crashes, and failures** are logged as discrete events. This helps engineers identify problem area(s) during failures.
 4. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.
 5. Ensure that **metrics** around latency and duration are collected and can be aggregated.
-6. Don't attempt to monitor everything. If the data is not actionable, it is useless and becomes noise.
-7. As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.,)
-8. Start small and add where there is customer impact.
+6. Start small and add where there is customer impact.
+
+## Pitfalls to avoid
+
+Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system
 
 ## What is collected
 
