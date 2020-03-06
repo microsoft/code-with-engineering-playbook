@@ -44,8 +44,8 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [Unit Testing](test-first-development/unit-testing/readme.md)
 * [CI](continuous-integration/readme.md)
 * [CD](continuous-deployment/readme.md)
-* [Code Reviews](code-reviews/readme.md)
-* [Observability](observability/README.md)
+* [Code Reviews](code-reviews)
+* [Observability](observability)
 * [Engineering Feedback](engineering-feedback/readme.md)
 
 ## Contributing
