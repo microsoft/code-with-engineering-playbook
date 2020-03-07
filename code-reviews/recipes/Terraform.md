@@ -1,26 +1,27 @@
-## Code Reviews
-### Style Guide
-- Adhere to the [hashicorp style guide](https://www.terraform.io/docs/configuration/style.html)
-- Ensure all used providers are versioned to prevent breaking changes in future. [docs on versioning providers](https://www.terraform.io/docs/configuration/providers.html#provider-versions)
-- main.tf: This file usually contains provider configuration, backend configuration, imports to the modules to use and eventually some common resources that was not isolated into a specific file. It is absolutely possible to have the whole infrastructure defined in this file itself, suggest to split it into other *.tf files
-- README.md - Always useful to document what the Terraform project does
+# Terraform Code Reviews
+## Style Guide
+[CSE](../../CSE.md) developers follow the [hashicorp style guide.](https://www.terraform.io/docs/configuration/style.html)
 
-### Linters
-1. [tflint](https://github.com/terraform-linters/tflint) - As of now tflint doesn't have Azure specific rules, it can be used to inspect  general Terraform specific issues.  
+[CSE](../../CSE.md) projects should check Terraform scripts with automated tools.
 
-### Useful extensions for VS Code and Visual Studio
+## Linting
 
-The following VC Code extensions are widely used
+[`TFLint`](https://github.com/terraform-linters/tflint) is a Terraform linter focused on possible errors, best practices, etc. Once TFLint installed in the environment, it can be invoked using the VS Code [`terraform extension`](https://marketplace.visualstudio.com/items?itemName=mauve.terraform)
 
-1. [Terraform extension](https://marketplace.visualstudio.com/items?itemName=mauve.terraform)
-2. [Azure Terraform extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureterraform)
+## VS Code Extensions
 
-The Terraform extension also supports [tflint](https://github.com/terraform-linters/tflint/), tflint can be used independently and also within VS Code
+The following VS Code extensions are widely used.
 
-### Build Validation
+### [`Terraform extension`](https://marketplace.visualstudio.com/items?itemName=mauve.terraform)
+This extension provides syntax highlighting, linting, formatting and validation capabilities
+### [`Azure Terraform extension`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureterraform)
+This extension provides Terraform command support, resource graph visualization and CloudShell integration inside VS Code.
 
-Ensure you enforce the style guides during build. The following example script can be used to install terraform and a linter
-then check for formatting and common errors.
+
+## Build Validation
+
+Ensure you enforce the style guides during build. The following example script can be used to install terraform and a linter that
+then checks for formatting and common errors.
 
 ```shell
 #! /bin/bash
@@ -58,16 +59,19 @@ echo -e "\n\n>>> Terraform validate"
 terraform validate
 ```
 
-### Code Review Checklist
-In addition to the [Code Review Checklist](../readme.md) you should also look for these terraform specific code review items
+## Code Review Checklist
+In addition to the [Code Review Checklist](../readme.md) you should also look for these Terraform specific code review items
 
-- Verify Terraform project is configured to use Azure Storage as remote state backend
-- Verify remote state backend storage account key is stored in the key vault and not hard coded
-- If Terraform code is mixed with application source code, verify that the Terraform code is isolated into a dedicated folder
-- If the infrastructure going to different depending on the environment (Example: Dev, UAT, Production), verify sub-directory per environment is created
-- Verify resource definition and data sources are handled correctly in the Terraform
+* [ ] Are all providers used in the terraform scripts [versioned](https://www.terraform.io/docs/configuration/providers.html#provider-versions) to prevent breaking changes in the future?
+* [ ] Are modules split into separate .tf files where appropriate?
+* [ ] Does the repository contain a `README.md` describing the architecture provisioned?
+* [ ] Is the Terraform project configured using Azure Storage as remote state backend?
+* [ ] Is the remote state backend storage account key is stored a secure location (e.g. Azure Key Vault)?
+* [ ] If Terraform code is mixed with application source code, is the Terraform code isolated into a dedicated folder?
+* [ ] If the infrastructure going to different depending on the environment (e.g. Dev, UAT, Production), does the environment specific parameters are supplied via .tfvars file?
+* [ ] Are the resource definition and data sources are handled correctly in the Terraform?
     - resource : Indicates to Terraform that the current configuration is in charge of managing the life cycle of the object
     - data: Indicates to Terraform that you only want to get a reference of the existing object, but don’t want to manage it part of this configuration
-- Ensure code is split into to multiple reusable modules
-- Verify for unit test implementation for Terraform code. [Terratest](https://terratest.gruntwork.io/) is widely used. While running the unit tests from DevOps pipelines, check for managed identities or service principal is used with the Terratest
+* [ ] Does the code is split into multiple reusable modules?
+* [ ] Are unit tests used for Terraform code (e.g. [`Terratest`](https://terratest.gruntwork.io/))?, While running the unit tests from DevOps pipelines, check for managed identities or service principal are used
 
