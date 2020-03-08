@@ -1,5 +1,7 @@
 # Terraform Code Reviews
+
 ## Style Guide
+
 [CSE](../../CSE.md) developers follow the [hashicorp style guide.](https://www.terraform.io/docs/configuration/style.html)
 
 [CSE](../../CSE.md) projects should check Terraform scripts with automated tools.
@@ -13,10 +15,12 @@
 The following VS Code extensions are widely used.
 
 ### [`Terraform extension`](https://marketplace.visualstudio.com/items?itemName=mauve.terraform)
-This extension provides syntax highlighting, linting, formatting and validation capabilities
-### [`Azure Terraform extension`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureterraform)
-This extension provides Terraform command support, resource graph visualization and CloudShell integration inside VS Code.
 
+This extension provides syntax highlighting, linting, formatting and validation capabilities
+
+### [`Azure Terraform extension`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureterraform)
+
+This extension provides Terraform command support, resource graph visualization and CloudShell integration inside VS Code.
 
 ## Build Validation
 
@@ -60,6 +64,7 @@ terraform validate
 ```
 
 ## Code Review Checklist
+
 In addition to the [Code Review Checklist](../readme.md) you should also look for these Terraform specific code review items
 
 * [ ] Are all providers used in the terraform scripts [versioned](https://www.terraform.io/docs/configuration/providers.html#provider-versions) to prevent breaking changes in the future?
@@ -70,8 +75,7 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] If Terraform code is mixed with application source code, is the Terraform code isolated into a dedicated folder?
 * [ ] If the infrastructure going to different depending on the environment (e.g. Dev, UAT, Production), does the environment specific parameters are supplied via .tfvars file?
 * [ ] Are the resource definition and data sources are handled correctly in the Terraform?
-    - resource : Indicates to Terraform that the current configuration is in charge of managing the life cycle of the object
-    - data: Indicates to Terraform that you only want to get a reference of the existing object, but don’t want to manage it part of this configuration
+    resource : Indicates to Terraform that the current configuration is in charge of managing the life cycle of the object
+    data: Indicates to Terraform that you only want to get a reference of the existing object, but don’t want to manage it part of this configuration
 * [ ] Does the code is split into multiple reusable modules?
 * [ ] Are unit tests used for Terraform code (e.g. [`Terratest`](https://terratest.gruntwork.io/))?, While running the unit tests from DevOps pipelines, check for managed identities or service principal are used
-
