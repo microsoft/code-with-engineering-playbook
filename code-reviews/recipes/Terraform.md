@@ -8,6 +8,8 @@
 
 ## Linting
 
+### TFLint
+
 [`TFLint`](https://github.com/terraform-linters/tflint) is a Terraform linter focused on possible errors, best practices, etc. Once TFLint installed in the environment, it can be invoked using the VS Code [`terraform extension`](https://marketplace.visualstudio.com/items?itemName=mauve.terraform)
 
 ## VS Code Extensions
@@ -73,9 +75,9 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] Is the Terraform project configured using Azure Storage as remote state backend?
 * [ ] Is the remote state backend storage account key is stored a secure location (e.g. Azure Key Vault)?
 * [ ] If Terraform code is mixed with application source code, is the Terraform code isolated into a dedicated folder?
-* [ ] If the infrastructure going to different depending on the environment (e.g. Dev, UAT, Production), does the environment specific parameters are supplied via .tfvars file?
-* [ ] Are the resource definition and data sources are handled correctly in the Terraform?
+* [ ] If the infrastructure is going to different depending on the environment (e.g. Dev, UAT, Production), are the environment specific parameters are supplied via .tfvars file?
+* [ ] Are the resource definitions and data sources handled correctly in the Terraform scripts?
     resource : Indicates to Terraform that the current configuration is in charge of managing the life cycle of the object
-    data: Indicates to Terraform that you only want to get a reference of the existing object, but don’t want to manage it part of this configuration
-* [ ] Does the code is split into multiple reusable modules?
-* [ ] Are unit tests used for Terraform code (e.g. [`Terratest`](https://terratest.gruntwork.io/))?, While running the unit tests from DevOps pipelines, check for managed identities or service principal are used
+    data: Indicates to Terraform that you only want to get a reference to the existing object, but don’t want to manage it part of this configuration
+* [ ] Is the code is split into multiple reusable modules?
+* [ ] Are unit tests used for Terraform code (e.g. [`Terratest`](https://terratest.gruntwork.io/))?
