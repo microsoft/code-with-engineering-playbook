@@ -42,10 +42,10 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [Structure of a Sprint](SPRINT-STRUCTURE.md)
 * [Source Control](source-control/readme.md)
 * [Unit Testing](test-first-development/unit-testing/readme.md)
-* [CI](continuous-integration/readme.md)
-* [CD](continuous-deployment/readme.md)
-* [Code Reviews](code-reviews)
-* [Observability](observability)
+* [Continuous Integration (CI)](continuous-integration/readme.md)
+* [Continuous Delivery (CD)](continuous-deployment/readme.md)
+* [Code Reviews](code-reviews/README.md)
+* [Observability](observability/readme.md)
 * [Engineering Feedback](engineering-feedback/readme.md)
 
 ## Contributing
