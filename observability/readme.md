@@ -86,4 +86,6 @@ Some Examples:
 
 ## Recipes
 
-Links to GitHub posts - Coming soon
+1. Application Insights/ASP.NET - [Github Repo](https://github.com/Azure-Samples/application-insights-aspnet-sample-opentelemetry), [Article](https://devblogs.microsoft.com/aspnet/observability-asp-net-core-apps/).
+
+2. [On-premise Application Insights](https://github.com/c-w/appinsights-on-premises) - A service that is compatiable with Azure App Insights, but stores the data in an in-house database.
