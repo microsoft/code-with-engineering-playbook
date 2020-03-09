@@ -47,11 +47,11 @@ Produces the information required to observe series of correlated operations in 
 
 ## Metrics
 
-Metrics provide a near real-time stream of data, informing operators and stakeholders about the functions the system is performing as well as its health. Unlike logging & tracing, metric data tends to be more efficient to transmit and store.
+Metrics provide a near real-time stream of data, informing operators and stakeholders about the functions the system is performing as well as its health. Unlike logging and tracing, metric data tends to be more efficient to transmit and store.
 
 ### What should be tracked?
 
-System critical measurements that relate to the application/machine health, which are usually excellent alert candidates. Work with your engineering & devops peers to identify the metrics, but they may include:
+System critical measurements that relate to the application/machine health, which are usually excellent alert candidates. Work with your engineering and devops peers to identify the metrics, but they may include:
 
 - CPU and memory utilisation.
 - Request rate.
@@ -75,4 +75,4 @@ Modern metric systems today usually define a single time series metric as the co
 - Kubernetes cluster name
 - Azure Region
 
-_Note_: Since dimension labels are used for aggregations & grouping operations, do not use unique strings or those with high cardinality as the value of a label. The value of the label is significantly diminished for reporting and in many cases has a negative performance hit on the metric system used to track it.
+_Note_: Since dimension labels are used for aggregations and grouping operations, do not use unique strings or those with high cardinality as the value of a label. The value of the label is significantly diminished for reporting and in many cases has a negative performance hit on the metric system used to track it.
