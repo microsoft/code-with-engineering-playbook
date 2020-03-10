@@ -32,15 +32,15 @@ The team should at least be doing the following:
 
 ## Commit Best Practices
 
-* Make small commits. This makes changes easier to review, and if we need to revert a commit, we loose less work.
-* Commit complete and well tested code. Never commit incomplete code, get in the habit of testing your code before commiting.
-* Don't mix whitespace changes with functional code changes. It is hard to determine if the line has a functional change or only removes a whitespace, so funcitonal changes may go unnoticed.
+* Make small commits. This makes changes easier to review, and if we need to revert a commit, we lose less work.
+* Commit complete and well tested code. Never commit incomplete code, get in the habit of testing your code before committing.
+* Don't mix whitespace changes with functional code changes. It is hard to determine if the line has a functional change or only removes a whitespace, so functional changes may go unnoticed.
 * Write good commit messages.
 
 A good commit message should answer these questions:
 
-* Why is it neccessary? It may fix a bug, add a feature, improve performance, or just be a change for the sake of correctness
-* How does it adress the issue? For short, obviuos changes, this can be omitted
+* Why is it necessary? It may fix a bug, add a feature, improve performance, or just be a change for the sake of correctness
+* How does it address the issue? For short, obvious changes, this can be omitted
 * What effects does this change have? In addition to the obvious ones, this may include benchmarks, side effects etc.
 * What limitations does the current code have?
 
@@ -48,8 +48,7 @@ Consider this when writing your commit message:
 
 * Don't assume that the code is self-evident/self-documenting
 * If it seems difficult to summarize your commit, it may be because it includes more than one logical change or bug fix. If so, it is better to split it into separate commits with `git add -p`
-* Don't assume the reviewer understands the original problem.
-  It should be possible to review a change request without reading the contents of the original bug/task.
+* Don't assume the reviewer understands the original problem. It should be possible to review a change request without reading the contents of the original bug/task.
 
 Good message structure:
 
@@ -76,7 +75,7 @@ be added in issue #124
 Closes: #123
 ```
 
-You can specify the default git editor, which allows you to write your commit messages using your favorite editor. The following command makes vscode your default git editor:
+You can specify the default git editor, which allows you to write your commit messages using your favorite editor. The following command makes Visual Studio Code your default git editor:
 
 ```bash
 git config --global core.editor "code --wait"
