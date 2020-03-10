@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers follow the [hashicorp style guide.](https://www.terraform.io/docs/configuration/style.html)
+[CSE](../../CSE.md) developers follow the [hashicorp style guide](https://www.terraform.io/docs/configuration/style.html).
 
 [CSE](../../CSE.md) projects should check Terraform scripts with automated tools.
 
@@ -18,7 +18,7 @@ The following VS Code extensions are widely used.
 
 ### [`Terraform extension`](https://marketplace.visualstudio.com/items?itemName=mauve.terraform)
 
-This extension provides syntax highlighting, linting, formatting and validation capabilities
+This extension provides syntax highlighting, linting, formatting and validation capabilities.
 
 ### [`Azure Terraform extension`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureterraform)
 
@@ -70,14 +70,14 @@ terraform validate
 In addition to the [Code Review Checklist](../readme.md) you should also look for these Terraform specific code review items
 
 * [ ] Are all providers used in the terraform scripts [versioned](https://www.terraform.io/docs/configuration/providers.html#provider-versions) to prevent breaking changes in the future?
-* [ ] Are modules split into separate .tf files where appropriate?
+* [ ] Are modules split into separate `.tf` files where appropriate?
 * [ ] Does the repository contain a `README.md` describing the architecture provisioned?
 * [ ] Is the Terraform project configured using Azure Storage as remote state backend?
 * [ ] Is the remote state backend storage account key is stored a secure location (e.g. Azure Key Vault)?
 * [ ] If Terraform code is mixed with application source code, is the Terraform code isolated into a dedicated folder?
-* [ ] If the infrastructure is going to different depending on the environment (e.g. Dev, UAT, Production), are the environment specific parameters are supplied via .tfvars file?
+* [ ] If the infrastructure is going to different depending on the environment (e.g. Dev, UAT, Production), are the environment specific parameters supplied via `.tfvars` file?
 * [ ] Are the resource definitions and data sources handled correctly in the Terraform scripts?
     resource : Indicates to Terraform that the current configuration is in charge of managing the life cycle of the object
-    data: Indicates to Terraform that you only want to get a reference to the existing object, but don’t want to manage it part of this configuration
-* [ ] Is the code is split into multiple reusable modules?
+    data: Indicates to Terraform that you only want to get a reference to the existing object, but don’t want to manage it as part of this configuration
+* [ ] Is the code split into multiple reusable modules?
 * [ ] Are unit tests used for Terraform code (e.g. [`Terratest`](https://terratest.gruntwork.io/))?
