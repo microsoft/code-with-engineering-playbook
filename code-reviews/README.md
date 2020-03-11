@@ -34,8 +34,9 @@ To ensure that the code review process is healthy and meets the goals stated abo
     * AzDO: [Add columns on task board](https://docs.microsoft.com/en-us/azure/devops/boards/sprints/customize-taskboard?view=azure-devops#add-columns)
 2. In the daily standup meeting check tasks pending for review and make sure they have reviewers assigned.
 3. Junior teams and teams new to the process can consider creating separate tasks for reviews together with the tasks themselves.
+4. Utilize tools to streamline the review process - [Code review tools](tools.md)
 
-As an author of a PR, you should:
+### PR Author Guidance
 
 1. Add relevant reviewers:
     * Add one or more reviewers (depending on your project's guidelines) to the PR. Ideally, you would add at least someone who has expertise and is familiar with the project or the language used
@@ -50,6 +51,8 @@ As an author of a PR, you should:
    * If you don't understand a comment, ask questions in the review itself as opposed to a private chat
    * If a thread gets bloated without a conclusion, have a meeting with the reviewer (call them or knock on door)
 1. If the reviewers have not responded in a reasonable time (generally a day or two), ping them or raise the issue in a daily meeting.
+
+### PR Reviewer Guidance
 
 Since parts of reviews can be automated via linters and such, human reviewers can focus on architectural and functional correctness. Human reviewers should focus on:
 
@@ -158,11 +161,11 @@ For more information, see links under [resources](#resources).
 
 ## Resources
 
+* [Code review tools](tools.md)
 * [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 * [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
 * [A Guide to Code Inspections](http://www.ganssle.com/inspections.pdf)
 * [Defect Removal Effectiveness](https://www.westfallteam.com/sites/default/files/papers/defect_removal_effectiveness.pdf)
-* [Tools](tools.md)
 
 ## Q&A
 
