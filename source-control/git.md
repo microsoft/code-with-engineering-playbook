@@ -219,15 +219,14 @@ git stash branch <new_branch_to_save_changes>
 
 ### Working with images, video and other binary content
 
-Avoid committing frequently changed binary files, such as large images, video or compiled code to your git repository. Binary content is not diffed like text content, so the repository will take longer and longer to clone.
+Avoid committing frequently changed binary files, such as large images, video or compiled code to your git repository. Binary content is not diffed like text content, so cloning or pulling from the repository may pull each revision of the binary file.
 
 One solution to this problem is `Git LFS (Git Large File Storage)` - an open source Git extension for versioning large files. `Git LFS` replaces the binary files with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or Azure DevOps.
 
 #### Benefits of Git LFS
 
 * Uses the end to end Git workflow for all files
-* Binary files tracked by Git LFS can be as big as you need them to be
-* Git LFS supports file locking to help the team collaborate on large, undiffable assets
+* Git LFS supports file locking to avoid conflicts for undiffable assets
 * Git LFS is fully supported in Azure DevOps Services
 
 #### Limitations of Git LFS
@@ -236,7 +235,7 @@ One solution to this problem is `Git LFS (Git Large File Storage)` - an open sou
 * If not set up properly:
   * Binary files committed through Git LFS are not visible as Git will only download the data describing the large file
   * Committing large binaries will push the full binary to the repository
-* Git cannot merge the changes from two different versions of a binary file. File locking mitiages this
+* Git cannot merge the changes from two different versions of a binary file; file locking mitigates this
 * Azure Repos do not support using SSH for repositories with Git LFS tracked files
 
 #### Common commands
