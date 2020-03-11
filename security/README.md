@@ -2,6 +2,8 @@
 
 Developers working on [CSE](../CSE.md) projects should adhere to industry-recommended standard practices for secure design and implementation of code. For the purposes of our customers, this means our engineers should understand the [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/), as well as how to mitigate as many of them as possible, using the resources below.
 
+**If you are looking for a fast way to get started** evaluating your application or design, check out the "Secure Coding Practices Quick Reference" document below, which contains an itemized checklist of high-level concepts you can validate are being done properly. This checklist covers many common errors associated with the OWASP Top 10 list linked above, and should be the minimum amount of effort being put into security.
+
 ## Quick References
 
 * [Secure Coding Practices Quick Reference](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
@@ -38,7 +40,7 @@ Developers working on [CSE](../CSE.md) projects should adhere to industry-recomm
 
 * [Deserialization](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Deserialization_Cheat_Sheet.md)
 
-* [Docker Security](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Docker_Security_Cheat_Sheet.md)
+* [Docker/Kubernetes (k8s) Security](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Docker_Security_Cheat_Sheet.md)
 
 * [Input Validation](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Input_Validation_Cheat_Sheet.md)
 
