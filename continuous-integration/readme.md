@@ -12,6 +12,8 @@ We encourage teams to implement the CI/CD pipelines before any service code is w
 1. [Single Source Repository](#single-source-repository)
 1. [Build Automation](#build-automation)
 1. [Build Environment Dependencies](#build-environment-dependencies)
+1. [Integration Validation](#Integration-Validation)
+1. [Git Driven Workflow](#Git-Driven-Workflow)
 1. [Evidence and Measures](#evidence-and-measures)
 1. [Resources](#resources)
 
@@ -41,7 +43,7 @@ Continuous integration automation is an integral part of the software developmen
 
 ## Single Source Repository
 
-All artifacts required to build a project / service should be maintained in a single git repository. This does not mean all artifacts for an engagement should exist within a single repo as engagements typically maintain multiple build definitions. Artifacts required for a build should be co-located into a single repository. Your build [pipeline definition](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should also be managed within this repository.
+&#9745; All artifacts required to build a project / service should be maintained in a single git repository. This does not mean all artifacts for an engagement should exist within a single repo as engagements typically maintain multiple build definitions. Artifacts required for a build should be co-located into a single repository. Your build [pipeline definition](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should also be managed within this repository.
 
 ## Build Automation
 
@@ -49,9 +51,9 @@ An automated build should encompass the following principles:
 
 &#9745; The build definition should include steps like compiling the code, executing unit tests, running [code style checks](https://github.com/checkstyle/checkstyle), [static type checks](http://mypy-lang.org/) and [semantic validation checks](https://github.com/python/mypy/wiki/Semantic-Analyzer).
 
-&#9745; In real world systems, different engineering teams are responsible for developing and maintaining various parts of a system. In that instance, it's unnecessary to have a single definition automate the build across the whole product. Build automation process(s) should be structured / developed for each individual part of the system.
+&#9745; In real world systems, different engineering teams are responsible for developing and maintaining various parts of a system. For such a case, it's unnecessary to have a single definition automate the build across the whole product. Build automation process(s) should be structured / developed for each individual part of the system.
 
-&#9745; The build should include all steps required to setup an environment for use. This means the build should automate pulling database schemas from the scm repository and applying it to the target environment. Also, should include seeding that environment with the necessary test data required to run isolated end-to-end automated tests.  
+&#9745; The build should include all steps required to setup an environment for use. This means the build should automate pulling database schemas from the scm repository and applying it to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
 
 &#9745; A single command should have the capability of building the system. This is true for builds running on a CI server or on a developers local machine. 
 
@@ -67,8 +69,29 @@ An automated build should encompass the following principles:
 
 ## Integration Validation 
 
+An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
 
-## Git Commit Driven Workflow
+&#9745; Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
+
+&#9745; Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle. 
+
+&#9745; If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
+
+## Git Driven Workflow
+
+Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate. Some principles to consider regarding build trigger events:
+
+&#9745; The build pipeline is configured in a way where a pipeline run is triggered on every git commit.
+
+&#9745; Any build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit.
+
+&#9745; Merges into the master branch trigger releases into the production environment. This way the master branch becomes a dependable baseline for the code running in production.
+
+&#9745; There should be no commented out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
+
+&#9745; Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI build run passes.
+
+## Everyone Commits Their Work Every Day
 
 ## Remediate Build Failures
 
@@ -79,8 +102,6 @@ An automated build should encompass the following principles:
 ## Developer Access to Latest Release Artifacts
 
 ## Integration Observability 
-
-## Daily SCM Checkins
 
 ## Build Pipeline Status with Respect to Branch Policies
 
