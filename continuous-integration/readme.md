@@ -14,6 +14,7 @@ We encourage teams to implement the CI/CD pipelines before any service code is w
 1. [Build Environment Dependencies](#build-environment-dependencies)
 1. [Integration Validation](#Integration-Validation)
 1. [Git Driven Workflow](#Git-Driven-Workflow)
+1. [Everyone Commits Their Work Every Day](#Everyone-Commits-Their-Work-Every-Day)
 1. [Evidence and Measures](#evidence-and-measures)
 1. [Resources](#resources)
 
@@ -83,15 +84,23 @@ Every commit to the baseline repository should trigger the CI pipeline to create
 
 &#9745; The build pipeline is configured in a way where a pipeline run is triggered on every git commit.
 
-&#9745; Any build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit.
+&#9745; Any build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
 
-&#9745; Merges into the master branch trigger releases into the production environment. This way the master branch becomes a dependable baseline for the code running in production.
+&#9745; Merges into the master branch trigger releases into the production environment. This way the master branch becomes a dependable baseline for the code running in production. 
 
 &#9745; There should be no commented out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
-&#9745; Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI build run passes.
+&#9745; Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
 
 ## Everyone Commits Their Work Every Day
+
+"By committing regularly, every committer can reduce the number of conflicting changes. Checking in a week's worth of work runs the risk of conflicting with other features and can be very difficult to resolve. Early, small conflicts in an area of the system cause team members to communicate about the change they are making. "
+
+In the spirit of transparency and embracing more frequent communication across a dev crew so developers can tell other developers about the changes they have made. Here are some principles to consider:
+
+&#9745; End of day checked-in code should contain unit tests at the minimum.
+
+&#9745; Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage to develop and refactor incrementally in small chunks.
 
 ## Remediate Build Failures
 
