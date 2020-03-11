@@ -49,7 +49,7 @@ how much work can be committed to for the next sprint.
 ### Planning Poker
 
 Possibly the most popular approach to sizing is called Planning Poker. This approach
-assigns sizing based on the fibonacci numbers 1,2,3,5,8,13,21. This can be
+assigns sizing based on the fibonacci numbers 1, 2, 3, 5, 8, 13 and 21. This can be
 done with something as low tech as holding up fingers to online tools that allow
 teams to remotely vote. Co-located teams can even choose to purchase playing cards
 that reflect the fibonacci numbers and distribute the cards during the estimating
