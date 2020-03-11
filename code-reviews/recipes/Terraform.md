@@ -10,7 +10,7 @@
 
 ### TFLint
 
-[`TFLint`](https://github.com/terraform-linters/tflint) is a Terraform linter focused on possible errors, best practices, etc. Once TFLint installed in the environment, it can be invoked using the VS Code [`terraform extension`](https://marketplace.visualstudio.com/items?itemName=mauve.terraform)
+[`TFLint`](https://github.com/terraform-linters/tflint) is a Terraform linter focused on possible errors, best practices, etc. Once TFLint installed in the environment, it can be invoked using the VS Code [`terraform extension`](https://marketplace.visualstudio.com/items?itemName=mauve.terraform).
 
 ## VS Code Extensions
 
@@ -76,6 +76,7 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] Is the remote state backend storage account key is stored a secure location (e.g. Azure Key Vault)?
 * [ ] If Terraform code is mixed with application source code, is the Terraform code isolated into a dedicated folder?
 * [ ] If the infrastructure is going to different depending on the environment (e.g. Dev, UAT, Production), are the environment specific parameters supplied via `.tfvars` file?
+* [ ] Is the project configured to use state file based on the environment and the deployment pipeline configured to supply the state file name dynamically?
 * [ ] Are the resource definitions and data sources handled correctly in the Terraform scripts?
     resource : Indicates to Terraform that the current configuration is in charge of managing the life cycle of the object
     data: Indicates to Terraform that you only want to get a reference to the existing object, but don’t want to manage it as part of this configuration
