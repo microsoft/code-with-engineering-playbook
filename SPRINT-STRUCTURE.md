@@ -8,7 +8,7 @@ This index structure is intended to accomplish the following goals
 2. Provide content in a logical structure which reflects the engineering process.
 3. Extensible hierarchy to allow teams to share deep subject matter expertise.
 
-## A Week In The Life Of....
+## A Week In The Life Of
 
 This layout structures the playbook content to make it easy day to day to find relevant resources during an Agile sprint.
 
@@ -59,13 +59,13 @@ This layout structures the playbook content to make it easy day to day to find r
     - Recipes
       - How to run efficient standups for remote teams
 - Day 3
-  - [Pull Requests](pull-requests/readme.md) (separate from code reviews)
+  - [Pull Requests](code-reviews/pull-requests.md) (separate from code reviews)
     - Conceptual requirements for pull request (it should build, have 1 reviewer, linked work item, build changes)
       - Add emphasis on importance of protecting master, effect this has on crew efficiency
     - Recipe for Setup in
       - Azure DevOps
       - GitHub
-    - [Code Reviews](code-reviews/readme.md)
+    - [Code Reviews](code-reviews/README.md)
       - Conceptual
         - Add to checklist (breaking changes & backward compatibility, security, fault tolerance, etc)
   - Code Merging

@@ -22,9 +22,9 @@ The team should at least be doing the following:
 
 * Agree on the **branch**, **release** and **merge strategy**
 * Define the commit history approach ([linear or non-linear](./git.md#Commit-history))
-* Lock the default branch and merge using [pull requests (PRs)](../code-reviews/pull-requests#Pull-Requests)
+* Lock the default branch and merge using [pull requests (PRs)](../code-reviews/pull-requests.md)
 * Agree on [branch naming](./git.md#Naming-branches) (e.g. `user/your_alias/feature_name`)
-* Establish [branch/PR policies](../code-reviews/pull-requests#Pull-Requests)
+* Establish [branch/PR policies](../code-reviews/pull-requests.md)
 * For public repositories the default branch should contain the following files:
   * [LICENSE](../resources/templates/LICENSE)
   * [README.md](../resources/templates/README.md)

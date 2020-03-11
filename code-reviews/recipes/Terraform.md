@@ -57,6 +57,6 @@ terraform validate
 
 ## Code Review Checklist
 
-In addition to the [Code Review Checklist](../readme.md) you should also look for these terraform specific code review items
+In addition to the [Code Review Checklist](../README.md) you should also look for these terraform specific code review items
 
 > TODO: Add checklist

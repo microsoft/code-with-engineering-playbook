@@ -6,14 +6,14 @@ Developers working on [CSE](../CSE.md) projects should conduct peer code reviews
 **Table of contents**
 <!-- markdownlint-enable MD036 -->
 
-1. [Goals](#goals)
-1. [General Guidance](#general-guidance)
-1. [First Design Pass](#first-design-pass)
-1. [Code Quality Pass](#code-quality-pass)
-1. [Evidence and Measures](#evidence-and-measures)
-1. [Language Specific Guidance](#language-specific-guidance)
-1. [Resources](#resources)
-1. [Q&A](#q&a)
+* [Goals](#goals)
+* [General Guidance](#general-guidance)
+* [First Design Pass](#first-design-pass)
+* [Code Quality Pass](#code-quality-pass)
+* [Evidence and Measures](#evidence-and-measures)
+* [Language Specific Guidance](#language-specific-guidance)
+* [Resources](#resources)
+* [Q&A](#qa)
 
 ## Goals
 
@@ -152,6 +152,7 @@ For more information, see links under [resources](#resources).
 * [C#](./recipes/CSharp.md)
 * [Go](./recipes/Go.md)
 * [JavaScript and TypeScript](./recipes/javascript-and-typescript.md)
+* [Markdown](./recipes/Markdown.md)
 * [Python](./recipes/Python.md)
 * [Terraform](./recipes/Terraform.md)
 
