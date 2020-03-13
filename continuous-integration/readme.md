@@ -92,6 +92,10 @@ One approach we recommend: manage (almost) everything as code. This includes:
 
 Decoupling infrastructure from the application codebase simplifies engineering teams move to cloud native applications.
 
+### Sample DevOPS Workflow using Terraform and Cobalt
+
+![image](https://user-images.githubusercontent.com/7635865/76626035-652eda80-6506-11ea-8870-6070365f10d6.png)
+
 **Why**
 
 - Repeatable and auditable changes to infrastructure make it easier to roll back to known good configurations and to rapidly expand to new stages and regions without having to hand-wire cloud resources
