@@ -48,7 +48,7 @@ Continuous integration automation is an integral part of the software developmen
 
 ## Single Source Repository
 
-### Measures
+### Principles
 
 &#9745; All artifacts required to build a project / service should be maintained in a single git repository. This does not mean all artifacts for an engagement should exist within a single repo as engagements typically maintain multiple build definitions. Artifacts required for a build should be co-located into a single repository. Your build [pipeline definition](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should also be managed within this repository.
 
@@ -56,7 +56,7 @@ Continuous integration automation is an integral part of the software developmen
 
 An automated build should encompass the following principles:
 
-### Measures
+### Principles
 
 &#9745; The build definition should include steps like compiling the code, executing unit tests, running [code style checks](https://github.com/checkstyle/checkstyle), [static type checks](http://mypy-lang.org/) and [semantic validation checks](https://github.com/python/mypy/wiki/Semantic-Analyzer).
 
@@ -70,7 +70,7 @@ An automated build should encompass the following principles:
 
 ## Build Environment Dependencies
 
-### Measures
+### Principles
 
 &#9745; Build automation scripts often require certain software packages to be pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies. For these reasons, the below principles should be considered when implementing your build automation tool chain. 
 
@@ -114,7 +114,7 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 - Templates are repeatable cloud resource stacks with a focus on configuration sets aligned with app scaling and throughput needs.
 
-### Measures
+### Principles
 
 &#9745; All cloud resources are provisioned through a set of infrastructure as code templates. This also includes secrets, service configuration settings, role assignments and monitoring conditions.
 
@@ -128,7 +128,7 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
 
-### Measures
+### Principles
 
 &#9745; Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
 
@@ -142,7 +142,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate. Some principles to consider regarding build trigger events:
 
-### Measures
+### Principles
 
 &#9745; The build pipeline is configured in a way where a pipeline run is triggered on every git commit.
 
@@ -160,7 +160,7 @@ Every commit to the baseline repository should trigger the CI pipeline to create
 
 In the spirit of transparency and embracing frequent communication across a dev crew, we encourage developers to commit code on a daily cadence. This approach provides visibility to feature progress and accelerates pair programming across the team. Here are some principles to consider:
 
-### Measures
+### Principles
 
 &#9745; End of day checked-in code should contain unit tests at the minimum.
 
