@@ -2,9 +2,9 @@
 
 # Continuous Integration
 
-Developers working on [CSE](../CSE.md) projects should make an upfront investment(typically Sprint 0) to establish an automated and repeatable pipeline that integrates code continuously across the engineering team. Each integration should be verified by an automated build which runs a series of tests to surface integration errors and block any generation of build artifact(s) in the presence of failures.
+Developers working on [CSE](../CSE.md) projects should make an upfront investment(typically Sprint 0) to establish an automated and repeatable pipeline that integrates code continuously across the engineering team. Each integration should be verified by an automated build which runs a series of tests to surface integration errors and blocks build artifact generation in the presence of failures.
 
-We encourage teams to implement the CI/CD pipelines before any service code is written in a project, which usually happens in Sprint 0(N). This way, the engineering team can develop and test their work in isolation and avoid impacting other developers and promote a consistent devops workflow across the team.
+We encourage teams to implement the CI/CD pipelines before any service code is written for customers, which usually happens in Sprint 0(N). This way, the engineering team can develop and test their work in isolation without impacting other developers and promote a consistent devops workflow throughout the engagement.
 
 These [principles](https://martinfowler.com/articles/continuousIntegration.html) map directly to key agile and lean SDLC practices. 
 
@@ -26,7 +26,7 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
 
 ## Goals
 
-Continuous integration automation is an integral part of the software development lifecycle intended to reduce errors during build integration and maximize velocity across a dev crew. A robust build automation / validation pipeline will ultimately:
+Continuous integration automation is an integral part of the software development lifecycle intended to reduce build integration errors and maximize velocity across a dev crew. A robust build automation / validation pipeline will ultimately:
 
 1. Accelerate team velocity where build automation tool chains(Maven, MSBuild, etc) can run either locally or in a CI Server and continuously report errors.
 
@@ -52,7 +52,7 @@ Continuous integration automation is an integral part of the software developmen
 
 ### Principles
 
-&#9745; All artifacts required to build a project / service should be maintained in a single git repository. This does not mean all artifacts for an engagement should exist within a single repo as engagements typically maintain multiple build definitions. Artifacts required for a build should be co-located into a single repository. Your build [pipeline definition](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should also be managed within this repository.
+&#9745; All artifacts required to build services for a project should be maintained in a single git repository. This doesn't mean all code artifacts across the team should co-exist within a single repo as engagements typically maintain multiple build definitions. Artifacts required for a build should be co-located into a single repository. Your build [pipeline definition](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should also be managed within this repository.
 
 ## Build Automation
 
@@ -68,17 +68,17 @@ An automated build should encompass the following principles:
 
 &#9745; A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine. 
 
-&#9745; It's essential to have a master build that's runnable through standalone scripts and not dependent on a particular IDE. Build manifests should run locally for developers through their IDE of choice and should promote the flexibility to run within a CI server. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
+&#9745; It's essential to have a master build that's runnable through standalone scripts and not dependent on a particular IDE. Build manifests should run locally for developers through their IDE of choice and maintain enough flexibility to run within a CI server. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
 ## Build Environment Dependencies
 
 ### Principles
 
-&#9745; Build automation scripts often require certain software packages to be pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies. For these reasons, the below principles should be considered when implementing your build automation tool chain. 
+&#9745; Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies. For these reasons, the below principles should be considered when implementing your build automation tool chain. 
 
 &#9745; Dependent software package installation like Docker, Maven, npm, etc should be baked into your build automation process. For this reason, docker should be considered as part of your CI workflow. 
 
-&#9745; We want to put an emphasis on maintaining a consistent developer experience for all members of a dev crew. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
+&#9745; We encourage maintaining a consistent developer experience for all members across the dev crew. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
 
 ## Infrastructure as Code
 
@@ -124,7 +124,7 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 &#9745; All cloud resources are provisioned through a set of infrastructure as code templates. This also includes secrets, service configuration settings, role assignments and monitoring conditions.
 
-&#9745; When the IAC templates change through a git-based workflow, A CI build pipeline should build, validate and reconcile the target infrastructure environment's current state and expected state. The infrastructure execution plan candidate for these fixed environments should be reviewed by an cloud administer as a gate check prior to execution.
+&#9745; When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by an cloud administer as a gate check prior to the deploy stage of the pipeline applying the execution plan.
 
 &#9745; Developer accounts in active directory should have read-only access to fixed environments in Azure. Developers can interface with these environments through a system generated service principal which has read/write access to provisioned cloud resources.
 
