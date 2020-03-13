@@ -4,7 +4,7 @@
 
 Developers working on [CSE](../CSE.md) projects should make an upfront investment(typically Sprint 0) to establish an automated and repeatable pipeline that integrates code continuously across the engineering team. Each integration should be verified by an automated build which runs a series of tests to surface integration errors and block any generation of build artifact(s) in the presence of failures.
 
-We encourage teams to implement the CI/CD pipelines before any service code is written in a project, which usually happens in Sprint 0(N). This way, the engineering team can develop and test their work in isolation and avoid impacting other developers on the team. This way, both the dev crew and our customer(s) follow a consistent devops workflow.
+We encourage teams to implement the CI/CD pipelines before any service code is written in a project, which usually happens in Sprint 0(N). This way, the engineering team can develop and test their work in isolation and avoid impacting other developers and promote a consistent devops workflow across the team.
 
 These [principles](https://martinfowler.com/articles/continuousIntegration.html) map directly to key agile and lean SDLC practices. 
 
