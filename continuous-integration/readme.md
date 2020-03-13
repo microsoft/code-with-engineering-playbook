@@ -64,7 +64,7 @@ An automated build should encompass the following principles:
 
 &#9745; The build should include all steps required to setup an environment for use. This means the build should automate pulling database schemas from the scm repository and applying it to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
 
-&#9745; A single command should have the capability of building the system. This is true for builds running on a CI server or on a developers local machine. 
+&#9745; A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine. 
 
 &#9745; It's essential to have a master build that's runnable through standalone scripts and not dependent on a particular IDE. Build manifests should run locally for developers through their IDE of choice and should promote the flexibility to run within a CI server. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
@@ -128,6 +128,8 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 &#9745; Secrets and configuration changes should only be carried out through the IAC devops workflow. In summary, secret management should be automated and repeatable to promote consistency across environments and developer-specific test environments.
 
+&#9745; End-to-end integration tests are run as part of your IAC CI process to inspect and validate that an azure environment is ready for use. 
+
 ## Integration Validation 
 
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
@@ -177,8 +179,6 @@ In the spirit of transparency and embracing frequent communication across a dev 
 ## Integration Observability 
 
 ## Build Pipeline Status with Respect to Branch Policies
-
-## Evidence and Measures
 
 ## Resources
 
