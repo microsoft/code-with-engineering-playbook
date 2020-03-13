@@ -217,7 +217,7 @@ We recommend integrating Teams or Slack with CI/CD pipeline runs which helps kee
 ## Resources
 
 - [Martin Fowler's Continuous Integration Best Practices](https://martinfowler.com/articles/continuousIntegration.html)
-- Bedrock - https://github.com/microsoft/bedrock/
+- [Bedrock Getting Started Quick Guide](https://github.com/microsoft/bedrock#getting-started)
 - [Cobalt Quick Start Guide](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md)
 - [Azure DevOPS multi stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
 - [Azure Pipeline Key Concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
