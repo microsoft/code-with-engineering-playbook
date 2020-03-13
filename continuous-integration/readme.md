@@ -1,12 +1,12 @@
-![image](https://user-images.githubusercontent.com/7635865/76624154-c2c12800-6502-11ea-912d-a260c821ac41.png)
-
 # Continuous Integration
+
+![image](https://user-images.githubusercontent.com/7635865/76624154-c2c12800-6502-11ea-912d-a260c821ac41.png)
 
 Developers working on [CSE](../CSE.md) projects should make an upfront investment(typically Sprint 0) to establish an automated and repeatable pipeline that integrates code continuously across the engineering team. Each integration should be verified by an automated build which runs a series of tests to surface integration errors and blocks build artifact generation in the presence of failures.
 
 We encourage teams to implement the CI/CD pipelines before any service code is written for customers, which usually happens in Sprint 0(N). This way, the engineering team can develop and test their work in isolation without impacting other developers and promote a consistent devops workflow throughout the engagement.
 
-These [principles](https://martinfowler.com/articles/continuousIntegration.html) map directly to key agile and lean SDLC practices. 
+These [principles](https://martinfowler.com/articles/continuousIntegration.html) map directly to key agile and lean SDLC practices.
 
 <!-- markdownlint-disable MD036 -->
 **Table of contents**
@@ -40,7 +40,7 @@ Continuous integration automation is an integral part of the software developmen
 
 1. Quick feedback cycle for system-wide impact of local changes
 
-1. Software Build and Deployment Separation 
+1. Software Build and Deployment Separation
 
 1. Measuring metrics around build failures / success(s)
 
@@ -50,7 +50,7 @@ Continuous integration automation is an integral part of the software developmen
 
 ## Single Source Repository
 
-### Principles
+### SCM Principles
 
 &#9745; All artifacts required to build services for a project should be maintained in a single git repository. This doesn't mean all code artifacts across the team should co-exist within a single repo as engagements typically maintain multiple build definitions. Artifacts required for a build should be co-located into a single repository. Your build [pipeline definition](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should also be managed within this repository.
 
@@ -58,7 +58,7 @@ Continuous integration automation is an integral part of the software developmen
 
 An automated build should encompass the following principles:
 
-### Principles
+### Build Automation Principles
 
 &#9745; The build definition should include steps like compiling the code, executing unit tests, running [code style checks](https://github.com/checkstyle/checkstyle), [static type checks](http://mypy-lang.org/) and [semantic validation checks](https://github.com/python/mypy/wiki/Semantic-Analyzer).
 
@@ -66,23 +66,23 @@ An automated build should encompass the following principles:
 
 &#9745; The build should include all steps required to setup an environment for use. This means the build should automate pulling database schemas from the scm repository and applying it to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
 
-&#9745; A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine. 
+&#9745; A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
 
 &#9745; It's essential to have a master build that's runnable through standalone scripts and not dependent on a particular IDE. Build manifests should run locally for developers through their IDE of choice and maintain enough flexibility to run within a CI server. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
 ## Build Environment Dependencies
 
-### Principles
+### Build Environment Principles
 
-&#9745; Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies. For these reasons, the below principles should be considered when implementing your build automation tool chain. 
+&#9745; Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies. For these reasons, the below principles should be considered when implementing your build automation tool chain.
 
-&#9745; Dependent software package installation like Docker, Maven, npm, etc should be baked into your build automation process. For this reason, docker should be considered as part of your CI workflow. 
+&#9745; Dependent software package installation like Docker, Maven, npm, etc should be baked into your build automation process. For this reason, docker should be considered as part of your CI workflow.
 
 &#9745; We encourage maintaining a consistent developer experience for all members across the dev crew. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
 
 ## Infrastructure as Code
 
-One approach we recommend: manage (almost) everything as code. This includes: 
+One approach we recommend: manage (almost) everything as code. This includes:
 
 - Configuration Files
 - Configuration Management
@@ -98,7 +98,7 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 ![image](https://user-images.githubusercontent.com/7635865/76626035-652eda80-6506-11ea-8870-6070365f10d6.png)
 
-**Why**
+### Why
 
 - Repeatable and auditable changes to infrastructure make it easier to roll back to known good configurations and to rapidly expand to new stages and regions without having to hand-wire cloud resources
 
@@ -106,7 +106,7 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 - Simplify “lift and shift” scenarios by abstracting the complexities of cloud-native computing away from application developer teams.
 
-**IAC DevOPS: Operations by Pull Request**
+### IAC DevOPS: Operations by Pull Request
 
 - The Infrastructure deployment process built around a repo that holds the current expected state of the system / Azure environment.
 
@@ -114,7 +114,7 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 - Git also provides a simple model for auditing deployments and rolling back to a previous state.
 
-**Infrastructure Advocated Patterns**
+### Infrastructure Advocated Patterns
 
 - You define infrastructure as code in Terraform / ARM / Ansible templates
 
@@ -130,17 +130,17 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 &#9745; Secrets and configuration changes should only be carried out through the IAC devops workflow. In summary, secret management should be automated and repeatable to promote consistency across environments and developer-specific test environments.
 
-&#9745; End-to-end integration tests are run as part of your IAC CI process to inspect and validate that an azure environment is ready for use. 
+&#9745; End-to-end integration tests are run as part of your IAC CI process to inspect and validate that an azure environment is ready for use.
 
 ## Integration Validation
 
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
 
-### Principles
+### CI Test Principles
 
 &#9745; Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
 
-&#9745; Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle. 
+&#9745; Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
 
 &#9745; If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
 
@@ -150,13 +150,13 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate. Some principles to consider regarding build trigger events:
 
-### Principles
+### CI Trigger Principles
 
 &#9745; The build pipeline is configured in a way where a pipeline run is triggered on every git commit.
 
 &#9745; Any build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
 
-&#9745; Merges into the master branch trigger releases into the production environment(s). This way the master branch becomes a dependable baseline for the code running in production. 
+&#9745; Merges into the master branch trigger releases into the production environment(s). This way the master branch becomes a dependable baseline for the code running in production.
 
 &#9745; Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
@@ -168,7 +168,7 @@ Every commit to the baseline repository should trigger the CI pipeline to create
 
 In the spirit of transparency and embracing frequent communication across a dev crew, we encourage developers to commit code on a daily cadence. This approach provides visibility to feature progress and accelerates pair programming across the team. Here are some principles to consider:
 
-### Principles
+### Delivery Principles
 
 &#9745; End of day checked-in code should contain unit tests at the minimum.
 
@@ -178,7 +178,7 @@ In the spirit of transparency and embracing frequent communication across a dev 
 
 One of the key goals of build validation is to isolate and identify failures in non-production environments and minimize any disruption to live production traffic. Our E2E automated tests should run in an environment which mimics our production environment(as much as possible). This includes consistent software versions, OS, test data volume simulations, etc.
 
-### Principles
+### Environment Principles
 
 &#9745; The production environment should be duplicated into another environment(QA and/or Pre-Prod) at a minimum.
 
@@ -192,21 +192,21 @@ One of the key goals of build validation is to isolate and identify failures in 
 
 ## Developer Access to Latest Release Artifacts
 
-Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s). This approach provides nice audibility which ties each git commit to a release artifact and empowers developers to recreate system state from any point in time. 
+Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s). This approach provides nice audibility which ties each git commit to a release artifact and empowers developers to recreate system state from any point in time.
 
-### Principles
+### Artifact Principles
 
 &#9745; Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
 &#9745; Release artifact is published for each git commit.
 
-## Integration Observability 
+## Integration Observability
 
 Applied state changes to the mainline build should be made available and communicated across the team. Centralizing logs and status(s) from build and release pipeline failures are essential for developers investigating broken builds.
 
 We recommend integrating Teams or Slack with CI/CD pipeline runs which helps keep the team continuously plugged into failures and build candidate status(s).
 
-### Principles
+### CI Observability Principles
 
 &#9745; Modern CI providers have the capability to consolidate and report build status(s) within a given dashboard. There should be a build status badge included in the root README of the project.
 
