@@ -19,7 +19,9 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
 1. [Infrastructure As Code](#Infrastructure-as-Code)
 1. [Integration Validation](#Integration-Validation)
 1. [Git Driven Workflow](#Git-Driven-Workflow)
-1. [Everyone Commits Their Work Every Day](#Everyone-Commits-Their-Work-Every-Day)
+1. [Isolated Environments](#Isolated-Environments)
+1. [Deliver Quickly and Daily](#Deliver-Quickly-and-Daily)
+1. [Developer Access to Latest Release Artifacts](#Developer-Access-to-Latest-Release-Artifacts)
 1. [Resources](#resources)
 
 ## Goals
@@ -124,13 +126,13 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 &#9745; When the IAC templates change through a git-based workflow, A CI build pipeline should build, validate and reconcile the target infrastructure environment's current state and expected state. The infrastructure execution plan candidate for these fixed environments should be reviewed by an cloud administer as a gate check prior to execution.
 
-&#9745; Developer accounts in active directory should have read-only access to fixed environments in Azure. Developers can interface with these environments through a system generated service principal which has read/write access.
+&#9745; Developer accounts in active directory should have read-only access to fixed environments in Azure. Developers can interface with these environments through a system generated service principal which has read/write access to provisioned cloud resources.
 
 &#9745; Secrets and configuration changes should only be carried out through the IAC devops workflow. In summary, secret management should be automated and repeatable to promote consistency across environments and developer-specific test environments.
 
 &#9745; End-to-end integration tests are run as part of your IAC CI process to inspect and validate that an azure environment is ready for use. 
 
-## Integration Validation 
+## Integration Validation
 
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
 
@@ -160,7 +162,7 @@ Every commit to the baseline repository should trigger the CI pipeline to create
 
 &#9745; Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
 
-## Deliver Quickly / Daily
+## Deliver Quickly and Daily
 
 "By committing regularly, every committer can reduce the number of conflicting changes. Checking in a week's worth of work runs the risk of conflicting with other features and can be very difficult to resolve. Early, small conflicts in an area of the system cause team members to communicate about the change they are making."
 
@@ -174,11 +176,55 @@ In the spirit of transparency and embracing frequent communication across a dev 
 
 ## Isolated Environments
 
+One of the key goals of build validation is to isolate and identify failures in non-production environments and minimize any disruption to live production traffic. Our E2E automated tests should run in an environment which mimics our production environment(as much as possible). This includes consistent software versions, OS, test data volume simulations, etc.
+
+### Principles
+
+&#9745; The production environment should be duplicated into another environment(QA and/or Pre-Prod) at a minimum.
+
+&#9745; New commits to a pull request should trigger a build / release into a dev integration environment. The production environment should be fully isolated from this process.
+
+&#9745; Infrastructure as code changes should be tested in devint and promoted to all non-production environment(s) then migrated to production with zero downtime to ultimately minimize disruption(s) to our user base.
+
+&#9745; Infrastructure changes applied to production should be controlled through a release gate.
+
+&#9745; Code changes merged into the master branch should auto trigger a new release candidate for all cloud environments.
+
 ## Developer Access to Latest Release Artifacts
+
+Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s). This approach provides nice audibility which ties each git commit to a release artifact and empowers developers to recreate system state from any point in time. 
+
+### Principles
+
+&#9745; Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
+
+&#9745; Release artifact is published for each git commit.
 
 ## Integration Observability 
 
-## Build Pipeline Status with Respect to Branch Policies
+Applied state changes to the mainline build should be made available and communicated across the team. Centralizing logs and status(s) from build and release pipeline failures are essential for developers investigating broken builds.
+
+We recommend integrating Teams or Slack with CI/CD pipeline runs which helps keep the team continuously plugged into failures and build candidate status(s).
+
+### Principles
+
+&#9745; Modern CI providers have the capability to consolidate and report build status(s) within a given dashboard. There should be a build status badge included in the root README of the project.
+
+&#9745; Broken build status(s) should block pull request reviews from starting.
+
+&#9745; Your CI process should be configured to send notifications to messaging platforms like Teams / Slack once the build completes. We recommend creating a separate channel to help consolidate and isolate these notifications.
 
 ## Resources
 
+- [Martin Fowler's Continuous Integration Best Practices](https://martinfowler.com/articles/continuousIntegration.html)
+- Bedrock - https://github.com/microsoft/bedrock/
+- [Cobalt Quick Start Guide](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md)
+- [Azure DevOPS multi stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
+- [Azure Pipeline Key Concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
+- [Azure Pipeline Environments](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
+- [Artifacts in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/artifacts-overview?view=azure-devops)
+- [Azure Pipeline permission and security roles](https://docs.microsoft.com/en-us/azure/devops/pipelines/policies/permissions?view=azure-devops)
+- [Azure Environment approvals and checks](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
+- [Terraform Getting Started Guide with Azure](https://learn.hashicorp.com/terraform?track=azure#azure)
+- [Terraform Remote State Azure Setup](https://docs.microsoft.com/en-us/azure/terraform/terraform-backend)
+- [Terratest - Unit and Integration Infrastructure Framework](https://terratest.gruntwork.io/)
