@@ -1,6 +1,6 @@
 # Definition of Ready
 
-At the time the development team picks a user story from the top of the backlog to estimate during the Sprint planning, they consider that the user story has a certain level of detail that helps them to give an accurate estimate of completion of the user story within the sprint. This level of information is what makes the story to be Ready to be developed in the sprint.
+When the development team picks a user story from the top of the backlog, the user story needs to have enough detail to estimate the work needed to complete the story within the sprint. If it has enough detail to estimate, it is Ready to be developed.
 
   `In case a user story is not Ready in the beginning of the Sprint it increases the chance that your story will not be done at the end of this print.`
 
@@ -12,19 +12,19 @@ It can be understood as a checklist that helps the Product Owner to ensure that 
 
 ### Examples of ready checklist items:
 
-- The description had enough details and input values mandatory in the implementation.
-- The user story contained a clear and a complete acceptance criteria.
-- The user story addressed the business view
-- The acceptance criteria could be measured
+* [ ] Does the description have the details and input values required to implement the user story?
+* [ ] Does the user story have clear and complete acceptance criteria?
+* [ ] Does the user story address the business need?
+* [ ] Can we measure the acceptance criteria?
 
 ## Who writes it
 
 The ready checklist can be written by a Product Owner in agreement with the development team and the scrum master.
 
-## When a Definition of Ready needs an update
+## When should a Definition of Ready be updated
 
-You can update or change the definition of ready anytime the scrum team observes that there are missing information in the user stories that recurrently impact the good evolution of the planning and that recurrent information was not in the checklist.
+Update or change the definition of ready anytime the scrum team observes that there are missing information in the user stories that recurrently impacts the planning.
 
 ## What should be avoided
 
-It is desirable that the ready checklist can apply to two or more user stories. We discourage you of including in your ready checklist any detail that make the ready checklist to become one of a kind and too specific for a single user story. This may lead to a 1:1 relationship between the user story and the checklist, what may delay the process of writing good user stories.
+The ready checklist should contain items that apply broadly. Don't include items or details that only apply to one or two user stories. This may become an overhead when writing the user stories.
