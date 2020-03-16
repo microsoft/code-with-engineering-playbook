@@ -2,11 +2,11 @@
 
 ![image](https://user-images.githubusercontent.com/7635865/76624154-c2c12800-6502-11ea-912d-a260c821ac41.png)
 
-Developers working on [CSE](../CSE.md) projects should make an upfront investment(typically Sprint 0) to establish an automated and repeatable pipeline that integrates code continuously across the engineering team. Each integration should be verified by an automated build which runs a series of tests to surface integration errors and blocks build artifact generation in the presence of failures.
+We encourage engineering teams to make an upfront investment during Sprint 0 of a project to establish an automated and repeatable pipeline which continuously integrates code and releases system executable(s) to target cloud environments. Each integration should be verified by an automated build process that asserts a suite of validation tests pass and surface any errors across the developer team.
 
 We encourage teams to implement the CI/CD pipelines before any service code is written for customers, which usually happens in Sprint 0(N). This way, the engineering team can develop and test their work in isolation without impacting other developers and promote a consistent devops workflow throughout the engagement.
 
-These [principles](https://martinfowler.com/articles/continuousIntegration.html) map directly to key agile and lean SDLC practices.
+These [principles](https://martinfowler.com/articles/continuousIntegration.html) map directly agile software development lifecycle [practices](https://en.wikipedia.org/wiki/Agile_software_development).
 
 <!-- markdownlint-disable MD036 -->
 **Table of contents**
@@ -26,29 +26,25 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
   - [Integration Validation](#integration-validation)
   - [Git Driven Workflow](#git-driven-workflow)
   - [Deliver Quickly and Daily](#deliver-quickly-and-daily)
-    - [Delivery Principles](#delivery-principles)
   - [Isolated Environments](#isolated-environments)
-    - [Environment Principles](#environment-principles)
   - [Developer Access to Latest Release Artifacts](#developer-access-to-latest-release-artifacts)
-    - [Artifact Principles](#artifact-principles)
   - [Integration Observability](#integration-observability)
-    - [CI Observability Principles](#ci-observability-principles)
   - [Resources](#resources)
 
 ## Goals
 
-Continuous integration automation is an integral part of the software development lifecycle intended to reduce build integration errors and maximize velocity across a dev crew. A robust build automation / validation pipeline will ultimately:
+Continuous integration automation is an integral part of the software development lifecycle intended to reduce build integration errors and maximize velocity across a dev crew.
 
-- Accelerate team velocity where build automation tool chains (Maven, MSBuild, etc) can run either locally or in a CI Server and continuously report errors.
+A robust build automation pipeline will:
+
+- Accelerate team velocity
 - Prevent integration problems
 - Avoid last minute chaos during release dates
-- Staging Builds
-- Enforces discipline of frequent automated testing
-- Quick feedback cycle for system-wide impact of local changes
-- Software Build and Deployment Separation
-- Measuring metrics around build failures / success(s)
+- Enforce discipline of test driven development
+- Provide a quick feedback cycle for system-wide impact of local changes
+- Separate build and deployment stages
+- Measure and report metrics around build failures / success(s)
 - Increase visibility across the team enabling tighter communication
-- Most importantly, automating the build
 
 ## Single Source Repository
 
@@ -69,7 +65,7 @@ An automated build should encompass the following principles:
   - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)).
   - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
 - [ ] **Database Schema Automation**
-  - The build process should automate pulling database schemas from the scm repository and applying it to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
+  - The build process should automate pulling database schemas from the git repository and applied to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
 - [ ] **Build Script Target**
   - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
 - [ ] **No IDE Dependencies**
@@ -88,7 +84,7 @@ An automated build should encompass the following principles:
   
 ## Infrastructure as Code
 
-One approach we recommend: manage (almost) everything as code. This includes:
+Manage as much of the following as possible, as code:
 
 - Configuration Files
 - Configuration Management
@@ -166,6 +162,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 - [ ] **Branch policy enforcement**
   - Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
+  - Broken builds should block pull request reviews.
 
 ## Deliver Quickly and Daily
 
@@ -173,37 +170,32 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 In the spirit of transparency and embracing frequent communication across a dev crew, we encourage developers to commit code on a daily cadence. This approach provides visibility to feature progress and accelerates pair programming across the team. Here are some principles to consider:
 
-### Delivery Principles
-
-- [ ] End of day checked-in code should contain unit tests at the minimum.
-
-- [ ] Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://leankit.com/learn/lean/principles-of-lean-development/) and isolate work in small chunks which ties directly to business value and refactor incrementally.
+- [ ] **Everyone commits to the git repository each day**
+  - End of day checked-in code should contain unit tests at the minimum.
+  - Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://leankit.com/learn/lean/principles-of-lean-development/).
+  - Isolate work into small chunks which ties directly to business value and refactor incrementally.
 
 ## Isolated Environments
 
 One of the key goals of build validation is to isolate and identify failures in non-production environments and minimize any disruption to live production traffic. Our E2E automated tests should run in an environment which mimics our production environment(as much as possible). This includes consistent software versions, OS, test data volume simulations, etc.
 
-### Environment Principles
-
-- [ ] The production environment should be duplicated into another environment(QA and/or Pre-Prod) at a minimum.
-
-- [ ] New commits to a pull request should trigger a build / release into a dev integration environment. The production environment should be fully isolated from this process.
-
-- [ ] Infrastructure as code changes should be tested in devint and promoted to all non-production environment(s) then migrated to production with zero downtime to ultimately minimize disruption(s) to our user base.
-
-- [ ] Infrastructure changes applied to production should be controlled through a release gate.
-
-- [ ] Code changes merged into the master branch should auto trigger a new release candidate for all cloud environments.
+- [ ] **Test in a clone of production**
+  - The production environment should be duplicated into another environment(QA and/or Pre-Prod) at a minimum.
+- [ ] **Pull request update triggers dev integration release**
+  - New commits related to a pull request should trigger a build / release into a dev integration environment. The production environment should be fully isolated from this process.
+- [ ] **Promote infrastructure changes across fixed environments**
+  - Infrastructure as code changes should be tested in devint and promoted to all non-production environment(s) then migrated to production with zero downtime to ultimately minimize disruption(s) to our user base.
+- [ ] **Environment releases are triggered on merges into master**
+  - Code changes merged into the master branch should auto trigger a new release candidate for all cloud environments.
 
 ## Developer Access to Latest Release Artifacts
 
 Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s). This approach provides nice audibility which ties each git commit to a release artifact and empowers developers to recreate system state from any point in time.
 
-### Artifact Principles
+- [ ] **Developers can access latest executable**
+  - Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
-- [ ] Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
-
-- [ ] Release artifact is published for each git commit.
+- [ ] **Release artifact is published for each git commit**
 
 ## Integration Observability
 
@@ -211,13 +203,13 @@ Applied state changes to the mainline build should be made available and communi
 
 We recommend integrating Teams or Slack with CI/CD pipeline runs which helps keep the team continuously plugged into failures and build candidate status(s).
 
-### CI Observability Principles
-
-- [ ] Modern CI providers have the capability to consolidate and report build status(s) within a given dashboard. There should be a build status badge included in the root README of the project.
-
-- [ ] Broken build status(s) should block pull request reviews from starting.
-
-- [ ] Your CI process should be configured to send notifications to messaging platforms like Teams / Slack once the build completes. We recommend creating a separate channel to help consolidate and isolate these notifications.
+- [ ] **Continuous integration top level dashboard**
+  - Modern CI providers have the capability to consolidate and report build status(s) within a given dashboard.
+  - Your CI dashboard should be able to correlate a build failure with a git commit.
+- [ ] **Build status badge in project readme**
+  - There should be a build status badge included in the root README of the project.
+- [ ] **Build notifications**
+  - Your CI process should be configured to send notifications to messaging platforms like Teams / Slack once the build completes. We recommend creating a separate channel to help consolidate and isolate these notifications.
 
 ## Resources
 
