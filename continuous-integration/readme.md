@@ -12,74 +12,81 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
 **Table of contents**
 <!-- markdownlint-enable MD036 -->
 
-1. [Goals](#goals)
-1. [Single Source Repository](#single-source-repository)
-1. [Build Automation](#build-automation)
-1. [Build Environment Dependencies](#build-environment-dependencies)
-1. [Infrastructure As Code](#Infrastructure-as-Code)
-1. [Integration Validation](#Integration-Validation)
-1. [Git Driven Workflow](#Git-Driven-Workflow)
-1. [Isolated Environments](#Isolated-Environments)
-1. [Deliver Quickly and Daily](#Deliver-Quickly-and-Daily)
-1. [Developer Access to Latest Release Artifacts](#Developer-Access-to-Latest-Release-Artifacts)
-1. [Resources](#resources)
+- [Continuous Integration](#continuous-integration)
+  - [Goals](#goals)
+  - [Single Source Repository](#single-source-repository)
+  - [Build Automation](#build-automation)
+  - [Build Environment Dependencies](#build-environment-dependencies)
+  - [Infrastructure as Code](#infrastructure-as-code)
+    - [Sample DevOPS Workflow using Terraform and Cobalt](#sample-devops-workflow-using-terraform-and-cobalt)
+    - [Why](#why)
+    - [IAC DevOPS: Operations by Pull Request](#iac-devops-operations-by-pull-request)
+    - [Infrastructure Advocated Patterns](#infrastructure-advocated-patterns)
+    - [IAC Principles](#iac-principles)
+  - [Integration Validation](#integration-validation)
+  - [Git Driven Workflow](#git-driven-workflow)
+    - [CI Trigger Principles](#ci-trigger-principles)
+  - [Deliver Quickly and Daily](#deliver-quickly-and-daily)
+    - [Delivery Principles](#delivery-principles)
+  - [Isolated Environments](#isolated-environments)
+    - [Environment Principles](#environment-principles)
+  - [Developer Access to Latest Release Artifacts](#developer-access-to-latest-release-artifacts)
+    - [Artifact Principles](#artifact-principles)
+  - [Integration Observability](#integration-observability)
+    - [CI Observability Principles](#ci-observability-principles)
+  - [Resources](#resources)
 
 ## Goals
 
 Continuous integration automation is an integral part of the software development lifecycle intended to reduce build integration errors and maximize velocity across a dev crew. A robust build automation / validation pipeline will ultimately:
 
-1. Accelerate team velocity where build automation tool chains(Maven, MSBuild, etc) can run either locally or in a CI Server and continuously report errors.
-
-1. Prevent integration problems
-
-1. Avoid last minute chaos during release dates
-
-1. Staging Builds
-
-1. Enforces discipline of frequent automated testing
-
-1. Quick feedback cycle for system-wide impact of local changes
-
-1. Software Build and Deployment Separation
-
-1. Measuring metrics around build failures / success(s)
-
-1. Increase visibility across the team enabling tighter communication
-
-1. Most importantly, automating the build
+- Accelerate team velocity where build automation tool chains (Maven, MSBuild, etc) can run either locally or in a CI Server and continuously report errors.
+- Prevent integration problems
+- Avoid last minute chaos during release dates
+- Staging Builds
+- Enforces discipline of frequent automated testing
+- Quick feedback cycle for system-wide impact of local changes
+- Software Build and Deployment Separation
+- Measuring metrics around build failures / success(s)
+- Increase visibility across the team enabling tighter communication
+- Most importantly, automating the build
 
 ## Single Source Repository
 
-### SCM Principles
+- [ ] **Code / manifest artifacts required to build your project should be maintained in a single git repository.**
 
-&#9745; All artifacts required to build services for a project should be maintained in a single git repository. This doesn't mean all code artifacts across the team should co-exist within a single repo as engagements typically maintain multiple build definitions. Artifacts required for a build should be co-located into a single repository. Your build [pipeline definition](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should also be managed within this repository.
+  - CI provider-specific build [pipeline definition(s)](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should reside within the mainline repository.
 
 ## Build Automation
 
 An automated build should encompass the following principles:
 
-### Build Automation Principles
-
-&#9745; The build definition should include steps like compiling the code, executing unit tests, running [code style checks](https://github.com/checkstyle/checkstyle), [static type checks](http://mypy-lang.org/) and [semantic validation checks](https://github.com/python/mypy/wiki/Semantic-Analyzer).
-
-&#9745; In real world systems, different engineering teams are responsible for developing and maintaining various parts of a system. For such a case, it's unnecessary to have a single definition automate the build across the whole product. Build automation process(s) should be structured / developed for each individual part of the system. For example, one dev team may have one CI build pipeline to automate micro service integration and another to automate serverless components like Azure Functions and another for Databricks jobs.
-
-&#9745; The build should include all steps required to setup an environment for use. This means the build should automate pulling database schemas from the scm repository and applying it to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
-
-&#9745; A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
-
-&#9745; It's essential to have a master build that's runnable through standalone scripts and not dependent on a particular IDE. Build manifests should run locally for developers through their IDE of choice and maintain enough flexibility to run within a CI server. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
+- [ ] **Build Task**
+  - A single step within your build pipeline that compiles your code project into a single build artifact.
+- [ ] **Unit Testing**
+  - Your build definition includes validation steps to execute a suite of automated unit tests to ensure that application components meets its design and behaves as intended.
+- [ ] **Code Style Checks**
+  - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
+  - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)).
+  - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
+- [ ] **Database Schema Automation**
+  - The build process should automate pulling database schemas from the scm repository and applying it to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
+- [ ] **Build Script Target**
+  - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
+- [ ] **No IDE Dependencies**
+  - It's essential to have a master build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
 ## Build Environment Dependencies
 
-### Build Environment Principles
-
-&#9745; Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies. For these reasons, the below principles should be considered when implementing your build automation tool chain.
-
-&#9745; Dependent software package installation like Docker, Maven, npm, etc should be baked into your build automation process. For this reason, docker should be considered as part of your CI workflow.
-
-&#9745; We encourage maintaining a consistent developer experience for all members across the dev crew. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
-
+- [ ] **Automated local environment setup**
+  - We encourage maintaining a consistent developer experience for all team members. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
+  - Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies.
+  - All developers on the team should be able to emulate the build environment from their local desktop regardless of their OS.
+  - Developers should trigger the automated environment setup task(s) through a single command.
+  - Well established software packaging tools like Docker, Maven, npm, etc should be considered when designing your build automation tool chain.
+- [ ] **Document local setup**
+  - The setup process for setting up a local build environment should be well documented and easy for developers to follow.
+  
 ## Infrastructure as Code
 
 One approach we recommend: manage (almost) everything as code. This includes:
@@ -101,50 +108,49 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 ### Why
 
 - Repeatable and auditable changes to infrastructure make it easier to roll back to known good configurations and to rapidly expand to new stages and regions without having to hand-wire cloud resources
-
 - Battle tested and templatized IAC reference projects like [Cobalt](https://github.com/microsoft/cobalt) and [Bedrock](https://github.com/microsoft/bedrock) enable more business teams deploy secure and scalable solutions at a much more rapid pace
-
 - Simplify “lift and shift” scenarios by abstracting the complexities of cloud-native computing away from application developer teams.
 
 ### IAC DevOPS: Operations by Pull Request
 
 - The Infrastructure deployment process built around a repo that holds the current expected state of the system / Azure environment.
-
 - Operational changes are made to the running system by making commits on this repo.
-
 - Git also provides a simple model for auditing deployments and rolling back to a previous state.
 
 ### Infrastructure Advocated Patterns
 
 - You define infrastructure as code in Terraform / ARM / Ansible templates
-
 - Templates are repeatable cloud resource stacks with a focus on configuration sets aligned with app scaling and throughput needs.
 
-### Principles
+### IAC Principles
 
-&#9745; All cloud resources are provisioned through a set of infrastructure as code templates. This also includes secrets, service configuration settings, role assignments and monitoring conditions.
-
-&#9745; When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by an cloud administer as a gate check prior to the deploy stage of the pipeline applying the execution plan.
-
-&#9745; Developer accounts in active directory should have read-only access to fixed environments in Azure. Developers can interface with these environments through a system generated service principal which has read/write access to provisioned cloud resources.
-
-&#9745; Secrets and configuration changes should only be carried out through the IAC devops workflow. In summary, secret management should be automated and repeatable to promote consistency across environments and developer-specific test environments.
-
-&#9745; End-to-end integration tests are run as part of your IAC CI process to inspect and validate that an azure environment is ready for use.
+- [ ] **Automate the Azure Environment**
+  - All cloud resources are provisioned through a set of infrastructure as code templates. This also includes secrets, service configuration settings, role assignments and monitoring conditions.
+  - Azure Portal should provide a read-only view on environment resources. Any  change applied to the environment should be made through the IAC CI tool-chain only.
+  - Provisioning cloud environments should be a repeatable process that's driven off the infrastructure code artifacts checked into our git repository.
+- [ ] **IAC CI Workflow**
+  - When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by an cloud administer as a gate check prior to the deploy stage of the pipeline applying the execution plan.
+- [ ] **Developer Read-Only Access to Cloud Resources**
+  - Developer accounts in active directory should have read-only access to fixed environments in Azure. Developers can interface with these environments through a system generated service principal which has read/write access to provisioned cloud resources.
+- [ ] **Secret Automation**
+  - Secrets and configuration changes should only be carried out through the IAC devops workflow. In summary, secret management should be automated and repeatable to promote consistency across environments and developer-specific test environments.
+- [ ] **Infrastructure Integration Test Automation**
+  - End-to-end integration tests are run as part of your IAC CI process to inspect and validate that an azure environment is ready for use.
+- [ ] **Infrastructure Documentation**
+  - The deployment and cloud resource template topology should be documented and well understood within the README of the IAC git repo.
+  - Local environment and CI workflow setup steps should be documented.
 
 ## Integration Validation
 
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
 
-### CI Test Principles
+- [ ] Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
 
-&#9745; Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
+- [ ] Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
 
-&#9745; Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
+- [ ] If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
 
-&#9745; If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
-
-&#9745; Any mocked dataset(s) used for unit and end-to-end integration tests should be checked into the mainline repository. Minimize any external data dependencies with your build process.
+- [ ] Any mocked dataset(s) used for unit and end-to-end integration tests should be checked into the mainline repository. Minimize any external data dependencies with your build process.
 
 ## Git Driven Workflow
 
@@ -152,15 +158,15 @@ Every commit to the baseline repository should trigger the CI pipeline to create
 
 ### CI Trigger Principles
 
-&#9745; The build pipeline is configured in a way where a pipeline run is triggered on every git commit.
+- [ ] The build pipeline is configured in a way where a pipeline run is triggered on every git commit.
 
-&#9745; Any build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
+- [ ] Any build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
 
-&#9745; Merges into the master branch trigger releases into the production environment(s). This way the master branch becomes a dependable baseline for the code running in production.
+- [ ] Merges into the master branch trigger releases into the production environment(s). This way the master branch becomes a dependable baseline for the code running in production.
 
-&#9745; Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
+- [ ] Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
-&#9745; Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
+- [ ] Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
 
 ## Deliver Quickly and Daily
 
@@ -170,9 +176,9 @@ In the spirit of transparency and embracing frequent communication across a dev 
 
 ### Delivery Principles
 
-&#9745; End of day checked-in code should contain unit tests at the minimum.
+- [ ] End of day checked-in code should contain unit tests at the minimum.
 
-&#9745; Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://leankit.com/learn/lean/principles-of-lean-development/) and isolate work in small chunks which ties directly to business value and refactor incrementally.
+- [ ] Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://leankit.com/learn/lean/principles-of-lean-development/) and isolate work in small chunks which ties directly to business value and refactor incrementally.
 
 ## Isolated Environments
 
@@ -180,15 +186,15 @@ One of the key goals of build validation is to isolate and identify failures in 
 
 ### Environment Principles
 
-&#9745; The production environment should be duplicated into another environment(QA and/or Pre-Prod) at a minimum.
+- [ ] The production environment should be duplicated into another environment(QA and/or Pre-Prod) at a minimum.
 
-&#9745; New commits to a pull request should trigger a build / release into a dev integration environment. The production environment should be fully isolated from this process.
+- [ ] New commits to a pull request should trigger a build / release into a dev integration environment. The production environment should be fully isolated from this process.
 
-&#9745; Infrastructure as code changes should be tested in devint and promoted to all non-production environment(s) then migrated to production with zero downtime to ultimately minimize disruption(s) to our user base.
+- [ ] Infrastructure as code changes should be tested in devint and promoted to all non-production environment(s) then migrated to production with zero downtime to ultimately minimize disruption(s) to our user base.
 
-&#9745; Infrastructure changes applied to production should be controlled through a release gate.
+- [ ] Infrastructure changes applied to production should be controlled through a release gate.
 
-&#9745; Code changes merged into the master branch should auto trigger a new release candidate for all cloud environments.
+- [ ] Code changes merged into the master branch should auto trigger a new release candidate for all cloud environments.
 
 ## Developer Access to Latest Release Artifacts
 
@@ -196,9 +202,9 @@ Our devops workflow should enable developers to get, install and run the latest 
 
 ### Artifact Principles
 
-&#9745; Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
+- [ ] Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
-&#9745; Release artifact is published for each git commit.
+- [ ] Release artifact is published for each git commit.
 
 ## Integration Observability
 
@@ -208,11 +214,11 @@ We recommend integrating Teams or Slack with CI/CD pipeline runs which helps kee
 
 ### CI Observability Principles
 
-&#9745; Modern CI providers have the capability to consolidate and report build status(s) within a given dashboard. There should be a build status badge included in the root README of the project.
+- [ ] Modern CI providers have the capability to consolidate and report build status(s) within a given dashboard. There should be a build status badge included in the root README of the project.
 
-&#9745; Broken build status(s) should block pull request reviews from starting.
+- [ ] Broken build status(s) should block pull request reviews from starting.
 
-&#9745; Your CI process should be configured to send notifications to messaging platforms like Teams / Slack once the build completes. We recommend creating a separate channel to help consolidate and isolate these notifications.
+- [ ] Your CI process should be configured to send notifications to messaging platforms like Teams / Slack once the build completes. We recommend creating a separate channel to help consolidate and isolate these notifications.
 
 ## Resources
 
