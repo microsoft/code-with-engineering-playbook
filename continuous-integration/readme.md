@@ -25,7 +25,6 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
     - [IAC Principles](#iac-principles)
   - [Integration Validation](#integration-validation)
   - [Git Driven Workflow](#git-driven-workflow)
-    - [CI Trigger Principles](#ci-trigger-principles)
   - [Deliver Quickly and Daily](#deliver-quickly-and-daily)
     - [Delivery Principles](#delivery-principles)
   - [Isolated Environments](#isolated-environments)
@@ -146,32 +145,27 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 - [ ] **End to end integration tests**
   - Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
-
 - [ ] **Avoid checking in broken builds**
   - Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
-
 - [ ] **Reporting build failures**
   - If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
-
 - [ ] **Test Automation Data Dependencies**
   - Any mocked dataset(s) used for unit and end-to-end integration tests should be checked into the mainline repository. Minimize any external data dependencies with your build process.
 
 ## Git Driven Workflow
 
 - [ ] **Build on commit**
-  - Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate. Some principles to consider regarding build trigger events:
+  - Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate.
+  - Build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
 
-### CI Trigger Principles
+- [ ] **Master branch consistency with production**
+  - Merges into the master branch trigger releases into the production environment(s). This way the master branch becomes a dependable baseline for the code running in production.
 
-- [ ] The build pipeline is configured in a way where a pipeline run is triggered on every git commit.
+- [ ] **Avoid commenting out failing tests**
+  - Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
-- [ ] Any build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
-
-- [ ] Merges into the master branch trigger releases into the production environment(s). This way the master branch becomes a dependable baseline for the code running in production.
-
-- [ ] Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
-
-- [ ] Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
+- [ ] **Branch policy enforcement**
+  - Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
 
 ## Deliver Quickly and Daily
 
