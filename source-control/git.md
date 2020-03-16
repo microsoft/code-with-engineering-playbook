@@ -236,7 +236,7 @@ One solution to this problem is `Git LFS (Git Large File Storage)` - an open sou
   * Binary files committed through Git LFS are not visible as Git will only download the data describing the large file
   * Committing large binaries will push the full binary to the repository
 * Git cannot merge the changes from two different versions of a binary file; file locking mitigates this
-* Azure Repos do not support using SSH for repositories with Git LFS tracked files
+* Azure Repos do not support using SSH for repositories with Git LFS tracked files - for more information see the Git LFS [authentication documentation](https://github.com/git-lfs/git-lfs/blob/master/docs/api/authentication.md)
 
 #### Common commands
 
@@ -247,13 +247,15 @@ git lfs install       # windows
 sudo apt-get git-lfs  # linux
 ```
 
+See the [Git LFS installation instructions](https://github.com/git-lfs/git-lfs/wiki/Installation) for installation on other systems
+
 Track .mp4 files with Git LFS
 
 ```bash
 git lfs track '*.mp4'
 ```
 
-Add a `.gitattributes` file listing the files and patterns to track
+Update the `.gitattributes` file listing the files and patterns to track
 
 ```bash
 *.mp4 filter=lfs diff=lfs merge=lfs -text
