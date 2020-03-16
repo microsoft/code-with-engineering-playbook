@@ -144,17 +144,22 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
 
-- [ ] Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
+- [ ] **End to end integration tests**
+  - Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
 
-- [ ] Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
+- [ ] **Avoid checking in broken builds**
+  - Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
 
-- [ ] If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
+- [ ] **Reporting build failures**
+  - If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
 
-- [ ] Any mocked dataset(s) used for unit and end-to-end integration tests should be checked into the mainline repository. Minimize any external data dependencies with your build process.
+- [ ] **Test Automation Data Dependencies**
+  - Any mocked dataset(s) used for unit and end-to-end integration tests should be checked into the mainline repository. Minimize any external data dependencies with your build process.
 
 ## Git Driven Workflow
 
-Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate. Some principles to consider regarding build trigger events:
+- [ ] **Build on commit**
+  - Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate. Some principles to consider regarding build trigger events:
 
 ### CI Trigger Principles
 
