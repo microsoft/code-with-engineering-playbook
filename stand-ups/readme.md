@@ -1,10 +1,10 @@
 # Stand-ups
 
-The stand-up is a ceremony that is held each day of the sprint. In this ceremony, each contributor will answer three simple questions. This will repeat until each contributor has answered the three following questions.
+The stand-up is a time-box ceremony that is held each day of the sprint. In this ceremony, each contributor in the Development Team will answer three simple questions. This will repeat until each contributor has answered the three following questions.
 
-1. What did you work on yesterday?
-2. What are you working on today?
-3. Do you have any impediments/blockers? (defer discussion / resolution to "the parking lot", described below)
+> 1. What did you work on yesterday that contributes to meet the sprint goal?
+> 2. What are you working on today that will contribute to meet the sprint goal?
+> 3. Do you have any impediments/blockers? (defer discussion / resolution to "the parking lot", described below)
 
 After that point, the stand-up is concluded. There may be a parking lot discussion after. However, participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
 
@@ -12,7 +12,7 @@ The term parking lot refers to a bucket of comments, concerns, or questions that
 
 ## Goals
 
-1. Bring awareness to the contribution of each member for the past and upcoming day.
+1. Bring awareness of the progress done towards the sprint goal and the sprint backlog.
 2. Surface any impediments to one or more team members' contributions.
 
 ## Participation
