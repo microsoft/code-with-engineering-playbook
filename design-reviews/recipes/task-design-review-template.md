@@ -13,38 +13,38 @@
 
 ## Overview / Problem Statement
 
-- Describe the task with a high-level summary. 
-- Consider additional background and justification, for posterity and historical context.
+* Describe the task with a high-level summary.
+* Consider additional background and justification, for posterity and historical context.
 
 ## Goals / In-Scope
 
-- List the specific goals for the task.
-- List a few bullet points of what this task will achieve and that are most relevant for the design review discussion.
-- This should include acceptance criteria required to meet the [definition of done](../../team-agreements/definition-of-done/).
+* List the specific goals for the task.
+* List a few bullet points of what this task will achieve and that are most relevant for the design review discussion.
+* This should include acceptance criteria required to meet the [definition of done](../../team-agreements/definition-of-done/).
 
 ## Non-goals / Out-of-Scope
 
-- List the non-goals for the task.  
-- List a few bullet points of non-goals to clarify the work that is beyond the scope of the design review for this task.
+* List the non-goals for the task.  
+* List a few bullet points of non-goals to clarify the work that is beyond the scope of the design review for this task.
 
 ## Proposed Design / Suggested Approach
 
-- Describe the detailed design to accomplish the proposed task. 
-- What patterns & practices will be used and why were they chosen.  
-- Were any alternate proposals considered?  
-- What new components are required to be developed? 
-- Are there any existing components that require updates?
-- Relevant diagrams (e.g. sequence, component, context, deployment) should be included here.
+* Describe the detailed design to accomplish the proposed task.
+* What patterns & practices will be used and why were they chosen.  
+* Were any alternate proposals considered?  
+* What new components are required to be developed?
+* Are there any existing components that require updates?
+* Relevant diagrams (e.g. sequence, component, context, deployment) should be included here.
 
-## Technology Choices 
+## Technology Choices
 
-- Describe any libraries and OSS components that will be used to complete the task. 
-- Briefly list the languages(s) and platform(s) that comprise the stack.
+* Describe any libraries and OSS components that will be used to complete the task.
+* Briefly list the languages(s) and platform(s) that comprise the stack.
 
-## Open Questions 
+## Open Questions
 
-> List any open questions/concerns here. 
+> List any open questions/concerns here.
 
-## Additional References 
+## Additional References
 
 > List any additional references here including links to backlog items, work items or other documents.
