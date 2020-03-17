@@ -18,4 +18,8 @@ See the [async design review recipe](./recipes/async-design-reviews.md) for guid
 
 * [Milestone/epic design review](./recipes/milestone-epic-design-review-recipe.md)
 * Feature/story design review
-* Task design review
+
+## Templates
+
+* [Milestone/Epic Design Review Template](./recipes/milestone-epic-design-review-template.md)
+* [Task Design Review Template](./recipes/task-design-review-template.md)
