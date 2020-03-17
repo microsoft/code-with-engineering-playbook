@@ -43,9 +43,9 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 - [ ] Significant business and functional events are tracked and related metrics collected.
 - [ ] Application faults and errors are logged.
 - [ ] Health of the system is monitored.
-- [ ] Make sure the client and server side observability data can be differentiated.
+- [ ] The client and server side observability data can be differentiated.
 - [ ] Logging configuration can be modified without code changes (eg: verbose mode).
-- [ ] Always propagate [incoming tracing context](observability/correlation-id.md). This will allow lower-level services to debug production issues.
+- [ ] [Incoming tracing context](observability/correlation-id.md) is propagated to allow for production issue debugging purposes.
 - [ ] GDPR compliance is ensured regarding PII (Personally Identifiable Information).
 
 ## Agile/Scrum
