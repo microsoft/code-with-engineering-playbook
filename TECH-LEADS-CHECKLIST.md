@@ -8,7 +8,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] Merges are done through PRs.
 - [ ] PRs reference related work items.
 - [ ] Commit history is consistent and commit messages are informative (what, why).
-- [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](./continuous-integration/credential-scanning/README.md))
+- [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](continuous-integration/credential-scanning/readme.md))
 - [ ] Public repositories follow the [OSS guidelines](source-control/git.md), see `Required files for public repositories`.
 
 More details on [Source Control](source-control/readme.md)
@@ -71,7 +71,7 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 - [ ] Linters, unit tests and successful builds for PR merges.
 - [ ] Bug fixes suggest how to catch the bug in a code review within associated work item. And if possible link to original PR that introduced bug.
 
-More details on [Code Reviews](code-reviews/readme.md)
+More details on [Code Reviews](code-reviews/README.md)
 
 ## Retrospectives
 

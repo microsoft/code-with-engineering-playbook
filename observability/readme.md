@@ -11,9 +11,9 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Pillars of Observability
 
-1. [Logging](pillars.md#Logging)
-2. [Tracing](pillars.md#Tracing)
-3. [Metrics](pillars.md#Metrics)
+1. [Logging](pillars/logging.md)
+2. [Tracing](pillars/tracing.md)
+3. [Metrics](pillars/metrics.md)
 
 ## Recommended Practices
 
@@ -22,9 +22,11 @@ Building observable systems enables development teams at CSE to measure how well
 3. **Faults, crashes, and failures** are logged as discrete events. This helps engineers identify problem area(s) during failures.
 4. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.
 5. Ensure that **metrics** around latency and duration are collected and can be aggregated.
-6. Don't attempt to monitor everything. If the data is not actionable, it is useless and becomes noise.
-7. As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.,)
-8. Start small and add where there is customer impact.
+6. Start small and add where there is customer impact.
+
+## Pitfalls to avoid
+
+Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system
 
 ## What is collected
 
@@ -84,4 +86,6 @@ Some Examples:
 
 ## Recipes
 
-Links to GitHub posts - Coming soon
+1. Application Insights/ASP.NET - [Github Repo](https://github.com/Azure-Samples/application-insights-aspnet-sample-opentelemetry), [Article](https://devblogs.microsoft.com/aspnet/observability-asp-net-core-apps/).
+
+2. [On-premise Application Insights](https://github.com/c-w/appinsights-on-premises) - A service that is compatiable with Azure App Insights, but stores the data in an in-house database.
