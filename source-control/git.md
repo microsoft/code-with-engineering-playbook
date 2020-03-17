@@ -83,7 +83,7 @@ Create a PR topic --> master in Azure DevOps and approve using the squash merge 
 
 ### Naming branches
 
-When contributing to existing projects, look for and stick with the agreed branch naming convention. In open source projects this is typically found in contributing instructions, namely in `CONTRIBUTING.md` file.
+When contributing to existing projects, look for and stick with the agreed branch naming convention. In open source projects this information is typically found in the contributing instructions, often in a file named `CONTRIBUTING.md`.
 
 In the beginning of a new project the team agrees on the project conventions including the branch naming strategy.
 
