@@ -1,7 +1,7 @@
 # Your Task Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
 
-> When developing a design document for a new task it should contain a detailed design proposal demonstrating how it will solve the goals outlined below.  
-> Not all tasks require a design review but when they do it is likely that there many unknowns or the solution may be more complex.
+> When developing a design document for a new task, it should contain a detailed design proposal demonstrating how it will solve the goals outlined below.  
+> Not all tasks require a design review, but when they do it is likely that there many unknowns or the solution may be more complex.
 > The design should include diagrams, pseudo code, interface contracts as needed to provide a detailed understanding of the proposal.
 
 * [Task Name](http://link-to-task-work-item)
@@ -18,13 +18,11 @@
 
 ## Goals / In-Scope
 
-* List the specific goals for the task.
 * List a few bullet points of what this task will achieve and that are most relevant for the design review discussion.
 * This should include acceptance criteria required to meet the [definition of done](../../team-agreements/definition-of-done/).
 
 ## Non-goals / Out-of-Scope
 
-* List the non-goals for the task.  
 * List a few bullet points of non-goals to clarify the work that is beyond the scope of the design review for this task.
 
 ## Proposed Design / Suggested Approach
