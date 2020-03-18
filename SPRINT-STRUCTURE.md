@@ -6,11 +6,11 @@ The purpose of this document is to:
 - Provide content in a logical structure which reflects the engineering process
 - Extensible hierarchy to allow teams to share deep subject matter expertise
 
-## A Wek in the Life of a CSE Project
+## The first week of a CSE Project
 
 ### Before starting the project
 
-- [ ] [Discuss and start writing the Team Agreements](team-agreements/readme.md). Update these documents with any decisions made throughout the project
+- [ ] [Discuss and start writing the Team Agreements](team-agreements/readme.md). Update these documents with any process decisions made throughout the project
   - [Working Agreement](team-agreements/working-agreements/readme.md)
   - [Definition of Ready](team-agreements/definition-of-ready/readme.md)
   - [Definition of Done](team-agreements/definition-of-done/readme.md)
@@ -18,7 +18,6 @@ The purpose of this document is to:
 - [ ] [Set up the repository/repositories](source-control/readme.md)
   - Decide on repository structure/s
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
-- [ ] [Decide on a versioning strategy](source-control/versioning/readme.md)
 - [ ] [Build a Product Backlog](backlog-management/readme.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
   - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
@@ -33,13 +32,14 @@ The purpose of this document is to:
 - [ ] [Decide on test frameworks and discuss test strategies](test-first-development/readme.md)
   - Discuss the purpose and goals of tests and how to measure test coverage
   - Agree on how to separate unit tests from integration, load and smoke tests
-- [ ] [Decide on branch naming for feature branches](source-control/feature-branching/readme.md)
+  - Design the first test cases
+- [ ] [Decide on branch naming](source-control/feature-branching/readme.md)
 - [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-deployment/secrets-management/recipes/azure-devops/secrets-per-branch.md)
 
 ### Day 2
 
 - [ ] [Set up Source Control](source-control/readme.md)
-  - Agree on [best practices for commits](https://github.com/microsoft/code-with-engineering-playbook/tree/master/source-control#commit-best-practices)
+  - Agree on [best practices for commits](source-control/readme.md#commit-best-practices)
 - [ ] [Set up basic Continuous Integration with linters and automated tests](continuous-integration/readme.md)
 - [ ] [Set up meetings for Daily Standups and decide on a scrum master](stand-ups/readme.md)
   - Discuss purpose, goals, participants and facilitation guidance
@@ -58,7 +58,8 @@ The purpose of this document is to:
 - [ ] [Set up Continuous Deployment](continuous-deployment/readme.md)
   - Determine what environments are appropriate for this solution
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
-- [ ] [Desing a feature and conduct a Design Review](design-reviews/readme.md)
+- [ ] [Decide on a versioning strategy](source-control/versioning/readme.md)
+- [ ] Agree on how to [Desing a feature and conduct a Design Review](design-reviews/readme.md)
 
 ### Day 5
 
