@@ -18,7 +18,7 @@ You should jot down the details of the feedback close to the time when you encou
 
 Good engineering feedback provides enough information for those who are not part of the code-with engagement to understand the customer pain, the associated product issues, the impact and priority of these issues, and any potential workarounds that exist to minimize that impact.
 
-### High-Qualify Engineering Feedback is
+### High-Quality Engineering Feedback is
 
 * Goal Oriented - states what the customer is trying to accomplish
 * Specific - details the scenario, observation, or challenge faced by the customer
