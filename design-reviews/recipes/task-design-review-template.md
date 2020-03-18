@@ -6,7 +6,6 @@
 
 * [Task Name](http://link-to-task-work-item)
 * [Story Name](http://link-to-story-work-item)
-* Organization: [Organization]
 * Engagement: [Engagement]
 * Customer: [Customer]
 * Authors: [Author1, Author2, etc.]
