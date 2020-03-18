@@ -2,6 +2,22 @@
 
 Building observable systems enables development teams at CSE to measure how well the application is behaving.
 
+## Table of Contents
+
+- [Observability](#observability)
+  - [Table of Contents](#table-of-contents)
+  - [Goals](#goals)
+  - [Pillars of Observability](#pillars-of-observability)
+  - [Recommended Practices](#recommended-practices)
+  - [Pitfalls to avoid](#pitfalls-to-avoid)
+  - [Recommended Tools and Approaches](#recommended-tools-and-approaches)
+    - [Tools](#tools)
+    - [Collection](#collection)
+      - [1. Agent:](#1-agent)
+      - [2. SDK:](#2-sdk)
+      - [3. SDK-Agent:](#3-sdk-agent)
+  - [Recipes](#recipes)
+
 ## Goals
 
 1. Provide holistic view on the health of the application.
@@ -27,15 +43,6 @@ Building observable systems enables development teams at CSE to measure how well
 ## Pitfalls to avoid
 
 Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system
-
-## What is collected
-
-1. **Latency**: Time taken to service a request.
-2. **Traffic**: Measurement of how much demand is placed on the system, typically number of requests per second.
-3. **Errors**: Errors, application faults and traces with adequate information on error messages.
-4. Identify a unique value (correlation identifier) that will be consistently tagged with data.
-
-In addition to above, engineers are encouraged to have conversations to understand other logs, metrics, data that adds value to the customer.
 
 ## Recommended Tools and Approaches
 
