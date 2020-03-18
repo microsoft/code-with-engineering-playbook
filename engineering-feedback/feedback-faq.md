@@ -18,8 +18,22 @@ However, as a customer, please submit your feedback via GitHub or UserVoice (as 
 
 ## How can a Microsoft employee track the status of a specific feedback item?
 
-## If I submit a feedback and move to another dev crew engagement, how would my customer get an update on that feedback?
+The easiest way for a Microsoft employee within CSE to track a specific feedback item is to [follow the feedback (a work item)](https://docs.microsoft.com/azure/devops/boards/work-items/follow-work-items?view=azure-devops) in Azure DevOps.
 
-## What should I expect/do after submitting Feedback?
+## As a Microsoft employee within CSE, if I submit a feedback and move to another dev crew engagement, how would my customer get an update on that feedback?
+
+If the feedback is also submitted via GitHub or UserVoice, the customer may elect to follow that item for publicly available updates.
+
+## As a Microsoft employee within CSE, what should I expect/do after submitting feedback via CSE Feedback?
+
+After submitting the feedback, it is recommended to [follow the feedback (a work item)](https://docs.microsoft.com/azure/devops/boards/work-items/follow-work-items?view=azure-devops) in Azure DevOps.  If you have configured Azure DevOps notifications to send an email on work item updates, you will receive an email when the feedback is updated.
+
+If more information about the feedback is needed, a member of the CSE Feedback team will contact you to gather more information.
 
 ## How/when are feedback aggregated?
+
+Members of the CSE Feedback team will make a best effort to triage and review new CSE Feedback items within two weeks of the original submission date.  
+
+If there is similarity across multiple feedback items, a member of the CSE Feedback team may decide to create a new feedback item which is an aggregate of similar items.  This is done to aide in the creation of a unified feedback item to present to the appropriate Microsoft engineering team.
+
+On a monthly basis, the CSE Feedback team will review all feedback and generate a report consisting of the highest priority feedback.  The report is presented to appropriate CSE and Microsoft leadership teams.
