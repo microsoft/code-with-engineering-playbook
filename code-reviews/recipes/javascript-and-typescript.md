@@ -118,15 +118,28 @@ By default, we use the following overrides should be added to the VS Code config
 
 ## Build Validation
 
-To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
+To automate this process in Azure Devops you can add the following snippet to you pipeline definition yaml file. This will lint any scripts in the `./scripts/` folder.
 
-> TODO: Add example of yaml for automating linting and testing
+```yaml
+- task: Npm@1
+  displayName: 'Lint'
+  inputs:
+    command: 'custom'
+    customCommand: 'run lint'
+    workingDir: './scripts/'
+```
 
 ## Pre-commit hooks
 
 All developers should run `eslint` in a pre-commit hook to ensure standard formatting. We highly recommend using an editor integration like [vscode-eslint](https://github.com/Microsoft/vscode-eslint) to provide realtime feedback.
 
-> TODO: Show example
+1. Under `.git/hooks` rename `pre-commit.sample` to `pre-commit`
+1. Remove the existing sample code in that file
+1. There are various samples of scripts on gist that can be used. For example [pre-commit-eslint](https://gist.github.com/linhmtran168/2286aeafe747e78f53bf)
+1. Adjust accordingly to include TypeScript files
+1. `chmod +x .git/hooks/pre-commit`
+
+As an alternative [husky](https://github.com/typicode/husky) can be considered to simplify pre-commit hooks.
 
 ## Code Review Checklist
 
