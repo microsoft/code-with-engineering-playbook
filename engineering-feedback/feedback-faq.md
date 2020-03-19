@@ -12,7 +12,7 @@ Submitting to CSE Feedback allows the CSE Feedback team to coalesce feedback acr
 
 ## How can a customer track the status of a specific feedback item?
 
-Customers are not able to track the status of feedback submitted via CSE Feedback.  The CSE Feedback process is internal to Microsoft, and as such, available only to Microsoft employees.
+At this time, customers are not able to track the status of feedback submitted via CSE Feedback.  The CSE Feedback process is internal to Microsoft, and as such, available only to Microsoft employees.
 
 However, as a customer, please submit your feedback via GitHub or UserVoice (as appropriate for the specific service), and inform your CSE engineering partner.  The CSE engineer should submit the feedback via the CSE Feedback process, and in doing so reference the previously created issue.  You can follow the GitHub or UserVoice item to be alerted on updates.
 
