@@ -59,7 +59,7 @@ Assign hotkeys to each of the essential tasks.
 
 The F5 contract aims for the ability to run the end-to-end solution with the following steps.
 
-1. Clone - git clone <my-repo>
+1. Clone - git clone [`my-repo-url-here`]
 2. Configure - set any configuration values that need to be unique to the individual (i.e. update a .env file)
 3. Press F5 - launch the solution with debugging attached.
 
