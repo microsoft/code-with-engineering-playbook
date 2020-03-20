@@ -43,7 +43,23 @@ How long does it take to make a change that can be verified/tested locally. A lo
 
 ## Participation
 
-The entire development team should take responsibility in ensuring positive experience. How
+### Tech Lead - Set the bar
+
+The following are examples of how the Tech Lead might set the bar for dev experience
+
+- Determines development environment (IDE, hosting, etc)
+- Determines source control environment and number of repo's required
+- Given development environment and repo structure sets expectations for team to meet in terms of steps to perform the essential dev tasks
+
+### Senior Members - Assert Expectations
+
+The following are examples of how the senior engineers on the team can assert the expectation set by the lead.
+
+[`TODO: Add bullet list of examples`]
+
+### DevEx Champion
+
+[`TODO: Nominate an individual on the team to be the dev ex chamption`]
 
 ## Facilitation Guidance
 
@@ -71,14 +87,16 @@ The F5 contract aims for the ability to run the end-to-end solution with the fol
 
 Most IDE's have some form of a task runner that can be used to automate the build, execute, and attach steps. Try to leverage these such that the steps can all be run with as few manual steps as possible.
 
-### Pay Attention to the Struggles
+### DevEx Champion Actively Seek Improvements
 
-Ask the team to surface the areas they spend significant time in that they consider non-value-add activities. For example, do they need to deploy their changes to an environment off their laptop before they can validate if what they did worked. Rather than debugging locally, do they have to do this repetitively to get to a working solution? Does this take several minutes each iteration? Does this block other developers due to the contention on the environment?
+The DevEx champion should actively seek areas where the team has opportunity to improve. For example, do they need to deploy their changes to an environment off their laptop before they can validate if what they did worked. Rather than debugging locally, do they have to do this repetitively to get to a working solution? Does this take several minutes each iteration? Does this block other developers due to the contention on the environment?
 
-The following are a few strategies for surfacing dev experience struggles
+The following are ceremonies that the DevEx champion can use to find potential opportunities
 
-- Retrospectives. Create a card that describes the struggle
-- Standup Blockers. Call out being blocked not being able to test change and why that cant be done.
+- Retrospectives. Is feedback being raised that relates to the essential tasks being difficult or unwieldy?
+- Standup Blockers. Are individuals getting blocked or stumbling on the essential tasks?
+
+As opportunities are identified, the DevEx champion can translate these into actionable stories for the product backlog.
 
 ### Single IDE Instance
 
