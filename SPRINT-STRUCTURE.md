@@ -2,7 +2,7 @@
 
 The purpose of this document is to:
 
-- Organize the content in the playbook for quick reference and discoverability
+- Organize content in the playbook for quick reference and discoverability
 - Provide content in a logical structure which reflects the engineering process
 - Extensible hierarchy to allow teams to share deep subject matter expertise
 
