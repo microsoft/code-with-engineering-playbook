@@ -6,15 +6,15 @@ The questions below are common questions related to the feedback process. The an
 
 It is appropriate to do both. As a customer or Microsoft employee, you are empowered to create an issue or submit feedback via the medium appropriate for service.
 
-In addition to an issue on GitHub, feedback on UserVoice, or a personal email, Microsoft employees in CSE should submit feedback via CSE Feedback.  In doing so, please reference the GitHub issue, UserVoice feedback, or email by including a link to the item or attaching the email.
+In addition to an issue on GitHub, feedback on UserVoice, or a personal email, Microsoft employees in [CSE](../CSE.md) should submit feedback via CSE Feedback.  In doing so, please reference the GitHub issue, UserVoice feedback, or email by including a link to the item or attaching the email.
 
 Submitting to CSE Feedback allows the CSE Feedback team to coalesce feedback across a wide range of sources, and thus create a unified case to submit to the appropriate Azure engineering team(s).
 
 ## How can a customer track the status of a specific feedback item?
 
-At this time, customers are not able to track the status of feedback submitted via CSE Feedback.  The CSE Feedback process is internal to Microsoft, and as such, available only to Microsoft employees.
+At this time, customers are not able to directly track the status of feedback submitted via CSE Feedback.  The CSE Feedback process is internal to Microsoft, and as such, available only to Microsoft employees.  Customers may request an update from their CSE engineering partner or Microsoft account representative(s).
 
-However, as a customer, please submit your feedback via GitHub or UserVoice (as appropriate for the specific service), and inform your CSE engineering partner.  The CSE engineer should submit the feedback via the CSE Feedback process, and in doing so reference the previously created issue.  You can follow the GitHub or UserVoice item to be alerted on updates.
+Customers can also submit their feedback directly via GitHub or UserVoice (as appropriate for the specific service), and inform their CSE engineering partner.  The CSE engineer should submit the feedback via the CSE Feedback process, and in doing so reference the previously created issue.  Customers can follow the GitHub or UserVoice item to be alerted on updates.
 
 ## How can a Microsoft employee track the status of a specific feedback item?
 
@@ -22,7 +22,7 @@ The easiest way for a Microsoft employee within CSE to track a specific feedback
 
 ## As a Microsoft employee within CSE, if I submit a feedback and move to another dev crew engagement, how would my customer get an update on that feedback?
 
-If the feedback is also submitted via GitHub or UserVoice, the customer may elect to follow that item for publicly available updates.
+If the feedback is also submitted via GitHub or UserVoice, the customer may elect to follow that item for publicly available updates.  The customer may also contact their Microsoft account representative to request an update.
 
 ## As a Microsoft employee within CSE, what should I expect/do after submitting feedback via CSE Feedback?
 
