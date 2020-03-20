@@ -152,6 +152,52 @@ The following strategies can be used to reduce these dependencies
 
 If available, emulators are implementations of technologies that are typically only available in cloud environments. A good example is the [CosmosDB emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator).
 
-#### Feature Toggle a Mock or Different Technology
+#### Use DI + Toggle to Mock Remote Dependencies
 
-Abstract the layer that has the remote dependency behind an interface owned by the solution (not the remote dependency). Create an implementation of that interface using a technology that can be run locally. Lastly, incorporate a feature flag that can be set to control which implementation is used.
+When the solution depends on a technology that cannot be run on a developer's machine, the setup and testing of that solution can be challenging. One strategy that can be employed is to create the ability to swap that dependency for one that can run locally.
+
+Abstract the layer that has the remote dependency behind an interface owned by the solution (not the remote dependency). Create an implementation of that interface using a technology that can be run locally. Create a factory that decides which instance to use. This decision could be based on environment configuration (i.e. the toggle). Then, the original class that depends on the remote tech instead should depend on the factory to provide which instance to use.
+
+Much of this strategy can be simplified with proper dependency injection technique and/or framework.
+
+See example below that swaps Azure Service Bus implementation for RabbitMQ which can be run locally.
+
+```typescript
+interface IPublisher {
+    send(message: string): void
+}
+class RabbitMQPublisher implements IPublisher {
+    send(message: string) {
+        //todo: send the message via RabbitMQ
+    }
+}
+class AzureServiceBusPublisher implements IPublisher {
+    send(message: string) {
+        //todo: send the message via Azure Service Bus
+    }
+}
+interface IPublisherFactory{
+    create(): IPublisher
+}
+class PublisherFactory{
+    create(): IPublisher {
+        // use env var value to determine which instance should be used
+        if(process.env.UseAsb){
+            return new AzureServiceBusPublisher();
+        }
+        else{
+            return new RabbitMqPublisher();
+        }
+    }
+}
+class MyService {
+    //inject the factory
+    constructor(private readonly publisherFactory: IPublisherFactory){
+    }
+    sendAMessage(message: string): void{
+        //use the factory to determine which instance to use
+        const publisher: IPublisher = this.publisherFactory.create();
+        publisher.send(message);
+    }
+}
+```
