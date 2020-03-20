@@ -14,7 +14,7 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
 
 - [Continuous Integration](#continuous-integration)
   - [Goals](#goals)
-  - [S/ingle Source Repository](#single-source-repository)
+  - [Single Source Repository](#single-source-repository)
   - [Build Automation](#build-automation)
   - [Build Environment Dependencies](#build-environment-dependencies)
   - [Infrastructure as Code](#infrastructure-as-code)
@@ -46,7 +46,7 @@ A robust build automation pipeline will:
 - Increase visibility across the team enabling tighter communication
 - Reduce human errors, which is probably the most important part of automating the builds
 
-## S/ingle Source Repository
+## Single Source Repository
 
 - [ ] **Code / manifest artifacts required to build your project should be maintained in a single git repository.**
 
