@@ -14,7 +14,7 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
 
 - [Continuous Integration](#continuous-integration)
   - [Goals](#goals)
-  - [Single Source Repository](#single-source-repository)
+  - [S/ingle Source Repository](#single-source-repository)
   - [Build Automation](#build-automation)
   - [Build Environment Dependencies](#build-environment-dependencies)
   - [Infrastructure as Code](#infrastructure-as-code)
@@ -40,13 +40,13 @@ A robust build automation pipeline will:
 - Accelerate team velocity
 - Prevent integration problems
 - Avoid last minute chaos during release dates
-- Enforce discipline of test driven development
 - Provide a quick feedback cycle for system-wide impact of local changes
 - Separate build and deployment stages
 - Measure and report metrics around build failures / success(s)
 - Increase visibility across the team enabling tighter communication
+- Reduce human errors, which is probably the most important part of automating the builds
 
-## Single Source Repository
+## S/ingle Source Repository
 
 - [ ] **Code / manifest artifacts required to build your project should be maintained in a single git repository.**
 
@@ -62,7 +62,7 @@ An automated build should encompass the following principles:
   - Your build definition includes validation steps to execute a suite of automated unit tests to ensure that application components meets its design and behaves as intended.
 - [ ] **Code Style Checks**
   - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
-  - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)).
+  - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review section](https://github.com/microsoft/code-with-engineering-playbook/tree/master/code-reviews#language-specific-guidance) of the playbook has suggestions for linters and preferred styles for a number of languages.
   - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
 - [ ] **Database Schema Automation**
   - The build process should automate pulling database schemas from the git repository and applied to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
@@ -141,6 +141,8 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 - [ ] **End to end integration tests**
   - Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
+  - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev team's when parallel builds on a CI server aren't an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
+
 - [ ] **Avoid checking in broken builds**
   - Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
 - [ ] **Reporting build failures**
@@ -177,25 +179,31 @@ In the spirit of transparency and embracing frequent communication across a dev 
 
 ## Isolated Environments
 
-One of the key goals of build validation is to isolate and identify failures in non-production environments and minimize any disruption to live production traffic. Our E2E automated tests should run in an environment which mimics our production environment(as much as possible). This includes consistent software versions, OS, test data volume simulations, etc.
+One of the key goals of build validation is to isolate and identify failures in staging environment(s) and minimize any disruption to live production traffic. Our E2E automated tests should run in an environment which mimics our production environment(as much as possible). This includes consistent software versions, OS, test data volume simulations, network traffic parity with production, etc.
 
 - [ ] **Test in a clone of production**
-  - The production environment should be duplicated into another environment(QA and/or Pre-Prod) at a minimum.
-- [ ] **Pull request update triggers dev integration release**
-  - New commits related to a pull request should trigger a build / release into a dev integration environment. The production environment should be fully isolated from this process.
+  - The production environment should be duplicated into a staging environment(QA and/or Pre-Prod) at a minimum.
+- [ ] **Pull request update(s) trigger staged releases**
+  - New commits related to a pull request should trigger a build / release into an integration environment. The production environment should be fully isolated from this process.
 - [ ] **Promote infrastructure changes across fixed environments**
-  - Infrastructure as code changes should be tested in devint and promoted to all non-production environment(s) then migrated to production with zero downtime to ultimately minimize disruption(s) to our user base.
+  - Infrastructure as code changes should be tested in a integration environment and promoted to all staging environment(s) then migrated to production with zero downtime for system users.
 - [ ] **Environment releases are triggered on merges into master**
   - Code changes merged into the master branch should auto trigger a new release candidate for all cloud environments.
+  - One additional capability worth considering are automated rollbacks. Being able to revert commits into master and quickly go back to the last known good state(*previous feature release*) minimizes outages and downtime when bugs are introduced into environment(s).
+- [ ] **Testing in production**
+  - There are various [approaches](https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1) with safely carrying out automated tests for production deployments. Some of these may include:
+    - Feature flagging
+    - A/B testing
+    - Traffic shifting
 
 ## Developer Access to Latest Release Artifacts
 
-Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s). This approach provides nice audibility which ties each git commit to a release artifact and empowers developers to recreate system state from any point in time.
+Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s).
 
 - [ ] **Developers can access latest executable**
   - Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
-- [ ] **Release artifact is published for each git commit**
+- [ ] **Release artifact is published for each git commit per open pull request or merges into master**
 
 ## Integration Observability
 
