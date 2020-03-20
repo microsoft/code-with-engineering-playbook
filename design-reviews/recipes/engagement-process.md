@@ -5,31 +5,31 @@
 Design reviews should not feel like a burden.  Design reviews can be easily incorporated into your dev crew process with minimal overhead.  
 
 - Only create design reviews when needed.  Not every story or task requires a full blown design review
-- Leverage this guidance and make changes to fit in best with your team.  Every team works a bit different and has different tweaks that work best for them.
+- Leverage this guidance and make changes to fit in best with your team.  Every team works a bit differently and has different tweaks that work best for them.
 - Leverage SME's as needed during design reviews. Not every story needs SME or leadership sign-off.  Most design reviews can be fully executed within your own dev crew.
 
 The following is are some guidelines on how you and your team can start incorporating design reviews into your normal day to day agile process.
 
 ## Table of Contents
 
-- [Envisioning / ADS](#envisioning-/-ads)
+- [Envisioning / Architecture Design Session (ADS)](#envisioning-/-architecture-design-session-(ads))
 - [Game Plan](#game-plan)
 - [Sprint Planning](#sprint-planning)
 - [Sprint Backlog Grooming](#sprint-backlog-grooming)
 - [Sprint Retrospectives](#sprint-retrospectives)
 - [Wrap-up Sprints](#wrap-up-sprints)
 
-## Envisioning / ADS
+## Envisioning / Architecture Design Session (ADS)
 
 Early on within an engagement process we are working with customers to understand their unique goals and objectives.  We are defining requirements to understand definition of done.  We are diving deep into their existing infrastructure and architecture to understand constraints.
 
-During this time we are uncovering as many unknowns as possible to help us jointly generate a design to meet the customers goals.  We are leveraging all the new found information an incorporating it into our game plan design for the customer engagement.
+During this time we are uncovering as many unknowns as possible to help us jointly generate a design to meet the customers goals.  We are leveraging all the new found information and incorporating it into our game plan design for the customer engagement.
 
 > **Tip**: We have not uncovered all the unknowns at this point. You will continue to learn and discover more during the lifetime of your engagement
 
 ## Game Plan
 
-The game plan document is our guiding star throughout the engagement.  The game plan document should include the following sections and answer the following questions.
+The [game plan document](https://aka.ms/GamePlanTemplate) is our guiding star throughout the engagement.  The game plan document should include the following sections and answer the following questions.
 
 ### Deliverable
 
@@ -74,7 +74,7 @@ Some key items to discuss:
 
 ## Sprint Planning
 
-In many of our engagements we will be working with our customers using a SCRUM agile development process.  Sprint planning is a great opportunity to dive deep into the next set of high priority work.  Some key points to address are the following:
+In many of our engagements we will be working with our customers using a SCRUM agile development process.  [Sprint planning](../../sprint-planning/readme.md) is a great opportunity to dive deep into the next set of high priority work.  Some key points to address are the following:
 
 1. Identify stories that require design reviews
 1. Breakout design from implementation for complex stories
@@ -90,7 +90,7 @@ Stories that will benefit from design reviews have one or more of the following 
 
 ## Sprint Backlog Grooming
 
-If you team is not already hosting a Sprint Backlog Grooming session at least once per week you should consider it.  It is a great opportunity to:
+If you team is not already hosting a [Sprint Backlog Grooming](../../backlog-management/grooming/readme.md) session at least once per week you should consider it.  It is a great opportunity to:
 
 1. Keep your backlog clean
 1. Re-prioritize work bash on shifting business priorities
@@ -101,7 +101,7 @@ The team can follow the same steps from [sprint planning](#sprint-planning) to h
 
 ## Sprint Retrospectives
 
-Sprint retrospectives are a great time to check-in with your dev team to identify what is working or not working within your group and propose changes to keep improving.
+[Sprint retrospectives](../../retrospectives/readme.md) are a great time to check-in with your dev team to identify what is working or not working within your group and propose changes to keep improving.
 
 It is also a great time to check-in on your design reviews
 
@@ -111,7 +111,7 @@ It is also a great time to check-in on your design reviews
 
 All design artifacts including the game plan should be treated as a living document.  As requirements change or you uncover more unknowns the dev crew should be going back and updating all your design artifacts to reflect reality.  If this step is missed you are making a critical mistake which could lead to the customer incurring more technical debt in the future. Artifacts that are not up to date are basically `bugs` in your design.
 
-> **Tip:** Keep your artifacts up to date by adding it to your teams `Definition of Done` for all user stories.
+> **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../team-agreements/definition-of-done/readme.md) for all user stories.
 
 ## Wrap-up Sprints
 

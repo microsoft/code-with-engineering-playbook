@@ -26,7 +26,7 @@
 
 The dev crew should always participate in all design review sessions
 
-- CSE Engineering
+- [CSE](../CSE.md) Engineering
 - Customer Engineering
 
 ### Domain Experts
@@ -71,7 +71,7 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 #### Feature/story design review
 
-- Design design for complex features or stories
+- Design for complex features or stories
 - Will reuse deployment, security and other characteristics defined within game plan or milestone
 - May require new libraries, OSS or patterns to accomplish goals
 
