@@ -6,7 +6,7 @@
 
 Documentation should both use good markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style) to ensure the document is easy to read and understand.
 
-## Linting
+## Code Analysis
 
 Linting tools exist both for verifying proper markdown syntax as well as grammar and proper English language.
 
