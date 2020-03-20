@@ -10,12 +10,13 @@
 * Customer: [Customer]
 * Authors: [Author1, Author2, etc.]
 
-## Overview / Problem Statement
+## Overview/Problem Statement
 
+* It can also be a link to the [work item](http://link-to-task-work-item).
 * Describe the task with a high-level summary.
 * Consider additional background and justification, for posterity and historical context.
 
-## Goals / In-Scope
+## Goals/In-Scope
 
 * List a few bullet points of what this task will achieve and that are most relevant for the design review discussion.
 * This should include acceptance criteria required to meet the [definition of done](../../team-agreements/definition-of-done/).
@@ -24,7 +25,7 @@
 
 * List a few bullet points of non-goals to clarify the work that is beyond the scope of the design review for this task.
 
-## Proposed Design / Suggested Approach
+## Proposed Options
 
 * Describe the detailed design to accomplish the proposed task.
 * What patterns & practices will be used and why were they chosen.  
