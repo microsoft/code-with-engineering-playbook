@@ -4,12 +4,12 @@ Developer experience refers to the how easy or difficult it is for a developer t
 
 The essential tasks are identified below.
 
-Build - Verify that changes are free of syntax error and compile.
-Test - Verify that all automated tests pass.
-Start - Launch end-to-end to simulate execution in a deployed environment.
-Debug - Attach debugger to started solution, set breakpoints, step through code, and inspect variables.
+- Build - Verify that changes are free of syntax error and compile.
+- Test - Verify that all automated tests pass.
+- Start - Launch end-to-end to simulate execution in a deployed environment.
+- Debug - Attach debugger to started solution, set breakpoints, step through code, and inspect variables.
 
-If effort is invested to make these activities as easy as possible, the returns on that effort will be multiply the longer the project runs and the larger the team.
+If effort is invested to make these activities as easy as possible, **the returns on that effort will be multiply the longer the project runs and the larger the team**.
 
 ## Goals
 
@@ -25,11 +25,13 @@ Developer experience can have a significant impact on the efficiency of the day 
 - Improved Quality - When its easy to debug and test, developers will do more of it. This will translate to fewer defects being introduced.
 - Easier Onboarding & Adoption - When dev essential tasks are automated, there is less documentation to write and, subsequently, less to read to get started!
 
+**Most importantly, the customer will continue to accrue these benefits long after the code-with engagement.**
+
 ## Measures
 
-### Time to First Debug (aka F5 Contract)
+### Time to First E2E Result (aka F5 Contract)
 
-Assuming a laptop/pc that has never run the solution, how long does it take to start debugging the solution end-to-end.
+Assuming a laptop/pc that has never run the solution, how long does it take to setup and run the whole system end-to-end and see a result.
 
 ### Time To First Commit
 
@@ -37,11 +39,11 @@ How long does it take to make a change that can be verified/tested locally. A lo
 
 ## Participation
 
-The entire development team should take responsibility in ensuring positive
+The entire development team should take responsibility in ensuring positive experience. How
 
 ## Facilitation Guidance
 
-The following outline several strategies that can be adopted to promote a positive developer experience.
+The following outline examples of several strategies that can be adopted to promote a positive developer experience. It is expected that each team should define what a positive dev experience means within the context of their project. Additionally, refine that over time via feedback mechanisms such as sprint and project retrospectives.
 
 ### Establish Hotkeys
 
@@ -73,14 +75,6 @@ The following are a few strategies for surfacing dev experience struggles
 
 - Retrospectives. Create a card that describes the struggle
 - Standup Blockers. Call out being blocked not being able to test change and why that cant be done.
-
-#### Fixing the Struggles
-
-Once raised, use the following steps to capture and create **actionable** fix.
-
-1. Define the problem - End to end testing is only possible when the solution is deployed to environment in Azure
-2. Identify a potential solution - Ability to run automated end-to-end tests on the developer machine.
-3. Justify fixing the problem - The team has identified this issue as the root cause for 3 stories not completing within their sprint over the past 2 sprints.
 
 ### Single IDE Instance
 
