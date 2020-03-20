@@ -43,6 +43,8 @@ How long does it take to make a change that can be verified/tested locally. A lo
 
 ## Participation
 
+Providing a positive developer experience is a team effort. However, certain members can take ownership of different areas to help hold the entire team accountable.
+
 ### Tech Lead - Set the bar
 
 The following are examples of how the Tech Lead might set the bar for dev experience
@@ -50,16 +52,25 @@ The following are examples of how the Tech Lead might set the bar for dev experi
 - Determines development environment (IDE, hosting, etc)
 - Determines source control environment and number of repo's required
 - Given development environment and repo structure sets expectations for team to meet in terms of steps to perform the essential dev tasks
+- Nominates the DevEx Champion
+
+### DevEx Champion - Identify Iterative Improvements
+
+The devex champion takes ownership in holding the team accountable for providing a positive developer experience. The following outline responsibilities for the DevEx champion.
+
+- Actively seek opportunities for improving the solution developer experience
+- Work with the tech lead to iteratively improve team expectations for developer experience
+- Curate a backlog actionable stories that identify areas for improvement.
+- Serve as subject matter expert for the rest of the team. Help the team determine how to implement devex expectations and identify deviations.
 
 ### Senior Members - Assert Expectations
 
-The following are examples of how the senior engineers on the team can assert the expectation set by the lead.
+The senior members of the team can also help hold the team accountable for providing a positive developer experience. The following are examples of areas the senior members can help identify where the team's devex expectations are not being met.
 
-[`TODO: Add bullet list of examples`]
-
-### DevEx Champion
-
-[`TODO: Nominate an individual on the team to be the dev ex chamption`]
+- Pull requests. Try the changes locally to see if they are adhering to the team's devex expectations.
+- Design Reviews. Look for proposals that may negatively effect the solution's devex. These might include
+  - Introduction of new tech whose testability is limited to manual steps in a deployed environment.
+  - Addition of new repository
 
 ## Facilitation Guidance
 
