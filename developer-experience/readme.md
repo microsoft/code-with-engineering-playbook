@@ -11,6 +11,10 @@ The essential tasks are identified below.
 
 If effort is invested to make these activities as easy as possible, **the returns on that effort will be multiply the longer the project runs and the larger the team**.
 
+## Defining End-to-End
+
+This document makes several references to running a solution end-to-end (aka E2E). End-to-end for the purposes of this document is scoped to the software that is owned, built, and shipped by the team. Systems owned by other teams or third-party vendors is not within the E2E scope for the purposes of this document.
+
 ## Goals
 
 - Maximize the amount of time engineers spend on writing code that fulfills story acceptance and done-done criteria.
@@ -87,7 +91,7 @@ Avoid requiring multiple instances of the IDE to running concurrently to run and
 - Run test steps * IDE instances
 - Documenting all of the above * IDE instances
 
-### Single Repository
+### Minimize the Number of Repositories
 
 Splitting a solution across multiple repositories can negatively impact the above measures. This can also negatively impact other areas such as Pull Requests, Automated Testing, Continuous Integration, and Continuous Delivery. Similar to the IDE instances, the negative impact is multiplied by the number of repositories.
 
