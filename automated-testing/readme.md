@@ -13,4 +13,3 @@
 * [Smoke testing](smoke-testing/readme.md)
 * [Watch dog testing](watch-dog-testing/readme.md)
 * [A/B testing](ab-testing/readme.md)
-
