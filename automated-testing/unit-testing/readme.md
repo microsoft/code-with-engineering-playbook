@@ -2,7 +2,7 @@
 
 ## Goals
 
-Unit tests play an integral role in building quality software and enabling agile methodologies. [CSE](../../CSE.md) recommends all efforts follow [Test Driven Development](http://deviq.com/test-driven-development/) where ever possible, i.e. code should have unit tests unless it's developed for an environment without unit testing capabilities, e.g. Azure Stream Analytics. With TDD, engineers start with coding the test(s), which will initially fail. The implementation of the unit is finished when the unit satisfies the tests.
+Unit tests play an integral role in building quality software and enabling agile methodologies. The implementation of the unit is finished when the unit satisfies the tests.
 
 ### Unit tests have several goals:
 

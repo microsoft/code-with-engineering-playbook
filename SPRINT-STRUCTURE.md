@@ -37,10 +37,10 @@ This layout structures the playbook content to make it easy day to day to find r
     - Capacity Planning
     - Tasking
     - Dividing work WIP Limits
-  - [Test-First Development](test-first-development/readme.md)
+  - [Automated Testing](automated-testing/readme.md)
     - Conceptual (Purpose, Goals, Impact, and Measures)
     - Developing Test Cases
-    - [Unit Testing](test-first-development/unit-testing/readme.md)
+    - [Unit Testing](automated-testing/unit-testing/readme.md)
       - Conceptual (Purpose, Goals, Impact, and Measures)
     - Load Testing
   - [Feature Branching (creating branch for new story)](source-control/feature-branching/readme.md)
