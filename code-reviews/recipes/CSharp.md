@@ -4,7 +4,7 @@
 
 [CSE](../../CSE.md) developers follow Microsoft's [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions) and, where applicable, Microsoft's [Secure Coding Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines).
 
-## Code Analysis
+## Code Analysis / Linting
 
 We strongly believe that consistent style increases readability and maintainability of a code base. Hence we are recommending analyzers / linters to enforce consistency and style rules.
 

@@ -8,7 +8,7 @@ Using an automated code formatting tool like Prettier enforces a well accepted s
 
 For higher level style guidance not covered by prettier, we follow the [AirBnB Style Guide](https://github.com/airbnb/javascript).
 
-## Code Analysis
+## Code Analysis / Linting
 
 ### eslint
 
