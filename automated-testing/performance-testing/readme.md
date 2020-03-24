@@ -1,7 +1,23 @@
-# Performance Testing
+# ~Test type~
 
-## Goals
+The document should start with a brief overview about the test type and what is covered in this document, the goal here is to provide a high-level description to help the reader understand what is covered to decide whether to continue reading or not.
 
-## Impact
+## Problem statement [The why]
 
-## Measures
+Start by describing the problem that this test type addresses, this should focus on the motivation behind the test type to aid the reader corelate this test type to the problem they are trying to resolve.
+
+## ~Test type~ introduction [The what]
+
+In this section, describe the test type, its objective, and how it solves the problem described above.
+
+## Applying the ~test type~ [the how]
+
+In this section, describe what good testing looks like for this test type, discuss some of the best practices, discuss pitfalls to avoid, and finally discuss some of the common tools used to apply the test type, if any.
+
+## Examples/Case studies
+
+If available, list some good examples or case studies for this test type and elaborate on what is good about them.
+
+## Resources
+
+List additional readings about this test type for those that would like to dive deeper.

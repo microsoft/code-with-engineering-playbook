@@ -3,6 +3,7 @@
 ## Sections within Testing
 
 * [Unit testing](unit-testing/readme.md)
+* [Unit testing v2](unit-testing-v2/readme.md)
 * [Integration testing](integration-testing/readme.md)
 * [Functional testing](functional-testing/readme.md)
 * [UI testing](ui-testing/readme.md)
