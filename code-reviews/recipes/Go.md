@@ -4,7 +4,7 @@
 
 [CSE](../../CSE.md) developers follow the [Effective Go](https://golang.org/doc/effective_go.html) Style Guide.
 
-## Linting
+## Code Analysis / Linting
 
 ### go vet
 

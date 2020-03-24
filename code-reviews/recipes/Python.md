@@ -8,7 +8,7 @@
 
 Linting should be added to build validation, and both linting and code formatting can be added to your pre-commit hooks and VS Code.
 
-## Linting
+## Code Analysis / Linting
 
 The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherance to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give more false positives but both are good options for linting python code.
 

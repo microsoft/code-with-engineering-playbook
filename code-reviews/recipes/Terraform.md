@@ -6,7 +6,7 @@
 
 [CSE](../../CSE.md) projects should check Terraform scripts with automated tools.
 
-## Linting
+## Code Analysis / Linting
 
 ### TFLint
 
