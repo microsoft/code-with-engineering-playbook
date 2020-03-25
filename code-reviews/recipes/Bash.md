@@ -4,7 +4,7 @@
 
 [CSE](../../CSE.md) developers follow [Google's Bash Style Guide](https://google.github.io/styleguide/shell.xml).
 
-## Linting
+## Code Analysis / Linting
 
 [CSE](../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
 
@@ -39,6 +39,6 @@ fi
 
 ## Code Review Checklist
 
-In addition to the [Code Review Checklist](../readme.md) you should also look for these bash specific code review items
+In addition to the [Code Review Checklist](../README.md) you should also look for these bash specific code review items
 
 > TODO: Add checklist

@@ -8,7 +8,7 @@
 
 Linting should be added to build validation, and both linting and code formatting can be added to your pre-commit hooks and VS Code.
 
-## Linting
+## Code Analysis / Linting
 
 The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherance to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give more false positives but both are good options for linting python code.
 
@@ -202,7 +202,7 @@ At the next attempted commit any lint failures will block the commit.
 
 ## Code Review Checklist
 
-In addition to the [Code Review Checklist](../readme.md) you should also look for these python specific code review items
+In addition to the [Code Review Checklist](../README.md) you should also look for these python specific code review items
 
 * [ ] Are all new packages used included in requirements.txt
 * [ ] Does the code pass all lint checks?

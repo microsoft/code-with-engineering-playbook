@@ -6,7 +6,7 @@
 
 Documentation should both use good markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style) to ensure the document is easy to read and understand.
 
-## Linting
+## Code Analysis / Linting
 
 Linting tools exist both for verifying proper markdown syntax as well as grammar and proper English language.
 
@@ -119,7 +119,7 @@ jobs:
 
 ## Code Review Checklist
 
-Apart from the items on the [Code Review Checklist](../readme.md) you should also look for these markdown specific code review items
+Apart from the items on the [Code Review Checklist](../README.md) you should also look for these markdown specific code review items
 
 - [ ] Is the document easy to read and understand and does it follow [good writing guidelines](#writing-style-guidelines)?
 - [ ] Is there a single source of truth or is content repeated in more than one document?

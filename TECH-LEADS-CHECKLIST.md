@@ -67,11 +67,11 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 
 - [ ] Clear agreement in the team as to function of code reviews.
 - [ ] Code review checklist or established process.
-- [ ] A minimum number of reviewers for a PR merge is enforced (2 usually).
-- [ ] Linters, unit tests and successful builds for PR merges.
-- [ ] Bug fixes suggest how to catch the bug in a code review within associated work item. And if possible link to original PR that introduced bug.
+- [ ] A minimum number of reviewers (usually 2) for a PR merge is enforced by policy.
+- [ ] Linters/Code Analyzers, unit tests and successful builds for PR merges are set up.
+- [ ] Process to enforce a quick review turnaround.
 
-More details on [Code Reviews](code-reviews/readme.md)
+More details on [Code Reviews](code-reviews/README.md)
 
 ## Retrospectives
 

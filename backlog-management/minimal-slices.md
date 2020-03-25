@@ -6,7 +6,7 @@
 basic/minimal functionality to complete solution)
 * Contribute your chunks frequently
 
-Another words try to follow iterative approach when doing your work and frequently provide updates/changes to the team. This way you will get instant feedback, all issues could be discovered earlier and you will be sure that you are moving in the right direction (from both technical and functional sides).
+In other words try to follow iterative approach when doing your work and frequently provide updates/changes to the team. This way you will get instant feedback, all issues could be discovered earlier and you will be sure that you are moving in the right direction (from both technical and functional sides).
 
 With that said
 

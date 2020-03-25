@@ -5,7 +5,7 @@ Grooming can also be called "Backlog Refinement".
 ## Content TODO's
 
 - Complete outline below
-- Provide guidance on criteria to determine if story can be estimated (see [definition of ready](../team-agreements/definition-of-ready/readme.md**))
+- Provide guidance on criteria to determine if story can be estimated (see [definition of ready](../../team-agreements/definition-of-ready/readme.md))
   - Examples of well defined acceptance criteria
   - Can the story be tested as written
   - Is it dependent on other stories
