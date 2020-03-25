@@ -14,7 +14,7 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
 
 - [Continuous Integration](#continuous-integration)
   - [Goals](#goals)
-  - [Single Source Repository](#single-source-repository)
+  - [Build Definition Managed in Git](#build-definition-managed-in-git)
   - [Build Automation](#build-automation)
   - [Build Environment Dependencies](#build-environment-dependencies)
   - [Infrastructure as Code](#infrastructure-as-code)
@@ -46,11 +46,11 @@ A robust build automation pipeline will:
 - Increase visibility across the team enabling tighter communication
 - Reduce human errors, which is probably the most important part of automating the builds
 
-## Single Source Repository
+## Build Definition Managed in Git
 
-- [ ] **Code / manifest artifacts required to build your project should be maintained in a single git repository.**
+- [ ] **Code / manifest artifacts required to build your project should be maintained in within your project(s) git repository(s).**
 
-  - CI provider-specific build [pipeline definition(s)](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should reside within the mainline repository.
+  - CI provider-specific build [pipeline definition(s)](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should reside within your project(s) git repository(s).
 
 ## Build Automation
 
@@ -64,8 +64,6 @@ An automated build should encompass the following principles:
   - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
   - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review section](https://github.com/microsoft/code-with-engineering-playbook/tree/master/code-reviews#language-specific-guidance) of the playbook has suggestions for linters and preferred styles for a number of languages.
   - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
-- [ ] **Database Schema Automation**
-  - The build process should automate pulling database schemas from the git repository and applied to the target environment. This also includes automating the steps to seed that environment with the necessary test data required to run isolated end-to-end automated tests.
 - [ ] **Build Script Target**
   - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
 - [ ] **No IDE Dependencies**
@@ -168,7 +166,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 ## Deliver Quickly and Daily
 
-"By committing regularly, every committer can reduce the number of conflicting changes. Checking in a week's worth of work runs the risk of conflicting with other features and can be very difficult to resolve. Early, small conflicts in an area of the system cause team members to communicate about the change they are making."
+>"By committing regularly, every committer can reduce the number of conflicting changes. Checking in a week's worth of work runs the risk of conflicting with other features and can be very difficult to resolve. Early, small conflicts in an area of the system cause team members to communicate about the change they are making."
 
 In the spirit of transparency and embracing frequent communication across a dev crew, we encourage developers to commit code on a daily cadence. This approach provides visibility to feature progress and accelerates pair programming across the team. Here are some principles to consider:
 
