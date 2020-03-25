@@ -109,16 +109,29 @@ The following are ceremonies that the DevEx champion can use to find potential o
 
 As opportunities are identified, the DevEx champion can translate these into actionable stories for the product backlog.
 
-### Single IDE Instance
+### Standardize Essential Tasks
 
-Avoid requiring multiple instances of the IDE to running concurrently to run and debug the solution locally. This will negatively impact the above measure. Additionally, that negative impact is multiplied by each instance required.
+Apply a common strategy across solution components for performing the essential tasks
 
-- Configuration steps * IDE instances
-- Build steps * IDE instances
-- Start/Debug steps * IDE instances
-- Stop steps * IDE instances
-- Run test steps * IDE instances
-- Documenting all of the above * IDE instances
+- Standardize the configuration for solution components
+- Standardize the way tests are run for each component
+- Standardize the way each component is started and stopped locally
+- Standardize how to document the essential tasks for each component
+
+This standardization will enable the team to more easily automate these tasks across all components at the solution level. See Solution-level Essential Tasks below.
+
+### Solution-level Essential Tasks
+
+Automate the ability to execute each essential task across all solution components. An example would be mapping the build action in the IDE to run the build task for each component in the solution. More importantly, configure the IDE start action to start all components within the solution. This will provide significant efficiency for the engineering team when dealing with multi-component solutions.
+
+When this is not implemented, the engineers must repeat each of the essential tasks manually for each component in the solution. In this situation, the number of steps required to perform each essential task is multiplied by the number of components in the system
+
+- Configuration steps * solution components
+- Build steps * solution components
+- Start/Debug steps * solution components
+- Stop steps * solution components
+- Run test steps * solution components
+- Documenting all of the above * solution components
 
 ### Minimize the Number of Repositories
 
