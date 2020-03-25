@@ -49,10 +49,12 @@ Providing a positive developer experience is a team effort. However, certain mem
 
 The following are examples of how the Tech Lead might set the bar for dev experience
 
-- Determines development environment (IDE, hosting, etc)
+- Determines development environment (suggested IDE, hosting, etc)
 - Determines source control environment and number of repo's required
 - Given development environment and repo structure sets expectations for team to meet in terms of steps to perform the essential dev tasks
 - Nominates the DevEx Champion
+
+IDE choice is NOT intended to mandate that all team members must use the same IDE. However, this choice will direct where tight-integration investment will be prioritized. For example, if Visual Studio Code is the **suggested** IDE then, the team would focus on integrating VS code tasks and launch configurations over similar integrations for other IDE's. Team members should still feel free to use their preferred IDE as long as it does not negatively impact the team.
 
 ### DevEx Champion - Identify Iterative Improvements
 
@@ -60,12 +62,12 @@ The devex champion takes ownership in holding the team accountable for providing
 
 - Actively seek opportunities for improving the solution developer experience
 - Work with the tech lead to iteratively improve team expectations for developer experience
-- Curate a backlog actionable stories that identify areas for improvement.
+- Curate a backlog actionable stories that identify areas for improvement and prioritize with respect to project delivery goals by engaging directly with the Product Owner and Customer.
 - Serve as subject matter expert for the rest of the team. Help the team determine how to implement devex expectations and identify deviations.
 
-### Senior Members - Assert Expectations
+### Team Members - Assert Expectations
 
-The senior members of the team can also help hold the team accountable for providing a positive developer experience. The following are examples of areas the senior members can help identify where the team's devex expectations are not being met.
+The team members of the team can also help hold each other accountable for providing a positive developer experience. The following are examples of areas team members can help identify where the team's devex expectations are not being met.
 
 - Pull requests. Try the changes locally to see if they are adhering to the team's devex expectations.
 - Design Reviews. Look for proposals that may negatively effect the solution's devex. These might include
