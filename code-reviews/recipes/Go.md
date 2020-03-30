@@ -16,7 +16,7 @@
 
 ## Useful extensions for VS Code and Visual Studio
 
-### Go
+### vscode-go
 
 Using the Go extension for Visual Studio Code, you get language features like IntelliSense, code navigation, symbol search, bracket matching, snippets etc.
 
