@@ -84,7 +84,7 @@ trigger: master
 pool:
    vmImage: 'ubuntu-latest'
 
-steps: 
+steps:
 
 - task: GoTool@0
   inputs:
