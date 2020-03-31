@@ -111,7 +111,8 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-     artifactName: drop```
+     artifactName: drop
+   ```
 
 
 ## Code Review Checklist
