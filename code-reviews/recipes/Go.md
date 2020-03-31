@@ -38,9 +38,9 @@ One awesome feature of `golangci-lint` is that is can be easily introduced to an
 
 To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
  
-`- script: go fmt\
-  workingDirectory: $(System.DefaultWorkingDirectory)/scripts\
-  displayName: "Run code linting"` 
+`- script: go fmt`\
+  `workingDirectory: $(System.DefaultWorkingDirectory)/scripts`\
+  `displayName: "Run code linting"`
 
 ## Pre-Commit Hooks
 
