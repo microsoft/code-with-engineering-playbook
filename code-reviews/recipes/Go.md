@@ -63,7 +63,7 @@ Alternatively you can run `brew install pre-commit` if you are using homebrew.
 
 Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-commit by adding it to .pre-commit-config.yaml file like below.
 
-```
+```yaml
 - repo: git://github.com/dnephin/pre-commit-golang
   rev: master
   hooks:
@@ -78,7 +78,7 @@ Run `pre-commit install` to setup the git hook scripts
 
 ## Sample Build Validation Pipeline
 
-```
+```yaml
 trigger: master
 
 pool:
