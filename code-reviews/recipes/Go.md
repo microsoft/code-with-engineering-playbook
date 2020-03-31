@@ -57,14 +57,13 @@ All developers should run `gofmt` in a pre-commit hook to ensure standard format
 ### Step 1- Install pre-commit
 pip install pre-commit or brew install pre-commit if you are using homebrew
 
-### Step 2- Add go-fmt and go-vet in pre-commit
+### Step 2- Add go-fmt in pre-commit
 Add .pre-commit-config.yaml to root of the project. Run go-fmt and go-vet on pre-commit by adding them to .pre-commit-config.yaml
 
 `- repo: git://github.com/dnephin/pre-commit-golang`\
   `rev: master`\
   `hooks:`\
     `- id: go-fmt`\
-    `- id: go-vet`\
     
 ### Step 3
 Run `pre-commit install` to setup the git hook scripts
