@@ -69,13 +69,15 @@ Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-co
   hooks:
     - id: go-fmt
  ```
-    
+
 ### Step 3
+
 Run `pre-commit install` to setup the git hook scripts
 
 `$ pre-commit install`
 
 ## Sample Build Validation Pipeline
+
 ```
 trigger: master
 
@@ -115,7 +117,6 @@ steps:
   inputs:
      artifactName: drop
    ```
-
 
 ## Code Review Checklist
 
