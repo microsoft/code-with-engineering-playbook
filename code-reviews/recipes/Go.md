@@ -92,7 +92,7 @@ steps:
     arguments: '-d'
     workingDirectory: '$(System.DefaultWorkingDirectory)/1Example'
 
-# Perform linting using eslint  
+
 - script: go fmt
   workingDirectory: $(System.DefaultWorkingDirectory)/1Example
   displayName: "Run code formatting"
