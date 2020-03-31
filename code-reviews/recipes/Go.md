@@ -37,7 +37,7 @@ One awesome feature of `golangci-lint` is that is can be easily introduced to an
 `gofmt` should be run as a part of every build to enforce the common standard.
 
 To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will format any scripts in the `./scripts/` folder.
- 
+
 `- script: go fmt`\
   `workingDirectory: $(System.DefaultWorkingDirectory)/scripts`\
   `displayName: "Run code formatting"`
@@ -45,7 +45,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
   `govet` should be run as a part of every build to check code linting.
 
 To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will check linting of any scripts in the `./scripts/` folder.
- 
+
 `- script: go vet`\
   `workingDirectory: $(System.DefaultWorkingDirectory)/scripts`\
   `displayName: "Run code linting"`
@@ -55,10 +55,12 @@ To automate this process in Azure Devops you can add the following snippet to yo
 All developers should run `gofmt` in a pre-commit hook to ensure standard formatting.
 
 ### Step 1- Install pre-commit
+
 Run `pip install pre-commit` to install pre-commit.
 Alternatively you can run `brew install pre-commit` if you are using homebrew.
 
 ### Step 2- Add go-fmt in pre-commit
+
 Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-commit by adding it to .pre-commit-config.yaml file like below.
 
 ```
