@@ -59,7 +59,7 @@ Run `pip install pre-commit` to install pre-commit.
 Alternatively you can run `brew install pre-commit` if you are using homebrew.
 
 ### Step 2- Add go-fmt in pre-commit
-Add .pre-commit-config.yaml to root of the project. Run go-fmt and go-vet on pre-commit by adding them to .pre-commit-config.yaml
+Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-commit by adding it to .pre-commit-config.yaml file like below.
 
 ```
 - repo: git://github.com/dnephin/pre-commit-golang
