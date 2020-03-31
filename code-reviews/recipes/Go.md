@@ -55,7 +55,8 @@ To automate this process in Azure Devops you can add the following snippet to yo
 All developers should run `gofmt` in a pre-commit hook to ensure standard formatting.
 
 ### Step 1- Install pre-commit
-pip install pre-commit or brew install pre-commit if you are using homebrew
+Run `pip install pre-commit` to install pre-commit.
+Alternatively you can run `brew install pre-commit` if you are using homebrew.
 
 ### Step 2- Add go-fmt in pre-commit
 Add .pre-commit-config.yaml to root of the project. Run go-fmt and go-vet on pre-commit by adding them to .pre-commit-config.yaml
