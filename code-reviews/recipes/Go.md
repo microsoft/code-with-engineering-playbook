@@ -73,6 +73,46 @@ Run `pre-commit install` to setup the git hook scripts \
 
 `$ pre-commit install`
 
+## Sample Build Validation Pipeline
+```trigger: master
+
+
+pool:
+   vmImage: 'ubuntu-latest'
+
+steps: 
+
+- task: GoTool@0
+  inputs:
+    version: '1.13.5'
+
+- task: Go@0
+  inputs:
+    command: 'get'
+    arguments: '-d'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/1Example'
+
+# Perform linting using eslint  
+- script: go fmt
+  workingDirectory: $(System.DefaultWorkingDirectory)/1Example
+  displayName: "Run code formatting"
+
+- script: go vet
+  workingDirectory: $(System.DefaultWorkingDirectory)/1Example
+  displayName: 'Run go vet'
+  
+- task: Go@0
+  inputs:
+    command: 'build'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+- task: CopyFiles@2
+  inputs:
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+     artifactName: drop```
+
 
 ## Code Review Checklist
 
