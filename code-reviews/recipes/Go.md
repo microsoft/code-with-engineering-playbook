@@ -66,7 +66,6 @@ Add .pre-commit-config.yaml to root of the project. Run go-fmt and go-vet on pre
   rev: master
   hooks:
     - id: go-fmt
-    - id: go-vet
  ```
     
 ### Step 3
