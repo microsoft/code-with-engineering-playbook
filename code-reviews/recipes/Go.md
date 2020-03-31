@@ -74,8 +74,8 @@ Run `pre-commit install` to setup the git hook scripts \
 `$ pre-commit install`
 
 ## Sample Build Validation Pipeline
-```trigger: master
-
+```
+trigger: master
 
 pool:
    vmImage: 'ubuntu-latest'
