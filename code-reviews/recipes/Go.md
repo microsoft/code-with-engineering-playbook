@@ -69,7 +69,7 @@ Add .pre-commit-config.yaml to root of the project. Run go-fmt and go-vet on pre
  ```
     
 ### Step 3
-Run `pre-commit install` to setup the git hook scripts \
+Run `pre-commit install` to setup the git hook scripts
 
 `$ pre-commit install`
 
@@ -90,15 +90,15 @@ steps:
   inputs:
     command: 'get'
     arguments: '-d'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/1Example'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/scripts'
 
 
 - script: go fmt
-  workingDirectory: $(System.DefaultWorkingDirectory)/1Example
+  workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: "Run code formatting"
 
 - script: go vet
-  workingDirectory: $(System.DefaultWorkingDirectory)/1Example
+  workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: 'Run go vet'
   
 - task: Go@0
