@@ -15,14 +15,8 @@ Code reviews is a way to have a conversation about the code where participants w
 - [Process Guidance](./process-guidance/README.md)
 - [Evidence and Measures](./evidence-and-measures/README.md)
 - [Language Specific Guidance](./recipes/README.md)
-- [Resources](#resources)
 - [Q&A](#qa)
-
-## Resources
-
-- [Code review tools](tools.md)
-- [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
-- [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
+- [Resources](#resources)
 
 ## Q&A
 
@@ -37,3 +31,9 @@ Someone outside of the pair should perform the code review. One of the other maj
 ### Q: What if we do mob programming
 
 A member of the mob who spent less (or no) time at the keyboard should perform the code review.
+
+## Resources
+
+- [Code review tools](tools.md)
+- [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
+- [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
