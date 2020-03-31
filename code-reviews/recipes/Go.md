@@ -63,10 +63,10 @@ Add .pre-commit-config.yaml to root of the project. Run go-fmt and go-vet on pre
 `- repo: git://github.com/dnephin/pre-commit-golang`\
   `rev: master`\
   `hooks:`\
-    `- id: go-fmt`\
+    `- id: go-fmt`
     
 ### Step 3
-Run `pre-commit install` to setup the git hook scripts
+Run `pre-commit install` to setup the git hook scripts \
 `$ pre-commit install`
 
 
