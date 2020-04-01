@@ -47,17 +47,31 @@ To use golangci-lint with VS Code, use the below recommended settings:
 
 To automate this process in Azure Devops you can add the following snippet to your `azure-pipelines.yaml` file. This will format any scripts in the `./scripts/` folder.
 
-`- script: go fmt`\
-  `workingDirectory: $(System.DefaultWorkingDirectory)/scripts`\
-  `displayName: "Run code formatting"`
+```yaml
+- script: go fmt
+  workingDirectory: $(System.DefaultWorkingDirectory)/scripts
+  displayName: "Run code formatting"
+  ```
   
   `govet` should be run as a part of every build to check code linting.
 
 To automate this process in Azure Devops you can add the following snippet to your `azure-pipelines.yaml` file. This will check linting of any scripts in the `./scripts/` folder.
 
-`- script: go vet`\
-  `workingDirectory: $(System.DefaultWorkingDirectory)/scripts`\
-  `displayName: "Run code linting"`
+```yaml
+- script: go vet
+  workingDirectory: $(System.DefaultWorkingDirectory)/scripts
+  displayName: "Run code linting"
+  ```
+  
+Alternatively you can use golangci-lint as a step in the pipeline to do multiple enabled validations(including go vet and go fmt) of golangci-lint.
+
+```yaml
+- script: golangci-lint run --enable gofmt --fix
+  workingDirectory: $(System.DefaultWorkingDirectory)/scripts
+  displayName: "Run code linting"
+  ```
+
+
 
 ## Pre-Commit Hooks
 
