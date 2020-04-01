@@ -71,8 +71,6 @@ Alternatively you can use golangci-lint as a step in the pipeline to do multiple
   displayName: "Run code linting"
   ```
 
-
-
 ## Pre-Commit Hooks
 
 All developers should run `gofmt` in a pre-commit hook to ensure standard formatting.
