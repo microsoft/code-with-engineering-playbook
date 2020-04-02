@@ -14,9 +14,9 @@
 
 [golint](https://github.com/golang/lint) can be an effetive tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process.
 
-## Useful extensions for VS Code and Visual Studio
+### Project Setup
 
-### vscode-go
+#### vscode-go
 
 Using the Go extension for Visual Studio Code, you get language features like IntelliSense, code navigation, symbol search, bracket matching, snippets, etc.
 
