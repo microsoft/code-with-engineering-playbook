@@ -34,7 +34,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 One awesome feature of `golangci-lint` is that is can be easily introduced to an existing large codebase using the `--new-from-rev COMMITID`. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions. golangci-lint can also be setup as the default linter in VS Code.
 
-Installation options for golangci-lint are present at https://github.com/golangci/golangci-lint#binary.
+Installation options for golangci-lint are present at [golangci-lint](https://github.com/golangci/golangci-lint#binary).
 
 To use golangci-lint with VS Code, use the below recommended settings:
 
