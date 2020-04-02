@@ -93,11 +93,9 @@ Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-co
 
 ### Step 3
 
-Run `pre-commit install` to setup the git hook scripts
+Run `$ pre-commit install` to setup the git hook scripts
 
-`$ pre-commit install`
-
-## Sample Build Validation Pipeline
+## Sample Build Validation Pipeline in Azure DevOps
 
 ```yaml
 trigger: master
