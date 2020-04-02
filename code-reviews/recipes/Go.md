@@ -8,19 +8,19 @@
 
 ### Project Setup
 
+Below is the project setup that you would like to have in your VS Code.
+
+#### vscode-go extension
+
+Using the Go extension for Visual Studio Code, you get language features like IntelliSense, code navigation, symbol search, bracket matching, snippets, etc. This extension includes rich language support for go in VS Code.
+
 #### go vet
 
-`go vet` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. [CSE](../../CSE.md) Go code should be able to build with no `go vet` errors.
+`go vet` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. [CSE](../../CSE.md) Go code should be able to build with no `go vet` errors. This will be part of vscode-go extension.
 
 #### golint
 
-[golint](https://github.com/golang/lint) can be an effetive tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process.
-
-#### Useful extensions for VS Code and Visual Studio
-
-##### vscode-go
-
-Using the Go extension for Visual Studio Code, you get language features like IntelliSense, code navigation, symbol search, bracket matching, snippets, etc.
+[golint](https://github.com/golang/lint) can be an effetive tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process. This is the default linter which is setup as part of the vscode-go extension.
 
 ## Automatic Code Formatting
 
@@ -32,7 +32,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 [golangci-lint](https://github.com/golangci/golangci-lint/) is the replacement for the now depricated `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
 
-One awesome feature of `golangci-lint` is that is can be easily introduced to an existing large codebase using the `--new-from-rev COMMITID`. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions.
+One awesome feature of `golangci-lint` is that is can be easily introduced to an existing large codebase using the `--new-from-rev COMMITID`. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions. golangci-lint can also be setup as the default linter in VS Code.
 
 To use golangci-lint with VS Code, use the below recommended settings:
 
