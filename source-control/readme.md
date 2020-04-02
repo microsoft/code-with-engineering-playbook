@@ -30,6 +30,11 @@ The team should at least be doing the following:
   * [README.md](../resources/templates/README.md)
   * [CONTRIBUTING.md](../resources/templates/CONTRIBUTING.md)
 
+For most engagements having a single hosted DevOps environment (i.e AzureDevOps) is the preferred path but there are times when a mixed DevOps environment (i.e. AzureDevOps for Agile/Work item tracking & GitHub for Source Control) is needed due to customer requirements. When working in a mixed environment: 
+
+* Manually tag PR's in work items
+* Ensure that the scope of work items / tasks align with PR's
+
 ## Commit Best Practices
 
 * Make small commits. This makes changes easier to review, and if we need to revert a commit, we lose less work.
