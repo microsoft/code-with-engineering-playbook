@@ -2,28 +2,21 @@
 
 Building observable systems enables development teams at CSE to measure how well the application is behaving.
 
-## Table of Contents
-
-- [Observability](#observability)
-  - [Table of Contents](#table-of-contents)
-  - [Goals](#goals)
-  - [Pillars of Observability](#pillars-of-observability)
-  - [Recommended Practices](#recommended-practices)
-  - [Pitfalls to avoid](#pitfalls-to-avoid)
-  - [Recommended Tools and Approaches](#recommended-tools-and-approaches)
-    - [Tools](#tools)
-    - [Collection](#collection)
-      - [1. Agent:](#1-agent)
-      - [2. SDK:](#2-sdk)
-      - [3. SDK-Agent:](#3-sdk-agent)
-  - [Recipes](#recipes)
-
 ## Goals
 
 1. Provide holistic view on the health of the application.
 2. Help measure business performance for the customer.
 3. Measure operational performance of the system.
 4. Identify and diagnose failures to get to the problem fast.
+
+## Sections
+
+- [Pillars of Observability](#pillars-of-observability)
+- [Recommended Practices](#recommended-practices)
+- [Pitfalls to Avoid](#pitfalls-to-avoid)
+- [Recommended Tools and Approaches](#recommended-tools-and-approaches)
+- [Tools](#tools)
+- [Recipes](#recipes)
 
 ## Pillars of Observability
 
@@ -42,7 +35,7 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Pitfalls to avoid
 
-Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system
+Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system.
 
 ## Recommended Tools and Approaches
 
