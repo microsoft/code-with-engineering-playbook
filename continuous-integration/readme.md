@@ -50,7 +50,7 @@ A robust build automation pipeline will:
 
 - [ ] **Code / manifest artifacts required to build your project should be maintained in within your project(s) git repository(s).**
 
-  - CI provider-specific build [pipeline definition(s)](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops#define-pipelines-using-yaml-syntax) should reside within your project(s) git repository(s).
+  - CI provider-specific build pipeline definition(s) should reside within your project(s) git repository(s).
 
 ## Build Automation
 
@@ -63,6 +63,7 @@ An automated build should encompass the following principles:
 - [ ] **Code Style Checks**
   - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
   - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review section](https://github.com/microsoft/code-with-engineering-playbook/tree/master/code-reviews#language-specific-guidance) of the playbook has suggestions for linters and preferred styles for a number of languages.
+  - We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOPS, you can add a security scan task to your pipeline by installing the [Microsoft Security Code Analysis Extension](https://secdevtools.azurewebsites.net/#pills-onboard). Github Actions supports a similar extension with the [RIPS security scan solution](https://github.com/marketplace/actions/rips-security-scan).
   - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
 - [ ] **Build Script Target**
   - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
@@ -75,7 +76,6 @@ An automated build should encompass the following principles:
   - We encourage maintaining a consistent developer experience for all team members. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
   - Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies.
   - All developers on the team should be able to emulate the build environment from their local desktop regardless of their OS.
-  - Developers should trigger the automated environment setup task(s) through a single command.
   - Well established software packaging tools like Docker, Maven, npm, etc should be considered when designing your build automation tool chain.
 - [ ] **Document local setup**
   - The setup process for setting up a local build environment should be well documented and easy for developers to follow.
@@ -94,6 +94,8 @@ Manage as much of the following as possible, as code:
 
 Decoupling infrastructure from the application codebase simplifies engineering teams move to cloud native applications.
 
+Terraform resource providers like [Azure DevOPS](https://github.com/microsoft/terraform-provider-azuredevops) is making it easier for developers to manage build pipeline variables, service connections and CI/CD pipeline definitions.
+
 ### Sample DevOPS Workflow using Terraform and Cobalt
 
 ![image](https://user-images.githubusercontent.com/7635865/76626035-652eda80-6506-11ea-8870-6070365f10d6.png)
@@ -101,7 +103,7 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 ### Why
 
 - Repeatable and auditable changes to infrastructure make it easier to roll back to known good configurations and to rapidly expand to new stages and regions without having to hand-wire cloud resources
-- Battle tested and templatized IAC reference projects like [Cobalt](https://github.com/microsoft/cobalt) and [Bedrock](https://github.com/microsoft/bedrock) enable more business teams deploy secure and scalable solutions at a much more rapid pace
+- Battle tested and templatized IAC reference projects like [Cobalt](https://github.com/microsoft/cobalt) and [Bedrock](https://github.com/microsoft/bedrock) enable more engineering teams deploy secure and scalable solutions at a much more rapid pace
 - Simplify “lift and shift” scenarios by abstracting the complexities of cloud-native computing away from application developer teams.
 
 ### IAC DevOPS: Operations by Pull Request
@@ -124,9 +126,9 @@ Decoupling infrastructure from the application codebase simplifies engineering t
 - [ ] **IAC CI Workflow**
   - When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by an cloud administer as a gate check prior to the deploy stage of the pipeline applying the execution plan.
 - [ ] **Developer Read-Only Access to Cloud Resources**
-  - Developer accounts in active directory should have read-only access to fixed environments in Azure. Developers can interface with these environments through a system generated service principal which has read/write access to provisioned cloud resources.
+  - Developer accounts in the Azure portal should have read-only access to IAC environment resources in Azure.
 - [ ] **Secret Automation**
-  - Secrets and configuration changes should only be carried out through the IAC devops workflow. In summary, secret management should be automated and repeatable to promote consistency across environments and developer-specific test environments.
+  - IAC templates are deployed via a CI/CD system that has secrets automation integrated. Avoid applying changes to secrets and/or certificates directly in the Azure Portal.
 - [ ] **Infrastructure Integration Test Automation**
   - End-to-end integration tests are run as part of your IAC CI process to inspect and validate that an azure environment is ready for use.
 - [ ] **Infrastructure Documentation**
@@ -147,6 +149,8 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
   - If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
 - [ ] **Test Automation Data Dependencies**
   - Any mocked dataset(s) used for unit and end-to-end integration tests should be checked into the mainline repository. Minimize any external data dependencies with your build process.
+- [ ] **Code Coverage Checks**
+  - We recommend integrating code coverage tools within your build stage. Most coverage tools fail builds when the test coverage falls below a minimum threshold(80% coverage). The coverage report should be published to your CI system to track a time series of variations.
 
 ## Git Driven Workflow
 
@@ -154,15 +158,16 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
   - Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate.
   - Build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
 
-- [ ] **Master branch consistency with production**
-  - Merges into the master branch trigger releases into the production environment(s). This way the master branch becomes a dependable baseline for the code running in production.
-
 - [ ] **Avoid commenting out failing tests**
   - Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
 - [ ] **Branch policy enforcement**
-  - Branch policies should be setup on the master branch so that the build pipeline status becomes a pre-req validation prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
+  - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/configuring-protected-branches) should be setup on master to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
   - Broken builds should block pull request reviews.
+  - Prevent commits directly into master.
+
+- [ ] **Branch strategy**
+  - Release branches should auto trigger the deployment of a build artifact to it's target cloud environment. One branch strategy worth considering is  [trunk-based development](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-releases) and [Release Flow's Branching Structure](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow).
 
 ## Deliver Quickly and Daily
 
@@ -185,9 +190,6 @@ One of the key goals of build validation is to isolate and identify failures in 
   - New commits related to a pull request should trigger a build / release into an integration environment. The production environment should be fully isolated from this process.
 - [ ] **Promote infrastructure changes across fixed environments**
   - Infrastructure as code changes should be tested in a integration environment and promoted to all staging environment(s) then migrated to production with zero downtime for system users.
-- [ ] **Environment releases are triggered on merges into master**
-  - Code changes merged into the master branch should auto trigger a new release candidate for all cloud environments.
-  - One additional capability worth considering are automated rollbacks. Being able to revert commits into master and quickly go back to the last known good state(*previous feature release*) minimizes outages and downtime when bugs are introduced into environment(s).
 - [ ] **Testing in production**
   - There are various [approaches](https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1) with safely carrying out automated tests for production deployments. Some of these may include:
     - Feature flagging
@@ -201,7 +203,7 @@ Our devops workflow should enable developers to get, install and run the latest 
 - [ ] **Developers can access latest executable**
   - Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
-- [ ] **Release artifact is published for each git commit per open pull request or merges into master**
+- [ ] **Release artifact is published for each pull request or merges into master**
 
 ## Integration Observability
 
@@ -222,6 +224,7 @@ We recommend integrating Teams or Slack with CI/CD pipeline runs which helps kee
 - [Martin Fowler's Continuous Integration Best Practices](https://martinfowler.com/articles/continuousIntegration.html)
 - [Bedrock Getting Started Quick Guide](https://github.com/microsoft/bedrock#getting-started)
 - [Cobalt Quick Start Guide](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md)
+- [Terraform Azure DevOPS Provider](https://github.com/microsoft/terraform-provider-azuredevops)
 - [Azure DevOPS multi stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
 - [Azure Pipeline Key Concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
 - [Azure Pipeline Environments](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
