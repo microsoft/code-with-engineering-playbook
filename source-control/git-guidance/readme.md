@@ -6,22 +6,6 @@
 
 [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
 
-### Cloning
-
-<!-- TODO: add more information about cloning repos (e.g., SSH, https, etc.) -->
-
-### Committing
-
-<!-- TODO: add more information about commiting changes (e.g., commit messages, setting editors, etc.) -->
-
-### Merging
-
-<!-- TODO: add more information about merging changes (e.g., links) -->
-
-### Managing remotes
-
-<!-- TODO: add more information about managing remotes (e.g., origin, other GitHub forks, etc., SSH vs. HTTPS) -->
-
 ## Rolling back changes
 
 ### Reverting and deleting commits
@@ -47,12 +31,6 @@ after you deleted the unwanted commits, push using `force`:
 ```bash
 git push origin HEAD --force
 ```
-
-<!-- TODO: add information about interactive rebase -->
-
-### Using the reflog
-
-<!-- TODO: add information about using the reflog to recover "lost" changes -->
 
 ## Using submodules
 
@@ -164,5 +142,3 @@ git lfs pull --include="path/to/file"
 Use a shell/terminal to work with Git commands instead of relying on [GUI clients](https://git-scm.com/downloads/guis/).
 
 If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and use your favorite shell/terminal.
-
-<!-- TODO: add information on using VS Code for reviewing diffs and staging commits? -->
