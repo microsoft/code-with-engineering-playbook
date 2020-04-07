@@ -71,12 +71,10 @@ If you create a new repository, agree on your branch, merge and release strategi
 
 A public repository needs to have the following files in the root directory of the default branch:
 
-* a [LICENSE](Templates/LICENSE) file
-* a [README.md](Templates/README.md) file
-* a [CONTRIBUTING.md](Templates/CONTRIBUTING.md) file
+* a [LICENSE](../../resources/templates/LICENSE) file
+* a [README.md](../../resources/templates/README.md) file
+* a [CONTRIBUTING.md](../../resources/templates/CONTRIBUTING.md) file
 * reference the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
-
-<!-- TODO: the template links to be fixed -->
 
 To start to contribute by creating your own branch, or fork the repository, and commit often - make your commit comments useful to others by including the *WHAT* and *WHY* (instead of the *HOW*).
 
@@ -130,7 +128,7 @@ D---E---F-----------G---H master
 Create a PR topic --> master in Azure DevOps and approve using the squash merge option
 ```
 
-## Branch naming
+## Naming branches
 
 When contributing to existing projects, look for and stick with the agreed branch naming convention. In open source projects this information is typically found in the contributing instructions, often in a file named `CONTRIBUTING.md`.
 
