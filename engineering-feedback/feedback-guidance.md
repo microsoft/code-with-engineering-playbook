@@ -47,7 +47,16 @@ Describe the impact to the customer and engagement that this feedback implies.
 
 Provide a timeframe that this feedback item needs to be resolved within (if relevant).
 
-## Repro Steps 
+### Priority
+
+Please provide the customer perspective priority of the feedback.  Feedback is prioritized at one of the following four levels:
+
+- __P0 - Impact is critical and large__: Needs to be addressed immediately; impact is critical and large in scope (i.e. major service outage; makes service or functions unusable/unavailable to a high portion of addressable space; no known workaround).
+- __P1 - Impact is high and significant__: Needs to be addressed quickly; impacts a large percentage of addressable space and impedes progress. A partial workaround exists or is overly painful.
+- __P2 - Impact is moderate and varies in scope__: Needs to be addressed in a reasonable timeframe (i.e. issues that are impeding adoption and usage with no reasonable workarounds). For example, feedback may be related to feature-level issue to solve for friction.
+- __P3 - Impact is low__: Issue can be address when able or eventually (i.e. relevant to core addressable space but issue does not impede progress or has reasonable workaround). For example, feedback may be related to feature ideas or opportunities.
+
+## Repro Steps
 
 The repro steps are important since they help confirm and replay the issue, and are essential in demonstrating success once there is a resolution.
 
@@ -59,7 +68,6 @@ Provide a clear set of all conditions and pre-requisites required before followi
 - Services (eg. Azure Key Vault, Azure Monitor)
 - Networking (eg. VNET with subnet)
 
-
 ### Steps
 
 Provide a clear set of repeatable steps that will allow for this feedback to be reproduced. This can take the form of:
@@ -70,17 +78,16 @@ Provide a clear set of repeatable steps that will allow for this feedback to be 
 
 ## Notes
 
-Include items like architecture diagrams, screen shots, logs, traces etc which can help with understanding your notes and the feedback item.
+Include items like architecture diagrams, screen shots, logs, traces etc which can help with understanding your notes and the feedback item. Also include details about the scenario customer/partner verbatim as much as possible in the main content.
 
-### What didn't work?
+### What didn't work
 
 Describe what didn't work or what feature gap you identified.
 
-### What was your expectation or the desired outcome?
+### What was your expectation or the desired outcome
 
 Describe what you expected to happen. What was the outcome that was expected?
 
 ### Describe the steps you took
 
 Provide a clear description of the steps taken and the outcome/description at each point.
-

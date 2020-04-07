@@ -8,7 +8,7 @@ Using an automated code formatting tool like Prettier enforces a well accepted s
 
 For higher level style guidance not covered by prettier, we follow the [AirBnB Style Guide](https://github.com/airbnb/javascript).
 
-## Linting
+## Code Analysis / Linting
 
 ### eslint
 
@@ -118,19 +118,32 @@ By default, we use the following overrides should be added to the VS Code config
 
 ## Build Validation
 
-To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
+To automate this process in Azure Devops you can add the following snippet to your pipeline definition yaml file. This will lint any scripts in the `./scripts/` folder.
 
-> TODO: Add example of yaml for automating linting and testing
+```yaml
+- task: Npm@1
+  displayName: 'Lint'
+  inputs:
+    command: 'custom'
+    customCommand: 'run lint'
+    workingDir: './scripts/'
+```
 
 ## Pre-commit hooks
 
 All developers should run `eslint` in a pre-commit hook to ensure standard formatting. We highly recommend using an editor integration like [vscode-eslint](https://github.com/Microsoft/vscode-eslint) to provide realtime feedback.
 
-> TODO: Show example
+1. Under `.git/hooks` rename `pre-commit.sample` to `pre-commit`
+1. Remove the existing sample code in that file
+1. There are many examples of scripts for this on gist, like [pre-commit-eslint](https://gist.github.com/linhmtran168/2286aeafe747e78f53bf)
+1. Modify accordingly to include TypeScript files (include ts extension and make sure typescript-eslint is set up)
+1. Make the file executable: `chmod +x .git/hooks/pre-commit`
+
+As an alternative [husky](https://github.com/typicode/husky) can be considered to simplify pre-commit hooks.
 
 ## Code Review Checklist
 
-In addition to the [Code Review checklist](../readme.md), you should also look for these additional JavaScript related code review items:
+In addition to the [Code Review checklist](../README.md), you should also look for these additional JavaScript related code review items:
 
 * [ ] Does the code stick to our formatting and code standards? Does running prettier and ESLint over the code should yield no warnings or errors respectively?
 * [ ] Does the change reimplement code that would be better served by pulling in a well known module from the ecosystem?

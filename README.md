@@ -10,19 +10,22 @@ An engineer working for a [CSE](./CSE.md) project...
 This our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
 
 ## Why Have A Playbook
+
 * To increase overall efficiency for team members and the whole team in general.
 * Reduce the number of mistakes and avoid common pitfalls.
 * Strive to be a better engineer and learn from other people's shared experience.
 
 ## "The" Checklist
-If you do nothing else follow the [Tech Lead's Checklist](TECH-LEADS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals. 
+
+If you do nothing else follow the [Tech Lead's Checklist](TECH-LEADS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals.
 
 ## Structure of a Sprint
-A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an Agile sprint. 
+
+A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an Agile sprint.
 
 ## General Guidance
 
-* Keep the code quality bar high. 
+* Keep the code quality bar high.
 * Value quality and precision over ‘getting things done’.
 * Work diligently on the one important thing.
 * As a distributed team take time to share context via wiki, teams and backlog items.
@@ -34,15 +37,17 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * We all own our code and each one of us has an obligation to make all parts of the solution great.
 
 ## QuickLinks
+
 * [Tech Lead's Checklist](TECH-LEADS-CHECKLIST.md)
 * [Structure of a Sprint](SPRINT-STRUCTURE.md)
 * [Source Control](source-control/readme.md)
 * [Unit Testing](test-first-development/unit-testing/readme.md)
-* [CI](continuous-integration/readme.md)
-* [CD](continuous-deployment/readme.md)
-* [Code Reviews](code-reviews/readme.md)
+* [Continuous Integration (CI)](continuous-integration/readme.md)
+* [Continuous Delivery (CD)](continuous-deployment/readme.md)
+* [Code Reviews](code-reviews/README.md)
 * [Observability](observability/readme.md)
 * [Engineering Feedback](engineering-feedback/readme.md)
 
 ## Contributing
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.

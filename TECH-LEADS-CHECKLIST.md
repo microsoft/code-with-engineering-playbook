@@ -8,7 +8,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] Merges are done through PRs.
 - [ ] PRs reference related work items.
 - [ ] Commit history is consistent and commit messages are informative (what, why).
-- [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](./continuous-integration/credential-scanning/README.md))
+- [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](continuous-integration/credential-scanning/readme.md))
 - [ ] Public repositories follow the [OSS guidelines](source-control/git.md), see `Required files for public repositories`.
 
 More details on [Source Control](source-control/readme.md)
@@ -40,12 +40,13 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 
 ## Observability
 
+- [ ] Significant business and functional events are tracked and related metrics collected.
 - [ ] Application faults and errors are logged.
-- [ ] Metrics collected to identify health of the services.
-- [ ] Latency for servicing a request is logged, as appropriate for the solution.
-- [ ] Significant business and functional events that are important are tracked and related metrics collected.
-- [ ] Logging configuration can be modified without code changes (eg: debug mode).
-- [ ] GDPR compliance is ensured regarding PII (personal identifiable information).
+- [ ] Health of the system is monitored.
+- [ ] The client and server side observability data can be differentiated.
+- [ ] Logging configuration can be modified without code changes (eg: verbose mode).
+- [ ] [Incoming tracing context](observability/correlation-id.md) is propagated to allow for production issue debugging purposes.
+- [ ] GDPR compliance is ensured regarding PII (Personally Identifiable Information).
 
 ## Agile/Scrum
 
@@ -67,11 +68,11 @@ More details on [Unit Testing](test-first-development/unit-testing/readme.md)
 
 - [ ] Clear agreement in the team as to function of code reviews.
 - [ ] Code review checklist or established process.
-- [ ] A minimum number of reviewers for a PR merge is enforced (2 usually).
-- [ ] Linters, unit tests and successful builds for PR merges.
-- [ ] Bug fixes suggest how to catch the bug in a code review within associated work item. And if possible link to original PR that introduced bug.
+- [ ] A minimum number of reviewers (usually 2) for a PR merge is enforced by policy.
+- [ ] Linters/Code Analyzers, unit tests and successful builds for PR merges are set up.
+- [ ] Process to enforce a quick review turnaround.
 
-More details on [Code Reviews](code-reviews/readme.md)
+More details on [Code Reviews](code-reviews/README.md)
 
 ## Retrospectives
 
@@ -83,6 +84,7 @@ More details on [Code Reviews](code-reviews/readme.md)
 More details on [Retrospectives](retrospectives/readme.md)
 
 ## Engineering Feedback
+
 - [ ] Submit business and technical blockers that prevent project success
 - [ ] Add suggestions for improvements to leveraged services and components
 - [ ] Ensure feedback is detailed and repeatable

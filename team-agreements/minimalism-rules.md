@@ -1,6 +1,6 @@
-# Follow Minimalism Rules 
+# Follow Minimalism Rules
 
-## (http://minifesto.org/)
+## (<http://minifesto.org/>)
 
 * Fight for Pareto's law, look for the 20% of effort that will give you the 80% of results
 * Prioritize, minimalism isn't about not doing things but about focusing first in the important

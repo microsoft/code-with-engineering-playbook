@@ -1,8 +1,10 @@
 
 # project-xyz
+
 Description of the project
 
 # Deploying to Azure
+
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
 # Getting started
