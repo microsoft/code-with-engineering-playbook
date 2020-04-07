@@ -18,11 +18,6 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
   - [Build Automation](#build-automation)
   - [Build Environment Dependencies](#build-environment-dependencies)
   - [Infrastructure as Code](#infrastructure-as-code)
-    - [Sample DevOPS Workflow using Terraform and Cobalt](#sample-devops-workflow-using-terraform-and-cobalt)
-    - [Why](#why)
-    - [IAC DevOPS: Operations by Pull Request](#iac-devops-operations-by-pull-request)
-    - [Infrastructure Advocated Patterns](#infrastructure-advocated-patterns)
-    - [IAC Principles](#iac-principles)
   - [Integration Validation](#integration-validation)
   - [Git Driven Workflow](#git-driven-workflow)
   - [Deliver Quickly and Daily](#deliver-quickly-and-daily)
@@ -49,7 +44,6 @@ A robust build automation pipeline will:
 ## Build Definition Managed in Git
 
 - [ ] **Code / manifest artifacts required to build your project should be maintained in within your project(s) git repository(s).**
-
   - CI provider-specific build pipeline definition(s) should reside within your project(s) git repository(s).
 
 ## Build Automation
@@ -85,8 +79,8 @@ An automated build should encompass the following principles:
 Manage as much of the following as possible, as code:
 
 - Configuration Files
-- Configuration Management
-- Secret Management
+- Configuration Management(ie environment variable automation via [terraform](https://github.com/microsoft/cobalt/blob/master/infra/modules/providers/azure/app-service/main.tf#L49))
+- Secret Management(ie creating Azure secrets via [terraform](https://github.com/microsoft/cobalt/blob/master/infra/templates/az-isolated-service-single-region/app.tf#L84))
 - Cloud Resource Provisioning
 - Role Assignments
 - Load Test Scenarios
