@@ -33,17 +33,31 @@ We should always aim to have pull requests be as small as possible, without losi
 1. They are easier to deploy; this is aligned with the strategy of release fast and release often.
 1. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
 
-However, we should avoid having PRs that include code that is without context or loosely coupled.
+However, we should avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, and you should work with your reviewer to find out a reasonable size. Besides the size, remember that every PR should:
 
-<!-- TODO: Expand the topics below
+1. Be consistent and within context, 
+1. not break the build, and
+1. include related tests (UTs, integration, etc.) as part of the PR.
+ 
+There are times where seems a big PR is unavoidable and necessary; the act of breaking it up would be more time consuming and error-prone than it would be beneficial, and that it is the reason why it's easier to write small PRs in the first place.
 
-There are times where seem a big PR is unavoidable; however, there are some strategies to keep PRs small depending on the "cause" of the ineluctability:
+These are some strategies to keep PRs small depending on the "cause" of the ineluctability:
 
 ### Minimum Working Components
+
+If the design of your changes allows breaking the implementation on working chunks, self-contained changes, that do not break the build, it is better to create one PR per component. The components should be fully functional pieces that can be released as soon as possible. Think about this as breaking the implementation vertically, where components sometimes involve changes on the full-stack.
+
 ### Layers
+
+Sometimes we cannot release components without breaking the build, this is very often the case on refactors. For example, if you need to modify several classes on the backend. In this case, is better to break the code on layers or incremental changes.
+
+Think about this as breaking the implementation horizontally, where layers involve changes on one part of the stack.
+
 ### Feature Flag
 
--->
+Sometimes we don't want to release the changes immediately to be visible to the final users until the whole implementation is complete, but we want to merge small pieces into code working in production, in this cases we could work to integrate the code into the production branch (making sure it does not break the build) but disabling the code. There are multiple ways to do this depending on the language or framework, the most basic one is by creating an application or config setting that can enable/disable that part of the code. Design patterns like Observer-Subject or Canary releases (with traffic redirection) are useful to implement this.
+
+Think about this as releasing hidden features that could be enabled later. You can find more information about different feature flag techniques by searching for "Feature Toggling" patterns.
 
 ## Resources
 
