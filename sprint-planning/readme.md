@@ -65,17 +65,17 @@ General guidance:
 
 **Prior to the meeting:**
 
-- Set sprint goal.
-- Make sure the backlog is prioritized.
-- Make sure each story that is a candidate for next sprint is [ready](./../team-agreements/definition-of-ready/readme.md).
+- [ ] Set sprint goal.
+- [ ] Make sure the backlog is prioritized.
+- [ ] Make sure each story that is a candidate for next sprint is [ready](./../team-agreements/definition-of-ready/readme.md).
 
 **During the meeting:**
 
-- Confirming team capacity. This should be done using the average velocity (number of points achieved per sprint) and removing the project vacations/holidays/off days. If it helps, you can get the daily average velocity, divide by the number of team members and multiply by number of off days.
-- Timebox (for instance: half of the meeting for story selection, half of the meeting for task splitting).
-- Agree on how much capacity needs to be "saved" for bug fixing (might depend on the sprint).
-- Ensure everyone understands each story that is selected for the sprint.
-- Ensure everyone participates in story effort estimation.
+- [ ] Confirming team capacity. This should be done using the average velocity (number of points achieved per sprint) and removing the project vacations/holidays/off days. If it helps, you can get the daily average velocity, divide by the number of team members and multiply by number of off days.
+- [ ] Timebox (for instance: half of the meeting for story selection, half of the meeting for task splitting).
+- [ ] Agree on how much capacity needs to be "saved" for bug fixing (might depend on the sprint).
+- [ ] Ensure everyone understands each story that is selected for the sprint.
+- [ ] Ensure everyone participates in story effort estimation.
 
 **Other considerations:**
 
