@@ -32,7 +32,7 @@ General guidance:
     - Is in the correct position in the backlog, by right priority order.
     - Contains a clear description.
     - Contains a clear [definition of done](./../team-agreements/definition-of-done/readme.md).
-    - Do NOT pre assigns stories to the future sprint. This is the purpose of the sprint planning.
+    - Does NOT pre assign stories to the future sprint. This is the purpose of the sprint planning.
   - During the meeting:
   
     - Describes to the team the stories that they propose for the sprint.
