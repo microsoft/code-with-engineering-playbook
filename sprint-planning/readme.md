@@ -12,8 +12,8 @@ During the [sprint planning](https://www.agilealliance.org/glossary/sprint-plann
 
 General guidance:
 
-- The sprint planning should happen at the begining of the new sprint (or at the end of the previous one). It usually last bewteen 1 and 4 hours depending on the size of the team and duration of the sprints.
-- Each story should be achievable in the sprint. Otherwise, you should split the story.
+- The sprint planning should happen at the beginning of the new sprint (or at the end of the previous one). It usually lasts between 1 and 4 hours depending on the size of the team and duration of the sprint.
+- Each story should be able to be completed within the duration of the sprint. Otherwise, the story should be broken up into multiple stories.
 - Each task duration should be somewhere between 2 to 8 hours.
 
 ## Participation
@@ -31,7 +31,7 @@ General guidance:
   
     - Is in the correct position in the backlog, by right priority order.
     - Contains a clear description.
-    - Contains a clear [definition of done](https://www.agilealliance.org/glossary/definition-of-done/).
+    - Contains a clear [definition of done](./../team-agreements/definition-of-done/readme.md).
     - Do NOT pre assigns stories to the future sprint. This is the purpose of the sprint planning.
   - During the meeting:
   
@@ -45,7 +45,7 @@ General guidance:
   - Split each story into tasks.
   - (Optional) self assign first task to team members.
 
-*(\*) some teams find useful to define a **[Definition of ready](https://www.agilealliance.org/glossary/definition-of-ready)** that describes the list of things that needs to be done in each story before the **product owner** can propose it for a **print**. The list proposed here is the classic minimal definition of ready.*
+*(\*) some teams find useful to define a **[Definition of ready](./../team-agreements/definition-of-ready/readme.md)** that describes the list of things that needs to be done in each story before the **product owner** can propose it for a **sprint**. The list proposed here is the classic minimal definition of ready.*
 
 ## Impact
 
@@ -57,7 +57,7 @@ General guidance:
 
 ## Measures
 
-- How many stories needed more work before being presented (and were rejected because not clear enough)?
+- How many stories needed more work before being presented (and were rejected because they were not clear enough)?
 - How realistic was the estimation of effort?
 - Team satisfaction (can be assessed during the retrospective): does everyone in the team feel included in sprint planning?
 
@@ -67,7 +67,7 @@ General guidance:
 
 - Set sprint goal.
 - Make sure the backlog is prioritized.
-- Make sure each story that is a candidate for next sprint is [ready](https://www.agilealliance.org/glossary/definition-of-ready).
+- Make sure each story that is a candidate for next sprint is [ready](./../team-agreements/definition-of-ready/readme.md).
 
 **During the meeting:**
 
@@ -80,4 +80,4 @@ General guidance:
 **Other considerations:**
 
 - Take into account off days (vacations, national holidays, unavailability).
-- If the amount of work in a Sprint is is too much to handle, you might want to split into different workstreams. This might require thinking about [scrum of scrums](./../scrum-of-scrums/readme.md) and all related ceremonies.
+- When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different workstreams. This might require thinking about [scrum of scrums](./../scrum-of-scrums/readme.md) and all related ceremonies.
