@@ -198,7 +198,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 At the next attempted commit any lint failures will block the commit.
 
-> Note: Installing pre-commit hooks is volontary and done by each developer individually. Thus it's not a replacement for build validation on the server
+> Note: Installing pre-commit hooks is voluntary and done by each developer individually. Thus it's not a replacement for build validation on the server
 
 ## Code Review Checklist
 
