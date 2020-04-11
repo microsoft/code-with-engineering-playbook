@@ -30,7 +30,7 @@ Updating the major / minor version indicates changes of the API / interfaces / c
 
 ## Semantic Versioning
 
-Semantic Versioning is a concept of calculating the version number automatically based on a certain source code rspository.
+Semantic Versioning is a concept of calculating the version number automatically based on a certain source code repository.
 
 The `semver` tool looks at a GIT source control branch and comes up with a *repeatable* and *unique* version number based on
 
