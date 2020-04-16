@@ -11,12 +11,20 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Sections
 
-- [Pillars of Observability](#pillars-of-observability)
-- [Recommended Practices](#recommended-practices)
-- [Pitfalls to Avoid](#pitfalls-to-avoid)
-- [Recommended Tools and Approaches](#recommended-tools-and-approaches)
-- [Tools](#tools)
-- [Recipes](#recipes)
+- [Observability](#observability)
+  - [Goals](#goals)
+  - [Sections](#sections)
+  - [Pillars of Observability](#pillars-of-observability)
+  - [Recommended Practices](#recommended-practices)
+  - [Pitfalls to avoid](#pitfalls-to-avoid)
+  - [Recommended Tools and Approaches](#recommended-tools-and-approaches)
+    - [Metrics vs Logs](#metrics-vs-logs)
+    - [Tools](#tools)
+    - [Collection](#collection)
+      - [1. Agent:](#1-agent)
+      - [2. SDK:](#2-sdk)
+      - [3. SDK-Agent:](#3-sdk-agent)
+  - [Recipes](#recipes)
 
 ## Pillars of Observability
 
@@ -38,6 +46,10 @@ Building observable systems enables development teams at CSE to measure how well
 Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system.
 
 ## Recommended Tools and Approaches
+
+### Metrics vs Logs
+
+Metrics and log data serve complimentary but different purposes when monitoring production systems. [Read more](log-vs-metric.md) about this in a breakdown of the two data types.
 
 ### Tools
 
