@@ -11,21 +11,12 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Sections
 
-- [Observability](#observability)
-  - [Goals](#goals)
-  - [Sections](#sections)
-  - [Pillars of Observability](#pillars-of-observability)
-  - [Recommended Practices](#recommended-practices)
-  - [Pitfalls to avoid](#pitfalls-to-avoid)
-  - [Recommended Tools and Approaches](#recommended-tools-and-approaches)
-    - [Metrics vs Logs](#metrics-vs-logs)
-    - [Tools](#tools)
-    - [Collection](#collection)
-      - [1. Agent:](#1-agent)
-      - [2. SDK:](#2-sdk)
-      - [3. SDK-Agent:](#3-sdk-agent)
-  - [Recipes](#recipes)
-
+- [Pillars of Observability](#pillars-of-observability)
+- [Recommended Practices](#recommended-practices)
+- [Pitfalls to Avoid](#pitfalls-to-avoid)
+- [Recommended Tools and Approaches](#recommended-tools-and-approaches)
+- [Tools](#tools)
+- [Recipes](#recipes)
 
 ## Pillars of Observability
 
