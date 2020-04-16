@@ -4,11 +4,11 @@
 
 During the [sprint planning](https://www.agilealliance.org/glossary/sprint-planning), the team discusses and agrees on the scope for the upcoming sprint.
 
-**Goals are:**
+Goals:
 
-- Selecting the **stories** that will be implemented in the sprint.
-- Estimating the **effort** required for the stories in the sprint.
-- Splitting the stories into **tasks**.
+- Select the **stories** that will be implemented in the sprint.
+- Estimate the **effort** required for the stories in the sprint.
+- Split the stories into **tasks**.
 
 General guidance:
 
@@ -18,26 +18,26 @@ General guidance:
 
 ## Participation
 
-**Everyone** in the team should participate in the sprint planning.
+**Everyone** in the team should participate in the sprint planning, including the Product Owner.
 
-**Specific roles:**
+Specific roles:
 
-- **[Scrum Master](https://www.agilealliance.org/glossary/scrum-master)**:
-  - Facilitates the conversation.
-  - Ensures everyone is heard.
-  - Reminds scrums principles and sprint planning goals if necessary.
-- **[Product owner](https://www.agilealliance.org/glossary/product-owner/)**:
+- [Scrum Master](https://www.agilealliance.org/glossary/scrum-master):
+  - Facilitate the conversation.
+  - Ensure everyone is heard.
+  - Remind scrums principles and sprint planning goals if necessary.
+- [Product owner](https://www.agilealliance.org/glossary/product-owner/):
   - Prior to the sprint planning: performs some [backlog grooming](../backlog-management/grooming/readme.md) to ensure that each story that they want to propose for the new sprint (*) :
   
     - Is in the correct position in the backlog, by right priority order.
-    - Contains a clear description.
-    - Contains a clear [definition of done](./../team-agreements/definition-of-done/readme.md).
-    - Does NOT pre assign stories to the future sprint. This is the purpose of the sprint planning.
+    - Is attending the [definition of ready](./../team-agreements/definition-of-ready/readme.md).
+  - Do NOT pre assign stories to the future sprint. This is the purpose of the sprint planning.
   - During the meeting:
-  
-    - Describes to the team the stories that they propose for the sprint.
 
-- **All team members**:
+    - Clarify team's questions and improve the story accordingly, if necessary.
+    - Describe to the team the stories that they propose for the sprint.
+
+- All team members:
 
   - Listen to the product owner story description.
   - Ask questions to make sure everyone understands each story properly.
@@ -49,11 +49,12 @@ General guidance:
 
 ## Impact
 
-**Sprint planning key benefits:**
+Sprint planning key benefits:
 
 - Everyone participates, the entire team is aware of the scope of the sprint.
-- Each team member takes responsibility in the sprint scope by participating in the stories discovery, sign up, prioritization and estimation.
-- Creates a platform to communicate, discover and discuss dependencies.
+- The team has an agreement on the goal of the sprint.
+- Each team member takes responsibility in the sprint scope by participating in the stories discovery, prioritization and estimation.
+- Creates a channel to communicate, discover and discuss dependencies.
 
 ## Measures
 
@@ -63,21 +64,21 @@ General guidance:
 
 ## Facilitation Guidance
 
-**Prior to the meeting:**
+Prior to the meeting:
 
-- [ ] Set sprint goal.
-- [ ] Make sure the backlog is prioritized.
-- [ ] Make sure each story that is a candidate for next sprint is [ready](./../team-agreements/definition-of-ready/readme.md).
+- Set sprint goal.
+- Make sure the backlog is prioritized.
+- Make sure each story that is a candidate for next sprint is [ready](./../team-agreements/definition-of-ready/readme.md).
 
-**During the meeting:**
+During the meeting:
 
-- [ ] Confirming team capacity. This should be done using the average velocity (number of points achieved per sprint) and removing the project vacations/holidays/off days. If it helps, you can get the daily average velocity, divide by the number of team members and multiply by number of off days.
-- [ ] Timebox (for instance: half of the meeting for story selection, half of the meeting for task splitting).
-- [ ] Agree on how much capacity needs to be "saved" for bug fixing (might depend on the sprint).
-- [ ] Ensure everyone understands each story that is selected for the sprint.
-- [ ] Ensure everyone participates in story effort estimation.
+- Confirm team capacity. This should be done using the average velocity (number of points achieved per sprint) and removing the project vacations/holidays/off days. If it helps, you can get the daily average velocity, divide by the number of team members and multiply by number of off days.
+- Timebox (for instance: half of the meeting for story selection, half of the meeting for task splitting).
+- Agree on how much capacity needs to be "saved" for bug fixing (might depend on the sprint).
+- Ensure everyone understands each story that is selected for the sprint.
+- Ensure everyone participates in story effort estimation.
 
-**Other considerations:**
+Other considerations:
 
 - Take into account off days (vacations, national holidays, unavailability).
 - When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different workstreams. This might require thinking about [scrum of scrums](./../scrum-of-scrums/readme.md) and all related ceremonies.
