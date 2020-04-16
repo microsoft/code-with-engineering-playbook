@@ -12,7 +12,7 @@ Log data inform observers about the discreet events that occurred within a compo
 
 ## Formats & Collection Methods
 
-### Logs
+### Log Collection
 
 When it comes to log collection methods, two of the standard techniques are a direct-write or an agent-based approach.
 
@@ -41,7 +41,7 @@ This approach isn't without trade-offs:
 - Required exclusive CPU & memory resources for the processing of log data.
 - Persistent disk space for buffering.
 
-### Metrics
+### Metric Collection
 
 Metric collection approaches fall into two broad categories: push metrics & pull metrics. Push metrics means that the originating component sends the data to a remote service or agent. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor) and [Etsy's statsd](https://github.com/statsd/statsd) are examples of push metrics. Some of the strengths with push metrics include:
 
