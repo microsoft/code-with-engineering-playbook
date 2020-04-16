@@ -26,6 +26,7 @@ Building observable systems enables development teams at CSE to measure how well
       - [3. SDK-Agent:](#3-sdk-agent)
   - [Recipes](#recipes)
 
+
 ## Pillars of Observability
 
 1. [Logging](pillars/logging.md)
