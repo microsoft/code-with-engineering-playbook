@@ -13,6 +13,7 @@
 * It can also be a link to the [work item](http://link-to-feature-or-story-work-item).
 * Describe the feature/story with a high-level summary.
 * Consider additional background and justification, for posterity and historical context.
+* List any assumptions that were made for this design.
 
 ## Goals/In-Scope
 
@@ -31,8 +32,9 @@
 
 ## Technology
 
-* Describe the relevant OS, Web server, presentation layer, persistence layer, caching, eventing/messaging/jobs, etc. – whatever is applicable to the overall technology solution.
+* Describe the relevant OS, Web server, presentation layer, persistence layer, caching, eventing/messaging/jobs, etc. – whatever is applicable to the overall technology solution and how are they going to be used.
 * Describe the usage of any libraries of OSS components.
+* Briefly list the languages(s) and platform(s) that comprise the stack.
 
 ## Non-Functional Requirements
 
