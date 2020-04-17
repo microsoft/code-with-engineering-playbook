@@ -1,6 +1,4 @@
-# Testing
-
-## Unit vs Integration vs System vs E2E Testing
+# Unit vs Integration vs System vs E2E Testing
 
 To better understand which testing methodology when to apply it in your project, the below table illustrates the most critical characteristics and differences between Unit, Integration, System and End-to-End testing:
 
@@ -14,9 +12,3 @@ Isolated unit test | Tests interfaces and flow data between the modules | Tests 
 The test scenarios use developers perspectives | The test scenarios use developers and IT Pro testers perspectives | The test scenarios use the developers and QA testers perspectives | The test scenarios use the end-user perspectives |
 Unit testing happens after each build | Integration test happens after Unit testing | System testing happens before the E2E testing and after Unit and Integration testing | E2E testing happens after System testing |
 Automation testing | It can be manual or automation testing | It can be manual or automation testing | It is a manual testing |
-
-## Sections within Testing
-
-* [Unit testing](unit-testing/readme.md)
-* [Integration testing](integration-testing/readme.md)
-* [End-to-End testing](e2e-testing/readme.md)

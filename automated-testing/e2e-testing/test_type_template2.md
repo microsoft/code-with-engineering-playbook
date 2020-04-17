@@ -18,6 +18,10 @@ In this section, describe what good testing looks like for this test type, discu
 
 In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information.
 
+## Examples/Case studies
+
+If available, list some good examples or case studies for this test type and elaborate on what is good about them.
+
 ## Conclusion
 
 In conclusion, provide the final thoughts on why and how this type of test can help with your next customer engagement, what best practices and recommendations that can be withdrawn from the case studies and research.

@@ -137,7 +137,7 @@ In the examples above, we refactored a specification to be concise and flexible 
 
 ## Other Features
 
-This is brief introduction to a few Gauge features. Please browse through rest of the documentation for features like:
+This is brief introduction to a few Gauge features. Please refer to the Gauge documentation for additional features such as:
 
 - [Reports](https://docs.gauge.org/getting_started/view-a-report.html)
 - [Tags](https://docs.gauge.org/execution.html?#filter-specifications-and-scenarios-by-using-tags)
