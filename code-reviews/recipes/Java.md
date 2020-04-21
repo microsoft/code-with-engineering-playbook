@@ -4,7 +4,7 @@
 
 [CSE](../../CSE.md) developers generally follow the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
 
-## Code Analysis
+## Code Analysis / Linting
 
 We strongly believe that consistent style increases readability and maintainability of a code base. Hence we are recommending analyzers to enforce consistency and style rules.
 

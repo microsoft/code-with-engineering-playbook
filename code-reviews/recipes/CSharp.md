@@ -4,7 +4,7 @@
 
 [CSE](../../CSE.md) developers follow Microsoft's [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions) and, where applicable, Microsoft's [Secure Coding Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines).
 
-## Linting
+## Code Analysis / Linting
 
 We strongly believe that consistent style increases readability and maintainability of a code base. Hence we are recommending analyzers / linters to enforce consistency and style rules.
 
@@ -47,7 +47,7 @@ The [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconf
 
 Microsoft's FxCop analyzers check your code for security, performance, and design issues, among others. [Install FxCop analyzers in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019).
 
-You can install the FxCop analyzers using nuget or a VSIX extension. We recommend using the nuget package ([see Project setup](#project-setup)). Which allows for consistent use accross all developers on a project as well as CI validation.
+You can install the FxCop analyzers using nuget or a VSIX extension. We recommend using the nuget package ([see Project setup](#project-setup)). Which allows for consistent use across all developers on a project as well as CI validation.
 
 ### StyleCop analyzer
 

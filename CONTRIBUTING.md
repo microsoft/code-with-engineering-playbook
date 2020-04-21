@@ -76,8 +76,7 @@ prompted the pull request.
 ### Merging strategy
 
 The preferred merging strategy for this repo is **linear**.
-You can familiarize yourself with merging strategies described in the
-["git guidance in this repo"](./source-control/git.md) document.
+You can familiarize yourself with [merging strategies](./source-control/contributing/readme.md#merging-strategies) described in the Source Control section of this repo.
 
 ## Adding a new section
 

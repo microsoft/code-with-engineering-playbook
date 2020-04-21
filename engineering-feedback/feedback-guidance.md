@@ -47,6 +47,15 @@ Describe the impact to the customer and engagement that this feedback implies.
 
 Provide a timeframe that this feedback item needs to be resolved within (if relevant).
 
+### Priority
+
+Please provide the customer perspective priority of the feedback.  Feedback is prioritized at one of the following four levels:
+
+- __P0 - Impact is critical and large__: Needs to be addressed immediately; impact is critical and large in scope (i.e. major service outage; makes service or functions unusable/unavailable to a high portion of addressable space; no known workaround).
+- __P1 - Impact is high and significant__: Needs to be addressed quickly; impacts a large percentage of addressable space and impedes progress. A partial workaround exists or is overly painful.
+- __P2 - Impact is moderate and varies in scope__: Needs to be addressed in a reasonable timeframe (i.e. issues that are impeding adoption and usage with no reasonable workarounds). For example, feedback may be related to feature-level issue to solve for friction.
+- __P3 - Impact is low__: Issue can be address when able or eventually (i.e. relevant to core addressable space but issue does not impede progress or has reasonable workaround). For example, feedback may be related to feature ideas or opportunities.
+
 ## Repro Steps
 
 The repro steps are important since they help confirm and replay the issue, and are essential in demonstrating success once there is a resolution.

@@ -9,7 +9,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] PRs reference related work items.
 - [ ] Commit history is consistent and commit messages are informative (what, why).
 - [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](continuous-integration/credential-scanning/readme.md))
-- [ ] Public repositories follow the [OSS guidelines](source-control/git.md), see `Required files for public repositories`.
+- [ ] Public repositories follow the [OSS guidelines](source-control/contributing/readme.md#required-files-in-default-branch-for-public-repositories), see `Required files in default branch for public repositories`.
 
 More details on [Source Control](source-control/readme.md)
 
@@ -40,12 +40,13 @@ More details on [Unit Testing](automated-testing/unit-testing/readme.md)
 
 ## Observability
 
+- [ ] Significant business and functional events are tracked and related metrics collected.
 - [ ] Application faults and errors are logged.
-- [ ] Metrics collected to identify health of the services.
-- [ ] Latency for servicing a request is logged, as appropriate for the solution.
-- [ ] Significant business and functional events that are important are tracked and related metrics collected.
-- [ ] Logging configuration can be modified without code changes (eg: debug mode).
-- [ ] GDPR compliance is ensured regarding PII (personal identifiable information).
+- [ ] Health of the system is monitored.
+- [ ] The client and server side observability data can be differentiated.
+- [ ] Logging configuration can be modified without code changes (eg: verbose mode).
+- [ ] [Incoming tracing context](observability/correlation-id.md) is propagated to allow for production issue debugging purposes.
+- [ ] GDPR compliance is ensured regarding PII (Personally Identifiable Information).
 
 ## Agile/Scrum
 

@@ -11,7 +11,7 @@ Pull requests enable:
   * Unit tests
   * Integration tests etc.
 
-The requirements of pull requests can and should be enforced by policies, which can be set in the most modern version control and work item tracking systems. See [Evidence and Measures section](./README.md#evidence-and-measures) on Code Reviews page for more information.
+The requirements of pull requests can and should be enforced by policies, which can be set in the most modern version control and work item tracking systems. See [Evidence and Measures section](./evidence-and-measures/README.md) for more information.
 
 ## General Process
 
@@ -23,15 +23,15 @@ The requirements of pull requests can and should be enforced by policies, which 
     * Write and/or update tests to cover the changes and make sure all new and existing tests pass
     * Write and/or update the documentation to match the changes
 1. Once convinced the criteria above are met, create and submit a new pull request adhering to the [pull request template](./pull-request-template.md)
-1. Follow the [code review](./README.md) process to merge the changes to the main codebase
+1. Follow the [code review](./process-guidance/README.md) process to merge the changes to the main codebase
 
 ## Size Guidance
 
 We should always aim to have pull requests be as small as possible, without losing context and technical feasibility. Small PRs have multiple advantages:
 
 1. They are easier to review; a clear benefit for the reviewers.
-2. They are easier to deploy; this is aligned with the strategy of release fast and release often.
-3. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
+1. They are easier to deploy; this is aligned with the strategy of release fast and release often.
+1. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
 
 However, we should avoid having PRs that include code that is without context or loosely coupled.
 
