@@ -1,9 +1,9 @@
 ## Observability in Machine Learning
 
-Systems with machine learning model component 
+List of proposed topics to cover: 
 
 ### Model experimentation and tuning : logging and dashboard
-<here is about metrics logging, comparison variuos models, dashboards>
+<here is about metrics logging, comparison various models, dashboards>
 When developing and tuning machine learning models data scientist experiments with various parameters
 and model performance metrics. 
 Tools that facilitate team of data scientists to observe and share modelling results are.
