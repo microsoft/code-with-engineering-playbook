@@ -9,6 +9,15 @@ Building observable systems enables development teams at CSE to measure how well
 3. Measure operational performance of the system.
 4. Identify and diagnose failures to get to the problem fast.
 
+## Sections
+
+- [Pillars of Observability](#pillars-of-observability)
+- [Recommended Practices](#recommended-practices)
+- [Pitfalls to Avoid](#pitfalls-to-avoid)
+- [Recommended Tools and Approaches](#recommended-tools-and-approaches)
+- [Tools](#tools)
+- [Recipes](#recipes)
+
 ## Pillars of Observability
 
 1. [Logging](pillars/logging.md)
@@ -26,16 +35,7 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Pitfalls to avoid
 
-Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system
-
-## What is collected
-
-1. **Latency**: Time taken to service a request.
-2. **Traffic**: Measurement of how much demand is placed on the system, typically number of requests per second.
-3. **Errors**: Errors, application faults and traces with adequate information on error messages.
-4. Identify a unique value (correlation identifier) that will be consistently tagged with data.
-
-In addition to above, engineers are encouraged to have conversations to understand other logs, metrics, data that adds value to the customer.
+Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system.
 
 ## Recommended Tools and Approaches
 

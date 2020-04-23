@@ -4,9 +4,11 @@ There are many different options when working with Source Control. In [CSE](../C
 
 ## Sections within Source Control
 
-* [Git](git.md)
+* [Contributing Source Code](contributing/readme.md)
 * [Feature Branching](feature-branching/readme.md)
 * [Versioning](versioning/readme.md)
+* [Working with Secrets](secrets-management/readme.md)
+* [Git Guidance](git-guidance/readme.md)
 
 ## Goal
 
@@ -21,14 +23,15 @@ Consistency is important, so agree to the approach as a team before starting to 
 The team should at least be doing the following:
 
 * Agree on the **branch**, **release** and **merge strategy**
-* Define the commit history approach ([linear or non-linear](./git.md#Commit-history))
+* Define the merge strategy ([linear or non-linear](./contributing/readme.md#merge-strategies))
 * Lock the default branch and merge using [pull requests (PRs)](../code-reviews/pull-requests.md)
-* Agree on [branch naming](./git.md#Naming-branches) (e.g. `user/your_alias/feature_name`)
+* Agree on [branch naming](./contributing/readme.md#naming-branches) (e.g. `user/your_alias/feature_name`)
 * Establish [branch/PR policies](../code-reviews/pull-requests.md)
 * For public repositories the default branch should contain the following files:
   * [LICENSE](../resources/templates/LICENSE)
   * [README.md](../resources/templates/README.md)
   * [CONTRIBUTING.md](../resources/templates/CONTRIBUTING.md)
+
 
 ## Mixed DevOps Environments
 
@@ -101,5 +104,5 @@ References:
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
 * [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/)
 * [The GitHub Hello World](https://guides.github.com/activities/hello-world/)
-* [CSE Git details](git.md) details on how to use Git as part of a [CSE](../CSE.md) project.
+* [CSE Git details](./git-guidance/readme.md) details on how to use Git as part of a [CSE](../CSE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
