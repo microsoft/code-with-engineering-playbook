@@ -4,7 +4,7 @@ This is a list of questions / frequently occurring issues when working with code
 
 ## We experience very large PRs, how can we fix this?
 
-Make sure you size the work items smaller. They should be able to be completed on its own. The team is instructed to commit early, before the full product backlog item / user story is complete, but rather when an individual item is done. If the work would result in an incomplete feature, make sure it can be turned off, until the full feature was delivered.
+Make sure you size the work items smaller. They should be able to be completed on their own. The team is instructed to commit early, before the full product backlog item / user story is complete, but rather when an individual item is done. If the work would result in an incomplete feature, make sure it can be turned off, until the full feature is delivered.
 More information can be found in [Pull Requests - Size Guidance](./pull-requests.md#size-guidance).
 
 ## We experience slow code reviews, causing delays in delivering features
@@ -12,9 +12,9 @@ More information can be found in [Pull Requests - Size Guidance](./pull-requests
 ### Possible actions you can take:
 
 - Add a rule for PR turnaround time to your work agreement.
-- Setup a slot after the standup to go through pending PRs and assign the ones that are inactive
-- Dedicate a PR review master who will be responsible to keep things flowing by assigning or notifying people when PR got stale
-- Use tools to better indicate stale reviews - [Customize ADO - Task Boards](./process-guidance/customize-ado.md#task-boards)
+- Setup a slot after the standup to go through pending PRs and assign the ones that are inactive.
+- Dedicate a PR review master who will be responsible to keep things flowing by assigning or notifying people when PR got stale.
+- Use tools to better indicate stale reviews - [Customize ADO - Task Boards](./process-guidance/customize-ado.md#task-boards).
 
 ## Reviewing a complex PR on GitHub can be hard, is there a more integrated way?
 
