@@ -136,7 +136,7 @@ Save your guidelines together with your documentation so they are easy to refer 
 ### Wording
 
 - Use inclusive language, and avoid jargon and uncommon words. The docs should be easy to understand
-- Be clear and consise, stick to the goal of the document
+- Be clear and concise, stick to the goal of the document
 - Use active voice
 - Spell check and grammar check the text
 - Always follow chronological order
