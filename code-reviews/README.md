@@ -15,22 +15,8 @@ Code reviews is a way to have a conversation about the code where participants w
 - [Process Guidance](./process-guidance/README.md)
 - [Evidence and Measures](./evidence-and-measures/README.md)
 - [Language Specific Guidance](./recipes/README.md)
-- [Q&A](#qa)
+- [FAQ](./faq.md)
 - [Resources](#resources)
-
-## Q&A
-
-### Q: We pair or mob. Why do we need code reviews
-
-Our peer code reviews are structured around best practices to find specific kinds of errors. Much like you would still run a linter over mobbed code, you would still ask someone to make the last pass to make sure the code conforms to expected standards and avoids common pitfalls.
-
-### Q: What if we do pair programming
-
-Someone outside of the pair should perform the code review. One of the other major benefits of code reviews is spreading knowledge about the code base to other members of the team that don't usually work in the part of the codebase under review.
-
-### Q: What if we do mob programming
-
-A member of the mob who spent less (or no) time at the keyboard should perform the code review.
 
 ## Resources
 
