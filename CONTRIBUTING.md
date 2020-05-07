@@ -54,7 +54,7 @@ In this repo, we use the following branch naming conventions:
 > * Please, do not use personal branches. Work should refer back to a
 feature/bug fix in the backlog.
 > * Mind the capitalization of the branch prefix (feature, fix). Tools that
-diplay branches as a hierarchy are typically case sensitive, and will display
+display branches as a hierarchy are typically case sensitive, and will display
 different hierarchies for the same words with different capitalization.
 
 ### Linting
@@ -94,7 +94,7 @@ Each section consist of the following parts
 3. Recipes
    1. Tool specific implementations of the concept
    2. Named patterns or games that implement the concept (usually applies to
-   agile cermonies)
+   agile ceremonies)
 4. Case Studies
    1. Examples that illustrate how a team implemented the concept
    2. What problem was the team try to solve with their implementation?

@@ -59,7 +59,7 @@ The purpose of this document is to:
   - Determine what environments are appropriate for this solution
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
 - [ ] [Decide on a versioning strategy](source-control/versioning/readme.md)
-- [ ] Agree on how to [Desing a feature and conduct a Design Review](design-reviews/readme.md)
+- [ ] Agree on how to [Design a feature and conduct a Design Review](design-reviews/readme.md)
 
 ### Day 5
 
