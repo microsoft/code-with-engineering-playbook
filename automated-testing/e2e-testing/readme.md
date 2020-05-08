@@ -93,7 +93,7 @@ The tracing the quality metrics gives insight about the current status of testin
 
 ### **1) Gauge Framework**
 
-![Gauge Framework](/images/gauge.jpg)
+![Gauge Framework](./images/gauge.jpg)
 
 Gauge is a free and open source framework for writing and running E2E tests. Some of the key features of Gauge that makes it unique include:
 
@@ -109,7 +109,7 @@ Gauge is a free and open source framework for writing and running E2E tests. Som
 
 ### **2) Robot Framework**
 
-![Robot Framework](/images/robot.jpg)
+![Robot Framework](./images/robot.jpg)
 
 Robot Framework is a generic open source automation framework. The framework has easy syntax, utilizing human-readable keywords. Its capabilities can be extended by libraries implemented with Python or Java.
 
@@ -119,7 +119,7 @@ Robot shares a lot of the same "pros" as Gauge, with the exception of the develo
 
 ### **3) TestCraft**
 
-![TestCraft](/images/TestCraft-logo.png)
+![TestCraft](./images/TestCraft-logo.png)
 
 TestCraft is a codeless Selenium test automation platform. Its revolutionary AI technology and unique visual modeling allow for faster test creation and execution while eliminating test maintenance overhead.
 
@@ -129,7 +129,7 @@ The testers create fully automated test scenarios without coding. Customers find
 
 ### **4) Ranorex Studio**
 
-![Ranorex Studio](/images/ranorex-studio2.png)
+![Ranorex Studio](./images/ranorex-studio2.png)
 
 **Ranorex Studio** is a complete end-to-end test automation tool for desktop, web, and mobile applications. Create reliable tests fast without any coding at all, or using the full IDE. Use external CSV or Excel files or a SQL database as inputs to your tests.
 
@@ -141,7 +141,7 @@ Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ra
 
 ### **5) Katalon Studio**
 
-![Katalon](/images/New-Logo-Katalon-Studio.png)
+![Katalon](./images/New-Logo-Katalon-Studio.png)
 
 **Katalon Studio** is an excellent end-to-end automation solution for web, API, mobile, and desktop testing with DevOps support.
 

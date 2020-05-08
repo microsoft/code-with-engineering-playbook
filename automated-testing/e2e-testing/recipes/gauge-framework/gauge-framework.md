@@ -10,8 +10,6 @@ Gauge is a free and open source framework for writing and running E2E tests. Som
 - Helps you create maintainable test suites
 - Supports Visual Studio Code, Intellij IDEA, IDE Support
 
-The purpose of this branch is to evaluate the Gauge testing framework for suitability of using as the E2E framework in Kroger DASH project.
-
 ## What is a Specification
 
 Gauge specifications are written using a Markdown syntax. For example
