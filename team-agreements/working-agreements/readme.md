@@ -4,7 +4,7 @@ A working agreement is a document or a set of documents that describe how we wor
 
 The working agreement created by the team at the beginning of the project, and is stored in the repository so that it is readily available for everyone working on the project.
 
-The following are examples of sections and points that can be part of a working agreement but each team should compose their own, and adjust times, communication channels etc. to fit their team needs.
+The following are examples of sections and points that can be part of a working agreement but each team should compose their own, and adjust times, communication channels, branch naming policies etc. to fit their team needs.
 
 ## General
 
@@ -23,7 +23,7 @@ The following are examples of sections and points that can be part of a working 
 ## Work life balance
 
 - Our office hour, when we can expect to collaborate via Microsoft Teams, phone or face-to-face are Monday to Friday 10AM-5PM
-- We are not expected to answer emails past 6PM, on weekends on when we are on holidays or vacation.
+- We are not expected to answer emails past 6PM, on weekends or when we are on holidays or vacation.
 - We work in different time zones and respsect this, especially when setting up recurring meetings.
 - We record meetings when possible, so that team members who could not attend live can listen later.
 
