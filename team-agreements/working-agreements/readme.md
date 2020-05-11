@@ -29,7 +29,7 @@ The following are examples of sections and points that can be part of a working 
 
 ## Quality and not quantity
 
-- We, together on a [Definition of Done](../definition-of-done/readme.md) for our user story's and sprints and live by it.
+- We agree on a [Definition of Done](../definition-of-done/readme.md) for our user story's and sprints and live by it.
 - We follow engineering best practices like the [Code With Engineering Playbook](https://github.com/microsoft/code-with-engineering-playbook)
 
 ## Scrum rhythm
