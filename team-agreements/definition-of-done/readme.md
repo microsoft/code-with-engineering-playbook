@@ -2,7 +2,7 @@
 
 To close a user story, a sprint, or a milestone it is important to verify that the tasks are complete.
 
-The development team should decide together what their definition of done is and document this in the project. Below are some examples of checks to verify that the user story, sprint, task is completed.
+The development team should decide together what their Definition of Done is and document this in the project. Below are some examples of checks to verify that the user story, sprint, task is completed.
 
 ## Feature/User Story
 
@@ -24,6 +24,7 @@ The development team should decide together what their definition of done is and
 - [] Product backlog is updated
 - [] Functional and Integration tests pass
 - [] Performance tests pass
+- [] End 2 End tests pass
 - [] All bugs are fixed
 - [] The sprint is singed off from developers, software architects, project manager, product owner etc.
 
