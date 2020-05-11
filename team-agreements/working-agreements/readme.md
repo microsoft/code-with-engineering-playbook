@@ -4,7 +4,7 @@ A working agreement is a document or a set of documents that describe how we wor
 
 The working agreement created by the team at the beginning of the project, and is stored in the repository so that it is readily available for everyone working on the project.
 
-The following are examples of sections and points that can be part of a working agreement but each team should compose their own, and adjust times etc. to fit their team needs.
+The following are examples of sections and points that can be part of a working agreement but each team should compose their own, and adjust times, communication channels etc. to fit their team needs.
 
 ## General
 
