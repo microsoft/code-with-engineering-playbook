@@ -57,7 +57,7 @@ The minimum rules set teams should adopt is the [Managed Recommended Rules](http
 
 ## Automatic Code Formatting
 
-Use .editorconfig to configure code formatting rules in your poject.
+Use .editorconfig to configure code formatting rules in your project.
 
 ## Build validation
 
