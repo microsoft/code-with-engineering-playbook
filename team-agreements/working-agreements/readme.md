@@ -22,7 +22,7 @@ The following are examples of sections and points that can be part of a working 
 
 ## Work life balance
 
-- Our office hour, when we can expect to collaborate via Microsoft Teams, phone or face-to-face are Monday to Friday 10AM-5PM
+- Our office hours, when we can expect to collaborate via Microsoft Teams, phone or face-to-face are Monday to Friday 10AM - 5PM
 - We are not expected to answer emails past 6PM, on weekends or when we are on holidays or vacation.
 - We work in different time zones and respsect this, especially when setting up recurring meetings.
 - We record meetings when possible, so that team members who could not attend live can listen later.
@@ -36,12 +36,12 @@ The following are examples of sections and points that can be part of a working 
 
 | Activity | When | Duration | Who | Accountable | Goal |
 |-|-|-|-|-|-|
-| [Project Standup](./sprint-planning/../../../stand-ups/readme.md) | Tue-Fri 9AM | 15 min | Dev Team, PM | Scrum Master | What has been accomplished, next steps, blockers |
-| Sprint Demo | Monday 9AM | 1 hour | Dev Team, PM, PO | PM and Dev Lead | Present work done and sign off on user story completion |
-| [Sprint Retro](./../../retrospectives/readme.md) | Monday 10PM | 1 hour | Dev Team, PM | Scrum Master | Dev Teams shares learnings and what can be improved |
-| [Sprint Planning](./../../sprint-planning/readme.md) | Monday 11PM | 1 hour | Dev Team, PM, Customer PO | PM | Size and plan user stories for the sprint |
-| Task Creation | After Sprint Planning | - | Dev Team, PM | Dev Lead | Create tasks to clarify and determine velocity |
-| [Backlog grooming](../../backlog-management/grooming/readme.md) | Wednesday 2PM | 1 hour | PM, PO, Dev Lead, Scrum Master, Dev Team | PM | Prepare for next sprint and ensure that stories are ready for next sprint. |
+| [Project Standup](./sprint-planning/../../../stand-ups/readme.md) | Tue-Fri 9AM | 15 min | Everyone | Scrum Master | What has been accomplished, next steps, blockers |
+| Sprint Demo | Monday 9AM | 1 hour | Everyone | Tech Lead | Present work done and sign off on user story completion |
+| [Sprint Retro](./../../retrospectives/readme.md) | Monday 10AM | 1 hour | Everyone | Scrum Master | Dev Teams shares learnings and what can be improved |
+| [Sprint Planning](./../../sprint-planning/readme.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
+| Task Creation | After Sprint Planning | - | Dev Team | Tech Lead | Create tasks to clarify and determine velocity |
+| [Backlog grooming](../../backlog-management/grooming/readme.md) | Wednesday 2PM | 1 hour | Tech lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
 
 ## Backlog management
 
