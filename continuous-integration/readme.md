@@ -70,6 +70,7 @@ An automated build should encompass the following principles:
   - We encourage maintaining a consistent developer experience for all team members. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
   - Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies.
   - All developers on the team should be able to emulate the build environment from their local desktop regardless of their OS.
+  - For projects using VS Code, leveraging [Dev Containers](https://code.visualstudio.com/docs/remote/containers) can really help standardize the local developer experience across the team. Feel free to reuse any one of our technology stack themed dev container from the [container gallery](./devcontainers/). Contributions to the gallery are always welcomed.
   - Well established software packaging tools like Docker, Maven, npm, etc should be considered when designing your build automation tool chain.
 - [ ] **Document local setup**
   - The setup process for setting up a local build environment should be well documented and easy for developers to follow.
