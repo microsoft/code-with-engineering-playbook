@@ -1,6 +1,6 @@
 # Scrum of Scrums
 
-Scrum or scrums is a technique used to scale Scrum to a larger group working under the same project goal. In Scrum we consider a team being too big when going over 10-12 individuals. This should be decided on a case by case basis. If the project is set up in multiple workstreams that contain a fixed group of people and a common [stand-up](../stand-ups/readme.md) meeting is slowing down productivity: scrum of scrums should be considered. You would identify the different sub teams that would almost act as separate scrum team.
+Scrum of scrums is a technique used to scale Scrum to a larger group working towards the same project goal. In Scrum we consider a team being too big when going over 10-12 individuals. This should be decided on a case by case basis. If the project is set up in multiple workstreams that contain a fixed group of people and a common [stand-up](../stand-ups/readme.md) meeting is slowing down productivity: scrum of scrums should be considered. The team would identify the different sub groups that would act as a separate scrum teams with their own backlog, board and [stand-up](/scrum-of-scrums/readme.md).
 
 ## Goals
 
