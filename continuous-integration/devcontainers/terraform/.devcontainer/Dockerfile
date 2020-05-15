@@ -14,6 +14,8 @@ RUN apt-get update \
     && apt-get -y install git procps lsb-release unzip \
     # Install Editor
     && apt-get install vim -y \
+    # Install JQ
+    && apt-get install jq -y \
     # Install Terraform, tflint
     && mkdir -p /tmp/docker-downloads \
     && curl -sSL -o /tmp/docker-downloads/terraform.zip https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
@@ -50,9 +52,9 @@ RUN \
 
 # Install AzDO terraform provider
 RUN git clone ${TERRAFORM_PROVIDER_AZUREDEVOPS_REPO}
-ADD . ${TERRAFORM_PROVIDER_AZUREDEVOPS_NAME}
-RUN (cd ${TERRAFORM_PROVIDER_AZUREDEVOPS_NAME} && make build) \
-    && rm -rf ${TERRAFORM_PROVIDER_AZUREDEVOPS_NAME}
+RUN ./${TERRAFORM_PROVIDER_AZUREDEVOPS_NAME}/scripts/build.sh
+RUN ./${TERRAFORM_PROVIDER_AZUREDEVOPS_NAME}/scripts/local-install.sh
+RUN rm -rf ${TERRAFORM_PROVIDER_AZUREDEVOPS_NAME}
 
 # Git command prompt
 RUN git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1 \
@@ -60,8 +62,3 @@ RUN git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prom
 
 # Add alias
 RUN echo "alias tf=terraform" >> "/root/.bashrc"
-
-# Switch back to dialog for any ad-hoc use of apt-get
-ENV DEBIAN_FRONTEND=dialog
-
-RUN curl -sfL https://install.goreleaser.com/github.com/goreleaser/goreleaser.sh | sh -s -- "v0.132.1"
