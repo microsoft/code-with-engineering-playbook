@@ -57,7 +57,7 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 ### Design Review Templates
 
-#### Game Plan
+#### [Game Plan](./recipes/high-level-design-recipe.md)
 
 - The same template already in use today
 - High level architecture and design
