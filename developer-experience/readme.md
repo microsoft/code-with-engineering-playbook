@@ -74,6 +74,14 @@ The team members of the team can also help hold each other accountable for provi
   - Introduction of new tech whose testability is limited to manual steps in a deployed environment.
   - Addition of new repository
 
+### New Team Members - Identify Iterative Improvements
+
+New team members are uniquely positioned to identify instances of undocumented [Collective Wisdom](https://en.wikipedia.org/wiki/Collective_wisdom). The following outlines responsibilities of new team members as it relates to devex:
+
+- If you come across missing, incomplete or incorrect documentation while onboarding, you should open a PR to fix it.
+- Contribute to the developer onboarding plan if you find there to be missing steps or information. If no plan exists, create one.
+
+
 ## Facilitation Guidance
 
 The following outline examples of several strategies that can be adopted to promote a positive developer experience. It is expected that each team should define what a positive dev experience means within the context of their project. Additionally, refine that over time via feedback mechanisms such as sprint and project retrospectives.
