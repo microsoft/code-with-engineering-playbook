@@ -81,7 +81,6 @@ New team members are uniquely positioned to identify instances of undocumented [
 - If you come across missing, incomplete or incorrect documentation while onboarding, you should open a PR to fix it.
 - Contribute to the developer onboarding plan if you find there to be missing steps or information. If no plan exists, create one.
 
-
 ## Facilitation Guidance
 
 The following outline examples of several strategies that can be adopted to promote a positive developer experience. It is expected that each team should define what a positive dev experience means within the context of their project. Additionally, refine that over time via feedback mechanisms such as sprint and project retrospectives.
