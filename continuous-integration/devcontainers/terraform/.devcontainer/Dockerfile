@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 ARG TERRAFORM_VERSION=0.12.24
 ARG TFLINT_VERSION=0.15.3
+ARG TERRAFORM_LSP=0.0.11-beta1
 ARG TERRAFORM_PROVIDER_AZUREDEVOPS_NAME=terraform-provider-azuredevops
 ARG TERRAFORM_PROVIDER_AZUREDEVOPS_REPO=https://github.com/microsoft/terraform-provider-azuredevops.git
 
@@ -24,7 +25,10 @@ RUN apt-get update \
     && curl -sSL -o /tmp/docker-downloads/tflint.zip https://github.com/wata727/tflint/releases/download/v${TFLINT_VERSION}/tflint_linux_amd64.zip \
     && unzip /tmp/docker-downloads/tflint.zip \
     && mv tflint /usr/local/bin \
-    && cd ~ \ 
+    && curl -sSL -o /tmp/docker-downloads/lsp.tar.gz https://github.com/juliosueiras/terraform-lsp/releases/download/v${TERRAFORM_LSP}/terraform-lsp_${TERRAFORM_LSP}_linux_amd64.tar.gz \
+    && tar -xvf /tmp/docker-downloads/lsp.tar.gz \
+    && mv terraform-lsp /usr/local/bin \
+    && cd ~ \
     && rm -rf /tmp/docker-downloads \
     # Install the Azure CLI
     && curl -sL https://aka.ms/InstallAzureCLIDeb | bash \
