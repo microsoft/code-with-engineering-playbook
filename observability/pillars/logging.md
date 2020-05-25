@@ -8,7 +8,7 @@ Logs are discrete events with the goal of helping engineers identify problem are
 
 When it comes to log collection methods, two of the standard techniques are a direct-write or an agent-based approach.
 
-Directly written log events are handled in-process of the particular component, usually utilizing a provided library. This approach has some advantages:
+Directly written log events are handled in-process of the particular component, usually utilizing a provided library. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor) has direct send capabilities, but it's not recommented for serious/production use. This approach has some advantages:
 
 - There is no external process to configure or monitor
 - No log file management (rolling, expiring) to prevent out of disk space issues.
@@ -48,6 +48,10 @@ This approach isn't without trade-offs:
 - Don't reinvent the wheel, use existing tools to collect and analyse the data.
 - Ensure personal identifiable information policies and restrictions are followed.
 
+### If there's sufficient log data, is there a need for instrumenting metrics?
+
+[Logs vs Metrics](../log-vs-metric.md) covers some high level guidance on when to utilize metric data and when to use log data. Both have a valuable part to play in creating observable systems.
+
 ### Having problems identifying what to log?
 
 **At application startup**:
@@ -64,3 +68,9 @@ This approach isn't without trade-offs:
 **Per outgoing request**:
 
 - Basic information for each outgoing request: the url (scrubbed of any personally identifying data, a.k.a. PII), any user/tenant/request dimensions, response code returned, request-to-response latency, payload sizes, record counts returned, etc. Report perceived availability and latency of dependencies and including slicing/clustering data that could help with later analysis.
+
+## Tools
+
+- [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) - Umbrella of services including system metrics, log analytics and more.
+- [Grafana Loki](https://github.com/grafana/loki) - An opensource log aggregation platform, built on the learnings from the Prometheus Community for highly efficient collection & storage of log data at scale.
+- [The Elastic Stack](https://www.elastic.co/what-is/elk-stack) - An open source log analytics tech stack utilizing Logstash, Beats, Elasticsearch and Kibana.

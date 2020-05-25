@@ -30,6 +30,10 @@ Items of concern to some may include:
 
 ## Best Practices
 
+### When should I use metrics instead of logs?
+
+[Logs vs Metrics](../log-vs-metric.md) covers some high level guidance on when to utilize metric data and when to use log data. Both have a valuable part to play in creating observable systems.
+
 ### What should be tracked?
 
 System critical measurements that relate to the application/machine health, which are usually excellent alert candidates. Work with your engineering and devops peers to identify the metrics, but they may include:
@@ -57,3 +61,10 @@ Modern metric systems today usually define a single time series metric as the co
 - Azure Region
 
 _Note_: Since dimension labels are used for aggregations and grouping operations, do not use unique strings or those with high cardinality as the value of a label. The value of the label is significantly diminished for reporting and in many cases has a negative performance hit on the metric system used to track it.
+
+## Recommended Tools
+
+- [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) - Umbrella of services including system metrics, log analytics and more.
+- [Prometheus](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) - A real-time monitoring & alerting application. It's exposition format for exposing time-series is the basis for OpenMetrics's standard format.
+- [Thanos](https://thanos.io) - Open source, highly available Prometheus setup with long term storage capabilities.
+- [Cortex](https://cortexmetrics.io) - Horizontally scalable, highly available, multi-tenant, long term Prometheus.
