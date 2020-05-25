@@ -4,6 +4,30 @@
 
 Metrics provide a near real-time stream of data, informing operators and stakeholders about the functions the system is performing as well as its health. Unlike logging and tracing, metric data tends to be more efficient to transmit and store.
 
+## Collection Methods
+
+Metric collection approaches fall into two broad categories: push metrics & pull metrics. Push metrics means that the originating component sends the data to a remote service or agent. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor) and [Etsy's statsd](https://github.com/statsd/statsd) are examples of push metrics. Some of the strengths with push metrics include:
+
+- Only require network egress to the remote target.
+- Originating component controls the frequency of measurement.
+- Simplified configuration as the component only needs to know the destination of where to send data.
+
+Some of the trade-offs with this approach:
+
+- At scale, it is much more difficult to control data transmission rates, which can cause service throttling or dropping of values.
+- Determining if every component, particularly in a dynamic scale environment, is healthy and sending data is difficult.
+
+In the case of pull metrics, each originating component publishes an endpoint for the metric agent to connect to and gather measurements. [Prometheus](https://prometheus.io/) and its ecosystem of tools are an example of pull style metrics. Benefits experienced using a pull metrics setup may involve:
+
+- Singular configuration for determining what is measured and the frequency of measurement for the local environment.
+- Every measurement target has a meta metric related to if the collection is successful or not, which can be used as a general health check.
+- Support for routing, filtering and processing of metrics before sending them onto a globally central metrics store.
+
+Items of concern to some may include:
+
+- Configuring & managing data sources can lead to a complex configuration. Prometheus has tooling to auto-discover and configure data sources in some environments, such as Kubernetes, but there are always exceptions to this, which lead to configuration complexity.
+- Network configuration may add further complexity if firewalls and other ACLs need to be managed to allow connectivity.
+
 ## Best Practices
 
 ### What should be tracked?

@@ -4,6 +4,35 @@
 
 Logs are discrete events with the goal of helping engineers identify problem area(s) during failures.
 
+## Collection Methods
+
+When it comes to log collection methods, two of the standard techniques are a direct-write or an agent-based approach.
+
+Directly written log events are handled in-process of the particular component, usually utilizing a provided library. This approach has some advantages:
+
+- There is no external process to configure or monitor
+- No log file management (rolling, expiring) to prevent out of disk space issues.
+
+The potential trade-offs of this approach:
+
+- Potentially higher memory usage if the particular library is using a memory backed buffer.
+- In the event of an extended service outage, log data may get dropped or truncated due to buffer constraints.
+- Multiple component process logging will manage & emit logs individually, which can be more complex to manage for the outbound load.
+
+Agent-based log collection relies on an external process running on the host machine, with the particular component emitting log data stdout or file. Writing log data to stdout is the preferred practice when running applications within a container environment like Kubernetes. The container runtime redirects the output to files, which can then be processed by an agent. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor), [Grafana Loki](https://github.com/grafana/loki) [Elastic's Logstash](https://www.elastic.co/logstash) and [Fluent Bit](https://fluentbit.io/) are examples of log shipping agents.
+
+There are several advantages when using an agent to collect & ship log files:
+
+- Centralized configuration.
+- Collecting multiple sources of data with a single process.
+- Local pre-processing & filtering of log data before sending it to a central service.
+- Utilizing disk space as a data buffer during a service disruption.
+
+This approach isn't without trade-offs:
+
+- Required exclusive CPU & memory resources for the processing of log data.
+- Persistent disk space for buffering.
+
 ## Best Practices
 
 - Pay attention to logging levels. Logging too much will increase costs and decrease application throughput.
