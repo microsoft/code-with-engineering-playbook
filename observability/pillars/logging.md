@@ -69,8 +69,9 @@ This approach isn't without trade-offs:
 
 - Basic information for each outgoing request: the url (scrubbed of any personally identifying data, a.k.a. PII), any user/tenant/request dimensions, response code returned, request-to-response latency, payload sizes, record counts returned, etc. Report perceived availability and latency of dependencies and including slicing/clustering data that could help with later analysis.
 
-## Tools
+## Recommended Tools
 
 - [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) - Umbrella of services including system metrics, log analytics and more.
 - [Grafana Loki](https://github.com/grafana/loki) - An opensource log aggregation platform, built on the learnings from the Prometheus Community for highly efficient collection & storage of log data at scale.
 - [The Elastic Stack](https://www.elastic.co/what-is/elk-stack) - An open source log analytics tech stack utilizing Logstash, Beats, Elasticsearch and Kibana.
+- [Grafana](https://grafana.com) - Open source dashboard & visualization tool. Supports Log, Metrics and Distributed tracing data sources.
