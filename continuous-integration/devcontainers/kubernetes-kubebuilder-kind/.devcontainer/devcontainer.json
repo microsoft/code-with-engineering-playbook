@@ -1,0 +1,24 @@
+{
+    "name": "K8s",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "docker-in-docker",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose",
+    "postCreateCommand": "make set-kindcluster",
+    "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.go"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "zsh",
+        "go.gopath": "/go",
+        "go.inferGopath": true,
+        "go.useLanguageServer": true,
+        "go.toolsEnvVars": {
+            "GO111MODULE": "on"
+        },
+        "remote.extensionKind": {
+            "ms-azuretools.vscode-docker": "workspace"
+        }
+    }
+}
