@@ -1,0 +1,7 @@
+domain: sample
+repo: sample
+resources:
+- group: batch
+  kind: CronJob
+  version: v1
+version: "2"
