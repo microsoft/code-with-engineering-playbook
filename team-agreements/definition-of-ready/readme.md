@@ -16,8 +16,8 @@ It can be understood as a checklist that helps the Product Owner to ensure that 
 * [ ] Does the user story have clear and complete acceptance criteria?
 * [ ] Does the user story address the business need?
 * [ ] Can we measure the acceptance criteria?
-* [ ] Can the story be completed within a single sprint? If not, can it be broken down into smaller stories?
-* [ ] Is the story blocked? For example, does it depend on any of the following:
+* [ ] Can the user story be completed within a single sprint? If not, can it be broken down into smaller stories?
+* [ ] Is the user story blocked? For example, does it depend on any of the following:
   * The completion of unfinished work
   * A deliverable provided by another team (code artifact, data, etc...)
 
