@@ -78,8 +78,8 @@ The team members of the team can also help hold each other accountable for provi
 
 New team members are uniquely positioned to identify instances of undocumented [Collective Wisdom](https://en.wikipedia.org/wiki/Collective_wisdom). The following outlines responsibilities of new team members as it relates to devex:
 
-- If you come across missing, incomplete or incorrect documentation while onboarding, you should open a PR to fix it.
-- Contribute to the developer onboarding plan if you find there to be missing steps or information. If no plan exists, create one.
+- If you come across missing, incomplete or incorrect documentation while onboarding, you should record the issue as a new defect(s) and assign it to the product owner to be triaged.
+- If no onboarding documentation exists, note the steps you took in a new user story. Assign the new story to the product owner to be triaged.
 
 ## Facilitation Guidance
 
