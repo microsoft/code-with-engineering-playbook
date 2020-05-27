@@ -32,3 +32,11 @@ Update or change the definition of ready anytime the scrum team observes that th
 ## What should be avoided
 
 The ready checklist should contain items that apply broadly. Don't include items or details that only apply to one or two user stories. This may become an overhead when writing the user stories.
+
+## How to get stories ready
+
+In the case that the highest priority work is not yet ready, it still may be possible to make forward progress. Here are some strategies that may help:
+
+* Grooming sessions are a good time to validate that high priority user stories are verified to have a clear description, acceptance criteria and demonstrable business value. It is also a good time to breakdown large stories will likely not be completable in a single sprint.
+* Prioritization sessions are a good time to prioritize user stories that unblock other blocked high priority work.
+* Blocked user stories can often be broken down in a way that unblocks a portion of the original stories scope. This is a good way to make forward progress even when some work is blocked.
