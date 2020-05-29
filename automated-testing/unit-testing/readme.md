@@ -1,67 +1,61 @@
 # Unit Testing
 
-## Goals
+Unit testing is a fundamental tool in every developer's toolbox. Unit tests not only help us test our code, they
+encourage good design practices, reduce the chances of bugs reaching production, and can even serve as examples or
+documentation on how code functions. Properly written unit tests can also improve developer efficiency.
 
-Unit tests play an integral role in building quality software and enabling agile methodologies. The implementation of the unit is finished when the unit satisfies the tests.
+Unit testing also is one of the most commonly misunderstood forms of testing. Unit testing refers to a very specific
+type of testing; a unit test should be:
 
-### Unit tests have several goals:
+- **Provably reliable** - should be 100% reliable so failures indicate a bug in the code
+- **Fast** - should run in milliseconds, a whole unit testing suite shouldn't take longer than a couple seconds
+- **Isolated** - removing all external dependencies ensures reliability and speed
 
-- Ensure code fulfills functional and non-functional requirements
-- Ensure focus on functionality to deliver
-- Support fast code evolution and refactoring while reducing the risk of regressions
-- Provide confidence to potential contributors
-- Developer Documentation of API usage
+<!-- The document should start with a brief overview about the test type and what is covered in this document, the goal here is to provide a high-level description to help the reader understand what is covered to decide whether to continue reading or not. -->
 
-## Evidence and Measures
+## Why Unit Testing
 
-[CI/CD already requires badges in place](../../continuous-integration/CICD.md) for every repo to quickly assess code coverage and test pass/fail.
+It is no secret that writing unit tests is hard, and even harder to write well. Writing unit tests also increases the
+development time for every feature. So why should we bother writing them?
 
-The team should also keep in an eye on tests that may not be running as part of every merge, i.e. integration and e2e test.
+- Reduces costs by catching bugs earlier
+- Increases developer confidence in changes
+- Speeds up developer inner loop
+- Documentation as code
 
-## General Guidance
+Still not sold? See all the [detailed descriptions of the points above](./why-unit-tests.md)
 
-The scope of a unit test is small. Engineers should use good judgement to provide a reasonable amount of unit test based on complexity of the unit to be tested, aligning with the overall goal of 70-80% code coverage. Unit tests should exercise more than the "happy path" paying specific attention to returned error values or exceptions thrown.
+## Unit Testing Design Blocks [The What]
 
-Bug fixes should start with a test that reliably reproduces the bug to ensure that a particular commit will fix the bug as intended. Existing tests will reduce risk of regressions introduced by the fix.
 
-Unit testing works in conjunction with integration tests and end-to-end tests for larger pieces of functionality.
+<!-- In this section, describe the test type, its components, and how they interact to solve the problem described above. -->
 
-In order to keep execution of unit tests fast and executable as part of a CI/CD pipeline, tests can provide mock implementations of other parts of the application or 3rd party services.
+## Applying the Unit Testing [the how]
 
-For integration or end-to-end testing, mocks should be replaced with API calls to the system they are simulating.
+- TDD
+- Dependency Injection 
+- Best practices
+  - Arrange/Act/Assert
+  - Test naming FunctionName_StateUnderTest_Result
 
-### Writing Tests
+What not to do
+- sleeps
+- reading from disk
+- calling APIs
 
-Good unit tests follow a few general principles:
+<!-- In this section, describe what good testing looks like for this test type, discuss some of the best practices, discuss pitfalls to avoid, and finally discuss some of the common tools used to apply the test type, if any. -->
 
-- Pass / Fail tests ensure intended succeeds and fails as designed.
-- Transactional tests ensure transactions commit or roll back as designed
-- CRUD operations work as designed
-- All data created for or during a test is localized to the test to allow for parallel test execution
-- All data created during or for a test gets cleaned up after tests completed
+## Unit Testing Frameworks and Tools
 
-For more complex applications, unit tests also ensure:
+<!-- In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information. -->
 
-- that multi-threading works as intended,
-- the unit deals appropriately with transient outages of external dependencies (retry, fail-fast, …)
-- Stateful applications restore state when re-started
+## Conclusion
 
-## Specific Guidance
+Unit testing is extremely important, but it is also not the silver bullet; having proper unit tests is just a part of a
+well-tested system. 
 
-Languages and Platforms provide their own unit test tools and frameworks. In [CSE](../CSE.md), we prefer:
+<!-- In conclusion, provide the final thoughts on why and how this type of test can help with your next customer engagement, what best practices and recommendations that can be withdrawn from the case studies and research. -->
 
-- [.NET/Visual Studio](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code)
-- [.NET NUnit](http://nunit.org/)
-- [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/testing/)
-- [Java JUnit 5](https://junit.org/junit5/)
-- [Go](https://golang.org/pkg/testing/)
-- [JavaScript/Node mochajs](https://mochajs.org/)
-- [Python unittest](https://docs.python.org/3/library/unittest.html)
-- [Python pytest](https://docs.pytest.org/en/latest/)
-  
 ## Resources
 
-- [.NET unit testing tutorial](https://docs.microsoft.com/en-us/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code)
-- [Java unit testing tutorial](http://tutorials.jenkov.com/java-unit-testing/index.html)
-- [Unit Testing Spark with Java](http://www.jesse-anderson.com/2016/04/unit-testing-spark-with-java)
-- [Book: The Art of Unit Testing With Examples in .NET](https://www.goodreads.com/book/show/6487349-the-art-of-unit-testing) by Roy Osherove
+<!-- List additional readings about this test type for those that would like to dive deeper. -->
