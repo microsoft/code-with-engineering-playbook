@@ -11,19 +11,23 @@ Before getting into the different subcategories of performance tests let us unde
 
 Performance testing is commonly conducted to accomplish one or more the following:
 
-* To help in accessing whether the system is ready for Release:
+* To help in accessing whether a **system is ready for Release**:
   * Estimating / Predicting the performance characteristics (such as response time, failure rate, throughput) which an application is likely to have when it is released in to production. The results can help in predicting the satisfaction level of the users when interacting with the system. The predicted values can also be compared with agreed values (success criteria) for the performance characteristics when available. 
-* To help in accessing the adequacy of the infrastrucutre / managed service sku's to meet the desired performance charecteristics of the system
-* To predict the performance impact of application changes
-  * Comparing the the performance characteristics of an application after a change to the values of performance characteristics during previous runs (or baseline values), can provide an indication of performance issues introduced due to the change
-* To support system tuning
-  * comparing performance characteristics of a system for different system configurations
+  * To help in accessing the adequacy of the infrastrucutre / managed service sku's to meet the desired performance charecteristics of a system
   * Identifying bottlenecks and issues with the application at different load levels
+* To compare the **performance impact of application changes**
+  * Comparing the the performance characteristics of an application after a change to the values of performance characteristics during previous runs (or baseline values), can provide an indication of performance issues or enhancements introduced due to a change
+* To **support system tuning**
+  * Comparing performance characteristics of a system for different system configurations
 
 
 
-## Some Performance Testing categories
+## Key Performance Testing categories
+* **Performance Testing** : This category is the super set of all sub categories of performance related testing. It validates/determines the speed, scalability or reliability charateristics of the system under test. Performance testing focusses on achieving the response times, throughput, and resource utilization levels which meet the performance objectives of a system
+* **Load Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation.
+* **Stress Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes or conditions beyond those expected during production operations. This could include tests which limit the memory, disk available to the system.
 
+<TODO>**Need to add from this point onwards**
 
 In this section, describe the test type, its components, and how they interact to solve the problem described above.
 
