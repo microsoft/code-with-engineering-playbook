@@ -16,16 +16,16 @@
 	],
 	"postCreateCommand": "mkdir -p /root/.ssh && cp -r /root/.ssh-localhost/* /root/.ssh && chmod 700 /root/.ssh && chmod 600 /root/.ssh/*",
 	"settings": {
-        "files.eol": "\n",
-        "terraform.indexing": {
+		"files.eol": "\n",
+		"terraform.indexing": {
 			"enabled": false,
 			"liveIndexing": false
 		},
 		"terraform.languageServer": {
-            "enabled": true,
-            "args": [],
-            "pathToBinary": "/usr/local/bin"
-        },
+			"enabled": true,
+			"args": [],
+			"pathToBinary": "/usr/local/bin"
+		},
 		"go.gopath": "/go",
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"go.useLanguageServer": true,
@@ -61,8 +61,8 @@
 	},
 	"extensions": [
 		"mauve.terraform",
-        "ms-vscode.go",
-        "ms-azuretools.vscode-azureterraform",
+		"ms-vscode.go",
+		"ms-azuretools.vscode-azureterraform",
 		"ms-vscode.azurecli",
 		"ms-azuretools.vscode-docker"
 	]
