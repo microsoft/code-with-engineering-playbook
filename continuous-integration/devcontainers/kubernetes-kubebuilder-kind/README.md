@@ -6,26 +6,26 @@ This folder contains samples demonstrating how you could set up a DevContainer w
 
 * This DevContainer contains the following:
 
-    * [Go](https://golang.org/)
-    * [Docker CE CLI]((https://www.docker.com/get-started))
-    * [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
-    * [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
-    * [Kustomize](https://github.com/kubernetes-sigs/kustomize)
-    * [KIND](https://github.com/kubernetes-sigs/kind/)
-    * [Helm](https://helm.sh/)
-    * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+  * [Go](https://golang.org/)
+  * [Docker CE CLI]((https://www.docker.com/get-started))
+  * [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
+  * [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
+  * [Kustomize](https://github.com/kubernetes-sigs/kustomize)
+  * [KIND](https://github.com/kubernetes-sigs/kind/)
+  * [Helm](https://helm.sh/)
+  * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
 * Default shell: **zsh**
 * Additional volumes:
 
-    * **K8s-zshhistory** - persists command histroy between rebuilds
-    * **K8s-kindconfig** - persists kubeconfig between rebuilds
+  * **K8s-zshhistory** - persists command histroy between rebuilds
+  * **K8s-kindconfig** - persists kubeconfig between rebuilds
 
 * Project: sample project built using kubebuilder.
 
 ## How to run
 
-_Prerequisites_
+Prerequisites:
 
 * [Docker](https://www.docker.com/get-started)
 * [Visual Studio Code](https://code.visualstudio.com/Download)
@@ -43,7 +43,7 @@ Once the container has been built you should have a KIND cluster up and running,
 
 ## How to debug
 
-_Prerequisites_
+Prerequisites:
 
 Make sure KIND is up and running. You can test this by running `kubectl get pods`.
 
@@ -65,4 +65,4 @@ It's at this point your breakpoint should hit. You should be now able to step th
 
 ## Resources
 
-* Kubebuilder - https://book.kubebuilder.io/
+* [Kubebuilder](https://book.kubebuilder.io/)
