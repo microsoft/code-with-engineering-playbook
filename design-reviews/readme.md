@@ -36,7 +36,7 @@ There is a healthy balancing act between spending too much or too little time ev
 
 How long does it take to make a decision on which solution to implement?
 
-There is also a healthy balancing act in supporting a healthy debate while not hindering the team's delivery. The ideal case is for a team to quickly digest the solution options presented ask questions, have some debate, before finally reaching quorom on a particular approach. In cases where no quorum can be reached, the person with the most context on the problem (typically story owner) should make the final decision. Prioritize delivering value and learning. Disagree and commit! 
+There is also a healthy balancing act in supporting a healthy debate while not hindering the team's delivery. The ideal case is for a team to quickly digest the solution options presented ask questions, have some debate, before finally reaching quorom on a particular approach. In cases where no quorum can be reached, the person with the most context on the problem (typically story owner) should make the final decision. Prioritize delivering value and learning. Disagree and commit!
 
 ## Impact
 
