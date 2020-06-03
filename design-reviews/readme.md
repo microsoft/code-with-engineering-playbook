@@ -18,9 +18,9 @@
 
 ### Cost of Change
 
-When incorporating design reviews as part of the engineering process, decisions are front-loaded before implementation begins. Making a decision of using Azure Kubernetes Service instead of App Services at the design phase likely only requires updating documentation. However, making this pivot after implmentation has started or after a solution is in use is much more costly.
+When incorporating design reviews as part of the engineering process, decisions are front-loaded before implementation begins. Making a decision of using Azure Kubernetes Service instead of App Services at the design phase likely only requires updating documentation. However, making this pivot after implementation has started or after a solution is in use is much more costly.
 
-Are these changes occuring before or after implementation and how large of effort are they typically.
+Are these changes occurring before or after implementation? How large of effort are they typically?
 
 ### Reviewer Participation
 
@@ -36,7 +36,7 @@ There is a healthy balancing act between spending too much or too little time ev
 
 How long does it take to make a decision on which solution to implement?
 
-There is also a healthy balancing act in supporting a healthy debate while not hindering the team's delivery. The ideal case is for a team to quickly digest the solution options presented ask questions, have some debate, before finally reaching quorom on a particular approach. In cases where no quorum can be reached, the person with the most context on the problem (typically story owner) should make the final decision. Prioritize delivering value and learning. Disagree and commit!
+There is also a healthy balancing act in supporting a healthy debate while not hindering the team's delivery. The ideal case is for a team to quickly digest the solution options presented, ask questions, and debate before finally reaching quorum on a particular approach. In cases where no quorum can be reached, the person with the most context on the problem (typically story owner) should make the final decision. Prioritize delivering value and learning. Disagree and commit!
 
 ## Impact
 
