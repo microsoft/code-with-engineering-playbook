@@ -4,7 +4,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 
 ## Source Control
 
-- [ ] The master branch is locked.
+- [ ] The main branch is locked.
 - [ ] Merges are done through PRs.
 - [ ] PRs reference related work items.
 - [ ] Commit history is consistent and commit messages are informative (what, why).
@@ -28,8 +28,8 @@ More details on [Unit Testing](automated-testing/unit-testing/readme.md)
 ## CI/CD
 
 - [ ] Project runs CI with automated build and test on each PR.
-- [ ] Project uses CD to manage deployments to a replica environment before PRs are merged to master.
-- [ ] Master is always shippable.
+- [ ] Project uses CD to manage deployments to a replica environment before PRs are merged.
+- [ ] Main branch is always shippable.
 
 ## Security - TO DO
 

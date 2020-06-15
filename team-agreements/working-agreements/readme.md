@@ -56,7 +56,7 @@ The following are examples of sections and points that can be part of a working 
 ## Code management
 
 - We follow the git flow branch naming convention for branches and identify the task number eg. `feature/123-add-working-agreement`
-- We merge all code into Develop and Master through PRs
+- We merge all code into main branches through PRs
 - All PRs are reviewed by one person from [Customer/Partner Name] and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
