@@ -27,7 +27,7 @@ Performance testing is commonly conducted to accomplish one or more the followin
 * **Load Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation.
 * **Stress Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes or conditions beyond those expected during production operations. This could include tests which limit the memory, disk available to the system.
 
-## Core Activities
+## Key Performance testing activities
 
 * Understand the [motivation for the tests](#why-performance-testing)
 * Understanding the Environment: The Production application environment which includes the infrastructure, the network, the software, different application integrations, etc needs to be understood in detail. If there are constraints that an existing perpetual performance testing environment needs to be used for the testing, then understand that environment, and the differences with the production environment (like test systems for certain integrations not being available)
