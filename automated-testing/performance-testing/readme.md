@@ -27,28 +27,47 @@ Performance testing is commonly conducted to accomplish one or more the followin
 * **Load Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation.
 * **Stress Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes or conditions beyond those expected during production operations. This could include tests which limit the memory, disk available to the system.
 
-**TODO: Need to add from this point onwards**
+## Core Activities
 
-In this section, describe the test type, its components, and how they interact to solve the problem described above.
+* Understand the [motivation for the tests](#why-performance-testing)
+* Understanding the Environment: The Production application environment which includes the infrastructure, the network, the software, different application integrations, etc needs to be understood in detail. If there are constraints that an existing perpetual performance testing environment needs to be used for the testing, then understand that environment, and the differences with the production environment (like test systems for certain integrations not being available)
+* Identify and Define the Acceptance criteria for the tests:
+  * Identify goals and constraints with respect to response times, throughput, resource utilization etc
+  * For performance tuning related performance tests, success criteria may be to compare the combination of specific configuration setting values on the system performance and identify the best combination of those configuration setting values 
+* Plan and design the tests
+  * Come up with the workload model for the tests. For an ecommerce application the activities in defining a workload model could include :
+    * Identifying the types of user profiles (users browsing the site, or users purchasing products, etc) their relative percentages and the actions the users can perform like registering, logging in, searching for a product, adding a product to basket, checking out, etc. 
+    * Then for a user profile identifying on an average the number of time a particular action is  performed in one session, this would include details of the average wait time between actions
+    * Understand the seasonality of the traffic, i.e peaks during the day, week, month and year
+    * Identifying test data
+  * Defining the load the application would be tested with
+  * Establishings metrics to be collected
+  * Which tools will be used for the perform tests
+    * How will the load be generated (from within the network or from the internet)
+    * How will the tool be configured, i.e. single load inducing mode or multiple load inducers?
+  * Establish the performance test frequency : whether the performance tests be done as a part of the feature development sprints, or only prior to release to a major environment?
+  * For the test environment establish :
+    * If the performance test environment be dynamically be provisioned, or a perpetual environment needs to be used
+    * How the environment will be monitored
+    * How will the interfaces be tested, the answer this could be that the interfaces have a test endpoint, or they will be stubbed, or the interface will not be tested, etc
+    * If the test environment has similar capacity as the production environment, or if it has lower capacity and the tests need to occur with the load scaled down?
+* Test Environment configuration : configure the test environment as per the plan 
+* Test Execution , Result analysis and re-testing :
+  * The test are executed, the results are collectioned and the environments are monitored
+  * The results are analysed
+  * Depending on the scenario, modification of application or configuration are done and tests are executed again. For instance in case of a load test if the earlier execution shows that the performance targets for response time are not met and this is corellated with a component (say database) responding slowly, then optimizations to that component are made, and the tests are exectuted again
+  
 
-## Applying the ~test type~ [the how]
+## Performance testing Frameworks and Tools
+Some of the performance testing tools are :
+* [JMeter](https://jmeter.apache.org/)
+* [Locust](https://locust.io/)
+* [Gatling](https://gatling.io/)
+  
+  The post "[Comparison of performance testing tooks](https://www.blazemeter.com/blog/open-source-load-testing-tools-which-one-should-you-use?utm_source=blog&utm_medium=BM_blog&utm_campaign=jmeter-vs-locust-which-one-should-you-choose)" gives a nice comparison of some of the performance testing tools
 
-In this section, describe what good testing looks like for this test type, discuss some of the best practices, discuss pitfalls to avoid, and finally discuss some of the common tools used to apply the test type, if any.
 
-## ~Test type~ Frameworks and Tools
-
-In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information.
-
-## Examples/Case studies
-
-If available, list some good examples or case studies for this test type and elaborate on what is good about them.
-
-## Conclusion
-
-In conclusion, provide the final thoughts on why and how this type of test can help with your next customer engagement, what best practices and recommendations that can be withdrawn from the case studies and research.
 
 ## Resources
-
 * Most of the guidance on this page is based on the awesome performance testing book [Patters and Practices: Performance Testing Guidance for Web Applications](https://docs.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications)
 
-List additional readings about this test type for those that would like to dive deeper.
