@@ -39,7 +39,7 @@ However, we should avoid having PRs that include code that is without context or
 * not break the build, and
 * include related tests (UTs, integration, etc.) as part of the PR.
  
-There are times where seems a big PR is unavoidable and necessary; the act of breaking it up would be more time consuming and error-prone than it would be beneficial, and that it is the reason why it's easier to write small PRs in the first place.
+Start small, it is easier to create a small PR from the start than to break up a bigger one.
 
 These are some strategies to keep PRs small depending on the "cause" of the ineluctability:
 
