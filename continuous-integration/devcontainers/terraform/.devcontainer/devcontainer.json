@@ -1,0 +1,63 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
+// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/docker-existing-dockerfile
+{
+	"name": "Dev Dockerfile",
+	"dockerFile": "Dockerfile",
+	"context": "..",
+	// The optional 'runArgs' property can be used to specify additional runtime arguments.
+	"runArgs": [
+		// Enable go debugger
+		"--cap-add=SYS_PTRACE",
+		"--security-opt",
+		"seccomp=unconfined",
+		// Enable SSH for git
+		"-v",
+		"${env:HOME}${env:USERPROFILE}/.ssh:/root/.ssh-localhost:ro"
+	],
+	"postCreateCommand": "mkdir -p /root/.ssh && cp -r /root/.ssh-localhost/* /root/.ssh && chmod 700 /root/.ssh && chmod 600 /root/.ssh/*",
+	"settings": {
+        "files.eol": "\n",
+        "terraform.indexing": {
+			"enabled": false,
+			"liveIndexing": false
+		},
+		"go.gopath": "/go",
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"go.useLanguageServer": true,
+		"go.autocompleteUnimportedPackages": true,
+		"go.gotoSymbol.includeImports": true,
+		"go.gotoSymbol.includeGoroot": true,
+		"go.toolsEnvVars": {
+			"GO111MODULE": "on"
+		},
+		"go.lintFlags": [
+			"--fast"
+		],
+		"go.testFlags": [
+			"-v",
+			"-tags=all"
+		],
+		"go.testEnvVars": {
+			"TF_ACC": "1"
+		},
+		"go.testEnvFile": "${workspaceFolder}/.env",
+		"[go]": {
+			"editor.formatOnSave": true,
+			"editor.codeActionsOnSave": {
+				"source.organizeImports": true
+			}
+		},
+		"gopls": {
+			"usePlaceholders": true, // add parameter placeholders when completing a function
+			// Experimental settings
+			"completeUnimported": true, // autocomplete unimported packages
+			"deepCompletion": true // enable deep completion
+		},
+	},
+	"extensions": [
+        "ms-vscode.go",
+        "ms-azuretools.vscode-azureterraform",
+		"ms-vscode.azurecli",
+		"ms-azuretools.vscode-docker"
+	]
+}

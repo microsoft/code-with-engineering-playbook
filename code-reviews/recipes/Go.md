@@ -20,7 +20,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 #### golint
 
-[golint](https://github.com/golang/lint) can be an effetive tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process. This is the default linter which is setup as part of the vscode-go extension.
+[golint](https://github.com/golang/lint) can be an effective tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process. This is the default linter which is setup as part of the vscode-go extension.
 
 ## Automatic Code Formatting
 
@@ -30,7 +30,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 ### golangci-lint
 
-[golangci-lint](https://github.com/golangci/golangci-lint/) is the replacement for the now depricated `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
+[golangci-lint](https://github.com/golangci/golangci-lint/) is the replacement for the now deprecated `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
 
 One awesome feature of `golangci-lint` is that is can be easily introduced to an existing large codebase using the `--new-from-rev COMMITID`. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions. golangci-lint can also be setup as the default linter in VS Code.
 
@@ -56,7 +56,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
   workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: "Run code formatting"
   ```
-  
+
   `govet` should be run as a part of every build to check code linting.
 
 To automate this process in Azure Devops you can add the following snippet to your `azure-pipelines.yaml` file. This will check linting of any scripts in the `./scripts/` folder.
@@ -66,7 +66,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
   workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: "Run code linting"
   ```
-  
+
 Alternatively you can use golangci-lint as a step in the pipeline to do multiple enabled validations(including go vet and go fmt) of golangci-lint.
 
 ```yaml
@@ -127,7 +127,7 @@ steps:
 - script: go vet
   workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: 'Run go vet'
-  
+
 - task: Go@0
   inputs:
     command: 'build'

@@ -10,7 +10,7 @@ Linting should be added to build validation, and both linting and code formattin
 
 ## Code Analysis / Linting
 
-The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherance to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give more false positives but both are good options for linting python code.
+The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherence to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give more false positives but both are good options for linting python code.
 
 Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `python extension`
 
@@ -48,7 +48,7 @@ pylint src  # lint the source directory
 
 ### Black
 
-[`Black`](https://github.com/psf/black) is an unappologetic code formatting tool. It removes all need from `pycodestyle` nagging about formatting so the team can focus on content vs style. It's not possible to configure black for your own style needs.
+[`Black`](https://github.com/psf/black) is an unapologetic code formatting tool. It removes all need from `pycodestyle` nagging about formatting so the team can focus on content vs style. It's not possible to configure black for your own style needs.
 
 ```bash
 pip install black
@@ -198,7 +198,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 At the next attempted commit any lint failures will block the commit.
 
-> Note: Installing pre-commit hooks is volontary and done by each developer individually. Thus it's not a replacement for build validation on the server
+> Note: Installing pre-commit hooks is voluntary and done by each developer individually. Thus it's not a replacement for build validation on the server
 
 ## Code Review Checklist
 
