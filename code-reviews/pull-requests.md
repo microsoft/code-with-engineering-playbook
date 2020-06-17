@@ -35,10 +35,10 @@ We should always aim to have pull requests be as small as possible, without losi
 
 However, we should avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, and you should work with your reviewer to find out a reasonable size. Besides the size, remember that every PR should:
 
-* Be consistent and within context, 
+* Be consistent,
 * not break the build, and
 * include related tests as part of the PR.
- 
+
 Start small, it is easier to create a small PR from the start than to break up a bigger one.
 
 These are some strategies to keep PRs small depending on the "cause" of the inevitability:
