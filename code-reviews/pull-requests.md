@@ -39,6 +39,8 @@ However, we should avoid having PRs that include code that is without context or
 * not break the build, and
 * include related tests as part of the PR.
 
+Be consistent means that all the changes included on the PR should aim to solve one goal (ex. one user story) and be intrinsically related. Think of this as the Single-responsibility principle in terms of the whole project, the PR should have only one *reason to change* the project.
+
 Start small, it is easier to create a small PR from the start than to break up a bigger one.
 
 These are some strategies to keep PRs small depending on the "cause" of the inevitability:
