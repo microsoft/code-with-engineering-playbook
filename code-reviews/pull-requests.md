@@ -37,7 +37,7 @@ However, we should avoid having PRs that include code that is without context or
 
 * Be consistent and within context, 
 * not break the build, and
-* include related tests (UTs, integration, etc.) as part of the PR.
+* include related tests as part of the PR.
  
 Start small, it is easier to create a small PR from the start than to break up a bigger one.
 
