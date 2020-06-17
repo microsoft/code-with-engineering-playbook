@@ -45,7 +45,7 @@ These are some strategies to keep PRs small depending on the "cause" of the inev
 
 ### Minimum Working Components
 
-If the design of your changes allows breaking the implementation on working chunks, self-contained changes, that do not break the build, it is better to create one PR per component. The components should be fully functional pieces that can be released as soon as possible. Think about this as breaking the implementation vertically, where components sometimes involve changes on the full-stack.
+If the design of your changes allow breaking the implementation into working chunks, self-contained changes, that do not break the build, it is better to create one PR per component. The components should be fully functional pieces that can be released as soon as possible. Think about this as breaking the implementation vertically, where components sometimes involve changes on the full-stack.
 
 ### Layers
 
