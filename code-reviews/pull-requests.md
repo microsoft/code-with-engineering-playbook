@@ -43,26 +43,13 @@ Be consistent means that all the changes included on the PR should aim to solve 
 
 Start small, it is easier to create a small PR from the start than to break up a bigger one.
 
-These are some strategies to keep PRs small depending on the "cause" of the inevitability:
-
-### Minimum Working Components
-
-If the design of your changes allow breaking the implementation into self-contained changes that do not break the build, it is better to create one PR per component. The components should be fully functional pieces that can be released as soon as possible. Think about this as breaking the implementation vertically, where components sometimes involve changes on the full-stack.
-
-### Layers
-
-Sometimes we cannot release components without breaking the build, this is very often the case on refactors. For example, if you need to modify several classes on the backend. In this case, is better to break the code on layers or incremental changes.
-
-Think about this as breaking the implementation horizontally, where layers involve changes on one part of the stack.
-
-### Feature Flag
-
-Sometimes we don't want to release the changes immediately to be visible to the final users until the whole implementation is complete, but we want to merge small pieces into code working in production, in this cases we could work to integrate the code into the production branch (making sure it does not break the build) but disabling the code. There are multiple ways to do this depending on the language or framework, the most basic one is by creating an application or config setting that can enable/disable that part of the code. Design patterns like Observer-Subject or Canary releases (with traffic redirection) are useful to implement this.
-
-Think about this as releasing hidden features that could be enabled later. You can find more information about different feature flag techniques by searching for "Feature Toggling" patterns.
+These are some strategies to keep PRs small depending on the "cause" of the inevitability, you could break the PR into self-container changes which still add value, release features that are hidden (see feature flag, feature toggling or canary releases) or break the PR into different layers (for example using design patterns like MVC or Observer/Subject). No matter the strategy.
 
 ## Resources
 
 * [Review code with pull requests (Azure DevOps)](https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)
 * [Collaborating with issues and pull requests (GitHub)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests)
 * [Google approach to PR size](https://google.github.io/eng-practices/review/developer/small-cls.html)
+* [Feature Flags](https://www.martinfowler.com/articles/feature-toggles.html)
+* [Facebook approach to hidden features](https://launchdarkly.com/blog/secret-to-facebooks-hacker-engineering-culture/)
+* [Azure approach to canary releases](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/deployment#stage-your-workloads)
