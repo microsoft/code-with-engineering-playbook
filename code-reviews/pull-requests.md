@@ -33,7 +33,7 @@ We should always aim to have pull requests be as small as possible, without losi
 1. They are easier to deploy; this is aligned with the strategy of release fast and release often.
 1. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
 
-However, we should avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, and you should work with your reviewer to find out a reasonable size. Besides the size, remember that every PR should:
+However, we should avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PR could be faster to write but slower to review. We should always strive to have as small PRs as possible that still add value. Besides the size, remember that every PR should:
 
 * Be consistent,
 * not break the build, and
