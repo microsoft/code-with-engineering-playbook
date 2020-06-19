@@ -27,6 +27,22 @@ Performance testing is commonly conducted to accomplish one or more the followin
 * **Load Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation.
 * **Stress Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes or conditions beyond those expected during production operations. This could include tests which limit the memory, disk available to the system.
 
+## Sample performance testing scenario
+To understand performance testing better, let us consider a sample scenario where we want to asses whether a web application can handle the expected production peak load in the coming months.
+The logical component view of the production application is as follows :
+![Production component view](./images/production-view.png)
+
+It is simple micro services based web application. Some of the internal services consume external third party services for their functionality.
+
+A Load test is planned for this application. This is carried out in a dynamically provisioned performance test environment. 
+![Performance Test Environment](./images/perf-test-view.png)
+
+This environment has :
+* The application which we need to test deployed
+* One of the external dependecies for this application provides a test endpoint, and the application in this environment is configured to hit that end point. The other external dependency does not provide a test endpoint so as part of the performance test activity scope an intellegent test stub was created which returns data in the expected format, and response latency delays can be configured for the stub.
+* It has the load simulating components deployed. This component/s simulates end user requests which hit the UI component of the application for different user journeys.
+
+
 ## Key Performance testing activities
 
 * Understand the [motivation for the tests](#why-performance-testing)
