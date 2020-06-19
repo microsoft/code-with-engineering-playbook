@@ -27,20 +27,6 @@ Performance testing is commonly conducted to accomplish one or more the followin
 * **Load Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation.
 * **Stress Testing** : This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes or conditions beyond those expected during production operations. This could include tests which limit the memory, disk available to the system.
 
-## Sample performance testing scenario
-To understand performance testing better, let us consider a sample scenario where we want to asses whether a web application can handle the expected production peak load in the coming months.
-The logical component view of the production application is as follows :
-![Production component view](./images/production-view.png)
-
-It is simple micro services based web application. Some of the internal services consume external third party services for their functionality.
-
-A Load test is planned for this application. This is carried out in a dynamically provisioned performance test environment. 
-![Performance Test Environment](./images/perf-test-view.png)
-
-This environment has :
-* The application which we need to test deployed
-* One of the external dependecies for this application provides a test endpoint, and the application in this environment is configured to hit that end point. The other external dependency does not provide a test endpoint so as part of the performance test activity scope an intellegent test stub was created which returns data in the expected format, and response latency delays can be configured for the stub.
-* It has the load simulating components deployed. This component/s simulates end user requests which hit the UI component of the application for different user journeys.
 
 
 ## Key Performance testing activities
@@ -73,6 +59,32 @@ This environment has :
   * The results are analysed
   * Depending on the scenario, modification of application or configuration are done and tests are executed again. For instance in case of a load test if the earlier execution shows that the performance targets for response time are not met and this is corelated with a component (say database) responding slowly, then optimizations to that component are made, and the tests are executed again
   
+## Sample performance testing scenario
+To understand performance testing better, let us consider a sample scenario where we want to asses whether a web application can handle the expected production peak load in the coming months.
+The logical component view of the production application is as follows :
+![Production component view](./images/production-view.png)
+
+It is simple micro services based web application. Some of the internal services consume external third party services for their functionality.
+
+A Load test is planned for this application. 
+
+As a part of the performance testing activities:
+* Success critieria for the test was defined
+* As a part of the test design activity a workload model for the application was created.
+* Load testing tool was finalized
+* Application infrastruture and application monitoring was enhanced to capture the required metrics
+* To minimise infrastructure cost associated with the performance testing it was decided to dynamically create and tear down the performance test environment
+![Performance Test Environment](./images/perf-test-view.png)
+* The performance test environment was configured as follows :
+  * The application which we need to test was deployed
+  * One of the external dependecies for this application provided a test endpoint, and the application in this environment was configured to hit that end point. The other external dependency did not provide a test endpoint so as part of the performance test activity scope an intellegent test stub was created which returns data in the expected format, response latency delays could be configured for this test stub.
+  * The load simulating components were deployed. These component/s simulated end user requests as per the workload profile which hit the Application UI component.
+* The initial load testing found resulted in the response time thresholds not being met. Analyis showed that issue was with one of the services. The issue was fixed and after re testing all success criteria were met.
+
+
+
+
+
 
 ## Performance testing Frameworks and Tools
 Some of the performance testing tools are :
