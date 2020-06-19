@@ -20,3 +20,4 @@ Automation testing | It can be manual or automation testing | It can be manual o
 * [Unit testing](unit-testing/readme.md)
 * [Integration testing](integration-testing/readme.md)
 * [End-to-End testing](e2e-testing/readme.md)
+* [Performance testing](performance-testing/readme.md)
