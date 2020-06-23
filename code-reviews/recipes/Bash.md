@@ -62,6 +62,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
     shellcheck ./scripts/*.sh
   displayName: "Validate Scripts: Shellcheck"
   ```
+  
   Also, your shell scripts can be formatted in your build pipeline by using shfmt. To integrate shfmt in your build pipeline do the following:
 
 ```yaml
@@ -100,7 +101,9 @@ Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-com
       -   id: shell-fmt
           args:
             - --indent=4
-            
+ ```
+ 
+ ```yaml        
 -   repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.7.1.1
     hooks:
