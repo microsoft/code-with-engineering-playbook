@@ -41,7 +41,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [Tech Lead's Checklist](TECH-LEADS-CHECKLIST.md)
 * [Structure of a Sprint](SPRINT-STRUCTURE.md)
 * [Source Control](source-control/readme.md)
-* [Unit Testing](automated-testing/unit-testing/readme.md)
+* [Unit Testing](test-first-development/unit-testing/readme.md)
 * [Continuous Integration (CI)](continuous-integration/readme.md)
 * [Continuous Delivery (CD)](continuous-deployment/readme.md)
 * [Code Reviews](code-reviews/README.md)

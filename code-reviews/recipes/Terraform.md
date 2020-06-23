@@ -49,7 +49,7 @@ echo -e "\n\n>>> Install tflint (3rd party)"
 wget -q https://github.com/wata727/tflint/releases/download/v${TF_LINT_VERSION}/tflint_linux_amd64.zip -O /tmp/tflint.zip
 sudo unzip -q -o -d /usr/local/bin/ /tmp/tflint.zip
 
-echo -e "\n\n>>> Terraform version"
+echo -e "\n\n>>> Terraform verion"
 terraform -version
 
 echo -e "\n\n>>> Terraform Format (if this fails use 'terraform fmt -recursive' command to resolve"

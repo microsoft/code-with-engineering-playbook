@@ -54,7 +54,7 @@ In this repo, we use the following branch naming conventions:
 > * Please, do not use personal branches. Work should refer back to a
 feature/bug fix in the backlog.
 > * Mind the capitalization of the branch prefix (feature, fix). Tools that
-display branches as a hierarchy are typically case sensitive, and will display
+diplay branches as a hierarchy are typically case sensitive, and will display
 different hierarchies for the same words with different capitalization.
 
 ### Linting
@@ -76,7 +76,8 @@ prompted the pull request.
 ### Merging strategy
 
 The preferred merging strategy for this repo is **linear**.
-You can familiarize yourself with [merging strategies](./source-control/contributing/readme.md#merging-strategies) described in the Source Control section of this repo.
+You can familiarize yourself with merging strategies described in the
+["git guidance in this repo"](./source-control/git.md) document.
 
 ## Adding a new section
 
@@ -94,7 +95,7 @@ Each section consist of the following parts
 3. Recipes
    1. Tool specific implementations of the concept
    2. Named patterns or games that implement the concept (usually applies to
-   agile ceremonies)
+   agile cermonies)
 4. Case Studies
    1. Examples that illustrate how a team implemented the concept
    2. What problem was the team try to solve with their implementation?

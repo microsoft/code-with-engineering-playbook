@@ -1,20 +1,18 @@
 # Stand-ups
 
-The stand-up is a time-boxed ceremony that is held each day of the sprint. In this ceremony, each contributor in the Development Team will answer three simple questions. This will repeat until each contributor has answered the three following questions.
+The stand-up is a ceremony that is held each day of the sprint. In this ceremony, each contributor will answer three simple questions. This will repeat until each contributor has answered the three following questions.
 
-> 1. What did you work on yesterday that contributes to meet the sprint goal?
-> 2. What are you working on today that will contribute to meet the sprint goal?
-> 3. Do you have any impediments/blockers or need any help? (defer discussion / resolution to "the parking lot", described below)
+1. What did you work on yesterday?
+2. What are you working on today?
+3. Do you have any impediments/blockers? (defer discussion / resolution to "the parking lot", described below)
 
-During the stand-up, additional discussions may arise. Make sure that someone adds them to the parking lot for after meeting discussion.  
-
-After that point, the stand-up is concluded. The items in the parking lot may take place right after. However, participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
+After that point, the stand-up is concluded. There may be a parking lot discussion after. However, participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
 
 The term parking lot refers to a bucket of comments, concerns, or questions that will be discussed and/or addressed at a later point with potentially fewer contributors. This is part of a strategy to avoid letting the discussion in a meeting shift to a subject that is not aligned with the meeting goals and/or decisions.
 
 ## Goals
 
-1. Bring awareness of the progress done towards the sprint goal and the sprint backlog.
+1. Bring awareness to the contribution of each member for the past and upcoming day.
 2. Surface any impediments to one or more team members' contributions.
 
 ## Participation
