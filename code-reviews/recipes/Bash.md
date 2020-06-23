@@ -9,7 +9,7 @@
 [CSE](../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
 Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automatically format shell scripts. There are few vscode code extensions which are based on shfmt like shell-format which can be used to automatically format shell scripts.
 
-## Useful extensions for VS Code
+## Project Setup
 
 ### vscode-shellcheck
 
@@ -32,6 +32,8 @@ apt-get install shellcheck
 #### Install shellcheck on vscode:
 
 Find the vscode-shellcheck extension in vscode and install it.
+
+## Automatic Code Formatting
 
 ### shell-format
 
