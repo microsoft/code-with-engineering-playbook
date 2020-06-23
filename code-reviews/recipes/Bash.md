@@ -44,7 +44,31 @@ Also, your shell scripts can be formatted in your build pipeline by using shfmt.
   displayName: "Format Scripts: shfmt"
   ```
 
+## Pre-Commit Hooks
 
+All developers should run shellcheck and shfmt as pre-commit hooks.
+
+### Step 1- Install pre-commit
+
+Run `pip install pre-commit` to install pre-commit.
+Alternatively you can run `brew install pre-commit` if you are using homebrew.
+
+### Step 2- Add shellcheck and shfmt a
+
+Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-commit by adding it to .pre-commit-config.yaml file like below.
+
+```yaml
+-   repo: git://github.com/pecigonzalo/pre-commit-fmt
+    sha: master
+    hooks:
+      -   id: shell-fmt
+          args:
+            - --indent=4
+ ```
+
+### Step 3
+
+Run `$ pre-commit install` to setup the git hook scripts
 
 ## Dependencies
 
