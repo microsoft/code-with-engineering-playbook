@@ -7,15 +7,18 @@
 ## Code Analysis / Linting
 
 [CSE](../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
-Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automatically format shell scripts. There are few vscode code extensions which are based on shfmt like shell-format which can be used to automatically format shell scripts. 
+Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automatically format shell scripts. There are few vscode code extensions which are based on shfmt like shell-format which can be used to automatically format shell scripts.
 
-## Useful extensions for VS Code 
+## Useful extensions for VS Code
+
 ### vscode-shellcheck
+
 Shellcheck extension should be used in VS Code, it provides static code analysis capabilities and auto fixing linting issues. To use vscode-shellcheck in vscode do the following:
 
 #### Install shellcheck on your machine:
 
 For MacOS
+
 ```bash
 brew install shellcheck
 ```
@@ -25,10 +28,13 @@ For Ubuntu:
 ```bash
 apt-get install shellcheck
 ```
+
 #### Install shellcheck on vscode:
+
 Find the vscode-shellcheck extension in vscode and install it.
 
 ### shell-format
+
 shell-format extension does automatic formatting of your bash scripts, dockerfiles and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:
 
@@ -37,7 +43,9 @@ To use shell-format in vscode do the following:
 ```bash
 GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
 ```
+
 #### Install shell-format on vscode:
+
 Find the shell-format extension in vscode and install it.
 
 ## Build Validation
@@ -71,6 +79,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
     ./shunit2
   displayName: "Format Scripts: shfmt"
   ```
+  
 ## Pre-Commit Hooks
 
 All developers should run shellcheck and shfmt as pre-commit hooks.
