@@ -15,10 +15,33 @@ Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automati
 ### vscode-shellcheck
 Shellcheck extension should be used in VS Code, it provides static code analysis capabilities and auto fixing linting issues. To use vscode-shellcheck in vscode do the following:
 
+### Install shellcheck on your machine:
+
+For MacOS
+```bash
+brew install shellcheck
+```
+
+For Ubuntu:
+
+```bash
+apt-getinstall shellcheck
+```
+### Install shellcheck on vscode:
+Find the vscode-shellcheck extension in vscode and install it.
 
 ### shell-format
 shell-format extension does automatic formatting of your bash scripts, dockerfiles and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:
+
+### Install shfmt on your machine:
+
+```bash
+go get -u mvdan.cc/sh/cmd/shfmt
+```
+### Install shell-format on vscode:
+Find the shell-format extension in vscode and install it.
+
 
 ## Build Validation
 
