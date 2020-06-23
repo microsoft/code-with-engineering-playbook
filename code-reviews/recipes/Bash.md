@@ -34,10 +34,10 @@ Find the vscode-shellcheck extension in vscode and install it.
 shell-format extension does automatic formatting of your bash scripts, dockerfiles and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:
 
-#### Install shfmt on your machine:
+#### Install shfmt(Requires Go 1.13 or later) on your machine:
 
 ```bash
-go get -u mvdan.cc/sh/cmd/shfmt
+GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
 ```
 #### Install shell-format on vscode:
 Find the shell-format extension in vscode and install it.
