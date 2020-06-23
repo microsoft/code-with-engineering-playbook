@@ -8,6 +8,16 @@
 
 [CSE](../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
 
+## Useful extensions for VS Code 
+
+### vscode-shellcheck
+Shellcheck extension should be used in VS Code, it provides static code analysis capabilities and auto fixing linting issues. To use vscode-shellcheck in vscode do the following:
+
+
+### shell-format
+shell-format extension does automatic formatting of your bash scripts, dockerfiles and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
+To use shell-format in vscode do the following:
+
 ## Build Validation
 
 To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
