@@ -43,6 +43,16 @@ Also, your shell scripts can be formatted in your build pipeline by using shfmt.
     shfmt -l -w ./scripts/*.sh
   displayName: "Format Scripts: shfmt"
   ```
+  
+  Unit testing using [shunit2](https://github.com/kward/shunit2) can also be added to the build pipeline, using the following block:
+  
+  ```yaml
+- bash: |
+    echo "This step unit tests shell scripts by using shunit2"
+    ./shunit2
+  displayName: "Format Scripts: shfmt"
+  ```
+  
 
 ## Pre-Commit Hooks
 
@@ -53,7 +63,7 @@ All developers should run shellcheck and shfmt as pre-commit hooks.
 Run `pip install pre-commit` to install pre-commit.
 Alternatively you can run `brew install pre-commit` if you are using homebrew.
 
-### Step 2- Add shellcheck and shfmt a
+### Step 2- Add shellcheck and shfmt
 
 Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-commit by adding it to .pre-commit-config.yaml file like below.
 
