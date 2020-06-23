@@ -7,6 +7,38 @@
 ## Code Analysis / Linting
 
 [CSE](../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
+Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automatically format shell scripts. There are few vscode code extensions which are based on shfmt like shell-format which can be used to automatically format shell scripts. 
+
+## Useful extensions for VS Code 
+### vscode-shellcheck
+Shellcheck extension should be used in VS Code, it provides static code analysis capabilities and auto fixing linting issues. To use vscode-shellcheck in vscode do the following:
+
+#### Install shellcheck on your machine:
+
+For MacOS
+```bash
+brew install shellcheck
+```
+
+For Ubuntu:
+
+```bash
+apt-get install shellcheck
+```
+#### Install shellcheck on vscode:
+Find the vscode-shellcheck extension in vscode and install it.
+
+### shell-format
+shell-format extension does automatic formatting of your bash scripts, dockerfiles and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
+To use shell-format in vscode do the following:
+
+#### Install shfmt(Requires Go 1.13 or later) on your machine:
+
+```bash
+GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
+```
+#### Install shell-format on vscode:
+Find the shell-format extension in vscode and install it.
 
 ## Build Validation
 
@@ -22,6 +54,53 @@ To automate this process in Azure Devops you can add the following snippet to yo
     shellcheck ./scripts/*.sh
   displayName: "Validate Scripts: Shellcheck"
   ```
+  Also, your shell scripts can be formatted in your build pipeline by using shfmt. To integrate shfmt in your build pipeline do the following:
+
+```yaml
+- bash: |
+    echo "This step does auto formatting of shell scripts"
+    shfmt -l -w ./scripts/*.sh
+  displayName: "Format Scripts: shfmt"
+  ```
+  
+  Unit testing using [shunit2](https://github.com/kward/shunit2) can also be added to the build pipeline, using the following block:
+  
+  ```yaml
+- bash: |
+    echo "This step unit tests shell scripts by using shunit2"
+    ./shunit2
+  displayName: "Format Scripts: shfmt"
+  ```
+## Pre-Commit Hooks
+
+All developers should run shellcheck and shfmt as pre-commit hooks.
+
+### Step 1- Install pre-commit
+
+Run `pip install pre-commit` to install pre-commit.
+Alternatively you can run `brew install pre-commit` if you are using homebrew.
+
+### Step 2- Add shellcheck and shfmt
+
+Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-commit by adding it to .pre-commit-config.yaml file like below.
+
+```yaml
+-   repo: git://github.com/pecigonzalo/pre-commit-fmt
+    sha: master
+    hooks:
+      -   id: shell-fmt
+          args:
+            - --indent=4
+            
+-   repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.7.1.1
+    hooks:
+    -   id: shellcheck
+ ```
+
+### Step 3
+
+Run `$ pre-commit install` to setup the git hook scripts
 
 ## Dependencies
 
