@@ -25,7 +25,7 @@ brew install shellcheck
 For Ubuntu:
 
 ```bash
-apt-getinstall shellcheck
+apt-get install shellcheck
 ```
 ### Install shellcheck on vscode:
 Find the vscode-shellcheck extension in vscode and install it.
