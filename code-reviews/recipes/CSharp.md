@@ -47,7 +47,7 @@ The [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconf
 
 Microsoft's FxCop analyzers check your code for security, performance, and design issues, among others. [Install FxCop analyzers in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019).
 
-You can install the FxCop analyzers using nuget or a VSIX extension. We recommend using the nuget package ([see Project setup](#project-setup)). Which allows for consistent use accross all developers on a project as well as CI validation.
+You can install the FxCop analyzers using nuget or a VSIX extension. We recommend using the nuget package ([see Project setup](#project-setup)). Which allows for consistent use across all developers on a project as well as CI validation.
 
 ### StyleCop analyzer
 
@@ -57,7 +57,7 @@ The minimum rules set teams should adopt is the [Managed Recommended Rules](http
 
 ## Automatic Code Formatting
 
-Use .editorconfig to configure code formatting rules in your poject.
+Use .editorconfig to configure code formatting rules in your project.
 
 ## Build validation
 
