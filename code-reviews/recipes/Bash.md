@@ -102,8 +102,8 @@ Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-com
           args:
             - --indent=4
  ```
- 
- ```yaml        
+
+ ```yaml
 -   repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.7.1.1
     hooks:
