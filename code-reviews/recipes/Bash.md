@@ -137,3 +137,9 @@ In addition to the [Code Review Checklist](../README.md) you should also look fo
 * [ ] Does this code use [Built-in Shell](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html) Options like set -o, set -e, set -u for execution control of shell scripts.
 * [ ] Is the code modularized? Shell scripts can be modularized like python modules. Portions of bash scripts should be sourced in complex bash projects.
 * [ ] Are all exceptions handled correctly? Exceptions should be handled correctly using exit codes or trapping signals.
+* [ ] Does the code pass all linting checks as per shellcheck and unit tests as per shunit2.
+* [ ] Does the code uses relative paths or absolute paths? Relative paths should be avoided as they are prone to environment attacks. If relative path is needed, check the ```bash PATH``` variable is set.
+* [ ] Does the code pass all linting checks as per shellcheck and unit tests as per shunit2.
+* [ ] Does the code takes credentials as user input? Are the credentials masked or encrypted in the script?
+
+
