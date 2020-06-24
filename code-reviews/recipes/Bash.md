@@ -140,5 +140,3 @@ In addition to the [Code Review Checklist](../README.md) you should also look fo
 * [ ] Does the code pass all linting checks as per shellcheck and unit tests as per shunit2.
 * [ ] Does the code uses relative paths or absolute paths? Relative paths should be avoided as they are prone to environment attacks. If relative path is needed, check the ```PATH``` variable is set.
 * [ ] Does the code takes credentials as user input? Are the credentials masked or encrypted in the script?
-
-
