@@ -60,13 +60,13 @@ Performance testing is commonly conducted to accomplish one or more the followin
   * Depending on the scenario, modification of application or configuration are done and tests are executed again. For instance in case of a load test if the earlier execution shows that the performance targets for response time are not met and this is corelated with a component (say database) responding slowly, then optimizations to that component are made, and the tests are executed again
   
 ## Sample performance testing scenario
-To understand performance testing better, let us consider a sample scenario where we want to asses whether a web application can handle the expected production peak load in the coming months.
-The logical component view of the production application is as follows :
+To understand performance testing better, let us consider a sample scenario where we needed to asses whether a web application could handle the expected production peak load in the coming months.
+The logical component view of the production application was as follows :
 ![Production component view](./images/production-view.png)
 
-It is simple micro services based web application. Some of the internal services consume external third party services for their functionality.
+It was a simple micro services based web application. Some of the internal services consumed external third party services for their functionality.
 
-A Load test is planned for this application. 
+A Load test was planned for this application. 
 
 As a part of the performance testing activities:
 * Success critieria for the test was defined
@@ -98,4 +98,5 @@ Some of the performance testing tools are :
 
 ## Resources
 * Most of the guidance on this page is based on the awesome performance testing book [Patters and Practices: Performance Testing Guidance for Web Applications](https://docs.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications)
+* Multi JMeter Slave Load Testing using ACI [Sample](https://docs.microsoft.com/en-us/samples/azure-samples/jmeter-aci-terraform/jmeter-aci-terraform/)
 
