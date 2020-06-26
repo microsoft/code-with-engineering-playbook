@@ -51,7 +51,7 @@ For more complex applications, unit tests also ensure:
 Languages and Platforms provide their own unit test tools and frameworks. In [CSE](../CSE.md), we prefer:
 
 - .NET / Visual Studio: <https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code>
-- .NET / NUnit: <http://nunit.org/>
+- .NET / XUnit: <https://xunit.github.io/>
 - .NET Core: <https://docs.microsoft.com/en-us/dotnet/core/testing/>
 - Java: <https://junit.org/junit5/>
 - Go: <https://golang.org/pkg/testing/>
