@@ -4,6 +4,10 @@ Developers working on [CSE](../CSE.md) projects should adhere to industry-recomm
 
 **If you are looking for a fast way to get started** evaluating your application or design, check out the "Secure Coding Practices Quick Reference" document below, which contains an itemized checklist of high-level concepts you can validate are being done properly. This checklist covers many common errors associated with the OWASP Top 10 list linked above, and should be the minimum amount of effort being put into security.
 
+## Requesting Security Reviews
+
+When requesting a security review for your application, please make sure you have familiarized yourself with the [Rules of Engagement](rules-of-engagement.md). This will help you to prepare the application for testing, as well as understand the scope limits of the test.
+
 ## Quick References
 
 * [Secure Coding Practices Quick Reference](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
