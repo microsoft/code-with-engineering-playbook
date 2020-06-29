@@ -28,23 +28,20 @@ Still not sold? See all the [detailed descriptions of the points above](./why-un
 ## Unit Testing Design Blocks [The What]
 <!-- In this section, describe the test type, its components, and how they interact to solve the problem described above. -->
 
-Unit testing is the lowest level of testing and as such generally has few components and dependencies. The common
-requirements to unit tests are:
+Unit testing is the lowest level of testing and as such generally has few components and dependencies.
 
-- The system under test (SUT)
-- A unit testing framework and test runner
-- Unit test code
-
-The system under test in our case is the "unit" we are testing. Generally these are methods or functions, but depending
+The **system under test** is the "unit" we are testing. Generally these are methods or functions, but depending
 on the language these could be different. In general you want the unit to be as small as possible though.
 
-Most languages also have a wide suite of unit testing frameworks and ways to run unit tests. These test frameworks have
+Most languages also have a wide suite of **unit testing frameworks** and test runners. These test frameworks have
 a wide range of functionality, but the base functionality should be a way to organize your tests and run them quickly.
 
-Finally there is your unit test code; unit test code is generally short and simply, preferring repetition to adding
+Finally there is your **unit test code**; unit test code is generally short and simple, preferring repetition to adding
 layers and complexity to the code.
 
 ## Applying the Unit Testing [the how]
+
+Writing unit tests help encourage testable design
 
 - TDD
 - Dependency Injection 
