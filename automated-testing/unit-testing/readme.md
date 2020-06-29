@@ -63,6 +63,28 @@ What not to do
 
 <!-- In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information. -->
 
+### Test Frameworks
+
+TODO: Disclaimer. Should this just be removed?
+
+| Name                                         | Languages                  | Comments                  |
+| -------------------------------------------- | -------------------------- | ------------------------- |
+| [xUnit.net](https://xunit.net/)              | .NET Framework / .NET Core |                           |
+| [NUnit](https://nunit.org/)                  | .NET Framework / .NET Core |                           |
+| [Jest](https://jestjs.io/)                   | Javascript/Typescript      | Usually paired with React |
+| [Mocha](https://mochajs.org/)                | Javascript/Typescript      |                           |
+| [pytest](https://docs.pytest.org/en/latest/) | Python                     |                           |
+| [JUnit](https://junit.org/junit5/)           | Java                       |                           |
+| [Pester](https://pester.dev/)                | Powershell                 |                           |
+
+### Mock Frameworks
+
+Many projects start with both a unit test framework, and also add a mock framework. While mocking frameworks have their
+uses and sometimes can be a requirement, it should not be something that is added without considering the broader
+implications and risks associated with heavy usage of mocks.
+
+To see if mocking is right for your project, or if a mock-free approach is more appropriate, see the page on [mocking](mocking.md).
+
 ## Conclusion
 
 Unit testing is extremely important, but it is also not the silver bullet; having proper unit tests is just a part of a
