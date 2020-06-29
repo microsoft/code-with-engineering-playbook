@@ -6,7 +6,7 @@ This section is primarily geared towards web-based UIs, but the guidance is simi
 
 UI testing provides the ability to ensure that users have a consistent visual user experience across a variety of means of access and that the user interaction is consistent with the function requirements.
 
-### UI tests have several goals:
+### UI tests have several goals
 
 - Ensure the UI appearance and interaction satisfy the functional and non-functional requirements
 - Detect changes in the UI both across devices and delivery platforms and between code changes
@@ -21,7 +21,6 @@ Integrations like `BrowserStack` are nice since they provide Azure DevOps report
 
 That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml)
 
-
 ## General Guidance
 
 The scope of UI testing should be strategic. UI tests can take a significant amount of time to both implement and run, and it challenging to test every possibility of user interaction in a production application due to the large possible number of possible interactions.
@@ -30,7 +29,7 @@ Designing the UI tests around the functional tests makes sense.  For example, gi
 
 UI Tests will catch 'runtime' bugs that unit and functional tests won't.  For example if the submit button for an input form is rendered but not clickable due to a positioning bug in the UI, then this could be considered a runtime bug that would not have been caught by unit or functional tests.
 
-UI Tests can run on mock data or snapshots of production data, like in QA or staging. 
+UI Tests can run on mock data or snapshots of production data, like in QA or staging.
 
 ### Writing Tests
 
@@ -54,13 +53,12 @@ Note there that there are further considerations as when running headlessly the 
 Recommended testing frameworks:
 
 - Web:
-    - BrowserStack: <https://www.browserstack.com>
-    - Cypress: <https://www.cypress.io>
-    - Jest: <https://jestjs.io/docs/en/snapshot-testing>
-    - Selenium: <https://www.selenium.dev>
+  - BrowserStack: <https://www.browserstack.com>
+  - Cypress: <https://www.cypress.io>
+  - Jest: <https://jestjs.io/docs/en/snapshot-testing>
+  - Selenium: <https://www.selenium.dev>
 - OS/Mobile Applications:
-    - Coded UI tests (CUITs): https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019
-    - Xamarin.UITest: <https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/>
+  - Coded UI tests (CUITs): <https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019>
+  - Xamarin.UITest: <https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/>
 
 Note that the framework listed above that is paid is BrowserStack, it's listed as it industry standard, the rest are open source and free.
-
