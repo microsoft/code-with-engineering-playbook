@@ -37,4 +37,4 @@ Here are a few questions that should be answered as part of the agreement:
   - design reviews?
   - code reviews?
   - pair programming?
-- After CSE starts playing the role of Scrum Master, do we rotate and switch between a CSE and a CP Scrum Master?
+- After a first sprint where one person of CSE starts playing the role of Scrum Master, do we rotate and switch between a CSE and a CP Scrum Master? NB: we strongly encourage to rotate and switch between a CSE and a CP Scrum Master. But we recommend to have only one Scrum Master per sprint to avoid confusion in the team.
