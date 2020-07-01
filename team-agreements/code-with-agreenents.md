@@ -14,7 +14,7 @@ The Tech Lead role can be held by one person from CSE, or one person from CSE an
 
 When the role is played by both parties, they must agree on their respective scopes.
 For instance, if CP is an automotive company and the project is on Azure,
-the CSE Tech Lead will lead on Azure, and the CP Tech Lead will lead on everything related to automotive.
+the CSE Tech Lead will lead on Azure (ex: architecture, security, services choices etc.), and the CP Tech Lead will lead on everything related to automotive (ex: specific software, functional code, security and architectures decisions to follow standards/regulations etc.)
 
 If CP already have strong habits on software development, having the duo will be very beneficial to make sure
 these habits are both respected and challenged (if needed).
