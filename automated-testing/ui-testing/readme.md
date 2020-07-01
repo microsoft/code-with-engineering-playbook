@@ -1,12 +1,14 @@
-# UI Testing
+# User Interface Testing
 
 This section is primarily geared towards web-based UIs, but the guidance is similar for mobile and OS based applications.  
+
+## Applicability
+
+UI Testing is not always going to be applicable, for example applications without a UI or parts of an applciation that require no human interaction.  In those cases unit, functional and integration/e2e testing would be the primary means.  UI Testing is going to be mainly applicable when dealing with a public facing UI that is used in a diverse envrionment or in a mission critical UI that requires higher fidelity.  With something like an admin UI that is used by just a handful of people, UI Testing is still valuable but not as high priority.
 
 ## Goals
 
 UI testing provides the ability to ensure that users have a consistent visual user experience across a variety of means of access and that the user interaction is consistent with the function requirements.
-
-### UI tests have several goals
 
 - Ensure the UI appearance and interaction satisfy the functional and non-functional requirements
 - Detect changes in the UI both across devices and delivery platforms and between code changes
@@ -40,7 +42,7 @@ Good UI tests follow a few general principles:
 - Test on all primary devices that the user uses, don't just test on a single device or OS.
 - When a test mutates data ensure that data is created on demand and cleaned up after.  The consequence of not doing this would be inconsistent testing.  
 
-### Gotchas
+### Common Issues
 
 UI Testing can get very challenging at the lower level, especially with a testing framework like Selenium.  If you choose to go this route, then you'll likely encounter timeouts, missing elements, and you'll have significant friction with the testing framework itself.  Due to many issues with UI testing there have been a number of free and paid solutions that help alleviate certain issues with frameworks like Selenium.  This is why you'll find Cypress in the recommended frameworks as it solves many of the known issues with Selenium.
 
@@ -61,4 +63,4 @@ Recommended testing frameworks:
   - Coded UI tests (CUITs): <https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019>
   - Xamarin.UITest: <https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/>
 
-Note that the framework listed above that is paid is BrowserStack, it's listed as it industry standard, the rest are open source and free.
+Note that the framework listed above that is paid is BrowserStack, it's listed as it's an industry standard, the rest are open source and free.
