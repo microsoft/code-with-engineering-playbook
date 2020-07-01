@@ -23,9 +23,8 @@ these habits are both respected and challenged (if needed).
 
 The **PO (Product Owner)** role can also be held by one person from CSE, or one person from CSE and one person from CP. But in most cases, it's better to have a PO on both side.
 
-When the role is played by a duo, both people will work closely together to maintain a unique set of priorities
-for the backlog. When it comes to preparation of the backlog, the CP PO may have a stronger focus on what needs to be done
-while the CSE PO may have more ideas on if and how that can be done.
+When the role is played by a duo, both people will work closely together to maintain a unique set of priorities for the backlog.
+When it comes to backlog refinement, the CP PO may have a stronger focus on what needs to be done while the CSE PO may have more ideas on if and how that can be done.
 
 This is a suggestion, and it must be refined and agreed by both PO role players, based on the context of the engagement.
 
