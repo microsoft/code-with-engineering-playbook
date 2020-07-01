@@ -12,7 +12,7 @@ For all these reasons, both parties need to agree on a few principles.
 
 The Tech Lead role can be held by one person from CSE, or one person from CSE and one person from CP.
 
-When the role is played by both someone from CSE and someone from CP, they must agree on their respective scopes.
+When the role is played by both parties, they must agree on their respective scopes.
 For instance, if CP is an automotive company and the project is on Azure,
 the CSE Tech Lead will lead on Azure, and the CP Tech Lead will lead on everything related to automotive.
 
