@@ -12,16 +12,16 @@ For all these reasons, both parties need to agree on a few principles.
 
 The Tech Lead role can be held by one person from CSE, or one person from CSE and one person from CP.
 
-When the role is played by both someone from CSE and someone from CP, they must agree on their respective scopes.
+When the role is played by both parties, they must agree on their respective scopes.
 For instance, if CP is an automotive company and the project is on Azure,
-the CSE Tech Lead will lead on Azure, and the CP Tech Lead will lead on everything related to automotive.
+the CSE Tech Lead will lead on Azure (ex: architecture, security, services choices etc.), and the CP Tech Lead will lead on everything related to automotive (ex: specific software, functional code, security and architectures decisions to follow standards/regulations etc.)
 
 If CP already have strong habits on software development, having the duo will be very beneficial to make sure
 these habits are both respected and challenged (if needed).
 
 ## Product Owner Role
 
-The **PO (Product Owner)** role can also be held by one person from CSE, or one person from CSE and one person from CP.
+The **PO (Product Owner)** role can also be held by one person from CSE, or one person from CSE and one person from CP. But in most cases, it's better to have a PO on both side.
 
 When the role is played by a duo, both people will work closely together to maintain a unique set of priorities
 for the backlog. When it comes to preparation of the backlog, the CP PO may have a stronger focus on what needs to be done
