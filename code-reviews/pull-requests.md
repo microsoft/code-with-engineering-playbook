@@ -31,7 +31,7 @@ We should always aim to have pull requests be as small as possible, without losi
 
 1. They are easier to review; a clear benefit for the reviewers.
 1. They are easier to deploy; this is aligned with the strategy of release fast and release often.
-1. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
+1. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with main branch either because they're very dynamic or contain refactoring.
 
 However, we should avoid having PRs that include code that is without context or loosely coupled.
 

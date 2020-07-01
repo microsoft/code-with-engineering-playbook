@@ -146,7 +146,7 @@ VS.
 
 #### Atomic Pull Requests
 
-When the solution is encapsulated within a single repository, it also allows pull requests to represent a change across multiple layers. This is especially helpful when a change requires changes to a shared contract between multiple components. For example, a story requires that an api endpoint is changed. With this strategy the api and web client could be updated with the same pull request. This avoids master being broken temporarily while waiting on dependent pull requests to merge.
+When the solution is encapsulated within a single repository, it also allows pull requests to represent a change across multiple layers. This is especially helpful when a change requires changes to a shared contract between multiple components. For example, a story requires that an api endpoint is changed. With this strategy the api and web client could be updated with the same pull request. This avoids the main branch being broken temporarily while waiting on dependent pull requests to merge.
 
 [`TODO: Add link to other documented benefits of consolidated repos within source control section`]
 

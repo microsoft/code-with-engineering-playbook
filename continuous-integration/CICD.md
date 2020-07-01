@@ -6,7 +6,7 @@ Paired with an automated testing approach, continuous integration also allows us
 
 Continuous Delivery takes the Continuous Integration concept further to also test deployments of the integrated code base on a replica of the environment it will be ultimately deployed on. This enables us to learn early about any unforeseen operational issues that arise from our changes as quickly as possible and also learn about gaps in our test coverage.
 
-The goal of all of this is to ensure that "master is always shippable," meaning that we could, if we needed to, take a build from the master branch of our code base and ship it on production.
+The goal of all of this is to ensure that the main branch is always shippable, meaning that we could, if we needed to, take a build from the main branch of our code base and ship it on production.
 
 If these concepts are unfamiliar to you, take a few minutes and read through [Continuous Integration](https://www.martinfowler.com/articles/continuousIntegration.html) and [Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html).
 
