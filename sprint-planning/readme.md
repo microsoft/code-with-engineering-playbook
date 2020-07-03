@@ -22,7 +22,7 @@ General guidance:
 
 Specific roles:
 
-- [Scrum Master](https://www.agilealliance.org/glossary/scrum-master):
+- [Process Lead](https://www.agilealliance.org/glossary/scrum-master):
   - Facilitate the conversation.
   - Ensure everyone is heard.
   - Remind scrums principles and sprint planning goals if necessary.

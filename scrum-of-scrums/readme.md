@@ -19,7 +19,7 @@ This list of impediments is usually managed in a separate [backlog](../backlog-m
 
 ## Participation
 
-The common guideline is to have on average one person per sub team to participate in the scrum of scrums. Ideally, the scrum master of each sub team would represent them in this ceremony. In some instances, the representative for the day is selected at the end of each sub team daily [stand-up](../stand-ups/readme.md) and could change every day. In practice, having a fixed representative tends to be more efficient in the long term.
+The common guideline is to have on average one person per sub team to participate in the scrum of scrums. Ideally, the process lead of each sub team would represent them in this ceremony. In some instances, the representative for the day is selected at the end of each sub team daily [stand-up](../stand-ups/readme.md) and could change every day. In practice, having a fixed representative tends to be more efficient in the long term.
 
 ## Impact
 

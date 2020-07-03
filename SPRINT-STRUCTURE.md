@@ -41,7 +41,7 @@ The purpose of this document is to:
 - [ ] [Set up Source Control](source-control/readme.md)
   - Agree on [best practices for commits](source-control/contributing/readme.md#commit-best-practices)
 - [ ] [Set up basic Continuous Integration with linters and automated tests](continuous-integration/readme.md)
-- [ ] [Set up meetings for Daily Standups and decide on a scrum master](stand-ups/readme.md)
+- [ ] [Set up meetings for Daily Standups and decide on a Process Lead](stand-ups/readme.md)
   - Discuss purpose, goals, participants and facilitation guidance
   - Discuss timing, and how to run an efficient stand-up
 - [ ] [If the project has sub-teams, set up a Scrum of Scrums](scrum-of-scrums/readme.md)
