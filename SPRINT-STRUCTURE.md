@@ -29,7 +29,7 @@ The purpose of this document is to:
   - Determine team capacity
   - Assign user stories to the sprint and split user stories into tasks
   - Set up Work in Progress (WIP) limits
-- [ ] [Decide on test frameworks and discuss test strategies](test-first-development/readme.md)
+- [ ] [Decide on test frameworks and discuss test strategies](automated-testing/readme.md)
   - Discuss the purpose and goals of tests and how to measure test coverage
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
