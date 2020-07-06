@@ -61,7 +61,7 @@ Iteration reviews should follow the ceremony of the retrospective script, but us
 
 An iteration retrospective will usually take **1-2 hours**.
 
-Usually, the scrum master or engineering manager will lead the first one or two iteration retrospectives. After that, it's good for the team to take turns.
+Usually, the scrum lead or engineering manager will lead the first one or two iteration retrospectives. After that, it's good for the team to take turns.
 
 1. Set the stage.
     1. Run a quick Working Agreement activity (4.4) to give participants a chance to add any items to the standard working agreement.
@@ -82,7 +82,7 @@ This variation assumes that the team is running an iteration per day, which is c
 
 A single-day iteration retrospective will usually take **15-30 minutes**.
 
-The scrum master or engineering manager will lead these short retrospectives.
+The scrum lead or engineering manager will lead these short retrospectives.
 
 1. Set the stage.
     1. Remind everyone of the team's working agreement for daily retrospectives.

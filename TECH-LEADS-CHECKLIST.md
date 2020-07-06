@@ -50,7 +50,7 @@ More details on [Unit Testing](automated-testing/unit-testing/readme.md)
 
 ## Agile/Scrum
 
-- [ ] Scrum Master (fixed/rotating) to run standup daily.
+- [ ] Scrum Lead (fixed/rotating) to run standup daily.
 - [ ] Agile process clearly defined within team.
 - [ ] Tech Lead (+ PO/Others) have responsibility for backlog management and grooming.
 - [ ] Working agreement between members of team and customer.

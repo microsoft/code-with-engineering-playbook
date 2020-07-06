@@ -21,7 +21,7 @@ The term parking lot refers to a bucket of comments, concerns, or questions that
 
 The entire team should attend the stand-up. Anyone that worked on a task towards the sprint work should answer the three questions. It would be up to the team to decide if they would like updates from members that are not directly working against sprint task work (i.e. Product Owners and Program Managers).
 
-- Scrum Master (Required)
+- Scrum Lead (Required)
 - Product Owner (Optional)
 - Program Manager (Required)
 - Dev Manager (Required)
@@ -61,7 +61,7 @@ How many tasks are being generated after the stand-up that didn't exist before? 
 
 ## Facilitation Guidance
 
-The scrum master should facilitate the stand-up meeting.
+The scrum lead should facilitate the stand-up meeting.
 
 ### Speak to Tasks
 
@@ -76,7 +76,7 @@ If a contributor is not working on an existing sprint task they need to either c
 
 ### Parking Lot Discussion Items
 
-As contributors are answering the three questions, if another contributor has a question or issue to share, they should reserve until after all contributors have answered finished. Once each member has answered all three questions, the scrum master should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
+As contributors are answering the three questions, if another contributor has a question or issue to share, they should reserve until after all contributors have answered finished. Once each member has answered all three questions, the scrum lead should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
 
 **Parking lot discussions are optional for participants**. Ensure discussion leaders call out necessary parties for their discussion points upfront, allowing those not needed to leave the meeting.
 
@@ -107,4 +107,4 @@ For teams distributed across time zones, consider scheduling standup between 9 a
 
 ### Contributors Unable to Attend (async updates)
 
-If a contributor knows that they will have to miss the stand-up, ask them to provide their answers to the 3 questions in written form before the stand-up. They could provide these over a shared Teams channel or email to the team. The scrum master can then read the answers during the stand-up. Reading the update aloud during the stand-up will ensure the answers are communicated to the team.
+If a contributor knows that they will have to miss the stand-up, ask them to provide their answers to the 3 questions in written form before the stand-up. They could provide these over a shared Teams channel or email to the team. The scrum lead can then read the answers during the stand-up. Reading the update aloud during the stand-up will ensure the answers are communicated to the team.
