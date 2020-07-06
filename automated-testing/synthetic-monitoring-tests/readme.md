@@ -10,7 +10,7 @@ However, as more organizations today provide highly-available (99.9+ SLA) produc
 
 For such systems, the ambition of service engineering teams is to reduce to a minimum the time it takes to fix errors, or the [MTTR - Mean Time To Repair](https://en.wikipedia.org/wiki/Mean_time_to_repair). It is a continuous effort, performed on the live/production system.
 
-Synthetic Monitoring tests are a subset of tests that run in production, sometimes named Test-in-Production or Shift-Right tests. Shift right compliments and add on top of the Shift-Left paradigms that are so popular, providing modern service-engineering teams a broader set of tools to assure high SLAs over time.
+Synthetic Monitoring tests are a subset of tests that run in production, sometimes named Test-in-Production or Shift-Right tests. Shift right compliments and add on top of the Shift-Left paradigms that are so popular, providing modern engineering teams a broader set of tools to assure high SLAs over time.
 
 ## Synthetic Monitoring tests Design Blocks [The What]
 
@@ -43,16 +43,16 @@ Probes runtime is a production environment on its own, and the health of tests i
 
 Synthetic monitoring does not replace the need for RUM. Probes are predictable code that verifies specific scenarios, and they do not truly represent how a user session is handled. On the other hand, prefer not to use RUMs to test for site reliability because:
 
-* Requires user traffic. Our site may be down, but since no user visited it, no alerts were triggered yet.
-* Inconsistent Traffic and usage patterns - Making it hard to gauge for benchmarks.
+* As the name implies, RUM requires user traffic. The site may be down, but since no user visited the monitored path, no alerts were triggered yet.
+* Inconsistent Traffic and usage patterns make it hard to gauge for benchmarks.
 
 ### Risks
 
 Testing in production, in general, has a risk factor attached to it, which does not exist tests executed during CI/CD stages. Specifically, in synthetic monitoring tests, the following may affect the production environment:
 
 * Corrupted or invalid data - Tests inject test data which may be in some way corrupt. Consider using a testing schema.
-* Protected data leakage - Tests run in a production environment and emit logs or tracing that may contain protected data.
-* Overloaded systems - Synthetic tests may cause errors or overload the system themselves.
+* Protected data leakage - Tests run in a production environment and emit logs or trace that may contain protected data.
+* Overloaded systems - Synthetic tests may cause errors or overload the system.
 * Unintended side effects or impacts on other production systems.
 * Skewed analytics (traffic funnels, A/B test results, etc.)
 * Auth/AuthZ - Tests are required to run in production where access to tokens and secrets may be restricted or more challenging to retrieve.
@@ -61,7 +61,7 @@ Testing in production, in general, has a risk factor attached to it, which does 
 
 Most key monitoring/APM players have an enterprise product that supports synthetic monitoring built into their systems (see list below). Such offerings make some of the risks raised above irrelevant as the integration and runtime aspects of the solution are OOTB. However, such solutions are typically pricey.
 
-Some organizations prefer running probes on existing infrastructure using known tools such as [Postman](https://www.postman.com/), [Wrk](https://github.com/wg/wrk), [JMeter](https://jmeter.apache.org/), [Selenium](https://www.selenium.dev/) or even custom code to generate the synthetic data. Such solutions must account isolating and decoupling the probe's production environment from the core product's as well as provide monitoring, geo-disctribution, and maintaining test health.
+Some organizations prefer running probes on existing infrastructure using known tools such as [Postman](https://www.postman.com/), [Wrk](https://github.com/wg/wrk), [JMeter](https://jmeter.apache.org/), [Selenium](https://www.selenium.dev/) or even custom code to generate the synthetic data. Such solutions must account for isolating and decoupling the probe's production environment from the core product's as well as provide monitoring, geo-distribution, and maintaining test health.
 
 * [Application Insights availibility](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability) - Simple avaibility tests that allow some customization using [Multi-step web test](https://docs.microsoft.com/en-us/azure/azure-monitor/app/availability-multistep)
 * [DataDog Synthetics](https://www.datadoghq.com/dg/apm/synthetics/api-test/)
@@ -71,7 +71,7 @@ Some organizations prefer running probes on existing infrastructure using known 
 ## Conclusion
 
 The value of production tests, in general, and specifically Synthetic monitoring, is only there for particular engagement types, and there is associated risk and cost to them. However, when applicable, they provide continuous assurance that there are no system failures from a user's perspective.
-When developing a PaaS/SaaS solution, Synthetic monitoring is key to the success of service reliability teams, and they are becoming an integral part of the quality assurance stack of such highly available products.
+When developing a PaaS/SaaS solution, Synthetic monitoring is key to the success of service reliability teams, and they are becoming an integral part of the quality assurance stack of highly available products.
 
 ## Resources
 
