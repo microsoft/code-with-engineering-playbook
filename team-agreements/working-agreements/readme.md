@@ -43,6 +43,22 @@ The following are examples of sections and points that can be part of a working 
 | Task Creation | After Sprint Planning | - | Dev Team | Tech Lead | Create tasks to clarify and determine velocity |
 | [Backlog grooming](../../backlog-management/grooming/readme.md) | Wednesday 2PM | 1 hour | Tech lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
 
+## Process Lead
+
+The process lead is responsible for leading any scrum or agile practices to enable the project to move forward. Recommended responsibilities are below, as well as in the CWC Wiki.
+
+- Facilitate standup meetings and hold team accountable for attendance and participation.
+- Keep the meeting moving as described in the [Project Standup](./sprint-planning/../../../stand-ups/readme.md) page.
+- Make sure all action items are documented and ensure each has an owner and a due date and tracks the open issues.
+- Notes as needed after planning / standups.
+- Make sure that items are moved to the parking lot and ensure follow-up afterwards.
+- Maintain a location showing team’s work and status and removing impediments that are blocking the team.
+- Hold the team accountable for results in a supportive fashion.
+- Make sure that project and program documentation are up-to-date.
+- Guarantee the tracking/following up on action items from retrospectives (iteration and release planning) and from daily standup meetings.
+- Facilitate the sprint retrospective.
+- Coach Product Owner and the team in the process, as needed.
+
 ## Backlog management
 
 - We work together on a [Definition of Ready](../definition-of-ready/readme.md) and all user stories assigned to a sprint need to follow this
