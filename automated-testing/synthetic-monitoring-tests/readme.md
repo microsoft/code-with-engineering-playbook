@@ -67,7 +67,6 @@ Some organizations prefer running probes on existing infrastructure using known 
 * [DataDog Synthetics](https://www.datadoghq.com/dg/apm/synthetics/api-test/)
 * [Dynatrace Synthetic Monitoring](https://www.dynatrace.com/platform/synthetic-monitoring/)
 * [New Relic Synthetics](https://newrelic.com/products/synthetics)
-* [Netflix - Chaos Automation Platform](https://netflixtechblog.com/chap-chaos-automation-platform-53e6d528371f)
 
 ## Conclusion
 
@@ -82,4 +81,3 @@ When developing a PaaS/SaaS solution, Synthetic monitoring is key to the success
 
 [Martin Fowler - Synthetic Monitoring](https://martinfowler.com/bliki/SyntheticMonitoring.html)
 
-[Chaos Engineering](https://www.oreilly.com/library/view/chaos-engineering/9781491988459/)
