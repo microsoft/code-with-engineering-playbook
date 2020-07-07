@@ -36,12 +36,28 @@ The following are examples of sections and points that can be part of a working 
 
 | Activity | When | Duration | Who | Accountable | Goal |
 |-|-|-|-|-|-|
-| [Project Standup](./sprint-planning/../../../stand-ups/readme.md) | Tue-Fri 9AM | 15 min | Everyone | Scrum Master | What has been accomplished, next steps, blockers |
+| [Project Standup](./sprint-planning/../../../stand-ups/readme.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
 | Sprint Demo | Monday 9AM | 1 hour | Everyone | Tech Lead | Present work done and sign off on user story completion |
-| [Sprint Retro](./../../retrospectives/readme.md) | Monday 10AM | 1 hour | Everyone | Scrum Master | Dev Teams shares learnings and what can be improved |
+| [Sprint Retro](./../../retrospectives/readme.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
 | [Sprint Planning](./../../sprint-planning/readme.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
 | Task Creation | After Sprint Planning | - | Dev Team | Tech Lead | Create tasks to clarify and determine velocity |
 | [Backlog grooming](../../backlog-management/grooming/readme.md) | Wednesday 2PM | 1 hour | Tech lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
+
+## Process Lead
+
+The process lead is responsible for leading any scrum or agile practices to enable the project to move forward. Recommended responsibilities are below, as well as in the CWC Wiki.
+
+- Facilitate standup meetings and hold team accountable for attendance and participation.
+- Keep the meeting moving as described in the [Project Standup](./sprint-planning/../../../stand-ups/readme.md) page.
+- Make sure all action items are documented and ensure each has an owner and a due date and tracks the open issues.
+- Notes as needed after planning / standups.
+- Make sure that items are moved to the parking lot and ensure follow-up afterwards.
+- Maintain a location showing team’s work and status and removing impediments that are blocking the team.
+- Hold the team accountable for results in a supportive fashion.
+- Make sure that project and program documentation are up-to-date.
+- Guarantee the tracking/following up on action items from retrospectives (iteration and release planning) and from daily standup meetings.
+- Facilitate the sprint retrospective.
+- Coach Product Owner and the team in the process, as needed.
 
 ## Backlog management
 
