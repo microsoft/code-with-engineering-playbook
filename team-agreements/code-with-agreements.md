@@ -38,4 +38,4 @@ Here are a few questions that should be answered as part of the agreement:
   - design reviews?
   - code reviews?
   - pair programming?
-- After a first sprint where one person from CSE starts playing the role of Scrum Master, do we rotate and switch between a CSE and a Partner Scrum Master? In some cases, it might be useful to rotate and switch between a CSE and a Partner Scrum Master, but we recommended to have only one person fo the entire sprint, to avoid confusion.
+- After a first sprint where one person from CSE starts playing the role of Process Lead, do we rotate and switch between a CSE and a Partner Process Lead? In some cases, it might be useful to rotate and switch between a CSE and a Partner Process Lead, but we recommended to have only one person fo the entire sprint, to avoid confusion.
