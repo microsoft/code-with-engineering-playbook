@@ -74,6 +74,13 @@ The team members of the team can also help hold each other accountable for provi
   - Introduction of new tech whose testability is limited to manual steps in a deployed environment.
   - Addition of new repository
 
+### New Team Members - Identify Iterative Improvements
+
+New team members are uniquely positioned to identify instances of undocumented [Collective Wisdom](https://en.wikipedia.org/wiki/Collective_wisdom). The following outlines responsibilities of new team members as it relates to devex:
+
+- If you come across missing, incomplete or incorrect documentation while onboarding, you should record the issue as a new defect(s) and assign it to the product owner to be triaged.
+- If no onboarding documentation exists, note the steps you took in a new user story. Assign the new story to the product owner to be triaged.
+
 ## Facilitation Guidance
 
 The following outline examples of several strategies that can be adopted to promote a positive developer experience. It is expected that each team should define what a positive dev experience means within the context of their project. Additionally, refine that over time via feedback mechanisms such as sprint and project retrospectives.
@@ -146,7 +153,7 @@ VS.
 
 #### Atomic Pull Requests
 
-When the solution is encapsulated within a single repository, it also allows pull requests to represent a change across multiple layers. This is especially helpful when a change requires changes to a shared contract between multiple components. For example, a story requires that an api endpoint is changed. With this strategy the api and web client could be updated with the same pull request. This avoids master being broken temporarily while waiting on dependent pull requests to merge.
+When the solution is encapsulated within a single repository, it also allows pull requests to represent a change across multiple layers. This is especially helpful when a change requires changes to a shared contract between multiple components. For example, a story requires that an api endpoint is changed. With this strategy the api and web client could be updated with the same pull request. This avoids the main branch being broken temporarily while waiting on dependent pull requests to merge.
 
 [`TODO: Add link to other documented benefits of consolidated repos within source control section`]
 

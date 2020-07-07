@@ -31,21 +31,25 @@ We should always aim to have pull requests be as small as possible, without losi
 
 1. They are easier to review; a clear benefit for the reviewers.
 1. They are easier to deploy; this is aligned with the strategy of release fast and release often.
-1. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with master either because they're very dynamic or contain refactoring.
+1. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with main branch either because they're very dynamic or contain refactoring.
 
-However, we should avoid having PRs that include code that is without context or loosely coupled.
+However, we should avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PR could be faster to write but slower to review. We should always strive to have as small PRs as possible that still add value. Besides the size, remember that every PR should:
 
-<!-- TODO: Expand the topics below
+* Be consistent,
+* not break the build, and
+* include related tests as part of the PR.
 
-There are times where seem a big PR is unavoidable; however, there are some strategies to keep PRs small depending on the "cause" of the ineluctability:
+Be consistent means that all the changes included on the PR should aim to solve one goal (ex. one user story) and be intrinsically related. Think of this as the Single-responsibility principle in terms of the whole project, the PR should have only one *reason to change* the project.
 
-### Minimum Working Components
-### Layers
-### Feature Flag
+Start small, it is easier to create a small PR from the start than to break up a bigger one.
 
--->
+These are some strategies to keep PRs small depending on the "cause" of the inevitability, you could break the PR into self-container changes which still add value, release features that are hidden (see feature flag, feature toggling or canary releases) or break the PR into different layers (for example using design patterns like MVC or Observer/Subject). No matter the strategy.
 
 ## Resources
 
 * [Review code with pull requests (Azure DevOps)](https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)
 * [Collaborating with issues and pull requests (GitHub)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests)
+* [Google approach to PR size](https://google.github.io/eng-practices/review/developer/small-cls.html)
+* [Feature Flags](https://www.martinfowler.com/articles/feature-toggles.html)
+* [Facebook approach to hidden features](https://launchdarkly.com/blog/secret-to-facebooks-hacker-engineering-culture/)
+* [Azure approach to canary releases](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/deployment#stage-your-workloads)
