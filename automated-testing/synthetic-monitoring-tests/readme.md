@@ -80,4 +80,3 @@ When developing a PaaS/SaaS solution, Synthetic monitoring is key to the success
 [Microsoft DevOps Architectures - Shift Right to Test in Production](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/shift-right-test-production)
 
 [Martin Fowler - Synthetic Monitoring](https://martinfowler.com/bliki/SyntheticMonitoring.html)
-
