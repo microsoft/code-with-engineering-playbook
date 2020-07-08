@@ -13,7 +13,7 @@ Mock data | Test data | Test data | Copy of real production data |
 Isolated unit test | Tests interfaces and flow data between the modules | Tests a particular system as a whole | Tests an application flow from start to end |
 The test scenarios use developers perspectives | The test scenarios use developers and IT Pro testers perspectives | The test scenarios use the developers and QA testers perspectives | The test scenarios use the end-user perspectives |
 Unit testing happens after each build | Integration test happens after Unit testing | System testing happens before the E2E testing and after Unit and Integration testing | E2E testing happens after System testing |
-Automation testing | It can be manual or automation testing | It can be manual or automation testing | It is a manual testing |
+Automation testing | It can be manual or automation testing | It can be manual or automation testing | It can be manual or automation testing |
 
 ## Sections within Testing
 

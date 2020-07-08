@@ -62,7 +62,7 @@ An automated build should encompass the following principles:
 - [ ] **Build Script Target**
   - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
 - [ ] **No IDE Dependencies**
-  - It's essential to have a master build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
+  - It's essential to have a build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
 ## Build Environment Dependencies
 
@@ -157,9 +157,9 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
   - Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
 - [ ] **Branch policy enforcement**
-  - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/configuring-protected-branches) should be setup on master to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
+  - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/configuring-protected-branches) should be setup on the main branch to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
   - Broken builds should block pull request reviews.
-  - Prevent commits directly into master.
+  - Prevent commits directly into main branch.
 
 - [ ] **Branch strategy**
   - Release branches should auto trigger the deployment of a build artifact to it's target cloud environment. One branch strategy worth considering is  [trunk-based development](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-releases) and [Release Flow's Branching Structure](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow).
@@ -198,7 +198,7 @@ Our devops workflow should enable developers to get, install and run the latest 
 - [ ] **Developers can access latest executable**
   - Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
-- [ ] **Release artifact is published for each pull request or merges into master**
+- [ ] **Release artifact is published for each pull request or merges into main branch**
 
 ## Integration Observability
 
