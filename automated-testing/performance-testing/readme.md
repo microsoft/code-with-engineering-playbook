@@ -63,3 +63,4 @@ Performance testing is commonly conducted to accomplish one or more the followin
 ## Resources
 
 * [Patters and Practices: Performance Testing Guidance for Web Applications](https://docs.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications)
+  
