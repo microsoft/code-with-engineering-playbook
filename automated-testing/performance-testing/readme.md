@@ -1,4 +1,4 @@
-# Peformance Testing
+# Perormance Testing
 
 Performance Testing is an overloaded term that is used to refer to several sub categories of performance related testing, each of which has different purpose. A good description of overall performance testing is as follows:
 
@@ -10,7 +10,7 @@ Before getting into the different subcategories of performance tests let us unde
 
 Performance testing is commonly conducted to accomplish one or more the following:
 
-* To help in accessing whether a **system is ready for Release**:
+* To help in assessing whether a **system is ready for Release**:
   * Estimating / Predicting the performance characteristics (such as response time, throughput) which an application is likely to have when it is released in to production. The results can help in predicting the satisfaction level of the users when interacting with the system. The predicted values can also be compared with agreed values (success criteria) for the performance characteristics when available.
   * To help in accessing the adequacy of the infrastructure / managed service sku's to meet the desired performance characteristics of a system
   * Identifying bottlenecks and issues with the application at different load levels
@@ -35,7 +35,7 @@ Performance testing is commonly conducted to accomplish one or more the followin
 
 ## Key Performance testing activities
 
-  Performance testing activities vary depending on sub category of performance test, the engagment requirements and constraints. For specific guidance you can follow the link to the sub category of performance tests listed above. Following are some activities which will generally be involved:
+  Performance testing activities vary depending on sub category of performance test, the engagement requirements and constraints. For specific guidance you can follow the link to the sub category of performance tests listed above. Following are some activities which will generally be involved:
 
 ### Identify and Define the Acceptance criteria for the tests
 
