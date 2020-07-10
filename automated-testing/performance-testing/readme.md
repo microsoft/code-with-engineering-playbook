@@ -1,4 +1,4 @@
-# Perormance Testing
+# Performance Testing
 
 Performance Testing is an overloaded term that is used to refer to several sub categories of performance related testing, each of which has different purpose. A good description of overall performance testing is as follows:
 
