@@ -1,6 +1,6 @@
 # Synthetic Monitoring Tests
 
-Synthetic Monitoring Tests are a set of functional tests that run alongside the core product to verify its health and resilience, at runtime.
+Synthetic Monitoring Tests are a set of functional tests that target a live system in production. The focus of these tests, which are sometimes named "watchdog", "active monitoring" or "synthetic transactions", is to verify the product's health and resilience continuously.
 
 ## Why Synthetic Monitoring tests [The Why]
 
@@ -8,21 +8,30 @@ Traditionally, software providers rely on testing through CI/CD stages in the we
 
 However, as more organizations today provide highly-available (99.9+ SLA) products, they find that the nature of long-lived distributed applications, which typically rely on several hardware and software components, is to fail. Frequent releases (sometimes multiple times per day) of various components of the system can create further instability. This rapid rate of change to the production environment tends to make testing during CI/CD stages not hermetic and actually not representative of the end user experience and how the production system actually behaves.
 
-For such systems, the ambition of service engineering teams is to reduce to a minimum the time it takes to fix errors, or the [MTTR - Mean Time To Repair](https://en.wikipedia.org/wiki/Mean_time_to_repair). It is a continuous effort, performed on the live/production system.
+For such systems, the ambition of service engineering teams is to reduce to a minimum the time it takes to fix errors, or the [MTTR - Mean Time To Repair](https://en.wikipedia.org/wiki/Mean_time_to_repair). It is a continuous effort, performed on the live/production system. Synthetic Monitors can be used to detect the following issues:
 
-Synthetic Monitoring tests are a subset of tests that run in production, sometimes named Test-in-Production or Shift-Right tests. Shift right compliments and add on top of the Shift-Left paradigms that are so popular, providing modern engineering teams a broader set of tools to assure high SLAs over time.
+* Availibility - Is the system or specific region available.
+* Transactions and customer journeys - Known good requests should work, while known bad requests should error.
+* Performance - How fast are actions and is that performance maintained through high loads and through version releases.
+* 3rd Party components - Cloud or software components used by the system may fail.
+
+### Shift-Right Testing
+
+Synthetic Monitoring tests are a subset of tests that run in production, sometimes named Test-in-Production or Shift-Right tests.
+With [Shift-Left](https://en.wikipedia.org/wiki/Shift-left_testing) paradigms that are so popular, the approach is to perform testing as early as possible in the application development lifecycle (i.e., moved left on the project timeline).
+Shift right compliments and adds on top of Shift-Left. It refers to running tests late in the cycle, during deployment, release, and post-release when the product is serving production traffic. They provide modern engineering teams a broader set of tools to assure high SLAs over time.
 
 ## Synthetic Monitoring tests Design Blocks [The What]
 
-Testing using synthetic data and real testing accounts injects user behaviors to the system and validates their effect, usually by passively relying on existing monitoring and alerting capabilities.
+A synthetic monitoring test is a test that uses synthetic data and real testing accounts to inject user behaviors to the system and validates their effect, usually by passively relying on existing monitoring and alerting capabilities.
 Components of synthetic monitoring tests include **Probes**, test code/ accounts which generates data, and **Monitoring tools** placed to validate both the system's behavior under test and the health of the probes themselves.
 
 ![E2E Testing Pyramid](./images/syntheticMonitoring.png)
 
 ### Probes
 
-A Synthetic Monitoring test is, in fact, very related to black-box tests and would usually focus on end-to-end scenarios from a user's perspective.
-It is not uncommon for the same code for e2e or integration tests to be used to implement the probe. Probes target front-end or publicly-facing APIs.
+Probes are the source of synthetic user actions that drive testing. They target the product's front-end or publicly-facing APIs and are running on their own production environment.
+A Synthetic Monitoring test is, in fact, very related to black-box tests and would usually focus on end-to-end scenarios from a user's perspective. It is not uncommon for the same code for e2e or integration tests to be used to implement the probe.
 
 ### Monitoring
 
@@ -34,6 +43,15 @@ There would usually be a finite set of tests, and key metrics that are used to b
 ### Asserting the system under tests
 
 Synthetic monitoring tests are usually statistical. Test metrics are compared against some historical or running average with a time dimension *(Example: Over the last 30 days, for this time of day, the mean average response time is 250ms for AddToCart operation with a standard deviation from the mean of +/- 32ms)*. So if an observed measurement is within a [deviation of the norm](https://en.wikipedia.org/wiki/Standard_deviation) at any time, the services are probably healthy.
+
+### Building a Syntehtic Monitoring Solution
+
+At a high level, building synthetic monitors usually consists of the following steps:
+
+* Determine the metric to be validated (functional result, latency, etc.)
+* Build a piece of automation that measures that metric against the system, and gathers telemetry into the system's existing monitoring infrastructure.
+* Set up monitoring alarms/actions/responses that detect the failure of the system to meet the desired goal of the metric.
+* Run the test case automation continuously at an appropriate interval.
 
 ### Monitoring the health of tests
 
