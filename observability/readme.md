@@ -48,7 +48,7 @@ Read on how Observability can be implemented in [Machine Learning](observability
 
 Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system.
 
-## Recommended Tools and Approaches
+## Recommended Tools And Approaches
 
 [More content coming shortly]
 * Prometheus
