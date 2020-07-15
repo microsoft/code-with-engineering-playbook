@@ -12,10 +12,10 @@ Building observable systems enables development teams at CSE to measure how well
 ## Sections
 
 - [Pillars of Observability](#pillars-of-observability)
+- [Observability in Machine Learning](observability/ml-observability.md)
 - [Recommended Practices](#recommended-practices)
-- [Pitfalls to Avoid](#pitfalls-to-avoid)
+- [Logs vs Metrics](observability/log-vs-metric.md)
 - [Recommended Tools and Approaches](#recommended-tools-and-approaches)
-- [Tools](#tools)
 - [Recipes](#recipes)
 
 ## Pillars of Observability
@@ -24,18 +24,36 @@ Building observable systems enables development teams at CSE to measure how well
 2. [Tracing](pillars/tracing.md)
 3. [Metrics](pillars/metrics.md)
 
+## Observability in Machine Learning
+
+Read on how Observability can be implemented in [Machine Learning](observability/ml-observability.md) engagements effectively during Model tuning, experimentation and production.
+
 ## Recommended Practices
 
 1. **Correlation Id**: Include unique identifier at the start of the interaction to tie down aggregated data from various system components and provide a holistic view. Read more guidelines about using [correlation id](correlation-id.md).
-2. Ensure health of the services are **monitored** and provide insights into system's performance and behavior.
-3. **Faults, crashes, and failures** are logged as discrete events. This helps engineers identify problem area(s) during failures.
-4. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.
-5. Ensure that **metrics** around latency and duration are collected and can be aggregated.
-6. Start small and add where there is customer impact.
 
-## Pitfalls to avoid
+2. Ensure health of the services are **monitored** and provide insights into system's performance and behavior.
+
+3. **Faults, crashes, and failures** are logged as discrete events. This helps engineers identify problem area(s) during failures.
+
+4. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.
+
+5. Ensure that **metrics** around latency and duration are collected and can be aggregated.
+
+6. Start small and add where there is customer impact. [Avoiding metric fatigue](pitfalls.md#metric-fatigue) is very crucial to collecting actionable data.
+
+7. It is important that every data that is collected contains relevant and rich context.
+
+8. Personally Identifiable Information or any other customer sensitive information should never be logged. Special attenti
 
 Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system.
+
+## Recommended Tools and Approaches
+
+[More content coming shortly]
+* Prometheus
+* Jaeger
+* Loki
 
 ## Recipes
 
