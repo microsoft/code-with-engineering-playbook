@@ -51,9 +51,12 @@ Read more [here](pitfalls.md) to understand what to watch out for while designin
 ## Recommended Tools And Approaches
 
 [More content coming shortly]
-* Prometheus
-* Jaeger
-* Loki
+
+- Prometheus
+
+- Jaeger
+
+- Loki
 
 ## Recipes
 
