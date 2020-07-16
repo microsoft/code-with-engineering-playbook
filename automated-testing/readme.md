@@ -21,3 +21,4 @@ Automation testing | It can be manual or automation testing | It can be manual o
 * [Integration testing](integration-testing/readme.md)
 * [End-to-End testing](e2e-testing/readme.md)
 * [Synthetic Monitoring testing](synthetic-monitoring-tests/readme.md)
+* [Performance testing](performance-testing/readme.md)
