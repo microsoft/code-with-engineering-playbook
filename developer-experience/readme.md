@@ -118,6 +118,12 @@ The following are ceremonies that the DevEx champion can use to find potential o
 
 As opportunities are identified, the DevEx champion can translate these into actionable stories for the product backlog.
 
+### Make Tasks Cross Platform 
+
+For essential tasks being standardized during the engagement, ensure that different platforms are accounted for. Team members may have different operating systems and ensuring the tasks are cross platform will provide an additional opportunity to improve the experience. 
+
+See the [making tasks cross platform recipe ](./recipes/cross-platform-tasks.md) with VS Code for guidance on how tasks can be configured to include different platforms. 
+
 ### Standardize Essential Tasks
 
 Apply a common strategy across solution components for performing the essential tasks
