@@ -126,9 +126,9 @@ See the [making tasks cross platform recipe](./recipes/cross-platform-tasks.md) 
 
 ### Create an Onboarding Guide
 
-When welcoming new team members on the engagement, there are many areas for them to get adjusted to and bring them up to speed including codebase, coding standards, team agreements, and team culture. By adopting a strong onboarding practice such as an onboarding guide in a centralized location that explains the scope of the project, processes, setup details, and software required, new members can have all the necessary resources for them to be efficient, successful and a valuable team member from the start. 
+When welcoming new team members on the engagement, there are many areas for them to get adjusted to and bring them up to speed including codebase, coding standards, team agreements, and team culture. By adopting a strong onboarding practice such as an onboarding guide in a centralized location that explains the scope of the project, processes, setup details, and software required, new members can have all the necessary resources for them to be efficient, successful and a valuable team member from the start.
 
-See the [onboarding guide recipe](./recipes/onboarding-guide-template.md) for guidance on what an onboarding guide may look like. 
+See the [onboarding guide recipe](./recipes/onboarding-guide-template.md) for guidance on what an onboarding guide may look like.
 
 ### Standardize Essential Tasks
 
