@@ -48,3 +48,7 @@ Not all scripts or tasks can be auto-detected in the workspace. It may be necess
 ```
 
 The command here is a shell command and tells the system to run either the test.sh or test.cmd. By default, it will run test.sh with that given path. This example here also defines Windows specific properities and tells it execute test.cmd instead of the default.
+
+## References
+
+VS Code Docs - [operating system specific properties](https://vscode-docs.readthedocs.io/en/stable/editor/tasks/#operating-system-specific-properties)

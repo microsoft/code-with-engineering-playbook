@@ -6,18 +6,17 @@ When developing an onboarding document for a team, it should contain details of 
 
 * List a few sentences explaining the high-level summary and the scope of the engagement.
 * Consider adding any additional background and context as needed.
-* Include the goals of this engagement and what the team is trying to achieve.
+* Include the value proposition of the project, goals, what success looks like, and what the team is trying to achieve and why.
 
 ## Contacts
 
-* List a few of the main contacts from the engagement both from the customer and Microsoft team.
+* List a few of the main contacts for the team and project overall such as the Tech Lead and Product Owner.
 * Consider including the roles of these main contacts so that the team knows who to reach out to depending on the situation.
 
 ## Team Agreement and Code of Conduct
 
 * Include the team's code of conduct or agreement that defines a set of expectation from each team member and how the team has agreed to operate.
-* This could include Pull request process, coding style, coding standards, definition of done.
-* List a few bullets on communication expectations, meeting timings.
+* Working Agreement Template - [working agreement](../../team-agreements/working-agreements/readme.md)
 
 ## Dev Environment Setup
 
