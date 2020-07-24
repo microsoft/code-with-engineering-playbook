@@ -11,27 +11,24 @@ type of testing; a unit test should be:
 - **Fast** - should run in milliseconds, a whole unit testing suite shouldn't take longer than a couple seconds
 - **Isolated** - removing all external dependencies ensures reliability and speed
 
-<!-- The document should start with a brief overview about the test type and what is covered in this document, the goal here is to provide a high-level description to help the reader understand what is covered to decide whether to continue reading or not. -->
-
 ## Why Unit Testing
 
 It is no secret that writing unit tests is hard, and even harder to write well. Writing unit tests also increases the
-development time for every feature. So why should we bother writing them?
+development time for every feature. So why should we write them?
 
-- Reduces costs by catching bugs earlier
+- Reduces costs by catching bugs earlier and preventing regressions
 - Increases developer confidence in changes
 - Speeds up developer inner loop
 - Documentation as code
 
-Still not sold? See all the [detailed descriptions of the points above](./why-unit-tests.md)
+For more details, see all the [detailed descriptions of the points above](./why-unit-tests.md).
 
 ## Unit Testing Design Blocks [The What]
-<!-- In this section, describe the test type, its components, and how they interact to solve the problem described above. -->
 
 Unit testing is the lowest level of testing and as such generally has few components and dependencies.
 
-The **system under test** is the "unit" we are testing. Generally these are methods or functions, but depending
-on the language these could be different. In general you want the unit to be as small as possible though.
+The **system under test** (abbreviated SUT) is the "unit" we are testing. Generally these are methods or functions, but
+depending on the language these could be different. In general you want the unit to be as small as possible though.
 
 Most languages also have a wide suite of **unit testing frameworks** and test runners. These test frameworks have
 a wide range of functionality, but the base functionality should be a way to organize your tests and run them quickly.
@@ -61,14 +58,13 @@ that [Dependency Injection is a more specific way of saying inversion of control
 
 #### Test-Driven Development
 
-Test-Driven Development (TDD) is less a technique in how your code is designed, but a technique that will lead you to a
-testable design from the start. There are many forms of test-driven development, but the underlying point is that you
-write your test code first and then write the system under test to match the APIs defined in the test. This way all the
-test design is done up front and by the time you finish writing your system code, you are already at 100% test pass rate
-and test coverage.
+Test-Driven Development (TDD) is less a technique in how your code is designed, but a technique for writing your
+code that will lead you to a testable design from the start. The basic premise of test-driven development is that you
+write your test code first and then write the system under test to match the test you just wrote. This way all the test
+design is done up front and by the time you finish writing your system code, you are already at 100% test pass rate and
+test coverage. It also guarantees testable design is built into the system since the test was written first!
 
-One common method of writing a class in a TDD fashion is called Red-Green-Refactor. For more information on
-Red-Green-Refactor and an example into using TDD, see the page on [Test-Driven Development](./tdd.md)
+For more information on TDD and an example, see the page on [Test-Driven Development](./tdd.md)
 
 ### Best Practices
 
@@ -85,21 +81,21 @@ Red-Green-Refactor and an example into using TDD, see the page on [Test-Driven D
 
 ## Unit Testing Frameworks and Tools
 
-<!-- In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information. -->
-
 ### Test Frameworks
 
-TODO: Disclaimer. Should this just be removed?
+The following are some examples of unit tests frameworks for various languages. This is by no means an exhaustive list,
+nor a recommendation of one framework over another, but can serve as a reference of some commonly used frameworks.
 
-| Name                                         | Languages                  | Comments                  |
-| -------------------------------------------- | -------------------------- | ------------------------- |
-| [xUnit.net](https://xunit.net/)              | .NET Framework / .NET Core |                           |
-| [NUnit](https://nunit.org/)                  | .NET Framework / .NET Core |                           |
-| [Jest](https://jestjs.io/)                   | Javascript/Typescript      | Usually paired with React |
-| [Mocha](https://mochajs.org/)                | Javascript/Typescript      |                           |
-| [pytest](https://docs.pytest.org/en/latest/) | Python                     |                           |
-| [JUnit](https://junit.org/junit5/)           | Java                       |                           |
-| [Pester](https://pester.dev/)                | Powershell                 |                           |
+| Name                                               | Languages                  | Comments                  |
+| -------------------------------------------------- | -------------------------- | ------------------------- |
+| [xUnit.net](https://xunit.net/)                    | .NET Framework / .NET Core |                           |
+| [NUnit](https://nunit.org/)                        | .NET Framework / .NET Core |                           |
+| [Jest](https://jestjs.io/)                         | Javascript/Typescript      | Usually paired with React |
+| [Mocha](https://mochajs.org/)                      | Javascript/Typescript      |                           |
+| [pytest](https://docs.pytest.org/en/latest/)       | Python                     |                           |
+| [JUnit](https://junit.org/junit5/)                 | Java                       |                           |
+| [Pester](https://pester.dev/)                      | Powershell                 |                           |
+| [Package testing](https://golang.org/pkg/testing/) | Golang                     |                           |
 
 ### Mock Frameworks
 
@@ -108,6 +104,14 @@ uses and sometimes can be a requirement, it should not be something that is adde
 implications and risks associated with heavy usage of mocks.
 
 To see if mocking is right for your project, or if a mock-free approach is more appropriate, see the page on [mocking](mocking.md).
+
+### Tools
+
+These tools allow for constant running of your unit tests with in-line code coverage, making the dev inner loop
+extremely fast and allows for easy TDD:
+
+- [Visual Studio Live Unit Testing](https://docs.microsoft.com/en-us/visualstudio/test/live-unit-testing-intro?view=vs-2019)
+- [Wallaby.js](https://wallabyjs.com/)
 
 ## Conclusion
 
@@ -118,4 +122,4 @@ well-tested system.
 
 ## Resources
 
-<!-- List additional readings about this test type for those that would like to dive deeper. -->
+- [Unit Testing Best Practices](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
