@@ -122,7 +122,7 @@ As opportunities are identified, the DevEx champion can translate these into act
 
 For essential tasks being standardized during the engagement, ensure that different platforms are accounted for. Team members may have different operating systems and ensuring the tasks are cross platform will provide an additional opportunity to improve the experience.
 
-See the [making tasks cross platform recipe](./recipes/cross-platform-tasks.md) with VS Code for guidance on how tasks can be configured to include different platforms.
+- See the [making tasks cross platform recipe](./recipes/cross-platform-tasks.md) for guidance on how tasks can be configured to include different platforms.
 
 ### Create an Onboarding Guide
 

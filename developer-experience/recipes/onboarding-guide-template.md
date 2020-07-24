@@ -1,6 +1,6 @@
 # Onboarding Guide Template
 
-When developing an onboarding document for a team, it should contain details of engagement scope, team processes, codebase, coding standards, team agreements, software requirements and setup details.
+When developing an onboarding document for a team, it should contain details of engagement scope, team processes, codebase, coding standards, team agreements, software requirements and setup details. The onboarding guide can be used as an index to project specific content if it already exists elsewhere. Allowing this guide to be utilized as a foundation with the links will help keep the guide consise and effective.
 
 ## Overview and Goals
 
@@ -20,7 +20,7 @@ When developing an onboarding document for a team, it should contain details of 
 
 ## Dev Environment Setup
 
-* List out steps to run the project end-to-end.
+* Consider adding steps to run the project end-to-end. This could be in form of a seperate wiki page or document that can be linked here.
 * Include any software that needs to be downloaded and specify if a specific version of the software is needed.
 
 ## Project Building Blocks
