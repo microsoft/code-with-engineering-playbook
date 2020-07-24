@@ -68,8 +68,61 @@ For more information on TDD and an example, see the page on [Test-Driven Develop
 
 ### Best Practices
 
-- Arrange/Act/Assert
-- Test naming FunctionName_StateUnderTest_Result
+#### Arrange/Act/Assert
+
+One common form of organizing your unit test code is called Arrange/Act/Assert. This divides up your unit test into 3
+different discrete sections:
+
+1. Arrange - Set up all the variables, mocks, interfaces, and state you will need to run the test
+2. Act - Run the system under test, passing in any of the above objects that were created
+3. Assert - Check that with the given state that the system acted appropriately.
+
+Using this pattern to write tests makes them very readable and also familiar to future developers who would need to read
+your unit tests.
+
+##### Example
+
+Let's assume we have a class `MyObject` with a method `TrySomething` that interacts with an array of strings, but if the
+array has no elements, it will return false. We want to write a test that checks the case where array has no elements:
+
+```csharp
+[Fact]
+public void TrySomething_NoElements_ReturnsFalse()
+{
+    // Arrange
+    var elements = Array.Empty<string>();
+    var myObject = new MyObject();
+
+    // Act
+    var myReturn = myObject.TrySomething(elements);
+
+    // Assert
+    Assert.False(myReturn);
+}
+
+```
+
+#### Keep tests small and test only one thing
+
+Unit tests should be short and test only one thing. This makes it easy to diagnose when there was a failure without
+needing something like which line number the test failed at. When using [Arrange/Act/Assert](#arrangeactassert), think
+of it like testing just one thing in the "Act" phase.
+
+There is some disagreement on whether or not testing one thing means "assert one thing" or "test one state, with
+multiple asserts if needed". Both have their advantages and disadvantages, but as with most technical disagreements
+there is no "right" answer. Consistency when writing your tests one way or the other is more important!
+
+#### Using a standard naming convention for all unit tests
+
+Without having a set standard convention for unit test names, unit test names end up being either not descriptive
+enough, or duplicated across multiple different test classes. Establishing a standard is not only important for keeping
+your code consistent, but a good standard also improves the readability and debug-ability of a test. In this article,
+the convention used for all unit tests has been `UnitName_StateUnderTest_ExpectedResult`, but there are lots of other
+possible conventions as well, the important thing is to be consistent and descriptive. Having descriptive names such as
+the one above makes it trivial to find the test when there is a failure, and also already explains what the expectation
+of the test was and what state caused it to fail. This can be especially helpful when looking at failures in a CI/CD
+system where all you know is the name of the test that failed - instead now you know the name of the test and exactly
+why it failed (especially coupled with a test framework that logs helpful output on failures).
 
 ### Things to Avoid
 
