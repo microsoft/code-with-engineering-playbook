@@ -73,11 +73,23 @@ For more information on TDD and an example, see the page on [Test-Driven Develop
 
 ### Things to Avoid
 
-- sleeps
-- reading from disk
-- calling APIs
+Some common pitfalls when writing a unit test that are important to avoid:
 
-<!-- In this section, describe what good testing looks like for this test type, discuss some of the best practices, discuss pitfalls to avoid, and finally discuss some of the common tools used to apply the test type, if any. -->
+- Sleeps - A sleep can be an indicator that perhaps something is making a request to a dependency that it should not be.
+  In general, if your code is flaky without the sleep, consider why it is failing and if you can remove the flakiness by
+  introducing a more reliable way to communicate potential state changes. Adding sleeps to your unit tests also breaks
+  one of our original tenets of unit testing: tests should be fast, as in order of milliseconds. If tests are taking on
+  the order of seconds, they become more cumbersome to run.
+- Reading from disk - It can be really tempting to the expected value of a function return in a file and read that file
+  to compare the results. This creates a dependency with the system drive, and it breaks our tenet of keeping our unit
+  tests isolated and 100% reliable. Any outside dependency such as file system access could potentially cause
+  intermittent failures. Additionally this could be a sign that perhaps the test or unit under test is too complex and
+  should be simplified.
+- Calling third-party APIs - When you do not control a third-party library that you are calling into, its impossible to
+  know for sure what that is doing, and it is best to abstract it out. Otherwise you may be making REST calls or other
+  potential areas of failure without directly writing the code for it. This is also generally a sign that the design of
+  the system is not entirely testable. It is best to wrap third party API calls in interfaces or other structures so
+  that they do not get invoked in unit tests.
 
 ## Unit Testing Frameworks and Tools
 
