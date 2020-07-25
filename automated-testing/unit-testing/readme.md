@@ -38,13 +38,31 @@ layers and complexity to the code.
 
 ## Applying the Unit Testing [the how]
 
-TODO: intro
+Getting started with writing a unit test is much easier than some other test types since it should require next to no
+setup and is just code. Each [test framework](#test-frameworks) is different in how you organize and write your tests,
+but the general techniques and best practices of writing a unit test are universal.
 
 ### Techniques
 
-To illustrate some of the unit testing techniques, let's start with an example.
+These are some commonly used techniques that will help when authoring unit tests. For some examples, see the pages on
+using [abstraction and dependency injection to author a unit test](authoring_example.md), or how to do [test-driven development](tdd.md)
 
 #### Abstraction
+
+Abstraction is when we take an exact implementation detail and we generalize it into a concept instead. This technique
+can be used in creating testable design and is used often especially in object oriented languages. For unit tests,
+abstraction is commonly used to break a hard dependency and replace it with an abstraction. That abstraction then allows
+for greater flexibility in the code and allows for the a [mock or simulator](mocking.md) to be used in its place.
+
+One of the side effects of abstracting dependencies is that you may have an abstraction that has no test coverage. This
+is case where unit testing is not well-suited, you can not expect to unit test everything, things like dependencies will
+always be an uncovered case. This is why even if you have a robust unit testing suite, [integration or functional testing](../integration-testing/readme.md)
+should still be used - without that, a change in the way the dependency functions would never be caught.
+
+When building wrappers around third-party dependencies, it is best to keep the implementations with as little logic as
+possible, using a very simple [facade](https://en.wikipedia.org/wiki/Facade_pattern) that calls the dependency.
+
+An example of using abstraction can be found [here](authoring_example.md#abstraction).
 
 #### Dependency Injection
 
@@ -55,6 +73,8 @@ classes wrapping a REST API, or even something as simple as file access. By inje
 rather than constructing them, we have "inverted control" of the dependency. You may see "Inversion of Control" and
 "Dependency Injection" used as separate terms, but it is very hard to have one and not the other, with some arguing
 that [Dependency Injection is a more specific way of saying inversion of control](https://martinfowler.com/articles/injection.html#InversionOfControl).
+
+An example of using dependency injection can be found [here](authoring_example.md#dependency-injection).
 
 #### Test-Driven Development
 
@@ -99,7 +119,6 @@ public void TrySomething_NoElements_ReturnsFalse()
     // Assert
     Assert.False(myReturn);
 }
-
 ```
 
 #### Keep tests small and test only one thing
