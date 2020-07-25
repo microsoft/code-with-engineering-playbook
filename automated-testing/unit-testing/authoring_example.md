@@ -74,7 +74,7 @@ public void Initialize()
 
     // Config is in the format: key=value
     var config = configContents.Select(l => l.Split('='))
-                                .ToDictionary(kv => kv[0], kv => kv[1]);
+                               .ToDictionary(kv => kv[0], kv => kv[1]);
 
     // Assign all properties here
     this.MyProperty = config["myproperty"];
@@ -211,7 +211,6 @@ public class ConfigurationTests
 
         Assert.Throws<InvalidOperationException>(() => config.Initialize());
     }
-
 
     [Fact]
     public void Initialize_MalformedLine_Throws()
