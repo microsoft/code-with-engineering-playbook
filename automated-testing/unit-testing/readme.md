@@ -200,9 +200,8 @@ extremely fast and allows for easy TDD:
 ## Conclusion
 
 Unit testing is extremely important, but it is also not the silver bullet; having proper unit tests is just a part of a
-well-tested system. 
-
-<!-- In conclusion, provide the final thoughts on why and how this type of test can help with your next customer engagement, what best practices and recommendations that can be withdrawn from the case studies and research. -->
+well-tested system. However, writing proper unit tests will help with the design of your system as well as help catch
+regressions, bugs, and increase developer velocity.
 
 ## Resources
 
