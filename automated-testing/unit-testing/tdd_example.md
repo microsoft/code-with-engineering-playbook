@@ -1,8 +1,4 @@
-# Test-Driven Development
-
-## Red-Green-Refactor
-
-### Example
+# Test-Driven Development Example
 
 With this method, rather than writing all your tests up front, you write one test a time and then switch to write the
 system code that would make that test pass. It's important to write the bare minimum of code necessary even if it is not
