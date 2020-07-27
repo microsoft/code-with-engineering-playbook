@@ -66,7 +66,23 @@ An example of using abstraction can be found [here](authoring_example.md#abstrac
 
 #### Dependency Injection
 
+[Dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) is a technique which allows us to extract
+dependencies from our code. In a normal use-case of a dependant class, the dependency is constructed and used within the
+system under test. This creates a hard dependency between the two classes, which can make it particularly hard to test
+in isolation. Dependencies could be things like classes wrapping a REST API, or even something as simple as file access.
+By injecting the dependencies into our system rather than constructing them, we have "inverted control" of the
+dependency. You may see "Inversion of Control" and "Dependency Injection" used as separate terms, but it is very hard to
+have one and not the other, with some arguing that [Dependency Injection is a more specific way of saying inversion of
+control](https://martinfowler.com/articles/injection.html#InversionOfControl).
+
+One of the [downsides of dependency injection](https://en.wikipedia.org/wiki/Dependency_injection#Disadvantages) is that
+it can easily go overboard. While there are no longer hard dependencies, there is still coupling between the interfaces,
 and passing around every interface implementation into every class presents just as many downsides as not using
+Dependency Injection. Being intentional with what dependencies get injected to what classes is key to a maintainable
+system.
+
+Many languages include special Dependency Injection frameworks that take care of the boilerplate code and construction
+of the objects. Examples of this are [Spring](https://spring.io/) in Java or built into [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.1)
 
 An example of using dependency injection can be found [here](authoring_example.md#dependency-injection).
 
@@ -161,19 +177,9 @@ Some common pitfalls when writing a unit test that are important to avoid:
 
 ### Test Frameworks
 
-The following are some examples of unit tests frameworks for various languages. This is by no means an exhaustive list,
-nor a recommendation of one framework over another, but can serve as a reference of some commonly used frameworks.
-
-| Name                                               | Languages                  | Comments                  |
-| -------------------------------------------------- | -------------------------- | ------------------------- |
-| [xUnit.net](https://xunit.net/)                    | .NET Framework / .NET Core |                           |
-| [NUnit](https://nunit.org/)                        | .NET Framework / .NET Core |                           |
-| [Jest](https://jestjs.io/)                         | Javascript/Typescript      | Usually paired with React |
-| [Mocha](https://mochajs.org/)                      | Javascript/Typescript      |                           |
-| [pytest](https://docs.pytest.org/en/latest/)       | Python                     |                           |
-| [JUnit](https://junit.org/junit5/)                 | Java                       |                           |
-| [Pester](https://pester.dev/)                      | Powershell                 |                           |
-| [Package testing](https://golang.org/pkg/testing/) | Golang                     |                           |
+Unit test frameworks are constantly changing. For a full list of every unit testing framework [see the page on
+Wikipedia](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks). Frameworks have many different features and
+should be picked based on which feature-set fits best for the particular project.
 
 ### Mock Frameworks
 
