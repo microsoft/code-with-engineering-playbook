@@ -66,13 +66,7 @@ An example of using abstraction can be found [here](authoring_example.md#abstrac
 
 #### Dependency Injection
 
-Dependency injection is a technique which allows us to extract dependencies from our code. In a normal use-case of a
-dependant class, the dependency is constructed and used within the system under test. This creates a hard dependency
-between the two classes, which can make it particularly hard to test in isolation. Dependencies could be things like
-classes wrapping a REST API, or even something as simple as file access. By injecting the dependencies into our system
-rather than constructing them, we have "inverted control" of the dependency. You may see "Inversion of Control" and
-"Dependency Injection" used as separate terms, but it is very hard to have one and not the other, with some arguing
-that [Dependency Injection is a more specific way of saying inversion of control](https://martinfowler.com/articles/injection.html#InversionOfControl).
+and passing around every interface implementation into every class presents just as many downsides as not using
 
 An example of using dependency injection can be found [here](authoring_example.md#dependency-injection).
 
