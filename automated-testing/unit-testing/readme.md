@@ -196,6 +196,8 @@ extremely fast and allows for easy TDD:
 
 - [Visual Studio Live Unit Testing](https://docs.microsoft.com/en-us/visualstudio/test/live-unit-testing-intro?view=vs-2019)
 - [Wallaby.js](https://wallabyjs.com/)
+- [Infinitest](http://infinitest.github.io/) for Java
+- [PyCrunch](https://plugins.jetbrains.com/plugin/13264-pycrunch--live-testing) for Python
 
 ## Conclusion
 
