@@ -81,4 +81,4 @@ During the meeting:
 Other considerations:
 
 - Take into account off days (vacations, national holidays, unavailability).
-- When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different workstreams. This might require thinking about [scrum of scrums](./../scrum-of-scrums/readme.md) and all related ceremonies.
+- When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different work streams. This might require thinking about [scrum of scrums](./../scrum-of-scrums/readme.md) and all related ceremonies.
