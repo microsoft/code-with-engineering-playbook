@@ -4,7 +4,7 @@ A workflow is a configurable automated process made up of one or more jobs where
 
 Additional information on GitHub actions and GitHub Workflows in the links posted in the [references](#References) section below. 
 
-# Environments
+## Environments
 
 Environments can be used for different reasons, like some environments are used for development and testing while others are used for production. 
 
@@ -14,7 +14,7 @@ Continuous deployment pipelines help promote changes through automated testing a
 
 To understand more about deployment environments, and their differences, please refer to the link in the [references](#References) section below.
 
-# Workflow Per Environment
+## Workflow Per Environment
 
 The general approach is to have one pipeline, where the code is built, tested and deployed and the artifact is then promoted to the next environment, eventually to be deployed into production. 
 
@@ -24,7 +24,7 @@ This also helps to keep the deployments to the environments independent thus red
 
 <!-- An example of initializing workflows to deploy, in an automated way, for each environment can be seen [here](https://github.com/microsoft/github-workflow-initialization) -->
 
-# References
+## References
 
 - [GitHub Actions](https://docs.github.com/en/actions)
 - [GitHub Workflows](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
