@@ -4,18 +4,6 @@ Continuous Deployment can be thought of as a deployment pipeline where a piece o
 
 Continuous deployments can be achieved by creating different environments in [Azure DevOps](https://docs.microsoft.com/en-us/aspnet/core/azure/devops/cicd) or by using multiple [GitHub workflows](https://docs.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow). These environments can be used for different reasons like some environments are used for development and testing while others are used for production.
 
-A few things to keep in mind when creating pipelines for continuous deployment:
-
-1. Keep your pipelines fast
-1. Isolate and secure your CI/CD environment
-1. Make the CI/CD pipeline the only way to deploy to production
-1. Maintain parity with production wherever possible
-1. Build only once and promote the result through the pipeline
-1. Run your fastest tests early
-1. Minimize branching in your version control system
-1. Run tests locally before committing to the CI/CD pipeline
-1. Run tests in temporary environments when possible
-
 More details on environments and the steps for setting up different environments using GitHub workflows can be found [here](../continuous-deployment/pipelines/recipes/github-workflows/workflow-per-environment.md).
 
 For additional information and details on CI/CD please refer to this [link](../continuous-integration/CICD.md).
