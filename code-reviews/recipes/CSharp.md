@@ -32,7 +32,7 @@ We recommend using a common setup for your solution that you can refer to in all
         <AdditionalFiles Include="$(MSBuildThisFileDirectory)../.editorconfig" />
     </ItemGroup>
 ...
-</Project> 
+</Project>
 ```
 
 You can then reference the common.props in your other project files to ensure a consistent setup.
