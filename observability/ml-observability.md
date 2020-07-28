@@ -1,7 +1,7 @@
 # Observability in Machine Learning  
 
 Development process of software system with machine learning component is more complex
-than traditional software. We need to monitor changes and variations in three dimentions:
+than traditional software. We need to monitor changes and variations in three dimensions:
 the code, the model and the data.
 We can distinguish two stages of such system lifespan: experimentation and production
 that require  different approaches to observability as discussed below:
@@ -20,11 +20,11 @@ MLFlow is open source framework that can be hosted on Azure Databricks. You can 
 Source code and dataset version are also saved with log snapshot to provide reproducibility.
 
 [Azure Machine Learning Service](https://ml.azure.com/)
-Azure Machine Learning service provides SDK for Python, R and C#  to log your evaluation metrics to Azure Machine Learning service(AML) Experiment. Experiments are viewed in AML dashboard. Reproducibility is achived by storing code or notebook snapshot together with viewed metric. You can create versioned Datasets within Azure Machine Learning service.
+Azure Machine Learning service provides SDK for Python, R and C#  to log your evaluation metrics to Azure Machine Learning service(AML) Experiment. Experiments are viewed in AML dashboard. Reproducibility is achieved by storing code or notebook snapshot together with viewed metric. You can create versioned Datasets within Azure Machine Learning service.
 
 ## Model in production
 
-The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more detailes -refer to [Recipes](readme.md) section). MLFLow is an alternative way to deploy ML model as a service.
+The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](readme.md) section). MLFLow is an alternative way to deploy ML model as a service.
 
 ## Training and re-training
 
