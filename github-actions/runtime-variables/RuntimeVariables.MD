@@ -4,7 +4,9 @@
 While Github Actions is a popular choice for writing and running CI/CD pipelines, especially for open source projects hosted on Github, it lacks specific quality of life features found in other CI/CD environments. One key feature that Github Actions has not yet implemented is the ability to **mock and inject runtime variables** into a workflow, in order to test the pipeline itself.
 
 ## Target Audience
-This guide assumes that you are familiar with CI/CD, and understand the security implications of CI/CD pipelines. We assume that you, as a CI/CD engineer, want to inject environment variables or environment flags into your pipelines and workflows in order to test them, and are using Github Actions to accomplish this.
+This guide assumes that you are familiar with CI/CD, and understand the security implications of CI/CD pipelines. We also assume basic knowledge with Github Actions, including how to write and run a basic CI/CD pipeline, checkout repositories inside the action, use Marketplace Actions with version control, etc.
+
+We assume that you, as a CI/CD engineer, want to inject environment variables or environment flags into your pipelines and workflows in order to test them, and are using Github Actions to accomplish this.
 
 ## Usage Scenario
 Many integration or end-to-end workflows require specific environment variables that are only available at rutime. For example, a workflow might be doing the following:
@@ -22,7 +24,126 @@ Github Actions does not do so yet.
 ## Solution
 To workaround this, the easiest solution is to add runtime variables to either commit messages or the PR Body, and `grep` for the variable. **This is NOT for injecting secrets** as the commit messages and PR body can be retrieved by a third party, are stored in `git log`, and can otherwise be read by a malicious individual using a variety of tools. Rather, this is for testing a workflow that needs simple variables to be injected into it, as above.
 
-**If you need to retrieve secrets or sensitive information**, use the ![Github Action for Azure Key Vault](https://github.com/marketplace/actions/azure-key-vault-get-secrets) or some other similar secret storage and retrieval service.
+**If you need to retrieve secrets or sensitive information**, use the [Github Action for Azure Key Vault](https://github.com/marketplace/actions/azure-key-vault-get-secrets) or some other similar secret storage and retrieval service.
 
 ### Commit Message Variables
+
+#### Pre-requisites
+- Pipeline triggers are correctly set up to trigger on pushed commits (Here we will use `actions-test-branch` as the branch of choice)
+
+#### Code Snippet
+
+```
+on:
+  push:
+    branches:
+      - actions-test-branch
+
+jobs:
+  Echo-On-Commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v2
+
+      - name: "Set flag from Commit"
+        env:
+          COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
+        run: |
+          if ${COMMIT_VAR} == true; then
+            echo "::set-env name=flag::true"
+            echo "flag set to true"
+          else
+            echo "::set-env name=flag::false"
+            echo "flag set to false"
+          fi
+
+      - name: "Use flag if true"
+        if: env.flag
+        run: echo "Flag is available and true"
+```
+
+#### Code Explanation
+The first part of the code is setting up Push triggers on the working branch and checking out the repository, so we will not explore that in detail.
+
+```
+  - name: "Set flag from Commit"
+    env:
+      COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
+```
+
+This is a named step inside the only Job in our Github Actions pipeline. Here, we set an environment variable for the step: Any code or action that the step calls will now have the environment variable available.
+
+`contains` is a Github Actions function that is available by default in all workflows. It returns a Boolean `true` or `false` value. In this situation, it checks to see if the commit message on the last push, accessed using `github.event.head_commit.message`. The `${{...}}` is necessary to use the Github Context and make the functions and `github.event` variables available for the command.
+
+```
+  run: |
+    if ${COMMIT_VAR} == true; then
+      echo "::set-env name=flag::true"
+      echo "flag set to true"
+    else
+      echo "::set-env name=flag::false"
+      echo "flag set to false"
+    fi
+```
+
+The `run` command here checks to see if the `COMMIT_VAR` variable has been set to `true`, and if it has, it sets a secondary flag to true, and echoes this behavior. It does the same if the variable is `false`.
+
+The specific reason to do this is to allow for the `flag` variable to be used in further steps instead of having to reuse the `COMMIT_VAR` in every step. Further, it allows for the flag to be used in the `if` step of an action, as in the next part of the snippet.
+
+```
+- name: "Use flag if true"
+  if: env.flag
+  run: echo "Flag is available and true"
+```
+
+In this part of the snippet, the next step in the same job is now using the `flag` that was set in the previous step. This allows the user to:
+
+1. Reuse the flag instead of repeatedly accessing the Github Context
+2. Set the flag using multiple conditions, instead of just one. For example, a different step might ALSO set the flag to `true` or `false` for different reasons. 
+3. Change the variable in exactly one place instead of having to change it in multiple places
+
+#### Shorter Alternative
+
+The "Set flag from commit" step can be simplified to the following in order to make the code much shorter, although not necessarily more readable:
+
+```
+- name: "Set flag from Commit"
+  env:
+    COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
+  run: |
+    echo "::set-env name=flag::${COMMIT_VAR}"
+    echo "set flag to ${COMMIT_VAR}"
+```
+
+#### Usage
+
+1. Push to branch `master`:
+
+```
+> git add.
+> git commit -m "Running Github Actions Test [commit var]"
+> git push
+```
+
+2. This triggers the workflow (as will any push). As the `[commit var]` is in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `true` and result in the following:
+
+![Commit True Scenario](images/CommitTrue.PNG)
+
+3. Push to  branch `master`:
+
+```
+> git add.
+> git commit -m "Running Github Actions Test"
+> git push
+```
+
+4. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
+
+![Commit True Scenario](images/CommitFalse.PNG)
+
+
+### PR Body Variables
+
+When a PR is made, the PR Body can also be used to setup variables. These variables can be made available to all the workflow runs that stem from that PR, which can help ensure that commit messages are more informative and less cluttered, and reduces the work on the developer.
 
