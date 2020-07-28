@@ -21,15 +21,15 @@ Performance testing is commonly conducted to accomplish one or more the followin
 
 ## Key Performance Testing categories
 
-### **Performance Testing**
+### Performance Testing
 
   This category is the super set of all sub categories of performance related testing. It validates/determines the speed, scalability or reliability characteristics of the system under test. Performance testing focuses on achieving the response times, throughput, and resource utilization levels which meet the performance objectives of a system
 
-### **Load Testing**
+### Load Testing
   
   This is the subcategory of performance testing which focuses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation. **Endurance Test** or **Soak Test** is a load test carried over a long  duration ranging from several hours to days.
 
-### **Stress Testing**
+### Stress Testing
 
   This is the subcategory of performance testing which focuses on validating the performance characteristics of a system when the system faces extreme load. The goal is to evaluate how does the system handles being pressured to its limits, does it recover (i.e. scale-out) or does it just break and fail?
 

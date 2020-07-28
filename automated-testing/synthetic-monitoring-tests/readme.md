@@ -10,10 +10,10 @@ However, as more organizations today provide highly-available (99.9+ SLA) produc
 
 For such systems, the ambition of service engineering teams is to reduce to a minimum the time it takes to fix errors, or the [MTTR - Mean Time To Repair](https://en.wikipedia.org/wiki/Mean_time_to_repair). It is a continuous effort, performed on the live/production system. Synthetic Monitors can be used to detect the following issues:
 
-* Availability - Is the system or specific region available.
-* Transactions and customer journeys - Known good requests should work, while known bad requests should error.
-* Performance - How fast are actions and is that performance maintained through high loads and through version releases.
-* 3rd Party components - Cloud or software components used by the system may fail.
+- Availability - Is the system or specific region available.
+- Transactions and customer journeys - Known good requests should work, while known bad requests should error.
+- Performance - How fast are actions and is that performance maintained through high loads and through version releases.
+- 3rd Party components - Cloud or software components used by the system may fail.
 
 ### Shift-Right Testing
 
@@ -48,10 +48,10 @@ Synthetic monitoring tests are usually statistical. Test metrics are compared ag
 
 At a high level, building synthetic monitors usually consists of the following steps:
 
-* Determine the metric to be validated (functional result, latency, etc.)
-* Build a piece of automation that measures that metric against the system, and gathers telemetry into the system's existing monitoring infrastructure.
-* Set up monitoring alarms/actions/responses that detect the failure of the system to meet the desired goal of the metric.
-* Run the test case automation continuously at an appropriate interval.
+- Determine the metric to be validated (functional result, latency, etc.)
+- Build a piece of automation that measures that metric against the system, and gathers telemetry into the system's existing monitoring infrastructure.
+- Set up monitoring alarms/actions/responses that detect the failure of the system to meet the desired goal of the metric.
+- Run the test case automation continuously at an appropriate interval.
 
 ### Monitoring the health of tests
 
@@ -61,19 +61,19 @@ Probes runtime is a production environment on its own, and the health of tests i
 
 Synthetic monitoring does not replace the need for RUM. Probes are predictable code that verifies specific scenarios, and they do not 100% completely and truly represent how a user session is handled. On the other hand, prefer not to use RUMs to test for site reliability because:
 
-* As the name implies, RUM requires user traffic. The site may be down, but since no user visited the monitored path, no alerts were triggered yet.
-* Inconsistent Traffic and usage patterns make it hard to gauge for benchmarks.
+- As the name implies, RUM requires user traffic. The site may be down, but since no user visited the monitored path, no alerts were triggered yet.
+- Inconsistent Traffic and usage patterns make it hard to gauge for benchmarks.
 
 ### Risks
 
 Testing in production, in general, has a risk factor attached to it, which does not exist tests executed during CI/CD stages. Specifically, in synthetic monitoring tests, the following may affect the production environment:
 
-* Corrupted or invalid data - Tests inject test data which may be in some way corrupt. Consider using a testing schema.
-* Protected data leakage - Tests run in a production environment and emit logs or trace that may contain protected data.
-* Overloaded systems - Synthetic tests may cause errors or overload the system.
-* Unintended side effects or impacts on other production systems.
-* Skewed analytics (traffic funnels, A/B test results, etc.)
-* Auth/AuthZ - Tests are required to run in production where access to tokens and secrets may be restricted or more challenging to retrieve.
+- Corrupted or invalid data - Tests inject test data which may be in some way corrupt. Consider using a testing schema.
+- Protected data leakage - Tests run in a production environment and emit logs or trace that may contain protected data.
+- Overloaded systems - Synthetic tests may cause errors or overload the system.
+- Unintended side effects or impacts on other production systems.
+- Skewed analytics (traffic funnels, A/B test results, etc.)
+- Auth/AuthZ - Tests are required to run in production where access to tokens and secrets may be restricted or more challenging to retrieve.
 
 ## Synthetic Monitoring tests Frameworks and Tools
 
@@ -81,10 +81,10 @@ Most key monitoring/APM players have an enterprise product that supports synthet
 
 Some organizations prefer running probes on existing infrastructure using known tools such as [Postman](https://www.postman.com/), [Wrk](https://github.com/wg/wrk), [JMeter](https://jmeter.apache.org/), [Selenium](https://www.selenium.dev/) or even custom code to generate the synthetic data. Such solutions must account for isolating and decoupling the probe's production environment from the core product's as well as provide monitoring, geo-distribution, and maintaining test health.
 
-* [Application Insights availability](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability) - Simple availability tests that allow some customization using [Multi-step web test](https://docs.microsoft.com/en-us/azure/azure-monitor/app/availability-multistep)
-* [DataDog Synthetics](https://www.datadoghq.com/dg/apm/synthetics/api-test/)
-* [Dynatrace Synthetic Monitoring](https://www.dynatrace.com/platform/synthetic-monitoring/)
-* [New Relic Synthetics](https://newrelic.com/products/synthetics)
+- [Application Insights availability](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability) - Simple availability tests that allow some customization using [Multi-step web test](https://docs.microsoft.com/en-us/azure/azure-monitor/app/availability-multistep)
+- [DataDog Synthetics](https://www.datadoghq.com/dg/apm/synthetics/api-test/)
+- [Dynatrace Synthetic Monitoring](https://www.dynatrace.com/platform/synthetic-monitoring/)
+- [New Relic Synthetics](https://newrelic.com/products/synthetics)
 
 ## Conclusion
 
@@ -93,8 +93,6 @@ When developing a PaaS/SaaS solution, Synthetic monitoring is key to the success
 
 ## Resources
 
-[Google SRE book - Testing Reliability](https://landing.google.com/sre/sre-book/chapters/testing-reliability/)
-
-[Microsoft DevOps Architectures - Shift Right to Test in Production](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/shift-right-test-production)
-
-[Martin Fowler - Synthetic Monitoring](https://martinfowler.com/bliki/SyntheticMonitoring.html)
+- [Google SRE book - Testing Reliability](https://landing.google.com/sre/sre-book/chapters/testing-reliability/)
+- [Microsoft DevOps Architectures - Shift Right to Test in Production](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/shift-right-test-production)
+- [Martin Fowler - Synthetic Monitoring](https://martinfowler.com/bliki/SyntheticMonitoring.html)

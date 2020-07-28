@@ -54,13 +54,13 @@ Note there that there are further considerations as when running headlessly the 
 
 Recommended testing frameworks:
 
-- Web:
-  - BrowserStack: <https://www.browserstack.com>
-  - Cypress: <https://www.cypress.io>
-  - Jest: <https://jestjs.io/docs/en/snapshot-testing>
-  - Selenium: <https://www.selenium.dev>
-- OS/Mobile Applications:
-  - Coded UI tests (CUITs): <https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019>
-  - Xamarin.UITest: <https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/>
+- Web
+  - [BrowserStack](https://www.browserstack.com)
+  - [Cypress](https://www.cypress.io)
+  - [Jest](https://jestjs.io/docs/en/snapshot-testing)
+  - [Selenium](https://www.selenium.dev)
+- OS/Mobile Applications
+  - [Coded UI tests (CUITs)](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019)
+  - [Xamarin.UITest](https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/)
 
-Note that the framework listed above that is paid is BrowserStack, it's listed as it's an industry standard, the rest are open source and free.
+> Note that the framework listed above that is paid is BrowserStack, it's listed as it's an industry standard, the rest are open source and free.

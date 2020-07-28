@@ -91,7 +91,7 @@ The tracing the quality metrics gives insight about the current status of testin
 
 ## E2E Testing Frameworks and Tools
 
-### **1) Gauge Framework**
+### 1. Gauge Framework
 
 ![Gauge Framework](./images/gauge.jpg)
 
@@ -105,9 +105,9 @@ Gauge is a free and open source framework for writing and running E2E tests. Som
 - Supports Visual Studio Code, Intellij IDEA, IDE Support.
 - Supports html, json and XML reporting.
 
-=> [Gauge Framework Website](https://gauge.org/)
+[Gauge Framework Website](https://gauge.org/)
 
-### **2) Robot Framework**
+### 2. Robot Framework
 
 ![Robot Framework](./images/robot.jpg)
 
@@ -115,9 +115,9 @@ Robot Framework is a generic open source automation framework. The framework has
 
 Robot shares a lot of the same "pros" as Gauge, with the exception of the developer tooling and the syntax. In our usage, we found the VS Code Intellisense offered with Gauge to be much more stable than the offerings for Robot. We also found the syntax to be less readable than what Gauge offered. While both frameworks allow for markup based test case definitions, the Gauge syntax reads much more like an English sentence than Robot. Finally, Intellisense is baked into the markup files for Gauge test cases, which will create a function stub for the actual test definition if the developer allows it. The same cannot be said of the Robot Framework.
 
-=> [Robot Framework Website](https://robotframework.org/#introduction)
+[Robot Framework Website](https://robotframework.org/#introduction)
 
-### **3) TestCraft**
+### 3. TestCraft
 
 ![TestCraft](./images/TestCraft-logo.png)
 
@@ -125,9 +125,9 @@ TestCraft is a codeless Selenium test automation platform. Its revolutionary AI 
 
 The testers create fully automated test scenarios without coding. Customers find bugs faster, release more frequently, integrate with the CI/CD approach and improve the overall quality of their digital products. This all creates a complete end to end testing experience.
 
-=> [TestCraft Website](https://www.testcraft.io/?utm_campaign=SoftwareTestingHelp%20&utm_source=SoftwareTestingHelp&utm_medium=EndtoEndTestingPage) or get it  from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=testcraft.build-release-task)
+[TestCraft Website](https://www.testcraft.io/?utm_campaign=SoftwareTestingHelp%20&utm_source=SoftwareTestingHelp&utm_medium=EndtoEndTestingPage) or get it  from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=testcraft.build-release-task)
 
-### **4) Ranorex Studio**
+### 4. Ranorex Studio
 
 ![Ranorex Studio](./images/ranorex-studio2.png)
 
@@ -137,9 +137,9 @@ Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ra
 
 **Ranorex Studio** tests also integrate with Azure DevOps (AzDO), which can be run as part of a build pipeline in AzDO.
 
-=> [Ranorex Studio Website](https://www.ranorex.com/ranorex-studio-test-automation/?utm_source=softwaretestinghelp&utm_medium=cpc&utm_campaign=softwaretestinghelp_what-is-end-to-end-testing) or read about its [integration with AzDO](https://www.ranorex.com/help/latest/interfaces-connectivity/azure-devops-integration/introduction/)
+[Ranorex Studio Website](https://www.ranorex.com/ranorex-studio-test-automation/?utm_source=softwaretestinghelp&utm_medium=cpc&utm_campaign=softwaretestinghelp_what-is-end-to-end-testing) or read about its [integration with AzDO](https://www.ranorex.com/help/latest/interfaces-connectivity/azure-devops-integration/introduction/)
 
-### **5) Katalon Studio**
+### 5. Katalon Studio
 
 ![Katalon](./images/New-Logo-Katalon-Studio.png)
 
@@ -151,9 +151,9 @@ Built on top of Selenium and Appium, Katalon Studio helps standardize your end-t
 
 Katalon is endorsed by Gartner, IT professionals, and a large testing community.
 
->Note: At the time of this writing, Katalon Studio extension for AzDO was NOT available for Linux.
+> Note: At the time of this writing, Katalon Studio extension for AzDO was NOT available for Linux.
 
-=> [Katalon Studio Website](https://www.katalon.com/) or read about its [integration with AzDO](https://docs.katalon.com/katalon-studio/docs/azure-devops-extension.html#installation)
+[Katalon Studio Website](https://www.katalon.com/) or read about its [integration with AzDO](https://docs.katalon.com/katalon-studio/docs/azure-devops-extension.html#installation)
 
 ## Conclusion
 
@@ -165,10 +165,7 @@ Finally, the E2E test is often performed manually as the cost of automating such
 
 ## Resources
 
-[Wikipedia: Software testing](https://en.wikipedia.org/wiki/Software_testing)
-
-[Wikipedia: Unit testing](https://en.wikipedia.org/wiki/Unit_testing)
-
-[Wikipedia: Integration testing](https://en.wikipedia.org/wiki/Integration_testing)
-
-[Wikipedia: System testing](https://en.wikipedia.org/wiki/System_testing)
+- [Wikipedia: Software testing](https://en.wikipedia.org/wiki/Software_testing)
+- [Wikipedia: Unit testing](https://en.wikipedia.org/wiki/Unit_testing)
+- [Wikipedia: Integration testing](https://en.wikipedia.org/wiki/Integration_testing)
+- [Wikipedia: System testing](https://en.wikipedia.org/wiki/System_testing)
