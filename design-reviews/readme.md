@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Goals](#goals)
+- [Measures](#measures)
 - [Impact](#impact)
 - [Participation](#participation)
 - [Facilitation Guidance](#facilitation-guidance)

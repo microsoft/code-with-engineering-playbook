@@ -14,6 +14,7 @@ The following is are some guidelines on how you and your team can start incorpor
 
 - [Envisioning / Architecture Design Session (ADS)](#envisioning--architecture-design-session-ads)
 - [Game Plan](#game-plan)
+- [Checkpoint Reviews](#checkpoint-reviews)
 - [Sprint Planning](#sprint-planning)
 - [Sprint Backlog Grooming](#sprint-backlog-grooming)
 - [Sprint Retrospectives](#sprint-retrospectives)
