@@ -2,11 +2,11 @@
 
 A workflow is a configurable automated process made up of one or more jobs where each of these jobs can be an action in GitHub. Currently a YAML file format is supported for defining a workflow in GitHub.
 
-Additional information on GitHub actions and GitHub Workflows in the links posted in the [references](#References) section below. 
+Additional information on GitHub actions and GitHub Workflows in the links posted in the [references](#References) section below.
 
 ## Environments
 
-Environments can be used for different reasons, like some environments are used for development and testing while others are used for production. 
+Environments can be used for different reasons, like some environments are used for development and testing while others are used for production.
 
 Specific environments are protected to prevent unauthorized users from affecting them, since deployments can be executed by different users with different roles. Thus protected environment ensures safety by only letting users with the required privileges, deploy to an environment.
 
@@ -16,7 +16,7 @@ To understand more about deployment environments, and their differences, please 
 
 ## Workflow Per Environment
 
-The general approach is to have one pipeline, where the code is built, tested and deployed and the artifact is then promoted to the next environment, eventually to be deployed into production. 
+The general approach is to have one pipeline, where the code is built, tested and deployed and the artifact is then promoted to the next environment, eventually to be deployed into production.
 
 There are multiple ways in GitHub that an environment setup can be achieved. The way it can be done is to have one workflow for multiple environments, which does not mean it cannot be done, but the complexity increases as additional processes and jobs are added to a workflow. One way to get around the complexity is to have separate workflows for different environments, making sure that the artifacts from each workflow are independent, as well as, the workflow is small enough to debug any issues seen in any of the workflows.
 
