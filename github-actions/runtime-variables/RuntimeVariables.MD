@@ -22,11 +22,16 @@ Azure Dev Ops, as an example, offers a way to define pipeline variables on a man
 Github Actions does not do so yet.
 
 ## Solution
-To workaround this, the easiest solution is to add runtime variables to either commit messages or the PR Body, and `grep` for the variable. **This is NOT for injecting secrets** as the commit messages and PR body can be retrieved by a third party, are stored in `git log`, and can otherwise be read by a malicious individual using a variety of tools. Rather, this is for testing a workflow that needs simple variables to be injected into it, as above.
+To workaround this, the easiest solution is to add runtime variables to either commit messages or the PR Body, and `grep` for the variable. 
+
+## Security Warning
+
+**This is NOT for injecting secrets** as the commit messages and PR body can be retrieved by a third party, are stored in `git log`, and can otherwise be read by a malicious individual using a variety of tools. Rather, this is for testing a workflow that needs simple variables to be injected into it, as above.
 
 **If you need to retrieve secrets or sensitive information**, use the [Github Action for Azure Key Vault](https://github.com/marketplace/actions/azure-key-vault-get-secrets) or some other similar secret storage and retrieval service.
 
 ### Commit Message Variables
+How to inject a single variable into the environment for use, with a **specified key and value.** In this example, the key is `COMMIT_VAR` and the value is `[commit var]`.
 
 #### Pre-requisites
 - Pipeline triggers are correctly set up to trigger on pushed commits (Here we will use `actions-test-branch` as the branch of choice)
@@ -62,6 +67,9 @@ jobs:
         if: env.flag
         run: echo "Flag is available and true"
 ```
+
+Available as a .YAML [here](examples/commit-example.yaml).
+
 
 #### Code Explanation
 The first part of the code is setting up Push triggers on the working branch and checking out the repository, so we will not explore that in detail.
@@ -118,6 +126,8 @@ The "Set flag from commit" step can be simplified to the following in order to m
 
 #### Usage
 
+##### Including the Variable
+
 1. Push to branch `master`:
 
 ```
@@ -130,7 +140,10 @@ The "Set flag from commit" step can be simplified to the following in order to m
 
 ![Commit True Scenario](images/CommitTrue.PNG)
 
-3. Push to  branch `master`:
+##### Not Including the Variable
+
+
+1. Push to  branch `master`:
 
 ```
 > git add.
@@ -138,7 +151,7 @@ The "Set flag from commit" step can be simplified to the following in order to m
 > git push
 ```
 
-4. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
+2. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
 
 ![Commit True Scenario](images/CommitFalse.PNG)
 
@@ -147,3 +160,75 @@ The "Set flag from commit" step can be simplified to the following in order to m
 
 When a PR is made, the PR Body can also be used to setup variables. These variables can be made available to all the workflow runs that stem from that PR, which can help ensure that commit messages are more informative and less cluttered, and reduces the work on the developer.
 
+Once again, this for an expected key and value. In this case, the key is `PR_VAR` and the value is `[pr var]`.
+
+#### Pre-requisites
+- Pipeline triggers are correctly set up to trigger on a pull request into a specific branch. (Here we will use master as the destination branch.)
+
+#### Code Snippet
+
+```
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  Echo-On-PR:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v2
+
+      - name: "Set flag from PR"
+        env:
+          PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
+        run: |
+          if ${PR_VAR} == true; then
+            echo "::set-env name=flag::true"
+            echo "flag set to true"
+          else
+            echo "::set-env name=flag::false"
+            echo "flag set to false"
+          fi
+
+      - name: "Use flag if true"
+        if: env.flag
+        run: echo "Flag is available and true"
+```
+
+Available as a .YAML [here](examples/pr-example.yaml).
+
+#### Code Explanation
+The first part of the YAML file simply sets up the Pull Request Trigger. The majority of the following code is identical, so we will only explain the differences.
+
+```
+- name: "Set flag from PR"
+  env:
+    PR_VAR: ${{ contains(toJSON(github.event.pull_request.body), '[pr var]') }}
+```
+
+In this section, the `PR_VAR` environment variable is set to `true` or `false` depending on whether or not the `[pr var]` string is in the PR Body.
+
+#### Shorter Alternative
+
+Similarly to the above, the YAML step can be simplified to the following in order to make the code much shorter, although not necessarily more readable:
+
+```
+- name: "Set flag from PR"
+  env:
+    PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
+  run: |
+  echo "::set-env name=flag::${PR_VAR}"
+  echo "set flag to ${PR_VAR}"
+```
+
+#### Usage
+
+1. Create a Pull Request into `master`, and include the expected variable in the body somewhere:
+
+![PR Example](images/PRExample.PNG)
+
+2. The Github Action will trigger automatically, and since `[pr var]` is present in the PR Body, it will set the `flag` to true, as shown below:
+
+![PR True](images/PRTrue.PNG)
