@@ -21,7 +21,9 @@ Performance testing is commonly conducted to accomplish one or more the followin
 
 ## Key Performance Testing categories
 
+<!-- markdownlint-disable no-duplicate-heading -->
 ### Performance Testing
+<!-- markdownlint-enable no-duplicate-heading -->
 
   This category is the super set of all sub categories of performance related testing. It validates/determines the speed, scalability or reliability characteristics of the system under test. Performance testing focuses on achieving the response times, throughput, and resource utilization levels which meet the performance objectives of a system
 
