@@ -136,12 +136,12 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 - [ ] **End to end integration tests**
   - Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
-  - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev team's when parallel builds on a CI server aren't an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
+  - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev team's when parallel builds on a CI server are not an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
 
 - [ ] **Avoid checking in broken builds**
   - Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
 - [ ] **Reporting build failures**
-  - If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
+  - If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stack traces.
 - [ ] **Test Automation Data Dependencies**
   - Any mocked dataset(s) used for unit and end-to-end integration tests should be checked into the mainline repository. Minimize any external data dependencies with your build process.
 - [ ] **Code Coverage Checks**
