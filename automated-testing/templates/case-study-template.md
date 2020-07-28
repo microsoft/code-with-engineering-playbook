@@ -10,7 +10,7 @@ Include the system's conceptual architecture and highlight the architecture comp
 
 ## Problems and Limitations
 
-Describe about the problems of the overal SUT solution that prevented from testing specific (or any) part of the solution.
+Describe about the problems of the overall SUT solution that prevented from testing specific (or any) part of the solution.
 Describe limitation of the testing tools and framework(s) used in this implementation
 
 ## E2E Testing Framework and Tools

@@ -59,7 +59,7 @@ E2E testing is done with the following steps:
 - Production like Environment setup for the testing
 - Test data setup
 - Decide exit criteria
-- Choose the testing methods that most applicable to your system. For the definiton of the various testing methods, please see [Testing Methods](./testing-methods.md) document.
+- Choose the testing methods that most applicable to your system. For the definition of the various testing methods, please see [Testing Methods](./testing-methods.md) document.
 
 ### Pre-requisite
 
@@ -72,7 +72,7 @@ E2E testing is done with the following steps:
 - Execute the test cases
 - Register the test results and decide on pass and failure
 - Report the Bugs in the bug reporting tool
-- Reverify the bug fixes
+- Re-verify the bug fixes
 
 ### Test closure
 

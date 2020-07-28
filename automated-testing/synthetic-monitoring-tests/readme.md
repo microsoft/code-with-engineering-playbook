@@ -10,7 +10,7 @@ However, as more organizations today provide highly-available (99.9+ SLA) produc
 
 For such systems, the ambition of service engineering teams is to reduce to a minimum the time it takes to fix errors, or the [MTTR - Mean Time To Repair](https://en.wikipedia.org/wiki/Mean_time_to_repair). It is a continuous effort, performed on the live/production system. Synthetic Monitors can be used to detect the following issues:
 
-* Availibility - Is the system or specific region available.
+* Availability - Is the system or specific region available.
 * Transactions and customer journeys - Known good requests should work, while known bad requests should error.
 * Performance - How fast are actions and is that performance maintained through high loads and through version releases.
 * 3rd Party components - Cloud or software components used by the system may fail.
@@ -44,7 +44,7 @@ There would usually be a finite set of tests, and key metrics that are used to b
 
 Synthetic monitoring tests are usually statistical. Test metrics are compared against some historical or running average with a time dimension *(Example: Over the last 30 days, for this time of day, the mean average response time is 250ms for AddToCart operation with a standard deviation from the mean of +/- 32ms)*. So if an observed measurement is within a [deviation of the norm](https://en.wikipedia.org/wiki/Standard_deviation) at any time, the services are probably healthy.
 
-### Building a Syntehtic Monitoring Solution
+### Building a Synthetic Monitoring Solution
 
 At a high level, building synthetic monitors usually consists of the following steps:
 

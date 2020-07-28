@@ -4,7 +4,7 @@ This section is primarily geared towards web-based UIs, but the guidance is simi
 
 ## Applicability
 
-UI Testing is not always going to be applicable, for example applications without a UI or parts of an applciation that require no human interaction.  In those cases unit, functional and integration/e2e testing would be the primary means.  UI Testing is going to be mainly applicable when dealing with a public facing UI that is used in a diverse envrionment or in a mission critical UI that requires higher fidelity.  With something like an admin UI that is used by just a handful of people, UI Testing is still valuable but not as high priority.
+UI Testing is not always going to be applicable, for example applications without a UI or parts of an application that require no human interaction.  In those cases unit, functional and integration/e2e testing would be the primary means.  UI Testing is going to be mainly applicable when dealing with a public facing UI that is used in a diverse environment or in a mission critical UI that requires higher fidelity.  With something like an admin UI that is used by just a handful of people, UI Testing is still valuable but not as high priority.
 
 ## Goals
 
