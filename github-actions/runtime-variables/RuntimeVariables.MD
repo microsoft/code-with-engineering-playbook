@@ -205,7 +205,7 @@ The first part of the YAML file simply sets up the Pull Request Trigger. The maj
 ```
 - name: "Set flag from PR"
   env:
-    PR_VAR: ${{ contains(toJSON(github.event.pull_request.body), '[pr var]') }}
+    PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
 ```
 
 In this section, the `PR_VAR` environment variable is set to `true` or `false` depending on whether or not the `[pr var]` string is in the PR Body.
