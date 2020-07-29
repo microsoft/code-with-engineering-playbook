@@ -3,6 +3,8 @@
 ## Objective
 While Github Actions is a popular choice for writing and running CI/CD pipelines, especially for open source projects hosted on Github, it lacks specific quality of life features found in other CI/CD environments. One key feature that Github Actions has not yet implemented is the ability to **mock and inject runtime variables** into a workflow, in order to test the pipeline itself.
 
+This provides a bridge between a pre-existing feature in Azure Dev Ops, and one that has not yet released inside Github Actions. 
+
 ## Target Audience
 This guide assumes that you are familiar with CI/CD, and understand the security implications of CI/CD pipelines. We also assume basic knowledge with Github Actions, including how to write and run a basic CI/CD pipeline, checkout repositories inside the action, use Marketplace Actions with version control, etc.
 
@@ -22,7 +24,15 @@ Azure Dev Ops, as an example, offers a way to define pipeline variables on a man
 Github Actions does not do so yet.
 
 ## Solution
-To workaround this, the easiest solution is to add runtime variables to either commit messages or the PR Body, and `grep` for the variable. 
+To workaround this, the easiest solution is to add runtime variables to either commit messages or the PR Body, and `grep` for the variable. Github Actions provides `grep` functionality natively using a `contains` function, which is what we shall be specifically using.  
+
+#### In scope
+
+We will scope this to injecting a single environment variable into a pipeline, with a previously known key and value. 
+
+#### Out of Scope
+- While the solution is obviously extensible using shell scripting or any other means of creating variables, this solution serves well as the proof of the basic concept. No such scripting is provided in this guide.
+- Additionally, teams may wish to formalize this process using a PR Template that has an additional section for the variables being provided. This is not however included in this guide.
 
 ## Security Warning
 
@@ -232,3 +242,22 @@ Similarly to the above, the YAML step can be simplified to the following in orde
 2. The Github Action will trigger automatically, and since `[pr var]` is present in the PR Body, it will set the `flag` to true, as shown below:
 
 ![PR True](images/PRTrue.PNG)
+
+### Real World Scenarios
+There are many real world scenarios where controlling environment variables can be extremely useful. Some are outlined below:
+
+#### Avoiding Expensive External Calls
+Developer A is in the process of writing and testing an integration pipeline. The integration pipeline needs to make a call to an external service such as Azure Data Factory or Databricks, wait for a result, and then echo that result. The workflow could look like this:
+
+![Workflow A](images/DevAWorkflow.png)
+
+The workflow inherently takes time and is expensive to run, as it involves maintaining a Databricks cluster while also waiting for the response. This external dependency can be removed by essentially mocking the response for the duration of writing and testing other parts of the workflow, and mocking the response in situations where the actual response either does not matter, or is not being directly tested.
+
+#### Skipping Long CI processes
+Developer B is in the process of writing and testing a CI/CD pipeline. The pipeline has multiple CI stages, each of which runs sequentially. The workflow might look like this:
+
+![Workflow B](images/DevBWorkflow.png)
+
+In this case, each CI stage needs to run before the next one starts, and errors in the middle of the process can cause the entire pipeline to fail. While this might be intended behavior for the pipeline in some situations (Perhaps you don't want to run a more involved, longer build or run a time consuming test coverage suite if the CI process is failing), it means that steps need to be commented out or deleted when testing the pipeline itself.
+
+Instead, an additional step could check for a `[skip ci $N]` tag in either the commit messages or PR Body, and skip a specific stage of the CI build. This ensures that the final pipeline does not have changes committed to it that render it broken, as sometimes happens when commenting out/deleting steps. It additionally allows for a mechanism to repeatedly test individual steps by skipping the others, making developing the pipeline significantly easier.
