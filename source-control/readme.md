@@ -13,7 +13,7 @@ There are many different options when working with Source Control. In [CSE](../C
 ## Goal
 
 * Following industry best practice to work in geo-distributed teams which encourage contributions from all across [CSE](../CSE.md) as well as the broader OSS community
-* Improve code quality by enforcing reviews before merging into master branches
+* Improve code quality by enforcing reviews before merging into main branches
 * Improve traceability of features and fixes through a clean commit history
 
 ## General Guidance

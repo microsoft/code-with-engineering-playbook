@@ -13,7 +13,7 @@ More information can be found in [Pull Requests - Size Guidance](./pull-requests
 
 - Add a rule for PR turnaround time to your work agreement.
 - Setup a slot after the standup to go through pending PRs and assign the ones that are inactive.
-- Dedicate a PR review master who will be responsible to keep things flowing by assigning or notifying people when PR got stale.
+- Dedicate a PR review manager who will be responsible to keep things flowing by assigning or notifying people when PR got stale.
 - Use tools to better indicate stale reviews - [Customize ADO - Task Boards](./process-guidance/customize-ado.md#task-boards).
 
 ## Reviewing a complex PR on GitHub can be hard, is there a more integrated way?

@@ -87,45 +87,45 @@ Agree if you want a linear or non-linear commit history. There are pros and cons
 
 ### Approach for non-linear commit history
 
-Merging `topic` into `master`
+Merging `topic` into `main`
 
 ```md
   A---B---C topic
  /         \
-D---E---F---G---H master
+D---E---F---G---H main
 
 git fetch origin
-git checkout master
+git checkout main
 git merge topic
 ```
 
 ### Two approaches to achieve a linear commit history
 
-#### Rebase topic branch before merging into master
+#### Rebase topic branch before merging into main
 
-Before merging `topic` into `master`, we rebase `topic` with the   :
+Before merging `topic` into `main`, we rebase `topic` with the   :
 
 ```bash
           A---B---C topic
          /         \
-D---E---F-----------G---H master
+D---E---F-----------G---H main
 
 git fetch origin
-git rebase master topic
-git checkout master
+git rebase main topic
+git checkout main
 git merge topic
 ```
 
-#### Rebase topic branch before squash merge into master
+#### Rebase topic branch before squash merge into main
 
-[Squash merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of adding each commit on `topic` to the history of `master`, a squash merge takes all the file changes and adds them to a single new commit on `master`.
+[Squash merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of adding each commit on `topic` to the history of `main`, a squash merge takes all the file changes and adds them to a single new commit on `main`.
 
 ```bash
           A---B---C topic
          /
-D---E---F-----------G---H master
+D---E---F-----------G---H main
 
-Create a PR topic --> master in Azure DevOps and approve using the squash merge option
+Create a PR topic --> main in Azure DevOps and approve using the squash merge option
 ```
 
 ## Naming branches
