@@ -35,20 +35,20 @@ Failure analysis - A report about system failure with details. Workbook template
 
 Application Performance Index([Appdex](https://en.wikipedia.org/wiki/Apdex)) - a way to measure user satisfaction. It classifies performance into three zones based on a baseline performance threshold T. Workbook template available in gallery.
 
-You may mix and match by extracting checking how the template on workbooks query log analytics and replicate in your own custom dashboard. 
+You may mix and match by extracting checking how the template on workbooks query log analytics and replicate in your own custom dashboard.
 
 ### Application Insights Visualization
 
 Application Insights has various ready to go analysis on observability of the system. These includes but not limited to:-
 
 User retention analysis
-<https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-retention> 
+<https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-retention>
 
 User navigation patterns analysis
-<https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-flows> 
+<https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-flows>
 
 User session analysis
-<https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-users> 
+<https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-users>
 
 Generally to build an observable dashboard, your goal is to make use of collected metrics, logs, traces to give an insight on how the system performs, user behaves and identify patterns. While the provided Azure Workbooks answer some of the questions, you may also want to consider additional things like:
 
