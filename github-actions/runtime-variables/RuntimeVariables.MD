@@ -153,7 +153,7 @@ The "Set flag from commit" step can be simplified to the following in order to m
 
 2. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
 
-![Commit True Scenario](images/CommitFalse.PNG)
+![Commit False Scenario](images/CommitFalse.PNG)
 
 
 ### PR Body Variables
