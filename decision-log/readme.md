@@ -17,57 +17,61 @@ In his blog, Michael Nygard proposed the use of an [Architecture Design Record](
 ### Architecture Design Record (ADR)
 An architecture design record has the structure
 
-**[Ascending number]. [Title of decision]**
+* **[Ascending number]. [Title of decision]**
 
-*The title should give the reader the information on what was decided upon.* 
+    *The title should give the reader the information on what was decided upon.* 
 
-Example: 
+    Example: 
 
-*001. App level logging with Serilog and Application Insights*
+    > *001. App level logging with Serilog and Application Insights*
 
-**Date:**
+* **Date:**
 
-*The date the decision was made.*
+    *The date the decision was made.*
 
-**Status:** 
-Proposed/Accepted/Deprecated/Superseded
+* **Status:** 
+    Proposed/Accepted/Deprecated/Superseded
 
-*A proposed design can be reviewed by the development team prior to accepting it. A previous decision can be superseded by a new one or the ADR record marked as deprecated in case it is not valid anymore.*
+    *A proposed design can be reviewed by the development team prior to accepting it. A previous decision can be superseded by a new one or the ADR record marked as deprecated in case it is not valid anymore.*
 
-**Context:**  
+* **Context:**  
 
-*The text should provide the reader an understanding of the problem, or as Michael Nygard puts it, a value-neutral description of the forces at play.*  
+    *The text should provide the reader an understanding of the problem, or as Michael Nygard puts it, a value-neutral description of the forces at play.*  
 
-Example: 
+    Example: 
 
-*Due to the microservices design of the platform, we need to ensure consistency of logging throughout each service so tracking of usage, performance, errors etc. can be performed end-to-end. A single logging/monitoring framework should be used where possible to achieve this, whilst allowing the flexibility for integration/export into other tools at a later stage. The developers should be equipped with a simple interface to log messages and metrics.*
+    > *Due to the microservices design of the platform, we need to ensure consistency of logging throughout each service so tracking of usage, performance, errors etc. can be performed end-to-end. A single logging/monitoring framework should be used where possible to achieve this, whilst allowing the flexibility for integration/export into other tools at a later stage. The developers should be equipped with a simple interface to log messages and metrics.*
 
-**Decision:** 
+* **Decision:** 
 
-*The decision made, it should begin with 'We will..' or 'We have agreed to ...*.
+    *The decision made, it should begin with 'We will..' or 'We have agreed to ...*.
 
-Example: 
+    Example: 
 
+    > *We have agreed to utilise Serilog as the Dotnet Logging framework of choice at the application level, with integration into Log Analytics and Application Insights for analysis.* 
 
-*We have agreed to utilise Serilog as the Dotnet Logging framework of choice at the application level, with integration into Log Analytics and Application Insights for analysis.* 
+* **Consequences:**
 
-**Consequences:**
+    *The resulting context, after having applied the decision.*
 
-*The resulting context, after having applied the decision.*
+    Example: 
 
-Example: 
-
-*Sampling will need to be configured in Application Insights so that it does not become overly-expensive when ingesting millions of messages, but also does not prevent capture of essential information. The team will need to only log what is agreed to be essential for monitoring as part of design reviews, to reduce noise and unneccesary levels of sampling.*
+    > *Sampling will need to be configured in Application Insights so that it does not become overly-expensive when ingesting millions of messages, but also does not prevent capture of essential information. The team will need to only log what is agreed to be essential for monitoring as part of design reviews, to reduce noise and unneccesary levels of sampling.*
 
 
 ### Where to store ADRs
-Storing and tracking ADRs can be done in any version control system such as github. Adding ADRs can be done as pull request in the *proposed* status to be discussed by the team until it is updated to *accepted* to be merged with the main branch. They are usually stored in a folder structure *doc/adr* or *doc/arch*.
+ADRs can be stored and tracked in any version control system such as git. As a recommended practice, ADRs can be added as pull request in the *proposed* status to be discussed by the team until it is updated to *accepted* to be merged with the main branch. They are usually stored in a folder structure *doc/adr* or *doc/arch*.
 
 ### When to track ADRs
 Architecture design decisions are usually tracked whenever significant decisions are made that affect the structure and characteristics of the solution or framework we are building. ADRs can also be used to document results of spikes when evaluating different technology choices. 
  
 ## Examples of ADRs
-The first ADR can be the decision to use ADRs to track design decisions: [0001-record-architecture-decisions.md](doc/adr/0001-record-architecture-decisions.md)
+The first ADR could be the decision to use ADRs to track design decisions
+
+*  [0001-record-architecture-decisions.md](doc/adr/0001-record-architecture-decisions.md),
+  
+followed by actual decisions in the engagement as in the example used above
+* [0002-app-level-logging.md](doc/adr/0002-app-level-logging.md). 
 
 
 
