@@ -15,7 +15,7 @@ Tracking an architecture design decision in a log can have many advantages:
 In his blog, Michael Nygard proposed the use of an [Architecture Decision Record](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions). 
 
 ### Architecture Decision Record (ADR)
-An architecture design record has the structure
+An architecture decision record has the structure
 
 * **[Ascending number]. [Title of decision]**
 
