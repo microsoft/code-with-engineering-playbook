@@ -12,9 +12,9 @@ Tracking an architecture design decision in a log can have many advantages:
 - It is easier to find the design decision in a log than having to read a large document.
 
 ## What is a great and recommended format for tracking decisions
-In his blog, Michael Nygard proposed the use of an [Architecture Design Record](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions). 
+In his blog, Michael Nygard proposed the use of an [Architecture Decision Record](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions). 
 
-### Architecture Design Record (ADR)
+### Architecture Decision Record (ADR)
 An architecture design record has the structure
 
 * **[Ascending number]. [Title of decision]**
