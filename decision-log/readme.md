@@ -23,7 +23,7 @@ An architecture decision record has the structure
 
     *The title should give the reader the information on what was decided upon.*
 
-    Example: 
+    Example:
 
     > *001. App level logging with Serilog and Application Insights*
 
@@ -31,7 +31,7 @@ An architecture decision record has the structure
 
     *The date the decision was made.*
 
-- **Status:** 
+- **Status:**
     Proposed/Accepted/Deprecated/Superseded
 
     *A proposed design can be reviewed by the development team prior to accepting it. A previous decision can be superseded by a new one or the ADR record marked as deprecated in case it is not valid anymore.*
@@ -44,7 +44,7 @@ An architecture decision record has the structure
 
     > *Due to the microservices design of the platform, we need to ensure consistency of logging throughout each service so tracking of usage, performance, errors etc. can be performed end-to-end. A single logging/monitoring framework should be used where possible to achieve this, whilst allowing the flexibility for integration/export into other tools at a later stage. The developers should be equipped with a simple interface to log messages and metrics.*
 
-- **Decision:** 
+- **Decision:**
 
     *The decision made, it should begin with 'We will..' or 'We have agreed to ...*.
 
@@ -70,7 +70,7 @@ Architecture design decisions are usually tracked whenever significant decisions
 
 ## Examples of ADRs
 
-The first ADR could be the decision to use ADRs to track design decisions, 
+The first ADR could be the decision to use ADRs to track design decisions,
 
 - [0001-record-architecture-decisions.md](doc/adr/0001-record-architecture-decisions.md),
 
