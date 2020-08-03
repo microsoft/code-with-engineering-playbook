@@ -4,7 +4,7 @@ Pipelines is a way to automatically build and test your code project and make it
 
 Pipelines combines continuous integration (CI) and continuous delivery (CD) to constantly and consistently test and build your code and ship it to any target.
 
-A few things to keep in mind when creating pipelines for continuous deployment:
+There are a few suggestions listed below to keep in mind when creating pipelines for continuous deployment:
 
 1. Keep your pipelines fast
 1. Isolate and secure your CI/CD environment

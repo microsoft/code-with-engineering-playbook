@@ -18,11 +18,11 @@ To understand more about deployment environments, and their differences, please 
 
 The general approach is to have one pipeline, where the code is built, tested and deployed and the artifact is then promoted to the next environment, eventually to be deployed into production.
 
-There are multiple ways in GitHub that an environment setup can be achieved. The way it can be done is to have one workflow for multiple environments, which does not mean it cannot be done, but the complexity increases as additional processes and jobs are added to a workflow. One way to get around the complexity is to have separate workflows for different environments, making sure that the artifacts from each workflow are independent, as well as, the workflow is small enough to debug any issues seen in any of the workflows.
+There are multiple ways in GitHub that an environment setup can be achieved. The way it can be done is to have one workflow for multiple environments, but the complexity increases as additional processes and jobs are added to a workflow, which does not mean it cannot be done for small pipelines. The plus point of having one workflow is that, when an artifact flows from one environment to another the state and environment values between the deployment environments can be passed easily.
 
-This also helps to keep the deployments to the environments independent thus reducing the time to deploy and find issues earlier than later in the process. Also sine the environments are independent of each other, any failures in deploying to one environment does not block deployments to other environments.
+One way to get around the complexity of a single workflow is to have separate workflows for different environments, making sure that the artifacts from each workflow are independent, as well as, the workflow is small enough to debug any issues seen in any of the workflows. In this case, the state and environment values need to be passed from one deployment environment to another. Multiple workflows also helps to keep the deployments to the environments independent thus reducing the time to deploy and find issues earlier than later in the process. Also, since the environments are independent of each other, any failures in deploying to one environment does not block deployments to other environments.
 
-<!-- An example of initializing workflows to deploy, in an automated way, for each environment can be seen [here](https://github.com/microsoft/github-workflow-initialization) -->
+An example of initializing workflows to deploy, in an automated way, for each environment can be seen [here](https://github.com/microsoft/github-workflow-initialization)
 
 ## References
 
