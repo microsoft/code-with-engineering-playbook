@@ -132,6 +132,7 @@ Database providers like Cosmos and Azure SQL natively support data replication t
 ### Canary Releasing
 
 Canary releasing enables development teams to gather faster feedback when deploying new features to production. These releases are rolled out to a subset of production nodes (_where no users are routed to_) to collect early insights around capacity testing and functional completeness and impact.
+
 ![image](https://user-images.githubusercontent.com/7635865/89341436-ee39e000-d666-11ea-98f8-4b3980f670ae.png)
 
 Once smoke and capacity tests are completed, you can route a small subset of users to the production nodes hosting the release candidate.
