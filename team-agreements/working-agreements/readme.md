@@ -24,7 +24,7 @@ The following are examples of sections and points that can be part of a working 
 
 - Our office hours, when we can expect to collaborate via Microsoft Teams, phone or face-to-face are Monday to Friday 10AM - 5PM
 - We are not expected to answer emails past 6PM, on weekends or when we are on holidays or vacation.
-- We work in different time zones and respsect this, especially when setting up recurring meetings.
+- We work in different time zones and respect this, especially when setting up recurring meetings.
 - We record meetings when possible, so that team members who could not attend live can listen later.
 
 ## Quality and not quantity
