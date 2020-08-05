@@ -4,13 +4,13 @@ Continuous Deployment can be thought of as a deployment pipeline where a piece o
 
 Continuous deployments can be achieved by creating different environments in [Azure DevOps](https://docs.microsoft.com/en-us/aspnet/core/azure/devops/cicd) using pipelines or by using multiple [GitHub workflows](https://docs.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow). These environments can be used for different reasons like some environments are used for development and testing while others are used for production.
 
-More details on environments can be seen [below](#Environments) and the steps for setting up different environments using GitHub workflows can be found [here](../continuous-deployment/pipelines/recipes/github-workflows/workflow-per-environment.md).
+More details on environments can be seen [below](#Environments) and the steps for setting up different environments using GitHub workflows can be found [here](../continuous-deployment/recipes/github-workflows/workflow-per-environment.md).
 
 Azure DevOps Pipelines or Github Workflows is a way to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
 
 It combines continuous integration (CI) and continuous Deployment (CD) to constantly and consistently test and build your code and ship it to any target. Using the above tools, you can achieve Continuous Delivery or Continuous Deployment, depending on the your development and release cycle and the customer environment. To understand more about Continuous Delivery and Continuous Deployment, and their differences, please refer to the link in the [references](#References) section below.
 
-There are a few suggestions listed below to keep in mind when creating Azure DevOps pipelines/ Github workflows for continuous deployment:
+There are a few suggestions listed below to keep in mind when creating Azure DevOps pipelines/Github workflows for continuous deployment:
 
 1. Keep your pipelines as fast as feasible
 1. Isolate and secure your CI/CD environment
