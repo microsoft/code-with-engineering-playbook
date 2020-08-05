@@ -22,10 +22,10 @@ General guidance:
 
 Specific roles:
 
-- [Scrum Master](https://www.agilealliance.org/glossary/scrum-master):
+- [Process Lead]:
   - Facilitate the conversation.
   - Ensure everyone is heard.
-  - Remind scrums principles and sprint planning goals if necessary.
+  - Remind scrums/agile/other principles and sprint planning goals if necessary, updating the working agreement where needed to ensure a mapping between principals and what is working/not working for the team.
 - [Product owner](https://www.agilealliance.org/glossary/product-owner/):
   - Prior to the sprint planning: performs some [backlog grooming](../backlog-management/grooming/readme.md) to ensure that each story that they want to propose for the new sprint (*) :
   
