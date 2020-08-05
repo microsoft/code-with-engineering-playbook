@@ -1,9 +1,10 @@
 
+
 # Load Testing
 
 "*Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.*" - [Load testing - Wikipedia](https://en.wikipedia.org/wiki/Load_testing)
 
-A load test is designed to determine how a system behaves under expected normal workload.  Specifically its purpose is to confirm if a system can handle the expected load level. Depending on the target system this could be concurrent users, requests per second or data size.
+A load test is designed to determine how a system behaves under expected normal workload.  Specifically its main purpose is to confirm if a system can handle the expected load level. Depending on the target system this could be concurrent users, requests per second or data size.
 
 
 ## Why Load Testing
@@ -24,8 +25,6 @@ There are a number of basic component which are required to carry out a load tes
 
 4. Although not required to run a load test, it is advisable to have monitoring and/or logging in place to be able to measure the impact of the test and discover potential bottlenecks.
 
-// TODO: maybe I should draw a diagram
-
 ## Applying the Load Testing
 
 ### Planning
@@ -34,7 +33,7 @@ There are a number of basic component which are required to carry out a load tes
 2. **Determine expected normal and peak load for the scenarios** -  Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
 3. **Identify success criteria metrics** - These may be testing side such as response time and error rate, or it may be on the system side such as CPU and memory usage.
 
-### Executing 
+### Execution
 
 It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios as well as how to execute those at load. It is common to slowly ramp up to your desired load just to be safe. Once you have reached your defined workload. 
 
@@ -49,14 +48,13 @@ After completing your load test you should be set up to continue on to additiona
 
 ## Load Testing Frameworks and Tools
 
-In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information.
+Here are a few popular load testing frameworks you may consider and the languages used to define your scenarios.
 
-//TODO
-
-
-## Examples/Case studies
-
-//TODO
+- **JMeter** ([https://jmeter.apache.org/](https://jmeter.apache.org/)) - Has built in patterns to test without coding, but can be extended with Java.
+- **Artillery** (https://artillery.io/) - Write your scenarios in Javascript, executes a node application.
+- **Gatling** (https://gatling.io/) -  Write your scenarios in Scala with their DSL.
+- **Locust** (https://locust.io/) - Write your scenarios in Python using the concept of concurrent user activity.
+- **K6** ([https://k6.io/](https://k6.io/)) - Write your test scenarios in Javascript, available as open source or as SaaS.
 
 ## Conclusion
 
@@ -68,4 +66,4 @@ Of course its only as good as your ability to predict the expected load, so its 
 
 List additional readings about this test type for those that would like to dive deeper. 
 
-//TODO
+- [https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing)
