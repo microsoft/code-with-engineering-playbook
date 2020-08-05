@@ -74,6 +74,13 @@ The team members of the team can also help hold each other accountable for provi
   - Introduction of new tech whose testability is limited to manual steps in a deployed environment.
   - Addition of new repository
 
+### New Team Members - Identify Iterative Improvements
+
+New team members are uniquely positioned to identify instances of undocumented [Collective Wisdom](https://en.wikipedia.org/wiki/Collective_wisdom). The following outlines responsibilities of new team members as it relates to devex:
+
+- If you come across missing, incomplete or incorrect documentation while onboarding, you should record the issue as a new defect(s) and assign it to the product owner to be triaged.
+- If no onboarding documentation exists, note the steps you took in a new user story. Assign the new story to the product owner to be triaged.
+
 ## Facilitation Guidance
 
 The following outline examples of several strategies that can be adopted to promote a positive developer experience. It is expected that each team should define what a positive dev experience means within the context of their project. Additionally, refine that over time via feedback mechanisms such as sprint and project retrospectives.
@@ -111,6 +118,18 @@ The following are ceremonies that the DevEx champion can use to find potential o
 
 As opportunities are identified, the DevEx champion can translate these into actionable stories for the product backlog.
 
+### Make Tasks Cross Platform
+
+For essential tasks being standardized during the engagement, ensure that different platforms are accounted for. Team members may have different operating systems and ensuring the tasks are cross platform will provide an additional opportunity to improve the experience.
+
+- See the [making tasks cross platform recipe](./recipes/cross-platform-tasks.md) for guidance on how tasks can be configured to include different platforms.
+
+### Create an Onboarding Guide
+
+When welcoming new team members on the engagement, there are many areas for them to get adjusted to and bring them up to speed including codebase, coding standards, team agreements, and team culture. By adopting a strong onboarding practice such as an onboarding guide in a centralized location that explains the scope of the project, processes, setup details, and software required, new members can have all the necessary resources for them to be efficient, successful and a valuable team member from the start.
+
+See the [onboarding guide recipe](./recipes/onboarding-guide-template.md) for guidance on what an onboarding guide may look like.
+
 ### Standardize Essential Tasks
 
 Apply a common strategy across solution components for performing the essential tasks
@@ -146,7 +165,7 @@ VS.
 
 #### Atomic Pull Requests
 
-When the solution is encapsulated within a single repository, it also allows pull requests to represent a change across multiple layers. This is especially helpful when a change requires changes to a shared contract between multiple components. For example, a story requires that an api endpoint is changed. With this strategy the api and web client could be updated with the same pull request. This avoids master being broken temporarily while waiting on dependent pull requests to merge.
+When the solution is encapsulated within a single repository, it also allows pull requests to represent a change across multiple layers. This is especially helpful when a change requires changes to a shared contract between multiple components. For example, a story requires that an api endpoint is changed. With this strategy the api and web client could be updated with the same pull request. This avoids the main branch being broken temporarily while waiting on dependent pull requests to merge.
 
 [`TODO: Add link to other documented benefits of consolidated repos within source control section`]
 

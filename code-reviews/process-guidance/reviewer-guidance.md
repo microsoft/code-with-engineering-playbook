@@ -87,5 +87,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 
 ### Tests
 
-- Tests should always be committed in the same PR as the code itself (‘I’ll add tests next’ is not acceptable)
+- Tests should always be committed in the same PR as the code itself (‘I’ll add tests next’ is not acceptable).
 - Make sure tests are sensible and valid assumptions are made.
+- Make sure edge cases are handled as well.
+- Tests can be a great source to understand the changes. It can be a strategy to look at tests first to help you understand the changes better.
