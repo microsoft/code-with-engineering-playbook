@@ -19,9 +19,7 @@ There are a number of basic component which are required to carry out a load tes
 
 2. The load will consist of a module which simulates user activity. Of course what the composition of this "user activity" will be vary based on the type of application being tested. For example an e-commerce web site might simulate user browsing and purchasing items, but an IoT data ingestion pipeline would simulate a stream of device readings.
 
-
 3. The load test will be initiated from a component external to the target system which can control the amount of load applied. This can be a single agent, but may need to scaled to multiple agents in order to achieve higher levels of activity.
-
 
 4. Although not required to run a load test, it is advisable to have monitoring and/or logging in place to be able to measure the impact of the test and discover potential bottlenecks.
 
@@ -32,7 +30,6 @@ There are a number of basic component which are required to carry out a load tes
 1. **Identify key scenarios to measure**  - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic.
 2. **Determine expected normal and peak load for the scenarios** -  Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
 3. **Identify success criteria metrics** - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.
-
 
 ### Execution
 
