@@ -107,5 +107,6 @@ Design reviews come in all shapes and sizes. There are also different items to c
 - Will integrate into higher level feature/component designs
 
 ## Design Documentation
-- Document and update the architecture design in the project design documentation 
-- Track and document design decisions in a [decision log](./decision-log/readme.md) 
+
+- Document and update the architecture design in the project design documentation
+- Track and document design decisions in a [decision log](./decision-log/readme.md)
