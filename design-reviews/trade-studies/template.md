@@ -1,5 +1,7 @@
-This generic template can be used for any situation where we have a set of requirements that can be satisfied 
-by multiple solutions. They can range in scope from choice of which open source package to use through full 
+# Trade Study Template
+
+This generic template can be used for any situation where we have a set of requirements that can be satisfied
+by multiple solutions. They can range in scope from choice of which open source package to use through full
 architecture designs.  
 
 # Trade Study: {study name goes here} 
