@@ -79,7 +79,7 @@ In this case it is useful to create a separate branch for your local work.
 
     ```cmd
     git checkout -b feature/feature-name
-    ```
+    ``` 
 
 At any point, you can move between the branches with `git checkout <branch>` as long as you have committed or stashed your work.
 
