@@ -6,6 +6,128 @@
 
 [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
 
+### Typical workflow
+
+The following is a typical workflow for making a change in an existing repo using git
+
+1. Clone the repository to your local machine 
+
+    ```cmd
+    git clone https://github.com/username/repo-name
+    ```
+
+2. Create and checkout a new branch for your changes
+
+    ```cmd
+    git checkout -b feature/123-add-instructions
+    ```
+
+3. Make a change to README.md
+
+4. (Optional) Check what files were changed
+
+    ```cmd
+    git status
+    ```
+
+5. Track the changed files and commit the changes to the local branch
+
+    ```cmd
+    git add README.md
+    git commit -m "add instructions for how to use the repo"
+    ```
+
+6. When you are done committing changes - push the local branch to the remote repository
+
+    ```cmd
+    git push
+    ```
+
+7. Open a Pull Request (PR) to merge to main/develop in github, Azure DevOps or equivalent
+8. When the PR is approved merge the Pull Request in the tool where you created the PR or using
+
+    ```cmd
+    git merge develop
+    ```
+
+What you name your branches, whether you merge into main or develop, what merge strategy you use etc. is something you should agree on with your team before starting development.
+
+([git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), [release flow](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow) etc.)
+
+### Cloning
+
+Cloning a repository pulls down a full copy of all the repository data, so that you can work on it locally.
+This copy includes all versions of every file and folder for the project.
+
+```cmd
+git clone https://github.com/username/repo-name
+```
+
+### Branching
+
+Often, the main or develop branch of a repository will be locked so that you can't make changes without a Pull Request.
+In this case it is useful to create a separate branch for your local work.
+
+1. Make sure you are positioned on the develop (or main) branch, and pull to get the latest changes
+
+    ```cmd
+    git checkout develop
+    git pull
+    ```
+
+2. Create a new local branch for your work
+
+    ```cmd
+    git checkout -b feature/feature-name
+    ```
+
+At any point, you can move between the branches with `git checkout <branch>` as long as you have committed or stashed your work.
+
+If you forget the name of your branch use `git branch --all` to list all branches
+
+To publish your branch 
+
+git branch --all if you forgot the name
+
+### Committing
+
+```cmd
+git add README.md
+git commit -m "add instructions on how to use the repo"
+...
+git push
+```
+
+### Merging
+
+1. Open a pull request
+2. Merge the PR
+
+Resolving conflicts - via merge
+
+git checkout master
+git pull
+git checkout <your branch>
+(git branch --all if you forgot the name)
+git merge master (resolve conflicts)
+git merge --continue
+git log
+git push
+
+Resolving conflicts - via rebase
+
+git checkout master
+git pull
+git checkout <your branch>
+(git branch --all if you forgot the name)
+git rebase master (resolve conflicts)
+git rebase --continue
+git log
+git push
+
+### Managing remotes
+
+
 ## Rolling back changes
 
 ### Reverting and deleting commits
