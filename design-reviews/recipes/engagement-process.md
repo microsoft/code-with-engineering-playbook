@@ -6,14 +6,15 @@ Design reviews should not feel like a burden.  Design reviews can be easily inco
 
 - Only create design reviews when needed.  Not every story or task requires a full blown design review
 - Leverage this guidance and make changes to fit in best with your team.  Every team works a bit differently and has different tweaks that work best for them.
-- Leverage SME's as needed during design reviews. Not every story needs SME or leadership sign-off.  Most design reviews can be fully executed within your own dev crew.
+- Leverage subject matter experts (SME) as needed during design reviews. Not every story needs SME or leadership sign-off.  Most design reviews can be fully executed within your own dev crew.
 
 The following is are some guidelines on how you and your team can start incorporating design reviews into your normal day to day agile process.
 
 ## Table of Contents
 
-- [Envisioning / Architecture Design Session (ADS)](#envisioning-/-architecture-design-session-(ads))
+- [Envisioning / Architecture Design Session (ADS)](#envisioning--architecture-design-session-ads)
 - [Game Plan](#game-plan)
+- [Checkpoint Reviews](#checkpoint-reviews)
 - [Sprint Planning](#sprint-planning)
 - [Sprint Backlog Grooming](#sprint-backlog-grooming)
 - [Sprint Retrospectives](#sprint-retrospectives)

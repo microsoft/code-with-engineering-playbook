@@ -25,7 +25,7 @@ A Correlation ID is a unique identifier that is added to the very first interact
 4. All components/services of the transaction use this Correlation ID in their logs.
 5. For a HTTP Request, Correlation ID is typically passed in the header.
 6. Where possible also add it to an outgoing response.
-7. Based on the usecase, there can be additional correlation IDs that may be needed. For instance, tracking logs based on both Session ID and User ID may be required. While adding multiple correlation ID, remember to propagate them through the components.
+7. Based on the use case, there can be additional correlation IDs that may be needed. For instance, tracking logs based on both Session ID and User ID may be required. While adding multiple correlation ID, remember to propagate them through the components.
 
 ## Use Cases
 
