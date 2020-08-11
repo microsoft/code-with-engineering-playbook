@@ -45,7 +45,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 * [Automated Testing](automated-testing/readme.md)
 * [Code Reviews](code-reviews/README.md)
-* [Continuous Deployment (CD)](continuous-deployment/readme.md)
+* [Continuous Delivery (CD)](continuous-deployment/readme.md)
 * [Continuous Integration (CI)](continuous-integration/readme.md)
 * [Design Reviews](design-reviews/readme.md)
 * [Developer Experience](developer-experience/readme.md)
