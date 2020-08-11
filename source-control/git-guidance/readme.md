@@ -59,12 +59,12 @@ Pull the latest changes and create a new branch for your work based on the trunk
 ```cmd
 git pull
 git checkout -b feature/feature-name develop
-``` 
+```
 
 At any point, you can move between the branches with `git checkout <branch>` as long as you have committed or stashed your work.
 If you forget the name of your branch use `git branch --all` to list all branches
 
-When you are done working, push your changes to a branch in the remote repository using `git push` 
+When you are done working, push your changes to a branch in the remote repository using `git push`
 
 ```cmd
 git push --set-upstream origin feature/feature-name
@@ -72,7 +72,7 @@ git push --set-upstream origin feature/feature-name
 
 ## Committing
 
-To avoid loosing work, it is good to commit often in small chunks. This allows you to revert only the last changes if you discover a problem and also neatly explains exactly what changes were made and why. 
+To avoid loosing work, it is good to commit often in small chunks. This allows you to revert only the last changes if you discover a problem and also neatly explains exactly what changes were made and why.
 
 1. Make changes to your branch
 
@@ -92,6 +92,7 @@ To avoid loosing work, it is good to commit often in small chunks. This allows y
     ```cmd
     git add .
     ```
+
    to track all modified files, or
 
     ```cmd
@@ -117,7 +118,7 @@ The Pull Request (PR) process in [Azure DevOps](https://docs.microsoft.com/en-us
 If multiple people make changes to the same files, you may need to resolve any conflicts that have occurred before you can merge.
 
 ```cmd
-# check out the develop branch and get the latest changes 
+# check out the develop branch and get the latest changes
 git checkout develop
 git pull
 
@@ -125,7 +126,7 @@ git pull
 git checkout <your branch>
 
 # merge the develop branch into your branch
-git merge develop 
+git merge develop
 
 # find which files need to be resolved
 git status
@@ -170,7 +171,7 @@ origin  https://github.com/microsoft/code-with-engineering-playbook.git (push)
 
 ### Working with forks
 
-You can set multiple remotes. This is useful for example if you want to work with a forked version of the repository. 
+You can set multiple remotes. This is useful for example if you want to work with a forked version of the repository.
 For more info on how to set upstream remotes and syncing repositories when working with forks see GitHub's [Working with forks documentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks).
 
 ### Updating the remote if a repository changes names
