@@ -15,7 +15,6 @@ Building observable systems enables development teams at CSE to measure how well
 - [Observability in Machine Learning](observability/ml-observability.md)
 - [Recommended Practices](#recommended-practices)
 - [Logs vs Metrics](observability/log-vs-metric.md)
-- [Recommended Tools and Approaches](#recommended-tools-and-approaches)
 - [Recipes](#recipes)
 
 ## Pillars of Observability
@@ -47,16 +46,6 @@ Read on how Observability can be implemented in [Machine Learning](observability
 8. Personally Identifiable Information or any other customer sensitive information should never be logged. Special attenti
 
 Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system.
-
-## Recommended Tools And Approaches
-
-[More content coming shortly]
-
-- Prometheus
-
-- Jaeger
-
-- Loki
 
 ## Recipes
 
