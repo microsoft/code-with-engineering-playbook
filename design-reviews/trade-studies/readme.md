@@ -10,8 +10,10 @@ were backed by data and not bias.
 
 ## When to use the tool
 
-The ideal stage to do trade studies is after the game plan completion and before coding begins; they go hand in hand with defining high
-level architecture design. Further they can be used whenever the project requirements are changing, and we need to reevaluate solutions.
+Trade studies go hand in hand with high level architecture design. This usually occurs as project requirements are solidifying, before
+coding begins. Trade studies continue to be useful throughout the project at any time where there are multiple options that need
+to be selected from. New decision point could occur from changing requirements, getting results of a research spike, or identifying
+challenges that were not originally seen.
 
 Trade studies should be avoided if there is a clear solution choice. Because they require each solution to be fully thought out, they
 have the potential to take a lot of time to complete. When there is a clear design, the trade study should be omitted and an entry
