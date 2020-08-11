@@ -43,7 +43,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [Source Control](source-control/readme.md)
 * [Unit Testing](automated-testing/unit-testing/readme.md)
 * [Continuous Integration (CI)](continuous-integration/readme.md)
-* [Continuous Delivery (CD)](continuous-deployment/readme.md)
+* [Continuous Delivery (CD)](continuous-delivery/readme.md)
 * [Code Reviews](code-reviews/README.md)
 * [Observability](observability/readme.md)
 * [Engineering Feedback](engineering-feedback/readme.md)
