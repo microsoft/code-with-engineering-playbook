@@ -38,9 +38,6 @@ git push --set-upstream origin feature/123-add-git-instructions
 Once the feature branch is pushed to the remote repository it is visible to anyone with access to the code.
 Now you can open a Pull Request in GitHub, Azure DevOps or similar to request to merge the changes into the main branch.
 
-> Agree in the team on the [contribution best practices](../contributing/readme.md), i.e. what you name your branches, whether your merge into main or develop ([git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), [release flow](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow)), what merge strategy you use etc. before starting development.
-> Any examples in this section assume you work with git flow and merge into develop
-
 ## Cloning
 
 Cloning a repository pulls down a full copy of all the repository data, so that you can work on it locally.
