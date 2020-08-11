@@ -9,7 +9,7 @@ The following are examples of sections and points that can be part of a working 
 ## General
 
 - We work as one team towards a common goal and clear scope
-- We make sure everyones voice is heard, listened to
+- We make sure everyone's voice is heard, listened to
 - We show all team members equal respect
 - We pair-program as often as possible
 - We make sure to spread our expertise and skills in the team, so no single person is relied on for one skill
@@ -24,7 +24,7 @@ The following are examples of sections and points that can be part of a working 
 
 - Our office hours, when we can expect to collaborate via Microsoft Teams, phone or face-to-face are Monday to Friday 10AM - 5PM
 - We are not expected to answer emails past 6PM, on weekends or when we are on holidays or vacation.
-- We work in different time zones and respsect this, especially when setting up recurring meetings.
+- We work in different time zones and respect this, especially when setting up recurring meetings.
 - We record meetings when possible, so that team members who could not attend live can listen later.
 
 ## Quality and not quantity
@@ -36,10 +36,10 @@ The following are examples of sections and points that can be part of a working 
 
 | Activity | When | Duration | Who | Accountable | Goal |
 |-|-|-|-|-|-|
-| [Project Standup](./sprint-planning/../../../stand-ups/readme.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
+| [Project Standup](../../stand-ups/readme.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
 | Sprint Demo | Monday 9AM | 1 hour | Everyone | Tech Lead | Present work done and sign off on user story completion |
-| [Sprint Retro](./../../retrospectives/readme.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
-| [Sprint Planning](./../../sprint-planning/readme.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
+| [Sprint Retro](../../retrospectives/readme.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
+| [Sprint Planning](../../sprint-planning/readme.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
 | Task Creation | After Sprint Planning | - | Dev Team | Tech Lead | Create tasks to clarify and determine velocity |
 | [Backlog grooming](../../backlog-management/grooming/readme.md) | Wednesday 2PM | 1 hour | Tech lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
 
@@ -48,9 +48,9 @@ The following are examples of sections and points that can be part of a working 
 The process lead is responsible for leading any scrum or agile practices to enable the project to move forward. Recommended responsibilities are below, as well as in the CWC Wiki.
 
 - Facilitate standup meetings and hold team accountable for attendance and participation.
-- Keep the meeting moving as described in the [Project Standup](./sprint-planning/../../../stand-ups/readme.md) page.
+- Keep the meeting moving as described in the [Project Standup](../../stand-ups/readme.md) page.
 - Make sure all action items are documented and ensure each has an owner and a due date and tracks the open issues.
-- Notes as needed after planning / standups.
+- Notes as needed after planning / stand-ups.
 - Make sure that items are moved to the parking lot and ensure follow-up afterwards.
 - Maintain a location showing team’s work and status and removing impediments that are blocking the team.
 - Hold the team accountable for results in a supportive fashion.

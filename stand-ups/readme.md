@@ -37,7 +37,7 @@ Both stand-up length and time to start are important as the stand-up has to be s
 
 ### Stand-up Length
 
-While the length can depend on the team size, if everyone is sticking to one line answers to the 3 key questions, it should be fairly easy to conclude within 5-10mins.
+While the length can depend on the team size, if everyone is sticking to one line answers to the 3 key questions, it should be fairly easy to conclude within 5-10 minutes.
 
 #### Example (team size == ~8)
 

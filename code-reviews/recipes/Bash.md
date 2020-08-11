@@ -37,7 +37,7 @@ Find the vscode-shellcheck extension in vscode and install it.
 
 ### shell-format
 
-shell-format extension does automatic formatting of your bash scripts, dockerfiles and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
+shell-format extension does automatic formatting of your bash scripts, docker files and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:
 
 #### Install shfmt(Requires Go 1.13 or later) on your machine:
@@ -52,7 +52,7 @@ Find the shell-format extension in vscode and install it.
 
 ## Build Validation
 
-To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
+To automate this process in Azure DevOps you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
 
 ```yaml
 - bash: |

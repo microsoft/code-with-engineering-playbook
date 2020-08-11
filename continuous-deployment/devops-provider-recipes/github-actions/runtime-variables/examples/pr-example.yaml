@@ -1,0 +1,27 @@
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  Echo-On-PR:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v2
+
+      - name: "Set flag from PR"
+        env:
+          PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
+        run: |
+          if ${PR_VAR} == true; then
+            echo "::set-env name=flag::true"
+            echo "flag set to true"
+          else
+            echo "::set-env name=flag::false"
+            echo "flag set to false"
+          fi
+
+      - name: "Use flag if true"
+        if: env.flag
+        run: echo "Flag is available and true"

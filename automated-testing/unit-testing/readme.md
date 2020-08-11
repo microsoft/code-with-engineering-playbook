@@ -14,7 +14,7 @@ Unit tests play an integral role in building quality software and enabling agile
 
 ## Evidence and Measures
 
-The [CICD already requires badges in place](../../continuous-integration/CICD.md) for every repo to quickly assess code coverage and test pass/fail.
+[CI/CD already requires badges in place](../../continuous-integration/CICD.md) for every repo to quickly assess code coverage and test pass/fail.
 
 The team should also keep in an eye on tests that may not be running as part of every merge, i.e. integration and e2e test.
 
@@ -50,18 +50,18 @@ For more complex applications, unit tests also ensure:
 
 Languages and Platforms provide their own unit test tools and frameworks. In [CSE](../CSE.md), we prefer:
 
-- .NET / Visual Studio: <https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code>
-- .NET / NUnit: <http://nunit.org/>
-- .NET Core: <https://docs.microsoft.com/en-us/dotnet/core/testing/>
-- Java: <https://junit.org/junit5/>
-- Go: <https://golang.org/pkg/testing/>
-- JavaScript / Node: <https://mochajs.org/>
-- Python: <https://docs.python.org/3/library/unittest.html>
-- Python: <https://docs.pytest.org/en/latest/>
+- [.NET/Visual Studio](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code)
+- [.NET NUnit](http://nunit.org/)
+- [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/testing/)
+- [Java JUnit 5](https://junit.org/junit5/)
+- [Go](https://golang.org/pkg/testing/)
+- [JavaScript/Node mochajs](https://mochajs.org/)
+- [Python unittest](https://docs.python.org/3/library/unittest.html)
+- [Python pytest](https://docs.pytest.org/en/latest/)
   
 ## Resources
 
-- .NET Tutorial: <https://docs.microsoft.com/en-us/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code>
-- Java Tutorial: <http://tutorials.jenkov.com/java-unit-testing/index.html>
-- Unit Testing Spark: <http://www.jesse-anderson.com/2016/04/unit-testing-spark-with-java/>
-- Book The Art of Unit Testing: With Examples in .NET - by Roy Osherove: <https://www.goodreads.com/book/show/6487349-the-art-of-unit-testing>
+- [.NET unit testing tutorial](https://docs.microsoft.com/en-us/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code)
+- [Java unit testing tutorial](http://tutorials.jenkov.com/java-unit-testing/index.html)
+- [Unit Testing Spark with Java](http://www.jesse-anderson.com/2016/04/unit-testing-spark-with-java)
+- [Book: The Art of Unit Testing With Examples in .NET](https://www.goodreads.com/book/show/6487349-the-art-of-unit-testing) by Roy Osherove
