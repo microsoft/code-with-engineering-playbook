@@ -5,7 +5,6 @@ There are many different options when working with Source Control. In [CSE](../C
 ## Sections within Source Control
 
 * [Contributing Source Code](contributing/readme.md)
-* [Feature Branching](feature-branching/readme.md)
 * [Versioning](versioning/readme.md)
 * [Working with Secrets](secrets-management/readme.md)
 * [Git Guidance](git-guidance/readme.md)
