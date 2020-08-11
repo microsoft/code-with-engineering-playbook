@@ -14,8 +14,6 @@ Building observable systems enables development teams at CSE to measure how well
 - [Pillars of Observability](#pillars-of-observability)
 - [Recommended Practices](#recommended-practices)
 - [Pitfalls to Avoid](#pitfalls-to-avoid)
-- [Recommended Tools and Approaches](#recommended-tools-and-approaches)
-- [Tools](#tools)
 - [Recipes](#recipes)
 
 ## Pillars of Observability
