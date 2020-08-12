@@ -111,3 +111,4 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 - Document and update the architecture design in the project design documentation
 - Track and document design decisions in a [decision log](./decision-log/readme.md)
+- Document decision process in [trade studies](./trade-studies/readme.md) when multiple solutions exist for the given problem
