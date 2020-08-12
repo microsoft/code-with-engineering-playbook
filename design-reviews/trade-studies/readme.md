@@ -1,11 +1,11 @@
 # Trade Studies
 
 Trade studies are a tool for selecting the best option out of several possible options for a given problem (for example: compute, storage).
-They evaluate potential choices against a set of objective criteria/customer requirements to clearly lay out the benefits and limitations
+They evaluate potential choices against a set of objective criteria/requirements to clearly lay out the benefits and limitations
 of each solution.
 
-[Trade studies](https://en.wikipedia.org/wiki/Trade_study) are a concept from systems engineering that we adapted for CSE projects. Trade
-studies have proved to be a critical tool to drive alignment with the customers, earn credibility while doing so and ensure our decisions
+[Trade studies](https://en.wikipedia.org/wiki/Trade_study) are a concept from systems engineering that we adapted for software projects. Trade
+studies have proved to be a critical tool to drive alignment with the stakeholders, earn credibility while doing so and ensure our decisions
 were backed by data and not bias.  
 
 ## When to use the tool
@@ -21,24 +21,20 @@ should be made in the [Decision Log](../decision-log/readme.md) documenting the 
 
 ## Why Trade Studies
 
-The biggest advantage of using trade studies is formalizing the decision-making process in a clear and objective manner. This gives a clear
-flow for presenting the information to decision makers. We recommend the following approach for sharing information:
+Trade studies are a way of formalizing the design process and leaving a documentation record for why the decision was made. This gives a few advantages:
 
-|Sharing Approach|Customer Cloud Maturity|Content Presentations|Tools Used fo Writing/Sharing|
-|-|-|-|-|
-|Lightweight|Beginner|Executive summary, Diagrams/visuals, comparison tables | Word doc with referenced Visio diagram and Excel tables, Wiki software with built-in visuals|
-|Full Experience|Intermediate to advanced|All of the above, 30-50% of the trade study text|Same as above|
-
-Additionally, filling out the trade study template provides structure to the design phase and leaves a documentation record of assumptions
-and data that went into each decision.
+1. The trade study template guides a user through the design process. This provides structure to the design stage.
+1. Having a uniform design process aids splitting work amongst team members. We have had success with engineers pairing to define requirements, evaluation criteria, and brainstorming possible solutions. Then they can each split to review solutions in parallel, before rejoining to make the final decision.
+1. The completed trade study document helps drive alignment across the team and decision makers. For presenting results of the study, the document itself can be used to highlight the main points. Alternatively, we have extracted requirements, diagrams for each solution and the results table into a slide deck to give high level overviews of the results.
+1. The completed trade study gets checked into the code repository, providing documentation of the decision process. This leaves a history of the requirements at the time that lead to each decision. Also, the results table gives a quick reference for how the decision would be impacted if requirements change as the project proceeds.
 
 ## Flow of a Trade Study
 
 Trade studies can vary widely in scope; however, they follow the common pattern below:
 
-1. Solidify the requirements – Work with the customer to agree on the requirements for the functionality that you are trying to build.
+1. Solidify the requirements – Work with the stakeholders to agree on the requirements for the functionality that you are trying to build.
 1. Create evaluation criteria – This is a set of qualitative and quantitative assessment points that represent the requirements. Taken together, they become an easy to measure stand-in for the potentially abstract requirements.
-1. Brainstorm solutions – Gather a list of possible solutions to the problem. Then, use your best judgement to pick the 2-4 solutions that seem most promising. For assistance narrowing solutions, reach out to Tech Domains, Product Groups and other XDC teams that have faced similar problems.
+1. Brainstorm solutions – Gather a list of possible solutions to the problem. Then, use your best judgement to pick the 2-4 solutions that seem most promising. For assistance narrowing solutions, remember to reach out to subject matter experts and other teams who may have gone through a similar decision.
 1. Evaluate shortlisted solutions – Dive deep into each solution and measure it against the evaluation criteria. In this stage, timebox your research to avoid overly investing in any given area.
 1. Compare results and choose solution - Align the decision with the team. If you are unable to decide, then a clear list of action items and owners to drive the final decision must be produced.
 
