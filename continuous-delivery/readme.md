@@ -5,9 +5,7 @@ The inspiration behind continuous delivery is constantly delivering valuable sof
 Deploying software involves the following principles:
 
 1. Provision and manage the cloud environment runtime for your application (cloud resources, infrastructure, hardware, services, etc).
-
 1. Install the target application version across your cloud environments.
-
 1. Configure your application, including any required data.
 
 A continuous delivery pipeline is an automated manifestation of your process to streamline these very principles in a consistent and repeatable manner.
@@ -15,7 +13,6 @@ A continuous delivery pipeline is an automated manifestation of your process to 
 ## Goal
 
 * Follow industry best practices for delivering software changes to customers and developers.
-
 * Establish consistency for the guiding principles and best practices when assembling continuous delivery workflows.
 
 ## General Guidance
@@ -39,7 +36,6 @@ It's important to establish a common understanding between the technical lead an
 > * How the initial deployment to production works.
 
 * How fixing defects and applying patches to the production environment will be handled.
-
 * How upgrades to the production environment will be handled, including data migration. How will upgrades be carried out to the application without destroying its state.
 
 ### Application Release and Environment Promotion
@@ -47,6 +43,8 @@ It's important to establish a common understanding between the technical lead an
 Your release manifestation process should take the deployable build artifact created from your commit stage and deploy them across all cloud environments, starting with your test environment.
 
 The test environment (_often called Integration_) acts as a gate to validate if your test suite completes successfully for all release candidates. This validation should always begin in a test environment while inspecting the deployed release integrated from the feature / release branch containing your code changes.
+
+Code changes released into the _test_ environment typically targets the main branch (when doing [trunk](https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/#why-trunk-based-development)) or release branch (when doing [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)).
 
 #### The First Deployment
 
