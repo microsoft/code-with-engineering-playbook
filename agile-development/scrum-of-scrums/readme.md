@@ -8,10 +8,10 @@ The goal of the scrum of scrums ceremony is to give sub teams the agility they n
 
 The scrum of scrums ceremony happens every day and can be seen as a regular [stand-up](../stand-ups/readme.md):
 
-    - What was done the day before by the sub team.
-    - What will be done today by the sub team.
-    - What are blockers or other issues for the sub team.
-    - What are the blockers or issues that may impact other sub teams.
+- What was done the day before by the sub team.
+- What will be done today by the sub team.
+- What are blockers or other issues for the sub team.
+- What are the blockers or issues that may impact other sub teams.
 
 The outcome of the meeting will result in a list of impediments related to coordination of the whole project. Solutions could be: agreeing on interfaces between teams, discussing architecture changes, evolving responsibility boundaries, etc.
 
