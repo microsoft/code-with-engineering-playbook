@@ -21,18 +21,18 @@ After six weeks of work you created PR with all required functionality, includin
 Good approach:
 You divided your feature into smaller User Stories (which in turn will be divided into multiple tasks later) and started working on them one by one, for example:
 
-1. As a user I could successfully build UWP apps using current service
-2. As a user I can see telemetry when building the apps
-3. As a user I have the ability to select build configuration (debug, release)
-4. As a user I have the ability to select target platform (arm, x86, x64)
-5. ...
+* As a user I could successfully build UWP apps using current service
+* As a user I can see telemetry when building the apps
+* As a user I have the ability to select build configuration (debug, release)
+* As a user I have the ability to select target platform (arm, x86, x64)
+* ...
 
 You also divided your stories into smaller tasks and started sending PRs based on those tasks. E.g. you may have the following tasks for the first user story above:
 
-1. Enable UWP platform on backend
-2. Add `build` button to the UI (build first solution file found)
-3. Add `select solution file` dropdown to the UI
-4. Implement unit tests
-5. Implement integration tests to verify that build was succeeded
-6. Update documentation
-7. ...
+* Enable UWP platform on backend
+* Add `build` button to the UI (build first solution file found)
+* Add `select solution file` dropdown to the UI
+* Implement unit tests
+* Implement integration tests to verify that build was succeeded
+* Update documentation
+* ...

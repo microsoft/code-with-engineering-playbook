@@ -19,7 +19,7 @@
 ## Goals/In-Scope
 
 * List a few bullet points of what this task will achieve and that are most relevant for the design review discussion.
-* This should include acceptance criteria required to meet the [definition of done](../../team-agreements/definition-of-done/).
+* This should include acceptance criteria required to meet the [definition of done](../../agile-development/team-agreements/definition-of-done/).
 
 ## Non-goals / Out-of-Scope
 
