@@ -34,7 +34,7 @@ The purpose of this document is to:
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
 - [ ] [Decide on branch naming](source-control/contributing/readme.md#naming-branches)
-- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-deployment/secrets-management/recipes/azure-devops/secrets-per-branch.md)
+- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch.md)
 
 ### Day 2
 
@@ -55,7 +55,7 @@ The purpose of this document is to:
 
 ### Day 4
 
-- [ ] [Set up Continuous Deployment](continuous-deployment/readme.md)
+- [ ] [Set up Continuous Deployment](continuous-delivery/readme.md)
   - Determine what environments are appropriate for this solution
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
 - [ ] [Decide on a versioning strategy](source-control/versioning/readme.md)

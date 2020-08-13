@@ -62,7 +62,7 @@ The very first deployment of any application should be showcased to the customer
 
 It's critical to model your test and release process to establish a common understanding between the application engineers and customer stakeholders. Specifically aligning expectations for how many cloud environments need to be pre-provisioned as well as defining sign-off gate roles and responsibilities.
 
-![image](https://user-images.githubusercontent.com/7635865/89290276-426ca200-d61e-11ea-9c79-bd183dc72050.png)
+![image](./images/example_release_flow.png)
 
 ##### Release Pipeline Modeling Considerations
 
@@ -114,7 +114,7 @@ Blue / Green is a deployment technique which reduces downtime by running two ide
 
 Only one of these environments accepts live production traffic at a given time.
 
-![image](https://user-images.githubusercontent.com/7635865/89334870-d4939b00-d65c-11ea-8e82-9c374518766a.png)
+![image](./images/blue_green.png)
 
 In the above example, live production traffic is routed to the Green environment. During application releases, the new version is deployed to the blue environment which occurs independently from the Green environment. Live traffic is unaffected from Blue environment releases. You can point your end-to-end test suite against the Blue environment as one of your test checkouts.
 
@@ -128,7 +128,7 @@ Database providers like Cosmos and Azure SQL natively support data replication t
 
 Canary releasing enables development teams to gather faster feedback when deploying new features to production. These releases are rolled out to a subset of production nodes (_where no users are routed to_) to collect early insights around capacity testing and functional completeness and impact.
 
-![image](https://user-images.githubusercontent.com/7635865/89341436-ee39e000-d666-11ea-98f8-4b3980f670ae.png)
+![image](./images/canary_release.png)
 
 Once smoke and capacity tests are completed, you can route a small subset of users to the production nodes hosting the release candidate.
 
