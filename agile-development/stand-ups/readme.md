@@ -2,9 +2,9 @@
 
 The stand-up is a time-boxed ceremony that is held each day of the sprint. In this ceremony, each contributor in the Development Team will answer three simple questions. This will repeat until each contributor has answered the three following questions.
 
-> 1. What did you work on yesterday that contributes to meet the sprint goal?
-> 2. What are you working on today that will contribute to meet the sprint goal?
-> 3. Do you have any impediments/blockers or need any help? (defer discussion / resolution to "the parking lot", described below)
+1. What did you work on yesterday that contributes to meet the sprint goal?
+2. What are you working on today that will contribute to meet the sprint goal?
+3. Do you have any impediments/blockers or need any help? (defer discussion / resolution to "the parking lot", described below)
 
 During the stand-up, additional discussions may arise. Make sure that someone adds them to the parking lot for after meeting discussion.  
 
@@ -72,13 +72,15 @@ When answering what was worked on and what will be worked on, refer directly to 
 
 If a contributor is not working on an existing sprint task they need to either create a new task under an existing sprint story to reflect that work, or defer that work until its scheduled for a later sprint.
 
-**If a contributor provides an update without referring to a task, ask the contributor which task.**
+> If a contributor provides an update without referring to a task, ask the contributor which task.
 
 ### Parking Lot Discussion Items
 
 As contributors are answering the three questions, if another contributor has a question or issue to share, they should reserve until after all contributors have answered finished. Once each member has answered all three questions, the process lead should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
 
-**Parking lot discussions are optional for participants**. Ensure discussion leaders call out necessary parties for their discussion points upfront, allowing those not needed to leave the meeting.
+> Parking lot discussions are optional for participants
+
+Ensure discussion leaders call out necessary parties for their discussion points upfront, allowing those not needed to leave the meeting.
 
 ### Start On Time
 
@@ -90,18 +92,7 @@ Stand-up should be held at the same time each day. The meeting time should be mu
 
 ### Schedule Stand-ups for Mid-Morning
 
-```plaintext
-             ((((
-            ((((
-             ))))
-          _ .---.
-         ( |`---'|
-          \|     |
-          : .___, :
-           `-----'
-```
-
-Many teams find that the ideal time for stand-ups is between 9 and 10am. This provides ample time for team members to get into the office, settle in (`grab a coffee ;)`), and catch up with where they left off the day before. It's also early enough to help developers to plan their day around new work items.
+Many teams find that the ideal time for stand-ups is between 9 and 10am. This provides ample time for team members to get into the office, settle in, and catch up with where they left off the day before. It's also early enough to help developers to plan their day around new work items.
 
 For teams distributed across time zones, consider scheduling standup between 9 and 10am within the time zone that has the most team members.
 
