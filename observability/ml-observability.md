@@ -22,15 +22,15 @@ Azure Machine Learning service provides an SDK for Python, R and C# to capture y
 MLFlow is open source framework, and can be hosted on Azure Databricks as its remote tracking server (it currently is the only solution that offers first-party integration with Databricks). You can use the MLFlow SDK tracking component to capture your evaluation metrics or any parameter you would like and track it at experimentation board in Azure Databricks. Source code and dataset version are also saved with log snapshot to provide reproducibility.
 
 [TensorBoard](https://www.tensorflow.org/tensorboard/)
-TensorBoard is a popular tool amongst data scientist to visualize specific  metrics of Deep Learning runs, especially of TensorFlow runs. TensorBoard is not an MLOps tool like AML/MLFlow, and therefore does not offer extensive logging capabilities. It is meant to be transient; and can therefore be used as an addition to an end-to-end MLOps tool like AML, but not as a complete MLOps tool.
+TensorBoard is a popular tool amongst data scientist to visualize specific metrics of Deep Learning runs, especially of TensorFlow runs. TensorBoard is not an MLOps tool like AML/MLFlow, and therefore does not offer extensive logging capabilities. It is meant to be transient; and can therefore be used as an addition to an end-to-end MLOps tool like AML, but not as a complete MLOps tool.
 
 [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-Application Insights can be used as an alternative sink of capturing model metrics, and can therefore offer more extensive options as metrics can be transfered to e.g. a PowerBI dashboard. It also enables log querying. However, this solution means that a custom application needs to be written to send logs from AML to AppInsights (using for example the OpenCensus Python SDK), which would mean extra effort of creating/maintaining custom code.
+Application Insights can be used as an alternative sink to capture model metrics, and can therefore offer more extensive options as metrics can be transfered to e.g. a PowerBI dashboard. It also enables log querying. However, this solution means that a custom application needs to be written to send logs to AppInsights (using for example the OpenCensus Python SDK), which would mean extra effort of creating/maintaining custom code.
 
 An extensive comparison of the four tools can be found as follows:
 
-|                       | Azure ML    | MLFlow      | TensorBoard   | Application Insights |
-| -----------           | ----------- | ----------- | -----------   | -----------          |
+|                           | Azure ML      | MLFlow      | TensorBoard   | Application Insights |
+| -----------               | ----------- | ----------- | -----------   | -----------          |
 | **Metrics support**       | Values, images, matrices, logs | Values, images, matrices and plots as files | Metrics relevant to DL research phase | Values, images, matrices, logs
 | **Customizability**       | Basic | Basic | Very basic | High
 | **Metrics accessible**    | AML portal, AML SDK | MLFlow UI, Tracking service API | Tensorboard UI, history object | Application Insights
