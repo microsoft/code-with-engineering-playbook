@@ -1,4 +1,4 @@
-# Observability in Machine Learning  
+# Observability in Machine Learning
 
 Development process of software system with machine learning component is more complex
 than traditional software. We need to monitor changes and variations in three dimensions:
@@ -38,7 +38,6 @@ An extensive comparison of the four tools can be found as follows:
 | **Ease of use and set up** | Very straightforward, only one portal | More moving parts due to remote tracking server | A bit over process overhead. Also depending on ML framework | More moving parts as a custom app needs to be maintained
 | **Shareability** | Across people with access to AML workspace | Across people with access to remote tracking server | Across people with access to same directory | Across people with access to AppInsights
 
-
 ## Model in production
 
 The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](readme.md) section). MLFLow is an alternative way to deploy ML model as a service.
@@ -48,12 +47,11 @@ The trained model can be deployed to production as container. Azure Machine Lear
 To automatically retrain the model you can use AML Pipelines or Azure Databricks.
 When re-training with AML Pipelines you can monitor information of each run, including the output, logs, and various metrics in the Azure portal experiment dashboard, or manually extract it using the AML SDK
 
-## Model performance over time: data drift  
+## Model performance over time: data drift
 
 We re-train machine learning models to improve their performance and make models better aligned with data changing over time. However, in some cases model performance may degrade. This may happen in case data change dramatically and do not exhibit the patterns we observed during model development any more. This effect is called data drift. Azure Machine Learning Service has preview feature to observe and report data drift.
 This [article](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets) describes it in detail.
 
-## Data versioning  
+## Data versioning
 
 It is recommended practice to add version to all datasets. You can create a versioned Azure ML Dataset for this purpose, or manually version it if using other systems.
-
