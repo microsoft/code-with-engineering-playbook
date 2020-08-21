@@ -4,7 +4,7 @@ This section is primarily geared towards web-based UIs, but the guidance is simi
 
 ## Applicability
 
-UI Testing is not always going to be applicable, for example applications without a UI or parts of an applciation that require no human interaction.  In those cases unit, functional and integration/e2e testing would be the primary means.  UI Testing is going to be mainly applicable when dealing with a public facing UI that is used in a diverse envrionment or in a mission critical UI that requires higher fidelity.  With something like an admin UI that is used by just a handful of people, UI Testing is still valuable but not as high priority.
+UI Testing is not always going to be applicable, for example applications without a UI or parts of an application that require no human interaction.  In those cases unit, functional and integration/e2e testing would be the primary means.  UI Testing is going to be mainly applicable when dealing with a public facing UI that is used in a diverse environment or in a mission critical UI that requires higher fidelity.  With something like an admin UI that is used by just a handful of people, UI Testing is still valuable but not as high priority.
 
 ## Goals
 
@@ -54,13 +54,13 @@ Note there that there are further considerations as when running headlessly the 
 
 Recommended testing frameworks:
 
-- Web:
-  - BrowserStack: <https://www.browserstack.com>
-  - Cypress: <https://www.cypress.io>
-  - Jest: <https://jestjs.io/docs/en/snapshot-testing>
-  - Selenium: <https://www.selenium.dev>
-- OS/Mobile Applications:
-  - Coded UI tests (CUITs): <https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019>
-  - Xamarin.UITest: <https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/>
+- Web
+  - [BrowserStack](https://www.browserstack.com)
+  - [Cypress](https://www.cypress.io)
+  - [Jest](https://jestjs.io/docs/en/snapshot-testing)
+  - [Selenium](https://www.selenium.dev)
+- OS/Mobile Applications
+  - [Coded UI tests (CUITs)](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019)
+  - [Xamarin.UITest](https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/)
 
-Note that the framework listed above that is paid is BrowserStack, it's listed as it's an industry standard, the rest are open source and free.
+> Note that the framework listed above that is paid is BrowserStack, it's listed as it's an industry standard, the rest are open source and free.

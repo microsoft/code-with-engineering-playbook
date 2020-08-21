@@ -17,7 +17,9 @@ Automation testing | It can be manual or automation testing | It can be manual o
 
 ## Sections within Testing
 
-* [Unit testing](unit-testing/readme.md)
-* [Integration testing](integration-testing/readme.md)
-* [End-to-End testing](e2e-testing/readme.md)
-* [Synthetic Monitoring testing](synthetic-monitoring-tests/readme.md)
+- [Unit testing](unit-testing/readme.md)
+- [Integration testing](integration-testing/readme.md)
+- [End-to-End testing](e2e-testing/readme.md)
+- [UI testing](ui-testing/readme.md)
+- [Synthetic Monitoring testing](synthetic-monitoring-tests/readme.md)
+- [Performance testing](performance-testing/readme.md)

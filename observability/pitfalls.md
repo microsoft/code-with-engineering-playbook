@@ -17,6 +17,6 @@ One of the design goals when building a system must be to have a monitorable sys
 
 Every data logged must contain rich context, which is useful for getting an overall view of the system and easy to traceback errors/failures during troubleshooting. While logging data, care must also be taken to avoid data silos.
 
-## Personally Identifiable Informations
+## Personally Identifiable Information
 
 As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.,)

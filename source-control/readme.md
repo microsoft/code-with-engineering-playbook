@@ -18,14 +18,14 @@ There are many different options when working with Source Control. In [CSE](../C
 
 ## General Guidance
 
-Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../team-agreements/working-agreements/readme.md)).
+Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreements/readme.md)).
 
 The team should at least be doing the following:
 
 * Agree on the **branch**, **release** and **merge strategy**
-* Define the merge strategy ([linear or non-linear](./contributing/readme.md#merge-strategies))
+* Define the merge strategy ([linear or non-linear](contributing/readme.md#merge-strategies))
 * Lock the default branch and merge using [pull requests (PRs)](../code-reviews/pull-requests.md)
-* Agree on [branch naming](./contributing/readme.md#naming-branches) (e.g. `user/your_alias/feature_name`)
+* Agree on [branch naming](contributing/readme.md#naming-branches) (e.g. `user/your_alias/feature_name`)
 * Establish [branch/PR policies](../code-reviews/pull-requests.md)
 * For public repositories the default branch should contain the following files:
   * [LICENSE](../resources/templates/LICENSE)

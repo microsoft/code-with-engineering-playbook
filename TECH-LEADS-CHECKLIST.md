@@ -57,7 +57,7 @@ More details on [Unit Testing](automated-testing/unit-testing/readme.md)
 
 ## Design Reviews
 
-- [ ] Process for conducting design reviews is included in the [Working Agreement](/team-agreements/working-agreements/readme.md)
+- [ ] Process for conducting design reviews is included in the [Working Agreement](/agile-development/team-agreements/working-agreements/readme.md)
 - [ ] Design reviews for each major component of the solution are carried out and documented, including alternatives.
 - [ ] Stories and/or PRs link to the design document.
 - [ ] Each user story includes a task for design review by default, which is assigned or removed during sprint planning.
@@ -81,7 +81,7 @@ More details on [Code Reviews](code-reviews/README.md)
 - [ ] Experiments have owners and are added to project backlog.
 - [ ] Longer retrospective for Milestones and project completion.
 
-More details on [Retrospectives](retrospectives/readme.md)
+More details on [Retrospectives](agile-development/retrospectives/readme.md)
 
 ## Engineering Feedback
 
