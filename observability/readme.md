@@ -25,7 +25,7 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Observability in Machine Learning
 
-Read on how Observability can be implemented in [Machine Learning](observability/ml-observability.md) engagements effectively during Model tuning, experimentation and production.
+Read on how Observability can be implemented in [Machine Learning](observability/ml-observability.md) engagements effectively during Model tuning, experimentation and deployment.
 
 ## Recommended Practices
 
