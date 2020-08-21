@@ -12,7 +12,7 @@ Performance testing is commonly conducted to accomplish one or more the followin
 
 * To help in assessing whether a **system is ready for Release**:
   * Estimating / Predicting the performance characteristics (such as response time, throughput) which an application is likely to have when it is released in to production. The results can help in predicting the satisfaction level of the users when interacting with the system. The predicted values can also be compared with agreed values (success criteria) for the performance characteristics when available.
-  * To help in accessing the adequacy of the infrastructure / managed service sku's to meet the desired performance characteristics of a system
+  * To help in accessing the adequacy of the infrastructure / managed service SKUs to meet the desired performance characteristics of a system
   * Identifying bottlenecks and issues with the application at different load levels
 * To compare the **performance impact of application changes**
   * Comparing the performance characteristics of an application after a change to the values of performance characteristics during previous runs (or baseline values), can provide an indication of performance issues or enhancements introduced due to a change
@@ -21,17 +21,19 @@ Performance testing is commonly conducted to accomplish one or more the followin
 
 ## Key Performance Testing categories
 
-### **Performance Testing**
+<!-- markdownlint-disable no-duplicate-heading -->
+### Performance Testing
+<!-- markdownlint-enable no-duplicate-heading -->
 
-  This category is the super set of all sub categories of performance related testing. It validates/determines the speed, scalability or reliability characteristics of the system under test. Performance testing focusses on achieving the response times, throughput, and resource utilization levels which meet the performance objectives of a system
+  This category is the super set of all sub categories of performance related testing. It validates/determines the speed, scalability or reliability characteristics of the system under test. Performance testing focuses on achieving the response times, throughput, and resource utilization levels which meet the performance objectives of a system
 
 ### **[Load Testing](./load-testing.md)**
   
-  This is the subcategory of performance testing which focusses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation. **Endurance Test** or **Soak Test** is a load test carried over a long duration ranging from several hours to days.
+  This is the subcategory of performance testing which focuses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation. **Endurance Test** or **Soak Test** is a load test carried over a long duration ranging from several hours to days.
 
-### **Stress Testing**
+### Stress Testing
 
-  This is the subcategory of performance testing which focusses on validating the performance characteristics of a system when the system faces extreme load. The goal is to evaluate how does the system handles being pressured to its limits, does it recover (i.e. scale-out) or does it just break and fail?
+  This is the subcategory of performance testing which focuses on validating the performance characteristics of a system when the system faces extreme load. The goal is to evaluate how does the system handles being pressured to its limits, does it recover (i.e. scale-out) or does it just break and fail?
 
 ## Key Performance testing activities
 

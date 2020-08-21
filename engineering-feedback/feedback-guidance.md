@@ -56,13 +56,13 @@ Please provide the customer perspective priority of the feedback.  Feedback is p
 - __P2 - Impact is moderate and varies in scope__: Needs to be addressed in a reasonable timeframe (i.e. issues that are impeding adoption and usage with no reasonable workarounds). For example, feedback may be related to feature-level issue to solve for friction.
 - __P3 - Impact is low__: Issue can be address when able or eventually (i.e. relevant to core addressable space but issue does not impede progress or has reasonable workaround). For example, feedback may be related to feature ideas or opportunities.
 
-## Repro Steps
+## Reproduction Steps
 
-The repro steps are important since they help confirm and replay the issue, and are essential in demonstrating success once there is a resolution.
+The reproduction steps are important since they help confirm and replay the issue, and are essential in demonstrating success once there is a resolution.
 
 ### Pre-requisites
 
-Provide a clear set of all conditions and pre-requisites required before following the set of repro steps. These could include:
+Provide a clear set of all conditions and pre-requisites required before following the set of reproduction steps. These could include:
 
 - Platform (eg. AKS 1.16.4 cluster with Azure CNI, Ubuntu 19.04 VM)
 - Services (eg. Azure Key Vault, Azure Monitor)
@@ -72,7 +72,7 @@ Provide a clear set of all conditions and pre-requisites required before followi
 
 Provide a clear set of repeatable steps that will allow for this feedback to be reproduced. This can take the form of:
 
-- Scripts (eg. bash, powershell, terraform, arm template)
+- Scripts (eg. bash, PowerShell, terraform, arm template)
 - Command line instructions (eg. az, helm, terraform)
 - Screen shots (eg. azure portal screens)
 

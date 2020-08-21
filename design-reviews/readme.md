@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Goals](#goals)
+- [Measures](#measures)
 - [Impact](#impact)
 - [Participation](#participation)
 - [Facilitation Guidance](#facilitation-guidance)
@@ -105,3 +106,9 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 - Highly detailed design for a complex tasks with many unknowns
 - Will integrate into higher level feature/component designs
+
+## Design Documentation
+
+- Document and update the architecture design in the project design documentation
+- Track and document design decisions in a [decision log](./decision-log/readme.md)
+- Document decision process in [trade studies](./trade-studies/readme.md) when multiple solutions exist for the given problem

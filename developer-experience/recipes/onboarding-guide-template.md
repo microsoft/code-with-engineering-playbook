@@ -16,7 +16,7 @@ When developing an onboarding document for a team, it should contain details of 
 ## Team Agreement and Code of Conduct
 
 * Include the team's code of conduct or agreement that defines a set of expectation from each team member and how the team has agreed to operate.
-* Working Agreement Template - [working agreement](../../team-agreements/working-agreements/readme.md)
+* Working Agreement Template - [working agreement](../../agile-development/team-agreements/working-agreements/readme.md)
 
 ## Dev Environment Setup
 
