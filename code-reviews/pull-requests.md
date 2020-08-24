@@ -61,6 +61,8 @@ One popular specification for open-source projects and others is the [Convention
 
 The `<type>` in this message can be selected from a list of types defined by the team, but many projects use the [list of commit types from the Angular open-source project](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type). It should be clear that `scope`, `body` and `footer` elements are **optional**, but having a required `type` and short description enables the features mentioned above.
 
+Note that while commit message and PR title standardization is the ideal, we recognize that it is not feasible or easily enforced. When these situations arise, we recommend using tools like [Changesets](https://github.com/atlassian/changesets) to generate changelogs without needing commit messages to be standardized.
+
 ## Resources
 
 * [Review code with pull requests (Azure DevOps)](https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)
