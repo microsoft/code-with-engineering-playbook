@@ -43,7 +43,7 @@ Read on how Observability can be implemented in [Machine Learning](observability
 
 7. It is important that every data that is collected contains relevant and rich context.
 
-8. Personally Identifiable Information or any other customer sensitive information should never be logged. Special attenti
+8. Personally Identifiable Information or any other customer sensitive information should never be logged. Special attention should be paid to any local privacy data regulations and collected data must adhere to those. (ex: GPDR)
 
 Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system.
 
