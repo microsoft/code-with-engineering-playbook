@@ -33,15 +33,15 @@ There are a number of basic component which are required to carry out a load tes
 
 ### Execution
 
-It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios as well as how to execute those at load. It is common to slowly ramp up to your desired load just to be safe. Once you have reached your defined workload.
+It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios as well as how to execute those at load. It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.
 
-Before starting please be aware of any restrictions on your network such as DDOS protection where you may need to notify a network administrator or apply for an exemption.
+**Note:** Before starting please be aware of any restrictions on your network such as DDOS protection where you may need to notify a network administrator or apply for an exemption.
 
 ### Further Testing
 
 After completing your load test you should be set up to continue on to additional related testing such as;
 
-- **Soak Testing** - Performing a load test over an extended period of time to ensure long term stability.
+- **Soak Testing** - Also known as **Endurance Testing**. Performing a load test over an extended period of time to ensure long term stability.
 - **Stress Testing** - Gradually increasing the load to find the limits of the system and identify the maximum capacity.
 - **Spike Testing** - Introduce a sharp short-term increase into the load scenarios.
 - **Scalability Testing** - Re-testing of a system as your expand horizontally or vertically to measure how it scales.
@@ -66,4 +66,4 @@ Of course its only as good as your ability to predict the expected load, so its 
 
 List additional readings about this test type for those that would like to dive deeper.
 
-- [https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing)
+- [Microsoft Azure Well-Architected Framework > Load Testing](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing)
