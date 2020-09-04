@@ -40,7 +40,7 @@ As much as possible, configuration and management of observability assets such a
 
 * Audit changes and makes it possible to roll-back if there are any issues.
 
-* Identify actionable insights from the generated metrics data across all environments
+* Identify actionable insights from the generated metrics data across all environments, not just production.
 
 ## Recommended Practices
 
