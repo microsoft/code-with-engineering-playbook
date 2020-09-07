@@ -70,6 +70,8 @@ When you are done working, push your changes to a branch in the remote repositor
 git push --set-upstream origin feature/feature-name
 ```
 
+after the first push, the --set-upstream parameter is not needed
+
 ## Committing
 
 To avoid loosing work, it is good to commit often in small chunks. This allows you to revert only the last changes if you discover a problem and also neatly explains exactly what changes were made and why.
@@ -90,7 +92,7 @@ To avoid loosing work, it is good to commit often in small chunks. This allows y
 3. Track the files you wish to include in the commit
 
     ```cmd
-    git add .
+    git add --all
     ```
 
    to track all modified files, or
