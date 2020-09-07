@@ -10,21 +10,21 @@ The purpose of this document is to:
 
 ### Before starting the project
 
-- [ ] [Discuss and start writing the Team Agreements](team-agreements/readme.md). Update these documents with any process decisions made throughout the project
-  - [Working Agreement](team-agreements/working-agreements/readme.md)
-  - [Definition of Ready](team-agreements/definition-of-ready/readme.md)
-  - [Definition of Done](team-agreements/definition-of-done/readme.md)
-  - [Estimation](sprint-planning/estimation/readme.md)
+- [ ] [Discuss and start writing the Team Agreements](agile-development/team-agreements/readme.md). Update these documents with any process decisions made throughout the project
+  - [Working Agreement](agile-development/team-agreements/working-agreements/readme.md)
+  - [Definition of Ready](agile-development/team-agreements/definition-of-ready/readme.md)
+  - [Definition of Done](agile-development/team-agreements/definition-of-done/readme.md)
+  - [Estimation](agile-development/sprint-planning/estimation/readme.md)
 - [ ] [Set up the repository/repositories](source-control/contributing/readme.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
-- [ ] [Build a Product Backlog](backlog-management/readme.md)
+- [ ] [Build a Product Backlog](agile-development/backlog-management/readme.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
   - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
 
 ### Day 1
 
-- [ ] [Plan the first sprint](sprint-planning/readme.md)
+- [ ] [Plan the first sprint](agile-development/sprint-planning/readme.md)
   - Agree on a sprint goal, and how to measure the sprint progress
   - Determine team capacity
   - Assign user stories to the sprint and split user stories into tasks
@@ -34,28 +34,28 @@ The purpose of this document is to:
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
 - [ ] [Decide on branch naming](source-control/contributing/readme.md#naming-branches)
-- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-deployment/secrets-management/recipes/azure-devops/secrets-per-branch.md)
+- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch.md)
 
 ### Day 2
 
 - [ ] [Set up Source Control](source-control/readme.md)
   - Agree on [best practices for commits](source-control/contributing/readme.md#commit-best-practices)
 - [ ] [Set up basic Continuous Integration with linters and automated tests](continuous-integration/readme.md)
-- [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](stand-ups/readme.md)
+- [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/stand-ups/readme.md)
   - Discuss purpose, goals, participants and facilitation guidance
   - Discuss timing, and how to run an efficient stand-up
-- [ ] [If the project has sub-teams, set up a Scrum of Scrums](scrum-of-scrums/readme.md)
+- [ ] [If the project has sub-teams, set up a Scrum of Scrums](agile-development/scrum-of-scrums/readme.md)
 
 ### Day 3
 
 - [ ] [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
-- [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](team-agreements/definition-of-done/readme.md)
+- [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/team-agreements/definition-of-done/readme.md)
 - [ ] [Agree on a Code Merging strategy](source-control/contributing/readme.md#merge-strategies) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
 - [ ] [Agree on logging and observability frameworks and strategies](observability/readme.md)
 
 ### Day 4
 
-- [ ] [Set up Continuous Deployment](continuous-deployment/readme.md)
+- [ ] [Set up Continuous Deployment](continuous-delivery/readme.md)
   - Determine what environments are appropriate for this solution
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
 - [ ] [Decide on a versioning strategy](source-control/versioning/readme.md)
@@ -64,11 +64,11 @@ The purpose of this document is to:
 ### Day 5
 
 - [ ] Conduct a Sprint Demo
-- [ ] [Conduct a Retrospective](retrospectives/readme.md)
+- [ ] [Conduct a Retrospective](agile-development/retrospectives/readme.md)
   - Determine required participants, how to capture input (tools) and outcome
   - Set a timeline, and discuss facilitation, meeting structure etc.
-- [ ] [Groom the Backlog](backlog-management/grooming/readme.md)
+- [ ] [Groom the Backlog](agile-development/backlog-management/grooming/readme.md)
   - Determine required participants
-  - Update the [Definition of Ready](team-agreements/definition-of-ready/readme.md)
-  - Update estimates, and the [Estimation](sprint-planning/estimation/readme.md) document
+  - Update the [Definition of Ready](agile-development/team-agreements/definition-of-ready/readme.md)
+  - Update estimates, and the [Estimation](agile-development/sprint-planning/estimation/readme.md) document
 - [ ] [Submit Engineering Feedback for issues encountered](engineering-feedback/readme.md)
