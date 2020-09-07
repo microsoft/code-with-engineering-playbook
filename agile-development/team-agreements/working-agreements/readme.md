@@ -1,10 +1,13 @@
 # Sections of a working agreement
 
-A working agreement is a document or a set of documents that describe how we work together as a team and what our expectations and principles are.
+A working agreement is a document or a set of documents that describe how we work together as a team and what our
+expectations and principles are.
 
-The working agreement created by the team at the beginning of the project, and is stored in the repository so that it is readily available for everyone working on the project.
+The working agreement created by the team at the beginning of the project, and is stored in the repository so that it is
+readily available for everyone working on the project.
 
-The following are examples of sections and points that can be part of a working agreement but each team should compose their own, and adjust times, communication channels, branch naming policies etc. to fit their team needs.
+The following are examples of sections and points that can be part of a working agreement but each team should compose
+their own, and adjust times, communication channels, branch naming policies etc. to fit their team needs.
 
 ## General
 
@@ -45,7 +48,7 @@ The following are examples of sections and points that can be part of a working 
 
 ## Process Lead
 
-The process lead is responsible for leading any scrum or agile practices to enable the project to move forward. Recommended responsibilities are below, as well as in the CWC Wiki.
+The process lead is responsible for leading any scrum or agile practices to enable the project to move forward.
 
 - Facilitate standup meetings and hold team accountable for attendance and participation.
 - Keep the meeting moving as described in the [Project Standup](../../stand-ups/readme.md) page.
@@ -67,7 +70,8 @@ The process lead is responsible for leading any scrum or agile practices to enab
 - We capture any work we do related to the project in a user story/task
 - We close our tasks/user stories only when they are done (as described in the [Definition of Done](../definition-of-done/readme.md))
 - We work with the PM if we want to add a new user story to the sprint
-- If we add new tasks to the board, we make sure it matches the acceptance criteria of the user story (to avoid scope creep). If it doesn't match the acceptance criteria we should discuss with the PM to see if we need a new user story for the task or if we should adjust the acceptance criteria.
+- If we add new tasks to the board, we make sure it matches the acceptance criteria of the user story (to avoid scope creep).
+  If it doesn't match the acceptance criteria we should discuss with the PM to see if we need a new user story for the task or if we should adjust the acceptance criteria.
 
 ## Code management
 
@@ -76,4 +80,4 @@ The process lead is responsible for leading any scrum or agile practices to enab
 - All PRs are reviewed by one person from [Customer/Partner Name] and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
-- We treat documentation as code and apply the same [standards to Markdown](../../code-reviews/recipes/Markdown.md) as code
+- We treat documentation as code and apply the same [standards to Markdown](../../../code-reviews/recipes/Markdown.md) as code
