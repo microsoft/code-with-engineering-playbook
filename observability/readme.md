@@ -12,9 +12,9 @@ Building observable systems enables development teams at CSE to measure how well
 ## Sections
 
 - [Pillars of Observability](#pillars-of-observability)
-- [Observability in Machine Learning](observability/ml-observability.md)
+- [Observability in Machine Learning](ml-observability.md)
 - [Recommended Practices](#recommended-practices)
-- [Logs vs Metrics](observability/log-vs-metric.md)
+- [Logs vs Metrics](log-vs-metric.md)
 - [Recipes](#recipes)
 
 ## Pillars of Observability
@@ -25,7 +25,7 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Observability in Machine Learning
 
-Read on how Observability can be implemented in [Machine Learning](observability/ml-observability.md) engagements effectively during Model tuning, experimentation and deployment.
+Read on how Observability can be implemented in [Machine Learning](ml-observability.md) engagements effectively during Model tuning, experimentation and deployment.
 
 ## Recommended Practices
 
