@@ -1,10 +1,199 @@
 # Git Guidance
 
-## The basics
-
-### Installation
+## Installation
 
 [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
+
+## Basic workflow
+
+Whenever you want to make a change to a repository you need to first clone it so you can work on it locally
+
+```cmd
+git clone https://github.com/username/repo-name
+```
+
+To avoid adding code that has not been peer reviewed to the main branch (ex. develop) we typically work in feature branches, and merge these back to the main trunk with a Pull Request
+
+```cmd
+# pull the latest changes
+git pull
+
+# start a new feature branch based on the develop branch
+git chekcout -b feature/123-add-git-instructions develop
+
+# edit some files
+
+git add <file>
+git commit -m "add basic instructions"
+
+# edit some files
+
+git add <file>
+git commit -m "add more advanced instructions"
+
+# push the branch to the remote repository
+git push --set-upstream origin feature/123-add-git-instructions
+```
+
+Once the feature branch is pushed to the remote repository it is visible to anyone with access to the code.
+Now you can open a Pull Request in GitHub, Azure DevOps or similar to request to merge the changes into the main branch.
+
+## Cloning
+
+Cloning a repository pulls down a full copy of all the repository data, so that you can work on it locally.
+This copy includes all versions of every file and folder for the project.
+
+```cmd
+git clone https://github.com/username/repo-name
+```
+
+You only need to clone the repository the first time. Before any subsequent branches you can sync any changes from the remote repository using `git pull`.
+
+## Branching
+
+Often, the `main` or `develop` branch of a repository will be locked so that you can't make changes without a Pull Request.
+In this case it is useful to create a separate branch for your local/feature work, so that you can work and track your changes without modifying the main trunk.
+
+Pull the latest changes and create a new branch for your work based on the trunk (in this case develop)
+
+```cmd
+git pull
+git checkout -b feature/feature-name develop
+```
+
+At any point, you can move between the branches with `git checkout <branch>` as long as you have committed or stashed your work.
+If you forget the name of your branch use `git branch --all` to list all branches
+
+When you are done working, push your changes to a branch in the remote repository using `git push`
+
+```cmd
+git push --set-upstream origin feature/feature-name
+```
+
+after the first push, the --set-upstream parameter is not needed
+
+## Committing
+
+To avoid loosing work, it is good to commit often in small chunks. This allows you to revert only the last changes if you discover a problem and also neatly explains exactly what changes were made and why.
+
+1. Make changes to your branch
+
+2. Check what files were changed
+
+    ```cmd
+    > git status
+    On branch feature/271-basic-commit-info
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+            modified:   source-control/git-guidance/readme.md
+    ```
+
+3. Track the files you wish to include in the commit
+
+    ```cmd
+    git add --all
+    ```
+
+   to track all modified files, or
+
+    ```cmd
+    git add source-control/git-guidance/readme.md
+    ```
+
+   to track only specific files
+
+4. Commit the changes to your local branch with a descriptive [commit message](../readme.md#commit-best-practices)
+
+    ```cmd
+    git commit -m "add basic git instructions"
+    ```
+
+## Merging
+
+In [CSE](..\..\CSE.md) we encourage the use of Pull Request to merge code to the main repository to make sure that all code in the final product is [code reviewed](..\..\code-reviews\readme.md)
+
+The Pull Request (PR) process in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops), [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and other similar tools make it easy both to start a PR, review a PR and merge a PR.
+
+### Merge Conflicts
+
+If multiple people make changes to the same files, you may need to resolve any conflicts that have occurred before you can merge.
+
+```cmd
+# check out the develop branch and get the latest changes
+git checkout develop
+git pull
+
+# check out your branch
+git checkout <your branch>
+
+# merge the develop branch into your branch
+git merge develop
+
+# find which files need to be resolved
+git status
+```
+
+Git will mark the conflicts in the files
+
+```text
+Here are lines that are either unchanged from the common
+ancestor, or cleanly resolved because only one side changed.
+<<<<<<< yours:sample.txt
+Conflict resolution is hard;
+let's go shopping.
+=======
+Git makes conflict resolution easy.
+>>>>>>> theirs:sample.txt
+And here is another line that is cleanly resolved or unmodified
+```
+
+Edit the conflicting files in your favorite editor to resolve the conflict. You can also a merge tool like [kdiff3](https://github.com/KDE/kdiff3)
+
+```cmd
+# conclude the merge
+git merge --continue
+
+# verify that everything went ok
+git log
+
+# push the changes to the remote branch
+git push
+```
+
+## Managing remotes
+
+A local git repository can have one or more backing remote repositories. You can list the remote repositories using `git remote` - by default, the remote repository you cloned from will be called origin
+
+```cmd
+> git remote -v
+origin  https://github.com/microsoft/code-with-engineering-playbook.git (fetch)
+origin  https://github.com/microsoft/code-with-engineering-playbook.git (push)
+```
+
+### Working with forks
+
+You can set multiple remotes. This is useful for example if you want to work with a forked version of the repository.
+For more info on how to set upstream remotes and syncing repositories when working with forks see GitHub's [Working with forks documentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks).
+
+### Updating the remote if a repository changes names
+
+If the repository is changed in some way, for example a name change, or if you want to switch between HTTPS and SSH you need to update the remote
+
+```cmd
+# list the existing remotes
+> git remote -v
+origin  https://hostname/username/repository-name.git (fetch)
+origin  https://hostname/username/repository-name.git (push)
+
+# change the remote url
+git remote set-url origin https://hostname/username/new-repository-name.git
+
+# verify that the remote URL has changed
+> git remote -v
+origin  https://hostname/username/new-repository-name.git (fetch)
+origin  https://hostname/username/new-repository-name.git (push)
+```
 
 ## Rolling back changes
 
