@@ -23,18 +23,20 @@ git merge topic
 
 ### Rebase topic branch before merging into main
 
-Before merging `topic` into `main`, we rebase `topic` with the   :
+Before merging `topic` into `main`, we rebase `topic` with the `main` branch:
 
 ```bash
           A---B---C topic
          /         \
 D---E---F-----------G---H main
 
-git fetch origin
-git rebase main topic
 git checkout main
-git merge topic
+git pull
+git checkout topic
+git rebase origin/main
 ```
+
+Create a PR topic --> main in Azure DevOps and approve using the squash merge option
 
 ### Rebase topic branch before squash merge into main
 
@@ -44,6 +46,6 @@ git merge topic
           A---B---C topic
          /
 D---E---F-----------G---H main
+```
 
 Create a PR topic --> main in Azure DevOps and approve using the squash merge option
-```
