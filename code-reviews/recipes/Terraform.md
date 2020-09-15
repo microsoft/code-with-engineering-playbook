@@ -95,4 +95,4 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] It is a good practice to `output` the ID of resources created on Azure from configuration. This is especially helpful when adding dynamic blocks for sub-elements/child elements to the parent resource.
 * [ ] Use `required_providers` block for establishing the dependency for providers along with pre-determined version.
 * [ ] Use `terraform` block to declare the provider dependency with exact version and also the terraform CLI version needed for the configuration
-* [ ] Validate the variables values supplied based on usage and type of variable. The validation can be done to variables by adding `validation block`.
+* [ ] Validate the variables values supplied based on usage and type of variable. The validation can be done to variables by adding `validation` block.
