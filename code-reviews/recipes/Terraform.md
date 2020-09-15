@@ -86,3 +86,36 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] Is `try` function used only with simple attribute references and type conversion functions?, as overuse of `try` function to suppress errors will lead to a configuration that is hard to understand and maintain
 * [ ] Are the explicit type conversion functions used to normalize types returned only in module outputs?, as the explicit type conversions are rarely necessary in Terraform because it will convert types automatically where required
 * [ ] Is `Sensitive` property on schema set to `true` for the fields that contains sensitive information?. This will prevent the field's values from showing up in CLI output
+* [ ] Each defined variables should explicitly have `type information`. E.g. a list(string) or string
+* [ ] Each defined variables should explicitly have `description` about the purpose of variable and usage
+* [ ] Don’t provide a `default value` for a variable the value of which must be supplied by a user.
+* [ ] Try avoiding nesting sub configuration within resources. Create a sepearate resource section for resources even though they can be decalred as sub-element of a resource. For example, declaring subnets within virtual network vis-a-vis declaring subnets as a separate resources compared to virtual network on Azure
+* [ ] Never `hard code` any value in configuration. Declare them from locals section if needed multiple times as static value and are internal to the configuration. 
+* [ ] The `names of the resources` created on Azure should not be hard-coded or static. These names should be dynamic and user provided using variables. This is helpful especially in unit testing when multiple tests are running in parallel trying to create resources on Azure but need different names ( few names in azure needs to be named uniquely e.g. storage accounts).
+* [ ] It is a good practice to `output` the `ID of resources` created on Azure from configuration. This is especially helpful when adding dynamic blocks for sub-elements/child elements to the parent resource.
+* [ ] Use `required_providers` block for establishing the dependency for providers along with pre-determined version. 
+```
+terraform {
+  required_providers {
+    azurerm = "= 2.26.0"
+  }
+}
+```
+
+* [ ] Use `terraform block` to declare the provider dependency with exact version and also the terraform CLI version needed for the configuration
+* [ ] Validate the variables values supplied based on usage and type of variable. The validation can be done to variables by adding `validation block` as shown here.
+```
+variable "storage_account_name" {
+  type        = string
+  description = "The name of the Azure storage account"
+
+  validation {
+    condition     = length(var.storage_account_name) > 2  && length(var.storage_account_name) < 25
+    error_message = "The storage_account_name value must be a valid AMI id, with length between 3 and 24 characters.
+  }
+} 
+```
+
+
+
+
