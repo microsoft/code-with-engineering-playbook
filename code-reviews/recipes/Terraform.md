@@ -94,27 +94,9 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] The `names of the resources` created on Azure should not be hard-coded or static. These names should be dynamic and user provided using variables. This is helpful especially in unit testing when multiple tests are running in parallel trying to create resources on Azure but need different names ( few names in azure needs to be named uniquely e.g. storage accounts).
 * [ ] It is a good practice to `output` the `ID of resources` created on Azure from configuration. This is especially helpful when adding dynamic blocks for sub-elements/child elements to the parent resource.
 * [ ] Use `required_providers` block for establishing the dependency for providers along with pre-determined version. 
-```
-terraform {
-  required_providers {
-    azurerm = "= 2.26.0"
-  }
-}
-```
-
 * [ ] Use `terraform block` to declare the provider dependency with exact version and also the terraform CLI version needed for the configuration
-* [ ] Validate the variables values supplied based on usage and type of variable. The validation can be done to variables by adding `validation block` as shown here.
-```
-variable "storage_account_name" {
-  type        = string
-  description = "The name of the Azure storage account"
+* [ ] Validate the variables values supplied based on usage and type of variable. The validation can be done to variables by adding `validation block`.
 
-  validation {
-    condition     = length(var.storage_account_name) > 2  && length(var.storage_account_name) < 25
-    error_message = "The storage_account_name value must be a valid AMI id, with length between 3 and 24 characters.
-  }
-} 
-```
 
 
 
