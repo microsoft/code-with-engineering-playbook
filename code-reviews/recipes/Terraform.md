@@ -88,7 +88,7 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] Is `Sensitive` property on schema set to `true` for the fields that contains sensitive information?. This will prevent the field's values from showing up in CLI output
 * [ ] Each defined variables should explicitly have `type` information. E.g. a `list(string)` or `string`
 * [ ] Each defined variables should explicitly have `description` about the purpose of variable and usage
-* [ ] Don’t provide a `default value` for a variable the value of which must be supplied by a user.
+* [ ] Don’t provide a `default` value for a variable the value of which must be supplied by a user.
 * [ ] Try avoiding nesting sub configuration within resources. Create a sepearate resource section for resources even though they can be decalred as sub-element of a resource. For example, declaring subnets within virtual network vis-a-vis declaring subnets as a separate resources compared to virtual network on Azure
 * [ ] Never `hard code` any value in configuration. Declare them from locals section if needed multiple times as static value and are internal to the configuration.
 * [ ] The `names of the resources` created on Azure should not be hard-coded or static. These names should be dynamic and user provided using variables. This is helpful especially in unit testing when multiple tests are running in parallel trying to create resources on Azure but need different names ( few names in azure needs to be named uniquely e.g. storage accounts).
