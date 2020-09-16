@@ -84,8 +84,8 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] Are unit and integration tests used for Terraform code (e.g. [`Terratest`](https://terratest.gruntwork.io/), [`terratest-abstraction`](https://github.com/microsoft/terratest-abstraction))?
 * [ ] Are the resource names starting with their containing provider's name followed by an underscore? e.g. resource from the provider `postgresql` might be named as `postgresql_database`?
 * [ ] Is `try` function used only with simple attribute references and type conversion functions?, as overuse of `try` function to suppress errors will lead to a configuration that is hard to understand and maintain
-* [ ] Are the explicit type conversion functions used to normalize types returned only in module outputs?, as the explicit type conversions are rarely necessary in Terraform because it will convert types automatically where required
-* [ ] Is `Sensitive` property on schema set to `true` for the fields that contains sensitive information?. This will prevent the field's values from showing up in CLI output
+* [ ] Are the explicit type conversion functions used to normalize types returned only in module outputs?, as the explicit type conversions are rarely necessary in Terraform because it will convert types automatically where required.
+* [ ] Is `Sensitive` property on schema set to `true` for the fields that contains sensitive information?. This will prevent the field's values from showing up in CLI output.
 * [ ] Each defined variables should explicitly have `type` information. E.g. a `list(string)` or `string`.
 * [ ] Each defined variables should explicitly have `description` about the purpose of variable and usage.
 * [ ] Don’t provide a `default` value for a variable which must be supplied by a user.
