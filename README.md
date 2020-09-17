@@ -40,16 +40,21 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 * [Tech Lead's Checklist](TECH-LEADS-CHECKLIST.md)
 * [Structure of a Sprint](SPRINT-STRUCTURE.md)
+
+## Engineering Fundamentals
+
+* [Automated Testing](automated-testing/readme.md)
 * [Agile Development](agile-development/README.md)
-* [Source Control](source-control/readme.md)
-* [Design Reviews](design-reviews/readme.md)
-* [Design Decision Logs](design-reviews/decision-log/readme.md)
-* [Unit Testing](automated-testing/unit-testing/readme.md)
-* [Continuous Integration (CI)](continuous-integration/readme.md)
-* [Continuous Delivery (CD)](continuous-delivery/readme.md)
 * [Code Reviews](code-reviews/README.md)
-* [Observability](observability/readme.md)
+* [Continuous Delivery (CD)](continuous-delivery/readme.md)
+* [Continuous Integration (CI)](continuous-integration/readme.md)
+* [Design Decision Logs](design-reviews/decision-log/readme.md)
+* [Design Reviews](design-reviews/readme.md)
+* [Developer Experience](developer-experience/readme.md)
 * [Engineering Feedback](engineering-feedback/readme.md)
+* [Observability](observability/readme.md)
+* [Security](security/README.md)
+* [Source Control](source-control/readme.md)
 
 ## Contributing
 
