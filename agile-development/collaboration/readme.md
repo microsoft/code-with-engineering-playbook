@@ -1,7 +1,7 @@
 
 # Collaboration
 
-## Why collaboration is important?
+## Why collaboration is important
 
 In engagements we aim to be highly collaborative because when we code together, we perform better, have a higher sprint velocity, and have a greater degree of knowledge sharing across the team.
 
@@ -11,7 +11,7 @@ There are two common patterns we use for collaboration: Pairing and swarming.
 
 **Swarm programming** (“swarming”) - three or more software engineers collaborating on a high-priority item to bring it to completion.
 
-## How to pair program?
+## How to pair program
 
 As mentioned, every story is intentionally assigned to a pair. The pairing assignee may be in the process of upskilling, nevertheless, they are equal partners in the development effort.
 Below are some general guidelines for pairing:
@@ -24,7 +24,7 @@ Below are some general guidelines for pairing:
 - Code is committed to the repository by both members of the assigned pair where and when it makes sense as tasks were completed.
 - The pairing assignee is the voice representing the pair during the daily standup while being supported by the story owner.
 
-## Why pair programming helps collaboration?
+## Why pair programming helps collaboration
 
 Pair programming helps collaboration because both engineers share equal responsibility for bringing the story to completion. This is a mutually beneficial exercise because, while the story owner often has more experience to lean on, the pairing assignee brings a fresh view that is unclouded by repetition.
 
@@ -35,7 +35,7 @@ Some other benefits include:
 - Even something as simple as describing the problem out loud can help uncover issues or bugs in the code.
 - Pairing can help brainstorming as well as validating something simple such as making the variable names consistent.
 
-## When to do swarm programming?
+## When to swarm programm
 
 It is important to know that not every PBI needs to use swarming. Some sprints may not even warrant swarming at all.
 Swarm when:
@@ -45,7 +45,7 @@ Swarm when:
 - An unknown is discovered that needs a collaborative effort to form a decision on how to move forward. The collective knowledge and expertise help move the story forward more quickly and ultimately produced better quality code.
 - A conflict or unresolved difference of opinion arises during a pairing session. Promote the work to become a swarming session to help resolve the conflict.
 
-## How to swarm program?
+## How to swarm program
 
 As soon the pair finds out that the PBI will warrant swarming, the pair brings it up to the rest of the team (via parking lot during stand-up or asynchronously). Members of the team agree or volunteer to assist.
 
@@ -53,13 +53,13 @@ As soon the pair finds out that the PBI will warrant swarming, the pair brings i
 - During a swarming session, an engineer can branch out if there is something that needs to be handled while the swarm tackles the main problem at hand, then reconnects and reports back. This allows the swarm to focus on a core aspect and to be all on the same page.
 - The Teams call is repeated until resolution is found or alternative path forward is formulated.
 
-## Why swarm programming helps collaboration?
+## Why swarm programming helps collaboration
 
 - Swarming allows the collective knowledge and expertise of the team to come together in a focused and unified way.
 - Not only does swarming help close out the item faster, but it also helps the team understand each other’s strengths and weaknesses.
 - Allows the team to build a higher level of trust and work as a cohesive unit.
 
-## When to decide to swarm, pair, and/or split?
+## When to decide to swarm, pair, and/or split
 
 - While a lot of time can be spent on pair programming, it does make sense to split the work when folks understand how the work will be carried out and the work to be done is largely prescriptive.
 - Once the story has been jointly tasked out by both engineers, the engineers may choose to tackle some tasks separately and then combine the work together at the end.
