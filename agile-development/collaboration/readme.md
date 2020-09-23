@@ -17,7 +17,7 @@ As mentioned, every story is intentionally assigned to a pair. The pairing assig
 Below are some general guidelines for pairing:
 
 - Upon assignment of the story/product backlog item (PBI), the pair needs to be deliberate about defining how to work together and have a firm definition of the work to be completed. This information should be expressed clearly in the story’s description and acceptance criteria. The expectations about this need to be communicated and agreed upon by both engineers and should be done prior to any actual working sessions.
-- The story owner and pairing assignee do not merely split the work up and sync regularly – they actively work together on the same tasks, often while sharing their screens via a Teams online session. Collaborative tools like [VS Live Share](https://visualstudio.microsoft.com/services/live-share/) can be preferable to sharing screens. Not all collaboration needs to be screen-share based.
+- The story owner and pairing assignee do not merely split the work up and sync regularly – they actively work together on the same tasks, and might share their screens via a Teams online session. Collaborative tools like [VS Live Share](https://visualstudio.microsoft.com/services/live-share/) can be preferable to sharing screens. Not all collaboration needs to be screen-share based.
 - During the collaborative sessions, one engineer provides the development environment while the other actively views and comments verbally.
 - Engineers trade places often from one session to the next so that everyone has time in control of the keyboard.
 - Engineers leverage feature branches for the collaboration during the development of each story to have small Pull Requests (PRs) (as opposed to a single giant PR) at the end of the sprint.
@@ -31,11 +31,11 @@ Pair programming helps collaboration because both engineers share equal responsi
 Some other benefits include:
 
 - Less defects and increased accountability. Having two sets of eyes allows the engineers more opportunity to catch errors and to remember often-overlooked tasks such as writing unit and integration tests.
-- Allows a less-experienced engineer to learn from a more-experienced engineer by collaborating and receiving feedback in real-time. Instead of having an engineer work alone on a task for long hours and hit an isolation breaking point, pairing allows the pair to check in with one another.
+- Allows engineers with different experience and expertise to learn from one another by collaborating and receiving feedback in real-time. Instead of having an engineer work alone on a task for long hours and hit an isolation breaking point, pairing allows the pair to check in with one another.
 - Even something as simple as describing the problem out loud can help uncover issues or bugs in the code.
-- Pairing can help brainstorming as well as validating something simple such as making the variable names consistent.
+- Pairing can help brainstorming as well as validating details such as making the variable names consistent.
 
-## When to swarm programm
+## When to swarm program
 
 It is important to know that not every PBI needs to use swarming. Some sprints may not even warrant swarming at all.
 Swarm when:
@@ -64,8 +64,8 @@ As soon the pair finds out that the PBI will warrant swarming, the pair brings i
 - While a lot of time can be spent on pair programming, it does make sense to split the work when folks understand how the work will be carried out and the work to be done is largely prescriptive.
 - Once the story has been jointly tasked out by both engineers, the engineers may choose to tackle some tasks separately and then combine the work together at the end.
 - Pair programming is more helpful when the engineers do not have perfect clarity about what is needed to be done or how it can be done.
-- Swarming is done when the two engineers assigned to the story needed an additional sounding board or needed expertise that other team members could provide.
+- Swarming is done when the two engineers assigned to the story need an additional sounding board or need expertise that other team members could provide.
 
 ## Benefits of increased collaboration
 
-Knowledge sharing and bringing CSE and customer engineers together in a ‘code-with’ manner is an important aspect of CSE engagement. This grows both our customers’ and our CSE team’s capability to build on Azure. We are responsible for demonstrating engineering fundamentals and leaving the customer in a better place after we disengage. This can only happen if we collaborate and engage together as a team. In addition to improved software quality, this also adds a beneficial social aspect to the engagement.
+Knowledge sharing and bringing CSE and customer engineers together in a ‘code-with’ manner is an important aspect of CSE engagements. This grows both our customers’ and our CSE team’s capability to build on Azure. We are responsible for demonstrating engineering fundamentals and leaving the customer in a better place after we disengage. This can only happen if we collaborate and engage together as a team. In addition to improved software quality, this also adds a beneficial social aspect to the engagements.
