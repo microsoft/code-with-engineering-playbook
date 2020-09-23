@@ -12,7 +12,7 @@ Design at macroscopic level shows the interactions between systems and services 
   * Artifacts should indicate the direction of calls (are they outbound, inbound, or bidirectional?) and call out system boundaries where ports might need to be opened or additional infrastructure work may be needed to allow calls to be made.
   * Sequence diagrams are helpful to show the flow of calls among components + systems.
   * Generic box diagrams depicting data flow or call origination/destination are useful. However, the title should clearly define what the arrows show indicate. In most cases, a diagram will show either data flow or call directions but not both.
-  * Clearly indicate existing vs. new components (color or grouping boxes can be used to differentiate this.)
+  * Visualize the contrasting aspects of the system/diagram for ease of communication. e.g. differing technologies employed, modified vs. untouched components, or internet vs. local cloud components. Colors, grouping boxes, and iconography can be used for differentiating.
   * Prefer ease-of-understanding for communicating ideas over strict UML correctness.
 * Design reviews should be lightweight and should not feel like an additional process overhead.
 
