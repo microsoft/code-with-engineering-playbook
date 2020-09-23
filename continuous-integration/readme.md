@@ -62,7 +62,7 @@ An automated build should encompass the following principles:
 - [ ] **Build Script Target**
   - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
 - [ ] **No IDE Dependencies**
-  - It's essential to have a master build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
+  - It's essential to have a build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
 ## Build Environment Dependencies
 
@@ -136,12 +136,12 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 - [ ] **End to end integration tests**
   - Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
-  - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev team's when parallel builds on a CI server aren't an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
+  - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev team's when parallel builds on a CI server are not an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
 
 - [ ] **Avoid checking in broken builds**
   - Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
 - [ ] **Reporting build failures**
-  - If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stacktraces.
+  - If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stack traces.
 - [ ] **Test Automation Data Dependencies**
   - Any mocked dataset(s) used for unit and end-to-end integration tests should be checked into the mainline repository. Minimize any external data dependencies with your build process.
 - [ ] **Code Coverage Checks**
@@ -157,9 +157,9 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
   - Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
 - [ ] **Branch policy enforcement**
-  - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/configuring-protected-branches) should be setup on master to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
+  - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/configuring-protected-branches) should be setup on the main branch to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
   - Broken builds should block pull request reviews.
-  - Prevent commits directly into master.
+  - Prevent commits directly into main branch.
 
 - [ ] **Branch strategy**
   - Release branches should auto trigger the deployment of a build artifact to it's target cloud environment. One branch strategy worth considering is  [trunk-based development](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-releases) and [Release Flow's Branching Structure](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow).
@@ -198,7 +198,7 @@ Our devops workflow should enable developers to get, install and run the latest 
 - [ ] **Developers can access latest executable**
   - Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
-- [ ] **Release artifact is published for each pull request or merges into master**
+- [ ] **Release artifact is published for each pull request or merges into main branch**
 
 ## Integration Observability
 

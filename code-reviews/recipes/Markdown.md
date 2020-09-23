@@ -4,7 +4,7 @@
 
 [CSE](../../CSE.md) developers treat documentation like other source code and follow the same rules and checklists when reviewing documentation as code.
 
-Documentation should both use good markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style) to ensure the document is easy to read and understand.
+Documentation should both use good markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style-guidelines) to ensure the document is easy to read and understand.
 
 ## Code Analysis / Linting
 
@@ -178,7 +178,7 @@ Save your guidelines together with your documentation so they are easy to refer 
 
 - Use **bold** or _italic_ to emphasise
   > For sections that everyone reading this document needs to be aware of, use blocks
-- Use `backticks` for code, a single backtick for inline code like `pip install flake8` and 3 backticks for codeblocks followed by the language for syntax highlighting
+- Use `backticks` for code, a single backtick for inline code like `pip install flake8` and 3 backticks for code blocks followed by the language for syntax highlighting
 
   ```python
   def add(num1: int, num2: int):

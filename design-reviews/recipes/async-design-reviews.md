@@ -47,7 +47,7 @@ Design documentation must live in a source control repository that supports pull
 3. The designer submits pull request and requests specific team members to review.
 4. Reviewers provide feedback to Designer who incorporates the feedback.
 5. (OPTIONAL) Design review meeting might be held to give deeper explanation of design to reviewers.
-6. Design is approved/accepted and merged to master.
+6. Design is approved/accepted and merged to main branch.
 
 ![Async Design Review Workflow](assets/async-design-reviews-sequence.png)
 

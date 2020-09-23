@@ -7,7 +7,7 @@ An engineer working for a [CSE](./CSE.md) project...
 * Leads by example. Models the behaviors we desire both interpersonally and technically.
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 
-This our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
+This is our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
 
 ## Why Have A Playbook
 
@@ -40,13 +40,21 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 * [Tech Lead's Checklist](TECH-LEADS-CHECKLIST.md)
 * [Structure of a Sprint](SPRINT-STRUCTURE.md)
-* [Source Control](source-control/readme.md)
-* [Unit Testing](automated-testing/unit-testing/readme.md)
-* [Continuous Integration (CI)](continuous-integration/readme.md)
-* [Continuous Delivery (CD)](continuous-deployment/readme.md)
+
+## Engineering Fundamentals
+
+* [Automated Testing](automated-testing/readme.md)
+* [Agile Development](agile-development/README.md)
 * [Code Reviews](code-reviews/README.md)
-* [Observability](observability/readme.md)
+* [Continuous Delivery (CD)](continuous-delivery/readme.md)
+* [Continuous Integration (CI)](continuous-integration/readme.md)
+* [Design Decision Logs](design-reviews/decision-log/readme.md)
+* [Design Reviews](design-reviews/readme.md)
+* [Developer Experience](developer-experience/readme.md)
 * [Engineering Feedback](engineering-feedback/readme.md)
+* [Observability](observability/readme.md)
+* [Security](security/README.md)
+* [Source Control](source-control/readme.md)
 
 ## Contributing
 

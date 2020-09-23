@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Goals](#goals)
+- [Measures](#measures)
 - [Impact](#impact)
 - [Participation](#participation)
 - [Facilitation Guidance](#facilitation-guidance)
@@ -14,11 +15,37 @@
 - Continue to iterate on design after Game Plan review
 - Generate useful technical artifacts that can be referenced by Microsoft and customers
 
+## Measures
+
+### Cost of Change
+
+When incorporating design reviews as part of the engineering process, decisions are front-loaded before implementation begins. Making a decision of using Azure Kubernetes Service instead of App Services at the design phase likely only requires updating documentation. However, making this pivot after implementation has started or after a solution is in use is much more costly.
+
+Are these changes occurring before or after implementation? How large of effort are they typically?
+
+### Reviewer Participation
+
+How many different individuals participate across the designs created? Cumulatively if this is a larger number this would indicate a wider contribution of ideas and perspectives. A lower number (i.e. same 2 individuals only on every review) might indicate a limited set of perspectives. Is there anyone participating from outside the core development team?
+
+### Time To Potential Solutions
+
+How long does it typically take to go from requirements to solution options (multiple)?
+
+There is a healthy balancing act between spending too much or too little time evaluating different potential solutions. Too little time puts higher risk of costly changes required after implementation. Too much time delays target value from being delivered; as well as subsequent features in queue. However, the faster the team can *identify the most critical information necessary to make an informed decision*, the faster value can be provided with lower risk of costly changes down the road.
+
+### Time to Decisions
+
+How long does it take to make a decision on which solution to implement?
+
+There is also a healthy balancing act in supporting a healthy debate while not hindering the team's delivery. The ideal case is for a team to quickly digest the solution options presented, ask questions, and debate before finally reaching quorum on a particular approach. In cases where no quorum can be reached, the person with the most context on the problem (typically story owner) should make the final decision. Prioritize delivering value and learning. Disagree and commit!
+
 ## Impact
 
 - Solutions can be quickly operationalized into customer's production environment
 - Easier for other dev crews to leverage your teams work
 - Easier for engineers to ramp up on projects
+- Increase team velocity by front-loading changes and decisions when they cost the least
+- Increased team engagement and transparency by soliciting wide reviewer participation
 
 ## Participation
 
@@ -79,3 +106,9 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 - Highly detailed design for a complex tasks with many unknowns
 - Will integrate into higher level feature/component designs
+
+## Design Documentation
+
+- Document and update the architecture design in the project design documentation
+- Track and document design decisions in a [decision log](./decision-log/readme.md)
+- Document decision process in [trade studies](./trade-studies/readme.md) when multiple solutions exist for the given problem
