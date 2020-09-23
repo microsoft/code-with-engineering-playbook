@@ -17,8 +17,8 @@ As mentioned, every story is intentionally assigned to a pair. The pairing assig
 Below are some general guidelines for pairing:
 
 - Upon assignment of the story/product backlog item (PBI), the pair needs to be deliberate about defining how to work together and have a firm definition of the work to be completed. This information should be expressed clearly in the story’s description and acceptance criteria. The expectations about this need to be communicated and agreed upon by both engineers and should be done prior to any actual working sessions.
-- The story owner and pairing assignee do not merely split the work up and sync regularly – they actively work together on the same tasks, often while sharing their screens via a Teams online session.
-- During the screen-sharing sessions, one engineer provides the development environment while the other actively views and comments verbally.
+- The story owner and pairing assignee do not merely split the work up and sync regularly – they actively work together on the same tasks, often while sharing their screens via a Teams online session. Collaborative tools like [VS Live Share](https://visualstudio.microsoft.com/services/live-share/) can be preferable to sharing screens. Not all collaboration needs to be screen-share based.
+- During the collaborative sessions, one engineer provides the development environment while the other actively views and comments verbally.
 - Engineers trade places often from one session to the next so that everyone has time in control of the keyboard.
 - Engineers leverage feature branches for the collaboration during the development of each story to have small Pull Requests (PRs) (as opposed to a single giant PR) at the end of the sprint.
 - Code is committed to the repository by both members of the assigned pair where and when it makes sense as tasks were completed.
