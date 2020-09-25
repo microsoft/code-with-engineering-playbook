@@ -10,7 +10,7 @@ During the stand-up, additional discussions may arise. Make sure that someone ad
 
 After that point, the stand-up is concluded.
 
-As a good practice, the items in the parking lot take place right after the stand-up. However, you can opt to discuss the parking lot items another time before the next stand-up.
+As a good practice, the items in the parking lot take place right after the stand-up. However, you can opt to discuss the parking lot items at another time before the next stand-up.
 The participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
 
 > The term **parking lot** refers to a bucket of comments, concerns, or questions that will be discussed and/or addressed at a later point with potentially fewer contributors. This is part of a strategy to avoid letting the discussion in a meeting shift to a subject that is not aligned with the meeting goals and/or decisions.
@@ -108,3 +108,7 @@ If a contributor knows that they will have to miss the stand-up, ask them to pro
 If any team member is working remotely, plan to run stand-ups through conference calls. Ask the team members to keep the camera on as much as possible so that they can see each other when speaking against the 3 questions.
 
 > **Tip**: In order to keep the remote stand-up as efficient, in a good pace and with the collective sense as it is in a physically located stand-up, you can agree on applying a "pick the next one approach" in which the current contributor to speak picks the next in a loop until everyone with contributions had answered the 3 questions.
+
+## Resources
+
+- [Daily Scrum - Tips & Tactics](https://www.scrum.org/resources/blog/daily-scrum-tips-tactics)
