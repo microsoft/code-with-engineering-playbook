@@ -27,9 +27,9 @@ Performance testing is commonly conducted to accomplish one or more the followin
 
   This category is the super set of all sub categories of performance related testing. It validates/determines the speed, scalability or reliability characteristics of the system under test. Performance testing focuses on achieving the response times, throughput, and resource utilization levels which meet the performance objectives of a system
 
-### Load Testing
+### **[Load Testing](./load-testing.md)**
   
-  This is the subcategory of performance testing which focuses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation. **Endurance Test** or **Soak Test** is a load test carried over a long  duration ranging from several hours to days.
+  This is the subcategory of performance testing which focuses on validating the performance characteristics of a system, when the system faces load volumes which are expected during production operation. **Endurance Test** or **Soak Test** is a load test carried over a long duration ranging from several hours to days.
 
 ### Stress Testing
 
@@ -65,4 +65,3 @@ Performance testing is commonly conducted to accomplish one or more the followin
 ## Resources
 
 * [Patters and Practices: Performance Testing Guidance for Web Applications](https://docs.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications)
-  
