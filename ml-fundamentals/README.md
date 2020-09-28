@@ -1,6 +1,7 @@
 # Machine Learning fundamentals at CSE
 
-This guideline documents the Machine Learning practices in CSE. CSE works with customers on developing and productizing ML models while emphasizing engineering and research best practices throughout the project's life cycle.
+This guideline documents the Machine Learning (ML) practices in CSE. CSE works with customers on developing and productizing ML models while emphasizing engineering and research best practices throughout the project's life cycle.
+
 
 ## Goals
 
