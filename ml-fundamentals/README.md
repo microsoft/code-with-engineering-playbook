@@ -2,7 +2,6 @@
 
 This guideline documents the Machine Learning (ML) practices in CSE. CSE works with customers on developing and productizing ML models while emphasizing engineering and research best practices throughout the project's life cycle.
 
-
 ## Goals
 
 * Provide a set of ML practices to follow in an ML project.
