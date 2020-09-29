@@ -8,6 +8,7 @@
 - [Participation](#participation)
 - [Facilitation Guidance](#facilitation-guidance)
 - [Design Review Recipes](#design-review-recipes)
+- [Technical Spike](#technical-spike)
 
 ## Goals
 
@@ -106,6 +107,10 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 - Highly detailed design for a complex tasks with many unknowns
 - Will integrate into higher level feature/component designs
+
+## Technical Spike
+
+A technical spike is most often used for evaluating the impact new technology has on the current implementation. Please read more [here](./recipes/technical-spike.md).
 
 ## Design Documentation
 
