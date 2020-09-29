@@ -22,7 +22,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 ### Be considerate
 
 - Be positive – encouraging, appreciation for good practices.
-- Avoid language that points fingers like “you” but rather use “we” or “this line” -- code reviews aren’t personal and language matters.
+- Avoid language that points fingers like “you” but rather use “we” or “this line” -- code reviews are not personal and language matters.
 
 ### Make comments clear
 
@@ -87,5 +87,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 
 ### Tests
 
-- Tests should always be committed in the same PR as the code itself (‘I’ll add tests next’ is not acceptable)
+- Tests should always be committed in the same PR as the code itself (‘I’ll add tests next’ is not acceptable).
 - Make sure tests are sensible and valid assumptions are made.
+- Make sure edge cases are handled as well.
+- Tests can be a great source to understand the changes. It can be a strategy to look at tests first to help you understand the changes better.
