@@ -12,7 +12,7 @@ To ensure that the code review process is healthy and meets the goals stated abo
 - Junior teams and teams new to the process can consider creating separate tasks for reviews together with the tasks themselves.
 - Utilize tools to streamline the review process - [Code review tools](../tools.md)
 
-## Measuring review process
+## Measuring code review process
 
 If the team is finding that code reviews are taking a significant time to merge and it is becoming a blocker, consider the following additional recommendations:
 
