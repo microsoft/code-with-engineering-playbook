@@ -19,12 +19,10 @@ It is also worth noting that the rendering of markdown is different between Azur
 
 ### Example Templates
 
-- [Default Pull Request](./github-template.md)
-- [Architecture Pull Request](./)
-- [Bug Pull Request](./)
-- [Feature Pull Request](./)
-- [IAC Pull Request](./)
-- [Spike Pull Request](./)
+- [Default Pull Request](./github/github-template.md)
+- [Architecture Pull Request](./github/github-arch-design-pr-template.md)
+- [Bug Pull Request](./github/github-arch-design-pr-template.md)
+- [Feature Pull Request](./github/github-arch-design-pr-template.md)
 
 ## Azure DevOps
 
@@ -43,9 +41,7 @@ It is worth noting that though technically you can put your templates in `docs` 
 
 ### Example Templates
 
-- [Default Pull Request](./github-template.md)
-- [Architecture Pull Request](./)
-- [Bug Pull Request](./)
-- [Feature Pull Request](./)
-- [IAC Pull Request](./)
-- [Spike Pull Request](./)
+- [Default Pull Request](./azure-devops/azure-devops-template.md)
+- [Architecture Pull Request](./azure-devops/azure-devops-arch-design-pr-template.md)
+- [Bug Pull Request](./azure-devops/azure-devops-arch-design-pr-template.md)
+- [Feature Pull Request](./azure-devops/azure-devops-arch-design-pr-template.md)

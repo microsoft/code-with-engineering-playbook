@@ -1,6 +1,10 @@
-# [Issue ID](./INSERT_URL_TO_ISSUE)
+# [Work Item](./link-to-the-work-item)
 
-<!-- Use the check list below to ensure your branch is ready for PR.  If the item is not applicable leave it put NA. -->
+## PR Checklist
+
+---
+
+<!-- Use the check list below to ensure your branch is ready for PR.  If the item is not applicable leave it blank. -->
 
 - [ ] I have updated the documentation accordingly.
 - [ ] I have added tests to cover my changes.
@@ -11,15 +15,21 @@
 
 ## Description
 
+---
+
 <!-- Concise description of the problem and the solution -->
 
 ## Does this introduce a breaking change?
 
-- [ ] Yes
-- [ ] No
+---
+
+- [ ] YES
+- [ ] NO
 
 <!-- If this introduces a breaking change, please describe the impact and migration path for existing applications below. -->
 
 ## Testing
+
+---
 
 <!-- Instructions for testing and validation of your code -->
