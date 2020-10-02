@@ -77,6 +77,12 @@ If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enab
         projects: '**/*.csproj'
 ```
 
+## Enable Roslyn Support in Visual Studio Code
+
+The above steps also work in vscode provided you enable Roslyn support for Omnisharp. The setting is "omnisharp.enableRoslynAnalyzers" and must be set to "true". After enabling this setting you must "Restart Omnisharp" (this can be done from the Command Palatte in vscode or by restarting vscode).
+
+![rosyln-support](./vscode-roslyn.png)
+
 ## Code Review Checklist
 
 * [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
