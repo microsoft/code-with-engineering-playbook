@@ -15,7 +15,7 @@ In order to use a specific pull request template in GitHub you must include the 
 ...
 ```
 
-It is also worth noting that the rendering of markdown is different between Azure DevOps and GitHub so the links below are specific to the rendering within GitHub
+It is also worth noting that the rendering of markdown is different between Azure DevOps and GitHub so the links below are specific to the rendering within GitHub.  Checkout the [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository) for more information.
 
 ### Example Templates
 

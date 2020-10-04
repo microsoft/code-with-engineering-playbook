@@ -9,7 +9,7 @@
 - [ ] All new and existing tests passed.
 - [ ] My code follows the code style of this project.
 - [ ] I ran lint checks locally prior to submission.
-- [ ] Have you checked to ensure there aren't other open Pull Requests for the same update/change?
+- [ ] I have checked to ensure there aren't other open Pull Requests for the same update/change.
 
 ## Description
 
