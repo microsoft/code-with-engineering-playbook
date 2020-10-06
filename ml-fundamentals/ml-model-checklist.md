@@ -11,15 +11,15 @@ The checklist provides guidelines for creating this production plan. It should b
 
 Before putting an individual ML model into production, the following aspects should be considered:
 
-- [ ] [Is there a well defined baseline? Is the model performing better than the baseline?](#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline?)
+- [ ] [Is there a well defined baseline? Is the model performing better than the baseline?](#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline)
 - [ ] [Are machine learning performance metrics defined for both training and scoring?](#are-machine-learning-performance-metrics-defined-for-both-training-and-scoring)
-- [ ] [Is the model benchmarked?](###is-the-model-benchmarked?)
-- [ ] [Can ground truth be obtained or inferred in production?](###can-ground-truth-be-obtained-or-inferred-in-production?)
-- [ ] [Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?](###has-the-data-distribution-of-training,-testing-and-validation-sets-been-analysed?-can-data-distribution-be-obtained-for-new-data?)
-- [ ] [Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?](###have-goals-and-hard-limits-for-performance,-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made?)
-- [ ] [How will the model be integrated into other systems, and what impact will it have?](###how-will-the-model-be-integrated-into-other-systems,-and-what-impact-will-it-have?)
-- [ ] [How will performance be monitored?](###how-will-performance-be-monitored?)
-- [ ] [Have any ethical concerns been taken into account in accordance with the Microsofts AI principles on responsible AI?](###have-any-ethical-concerns-been-taken-into-account-in-accordance-with-the-Microsofts-AI-principles-on-responsible-AI?)
+- [ ] [Is the model benchmarked?](#is-the-model-benchmarked)
+- [ ] [Can ground truth be obtained or inferred in production?](#can-ground-truth-be-obtained-or-inferred-in-production)
+- [ ] [Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?](#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data)
+- [ ] [Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?](#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made)
+- [ ] [How will the model be integrated into other systems, and what impact will it have?](#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have)
+- [ ] [How will performance be monitored?](#how-will-performance-be-monitored)
+- [ ] [Have any ethical concerns been taken into account in accordance with the Microsofts AI principles on responsible AI?](#have-any-ethical-concerns-been-taken-into-account-in-accordance-with-the-microsofts-ai-principles-on-responsible-ai)
 
 Please note that there might be scenarios where it is not possible to check all the items on this checklist. However, it is advised to go through all items and make informed decisions based on your specific use case.
 
