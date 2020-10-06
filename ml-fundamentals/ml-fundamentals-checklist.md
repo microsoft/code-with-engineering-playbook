@@ -24,13 +24,13 @@ This checklist helps ensure that our ML projects meet our ML Fundamentals.
 - [ ] Clear definition of how performance will be measured.
 - [ ] The evaluation metrics are somewhat connected to the success criteria.
 - [ ] The metrics can be calculated with the datasets available.
-- [ ] Evaluation flow is applicable for all present and future models (i.e. does not assume some prediction structure or method-specific process).
+- [ ] Evaluation flow can be applied to all versions of the model.
 - [ ] Evaluation code is unit-tested and reviewed by all team members.
 - [ ] Evaluation flow facilitates further results and error analysis.
 
 ## Model Baseline
 
-- [ ] Well defined baseline model exists and its performance is calculated.
+- [ ] Well defined baseline model exists and its performance is calculated. ([More details on well defined baselines](ml-model-checklist.md###is-there-a-well-defined-baseline?-is-the-model-performing-better-than-the-baseline?))
 - [ ] The performance of other ML models can be compared with the model baseline.
 
 ## Experimentation setup

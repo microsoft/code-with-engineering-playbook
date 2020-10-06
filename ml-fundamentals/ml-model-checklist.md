@@ -1,6 +1,6 @@
 # ML model production checklist
 
-The purpose of this check list is to make sure that:
+The purpose of this checklist is to make sure that:
 
 - The team assessed if the model is ready for production before moving to the scoring process
 - The team has prepared a production plan for the model
