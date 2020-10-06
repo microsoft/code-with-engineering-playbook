@@ -36,7 +36,7 @@ This checklist helps ensure that our ML projects meet our ML Fundamentals.
 ## Experimentation setup
 
 - [ ] Well defined train/test dataset with labels.
-- [ ] Reproductible and logged experiments in an environment accessible by all data scientits to quickly iterate.
+- [ ] Reproductible and logged experiments in an environment accessible by all data scientists to quickly iterate.
 - [ ] Defined experiments/hypothesis to test.
 - [ ] Results of experiments are documented.
 - [ ] Model hyperparameters are tuned in a systematic way.
