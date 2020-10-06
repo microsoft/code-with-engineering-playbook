@@ -11,8 +11,8 @@ The checklist provides guidelines for creating this production plan. It should b
 
 Before putting an individual ML model into production, the following aspects should be considered:
 
-- [ ] [Is there a well defined baseline? Is the model performing better than the baseline?](###is-there-a-well-defined-baseline?-is-the-model-performing-better-than-the-baseline?)
-- [ ] [Are machine learning performance metrics defined for both training and scoring?](###are-machine-learning-performance-metrics-defined-for-both-training-and-scoring?)
+- [ ] [Is there a well defined baseline? Is the model performing better than the baseline?](#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline?)
+- [ ] [Are machine learning performance metrics defined for both training and scoring?](#are-machine-learning-performance-metrics-defined-for-both-training-and-scoring)
 - [ ] [Is the model benchmarked?](###is-the-model-benchmarked?)
 - [ ] [Can ground truth be obtained or inferred in production?](###can-ground-truth-be-obtained-or-inferred-in-production?)
 - [ ] [Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?](###has-the-data-distribution-of-training,-testing-and-validation-sets-been-analysed?-can-data-distribution-be-obtained-for-new-data?)
