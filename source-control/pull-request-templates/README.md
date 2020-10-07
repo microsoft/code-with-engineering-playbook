@@ -4,7 +4,7 @@ To keep pull requests consistent and to help ensure quality across the project, 
 
 ## GitHub
 
-In order to use a specific pull request template in GitHub you must include the specific template in your url. For example if you want to use `bug-template-md` you need to use query parameters when you open the PR, `https://github.com/[USERNAME OR ORG NAME]/[REPO NAME]/compare/master...[BRANCH NAME]?expand=1&template=bug-template.md`. If you want to have a default template so you do not have to always specificy the template in the URL make sure you have `PULL_REQUEST_TEMPLATE.md` in the root of your `.github` folder. Example below
+In order to use a specific pull request template in GitHub, you must include the specific template in your URL. For example: if you want to use `bug-template-md`, you need to use query parameters when you open the PR, `https://github.com/[USERNAME OR ORG NAME]/[REPO NAME]/compare/master...[BRANCH NAME]?expand=1&template=bug-template.md`. If you want to have a default template so you do not have to always specify the template in the URL make sure you have `PULL_REQUEST_TEMPLATE.md` in the root of your `.github` folder. Example below:
 
 ```plaintext
 - /.github
