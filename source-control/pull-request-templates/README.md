@@ -1,6 +1,6 @@
 # Pull Request Templates
 
-To keep pull requests consistent and to help ensure quality across the project pull request templates are essential. Pull request templates can be used in both GitHub and Azure DevOps
+To keep pull requests consistent and to help ensure quality across the project, pull request templates are essential. Pull request templates can be used in both GitHub and Azure DevOps.
 
 ## GitHub
 
