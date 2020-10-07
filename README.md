@@ -52,6 +52,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [Design Reviews](design-reviews/readme.md)
 * [Developer Experience](developer-experience/readme.md)
 * [Engineering Feedback](engineering-feedback/readme.md)
+* [Machine Learning Fundamentals](ml-fundamentals/README.md)
 * [Observability](observability/readme.md)
 * [Security](security/README.md)
 * [Source Control](source-control/readme.md)
