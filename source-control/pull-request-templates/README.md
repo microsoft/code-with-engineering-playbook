@@ -15,12 +15,11 @@ In order to use a specific pull request template in GitHub, you must include the
 ...
 ```
 
-It is also worth noting that the rendering of markdown is different between Azure DevOps and GitHub so the links below are specific to the rendering within GitHub.  Checkout the [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository) for more information.
+It is also worth noting that the rendering of markdown is different between Azure DevOps and GitHub so the links below are specific to the rendering within GitHub. Checkout the [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository) for more information.
 
 ### Example Templates
 
 - [Default Pull Request](./github/github-template.md)
-- [Architecture Pull Request](./github/github-arch-design-pr-template.md)
 - [Bug Pull Request](./github/github-arch-design-pr-template.md)
 - [Feature Pull Request](./github/github-arch-design-pr-template.md)
 
@@ -42,6 +41,5 @@ It is worth noting that though technically you can put your templates in `docs` 
 ### Example Templates
 
 - [Default Pull Request](./azure-devops/azure-devops-template.md)
-- [Architecture Pull Request](./azure-devops/azure-devops-arch-design-pr-template.md)
 - [Bug Pull Request](./azure-devops/azure-devops-arch-design-pr-template.md)
 - [Feature Pull Request](./azure-devops/azure-devops-arch-design-pr-template.md)
