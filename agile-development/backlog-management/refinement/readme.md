@@ -7,10 +7,10 @@
   - Examples of well defined acceptance criteria
   - Can the story be tested as written
   - Is it dependent on other stories
-- Provide guidance on managing timeline for grooming
+- Provide guidance on managing timeline for refinement
   - time boxing story AC discussions
 - Provide guidance on estimate negotiation and how to resolve conflicts
-- How far out in advance should we groom stories? When to stop grooming?
+- How far out in advance should we refine stories? When to stop refining?
 
 ## Goals
 
