@@ -6,7 +6,7 @@ Put a 2-3 sentence overview about the test technique here.
 
 ### Problem Addressed
 
-Describing the problem that this test type addresses, this should focus on the motivation behind the test type/technique to aid the reader correlate this test type to the problem they are trying to resolve.
+Describing the problem that this test type addresses, this should focus on the motivation behind the test type/technique to help the reader correlate this technique to their problem.
 
 ### When to Avoid
 
