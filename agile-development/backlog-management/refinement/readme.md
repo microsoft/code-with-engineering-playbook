@@ -1,6 +1,4 @@
-# Backlog Grooming
-
-Grooming can also be called "Backlog Refinement".
+# Backlog Refinement
 
 ## Content TODO's
 
