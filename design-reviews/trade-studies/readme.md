@@ -35,7 +35,7 @@ Trade studies can vary widely in scope; however, they follow the common pattern 
 1. Solidify the requirements – Work with the stakeholders to agree on the requirements for the functionality that you are trying to build.
 1. Create evaluation criteria – This is a set of qualitative and quantitative assessment points that represent the requirements. Taken together, they become an easy to measure stand-in for the potentially abstract requirements.
 1. Brainstorm solutions – Gather a list of possible solutions to the problem. Then, use your best judgement to pick the 2-4 solutions that seem most promising. For assistance narrowing solutions, remember to reach out to subject matter experts and other teams who may have gone through a similar decision.
-1. Evaluate shortlisted solutions – Dive deep into each solution and measure it against the evaluation criteria. In this stage, timebox your research to avoid overly investing in any given area.
+1. Evaluate shortlisted solutions – Dive deep into each solution and measure it against the evaluation criteria. In this stage, time box your research to avoid overly investing in any given area.
 1. Compare results and choose solution - Align the decision with the team. If you are unable to decide, then a clear list of action items and owners to drive the final decision must be produced.
 
 ## Template

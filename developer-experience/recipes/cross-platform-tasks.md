@@ -1,8 +1,8 @@
 # Cross Platform Tasks
 
-There are several options to alleviate cross-platform compabilitity issues.
+There are several options to alleviate cross-platform compatibility issues.
 
-- Docker or container based - using containers as development machines allows developers to get started with minial setup and and abstrats the development environment from the host OS by having it run in a container.
+- Docker or container based - using containers as development machines allows developers to get started with minimal setup and abstracts the development environment from the host OS by having it run in a container.
 
   - Running VS Code in a Docker container and using [Dev Containers](https://code.visualstudio.com/docs/remote/containers) can also help in standardizing the local developer experience across the team.
   - Follow a tutorial on [Development in Containers](https://code.visualstudio.com/docs/remote/containers-tutorial)
@@ -58,7 +58,7 @@ Not all scripts or tasks can be auto-detected in the workspace. It may be necess
 
 ```
 
-The command here is a shell command and tells the system to run either the test.sh or test.cmd. By default, it will run test.sh with that given path. This example here also defines Windows specific properities and tells it execute test.cmd instead of the default.
+The command here is a shell command and tells the system to run either the test.sh or test.cmd. By default, it will run test.sh with that given path. This example here also defines Windows specific properties and tells it execute test.cmd instead of the default.
 
 ### References
 

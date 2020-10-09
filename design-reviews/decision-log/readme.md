@@ -8,7 +8,7 @@ Tracking an architecture design decision can have many advantages:
 
 - Developers and project stakeholders can see the decision log and track the changes, even as the team composition changes over time.
 - The log is kept up-to-date.
-- The context of a decision including the consequeces for the team are documented with the decision.
+- The context of a decision including the consequences for the team are documented with the decision.
 - It is easier to find the design decision in a log than having to read a large document.
 
 ## What is a recommended format for tracking decisions
@@ -44,9 +44,9 @@ An architecture decision record has the structure
 
     Example:
 
-    > *Due to the microservices design of the platform, we need to ensure consistency of logging throughout each service so tracking of usage, performance, errors etc. can be performed end-to-end. A single logging/monitoring framework should be used where possible to achieve this, whilst allowing the flexibility for integration/export into other tools at a later stage. The developers should be equipped with a simple interface to log messages and metrics.*
+    > *Due to the micro services design of the platform, we need to ensure consistency of logging throughout each service so tracking of usage, performance, errors etc. can be performed end-to-end. A single logging/monitoring framework should be used where possible to achieve this, whilst allowing the flexibility for integration/export into other tools at a later stage. The developers should be equipped with a simple interface to log messages and metrics.*
 
-    *If the development team had a data-driven approach to back the decision, i.e. a study that evaluates the potential choices against a set of objective criteria by following the guidance in [Trade Studies](../trade-studies/readme.md), the study should be refered to in this section.*  
+    *If the development team had a data-driven approach to back the decision, i.e. a study that evaluates the potential choices against a set of objective criteria by following the guidance in [Trade Studies](../trade-studies/readme.md), the study should be referred to in this section.*  
 
 - **Decision:**
 
@@ -62,7 +62,7 @@ An architecture decision record has the structure
 
     Example:
 
-    > *Sampling will need to be configured in Application Insights so that it does not become overly-expensive when ingesting millions of messages, but also does not prevent capture of essential information. The team will need to only log what is agreed to be essential for monitoring as part of design reviews, to reduce noise and unneccesary levels of sampling.*
+    > *Sampling will need to be configured in Application Insights so that it does not become overly-expensive when ingesting millions of messages, but also does not prevent capture of essential information. The team will need to only log what is agreed to be essential for monitoring as part of design reviews, to reduce noise and unnecessary levels of sampling.*
 
 ### Where to store ADRs
 

@@ -19,7 +19,7 @@ To avoid adding code that has not been peer reviewed to the main branch (ex. dev
 git pull
 
 # start a new feature branch based on the develop branch
-git chekcout -b feature/123-add-git-instructions develop
+git checkout -b feature/123-add-git-instructions develop
 
 # edit some files
 

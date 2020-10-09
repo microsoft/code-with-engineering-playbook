@@ -62,14 +62,14 @@ The dev crew should always participate in all design review sessions
 Domain experts should participate in design review sessions as needed
 
 - CSE Tech Domain
-- Customer Subject Matter Experts (SME's)
+- Customer Subject Matter Experts (SME)
 - Senior Leadership
 
 ## Facilitation Guidance
 
 ### Sync Design Reviews via in-person / virtual meetings
 
-Joint meetings with dev crew, subject matter experts (SME's) and customer engineers
+Joint meetings with dev crew, subject matter experts (SME) and customer engineers
 
 ### Async Design Reviews via Pull-Requests
 
