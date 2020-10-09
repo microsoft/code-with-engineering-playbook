@@ -1,6 +1,6 @@
 # Machine Learning fundamentals at CSE
 
-This guideline documents the Machine Learning (ML) practices in CSE. CSE works with customers on developing and productizing ML models while emphasizing engineering and research best practices throughout the project's life cycle.
+This guideline documents the Machine Learning (ML) practices in CSE. CSE works with customers on developing ML models and putting them in production, while emphasizing engineering and research best practices throughout the project's life cycle.
 
 ## Goals
 
@@ -10,7 +10,7 @@ This guideline documents the Machine Learning (ML) practices in CSE. CSE works w
 
 ## How to use these fundamentals
 
-If you are starting a new ML project, consider reading through the [fundamentals checklist](ml-fundamentals-checklist.md) or Responsible AI links.
+If you are starting a new ML project, consider reading through the [fundamentals checklist](ml-fundamentals-checklist.md) or [Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai-resources) links.
 
 For specific aspects of an ML project, refer to the guidelines for different [project phases](#ml-project-phases).
 
@@ -19,9 +19,10 @@ For specific aspects of an ML project, refer to the guidelines for different [pr
 ### General
 
 * [ML Fundamentals checklist](ml-fundamentals-checklist.md)
-* [Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai-resources) (external link)
+* [Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai-resources)
+* [Testing Data Science and ML Ops code](ml-testing.md)
 
 ### ML project phases
 
 * [Model Readiness for Production](ml-model-checklist.md)
-* [Model Operationalization](https://github.com/Microsoft/MLOps) (external link)
+* [Model Operationalization](https://github.com/Microsoft/MLOps)
