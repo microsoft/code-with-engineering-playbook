@@ -95,6 +95,6 @@ The above steps also work in VS Code provided you enable Roslyn support for Omni
 * [ ] Does the code [handle exceptions correctly](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)?
 * [ ] Is package management being used (NuGet) instead of committing DLLs?
 * [ ] Does this code us LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.
-* [ ] Does this code properly [validates arguments sanity](https://github.com/danielwertheim/Ensure.That)?
+* [ ] Does this code properly validates arguments sanity (i.e. [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
 * [ ] Does this code includes telemetry ([metrics, tracing](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
 * [ ] Does this code leverages the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
