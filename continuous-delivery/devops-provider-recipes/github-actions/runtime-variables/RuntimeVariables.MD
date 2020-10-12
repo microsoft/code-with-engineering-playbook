@@ -4,7 +4,7 @@
 
 While Github Actions is a popular choice for writing and running CI/CD pipelines, especially for open source projects hosted on Github, it lacks specific quality of life features found in other CI/CD environments. One key feature that Github Actions has not yet implemented is the ability to **mock and inject runtime variables** into a workflow, in order to test the pipeline itself.
 
-This provides a bridge between a pre-existing feature in Azure Dev Ops, and one that has not yet released inside Github Actions.
+This provides a bridge between a pre-existing feature in Azure DevOps, and one that has not yet released inside GitHub Actions.
 
 ## Target Audience
 
