@@ -12,7 +12,7 @@ The table below illustrates the most critical charactersitics and differences am
 | **Data** | Mock data | Test data | Test data | Copy of real production data |
 | **System Under Test** | Isolated unit test | Interfaces and flow data between the modules | Particular system as a whole | Application flow from start to end |
 | **Scenarios** | Developer perspectives | Developers and IT Pro tester perspectives | Developer and QA tester perspectives | End-user perspectives |
-| **When it happens** | After each build | After Unit testing | Before E2E testing and after Unit and Integration testing | After System testing |
+| **When** | After each build | After Unit testing | Before E2E testing and after Unit and Integration testing | After System testing |
 **Automated or Manual** | Automated | Manual or automated  | Manual or automated | Manual |
 
 ## Sections within Testing
