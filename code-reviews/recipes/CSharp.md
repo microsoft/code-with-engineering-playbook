@@ -94,4 +94,4 @@ The above steps also work in VS Code provided you enable Roslyn support for Omni
 * [ ] Is the code written in a way that causes boxing operations to happen?
 * [ ] Does the code [handle exceptions correctly](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)?
 * [ ] Is package management being used (NuGet) instead of committing DLLs?
-* [ ] Does this code us LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.
+* [ ] Does this code use LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.
