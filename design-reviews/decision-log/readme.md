@@ -44,7 +44,7 @@ An architecture decision record has the structure
 
     Example:
 
-    > *Due to the micro services design of the platform, we need to ensure consistency of logging throughout each service so tracking of usage, performance, errors etc. can be performed end-to-end. A single logging/monitoring framework should be used where possible to achieve this, whilst allowing the flexibility for integration/export into other tools at a later stage. The developers should be equipped with a simple interface to log messages and metrics.*
+    > *Due to the microservices design of the platform, we need to ensure consistency of logging throughout each service so tracking of usage, performance, errors etc. can be performed end-to-end. A single logging/monitoring framework should be used where possible to achieve this, whilst allowing the flexibility for integration/export into other tools at a later stage. The developers should be equipped with a simple interface to log messages and metrics.*
 
     *If the development team had a data-driven approach to back the decision, i.e. a study that evaluates the potential choices against a set of objective criteria by following the guidance in [Trade Studies](../trade-studies/readme.md), the study should be referred to in this section.*  
 

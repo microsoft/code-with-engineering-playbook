@@ -2,7 +2,7 @@
 
 ## The Need
 
-In a distributed system architecture (micro service architecture), it is highly difficult to understand a single end to end customer transaction flow through the various components.
+In a distributed system architecture (microservice architecture), it is highly difficult to understand a single end to end customer transaction flow through the various components.
 
 Here are some the general challenges -
 

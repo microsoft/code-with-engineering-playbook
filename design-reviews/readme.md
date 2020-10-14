@@ -69,7 +69,7 @@ Domain experts should participate in design review sessions as needed
 
 ### Sync Design Reviews via in-person / virtual meetings
 
-Joint meetings with dev crew, subject matter experts (SME) and customer engineers
+Joint meetings with dev crew, subject matter experts (SMEs) and customer engineers
 
 ### Async Design Reviews via Pull-Requests
 
