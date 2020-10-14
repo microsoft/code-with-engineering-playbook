@@ -80,7 +80,7 @@ def test_load_data_doesnt_call_read_csv_if_not_exists(mock_isfile, mock_read_csv
     assert utils.pd.read_csv.call_count == 0
 ```
 
-### Example: Using the same Sample data for multiple tests
+### Example: Using the same sample data for multiple tests
 
 If more than one test will use the same sample data, fixtures are a good way to reuse this sample data. The sample data can be the contents of a json file, or a csv, or a DataFrame, or even an image.
 
