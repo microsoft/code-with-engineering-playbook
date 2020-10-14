@@ -19,10 +19,13 @@ For specific aspects of an ML project, refer to the guidelines for different [pr
 ### General
 
 * [ML Fundamentals checklist](ml-fundamentals-checklist.md)
-* [Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai-resources)
 * [Testing Data Science and ML Ops code](ml-testing.md)
 
 ### ML project phases
 
 * [Model Readiness for Production](ml-model-checklist.md)
+
+## References
+
+* [Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai-resources)
 * [Model Operationalization](https://github.com/Microsoft/MLOps)
