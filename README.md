@@ -43,8 +43,8 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 ## Engineering Fundamentals
 
-* [Automated Testing](automated-testing/readme.md)
 * [Agile Development](agile-development/README.md)
+* [Automated Testing](automated-testing/readme.md)
 * [Code Reviews](code-reviews/README.md)
 * [Continuous Delivery (CD)](continuous-delivery/readme.md)
 * [Continuous Integration (CI)](continuous-integration/readme.md)

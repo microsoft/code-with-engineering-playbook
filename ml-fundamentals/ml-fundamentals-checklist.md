@@ -10,10 +10,10 @@ This checklist helps ensure that our ML projects meet our ML Fundamentals.
 - [ ] Able to track data lineage.
 - [ ] Understanding of where the data is coming from and any policies related to data access.
 
-## Feasability study
+## Feasibility study
 
-- [ ] A feasability study was performed to assess if the data supports the proposed tasks.
-- [ ] Rigurous Exploratory data analysis was performed (including analysis of data distribution).
+- [ ] A feasibility study was performed to assess if the data supports the proposed tasks.
+- [ ] Rigorous Exploratory data analysis was performed (including analysis of data distribution).
 - [ ] Hypotheses were tested producing sufficient evidence to either support or reject that an ML approach is feasible to solve the problem.
 - [ ] ROI estimation and risk analysis was performed for the project.
 - [ ] ML outputs/assets can be integrated within the production system.
@@ -36,10 +36,10 @@ This checklist helps ensure that our ML projects meet our ML Fundamentals.
 ## Experimentation setup
 
 - [ ] Well defined train/test dataset with labels.
-- [ ] Reproductible and logged experiments in an environment accessible by all data scientists to quickly iterate.
+- [ ] Reproducible and logged experiments in an environment accessible by all data scientists to quickly iterate.
 - [ ] Defined experiments/hypothesis to test.
 - [ ] Results of experiments are documented.
-- [ ] Model hyperparameters are tuned in a systematic way.
+- [ ] Model hyper parameters are tuned in a systematic way.
 - [ ] Same performance evaluation metrics and consistent datasets are used when comparing candidate models.
 
 ## Production
