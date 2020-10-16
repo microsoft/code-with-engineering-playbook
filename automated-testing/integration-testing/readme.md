@@ -1,51 +1,76 @@
 # Integration Testing
 
-"*Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.*" - [Load testing - Wikipedia](https://en.wikipedia.org/wiki/Load_testing)
-
-A load test is designed to determine how a system behaves under expected normal and peak workloads.  Specifically its main purpose is to confirm if a system can handle the expected load level. Depending on the target system this could be concurrent users, requests per second or data size.
+Integration testing is a software testing methodlogy that tests how well individually developed componenets of a system communicate wtih each other. This method of testing confirms that an aggregate of a system, or sub-system, works together correctly or otherwise exposes erroneous behavior between two or more units of code.
 
 ## Why Integration Testing
 
-The main objective is to prove the system can behave normally under the expected normal load before releasing it to production. The criteria which defines "behave normally" will depend on your target, this may be as simple as "the system remains available", but it could also include meeting a response time SLA or error rate.
-
-Additionally the results of a load test can also be used as data to help with capacity planning and calculating scalability.
+Beecause one component of a system may be developed independently or in isolation of another, it is important to verify the interaction of some or  all components. A complex system may be composed of databases, APIs, interfaces, and more, that all interact with each other or external systems. Integration tests expose system-level issues such as broken datatabse schemas or broken third-party API integration. It ensures higher test coverage and serves as an important feedback loop throughout development.
 
 ## Integration Testing Design Blocks
 
-There are a number of basic component which are required to carry out a load test.  
+Consider an application...
 
-1. In order to have meaningful results the system needs to be tested in a production-like environment with a network and hardware which closely resembles the expected deployment environment.
 
-2. The load test will consist of a module which simulates user activity. Of course what the composition of this "user activity" will be vary based on the type of application being tested. For example an e-commerce web site might simulate user browsing and purchasing items, but an IoT data ingestion pipeline would simulate a stream of device readings. Please ensure the simulation is as close to real activity as possible taking into account not just volume but also patterns and variability. For example if the simulator data is too uniform or predictable then cache/hit ratios may impact your results.
 
-3. The load test will be initiated from a component external to the target system which can control the amount of load applied. This can be a single agent, but may need to scaled to multiple agents in order to achieve higher levels of activity.
 
-4. Although not required to run a load test, it is advisable to have monitoring and/or logging in place to be able to measure the impact of the test and discover potential bottlenecks.
 
-## Applying the Integration Test
 
-### Planning
 
-1. **Identify key scenarios to measure**  - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic.
-2. **Determine expected normal and peak load for the scenarios** -  Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
-3. **Identify success criteria metrics** - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.
-4. **Select the right tool** - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).
+Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Currently, if a team is following agile principles, integration tests can be performeed before or after unit tests as there is no need to wait for sequential processes. Integration tests can utilize mock data in order to simulate a complete system under test so they should be done early and often. Integration tests need not achieve 100% code coverage. Tests may be slower and require higher maintanence than unit tests. However, there is an abundace of language-specific testing frameworks that can be used throughout the entire development lifecycle.  
 
-### Execution
 
-It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios as well as how to execute those at load. It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.
+** It is important to note the difference between integration and acceptance testing. Integration testing confirms a group of components work together as intended from a technical persepctive, while acceptance testing confirms a group of components work together as intended from a business scenario.
 
-You should also consider the origin of your load test traffic. Depending on the scope of the target system you may want to initiate from a different location to better replicate real world traffic such as from a different region.
 
-**Note:** Before starting please be aware of any restrictions on your network such as DDOS protection where you may need to notify a network administrator or apply for an exemption.
+## Applying Integration Testing
 
-### Further Testing
+Prior to writing integration tests the teser must identify the different components of the system and their intended behaviors. The engineer must fully understand the achitecture of the system.
 
-## Load Testing Frameworks and Tools
+There are two main tehcniques for integration testing.
 
-Here are a few popular load testing frameworks you may consider and the languages used to define your scenarios.
+### Big Bang
+Big Bang integration teseting is when all components are tested as a single unit. This is best for small system as a system too large may be difficult to localize for potential errors from faild tests. This approach also requires all components in the system under test to be completed which s may delay when testing begins.
+
+![Big Bang Integration Testing](./images/bigBang.jpg)
+
+### Incremental Testing
+Incremental testing is when two or more components that are logically related are tested as a unit. After testing the unit, additional components are combined and tested all together. This process repeats until all componenets are tested.
+
+#### Top Down
+Top down testing is when higher level components are tested following the control flow of a software system. In the scenario, what is commonly reffered to as stubs are used to emulate the behavior of lower level modules not yet complete or integrated with the integration test.
+
+![Top Down Integration Testing](./images/topDown.png)
+
+#### Bottom Up
+Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly reffered to as drivers are used to emulate the behavior of higher level modules not yet complete or integrated with the integration test.
+
+![Bottom Up Integration Testing](./images/bottomUp.jpg)
+
+A third appraoch sometimes known as the sandwich or hybrid model, combines the bottom up and town down appraoches to test lower and higher level components at the same time.
+
+### Things to Avoid
+
+There is a tradeoff a developer must evaluate between integration test code coverage and engineering cycles. With mock dependencies, test data, and separate environments to test, too many integration tests are infeasible to maintain with a low return in efficacy. Too much mocking will slow down the test suite, make scaling difficult, and may be a sign the developer should consider other tests for the scenario such as acceptance or E2E.
+
+Integration tests of complex systems require high maintanence. Avoid testing business logic in integration tests by keeping test suites separate. Avoid writing tests in a scaled-down copy of the production environment, instead write them in a copy. Additionally, avoid tesing beyond the acceptance criteria of the task and avoid overlaping functionality with other test suites.
+
+Avoid skipping integration tests!
+
+## Integration Testing Frameworks and Tools
+
+JUnit can be used for both integration and unit testing. It is supported by almost all major IDEs.
+REST Assured
+Spock
+Cucumber. Automated
+Robot Frameowrk
+Mockito
+Spock
 
 ## Conclusion
+
+Integration testing examines how one module of a system interfaces with another. This can be a test of two components, a sub-system, a whole system, or a collection of systems.
+
+Because integration tests prove the system as a whole works as technically designed, it increases confidence in the development cycle allowing for a system that deploys and scales.
 
 ## Resources
 
