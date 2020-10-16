@@ -8,13 +8,7 @@ Beecause one component of a system may be developed independently or in isolatio
 
 ## Integration Testing Design Blocks
 
-Consider an application...
-
-
-
-
-
-
+Consider a messaging application with three modules: a login page, messages page, and database, all developed indepdently. Integration tests would examine how a user's login page directs them to the correct messages page where teh user and only teh user's message populate the page in a readable, sortable format. Another inteegration tests may test a user sending a message and how it renders in the database. 
 
 Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Currently, if a team is following agile principles, integration tests can be performeed before or after unit tests as there is no need to wait for sequential processes. Integration tests can utilize mock data in order to simulate a complete system under test so they should be done early and often. Integration tests need not achieve 100% code coverage. Tests may be slower and require higher maintanence than unit tests. However, there is an abundace of language-specific testing frameworks that can be used throughout the entire development lifecycle.  
 
@@ -52,7 +46,7 @@ A third appraoch sometimes known as the sandwich or hybrid model, combines the b
 
 There is a tradeoff a developer must evaluate between integration test code coverage and engineering cycles. With mock dependencies, test data, and separate environments to test, too many integration tests are infeasible to maintain with a low return in efficacy. Too much mocking will slow down the test suite, make scaling difficult, and may be a sign the developer should consider other tests for the scenario such as acceptance or E2E.
 
-Integration tests of complex systems require high maintanence. Avoid testing business logic in integration tests by keeping test suites separate. Avoid writing tests in a scaled-down copy of the production environment, instead write them in a copy. Additionally, avoid tesing beyond the acceptance criteria of the task and avoid overlaping functionality with other test suites.
+Integration tests of complex systems require high maintanence. Avoid testing business logic in integration tests by keeping test suites separate. Avoid writing tests in a scaled-down copy of the production environment, instead write them in a copy. Additionally, avoid tesing beyond the acceptance criteria of the task and avoid overlaping functionality with other test suites. Avoid leaving artifacts.
 
 Avoid skipping integration tests!
 
@@ -65,6 +59,10 @@ Cucumber. Automated
 Robot Frameowrk
 Mockito
 Spock
+Rational Integration Tester
+Protractor
+Steam
+TESSY
 
 ## Conclusion
 
