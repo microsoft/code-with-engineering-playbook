@@ -52,23 +52,13 @@ Integration tests of complex systems require high maintenance. Avoid testing bus
 
 ## Integration Testing Frameworks and Tools
 
-Many tools and frameworks can be used to write both unit and integration tests. The following covers tools for integration tests.
+Many tools and frameworks can be used to write both unit and integration tests. The following are tools for automated integration tests.
 
-- Java
-  - [JUnit](https://junit.org/junit5/) is a popular test-driven development framework that can be used for both integration and unit testing. It is supported by almost all major IDEs.
-  - [REST Assured](https://rest-assured.io/) is a library that tests REST APIs written in Java. REST assured has a domain-specific language
-  - [Spock](http://spockframework.org/)
-  - [Selenium](https://www.selenium.dev/)
-- C/C++
-  - [TESSY](https://www.razorcat.com/en/product-tessy.html)
-- Python
-  - [unittest](https://docs.python.org/3/library/unittest.html#module-unittest)
-  - [Robot Framework](https://robotframework.org/) is an open-source Automation Testing framework based on Python. It is keyword, behavioral, and data-driven.
-- ASP.NET Core
-  - [moq](https://github.com/moq/moq4)
-  - [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-3.1)
-- [Cucumber](https://cucumber.io/) is an automated testing tool for behavior-driven devlopment and supported by many languages.
-- [Selenium](https://www.selenium.dev/) is best for web-browser automation.
+- [JUnit](https://junit.org/junit5/)
+- [Robot Framework](https://robotframework.org/)
+- [moq](https://github.com/moq/moq4)
+- [Cucumber](https://cucumber.io/)
+- [Selenium](https://www.selenium.dev/)
 
 ## Conclusion
 
