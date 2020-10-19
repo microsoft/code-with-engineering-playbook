@@ -10,9 +10,9 @@ Because one component of a system may be developed independently or in isolation
 
 Consider a banking application with three modules: login, transfers, and current balance, all developed independently. An integration test may verify when a user logs in they are re-directed to their current balance with the correct amount for the specific mock user. Another integration test may perform a transfer of a specified amount of money. The test may confirm there are sufficient funds in the account to perform the transfer, and after the transfer the current balance is updated appropriately for the mock user. The login page may be mocked with a test user and mock credentials if this module is not completed when testing the transfers module.
 
-Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Now, if a team is following agile principles, integration tests can be performed before or after unit tests, early and often, as there is no need to wait for sequential processes. Additionally tests can utilize mock data in order to simulate a complete system. Because integration tests may be slower to develop they do not need to achieve 100% code coverage. There is an abundance of language-specific testing frameworks that can be used throughout the entire development lifecycle.  
+Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Now, if a team is following agile principles, integration tests can be performed before or after unit tests, early and often, as there is no need to wait for sequential processes. Additionally tests can utilize mock data in order to simulate a complete system. Because integration tests may be slower to develop they do not need to achieve 100% code coverage. There is an abundance of language-specific testing frameworks that can be used throughout the entire development lifecycle.
 
-** It is important to note the difference between integration and acceptance testing. Integration testing confirms a group of components work together as intended from a technical perspective, while acceptance testing confirms a group of components work together as intended from a business scenario. 
+\*\* It is important to note the difference between integration and acceptance testing. Integration testing confirms a group of components work together as intended from a technical perspective, while acceptance testing confirms a group of components work together as intended from a business scenario.
 
 ## Applying Integration Testing
 
@@ -21,21 +21,23 @@ Prior to writing integration tests the user must identify the different componen
 There are two main techniques for integration testing.
 
 ### Big Bang
+
 Big Bang integration testing is when all components are tested as a single unit. This is best for small system as a system too large may be difficult to localize for potential errors from failed tests. This approach also requires all components in the system under test to be completed which may delay when testing begins.
 
 ![Big Bang Integration Testing](./images/bigBang.jpg)
 
 ### Incremental Testing
+
 Incremental testing is when two or more components that are logically related are tested as a unit. After testing the unit, additional components are combined and tested all together. This process repeats until all necessary components are tested.
 
 #### Top Down
+
 Top down testing is when higher level components are tested following the control flow of a software system. In the scenario, what is commonly refered to as stubs are used to emulate the behavior of lower level modules not yet complete or merged in the integration test.
 
 ![Top Down Integration Testing](./images/topDown.png)
 
-
-
 #### Bottom Up
+
 Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly refered to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.
 
 ![Bottom Up Integration Testing](./images/bottomUp.jpg)
@@ -53,20 +55,20 @@ Integration tests of complex systems require high maintenance. Avoid testing bus
 Many tools and frameworks can be used to write both unit and integration tests. The following covers tools for integration tests.
 
 - Java
-    - [JUnit](https://junit.org/junit5/) is a popular test-driven development framework that can be used for both integration and unit testing. It is supported by almost all major IDEs.
-    - [REST Assured](https://rest-assured.io/) is a library that tests REST APIs written in Java. REST assured has a domain-specific language
-    - [Spock](http://spockframework.org/)
-    -  [Selenium](https://www.selenium.dev/)
+  - [JUnit](https://junit.org/junit5/) is a popular test-driven development framework that can be used for both integration and unit testing. It is supported by almost all major IDEs.
+  - [REST Assured](https://rest-assured.io/) is a library that tests REST APIs written in Java. REST assured has a domain-specific language
+  - [Spock](http://spockframework.org/)
+  - [Selenium](https://www.selenium.dev/)
 - C/C++
-    - [TESSY](https://www.razorcat.com/en/product-tessy.html)
+  - [TESSY](https://www.razorcat.com/en/product-tessy.html)
 - Python
-    - [unittest](https://docs.python.org/3/library/unittest.html#module-unittest)
-    - [Robot Framework](https://robotframework.org/) is an open-source Automation Testing framework based on Python. It is keyword, behavioral, and data-driven.
+  - [unittest](https://docs.python.org/3/library/unittest.html#module-unittest)
+  - [Robot Framework](https://robotframework.org/) is an open-source Automation Testing framework based on Python. It is keyword, behavioral, and data-driven.
 - ASP.NET Core
-    - [moq](https://github.com/moq/moq4)
-    -  [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-3.1)
+  - [moq](https://github.com/moq/moq4)
+  - [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-3.1)
 - [Cucumber](https://cucumber.io/) is an automated testing tool for behavior-driven devlopment and supported by many languages.
--  [Selenium](https://www.selenium.dev/) is best for web-browser automation.
+- [Selenium](https://www.selenium.dev/) is best for web-browser automation.
 
 ## Conclusion
 
