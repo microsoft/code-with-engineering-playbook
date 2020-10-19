@@ -16,7 +16,7 @@ Integration testing is done by the developer or QA tester. In the past, integrat
 
 ## Applying Integration Testing
 
-Prior to writing integration tests the user must identify the different components of the system and their intended behaviors and inputs and outputs. The engineer must fully understand the architecture of the project.
+Prior to writing integration tests, the engineers must identify the different components of the system and their intended behaviors and inputs and outputs. The architecture of the project must be fully documented or specified somewhere that can be readily referenced (e.g., the architecture diagram).
 
 There are two main techniques for integration testing.
 
