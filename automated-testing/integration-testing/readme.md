@@ -52,7 +52,7 @@ Integration tests of complex systems require high maintenance. Avoid testing bus
 
 ## Integration Testing Frameworks and Tools
 
-Many tools and frameworks can be used to write both unit and integration tests. The following are tools for automated integration tests.
+Many tools and frameworks can be used to write both unit and integration tests. The following tools are for automating integration tests.
 
 - [JUnit](https://junit.org/junit5/)
 - [Robot Framework](https://robotframework.org/)
