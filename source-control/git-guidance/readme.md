@@ -221,6 +221,20 @@ after you deleted the unwanted commits, push using `force`:
 git push origin HEAD --force
 ```
 
+### Recovering lost commits
+
+If you "lost" a commit that you want to return to, for example to revert back a `git rebase` where your commits got squashed, you can use `git reflog` to find the commit:
+
+```bash
+git reflog
+```
+
+Then you can use the reflog reference (`HEAD@{}`) to reset to a specific commit before the rebase:
+
+```bash
+git reset HEAD@{2}
+```
+
 ## Using submodules
 
 Submodules can be useful in more complex deployment and/or development scenarios
