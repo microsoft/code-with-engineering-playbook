@@ -6,7 +6,7 @@ This method is used very commonly. It occurs horizontally across the context of 
 
 ![Horizontal Test](./images/horizontal-e2e-testing.png)
 
-The inbound data may be  injected from various sources, but it then "flatten" into a horizontal processing pipeline that may include various components, such as a gateway API, data transformation, data validation, storage, etc... Throughout the entire Extract-Transform-Load (ETL) processing, the data flow can be tracked and monitored under the horizontal spectrum with little sprinkles of optional, and thus not important for the overal E2E test case, services, like logging, auditing, authentication.
+The inbound data may be  injected from various sources, but it then "flatten" into a horizontal processing pipeline that may include various components, such as a gateway API, data transformation, data validation, storage, etc... Throughout the entire Extract-Transform-Load (ETL) processing, the data flow can be tracked and monitored under the horizontal spectrum with little sprinkles of optional, and thus not important for the overall E2E test case, services, like logging, auditing, authentication.
 
 ## Vertical Test
 
@@ -16,7 +16,7 @@ In this method, all most critical transactions of any application are verified a
 
  In such case, each layer (tier) is required to be fully tested in conjunction with the "connected" layers above and beneath, in which services "talk" to each other during the end to end data flow. All these complex testing scenarios will require proper validation and dedicated automated testing. Thus this method is much more difficult.
 
-## E2E Test Cases Design Guidances
+## E2E Test Cases Design Guidelines
 
 Below enlisted are few **guidelines** that should be kept in mind while designing the test cases for performing E2E testing:
 

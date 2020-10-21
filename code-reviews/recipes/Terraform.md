@@ -83,6 +83,16 @@ In addition to the [Code Review Checklist](../readme.md) you should also look fo
 * [ ] Is the code split into multiple reusable modules?
 * [ ] Are unit and integration tests used for Terraform code (e.g. [`Terratest`](https://terratest.gruntwork.io/), [`terratest-abstraction`](https://github.com/microsoft/terratest-abstraction))?
 * [ ] Are the resource names starting with their containing provider's name followed by an underscore? e.g. resource from the provider `postgresql` might be named as `postgresql_database`?
-* [ ] Is `try` function used only with simple attribute references and type conversion functions?, as overuse of `try` function to suppress errors will lead to a configuration that is hard to understand and maintain
-* [ ] Are the explicit type conversion functions used to normalize types returned only in module outputs?, as the explicit type conversions are rarely necessary in Terraform because it will convert types automatically where required
-* [ ] Is `Sensitive` property on schema set to `true` for the fields that contains sensitive information?. This will prevent the field's values from showing up in CLI output
+* [ ] Is `try` function used only with simple attribute references and type conversion functions?, as overuse of `try` function to suppress errors will lead to a configuration that is hard to understand and maintain.
+* [ ] Are the explicit type conversion functions used to normalize types returned only in module outputs?, as the explicit type conversions are rarely necessary in Terraform because it will convert types automatically where required.
+* [ ] Is `Sensitive` property on schema set to `true` for the fields that contains sensitive information?. This will prevent the field's values from showing up in CLI output.
+* [ ] Each defined variables should explicitly have `type` information. E.g. a `list(string)` or `string`.
+* [ ] Each defined variables should explicitly have `description` about the purpose of variable and usage.
+* [ ] Don’t provide a `default` value for a variable which must be supplied by a user.
+* [ ] Try avoiding nesting sub configuration within resources. Create a sepearate resource section for resources even though they can be decalred as sub-element of a resource. For example, declaring subnets within virtual network vis-a-vis declaring subnets as a separate resources compared to virtual network on Azure.
+* [ ] Never hard-code any value in configuration. Declare them in `locals` section if a variable is needed multiple times as a static value and are internal to the configuration.
+* [ ] The `name`s of the resources created on Azure should not be hard-coded or static. These names should be dynamic and user-provided using `variable` block. This is helpful especially in unit testing when multiple tests are running in parallel trying to create resources on Azure but need different names (few resources in Azure need to be named uniquely e.g. storage accounts).
+* [ ] It is a good practice to `output` the ID of resources created on Azure from configuration. This is especially helpful when adding dynamic blocks for sub-elements/child elements to the parent resource.
+* [ ] Use `required_providers` block for establishing the dependency for providers along with pre-determined version.
+* [ ] Use `terraform` block to declare the provider dependency with exact version and also the terraform CLI version needed for the configuration.
+* [ ] Validate the variable values supplied based on usage and type of variable. The validation can be done to variables by adding `validation` block.

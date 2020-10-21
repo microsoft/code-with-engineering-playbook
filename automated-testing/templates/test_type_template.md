@@ -4,7 +4,7 @@ The document should start with a brief overview about the test type and what is 
 
 ## Why ~Test type~ [The Why]
 
-Start by describing the problem that this test type addresses, this should focus on the motivation behind the test type to aid the reader corelate this test type to the problem they are trying to resolve.
+Start by describing the problem that this test type addresses, this should focus on the motivation behind the test type to aid the reader correlate this test type to the problem they are trying to resolve.
 
 ## ~Test type~ Design Blocks [The What]
 

@@ -1,4 +1,4 @@
-# Developer Experience
+# Developer Experience (DevEx)
 
 Developer experience refers to the how easy or difficult it is for a developer to perform essential tasks needed to implement a change. A positive developer experience would mean these tasks are relatively easy for the team (see measures below).
 
@@ -58,25 +58,25 @@ IDE choice is NOT intended to mandate that all team members must use the same ID
 
 ### DevEx Champion - Identify Iterative Improvements
 
-The devex champion takes ownership in holding the team accountable for providing a positive developer experience. The following outline responsibilities for the DevEx champion.
+The DevEx champion takes ownership in holding the team accountable for providing a positive developer experience. The following outline responsibilities for the DevEx champion.
 
 - Actively seek opportunities for improving the solution developer experience
 - Work with the tech lead to iteratively improve team expectations for developer experience
 - Curate a backlog actionable stories that identify areas for improvement and prioritize with respect to project delivery goals by engaging directly with the Product Owner and Customer.
-- Serve as subject matter expert for the rest of the team. Help the team determine how to implement devex expectations and identify deviations.
+- Serve as subject matter expert for the rest of the team. Help the team determine how to implement DevEx expectations and identify deviations.
 
 ### Team Members - Assert Expectations
 
-The team members of the team can also help hold each other accountable for providing a positive developer experience. The following are examples of areas team members can help identify where the team's devex expectations are not being met.
+The team members of the team can also help hold each other accountable for providing a positive developer experience. The following are examples of areas team members can help identify where the team's DevEx expectations are not being met.
 
-- Pull requests. Try the changes locally to see if they are adhering to the team's devex expectations.
-- Design Reviews. Look for proposals that may negatively effect the solution's devex. These might include
+- Pull requests. Try the changes locally to see if they are adhering to the team's DevEx expectations.
+- Design Reviews. Look for proposals that may negatively effect the solution's DevEx. These might include
   - Introduction of new tech whose testability is limited to manual steps in a deployed environment.
   - Addition of new repository
 
 ### New Team Members - Identify Iterative Improvements
 
-New team members are uniquely positioned to identify instances of undocumented [Collective Wisdom](https://en.wikipedia.org/wiki/Collective_wisdom). The following outlines responsibilities of new team members as it relates to devex:
+New team members are uniquely positioned to identify instances of undocumented [Collective Wisdom](https://en.wikipedia.org/wiki/Collective_wisdom). The following outlines responsibilities of new team members as it relates to DevEx:
 
 - If you come across missing, incomplete or incorrect documentation while onboarding, you should record the issue as a new defect(s) and assign it to the product owner to be triaged.
 - If no onboarding documentation exists, note the steps you took in a new user story. Assign the new story to the product owner to be triaged.
@@ -147,11 +147,11 @@ Automate the ability to execute each essential task across all solution componen
 
 When this is not implemented, the engineers must repeat each of the essential tasks manually for each component in the solution. In this situation, the number of steps required to perform each essential task is multiplied by the number of components in the system
 
-[Configuration steps +Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [many solution components] = TOO MANY STEPS
+[Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [many solution components] = TOO MANY STEPS
 
 VS.
 
-[Configuration steps +Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [1 solution] = MINIMUM NUMBER OF STEPS
+[Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [1 solution] = MINIMUM NUMBER OF STEPS
 
 ### Minimize the Number of Repositories
 

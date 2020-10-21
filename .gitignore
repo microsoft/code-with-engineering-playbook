@@ -328,3 +328,9 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+# Mac File Store
+.DS_Store
+
+# VS Code
+.vscode/
