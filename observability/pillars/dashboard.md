@@ -19,11 +19,11 @@ which otherwise is difficult to understand and consume relating back to business
 
 ## Best Practices
 
-1. Identify goals or KPI measurement. Identifying goals or KPI helps in defining what needs to be achieved.
-2. Ask questions that can help reach the defined goal or KPI. This may sound counter intuitive, the more questions asked while constructing dashboard the better the outcome will be.
+1. Identify goals or KPI measurement. Identifying goals or KPI helps in defining what needs to be achieved. Here are some examples - remote call latency, average CPU/GPU consumption per time unit.
+2. Ask questions that can help reach the defined goal or KPI. This may sound counter intuitive, the more questions asked while constructing dashboard the better the outcome will be. Questions like location, internet service provider, time of day users make requests to server would be a good start.
 3. Validate the questions. This is often done with stakeholders, sponsors, leads or even project managers.
 4. Build simple chart, have more of them. Rather than having a complicated all in one dashboard, seperate the dashboard into sections. Azure Workbooks is highly recommended with markdown support.
-5. Observe the dashboard that is built. Is the data reflecting what the stakeholders set out to answer? If not, make small adjustments.
+5. Observe the dashboard that is built. Is the data reflecting what the stakeholders set out to answer? If not, make adjustments along they way.
 
 Always remember this process takes time. Building dashboard is easy, building an observable dashboard to show pattern is hard.
 
