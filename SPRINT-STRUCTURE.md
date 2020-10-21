@@ -67,7 +67,7 @@ The purpose of this document is to:
 - [ ] [Conduct a Retrospective](agile-development/retrospectives/readme.md)
   - Determine required participants, how to capture input (tools) and outcome
   - Set a timeline, and discuss facilitation, meeting structure etc.
-- [ ] [Groom the Backlog](agile-development/backlog-management/grooming/readme.md)
+- [ ] [Refine the Backlog](agile-development/backlog-management/refinement/readme.md)
   - Determine required participants
   - Update the [Definition of Ready](agile-development/team-agreements/definition-of-ready/readme.md)
   - Update estimates, and the [Estimation](agile-development/sprint-planning/estimation/readme.md) document
