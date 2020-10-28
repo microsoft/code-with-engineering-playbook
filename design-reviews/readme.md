@@ -97,7 +97,7 @@ Design reviews come in all shapes and sizes. There are also different items to c
 - Design should be more detailed than game plan
 - May require unique deployment, security and/or privacy characteristics from other milestones
 
-#### Feature/story design review
+#### [Feature/story design review](./recipes/feature-story-design-review-template.md)
 
 - Design for complex features or stories
 - Will reuse deployment, security and other characteristics defined within game plan or milestone
