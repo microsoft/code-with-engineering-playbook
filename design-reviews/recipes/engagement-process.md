@@ -20,7 +20,7 @@ The following guidelines outline how Microsoft and the customer together can inc
 
 ## Envisioning / Architecture Design Session (ADS)
 
-Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microosft dives deep into existing customer infrastructure and architecture to understand potential constraints.
+Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microsoft dives deep into existing customer infrastructure and architecture to understand potential constraints.
 
 During this time the team uncovers many unknowns, leveraging all new found information, in order to help generate an impactful design that meets customer goals.
 
@@ -40,7 +40,7 @@ Stories that will benefit from design reviews have one or more of the following 
 1. There is a wide distribution of anticipated workload, or story pointing, across the dev crew
 1. The developer cannot clearly illustrate all tasks required for the story
 
-> **Tip:** After sprint planning is complete the team should consider hosting an initial design review discussion to dive deep in the design requirement of the stories that were identified. This will provide more clarity so that the team  can move forward with a design review, syncronously or asynchronously, and complete tasks.
+> **Tip:** After sprint planning is complete the team should consider hosting an initial design review discussion to dive deep in the design requirement of the stories that were identified. This will provide more clarity so that the team can move forward with a design review, synchronously or asynchronously, and complete tasks.
 
 ## Sprint Backlog Grooming
 
@@ -60,10 +60,10 @@ The team can follow the same steps from [sprint planning](#sprint-planning) to h
 It is also a great time to check-in on design reviews
 
 - Did any of the designs change from last sprint?
-- How have  design changes impacted the engagement?
+- How have design changes impacted the engagement?
 - Have previous design artifacts been updated to reflect new changes?
 
-All design artifacts should be treated as a living document.  As requirements change or uncover more unknowns the dev crew should retroactively updte all design artifacts. Missing this critical step may cause the customer to incur future technical debt. Artifacts that are not up to date are `bugs` in the design.
+All design artifacts should be treated as a living document.  As requirements change or uncover more unknowns the dev crew should retroactively update all design artifacts. Missing this critical step may cause the customer to incur future technical debt. Artifacts that are not up to date are `bugs` in the design.
 
 > **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../agile-development/team-agreements/definition-of-done/readme.md) for all user stories.
 
