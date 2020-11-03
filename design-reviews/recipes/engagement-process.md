@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Design reviews should not feel like a burden.  Design reviews can be easily incorporated into your dev crew process with minimal overhead.  
+Design reviews should not feel like a burden.  Design reviews can be easily incorporated into the dev crew process with minimal overhead.  
 
-- Only create design reviews when needed.  Not every story or task requires a full blown design review
-- Leverage this guidance and make changes to fit in best with your team.  Every team works a bit differently and has different tweaks that work best for them.
+- Only create design reviews when needed. Not every story or each task requires a full blown design review.
+- Leverage this guidance and make changes to best fit in with the team. Every team works differently.
 - Leverage Microsoft subject matter experts (SME) as needed during design reviews. Not every story needs SME or leadership sign-off. Most design reviews can be fully executed within a dev crew.
 
-The following are guidelines on how Microsoft and the customer togethere can start incorporating design reviews into day-to-day agile processes.
+The following guidelines outline  how Microsoft and the customer together can incorporate design reviews into their day-to-day agile processes.
 
 ## Table of Contents
 
@@ -20,31 +20,31 @@ The following are guidelines on how Microsoft and the customer togethere can sta
 
 ## Envisioning / Architecture Design Session (ADS)
 
-Early in an engagement Microsoft works with customers to understand their unique goals and objective and establish a definition of done. Microosft dives deep into existing customer infrastructure and architecture to understand potential constraints.
+Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microosft dives deep into existing customer infrastructure and architecture to understand potential constraints.
 
-During this time the team uncovers many unknowns, leveraging all new found information, in order to help generate a design to meet customer goals.
+During this time the team uncovers many unknowns, leveraging all new found information, in order to help generate an impactful design that meets customer goals.
 
-> **Tip**: Not all unknowns have been addressed at this point.
+> **Tip**: All unknowns have not been addressed at this point.
 
 ## Sprint Planning
 
-In many of our engagements we work with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../agile-development/sprint-planning/readme.md) is a great opportunity to dive deep into the next set of high priority work.  Some key points to address are the following:
+In many engagements Microsoft works with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../agile-development/sprint-planning/readme.md) is a great opportunity to dive deep into the next set of high priority work.  Some key points to address are the following:
 
 1. Identify stories that require design reviews
-1. Breakout design from implementation for complex stories
-1. Assign owners to each design story
+1. Separate design from implementation for complex stories
+1. Assign an owner to each design story
 
 Stories that will benefit from design reviews have one or more of the following in common:
 
 1. There are many unknown or unclear requirements
-1. There is wide distribution of anticipated workload, or story pointing, across the dev crew
+1. There is a wide distribution of anticipated workload, or story pointing, across the dev crew
 1. The developer cannot clearly illustrate all tasks required for the story
 
-> **Tip:** After sprint planning is complete the team should consider hosting an initial design review discussion to dive deep on the design requirement of the stories that were identified. This will provide more clarity so that the team  can move forward with a design review, syncronously or asynchronously, and complete tasks.
+> **Tip:** After sprint planning is complete the team should consider hosting an initial design review discussion to dive deep in the design requirement of the stories that were identified. This will provide more clarity so that the team  can move forward with a design review, syncronously or asynchronously, and complete tasks.
 
 ## Sprint Backlog Grooming
 
-The team should consider hosting a [Sprint Backlog Grooming](../../agile-development/backlog-management/grooming/readme.md) at least once per week. It is a great opportunity to:
+The team should consider hosting a [Sprint Backlog Grooming](../../agile-development/backlog-management/grooming/readme.md) at least once each week. It is a great opportunity to:
 
 1. Keep the backlog clean
 1. Re-prioritize work based on shifting business priorities
@@ -63,13 +63,13 @@ It is also a great time to check-in on design reviews
 - How have  design changes impacted the engagement?
 - Have previous design artifacts been updated to reflect new changes?
 
-All design artifacts should be treated as a living document.  As requirements change or uncover more unknowns the dev crew should be retractively updating all design artifacts. Missing this critical step may cause the customer to incur future technical debt. Artifacts that are not up to date are basically `bugs` in the design.
+All design artifacts should be treated as a living document.  As requirements change or uncover more unknowns the dev crew should retroactively updte all design artifacts. Missing this critical step may cause the customer to incur future technical debt. Artifacts that are not up to date are `bugs` in the design.
 
 > **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../agile-development/team-agreements/definition-of-done/readme.md) for all user stories.
 
 ## Wrap-up Sprints
 
-Wrap-up sprints are a great time to tie up loose ends with the customer and hand-off solution.  Customer hand-off becomes a lot easier when there are design artifacts to reference and deliver along side the completed solution.  
+Wrap-up sprints are a great time to tie up loose ends with the customer and hand-off solution. Customer hand-off becomes a lot easier when there are design artifacts to reference and deliver alongside the completed solution.  
 
 During your wrap-up sprints thee dev crew should consider the following:
 
