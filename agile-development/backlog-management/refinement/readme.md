@@ -46,6 +46,7 @@ How might one go about running the ceremony? Is there a general pattern that the
 - Team members: asks questions and requests additional details on the backlog if needed.
 
 Make sure that the team does not focus on how to implement the items. Instead the the Product Owner and Team discuss the goals and context for these high - priority items on the Product Backlog, providing the Team with insight into the Product Owner’s thinking.
+
 ## Useful Links
 
 - Always try and delivery in [Minimal Slices](../minimal-slices.md)
