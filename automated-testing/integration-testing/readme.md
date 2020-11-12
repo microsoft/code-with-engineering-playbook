@@ -59,6 +59,7 @@ Many tools and frameworks can be used to write both unit and integration tests. 
 - [moq](https://github.com/moq/moq4)
 - [Cucumber](https://cucumber.io/)
 - [Selenium](https://www.selenium.dev/)
+- [Behavior Driven Development](https://behave.readthedocs.io/en/latest/tutorial.html)
 
 ## Conclusion
 
@@ -70,3 +71,4 @@ Integration testing demonstrates how one module of a system, or external system,
 - [Integration testing pros and cons](https://www.geeksforgeeks.org/software-engineering-integration-testing/)
 - [Integration tests mocks and stubs](https://circleci.com/blog/how-to-test-software-part-i-mocking-stubbing-and-contract-testing/)
 - [Software Testing: Principles and Practices](https://www.goodreads.com/book/show/21278464-software-testing)
+- [Integration testing Behave test quick start](https://github.com/Nick287/Behave-Quick-Start)
