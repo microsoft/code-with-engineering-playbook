@@ -3,7 +3,7 @@
 ## Content TODO's
 
 - Complete outline below
-- Provide guidance on criteria to determine if story can be estimated(see[definition of ready](../../team-agreements/definition-of-ready/readme.md))
+- Provide guidance on criteria to determine if story can be estimated (see [definition of ready](../../team-agreements/definition-of-ready/readme.md))
   - Examples of well defined acceptance criteria
   - Can the story be tested as written
   - Is it dependent on other stories
@@ -16,7 +16,7 @@
 
 What are the intended outcomes of the ceremonies?
 
-Backlog refinement ( or formerly known as [backlog grooming](https: // www.agilealliance.org/glossary/backlog-grooming /) is when the [product owner](https: // www.agilealliance.org/glossary/product-owner /) and some, or all, of the rest of the team review items on the backlog to ensure the backlog contains the appropriate items, that they are prioritized, and that the items at the top of the backlog are ready for delivery. This activity occurs on a regular basis and may be an officially scheduled meeting or an ongoing activity.
+Backlog refinement or formerly known as [backlog grooming](https://www.agilealliance.org/glossary/backlog-grooming/) is when the [product owner](https://www.agilealliance.org/glossary/product-owner/) and some, or all, of the rest of the team review items on the backlog to ensure the backlog contains the appropriate items, that they are prioritized, and that the items at the top of the backlog are ready for delivery. This activity occurs on a regular basis and may be an officially scheduled meeting or an ongoing activity.
 
 ## Participation
 
@@ -28,14 +28,13 @@ Ideally all of the team members could participate. This is an ongoing process in
 
 What positive impact has been observed as a result of this practice?
 
-The intent of backlog refinement is to ensure that the backlog keeps updating with items that are appropriate to their priority, i.e. higher priority iteams are with more details than lower priority ones . Also its important that at any time there are enough user stories ready for planning in the next or even, where reasonable, the next two or three iterations but not too further away.
+The intent of backlog refinement is to ensure that the backlog keeps updating with items that are appropriate to their priority, i.e. higher priority items are with more details than lower priority ones. Also it is important that at any time there are enough user stories ready for planning in the next or even, where reasonable, the next two or three iterations but not too further away.
 
 ## Measures
 
 How might one measure the impact of this ceremony positive or negative?
 
-The expected outcome from the backlog refinement is all team members are on the same page of what they are going to implement in the next or next few iterations with priority. A positive outcome of refinement is one where each backlog item can reasonably be “Done” within the Sprint time - box. Product Backlog items that can be “Done” by the Development Team within
-one Sprint are deemed “Ready” for selection in a Sprint Planning.
+The expected outcome from the backlog refinement is all team members are on the same page of what they are going to implement in the next or next few iterations with priority. A positive outcome of refinement is one where each backlog item can reasonably be “Done” within the Sprint time - box. Product Backlog items that can be “Done” by the Development Team within one Sprint are deemed “Ready” for selection in a Sprint Planning.
 
 ## Facilitation Guidance
 
