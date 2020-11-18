@@ -25,7 +25,7 @@ MLFlow is open source framework, and can be hosted on Azure Databricks as its re
 TensorBoard is a popular tool amongst data scientist to visualize specific metrics of Deep Learning runs, especially of TensorFlow runs. TensorBoard is not an MLOps tool like AML/MLFlow, and therefore does not offer extensive logging capabilities. It is meant to be transient; and can therefore be used as an addition to an end-to-end MLOps tool like AML, but not as a complete MLOps tool.
 
 [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-Application Insights can be used as an alternative sink to capture model metrics, and can therefore offer more extensive options as metrics can be transfered to e.g. a PowerBI dashboard. It also enables log querying. However, this solution means that a custom application needs to be written to send logs to AppInsights (using for example the OpenCensus Python SDK), which would mean extra effort of creating/maintaining custom code.
+Application Insights can be used as an alternative sink to capture model metrics, and can therefore offer more extensive options as metrics can be transferred to e.g. a PowerBI dashboard. It also enables log querying. However, this solution means that a custom application needs to be written to send logs to AppInsights (using for example the OpenCensus Python SDK), which would mean extra effort of creating/maintaining custom code.
 
 An extensive comparison of the four tools can be found as follows:
 
@@ -40,7 +40,7 @@ An extensive comparison of the four tools can be found as follows:
 
 ## Model in production
 
-The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](readme.md) section). MLFLow is an alternative way to deploy ML model as a service.
+The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using micro service observability methods( for more details -refer to [Recipes](readme.md) section). MLFLow is an alternative way to deploy ML model as a service.
 
 ## Training and re-training
 
