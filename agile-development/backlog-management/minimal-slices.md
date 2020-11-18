@@ -18,7 +18,7 @@ After six weeks of work you created PR with all required functionality, includin
 
 #### Good approach:
 
-You divided your feature into smaller user storis (which in turn were divided into multiple tasks) and started working on them one by one:
+You divided your feature into smaller user stories (which in turn were divided into multiple tasks) and started working on them one by one:
 
 - As a user I can successfully build UWP apps using current service
 - As a user I can see telemetry when building the apps
