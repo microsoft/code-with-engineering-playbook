@@ -98,7 +98,7 @@ write your test code first and then write the system under test to match the tes
 design is done up front and by the time you finish writing your system code, you are already at 100% test pass rate and
 test coverage. It also guarantees testable design is built into the system since the test was written first!
 
-For more information on TDD and an example, see the page on [Test-Driven Development](./tdd.md)
+For more information on TDD and an example, see the page on [Test-Driven Development](./tdd_example.md)
 
 ### Best Practices
 
