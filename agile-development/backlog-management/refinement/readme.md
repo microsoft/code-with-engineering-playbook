@@ -34,7 +34,7 @@ The intent of backlog refinement is to ensure that the backlog keeps updating wi
 
 How might one measure the impact of this ceremony positive or negative?
 
-The expected outcome from the backlog refinement is all team members are on the same page of what they are going to implement in the next or next few iterations with priority. A positive outcome of refinement is one where each backlog item can reasonably be “Done” within the Sprint time - box. Product Backlog items that can be “Done” by the Development Team within one Sprint are deemed “Ready” for selection in a Sprint Planning.
+The expected outcome from the backlog refinement is all the team members are on the same page of what they are going to implement in the next or next few iterations with priority. A positive outcome of refinement is one where each backlog item can reasonably be “done” within the sprint time. Product backlog items that can be “done” by the development team within one sprint are deemed “ready” for selection in a sprint planning.
 
 ## Facilitation Guidance
 
