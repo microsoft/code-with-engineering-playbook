@@ -28,7 +28,7 @@ Ideally all of the team members could participate. This is an ongoing process in
 
 What positive impact has been observed as a result of this practice?
 
-The intent of backlog refinement is to ensure that the backlog keeps updating with items that are appropriate to their priority, i.e. higher priority items are with more details than lower priority ones. Also it is important that at any time there are enough user stories ready for planning in the next or even, where reasonable, the next two or three iterations but not too further away.
+The intent of backlog refinement is to ensure that the backlog keeps updating with items that are appropriate to their priority, i.e. higher priority items are with more details than lower priority ones. Also it is important that at any time there are enough user stories ready for planning in the next or even, where reasonable, the next two or three iterations but not too much further.
 
 ## Measures
 
