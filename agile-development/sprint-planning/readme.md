@@ -82,3 +82,4 @@ Other considerations:
 
 - Take into account off days (vacations, national holidays, unavailability).
 - When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different work streams. This might require thinking about [scrum of scrums](../scrum-of-scrums/readme.md) and all related ceremonies.
+- For Azure DevOps, leverage the [Sprint Goal](https://marketplace.visualstudio.com/items?itemName=keesschollaart.sprint-goal&targetId=e254bbbe-45a2-4344-9bbd-c4ba47e66719&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension to display the goal in the tab-label on every page within the sprint.

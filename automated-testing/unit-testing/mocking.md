@@ -1,13 +1,14 @@
 # Mocking in Unit Tests
 
 One of the key components of writing unit tests is to remove the dependencies your system has and replacing it with an
-implementation you control. The most common method people as the replacement for the dependency is a mock, and mocking
-frameworks exist to help make this process easier.
+implementation you control. The most common method people use as the replacement for the dependency is a mock, and
+mocking frameworks exist to help make this process easier.
 
-Many frameworks and articles use different meanings for the differences between test doubles. For this sake of clarity,
-this article will be using the [definitions provided by Martin Fowler](https://martinfowler.com/articles/mocksArentStubs.html#TheDifferenceBetweenMocksAndStubs). The most commonly
-used form of test double is Mocks, but there are many cases where Mocks perhaps are not the best choice and Fakes should
-be considered instead.
+Many frameworks and articles use different meanings for the differences between test doubles. A test double is a generic
+term for any "pretend" object used in place of a real one. This term, as well as others used in this page are the
+[definitions provided by Martin Fowler](https://martinfowler.com/articles/mocksArentStubs.html#TheDifferenceBetweenMocksAndStubs).
+The most commonly used form of test double is Mocks, but there are many cases where Mocks perhaps are not the best
+choice and Fakes should be considered instead.
 
 ## Stubs
 
