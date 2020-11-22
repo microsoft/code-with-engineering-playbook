@@ -17,9 +17,9 @@ This guideline documents the Machine Learning (ML) practices in CSE. CSE works w
 
 ![Project flow](flow.png)
 
-* [Envisioning](../design-reviews/recipes/engagement-process.md#envisioning--architecture-design-session-ads): Initial problem understanding, customer goals and objectives. *(Link to engineering playbook)*
+* Envisioning: Initial problem understanding, customer goals and objectives.
 * Feasibility study: Assess whether the problem in question is feasible to solve satisfactorily using ML with the available data.
-* [Game plan](../design-reviews/recipes/engagement-process.md#game-plan): Defining the problem, scope, objectives, definition of done and high level plan for the entire project. *(Link to engineering playbook)*
+* Kickoff: Define the scope, objectives, high-level architecture, definition of done and plan for the entire project.
 * [Model(s) experimentation](ml-experimentation.md): Tools and best practices for conducting successful model experimentation.
 * [Model readiness for production](ml-model-checklist.md) checklist.
   
