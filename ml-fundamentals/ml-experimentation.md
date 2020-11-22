@@ -21,7 +21,7 @@ To handle this uncertainty as much as possible, we propose a semi-structured pro
 
 Creating an experimentation framework which facilitates rapid **experimentation**, **collaboration**,
 experiment and model **reproducibility**, **evaluation**  and **defined APIs**,
-lets each team member to focus on the model development and improvement,
+and lets each team member focus on the model development and improvement,
 while trusting the framework to do the rest.
 
 The following tools and guidelines are aimed at achieving experimentation goals as well as addressing the aforementioned challenges.
