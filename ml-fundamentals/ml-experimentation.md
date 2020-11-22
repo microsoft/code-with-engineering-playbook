@@ -19,7 +19,7 @@ To handle this uncertainty as much as possible, we propose a semi-structured pro
 - **Code quality**: How do we maintain the quality of non-production code during research
 - **Operationalization**: Switching between approaches might have a significant impact on operationalization (e.g. GPU/CPU, batch/online, parallel/sequential, runtime environments)
 
-Creating an experimentation framework which facilitate rapid **experimentation**, **collaboration**,
+Creating an experimentation framework which facilitates rapid **experimentation**, **collaboration**,
 experiment and model **reproducibility**, **evaluation**  and **defined APIs**,
 lets each team member to focus on the model development and improvement,
 while trusting the framework to do the rest.
