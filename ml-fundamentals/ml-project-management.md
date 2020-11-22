@@ -41,7 +41,6 @@ Within this framework, the team follows these Agile ceremonies:
 - If possible, feasibility study and initial model experimentation takes place before the operationalization work kicks off.
 
 - The ML team and dev team both share the accountability for the MLOps solution.
-
 - The ML model interface (API) is determined as early as possible, to allow the developers to consider its integration into the production pipeline.
 
 - MLOps artifacts are developed with a continuous collaboration and review of the ML team, to ensure the appropriate approaches for experimentation and
