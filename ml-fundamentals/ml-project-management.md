@@ -43,5 +43,4 @@ Within this framework, the team follows these Agile ceremonies:
 - The ML model interface (API) is determined as early as possible, to allow the developers to consider its integration into the production pipeline.
 - MLOps artifacts are developed with a continuous collaboration and review of the ML team, to ensure the appropriate approaches for experimentation and
 productization are used.
-
 - Retrospectives and sprint planning are performed on the entire team level, and not the specific work groups level.
