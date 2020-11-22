@@ -11,9 +11,9 @@ This guideline documents the Machine Learning (ML) practices in CSE. CSE works w
 ## How to use these fundamentals
 
 * If you are starting a new ML project, consider reading through the [general guidance documents](#general-guidance).
-* For specific aspects of an ML project, refer to the guidelines for different [project phases](#ml-project-phases-in-cse).
+* For specific aspects of an ML project, refer to the guidelines for different [project phases](#ml-project-phases).
 
-## ML Project phases in CSE
+## ML Project phases
 
 ![Project flow](flow.png)
 
