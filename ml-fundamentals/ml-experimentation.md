@@ -40,7 +40,7 @@ In languages like Python and R, it is always advised to employ virtual environme
 
 #### Which virtual environment framework should I choose
 
-All virtual environments frameworks create isolation, while other also propose dependency management and additional features. Decision on which framework to use depends on the complexity of the development environment (dependencies and other required resources) and on the ease of use of the framework.
+All virtual environments frameworks create isolation, some also propose dependency management and additional features. Decision on which framework to use depends on the complexity of the development environment (dependencies and other required resources) and on the ease of use of the framework.
 
 #### Types of virtual environments
 
