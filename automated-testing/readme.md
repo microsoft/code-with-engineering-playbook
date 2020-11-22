@@ -54,3 +54,4 @@ To use the table, either eyeball-browse or search for keywords.  The
 - [Synthetic Transaction testing](synthetic-Monitoring-tests/readme.md)
 - [UI testing](ui-testing/readme.md)
 - [Unit testing](unit-testing/readme.md)
+- [Fault Injection testing](fault-injection-testing/readme.md)
