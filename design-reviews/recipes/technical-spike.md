@@ -26,7 +26,7 @@ Generally the deliverable from a Technical Spike should be a document detailing 
 
 - Fact-Finding: The goal of a spike should be fact-finding, not decision making or recommendation. Ideally, the technology spike digs into a number of technical questions and gets answers so that the _broader project team_ can then come back together and agree on an appropriate course forward.
 
-- Evidence: Generally you will sections to summarize the results of testing which do not include the potentially hundreds of detailed results, however, you should include all detailed testing results in an appendix or an attachment. Having full results detailed somewhere will help the team trust the results. In addition, data can be interpretted lots of different ways, and it may be necessary to go back to the original data for a new interpretation.
+- Evidence: Generally you will sections to summarize the results of testing which do not include the potentially hundreds of detailed results, however, you should include all detailed testing results in an appendix or an attachment. Having full results detailed somewhere will help the team trust the results. In addition, data can be interpreted lots of different ways, and it may be necessary to go back to the original data for a new interpretation.
 
 - Organization: The technical documentation can be lengthy. It is generally a good idea to organize sections with headers and include a table of contents. Generally sections towards the beginning of the document should summarize data and use one or more appendices for more details.
 

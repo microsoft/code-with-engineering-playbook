@@ -1,6 +1,6 @@
 # Test-Driven Development Example
 
-With this method, rather than writing all your tests up front, you write one test a time and then switch to write the
+With this method, rather than writing all your tests up front, you write one test at a time and then switch to write the
 system code that would make that test pass. It's important to write the bare minimum of code necessary even if it is not
 actually "correct". Once the test passes you can refactor the code to make it maybe make more sense, but again the logic
 should be simple. As you write more tests, the logic gets more and more complex, but you can continue to make the

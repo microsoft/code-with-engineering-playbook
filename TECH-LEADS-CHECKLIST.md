@@ -24,6 +24,7 @@ More details on [Source Control](source-control/readme.md)
 - [ ] Integration tests run to test the solution e2e.
 
 More details on [Unit Testing](automated-testing/unit-testing/readme.md)
+More details on [Integration Testing](automated-testing/integration-testing/readme.md)
 
 ## CI/CD
 
