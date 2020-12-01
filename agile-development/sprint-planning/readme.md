@@ -27,7 +27,7 @@ Specific roles:
   - Ensure everyone is heard.
   - Remind scrums/agile/other principles and sprint planning goals if necessary, updating the working agreement where needed to ensure a mapping between principals and what is working/not working for the team.
 - [Product owner](https://www.agilealliance.org/glossary/product-owner/):
-  - Prior to the sprint planning: performs some [backlog grooming](../backlog-management/grooming/readme.md) to ensure that each story that they want to propose for the new sprint (*) :
+  - Prior to the sprint planning: performs some [backlog refinement](../backlog-management/refinement/readme.md) to ensure that each story that they want to propose for the new sprint (*) :
   
     - Is in the correct position in the backlog, by right priority order.
     - Is attending the [definition of ready](../team-agreements/definition-of-ready/readme.md).
