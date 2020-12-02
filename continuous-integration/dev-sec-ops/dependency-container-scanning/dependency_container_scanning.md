@@ -1,16 +1,16 @@
-# Dependency and container scanning
+# Dependency and Container Scanning
 
 Dependency and Container scanning is performed in order to search for vulnerabilities in operating systems, language and application packages.
 
 For further reading about Dependency and Container Scanning see [CSEDevSecOps Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/DependencyContainerScanning)
 
-## Why dependency and container scanning [The Why]
+## Why Dependency and Container Scanning [The Why]
 
 Container images are standard application delivery format in cloud-native environments.
-Having a broad selection of images from the community, we often choose a community base image, and then add packages that we need to it, which might also come from community sources. 
+Having a broad selection of images from the community, we often choose a community base image, and then add packages that we need to it, which might also come from community sources.
 Those arbitrary dependencies might introduce vulnerabilities to our image and application.
 
-## Applying Dependency and Container scanning [The How]
+## Applying Dependency and Container Scanning [The How]
 
 Images that contain software with security vulnerabilities become exploitable at runtime. When building an image in your CI pipeline, image scanning must be a requirement for a build to pass. Images that did not pass scanning should never be pushed to your production-accessible container registry.
 
@@ -26,9 +26,9 @@ Avoid installing the following tools or remove them if present:
     - Network tools and clients: e.g., wget, curl, netcat, ssh.
     - Shells: e.g. sh, bash. Note that removing shells also prevents the use of shell scripts at runtime. Instead, use an executable when possible.
     - Compilers and debuggers. These should be used only in build and development containers, but never in production containers.
-1. Container images should be immutable - download and include all the required dependencies during the image build. 
+1. Container images should be immutable - download and include all the required dependencies during the image build.
 
-## Dependency and Container scanning and Tools
+## Dependency and Container Scanning Frameworks and Tools
 
 Use the tools and pipelines as suggested in [CSEDevSecOps Dependency and Container Scanning Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/DependencyContainerScanning).
 

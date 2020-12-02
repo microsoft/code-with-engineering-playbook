@@ -18,5 +18,5 @@ There are [many tools](https://owasp.org/www-community/Source_Code_Analysis_Tool
 Use the tools and pipelines as suggested in [CSEDevSecOps Static Code Analysis Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/StaticCodeAnalysis)
 
 ## Conclusion
- 
- Static code analysis is essential to identify potential problems and security issues in the code. It allows you to detect bugs and security issues at an early stage.  
+
+Static code analysis is essential to identify potential problems and security issues in the code. It allows you to detect bugs and security issues at an early stage.
