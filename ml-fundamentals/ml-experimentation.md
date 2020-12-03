@@ -1,23 +1,25 @@
 # Model Experimentation
 
+## Overview
+
 Machine learning model experimentation involves uncertainty around the expected model results and future operationalization.
 To handle this uncertainty as much as possible, we propose a semi-structured process, balancing between engineering/research best practices and rapid model/data exploration.
 
 ## Model experimentation goals
 
-1. **Performance**: Find the best performing solution
-2. **Operationalization**: Keep an eye towards production, making sure the operationalization is feasible
-3. **Code quality** Maintain code and artifacts quality
-4. **Reproducibility**: Keep research active by allowing experiment tracking and reproducibility
-5. **Collaboration**: Foster the collaboration and joint work of multiple people on the team
+- **Performance**: Find the best performing solution
+- **Operationalization**: Keep an eye towards production, making sure that operationalization is feasible
+- **Code quality** Maintain code and artifacts quality
+- **Reproducibility**: Keep research active by allowing experiment tracking and reproducibility
+- **Collaboration**: Foster the collaboration and joint work of multiple people on the team
 
 ## Model experimentation challenges
 
 - **Trial and error process**: Difficult to plan and estimate durations and capacity.
-- **Quick and dirty**: We want to fail fast and get a sense of what’s working efficiently
-- **Collaboration**: How do we form a team-wide trial and error process and effective brainstorming
-- **Code quality**: How do we maintain the quality of non-production code during research
-- **Operationalization**: Switching between approaches might have a significant impact on operationalization (e.g. GPU/CPU, batch/online, parallel/sequential, runtime environments)
+- **Quick and dirty**: We want to fail fast and get a sense of what’s working efficiently.
+- **Collaboration**: How do we form a team-wide trial and error process and effective brainstorming.
+- **Code quality**: How do we maintain the quality of non-production code during research.
+- **Operationalization**: Switching between approaches might have a significant impact on operationalization (e.g. GPU/CPU, batch/online, parallel/sequential, runtime environments).
 
 Creating an experimentation framework which facilitates rapid **experimentation**, **collaboration**,
 experiment and model **reproducibility**, **evaluation**  and **defined APIs**,
@@ -36,7 +38,9 @@ The following tools and guidelines are aimed at achieving experimentation goals 
 
 ### Virtual environments
 
-In languages like Python and R, it is always advised to employ virtual environments. Virtual environments facilitate reproducibility, collaboration and productization. See more details on this blog on [why we need virtual environments](https://realpython.com/python-virtual-environments-a-primer/#why-the-need-for-virtual-environments).
+In languages like Python and R, it is always advised to employ virtual environments. Virtual environments facilitate reproducibility, collaboration and productization.
+Virtual environments allow us to be consistent across our local dev envs as well as with compute resources. These environments' configuration files can be used to build the code from source in an consistent way.
+For more details on why we need virtual environments visit [this blog post](https://realpython.com/python-virtual-environments-a-primer/#why-the-need-for-virtual-environments).
 
 #### Which virtual environment framework should I choose
 
@@ -145,3 +149,10 @@ When deciding on the evaluation of the ML model/process, consider the following 
 3. The code holding the logic and data structures for evaluation is reviewed and tested.
 4. Documentation on how to apply evaluation is reviewed.
 5. Performance metrics are automatically tracked into the experiment tracker.
+
+## Evaluation development process benefits
+
+- Model performance
+- Code quality
+- Collaboration
+- Reproducibility

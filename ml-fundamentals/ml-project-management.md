@@ -1,13 +1,13 @@
 # Agile development considerations for ML projects
 
+## Overview
+
+When running ML projects, we follow the Agile methodology for software development with some adaptations, as we acknowledge that research and experimentation are sometimes difficult to plan and estimate.
+
 ## Goals
 
 1. Run and manage ML projects effectively
 2. Create effective collaboration between the ML team and the other teams working on the project
-
-## Agile project management
-
-When running ML projects, we follow the Agile methodology for software development with some adaptations, as we acknowledge that research and experimentation are sometimes difficult to plan and estimate.
 
 To learn more about how CSE runs the Agile process for software development teams, refer to this [doc](../agile-development).
 
