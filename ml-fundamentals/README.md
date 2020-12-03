@@ -10,15 +10,23 @@ This guideline documents the Machine Learning (ML) practices in CSE. CSE works w
 
 ## How to use these fundamentals
 
-If you are starting a new ML project, consider reading through the [fundamentals checklist](ml-fundamentals-checklist.md) or [Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai-resources) links.
+* If you are starting a new ML project, consider reading through the [general guidance documents](#general-guidance).
+* For specific aspects of an ML project, refer to the guidelines for different [project phases](#ml-project-phases).
 
-For specific aspects of an ML project, refer to the guidelines for different [project phases](#ml-project-phases).
+## ML Project phases
 
-## Sections
+![Project flow](flow.png)
 
-### General
+* Envisioning: Initial problem understanding, customer goals and objectives.
+* Feasibility study: Assess whether the problem in question is feasible to solve satisfactorily using ML with the available data.
+* Kickoff: Define the scope, objectives, high-level architecture, definition of done and plan for the entire project.
+* [Model(s) experimentation](ml-experimentation.md): Tools and best practices for conducting successful model experimentation.
+* [Model readiness for production](ml-model-checklist.md) checklist.
+  
+## General guidance
 
 * [ML Fundamentals checklist](ml-fundamentals-checklist.md)
+* [Agile ML development](ml-project-management.md)
 * [Testing Data Science and ML Ops code](ml-testing.md)
 
 ### ML project phases
