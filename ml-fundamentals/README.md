@@ -29,10 +29,6 @@ This guideline documents the Machine Learning (ML) practices in CSE. CSE works w
 * [Agile ML development](ml-project-management.md)
 * [Testing Data Science and ML Ops code](ml-testing.md)
 
-### ML project phases
-
-* [Model Readiness for Production](ml-model-checklist.md)
-
 ## References
 
 * [Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai-resources)
