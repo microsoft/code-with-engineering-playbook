@@ -1,8 +1,9 @@
 # Example: Authoring a unit test
 
-To illustrate some of the unit testing techniques, let's start with an example of some code we wish to add unit tests
-for. In this example, we have a configuration class that contains all the startup options for an app we are writing.
-Normally it reads from a `.config` file, but we are having three problems with the current implementation:
+To illustrate some of the unit testing techniques for an object oriented language, let's start with an example of some
+code we wish to add unit tests for. In this example, we have a configuration class that contains all the startup options
+for an app we are writing. Normally it reads from a `.config` file, but we are having three problems with the current
+implementation:
 
 1. There is a bug in the Configuration class and we have no unit tests since it relies on reading a config file
 2. We can't unit test any of the code that relies on the Configuration class reading a config file

@@ -49,8 +49,10 @@ To use the table, either eyeball-browse or search for keywords.  The
 ## Sections within Testing
 
 - [End-to-End testing](e2e-testing/readme.md)
+- [Fault Injection testing](fault-injection-testing/readme.md)
 - [Integration testing](integration-testing/readme.md)
 - [Performance testing](performance-testing/readme.md)
+- [Smoke testing](smoke-testing/readme.md)
 - [Synthetic Transaction testing](synthetic-Monitoring-tests/readme.md)
 - [UI testing](ui-testing/readme.md)
 - [Unit testing](unit-testing/readme.md)

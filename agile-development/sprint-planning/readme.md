@@ -27,7 +27,7 @@ Specific roles:
   - Ensure everyone is heard.
   - Remind scrums/agile/other principles and sprint planning goals if necessary, updating the working agreement where needed to ensure a mapping between principals and what is working/not working for the team.
 - [Product owner](https://www.agilealliance.org/glossary/product-owner/):
-  - Prior to the sprint planning: performs some [backlog grooming](../backlog-management/grooming/readme.md) to ensure that each story that they want to propose for the new sprint (*) :
+  - Prior to the sprint planning: performs some [backlog refinement](../backlog-management/refinement/readme.md) to ensure that each story that they want to propose for the new sprint (*) :
   
     - Is in the correct position in the backlog, by right priority order.
     - Is attending the [definition of ready](../team-agreements/definition-of-ready/readme.md).
@@ -82,3 +82,4 @@ Other considerations:
 
 - Take into account off days (vacations, national holidays, unavailability).
 - When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different work streams. This might require thinking about [scrum of scrums](../scrum-of-scrums/readme.md) and all related ceremonies.
+- For Azure DevOps, leverage the [Sprint Goal](https://marketplace.visualstudio.com/items?itemName=keesschollaart.sprint-goal&targetId=e254bbbe-45a2-4344-9bbd-c4ba47e66719&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension to display the goal in the tab-label on every page within the sprint.

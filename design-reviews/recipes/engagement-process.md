@@ -16,7 +16,7 @@ The following is are some guidelines on how you and your team can start incorpor
 - [Game Plan](#game-plan)
 - [Checkpoint Reviews](#checkpoint-reviews)
 - [Sprint Planning](#sprint-planning)
-- [Sprint Backlog Grooming](#sprint-backlog-grooming)
+- [Sprint Backlog Refinement](#sprint-backlog-refinement)
 - [Sprint Retrospectives](#sprint-retrospectives)
 - [Wrap-up Sprints](#wrap-up-sprints)
 
@@ -89,9 +89,9 @@ Stories that will benefit from design reviews have one or more of the following 
 
 > **Tip:** After your sprint planning is complete your team should consider hosting an initial design review discussion to dive deep on the design requirement of the stories that were identified.  After you have more clarity the team should continue forward with either a sync or async design review to complete the tasks.
 
-## Sprint Backlog Grooming
+## Sprint Backlog Refinement
 
-If you team is not already hosting a [Sprint Backlog Grooming](../../agile-development/backlog-management/grooming/readme.md) session at least once per week you should consider it.  It is a great opportunity to:
+If you team is not already hosting a [Sprint Backlog Refinement](../../agile-development/backlog-management/refinement/readme.md) session at least once per week you should consider it.  It is a great opportunity to:
 
 1. Keep your backlog clean
 1. Re-prioritize work bash on shifting business priorities
