@@ -45,6 +45,24 @@ Start small, it is easier to create a small PR from the start than to break up a
 
 These are some strategies to keep PRs small depending on the "cause" of the inevitability, you could break the PR into self-container changes which still add value, release features that are hidden (see feature flag, feature toggling or canary releases) or break the PR into different layers (for example using design patterns like MVC or Observer/Subject). No matter the strategy.
 
+## Commit Message Standardization
+
+Standardizing the format of the commit message (or PR title that becomes a commit message) enables the automated generation of a changelog and helps maintain a clean, well-structured git history. While every team need not conform to the same specification, it is important that the convention is agreed upon at the start of the project.
+
+One popular specification for open-source projects and others is the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0-beta.2/), which is strucured as:
+
+```txt
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer]
+```
+
+The `<type>` in this message can be selected from a list of types defined by the team, but many projects use the [list of commit types from the Angular open-source project](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type). It should be clear that `scope`, `body` and `footer` elements are **optional**, but having a required `type` and short description enables the features mentioned above.
+
+Note that while commit message and PR title standardization is the ideal, we recognize that it is not feasible or easily enforced. When these situations arise, we recommend using tools like [Changesets](https://github.com/atlassian/changesets) to generate changelogs without needing commit messages to be standardized.
+
 ## Resources
 
 * [Review code with pull requests (Azure DevOps)](https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)
@@ -53,3 +71,5 @@ These are some strategies to keep PRs small depending on the "cause" of the inev
 * [Feature Flags](https://www.martinfowler.com/articles/feature-toggles.html)
 * [Facebook approach to hidden features](https://launchdarkly.com/blog/secret-to-facebooks-hacker-engineering-culture/)
 * [Azure approach to canary releases](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/deployment#stage-your-workloads)
+* [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+* [Angular Commit types](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type)

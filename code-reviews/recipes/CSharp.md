@@ -13,22 +13,26 @@ We strongly believe that consistent style increases readability and maintainabil
 We recommend using a common setup for your solution that you can refer to in all the projects that are part of the solution. Create a common.props file that contains the defaults for all of your projects:
 
 ```xml
- <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-  <PropertyGroup>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-  </PropertyGroup>
-  <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)../.editorconfig')" >
-    <AdditionalFiles Include="$(MSBuildThisFileDirectory)../.editorconfig" />
-  </ItemGroup>
+<Project>
+...
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <PropertyGroup>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup Condition="Exists('$(MSBuildThisFileDirectory)../.editorconfig')" >
+        <AdditionalFiles Include="$(MSBuildThisFileDirectory)../.editorconfig" />
+    </ItemGroup>
+...
+</Project>
 ```
 
 You can then reference the common.props in your other project files to ensure a consistent setup.
@@ -73,6 +77,12 @@ If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enab
         projects: '**/*.csproj'
 ```
 
+## Enable Roslyn Support in Visual Studio Code
+
+The above steps also work in VS Code provided you enable Roslyn support for Omnisharp. The setting is `omnisharp.enableRoslynAnalyzers` and must be set to `true`. After enabling this setting you must "Restart Omnisharp" (this can be done from the Command Palette in VS Code or by restarting VS Code).
+
+![rosyln-support](./vscode-roslyn.png)
+
 ## Code Review Checklist
 
 * [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
@@ -84,4 +94,7 @@ If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enab
 * [ ] Is the code written in a way that causes boxing operations to happen?
 * [ ] Does the code [handle exceptions correctly](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)?
 * [ ] Is package management being used (NuGet) instead of committing DLLs?
-* [ ] Does this code us LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.
+* [ ] Does this code use LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.
+* [ ] Does this code properly validate arguments sanity (i.e. [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
+* [ ] Does this code include telemetry ([metrics, tracing](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
+* [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?

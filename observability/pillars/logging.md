@@ -8,7 +8,7 @@ Logs are discrete events with the goal of helping engineers identify problem are
 
 When it comes to log collection methods, two of the standard techniques are a direct-write or an agent-based approach.
 
-Directly written log events are handled in-process of the particular component, usually utilizing a provided library. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor) has direct send capabilities, but it's not recommented for serious/production use. This approach has some advantages:
+Directly written log events are handled in-process of the particular component, usually utilizing a provided library. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor) has direct send capabilities, but it's not recommended for serious/production use. This approach has some advantages:
 
 - There is no external process to configure or monitor
 - No log file management (rolling, expiring) to prevent out of disk space issues.
@@ -72,6 +72,6 @@ This approach isn't without trade-offs:
 ## Recommended Tools
 
 - [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) - Umbrella of services including system metrics, log analytics and more.
-- [Grafana Loki](https://github.com/grafana/loki) - An opensource log aggregation platform, built on the learnings from the Prometheus Community for highly efficient collection & storage of log data at scale.
-- [The Elastic Stack](https://www.elastic.co/what-is/elk-stack) - An open source log analytics tech stack utilizing Logstash, Beats, Elasticsearch and Kibana.
+- [Grafana Loki](https://github.com/grafana/loki) - An open source log aggregation platform, built on the learnings from the Prometheus Community for highly efficient collection & storage of log data at scale.
+- [The Elastic Stack](https://www.elastic.co/what-is/elk-stack) - An open source log analytics tech stack utilizing Logstash, Beats, Elastic search and Kibana.
 - [Grafana](https://grafana.com) - Open source dashboard & visualization tool. Supports Log, Metrics and Distributed tracing data sources.

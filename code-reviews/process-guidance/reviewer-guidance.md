@@ -22,7 +22,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 ### Be considerate
 
 - Be positive – encouraging, appreciation for good practices.
-- Avoid language that points fingers like “you” but rather use “we” or “this line” -- code reviews aren’t personal and language matters.
+- Avoid language that points fingers like “you” but rather use “we” or “this line” -- code reviews are not personal and language matters.
 
 ### Make comments clear
 

@@ -1,27 +1,58 @@
-# ~Test type~
+# Insert Test Technique Name Here
 
-The document should start with a brief overview about the test type and what is covered in this document, the goal here is to provide a high-level description to help the reader understand what is covered to decide whether to continue reading or not.
+Put a 2-3 sentence overview about the test technique here.
 
-## Why ~Test type~ [The Why]
+## When To Use
 
-Start by describing the problem that this test type addresses, this should focus on the motivation behind the test type to aid the reader corelate this test type to the problem they are trying to resolve.
+### Problem Addressed
 
-## ~Test type~ Design Blocks [The What]
+Describing the problem that this test type addresses, this should focus on the motivation behind the test type/technique to help the reader correlate this technique to their problem.
 
-In this section, describe the test type, its components, and how they interact to solve the problem described above.
+### When to Avoid
 
-## Applying the ~test type~ [the how]
+Describe when NOT to use, if applicable.
 
-In this section, describe what good testing looks like for this test type, discuss some of the best practices, discuss pitfalls to avoid, and finally discuss some of the common tools used to apply the test type, if any.
+### ROI Tipping Point
 
-## ~Test type~ Frameworks and Tools
+How much is enough?  For example, some opine that unit test ROI drops significantly at 80% block coverage and when the codebase is well-exercised by real traffic in production.
 
-In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information.
+### Applicable to
 
-## Conclusion
+- [ ] Local dev 'desktop'
+- [ ] Build pipelines
+- [ ] Non-production deployments
+- [ ] Production deployments
+  
+## NOTE: If there is great (clear, succinct) documentation for the technique on the web, supply a pointer and skip the rest of this template.  No need to re-type content
 
-In conclusion, provide the final thoughts on why and how this type of test can help with your next customer engagement, what best practices and recommendations that can be withdrawn from the case studies and research.
+## How to Use
+
+### Architecture
+
+Describe the components of the technique and how they interact with each other and the subject of the test technique.  Add a simple diagram of how the technique's parts are organized, if helpful to illustrate.
+
+### Pre-requisites
+
+Anything required in advance?
+
+### High-level Step-by-step
+
+1.
+1.
+1.
+
+## Best Practices and Advice
+
+Describe what good testing looks like for this technique, best practices, pitfalls.
+
+### Antipatterns
+
+e.g. unit tests should never require off-box or even out-of-process dependencies.  Are there similar things to avoid when applying this techinique?
+
+## Frameworks, Tools, Templates
+
+Describe known good (i.e. actually used and known to provide good results) frameworks, tools, templates, their pros and cons, with links.
 
 ## Resources
 
-List additional readings about this test type for those that would like to dive deeper.
+Provide links to further readings about this technique to dive deeper.
