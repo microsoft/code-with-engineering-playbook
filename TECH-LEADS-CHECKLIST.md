@@ -53,7 +53,7 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 
 - [ ] Process Lead (fixed/rotating) to run standup daily.
 - [ ] Agile process clearly defined within team.
-- [ ] Tech Lead (+ PO/Others) have responsibility for backlog management and grooming.
+- [ ] Tech Lead (+ PO/Others) have responsibility for backlog management and refinement.
 - [ ] Working agreement between members of team and customer.
 
 ## Design Reviews
