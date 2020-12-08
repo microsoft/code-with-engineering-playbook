@@ -71,7 +71,7 @@ All design artifacts should be treated as a living document. As requirements cha
 
 Wrap-up sprints are a great time to tie up loose ends with the customer and hand-off solution. Customer hand-off becomes a lot easier when there are design artifacts to reference and deliver alongside the completed solution.
 
-During your wrap-up sprints thee dev crew should consider the following:
+During your wrap-up sprints the dev crew should consider the following:
 
 1. Are the design artifacts up to date?
 1. Are the design artifacts stored in an accessible location?
