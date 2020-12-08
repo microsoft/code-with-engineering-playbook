@@ -1,38 +1,42 @@
-# Deliver using Minimal Valuable Slices
+# Minimalism Slices
 
-## Always deliver your work (for example a new feature) using minimal valuable slices (chunks):
+## Always deliver your work using minimal valuable slices:
 
-* Split your work item on smaller chunks which could be contributed incrementally (from
-basic/minimal functionality to complete solution)
-* Contribute your chunks frequently
+- Split your work item into small chunks that are contributed in incremental commits.
 
-In other words try to follow iterative approach when doing your work and frequently provide updates/changes to the team. This way you will get instant feedback, all issues could be discovered earlier and you will be sure that you are moving in the right direction (from both technical and functional sides).
+- Contribute your chunks frequently. Follow an iterative approach by regularly providing updates and changes to the team. This allows for instant feedback and early issue discovery and ensures you are developing in the right direction, both technically and functionally.
 
-With that said
+- Do NOT work independently on your task without providing any updates to your team.
 
-* Do NOT work independently on your task without any updates from your side.
-* Commit more often
+### Example
 
-As an example imagine you are working on adding UWP (Universal Windows Platform) application building functionality for existing continuous integration service which already has Android/iOS support.
+Imagine you are working on adding UWP (Universal Windows Platform) application building functionality for existing continuous integration service which already has Android/iOS support.
 
-Bad approach:
-After six weeks of work you created PR with all required functionality, including portal UI (build settings), backend REST API (UWP build functionality), telemetry, unit and integration tests, etc
+#### Bad approach:
 
-Good approach:
-You divided your feature into smaller User Stories (which in turn will be divided into multiple tasks later) and started working on them one by one, for example:
+After six weeks of work you created PR with all required functionality, including portal UI (build settings), backend REST API (UWP build functionality), telemetry, unit and integration tests, etc.
 
-* As a user I could successfully build UWP apps using current service
-* As a user I can see telemetry when building the apps
-* As a user I have the ability to select build configuration (debug, release)
-* As a user I have the ability to select target platform (arm, x86, x64)
-* ...
+#### Good approach:
 
-You also divided your stories into smaller tasks and started sending PRs based on those tasks. E.g. you may have the following tasks for the first user story above:
+You divided your feature into smaller user stories (which in turn were divided into multiple tasks) and started working on them one by one:
 
-* Enable UWP platform on backend
-* Add `build` button to the UI (build first solution file found)
-* Add `select solution file` dropdown to the UI
-* Implement unit tests
-* Implement integration tests to verify that build was succeeded
-* Update documentation
-* ...
+- As a user I can successfully build UWP apps using current service
+- As a user I can see telemetry when building the apps
+- As a user I have the ability to select build configuration (debug, release)
+- As a user I have the ability to select target platform (arm, x86, x64)
+- ...
+
+You also divided your stories into smaller tasks and sent PRs based on those tasks.
+E.g. you have the following tasks for the first user story above:
+
+- Enable UWP platform on backend
+- Add `build` button to the UI (build first solution file found)
+- Add `select solution file` dropdown to the UI
+- Implement unit tests
+- Implement integration tests to verify build succeeded
+- Update documentation
+- ...
+
+### Resources
+
+- [Minimalism Rules](http://minifesto.org/)
