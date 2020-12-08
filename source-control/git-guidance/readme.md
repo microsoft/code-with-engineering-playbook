@@ -19,7 +19,7 @@ To avoid adding code that has not been peer reviewed to the main branch (ex. dev
 git pull
 
 # start a new feature branch based on the develop branch
-git chekcout -b feature/123-add-git-instructions develop
+git checkout -b feature/123-add-git-instructions develop
 
 # edit some files
 
@@ -219,6 +219,20 @@ after you deleted the unwanted commits, push using `force`:
 
 ```bash
 git push origin HEAD --force
+```
+
+### Recovering lost commits
+
+If you "lost" a commit that you want to return to, for example to revert back a `git rebase` where your commits got squashed, you can use `git reflog` to find the commit:
+
+```bash
+git reflog
+```
+
+Then you can use the reflog reference (`HEAD@{}`) to reset to a specific commit before the rebase:
+
+```bash
+git reset HEAD@{2}
 ```
 
 ## Using submodules

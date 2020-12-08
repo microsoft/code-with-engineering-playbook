@@ -23,7 +23,7 @@ development time for every feature. So why should we write them?
 
 For more details, see all the [detailed descriptions of the points above](./why-unit-tests.md).
 
-## Unit Testing Design Blocks [The What]
+## Unit Testing Design Blocks
 
 Unit testing is the lowest level of testing and as such generally has few components and dependencies.
 
@@ -36,7 +36,7 @@ a wide range of functionality, but the base functionality should be a way to org
 Finally there is your **unit test code**; unit test code is generally short and simple, preferring repetition to adding
 layers and complexity to the code.
 
-## Applying the Unit Testing [the how]
+## Applying the Unit Testing
 
 Getting started with writing a unit test is much easier than some other test types since it should require next to no
 setup and is just code. Each [test framework](#test-frameworks) is different in how you organize and write your tests,
@@ -45,7 +45,11 @@ but the general techniques and best practices of writing a unit test are univers
 ### Techniques
 
 These are some commonly used techniques that will help when authoring unit tests. For some examples, see the pages on
-using [abstraction and dependency injection to author a unit test](authoring_example.md), or how to do [test-driven development](tdd.md)
+using [abstraction and dependency injection to author a unit test](authoring_example.md), or how to do [test-driven development](tdd_example.md).
+
+Note that some of these techniques are more specific to strongly typed, object-oriented languages. Functional languages
+and scripting languages have similar techniques that may look different but these terms are commonly used in all unit
+testing examples.
 
 #### Abstraction
 
@@ -94,7 +98,7 @@ write your test code first and then write the system under test to match the tes
 design is done up front and by the time you finish writing your system code, you are already at 100% test pass rate and
 test coverage. It also guarantees testable design is built into the system since the test was written first!
 
-For more information on TDD and an example, see the page on [Test-Driven Development](./tdd.md)
+For more information on TDD and an example, see the page on [Test-Driven Development](./tdd_example.md)
 
 ### Best Practices
 

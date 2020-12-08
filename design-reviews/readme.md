@@ -62,14 +62,14 @@ The dev crew should always participate in all design review sessions
 Domain experts should participate in design review sessions as needed
 
 - CSE Tech Domain
-- Customer Subject Matter Experts (SME's)
+- Customer Subject Matter Experts (SME)
 - Senior Leadership
 
 ## Facilitation Guidance
 
 ### Sync Design Reviews via in-person / virtual meetings
 
-Joint meetings with dev crew, subject matter experts (SME's) and customer engineers
+Joint meetings with dev crew, subject matter experts (SMEs) and customer engineers
 
 ### Async Design Reviews via Pull-Requests
 
@@ -97,7 +97,7 @@ Design reviews come in all shapes and sizes. There are also different items to c
 - Design should be more detailed than game plan
 - May require unique deployment, security and/or privacy characteristics from other milestones
 
-#### Feature/story design review
+#### [Feature/story design review](./recipes/feature-story-design-review-template.md)
 
 - Design for complex features or stories
 - Will reuse deployment, security and other characteristics defined within game plan or milestone

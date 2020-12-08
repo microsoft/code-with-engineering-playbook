@@ -14,7 +14,7 @@ The following guidelines outline how Microsoft and the customer together can inc
 
 - [Envisioning / Architecture Design Session (ADS)](#envisioning--architecture-design-session-ads)
 - [Sprint Planning](#sprint-planning)
-- [Sprint Backlog Grooming](#sprint-backlog-grooming)
+- [Sprint Backlog Refinement](#sprint-backlog-refinement)
 - [Sprint Retrospectives](#sprint-retrospectives)
 - [Wrap-up Sprints](#wrap-up-sprints)
 
@@ -42,9 +42,9 @@ Stories that will benefit from design reviews have one or more of the following 
 
 > **Tip:** After sprint planning is complete the team should consider hosting an initial design review discussion to dive deep in the design requirement of the stories that were identified. This will provide more clarity so that the team can move forward with a design review, synchronously or asynchronously, and complete tasks.
 
-## Sprint Backlog Grooming
+## Sprint Backlog Refinement
 
-The team should consider hosting a [Sprint Backlog Grooming](../../agile-development/backlog-management/grooming/readme.md) at least once each week. It is a great opportunity to:
+If you team is not already hosting a [Sprint Backlog Refinement](../../agile-development/backlog-management/refinement/readme.md) session at least once per week you should consider it.  It is a great opportunity to:
 
 1. Keep the backlog clean
 1. Re-prioritize work based on shifting business priorities

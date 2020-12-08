@@ -24,6 +24,7 @@ More details on [Source Control](source-control/readme.md)
 - [ ] Integration tests run to test the solution e2e.
 
 More details on [Unit Testing](automated-testing/unit-testing/readme.md)
+More details on [Integration Testing](automated-testing/integration-testing/readme.md)
 
 ## CI/CD
 
@@ -57,12 +58,14 @@ More details on [Unit Testing](automated-testing/unit-testing/readme.md)
 
 ## Design Reviews
 
-- [ ] Process for conducting design reviews is included in the [Working Agreement](/agile-development/team-agreements/working-agreements/readme.md)
+- [ ] Process for conducting design reviews is included in the [Working Agreement](/agile-development/team-agreements/working-agreements/readme.md).
 - [ ] Design reviews for each major component of the solution are carried out and documented, including alternatives.
 - [ ] Stories and/or PRs link to the design document.
 - [ ] Each user story includes a task for design review by default, which is assigned or removed during sprint planning.
 - [ ] Project advisors are invited to design reviews or asked to give feedback to the design decisions captured in documentation.
 - [ ] Discover all the reviews that the customer's processes require and plan for them.
+
+More details on [Design Reviews](design-reviews/readme.md)
 
 ## Code Reviews
 
