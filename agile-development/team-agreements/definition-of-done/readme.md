@@ -26,7 +26,7 @@ The development team should decide together what their Definition of Done is and
 - [ ] Performance tests pass
 - [ ] End 2 End tests pass
 - [ ] All bugs are fixed
-- [ ] The sprint is singed off from developers, software architects, project manager, product owner etc.
+- [ ] The sprint is signed off from developers, software architects, project manager, product owner etc.
 
 ## Release/Milestone
 
