@@ -34,18 +34,18 @@ As much as possible, configuration and management of observability assets such a
 
 ### Why
 
-* It makes configuration repeatable and automatable. It also avoids manual configuration of monitoring alerts and dashboards from scratch across environments.
+- It makes configuration repeatable and automatable. It also avoids manual configuration of monitoring alerts and dashboards from scratch across environments.
 
-* Configured dashboards help troubleshoot errors during integration and deployment (CI/CD)
+- Configured dashboards help troubleshoot errors during integration and deployment (CI/CD)
 
-* We can audit changes and roll them back if there are any issues.
+- We can audit changes and roll them back if there are any issues.
 
-* Identify actionable insights from the generated metrics data across all environments, not just production.
+- Identify actionable insights from the generated metrics data across all environments, not just production.
 
-* Configuration and management of observability assets like alert threshold, duration, configuration
+- Configuration and management of observability assets like alert threshold, duration, configuration
 values using IAC help us in avoiding configuration mistakes, errors or overlooks during deployment.
 
-* While practicing observability as code, the changes can be reviewed by the team similar to other code
+- While practicing observability as code, the changes can be reviewed by the team similar to other code
 contributions.
 
 ## Recommended Practices
