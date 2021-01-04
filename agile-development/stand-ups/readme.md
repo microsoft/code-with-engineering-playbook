@@ -8,9 +8,12 @@ The stand-up is a time-boxed ceremony that is held each day of the sprint. In th
 
 During the stand-up, additional discussions may arise. Make sure that someone adds them to the parking lot for after meeting discussion.  
 
-After that point, the stand-up is concluded. The items in the parking lot may take place right after. However, participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
+After that point, the stand-up is concluded.
 
-The term parking lot refers to a bucket of comments, concerns, or questions that will be discussed and/or addressed at a later point with potentially fewer contributors. This is part of a strategy to avoid letting the discussion in a meeting shift to a subject that is not aligned with the meeting goals and/or decisions.
+As a good practice, the items in the parking lot take place right after the stand-up. However, you can opt to discuss the parking lot items at another time before the next stand-up.
+The participation in the parking lot discussion is optional for all members except those explicitly needed for discussion of the issues raised.
+
+> The term **parking lot** refers to a bucket of comments, concerns, or questions that will be discussed and/or addressed at a later point with potentially fewer contributors. This is part of a strategy to avoid letting the discussion in a meeting shift to a subject that is not aligned with the meeting goals and/or decisions.
 
 ## Goals
 
@@ -61,7 +64,7 @@ How many tasks are being generated after the stand-up that didn't exist before? 
 
 ## Facilitation Guidance
 
-The process lead should facilitate the stand-up meeting.
+The Process Lead should facilitate the stand-up meeting.
 
 ### Speak to Tasks
 
@@ -78,7 +81,7 @@ If a contributor is not working on an existing sprint task they need to either c
 
 As contributors are answering the three questions, if another contributor has a question or issue to share, they should reserve until after all contributors have answered finished. Once each member has answered all three questions, the process lead should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
 
-> Parking lot discussions are optional for participants
+> Parking lot discussions are optional for participants.
 
 Ensure discussion leaders call out necessary parties for their discussion points upfront, allowing those not needed to leave the meeting.
 
@@ -86,16 +89,26 @@ Ensure discussion leaders call out necessary parties for their discussion points
 
 Make a best effort to begin answering the 3 questions as close to the scheduled start time as possible. Try not to waste time upfront on chit-chat or waiting on all team members to join. This can extend the meeting time significantly. Starting immediately will help ensure stand-ups remain effective and useful over time.
 
-### Same Time Everyday
+### Same Time Every weekday
 
-Stand-up should be held at the same time each day. The meeting time should be mutually agreed-upon by the contributors, and should take into consideration time zones, working schedules, and other factors so that every team member can reasonably participate.
+Stand-up should be held at the same time each weekday. The meeting time should be mutually agreed-upon by the contributors, and should take into consideration time zones, working schedules, and other factors so that every team member can reasonably participate.
 
-### Schedule Stand-ups for Mid-Morning
+### Multiple Time zones
 
-Many teams find that the ideal time for stand-ups is between 9 and 10am. This provides ample time for team members to get into the office, settle in, and catch up with where they left off the day before. It's also early enough to help developers to plan their day around new work items.
+For team members distributed across time zones, consider scheduling the stand-up at the best convenient time within the time zone that has the most team members.
 
-For teams distributed across time zones, consider scheduling standup between 9 and 10am within the time zone that has the most team members.
+> **Tip**: Whenever you have a large difference between the time zones, consider scheduling the stand up in such a way it does not occur at an inconvenient time for the same time zone every day.
 
 ### Contributors Unable to Attend (async updates)
 
-If a contributor knows that they will have to miss the stand-up, ask them to provide their answers to the 3 questions in written form before the stand-up. They could provide these over a shared Teams channel or email to the team. The process lead can then read the answers during the stand-up. Reading the update aloud during the stand-up will ensure the answers are communicated to the team.
+If a contributor knows that they will have to miss the stand-up, ask them to provide their answers to the 3 questions in written form before the stand-up. They could provide these over a shared Teams channel or email to the team. The Process Lead can then read the answers during the stand-up. Reading the update aloud during the stand-up will ensure the answers are communicated to the team.
+
+### Remote Located Team Members
+
+If any team member is working remotely, plan to run stand-ups through conference calls. Ask the team members to keep the camera on as much as possible so that they can see each other when speaking against the 3 questions.
+
+> **Tip**: In order to keep the remote stand-up as efficient, in a good pace and with the collective sense as it is in a physically located stand-up, you can agree on applying a "pick the next one approach" in which the current contributor to speak picks the next in a loop until everyone with contributions had answered the 3 questions.
+
+## Resources
+
+- [Daily Scrum - Tips & Tactics](https://www.scrum.org/resources/blog/daily-scrum-tips-tactics)

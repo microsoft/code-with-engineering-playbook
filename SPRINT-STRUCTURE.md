@@ -15,7 +15,7 @@ The purpose of this document is to:
   - [Definition of Ready](agile-development/team-agreements/definition-of-ready/readme.md)
   - [Definition of Done](agile-development/team-agreements/definition-of-done/readme.md)
   - [Estimation](agile-development/sprint-planning/estimation/readme.md)
-- [ ] [Set up the repository/repositories](source-control/contributing/readme.md#creating-a-new-repository)
+- [ ] [Set up the repository/repositories](source-control/readme.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
 - [ ] [Build a Product Backlog](agile-development/backlog-management/readme.md)
@@ -33,13 +33,13 @@ The purpose of this document is to:
   - Discuss the purpose and goals of tests and how to measure test coverage
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
-- [ ] [Decide on branch naming](source-control/contributing/readme.md#naming-branches)
+- [ ] [Decide on branch naming](source-control/contributing/naming-branches.md)
 - [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch.md)
 
 ### Day 2
 
 - [ ] [Set up Source Control](source-control/readme.md)
-  - Agree on [best practices for commits](source-control/contributing/readme.md#commit-best-practices)
+  - Agree on [best practices for commits](source-control/readme.md#commit-best-practices)
 - [ ] [Set up basic Continuous Integration with linters and automated tests](continuous-integration/readme.md)
 - [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/stand-ups/readme.md)
   - Discuss purpose, goals, participants and facilitation guidance
@@ -50,7 +50,7 @@ The purpose of this document is to:
 
 - [ ] [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
 - [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/team-agreements/definition-of-done/readme.md)
-- [ ] [Agree on a Code Merging strategy](source-control/contributing/readme.md#merge-strategies) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
+- [ ] [Agree on a Code Merging strategy](source-control/contributing/merge-strategies.md) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
 - [ ] [Agree on logging and observability frameworks and strategies](observability/readme.md)
 
 ### Day 4
@@ -67,7 +67,7 @@ The purpose of this document is to:
 - [ ] [Conduct a Retrospective](agile-development/retrospectives/readme.md)
   - Determine required participants, how to capture input (tools) and outcome
   - Set a timeline, and discuss facilitation, meeting structure etc.
-- [ ] [Groom the Backlog](agile-development/backlog-management/grooming/readme.md)
+- [ ] [Refine the Backlog](agile-development/backlog-management/refinement/readme.md)
   - Determine required participants
   - Update the [Definition of Ready](agile-development/team-agreements/definition-of-ready/readme.md)
   - Update estimates, and the [Estimation](agile-development/sprint-planning/estimation/readme.md) document

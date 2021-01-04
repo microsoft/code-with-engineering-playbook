@@ -2,7 +2,7 @@
 
 ## Link to the design document that prompted this PR
 
-- Provide a link to the design document relevant to this area.
+- Provide a link to the [design document](../design-reviews/recipes/async-design-reviews.md) relevant to this area.
 
 ## What are you trying to address
 

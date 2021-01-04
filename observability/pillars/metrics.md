@@ -38,7 +38,7 @@ Items of concern to some may include:
 
 System critical measurements that relate to the application/machine health, which are usually excellent alert candidates. Work with your engineering and devops peers to identify the metrics, but they may include:
 
-- CPU and memory utilisation.
+- CPU and memory utilization.
 - Request rate.
 - Queue length.
 - Unexpected exception count.

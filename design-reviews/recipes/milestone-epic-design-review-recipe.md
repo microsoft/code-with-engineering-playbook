@@ -11,7 +11,7 @@ Design at epic/milestone level can help the team make better decisions about pri
 * Tech Lead can usually provide guidance on whether a given epic/milestone needs a design review and can help other team members in preparation.
 * This is *not* a strict template that must be followed and teams should not be bogged down with polished "design presentations".
 * Think of the recipe below as a "menu of options" for potential questions to think through in designing this epic. Not all sections are required for every epic. Focus on sections and questions that are most relevant for making the decision and rationalizing the trade offs.
-* Milestone/epic design is considered high-level design but is usually more detailed than the design included in the Game Plan, but will likely re-use some of the technologies, non-functional requirements, and constraints mentioned in the Game Plane.
+* Milestone/epic design is considered high-level design but is usually more detailed than the design included in the Game Plan, but will likely re-use some of the technologies, non-functional requirements, and constraints mentioned in the Game Plan.
 * As the team learned more about the project and further refined the scope of the epic, they may specifically call out notable changes to the overall approach and, in particular, highlight any unique deployment, security, private, scalability, etc. characteristics of this milestone.
 
 ## Template

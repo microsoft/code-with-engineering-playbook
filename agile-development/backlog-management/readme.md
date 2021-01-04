@@ -2,6 +2,6 @@
 
 ## Sections within Backlog Management
 
-* [Grooming](grooming/readme.md)
+* [Refinement](refinement/readme.md)
 * [Minimal slices](minimal-slices.md)
 * [External feedback](external-feedback.md)
