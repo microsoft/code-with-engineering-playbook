@@ -45,7 +45,7 @@ As much as possible, configuration and management of observability assets such a
 - Configuration and management of observability assets like alert threshold, duration, configuration
 values using IAC help us in avoiding configuration mistakes, errors or overlooks during deployment.
 
-- While practicing observability as code, the changes can be reviewed by the team similar to other code
+- When practicing observability as code, the changes can be reviewed by the team similar to other code
 contributions.
 
 ## Recommended Practices
