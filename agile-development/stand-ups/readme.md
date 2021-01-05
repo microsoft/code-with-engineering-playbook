@@ -78,7 +78,7 @@ If a contributor is not working on an existing sprint task they need to either c
 
 ### Parking Lot Discussion Items
 
-As contributors are answering the three questions, if another contributor has a question or issue to share, they should reserve until after all contributors have answered finished. Once each member has answered all three questions, the process lead should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
+As contributors are answering the three questions, if another contributor has a question or issue to share, they should reserve until after all contributors have answered finished. Once each member has answered all three questions, the Process Lead should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
 
 > Parking lot discussions are optional for participants.
 

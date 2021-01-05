@@ -48,7 +48,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 
 ## Process Lead
 
-The process lead is responsible for leading any scrum or agile practices to enable the project to move forward.
+The Process Lead is responsible for leading any scrum or agile practices to enable the project to move forward.
 
 - Facilitate standup meetings and hold team accountable for attendance and participation.
 - Keep the meeting moving as described in the [Project Standup](../../stand-ups/readme.md) page.
