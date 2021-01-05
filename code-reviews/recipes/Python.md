@@ -16,13 +16,33 @@ Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `pytho
 
 ### Flake8
 
-Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA/pyflakes) (for detecting coding errors), [`pycodestyle`](https://github.com/PyCQA/pycodestyle) (for pep8) and [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)).
+Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA/pyflakes) (for detecting coding errors), [`pycodestyle`](https://github.com/PyCQA/pycodestyle) (for pep8) and [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)). However, pydocstyle and pep8-naming tools are not automatically installed with Flake8 and must be installed as plugins for Flake8. 
 
 Install `Flake8`
 
 ```bash
 pip install flake8
 ```
+
+Install [`Flake8-Docstrings`](https://github.com/PyCQA/flake8-docstrings)
+
+```bash
+pip install flake8-docstrings
+```
+
+(Optional) Set the pydocstyle naming convention, default is pep257. ie:
+
+```bash
+pip install flake8 --docstring-convention numpy ...
+```
+
+Install [`Pep 8 Naming Conventions`](https://github.com/PyCQA/pep8-naming)
+
+```bash
+pip install pep8-naming
+```
+
+When flake8, flake8-docstrings, and pep8-naming are installed, the plugins are available in flake8.
 
 Run `Flake8`
 
