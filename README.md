@@ -2,9 +2,9 @@
 
 An engineer working for a [CSE](./CSE.md) project...
 
-* Has responsibilities to their team – mentor, coach, and lead.
+* Has responsibilities to their team – mentor, coach, and dev lead.
 * Knows their **playbook**. Follows their playbook. Fixes their playbook if it is broken. If they find a better playbook, they copy it. If somebody could use your playbook, give them yours.
-* Leads by example. Models the behaviors we desire both interpersonally and technically.
+* Dev leads by example. Models the behaviors we desire both interpersonally and technically.
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 
 This is our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.

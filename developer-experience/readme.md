@@ -45,9 +45,9 @@ How long does it take to make a change that can be verified/tested locally. A lo
 
 Providing a positive developer experience is a team effort. However, certain members can take ownership of different areas to help hold the entire team accountable.
 
-### Lead - Set the bar
+### Dev Lead - Set the bar
 
-The following are examples of how the Lead might set the bar for dev experience
+The following are examples of how the dev lead might set the bar for dev experience
 
 - Determines development environment (suggested IDE, hosting, etc)
 - Determines source control environment and number of repos required
@@ -61,7 +61,7 @@ IDE choice is NOT intended to mandate that all team members must use the same ID
 The DevEx champion takes ownership in holding the team accountable for providing a positive developer experience. The following outline responsibilities for the DevEx champion.
 
 - Actively seek opportunities for improving the solution developer experience
-- Work with the lead to iteratively improve team expectations for developer experience
+- Work with the dev lead to iteratively improve team expectations for developer experience
 - Curate a backlog actionable stories that identify areas for improvement and prioritize with respect to project delivery goals by engaging directly with the Product Owner and Customer.
 - Serve as subject matter expert for the rest of the team. Help the team determine how to implement DevEx expectations and identify deviations.
 

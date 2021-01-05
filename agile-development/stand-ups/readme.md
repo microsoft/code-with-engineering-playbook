@@ -28,7 +28,7 @@ The entire team should attend the stand-up. Anyone that worked on a task towards
 - Product Owner (Optional)
 - Program Manager (Required)
 - Dev Manager (Required)
-- Lead + Contributors (Required)
+- Dev Lead + Contributors (Required)
 
 ## Impact
 
