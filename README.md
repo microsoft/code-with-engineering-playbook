@@ -17,7 +17,7 @@ This is our playbook. All contributions welcome! Please feel free to submit a pu
 
 ## "The" Checklist
 
-If you do nothing else follow the [Tech Lead's Checklist](TECH-LEADS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals.
+If you do nothing else follow the [Engineering Fundamentals Checklist](ENG-FUNDAMENTALS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals.
 
 ## Structure of a Sprint
 
@@ -38,7 +38,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 ## QuickLinks
 
-* [Tech Lead's Checklist](TECH-LEADS-CHECKLIST.md)
+* [Engineering Fundamentals Checklist](Engineering Fundamentals Checklist.md)
 * [Structure of a Sprint](SPRINT-STRUCTURE.md)
 
 ## Engineering Fundamentals
