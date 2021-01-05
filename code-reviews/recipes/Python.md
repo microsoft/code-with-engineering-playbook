@@ -16,7 +16,7 @@ Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `pytho
 
 ### Flake8
 
-Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA/pyflakes) (for detecting coding errors), [`pycodestyle`](https://github.com/PyCQA/pycodestyle) (for pep8) and [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)). However, pydocstyle and pep8-naming tools are not automatically installed with Flake8 and must be installed as plugins for Flake8. 
+Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA/pyflakes) (for detecting coding errors), [`pycodestyle`](https://github.com/PyCQA/pycodestyle) (for pep8) and [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)). However, pydocstyle and pep8-naming tools are not automatically installed with Flake8 and must be installed as plugins for Flake8.
 
 Install `Flake8`
 
