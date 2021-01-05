@@ -1,8 +1,8 @@
 # Shadow Testing
 
-Shadow testing is one of the useful approaches when you consider to replace the current environment (V-Current) with candidate environment with new feature (V-Next). This approach reduces all the risks before you introduce a new feature/release. Main purpose is monitoring/capturing V-Next and comparing with V-Current.
+Shadow testing is one of the useful approaches to reduce risks when you consider to replace the current environment (V-Current) with candidate environment with new feature (V-Next). This approach is monitoring and capturing differences between two environments then compare and reduces all risks before you introduce a new feature/release.
 
-This approach is also known as "Shadow Deployment", "Shadowing Traffic" or "Dark launching"
+This approach is also known as "Shadow Deployment" or "Shadowing Traffic" and similarities with "Dark launching"
 
 In our test cases, code coverage is very important however sometimes providing code coverage can be tricky to replicate real-life combinations and possibilities. In this approach, to test V-Next environment we have side by side deployment, we're replicating the same traffic with V-Current environment and directing same traffic to V-Next environment, the only difference is we don't return any response from V-Next environment to users.
 
