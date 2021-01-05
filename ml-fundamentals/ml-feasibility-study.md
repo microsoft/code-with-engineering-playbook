@@ -1,6 +1,6 @@
 # ML Feasibility Studies
 
-The main goal of Machine Learning (ML) feasibility studies is to assess whether the problem in question is feasible to solve satisfactorily using ML with the available data. They work to mitigate the potential for over-investment before there exists:
+The main goal of Machine Learning (ML) feasibility studies is to assess whether it is feasible to solve the problem satisfactorily using ML with the available data. We want to avoid investing too much in the solution before we have:
 
 * Sufficient evidence that a ML solution would be the best technical solution given the business case
 * Sufficient evidence that a ML solution is possible
@@ -10,19 +10,30 @@ This effort ensures quality solutions backed by the appropriate, thorough amount
 
 ## When are ML feasibility studies useful?
 
-Every engagement with a ML component, potentially excluding purely ML Ops engagements focusing on operationalization of existing solutions, can benefit from a ML feasibility study early in the project. Architectural discussions can still occur in parallel as the team works towards a gaining solid understanding and definition of what will be built. Feasibility studies can last between 3-12 weeks, depending on specific problem details, volume of data, state of the data etc. Starting with a 3 week milestone might be useful, during which it can be determined how much more time, if any, is required for completion.
+Every engagement with a ML component, potentially excluding pure ML Ops engagements, can benefit from a ML feasibility study early in the project.
+
+Architectural discussions can still occur in parallel as the team works towards a gaining solid understanding and definition of what will be built.
+
+Feasibility studies can last between 3-12 weeks, depending on specific problem details, volume of data, state of the data etc. Starting with a 3 week milestone might be useful, during which it can be determined how much more time, if any, is required for completion.
 
 ## Who collaborates on ML feasibility studies?
 
-Collaboration from individuals with diverse skillsets is desired at this stage, including data scientists, data engineers, software engineers and PMs. It embraces the use of engineering fundamentals, with some flexibility. For example, not all experimentation requires full test coverage and code review. Experimentation is typically not part of a CI/CD pipeline. Artifacts may live in the master branch as a folder excluded from the CI/CD pipeline, or as a separate experimental branch, depending on customer/team preferences.
+Collaboration from individuals with diverse skillsets is desired at this stage, including data scientists, data engineers, software engineers, PMs and domain experts. It embraces the use of engineering fundamentals, with some flexibility. For example, not all experimentation requires full test coverage and code review. Experimentation is typically not part of a CI/CD pipeline. Artifacts may live in the master branch as a folder excluded from the CI/CD pipeline, or as a separate experimental branch, depending on customer/team preferences.
 
 ## What do ML feasibility studies entail?
 
 ### ML problem definition and desired outcome
 
-* Ensuring that the problem is complex enough that coding rules or manual scaling is unrealistic
+* Ensure that the problem is complex enough that coding rules or manual scaling is unrealistic
 * Clear definition of the problem from the ML perspective
 * Definition of precisely what will the ML component solve
+
+### Data access
+
+* Verify that the full team has access to the data
+* Set up a dedicated and/or restricted environment if required
+* Perform any required de-identification or redaction of sensitive information
+* Understand data acess requirements (retention, role-based access, etc.)
 
 ### Data discovery
 
@@ -42,8 +53,8 @@ Collaboration from individuals with diverse skillsets is desired at this stage, 
 ### Exploratory data analysis (EDA)
 
 * Data deep dive
-* Understand feature value distributions
-* Understand feature correlations
+* Understand feature and label value distributions
+* Understand correlations among features and between features and labels
 * Understand data specific problem constraints like missing values, categorical cardinality, potential for data leakage etc.
 * Identify any gaps in data that couldn’t be identified in the data discovery phase
 * Pave the way of further understanding of what techniques are applicable
@@ -59,12 +70,12 @@ Collaboration from individuals with diverse skillsets is desired at this stage, 
 
 ### Hypothesis testing
 
-* Design several potential solutions using theoretically applicable algorithms and techniques
+* Design several potential solutions using theoretically applicable algorithms and techniques, starting with the simplest reasonable baseline
 * Train model(s)
 * Evaluate performance and determine if satisfactory
 * Tweak experimental solution designs based on outcomes
 * Iterate
-  * Thoroughly document each step and outcome, plus any resulting hypotheses for easy following of the decision making process
+* Thoroughly document each step and outcome, plus any resulting hypotheses for easy following of the decision making process
 
 ### Risk assessment
 
@@ -79,14 +90,14 @@ Collaboration from individuals with diverse skillsets is desired at this stage, 
 
 ### Possible outcomes
 
-If this process does not produce sufficient evidence, aligned to the pre-determined performance measures and business impact, to support the hypothesis that this problem can be solved using ML
+If there is not enough evidence to support the hypothesis that this problem can be solved using ML, as aligned with the pre-determined performance measures and business impact
 
 * We reject this hypothesis and the feasibility study fails
-* May scope down the project without ML, if applicable
-* May look at re-scoping the problem taking into account the findings of the feasibility study
-* Assess the possibility to collect more data or improve data quality
+* We may scope down the project without ML, if applicable
+* We may look at re-scoping the problem taking into account the findings of the feasibility study
+* We assess the possibility to collect more data or improve data quality
 
-If this process does produce sufficient evidence to support the hypothesis that this problem can be solved using ML
+If there is enough evidence to support the hypothesis that this problem can be solved using ML
 
 * We accept this hypothesis and the feasibility study passes
 * We produce a feasibility summary document which details each stage of the feasibility study, outcomes and recommendations on how to proceed
