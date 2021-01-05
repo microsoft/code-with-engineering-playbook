@@ -12,7 +12,7 @@ Linting should be added to build validation, and both linting and code formattin
 
 The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherence to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give more false positives but both are good options for linting python code.
 
-Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `python extension`
+Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `python extension`.
 
 ### Flake8
 
@@ -30,7 +30,7 @@ Add an extension for the [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (fo
 pip install flake8-docstrings
 ```
 
-Add an extension for [`pep8-naming`](https://github.com/PyCQA/pep8-naming) (for [naming conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions) in pep8) tool to flake8
+Add an extension for [`pep8-naming`](https://github.com/PyCQA/pep8-naming) (for [naming conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions) in pep8) tool to flake8.
 
 ```bash
 pip install pep8-naming
