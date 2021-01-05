@@ -153,6 +153,12 @@ VS.
 
 [Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [1 solution] = MINIMUM NUMBER OF STEPS
 
+### Observability
+
+[Observability](../observability/readme.md) alleviates unforeseen challenges for the developer in a complex distributed system. It identifies project bottlenecks quicker and with more precision, enhancing performance as the developer seeks to deploy code changes. Adding observability improves the experience when identifying and resolving bugs or broken code. This results in fewer or less severe current and future production failures.
+
+There are many observability strategies a developer can use alongside best engineering practices. These resources improve the DevEx by ensuring a shared view of the complex system throughout the entire lifecycle. Observaibility in code via logging, exception handling and exposing of relevant application metrics for example, promotes the consistent visibility of real time performance. The observability pillars, [logging](../observability/pillars/logging.md), [metrics](../observability/pillars/metrics.md), and [tracing](../observability/pillars/tracing.md), detail when to enable each of the three specific types of observability.
+
 ### Minimize the Number of Repositories
 
 Splitting a solution across multiple repositories can negatively impact the above measures. This can also negatively impact other areas such as Pull Requests, Automated Testing, Continuous Integration, and Continuous Delivery. Similar to the IDE instances, the negative impact is multiplied by the number of repositories.
