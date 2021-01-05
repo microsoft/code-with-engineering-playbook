@@ -4,7 +4,7 @@ Most projects involve some type of data storage, data processing and data ops. F
 
 ## Goal
 
-This goal of this section is to help guide on some of the specifics around how to apply these fundamentals to data projects or data portions of a project.
+The goal of this section is to briefly describe how to apply the fundamentals to data heavy projects or portions of the project.
 
 ## Contents
 
@@ -24,19 +24,19 @@ Develop a common understanding of the quality of your datasets so that everyone 
 A common data quality model is `Bronze`, `Silver`, `Gold`
 
 - **Bronze:** This is a landing area for your raw datasets with no to minimal data transformations applied, and therefore are optimized for writes / ingestion. Treat these datasets as an immutable, append only store.
-- **Silver:** These are cleansed, semi-processed datasets. These conform to a known schema and predefined data invariants and might have further data augmentation applied. These are typically used by Data Scientists.
-- **Gold:** These are highly processed, highly read-optimized datasets primarily for consumption of business users. Typically, these are structured in your standard Fact and Dimension tables.
+- **Silver:** These are cleansed, semi-processed datasets. These conform to a known schema and predefined data invariants and might have further data augmentation applied. These are typically used by data scientists.
+- **Gold:** These are highly processed, highly read-optimized datasets primarily for consumption of business users. Typically, these are structured in your standard fact and dimension tables.
 
 Divide your data lake into three major areas containing your Bronze, Silver and Gold datasets.
 
-> Note: additional storage areas for malformed data, intermediate (sandbox) data, and libraries/packages/binaries are also useful when designing your storage organization
+> Note: Additional storage areas for malformed data, intermediate (sandbox) data, and libraries/packages/binaries are also useful when designing your storage organization.
 
 ## Data Validation
 
-Validate data early in your pipeline.
+Validate data early in your pipeline
 
-- Add data validation between the Bronze and Silver datasets. By validating early in your pipeline, you can ensure all succeeding datasets conform to a specific schema and known data invariants. This can also potentially prevent data pipeline failures in case of unexpected changes to the input data.
-- Data that does not pass this validation stage can be rerouted to a Malformed Record store for diagnostic purposes.
+- Add data validation between the Bronze and Silver datasets. By validating early in your pipeline, you can ensure all datasets conform to a specific schema and known data invariants. This can also potentially prevent data pipeline failures in case of unexpected changes to the input data.
+- Data that does not pass this validation stage can be rerouted to a record store dedicated for malformed data for diagnostic purposes.
 - It may be tempting to add validation prior to landing in the Bronze area of your data lake. This is generally not recommended. Bronze datasets are there to ensure you have as close of a copy of the source system data. This can be used to replay the data pipeline for both testing (i.e. testing data validation logic) and data recovery purposes (i.e. data corruption is introduced due to a bug in the data transformation code and thus the pipeline needs to be replayed).
 
 ## Idempotent Data Pipelines
@@ -62,7 +62,7 @@ Ensure data transformation code is testable
 ## Security and Configuration
 
 - Maintain a central, secure location for sensitive configuration such as database connection strings that can be accessed by the appropriate services within the specific environment.
-- On Azure this is typically solved through securing secrets in a KeyVault per environment, then having the relevant services query KeyVault for the configuration
+- On Azure this is typically solved through securing secrets in a Key Vault per environment, then having the relevant services query KeyVault for the configuration
 
 ## Observability
 
