@@ -30,7 +30,7 @@ Read on how Observability can be implemented in [Machine Learning](ml-observabil
 
 ## Observability As Code
 
-As much as possible, configuration and management of observability assets such as cloud resource provisioning, monitoring alerts and dashboards must be managed as code. Observability as Code is acheived using any one of Terraform / Ansible / ARM Templates
+As much as possible, configuration and management of observability assets such as cloud resource provisioning, monitoring alerts and dashboards must be managed as code. Observability as Code is achieved using any one of Terraform / Ansible / ARM Templates
 
 ### Why
 
