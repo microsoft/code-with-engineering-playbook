@@ -61,7 +61,8 @@ IDE choice is NOT intended to mandate that all team members must use the same ID
 The DevEx champion takes ownership in holding the team accountable for providing a positive developer experience. The following outline responsibilities for the DevEx champion.
 
 - Actively seek opportunities for improving the solution developer experience
-- Work with the dev lead to iteratively improve team expectations for developer experience
+- Work with the Dev Lead to iteratively improve team expectations for developer experience
+
 - Curate a backlog actionable stories that identify areas for improvement and prioritize with respect to project delivery goals by engaging directly with the Product Owner and Customer.
 - Serve as subject matter expert for the rest of the team. Help the team determine how to implement DevEx expectations and identify deviations.
 
