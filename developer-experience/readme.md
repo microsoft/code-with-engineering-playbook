@@ -47,7 +47,8 @@ Providing a positive developer experience is a team effort. However, certain mem
 
 ### Dev Lead - Set the bar
 
-The following are examples of how the dev lead might set the bar for dev experience
+The following are examples of how the Dev Lead might set the bar for dev experience
+
 
 - Determines development environment (suggested IDE, hosting, etc)
 - Determines source control environment and number of repos required
