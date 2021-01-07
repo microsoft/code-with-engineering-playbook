@@ -24,6 +24,7 @@ This guideline documents the Machine Learning (ML) practices in CSE. CSE works w
 * [Model readiness for production](ml-model-checklist.md) checklist.
 
 ## General guidance
+
 * [ML Process Guidance](ml-proposed-process.md)
 * [ML Fundamentals checklist](ml-fundamentals-checklist.md)
 * [Agile ML development](ml-project-management.md)
