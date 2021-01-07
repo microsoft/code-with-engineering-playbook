@@ -10,8 +10,7 @@ components:
 ## Promtail
 
 It is the agent portion of Loki. It can be used to grab logs from several different places, like var/log/ for
-example. The configuration of the Promtail is a yaml file called ```config-promtail.yml``` commonly stored at
-the  ```/usr/local/bin``` path. In this file, its described all the paths and log sources that will be
+example. The configuration of the Promtail is a yaml file called ```config-promtail.yml```. In this file, its described all the paths and log sources that will be
 aggregated on Loki Server.
 
 ## Loki Server
