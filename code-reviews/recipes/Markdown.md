@@ -140,6 +140,7 @@ Save your guidelines together with your documentation so they are easy to refer 
 - Use active voice
 - Spell check and grammar check the text
 - Always follow chronological order
+- Visit [Plain English](https://plainenglish.co.uk/how-to-write-in-plain-english.html) for tips on how to write documentation that is easy to understand.
 
 ### Document Organization
 
