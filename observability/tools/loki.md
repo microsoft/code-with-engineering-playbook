@@ -16,7 +16,7 @@ aggregated on Loki Server.
 
 ## Loki Server
 
-Responsible for receiving and storing all the logs received from all the different systems. The Loki is also
+Loki Server is responsible for receiving and storing all the logs received from all the different systems. The Loki Server is also
 responsible for the queries done on Grafana, for example.
 
 ## Grafana Dashboards
