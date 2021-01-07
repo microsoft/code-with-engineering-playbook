@@ -1,7 +1,7 @@
 # Loki
 
 Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system, created by Grafana
-Labs inspired by the learnings from Prometheus. Loki is commonly referred as Prometheus but for logs, which
+Labs inspired by the learnings from Prometheus. Loki is commonly referred as 'Prometheus, but for logs', which
 makes total sense once both tools follow the same architecture, which is a agent collecting metrics in each
 of the components of the software system, a server which stores the logs and also the Grafana dashboard, which
 access the loki server to build its visualizations and queries. That being said, Loki has three main
