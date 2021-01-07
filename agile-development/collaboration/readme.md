@@ -73,4 +73,5 @@ Knowledge sharing and bringing CSE and customer engineers together in a ‘code-
 ## Resources
 
 - [On Pair Programming - Martin Fowler](https://martinfowler.com/articles/on-pair-programming.html)
-- [Pair Programming hands-on lessons](https://github.com/The-V8/pair-programming-sessions)
+
+- [Pair Programming hands-on lessons](https://github.com/The-V8/pair-programming-sessions) - these can be used (and adapted) to support bringing pair programming into your team (MS internal or including customers)
