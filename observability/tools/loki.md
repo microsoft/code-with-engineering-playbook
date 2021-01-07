@@ -2,14 +2,14 @@
 
 Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system, created by Grafana
 Labs inspired by the learnings from Prometheus. Loki is commonly referred as Prometheus but for logs, which
-makes total sense once both tools follow the same architecture, which is a agent collecting metrics in each
+makes total sense as both tools follow the same architecture, which is an agent collecting metrics in each
 of the components of the software system, a server which stores the logs and also the Grafana dashboard, which
 access the loki server to build its visualizations and queries. That being said, Loki has three main
 components:
 
 ## Promtail
 
-Its the agent portion of Loki. It can be used to grab metrics from several different places, like var/log/ for
+Its the agent portion of Loki. It can be used to grab logs from several different places, like var/log/ for
 example. The configuration of the Promtail is a yaml file called ```config-promtail.yml``` commonly store on
 the  ```/usr/local/bin``` path. In this file, its described all the paths and log sources that will be
 aggregated on Loki Server.
