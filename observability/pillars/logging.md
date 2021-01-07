@@ -47,7 +47,7 @@ This approach isn't without trade-offs:
 - Ensure a downstream system malfunction won't cause repetitive logs being stored.
 - Don't reinvent the wheel, use existing tools to collect and analyse the data.
 - Ensure personal identifiable information policies and restrictions are followed.
-- Ensure errors and exceptions in dependent services are captured and logged. For example if application is using redis cache or service bus then any errors/exceptions raised while accessing these services should be captured and logged. Also proper alerting should be setup for failures in dependent services. For example, if redis cache is throwing 10 exceptions in last 60 sec then alert should be created so that proper action to resolve this can be taken.
+- Ensure errors and exceptions in dependent services are captured and logged. For example, if an application uses Redis cache, Service Bus or any other service, any errors/exceptions raised while accessing these services should be captured and logged. It is also important that proper alerting be setup for failures in these dependent services. For example, if Redis cache is throwing 10 exceptions in last 60 secs, proper alerts are recommended to be created so that these failures are surfaced and action be taken.
 
 ### If there's sufficient log data, is there a need for instrumenting metrics?
 
