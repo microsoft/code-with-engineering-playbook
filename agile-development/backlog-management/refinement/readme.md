@@ -16,7 +16,7 @@
 
 What are the intended outcomes of the ceremonies?
 
-Backlog refinement or formerly known as [backlog grooming](https://www.agilealliance.org/glossary/backlog-grooming/) is when the [product owner](https://www.agilealliance.org/glossary/product-owner/) and some, or all, of the rest of the team review items on the backlog to ensure the backlog contains the appropriate items, that they are prioritized, and that the items at the top of the backlog are ready for development. This activity occurs on a regular basis and may be an officially scheduled meeting or an ongoing activity.
+[Backlog refinement](https://www.agilealliance.org/glossary/backlog-grooming/) is when the [product owner](https://www.agilealliance.org/glossary/product-owner/) and some, or all, of the rest of the team review items on the backlog to ensure the backlog contains the appropriate items, that they are prioritized, and that the items at the top of the backlog are ready for development. This activity occurs on a regular basis and may be an officially scheduled meeting or an ongoing activity.
 
 ## Participation
 

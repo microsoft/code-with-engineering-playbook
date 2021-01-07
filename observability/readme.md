@@ -12,7 +12,8 @@ Building observable systems enables development teams at CSE to measure how well
 ## Sections
 
 - [Pillars of Observability](#pillars-of-observability)
-- [Observability in Machine Learning](ml-observability.md)
+- [Observability in Machine Learning](#ml-observability.md)
+- [Observability As Code](#observability-as-code)
 - [Recommended Practices](#recommended-practices)
 - [Logs vs Metrics](log-vs-metric.md)
 - [Recipes](#recipes)
@@ -26,6 +27,26 @@ Building observable systems enables development teams at CSE to measure how well
 ## Observability in Machine Learning
 
 Read on how Observability can be implemented in [Machine Learning](ml-observability.md) engagements effectively during Model tuning, experimentation and deployment.
+
+## Observability As Code
+
+As much as possible, configuration and management of observability assets such as cloud resource provisioning, monitoring alerts and dashboards must be managed as code. Observability as Code is achieved using any one of Terraform / Ansible / ARM Templates
+
+### Why
+
+- It makes configuration repeatable and automatable. It also avoids manual configuration of monitoring alerts and dashboards from scratch across environments.
+
+- Configured dashboards help troubleshoot errors during integration and deployment (CI/CD)
+
+- We can audit changes and roll them back if there are any issues.
+
+- Identify actionable insights from the generated metrics data across all environments, not just production.
+
+- Configuration and management of observability assets like alert threshold, duration, configuration
+values using IAC help us in avoiding configuration mistakes, errors or overlooks during deployment.
+
+- When practicing observability as code, the changes can be reviewed by the team similar to other code
+contributions.
 
 ## Recommended Practices
 
