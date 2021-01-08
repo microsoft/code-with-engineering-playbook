@@ -1,0 +1,11 @@
+{
+    "ignorePatterns": [
+        {"pattern": "^./INSERT_URL_TO_ISSUE"},
+        {"pattern": "^./link-to-the-work-item"},
+        {"pattern": "^https://portal.azure.com"},
+        {"pattern": "^http://link-to-feature-or-story-work-item"},
+        {"pattern": "^http://link-to-task-work-item"},
+        {"pattern": "^http://link-to-story-work-item"},
+        {"pattern": "^http://link-to-work-item"}
+    ]
+}

@@ -87,7 +87,7 @@ The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemNa
 
 ## Build validation
 
-To automate linting with `markdownlint` for PR [validation in GitHub actions](.github\workflows\markdownlint.yml) as we do in this repo, use the following YAML.
+To automate linting with `markdownlint` for PR [validation in GitHub actions](../../.github/workflows/markdownlint.yml)(.github\workflows\markdownlint.yml) as we do in this repo, use the following YAML.
 
 ```yaml
 name: Markdownlint
@@ -118,8 +118,6 @@ jobs:
 ```
 
 ## Code Review Checklist
-
-Apart from the items on the [Code Review Checklist](../README.md) you should also look for these markdown specific code review items
 
 - [ ] Is the document easy to read and understand and does it follow [good writing guidelines](#writing-style-guidelines)?
 - [ ] Is there a single source of truth or is content repeated in more than one document?
