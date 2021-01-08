@@ -214,6 +214,8 @@ At the next attempted commit any lint failures will block the commit.
 
 ## Code Review Checklist
 
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these python specific code review items
+
 * [ ] Are all new packages used included in requirements.txt
 * [ ] Does the code pass all lint checks?
 * [ ] Do functions use type hints, and are there any type hint errors?

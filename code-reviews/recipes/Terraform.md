@@ -67,6 +67,8 @@ terraform validate
 
 ## Code Review Checklist
 
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these Terraform specific code review items
+
 * [ ] Are all providers used in the terraform scripts [versioned](https://www.terraform.io/docs/configuration/providers.html#provider-versions) to prevent breaking changes in the future?
 * [ ] Are modules split into separate `.tf` files where appropriate?
 * [ ] Does the repository contain a `README.md` describing the architecture provisioned?

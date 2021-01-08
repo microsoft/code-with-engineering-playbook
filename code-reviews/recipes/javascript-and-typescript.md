@@ -143,6 +143,8 @@ As an alternative [husky](https://github.com/typicode/husky) can be considered t
 
 ## Code Review Checklist
 
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these javascript specific code review items
+
 * [ ] Does the code stick to our formatting and code standards? Does running prettier and ESLint over the code should yield no warnings or errors respectively?
 * [ ] Does the change re-implement code that would be better served by pulling in a well known module from the ecosystem?
 * [ ] Does TypeScript code compile without raising linting errors

@@ -119,6 +119,8 @@ jobs:
 
 ## Code Review Checklist
 
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these documentation specific code review items
+
 - [ ] Is the document easy to read and understand and does it follow [good writing guidelines](#writing-style-guidelines)?
 - [ ] Is there a single source of truth or is content repeated in more than one document?
 - [ ] Is the documentation up to date with the code?
