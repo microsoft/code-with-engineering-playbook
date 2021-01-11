@@ -31,7 +31,7 @@ Read on how Observability can be implemented in [Machine Learning](ml-observabil
 
 1. **Correlation Id**: Include unique identifier at the start of the interaction to tie down aggregated data from various system components and provide a holistic view. Read more guidelines about using [correlation id](correlation-id.md).
 2. Ensure health of the services are **monitored** and provide insights into system's performance and behavior.
-3. Ensure **dependent services** are monitored properly. Errors and exceptions in dependent services like redis cache, service bus etc. should be logged and alerted. Also metrics related to dependent services should be captured and logged.
+3. Ensure **dependent services** are monitored properly. Errors and exceptions in dependent services like Redis cache, Service bus, etc. should be logged and alerted. Also metrics related to dependent services should be captured and logged.
 4. **Faults, crashes, and failures** are logged as discrete events. This helps engineers identify problem area(s) during failures.
 5. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.
 6. Ensure that **metrics** around latency and duration are collected and can be aggregated.
