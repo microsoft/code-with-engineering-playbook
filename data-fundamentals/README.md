@@ -74,5 +74,5 @@ Monitor infrastructure, pipelines and data
 
 The [DataOps for the Modern Data Warehouse repo](https://github.com/Azure-Samples/modern-data-warehouse-dataops) contains both end-to-end and technology specific samples on how to implement DataOps on Azure.
 
-![CI/CD](CI_CD_process.png "CI/CD")
+![CI/CD](CI_CD_process.png?raw=true "CI/CD")
 Image: CI/CD for Data pipelines on Azure - from DataOps for the Modern Data Warehouse repo
