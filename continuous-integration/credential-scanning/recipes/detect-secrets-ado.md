@@ -11,7 +11,7 @@ Proposed Azure DevOps Pipeline contains multiple steps described below:
 1. Set Python 3 as default
 1. Install detect-secrets using pip
 1. Run detect-secrets tool
-   > NOTE: In this example, the tool gets additional parameters. The most important is `--custom-plugins`, which points to the  custom plugin for Azure Storage Account Key detection.
+   > NOTE: In this example, the tool gets additional parameters. The most important is `--custom-plugins`, which points to the custom plugin for Azure Storage Account Key detection.
    > This plugin is not part of the official YELP detect-secrets yet, so you have to provide it in your codebase. Reference code you can find under the [Custom plugin example](#custom-plugin-example) section.
 1. Publish results in the Pipeline Artifact
    > NOTE: It's an optional step, but for future investigation .json file with results may be helpful.
