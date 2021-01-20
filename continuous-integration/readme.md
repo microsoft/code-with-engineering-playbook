@@ -157,7 +157,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
   - Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
 - [ ] **Branch policy enforcement**
-  - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/configuring-protected-branches) should be setup on the main branch to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
+  - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/about-protected-branches) should be setup on the main branch to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
   - Broken builds should block pull request reviews.
   - Prevent commits directly into main branch.
 
