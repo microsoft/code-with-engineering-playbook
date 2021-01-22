@@ -47,6 +47,7 @@ This approach isn't without trade-offs:
 - Ensure a downstream system malfunction won't cause repetitive logs being stored.
 - Don't reinvent the wheel, use existing tools to collect and analyse the data.
 - Ensure personal identifiable information policies and restrictions are followed.
+- Ensure errors and exceptions in dependent services are captured and logged. For example, if an application uses Redis cache, Service Bus or any other service, any errors/exceptions raised while accessing these services should be captured and logged.
 
 ### If there's sufficient log data, is there a need for instrumenting metrics?
 

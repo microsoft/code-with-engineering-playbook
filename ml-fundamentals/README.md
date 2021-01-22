@@ -18,20 +18,17 @@ This guideline documents the Machine Learning (ML) practices in CSE. CSE works w
 ![Project flow](flow.png)
 
 * Envisioning: Initial problem understanding, customer goals and objectives.
-* Feasibility study: Assess whether the problem in question is feasible to solve satisfactorily using ML with the available data.
+* [Feasibility study](ml-feasibility-study.md): Assess whether the problem in question is feasible to solve satisfactorily using ML with the available data.
 * Kickoff: Define the scope, objectives, high-level architecture, definition of done and plan for the entire project.
 * [Model(s) experimentation](ml-experimentation.md): Tools and best practices for conducting successful model experimentation.
 * [Model readiness for production](ml-model-checklist.md) checklist.
-  
+
 ## General guidance
 
+* [ML Process Guidance](ml-proposed-process.md)
 * [ML Fundamentals checklist](ml-fundamentals-checklist.md)
 * [Agile ML development](ml-project-management.md)
 * [Testing Data Science and ML Ops code](ml-testing.md)
-
-### ML project phases
-
-* [Model Readiness for Production](ml-model-checklist.md)
 
 ## References
 
