@@ -11,8 +11,8 @@ When requesting a security review for your application, please make sure you hav
 ## Quick References
 
 * [Secure Coding Practices Quick Reference](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
-* [Web Application Security Quick Reference](https://www.owasp.org/images/0/09/OWASP_Web_Application_Security_Quick_Reference_Guide_0.3.pdf)
-* [Security Mindset/Creating a Security Program Quick Start](https://www.owasp.org/images/5/53/OWASP_Quick_Start_Guide.pdf)
+* [Web Application Security Quick Reference](https://owasp.org/www-pdf-archive//OWASP_Web_Application_Security_Quick_Reference_Guide_0.3.pdf)
+* [Security Mindset/Creating a Security Program Quick Start](https://github.com/OWASP/Quick-Start-Guide/blob/master/OWASP%20Quick%20Start%20Guide.pdf?raw=true)
 
 ## Azure DevOps Security
 
