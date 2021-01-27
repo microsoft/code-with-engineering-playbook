@@ -12,10 +12,10 @@ Follow this link to dive deeper or revisit the [DevTest pattern](https://docs.mi
 
 ## Table of Contents
 
-[Build the Container](#Build-The-Container)  
-[Test the Container](#Test-the-Container)  
-[Push Container](#Push-container)  
-[References](#References)  
+[Build the Container](#Build-The-Container)
+[Test the Container](#Test-the-Container)
+[Push Container](#Push-container)
+[References](#References)
 
 ## Build the Container
 
@@ -37,7 +37,7 @@ The first step in our pipeline is to run the `docker build` command with a tempo
       docker build -t ${{ parameters.imageName }} --build-arg YOUR_BUILD_ARG -f ${{ parameters.dockerfileName }} .
   env:
     PredefinedPassword: $(Password)
-    NewVariable: "newVariableValue" 
+    NewVariable: "newVariableValue"
 ```
 
 This task includes the parameters `buildDirectory`, `imageName` and `dockerfileName`, which have to be set beforehand.
