@@ -1,10 +1,8 @@
 # Building Containers with Azure DevOps using DevTest Pattern
 
-In this documents, we highlight the learnings from the teams last project regarding how to apply
-the DevTest pattern to container development in Azure DevOps through pipelines.
+In this documents, we highlight the learnings from the teams last project regarding how to apply the DevTest pattern to container development in Azure DevOps through pipelines.
 
-The pattern enabled as to build container for development, testing
-and releasing the container for further reuse (production ready).
+The pattern enabled as to build container for development, testing and releasing the container for further reuse (production ready).
 
 We will dive into tools needed to build, test and push a container, our environment and go through each step separately.
 
@@ -19,10 +17,7 @@ Follow this link to dive deeper or revisit the [DevTest pattern](https://docs.mi
 
 ## Build the Container
 
-The first step in container development, after creating the necessary Dockerfiles and source code, is building the container.
-Even the Dockerfile itself can include some basic testing.
-In our case, the code tests are performed when pushing the code to the repository origin,
-where it is then used to build the container.
+The first step in container development, after creating the necessary Dockerfiles and source code, is building the container. Even the Dockerfile itself can include some basic testing. In our case, the code tests are performed when pushing the code to the repository origin, where it is then used to build the container.
 
 The first step in our pipeline is to run the `docker build` command with a temporary tag and the required build arguments:
 
@@ -73,9 +68,7 @@ If our known passwords that we used to access our internal resources, are expose
 ```
 
 After our credential test, the container is tested through the pytest extension [testinfra](https://testinfra.readthedocs.io/en/latest/).
-Testinfra is a Python-based tool which can be used to start a container, gather prerequisites,
-test the container and shut it down again, without any effort besides writing the tests.
-These tests can for example include:
+Testinfra is a Python-based tool which can be used to start a container, gather prerequisites, test the container and shut it down again, without any effort besides writing the tests. These tests can for example include:
 
 - if files exist
 - if environment variables are set correctly
@@ -156,8 +149,7 @@ Which could trigger the following pytest code, which is contained in the tox.ini
 pytest -vv tests/{env:CONTEXT} --container-image={posargs:{env:IMAGE_TAG}} --volume={env:VOLUME}
 ```
 
-As a last task of this pipeline to build and test the container,
-we set a variable called `testsPassed` which is only `true`, if the previous tasks succeeded:
+As a last task of this pipeline to build and test the container, we set a variable called `testsPassed` which is only `true`, if the previous tasks succeeded:
 
 ```yml
 - task: Bash@3
@@ -171,9 +163,7 @@ we set a variable called `testsPassed` which is only `true`, if the previous tas
 
 ## Push container
 
-After building and testing, if our container runs as expected, we want to release it to our
-Azure Container Registry (ACR) to be used by our larger application.
-Before that, we want to automate the push behavior and define a meaningful tag.
+After building and testing, if our container runs as expected, we want to release it to our Azure Container Registry (ACR) to be used by our larger application. Before that, we want to automate the push behavior and define a meaningful tag.
 
 As a developer it is often helpful to have containers pushed to ACR, even if they are failing.
 This can be done by checking for the `testsPassed` variable we introduced at the end of our testing.
