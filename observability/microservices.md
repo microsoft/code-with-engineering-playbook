@@ -34,20 +34,20 @@ This is an example of the four properties you can find which identify the curren
 - TraceId represent the id for current log trace.
 - ParentId is the parent span id, that in some case can be the same or something different.
 
-Imagine now that as part of the processing of this request we have to call another microservice to get data from the database. We would like to send our current SpanId as the future ParentId in the destination microservice.
+## Example
 
-| A microservice | B - microservice 1 | C - microservice 2 |
-| ----------- | ----------- | ----------- |
-| RequestId   | (New)RequestId | (New)RequestId
-| SpanId | ParentId |  |
-|  | (New)SpanId | ParentId |
-| TraceId | (New)TraceId | (New)TraceId |
+Now we are going to explore an example with 3 microservices that calls to each other in a row.
 
+![image](./microservices.png)
 
-This table summarize what can happen with two microservice that are called in a row.
+This image is the summary of what is needed in each microservice to propagate the trace-id from A to C.
 
-A -> B -> C
+The root caller is A and that is why it doesn't have a parent-id, only have a new trace-id. Next, A calls B using HTTP. To propagate the correlation information as part of the request, we are using two new headers, that based on the W3C Correlation specification, are: trace-id and parent-id. So, in this example because A is the root caller, he only sends his own trace-id to the microservice B.
 
-So the SpanId of **A** is converted into ParentId in **B**, and if as part of the same request **B** calls **C** then its own SpanId is being propagated to **C** so we can make explicit that this is a new call from **B**.
+When the microservice B received the incoming http request, checks the content of these two headers. Reads the content of the trace-id header and sets as his own parent-Id (as shown in the green rectangle inside's B). Also, create a new trace-id to signal that is a new scope for the telemetry. During the execution of the microservice B, it also calls microservice C and it's the same situation. As part of the request include the two headers and propagate trace-id and parent-id as well.
 
-Each of these three microservices have its own SpanId and TraceId and they have internal APIs to create a new SpanId or TraceId which will signal the telemetry system that a new internal operation is started. That can be used to track third party dependency or different software sub-modules within the same code.
+Finally, the microservice C, reads the value for the incoming trace-id and sets as his own parent-id, but also create a new trace-id that will use to send telemetry about his own operations.
+
+## Summary
+
+A lot of APM technology already support most of this Correlation Propagation. The most popular is [OpenZipkin/B3-Propagation](https://github.com/openzipkin/b3-propagation). But W3C already proposed recommendation for the [W3C Trace Context](https://www.w3.org/blog/2019/12/trace-context-enters-proposed-recommendation/), where you can see what SKD and frameworks already support this functionality. It's important to correctly implement the propagation specially when there are different teams that used different technology stacks in the same project.
