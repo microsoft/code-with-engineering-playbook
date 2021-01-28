@@ -1,14 +1,19 @@
 # Team Manifesto
 
-In Microsoft, CSE teams work with a new development team in each customer engagement so there is a phase of introduction & knowledge transfer before starting an engagement which takes some time to exchange ideas around the way of working and standards in order to increase the learning curve of the new team.
+## Introduction
+
+CSE teams work with a new development team in each customer engagement which requires a phase of introduction & knowledge transfer before starting an engagement.
+
+Completion of this phase of ice-breakers and discussions around the standards takes time however also required to start increasing the learning curve of the new team.
 
 A team manifesto is a soft contract among team members which summarizes the basic principles and values of the team and aiming to provide a consensus about
 expectations from each team member in order to deliver high quality output at the end of each engagement.
 
-One of the main goal of team manifesto is providing a discussion environment during the team session for building it and detects the gaps/differences in certain topics for each member.
-It also serves in the same way when a new team member joins to the team. So if a new team member reads the document and asks a question about any topic, this is a good thing to detect the improvement area and take the required actions.
+It aims to reduce the time on setting the right expectations and providing a consensus among team members as well as clarifying the question of "How does the new team develop the software?"
 
-Nearly in every engagement, teams create multiple standards/practices documents to give more comprehensive information on certain topics. The difference of team manifesto is, it is used to give a short summary of the upcoming way of working and practices to prepare a base before deep dive starts.
+Another main goal of the manifesto is providing a discussion environment during "manifesto building session" and detect the gaps/differences in certain topics for each member during these discussions.
+
+It also serves in the same way when a new team member joins to the team. It gives a short summary of standards and if the new team member asks any question about any topic, this is a good thing to understand the improvement area and take the required actions.
 
 ## How to Build a Team Manifesto
 
@@ -28,6 +33,8 @@ A few important points about team manifesto;
 - Based on the needs of the team and retrospective results, it can be modified during the engagement.
 
 In Microsoft, we have certain standards to build high quality and well-crafted software as well as to give comfortable/transparent environment to each team member for helping her/him to reach her/his highest potential.
+
+The difference of team manifesto from other comprehensive set of standards/practices documents is, it is used to give a short summary of the upcoming way of working and practices to prepare a base before deep dive starts with open discussion environment in an ice-breaker way.
 
 Below, you can find some including, but not limited, topics many teams touch during engagements,
 
