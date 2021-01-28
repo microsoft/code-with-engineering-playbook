@@ -223,7 +223,9 @@ git push origin HEAD --force
 
 Interactive rebase for undoing commits:
 
-```git rebase -i HEAD~N```
+```bash
+git rebase -i HEAD~N
+```
 
 
 The above command will open an interactive session in an editor (for example vim) with the last N commits sorted from oldest to newest. To undo a commit, delete the corresponding line of the commit and save the file. Git will rewrite the commits in the order listed in the file and because one(or many) commits were deleted, the commit will no longer be part of the history. 
@@ -233,9 +235,7 @@ Running rebase will locally modify the history, after this one can use `force` t
 
 ### Recovering lost commits
 
-If you "lost" a commit that you want to return to, for example to revert back a `git 
-
-` where your commits got squashed, you can use `git reflog` to find the commit:
+If you "lost" a commit that you want to return to, for example to revert back a ```git rebase``` where your commits got squashed, you can use ```git reflog``` to find the commit:
 
 ```bash
 git reflog
