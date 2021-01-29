@@ -50,7 +50,7 @@ Below, you can find some including, but not limited, topics many teams touch dur
 | Commit standards | Preferred format in commit messages, rules and more |
 | Clean Code | Does team follow clean code principles ? |
 | Pair/Mob Programming | Will team apply pair/mob programming ? If yes, what programming styles are suitable for the team ? |
-| Release Process | Principles around release proicess such as quality gates, reviewing process ...etc. |
+| Release Process | Principles around release process such as quality gates, reviewing process ...etc. |
 | Code Review | Any rule for code reviewing such as min number of reviewers, team rules ...etc. |
 | Action Readiness | How the backlog will be refined ? What will be the way for clear DoD and ACs ? |
 | TDD | Will team follow TDD ? |
