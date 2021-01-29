@@ -1,6 +1,6 @@
 # Building Containers with Azure DevOps using DevTest Pattern
 
-In this documents, we highlight the learnings from the teams last project regarding how to apply the DevTest pattern to container development in Azure DevOps through pipelines.
+In this documents, we highlight learnings from applying the DevTest pattern to container development in Azure DevOps through pipelines.
 
 The pattern enabled as to build container for development, testing and releasing the container for further reuse (production ready).
 
@@ -17,7 +17,7 @@ Follow this link to dive deeper or revisit the [DevTest pattern](https://docs.mi
 
 ## Build the Container
 
-The first step in container development, after creating the necessary Dockerfiles and source code, is building the container. Even the Dockerfile itself can include some basic testing. In our case, the code tests are performed when pushing the code to the repository origin, where it is then used to build the container.
+The first step in container development, after creating the necessary Dockerfiles and source code, is building the container. Even the Dockerfile itself can include some basic testing. Code tests are performed when pushing the code to the repository origin, where it is then used to build the container.
 
 The first step in our pipeline is to run the `docker build` command with a temporary tag and the required build arguments:
 
@@ -47,8 +47,8 @@ If this task succeeds, the Dockerfile was build without errors and we can contin
 To test the container, we are using the tox environment.
 For more details on tox please visit the tox section of this repository or visit [the official tox documentation page](https://tox.readthedocs.io/en/latest/example/pytest.html).
 
-Before we test the container though, we are checking for exposed credentials in the docker image history.
-If our known passwords that we used to access our internal resources, are exposed here, the build step will fail:
+Before we test the container, we are checking for exposed credentials in the docker image history.
+If known passwords, used to access our internal resources, are exposed here, the build step will fail:
 
 ```yml
 - task: Bash@3
@@ -67,7 +67,7 @@ If our known passwords that we used to access our internal resources, are expose
     PredefinedPassword: $(Password)
 ```
 
-After our credential test, the container is tested through the pytest extension [testinfra](https://testinfra.readthedocs.io/en/latest/).
+After the credential test, the container is tested through the pytest extension [testinfra](https://testinfra.readthedocs.io/en/latest/).
 Testinfra is a Python-based tool which can be used to start a container, gather prerequisites, test the container and shut it down again, without any effort besides writing the tests. These tests can for example include:
 
 - if files exist
