@@ -29,14 +29,14 @@ Always remember this process takes time. Building dashboard is easy, building an
 
 ## Recommended Tools
 
+There are many options available for visualization and dashboarding. Depending on the needs, requirements and implementation, visualization tool used might vary but the overall concept on observability would be more or less the same.
+
 - [Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview) - With Azure workbook, creating a unified interactive experience is easier. This has tight integration with Azure services making this higly customizable without extra tool.
 - [Create dashboard using log query](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-logs-dashboards) - Dashboard can be created using log query on Log Analytics data.
 - [Building dashboards using Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-app-dashboards) - Dashboards can be created using Application Insights as well.
 - [Power Bi](https://docs.microsoft.com/en-us/power-bi/create-reports/service-dashboard-create) - Power Bi is one of the easier tools to create dashboards from data sources and reports.
 - [Grafana](https://grafana.com/tutorials/) - Getting started with Grafana. Grafana is a popular open source tool for dashboarding and visualization.
 - [Azure Monitor as Grafana data source](https://grafana.com/grafana/plugins/grafana-azure-monitor-datasource) - This provides a step by step integration of Azure Monitor to Grafana. 
-
-There are many options available for visualization and dashboarding. Depending on the needs, requirements and implementation, visualization tool used might vary but the overall concept on observability would be more or less the same.
 
 [Brief comparison of various tools](https://docs.microsoft.com/en-us/azure/azure-monitor/visualizations) 
 
