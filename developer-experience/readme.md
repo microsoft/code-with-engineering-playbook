@@ -45,9 +45,9 @@ How long does it take to make a change that can be verified/tested locally. A lo
 
 Providing a positive developer experience is a team effort. However, certain members can take ownership of different areas to help hold the entire team accountable.
 
-### Tech Lead - Set the bar
+### Dev Lead - Set the bar
 
-The following are examples of how the Tech Lead might set the bar for dev experience
+The following are examples of how the Dev Lead might set the bar for dev experience
 
 - Determines development environment (suggested IDE, hosting, etc)
 - Determines source control environment and number of repos required
@@ -61,7 +61,8 @@ IDE choice is NOT intended to mandate that all team members must use the same ID
 The DevEx champion takes ownership in holding the team accountable for providing a positive developer experience. The following outline responsibilities for the DevEx champion.
 
 - Actively seek opportunities for improving the solution developer experience
-- Work with the tech lead to iteratively improve team expectations for developer experience
+- Work with the Dev Lead to iteratively improve team expectations for developer experience
+
 - Curate a backlog actionable stories that identify areas for improvement and prioritize with respect to project delivery goals by engaging directly with the Product Owner and Customer.
 - Serve as subject matter expert for the rest of the team. Help the team determine how to implement DevEx expectations and identify deviations.
 
@@ -152,6 +153,12 @@ When this is not implemented, the engineers must repeat each of the essential ta
 VS.
 
 [Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [1 solution] = MINIMUM NUMBER OF STEPS
+
+### Observability
+
+[Observability](../observability/readme.md) alleviates unforeseen challenges for the developer in a complex distributed system. It identifies project bottlenecks quicker and with more precision, enhancing performance as the developer seeks to deploy code changes. Adding observability improves the experience when identifying and resolving bugs or broken code. This results in fewer or less severe current and future production failures.
+
+There are many observability strategies a developer can use alongside best engineering practices. These resources improve the DevEx by ensuring a shared view of the complex system throughout the entire lifecycle. Observaibility in code via logging, exception handling and exposing of relevant application metrics for example, promotes the consistent visibility of real time performance. The observability pillars, [logging](../observability/pillars/logging.md), [metrics](../observability/pillars/metrics.md), and [tracing](../observability/pillars/tracing.md), detail when to enable each of the three specific types of observability.
 
 ### Minimize the Number of Repositories
 

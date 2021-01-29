@@ -9,7 +9,7 @@ Many of the code quality assurance items can be automated or enforced by policie
 * [ ] Every bug work item should include a link to the pull request that introduced it, once the error has been diagnosed. This helps with learning.
 * [ ] Each bug work item should include a note on how the bug might (or might not have) been caught in a code review.
 * [ ] The project team regularly updates their code review checklists to reflect common issues they have encountered.
-* [ ] Software engineering managers should review a sample of pull requests and/or be co-reviewers with other developers to help everyone improve their skills as code reviewers.
+* [ ] Dev Leads should review a sample of pull requests and/or be co-reviewers with other developers to help everyone improve their skills as code reviewers.
 
 ## Measures
 

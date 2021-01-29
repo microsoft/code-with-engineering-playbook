@@ -1,4 +1,4 @@
-# Tech Lead's Engineering Fundamentals Checklist
+# Engineering Fundamentals Checklist
 
 This checklist helps to ensure that our projects meet our Engineering Fundamentals.
 
@@ -53,12 +53,12 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 
 - [ ] Process Lead (fixed/rotating) to run standup daily.
 - [ ] Agile process clearly defined within team.
-- [ ] Tech Lead (+ PO/Others) have responsibility for backlog management and grooming.
+- [ ] Dev Lead (+ PO/Others) have responsibility for backlog management and refinement.
 - [ ] Working agreement between members of team and customer.
 
 ## Design Reviews
 
-- [ ] Process for conducting design reviews is included in the [Working Agreement](/agile-development/team-agreements/working-agreements/readme.md).
+- [ ] Process for conducting design reviews is included in the [Working Agreement](agile-development/team-agreements/working-agreements/readme.md).
 - [ ] Design reviews for each major component of the solution are carried out and documented, including alternatives.
 - [ ] Stories and/or PRs link to the design document.
 - [ ] Each user story includes a task for design review by default, which is assigned or removed during sprint planning.

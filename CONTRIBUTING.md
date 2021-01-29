@@ -76,7 +76,7 @@ prompted the pull request.
 ### Merging strategy
 
 The preferred merging strategy for this repo is **linear**.
-You can familiarize yourself with [merging strategies](./source-control/contributing/readme.md#merge-strategies) described in the Source Control section of this repo.
+You can familiarize yourself with [merging strategies](./source-control/contributing/merge-strategies.md) described in the Source Control section of this repo.
 
 ## Adding a new section
 
@@ -90,7 +90,7 @@ Each section consist of the following parts
    3. Describe how the concept works
 2. Detailed Description
    1. Dive into specific areas of what is described in the above summary (i.e
-   Grooming > Estimation > establish baseline estimates)
+   Refinement > Estimation > establish baseline estimates)
 3. Recipes
    1. Tool specific implementations of the concept
    2. Named patterns or games that implement the concept (usually applies to

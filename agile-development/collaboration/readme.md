@@ -7,7 +7,7 @@ In engagements we aim to be highly collaborative because when we code together, 
 
 There are two common patterns we use for collaboration: Pairing and swarming.
 
-**Pair programming** (“pairing”) - two software engineers assigned to, and working on, one shared story at a time during the sprint. The Tech Lead assigns a user story to two engineers -- one primary engineer (story owner) and one secondary engineer (pairing assignee). The definition aligns with the Agile Alliance’s [definition](https://www.agilealliance.org/glossary/pairing).
+**Pair programming** (“pairing”) - two software engineers assigned to, and working on, one shared story at a time during the sprint. The Dev Lead assigns a user story to two engineers -- one primary engineer (story owner) and one secondary engineer (pairing assignee). The definition aligns with the Agile Alliance’s [definition](https://www.agilealliance.org/glossary/pairing).
 
 **Swarm programming** (“swarming”) - three or more software engineers collaborating on a high-priority item to bring it to completion.
 
@@ -69,3 +69,9 @@ As soon the pair finds out that the PBI will warrant swarming, the pair brings i
 ## Benefits of increased collaboration
 
 Knowledge sharing and bringing CSE and customer engineers together in a ‘code-with’ manner is an important aspect of CSE engagements. This grows both our customers’ and our CSE team’s capability to build on Azure. We are responsible for demonstrating engineering fundamentals and leaving the customer in a better place after we disengage. This can only happen if we collaborate and engage together as a team. In addition to improved software quality, this also adds a beneficial social aspect to the engagements.
+
+## Resources
+
+- [On Pair Programming - Martin Fowler](https://martinfowler.com/articles/on-pair-programming.html)
+
+- [Pair Programming hands-on lessons](https://github.com/The-V8/pair-programming-sessions) - these can be used (and adapted) to support bringing pair programming into your team (MS internal or including customers)

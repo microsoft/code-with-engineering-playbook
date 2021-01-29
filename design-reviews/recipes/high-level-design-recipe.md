@@ -6,7 +6,7 @@ Design at macroscopic level shows the interactions between systems and services 
 
 ## Things to keep in mind
 
-* As with all other aspects of the project, design reviews must provide a friendly and safe environment so that any team member feels comfortable proposing a design for review and can use the opportunity to grow and learn from the constructive / non-judgemental feedback from peers and subject matter experts (see [Team Agreements](../../team-agreements)).
+* As with all other aspects of the project, design reviews must provide a friendly and safe environment so that any team member feels comfortable proposing a design for review and can use the opportunity to grow and learn from the constructive / non-judgemental feedback from peers and subject matter experts (see [Team Agreements](../../agile-development/team-agreements/readme.md)).
 * Attempt to illustrate different personas involved in the use cases and how/which boxes are their entry points.
 * Prefer pictures over paragraphs. The diagrams aren't intended to generate code so they should be fairly high level.
   * Artifacts should indicate the direction of calls (are they outbound, inbound, or bidirectional?) and call out system boundaries where ports might need to be opened or additional infrastructure work may be needed to allow calls to be made.

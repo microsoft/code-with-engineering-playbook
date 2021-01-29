@@ -85,6 +85,8 @@ The above steps also work in VS Code provided you enable Roslyn support for Omni
 
 ## Code Review Checklist
 
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these C# specific code review items
+
 * [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
 * [ ] Is the code subject to concurrency issues? Are shared objects properly protected?
 * [ ] Is dependency injection (DI) used? Is it setup correctly?

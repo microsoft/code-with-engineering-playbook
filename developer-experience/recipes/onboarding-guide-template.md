@@ -10,7 +10,7 @@ When developing an onboarding document for a team, it should contain details of 
 
 ## Contacts
 
-* List a few of the main contacts for the team and project overall such as the Tech Lead and Product Owner.
+* List a few of the main contacts for the team and project overall such as the Dev Lead and Product Owner.
 * Consider including the roles of these main contacts so that the team knows who to reach out to depending on the situation.
 
 ## Team Agreement and Code of Conduct

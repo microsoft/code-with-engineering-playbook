@@ -42,6 +42,7 @@ System critical measurements that relate to the application/machine health, whic
 - Request rate.
 - Queue length.
 - Unexpected exception count.
+- Dependent service metrics like response time for Redis cache, Sql server or Service bus.
 
 Important business-related measurements, which drive reporting to stakeholders. Consult with the various stakeholders of the component, but some examples may include:
 
