@@ -51,18 +51,29 @@ contributions.
 
 ## Observability of delivery pipelines
 
-DevOps is a critical infrastructure to an organization's software agility. With increasing complexity to delivery pipelines, it is very important to consider Observability in the context of build and release of applications.
+DevOps is a critical infrastructure to an organization's software agility. With increasing complexity to
+delivery pipelines, it is very important to consider Observability in the context of build and release of
+applications.
 
-- Having proper instrumentation during build time helps gain
-helpful insights into the various stages of the build and release process.
+- Having proper instrumentation during build time helps gain helpful insights into the various stages of
+the build and release process.
 
-- Helps to understand where the pipeline performance bottlenecks are based on the data collected. This helps in having data-driven conversations around identifying latency between jobs, performance issues, artifact upload/download times providing valuable insights into agents availability and capacity.
+- Helps to understand where the pipeline performance bottlenecks are based on the data collected. This
+helps in having data-driven conversations around identifying latency between jobs, performance issues,
+artifact upload/download times providing valuable insights into agents availability and capacity.
 
-- Reduces risk associated with test and release failures that leads to ensuring integration test coverage after a build.
+- Reduces risk associated with test and release failures that leads to ensuring integration test coverage
+after a build.
 
-- Identify the Key Performance Indicators (KPIs) for a successful delivery pipeline in the organization. Where needed, add additional tracing to better record KPI metrics. For example, adding pipeline build tags to identify a 'Release Candidate' vs 'Non-Release Candidate' helps in evaluating the end-to-end release process timeline.
+- Identify the Key Performance Indicators (KPIs) for a successful delivery pipeline in the organization.
+Where needed, add additional tracing to better record KPI metrics. For example, adding pipeline build
+tags to identify a 'Release Candidate' vs 'Non-Release Candidate' helps in evaluating the end-to-end
+release process timeline.
 
-- Adds reporting insights into the organization's delivery pipeline process.
+- Depending on the tooling used (Azure DevOps, Jenkins etc.,), basic reporting on the pipelines is
+available out-of-the-box. Evaluate the functionalities of these reports againt the KPIs to understand if
+a custom reporting solution for pipelines is needed. If required, custom dashboards can be built using
+third-party tools like Grafana or Power BI Dashboards.
 
 ## Recommended Practices
 
