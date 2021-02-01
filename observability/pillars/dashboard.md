@@ -50,11 +50,11 @@ Notes:
    - Failure analysis - A report about system failure with details. Workbook template available in gallery.
    - Application Performance Index([Appdex](https://en.wikipedia.org/wiki/Apdex)) - This is a way to measure user satisfaction. It classifies performance into three zones based on a baseline performance threshold T. The template for Appdex is available in Azure Workbooks gallery as well.
 
- 1. Application Insights has various ready to go analysis on observability on a system as well.
+1. Application Insights has various ready to go analysis on observability on a system as well.
 
-   - [User retention analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-retention)
-   - [User navigation patterns analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-flows)
-   - [User session analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-users)
+- [User retention analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-retention)
+- [User navigation patterns analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-flows)
+- [User session analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-users)
 
 For other tools, these can be used as a reference to recreate if a template is not readily available.
 
