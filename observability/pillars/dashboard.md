@@ -1,15 +1,15 @@
-# Dashboard and Visualization
+# Dashboard
 
 ## Overview
 
-Dashboard provides "at glance" view of Key Performance Index(KPI) in accrodance with goals and objectives of business processes. Typically this includes metrices and key data points to monitor the health of a business, department or specific process. Dashboard usually connects to one or multiple data sources allowing the creation of visual representation of data. This is important in observability as a good dashboard will be able to 
+Dashboards provide "at glance" view of Key Performance Index(KPI) in accordance with goals and objectives of business processes. Typically this includes metrics and key data points to monitor the health of a business, department or specific process. Dashboard usually connects to one or multiple data sources allowing the creation of visual representation of data. This is important in observability as a good dashboard will be able to 
 
 - show trends
 - identify patterns(user, usage, search etc)
 - measure efficiency easily
 - identify data outliers and correlations
 - view health state or performance of the system
-- give an outlook of the KPIs that is important to a business/process
+- give an outlook of the KPI that is important to a business/process
 
 which otherwise is difficult to understand and consume relating back to business goal or KPI measure. Common questions to ask while building dashboard would be:
 - Where did my user spend most of their time at?
@@ -19,10 +19,11 @@ which otherwise is difficult to understand and consume relating back to business
 
 ## Best Practices
 
-1. Identify goals or KPI measurement. Identifying goals or KPI helps in defining what needs to be achieved. Here are some examples - remote call latency, average CPU/GPU consumption per time unit.
-2. Ask questions that can help reach the defined goal or KPI. This may sound counter intuitive, the more questions asked while constructing dashboard the better the outcome will be. Questions like location, internet service provider, time of day users make requests to server would be a good start.
-3. Validate the questions. This is often done with stakeholders, sponsors, leads or even project managers.
-4. Build simple chart, have more of them. Rather than having a complicated all in one dashboard, seperate the dashboard into sections. Azure Workbooks is highly recommended with markdown support.
+1. Separate a dashboard in multiple sections for simplicity. Adding page jump or anchor(#section) is also a plus if applicable.
+2. Add multiple and simple charts. Build simple chart, have more of them rather than a complicated all in one chart.
+2. Identify goals or KPI measurement. Identifying goals or KPI helps in defining what needs to be achieved. Here are some examples - server downtime, mean time to address error, service level agreement.
+3. Ask questions that can help reach the defined goal or KPI. This may sound counter intuitive, the more questions asked while constructing dashboard the better the outcome will be. Questions like location, internet service provider, time of day users make requests to server would be a good start.
+4. Validate the questions. This is often done with stakeholders, sponsors, leads or even project managers. 
 5. Observe the dashboard that is built. Is the data reflecting what the stakeholders set out to answer? If not, make adjustments along they way.
 
 Always remember this process takes time. Building dashboard is easy, building an observable dashboard to show pattern is hard.
@@ -31,7 +32,7 @@ Always remember this process takes time. Building dashboard is easy, building an
 
 There are many options available for visualization and dashboarding. Depending on the needs, requirements and implementation, visualization tool used might vary but the overall concept on observability would be more or less the same.
 
-- [Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview) - With Azure workbook, creating a unified interactive experience is easier. This has tight integration with Azure services making this higly customizable without extra tool.
+- [Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview) - Supporting markdown, Azure Workbooks is tightly integrated with Azure services making this highly customizable without extra tool.
 - [Create dashboard using log query](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-logs-dashboards) - Dashboard can be created using log query on Log Analytics data.
 - [Building dashboards using Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-app-dashboards) - Dashboards can be created using Application Insights as well.
 - [Power Bi](https://docs.microsoft.com/en-us/power-bi/create-reports/service-dashboard-create) - Power Bi is one of the easier tools to create dashboards from data sources and reports.
