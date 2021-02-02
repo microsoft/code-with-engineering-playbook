@@ -10,7 +10,7 @@ A team manifesto is a soft contract among team members which summarizes the basi
 
 It aims to reduce the time on setting the right expectations and providing a consensus among team members as well as clarifying the question of "How does the new team develop the software?"
 
-Another main goal of the manifesto is providing a discussion environment during "manifesto building session" and detect the gaps/differences in certain topics for each member during these discussions.
+Another main goal of writing the manifesto is to start a conversation during the "manifesto building session" to detect any differences of opinion around how the team should work.
 
 It also serves in the same way when a new team member joins to the team. It gives a short summary of standards and if the new team member asks any question about any topic, this is a good thing to understand the improvement area and take the required actions.
 
@@ -24,11 +24,13 @@ If there is a need for providing knowledge on certain topics, the way to do is d
 A few important points about the team manifesto
 
 - The team manifesto is built by the team itself
-- It can include any technical or behavioural agility topics as soon as team find it relevant
+- It can include any technical or behavioral agility topics that the team finds relevant
 - It aims to give a common understanding about the desired expertise, practices and/or behaviors within the team
 - Based on the needs of the team and retrospective results, it can be modified during the engagement.
-In Microsoft, we have certain standards to build high quality and well-crafted software as well as to give comfortable/transparent environment to each team member for helping them to reach their highest potential.
-The difference of team manifesto from other comprehensive set of standards/practices documents is, it is used to give a short summary of the upcoming way of working and practices to prepare a base before deep dive starts with open discussion environment in an ice-breaker way.
+
+In CSE, we aim for quality over quantity, and well-crafted software as well as to a comfortable/transparent environment where each team member can reach their highest potential.
+
+The difference between the team manifesto and other team documents is that it is used to give a short summary of expectations around the technical way of working and supported mindset in the team, before code-with sprints starts.
 
 Below, you can find some including, but not limited, topics many teams touch during engagements,
 
@@ -38,7 +40,7 @@ Below, you can find some including, but not limited, topics many teams touch dur
 | Respect | Any preferred statement about it's a "must-have" team value |
 | Collaboration | Any preferred statement about how does team want to collaborate ? |
 | Transparency | A simple statement about it's a "must-have" team value and if preferred, how does this being provided by the team ? meetings, retrospective, feedback mechanisms ..etc. |
-| Craftpersonship | Which tools such as Git, VS Code LiveShare, ..etc. are being used ? What is the definition of expected best usage of them? |
+| Craftpersonship | Which tools such as Git, VS Code LiveShare, ..etc. are being used ? What is the definition of expected best usage of them? 
 | PR sizing | What does team prefer in PRs ? |
 | Branching | Team's branching strategy and standards |
 | Commit standards | Preferred format in commit messages, rules and more |
@@ -46,7 +48,7 @@ Below, you can find some including, but not limited, topics many teams touch dur
 | Pair/Mob Programming | Will team apply pair/mob programming ? If yes, what programming styles are suitable for the team ? |
 | Release Process | Principles around release process such as quality gates, reviewing process ...etc. |
 | Code Review | Any rule for code reviewing such as min number of reviewers, team rules ...etc. |
-| Action Readiness | How the backlog will be refined ? What will be the way for clear DoD and ACs ? |
+| Action Readiness | How the backlog will be refined? How do we ensure clear Definition of Done and Acceptance Criteria ? |
 | TDD | Will the team follow TDD ? |
 | Test Coverage | Is there any expected number, percentage or measurement ?  |
 | Dimensions in Testing | Required tests for high quality software, eg : unit, integration, functional, performance, regression, acceptance |
