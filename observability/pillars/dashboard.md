@@ -43,10 +43,13 @@ Here are principles to consider to build a better dashboards:
 ## Dashboard Samples and Recipes
 
 ### Azure Workbooks:
+
 - Performance analysis - A measurement on how the system performs. Workbook template available in gallery.
 - Failure analysis - A report about system failure with details. Workbook template available in gallery.
 - Application Performance Index([Appdex](https://en.wikipedia.org/wiki/Apdex)) - This is a way to measure user satisfaction. It classifies performance into three zones based on a baseline performance threshold T. The template for Appdex is available in Azure Workbooks gallery as well.
+
 ### Application Insights:
+
 - [User retention analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-retention)
 - [User navigation patterns analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-flows)
 - [User session analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-users)
