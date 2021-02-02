@@ -6,8 +6,7 @@ CSE teams work with a new development team in each customer engagement which req
 
 Completion of this phase of ice-breakers and discussions around the standards takes time, but is required to start increasing the learning curve of the new team.
 
-A team manifesto is a soft contract among team members which summarizes the basic principles and values of the team and aiming to provide a consensus about
-expectations from each team member in order to deliver high quality output at the end of each engagement.
+A team manifesto is a soft contract among team members which summarizes the basic principles and values of the team and aiming to provide a consensus about expectations from each team member in order to deliver high quality output at the end of each engagement.
 
 It aims to reduce the time on setting the right expectations and providing a consensus among team members as well as clarifying the question of "How does the new team develop the software?"
 
@@ -67,5 +66,7 @@ And if there is a need for improving it in a structured way, [Building a Team Ma
 ## Resources
 
 [Building a Team Manifesto*](https://www.scrum.nl/blog/building-team-manifesto/)
-- [Technical Agility*](https://v46.scaledagileframework.com/team-and-technical-agility/)
-- [Team Building and Retrospective activities*](https://www.funretrospectives.com/category/team-building/)
+
+[Technical Agility*](https://v46.scaledagileframework.com/team-and-technical-agility/)
+
+[Team Building and Retrospective activities*](https://www.funretrospectives.com/category/team-building/)
