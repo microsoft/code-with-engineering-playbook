@@ -6,13 +6,13 @@ CSE teams work with a new development team in each customer engagement which req
 
 Completion of this phase of ice-breakers and discussions around the standards takes time, but is required to start increasing the learning curve of the new team.
 
-A team manifesto is a soft contract among team members which summarizes the basic principles and values of the team and aiming to provide a consensus about expectations from each team member in order to deliver high quality output at the end of each engagement.
+A team manifesto is a light-weight one page agile document among team members which summarizes the basic principles and values of the team and aiming to provide a consensus about technical expectations from each team member in order to deliver high quality output at the end of each engagement.
 
-It aims to reduce the time on setting the right expectations and providing a consensus among team members as well as clarifying the question of "How does the new team develop the software?"
+It aims to reduce the time on setting the right expectations without arranging longer "team document reading" meetings and provid a consensus among team members to answer the question - "How does the new team develop the software?" - by covering all engineering fundamentals and excellence topics such as release process, clean coding, testing.
 
 Another main goal of writing the manifesto is to start a conversation during the "manifesto building session" to detect any differences of opinion around how the team should work.
 
-It also serves in the same way when a new team member joins to the team. It gives a short summary of standards and if the new team member asks any question about any topic, this is a good thing to understand the improvement area and take the required actions.
+It also serves in the same way when a new team member joins to the team. New joiners can quickly get up to speed on the agreed standards.
 
 ## How to Build a Team Manifesto
 
@@ -23,9 +23,9 @@ If there is a need for providing knowledge on certain topics, the way to do is d
 
 A few important points about the team manifesto
 
-- The team manifesto is built by the team itself
-- It can include any technical or behavioral agility topics that the team finds relevant
-- It aims to give a common understanding about the desired expertise, practices and/or behaviors within the team
+- The team manifesto is built by the development team itself
+- It should cover all required technical engineering points for the excellence as well as behavioral agility mindset items that the team finds relevant
+- It aims to give a common understanding about the desired expertise, practices and/or mindset within the team
 - Based on the needs of the team and retrospective results, it can be modified during the engagement.
 
 In CSE, we aim for quality over quantity, and well-crafted software as well as to a comfortable/transparent environment where each team member can reach their highest potential.
