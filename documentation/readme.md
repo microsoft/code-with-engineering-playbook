@@ -8,9 +8,9 @@ Documentation shouldn't be an afterthought. Different written documents and mate
 
 - [Goals](#goals)
 - [Challenges](#challenges)
-- [Areas of Focus](#areas-of-focus)
-- [Communication and Documentation](#communication-and-documentation)
-- [Utilities](#utilities)
+- [What documentation should exist?](#what-documentation-should-exist)
+- [Best practices](#best-practices)
+- [Tools](#tools)
 - [Resources](#resources)
 
 ## Goals
@@ -49,7 +49,7 @@ When working in an engineering project, we typically encounter one or more of th
   - Key documents created when we've been several weeks into the project: onboarding, how to run the app, etc.
   - Documents that we create in the last minute just before the end of a project, forgetting that they also help the team while working on the project.
 
-## Areas of Focus
+## What documentation should exist
 
 - [Project and Repositories](#project-and-repositories)
 - [Work items](#work-items)
@@ -148,7 +148,29 @@ Some sections in the documentation of the repository might point to the projectâ
   - Assets.
   - Customer scenario.
 
-## Communication and Documentation
+## Best practices
+
+- [Establishing and managing documentation](#establishing-and-managing-documentation)
+- [Where does documentation fit within story work?](#where-does-documentation-fit-within-story-work)
+- [Making documentation discoverable](#making-documentation-discoverable)
+- [Creating good documentation](#creating-good-documentation)
+- [Keeping documentation updated](#keeping-documentation-updated)
+- [Communication and documentation](#communication-and-documentation)
+- [Replacing documentation with automation](#replacing-documentation-with-automation)
+
+### Establishing and managing documentation
+
+- It should be source controlled and pr'd.
+
+### Where does documentation fit within story work?
+
+### Making documentation discoverable
+
+### Creating good documentation
+
+### Keeping documentation updated
+
+### Communication and documentation
 
 - Communication channels.
   - In-person vs. phone vs. email vs. Teams/Slack vs. Discussion section in Wiki/tasks vs. â€¦
@@ -156,7 +178,12 @@ Some sections in the documentation of the repository might point to the projectâ
 - Communicating decisions/changes.
   - E.g., Channels in Teams: General, Breaking Changes, Meetings, PRs, Workstreams
 
-## Utilities
+### Replacing documentation with automation
+
+- Dev containers.
+- Tasks/launch configs in vs code to automate startup, installs, etc.
+
+## Tools
 
 - Wikis vs. note apps (e.g., OneNote).
 - Languages: markdown (.md), mermaid (.mmd + .png).
