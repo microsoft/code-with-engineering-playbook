@@ -40,7 +40,7 @@ Below, you can find some including, but not limited, topics many teams touch dur
 | Respect | Any preferred statement about it's a "must-have" team value |
 | Collaboration | Any preferred statement about how does team want to collaborate ? |
 | Transparency | A simple statement about it's a "must-have" team value and if preferred, how does this being provided by the team ? meetings, retrospective, feedback mechanisms ..etc. |
-| Craftpersonship | Which tools such as Git, VS Code LiveShare, ..etc. are being used ? What is the definition of expected best usage of them? 
+| Craftpersonship | Which tools such as Git, VS Code LiveShare, ..etc. are being used ? What is the definition of expected best usage of them?
 | PR sizing | What does team prefer in PRs ? |
 | Branching | Team's branching strategy and standards |
 | Commit standards | Preferred format in commit messages, rules and more |
