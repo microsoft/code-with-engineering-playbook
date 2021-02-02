@@ -4,7 +4,7 @@
 
 CSE teams work with a new development team in each customer engagement which requires a phase of introduction & knowledge transfer before starting an engagement.
 
-Completion of this phase of ice-breakers and discussions around the standards takes time however also required to start increasing the learning curve of the new team.
+Completion of this phase of ice-breakers and discussions around the standards takes time, but is required to start increasing the learning curve of the new team.
 
 A team manifesto is a soft contract among team members which summarizes the basic principles and values of the team and aiming to provide a consensus about
 expectations from each team member in order to deliver high quality output at the end of each engagement.
@@ -22,18 +22,13 @@ It can be said that the best time to start building it is at the very early phas
 It is recommended to keep team manifesto as simple as possible, so preferably, one-page simple document which **doesn't include any references or links** is a nice format for it.
 If there is a need for providing knowledge on certain topics, the way to do is delivering brown-bag sessions, technical katas, team practices, documentations and others later on.
 
-A few important points about team manifesto;
+A few important points about the team manifesto
 
-- Team manifesto is built by the **team itself**
-
+- The team manifesto is built by the team itself
 - It can include any technical or behavioural agility topics as soon as team find it relevant
-
-- It aims to have a common understanding about the desired expertise, practices and/or behaviours within the team
-
+- It aims to give a common understanding about the desired expertise, practices and/or behaviors within the team
 - Based on the needs of the team and retrospective results, it can be modified during the engagement.
-
 In Microsoft, we have certain standards to build high quality and well-crafted software as well as to give comfortable/transparent environment to each team member for helping them to reach their highest potential.
-
 The difference of team manifesto from other comprehensive set of standards/practices documents is, it is used to give a short summary of the upcoming way of working and practices to prepare a base before deep dive starts with open discussion environment in an ice-breaker way.
 
 Below, you can find some including, but not limited, topics many teams touch during engagements,
@@ -53,7 +48,7 @@ Below, you can find some including, but not limited, topics many teams touch dur
 | Release Process | Principles around release process such as quality gates, reviewing process ...etc. |
 | Code Review | Any rule for code reviewing such as min number of reviewers, team rules ...etc. |
 | Action Readiness | How the backlog will be refined ? What will be the way for clear DoD and ACs ? |
-| TDD | Will team follow TDD ? |
+| TDD | Will the team follow TDD ? |
 | Test Coverage | Is there any expected number, percentage or measurement ?  |
 | Dimensions in Testing | Required tests for high quality software, eg : unit, integration, functional, performance, regression, acceptance |
 | Build process | build for all? or not; The clear statement of where code and under what conditions code should work ? eg : OS, DevOps, tool dependency |
@@ -72,7 +67,5 @@ And if there is a need for improving it in a structured way, [Building a Team Ma
 ## Resources
 
 [Building a Team Manifesto*](https://www.scrum.nl/blog/building-team-manifesto/)
-
-[Technical Agility*](https://v46.scaledagileframework.com/team-and-technical-agility/)
-
-[Team Building and Retrospective activities*](https://www.funretrospectives.com/category/team-building/)
+- [Technical Agility*](https://v46.scaledagileframework.com/team-and-technical-agility/)
+- [Team Building and Retrospective activities*](https://www.funretrospectives.com/category/team-building/)
