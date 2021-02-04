@@ -1,6 +1,6 @@
 # Open Telemetry
 
-Open Telemetry is a set of APIs, SDKs and instrumentation which can be used for collection, processing and orchestration of telemetry data like traces metrics and logs. It supports multiple languages(Java, dotnet, python, javascript, golang, erlang etc.). Open telemetry follows a vendor agnostic and standards based approach for collection and management of telemetry data. Important point to note is that OpenTelemetry does not have its own backend, all telemetry collected by OpenTelemetry Collector must be sent to a backend like Prometheus etc. Open telemetry is also the 2nd most active CNCF project after Kubernetes.
+OpenTelemetry is a set of APIs, SDKs and instrumentation which can be used for collection, processing and orchestrating telemetry data like traces metrics and logs. It supports multiple languages(Java, .NET, Python, JavaScript, Golang, Erlang etc.). Open telemetry follows a vendor agnostic and standards based approach for collection and management of telemetry data. Important point to note is that OpenTelemetry does not have its own backend, all telemetry collected by OpenTelemetry Collector must be sent to a backend like Prometheus etc. Open telemetry is also the 2nd most active CNCF project after Kubernetes.
 
 ## Collector
 
