@@ -32,6 +32,14 @@ Read on how Observability can be implemented in [Machine Learning](ml-observabil
 
 As much as possible, configuration and management of observability assets such as cloud resource provisioning, monitoring alerts and dashboards must be managed as code. Observability as Code is achieved using any one of Terraform / Ansible / ARM Templates
 
+### Examples of Observability As Code
+
+1. Dashboards as Code- You can create Monitoring Dashboards as Json or XML templates, such templates can be checked into the code repository for source control, any change in the dashboards can be reviewed and automation can be built for enabling the dashboard. [More about how to do this in Azure A](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically).
+
+2. Alerts as Code- Alerts can be created within azure by using Terraform or ARM templates. Such alerts can be source controlled and be deployed as part of pipelines(Azure Devops pipelines, Jenkins, Github Actions etc.). Some reference of how to do this are: [Terraform Monitor Metric Alert](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_metric_alert). Alerts can also be created based on log analytics query and can be defined as code using [Terraform Monitor Scheduled Query Rules Alert](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_scheduled_query_rules_alert#example-usage).
+
+3. Automating Log Analytics Queries- There are several use cases where automation of log analytics queries may be needed. Example, Automatic Report Generation, Running custom queries programmatically for analysis, debugging etc. For these use cases to work, log queries should be source controlled and automation can be built using [log analytics REST](https://dev.loganalytics.io/documentation/Using-the-API) or [azure cli](https://docs.microsoft.com/en-us/cli/azure/ext/log-analytics/monitor/log-analytics?view=azure-cli-latest).
+
 ### Why
 
 - It makes configuration repeatable and automatable. It also avoids manual configuration of monitoring alerts and dashboards from scratch across environments.
@@ -61,14 +69,6 @@ contributions.
 9. Personally Identifiable Information or any other customer sensitive information should never be logged. Special attention should be paid to any local privacy data regulations and collected data must adhere to those. (ex: GPDR)
 
 Read more [here](pitfalls.md) to understand what to watch out for while designing and building an observable system.
-
-## Examples of Observability As Code
-
-1. Dashboards as Code- You can create Monitoring Dashboards as Json or XML templates, such templates can be checked into the code repository for source control, any change in the dashboards can be reviewed and automation can be built for enabling the dashboard. [More about how to do this in Azure A](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically).
-
-2. Alerts as Code- Alerts can be created within azure by using Terraform or ARM templates. Such alerts can be source controlled and be deployed as part of pipelines(Azure Devops pipelines, Jenkins, Github Actions etc.). Some reference of how to do this are: [Terraform Monitor Metric Alert](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_metric_alert). Alerts can also be created based on log analytics query and can be defined as code using [Terraform Monitor Scheduled Query Rules Alert](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_scheduled_query_rules_alert#example-usage).
-
-3. Automating Log Analytics Queries- There are several use cases where automation of log analytics queries may be needed. Example, Automatic Report Generation, Running custom queries programmatically for analysis, debugging etc. For these use cases to work, log queries should be source controlled and automation can be built using [log analytics REST](https://dev.loganalytics.io/documentation/Using-the-API) or [azure cli](https://docs.microsoft.com/en-us/cli/azure/ext/log-analytics/monitor/log-analytics?view=azure-cli-latest).
 
 ## Recipes
 
