@@ -34,7 +34,7 @@ As much as possible, configuration and management of observability assets such a
 
 ### Examples of Observability As Code
 
-1. Dashboards as Code- You can create Monitoring Dashboards as Json or XML templates, such templates can be checked into the code repository for source control, any change in the dashboards can be reviewed and automation can be built for enabling the dashboard. [More about how to do this in Azure A](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically).
+1. Dashboards as Code - Monitoring Dashboards can be created as JSON or XML templates. This template is source control maintained and any changes to the dashboards can be reviewed. Automation can be built for enabling the dashboard. [More about how to do this in Azure](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically).
 
 2. Alerts as Code- Alerts can be created within azure by using Terraform or ARM templates. Such alerts can be source controlled and be deployed as part of pipelines(Azure Devops pipelines, Jenkins, Github Actions etc.). Some reference of how to do this are: [Terraform Monitor Metric Alert](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_metric_alert). Alerts can also be created based on log analytics query and can be defined as code using [Terraform Monitor Scheduled Query Rules Alert](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_scheduled_query_rules_alert#example-usage).
 
