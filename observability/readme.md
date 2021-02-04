@@ -23,6 +23,7 @@ Building observable systems enables development teams at CSE to measure how well
 1. [Logging](pillars/logging.md)
 2. [Tracing](pillars/tracing.md)
 3. [Metrics](pillars/metrics.md)
+4. [Dashboard](pillars/dashboard.md)
 
 ## Observability in Machine Learning
 
