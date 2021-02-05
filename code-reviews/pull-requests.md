@@ -22,7 +22,7 @@ The requirements of pull requests can and should be enforced by policies, which 
     * Ensure the code compiles and runs without errors or warnings
     * Write and/or update tests to cover the changes and make sure all new and existing tests pass
     * Write and/or update the documentation to match the changes
-1. Once convinced the criteria above are met, create and submit a new pull request adhering to the [pull request template](./pull-request-template.md)
+1. Once convinced the criteria above are met, create and submit a new pull request adhering to the [pull request template](../source-control/pull-request-templates/pull_request_template.md)
 1. Follow the [code review](./process-guidance/README.md) process to merge the changes to the main codebase
 
 ## Size Guidance

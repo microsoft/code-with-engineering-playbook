@@ -1,6 +1,6 @@
 # Pull Request Templates
 
-To keep pull requests consistent and to help ensure quality across the project, pull request templates are essential. Pull request templates can be used in both GitHub and Azure DevOps.
+To keep pull requests consistent and to help ensure quality across the project, pull request templates are essential. Pull request templates can be used in any solution that can interpret markdown.
 
 ## GitHub
 
@@ -15,13 +15,7 @@ In order to use a specific pull request template in GitHub, you must include the
 ...
 ```
 
-It is also worth noting that the rendering of markdown is different between Azure DevOps and GitHub so the links below are specific to the rendering within GitHub. Checkout the [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository) for more information.
-
-### Example Templates
-
-- [Default Pull Request](./github/github-template.md)
-- [Bug Pull Request](./github/github-bug-pr-template.md)
-- [Feature Pull Request](./github/github-feature-pr-template.md)
+It is also worth noting that the rendering of markdown is different between Azure DevOps and GitHub. Checkout the [GitHub Documentation](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository) for more information.
 
 ## Azure DevOps
 
@@ -38,8 +32,10 @@ It is worth noting that though technically you can put your templates in `docs` 
 
 ![Azure DevOps Template List](./images/azdo-template-list.png)
 
-### Example Templates
+## Example Templates
 
-- [Default Pull Request](./azure-devops/azure-devops-template.md)
-- [Bug Pull Request](./azure-devops/azure-devops-bug-pr-template.md)
-- [Feature Pull Request](./azure-devops/azure-devops-feature-pr-template.md)
+The example template below is generic and can be used for either features or bugs. If the team prefers, in their
+repository, this example can be altered, or it can be split into separate Pull Request Types
+per the documentation above.
+
+- [Default Pull Request](./pull_request_template.md)
