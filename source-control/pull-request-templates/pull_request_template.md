@@ -1,4 +1,4 @@
-# [Work Item ID](url-to-the-work-item)
+# [Work Item ID](./link-to-the-work-item)
 
 ## Description
 
