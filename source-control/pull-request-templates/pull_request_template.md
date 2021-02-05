@@ -39,10 +39,10 @@
 
 ---
 
-> Instructions for testing and validation of your code such as:
-> - What OS was used for testing.
-> - Which test sets were used.
-> - Description of test scenarios that you have tried.
+> - Instructions for testing and validation of your code:
+>   - What OS was used for testing.
+>   - Which test sets were used.
+>   - Description of test scenarios that you have tried.
 
 ## Any relevant logs or outputs
 
