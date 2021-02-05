@@ -32,7 +32,7 @@ Read on how Observability can be implemented in [Machine Learning](ml-observabil
 
 As much as possible, configuration and management of observability assets such as cloud resource provisioning, monitoring alerts and dashboards must be managed as code. Observability as Code is achieved using any one of Terraform / Ansible / ARM Templates
 
-### Examples of Observability As Code
+### Examples of Observability as Code
 
 1. Dashboards as Code - Monitoring Dashboards can be created as JSON or XML templates. This template is source control maintained and any changes to the dashboards can be reviewed. Automation can be built for enabling the dashboard. [More about how to do this in Azure](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically). Grafana dashboard can also be [configured as code](https://grafana.com/blog/2020/02/26/how-to-configure-grafana-as-code/) which eventually can be source controlled to be used in automation and pipelines.
 
