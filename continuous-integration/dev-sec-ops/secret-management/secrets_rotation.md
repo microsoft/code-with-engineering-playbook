@@ -3,11 +3,19 @@
 Secret rotation is the process of refreshing the secrets that are used by the application.
 For further reading see [CSEDevSecOps Secret Management Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/SecretManagement)
 
-## Why Secrets Rotation [The Why]
+## Why Secrets Rotation
 
 Secrets are an asset and as such have a potential to be leaked or stolen. By rotating the secrets, we are revoking any secrets that may have been compromised. Therefore, secrets should be rotated frequently.
 
-## Applying Secrets Rotation [the how]
+##Managed Identity
+
+Azure Managed identities are automatically issues by Azure in order to indentify individual resources, and can be used for authentication in place of secrets and passwords. 
+The appeal in using Managed Identities is the elimination of management of secrets and credentials. They are not required on developers machines or checked into source control, and they don't need to be rotated.
+Managed identities are considered safer than the alternatives and is the recommended choice. 
+
+## Applying Secrets Rotation
+
+If Azure Managed Identity can't be used. This and the following sections will explain how rotation of secrets can be achieved: 
 
 To promote frequent rotation of a secret - define an automated periodic secret rotation process.
 The secret rotation process might result in a downtime when the application is restarted to introduce the new secret. A common solution for that is to have two versions of secret available, also referred to as Blue/Green Secret rotation. By having a second secret at hand, we can start a second instance of the application with that secret before the previous secret is revoked, thus avoiding any downtime.

@@ -27,6 +27,9 @@ Avoid installing the following tools or remove them if present:
     - Shells: e.g. sh, bash. Note that removing shells also prevents the use of shell scripts at runtime. Instead, use an executable when possible.
     - Compilers and debuggers. These should be used only in build and development containers, but never in production containers.
 1. Container images should be immutable - download and include all the required dependencies during the image build.
+1. Scan for vulnerabilities in software dependencies -  today there is likely no software project without some form of external libraries, dependencies or open source.
+While it allows the development team to focus on their application code, the dependency brings forth an expected downside where the security posture of the real application is now resting on it.
+To detect vulnerabilities contained within a project’s dependencies use container scanning tools which as part of their analysis scan the software dependencies (see "Dependency and Container Scanning Frameworks and Tools"). 
 
 ## Dependency and Container Scanning Frameworks and Tools
 
@@ -34,4 +37,4 @@ Use the tools and pipelines as suggested in [CSEDevSecOps Dependency and Contain
 
 ## Conclusion
 
-A powerful technology such as containers should be used carefully. Install the minimal requirements needed for your application and make sure to maintain it over time by using container and dependencies scanning tools.
+A powerful technology such as containers should be used carefully. Install the minimal requirements needed for your application, be aware of the software dependencies your application is using and make sure to maintain it over time by using container and dependencies scanning tools.
