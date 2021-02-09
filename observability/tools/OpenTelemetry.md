@@ -33,7 +33,7 @@ OpenTelemetry is a project which emerged from merging of OpenCensus and OpenTrac
 
 ## What to watch out for
 
-As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due deligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some of the features are not in GA, there may be some imcompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of CNCF so it is expected that many more features would reach GA soon.
+As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due deligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some of the features are not in GA, there may be some incompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of CNCF so it is expected that many more features would reach GA soon.
 
 ## References
 
