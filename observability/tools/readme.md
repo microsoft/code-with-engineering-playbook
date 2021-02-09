@@ -12,5 +12,5 @@ There are a number of modern tools to make systems observable. While identifying
 
 ## Choices
 
-- [Loki](loki.md)
-- [OpenTelemetry](opentelemetry.md)
+- [Loki](./loki.md)
+- [OpenTelemetry](./opentelemetry.md)
