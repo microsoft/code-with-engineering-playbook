@@ -29,11 +29,11 @@ Apart from features like adding custom attributes, sampling, collecting data for
 
 ## Current Status of OpenTelemetry Project
 
-OpenTelemetry is a project which emerged from merging of OpenCensus and OpenTracing in 2019. Although OpenCensus and OpenTracing are frozen and no new features are being developed for them, OpenTelemetry has backward compatibility with OpenCensus and OpenTracing. Some features of OpenTelemetry are still in beta, feature support for different languages is being tracked here: [Feature Status of OpenTelemetry](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md).
+OpenTelemetry is a project which emerged from merging of OpenCensus and OpenTracing in 2019. Although OpenCensus and OpenTracing are frozen and no new features are being developed for them, OpenTelemetry has backward compatibility with OpenCensus and OpenTracing. Some features of OpenTelemetry are still in beta, feature support for different languages is being tracked here: [Feature Status of OpenTelemetry](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md). Status of OpenTelemetry project can be tracked [here](https://opentelemetry.io/project-status/).
 
 ## What to watch out for
 
-As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due deligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. That being said, OpenTelemetry is one of the most active projects of CNCF so it is expected that many more features would reach GA soon.
+As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due deligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some of the features are not in GA, there may be some imcompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of CNCF so it is expected that many more features would reach GA soon.
 
 ## References
 
