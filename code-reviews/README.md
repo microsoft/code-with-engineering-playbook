@@ -10,15 +10,7 @@ Code reviews is a way to have a conversation about the code where participants w
 - Grow by learning from each other about unfamiliar design patterns or languages among other topics, and even break some bad habits.
 - Develop a shared understanding of the project's code.
 
-## Sections
-
-- [Process Guidance](./process-guidance/README.md)
-- [Evidence and Measures](./evidence-and-measures/README.md)
-- [Language Specific Guidance](./recipes/README.md)
-- [FAQ](./faq.md)
-- [Resources](#resources)
-
-### Summary of contents
+## Table of contents
 
 - [Process Guidance: General](./process-guidance/README.md#general-guidance)
   - [Pull Requests](./pull-requests.md)
@@ -90,10 +82,7 @@ Code reviews is a way to have a conversation about the code where participants w
   - [Complex PRs?](./faq.md#reviewing-a-complex-pr-on-github-can-be-hard-is-there-a-more-integrated-way)
   - [Enforcing code reviews](./faq.md#how-can-we-enforce-code-reviews)
   - [Code Reviews and pair/mob programming](./faq.md#we-pair-or-mob-why-do-we-need-code-reviews)
-- [Resources](#resources)
-
-## Resources
-
-- [Code review tools](tools.md)
-- [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
-- [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
+- Resources
+  - [Code review tools](tools.md)
+  - [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
+  - [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)
