@@ -7,7 +7,6 @@ There are a number of modern tools to make systems observable. While identifying
 - It must be possible to aggregrate and visualize data.
 
 - Tools must provide real-time data.
-
 - Must be able to guide users to the problem area with suitable, adequete end-to-end context.
 
 ## Choices
