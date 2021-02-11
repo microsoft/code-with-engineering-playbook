@@ -38,7 +38,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 ## QuickLinks
 
-* [Engineering Fundamentals Checklist](Engineering Fundamentals Checklist.md)
+* [Engineering Fundamentals Checklist](ENG-FUNDAMENTALS-CHECKLIST.md)
 * [Structure of a Sprint](SPRINT-STRUCTURE.md)
 
 ## Engineering Fundamentals
