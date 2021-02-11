@@ -80,16 +80,14 @@ An automated build should encompass the following principles:
 Manage as much of the following as possible, as code:
 
 - Configuration Files
-- Configuration Management(ie environment variable automation via [terraform](https://github.com/microsoft/cobalt/blob/master/infra/modules/providers/azure/app-service/main.tf#L49))
-- Secret Management(ie creating Azure secrets via [terraform](https://github.com/microsoft/cobalt/blob/master/infra/templates/az-isolated-service-single-region/app.tf#L84))
+- Configuration Management
+- Secret Management
 - Cloud Resource Provisioning
 - Role Assignments
 - Load Test Scenarios
 - Availability Alerting / Monitoring Rules and Conditions
 
 Decoupling infrastructure from the application codebase simplifies engineering teams move to cloud native applications.
-
-Terraform resource providers like [Azure DevOPS](https://github.com/microsoft/terraform-provider-azuredevops) is making it easier for developers to manage build pipeline variables, service connections and CI/CD pipeline definitions.
 
 ### Sample DevOPS Workflow using Terraform and Cobalt
 
@@ -98,7 +96,6 @@ Terraform resource providers like [Azure DevOPS](https://github.com/microsoft/te
 ### Why
 
 - Repeatable and auditable changes to infrastructure make it easier to roll back to known good configurations and to rapidly expand to new stages and regions without having to hand-wire cloud resources
-- Battle tested and templatized IAC reference projects like [Cobalt](https://github.com/microsoft/cobalt) and [Bedrock](https://github.com/microsoft/bedrock) enable more engineering teams deploy secure and scalable solutions at a much more rapid pace
 - Simplify “lift and shift” scenarios by abstracting the complexities of cloud-native computing away from application developer teams.
 
 ### IAC DevOPS: Operations by Pull Request
@@ -109,7 +106,7 @@ Terraform resource providers like [Azure DevOPS](https://github.com/microsoft/te
 
 ### Infrastructure Advocated Patterns
 
-- You define infrastructure as code in Terraform / ARM / Ansible templates
+- You define infrastructure as code in ARM
 - Templates are repeatable cloud resource stacks with a focus on configuration sets aligned with app scaling and throughput needs.
 
 ### IAC Principles
