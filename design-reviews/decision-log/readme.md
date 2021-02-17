@@ -66,7 +66,11 @@ An architecture decision record has the structure
 
 ### Where to store ADRs
 
-ADRs can be stored and tracked in any version control system such as git. As a recommended practice, ADRs can be added as pull request in the *proposed* status to be discussed by the team until it is updated to *accepted* to be merged with the main branch. They are usually stored in a folder structure *doc/adr* or *doc/arch*.
+ADRs can be stored and tracked in any version control system such as git. As a recommended practice, ADRs can be added as pull request in the *proposed* status to be discussed by the team until it is updated to *accepted* to be merged with the main branch. They are usually stored in a folder structure *doc/adr* or *doc/arch*. Additionally, it can be useful to track ADRs in a `decision-log.md` to provide useful metadata in an obvious format.
+
+#### Decision Logs
+
+A decision log is a Markdown file containing a table which provides executive summaries of the decisions contained in ADRs, as well as some other metadata. You can see a template table at [`doc/decision-log.md`](doc/decision-log.md).
 
 ### When to track ADRs
 

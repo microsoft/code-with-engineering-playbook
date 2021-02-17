@@ -53,7 +53,7 @@ After completing your load test you should be set up to continue on to additiona
 
 Here are a few popular load testing frameworks you may consider and the languages used to define your scenarios.
 
-- **JMeter** (<https://jmeter.apache.org/>) - Has built in patterns to test without coding, but can be extended with Java.
+- **JMeter** (<https://github.com/apache/jmeter>) - Has built in patterns to test without coding, but can be extended with Java.
 - **Artillery** (<https://artillery.io/>) - Write your scenarios in Javascript, executes a node application.
 - **Gatling** (<https://gatling.io/>) -  Write your scenarios in Scala with their DSL.
 - **Locust** (<https://locust.io/>) - Write your scenarios in Python using the concept of concurrent user activity.
