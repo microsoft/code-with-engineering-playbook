@@ -93,3 +93,11 @@ More details on [Retrospectives](agile-development/retrospectives/readme.md)
 - [ ] Ensure feedback is detailed and repeatable
 
 More details on [Engineering Feedback](engineering-feedback/readme.md)
+
+## Developer Experience (DevEx)
+
+- [ ] When pressing F5 in the IDE, dependencies are automatically installed.
+- [ ] Source code is compiled to executable binary and/or container image.
+- [ ] You can use local dev configuration values (i.e. .env, appsettings.development.json).
+- [ ] All tests (unit, integration, e2e etc) are passing and can be debugged.
+- [ ] Use a development container - running Docker container with a well-defined tool/runtime stack and its prerequisites, to unify developer experience across developers regardless of their OS and local dependencies (e.g [Visual Studio Dev Containers extension](https://code.visualstudio.com/docs/remote/create-dev-container)).  
