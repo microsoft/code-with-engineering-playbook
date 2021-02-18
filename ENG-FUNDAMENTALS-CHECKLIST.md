@@ -100,4 +100,6 @@ More details on [Engineering Feedback](engineering-feedback/readme.md)
 - [ ] Source code is compiled to executable binary and/or container image.
 - [ ] You can use local dev configuration values (i.e. .env, appsettings.development.json).
 - [ ] All tests (unit, integration, e2e etc) are passing and can be debugged.
-- [ ] Use a development container - running Docker container with a well-defined tool/runtime stack and its prerequisites, to unify developer experience across developers regardless of their OS and local dependencies (e.g [Visual Studio Dev Containers extension](https://code.visualstudio.com/docs/remote/create-dev-container)).  
+- [ ] Use a development container - running Docker container with a well-defined tool/runtime stack and its prerequisites, to unify developer experience across developers regardless of their OS and local dependencies (e.g [Visual Studio Dev Containers extension](https://code.visualstudio.com/docs/remote/create-dev-container)).
+
+More details on [Developer Experience](developer-experience/readme.md)
