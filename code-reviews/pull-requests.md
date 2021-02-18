@@ -1,6 +1,6 @@
 # Pull Requests
 
-Changes to any main codebase - master branch in Git repository, for example - must be done using pull requests (PR).
+Changes to any main codebase - main branch in Git repository, for example - must be done using pull requests (PR).
 
 Pull requests enable:
 
@@ -27,13 +27,17 @@ The requirements of pull requests can and should be enforced by policies, which 
 
 ## Size Guidance
 
-We should always aim to have pull requests be as small as possible, without losing context and technical feasibility. Small PRs have multiple advantages:
+We should always aim to keep pull requests small. Small PRs have multiple advantages:
 
-1. They are easier to review; a clear benefit for the reviewers.
-1. They are easier to deploy; this is aligned with the strategy of release fast and release often.
-1. Minimizes possible conflicts and stale PRs, which are difficult to merge and keep in sync with main branch either because they're very dynamic or contain refactoring.
+- They are easier to review; a clear benefit for the reviewers.
+- They are easier to deploy; this is aligned with the strategy of release fast and release often.
+- Minimizes possible conflicts and stale PRs.
 
-However, we should avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PR could be faster to write but slower to review. We should always strive to have as small PRs as possible that still add value. Besides the size, remember that every PR should:
+However, we should keep PRs focused - for example around functional feature, optimization or code readbility and avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PRs could be difficult and therefore slower to review. We should always strive to have as small PRs as possible that still add value.
+
+## Best Practices
+
+Beoynd the size, remember that every PR should:
 
 * Be consistent,
 * not break the build, and
@@ -45,7 +49,7 @@ Start small, it is easier to create a small PR from the start than to break up a
 
 These are some strategies to keep PRs small depending on the "cause" of the inevitability, you could break the PR into self-container changes which still add value, release features that are hidden (see feature flag, feature toggling or canary releases) or break the PR into different layers (for example using design patterns like MVC or Observer/Subject). No matter the strategy.
 
-## Commit Message Standardization
+## PR Desciption - Commit Message Standardization
 
 Standardizing the format of the commit message (or PR title that becomes a commit message) enables the automated generation of a changelog and helps maintain a clean, well-structured git history. While every team need not conform to the same specification, it is important that the convention is agreed upon at the start of the project.
 
