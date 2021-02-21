@@ -77,10 +77,8 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
    ```bash
    # Install Azurite
    npm install -g azurite
-   
    # Create azurite directory
    mkdir c:/azurite
-   
    # Launch Azurite for Windows
    azurite --silent --location c:\azurite --debug c:\azurite\debug.log
    ```
