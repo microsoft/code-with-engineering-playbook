@@ -64,3 +64,4 @@ RTT has many of the same benefits as Pair Programming and Test-Driven developmen
 * Clarity of the code design and testing strategy must be established beforehand and documented as reference. Lack of an established design will cause misalignment between the two major pieces of work and a need for time-consuming refactoring.
 
 * RTT does not work well if only one engineer has knowledge of the overall design. Team communication is critical to ensuring that every engineer involved in RTT is on the same page.
+
