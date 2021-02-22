@@ -8,6 +8,8 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] Merges are done through PRs.
 - [ ] PRs reference related work items.
 - [ ] Commit history is consistent and commit messages are informative (what, why).
+- [ ] Consistent branch naming conventions.
+- [ ] Clear documentation of repository structure.
 - [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](continuous-integration/credential-scanning/readme.md))
 - [ ] Public repositories follow the [OSS guidelines](source-control/readme.md#creating-a-new-repository), see `Required files in default branch for public repositories`.
 
