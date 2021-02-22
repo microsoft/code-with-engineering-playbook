@@ -35,6 +35,12 @@ to the project's Contributors group. Please contact one of the project's
 administrators to be added to the group.
 You will still need a PR against master in order to merge your changes.
 
+## How to contribute
+
+When you have an idea for contribution open an *issue*!
+
+More details can be found in the internal CSE Wiki under the page `Contributing_to_the_Code-With_Engineering_Playbook`.
+
 ## Git guidance
 
 Consistent with the practices suggested in this playbook, please follow the
@@ -76,7 +82,7 @@ prompted the pull request.
 ### Merging strategy
 
 The preferred merging strategy for this repo is **linear**.
-You can familiarize yourself with [merging strategies](./source-control/contributing/readme.md#merging-strategies) described in the Source Control section of this repo.
+You can familiarize yourself with [merging strategies](./source-control/contributing/merge-strategies.md) described in the Source Control section of this repo.
 
 ## Adding a new section
 
@@ -90,17 +96,11 @@ Each section consist of the following parts
    3. Describe how the concept works
 2. Detailed Description
    1. Dive into specific areas of what is described in the above summary (i.e
-   Grooming > Estimation > establish baseline estimates)
+   Refinement > Estimation > establish baseline estimates)
 3. Recipes
    1. Tool specific implementations of the concept
    2. Named patterns or games that implement the concept (usually applies to
    agile ceremonies)
-4. Case Studies
-   1. Examples that illustrate how a team implemented the concept
-   2. What problem was the team try to solve with their implementation?
-   3. What worked well?
-   4. Opportunities for improvement
-   5. External Reference Material
 
 ### Example Directory Hierarchy
 
@@ -120,8 +120,6 @@ The following illustrates how the directory structure could be organized.
             - ci-pipeline-for-dotnet-core.md
             - ci-pipeline-for-python.md
         - /jenkins
-    - /case-studies
-        - contoso-ci-pipeline-for-terraform.md
 ```
 
 ## Legal Notices

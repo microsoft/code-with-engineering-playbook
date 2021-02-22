@@ -37,7 +37,7 @@ Find the vscode-shellcheck extension in vscode and install it.
 
 ### shell-format
 
-shell-format extension does automatic formatting of your bash scripts, dockerfiles and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
+shell-format extension does automatic formatting of your bash scripts, docker files and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:
 
 #### Install shfmt(Requires Go 1.13 or later) on your machine:
@@ -52,7 +52,7 @@ Find the shell-format extension in vscode and install it.
 
 ## Build Validation
 
-To automate this process in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
+To automate this process in Azure DevOps you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
 
 ```yaml
 - bash: |
@@ -132,7 +132,7 @@ fi
 
 ## Code Review Checklist
 
-In addition to the [Code Review Checklist](../README.md) you should also look for these bash specific code review items
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these bash specific code review items
 
 * [ ] Does this code use [Built-in Shell](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html) Options like set -o, set -e, set -u for execution control of shell scripts ?
 * [ ] Is the code modularized? Shell scripts can be modularized like python modules. Portions of bash scripts should be sourced in complex bash projects.

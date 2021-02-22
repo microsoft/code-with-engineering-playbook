@@ -1,4 +1,4 @@
-# Developer Experience
+# Developer Experience (DevEx)
 
 Developer experience refers to the how easy or difficult it is for a developer to perform essential tasks needed to implement a change. A positive developer experience would mean these tasks are relatively easy for the team (see measures below).
 
@@ -45,41 +45,42 @@ How long does it take to make a change that can be verified/tested locally. A lo
 
 Providing a positive developer experience is a team effort. However, certain members can take ownership of different areas to help hold the entire team accountable.
 
-### Tech Lead - Set the bar
+### Dev Lead - Set the bar
 
-The following are examples of how the Tech Lead might set the bar for dev experience
+The following are examples of how the Dev Lead might set the bar for dev experience
 
 - Determines development environment (suggested IDE, hosting, etc)
-- Determines source control environment and number of repo's required
+- Determines source control environment and number of repos required
 - Given development environment and repo structure sets expectations for team to meet in terms of steps to perform the essential dev tasks
 - Nominates the DevEx Champion
 
-IDE choice is NOT intended to mandate that all team members must use the same IDE. However, this choice will direct where tight-integration investment will be prioritized. For example, if Visual Studio Code is the **suggested** IDE then, the team would focus on integrating VS code tasks and launch configurations over similar integrations for other IDE's. Team members should still feel free to use their preferred IDE as long as it does not negatively impact the team.
+IDE choice is NOT intended to mandate that all team members must use the same IDE. However, this choice will direct where tight-integration investment will be prioritized. For example, if Visual Studio Code is the **suggested** IDE then, the team would focus on integrating VS code tasks and launch configurations over similar integrations for other IDEs. Team members should still feel free to use their preferred IDE as long as it does not negatively impact the team.
 
 ### DevEx Champion - Identify Iterative Improvements
 
-The devex champion takes ownership in holding the team accountable for providing a positive developer experience. The following outline responsibilities for the DevEx champion.
+The DevEx champion takes ownership in holding the team accountable for providing a positive developer experience. The following outline responsibilities for the DevEx champion.
 
 - Actively seek opportunities for improving the solution developer experience
-- Work with the tech lead to iteratively improve team expectations for developer experience
+- Work with the Dev Lead to iteratively improve team expectations for developer experience
+
 - Curate a backlog actionable stories that identify areas for improvement and prioritize with respect to project delivery goals by engaging directly with the Product Owner and Customer.
-- Serve as subject matter expert for the rest of the team. Help the team determine how to implement devex expectations and identify deviations.
+- Serve as subject matter expert for the rest of the team. Help the team determine how to implement DevEx expectations and identify deviations.
 
 ### Team Members - Assert Expectations
 
-The team members of the team can also help hold each other accountable for providing a positive developer experience. The following are examples of areas team members can help identify where the team's devex expectations are not being met.
+The team members of the team can also help hold each other accountable for providing a positive developer experience. The following are examples of areas team members can help identify where the team's DevEx expectations are not being met.
 
-- Pull requests. Try the changes locally to see if they are adhering to the team's devex expectations.
-- Design Reviews. Look for proposals that may negatively effect the solution's devex. These might include
+- Pull requests. Try the changes locally to see if they are adhering to the team's DevEx expectations.
+- Design Reviews. Look for proposals that may negatively effect the solution's DevEx. These might include
   - Introduction of new tech whose testability is limited to manual steps in a deployed environment.
   - Addition of new repository
 
 ### New Team Members - Identify Iterative Improvements
 
-New team members are uniquely positioned to identify instances of undocumented [Collective Wisdom](https://en.wikipedia.org/wiki/Collective_wisdom). The following outlines responsibilities of new team members as it relates to devex:
+New team members are uniquely positioned to identify instances of undocumented [Collective Wisdom](https://en.wikipedia.org/wiki/Collective_wisdom). The following outlines responsibilities of new team members as it relates to DevEx:
 
-- If you come across missing, incomplete or incorrect documentation while onboarding, you should record the issue as a new defect(s) and assign it to the product owner to be triaged.
-- If no onboarding documentation exists, note the steps you took in a new user story. Assign the new story to the product owner to be triaged.
+- If you come across missing, incomplete or incorrect documentation while onboarding, you should record the issue as a new defect(s) and assign it to the product owner to triage.
+- If no onboarding documentation exists, note the steps you took in a new user story. Assign the new story to the product owner to triage.
 
 ## Facilitation Guidance
 
@@ -105,7 +106,7 @@ The F5 contract aims for the ability to run the end-to-end solution with the fol
 2. Configure - set any configuration values that need to be unique to the individual (i.e. update a .env file)
 3. Press F5 - launch the solution with debugging attached.
 
-Most IDE's have some form of a task runner that can be used to automate the build, execute, and attach steps. Try to leverage these such that the steps can all be run with as few manual steps as possible.
+Most IDEs have some form of a task runner that can be used to automate the build, execute, and attach steps. Try to leverage these such that the steps can all be run with as few manual steps as possible.
 
 ### DevEx Champion Actively Seek Improvements
 
@@ -117,6 +118,18 @@ The following are ceremonies that the DevEx champion can use to find potential o
 - Standup Blockers. Are individuals getting blocked or stumbling on the essential tasks?
 
 As opportunities are identified, the DevEx champion can translate these into actionable stories for the product backlog.
+
+### Make Tasks Cross Platform
+
+For essential tasks being standardized during the engagement, ensure that different platforms are accounted for. Team members may have different operating systems and ensuring the tasks are cross platform will provide an additional opportunity to improve the experience.
+
+- See the [making tasks cross platform recipe](./recipes/cross-platform-tasks.md) for guidance on how tasks can be configured to include different platforms.
+
+### Create an Onboarding Guide
+
+When welcoming new team members on the engagement, there are many areas for them to get adjusted to and bring them up to speed including codebase, coding standards, team agreements, and team culture. By adopting a strong onboarding practice such as an onboarding guide in a centralized location that explains the scope of the project, processes, setup details, and software required, new members can have all the necessary resources for them to be efficient, successful and a valuable team member from the start.
+
+See the [onboarding guide recipe](./recipes/onboarding-guide-template.md) for guidance on what an onboarding guide may look like.
 
 ### Standardize Essential Tasks
 
@@ -135,11 +148,17 @@ Automate the ability to execute each essential task across all solution componen
 
 When this is not implemented, the engineers must repeat each of the essential tasks manually for each component in the solution. In this situation, the number of steps required to perform each essential task is multiplied by the number of components in the system
 
-[Configuration steps +Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [many solution components] = TOO MANY STEPS
+[Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [many solution components] = TOO MANY STEPS
 
 VS.
 
-[Configuration steps +Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [1 solution] = MINIMUM NUMBER OF STEPS
+[Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [1 solution] = MINIMUM NUMBER OF STEPS
+
+### Observability
+
+[Observability](../observability/readme.md) alleviates unforeseen challenges for the developer in a complex distributed system. It identifies project bottlenecks quicker and with more precision, enhancing performance as the developer seeks to deploy code changes. Adding observability improves the experience when identifying and resolving bugs or broken code. This results in fewer or less severe current and future production failures.
+
+There are many observability strategies a developer can use alongside best engineering practices. These resources improve the DevEx by ensuring a shared view of the complex system throughout the entire lifecycle. Observaibility in code via logging, exception handling and exposing of relevant application metrics for example, promotes the consistent visibility of real time performance. The observability pillars, [logging](../observability/pillars/logging.md), [metrics](../observability/pillars/metrics.md), and [tracing](../observability/pillars/tracing.md), detail when to enable each of the three specific types of observability.
 
 ### Minimize the Number of Repositories
 

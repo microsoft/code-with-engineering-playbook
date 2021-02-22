@@ -2,128 +2,76 @@
 
 ## Introduction
 
-Design reviews should not feel like a burden.  Design reviews can be easily incorporated into your dev crew process with minimal overhead.  
+Design reviews should not feel like a burden. Design reviews can be easily incorporated into the dev crew process with minimal overhead.
 
-- Only create design reviews when needed.  Not every story or task requires a full blown design review
-- Leverage this guidance and make changes to fit in best with your team.  Every team works a bit differently and has different tweaks that work best for them.
-- Leverage SME's as needed during design reviews. Not every story needs SME or leadership sign-off.  Most design reviews can be fully executed within your own dev crew.
+- Only create design reviews when needed. Not every story or task requires a complete design review.
+- Leverage this guidance to make changes that best fit in with the team. Every team works differently.
+- Leverage Microsoft subject matter experts (SME) as needed during design reviews. Not every story needs SME or leadership sign-off. Most design reviews can be fully executed within a dev crew.
 
-The following is are some guidelines on how you and your team can start incorporating design reviews into your normal day to day agile process.
+The following guidelines outline how Microsoft and the customer together can incorporate design reviews into their day-to-day agile processes.
 
 ## Table of Contents
 
-- [Envisioning / Architecture Design Session (ADS)](#envisioning-/-architecture-design-session-(ads))
-- [Game Plan](#game-plan)
+- [Envisioning / Architecture Design Session (ADS)](#envisioning--architecture-design-session-ads)
 - [Sprint Planning](#sprint-planning)
-- [Sprint Backlog Grooming](#sprint-backlog-grooming)
+- [Sprint Backlog Refinement](#sprint-backlog-refinement)
 - [Sprint Retrospectives](#sprint-retrospectives)
 - [Wrap-up Sprints](#wrap-up-sprints)
 
 ## Envisioning / Architecture Design Session (ADS)
 
-Early on within an engagement process we are working with customers to understand their unique goals and objectives.  We are defining requirements to understand definition of done.  We are diving deep into their existing infrastructure and architecture to understand constraints.
+Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microsoft dives deep into existing customer infrastructure and architecture to understand potential constraints.
 
-During this time we are uncovering as many unknowns as possible to help us jointly generate a design to meet the customers goals.  We are leveraging all the new found information and incorporating it into our game plan design for the customer engagement.
+During this time the team uncovers many unknowns, leveraging all new found information, in order to help generate an impactful design that meets customer goals.
 
-> **Tip**: We have not uncovered all the unknowns at this point. You will continue to learn and discover more during the lifetime of your engagement
-
-## Game Plan
-
-The [game plan document](https://aka.ms/GamePlanTemplate) is our guiding star throughout the engagement.  The game plan document should include the following sections and answer the following questions.
-
-### Deliverable
-
-1. What are we delivering?
-1. What does success look like?
-1. What is the definition of done?
-1. What security, privacy and/or performance requirements are required?
-
-### Design
-
-1. What does the high level architecture look like?
-1. What does the technology stack look like?
-1. How does this solution fit into the customers overall product / service?
-
-### Process
-
-1. How will engineering fundamentals be leveraged during the project?
-1. What is the proposed sprint schedule?  How many sprints?
-1. Who is the team? CSE engineers? Customer Engineers?
-1. What is the sharing plan after the engagement is complete?
-
-### Ready to start
-
-1. Has the customer signed off on the plan?
-1. Are there any blocking issues to starting the engagement?
-1. What are the known risks?
-
-> **Tip**: Keep your game plan up to date as your design changes over time
-
-## Checkpoint Reviews
-
-Our monthly checkpoints are a great way for the team to check-in with leadership and other CSE SME's and provide a status update to the larger team.
-
-Some key items to discuss:
-
-### Design Reviews
-
-1. Present any key design reviews created since the last checkpoint or game plan
-1. Present any new design artifacts including API contracts, architecture diagrams, workflows, deployment pipelines, etc.
-1. Describe if there are any high level architecture or design changes since last review
-1. How have your design changes impacted the initial game plan
+> **Tip**: All unknowns have not been addressed at this point.
 
 ## Sprint Planning
 
-In many of our engagements we will be working with our customers using a SCRUM agile development process.  [Sprint planning](../../sprint-planning/readme.md) is a great opportunity to dive deep into the next set of high priority work.  Some key points to address are the following:
+In many engagements Microsoft works with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../agile-development/sprint-planning/readme.md) is a great opportunity to dive deep into the next set of high priority work. Some key points to address are the following:
 
 1. Identify stories that require design reviews
-1. Breakout design from implementation for complex stories
-1. Assign owners to each design story
+1. Separate design from implementation for complex stories
+1. Assign an owner to each design story
 
 Stories that will benefit from design reviews have one or more of the following in common:
 
-1. Are there many unknowns or unclear requirements
-1. There is wide distribution in story point costing amongst your dev crew
-1. You cannot clearly illustrate all the tasks required for a story
+1. There are many unknown or unclear requirements
+1. There is a wide distribution of anticipated workload, or story pointing, across the dev crew
+1. The developer cannot clearly illustrate all tasks required for the story
 
-> **Tip:** After your sprint planning is complete your team should consider hosting an initial design review discussion to dive deep on the design requirement of the stories that were identified.  After you have more clarity the team should continue forward with either a sync or async design review to complete the tasks.
+> **Tip:** After sprint planning is complete the team should consider hosting an initial design review discussion to dive deep in the design requirement of the stories that were identified. This will provide more clarity so that the team can move forward with a design review, synchronously or asynchronously, and complete tasks.
 
-## Sprint Backlog Grooming
+## Sprint Backlog Refinement
 
-If you team is not already hosting a [Sprint Backlog Grooming](../../backlog-management/grooming/readme.md) session at least once per week you should consider it.  It is a great opportunity to:
+If you team is not already hosting a [Sprint Backlog Refinement](../../agile-development/backlog-management/refinement/readme.md) session at least once per week you should consider it.  It is a great opportunity to:
 
-1. Keep your backlog clean
-1. Re-prioritize work bash on shifting business priorities
-1. Fill in missing descriptions / acceptance criteria
+1. Keep the backlog clean
+1. Re-prioritize work based on shifting business priorities
+1. Fill in missing descriptions and acceptance criteria
 1. Identify stories that require design reviews
 
-The team can follow the same steps from [sprint planning](#sprint-planning) to help identify which stories require design reviews.  This can often save much time during your actual sprint planning meetings to focus on the task at hand.
+The team can follow the same steps from [sprint planning](#sprint-planning) to help identify which stories require design reviews. This can often save much time during the actual sprint planning meetings to focus on the task at hand.
 
 ## Sprint Retrospectives
 
-[Sprint retrospectives](../../retrospectives/readme.md) are a great time to check-in with your dev team to identify what is working or not working within your group and propose changes to keep improving.
+[Sprint retrospectives](../../agile-development/retrospectives/readme.md) are a great time to check-in with the dev team, identify what is working or not working, and propose changes to keep improving.
 
-It is also a great time to check-in on your design reviews
+It is also a great time to check-in on design reviews
 
-- Did any of your designs change from last sprint?
-- How have your design changes impacted your engagement?
+- Did any of the designs change from last sprint?
+- How have design changes impacted the engagement?
 - Have previous design artifacts been updated to reflect new changes?
 
-All design artifacts including the game plan should be treated as a living document.  As requirements change or you uncover more unknowns the dev crew should be going back and updating all your design artifacts to reflect reality.  If this step is missed you are making a critical mistake which could lead to the customer incurring more technical debt in the future. Artifacts that are not up to date are basically `bugs` in your design.
+All design artifacts should be treated as a living document. As requirements change or uncover more unknowns the dev crew should retroactively update all design artifacts. Missing this critical step may cause the customer to incur future technical debt. Artifacts that are not up to date are `bugs` in the design.
 
-> **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../team-agreements/definition-of-done/readme.md) for all user stories.
+> **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../agile-development/team-agreements/definition-of-done/readme.md) for all user stories.
 
 ## Wrap-up Sprints
 
-Wrap-up sprints are a great time to tie up loose ends with your customer, hand-off your solution and execute your sharing requirements from the game plan.  Customer hand-off becomes a lot easier when you have design artifacts to reference and deliver along side your completed solution.  
+Wrap-up sprints are a great time to tie up loose ends with the customer and hand-off solution. Customer hand-off becomes a lot easier when there are design artifacts to reference and deliver alongside the completed solution.
 
-During your wrap-up sprints your dev crew should consider the following:
+During your wrap-up sprints the dev crew should consider the following:
 
-1. Are your design artifacts up to date?
-1. Are your design artifacts stored in an accessible location?
-1. How can other CSE dev crews leverage the work from your engagement?
-1. Submit new engineering patterns and practices back to the [CSE playbook](https://aka.ms/cseplaybook)
-
-It is critical that your design artifacts are in an accessible location that can be shared by other CSE dev crews.  [CSE artifact hub](https://aka.ms/cseartifacthub) is a great place to store and share your artifacts so that other teams can quickly find them.
-
-> **Tip:** Now is also a great time to schedule a brown bag meeting to review your engagement and showcase your key designs that were created by the team.
+1. Are the design artifacts up to date?
+1. Are the design artifacts stored in an accessible location?

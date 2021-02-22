@@ -3,10 +3,12 @@
 ## Table of Contents
 
 - [Goals](#goals)
+- [Measures](#measures)
 - [Impact](#impact)
 - [Participation](#participation)
 - [Facilitation Guidance](#facilitation-guidance)
 - [Design Review Recipes](#design-review-recipes)
+- [Technical Spike](#technical-spike)
 
 ## Goals
 
@@ -60,14 +62,14 @@ The dev crew should always participate in all design review sessions
 Domain experts should participate in design review sessions as needed
 
 - CSE Tech Domain
-- Customer Subject Matter Experts (SME's)
+- Customer Subject Matter Experts (SME)
 - Senior Leadership
 
 ## Facilitation Guidance
 
 ### Sync Design Reviews via in-person / virtual meetings
 
-Joint meetings with dev crew, subject matter experts (SME's) and customer engineers
+Joint meetings with dev crew, subject matter experts (SMEs) and customer engineers
 
 ### Async Design Reviews via Pull-Requests
 
@@ -83,7 +85,7 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 ### Design Review Templates
 
-#### Game Plan
+#### [Game Plan](./recipes/high-level-design-recipe.md)
 
 - The same template already in use today
 - High level architecture and design
@@ -95,7 +97,7 @@ Design reviews come in all shapes and sizes. There are also different items to c
 - Design should be more detailed than game plan
 - May require unique deployment, security and/or privacy characteristics from other milestones
 
-#### Feature/story design review
+#### [Feature/story design review](./recipes/feature-story-design-review-template.md)
 
 - Design for complex features or stories
 - Will reuse deployment, security and other characteristics defined within game plan or milestone
@@ -105,3 +107,13 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 - Highly detailed design for a complex tasks with many unknowns
 - Will integrate into higher level feature/component designs
+
+## Technical Spike
+
+A technical spike is most often used for evaluating the impact new technology has on the current implementation. Please read more [here](./recipes/technical-spike.md).
+
+## Design Documentation
+
+- Document and update the architecture design in the project design documentation
+- Track and document design decisions in a [decision log](./decision-log/readme.md)
+- Document decision process in [trade studies](./trade-studies/readme.md) when multiple solutions exist for the given problem

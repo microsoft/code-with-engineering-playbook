@@ -2,7 +2,7 @@
 
 ## Link to the design document that prompted this PR
 
-- Provide a link to the design document relevant to this area.
+- Provide a link to the [design document](../design-reviews/recipes/async-design-reviews.md) relevant to this area.
 
 ## What are you trying to address
 
@@ -27,7 +27,7 @@
 - If you are printing something show a screenshot
 - When you want to share long logs upload to:
 
-  (StorageAccount)/pr-support/attachments/(PR Number)/(yourFiles) using [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) or [portal.azure.com](portal.azure.com) and insert the link here.
+  (StorageAccount)/pr-support/attachments/(PR Number)/(yourFiles) using [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) or [portal.azure.com](https://portal.azure.com) and insert the link here.
 
 ### Other information or known dependencies
 
