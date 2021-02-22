@@ -96,10 +96,11 @@ More details on [Engineering Feedback](engineering-feedback/readme.md)
 
 ## Developer Experience (DevEx)
 
+- [ ] Build/Compile source to verify it is free of syntax errors and compiles.
+- [ ] Execute all automated tests (unit, e2e, etc).
+- [ ] Start/Launch end-to-end to simulate execution in a deployed environment.
+- [ ] Attach debugger to started solution or running automated tests, set breakpoints, step through code, and inspect variables.
 - [ ] When pressing F5 in the IDE, dependencies are automatically installed.
-- [ ] Source code is compiled to executable binary and/or container image.
 - [ ] You can use local dev configuration values (i.e. .env, appsettings.development.json).
-- [ ] All tests (unit, integration, e2e etc) are passing and can be debugged.
-- [ ] Use a development container - running Docker container with a well-defined tool/runtime stack and its prerequisites, to unify developer experience across developers regardless of their OS and local dependencies (e.g [Visual Studio Dev Containers extension](https://code.visualstudio.com/docs/remote/create-dev-container)).
 
 More details on [Developer Experience](developer-experience/readme.md)
