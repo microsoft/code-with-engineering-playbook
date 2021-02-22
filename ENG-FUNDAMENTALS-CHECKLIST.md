@@ -95,3 +95,14 @@ More details on [Retrospectives](agile-development/retrospectives/readme.md)
 - [ ] Ensure feedback is detailed and repeatable
 
 More details on [Engineering Feedback](engineering-feedback/readme.md)
+
+## Developer Experience (DevEx)
+
+- [ ] Build/Compile source to verify it is free of syntax errors and compiles.
+- [ ] Execute all automated tests (unit, e2e, etc).
+- [ ] Start/Launch end-to-end to simulate execution in a deployed environment.
+- [ ] Attach debugger to started solution or running automated tests, set breakpoints, step through code, and inspect variables.
+- [ ] When pressing F5 in the IDE, dependencies are automatically installed.
+- [ ] You can use local dev configuration values (i.e. .env, appsettings.development.json).
+
+More details on [Developer Experience](developer-experience/readme.md)
