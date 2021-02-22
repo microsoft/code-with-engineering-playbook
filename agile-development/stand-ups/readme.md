@@ -1,10 +1,11 @@
 # Stand-ups
 
-The stand-up is a time-boxed ceremony that is held each day of the sprint. In this ceremony, each contributor in the Development Team will answer three simple questions. This will repeat until each contributor has answered the three following questions.
+The stand-up is a time-boxed ceremony that is held each day of the sprint. In this ceremony, each contributor in the Development Team will answer three simple project questions and an optional social question. This will repeat until each contributor has answered the following questions.
 
 1. What did you work on yesterday that contributes to meet the sprint goal?
 2. What are you working on today that will contribute to meet the sprint goal?
 3. Do you have any impediments/blockers or need any help? (defer discussion / resolution to "the parking lot", described below)
+4. An [optional social question](./social-question/readme.md), e.g. "would you rather see the past or the future?"
 
 During the stand-up, additional discussions may arise. Make sure that someone adds them to the parking lot for after meeting discussion.  
 
@@ -19,6 +20,7 @@ The participation in the parking lot discussion is optional for all members exce
 
 1. Bring awareness of the progress done towards the sprint goal and the sprint backlog.
 2. Surface any impediments to one or more team members' contributions.
+3. Maintain contact between remote team members to reduce social barriers to collaboration.
 
 ## Participation
 
@@ -39,7 +41,7 @@ Both stand-up length and time to start are important as the stand-up has to be s
 
 ### Stand-up Length
 
-While the length can depend on the team size, if everyone is sticking to one line answers to the 3 key questions, it should be fairly easy to conclude within 5-10 minutes.
+While the length can depend on the team size, if everyone is sticking to one line answers to the key questions, it should be fairly easy to conclude within 5-10 minutes.
 
 #### Example (team size == ~8)
 
@@ -78,11 +80,15 @@ If a contributor is not working on an existing sprint task they need to either c
 
 ### Parking Lot Discussion Items
 
-As contributors are answering the three questions, if another contributor has a question or issue to share, they should reserve until after all contributors have answered finished. Once each member has answered all three questions, the Process Lead should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
+As contributors are answering the questions, if another contributor has a question or issue to share, they should reserve until after all contributors have finished answering. Once each member has answered all questions, the Process Lead should open up the floor to anyone who may have an open question or unresolved issue to share. This portion of the ceremony is often referred to as the "Parking Lot".
 
 > Parking lot discussions are optional for participants.
 
 Ensure discussion leaders call out necessary parties for their discussion points upfront, allowing those not needed to leave the meeting.
+
+### Social question
+
+Teams are frequently geographically distributed and include members who have not worked on projects together previously. Small social interactions facilitate interpersonal trust development and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question and a list of starter questions are available within the [social question readme](./social-question/readme.md).
 
 ### Start On Time
 
