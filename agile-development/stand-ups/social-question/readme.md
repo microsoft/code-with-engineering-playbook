@@ -1,10 +1,10 @@
 # Social question of the day
 
-The social question of the day is an optional short question to follow the [three project questions](../readme.md) in the daily stand-up. It develops team cohesion and interpersonal trust over the course of an engagement by facilitating the sharing of chosen personal context.
+The social question of the day is an optional short question to follow the [three project questions](../readme.md) in the daily stand-up. It develops team cohesion and interpersonal trust over the course of an engagement by facilitating the sharing of personal preferences, lifestyle, or other context. 
 
-If the team decides to incorporate a social question-of-the-day into the stand-up, the questions can be selected by the facilitator or sourced from the attendees. The latter is faster and the former will likely result in more diverse questions.
+The social question should be chosen before the stand-up. The facilitator should select the question either independently or from the team's asynchronous suggestions. This minimizes delays at the start of the stand-up.
 
-> Tip: having the stand-up facilitator role rotate lets the facilitator choose the social question without burdening any one team member.
+> Tip: having the stand-up facilitator role rotate each sprint lets the facilitator choose the social question independently without burdening any one team member.
 
 ## Properties of a good question
 

@@ -88,11 +88,11 @@ Ensure discussion leaders call out necessary parties for their discussion points
 
 ### Social question
 
-Teams are frequently geographically distributed and include members who have not worked on projects together previously. Small social interactions facilitate interpersonal trust development and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question and a list of starter questions are available within the [social question readme](./social-question/readme.md).
+Teams are frequently geographically distributed and include members who have not worked on projects together previously. Social interactions facilitate the development of trust between team members and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question and a list of starter questions are available within the [social question readme](./social-question/readme.md).
 
 ### Start On Time
 
-Make a best effort to begin answering the 3 questions as close to the scheduled start time as possible. Try not to waste time upfront on chit-chat or waiting on all team members to join. This can extend the meeting time significantly. Starting immediately will help ensure stand-ups remain effective and useful over time.
+Make a best effort to begin answering the questions as close to the scheduled start time as possible. Try not to waste time upfront on chit-chat or waiting on all team members to join. This can extend the meeting time significantly. Starting immediately will help ensure stand-ups remain effective and useful over time.
 
 ### Same Time Every weekday
 
@@ -106,13 +106,13 @@ For team members distributed across time zones, consider scheduling the stand-up
 
 ### Contributors Unable to Attend (async updates)
 
-If a contributor knows that they will have to miss the stand-up, ask them to provide their answers to the 3 questions in written form before the stand-up. They could provide these over a shared Teams channel or email to the team. The Process Lead can then read the answers during the stand-up. Reading the update aloud during the stand-up will ensure the answers are communicated to the team.
+If a contributor knows that they will have to miss the stand-up, ask them to provide their answers to the questions in written form before the stand-up. They could provide these over a shared Teams channel or email to the team. The Process Lead can then read the answers during the stand-up. Reading the update aloud during the stand-up will ensure the answers are communicated to the team.
 
 ### Remote Located Team Members
 
-If any team member is working remotely, plan to run stand-ups through conference calls. Ask the team members to keep the camera on as much as possible so that they can see each other when speaking against the 3 questions.
+If any team member is working remotely, plan to run stand-ups through conference calls. Ask the team members to keep the camera on as much as possible so that they can see each other when speaking against the questions.
 
-> **Tip**: In order to keep the remote stand-up as efficient, in a good pace and with the collective sense as it is in a physically located stand-up, you can agree on applying a "pick the next one approach" in which the current contributor to speak picks the next in a loop until everyone with contributions had answered the 3 questions.
+> **Tip**: In order to keep the remote stand-up as efficient, in a good pace and with the collective sense as it is in a physically located stand-up, you can agree on applying a "pick the next one approach" in which the current contributor to speak picks the next in a loop until everyone with contributions had answered the questions.
 
 ## Resources
 
