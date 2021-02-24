@@ -33,7 +33,7 @@ We should always aim to keep pull requests small. Small PRs have multiple advant
 * They are easier to deploy; this is aligned with the strategy of release fast and release often.
 * Minimizes possible conflicts and stale PRs.
 
-However, we should keep PRs focused - for example around functional feature, optimization or code readbility and avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PRs could be difficult and therefore slower to review. We should always strive to have as small PRs as possible that still add value.
+However, we should keep PRs focused - for example around a functional feature, optimization or code readbility and avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PRs could be difficult and therefore slower to review. We should always strive to have as small PRs as possible that still add value.
 
 ## Best Practices
 
