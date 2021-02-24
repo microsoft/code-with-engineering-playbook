@@ -39,7 +39,7 @@ However, we should keep PRs focused - for example around a functional feature, o
 
 Beoynd the size, remember that every PR should:
 
-* Be consistent,
+* be consistent,
 * not break the build, and
 * include related tests as part of the PR.
 
