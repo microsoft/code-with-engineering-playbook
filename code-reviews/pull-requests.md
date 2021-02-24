@@ -51,7 +51,7 @@ These are some strategies to keep PRs small depending on the "cause" of the inev
 
 ## Pull Request Description
 
-Well written PR desciption helps maintain a clean, well-structured change history. While every team need not conform to the same specification, it is important that the convention is agreed upon at the start of the project.
+Well written PR descriptions helps maintain a clean, well-structured change history. While every team need not conform to the same specification, it is important that the convention is agreed upon at the start of the project.
 
 One popular specification for open-source projects and others is the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0-beta.2/), which is strucured as:
 
