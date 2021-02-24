@@ -74,7 +74,6 @@ When working in an engineering project, we typically encounter one or more of th
 - [Languages](./tools/languages.md)
   - [markdown](./tools/languages.md#markdown)
   - [mermaid](./tools/languages.md#mermaid)
-- [Tools and extensions](./tools/tools-and-extensions.md)
 - [How to automate simple checks](./tools/automation.md)
 - [Integration with Teams/Slack](./tools/integrations.md)
 

@@ -45,12 +45,13 @@ Some sections in the documentation of the repository might point to the projectâ
 - Contributing Guide
   - Repo structure
   - Design documents
-  - Branching and branch name strategy
-  - Merge and commit history strategy
-  - Pull Requests
-  - Code Review Process
-  - Code Review Checklist
-- Project Design
+  - [Branching and branch name strategy](../../source-control/contributing/naming-branches.md)
+  - [Merge and commit history strategy](../../source-control/contributing/merge-strategies.md)
+  - [Pull Requests](./pull-requests.md)
+  - [Code Review Process](../../code-reviews/readme.md)
+  - [Code Review Checklist](../../code-reviews/process-guidance/reviewer-guindance.md)
+    - [Language Specific Checklists](../../code-reviews/recipes/README.md)
+- [Project Design](../../design-reviews/readme.md)
   - [High Level / Game Plan](../../design-reviews/recipes/high-level-design-recipe.md)
   - [Milestone / Epic Design Review](../../design-reviews/recipes/milestone-epic-design-review-recipe.md)
 - [Design Review Templates](../../design-reviews/readme.md#design-review-templates)
