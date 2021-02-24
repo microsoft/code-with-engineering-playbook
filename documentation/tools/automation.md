@@ -1,6 +1,6 @@
 # How to automate simple checks
 
-![docs-checks](./.attachments/docs-checks.png)
+![docs-checks](./images/docs-checks.png)
 
 Markdown linting:
 
