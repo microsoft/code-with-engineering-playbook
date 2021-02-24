@@ -51,146 +51,32 @@ When working in an engineering project, we typically encounter one or more of th
 
 ## What documentation should exist
 
-- [Project and Repositories](#project-and-repositories)
-- [Work items](#work-items)
-- [Code](#code)
-- [Pull Requests](#pull-requests)
-- [Security](#security)
-- [Engineering Feedback](#engineering-feedback)
-
-### Project and Repositories
-
-Every source code repository should include documentation that is specific to it (e.g., in a Wiki within the repository), while the project itself should include general documentation that is common to all its associated repositories (e.g., in a Wiki within the backlog management tool).
-
-**Documentation specific to a repository:**
-
-- Introduction.
-- Getting started.
-  - Onboarding.
-  - Setup: programming language, frameworks, platforms, tools, etc.
-  - Sandbox environment.
-  - Working Agreement.
-  - Contributing Guide.
-- Structure: folders, projects, etc.
-- How to compile, test, build, deploy the solution/each project.
-  - Different OS versions.
-  - Command line + editors/IDEs.
-- Design decision records.
-
-Some sections in the documentation of the repository might point to the project’s documentation (e.g., Onboarding, Working Agreement, Contributing Guide).
-
-**Common documentation to all repositories:**
-
-- Introduction.
-  - Project.
-  - Customer.
-  - Definitions.
-  - Requirements.
-- Onboarding.
-- Repository guide.
-  - Production, Spikes.
-- Working Agreement.
-  - Working beliefs.
-  - Definition of Ready.
-  - Definition of Done.
-  - Scrum rhythm.
-- Contributing Guide.
-  - Repo structure.
-  - Design documents.
-  - Branching and branch name strategy.
-  - Merge and commit history strategy.
-  - Pull Requests.
-  - Code Review Process.
-  - Code Review Checklist.
-- Design decision records.
-  - Template.
-
-### Work items
-
-- Epics/Features/User Stories/Tasks/Bugs.
-  - Title.
-  - Description.
-  - Acceptance Criteria.
-  - Estimation.
-  - Discussion.
-- Stories/tasks include:
-  - Design reviews.
-  - Observability design components.
-- Actions from Retrospectives.
-
-### Code
-
-- Comments.
-  - Placeholders/TODOs.
-- Doc comments.
-- CLI help, API docs (Swagger), etc.
-
-### Pull Requests
-
-- Title.
-- Description.
-- Linked worked items.
-- Comments.
-
-### Security
-
-- Artifacts.
-  - Threat models.
-  - Security requirements.
-  - Reports.
-  - Lessons learned.
-
-### Engineering Feedback
-
-- Actionable.
-- Specific.
-- Detailed.
-  - Assets.
-  - Customer scenario.
+- [Project and Repositories](./guidance/project-and-repositories.md)
+- [Work items](./guidance/work-items.md)
+- [Code](./guidance/code.md)
+- [Pull Requests](./guidance/pull-requests.md)
+- [Security](./guidance/security.md)
+- [Engineering Feedback](./guidance/engineering-feedback.md)
 
 ## Best practices
 
-- [Establishing and managing documentation](#establishing-and-managing-documentation)
-- [Where does documentation fit within story work?](#where-does-documentation-fit-within-story-work)
-- [Making documentation discoverable](#making-documentation-discoverable)
-- [Creating good documentation](#creating-good-documentation)
-- [Keeping documentation updated](#keeping-documentation-updated)
-- [Communication and documentation](#communication-and-documentation)
-- [Replacing documentation with automation](#replacing-documentation-with-automation)
-
-### Establishing and managing documentation
-
-- It should be source controlled and pr'd.
-
-### Where does documentation fit within story work?
-
-### Making documentation discoverable
-
-### Creating good documentation
-
-### Keeping documentation updated
-
-### Communication and documentation
-
-- Communication channels.
-  - In-person vs. phone vs. email vs. Teams/Slack vs. Discussion section in Wiki/tasks vs. …
-- Recording decisions/changes.
-- Communicating decisions/changes.
-  - E.g., Channels in Teams: General, Breaking Changes, Meetings, PRs, Workstreams
-
-### Replacing documentation with automation
-
-- Dev containers.
-- Tasks/launch configs in vs code to automate startup, installs, etc.
+- [Establishing and managing documentation](./best-practices/establish-and-manage.md)
+- [Where does documentation fit within story work?](./best-practices/fit-within-story-work.md)
+- [Making documentation discoverable](./best-practices/discoverability.md)
+- [Creating good documentation](./best-practices/good-documentation.md)
+- [Keeping documentation updated](./best-practices/keep-updated.md)
+- [Communication and documentation](./best-practices/communication.md)
+- [Replacing documentation with automation](./best-practices/automation.md)
 
 ## Tools
 
-- Wikis vs. note apps (e.g., OneNote).
-- Languages: markdown (.md), mermaid (.mmd + .png).
-- Tools and extensions.
-- Automation e.g., Linters, Precommit.
-- Integration with Teams/Slack.
-  - Pull Requests.
+- [Wikis](./tools/wikis.md)
+- [Languages](./tools/languages.md)
+  - [markdown](./tools/languages.md#markdown)
+  - [mermaid](./tools/languages.md#mermaid)
+- [Tools and extensions](./tools/tools-and-extensions.md)
+- [How to automate simple checks](./tools/automation.md)
+- [Integration with Teams/Slack](./tools/integrations.md)
 
 ## Resources
 
