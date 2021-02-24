@@ -1,16 +1,17 @@
 # ML Fundamentals checklist
 
-This checklist helps ensure that our ML projects meet our ML Fundamentals.
+This checklist helps ensure that our ML projects meet our ML Fundamentals. The items below are not sequential, but rather organised by different parts of an ML project.
 
-## Data Quality and governance
+## Data Quality and Governance
 
 - [ ] There is access to data.
 - [ ] Labels exist for dataset of interest.
 - [ ] Data quality evaluation.
 - [ ] Able to track data lineage.
 - [ ] Understanding of where the data is coming from and any policies related to data access.
+- [ ] Gather Security and Compliance requirements.
 
-## Feasibility study
+## Feasibility Study
 
 - [ ] A feasibility study was performed to assess if the data supports the proposed tasks.
 - [ ] Rigorous Exploratory data analysis was performed (including analysis of data distribution).
@@ -19,7 +20,7 @@ This checklist helps ensure that our ML projects meet our ML Fundamentals.
 - [ ] ML outputs/assets can be integrated within the production system.
 - [ ] Recommendations on how to proceed have been documented.
 
-## Evaluation and metrics
+## Evaluation and Metrics
 
 - [ ] Clear definition of how performance will be measured.
 - [ ] The evaluation metrics are somewhat connected to the success criteria.
@@ -47,5 +48,7 @@ This checklist helps ensure that our ML projects meet our ML Fundamentals.
 - [ ] [Model readiness checklist](ml-model-checklist.md) reviewed.
 - [ ] Model reviews were performed (covering model debugging, reviews of training and evaluation approaches, model performance).
 - [ ] Data pipeline for inferencing, including an end-to-end tests.
+- [ ] SLAs requirements for models are gathered and documented.
 - [ ] Monitoring of data feeds and model output.
+- [ ] Ensure consistent schema is used across the system with expected input/output defined for each component of the pipelines (data processing as well as models).
 - [ ] Responsible AI review.

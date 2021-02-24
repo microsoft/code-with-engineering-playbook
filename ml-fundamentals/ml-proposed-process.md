@@ -77,7 +77,7 @@ For more information on experimentation, refer to the [experimentation](ml-exper
   * Evaluation flow is [fully set up](ml-experimentation.md#model-evaluation).
   * Reproducible experiments for the different approaches experimented with.
 
-### Model Productionization
+### Model Operationalization
 
 * Taking "experimental" code and preparing it so it can be deployed. This includes data pre-processing, featurization code, training model code (if required to be trained using CI/CD) and model inference code.
 
