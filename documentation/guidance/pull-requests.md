@@ -1,6 +1,12 @@
 # Pull Requests
 
-- Title.
-- Description.
-- Linked worked items.
-- Comments.
+When we create [Pull Requests](../../code-reviews/pull-requests.md), we must ensure they are properly documented:
+
+- Title
+  - [Commit Message Standardization](../../code-reviews/pull-requests.md#commit-message-standarization)
+- Description
+  - [Pull Request Template](../../code-reviews/pull-request-template.md)
+- Linked worked items
+- Comments
+  - As an author, [address all comments](../../code-reviews/process-guidance/author-guidance.md#be-open-to-receive-feedback)
+  - As a reviewer, [make comments clear](../../code-reviews/process-guidance/reviewer-guidance.md#make-comments-clear)
