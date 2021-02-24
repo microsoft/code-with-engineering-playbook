@@ -23,14 +23,14 @@ Some sections in the documentation of the repository might point to the projectâ
 
 ## Common documentation to all repositories
 
-- Introduction.
-  - Project.
-  - Customer.
-  - Definitions.
-  - Requirements.
-- Onboarding.
-- Repository guide.
-  - Production, Spikes.
+- Introduction
+  - Project
+  - Customer
+  - Definitions
+  - Requirements
+- [Onboarding](../../developer-experience/recipes/onboarding-guide-template.md)
+- Repository guide
+  - Production, Spikes
 - [Team agreements](../../agile-development/team-agreements/readme.md)
   - [Team Manifesto](../../agile-development/team-agreements/team-manifesto/readme.md)
     - Short summary of expectations around the technical way of working and supported mindset in the team.
@@ -42,14 +42,14 @@ Some sections in the documentation of the repository might point to the projectâ
     - List of tasks that must be completed to close a user story, a sprint, or a milestone.
   - [Definition of Ready](../../agile-development/team-agreements/definition-of-ready/readme.md)
     - How complete a user story should be in order to be selected as candidate for estimation in the sprint planning.
-- Contributing Guide.
-  - Repo structure.
-  - Design documents.
-  - Branching and branch name strategy.
-  - Merge and commit history strategy.
-  - Pull Requests.
-  - Code Review Process.
-  - Code Review Checklist.
+- Contributing Guide
+  - Repo structure
+  - Design documents
+  - Branching and branch name strategy
+  - Merge and commit history strategy
+  - Pull Requests
+  - Code Review Process
+  - Code Review Checklist
 - Project Design
   - [High Level / Game Plan](../../design-reviews/recipes/high-level-design-recipe.md)
   - [Milestone / Epic Design Review](../../design-reviews/recipes/milestone-epic-design-review-recipe.md)
