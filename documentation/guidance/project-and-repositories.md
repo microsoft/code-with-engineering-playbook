@@ -29,11 +29,17 @@ Some sections in the documentation of the repository might point to the projectâ
 - Onboarding.
 - Repository guide.
   - Production, Spikes.
-- Working Agreement.
-  - Working beliefs.
-  - Definition of Ready.
-  - Definition of Done.
-  - Scrum rhythm.
+- [Team agreements](../../agile-development/team-agreements/readme.md)
+  - [Team Manifesto](../../agile-development/team-agreements/team-manifesto/readme.md)
+    - Short summary of expectations around the technical way of working and supported mindset in the team.
+    - E.g., Ownership, Respect, Collaboration, Transparency.
+  - [Working Agreement](../../agile-development/team-agreements/working-agreements/readme.md)
+    - How we work together as a team and what our expectations and principles are.
+    - E.g., Communication, Work Life Balance, Scrum Rhythm, Backlog Management, Code Management.
+  - [Definition of Done](../../agile-development/team-agreements/definition-of-done/readme.md)
+    - List of tasks that must be completed to close a user story, a sprint, or a milestone.
+  - [Definition of Ready](../../agile-development/team-agreements/definition-of-ready/readme.md)
+    - How complete a user story should be in order to be selected as candidate for estimation in the sprint planning.
 - Contributing Guide.
   - Repo structure.
   - Design documents.
