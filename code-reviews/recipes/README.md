@@ -8,3 +8,4 @@
 - [Markdown](./Markdown.md)
 - [Python](./Python.md)
 - [Terraform](./Terraform.md)
+- [YAML (Azure Pipelines)](./azure-pipelines-yaml.md)
