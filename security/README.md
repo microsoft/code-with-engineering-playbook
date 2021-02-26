@@ -43,7 +43,6 @@ When requesting a security review for your application, please make sure you hav
 * [Web Service Security](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Web_Service_Security_Cheat_Sheet.md)
 * [XML Security](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_Security_Cheat_Sheet.md)
 
-
 ## Recommended Tools
 
 Check out the list of tools to help enable security in your projects.
