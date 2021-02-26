@@ -55,6 +55,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [Observability](observability/readme.md)
 * [Security](security/README.md)
 * [Source Control](source-control/readme.md)
+* [Reliability](reliability/README.md)
 
 ## Fundamentals for Specific Technology Areas
 
