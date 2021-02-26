@@ -11,7 +11,7 @@ Prevent your dev team from shooting themselves in the foot. People make mistakes
 Check out the below list for some common tooling to remove these foot guns:
 
 * In Kubernetes, leverage [Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) to prevent "bad things" from happening.
-	* You can create custom controllers using the Webhook Admission controller.
+  * You can create custom controllers using the Webhook Admission controller.
 * [Gatekeeper](https://github.com/open-policy-agent/gatekeeper) is a pre-built Webhook Admission controller, leveraging [OPA](https://github.com/open-policy-agent/opa) underneath the hood, with support for some [out-of-the-box protections](https://github.com/open-policy-agent/gatekeeper-library/tree/master/library)
 
 If a user ever makes a mistake, don't ask: "how could somebody possibly do that?", do ask: "how can we prevent this from happening in the future?"
@@ -20,24 +20,23 @@ If a user ever makes a mistake, don't ask: "how could somebody possibly do that?
 
 Whenever possible, leverage autoscaling for your deployments. Vertical autoscaling can scale your VM's by tuning parameters like CPU, disk, and RAM, while horizontal autoscaling can tune the number of running images backing your deployments. Autoscaling can help your system respond to inorganic growth in traffic, and prevent failing requests due to resource starvation.
 
-> Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VM's backing each Pod however, may also need autoscaling to handle an increase in the number of Pods.
+> Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VM's backing each Pod however, may also need autoscaling to handle an increase in the number of Pods. 
 
-> Note: It should also be noted that the parameters that affect autoscaling can be difficult to tune. Typical metrics like CPU or RAM utilization, or request rate may not be enough. Sometimes you might want to consider custom metrics, like cache eviction rate.
+It should also be noted that the parameters that affect autoscaling can be difficult to tune. Typical metrics like CPU or RAM utilization, or request rate may not be enough. Sometimes you might want to consider custom metrics, like cache eviction rate.
 
 ## Loadshedding & DOS Protection
 
-Often we think of Denial of Service [DOS] attacks as an act from a malicious actor, so we place some Loadshedding at the gates to our system and call it a day. In reality, many DOS attacks are unintentional, and self-inflicted. A bad deployment that takes down a Cache results in hammering downstream services. Polling from a distributed system synchronizes and results in a [thundering herd](https://en.wikipedia.org/wiki/Thundering_herd_problem). A misconfiguration results in an error which triggers clients to retry uncontrollably. Requests append to a stored object until it is so big that future reads crash the server. The list goes on. 
+Often we think of Denial of Service [DOS] attacks as an act from a malicious actor, so we place some Loadshedding at the gates to our system and call it a day. In reality, many DOS attacks are unintentional, and self-inflicted. A bad deployment that takes down a Cache results in hammering downstream services. Polling from a distributed system synchronizes and results in a [thundering herd](https://en.wikipedia.org/wiki/Thundering_herd_problem). A misconfiguration results in an error which triggers clients to retry uncontrollably. Requests append to a stored object until it is so big that future reads crash the server. The list goes on.
 
 Follow these steps to protect yourself:
 
-* 	Add a jitter (random) to any action that occurs from a non user triggered flow (ie: add a random duration to the sleep in a cron, or job that continously
-	polls a downstream service).
-* 	Implement [exponential backoff retry policies](https://en.wikipedia.org/wiki/Exponential_backoff) in your client code
-* 	Add loadshedding to your servers (yes, your internal microservices too).
-		* This can be configured easily when leveraging a sidecar like envoy.
-* 	Be careful when deserializing user requests, and use buffer limits.
-		* ie: HTTP/gRPC Servers can set limits on how much data will get read from the socket.
-* 	Set alerts for utilization, servers restarting, or going offline to detect when your system may be failing.
+* Add a jitter (random) to any action that occurs from a non user triggered flow (ie: add a random duration to the sleep in a cron, or job that continously polls a downstream service).
+* Implement [exponential backoff retry policies](https://en.wikipedia.org/wiki/Exponential_backoff) in your client code
+* Add loadshedding to your servers (yes, your internal microservices too).
+  * This can be configured easily when leveraging a sidecar like envoy.
+* Be careful when deserializing user requests, and use buffer limits.
+  * ie: HTTP/gRPC Servers can set limits on how much data will get read from the socket.
+* Set alerts for utilization, servers restarting, or going offline to detect when your system may be failing.
 
 These types of errors can result in Cascading Failures, where a non-critical portion of your system takes down the entire service. Plan accordingly, and make sure to put extra thought into how your system might degrade during failures.
 
@@ -62,9 +61,9 @@ A good practice is to use any leftover budget at the end of the period (ie: year
 We can build graceful failure (or graceful degradation) into our software stack by anticipating failures. Some tactics include:
 
 * Failover to healthy services
-	* [Leader Election](https://en.wikipedia.org/wiki/Leader_election) can be used to keep healthy services on standby in case the leader experiences issues.
-	* Entire cluster failover can redirect traffic to another region or availability zone.
-	* Propagate downstream failures of **dependent services** up the stack via healthchecks, so that your ingress points can re-route to healthy services.
+  * [Leader Election](https://en.wikipedia.org/wiki/Leader_election) can be used to keep healthy services on standby in case the leader experiences issues.
+  * Entire cluster failover can redirect traffic to another region or availability zone.
+  * Propagate downstream failures of **dependent services** up the stack via healthchecks, so that your ingress points can re-route to healthy services.
 * [Circuit breakers](https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.) can bail early on requests vs. propogating errors throughout the system
 
 ## Practice
@@ -82,7 +81,6 @@ Take the time to fabricate scenarios, and run a D&D style campaign to solve your
 ### Chaos Testing
 
 Leverage automated chaos testing to see how things break. Check out the list of the following tools:
-
 
 * [Chaos Monkey](https://netflix.github.io/chaosmonkey/)
 * [Kraken](https://github.com/cloud-bulldozer/kraken)

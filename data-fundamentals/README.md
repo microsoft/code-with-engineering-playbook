@@ -20,7 +20,7 @@ The goal of this section is to briefly describe how to apply the fundamentals to
 
 ## Conccurrency Control
 
-Your systems should (almost) always leverage some form of concurrency control, to ensure correctness amongst competing requests and to prevent data races. The 2 forms of concurrency control are Pessimistic and Optimistic. 
+Your systems should (almost) always leverage some form of concurrency control, to ensure correctness amongst competing requests and to prevent data races. The 2 forms of concurrency control are Pessimistic and Optimistic.
 
 A pessimistic transaction involves a first request to "lock the data", and a second request to write the data. In between these requests, no other requests touching that data will succeed. See 2 [Phase Locking](https://en.wikipedia.org/wiki/Two-phase_locking) (also often known as 2 Phase Commit) for more info.
 
@@ -28,7 +28,7 @@ The (more) recommended approach is Optimistic Concurrency, where a user can read
 
 A simple way to accomplish this on the database side is to increment a version number on each update. This can be done in a single executed statement as:
 
-```
+```SQL
 UPDATE <table_name>
 SET field1 = value1, ..., fieldN = valueN, version = $version + 1
 WHERE ID = $id AND version = $version
