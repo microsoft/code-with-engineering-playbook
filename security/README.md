@@ -68,10 +68,10 @@ Check out the list of tools to help enable security in your projects.
 
 * Binary Authorization
 
-Binary authorization can happen both at the docker registry layer, and runtime (ie: via a K8s admission controller).
-The authorization check ensures that the image is signed by a trusted authority. This can occur for both (pre-approved) 3rd party images,
-and internal images. Taking this a step further the signing should occur *only* on images where all code has been reviewed and approved.
-Binary authorization can both reduce the impact of damage from a compromised hosting environment, as well as the damage from malicious insiders.
+	Binary authorization can happen both at the docker registry layer, and runtime (ie: via a K8s admission controller).
+	The authorization check ensures that the image is signed by a trusted authority. This can occur for both (pre-approved) 3rd party images,
+	and internal images. Taking this a step further the signing should occur *only* on images where all code has been reviewed and approved.
+	Binary authorization can both reduce the impact of damage from a compromised hosting environment, as well as the damage from malicious insiders.
 
 	* [Harbor](https://github.com/goharbor/harbor/)
 		* [Operator available](https://github.com/goharbor/harbor-operator)
