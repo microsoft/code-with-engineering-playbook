@@ -21,7 +21,9 @@ Integrating UI Tests in to your CI/CD is necessary but more challenging than uni
 
 Integrations like `BrowserStack` are nice since they provide Azure DevOps reports as part of the test run.
 
-That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml)
+That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
+
+If you're using an Azure DevOps pipeline to run UI tests, consider using a [self hosted agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser) in order to manage framework versions and avoid unexpected updates.
 
 ## General Guidance
 
