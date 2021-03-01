@@ -4,7 +4,7 @@ Pair programming is the de facto work method that most large engineering organiz
 
 Pair programming works well under the correct circumstances, but it loses some of its charm when executed in a completely virtual setting. The virtual setup still involves two programmers looking at the same screen and talking out their designs, but there are often logistical issues to deal with, including lag, microphone set up issues, workspace and personal considerations, and many other small, individually trivial problems that worsen the experience.
 
-Virtual work patterns need to deviate from the in-person patterns we are accustomed to. Pair programming at its core is based on the following principles:
+Virtual work patterns are different from the in-person patterns we are accustomed to. Pair programming at its core is based on the following principles:
 
 1. Generating clarity through communication
 2. Producing higher quality through collaboration
@@ -22,16 +22,16 @@ Red Team Testing has the same philosophy as any other Test-Driven Development li
 
 ## Steps
 
-1. Design Phase: Both programmers will design the interface together. This includes:
+1. Design Phase: Both programmers design the interface together. This includes:
     * Method signatures and names
     * Writing documentation or docstrings for what the methods are intended to do.
     * Architecture decisions that would influence testing (Factory patterns, etc.)
 
-2. Implementation Phase: The programmers will separate and parallelize work, while continuing to communicate.
+2. Implementation Phase: The programmers separate and parallelize work, while continuing to communicate.
     * Programmer A will design the implementation of the methods, adhering to the previously decided design.
     * Programmer B will concurrently write tests for the same method signatures, without knowing details of the implementation.
 
-3. Integration & Testing Phase: Both programmers will commit their code and run the tests.
+3. Integration & Testing Phase: Both programmers commit their code and run the tests.
     * Utopian Scenario: All tests run and pass correctly.
     * Realistic Scenario: The tests have either broken or failed due to flaws in testing. This leads to further clarification of the design and a discussion of why the tests failed.
 
@@ -53,9 +53,9 @@ RTT has many of the same benefits as Pair Programming and Test-Driven developmen
 
 * RTT allows detailed focus on design and engineering alignment before implementing any code, leading to cleaner and simpler interfaces.
 
-* RTT forces testing to be prioritized alongside implementation, instead of having testing follow or be influenced by the implementation of the code.
+* RTT encourages testing to be prioritized alongside implementation, instead of having testing follow or be influenced by the implementation of the code.
 
-* Documentation is inherently a part of RTT, since both the implementer and the tester need correct, up to date documentation in the implementation phase.
+* Documentation is inherently a part of RTT, since both the implementer and the tester need correct, up to date documentation, in the implementation phase.
 
 ## What you need for RTT to work well
 
