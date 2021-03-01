@@ -37,14 +37,15 @@ During envisioning sessions, the following may prove useful for guiding the disc
 4. How should performance be measured?
 5. Is the performance measure aligned with the business objective?
 6. What would be the minimum performance needed to reach the business objective?
-7. Frame this problem (supervised/unsupervised, online/offline, etc.)
-8. Is human expertise available?
-9. How would you solve the problem manually?
-10. What work has been done in this area so far?
-11. Are there any restrictions on the type of approaches which can be used? (e.g., does the solution need to be completely explainable?)
-12. List the assumptions you or others have made so far. Verify these assumptions if possible.
-13. Define some hypothesis statements to be explored.
-14. Highlight and discuss any responsible AI concerns if appropriate.
+7. Are there any known constraints around non-functional requirements that would have to be taken into account? (e.g., computation times)
+8. Frame this problem (supervised/unsupervised, online/offline, etc.)
+9. Is human expertise available?
+10. How would you solve the problem manually?
+11. What work has been done in this area so far?
+12. Are there any restrictions on the type of approaches which can be used? (e.g., does the solution need to be completely explainable?)
+13. List the assumptions you or others have made so far. Verify these assumptions if possible.
+14. Define some hypothesis statements to be explored.
+15. Highlight and discuss any responsible AI concerns if appropriate.
 
 ### Data Exploration
 
