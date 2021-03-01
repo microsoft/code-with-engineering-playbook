@@ -99,7 +99,7 @@ We would then be able to use this data to explore:
 * a method of measuring similarity between customers
 * a method of measuring how complementary items are relative to one another
 
-which can be used to create and rank recommendations. Depending on the project scope, and available data, one or more of these areas could be selected to create a hypothesis be explored by the data science team. Some examples of such hypothesis statements could be:
+which can be used to create and rank recommendations. Depending on the project scope, and available data, one or more of these areas could be selected to create hypotheses to be explored by the data science team. Some examples of such hypothesis statements could be:
 
 * From the descriptions of each item, we can determine a measure of similarity between different items to a degree of accuracy which is specified by a stylist.
 * Based on the behaviour of customers with similar purchasing histories, we are able to predict certain items that a customer is likely to purchase; with a certainty which is greater than random choice.
