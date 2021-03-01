@@ -10,7 +10,7 @@ Virtual work patterns need to deviate from the in-person patterns we are accusto
 2. Producing higher quality through collaboration
 3. Creating ownership through equal contribution
 
-Pair programming is simply one way to achieve these results. We present Red Team Testing (RTT) as a different programming method that takes the same principles but uses some of the advantages that virtual work methods provide.
+Pair programming is one way to achieve these results. Red Team Testing (RTT) is an alternate programming method that uses the same principles but with some of the advantages that virtual work methods provide.
 
 ## Red Team Testing
 
