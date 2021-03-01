@@ -106,6 +106,10 @@ Read more [here](pitfalls.md) to understand what to watch out for while designin
 
 [Github Repo](https://github.com/Azure-Samples/application-insights-aspnet-sample-opentelemetry), [Article](https://devblogs.microsoft.com/aspnet/observability-asp-net-core-apps/).
 
+### Example: Setup Azure Monitor dashboards and alerts with Terraform
+
+[Github Repo](https://github.com/buzzfrog/azure-alert-dashboard-terraform)
+
 ### On-premises Application Insights
 
 [On-premise Application Insights](https://github.com/c-w/appinsights-on-premises) is a service that is compatible with Azure App Insights, but stores the data in an in-house database like PostgreSQL or object storage like [Azurite](https://github.com/Azure/Azurite).
