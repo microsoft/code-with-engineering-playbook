@@ -16,7 +16,7 @@ Pair programming is one way to achieve these results. Red Team Testing (RTT) is 
 
 Red Team Testing borrows its name from the “Red Team” and “Blue Team” paradigm of penetration testing, and is a collaborative, parallel way of working virtually. In Red Team Testing, two programmers jointly decide on the interface, architecture, and design of the program, and then separate for the implementation phase. One programmer writes tests using the public interface, attempting to perform edge case testing, input validation, and otherwise stress testing the interface. The second programmer is simultaneously writing the implementation which will eventually be tested.
 
-Red Team Testing has the same philosophy as any other Test-Driven Development lifecycle: All implementation is divorced from the interface, and the interface can be tested with no knowledge of the implementation.
+Red Team Testing has the same philosophy as any other Test-Driven Development lifecycle: All implementation is separated from the interface, and the interface can be tested with no knowledge of the implementation.
 
 ![ptt-diagram](PTTdiagram.PNG)
 
