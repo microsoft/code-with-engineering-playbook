@@ -109,7 +109,7 @@ Read more [here](pitfalls.md) to understand what to watch out for while designin
 
 Leveraging a Service Mesh that follows the [Sidecar Pattern](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/ch02.html#:~:text=The%20sidecar%20pattern%20is%20a,first%20is%20the%20application%20container.&text=In%20addition%20to%20the%20application,without%20the%20application%20container's%20knowledge.) quickly sets up a go to set of metrics, and traces (although traces need to be propagated from incoming requests to outgoing requests manually).
 
-A sidecar works by intercepting all incoming and outgoing traffic, adding some trace headers to each request, and emitting a standard set of logs and metrics. These metrics are extremely powerful for observability, in that each service gets a unified set of metrics to help debug including:
+A sidecar works by intercepting all incoming and outgoing traffic to your image. It then adds trace headers to each request and emits a standard set of logs and metrics. These metrics are extremely powerful for observability, allowing every service to leverage a unified set of metrics, including:
 
 All metrics exist for both server side and client side:
 
@@ -118,7 +118,7 @@ All metrics exist for both server side and client side:
 - Request Rate
 - Error Rate
 
-In a microservice architecture, knowing that you're frontend returned a 500 response code, or took 3 seconds to respond, doesn't pinpoint where the issue lies. But with a sidecar, you can quickly determine if that time was spent within the server, or if client requests took up the bulk of the duration, or are the root cause for the 500's.
+In a microservice architecture, pinpointing the root cause of a spike in 500's can be non-trivial, but with a the added observability from a sidecar you can quickly determine which server in your service mesh resulted in the spike in errors.
 
 Service Mesh's have a large surface area for configurability, and can seem like a daunting undertaking to deploy. However, most services (including Linkerd) offer a sane set of defaults, and can be deployed via the happy path to quickly land these observability wins.
 
