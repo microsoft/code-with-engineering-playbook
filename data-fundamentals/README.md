@@ -18,7 +18,7 @@ The goal of this section is to briefly describe how to apply the fundamentals to
 - [Observability](#observability)
 - [End to End and Azure Technology Samples](#end-to-end-and-azure-technology-samples)
 
-## Conccurrency Control
+## Concurrency Control
 
 Your systems should (almost) always leverage some form of concurrency control, to ensure correctness amongst competing requests and to prevent data races. The 2 forms of concurrency control are Pessimistic and Optimistic.
 

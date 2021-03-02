@@ -148,7 +148,7 @@ Check out the below tools to quickly get some of these CD best practices:
 
 * [Flux](https://github.com/fluxcd/flux) for gitops
 * [Tekton](https://github.com/tektoncd) for Kubernetes native pipelines
-  * Note Jenkinsx uses Tekton under the hood.
+  * Note Jenkins-X uses Tekton under the hood.
 * [Argo Workflows](https://github.com/argoproj/argo-workflows)
 * [Flagger](https://github.com/fluxcd/flagger) for powerful, Kubernetes native releases including blue/green, canary, and A/B testing.
 * Not quite CD related, but checkout [jsonnet](https://jsonnet.org/), a templating language to reduce boilerplate and increase sharing between your yaml/json manifests.
