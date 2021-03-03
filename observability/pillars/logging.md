@@ -47,6 +47,7 @@ This approach isn't without trade-offs:
 - Ensure a downstream system malfunction won't cause repetitive logs being stored.
 - Don't reinvent the wheel, use existing tools to collect and analyse the data.
 - Ensure personal identifiable information policies and restrictions are followed.
+- Ensure errors and exceptions in dependent services are captured and logged. For example, if an application uses Redis cache, Service Bus or any other service, any errors/exceptions raised while accessing these services should be captured and logged.
 
 ### If there's sufficient log data, is there a need for instrumenting metrics?
 
@@ -72,6 +73,6 @@ This approach isn't without trade-offs:
 ## Recommended Tools
 
 - [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) - Umbrella of services including system metrics, log analytics and more.
-- [Grafana Loki](https://github.com/grafana/loki) - An open source log aggregation platform, built on the learnings from the Prometheus Community for highly efficient collection & storage of log data at scale.
+- [Grafana Loki](../tools/loki.md) - An open source log aggregation platform, built on the learnings from the Prometheus Community for highly efficient collection & storage of log data at scale.
 - [The Elastic Stack](https://www.elastic.co/what-is/elk-stack) - An open source log analytics tech stack utilizing Logstash, Beats, Elastic search and Kibana.
 - [Grafana](https://grafana.com) - Open source dashboard & visualization tool. Supports Log, Metrics and Distributed tracing data sources.

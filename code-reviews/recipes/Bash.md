@@ -132,7 +132,7 @@ fi
 
 ## Code Review Checklist
 
-In addition to the [Code Review Checklist](../README.md) you should also look for these bash specific code review items
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these bash specific code review items
 
 * [ ] Does this code use [Built-in Shell](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html) Options like set -o, set -e, set -u for execution control of shell scripts ?
 * [ ] Is the code modularized? Shell scripts can be modularized like python modules. Portions of bash scripts should be sourced in complex bash projects.

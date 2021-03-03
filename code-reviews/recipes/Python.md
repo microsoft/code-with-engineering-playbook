@@ -12,16 +12,28 @@ Linting should be added to build validation, and both linting and code formattin
 
 The 2 most popular python linters are [Pylint](https://www.pylint.org/) and [Flake8](https://pypi.org/project/flake8/). Both check adherence to `PEP8` but vary a bit in what other rules they check. In general `Pylint` tends to be a bit more stringent and give more false positives but both are good options for linting python code.
 
-Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `python extension`
+Both `Pylint` and `Flake8` can be configured in VS Code using the VS Code `python extension`.
 
 ### Flake8
 
-Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA/pyflakes) (for detecting coding errors), [`pycodestyle`](https://github.com/PyCQA/pycodestyle) (for pep8) and [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)).
+Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA/pyflakes) (for detecting coding errors) and [`pycodestyle`](https://github.com/PyCQA/pycodestyle) (for pep8).
 
 Install `Flake8`
 
 ```bash
 pip install flake8
+```
+
+Add an extension for the [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)) tool to flake8.
+
+```bash
+pip install flake8-docstrings
+```
+
+Add an extension for [`pep8-naming`](https://github.com/PyCQA/pep8-naming) (for [naming conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions) in pep8) tool to flake8.
+
+```bash
+pip install pep8-naming
 ```
 
 Run `Flake8`
@@ -202,7 +214,7 @@ At the next attempted commit any lint failures will block the commit.
 
 ## Code Review Checklist
 
-In addition to the [Code Review Checklist](../README.md) you should also look for these python specific code review items
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these python specific code review items
 
 * [ ] Are all new packages used included in requirements.txt
 * [ ] Does the code pass all lint checks?

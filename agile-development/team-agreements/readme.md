@@ -5,7 +5,6 @@
 * [Definition of Done](definition-of-done/readme.md)
 * [Definition of Ready](definition-of-ready/readme.md)
 * [Working Agreements](working-agreements/readme.md)
-* [Minimalism Rules](minimalism-rules.md)
 
 ## Goals
 

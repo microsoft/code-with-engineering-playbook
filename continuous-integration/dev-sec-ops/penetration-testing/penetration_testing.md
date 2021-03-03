@@ -3,11 +3,11 @@
 A penetration test is a simulated attack against your application to check for exploitable security issues.
 For further reading  see [CSEDevSecOps PenetrationTesting Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/PenetrationTesting)
 
-## Why Penetration Testing[The Why]
+## Why Penetration Testing
 
 Penetration testing performed on a running application. As such, it tests the application E2E with all of its layers. It's output is a real simulated attack on the application that succeeded, therefore it is a critical issue in your application and should be addressed as soon as possible.
 
-## Applying Penetration Testing [the how]
+## Applying Penetration Testing
 
 Many organizations perform manual penetration testing. But new vulnerabilities found every day. Therefore, it is a good practice to have an automated penetration testing performed.
 To achieve this automation use penetration testing tools to uncover vulnerabilities, such as unsanitized inputs that are susceptible to code injection attacks.

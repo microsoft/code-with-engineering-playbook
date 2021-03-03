@@ -3,12 +3,12 @@
 Static code analysis is a method of detecting security issues by examining the source code of the application.
 For further reading see [CSEDevSecOps Static Code Analysis Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/StaticCodeAnalysis)
 
-## Why Static Code Analysis [The Why]
+## Why Static Code Analysis
 
 Compared to code reviews, Static code analysis tools are more fast, accurate and through.
 As it operates on the source code itself, it is a very early indicator for issues, and coding errors found earlier are less costly to fix.
 
-## Applying Static Code Analysis [the how]
+## Applying Static Code Analysis
 
 Static Code Analysis should be integrated in your build process.
 There are [many tools](https://owasp.org/www-community/Source_Code_Analysis_Tools) available for Static Code Analysis, choose the ones that meet your programming language and development techniques.

@@ -4,13 +4,13 @@ Dependency and Container scanning is performed in order to search for vulnerabil
 
 For further reading about Dependency and Container Scanning see [CSEDevSecOps Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/DependencyContainerScanning)
 
-## Why Dependency and Container Scanning [The Why]
+## Why Dependency and Container Scanning
 
 Container images are standard application delivery format in cloud-native environments.
 Having a broad selection of images from the community, we often choose a community base image, and then add packages that we need to it, which might also come from community sources.
 Those arbitrary dependencies might introduce vulnerabilities to our image and application.
 
-## Applying Dependency and Container Scanning [The How]
+## Applying Dependency and Container Scanning
 
 Images that contain software with security vulnerabilities become exploitable at runtime. When building an image in your CI pipeline, image scanning must be a requirement for a build to pass. Images that did not pass scanning should never be pushed to your production-accessible container registry.
 
@@ -29,7 +29,7 @@ Avoid installing the following tools or remove them if present:
 1. Container images should be immutable - download and include all the required dependencies during the image build.
 1. Scan for vulnerabilities in software dependencies -  today there is likely no software project without some form of external libraries, dependencies or open source.
 While it allows the development team to focus on their application code, the dependency brings forth an expected downside where the security posture of the real application is now resting on it.
-To detect vulnerabilities contained within a project’s dependencies use container scanning tools which as part of their analysis scan the software dependencies (see "Dependency and Container Scanning Frameworks and Tools"). 
+To detect vulnerabilities contained within a project’s dependencies use container scanning tools which as part of their analysis scan the software dependencies (see "Dependency and Container Scanning Frameworks and Tools").
 
 ## Dependency and Container Scanning Frameworks and Tools
 

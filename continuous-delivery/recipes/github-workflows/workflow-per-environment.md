@@ -16,8 +16,6 @@ One way to get around the complexity of a single workflow is to have separate wo
 
 ![Workflow-Designs-Independent-Workflows](./assets/Workflow-Designs-Independent-Workflows.png)
 
-An example of initializing workflows to deploy, in an automated way, for each environment can be seen [here](https://github.com/microsoft/github-workflow-initialization)
-
 ## References
 
 - [GitHub Actions](https://docs.github.com/en/actions)

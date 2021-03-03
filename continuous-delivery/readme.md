@@ -19,7 +19,7 @@ A continuous delivery pipeline is an automated manifestation of your process to 
 
 ### Define a Release Strategy
 
-It's important to establish a common understanding between the technical lead and application stakeholder(s) around the release strategy / design  during the planning phase of a project. This common understanding includes the deployment and maintenance of the application throughout its SDLC.
+It's important to establish a common understanding between the Dev Lead and application stakeholder(s) around the release strategy / design  during the planning phase of a project. This common understanding includes the deployment and maintenance of the application throughout its SDLC.
 
 #### Release Strategy Principles
 

@@ -1,4 +1,4 @@
-# Tech Lead's Engineering Fundamentals Checklist
+# Engineering Fundamentals Checklist
 
 This checklist helps to ensure that our projects meet our Engineering Fundamentals.
 
@@ -8,6 +8,8 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] Merges are done through PRs.
 - [ ] PRs reference related work items.
 - [ ] Commit history is consistent and commit messages are informative (what, why).
+- [ ] Consistent branch naming conventions.
+- [ ] Clear documentation of repository structure.
 - [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](continuous-integration/credential-scanning/readme.md))
 - [ ] Public repositories follow the [OSS guidelines](source-control/readme.md#creating-a-new-repository), see `Required files in default branch for public repositories`.
 
@@ -53,12 +55,12 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 
 - [ ] Process Lead (fixed/rotating) to run standup daily.
 - [ ] Agile process clearly defined within team.
-- [ ] Tech Lead (+ PO/Others) have responsibility for backlog management and grooming.
+- [ ] Dev Lead (+ PO/Others) have responsibility for backlog management and refinement.
 - [ ] Working agreement between members of team and customer.
 
 ## Design Reviews
 
-- [ ] Process for conducting design reviews is included in the [Working Agreement](/agile-development/team-agreements/working-agreements/readme.md).
+- [ ] Process for conducting design reviews is included in the [Working Agreement](agile-development/team-agreements/working-agreements/readme.md).
 - [ ] Design reviews for each major component of the solution are carried out and documented, including alternatives.
 - [ ] Stories and/or PRs link to the design document.
 - [ ] Each user story includes a task for design review by default, which is assigned or removed during sprint planning.
@@ -93,3 +95,14 @@ More details on [Retrospectives](agile-development/retrospectives/readme.md)
 - [ ] Ensure feedback is detailed and repeatable
 
 More details on [Engineering Feedback](engineering-feedback/readme.md)
+
+## Developer Experience (DevEx)
+
+- [ ] Build/Compile source to verify it is free of syntax errors and compiles.
+- [ ] Execute all automated tests (unit, e2e, etc).
+- [ ] Start/Launch end-to-end to simulate execution in a deployed environment.
+- [ ] Attach debugger to started solution or running automated tests, set breakpoints, step through code, and inspect variables.
+- [ ] When pressing F5 in the IDE, dependencies are automatically installed.
+- [ ] You can use local dev configuration values (i.e. .env, appsettings.development.json).
+
+More details on [Developer Experience](developer-experience/readme.md)

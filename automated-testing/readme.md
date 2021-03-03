@@ -4,7 +4,7 @@
 
 The table below maps outcomes -- the results that you may want to achieve in your validation efforts -- to one or more techniques that can be used to accomplish that outcome.
 
-To use the table, either eyeball-browse or search for keywords.  The  
+To use the table, either eyeball-browse or search for keywords.
 
 | When I am working on... | I want to get this outcome... | ...so I should consider |
 |--|--|--|
@@ -53,6 +53,6 @@ To use the table, either eyeball-browse or search for keywords.  The
 - [Integration testing](integration-testing/readme.md)
 - [Performance testing](performance-testing/readme.md)
 - [Smoke testing](smoke-testing/readme.md)
-- [Synthetic Transaction testing](synthetic-Monitoring-tests/readme.md)
+- [Synthetic Transaction testing](synthetic-monitoring-tests/readme.md)
 - [UI testing](ui-testing/readme.md)
 - [Unit testing](unit-testing/readme.md)
