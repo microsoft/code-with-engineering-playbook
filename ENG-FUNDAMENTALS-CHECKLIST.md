@@ -4,7 +4,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 
 ## Source Control
 
-- [ ] The main branch is locked.
+- [ ] The default target branch is locked.
 - [ ] Merges are done through PRs.
 - [ ] PRs reference related work items.
 - [ ] Commit history is consistent and commit messages are informative (what, why).
