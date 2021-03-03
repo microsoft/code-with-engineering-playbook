@@ -11,7 +11,7 @@ Using the suggested method will allow us to:
 2. Lint
 3. Unit test
 4. E2E test
-5. Deploy
+5. Run Solution
 6. Be OS and environment agnostic.
 
 ## Enter Docker Compose
