@@ -144,7 +144,7 @@ Try to limit the number of versions of your application running parallel in prod
 
 ### Tools
 
-Check out the below tools to quickly get some of these CD best practices:
+Check out the below tools to help with some of the CD best practices listed above:
 
 * [Flux](https://github.com/fluxcd/flux) for gitops
 * [Tekton](https://github.com/tektoncd) for Kubernetes native pipelines
