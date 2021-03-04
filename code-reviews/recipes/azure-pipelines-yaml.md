@@ -6,7 +6,7 @@
 
 ## Code Analysis / Linting
 
-The most popular YAML linter is [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension. This extension provides YAML validation, document outlining, Auto completion, Hover support and Formatter features.
+The most popular YAML linter is [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension. This extension provides YAML validation, document outlining, auto completion, hover support and formatter features.
 
 ## VS Code Extensions
 
@@ -16,7 +16,7 @@ There is an [Azure Pipelines for VS Code](https://marketplace.visualstudio.com/i
 
 When the pipeline is triggered, before running the pipeline, there are some different phases such as `Queue Time`, `Compile Time` and `Runtime`, in these phases variables are interpretted by their [runtime expression syntax](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax).
 
-When pipeline is triggered all nested YAML files are expanded to run in Azure Pipelines. This check list visits some tips and tricks for reviewing all nested YAML files.
+When pipeline is triggered all nested YAML files are expanded to run in Azure Pipelines. This checklist contains some tips and tricks for reviewing all nested YAML files.
 
 Before starting review please see the following documents:
 
