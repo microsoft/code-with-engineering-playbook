@@ -14,7 +14,7 @@ There is an [Azure Pipelines for VS Code](https://marketplace.visualstudio.com/i
 
 ## YAML in Azure Pipelines Overview
 
-When the pipeline is triggered, before running the pipeline, there are some different phases such as `Queue Time`, `Compile Time` and `Runtime`, in these phases variables are interpretted by their [runtime expression syntax](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax).
+When the pipeline is triggered, before running the pipeline, there are some different phases such as [Queue Time, Compile Time and Runtime](https://adamtheautomator.com/azure-devops-variables/#Pipeline_Execution_Phases) in these phases variables are interpretted by their [runtime expression syntax](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax).
 
 When pipeline is triggered all nested YAML files are expanded to run in Azure Pipelines. This checklist contains some tips and tricks for reviewing all nested YAML files.
 
@@ -44,29 +44,25 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
 ### Pipeline Structure
 
-- [ ] First understand [Pipeline structure](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema#pipeline-structure) and identify components
-- [ ] Check the pipeline in Azure Pipelines
-- [ ] Edit the pipeline in Azure Pipelines and find root file
-- [ ] Find templates called in the pipeline
-- [ ] Check all the template file references to ensure it does not cause breaking changes, changing one file may effect multiple pipelines
-- [ ] Avoid long inline scipts in YAML file, consider to separate into a script file
+- [ ] The steps are well understood and components are easily identifiable.
+- [ ] Steps/stages of the pipeline are checked in Azure Pipelines to have more understanding of components.
+- [ ] In case you have complex nested YAML files, The pipeline in Azure Pipelines is edited to find trigger root file.
+- [ ] All the template file references are visited to ensure a small change does not cause breaking changes, changing one file may effect multiple pipelines
+- [ ] Long inline scipts in YAML file are moved into script files
 
 ### YAML Structure
 
-- [ ] Avoid big templates, check and identify re-usable components
-- [ ] Separate environment specific variables
-  - [ ] Consider using variable templates per environment
-  - [ ] Or consider using variable group per environment in Azure Pipelines Library
-- [ ] Consider changes of values during `Queue Time`, `Compile Time` and `Runtime`
-- [ ] Check variable syntax values used with `Macro Syntax`, `Template Expression Syntax` and `Runtime Expression Syntax`
-- [ ] Is there any unused variable or parameter? Make sure those are removed in pipeline.
+- [ ] Re-usable components are split into separate YAML templates.
+- [ ] Variables are separated per environment stored in templates or variable groups.
+- [ ] Variable value changes in `Queue Time`, `Compile Time` and `Runtime` are considered.
+- [ ] Variable syntax values used with `Macro Syntax`, `Template Expression Syntax` and `Runtime Expression Syntax` are considered.
+- [ ] Variables can change during the pipeline, Parameters cannot.
+- [ ] Unused variables/parameters are removed in pipeline.
 - [ ] Does the pipeline meet with stage/job `Conditions` criterias?
-- [ ] Consider value changes: Variables can change during the pipeline, Parameters cannot
 
 ### Permission Check & Security
 
-- [ ] Make sure pipeline is not printing any secret value in script
-- [ ] Use `issecret` for printing secrets for debugging
+- [ ] Secret values shouldn't be printed in pipeline, `issecret` is used for printing secrets for debugging
 - [ ] If pipeline is using variable groups in Library, ensure pipeline has access to the variable groups created.
 - [ ] If pipeline has a remote task in other repo/organization, does it have an access?
 - [ ] If pipeline is trying to access a secure file, does it have the permission?
