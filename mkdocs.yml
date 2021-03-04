@@ -1,0 +1,46 @@
+site_name: Code With Engineering Playbook
+site_url: https://microsoft.github.io/code-with-engineering-playbook
+site_description: CSE Code With Engineering Playbook
+site_author: Microsoft CSE
+
+repo_url: https://github.com/microsoft/code-with-engineering-playbook/
+edit_uri: ""
+
+theme:
+  name: material
+  font:
+    text: Roboto
+  palette:
+    primary: black
+  logo: resources/ms_icon.png
+  favicon: resources/ms_icon.png
+  features:
+    - navigation.instant
+# nav: 
+#  - Home: 
+#     - Home: README.md
+#     - What is CSE: CSE.md
+#     - Engineering Fundamentals Checklist: ENG-FUNDAMENTALS-CHECKLIST.md
+#     - Sprint structure: SPRINT-STRUCTURE.md
+#  - Agile Development: agile-development/README.md
+#  - Automated Testing: automated-testing/README.md
+#  - Code reviews: code-reviews/README.md
+#  - Continuous Delivery: continuous-delivery/README.md
+#  - Continuous Integration: continuous-integration/README.md
+#  - Data Fundamentals: data-fundamentals/README.md
+#  - Design Reviews: design-reviews/README.md
+#  - Developer Experience: developer-experience/README.md
+#  - Engineering Feedback: engineering-feedback/README.md
+#  - ML Fundamentals: ml-fundamentals/README.md
+#  - Observbility: observability/README.md
+#  - Security: security/README.md
+#  - Source Control: source-control/README.md
+
+markdown_extensions:
+  - meta
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.pathconverter
+  - pymdownx.tabbed
+  - mdx_truly_sane_lists
