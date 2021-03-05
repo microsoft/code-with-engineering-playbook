@@ -6,7 +6,7 @@ Once private endpoints are enabled for the Azure Storage accounts, the current t
 
 ## Utilize an Azure Storage emulator - Azurite
 
-To have a local Azure Blob Storage, there is [Azure Storage Emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator). The Storage Emulator currently runs only on Windows. If you need a Storage Emulator for Linux, one option is the community maintained, open-source Storage Emulator [Azurite](https://github.com/azure/azurite).
+To emulate a local Azure Blob Storage, we can use [Azure Storage Emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator). The Storage Emulator currently runs only on Windows. If you need a Storage Emulator for Linux, one option is the community maintained, open-source Storage Emulator [Azurite](https://github.com/azure/azurite).
 
 > *The Azure Storage Emulator is no longer being actively developed.* [**Azurite**](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite) *is the Storage Emulator platform going forward. Azurite supersedes the Azure Storage Emulator. Azurite will continue to be updated to support the latest versions of Azure Storage APIs. For more information, see* [**Use the Azurite emulator for local Azure Storage development**](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite)*.*
 
@@ -138,7 +138,7 @@ After running tests, you can see the files in your local blob storage
 
 ## 3. Run tests on Azure Pipelines
 
-After running tests in our local we need to make sure these tests pass on Azure Pipelines too. We have 2 options here, we can use docker image as hosted agent on Azure or using npm package in the Pipeline steps.
+After running tests locally we need to make sure these tests pass on Azure Pipelines too. We have 2 options here, we can use docker image as hosted agent on Azure or install an npm package in the Pipeline steps.
 
 ```bash
 trigger:
