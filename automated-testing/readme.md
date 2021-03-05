@@ -57,3 +57,7 @@ To use the table, either eyeball-browse or search for keywords.
 - [Synthetic Transaction testing](synthetic-monitoring-tests/readme.md)
 - [UI testing](ui-testing/readme.md)
 - [Unit testing](unit-testing/readme.md)
+
+## Technology Specific Testing
+
+- [Using Azurite to run blob storage tests in pipeline](tech-specific-samples/blobstorage-unit-tests/readme.md)
