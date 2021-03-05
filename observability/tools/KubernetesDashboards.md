@@ -27,7 +27,11 @@ There are currently several UI dashboards available to monitor your applications
 
 - [Octant](https://github.com/vmware-tanzu/octant)
 - [Prometheus and Grafana](https://prometheus.io/docs/visualization/grafana/)
+  - [Kube Prometheus Stack Chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack): provides an easy way to operate end-to-end Kubernetes cluster monitoring with Prometheus using the Prometheus Operator.
 - [K8Dash](https://github.com/indeedeng/k8dash)
+- [kube-ops-view](https://github.com/hjacobs/kube-ops-view): a tool to visualize node occupancy & utilization
+- [Lens](https://k8slens.dev/): Client side desktop tool
+- [Thanos](https://github.com/thanos-io/thanos) and [Cortex](https://cortexmetrics.io/docs/): Multi-cluster implementations
 
 ## References
 
