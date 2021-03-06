@@ -90,7 +90,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
 * [ ] Is the code subject to concurrency issues? Are shared objects properly protected?
 * [ ] Is dependency injection (DI) used? Is it setup correctly?
-* [ ] Are [middlewares](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
+* [ ] Are [middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
 * [ ] Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed ([using pattern](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement))?
 * [ ] Is the code creating a lot of short-lived objects. Could we optimize GC pressure?
 * [ ] Is the code written in a way that causes boxing operations to happen?
