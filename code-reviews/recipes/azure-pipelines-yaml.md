@@ -1,6 +1,6 @@
 # YAML(Azure Pipelines) Code Reviews
 
-## Syle Guide
+## Style Guide
 
 [CSE](../../CSE.md) developers follow the [YAML schema reference](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
 
@@ -14,29 +14,27 @@ There is an [Azure Pipelines for VS Code](https://marketplace.visualstudio.com/i
 
 ## YAML in Azure Pipelines Overview
 
-When the pipeline is triggered, before running the pipeline, there are some different phases such as [Queue Time, Compile Time and Runtime](https://adamtheautomator.com/azure-devops-variables/#Pipeline_Execution_Phases) in these phases variables are interpretted by their [runtime expression syntax](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax).
+When the pipeline is triggered, before running the pipeline, there are a few phases such as [Queue Time, Compile Time and Runtime](https://adamtheautomator.com/azure-devops-variables/#Pipeline_Execution_Phases) where variables are interpreted by their [runtime expression syntax](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax).
 
-When pipeline is triggered all nested YAML files are expanded to run in Azure Pipelines. This checklist contains some tips and tricks for reviewing all nested YAML files.
+When the pipeline is triggered all nested YAML files are expanded to run in Azure Pipelines. This checklist contains some tips and tricks for reviewing all nested YAML files.
 
-Before starting review please see the following documents:
+These documents may be useful when reviewing YAML files:
 
-- Make sure to check [Azure Pipelines YAML documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema).
+- [Azure Pipelines YAML documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema).
+- [Pipeline run sequence](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runs?view=azure-devops)
+- [Key concepts for new Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
 
-- Understand how pipelines work [Pipeline run sequence](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runs?view=azure-devops)
-
-- Get familiar with [Key concepts for new Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
-
-  **Key concepts overview**
+**Key concepts overview**
 ![Azure Pipelines key concepts](images/key-concepts-overview.png)
 
-  - A trigger tells a Pipeline to run.
-  - A pipeline is made up of one or more stages. A pipeline can deploy to one or more environments.
-  - A stage is a way of organizing jobs in a pipeline and each stage can have one or more jobs.
-  - Each job runs on one agent. A job can also be agentless.
-  - Each agent runs a job that contains one or more steps.
-  - A step can be a task or script and is the smallest building block of a pipeline.
-  - A task is a pre-packaged script that performs an action, such as invoking a REST API or publishing a build artifact.
-  - An artifact is a collection of files or packages published by a run.
+- A trigger tells a Pipeline to run.
+- A pipeline is made up of one or more stages. A pipeline can deploy to one or more environments.
+- A stage is a way of organizing jobs in a pipeline and each stage can have one or more jobs.
+- Each job runs on one agent. A job can also be agentless.
+- Each agent runs a job that contains one or more steps.
+- A step can be a task or script and is the smallest building block of a pipeline.
+- A task is a pre-packaged script that performs an action, such as invoking a REST API or publishing a build artifact.
+- An artifact is a collection of files or packages published by a run.
 
 ## Code Review Checklist
 
@@ -48,7 +46,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 - [ ] Steps/stages of the pipeline are checked in Azure Pipelines to have more understanding of components.
 - [ ] In case you have complex nested YAML files, The pipeline in Azure Pipelines is edited to find trigger root file.
 - [ ] All the template file references are visited to ensure a small change does not cause breaking changes, changing one file may effect multiple pipelines
-- [ ] Long inline scipts in YAML file are moved into script files
+- [ ] Long inline scripts in YAML file are moved into script files
 
 ### YAML Structure
 
@@ -58,7 +56,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 - [ ] Variable syntax values used with `Macro Syntax`, `Template Expression Syntax` and `Runtime Expression Syntax` are considered.
 - [ ] Variables can change during the pipeline, Parameters cannot.
 - [ ] Unused variables/parameters are removed in pipeline.
-- [ ] Does the pipeline meet with stage/job `Conditions` criterias?
+- [ ] Does the pipeline meet with stage/job `Conditions` criteria?
 
 ### Permission Check & Security
 
