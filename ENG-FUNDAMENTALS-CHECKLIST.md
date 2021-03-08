@@ -4,10 +4,12 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 
 ## Source Control
 
-- [ ] The main branch is locked.
+- [ ] The default target branch is locked.
 - [ ] Merges are done through PRs.
 - [ ] PRs reference related work items.
 - [ ] Commit history is consistent and commit messages are informative (what, why).
+- [ ] Consistent branch naming conventions.
+- [ ] Clear documentation of repository structure.
 - [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](continuous-integration/credential-scanning/readme.md))
 - [ ] Public repositories follow the [OSS guidelines](source-control/readme.md#creating-a-new-repository), see `Required files in default branch for public repositories`.
 
@@ -32,12 +34,12 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 - [ ] Project uses CD to manage deployments to a replica environment before PRs are merged.
 - [ ] Main branch is always shippable.
 
-## Security - TO DO
+## Security
 
-- [ ] Access control.
-- [ ] Separation of concerns.
-- [ ] Robust treatment of secrets.
-- [ ] Encryption for data in transit (and if necessary at rest) and password hashing.
+- [ ] Access is only granted on an as needed bases
+- [ ] Secrets are stored in secured locations and not checked in to code
+- [ ] Data is encrypted in transit (and if necessary at rest) and passwords are hashed
+- [ ] Is the system split into logical segments with separation of concerns? This helps limiting security vulnerabilities.
 
 ## Observability
 
@@ -51,10 +53,10 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 
 ## Agile/Scrum
 
-- [ ] Process Lead (fixed/rotating) to run standup daily.
-- [ ] Agile process clearly defined within team.
-- [ ] Dev Lead (+ PO/Others) have responsibility for backlog management and refinement.
-- [ ] Working agreement between members of team and customer.
+- [ ] Process Lead (fixed/rotating) runs the daily standup
+- [ ] The agile process is clearly defined within team.
+- [ ] The Dev Lead (+ PO/Others) are responsible for backlog management and refinement.
+- [ ] A working agreement is established between team members and customer.
 
 ## Design Reviews
 
@@ -93,3 +95,14 @@ More details on [Retrospectives](agile-development/retrospectives/readme.md)
 - [ ] Ensure feedback is detailed and repeatable
 
 More details on [Engineering Feedback](engineering-feedback/readme.md)
+
+## Developer Experience (DevEx)
+
+- [ ] Build/Compile source to verify it is free of syntax errors and compiles.
+- [ ] Execute all automated tests (unit, e2e, etc).
+- [ ] Start/Launch end-to-end to simulate execution in a deployed environment.
+- [ ] Attach debugger to started solution or running automated tests, set breakpoints, step through code, and inspect variables.
+- [ ] When pressing F5 in the IDE, dependencies are automatically installed.
+- [ ] You can use local dev configuration values (i.e. .env, appsettings.development.json).
+
+More details on [Developer Experience](developer-experience/readme.md)

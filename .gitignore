@@ -333,4 +333,7 @@ ASALocalRun/
 .DS_Store
 
 # VS Code
-.vscode/
+.vscode
+
+# Jekyll
+_site

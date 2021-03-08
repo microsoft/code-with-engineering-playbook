@@ -4,6 +4,7 @@
 
 - [Backlog Management](backlog-management/readme.md)
 - [Collaboration](collaboration/readme.md)
+  - [Virtual Collaboration](collaboration/Virtual_Collaboration.md)
 - [Retrospectives](retrospectives/readme.md)
 - [Scrum of Scrums](scrum-of-scrums/readme.md)
 - [Sprint Planning](sprint-planning/readme.md)
