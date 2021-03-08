@@ -8,7 +8,7 @@ We need to consider special cases when creating a microservice architecture from
 
 Imagine we have a microservice that accesses the database and retrieve some data as part of a request. This microservice is going to be called by someone else as part of an incoming http request or an internal process being executed. What happen if during the retrieval of the data (or the update of the data) something wrong happen? How we can associate, or correlate, that this particular call failed in the destination microservice?
 
-This is a common issue. When calling other microservices, depending on the technology stack we use, we can hide errors and exceptions that might happen on the other side even without wanting it. If we are using a simple REST interface, the other microservice can return to us a 500 HTTP status code and we don't have any idea what happen inside that microservice.
+This is a common issue. When calling other microservices, depending on the technology stack we use, we can accidentally hide errors and exceptions that might happen on the other side. If we are using a simple REST interface, the other microservice can return a 500 HTTP status code and we don't have any idea what happen inside that microservice.
 
 More important, we don't have any way to associate our Correlation Id to whatever happens inside that microservice. Therefore, is so important to have a plan in place to be able to extend your traceability and monitoring efforts, especially when using a microservice architecture.
 
