@@ -14,6 +14,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Pillars of Observability](#pillars-of-observability)
 - [Observability in Machine Learning](#ml-observability.md)
 - [Observability As Code](#observability-as-code)
+- [Observability in Microservices](#observability-as-microservices))
 - [Recommended Practices](#recommended-practices)
 - [Logs vs Metrics](log-vs-metric.md)
 - [Recipes](#recipes)
@@ -31,6 +32,12 @@ Read on how Observability can be implemented in [Machine Learning](ml-observabil
 ## Observability As Code
 
 As much as possible, configuration and management of observability assets such as cloud resource provisioning, monitoring alerts and dashboards must be managed as code. Observability as Code is achieved using any one of Terraform / Ansible / ARM Templates
+
+## Observability in Microservices
+
+Microservices is a very popular software architecture, where the application is arranged as a collection of loosely coupled services. Some of those services can be written in different languages by different teams.
+
+Lear more [here](microservices.md)).
 
 ### Why
 
