@@ -334,3 +334,6 @@ ASALocalRun/
 
 # VS Code
 .vscode/
+
+# Jekyll
+_site
