@@ -44,7 +44,7 @@ This image is the summary of what is needed in each microservice to propagate th
 
 The root caller is A and that is why it doesn't have a parent-id, only have a new trace-id. Next, A calls B using HTTP. To propagate the correlation information as part of the request, we are using two new headers, that based on the W3C Correlation specification, are: trace-id and parent-id. So, in this example because A is the root caller, he only sends his own trace-id to the microservice B.
 
-When the microservice B received the incoming http request, checks the content of these two headers. Reads the content of the trace-id header and sets as his own parent-Id (as shown in the green rectangle inside's B). Also, create a new trace-id to signal that is a new scope for the telemetry. During the execution of the microservice B, it also calls microservice C and it's the same situation. As part of the request include the two headers and propagate trace-id and parent-id as well.
+When microservice B receives the incoming HTTP request, it checks the contents of these two headers. It reads the content of the trace-id header and sets its own parent-id to this trace-id (as shown in the green rectangle inside's B). In addition, it creates a new trace-id to signal that is a new scope for the telemetry. During the execution of microservice B, it also calls microservice C and repeats the pattern. As part of the request it includes the two headers and propagates trace-id and parent-id as well.
 
 Finally, microservice C, reads the value for the incoming trace-id and sets as his own parent-id, but also creates a new trace-id that will use to send telemetry about his own operations.
 
