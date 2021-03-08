@@ -16,7 +16,7 @@ More important, we don't have any way to associate our Correlation Id to whateve
 
 The W3C consortium is working in a [Trace Context](https://www.w3.org/TR/trace-context/) definition that we can use when using HTTP as the protocol in our microservice architecture. But let's explain how we can implement this functionality in our software.
 
-The main idea behind this is to propagate the correlation information between http request so other pieces of software can read this information and correctly correlate telemetry across microservices.
+The main idea behind this is to propagate the correlation information between HTTP request so other pieces of software can read this information and correctly correlate telemetry across microservices.
 
 The way to propagate this information is to use HTTP Headers for the Correlation Id, parent Correlation Id, etc.
 
