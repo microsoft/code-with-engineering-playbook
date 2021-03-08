@@ -34,12 +34,12 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 - [ ] Project uses CD to manage deployments to a replica environment before PRs are merged.
 - [ ] Main branch is always shippable.
 
-## Security - TO DO
+## Security
 
-- [ ] Access control.
-- [ ] Separation of concerns.
-- [ ] Robust treatment of secrets.
-- [ ] Encryption for data in transit (and if necessary at rest) and password hashing.
+- [ ] Access is only granted on an as needed bases
+- [ ] Separation of concerns
+- [ ] Secrets are stored in secured locations and not checked in to code
+- [ ] Data is encrypted in transit (and if necessary at rest) and passwords are hashed
 
 ## Observability
 
