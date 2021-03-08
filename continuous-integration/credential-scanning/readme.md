@@ -9,3 +9,5 @@ Ideally, credential scanning should be run as part of a developer's workflow (e.
 To implement credential scanning for a project, consider building on-top of one of the following recipes:
 
 - [detect-secrets](./recipes/detect-secrets.md)
+
+- [detect-secrets inside Azure DevOps Pipeline](./recipes/detect-secrets-ado.md)
