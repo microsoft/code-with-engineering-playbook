@@ -39,6 +39,7 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 - [ ] Access is only granted on an as needed bases
 - [ ] Secrets are stored in secured locations and not checked in to code
 - [ ] Data is encrypted in transit (and if necessary at rest) and passwords are hashed
+- [ ] Is the system split into logical segments with separation of concerns? This helps limiting security vulnerabilities.
 
 ## Observability
 
