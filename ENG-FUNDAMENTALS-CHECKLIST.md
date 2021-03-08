@@ -34,12 +34,12 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 - [ ] Project uses CD to manage deployments to a replica environment before PRs are merged.
 - [ ] Main branch is always shippable.
 
-## Security - TO DO
+## Security
 
-- [ ] Access control.
-- [ ] Separation of concerns.
-- [ ] Robust treatment of secrets.
-- [ ] Encryption for data in transit (and if necessary at rest) and password hashing.
+- [ ] Access is only granted on an as needed bases
+- [ ] Secrets are stored in secured locations and not checked in to code
+- [ ] Data is encrypted in transit (and if necessary at rest) and passwords are hashed
+- [ ] Is the system split into logical segments with separation of concerns? This helps limiting security vulnerabilities.
 
 ## Observability
 
@@ -53,10 +53,10 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 
 ## Agile/Scrum
 
-- [ ] Process Lead (fixed/rotating) to run standup daily.
-- [ ] Agile process clearly defined within team.
-- [ ] Dev Lead (+ PO/Others) have responsibility for backlog management and refinement.
-- [ ] Working agreement between members of team and customer.
+- [ ] Process Lead (fixed/rotating) runs the daily standup
+- [ ] The agile process is clearly defined within team.
+- [ ] The Dev Lead (+ PO/Others) are responsible for backlog management and refinement.
+- [ ] A working agreement is established between team members and customer.
 
 ## Design Reviews
 
