@@ -37,7 +37,6 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 ## Security
 
 - [ ] Access is only granted on an as needed bases
-- [ ] Separation of concerns
 - [ ] Secrets are stored in secured locations and not checked in to code
 - [ ] Data is encrypted in transit (and if necessary at rest) and passwords are hashed
 
@@ -53,10 +52,10 @@ More details on [Integration Testing](automated-testing/integration-testing/read
 
 ## Agile/Scrum
 
-- [ ] Process Lead (fixed/rotating) to run standup daily.
-- [ ] Agile process clearly defined within team.
-- [ ] Dev Lead (+ PO/Others) have responsibility for backlog management and refinement.
-- [ ] Working agreement between members of team and customer.
+- [ ] Process Lead (fixed/rotating) runs the daily standup
+- [ ] The agile process is clearly defined within team.
+- [ ] The Dev Lead (+ PO/Others) are responsible for backlog management and refinement.
+- [ ] A working agreement is established between team members and customer.
 
 ## Design Reviews
 
