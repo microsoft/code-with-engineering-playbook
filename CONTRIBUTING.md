@@ -25,15 +25,14 @@ There are two ways in which you can help update the content:
 If you are not a regular contributor to the project, but you would like to
 contribute some changes, the best way to do it is:
 
-  1. Fork the repo or create a new feature branch
-  2. Write in your contributions
-  3. Create a PR into this repo
+  1. Fork this repository or create a new feature branch
+  2. Add your contributions
+  3. Submit a PR to merge your contribution to this repository
 
 * **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added
-to the project's Contributors group. Please contact one of the project's
-administrators to be added to the group.
-You will still need a PR against master in order to merge your changes.
+to the project's Contributors group. Please contact [Federica Nocera](https://github.com/fnocera) or Tim Pearson to be added to the group.
+You will still need to submit a PR against master in order to merge your changes.
 
 ## How to contribute
 
@@ -72,7 +71,7 @@ look and feel of the documentation in this repo.
 
 You can find information about other linters, general writing guidelines and code review check lists for Markdown in the [Markdown code review recipe](code-reviews/recipes/Markdown.md).
 
-### Contributions and Pull requests
+### Contributions and pull requests
 
 When creating pull requests, follow guidance similar to the one suggested in
 this repo, as described in the ["Pull Request Template"](./code-reviews/pull-request-template.md)
