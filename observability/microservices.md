@@ -46,7 +46,7 @@ The root caller is A and that is why it doesn't have a parent-id, only have a ne
 
 When the microservice B received the incoming http request, checks the content of these two headers. Reads the content of the trace-id header and sets as his own parent-Id (as shown in the green rectangle inside's B). Also, create a new trace-id to signal that is a new scope for the telemetry. During the execution of the microservice B, it also calls microservice C and it's the same situation. As part of the request include the two headers and propagate trace-id and parent-id as well.
 
-Finally, the microservice C, reads the value for the incoming trace-id and sets as his own parent-id, but also create a new trace-id that will use to send telemetry about his own operations.
+Finally, microservice C, reads the value for the incoming trace-id and sets as his own parent-id, but also creates a new trace-id that will use to send telemetry about his own operations.
 
 ## Summary
 
