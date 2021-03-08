@@ -6,7 +6,7 @@ microservices is a very popular software architecture, where the application is 
 
 We need to consider special cases when creating a microservice architecture from the perspective of observability. The main reason for that is because we want to capture the interaction between those microservices are going to have when making request between each other that can't be correlated.
 
-Imagine we have a microservice that accesses the database and retrieve some data as part of a request. This microservice is going to be called by someone else as part of an incoming http request or an internal process being executed. What happen if during the retrieval of the data (or the update of the data) something wrong happen? How we can associate, or correlate, that this particular call failed in the destination microservice?
+Imagine we have a microservice that accesses a database to retrieve some data as part of a request. This microservice is going to be called by someone else as part of an incoming http request or an internal process being executed. What happens if a problem occurs during the retrieval of the data (or the update of the data)? How can we associate, or correlate, that this particular call failed in the destination microservice?
 
 This is a common issue. When calling other microservices, depending on the technology stack we use, we can accidentally hide errors and exceptions that might happen on the other side. If we are using a simple REST interface, the other microservice can return a 500 HTTP status code and we don't have any idea what happen inside that microservice.
 
