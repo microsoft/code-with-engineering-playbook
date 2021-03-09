@@ -32,8 +32,11 @@ The (more) recommended approach is **optimistic** concurrency, where a user can 
 
 A simple way to accomplish this on the database side is to increment a version number on each update. This can be done in a single executed statement as:
 
+> WARNING: the below will not work when using an isolation level at or lower than read ucnommitted (eventual consistency).
+
 ```SQL
 -- Please treat this as pseudo code, and adjust as necessary.
+
 UPDATE <table_name>
 SET field1 = value1, ..., fieldN = valueN, version = $new_version
 WHERE ID = $id AND version = $version
