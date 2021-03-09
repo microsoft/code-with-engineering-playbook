@@ -23,6 +23,7 @@ Below are some general guidelines for pairing:
 - Engineers leverage feature branches for the collaboration during the development of each story to have small Pull Requests (PRs) (as opposed to a single giant PR) at the end of the sprint.
 - Code is committed to the repository by both members of the assigned pair where and when it makes sense as tasks were completed.
 - The pairing assignee is the voice representing the pair during the daily standup while being supported by the story owner.
+- Having the names of both individuals (owner and pair assignee) visible on the PBI can be helpful during sprint ceremonies and lead to greater accountability by the pairing assignee. An example of this using ADO cards can be found [here](./add-pairing-field-ado-cards.md).
 
 ## Why pair programming helps collaboration
 

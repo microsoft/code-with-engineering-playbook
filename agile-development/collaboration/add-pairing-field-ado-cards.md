@@ -10,7 +10,7 @@ Having the names of both individuals [pairing on a story](./readme.md) visible o
 
 Prior to customizing ADO, review [Configure and customize Azure Boards](https://docs.microsoft.com/en-us/azure/devops/boards/configure-customize).
 
-In order to add a custom field to user stories in ADO changes must be made on an Organizational setting. This document therefore assumes use of an existing Organization in ADO and that the user account used to make these changes is a member of the [Project Collection Administrators Group](https://docs.microsoft.com/en-us/azure/devops/organizations/security/set-project-collection-level-permissions).
+In order to add a custom field to user stories in ADO changes must be made on an **Organizational setting**. This document therefore assumes use of an existing Organization in ADO and that the user account used to make these changes is a member of the [Project Collection Administrators Group](https://docs.microsoft.com/en-us/azure/devops/organizations/security/set-project-collection-level-permissions).
 
 ## Step-by-step to change the organization settings
 
@@ -46,7 +46,7 @@ Click on Add Field.
 
 This completes the change in Organization settings. The rest of the instructions must be completed under Project Settings.
 
-## Step-by-step to change the project settings
+## Next, change the project settings
 
 Go to the Project that is to be modified, select Project Settings
 
