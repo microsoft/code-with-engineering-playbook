@@ -1,14 +1,14 @@
-## Recipes
+# Recipes
 
-### Application Insights/ASP.NET
+## Application Insights/ASP.NET
 
 [Github Repo](https://github.com/Azure-Samples/application-insights-aspnet-sample-opentelemetry), [Article](https://devblogs.microsoft.com/aspnet/observability-asp-net-core-apps/).
 
-### Example: Setup Azure Monitor dashboards and alerts with Terraform
+## Example: Setup Azure Monitor dashboards and alerts with Terraform
 
 [Github Repo](https://github.com/buzzfrog/azure-alert-dashboard-terraform)
 
-### On-premises Application Insights
+## On-premises Application Insights
 
 [On-premise Application Insights](https://github.com/c-w/appinsights-on-premises) is a service that is compatible with Azure App Insights, but stores the data in an in-house database like PostgreSQL or object storage like [Azurite](https://github.com/Azure/Azurite).
 
@@ -16,7 +16,7 @@ On-premises Application Insights is useful as a drop-in replacement for Azure Ap
 
 On-premises Application Insights is also useful for testing telemetry integration. Issues related to telemetry can be hard to catch since often these integrations are excluded from unit-test or integration test flows due to it being non-trivial to use a live Azure Application Insights resource for testing, e.g. managing the lifetime of the resource, having to ignore old telemetry for assertions, if a new resource is used it can take a while for the telemetry to show up, etc. The On-premise Application Insights service can be used to make it easier to integrate with an Azure Application Insights compatible API endpoint during local development or continuous integration without having to spin up a resource in Azure. Additionally, the service simplifies integration testing of asynchronous workflows such as web workers since integration tests can now be written to assert against telemetry logged to the service, e.g. assert that no exceptions were logged, assert that some number of events of a specific type were logged within a certain time-frame, etc.
 
-### Azure DevOps Pipelines Reporting with Power BI
+## Azure DevOps Pipelines Reporting with Power BI
 
 The [Azure DevOps Pipelines Report](https://github.com/Azure-Samples/powerbi-pipeline-report) contains a [Power BI](https://docs.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview) template for monitoring project, pipeline, and pipeline run data from an Azure DevOps (AzDO) organization.
 
