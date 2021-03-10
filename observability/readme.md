@@ -27,10 +27,6 @@ Building observable systems enables development teams at CSE to measure how well
 2. [Tracing](pillars/tracing.md)
 3. [Metrics](pillars/metrics.md)
 
-By following the sidecar pattern, made popular by service meshes, you can quickly and easily deploy a microservice architecture with the following pillars of observability built into your system for free. Check out the [Service Mesh](tools/readme.md#service-mesh) section for more info.
-
-> Note: You do not need to deploy a service mesh, or even leverage Kubernetes to follow the sidecar pattern, although it does make the setup much easier.
-
 ## Observability in Machine Learning
 
 Read on how Observability can be implemented in [Machine Learning](ml-observability.md) engagements effectively during Model tuning, experimentation and deployment.
