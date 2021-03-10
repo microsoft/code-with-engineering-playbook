@@ -9,6 +9,8 @@ An engineer working for a [CSE](./CSE.md) project...
 
 This is our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
 
+> **Note:** If you are reading this on github - head over to [https://microsoft.github.io/code-with-engineering-playbook/](https://microsoft.github.io/code-with-engineering-playbook/) for a better reading experience
+
 ## Why Have A Playbook
 
 * To increase overall efficiency for team members and the whole team in general.
