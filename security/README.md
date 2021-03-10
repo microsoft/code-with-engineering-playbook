@@ -42,3 +42,45 @@ When requesting a security review for your application, please make sure you hav
 * [Unvalidated Redirects and Forwards](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md)
 * [Web Service Security](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Web_Service_Security_Cheat_Sheet.md)
 * [XML Security](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_Security_Cheat_Sheet.md)
+
+## Recommended Tools
+
+Check out the list of tools to help enable security in your projects.
+
+> Note: Although some tools are agnostic, the below list is geared towards Cloud Native security, with a focus on Kubernetes.
+
+* Vuln Scanning
+  * [SonarCloud](https://sonarcloud.io/)
+    * Integrates with Azure Devops with the click of a button.
+  * [Snyk](https://github.com/snyk/snyk)
+  * [Trivy](https://github.com/aquasecurity/trivy)
+  * [Cloudsploit](https://github.com/aquasecurity/cloudsploit)
+  * [Anchore](https://github.com/anchore/anchore-engine)
+  * [Other tools from OWASP](https://owasp.org/www-community/Vulnerability_Scanning_Tools)
+  * [See why you should check for vulnerabilities at all layers of the stack](https://sysdig.com/blog/image-scanning-best-practices/), as well as a couple of other useful tips to reduce surface area for attacks.
+
+* Runtime Security
+  * [Falco](https://github.com/falcosecurity/falco)
+  * [Tracee](https://github.com/aquasecurity/tracee)
+  * [Kubelinter](https://github.com/stackrox/kube-linter)
+    * May not fully qualify as runtime security, but helps ensure you're enabling best practices.
+
+* Binary Authorization
+
+  Binary authorization can happen both at the docker registry layer, and runtime (ie: via a K8s admission controller).
+  The authorization check ensures that the image is signed by a trusted authority. This can occur for both (pre-approved) 3rd party images,
+  and internal images. Taking this a step further the signing should occur *only* on images where all code has been reviewed and approved.
+  Binary authorization can both reduce the impact of damage from a compromised hosting environment, as well as the damage from malicious insiders.
+
+  * [Harbor](https://github.com/goharbor/harbor/)
+    * [Operator available](https://github.com/goharbor/harbor-operator)
+  * [Portieris](https://github.com/IBM/portieris)
+  * [Notary](https://github.com/theupdateframework/notary)
+    * Note harbor leverages notary internally.
+  * [TUF](https://github.com/theupdateframework/tuf)
+
+* Other K8s Security
+
+  * [OPA](https://github.com/open-policy-agent/opa), [Gatekeeper](https://github.com/open-policy-agent/gatekeeper), and the [Gatekeeper Library](https://github.com/open-policy-agent/gatekeeper-library/tree/master/library)
+  * [cert-manager](https://github.com/jetstack/cert-manager) for easy certifcate provisioning and automatic rotation.
+  * [Quickly enable mTLS between your microservices with Linkerd](https://linkerd.io/2/features/automatic-mtls/).
