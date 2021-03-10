@@ -9,7 +9,7 @@ The main goals of the envisioning process are:
 * Establish a clear understanding of the problem domain and the underlying business objective
 * Define how a potential solution would be used and how its performance should be measured
 * Determine what data is available to solve the problem
-* Understand the capabilities and working practices of the Data science team
+* Understand the capabilities and working practices of the data science team
 
 The envisioning process usually entails a a series of 'envisioning' sessions where the data science team work alongside subject matter experts to formulate the problem in such a way that there is a shared understanding a shared understanding of the problem domain, a clear goal, and a predefined approach to evaluating a potential solution.
 
