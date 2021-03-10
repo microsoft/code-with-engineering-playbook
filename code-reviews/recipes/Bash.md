@@ -65,7 +65,7 @@ To automate this process in Azure DevOps you can add the following snippet to yo
   displayName: "Validate Scripts: Shellcheck"
 ```
 
-Also, your shell scripts can be formatted in your build pipeline by using shfmt. To integrate shfmt in your build pipeline do the following:
+Also, your shell scripts can be formatted in your build pipeline by using the `shfmt` tool. To integrate `shfmt` in your build pipeline do the following:
 
 ```yaml
 - bash: |
