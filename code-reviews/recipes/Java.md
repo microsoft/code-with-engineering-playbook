@@ -8,7 +8,7 @@
 
 We strongly believe that consistent style increases readability and maintainability of a code base. Hence we are recommending analyzers to enforce consistency and style rules.
 
-We make use of [Checkstyle](https://github.com/checkstyle/checkstyle) using the [same configuration used in the Azure Java SDK](https://github.com/Azure/azure-sdk-for-java/blob/master/eng/code-quality-reports/src/main/resources/checkstyle/checkstyle.xml).  
+We make use of [Checkstyle](https://github.com/checkstyle/checkstyle) using the [same configuration used in the Azure Java SDK](https://github.com/Azure/azure-sdk-for-java/blob/master/eng/code-quality-reports/src/main/resources/checkstyle/checkstyle.xml).
 
 Also frequently used is [FindBugs](http://findbugs.sourceforge.net/) and [PMD](https://pmd.github.io/).
 
