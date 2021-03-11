@@ -105,7 +105,7 @@ to large and sudden spikes.
 
 Chaos testing or Chaos engineering is the practice of experimenting on a system
 to build confidence that the system can withstand turbulent conditions in
-production. Its goal is to identify weaknesses before the manifest system wide.
+production. Its goal is to identify weaknesses before they manifest system wide.
 Developers often implement fallback procedures for service failure. Chaos
 testing arbitrarily shuts down different parts of the system to validate that
 fallback procedures function correctly.
