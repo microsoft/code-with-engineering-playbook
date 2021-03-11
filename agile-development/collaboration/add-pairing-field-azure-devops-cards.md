@@ -1,6 +1,6 @@
 # How to add a pairing custom field in Azure DevOps User Stories
 
-This document outlines the benefits of adding a custom field of type _Identity_ in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops) (Azure DevOps) user stories, prerequisites, and a step-by-step guide.
+This document outlines the benefits of adding a custom field of type _Identity_ in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops) user stories, prerequisites, and a step-by-step guide.
 
 ## Benefits of adding a custom field
 
