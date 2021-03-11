@@ -112,7 +112,7 @@ fallback procedures function correctly.
 
 ## Performance monitor metrics
 
-When conducing the various types of testing approaches, whether it is stress,
+When executing the various types of testing approaches, whether it is stress,
 endurance, spike, or chaos testing, it will be important to capture various
 metrics to see how the system performs.
 
