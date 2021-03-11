@@ -214,9 +214,9 @@ greater than 2-3 there might be CPU pressure.
 ## Network Adapter
 
 Network speed is often a hidden culprit of poor performance. Finding the root
-cause to poor performance is often difficult. Often times the source of issues
-can come from videoconferencing, transaction data, network backups, recreational
-videos.
+cause to poor network performance is often difficult. The source of issues can
+originate from bandwidth hogs such as videoconferencing, transaction data,
+network backups, recreational videos.
 
 Packet loss is another area that contributes to poor performance. It occurs when
 packets fail to reach their destination, either by errors in the data
