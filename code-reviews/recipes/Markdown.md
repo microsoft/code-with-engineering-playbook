@@ -177,7 +177,7 @@ Save your guidelines together with your documentation so they are easy to refer 
 
 ### Emphasis and special sections
 
-- Use **bold** or _italic_ to emphasise
+- Use **bold** or _italic_ to emphasize
   > For sections that everyone reading this document needs to be aware of, use blocks
 - Use `backticks` for code, a single backtick for inline code like `pip install flake8` and 3 backticks for code blocks followed by the language for syntax highlighting
 
