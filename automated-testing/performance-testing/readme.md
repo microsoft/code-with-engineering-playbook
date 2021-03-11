@@ -140,23 +140,43 @@ memory, you will also notice spikes in disk activity as well as CPU.
 
 ## Physical Disk
 
-Almost all software systems are dependent on the performance of the physical disk. This is especially true for the performance of databases. More modern approaches to using SSD’s for physical disk storage can dramatically improve the performance of applications. Here are some of the metrics that you can capture and analyze:
+Almost all software systems are dependent on the performance of the physical
+disk. This is especially true for the performance of databases. More modern
+approaches to using SSD’s for physical disk storage can dramatically improve the
+performance of applications. Here are some of the metrics that you can capture
+and analyze:
 
 ### Avg. Disk Queue Length
 
-This value is derived using the (Disk Transfers/sec)*(Disk sec/Transfer) counters.  This metric describes the disk queue over time, smoothing out any quick spikes.  Having any physical disk with an average queue length over 2 for prolonged periods of time can be an indication that your disk is a bottleneck.
+This value is derived using the (Disk Transfers/sec)*(Disk sec/Transfer)
+counters.  This metric describes the disk queue over time, smoothing out any
+quick spikes.  Having any physical disk with an average queue length over 2 for
+prolonged periods of time can be an indication that your disk is a bottleneck.
 
 ### % Idle Time
 
-This is a measure of the percentage of time that the disk was idle. ie. there are no pending disk requests from the operating system waiting to be completed. A low number here is a positive sign that disk has excess capacity to service or write requests from the operating system.
+This is a measure of the percentage of time that the disk was idle. ie. there
+are no pending disk requests from the operating system waiting to be completed.
+A low number here is a positive sign that disk has excess capacity to service or
+write requests from the operating system.
 
 ### Avg. Disk sec/Read and Avg. Disk sec/Write
 
-These both measure the latency of your disks. Latency is defined as the average time it takes for a disk transfer to complete.  You obviously want is low numbers as possible but need to be careful to account for inherent speed differences between SSD and traditional spinning disks. For this counter is important to define a baseline after the hardware is installed. Then use this value going forward to determine if you are experiencing any latency issues related to the hardware.
+These both measure the latency of your disks. Latency is defined as the average
+time it takes for a disk transfer to complete.  You obviously want is low
+numbers as possible but need to be careful to account for inherent speed
+differences between SSD and traditional spinning disks. For this counter is
+important to define a baseline after the hardware is installed. Then use this
+value going forward to determine if you are experiencing any latency issues
+related to the hardware.
 
 ### Disk Reads/sec and Disk Writes/sec
 
-These counters each measure the total number of IO requests completed per second.  Similar to the latency counters, good and bad values for these counters depend on your disk hardware but values higher than your initial baseline don't normally point to a hardware issue in this case.  This counter can be useful to identify spikes in disk I/O.
+These counters each measure the total number of IO requests completed per
+second.  Similar to the latency counters, good and bad values for these counters
+depend on your disk hardware but values higher than your initial baseline don't
+normally point to a hardware issue in this case.  This counter can be useful to
+identify spikes in disk I/O.
 
 ## Processor
 
@@ -178,12 +198,18 @@ hardware issue that should be investigated.
 
 ### % User time
 
-The percentage of elapsed time the processor spent executing in user mode
-(your application code). A good guideline is to be consistently below 65% as you want to have some buffer for both the kernel operations mentioned above as well as any other bursts of CPU required by other applications.
+The percentage of elapsed time the processor spent executing in user mode (your
+application code). A good guideline is to be consistently below 65% as you want
+to have some buffer for both the kernel operations mentioned above as well as
+any other bursts of CPU required by other applications.
 
 ### Queue Length
 
-This is the number of threads that are ready to execute but waiting for a core to become available.  On single core machines a sustained value greater than 2-3 can mean that you have some CPU pressure.  Similarly, for a multicore machine divide the queue length by the number of cores and if that is continuously greater than 2-3 there might be CPU pressure.
+This is the number of threads that are ready to execute but waiting for a core
+to become available.  On single core machines a sustained value greater than 2-3
+can mean that you have some CPU pressure.  Similarly, for a multicore machine
+divide the queue length by the number of cores and if that is continuously
+greater than 2-3 there might be CPU pressure.
 
 ## Network Adapter
 
@@ -269,11 +295,17 @@ of available memory dips below 10%, more memory should be obtained.
 
 ### Pages/sec
 
-This is actually the sum of "Pages Input/sec" and "Pages Output/sec" counters which is the rate at which pages are being read and written as a result of pages faults.  Small spikes with this value do not mean there is an issue but sustained values of greater than 50 can mean that system memory is a bottleneck.
+This is actually the sum of "Pages Input/sec" and "Pages Output/sec" counters
+which is the rate at which pages are being read and written as a result of pages
+faults.  Small spikes with this value do not mean there is an issue but
+sustained values of greater than 50 can mean that system memory is a bottleneck.
 
 ### Paging File(_Total)\% Usage
 
-The percentage of the system page file that is currently in use.  This is not directly related to performance, but you can run into serious application issues if the page file does become completely full and additional memory is still being requested by applications.
+The percentage of the system page file that is currently in use.  This is not
+directly related to performance, but you can run into serious application issues
+if the page file does become completely full and additional memory is still
+being requested by applications.
 
 ## Key Performance testing activities
 
