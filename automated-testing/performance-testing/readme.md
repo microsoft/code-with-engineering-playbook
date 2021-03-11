@@ -220,15 +220,11 @@ change over time.
 | Gigabit Ethernet | 1,000 Mbps  |
 | 10 Gigabit Ethernet | 10,000 Mbps  |
 
-**Network Counters**
+### Network Counters
 
 The table above gives you some reference points to better understand what you
 can expect out of your network. Here are some counters that can help you
 understand where the bottlenecks might exist:
-
-### Bytes Total/sec
-
-The rate at which bytes are sent and received over each network adapter.
 
 ### Bytes Received/sec
 
