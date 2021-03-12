@@ -65,7 +65,7 @@ One popular specification for open-source projects and others is the [Convention
 
 The `<type>` in this message can be selected from a list of types defined by the team, but many projects use the [list of commit types from the Angular open-source project](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type). It should be clear that `scope`, `body` and `footer` elements are **optional**, but having a required `type` and short description enables the features mentioned above.
 
-See also [Pull Request Template](./pull-request-template.md)
+See also [Pull Request Template](../source-control/pull-request-templates/pull_request_template.md)
 
 ## Resources
 
