@@ -74,7 +74,7 @@ You can find information about other linters, general writing guidelines and cod
 ### Contributions and pull requests
 
 When creating pull requests, follow guidance similar to the one suggested in
-this repo, as described in the ["Pull Request Template"](./code-reviews/pull-request-template.md)
+this repo, as described in the ["Pull Request Template"](./source-control/pull-request-templates/pull_request_template.md)
 section, under "Code Reviews". This includes linking to the work item that
 prompted the pull request.
 
