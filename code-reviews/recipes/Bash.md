@@ -63,26 +63,26 @@ To automate this process in Azure DevOps you can add the following snippet to yo
     rm -r "shellcheck-${scversion}"
     shellcheck ./scripts/*.sh
   displayName: "Validate Scripts: Shellcheck"
-  ```
-  
-  Also, your shell scripts can be formatted in your build pipeline by using shfmt. To integrate shfmt in your build pipeline do the following:
+```
+
+Also, your shell scripts can be formatted in your build pipeline by using the `shfmt` tool. To integrate `shfmt` in your build pipeline do the following:
 
 ```yaml
 - bash: |
     echo "This step does auto formatting of shell scripts"
     shfmt -l -w ./scripts/*.sh
   displayName: "Format Scripts: shfmt"
-  ```
-  
-  Unit testing using [shunit2](https://github.com/kward/shunit2) can also be added to the build pipeline, using the following block:
-  
-  ```yaml
+```
+
+Unit testing using [shunit2](https://github.com/kward/shunit2) can also be added to the build pipeline, using the following block:
+
+```yaml
 - bash: |
     echo "This step unit tests shell scripts by using shunit2"
     ./shunit2
   displayName: "Format Scripts: shfmt"
-  ```
-  
+```
+
 ## Pre-Commit Hooks
 
 All developers should run shellcheck and shfmt as pre-commit hooks.
@@ -103,14 +103,14 @@ Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-com
       -   id: shell-fmt
           args:
             - --indent=4
- ```
+```
 
- ```yaml
+```yaml
 -   repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.7.1.1
     hooks:
     -   id: shellcheck
- ```
+```
 
 ### Step 3
 

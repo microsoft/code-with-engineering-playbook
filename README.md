@@ -9,6 +9,8 @@ An engineer working for a [CSE](./CSE.md) project...
 
 This is our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
 
+> **Note:** If you are reading this on github - head over to [https://microsoft.github.io/code-with-engineering-playbook/](https://microsoft.github.io/code-with-engineering-playbook/) for a better reading experience
+
 ## Why Have A Playbook
 
 * To increase overall efficiency for team members and the whole team in general.
@@ -38,7 +40,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 ## QuickLinks
 
-* [Engineering Fundamentals Checklist](Engineering Fundamentals Checklist.md)
+* [Engineering Fundamentals Checklist](ENG-FUNDAMENTALS-CHECKLIST.md)
 * [Structure of a Sprint](SPRINT-STRUCTURE.md)
 
 ## Engineering Fundamentals
@@ -55,6 +57,7 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [Observability](observability/readme.md)
 * [Security](security/README.md)
 * [Source Control](source-control/readme.md)
+* [Reliability](reliability/README.md)
 
 ## Fundamentals for Specific Technology Areas
 

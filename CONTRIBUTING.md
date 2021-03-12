@@ -25,15 +25,20 @@ There are two ways in which you can help update the content:
 If you are not a regular contributor to the project, but you would like to
 contribute some changes, the best way to do it is:
 
-  1. Fork the repo or create a new feature branch
-  2. Write in your contributions
-  3. Create a PR into this repo
+  1. Fork this repository or create a new feature branch
+  2. Add your contributions
+  3. Submit a PR to merge your contribution to this repository
 
 * **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added
-to the project's Contributors group. Please contact one of the project's
-administrators to be added to the group.
-You will still need a PR against master in order to merge your changes.
+to the project's Contributors group. Please contact [Federica Nocera](https://github.com/fnocera) or [Brock Davis](https://github.com/brockneedscoffee) to be added to the group.
+You will still need to submit a PR against master in order to merge your changes.
+
+## How to contribute
+
+When you have an idea for contribution open an *issue*!
+
+More details can be found in the internal CSE Wiki under the page `Contributing_to_the_Code-With_Engineering_Playbook`.
 
 ## Git guidance
 
@@ -66,7 +71,7 @@ look and feel of the documentation in this repo.
 
 You can find information about other linters, general writing guidelines and code review check lists for Markdown in the [Markdown code review recipe](code-reviews/recipes/Markdown.md).
 
-### Contributions and Pull requests
+### Contributions and pull requests
 
 When creating pull requests, follow guidance similar to the one suggested in
 this repo, as described in the ["Pull Request Template"](./source-control/pull-request-templates/pull_request_template.md)
@@ -95,12 +100,6 @@ Each section consist of the following parts
    1. Tool specific implementations of the concept
    2. Named patterns or games that implement the concept (usually applies to
    agile ceremonies)
-4. Case Studies
-   1. Examples that illustrate how a team implemented the concept
-   2. What problem was the team try to solve with their implementation?
-   3. What worked well?
-   4. Opportunities for improvement
-   5. External Reference Material
 
 ### Example Directory Hierarchy
 
@@ -120,8 +119,6 @@ The following illustrates how the directory structure could be organized.
             - ci-pipeline-for-dotnet-core.md
             - ci-pipeline-for-python.md
         - /jenkins
-    - /case-studies
-        - contoso-ci-pipeline-for-terraform.md
 ```
 
 ## Legal Notices
