@@ -2,7 +2,7 @@
 
 ## Overview
 
-Originally built at SoundCloud, [Prometheus](https://prometheus.io/docs/introduction/overview/) is an open-source monitoring and alerting toolkit based on time series metrics data. It has become a de facto standard metrics solution in the cloud Native world and widely used with Kubernetes.
+Originally built at SoundCloud, [Prometheus](https://prometheus.io/docs/introduction/overview/) is an open-source monitoring and alerting toolkit based on time series metrics data. It has become a de facto standard metrics solution in the Cloud Native world and widely used with Kubernetes.
 
 The core of Prometheus is a server that scrapes and stores metrics. There are other numerous optional features and components like an Alert-manager and [client libraries](https://prometheus.io/docs/instrumenting/clientlibs/) for programming languages to extend the functionalities of Prometheus beyond the basics.
 The client libraries offer four [metric types](https://prometheus.io/docs/concepts/metric_types/): `Counter`, `Gauge`, `Histogram`, and `Summary`.
@@ -10,7 +10,7 @@ The client libraries offer four [metric types](https://prometheus.io/docs/concep
 ## Why Prometheus?
 
 - Prometheus is a time series database and allow for events or measurements to be tracked, monitored, and aggregated over time.
-- Prometheus is a pull based tool. One of the biggest advantages of Prometheus vs other monitoring tools is that Prometheus actively scrapes targets in order to retrieve metrics from them. Prometheus also supports the push model for pushing metrics.
+- Prometheus is a pull-based tool. One of the biggest advantages of Prometheus over other monitoring tools is that Prometheus actively scrapes targets in order to retrieve metrics from them. Prometheus also supports the push model for pushing metrics.
 - Prometheus allows for control over who to scrape, and how often to scrape them. Through the Prometheus server, there can be multiple scrape configurations, allowing for multiple rates for different targets.
 - Similar to [Grafana](https://prometheus.io/docs/visualization/grafana/), visualization for the time series can be directly done through the Prometheus Web UI. The Web UI provides the ability to easily filter and have an overview of what is taking place with your different targets.
 - Prometheus provides a powerful functional query language called PromQL (Prometheus Query Language) that lets the user aggregate time series data in real time.
