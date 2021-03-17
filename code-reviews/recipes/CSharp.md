@@ -105,7 +105,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead catch the specific exceptions that can happen e.g., `IOException`.
 * [ ] Is the use of #pragma fair?
 * [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
-* [ ] If there is an async function, does the name of the function have Async in it?
+* [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
 * [ ] If a method is asynchronous, is `Task.Delay` used instead of `Thread.Sleep`? `Task.Delay` is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi-threaded, multi-task environment, this is the one to prefer.
 * [ ] Is a cancellation token for async tasks needed rather than bool patterns?
 * [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
