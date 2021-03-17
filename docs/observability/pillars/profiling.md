@@ -19,7 +19,6 @@ Unfortunately, each profiler tool typically uses it's own format for storing pro
 - (Java and Go) [Flame](https://github.com/VerizonMedia/kubectl-flame) - profiling containers in Kubernetes
 - (Java, Python, Go) [Datadog Continuous profiler](https://www.datadoghq.com/product/code-profiling/)
 - (Java, Python, Go, Node.js) [Instana](https://www.instana.com/blog/instana-announces-the-industrys-first-commercial-continuous-production-profiler/)
-https://www.verizonmedia.com/technology/blog/kubectl-flame
 - (Go) [profefe](https://github.com/profefe/profefe), which builds `pprof` to provide continuous profiling
 - (Java) [Opsian](https://opsian.com/)
 - (Java) [Eclipse Memory Analyzer](https://www.eclipse.org/mat/)
