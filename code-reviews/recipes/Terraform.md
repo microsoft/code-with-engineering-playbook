@@ -116,3 +116,4 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * Use the `required_providers` block for establishing the dependency for providers along with pre-determined version.
 * Use the `terraform` block to declare the provider dependency with exact version and also the terraform CLI version needed for the configuration.
 * Validate the variable values supplied based on usage and type of variable. The validation can be done to variables by adding `validation` block.
+* Validate that the component SKUs are the right ones, e.g. standard vs premium.

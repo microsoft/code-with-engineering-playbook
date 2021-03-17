@@ -161,6 +161,7 @@ Save your guidelines together with your documentation so they are easy to refer 
 - Avoid duplication of content, instead link to the `single source of truth`
 - Link but don't summarize. Summarizing content on another page leads to the content living in two places
 - Use meaningful anchor texts, e.g. instead of writing `Follow the instructions [here](../recipes/Markdown.md)` write `Follow the [Markdown guidelines](../recipes/Markdown.md)`
+- Make sure links to Microsoft docs (<https://docs.microsoft.com/something/somethingelse>) do not contain the language marker `/en-us/` or `/fr-fr/`, as this is automatically determined by the site itself.
 
 ### Lists
 
@@ -201,3 +202,4 @@ Save your guidelines together with your documentation so they are easy to refer 
 ### General
 
 - Always use markdown syntax, don't mix with HTML
+- Make sure the extension of the files is `.md` - if the extension is missing, a linter might ignore the files

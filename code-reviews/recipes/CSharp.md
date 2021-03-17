@@ -100,3 +100,16 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does this code properly validate arguments sanity (i.e. [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
 * [ ] Does this code include telemetry ([metrics, tracing](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
 * [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
+* [ ] Are constants used in the main class? Or if this is used across files/classes, is there a static class for the constants?
+* [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?
+* [ ] Is proper Exception handling set up? Catch(Exception) is not the right pattern, only exceptions that could happen need to be caught, e.g. `Catch(Exception e) when (e is IOException || e is ArgumentException)`.
+* [ ] Is the use of #pragma fair?
+* [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
+* [ ] If there is an async function, does the name of the function have Async in it?
+* [ ] If a method is async, is Task.Delay used instead of Thread.Sleep? Task.Delay is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi thread, multi task environment, this is the one to prefer.
+* [ ] Is a cancellation token for async tasks needed rather than bool patterns?
+* [ ] Is a minimum level of logging in place? Is the logging level is the right one?
+* [ ] Are internal vs private vs public classes and methods used the right way?
+* [ ] Are auto property set and get used the right way? In a model without constructor and for deserialization, it is ok to have all accessible. But for other classes usually a private set or internal set is better.
+* [ ] Is the `using` pattern for streams and other disposable classes used? If not, better to have the Dispose method called explicitly.
+* [ ] Are the classes that maintain collections in memory, thread safe? When used under concurrency, use lock pattern.
