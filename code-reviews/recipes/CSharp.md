@@ -102,7 +102,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
 * [ ] Are constants used in the main class? Or if this is used across files/classes, is there a static class for the constants?
 * [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why it is there. If the number is repetitive, is there a constant/enum or equivalent?
-* [ ] Is proper Exception handling set up? Catch(Exception) is not the right pattern, only exceptions that could happen need to be caught, e.g. `Catch(Exception e) when (e is IOException || e is ArgumentException)`.
+* [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead catch the specific exceptions that can happen e.g., `IOException`.
 * [ ] Is the use of #pragma fair?
 * [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
 * [ ] If there is an async function, does the name of the function have Async in it?
