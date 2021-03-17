@@ -102,12 +102,12 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
 * [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
 * [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?
-* [ ] Is proper Exception handling set up? Catch(Exception) is not the right pattern, only exceptions that could happen need to be caught, e.g. `Catch(Exception e) when (e is IOException || e is ArgumentException)`.
+* [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead catch the specific exceptions that can happen e.g., `IOException`.
 * [ ] Is the use of #pragma fair?
 * [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
-* [ ] If there is an async function, does the name of the function have Async in it?
+* [ ] If there is an asynchronous function, does the name of the function have Async in it?
 * [ ] If a method is asynchronous, is `Task.Delay` used instead of `Thread.Sleep`? `Task.Delay` is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi-threaded, multi-task environment, this is the one to prefer.
-* [ ] Is a cancellation token for async tasks needed rather than bool patterns?
+* [ ] Is a cancellation token for asynchronous tasks needed rather than bool patterns?
 * [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
 * [ ] Are internal vs private vs public classes and methods used the right way?
 * [ ] Are auto property set and get used the right way? In a model without constructor and for deserialization, it is ok to have all accessible. But for other classes usually a private set or internal set is better.
