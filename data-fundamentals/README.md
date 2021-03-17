@@ -18,6 +18,12 @@ The goal of this section is to briefly describe how to apply the fundamentals to
 - [Observability](#observability)
 - [End to End and Azure Technology Samples](#end-to-end-and-azure-technology-samples)
 
+## Isolation
+
+Please be cautious of which [isolation levels](https://en.wikipedia.org/wiki/Isolation_(database_systems)) you are using. Even with a database that offers serializability, it is possible that within a transaction or connection you are leveraging a lower isolation level than the database offers. In particular, read uncommitted (or eventual consistency), can have a lot of unpredictable side-effects and introduce bugs that are difficult to reason about. Eventually consistent systems should be treated as a last resort for achieving your scalability requirements; batching, sharding, and caching are all recommended solutions to increase your scalability. If none of these options are tenable, consider evaluating the "New SQL" databases like CockroachDB or TiDB, before leveraging an option that relies on eventual consistency.
+
+There are other levels of isolation, outside of the isolation levels mentioned in the link above. Some of these have nuances different than the 4 main levels, and can be difficult to compare. Snapshot Isolation, strict serializability, "read your own writes"", monotonic reads, bounded staleness, causal consistency, and linearizability are all other terms you can look into to learn more on the subject.
+
 ## Concurrency Control
 
 Your systems should (almost) always leverage some form of concurrency control, to ensure correctness amongst competing requests and to prevent data races. The 2 forms of concurrency control are **pessimistic** and **optimistic**.
@@ -28,9 +34,13 @@ The (more) recommended approach is **optimistic** concurrency, where a user can 
 
 A simple way to accomplish this on the database side is to increment a version number on each update. This can be done in a single executed statement as:
 
+> WARNING: the below will not work when using an isolation level at or lower than read uncommitted (eventual consistency).
+
 ```SQL
+-- Please treat this as pseudo code, and adjust as necessary.
+
 UPDATE <table_name>
-SET field1 = value1, ..., fieldN = valueN, version = $version + 1
+SET field1 = value1, ..., fieldN = valueN, version = $new_version
 WHERE ID = $id AND version = $version
 ```
 
