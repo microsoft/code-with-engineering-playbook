@@ -31,7 +31,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 
 - Explain why the code needs to change.
 - Prefix a “point of polish” with “Nit:” 
-- Propose suggestion by creating PR to the author branch if feasible.
+- Propose suggestion by creating PR to the author branch when it is feasible.
 - If one or two comments don’t resolve a disagreement, talk in person or create group discussion
 
 ### Decide on a common standard for each language
