@@ -143,8 +143,35 @@ As an alternative [husky](https://github.com/typicode/husky) can be considered t
 
 ## Code Review Checklist
 
-In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these JavaScript specific code review items
+In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these JavaScript and TypeScript specific code review items.
+
+### Javascript
 
 * [ ] Does the code stick to our formatting and code standards? Does running prettier and ESLint over the code should yield no warnings or errors respectively?
 * [ ] Does the change re-implement code that would be better served by pulling in a well known module from the ecosystem?
-* [ ] Does TypeScript code compile without raising linting errors
+* [ ] Is `"use strict";` used to reduce errors with non declared variables?
+* [ ] Are unit tests used where possible, also for APIs? [Ponicode](https://www.ponicode.com/) can help with test generation. Ponicode creates test files using Jest syntax.
+* [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
+* [ ] Are best practices for error handling followed, as well as `try catch finally` statements?
+* [ ] Are the `doWork().then(doSomething).then(checkSomething)` properly followed for async calls, including `expect`, `done`?
+* [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
+* [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why it is there. If the number is repetitive, is there a constant/enum or equivalent?
+* [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
+* [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
+* [ ] Is document fragment manipulation limited to when you need to manipulate multiple sub elements?
+
+### TypeScript
+
+* [ ] Does the code stick to our formatting and code standards? Does running prettier and ESLint over the code should yield no warnings or errors respectively?
+* [ ] Does the change re-implement code that would be better served by pulling in a well known module from the ecosystem?
+* [ ] Does TypeScript code compile without raising linting errors?
+* [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
+* [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why it is there. If the number is repetitive, is there a constant/enum or equivalent?
+* [ ] Is there a proper `/* */` in the various classes and methods?
+* [ ] Are unit tests used where possible? In most cases, tests should be present for APIs, interfaces with data access, transformation, backend elements and models. [Ponicode](https://www.ponicode.com/) can help with test generation. Ponicode creates test files using Jest syntax.
+* [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
+* [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
+* [ ] Is a minimum level of logging in place? Is the logging level is the right one?
+* [ ] Is document fragment manipulation limited to when you need to manipulate multiple sub elements?
+* [ ] Is not to much code used in the controller and are heavy operations done in the backend?
+* [ ] Is event handling on the html efficiently done?
