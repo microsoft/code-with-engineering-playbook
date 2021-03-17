@@ -106,10 +106,10 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Is the use of #pragma fair?
 * [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
 * [ ] If there is an async function, does the name of the function have Async in it?
-* [ ] If a method is async, is Task.Delay used instead of Thread.Sleep? Task.Delay is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi thread, multi task environment, this is the one to prefer.
+* [ ] If a method is asynchronous, is `Task.Delay` used instead of `Thread.Sleep`? `Task.Delay` is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi-threaded, multi-task environment, this is the one to prefer.
 * [ ] Is a cancellation token for async tasks needed rather than bool patterns?
-* [ ] Is a minimum level of logging in place? Is the logging level is the right one?
+* [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
 * [ ] Are internal vs private vs public classes and methods used the right way?
 * [ ] Are auto property set and get used the right way? In a model without constructor and for deserialization, it is ok to have all accessible. But for other classes usually a private set or internal set is better.
-* [ ] Is the `using` pattern for streams and other disposable classes used? If not, better to have the Dispose method called explicitly.
+* [ ] Is the `using` pattern for streams and other disposable classes used? If not, better to have the `Dispose` method called explicitly.
 * [ ] Are the classes that maintain collections in memory, thread safe? When used under concurrency, use lock pattern.

@@ -30,8 +30,9 @@ Code reviews should use the below guidance and checklists to ensure positive and
 ### Make comments clear
 
 - Explain why the code needs to change.
-- Prefix a “point of polish” with “Nit:” - or use the Azure DevOps `suggestion` button and propose the correction directly.
-- If one or two comments don’t resolve a disagreement, talk in person or on the phone.
+- Prefix a “point of polish” with “Nit:”.
+- Suggest changes to a PR by using the suggestion feature (available in [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request) and Azure DevOps) or by creating a PR to the author branch.
+- If one or two comments don’t resolve a disagreement, talk in person or create group discussion.
 
 ### Decide on a common standard for each language
 
