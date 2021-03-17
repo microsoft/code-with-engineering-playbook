@@ -100,7 +100,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does this code properly validate arguments sanity (i.e. [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
 * [ ] Does this code include telemetry ([metrics, tracing](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
 * [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
-* [ ] Are constants used in the main class? Or if this is used across files/classes, is there a static class for the constants?
+* [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
 * [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?
 * [ ] Is proper Exception handling set up? Catch(Exception) is not the right pattern, only exceptions that could happen need to be caught, e.g. `Catch(Exception e) when (e is IOException || e is ArgumentException)`.
 * [ ] Is the use of #pragma fair?
