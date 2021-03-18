@@ -14,7 +14,7 @@ Using Markdown is different than using a WYSIWYG editor. In an application like 
 
 You can find more information and full documentation [here](https://www.markdownguide.org/).
 
-## Code Analysis / Linting
+## Linting
 
 Markdown has specific way of being formatted. It is important to respect this formatting, otherwise some interpreters which are strict won't properly display the document. Linters are often used to help developers properly create documents by both verifying proper markdown syntax as well as grammar and proper English language.
 
@@ -85,17 +85,19 @@ npx write-good *.md
 
 Write Good is also available as an [extension for VS Code](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
 
-## VS Code Extensions
+### VS Code Extensions
 
-### Write Good Linter
+#### Write Good Linter
 
 The [`Write Good Linter Extension`](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter) integrates with VS Code to give grammar and language advice while editing the document.
 
-### markdownlint extension
+#### markdownlint extension
 
 The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) examines the markdown documents, showing warnings for rule violations while editing.
 
-## Build validation
+## Build Validation
+
+### linting
 
 To automate linting with `markdownlint` for PR [validation in GitHub actions](../../.github/workflows/markdownlint.yml) as we do in this repo, use the following YAML.
 
@@ -126,6 +128,20 @@ jobs:
         npm i -g markdownlint-cli
         markdownlint "**/*.md" --ignore node_modules
 ```
+
+### link check
+
+To automate link check in your markdown files add `markdown-link-check` action to your validation pipeline:
+
+```yaml
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+```
+
+More information about `markdown-link-check` action options can be found at [`markdown-link-check` home page](https://github.com/gaurav-nelson/github-action-markdown-link-check)
 
 ## Code Review Checklist
 
