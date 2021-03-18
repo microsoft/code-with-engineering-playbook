@@ -26,7 +26,6 @@ To set yourself up for the dev container experience described above, use your VS
 VS Code dev containers have improved project collaboration between developers on recent team projects by addressing two very specific problems:
 
 - Inconsistent local developer experiences within a team.
-
 - Slow onboarding of developers joining a project.
 
 The problems listed above were addressed by configuring and then sharing a dev container definition. Dev containers are defined by their base image and the artifacts that support that base image. The base image and the artifacts that come with it live in the .devcontainer directory. This directory is where configuration begins. A central artifact to the dev container definition is a configuration file called `devcontainer.json`. This file orchestrates the artifacts needed to support the base image and the dev container lifecycle. Installation of the [Remote Development Extension Pack](http://web.archive.org/web/20200828150357/https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) is required to enable this orchestration within a project repo.
@@ -75,9 +74,6 @@ $ tree vs-code-dev-containers  # main repo directory
 Here are the final high-level steps it takes to build a dev container:
 
 1. Decide which platform you'd like to build a local development tool stack around.
-
 2. Browse the VS Code provided dev container gallery of project folders that target your platform and choose the most appropriate one.
-
 3. Inspect the dev container definitions (.devcontainer directory) of a project for the base image and the artifacts that support that base image.
-
 4. Use what you’ve discovered to begin setting up the dev container as it is, extending it or building your own from scratch.
