@@ -62,10 +62,10 @@ following:
 
 - To reduce **downtime**
 
-  - Systems that go down cost money. For every second thought. Amazon Web
-    services is down, is a loss of eleven hundred dollars per second. And for
-    financial services firms’ downtime could mean lawsuits and customer
-    attrition.
+  - Systems that go down cost money. Many estimates, as of 2020, suggest that
+    the average cost of IT downtime is $5,600 per minute. There are additional
+    costs that do not show up in dollar form, such as the cost of interruptions
+    to IT professionals who may otherwise be doing more productive work.
 
 ## Key Performance Testing categories
 
@@ -91,7 +91,7 @@ performance characteristics of a system when the system faces extreme load. The
 goal is to evaluate how does the system handles being pressured to its limits,
 does it recover (i.e., scale\-out) or does it just break and fail?
 
-### Endurance testing
+### Good Performance Under Extended Periods of Load
 
 The goal of endurance testing is to make sure that the software can maintain
 good performance when extended periods of load.
@@ -146,37 +146,13 @@ approaches to using SSD’s for physical disk storage can dramatically improve t
 performance of applications. Here are some of the metrics that you can capture
 and analyze:
 
-### Avg. Disk Queue Length
+| Counter | Description  |
+|:-------------------- |:--------------------  |
+| Avg. Disk Queue Length | This value is derived using the (Disk Transfers/sec)*(Disk sec/Transfer) counters. This metric describes the disk queue over time, smoothing out any quick spikes. Having any physical disk with an average queue length over 2 for prolonged periods of time can be an indication that your disk is a bottleneck.  |
+| % Idle Time | This is a measure of the percentage of time that the disk was idle. ie. there are no pending disk requests from the operating system waiting to be completed. A low number here is a positive sign that disk has excess capacity to service or write requests from the operating system.  |
+| Avg. Disk sec/Read and Avg. Disk sec/Write | These both measure the latency of your disks. Latency is defined as the average time it takes for a disk transfer to complete. You obviously want is low numbers as possible but need to be careful to account for inherent speed differences between SSD and traditional spinning disks. For this counter is important to define a baseline after the hardware is installed. Then use this value going forward to determine if you are experiencing any latency issues related to the hardware.  |
+| Disk Reads/sec and Disk Writes/sec | These counters each measure the total number of IO requests completed per second. Similar to the latency counters, good and bad values for these counters depend on your disk hardware but values higher than your initial baseline don't normally point to a hardware issue in this case. This counter can be useful to identify spikes in disk I/O.  |
 
-This value is derived using the (Disk Transfers/sec)*(Disk sec/Transfer)
-counters.  This metric describes the disk queue over time, smoothing out any
-quick spikes.  Having any physical disk with an average queue length over 2 for
-prolonged periods of time can be an indication that your disk is a bottleneck.
-
-### % Idle Time
-
-This is a measure of the percentage of time that the disk was idle. ie. there
-are no pending disk requests from the operating system waiting to be completed.
-A low number here is a positive sign that disk has excess capacity to service or
-write requests from the operating system.
-
-### Avg. Disk sec/Read and Avg. Disk sec/Write
-
-These both measure the latency of your disks. Latency is defined as the average
-time it takes for a disk transfer to complete.  You obviously want is low
-numbers as possible but need to be careful to account for inherent speed
-differences between SSD and traditional spinning disks. For this counter is
-important to define a baseline after the hardware is installed. Then use this
-value going forward to determine if you are experiencing any latency issues
-related to the hardware.
-
-### Disk Reads/sec and Disk Writes/sec
-
-These counters each measure the total number of IO requests completed per
-second.  Similar to the latency counters, good and bad values for these counters
-depend on your disk hardware but values higher than your initial baseline don't
-normally point to a hardware issue in this case.  This counter can be useful to
-identify spikes in disk I/O.
 
 ## Processor
 
@@ -189,27 +165,12 @@ have over provisioned your CPU. 70% is generally considered a good target
 number and if you start going higher than 70%, you may want to explore why
 there is high CPU pressure.
 
-### % Privileged time
+| Counter | Description  |
+|:-------------------- |:--------------------  |
+| % Privileged time | This measures the percentage of elapsed time the processor spent executing in kernel mode. Since this counter takes into account only kernel operations a high percentage of privileged time (greater than 25%) may indicate driver or hardware issue that should be investigated.  |
+| % User time | The percentage of elapsed time the processor spent executing in user mode (your application code). A good guideline is to be consistently below 65% as you want to have some buffer for both the kernel operations mentioned above as well as any other bursts of CPU required by other applications.  |
+| Queue Length | This is the number of threads that are ready to execute but waiting for a core to become available. On single core machines a sustained value greater than 2-3 can mean that you have some CPU pressure. Similarly, for a multicore machine divide the queue length by the number of cores and if that is continuously greater than 2-3 there might be CPU pressure.  |
 
-This measures the percentage of elapsed time the processor spent executing in
-kernel mode.  Since this counter takes into account only kernel operations a
-high percentage of privileged time (greater than 25%) may indicate driver or
-hardware issue that should be investigated.
-
-### % User time
-
-The percentage of elapsed time the processor spent executing in user mode (your
-application code). A good guideline is to be consistently below 65% as you want
-to have some buffer for both the kernel operations mentioned above as well as
-any other bursts of CPU required by other applications.
-
-### Queue Length
-
-This is the number of threads that are ready to execute but waiting for a core
-to become available.  On single core machines a sustained value greater than 2-3
-can mean that you have some CPU pressure.  Similarly, for a multicore machine
-divide the queue length by the number of cores and if that is continuously
-greater than 2-3 there might be CPU pressure.
 
 ## Network Adapter
 
@@ -218,10 +179,11 @@ cause to poor network performance is often difficult. The source of issues can
 originate from bandwidth hogs such as videoconferencing, transaction data,
 network backups, recreational videos.
 
-Packet loss is another area that contributes to poor performance. It occurs when
-packets fail to reach their destination, either by errors in the data
-transmission or network congestion. Packet loss can also be caused by Dos/DDoS
-attacks.
+In fact, the three most common reasons for a network slow down are:
+
+- Congestion
+- Data corruption
+- Collisions
 
 Some of the tools that can help include:
 
@@ -232,19 +194,20 @@ Some of the tools that can help include:
 - tcpdump
 - WireShark
 
-For most of these counters below, there are no hard and fast numbers. Wi-Fi
-speeds are lower as compared to wired, ethernet speeds. Networking speeds have
-increased dramatically over the years. We can expect all the numbers below to
-change over time.
+Troubleshooting network performance usually begins with checking the hardware.
+Typical things to explore is whether there are any loose wires or checking that
+all routers are powered up. It is not always possible to do so, but sometimes a
+simple case of power recycling of the modem or router can solve many problems.
 
-| Network Type | Speed  |
-|:-------------------- |:--------------------  |
-| Basic Wifi Speed | 3 to 8 Mpbs  |
-| Moderate Wifi Speed | 10 to 25 Mpbs  |
-| Fast Wifi Speed | 300 to 1000 Mbps  |
-| Fast Ethernet | 100 Mbps  |
-| Gigabit Ethernet | 1,000 Mbps  |
-| 10 Gigabit Ethernet | 10,000 Mbps  |
+Network specialists often perform the following sequence of troubleshooting steps:
+
+- Check the hardware
+- Use IP config
+- Use ping and tracert
+- Perform DNS Check
+
+More advanced approaches often involve looking at some of the networking
+performance counters, as explained below.
 
 ### Network Counters
 
@@ -252,31 +215,15 @@ The table above gives you some reference points to better understand what you
 can expect out of your network. Here are some counters that can help you
 understand where the bottlenecks might exist:
 
-### Bytes Received/sec
+| Counter | Description  |
+|:-------------------- |:--------------------  |
+| Bytes Received/sec | The rate at which bytes are received over each network adapter.  |
+| Bytes Sent/sec | The rate at which bytes are sent over each network adapter.  |
+| Bytes Total/sec | The number of bytes sent and received over the network.  |
+| Segments Received/sec | The rate at which segments are received for the protocol  |
+| Segments Sent/sec | The rate at which segments are sent.  |
+| % Interrupt Time | The percentage of time the processor spends receiving and servicing hardware interrupts. This value is an indirect indicator of the activity of devices that generate interrupts, such as network adapters.  |
 
-The rate at which bytes are received over each network adapter.
-
-### Bytes Sent/sec
-
-The rate at which bytes are sent over each network adapter.
-
-### Bytes Total/sec
-
-The number of bytes sent and received over the network.
-
-### Segments Received/sec
-
-The rate at which segments are received for the protocol
-
-### Segments Sent/sec
-
-The rate at which segments are sent.
-
-### % Interrupt Time
-
-The percentage of time the processor spends receiving and servicing hardware
-interrupts. This value is an indirect indicator of the activity of devices that
-generate interrupts, such as network adapters.
 
 > There is an important distinction between **latency** and **throughput**.
 **Latency** measures the time it takes for a packet to be transferred across the
@@ -286,26 +233,12 @@ of data being sent and received within a unit of time.
 
 ## Memory
 
-### Available MBs
+| Counter | Description  |
+|:-------------------- |:--------------------  |
+| Available MBs | This counter represents the amount of memory that is available to applications that are executing. Low memory can trigger Page Faults, whereby additional pressure is put on the CPU to swap memory to and from the disk. if the amount of available memory dips below 10%, more memory should be obtained.  |
+| Pages/sec | This is actually the sum of &quot;Pages Input/sec&quot; and &quot;Pages Output/sec&quot; counters which is the rate at which pages are being read and written as a result of pages faults. Small spikes with this value do not mean there is an issue but sustained values of greater than 50 can mean that system memory is a bottleneck.  |
+| Paging File(_Total)\% Usage | The percentage of the system page file that is currently in use. This is not directly related to performance, but you can run into serious application issues if the page file does become completely full and additional memory is still being requested by applications.  |
 
-This counter represents the amount of memory that is available to applications
-that are executing. Low memory can trigger Page Faults, whereby additional
-pressure is put on the CPU to swap memory to and from the disk. if the amount
-of available memory dips below 10%, more memory should be obtained.
-
-### Pages/sec
-
-This is actually the sum of "Pages Input/sec" and "Pages Output/sec" counters
-which is the rate at which pages are being read and written as a result of pages
-faults.  Small spikes with this value do not mean there is an issue but
-sustained values of greater than 50 can mean that system memory is a bottleneck.
-
-### Paging File(_Total)\% Usage
-
-The percentage of the system page file that is currently in use.  This is not
-directly related to performance, but you can run into serious application issues
-if the page file does become completely full and additional memory is still
-being requested by applications.
 
 ## Key Performance testing activities
 
