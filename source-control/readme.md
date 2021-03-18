@@ -9,7 +9,6 @@ There are many different options when working with Source Control. In [CSE](../C
 * [Versioning](versioning/readme.md)
 * [Working with Secrets](secrets-management/readme.md)
 * [Git Guidance](git-guidance/readme.md)
-* [Pull Request Templates](pull-request-templates/README.md)
 
 ## Goal
 
