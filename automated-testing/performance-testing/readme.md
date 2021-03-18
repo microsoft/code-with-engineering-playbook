@@ -153,24 +153,22 @@ and analyze:
 | Avg. Disk sec/Read and Avg. Disk sec/Write | These both measure the latency of your disks. Latency is defined as the average time it takes for a disk transfer to complete. You obviously want is low numbers as possible but need to be careful to account for inherent speed differences between SSD and traditional spinning disks. For this counter is important to define a baseline after the hardware is installed. Then use this value going forward to determine if you are experiencing any latency issues related to the hardware.  |
 | Disk Reads/sec and Disk Writes/sec | These counters each measure the total number of IO requests completed per second. Similar to the latency counters, good and bad values for these counters depend on your disk hardware but values higher than your initial baseline don't normally point to a hardware issue in this case. This counter can be useful to identify spikes in disk I/O.  |
 
-
 ## Processor
 
-### % Processor time
+It is important to understand the amount of time spent in kernel or privileged
+mode. In general, if code is spending too much time executing operating system
+calls, that could be an area of concern because it will not allow you to run
+your user mode applications, such as your databases, Web servers/services, etc.
 
-This is the percentage of total elapsed time that the processor was busy
-executing. This counter can either be too high or too low. If your processor
-time is consistently below 40%, then there is a question as to whether you
-have over provisioned your CPU. 70% is generally considered a good target
-number and if you start going higher than 70%, you may want to explore why
-there is high CPU pressure.
+The guideline is that the CPU should only spend about 20% of the total processor
+time running in kernel mode.
 
 | Counter | Description  |
 |:-------------------- |:--------------------  |
-| % Privileged time | This measures the percentage of elapsed time the processor spent executing in kernel mode. Since this counter takes into account only kernel operations a high percentage of privileged time (greater than 25%) may indicate driver or hardware issue that should be investigated.  |
+| % Processor time | This is the percentage of total elapsed time that the processor was busy executing. This counter can either be too high or too low. If your processor time is consistently below 40%, then there is a question as to whether you have over provisioned your CPU. 70% is generally considered a good target number and if you start going higher than 70%, you may want to explore why there is high CPU pressure.
+| % Privileged (Kernel Mode) time | This measures the percentage of elapsed time the processor spent executing in kernel mode. Since this counter takes into account only kernel operations a high percentage of privileged time (greater than 25%) may indicate driver or hardware issue that should be investigated.  |
 | % User time | The percentage of elapsed time the processor spent executing in user mode (your application code). A good guideline is to be consistently below 65% as you want to have some buffer for both the kernel operations mentioned above as well as any other bursts of CPU required by other applications.  |
 | Queue Length | This is the number of threads that are ready to execute but waiting for a core to become available. On single core machines a sustained value greater than 2-3 can mean that you have some CPU pressure. Similarly, for a multicore machine divide the queue length by the number of cores and if that is continuously greater than 2-3 there might be CPU pressure.  |
-
 
 ## Network Adapter
 
@@ -224,7 +222,6 @@ understand where the bottlenecks might exist:
 | Segments Sent/sec | The rate at which segments are sent.  |
 | % Interrupt Time | The percentage of time the processor spends receiving and servicing hardware interrupts. This value is an indirect indicator of the activity of devices that generate interrupts, such as network adapters.  |
 
-
 > There is an important distinction between **latency** and **throughput**.
 **Latency** measures the time it takes for a packet to be transferred across the
 network, either in terms of a one\-way transmission or a round\-trip
@@ -238,7 +235,6 @@ of data being sent and received within a unit of time.
 | Available MBs | This counter represents the amount of memory that is available to applications that are executing. Low memory can trigger Page Faults, whereby additional pressure is put on the CPU to swap memory to and from the disk. if the amount of available memory dips below 10%, more memory should be obtained.  |
 | Pages/sec | This is actually the sum of &quot;Pages Input/sec&quot; and &quot;Pages Output/sec&quot; counters which is the rate at which pages are being read and written as a result of pages faults. Small spikes with this value do not mean there is an issue but sustained values of greater than 50 can mean that system memory is a bottleneck.  |
 | Paging File(_Total)\% Usage | The percentage of the system page file that is currently in use. This is not directly related to performance, but you can run into serious application issues if the page file does become completely full and additional memory is still being requested by applications.  |
-
 
 ## Key Performance testing activities
 
