@@ -1,6 +1,6 @@
 # Getting Started with Dev Containers
 
-If you are a developer and experienced Visual Studio Code (VS Code) or Docker, then it's probably time you look at [development containers](http://web.archive.org/web/20200806073925/https://code.visualstudio.com/docs/remote/containers) (dev containers). This readme is intended to assist developers in the decision-making process needed to build dev containers. The guidance provided should be especially helpful if you are experiencing VS Code dev containers for the first time.
+If you are a developer and have experience with Visual Studio Code (VS Code) or Docker, then it's probably time you look at [development containers](http://web.archive.org/web/20200806073925/https://code.visualstudio.com/docs/remote/containers) (dev containers). This readme is intended to assist developers in the decision-making process needed to build dev containers. The guidance provided should be especially helpful if you are experiencing VS Code dev containers for the first time.
 
 Let's first introduce what dev containers are, briefly describe how they improve collaboration between developers and then highlight some high-level steps that you will be facing when building a dev container.
 
