@@ -4,12 +4,10 @@ on:
   pull_request:
     branches:
       - master
-
+      
 jobs:
   lint:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js
@@ -28,4 +26,3 @@ jobs:
       with:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'no'
-        config-file: '.markdownlinkcheck.json'
