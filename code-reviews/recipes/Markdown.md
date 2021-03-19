@@ -97,7 +97,7 @@ The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemNa
 
 ## Build Validation
 
-### linting
+### Linting
 
 To automate linting with `markdownlint` for PR [validation in GitHub actions](../../.github/workflows/markdownlint.yml) as we do in this repo, use the following YAML.
 
@@ -129,7 +129,7 @@ jobs:
         markdownlint "**/*.md" --ignore node_modules
 ```
 
-### link check
+### Checking Links
 
 To automate link check in your markdown files add `markdown-link-check` action to your validation pipeline:
 
