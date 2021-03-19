@@ -129,7 +129,7 @@ jobs:
         markdownlint "**/*.md" --ignore node_modules
 ```
 
-### link check
+### Checking Links
 
 To automate link check in your markdown files add `markdown-link-check` action to your validation pipeline:
 
