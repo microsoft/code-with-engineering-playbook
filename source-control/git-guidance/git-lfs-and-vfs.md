@@ -140,7 +140,7 @@ Once this is done, you have a folder which contains a `src` folder which contain
 
 For working with the repository you just use Git commands as before.
 
-One thing to know is how to remove a VFS for Git repository from your machine. You also want to make sure the VFS process is stopped. This can be done by executing this command inside the main folder:
+To remove a VFS for Git repository from your machine, make sure the VFS process is stopped and execute this command from the main folder:
 
 ```shell
 gvfs unmount
