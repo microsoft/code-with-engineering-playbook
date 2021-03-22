@@ -20,13 +20,13 @@ The actual file is stored in a separate storage. This way Git will track changes
 
 When working with these large files yourself, you'll still see the git history grown on your own machine, as git will still start tracking these large files locally. But when you clone the repo, the history is actually pretty small. So it's beneficial for others not working directly on the large files.
 
-### Benefits of Git LFS
+### Pros of Git LFS
 
 * Uses the end to end Git workflow for all files
 * Git LFS supports file locking to avoid conflicts for undiffable assets
 * Git LFS is fully supported in Azure DevOps Services
 
-### Limitations of Git LFS
+### Cons of Git LFS
 
 * Everyone contributing to the repository needs to install Git LFS
 * If not set up properly:
