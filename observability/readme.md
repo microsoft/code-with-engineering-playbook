@@ -14,7 +14,6 @@ Building observable systems enables development teams at CSE to measure how well
 - [Pillars of Observability](#pillars-of-observability)
 - [Observability in Machine Learning](#ml-observability.md)
 - [Observability As Code](#observability-as-code)
-- [Observability in Microservices](#observability-as-microservices))
 - [Observability of CI/CD Pipelines](#Observability-of-CI/CD-pipelines)
 - [Recommended Practices](#recommended-practices)
 - [Logs vs Metrics](log-vs-metric.md)
@@ -36,12 +35,6 @@ Read on how Observability can be implemented in [Machine Learning](ml-observabil
 
 As much as possible, configuration and management of observability assets such as cloud resource provisioning, monitoring alerts and dashboards must be managed as code. Observability as Code is achieved using any one of Terraform / Ansible / ARM Templates
 
-## Observability in Microservices
-
-Microservices is a very popular software architecture, where the application is arranged as a collection of loosely coupled services. Some of those services can be written in different languages by different teams.
-
-Lear more [here](microservices.md)).
-
 ### Examples of Observability as Code
 
 1. Dashboards as Code - Monitoring Dashboards can be created as JSON or XML templates. This template is source control maintained and any changes to the dashboards can be reviewed. Automation can be built for enabling the dashboard. [More about how to do this in Azure](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically). Grafana dashboard can also be [configured as code](https://grafana.com/blog/2020/02/26/how-to-configure-grafana-as-code/) which eventually can be source controlled to be used in automation and pipelines.
@@ -49,6 +42,8 @@ Lear more [here](microservices.md)).
 2. Alerts as Code - Alerts can be created within Azure by using Terraform or ARM templates. Such alerts can be source controlled and be deployed as part of pipelines (Azure DevOps pipelines, Jenkins, Github Actions etc.). Few references of how to do this are: [Terraform Monitor Metric Alert](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_metric_alert). Alerts can also be created based on log analytics query and can be defined as code using [Terraform Monitor Scheduled Query Rules Alert](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_scheduled_query_rules_alert#example-usage).
 
 3. Automating Log Analytics Queries - There are several use cases where automation of log analytics queries may be needed. Example, Automatic Report Generation, Running custom queries programmatically for analysis, debugging etc. For these use cases to work, log queries should be source controlled and automation can be built using [log analytics REST](https://dev.loganalytics.io/documentation/Using-the-API) or [azure cli](https://docs.microsoft.com/en-us/cli/azure/ext/log-analytics/monitor/log-analytics?view=azure-cli-latest).
+
+4. Microservices is a very popular software architecture, where the application is arranged as a collection of loosely coupled services. Some of those services can be written in different languages by different teams. Learn more [here](microservices.md).
 
 ### Why
 
