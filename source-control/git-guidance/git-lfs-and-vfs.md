@@ -6,7 +6,7 @@
 
 Git is very good and keeping track of changes in text-based files like code. But it is not that good in tracking binary files. For instance, if you store a Photoshop image file (PSD) in a repository, with every change, the complete file is stored again in the history. This can make the history of the Git repo very large, which makes a clone of the repository more and more time consuming.
 
-A solution to work with these kind of files is using Git LFS (or Git Large File System). This is an extension to Git and must be installed seperately. And it can only be used with a repository platform that supports LFS. GitHub.com and Azure DevOps for instance are platforms that have support for LFS.
+A solution to work with these kind of files is using Git LFS (or Git Large File System). This is an extension to Git and must be installed separately. And it can only be used with a repository platform that supports LFS. GitHub.com and Azure DevOps for instance are platforms that have support for LFS.
 
 The way it works in short, is that a placeholder file is stored in the repo with information for the LFS system. It looks something like this:
 
@@ -104,11 +104,10 @@ git lfs pull --include="path/to/file"
 
 ## VFS for Git
 
-Imagine a large repository with multiple projects in it, for instance for all kinds of features. A developer in a specific team is working on just one feature. He doesn't require *all* files of the repo to work on that one feature. But normally with Git, you will clone *all* files in the repo.
+Imagine a large repository containing multiple projects, ex. one per feature. As a developer you may only be working on some of the features, and thus you don't want to download all the projects in the repo. By default with Git however, cloning the repository means you will download *all* files/projects.
 
 VFS for Git (or Virtual File System for Git) solves this problem, as it will only download what you need to your local machine. But if you look in the file system, e.g. with Windows Explorer, it will show all the folders and files including the correct file sizes.
 
-When you use VFS for Git for a repository a process is started that does all the work to hide that downloading.
 
 The Git platform must support GVFS to make this work. GitHub.com and Azure DevOps both support this out of the box.
 
@@ -141,7 +140,7 @@ Once this is done, you have a folder which contains a `src` folder which contain
 
 For working with the repository you just use Git commands as before.
 
-One thing to know is how to remove a VFS for Git repository from your machine. You also want to make sure the VFS process is stopped. This can be done by executing this command inside the main folder:
+To remove a VFS for Git repository from your machine, make sure the VFS process is stopped and execute this command from the main folder:
 
 ```shell
 gvfs unmount
