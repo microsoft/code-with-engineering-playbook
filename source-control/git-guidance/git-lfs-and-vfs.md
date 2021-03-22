@@ -104,7 +104,7 @@ git lfs pull --include="path/to/file"
 
 ## VFS for Git
 
-Imagine a large repository with multiple projects in it, for instance for all kinds of features. A developer in a specific team is working on just one feature. He doesn't require *all* files of the repo to work on that one feature. But normally with Git, you will clone *all* files in the repo.
+Imagine a large repository containing multiple projects, ex. one per feature. As a developer you may only be working on some of the features, and thus you don't want to download all the projects in the repo. By default with Git however, cloning the repository means you will download *all* files/projects.
 
 VFS for Git (or Virtual File System for Git) solves this problem, as it will only download what you need to your local machine. But if you look in the file system, e.g. with Windows Explorer, it will show all the folders and files including the correct file sizes.
 
