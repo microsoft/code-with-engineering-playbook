@@ -6,7 +6,7 @@
 
 Git is very good and keeping track of changes in text-based files like code. But it is not that good in tracking binary files. For instance, if you store a Photoshop image file (PSD) in a repository, with every change, the complete file is stored again in the history. This can make the history of the Git repo very large, which makes a clone of the repository more and more time consuming.
 
-A solution to work with these kind of files is using Git LFS (or Git Large File System). This is an extension to Git and must be installed seperately. And it can only be used with a repository platform that supports LFS. GitHub.com and Azure DevOps for instance are platforms that have support for LFS.
+A solution to work with these kind of files is using Git LFS (or Git Large File System). This is an extension to Git and must be installed separately. And it can only be used with a repository platform that supports LFS. GitHub.com and Azure DevOps for instance are platforms that have support for LFS.
 
 The way it works in short, is that a placeholder file is stored in the repo with information for the LFS system. It looks something like this:
 
