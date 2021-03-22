@@ -108,7 +108,6 @@ Imagine a large repository containing multiple projects, ex. one per feature. As
 
 VFS for Git (or Virtual File System for Git) solves this problem, as it will only download what you need to your local machine. But if you look in the file system, e.g. with Windows Explorer, it will show all the folders and files including the correct file sizes.
 
-
 The Git platform must support GVFS to make this work. GitHub.com and Azure DevOps both support this out of the box.
 
 ### Installation and use of VFS for Git
