@@ -91,7 +91,7 @@ Write Good is also available as an [extension for VS Code](https://marketplace.v
 
 The [`Write Good Linter Extension`](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter) integrates with VS Code to give grammar and language advice while editing the document.
 
-#### markdownlint extension
+### markdownlint extension
 
 The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) examines the markdown documents, showing warnings for rule violations while editing.
 
