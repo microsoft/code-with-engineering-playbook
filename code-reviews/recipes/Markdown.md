@@ -85,7 +85,7 @@ npx write-good *.md
 
 Write Good is also available as an [extension for VS Code](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
 
-### VS Code Extensions
+## VS Code Extensions
 
 #### Write Good Linter
 
