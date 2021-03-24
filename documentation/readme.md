@@ -54,6 +54,7 @@ When working in an engineering project, we typically encounter one or more of th
 - [Project and Repositories](./guidance/project-and-repositories.md)
 - [Work items](./guidance/work-items.md)
 - [Code](./guidance/code.md)
+- [Commit Messages](../source-control/readme.md#commit-best-practices)
 - [Pull Requests](./guidance/pull-requests.md)
 - [Security](./guidance/security.md)
 - [Engineering Feedback](./guidance/engineering-feedback.md)
