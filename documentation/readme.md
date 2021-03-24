@@ -78,6 +78,10 @@ When working in an engineering project, we typically encounter one or more of th
 - [How to automate simple checks](./tools/automation.md)
 - [Integration with Teams/Slack](./tools/integrations.md)
 
+## Recipes
+
+- [How to sync a wiki between repositories](./recipes/sync-wiki-between-repos.md)
+
 ## Resources
 
 - [Software Documentation Types and Best Practices](https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f)
