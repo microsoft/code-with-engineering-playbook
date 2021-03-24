@@ -141,3 +141,14 @@ Try to limit the number of versions of your application running parallel in prod
 * [Continuous Delivery](https://www.continuousdelivery.com/) by by Jez Humble, David Farley.
 * [Continuous integration vs. continuous delivery vs. continuous deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 * [Deployment Rings](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops)
+
+### Tools
+
+Check out the below tools to help with some of the CD best practices listed above:
+
+* [Flux](https://github.com/fluxcd/flux) for gitops
+* [Tekton](https://github.com/tektoncd) for Kubernetes native pipelines
+  * Note Jenkins-X uses Tekton under the hood.
+* [Argo Workflows](https://github.com/argoproj/argo-workflows)
+* [Flagger](https://github.com/fluxcd/flagger) for powerful, Kubernetes native releases including blue/green, canary, and A/B testing.
+* Not quite CD related, but checkout [jsonnet](https://jsonnet.org/), a templating language to reduce boilerplate and increase sharing between your yaml/json manifests.

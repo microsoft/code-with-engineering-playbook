@@ -90,8 +90,6 @@ The following outline examples of several strategies that can be adopted to prom
 
 Assign hotkeys to each of the essential tasks.
 
-[`TODO: Suggest hotkeys for mac`]
-
 | Task                 | Windows      |
 | -------------------- | ------------ |
 | Build                | CTRL+SHIFT+B |
@@ -173,14 +171,6 @@ VS.
 #### Atomic Pull Requests
 
 When the solution is encapsulated within a single repository, it also allows pull requests to represent a change across multiple layers. This is especially helpful when a change requires changes to a shared contract between multiple components. For example, a story requires that an api endpoint is changed. With this strategy the api and web client could be updated with the same pull request. This avoids the main branch being broken temporarily while waiting on dependent pull requests to merge.
-
-[`TODO: Add link to other documented benefits of consolidated repos within source control section`]
-
-### When to Split Into Multiple Repositories
-
-[`TODO: Add link to source control section if it has guidance on this subject`]
-
-(Typically try to have the repository align with the product backlog.)
 
 ### Minimize Remote Dependencies for Local Development
 

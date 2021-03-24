@@ -9,7 +9,6 @@ There are many different options when working with Source Control. In [CSE](../C
 * [Versioning](versioning/readme.md)
 * [Working with Secrets](secrets-management/readme.md)
 * [Git Guidance](git-guidance/readme.md)
-* [Pull Request Templates](pull-request-templates/README.md)
 
 ## Goal
 
@@ -112,3 +111,5 @@ References:
 * [The GitHub Hello World](https://guides.github.com/activities/hello-world/)
 * [CSE Git details](./git-guidance/readme.md) details on how to use Git as part of a [CSE](../CSE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
+* [How Git Works Pluralsight course](https://www.pluralsight.com/courses/how-git-works)
+* [Mastering Git Pluralsight course](https://www.pluralsight.com/courses/master-git)

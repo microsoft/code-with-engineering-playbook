@@ -11,6 +11,15 @@ Supports processing GitHub pull requests inside VS Code.
 1. Select a PR
 1. Under **Description** you can chose to **Check Out** the branch and get into **Review Mode** and get a more integrated experience
 
+### Azure DevOps: [Azure DevOps Pull Requests](https://marketplace.visualstudio.com/items?itemName=ankitbko.vscode-pull-request-azdo)
+
+Supports processing Azure DevOps pull requests inside VS Code.
+
+1. Open the plugin from the **Activity Bar**
+1. Select **Assigned To Me**
+1. Select a PR
+1. Under **Description** you can chose to **Check Out** the branch and get into **Review Mode** and get a more integrated experience
+
 ## Visual Studio
 
 The following extensions can be used to create an integrated code review experience in Visual Studio working with either GitHub or Azure DevOps.

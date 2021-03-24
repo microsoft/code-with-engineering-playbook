@@ -8,7 +8,7 @@ To use the table, either eyeball-browse or search for keywords.
 
 | When I am working on... | I want to get this outcome... | ...so I should consider |
 |--|--|--|
-| Development | Prove backward compatibility with existing callers and clients | Shadow testing |
+| Development | Prove backward compatibility with existing callers and clients | [Shadow testing](shadow-testing/readme.md) |
 | Development; [Integration testing](integration-testing/readme.md) | Ensure telemetry is sufficiently detailed and complete to trace and diagnose malfunction in [End-to-End testing](e2e-testing/readme.md) flows | Distributed Debug challenges ;  Orphaned call chain analysis |
 | Development | Ensure program logic is correct for a variety of expected, mainline, edge and unexpected inputs | [Unit testing](unit-testing/readme.md); Functional tests; [Integration testing](integration-testing/readme.md) |
 | Development | Prevent regressions in logical correctness; earlier is better | [Unit testing](unit-testing/readme.md); Functional tests; [Integration testing](integration-testing/readme.md); Rings (each of these are expanding scopes of coverage) |
@@ -52,7 +52,12 @@ To use the table, either eyeball-browse or search for keywords.
 - [Fault Injection testing](fault-injection-testing/readme.md)
 - [Integration testing](integration-testing/readme.md)
 - [Performance testing](performance-testing/readme.md)
+- [Shadow testing](shadow-testing/readme.md)
 - [Smoke testing](smoke-testing/readme.md)
 - [Synthetic Transaction testing](synthetic-monitoring-tests/readme.md)
 - [UI testing](ui-testing/readme.md)
 - [Unit testing](unit-testing/readme.md)
+
+## Technology Specific Testing
+
+- [Using Azurite to run blob storage tests in pipeline](tech-specific-samples/blobstorage-unit-tests/readme.md)

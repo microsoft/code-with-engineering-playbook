@@ -23,6 +23,7 @@ Below are some general guidelines for pairing:
 - Engineers leverage feature branches for the collaboration during the development of each story to have small Pull Requests (PRs) (as opposed to a single giant PR) at the end of the sprint.
 - Code is committed to the repository by both members of the assigned pair where and when it makes sense as tasks were completed.
 - The pairing assignee is the voice representing the pair during the daily standup while being supported by the story owner.
+- Having the names of both individuals (owner and pair assignee) visible on the PBI can be helpful during sprint ceremonies and lead to greater accountability by the pairing assignee. An example of this using Azure DevOps cards can be found [here](./add-pairing-field-azure-devops-cards.md).
 
 ## Why pair programming helps collaboration
 
@@ -71,6 +72,8 @@ As soon the pair finds out that the PBI will warrant swarming, the pair brings i
 Knowledge sharing and bringing CSE and customer engineers together in a ‘code-with’ manner is an important aspect of CSE engagements. This grows both our customers’ and our CSE team’s capability to build on Azure. We are responsible for demonstrating engineering fundamentals and leaving the customer in a better place after we disengage. This can only happen if we collaborate and engage together as a team. In addition to improved software quality, this also adds a beneficial social aspect to the engagements.
 
 ## Resources
+
+- [How to add a pairing custom field in Azure DevOps User Stories](./add-pairing-field-azure-devops-cards.md) - adding a custom field of type _Identity_ in Azure DevOps for pairing
 
 - [On Pair Programming - Martin Fowler](https://martinfowler.com/articles/on-pair-programming.html)
 

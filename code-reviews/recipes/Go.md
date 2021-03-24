@@ -43,7 +43,7 @@ To use golangci-lint with VS Code, use the below recommended settings:
    "go.lintFlags": [
      "--fast"
    ]
-   ```
+```
 
 ## Build Validation
 
@@ -55,7 +55,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
 - script: go fmt
   workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: "Run code formatting"
-  ```
+```
 
   `govet` should be run as a part of every build to check code linting.
 
@@ -65,7 +65,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
 - script: go vet
   workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: "Run code linting"
-  ```
+```
 
 Alternatively you can use golangci-lint as a step in the pipeline to do multiple enabled validations(including go vet and go fmt) of golangci-lint.
 
@@ -73,7 +73,7 @@ Alternatively you can use golangci-lint as a step in the pipeline to do multiple
 - script: golangci-lint run --enable gofmt --fix
   workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: "Run code linting"
-  ```
+```
 
 ## Pre-Commit Hooks
 
@@ -93,7 +93,7 @@ Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-co
   rev: master
   hooks:
     - id: go-fmt
- ```
+```
 
 ### Step 3
 
@@ -139,7 +139,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
      artifactName: drop
-   ```
+```
 
 ## Code Review Checklist
 

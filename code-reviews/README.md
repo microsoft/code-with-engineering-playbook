@@ -16,8 +16,9 @@ Code reviews is a way to have a conversation about the code where participants w
   - [Pull Requests](./pull-requests.md)
     - [General Process](./pull-requests.md#general-process)
     - [Size Guidance](./pull-requests.md#size-guidance)
-    - [Commit Message Standardization](./pull-requests.md#commit-message-standardization)
-    - [Pull Request Template](./pull-request-template.md)
+    - [Best Practices](./pull-requests.md#best-practices)
+    - [Pull Request Description](./pull-requests.md#pull-request-description)
+    - [Pull Request Template](./pull_request_template.md)
   - Qualified PRs
     - Reflect well-defined, concise tasks
     - Compact in content

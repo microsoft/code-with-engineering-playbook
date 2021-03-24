@@ -90,7 +90,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
 * [ ] Is the code subject to concurrency issues? Are shared objects properly protected?
 * [ ] Is dependency injection (DI) used? Is it setup correctly?
-* [ ] Are [middlewares](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
+* [ ] Are [middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
 * [ ] Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed ([using pattern](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement))?
 * [ ] Is the code creating a lot of short-lived objects. Could we optimize GC pressure?
 * [ ] Is the code written in a way that causes boxing operations to happen?
@@ -100,3 +100,16 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does this code properly validate arguments sanity (i.e. [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
 * [ ] Does this code include telemetry ([metrics, tracing](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
 * [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
+* [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
+* [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?
+* [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead catch the specific exceptions that can happen e.g., `IOException`.
+* [ ] Is the use of #pragma fair?
+* [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
+* [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
+* [ ] If a method is asynchronous, is `Task.Delay` used instead of `Thread.Sleep`? `Task.Delay` is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi-threaded, multi-task environment, this is the one to prefer.
+* [ ] Is a cancellation token for asynchronous tasks needed rather than bool patterns?
+* [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
+* [ ] Are internal vs private vs public classes and methods used the right way?
+* [ ] Are auto property set and get used the right way? In a model without constructor and for deserialization, it is ok to have all accessible. But for other classes usually a private set or internal set is better.
+* [ ] Is the `using` pattern for streams and other disposable classes used? If not, better to have the `Dispose` method called explicitly.
+* [ ] Are the classes that maintain collections in memory, thread safe? When used under concurrency, use lock pattern.

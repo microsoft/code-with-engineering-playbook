@@ -23,17 +23,17 @@ OpenTelemetry can be used to collect, process and export data into multiple back
 
 ## Why use OpenTelemetry
 
-The main reason to use OpenTelemetry is that it offers tracing, metrics and logging telemetry through a single agent which supports multiple integrations. Seperate agents for tracing, logging and metrics will not be needed to be setup if OpenTelemetry is used.
+The main reason to use OpenTelemetry is that it offers tracing, metrics and logging telemetry through a single agent which supports multiple integrations. Separate agents for tracing, logging and metrics will not be needed to be setup if OpenTelemetry is used.
 Good causes to use OpenTelemetry would include if the stack is using OpenCensus or OpenTracing. As OpenCensus and OpenTracing have carved way for OpenTelemetry, it makes sense to introduce OpenTelemetry where OpenCensus or OpenTracing is getting used as it still has backward compatibility.
-Apart from features like adding custom attributes, sampling, collecting data for metrics and traces, OpenTelemetry is governed by specifications and backed up big players in Observability landscape like Microsoft, Splunk, AppDynamics etc. It is likely that OpenTelemetry will become a de-facto open source standard for enabling metrics and tracing when all fatures become GA.
+Apart from features like adding custom attributes, sampling, collecting data for metrics and traces, OpenTelemetry is governed by specifications and backed up big players in Observability landscape like Microsoft, Splunk, AppDynamics etc. It is likely that OpenTelemetry will become a de-facto open source standard for enabling metrics and tracing when all features become GA.
 
 ## Current Status of OpenTelemetry Project
 
-OpenTelemetry is a project which emerged from merging of OpenCensus and OpenTracing in 2019. Although OpenCensus and OpenTracing are frozen and no new features are being developed for them, OpenTelemetry has backward compatibility with OpenCensus and OpenTracing. Some features of OpenTelemetry are still in beta, feature support for different languages is being tracked here: [Feature Status of OpenTelemetry](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md).
+OpenTelemetry is a project which emerged from merging of OpenCensus and OpenTracing in 2019. Although OpenCensus and OpenTracing are frozen and no new features are being developed for them, OpenTelemetry has backward compatibility with OpenCensus and OpenTracing. Some features of OpenTelemetry are still in beta, feature support for different languages is being tracked here: [Feature Status of OpenTelemetry](https://github.com/open-telemetry/opentelemetry-specification/blob/main/spec-compliance-matrix.md). Status of OpenTelemetry project can be tracked [here](https://opentelemetry.io/releases/#project-status).
 
 ## What to watch out for
 
-As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due deligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some of the features are not in GA, there may be some incompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of CNCF so it is expected that many more features would reach GA soon.
+As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due diligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some of the features are not in GA, there may be some incompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of CNCF so it is expected that many more features would reach GA soon.
 
 ## References
 

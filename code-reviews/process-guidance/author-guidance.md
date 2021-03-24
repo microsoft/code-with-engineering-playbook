@@ -1,5 +1,10 @@
 # Authors guidance
 
+## Properly describe your PR
+
+- Give the PR a descriptive title, so that other members can easily (in one short sentence) understand what a PR is about.
+- Every PR should have a proper description, that shows the reviewer what has been changed and why.
+
 ## Add relevant reviewers
 
 - Add one or more reviewers (depending on your project's guidelines) to the PR. Ideally, you would add at least someone who has expertise and is familiar with the project or the language used
