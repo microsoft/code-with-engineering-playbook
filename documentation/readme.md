@@ -52,21 +52,14 @@ When working in an engineering project, we typically encounter one or more of th
 ## What documentation should exist
 
 - [Project and Repositories](./guidance/project-and-repositories.md)
-- [Work items](./guidance/work-items.md)
-- [Code](./guidance/code.md)
 - [Commit Messages](../source-control/readme.md#commit-best-practices)
 - [Pull Requests](./guidance/pull-requests.md)
-- [Security](./guidance/security.md)
 - [Engineering Feedback](./guidance/engineering-feedback.md)
 
 ## Best practices
 
 - [Establishing and managing documentation](./best-practices/establish-and-manage.md)
-- [Where does documentation fit within story work?](./best-practices/fit-within-story-work.md)
-- [Making documentation discoverable](./best-practices/discoverability.md)
 - [Creating good documentation](./best-practices/good-documentation.md)
-- [Keeping documentation updated](./best-practices/keep-updated.md)
-- [Communication and documentation](./best-practices/communication.md)
 - [Replacing documentation with automation](./best-practices/automation.md)
 
 ## Tools
