@@ -11,6 +11,7 @@ Documentation shouldn't be an afterthought. Different written documents and mate
 - [What documentation should exist?](#what-documentation-should-exist)
 - [Best practices](#best-practices)
 - [Tools](#tools)
+- [Recipes](#recipes)
 - [Resources](#resources)
 
 ## Goals
