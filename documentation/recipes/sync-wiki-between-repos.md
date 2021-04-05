@@ -6,7 +6,7 @@ This is a quick guide to mirroring a Project Wiki to another repository.
 # Clone the wiki
 git clone <source wiki repo url>
 
-# Add mirror repository as a remote 
+# Add mirror repository as a remote
 cd <source wiki repo working folder>
 git remote add mirror <mirror repo that must already exist>
 ```
@@ -26,7 +26,7 @@ Then run this to push it to the mirror repo and reset the branch to track the so
 # Push all branches up to mirror remote
 git push -u mirror
 
-# Reset local to track source remote 
+# Reset local to track source remote
 git branch -u origin/wikiMaster
 
 ```
