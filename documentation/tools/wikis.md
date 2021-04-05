@@ -14,4 +14,6 @@ More information:
 - [Create a Wiki for your project](https://docs.microsoft.com/en-us/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser).
 - [Manage wikis](https://docs.microsoft.com/en-us/azure/devops/project/wiki/manage-wikis?view=azure-devops).
 
-## Wikis vs. note apps (e.g., OneNote)
+## Wikis vs. digital notebooks (e.g., OneNote)
+
+When you work on a proyect, you may decide to document relevant details or record important decisions about the proyect in a digital notebook. Tools like [OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app) allows you to easily organize, navigate and search your notes. You can provide type, higlighting, or ink annotations to your notes. And these notes can easily be shared and created together with others. Still, Wikis greatly facilitate the process of [establishing and managing documentation](../best-practices/establish-and-manage.md) by allowing us to source control the documentation.
