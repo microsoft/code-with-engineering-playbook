@@ -1,4 +1,4 @@
-# Who are we
+# Who We Are
 
 Our team, CSE (Commercial Software Engineering), works side by side with customers to help them tackle their toughest technical problems both in the cloud and on the edge. We meet customers where they are, work in the languages they use, with the open source frameworks they use, on the operating systems they use. We work with enterprises and start-ups across many industries from financial services to manufacturing. Our work covers a broad spectrum of domains including IoT, machine learning, and high scale compute. Our "super power" is that we work closely with both our customers’ engineering teams and Microsoft’s product engineering teams, developing real-world expertise that we use to help our customers grow their business and help Microsoft improve our products and services.
 
