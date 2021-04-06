@@ -1,4 +1,4 @@
-# The CSE playbook
+# Home
 
 An engineer working for a [CSE](./CSE.md) project...
 
@@ -7,9 +7,7 @@ An engineer working for a [CSE](./CSE.md) project...
 * Leads by example. Models the behaviors we desire both interpersonally and technically.
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 
-This is our playbook. All contributions welcome! Please feel free to submit a [pull request](https://github.com/microsoft/code-with-engineering-playbook/pulls) to get involved.
-
-> **Note:** If you are reading this on github - head over to [https://microsoft.github.io/code-with-engineering-playbook/](https://microsoft.github.io/code-with-engineering-playbook/) for a better reading experience
+This is our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
 
 ## Why Have A Playbook
 
@@ -57,7 +55,6 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 * [Observability](observability/readme.md)
 * [Security](security/README.md)
 * [Source Control](source-control/readme.md)
-* [Reliability](reliability/README.md)
 
 ## Fundamentals for Specific Technology Areas
 
@@ -66,4 +63,4 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+See [CONTRIBUTING.md](https://github.com/microsoft/code-with-engineering-playbook/tree/master/CONTRIBUTING.md) for contribution guidelines.
