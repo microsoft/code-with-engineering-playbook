@@ -44,3 +44,5 @@ markdown_extensions:
   - pymdownx.pathconverter
   - pymdownx.tabbed
   - mdx_truly_sane_lists
+  - pymdownx.tasklist
+  
