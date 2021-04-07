@@ -1,4 +1,9 @@
-# CSE Code-With Customer/Partner Engineering Playbook
+
+---
+title: Home
+---
+
+# CSE Code-With Engineering Playbook
 
 An engineer working for a [CSE](./CSE.md) project...
 
@@ -7,9 +12,7 @@ An engineer working for a [CSE](./CSE.md) project...
 * Leads by example. Models the behaviors we desire both interpersonally and technically.
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 
-This is our playbook. All contributions welcome! Please feel free to submit a [pull request](https://github.com/microsoft/code-with-engineering-playbook/pulls) to get involved.
-
-> **Note:** If you are reading this on github - head over to [https://microsoft.github.io/code-with-engineering-playbook/](https://microsoft.github.io/code-with-engineering-playbook/) for a better reading experience
+This is our playbook. All contributions welcome! Please feel free to submit a pull request to get involved.
 
 ## Why Have A Playbook
 
@@ -45,25 +48,24 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 ## Engineering Fundamentals
 
-* [Agile Development](docs/agile-development/README.md)
-* [Automated Testing](docs/automated-testing/readme.md)
-* [Code Reviews](docs/code-reviews/README.md)
-* [Continuous Delivery (CD)](docs/continuous-delivery/readme.md)
-* [Continuous Integration (CI)](docs/continuous-integration/readme.md)
-* [Design Decision Logs](docs/design-reviews/decision-log/readme.md)
-* [Design Reviews](docs/design-reviews/readme.md)
-* [Developer Experience](docs/developer-experience/readme.md)
-* [Engineering Feedback](docs/engineering-feedback/readme.md)
-* [Observability](docs/observability/readme.md)
-* [Security](docs/security/README.md)
-* [Source Control](docs/source-control/readme.md)
-* [Reliability](docs/reliability/README.md)
+* [Agile Development](agile-development/README.md)
+* [Automated Testing](automated-testing/readme.md)
+* [Code Reviews](code-reviews/README.md)
+* [Continuous Delivery (CD)](continuous-delivery/readme.md)
+* [Continuous Integration (CI)](continuous-integration/readme.md)
+* [Design Decision Logs](design-reviews/decision-log/readme.md)
+* [Design Reviews](design-reviews/readme.md)
+* [Developer Experience](developer-experience/readme.md)
+* [Engineering Feedback](engineering-feedback/readme.md)
+* [Observability](observability/readme.md)
+* [Security](security/README.md)
+* [Source Control](source-control/readme.md)
 
 ## Fundamentals for Specific Technology Areas
 
-* [Data and DataOps Fundamentals](docs/data-fundamentals/README.md)
-* [Machine Learning Fundamentals](docs/ml-fundamentals/README.md)
+* [Data and DataOps Fundamentals](data-fundamentals/README.md)
+* [Machine Learning Fundamentals](ml-fundamentals/README.md)
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+See [CONTRIBUTING.md](https://github.com/microsoft/code-with-engineering-playbook/tree/master/CONTRIBUTING.md) for contribution guidelines.

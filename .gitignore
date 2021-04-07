@@ -337,3 +337,6 @@ ASALocalRun/
 
 # Jekyll
 _site
+
+# mkdocs
+site/
