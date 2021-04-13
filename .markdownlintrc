@@ -3,5 +3,8 @@
   "line-length": false,
   "MD024": {
     "siblings_only": true
+  },
+  "MD003": { 
+    "style": "atx_closed" 
   }
 }
