@@ -1,10 +1,3 @@
-
-<!-- markdownlint-disable-file MD041 -->
----
-
-title: Home
----
-
 # CSE Code-With Engineering Playbook
 
 An engineer working for a [CSE](./CSE.md) project...
