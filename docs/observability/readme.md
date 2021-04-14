@@ -19,7 +19,7 @@ By following the sidecar pattern, made popular by service meshes, you can quickl
 
 > Note: You do not need to deploy a service mesh, or even leverage Kubernetes to follow the sidecar pattern, although it does make the setup much easier.
 
-Lastly, although not considered a pillar of engineering, we recommend checking out [profiling](profiling.md) for gaining deeper insight into what your code is doing, and identifying potential leaks (memory, thread, etc), or performance bottlenecks.
+Lastly, although not considered a pillar of observability, we recommend checking out [profiling](profiling.md) for gaining deeper insight into what your code is doing, and identifying potential leaks (memory, thread, etc), or performance bottlenecks.
 
 ## Observability in Machine Learning
 
