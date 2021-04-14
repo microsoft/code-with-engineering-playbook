@@ -8,7 +8,7 @@ Profiling is a form of runtime analysis that measures various components of the 
 
 Profiling is somewhat language dependent, so start off by searching for "profile $language" (some common tools are listed below). Additionally, Linux Perf is a good fallback, since a lot of languages have bindings in C/C++.
 
-Profiling does incur some cost, as it requires inspecting the callstack, and sometimes pausing the applicaiton alltogether (ie: to trigger a full GC in Java). It is recommended to continuously profile your services, say for 10s every 10 minutes. Consider the cost when deciding on tuning these parameters.
+Profiling does incur some cost, as it requires inspecting the callstack, and sometimes pausing the application all together (ie: to trigger a full GC in Java). It is recommended to continuously profile your services, say for 10s every 10 minutes. Consider the cost when deciding on tuning these parameters.
 
 Different tools visualize profiles differently. Common CPU profiles might use a directed graph ![graph](../images/pprof-dot.png) or a flame graph. ![flame](../images/flame.png)
 
