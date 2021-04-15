@@ -1,2 +1,2 @@
-title: CSE Code-With Customer/Partner Engineering Playbook
 theme: jekyll-theme-slate
+include: ['CONTRIBUTING.md', 'LICENSE']

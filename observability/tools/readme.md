@@ -12,6 +12,7 @@ There are a number of modern tools to make systems observable. While identifying
 - [Loki](./loki.md)
 - [OpenTelemetry](./OpenTelemetry.md)
 - [Kubernetes Dashboards](./KubernetesDashboards.md)
+- [Prometheus](./Prometheus.md)
 
 ## Service Mesh
 

@@ -42,7 +42,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
 ### Pipeline Structure
 
-- [ ] The steps are well understood and components are easily identifiable.
+- [ ] The steps are well understood and components are easily identifiable. Ensure that there is a proper description `displayName:` for every step in the pipeline.
 - [ ] Steps/stages of the pipeline are checked in Azure Pipelines to have more understanding of components.
 - [ ] In case you have complex nested YAML files, The pipeline in Azure Pipelines is edited to find trigger root file.
 - [ ] All the template file references are visited to ensure a small change does not cause breaking changes, changing one file may effect multiple pipelines
