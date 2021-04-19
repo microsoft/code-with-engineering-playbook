@@ -1,6 +1,6 @@
 # CSE Code-With Customer/Partner Engineering Playbook
 
-An engineer working for a [CSE](./CSE.md) project...
+An engineer working for a [CSE](docs/CSE.md) project...
 
 * Has responsibilities to their team – mentor, coach, and lead.
 * Knows their **playbook**. Follows their playbook. Fixes their playbook if it is broken. If they find a better playbook, they copy it. If somebody could use your playbook, give them yours.
@@ -40,8 +40,8 @@ A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an 
 
 ## QuickLinks
 
-* [Engineering Fundamentals Checklist](ENG-FUNDAMENTALS-CHECKLIST.md)
-* [Structure of a Sprint](SPRINT-STRUCTURE.md)
+* [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)
+* [Structure of a Sprint](docs/SPRINT-STRUCTURE.md)
 
 ## Engineering Fundamentals
 
