@@ -19,11 +19,11 @@ This is our playbook. All contributions welcome! Please feel free to submit a [p
 
 ## "The" Checklist
 
-If you do nothing else follow the [Engineering Fundamentals Checklist](ENG-FUNDAMENTALS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals.
+If you do nothing else follow the [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals.
 
 ## Structure of a Sprint
 
-A [breakdown of sections](SPRINT-STRUCTURE.md) according to the structure of an Agile sprint.
+A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure of an Agile sprint.
 
 ## General Guidance
 
