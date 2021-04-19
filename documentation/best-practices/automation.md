@@ -1,6 +1,6 @@
 # Replacing documentation with automation
 
-You could document e.g. how to setup your dev machine with the right version of the framework required to run the code, which extensions are useful to develop the application with your editor, or how to configure your editor to launch and debug the application. Or you could provide the means to automate tool installs, application startup, etc., instead.
+You can document how to setup your dev machine with the right version of the framework required to run the code, which extensions are useful to develop the application with your editor, or how to configure your editor to launch and debug the application. If it is possible, a better solution is to provide the means to automate tool installs, application startup, etc., instead.
 
 Some examples are provided below:
 

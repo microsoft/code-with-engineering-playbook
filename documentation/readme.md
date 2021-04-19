@@ -47,8 +47,8 @@ When working in an engineering project, we typically encounter one or more of th
 - **Duplicate**.
   - No settings file available in a centralized place as a single source of truth, so developers must keep sharing their own versions and we end up with many different files that might or might not work.
 - **Afterthought**.
-  - Key documents created when we've been several weeks into the project: onboarding, how to run the app, etc.
-  - Documents that we create in the last minute just before the end of a project, forgetting that they also help the team while working on the project.
+  - Key documents created several weeks into the project: onboarding, how to run the app, etc.
+  - Documents created last minute just before the end of a project, forgetting that they also help the team while working on the project.
 
 ## What documentation should exist
 

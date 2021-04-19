@@ -25,7 +25,7 @@ Some sections in the documentation of the repository might point to the projectâ
 
 - Introduction
   - Project
-  - Customer
+  - Stakeholders
   - Definitions
   - Requirements
 - [Onboarding](../../developer-experience/recipes/onboarding-guide-template.md)
