@@ -1,5 +1,7 @@
 # How to automate simple checks
 
+If you want to automate some checks on your markdown documents, there are several tools that you could leverage. For example:
+
 - [Code Analysis / Linting](../../code-reviews/recipes/Markdown.md#code-analysis-linting)
   - [markdownlint](../../code-reviews/recipes/Markdown.md#markdownlint) to verify markdown syntax and enforce rules that make the text more readable.
   - [markdown-link-check](https://github.com/tcort/markdown-link-check) to extract links from markdown texts and check whether each link is alive (200 OK) or dead.
@@ -18,3 +20,7 @@
 Sample output:
 
 ![docs-checks](./images/docs-checks.png)
+
+## On linting rules
+
+The team needs to be clear what linting rules are required and shouldn't be overridden with tooling or comments. The team should have consensus on when to override tooling rules.
