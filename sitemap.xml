@@ -512,6 +512,10 @@
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/observability/profiling/</loc>
+     <lastmod>2021-04-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://microsoft.github.io/code-with-engineering-playbook/observability/readme/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
@@ -529,6 +533,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://microsoft.github.io/code-with-engineering-playbook/observability/pillars/metrics/</loc>
+     <lastmod>2021-04-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/observability/pillars/profiling/</loc>
      <lastmod>2021-04-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
