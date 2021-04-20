@@ -13,7 +13,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Metrics](pillars/metrics.md)
 - [Tracing](pillars/tracing.md)
 - [Logs vs Metrics](log-vs-metric.md)
-- [Profiling](pillars/profiling.md)
+- [Profiling](profiling.md)
 
 By following the sidecar pattern, made popular by service meshes, you can quickly and easily deploy a microservice architecture with the following pillars of observability built into your system for free. Check out the [Service Mesh](tools/readme.md#service-mesh) section for more info.
 
@@ -108,7 +108,6 @@ Read more [here](pitfalls.md) to understand what to watch out for while designin
 [Github Repo](https://github.com/buzzfrog/azure-alert-dashboard-terraform)
 
 ### On-premises Application Insights
->>>>>>> 9508d5f... add section on profiling
 
 ## Insights
 
