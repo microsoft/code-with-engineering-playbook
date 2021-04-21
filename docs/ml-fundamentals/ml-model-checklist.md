@@ -5,7 +5,7 @@ The purpose of this checklist is to make sure that:
 - The team assessed if the model is ready for production before moving to the scoring process
 - The team has prepared a production plan for the model
 
-The checklist provides guidelines for creating this production plan. It should be used by teams/organizations that already built/trained a ML model and are now consdering putting it into production.
+The checklist provides guidelines for creating this production plan. It should be used by teams/organizations that already built/trained a ML model and are now considering putting it into production.
 
 ## Checklist
 
@@ -38,7 +38,7 @@ A good way to think of a model baseline is the simplest model one can come up wi
 As an example, let's consider some common types of machine learning problems:
 
 - **Classification**: Predicting between a positive and a negative class. Either the class with the most observations or a simple logistic regression model can be the baseline.
-- **Regression**: Predicting the house prices in a city. The average house price for the last year or last month, a simple linear regression model or the previous median house price in a neighbourhood could be the baseline.
+- **Regression**: Predicting the house prices in a city. The average house price for the last year or last month, a simple linear regression model or the previous median house price in a neighborhood could be the baseline.
 - **Image classification**: Building an image classifier to distinguish between cats and no cats in an image. If your classes are unbalanced: 70% cats and 30% no cats and if you always predict cats, your naive classifier has 70% accuracy and this can be your baseline. If your classes are balanced: 52% cats and 48% no cats, then a simple convolutional architecture can be the baseline (1 conv layer + 1 max pooling + 1 dense). Additionally, human accuracy at labelling can also be the baseline in an image classification scenario.
 
 Some questions to ask when comparing to a baseline:
@@ -60,8 +60,8 @@ The methodology of translating the training metrics to scoring metrics should be
 
 Things to consider:
 
-- In forecasting, if you change the period of assesing the performance, from one month to a year for example, then you might get a different result. For example, if your model is predicting sales of a product per day and the RMSE (Root Mean Squared Error) is very low for the first month the model is in production. As the model is live for longer, the RMSE is increasing, becoming 10x the RMSE for the first year compared to the first month.
-- In a classification scenario, the overall accuracy is good, but the model is performing poorly for some subgroups. For example, a classifier has an accuracy of 80% overall, but only 55% for the 20-30 age group. If this is a signigicant age group for the production data, then your accuracy might suffer greatly when in production.
+- In forecasting, if you change the period of assessing the performance, from one month to a year for example, then you might get a different result. For example, if your model is predicting sales of a product per day and the RMSE (Root Mean Squared Error) is very low for the first month the model is in production. As the model is live for longer, the RMSE is increasing, becoming 10x the RMSE for the first year compared to the first month.
+- In a classification scenario, the overall accuracy is good, but the model is performing poorly for some subgroups. For example, a classifier has an accuracy of 80% overall, but only 55% for the 20-30 age group. If this is a significant age group for the production data, then your accuracy might suffer greatly when in production.
 - In scene classification scenario, the model is trying to identify a specific scene in a video and the model has been trained and tested (80-20 split) on 50000 segments where half are segments containing the scene and half of the segments do not contain the scene. The accuracy on the training set is 85% and 84% on the test set. However, when an entire video is scored, scores are obtained on all segments and we expect few segments to contain the scene. The accuracy for an entire video is not comparable with the training/test set procedure in this case, hence different metrics should be considered.
 - If sampling techniques (over-sampling, under-sampling) are used to train model when classes are imbalanced, ensure the metrics used during training are comparable with the ones used in scoring.
 - If the number of samples used for training and testing is small, the performance metrics might change significantly as new data is scored.
@@ -91,7 +91,7 @@ Furthermore, it is imperative to understand if the new data in production will b
 Significant differences in the data distributions of the different datasets can greatly impact the performance of the model. Some potential questions to ask:
 
 - How much does the training and test data represent the end result?
-- Is the distribution of each invididual feature consistent across all your datasets? (i.e. same representation of age groups, gender, race etc.)
+- Is the distribution of each individual feature consistent across all your datasets? (i.e. same representation of age groups, gender, race etc.)
 - Is there any data lineage information? Where did the data come from? How was the data collected? Can collection and labelling be automated?
 
 Resources:
@@ -112,7 +112,7 @@ System metrics to consider:
 
 ### How will the model be integrated into other systems, and what impact will it have?
 
-Machine Learning models do not exist in isolation, but rather they are part of a much larger system. These systems could be old, prorietary systems or new systems being developed as a results of the creation a new machine learning model. In both of those cases, it is important to understand where the actual model is going to fit in, what output is expected from the model and how that output is going to be used by the larger system. Additionally, it is essential to decide if the model will be used for batch and/or real-time inference as production paths might differ.
+Machine Learning models do not exist in isolation, but rather they are part of a much larger system. These systems could be old, proprietary systems or new systems being developed as a results of the creation a new machine learning model. In both of those cases, it is important to understand where the actual model is going to fit in, what output is expected from the model and how that output is going to be used by the larger system. Additionally, it is essential to decide if the model will be used for batch and/or real-time inference as production paths might differ.
 
 Possible questions to assess model impact:
 

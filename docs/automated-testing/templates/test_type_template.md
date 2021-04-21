@@ -45,9 +45,9 @@ Anything required in advance?
 
 Describe what good testing looks like for this technique, best practices, pitfalls.
 
-### Antipatterns
+### Anti patterns
 
-e.g. unit tests should never require off-box or even out-of-process dependencies.  Are there similar things to avoid when applying this techinique?
+e.g. unit tests should never require off-box or even out-of-process dependencies.  Are there similar things to avoid when applying this technique?
 
 ## Frameworks, Tools, Templates
 

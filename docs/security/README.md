@@ -82,5 +82,5 @@ Check out the list of tools to help enable security in your projects.
 * Other K8s Security
 
   * [OPA](https://github.com/open-policy-agent/opa), [Gatekeeper](https://github.com/open-policy-agent/gatekeeper), and the [Gatekeeper Library](https://github.com/open-policy-agent/gatekeeper-library/tree/master/library)
-  * [cert-manager](https://github.com/jetstack/cert-manager) for easy certifcate provisioning and automatic rotation.
+  * [cert-manager](https://github.com/jetstack/cert-manager) for easy certificate provisioning and automatic rotation.
   * [Quickly enable mTLS between your microservices with Linkerd](https://linkerd.io/2/features/automatic-mtls/).

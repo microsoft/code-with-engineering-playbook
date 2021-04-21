@@ -18,7 +18,7 @@ Feasibility studies can last between 3-12 weeks, depending on specific problem d
 
 ## Who collaborates on ML feasibility studies?
 
-Collaboration from individuals with diverse skillsets is desired at this stage, including data scientists, data engineers, software engineers, PMs and domain experts. It embraces the use of engineering fundamentals, with some flexibility. For example, not all experimentation requires full test coverage and code review. Experimentation is typically not part of a CI/CD pipeline. Artifacts may live in the master branch as a folder excluded from the CI/CD pipeline, or as a separate experimental branch, depending on customer/team preferences.
+Collaboration from individuals with diverse skill sets is desired at this stage, including data scientists, data engineers, software engineers, PMs and domain experts. It embraces the use of engineering fundamentals, with some flexibility. For example, not all experimentation requires full test coverage and code review. Experimentation is typically not part of a CI/CD pipeline. Artifacts may live in the master branch as a folder excluded from the CI/CD pipeline, or as a separate experimental branch, depending on customer/team preferences.
 
 ## What do ML feasibility studies entail?
 
@@ -33,7 +33,7 @@ Collaboration from individuals with diverse skillsets is desired at this stage, 
 * Verify that the full team has access to the data
 * Set up a dedicated and/or restricted environment if required
 * Perform any required de-identification or redaction of sensitive information
-* Understand data acess requirements (retention, role-based access, etc.)
+* Understand data access requirements (retention, role-based access, etc.)
 
 ### Data discovery
 
@@ -81,12 +81,12 @@ Collaboration from individuals with diverse skillsets is desired at this stage, 
 
 * Identification and assessment of risks and constraints from ML standpoint
 
-### Responsibile AI
+### Responsible AI
 
 * Consideration of responsible AI and fairness
-* Discussion and feedback from diverse perspectives around any resposible AI concerns
+* Discussion and feedback from diverse perspectives around any responsible AI concerns
 
-## Output of a ML feasibilty study
+## Output of a ML feasibility study
 
 ### Possible outcomes
 
