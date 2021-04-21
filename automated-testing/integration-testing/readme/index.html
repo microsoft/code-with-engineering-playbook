@@ -3642,18 +3642,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/profiling/" class="md-nav__link">
-        Profiling
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
@@ -4291,7 +4279,7 @@
 <p>Because one component of a system may be developed independently or in isolation of another it is important to verify the interaction of some or all components. A complex system may be composed of databases, APIs, interfaces, and more, that all interact with each other or additional external systems. Integration tests expose system-level issues such as broken database schemas or faulty third-party API integration. It ensures higher test coverage and serves as an important feedback loop throughout development.</p>
 <h2 id="integration-testing-design-blocks">Integration Testing Design Blocks</h2>
 <p>Consider a banking application with three modules: login, transfers, and current balance, all developed independently. An integration test may verify when a user logs in they are re-directed to their current balance with the correct amount for the specific mock user. Another integration test may perform a transfer of a specified amount of money. The test may confirm there are sufficient funds in the account to perform the transfer, and after the transfer the current balance is updated appropriately for the mock user. The login page may be mocked with a test user and mock credentials if this module is not completed when testing the transfers module.</p>
-<p>Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Compared to unit-tests, integration tests are fewer in qunatity, usually run slower, and are more expensive to set up and develop. Now, if a team is following agile principles, integration tests can be performed before or after unit tests, early and often, as there is no need to wait for sequential processes. Additionally, integration tests can utilize mock data in order to simulate a complete system. There is an abundance of language-specific testing frameworks that can be used throughout the entire development lifecycle.</p>
+<p>Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Compared to unit-tests, integration tests are fewer in quantity, usually run slower, and are more expensive to set up and develop. Now, if a team is following agile principles, integration tests can be performed before or after unit tests, early and often, as there is no need to wait for sequential processes. Additionally, integration tests can utilize mock data in order to simulate a complete system. There is an abundance of language-specific testing frameworks that can be used throughout the entire development lifecycle.</p>
 <p>** It is important to note the difference between integration and acceptance testing. Integration testing confirms a group of components work together as intended from a technical perspective, while acceptance testing confirms a group of components work together as intended from a business scenario.</p>
 <h2 id="applying-integration-testing">Applying Integration Testing</h2>
 <p>Prior to writing integration tests, the engineers must identify the different components of the system and their intended behaviors and inputs and outputs. The architecture of the project must be fully documented or specified somewhere that can be readily referenced (e.g., the architecture diagram).</p>
@@ -4302,10 +4290,10 @@
 <h3 id="incremental-testing">Incremental Testing</h3>
 <p>Incremental testing is when two or more components that are logically related are tested as a unit. After testing the unit, additional components are combined and tested all together. This process repeats until all necessary components are tested.</p>
 <h4 id="top-down">Top Down</h4>
-<p>Top down testing is when higher level components are tested following the control flow of a software system. In the scenario, what is commonly refered to as stubs are used to emulate the behavior of lower level modules not yet complete or merged in the integration test.</p>
+<p>Top down testing is when higher level components are tested following the control flow of a software system. In the scenario, what is commonly referred to as stubs are used to emulate the behavior of lower level modules not yet complete or merged in the integration test.</p>
 <p><img alt="Top Down Integration Testing" src="../images/topDown.png" /></p>
 <h4 id="bottom-up">Bottom Up</h4>
-<p>Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly refered to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.</p>
+<p>Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly referred to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.</p>
 <p><img alt="Bottom Up Integration Testing" src="../images/bottomUp.jpg" /></p>
 <p>A third approach known as the sandwich or hybrid model combines the bottom up and town down approaches to test lower and higher level components at the same time.</p>
 <h3 id="things-to-avoid">Things to Avoid</h3>
@@ -4322,7 +4310,7 @@
 <li><a href="https://behave.readthedocs.io/en/latest/tutorial.html">Behave (Python)</a></li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
-<p>Integration testing demonstrates how one module of a system, or external system, interfaces with another. This can be a test of two components, a sub-system, a whole system, or a collection of systems. Tests should be written frequently and throughout the entire development lifecycle using an appropriate amount of mocked dependencies and test data. Because integration tests prove that independently developed modules inteerface as technically designed, it increases confidence in the development cycle providing a path for a system that deploys and scales.</p>
+<p>Integration testing demonstrates how one module of a system, or external system, interfaces with another. This can be a test of two components, a sub-system, a whole system, or a collection of systems. Tests should be written frequently and throughout the entire development lifecycle using an appropriate amount of mocked dependencies and test data. Because integration tests prove that independently developed modules interface as technically designed, it increases confidence in the development cycle providing a path for a system that deploys and scales.</p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://www.softwaretestinghelp.com/what-is-integration-testing/">Integration testing approaches</a></li>

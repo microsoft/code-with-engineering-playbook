@@ -3615,18 +3615,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/profiling/" class="md-nav__link">
-        Profiling
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
@@ -4246,7 +4234,7 @@ the Azure CLI to do the same is a useful time-saving utility. See <a href="https
 <p>It's best practice to maintain separate secrets configurations for each environment that you run. e.g. dev, test, prod, local etc</p>
 <p>The <a href="../recipes/azure-devops/secrets-per-branch/">secrets-per-branch recipe</a> describes a simple way to manage separate secrets configurations for each environment.</p>
 <blockquote>
-<p>Note: even if the secret was only pushed to a feature branch and never merged, it's still a part of the git history. Follow <a href="https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository">these instructions</a> to remove any sensitive data and/or regenerate any keys and other sensitive information added to the repo. If a key or secret made it into the code base, rotate the key/secret so that is's no longer active</p>
+<p>Note: even if the secret was only pushed to a feature branch and never merged, it's still a part of the git history. Follow <a href="https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository">these instructions</a> to remove any sensitive data and/or regenerate any keys and other sensitive information added to the repo. If a key or secret made it into the code base, rotate the key/secret so that it's no longer active</p>
 </blockquote>
 <h2 id="keeping-secrets-secret">Keeping Secrets Secret</h2>
 <p>The care taken to protect our secrets applies both to how we get and store them, but also to how we use them.</p>

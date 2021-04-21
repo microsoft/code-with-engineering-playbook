@@ -3633,18 +3633,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/pillars/profiling/" class="md-nav__link">
-        Profiling
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
@@ -4278,7 +4266,7 @@ When developing ML applications, we consider the following approaches:</p>
 <p>Best practices in ML engineering:</p>
 <ul>
 <li>The ML application development should use engineering fundamentals to ensure high quality software deliverables.</li>
-<li>The ML application should be reliabily released into production, leveraging automation as much as possible.</li>
+<li>The ML application should be reliability released into production, leveraging automation as much as possible.</li>
 <li>The ML application can be deployed into production at any time. This makes the decision about when to release it a business decision rather than a technical one.</li>
 </ul>
 </li>
@@ -4316,7 +4304,7 @@ When developing ML applications, we consider the following approaches:</p>
 </ol>
 <h3 id="version-control">Version control</h3>
 <ul>
-<li>During all stages of the process, it is suggested that artifacts should be version controlled. Typically, the process is iterative and versioned artifacts can assist in tracebility and reviewing. See more <a href="../ml-experimentation/#source-control-and-folder-package-structure">here</a>.</li>
+<li>During all stages of the process, it is suggested that artifacts should be version controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more <a href="../ml-experimentation/#source-control-and-folder-package-structure">here</a>.</li>
 </ul>
 <h3 id="understanding-the-problem">Understanding the problem</h3>
 <ul>
@@ -4371,7 +4359,7 @@ When developing ML applications, we consider the following approaches:</p>
 </ul>
 <ul>
 <li><strong>Typical output</strong>:<ul>
-<li>Production-grade code (Preferrably in the form of a package) for:<ul>
+<li>Production-grade code (Preferably in the form of a package) for:<ul>
 <li>Data preprocessing / post processing</li>
 <li>Serving a model</li>
 <li>Training a model</li>
@@ -4386,8 +4374,8 @@ When developing ML applications, we consider the following approaches:</p>
 <h4 id="unit-and-integration-testing">Unit and Integration Testing</h4>
 <ul>
 <li>Ensuring that production code behaves in the way we expect it to, and that its results match those we saw during the Model Evaluation and Experimentation phases.</li>
-<li>Refer to <a href="../ml-testing/">this</a> post for further details.</li>
-<li><strong>Typical output</strong>: Test suite with unit and end-to-end tests is created and completes successfuly.</li>
+<li>Refer to <a href="../ml-testing/">ML testing</a> post for further details.</li>
+<li><strong>Typical output</strong>: Test suite with unit and end-to-end tests is created and completes successfully.</li>
 </ul>
 <h4 id="deployment">Deployment</h4>
 <ul>
@@ -4400,10 +4388,10 @@ When developing ML applications, we consider the following approaches:</p>
 </ul>
 <h4 id="monitoring-and-observability">Monitoring and Observability</h4>
 <ul>
-<li>The final phase, where we ensure our model is doing what we expect it to in production.</li>
-<li>Refer to <a href="https://github.com/microsoft/code-with-engineering-playbook/blob/master/observability/ml-observability.md">this</a> post for further details on observability.</li>
-<li>Refer to <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection">this document</a> on Azure ML's offerings around ML models production monitoring.</li>
-<li>It is recommended to consider incorporating data drift monitoring process in the production solution. This will assist in detecting potential changes in new datasets presented for inference that may significantly impact model performance. Refer to <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets">this document</a> on Azure ML detect data drift on datasets.</li>
+<li>This is the final phase, where we ensure our model is doing what we expect it to in production.</li>
+<li>Read more about <a href="../../observability/ml-observability/">ML observability</a>.</li>
+<li>Read more about <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection">Azure ML's offerings around ML models production monitoring</a>.</li>
+<li>It is recommended to consider incorporating data drift monitoring process in the production solution. This will assist in detecting potential changes in new datasets presented for inference that may significantly impact model performance. For more info on detecting data drift with Azure ML see the Microsoft docs article on <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets">how to monitor datasets</a>.</li>
 <li><strong>Typical output</strong>: Logging and monitoring scripts and tools set up, permissions for users to access monitoring tools.</li>
 </ul>
                 

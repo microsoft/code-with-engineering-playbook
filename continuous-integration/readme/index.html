@@ -3676,18 +3676,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/pillars/profiling/" class="md-nav__link">
-        Profiling
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
@@ -4370,7 +4358,14 @@
 <li><a href="#build-definition-managed-in-git">Build Definition Managed in Git</a></li>
 <li><a href="#build-automation">Build Automation</a></li>
 <li><a href="#build-environment-dependencies">Build Environment Dependencies</a></li>
-<li><a href="#infrastructure-as-code">Infrastructure as Code</a></li>
+<li><a href="#infrastructure-as-code">Infrastructure as Code</a><ul>
+<li><a href="#sample-devops-workflow-using-terraform-and-cobalt">Sample DevOPS Workflow using Terraform and Cobalt</a></li>
+<li><a href="#why">Why</a></li>
+<li><a href="#iac-devops-operations-by-pull-request">IAC DevOPS: Operations by Pull Request</a></li>
+<li><a href="#infrastructure-advocated-patterns">Infrastructure Advocated Patterns</a></li>
+<li><a href="#iac-principles">IAC Principles</a></li>
+</ul>
+</li>
 <li><a href="#integration-validation">Integration Validation</a></li>
 <li><a href="#git-driven-workflow">Git Driven Workflow</a></li>
 <li><a href="#deliver-quickly-and-daily">Deliver Quickly and Daily</a></li>
@@ -4414,7 +4409,7 @@
 </li>
 <li class="task-list-item"><input type="checkbox" disabled/> <strong>Code Style Checks</strong><ul>
 <li>Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.</li>
-<li>There are several open source code style validation tools available to choose from (<a href="https://github.com/checkstyle/checkstyle">code style checks</a>, <a href="https://en.wikipedia.org/wiki/StyleCop">StyleCop</a>). The <a href="https://github.com/microsoft/code-with-engineering-playbook/tree/master/code-reviews#language-specific-guidance">Code Review section</a> of the playbook has suggestions for linters and preferred styles for a number of languages.</li>
+<li>There are several open source code style validation tools available to choose from (<a href="https://github.com/checkstyle/checkstyle">code style checks</a>, <a href="https://en.wikipedia.org/wiki/StyleCop">StyleCop</a>). The <a href="../../code-reviews/#language-specific-guidance">Code Review section</a> of the playbook has suggestions for linters and preferred styles for a number of languages.</li>
 <li>We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOPS, you can add a security scan task to your pipeline by installing the <a href="https://secdevtools.azurewebsites.net/#pills-onboard">Microsoft Security Code Analysis Extension</a>. Github Actions supports a similar extension with the <a href="https://github.com/marketplace/actions/rips-security-scan">RIPS security scan solution</a>.</li>
 <li>Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.</li>
 </ul>

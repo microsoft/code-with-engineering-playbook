@@ -3518,18 +3518,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../observability/pillars/profiling/" class="md-nav__link">
-        Profiling
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
@@ -3712,8 +3700,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loadshedding-dos-protection" class="md-nav__link">
-    Loadshedding &amp; DOS Protection
+  <a href="#load-shedding-dos-protection" class="md-nav__link">
+    Load shedding &amp; DOS Protection
   </a>
   
 </li>
@@ -4183,8 +4171,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loadshedding-dos-protection" class="md-nav__link">
-    Loadshedding &amp; DOS Protection
+  <a href="#load-shedding-dos-protection" class="md-nav__link">
+    Load shedding &amp; DOS Protection
   </a>
   
 </li>
@@ -4258,10 +4246,10 @@
                 
                 
                 <h1 id="reliability">Reliability</h1>
-<p>All of the other CSE Eng Fundamentals work towards a more reliable infrastrucute. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.</p>
+<p>All of the other CSE Eng Fundamentals work towards a more reliable infrastructure. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.</p>
 <p>However there are some additional steps we can take, that don't neatly fit into the previous categories, to help ensure a more reliable solution. We'll explore these below.</p>
 <h2 id="remove-foot-guns">Remove "Foot-Guns"</h2>
-<p>Prevent your dev team from shooting themselves in the foot. People make mistakes; any mistake made in production is not the fault of that person, moreso it's the collective fault of the system to not prevent that mistake from happening.</p>
+<p>Prevent your dev team from shooting themselves in the foot. People make mistakes; any mistake made in production is not the fault of that person, more so it's the collective fault of the system to not prevent that mistake from happening.</p>
 <p>Check out the below list for some common tooling to remove these foot guns:</p>
 <ul>
 <li>In Kubernetes, leverage <a href="https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/">Admission Controllers</a> to prevent "bad things" from happening.<ul>
@@ -4277,13 +4265,13 @@
 <p>Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VM's backing each Pod however, may also need autoscaling to handle an increase in the number of Pods.</p>
 </blockquote>
 <p>It should also be noted that the parameters that affect autoscaling can be difficult to tune. Typical metrics like CPU or RAM utilization, or request rate may not be enough. Sometimes you might want to consider custom metrics, like cache eviction rate.</p>
-<h2 id="loadshedding-dos-protection">Loadshedding &amp; DOS Protection</h2>
-<p>Often we think of Denial of Service [DOS] attacks as an act from a malicious actor, so we place some Loadshedding at the gates to our system and call it a day. In reality, many DOS attacks are unintentional, and self-inflicted. A bad deployment that takes down a Cache results in hammering downstream services. Polling from a distributed system synchronizes and results in a <a href="https://en.wikipedia.org/wiki/Thundering_herd_problem">thundering herd</a>. A misconfiguration results in an error which triggers clients to retry uncontrollably. Requests append to a stored object until it is so big that future reads crash the server. The list goes on.</p>
+<h2 id="load-shedding-dos-protection">Load shedding &amp; DOS Protection</h2>
+<p>Often we think of Denial of Service [DOS] attacks as an act from a malicious actor, so we place some load shedding at the gates to our system and call it a day. In reality, many DOS attacks are unintentional, and self-inflicted. A bad deployment that takes down a Cache results in hammering downstream services. Polling from a distributed system synchronizes and results in a <a href="https://en.wikipedia.org/wiki/Thundering_herd_problem">thundering herd</a>. A misconfiguration results in an error which triggers clients to retry uncontrollably. Requests append to a stored object until it is so big that future reads crash the server. The list goes on.</p>
 <p>Follow these steps to protect yourself:</p>
 <ul>
-<li>Add a jitter (random) to any action that occurs from a non user triggered flow (ie: add a random duration to the sleep in a cron, or job that continously polls a downstream service).</li>
+<li>Add a jitter (random) to any action that occurs from a non user triggered flow (ie: add a random duration to the sleep in a cron, or job that continuously polls a downstream service).</li>
 <li>Implement <a href="https://en.wikipedia.org/wiki/Exponential_backoff">exponential backoff retry policies</a> in your client code</li>
-<li>Add loadshedding to your servers (yes, your internal microservices too).<ul>
+<li>Add load shedding to your servers (yes, your internal microservices too).<ul>
 <li>This can be configured easily when leveraging a sidecar like envoy.</li>
 </ul>
 </li>
@@ -4311,7 +4299,7 @@
 <li>Failover to healthy services<ul>
 <li><a href="https://en.wikipedia.org/wiki/Leader_election">Leader Election</a> can be used to keep healthy services on standby in case the leader experiences issues.</li>
 <li>Entire cluster failover can redirect traffic to another region or availability zone.</li>
-<li>Propagate downstream failures of <strong>dependent services</strong> up the stack via healthchecks, so that your ingress points can re-route to healthy services.</li>
+<li>Propagate downstream failures of <strong>dependent services</strong> up the stack via health checks, so that your ingress points can re-route to healthy services.</li>
 </ul>
 </li>
 <li><a href="https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.">Circuit breakers</a> can bail early on requests vs. propogating errors throughout the system</li>

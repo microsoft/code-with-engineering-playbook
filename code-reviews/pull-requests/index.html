@@ -3586,18 +3586,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/pillars/profiling/" class="md-nav__link">
-        Profiling
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
@@ -4208,9 +4196,9 @@
 <li>They are easier to deploy; this is aligned with the strategy of release fast and release often.</li>
 <li>Minimizes possible conflicts and stale PRs.</li>
 </ul>
-<p>However, we should keep PRs focused - for example around a functional feature, optimization or code readbility and avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PRs could be difficult and therefore slower to review. We should always strive to have as small PRs as possible that still add value.</p>
+<p>However, we should keep PRs focused - for example around a functional feature, optimization or code readability and avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PRs could be difficult and therefore slower to review. We should always strive to have as small PRs as possible that still add value.</p>
 <h2 id="best-practices">Best Practices</h2>
-<p>Beoynd the size, remember that every PR should:</p>
+<p>Beyond the size, remember that every PR should:</p>
 <ul>
 <li>be consistent,</li>
 <li>not break the build, and</li>
@@ -4221,7 +4209,7 @@
 <p>These are some strategies to keep PRs small depending on the "cause" of the inevitability, you could break the PR into self-container changes which still add value, release features that are hidden (see feature flag, feature toggling or canary releases) or break the PR into different layers (for example using design patterns like MVC or Observer/Subject). No matter the strategy.</p>
 <h2 id="pull-request-description">Pull Request Description</h2>
 <p>Well written PR descriptions helps maintain a clean, well-structured change history. While every team need not conform to the same specification, it is important that the convention is agreed upon at the start of the project.</p>
-<p>One popular specification for open-source projects and others is the <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.2/">Conventional Commits specification</a>, which is strucured as:</p>
+<p>One popular specification for open-source projects and others is the <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.2/">Conventional Commits specification</a>, which is structured as:</p>
 <div class="highlight"><pre><span></span><code>&lt;type&gt;[optional scope]: &lt;description&gt;
 
 [optional body]

@@ -3572,18 +3572,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../pillars/profiling/" class="md-nav__link">
-        Profiling
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
@@ -4149,15 +4137,15 @@
                 
                 <h1 id="profiling">Profiling</h1>
 <h2 id="overview">Overview</h2>
-<p>Profiling is a form of runtime analysis that measures various components of the runtime such as, memory allocation, garbage collection, threads and locks, callstacks, or frequency and duration of specific functions. It can be used to see which functions are the most costly in your binary, allowing you to focus your effort on removing the largest inefficiencies as quickly as possible. It can help you find deadlocks, memory leaks, or innefficient memory allocaiton, and help inform decisions around resource allocation (ie: CPU or RAM).</p>
+<p>Profiling is a form of runtime analysis that measures various components of the runtime such as, memory allocation, garbage collection, threads and locks, call stacks, or frequency and duration of specific functions. It can be used to see which functions are the most costly in your binary, allowing you to focus your effort on removing the largest inefficiencies as quickly as possible. It can help you find deadlocks, memory leaks, or inefficient memory allocation, and help inform decisions around resource allocation (ie: CPU or RAM).</p>
 <h2 id="how-to-profile-your-applications">How to Profile your Applications</h2>
 <p>Profiling is somewhat language dependent, so start off by searching for "profile $language" (some common tools are listed below). Additionally, Linux Perf is a good fallback, since a lot of languages have bindings in C/C++.</p>
-<p>Profiling does incur some cost, as it requires inspecting the callstack, and sometimes pausing the application all together (ie: to trigger a full GC in Java). It is recommended to continuously profile your services, say for 10s every 10 minutes. Consider the cost when deciding on tuning these parameters.</p>
+<p>Profiling does incur some cost, as it requires inspecting the call stack, and sometimes pausing the application all together (ie: to trigger a full GC in Java). It is recommended to continuously profile your services, say for 10s every 10 minutes. Consider the cost when deciding on tuning these parameters.</p>
 <p>Different tools visualize profiles differently. Common CPU profiles might use a directed graph <img alt="graph" src="../images/pprof-dot.png" /> or a flame graph. <img alt="flame" src="../images/flame.png" /></p>
 <p>Unfortunately, each profiler tool typically uses it's own format for storing profiles, and comes with its own visualization.</p>
 <h2 id="specific-tools">Specific tools</h2>
 <ul>
-<li>(Java, Go, Python, Ruby, eBPF) <a href="https://github.com/pyroscope-io/pyroscope">Pyroscope</a> coninuous profiling out of the box.</li>
+<li>(Java, Go, Python, Ruby, eBPF) <a href="https://github.com/pyroscope-io/pyroscope">Pyroscope</a> continuous profiling out of the box.</li>
 <li>(Java and Go) <a href="https://github.com/VerizonMedia/kubectl-flame">Flame</a> - profiling containers in Kubernetes</li>
 <li>(Java, Python, Go) <a href="https://www.datadoghq.com/product/code-profiling/">Datadog Continuous profiler</a></li>
 <li>(Java, Python, Go, Node.js) <a href="https://www.instana.com/blog/instana-announces-the-industrys-first-commercial-continuous-production-profiler/">Instana</a></li>
