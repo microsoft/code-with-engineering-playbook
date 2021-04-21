@@ -17,4 +17,4 @@ We have agreed to utilise Serilog as the Dotnet Logging framework of choice at t
 ## Consequences
 
 Sampling will need to be configured in Application Insights so that it does not become overly-expensive when ingesting millions of messages, but also does not prevent capture of essential information.
-The team will need to only log what is agreed to be essential for monitoring as part of design reviews, to reduce noise and unneccesary levels of sampling.
+The team will need to only log what is agreed to be essential for monitoring as part of design reviews, to reduce noise and unnecessary levels of sampling.

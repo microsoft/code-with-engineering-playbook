@@ -8,7 +8,7 @@ When developing ML applications, we consider the following approaches:
 * Best practices in ML engineering:
 
   * The ML application development should use engineering fundamentals to ensure high quality software deliverables.
-  * The ML application should be reliabily released into production, leveraging automation as much as possible.
+  * The ML application should be reliability released into production, leveraging automation as much as possible.
   * The ML application can be deployed into production at any time. This makes the decision about when to release it a business decision rather than a technical one.
 
 * Best practices in ML research:
@@ -37,7 +37,7 @@ The proposed ML development process is comprised of:
 
 ### Version control
 
-* During all stages of the process, it is suggested that artifacts should be version controlled. Typically, the process is iterative and versioned artifacts can assist in tracebility and reviewing. See more [here](ml-experimentation.md#source-control-and-folder-package-structure).
+* During all stages of the process, it is suggested that artifacts should be version controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more [here](ml-experimentation.md#source-control-and-folder-package-structure).
 
 ### Understanding the problem
 
@@ -82,7 +82,7 @@ For more information on experimentation, refer to the [experimentation](ml-exper
 * Taking "experimental" code and preparing it so it can be deployed. This includes data pre-processing, featurization code, training model code (if required to be trained using CI/CD) and model inference code.
 
 * **Typical output**:
-  * Production-grade code (Preferrably in the form of a package) for:
+  * Production-grade code (Preferably in the form of a package) for:
     * Data preprocessing / post processing
     * Serving a model
     * Training a model
@@ -93,8 +93,8 @@ For more information on experimentation, refer to the [experimentation](ml-exper
 #### Unit and Integration Testing
 
 * Ensuring that production code behaves in the way we expect it to, and that its results match those we saw during the Model Evaluation and Experimentation phases.
-* Refer to [this](ml-testing.md) post for further details.
-* **Typical output**: Test suite with unit and end-to-end tests is created and completes successfuly.
+* Refer to [ML testing](ml-testing.md) post for further details.
+* **Typical output**: Test suite with unit and end-to-end tests is created and completes successfully.
 
 #### Deployment
 
@@ -107,8 +107,8 @@ For more information on experimentation, refer to the [experimentation](ml-exper
 
 #### Monitoring and Observability
 
-* The final phase, where we ensure our model is doing what we expect it to in production.
-* Refer to [this](https://github.com/microsoft/code-with-engineering-playbook/blob/master/observability/ml-observability.md) post for further details on observability.
-* Refer to [this document](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection) on Azure ML's offerings around ML models production monitoring.
-* It is recommended to consider incorporating data drift monitoring process in the production solution. This will assist in detecting potential changes in new datasets presented for inference that may significantly impact model performance. Refer to [this document](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets) on Azure ML detect data drift on datasets.
+* This is the final phase, where we ensure our model is doing what we expect it to in production.
+* Read more about [ML observability](../observability/ml-observability.md).
+* Read more about [Azure ML's offerings around ML models production monitoring](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection).
+* It is recommended to consider incorporating data drift monitoring process in the production solution. This will assist in detecting potential changes in new datasets presented for inference that may significantly impact model performance. For more info on detecting data drift with Azure ML see the Microsoft docs article on [how to monitor datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets).
 * **Typical output**: Logging and monitoring scripts and tools set up, permissions for users to access monitoring tools.

@@ -67,7 +67,7 @@ Code reviews is a way to have a conversation about the code where participants w
     - Improve skills as code reviewers
   - [Measures](./evidence-and-measures/README.md#measures)
     - Collect metrics e.g. Defect Removal Efficiency, Time metrics, Lines of Code
-    - Manual tracking vs. AzDO dasboards
+    - Manual tracking vs. AzDO dashboards
 - [Language Specific Guidance](./recipes/README.md)
   - [Bash](./recipes/Bash.md)
   - [C#](./recipes/CSharp.md)

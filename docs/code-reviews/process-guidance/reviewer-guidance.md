@@ -25,7 +25,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 - Avoid language that points fingers like “you” but rather use “we” or “this line” -- code reviews are not personal and language matters.
 - Prefer asking questions above making statements. There might be a good reason for the author to do something.
 - If you make a direct comment, explain why the code needs to be changed, preferably with an example.
-- If a few back-and-forth comments don't resolve a disagreement, have a quick talk with eachother (in-person or call). Don't forget to update the PR with what you agreed on and why.
+- If a few back-and-forth comments don't resolve a disagreement, have a quick talk with each other (in-person or call). Don't forget to update the PR with what you agreed on and why.
 
 ### Make comments clear
 

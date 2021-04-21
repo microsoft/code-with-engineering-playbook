@@ -10,7 +10,7 @@ Because one component of a system may be developed independently or in isolation
 
 Consider a banking application with three modules: login, transfers, and current balance, all developed independently. An integration test may verify when a user logs in they are re-directed to their current balance with the correct amount for the specific mock user. Another integration test may perform a transfer of a specified amount of money. The test may confirm there are sufficient funds in the account to perform the transfer, and after the transfer the current balance is updated appropriately for the mock user. The login page may be mocked with a test user and mock credentials if this module is not completed when testing the transfers module.
 
-Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Compared to unit-tests, integration tests are fewer in qunatity, usually run slower, and are more expensive to set up and develop. Now, if a team is following agile principles, integration tests can be performed before or after unit tests, early and often, as there is no need to wait for sequential processes. Additionally, integration tests can utilize mock data in order to simulate a complete system. There is an abundance of language-specific testing frameworks that can be used throughout the entire development lifecycle.
+Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Compared to unit-tests, integration tests are fewer in quantity, usually run slower, and are more expensive to set up and develop. Now, if a team is following agile principles, integration tests can be performed before or after unit tests, early and often, as there is no need to wait for sequential processes. Additionally, integration tests can utilize mock data in order to simulate a complete system. There is an abundance of language-specific testing frameworks that can be used throughout the entire development lifecycle.
 
 \*\* It is important to note the difference between integration and acceptance testing. Integration testing confirms a group of components work together as intended from a technical perspective, while acceptance testing confirms a group of components work together as intended from a business scenario.
 
@@ -32,13 +32,13 @@ Incremental testing is when two or more components that are logically related ar
 
 #### Top Down
 
-Top down testing is when higher level components are tested following the control flow of a software system. In the scenario, what is commonly refered to as stubs are used to emulate the behavior of lower level modules not yet complete or merged in the integration test.
+Top down testing is when higher level components are tested following the control flow of a software system. In the scenario, what is commonly referred to as stubs are used to emulate the behavior of lower level modules not yet complete or merged in the integration test.
 
 ![Top Down Integration Testing](./images/topDown.png)
 
 #### Bottom Up
 
-Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly refered to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.
+Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly referred to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.
 
 ![Bottom Up Integration Testing](./images/bottomUp.jpg)
 
@@ -63,7 +63,7 @@ Many tools and frameworks can be used to write both unit and integration tests. 
 
 ## Conclusion
 
-Integration testing demonstrates how one module of a system, or external system, interfaces with another. This can be a test of two components, a sub-system, a whole system, or a collection of systems. Tests should be written frequently and throughout the entire development lifecycle using an appropriate amount of mocked dependencies and test data. Because integration tests prove that independently developed modules inteerface as technically designed, it increases confidence in the development cycle providing a path for a system that deploys and scales.
+Integration testing demonstrates how one module of a system, or external system, interfaces with another. This can be a test of two components, a sub-system, a whole system, or a collection of systems. Tests should be written frequently and throughout the entire development lifecycle using an appropriate amount of mocked dependencies and test data. Because integration tests prove that independently developed modules interface as technically designed, it increases confidence in the development cycle providing a path for a system that deploys and scales.
 
 ## Resources
 

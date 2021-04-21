@@ -1,6 +1,6 @@
 # ML Fundamentals checklist
 
-This checklist helps ensure that our ML projects meet our ML Fundamentals. The items below are not sequential, but rather organised by different parts of an ML project.
+This checklist helps ensure that our ML projects meet our ML Fundamentals. The items below are not sequential, but rather organized by different parts of an ML project.
 
 ## Data Quality and Governance
 

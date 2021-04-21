@@ -7,7 +7,7 @@ There are several options to alleviate cross-platform compatibility issues.
   - Running VS Code in a Docker container and using [Dev Containers](https://code.visualstudio.com/docs/remote/containers) can also help in standardizing the local developer experience across the team.
   - Follow a tutorial on [Development in Containers](https://code.visualstudio.com/docs/remote/containers-tutorial)
   - For samples projects and dev container templates see [VS Code Dev Containers Recipe](https://github.com/microsoft/vscode-dev-containers)
-  - [Dev Containers Library](https://github.com/microsoft/code-with-engineering-playbook/tree/master/continuous-integration/devcontainers)
+  - [Dev Containers Library](../devcontainers/readme.md)
 
 - The example below shows the tasks system in VS Code which provides options to allow commands to be executed specific to an operating system.
 
