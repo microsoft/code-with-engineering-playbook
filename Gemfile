@@ -23,3 +23,6 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
 end
+
+# vulnerability found 
+gem "kramdown", ">= 2.3.1"
