@@ -18,6 +18,11 @@ These [principles](https://martinfowler.com/articles/continuousIntegration.html)
   - [Build Automation](#build-automation)
   - [Build Environment Dependencies](#build-environment-dependencies)
   - [Infrastructure as Code](#infrastructure-as-code)
+    - [Sample DevOPS Workflow using Terraform and Cobalt](#sample-devops-workflow-using-terraform-and-cobalt)
+    - [Why](#why)
+    - [IAC DevOPS: Operations by Pull Request](#iac-devops-operations-by-pull-request)
+    - [Infrastructure Advocated Patterns](#infrastructure-advocated-patterns)
+    - [IAC Principles](#iac-principles)
   - [Integration Validation](#integration-validation)
   - [Git Driven Workflow](#git-driven-workflow)
   - [Deliver Quickly and Daily](#deliver-quickly-and-daily)
@@ -56,7 +61,7 @@ An automated build should encompass the following principles:
   - Your build definition includes validation steps to execute a suite of automated unit tests to ensure that application components meets its design and behaves as intended.
 - [ ] **Code Style Checks**
   - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
-  - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review section](https://github.com/microsoft/code-with-engineering-playbook/tree/master/code-reviews#language-specific-guidance) of the playbook has suggestions for linters and preferred styles for a number of languages.
+  - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review section](../code-reviews/README.md#language-specific-guidance) of the playbook has suggestions for linters and preferred styles for a number of languages.
   - We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOPS, you can add a security scan task to your pipeline by installing the [Microsoft Security Code Analysis Extension](https://secdevtools.azurewebsites.net/#pills-onboard). Github Actions supports a similar extension with the [RIPS security scan solution](https://github.com/marketplace/actions/rips-security-scan).
   - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
 - [ ] **Build Script Target**
