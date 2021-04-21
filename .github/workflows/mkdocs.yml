@@ -2,7 +2,7 @@ name: Build and deploy mkdocs to https://microsoft.github.io/code-with-engineeri
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
