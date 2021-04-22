@@ -2,7 +2,7 @@
 
 1. **Correlation Id**: Include unique identifier at the start of the interaction to tie down aggregated data from various system components and provide a holistic view. Read more guidelines about using [correlation id](correlation-id.md).
 1. Ensure health of the services are **monitored** and provide insights into system's performance and behavior.
-1. Ensure **dependent services** are monitored properly. Errors and exceptions in dependent services like Redis cache, Service bus, etc. should be logged and alerted. Also metrics related to dependent services should be captured and logged.
+1. Ensure **dependent services** are monitored properly. Errors and exceptions in dependent services like Redis cache, Service bus, etc. should be logged and alerted. Also, metrics related to dependent services should be captured and logged.
 
     - Additionally, failures in **dependent services** should be propagated up each level of the stack by the health check.
 

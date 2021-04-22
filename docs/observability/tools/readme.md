@@ -1,4 +1,4 @@
-# Tools & Patterns
+# Tools and Patterns
 
 There are a number of modern tools to make systems observable. While identifying and/or creating tools that work for your system, here are a few things to consider to help guide the choices.
 
@@ -25,6 +25,6 @@ A sidecar works by intercepting all incoming and outgoing traffic to your image.
 - Request Rate
 - Error Rate
 
-In a microservice architecture, pinpointing the root cause of a spike in 500's can be non-trivial, but with a the added observability from a sidecar you can quickly determine which service in your service mesh resulted in the spike in errors.
+In a microservice architecture, pinpointing the root cause of a spike in 500's can be non-trivial, but with the added observability from a sidecar you can quickly determine which service in your service mesh resulted in the spike in errors.
 
 Service Mesh's have a large surface area for configurability, and can seem like a daunting undertaking to deploy. However, most services (including Linkerd) offer a sane set of defaults, and can be deployed via the happy path to quickly land these observability wins.

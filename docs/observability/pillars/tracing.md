@@ -2,7 +2,7 @@
 
 ## Overview
 
-Produces the information required to observe series of correlated operations in a distributed system. Once collected they show the path, measurements and faults in a end to end transaction.
+Produces the information required to observe series of correlated operations in a distributed system. Once collected they show the path, measurements and faults in an end-to-end transaction.
 
 ## Best Practices
 

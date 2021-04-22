@@ -16,7 +16,7 @@ They also need a reliable way to reproduce a training process, such that a given
 There are many model metric evaluation solutions available, both open source (like MLFlow) and proprietary (like Azure Machine Learning Service), and of which some serve different purposes. To capture model metrics, there are a.o. the following options available:
 
 [Azure Machine Learning Service SDK](https://ml.azure.com/)
-Azure Machine Learning service provides an SDK for Python, R and C# to capture your evaluation metrics to a Azure Machine Learning service (AML) Experiment. Experiments are viewed in the AML dashboard. Reproducibility is achieved by storing code or notebook snapshot together with viewed metric. You can create versioned Datasets within Azure Machine Learning service.
+Azure Machine Learning service provides an SDK for Python, R and C# to capture your evaluation metrics to an Azure Machine Learning service (AML) Experiment. Experiments are viewed in the AML dashboard. Reproducibility is achieved by storing code or notebook snapshot together with viewed metric. You can create versioned Datasets within Azure Machine Learning service.
 
 [MLFlow (for Databricks)](https://docs.microsoft.com/en-us/azure/databricks/applications/mlflow/)
 MLFlow is open source framework, and can be hosted on Azure Databricks as its remote tracking server (it currently is the only solution that offers first-party integration with Databricks). You can use the MLFlow SDK tracking component to capture your evaluation metrics or any parameter you would like and track it at experimentation board in Azure Databricks. Source code and dataset version are also saved with log snapshot to provide reproducibility.
@@ -40,7 +40,7 @@ An extensive comparison of the four tools can be found as follows:
 
 ## Model in production
 
-The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using micro service observability methods( for more details -refer to [Recipes](readme.md) section). MLFLow is an alternative way to deploy ML model as a service.
+The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](readme.md) section). MLFLow is an alternative way to deploy ML model as a service.
 
 ## Training and re-training
 
@@ -49,7 +49,7 @@ When re-training with AML Pipelines you can monitor information of each run, inc
 
 ## Model performance over time: data drift
 
-We re-train machine learning models to improve their performance and make models better aligned with data changing over time. However, in some cases model performance may degrade. This may happen in case data change dramatically and do not exhibit the patterns we observed during model development any more. This effect is called data drift. Azure Machine Learning Service has preview feature to observe and report data drift.
+We re-train machine learning models to improve their performance and make models better aligned with data changing over time. However, in some cases model performance may degrade. This may happen in case data change dramatically and do not exhibit the patterns we observed during model development anymore. This effect is called data drift. Azure Machine Learning Service has preview feature to observe and report data drift.
 This [article](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets) describes it in detail.
 
 ## Data versioning

@@ -1,6 +1,6 @@
-# Things to watch for when building Observable Systems
+# Things to Watch for when Building Observable Systems
 
-## Observability as an after thought
+## Observability as an afterthought
 
 One of the design goals when building a system should be to enable monitoring of the system. This helps planning and thinking application availability, logging and metrics at the time of design and development. Observability also acts as a great debugging tool providing developers a bird's eye view of the system. By leaving instrumentation and logging of metrics towards the end, the development teams lose valuable insights during development.
 
@@ -15,8 +15,8 @@ One of the design goals when building a system should be to enable monitoring of
 
 ## Context
 
-Every data logged must contain rich context, which is useful for getting an overall view of the system and easy to trace back errors/failures during troubleshooting. While logging data, care must also be taken to avoid data silos.
+All data logged must contain rich context, which is useful for getting an overall view of the system and easy to trace back errors/failures during troubleshooting. While logging data, care must also be taken to avoid data silos.
 
 ## Personally Identifiable Information
 
-As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.,)
+As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.)
