@@ -1,4 +1,4 @@
-# Agile development considerations for ML projects
+# Agile Development Considerations for ML Projects
 
 ## Overview
 
@@ -17,7 +17,7 @@ Within this framework, the team follows these Agile ceremonies:
 - [Retrospectives](../agile-development/retrospectives.md)
 - [Scrum of Scrums](../agile-development/scrum-of-scrums.md) (where applicable)
 - [Sprint planning](../agile-development/sprint-planning/readme.md)
-- [Standups](../agile-development/stand-ups/readme.md)
+- [Stand-ups](../agile-development/stand-ups/readme.md)
 - [Working agreement](../agile-development/team-agreements/working-agreements.md)
 
 ### Notes on Agile process during exploration and experimentation
@@ -36,7 +36,7 @@ Within this framework, the team follows these Agile ceremonies:
 
 ## Notes on collaboration between ML team and software development team
 
-- The ML and Software Development teams work together on the project. The team uses one backlog and attend the same Agile ceremonies. In cases where the project has a large number of participants, we will divide into working groups, but still have the entire team join the Agile ceremonies.
+- The ML and Software Development teams work together on the project. The team uses one backlog and attend the same Agile ceremonies. In cases where the project has many participants, we will divide into working groups, but still have the entire team join the Agile ceremonies.
 
 - If possible, feasibility study and initial model experimentation takes place before the operationalization work kicks off.
 - The ML team and dev team both share the accountability for the MLOps solution.
