@@ -4,9 +4,9 @@
 
 Engineering Feedback captures the "voice of the customer" and is an important mechanism to provide actionable insights and help Microsoft product groups continuously improve the platform and cloud services to enable all customers to be as productive as possible.
 
-> Please note that Engineering Feedback is an asynchronous (i.e. not real-time) method to capture and aggregate friction points across multiple customers and code-with engagements. Therefore, if you need to report a service outage or an immediately-blocking bug, you should file an official [Azure support ticket](https://azure.microsoft.com/support/create-ticket/) and, if possible, reference the ticket id in the feedback that you submit later.
+> Please note that Engineering Feedback is an asynchronous (i.e. not real-time) method to capture and aggregate friction points across multiple customers and code-with engagements. Therefore, if you need to report a service outage, or an immediately-blocking bug, you should file an official [Azure support ticket](https://azure.microsoft.com/support/create-ticket/) and, if possible, reference the ticket id in the feedback that you submit later.
 
-Even if the feedback has already been raised directly with a product group or on through online channels like GitHub or Stack Overflow, it is still important to raise it via Microsoft Engineering feedback so it can be consolidated with other customer projects that have the same feedback to help with prioritization.
+Even if the feedback has already been raised directly with a product group or on through online channels like GitHub or Stack Overflow, it is still important to raise it via Microsoft Engineering feedback, so it can be consolidated with other customer projects that have the same feedback to help with prioritization.
 
 ## When to submit Engineering Feedback
 
