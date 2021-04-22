@@ -14,11 +14,11 @@ To learn more about how CSE runs the Agile process for software development team
 Within this framework, the team follows these Agile ceremonies:
 
 - [Backlog management](../agile-development/backlog-management/readme.md)
-- [Retrospectives](../agile-development/retrospectives/readme.md)
-- [Scrum of Scrums](../agile-development/scrum-of-scrums/readme.md) (where applicable)
+- [Retrospectives](../agile-development/retrospectives.md)
+- [Scrum of Scrums](../agile-development/scrum-of-scrums.md) (where applicable)
 - [Sprint planning](../agile-development/sprint-planning/readme.md)
 - [Standups](../agile-development/stand-ups/readme.md)
-- [Working agreement](../agile-development/team-agreements/working-agreements/readme.md)
+- [Working agreement](../agile-development/team-agreements/working-agreements.md)
 
 ### Notes on Agile process during exploration and experimentation
 
@@ -30,7 +30,7 @@ Within this framework, the team follows these Agile ceremonies:
         2. [Hypothesis Driven Development](https://barryoreilly.com/explore/blog/how-to-implement-hypothesis-driven-development/) (from Barry Oreilly's website).
     - Exploratory Data Analysis (EDA) results and learnings documented
 
-2. User stories and spikes are usually estimated using [T-shirt sizes](../agile-development/sprint-planning/estimation/readme.md#t-shirt-sizes) or similar, and not in actual days/hours. See more [here](../agile-development/sprint-planning/estimation/readme.md) on story estimation.
+2. User stories and spikes are usually estimated using [T-shirt sizes](../agile-development/sprint-planning/estimation.md#t-shirt-sizes) or similar, and not in actual days/hours. See more [here](../agile-development/sprint-planning/estimation.md) on story estimation.
 
 3. ML design sessions should be included in each sprint.
 

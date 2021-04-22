@@ -2,9 +2,9 @@
 
 ## Sections within Team Agreements
 
-* [Definition of Done](definition-of-done/readme.md)
-* [Definition of Ready](definition-of-ready/readme.md)
-* [Working Agreements](working-agreements/readme.md)
+* [Definition of Done](definition-of-done.md)
+* [Definition of Ready](definition-of-ready.md)
+* [Working Agreements](working-agreements.md)
 
 ## Goals
 

@@ -5,7 +5,7 @@ The stand-up is a time-boxed ceremony that is held each day of the sprint. In th
 1. What did you work on yesterday that contributes to meet the sprint goal?
 2. What are you working on today that will contribute to meet the sprint goal?
 3. Do you have any impediments/blockers or need any help? (defer discussion / resolution to "the parking lot", described below)
-4. An [optional social question](./social-question/readme.md), e.g. "would you rather see the past or the future?"
+4. An [optional social question](social-question.md), e.g. "would you rather see the past or the future?"
 
 During the stand-up, additional discussions may arise. Make sure that someone adds them to the parking lot for after meeting discussion.  
 
@@ -88,7 +88,7 @@ Ensure discussion leaders call out necessary parties for their discussion points
 
 ### Social question
 
-Teams are frequently geographically distributed and include members who have not worked on projects together previously. Social interactions facilitate the development of trust between team members and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question and a list of starter questions are available within the [social question readme](./social-question/readme.md).
+Teams are frequently geographically distributed and include members who have not worked on projects together previously. Social interactions facilitate the development of trust between team members and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question and a list of starter questions are available within the [social question readme](social-question.md).
 
 ### Start On Time
 

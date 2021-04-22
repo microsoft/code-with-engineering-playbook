@@ -18,7 +18,7 @@ Red Team Testing borrows its name from the “Red Team” and “Blue Team” pa
 
 Red Team Testing has the same philosophy as any other Test-Driven Development lifecycle: All implementation is separated from the interface, and the interface can be tested with no knowledge of the implementation.
 
-![ptt-diagram](PTTdiagram.PNG)
+![ptt-diagram](images/PTTdiagram.PNG)
 
 ## Steps
 

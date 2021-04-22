@@ -18,7 +18,7 @@ There are many different options when working with Source Control. In [CSE](../C
 
 ## General Guidance
 
-Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreements/readme.md) and [Design Reviews](../design-reviews/readme.md)).
+Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreements.md) and [Design Reviews](../design-reviews/readme.md)).
 
 ## Creating a new repository
 
@@ -40,7 +40,7 @@ When working on an existing project, `git clone` the repository and ensure you u
 
 ## Mixed DevOps Environments
 
-For most engagements having a single hosted DevOps environment (i.e AzureDevOps) is the preferred path but there are times when a mixed DevOps environment (i.e. AzureDevOps for Agile/Work item tracking & GitHub for Source Control) is needed due to customer requirements. When working in a mixed environment:
+For most engagements having a single hosted DevOps environment (i.e. AzureDevOps) is the preferred path but there are times when a mixed DevOps environment (i.e. AzureDevOps for Agile/Work item tracking & GitHub for Source Control) is needed due to customer requirements. When working in a mixed environment:
 
 * Manually tag PR's in work items
 * Ensure that the scope of work items / tasks align with PR's
@@ -76,7 +76,7 @@ Good message structure:
 * Use the body to explain what and why vs. how
 * Reference fixed issues with [closing keywords](https://help.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords)
 
-Example of a well structured git commit message:
+Example of a well-structured git commit message:
 
 ```md
 Add code review recipe for Go

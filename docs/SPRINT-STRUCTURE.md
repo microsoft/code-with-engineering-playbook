@@ -11,10 +11,10 @@ The purpose of this document is to:
 ### Before starting the project
 
 - [ ] [Discuss and start writing the Team Agreements](agile-development/team-agreements/readme.md). Update these documents with any process decisions made throughout the project
-  - [Working Agreement](agile-development/team-agreements/working-agreements/readme.md)
-  - [Definition of Ready](agile-development/team-agreements/definition-of-ready/readme.md)
-  - [Definition of Done](agile-development/team-agreements/definition-of-done/readme.md)
-  - [Estimation](agile-development/sprint-planning/estimation/readme.md)
+  - [Working Agreement](agile-development/team-agreements/working-agreements.md)
+  - [Definition of Ready](agile-development/team-agreements/definition-of-ready.md)
+  - [Definition of Done](agile-development/team-agreements/definition-of-done.md)
+  - [Estimation](agile-development/sprint-planning/estimation.md)
 - [ ] [Set up the repository/repositories](source-control/readme.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
@@ -44,12 +44,12 @@ The purpose of this document is to:
 - [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/stand-ups/readme.md)
   - Discuss purpose, goals, participants and facilitation guidance
   - Discuss timing, and how to run an efficient stand-up
-- [ ] [If the project has sub-teams, set up a Scrum of Scrums](agile-development/scrum-of-scrums/readme.md)
+- [ ] [If the project has sub-teams, set up a Scrum of Scrums](agile-development/scrum-of-scrums.md)
 
 ### Day 3
 
 - [ ] [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
-- [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/team-agreements/definition-of-done/readme.md)
+- [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/team-agreements/definition-of-done.md)
 - [ ] [Agree on a Code Merging strategy](source-control/contributing/merge-strategies.md) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
 - [ ] [Agree on logging and observability frameworks and strategies](observability/readme.md)
 
@@ -64,11 +64,11 @@ The purpose of this document is to:
 ### Day 5
 
 - [ ] Conduct a Sprint Demo
-- [ ] [Conduct a Retrospective](agile-development/retrospectives/readme.md)
+- [ ] [Conduct a Retrospective](agile-development/retrospectives.md)
   - Determine required participants, how to capture input (tools) and outcome
   - Set a timeline, and discuss facilitation, meeting structure etc.
 - [ ] [Refine the Backlog](agile-development/backlog-management/backlog-refinement.md)
   - Determine required participants
-  - Update the [Definition of Ready](agile-development/team-agreements/definition-of-ready/readme.md)
-  - Update estimates, and the [Estimation](agile-development/sprint-planning/estimation/readme.md) document
+  - Update the [Definition of Ready](agile-development/team-agreements/definition-of-ready.md)
+  - Update estimates, and the [Estimation](agile-development/sprint-planning/estimation.md) document
 - [ ] [Submit Engineering Feedback for issues encountered](engineering-feedback/readme.md)

@@ -30,7 +30,7 @@ Specific roles:
   - Prior to the sprint planning: performs some [backlog refinement](../backlog-management/backlog-refinement.md) to ensure that each story that they want to propose for the new sprint (*) :
   
     - Is in the correct position in the backlog, by right priority order.
-    - Is attending the [definition of ready](../team-agreements/definition-of-ready/readme.md).
+    - Is attending the [definition of ready](../team-agreements/definition-of-ready.md).
   - Do NOT pre assign stories to the future sprint. This is the purpose of the sprint planning.
   - During the meeting:
 
@@ -41,11 +41,11 @@ Specific roles:
 
   - Listen to the product owner story description.
   - Ask questions to make sure everyone understands each story properly.
-  - [Estimate](estimation/readme.md) the effort for each backlog item, as a team.
+  - [Estimate](estimation.md) the effort for each backlog item, as a team.
   - Split each story into tasks.
   - (Optional) self assign first task to team members.
 
-*(\*) some teams find useful to define a **[Definition of ready](../team-agreements/definition-of-ready/readme.md)** that describes the list of things that needs to be done in each story before the **product owner** can propose it for a **sprint**. The list proposed here is the classic minimal definition of ready.*
+*(\*) some teams find useful to define a **[Definition of ready](../team-agreements/definition-of-ready.md)** that describes the list of things that needs to be done in each story before the **product owner** can propose it for a **sprint**. The list proposed here is the classic minimal definition of ready.*
 
 ## Impact
 
@@ -68,7 +68,7 @@ Prior to the meeting:
 
 - Set sprint goal.
 - Make sure the backlog is prioritized.
-- Make sure each story that is a candidate for next sprint is [ready](../team-agreements/definition-of-ready/readme.md).
+- Make sure each story that is a candidate for next sprint is [ready](../team-agreements/definition-of-ready.md).
 
 During the meeting:
 
@@ -81,5 +81,5 @@ During the meeting:
 Other considerations:
 
 - Take into account off days (vacations, national holidays, unavailability).
-- When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different work streams. This might require thinking about [scrum of scrums](../scrum-of-scrums/readme.md) and all related ceremonies.
+- When the backlog reaches a size that makes it difficult to manage by one team, you might want to split into different work streams. This might require thinking about [scrum of scrums](../scrum-of-scrums.md) and all related ceremonies.
 - For Azure DevOps, leverage the [Sprint Goal](https://marketplace.visualstudio.com/items?itemName=keesschollaart.sprint-goal&targetId=e254bbbe-45a2-4344-9bbd-c4ba47e66719&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension to display the goal in the tab-label on every page within the sprint.

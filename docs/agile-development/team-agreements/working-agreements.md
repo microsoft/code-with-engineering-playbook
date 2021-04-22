@@ -21,7 +21,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 ## Communication
 
 - We communicate all information relevant to the team through the Project Teams channel
-- We add all [technical spikes](../../../design-reviews/recipes/technical-spike.md), [trade studies](../../../design-reviews/trade-studies/readme.md), and other technical documentation to the project repository through [async design reviews in PRs](../../../design-reviews/recipes/async-design-reviews.md)
+- We add all [technical spikes](../../design-reviews/recipes/technical-spike.md), [trade studies](../../design-reviews/trade-studies/readme.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design-reviews/recipes/async-design-reviews.md)
 
 ## Work life balance
 
@@ -32,26 +32,26 @@ their own, and adjust times, communication channels, branch naming policies etc.
 
 ## Quality and not quantity
 
-- We agree on a [Definition of Done](../definition-of-done/readme.md) for our user story's and sprints and live by it.
+- We agree on a [Definition of Done](definition-of-done.md) for our user story's and sprints and live by it.
 - We follow engineering best practices like the [Code With Engineering Playbook](https://github.com/microsoft/code-with-engineering-playbook)
 
 ## Scrum rhythm
 
 | Activity | When | Duration | Who | Accountable | Goal |
 |-|-|-|-|-|-|
-| [Project Standup](../../stand-ups/readme.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
+| [Project Standup](../stand-ups/readme.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
 | Sprint Demo | Monday 9AM | 1 hour | Everyone | Dev Lead | Present work done and sign off on user story completion |
-| [Sprint Retro](../../retrospectives/readme.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
-| [Sprint Planning](../../sprint-planning/readme.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
+| [Sprint Retro](../retrospectives.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
+| [Sprint Planning](../sprint-planning/readme.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
 | Task Creation | After Sprint Planning | - | Dev Team | Dev Lead | Create tasks to clarify and determine velocity |
-| [Backlog refinement](../../backlog-management/backlog-refinement.md) | Wednesday 2PM | 1 hour | Dev Lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
+| [Backlog refinement](../backlog-management/backlog-refinement.md) | Wednesday 2PM | 1 hour | Dev Lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
 
 ## Process Lead
 
 The Process Lead is responsible for leading any scrum or agile practices to enable the project to move forward.
 
 - Facilitate standup meetings and hold team accountable for attendance and participation.
-- Keep the meeting moving as described in the [Project Standup](../../stand-ups/readme.md) page.
+- Keep the meeting moving as described in the [Project Standup](../stand-ups/readme.md) page.
 - Make sure all action items are documented and ensure each has an owner and a due date and tracks the open issues.
 - Notes as needed after planning / stand-ups.
 - Make sure that items are moved to the parking lot and ensure follow-up afterwards.
@@ -64,11 +64,11 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 
 ## Backlog management
 
-- We work together on a [Definition of Ready](../definition-of-ready/readme.md) and all user stories assigned to a sprint need to follow this
+- We work together on a [Definition of Ready](definition-of-ready.md) and all user stories assigned to a sprint need to follow this
 - We communicate what we are working on through the board
 - We assign ourselves a task when we are ready to work on it (not before) and move it to active
 - We capture any work we do related to the project in a user story/task
-- We close our tasks/user stories only when they are done (as described in the [Definition of Done](../definition-of-done/readme.md))
+- We close our tasks/user stories only when they are done (as described in the [Definition of Done](definition-of-done.md))
 - We work with the PM if we want to add a new user story to the sprint
 - If we add new tasks to the board, we make sure it matches the acceptance criteria of the user story (to avoid scope creep).
   If it doesn't match the acceptance criteria we should discuss with the PM to see if we need a new user story for the task or if we should adjust the acceptance criteria.
@@ -80,4 +80,4 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 - All PRs are reviewed by one person from [Customer/Partner Name] and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
-- We treat documentation as code and apply the same [standards to Markdown](../../../code-reviews/recipes/Markdown.md) as code
+- We treat documentation as code and apply the same [standards to Markdown](../../code-reviews/recipes/Markdown.md) as code
