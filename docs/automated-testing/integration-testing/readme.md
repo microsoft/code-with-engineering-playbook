@@ -16,7 +16,7 @@ Integration testing is done by the developer or QA tester. In the past, integrat
 
 ## Applying Integration Testing
 
-Prior to writing integration tests, the engineers must identify the different components of the system and their intended behaviors and inputs and outputs. The architecture of the project must be fully documented or specified somewhere that can be readily referenced (e.g., the architecture diagram).
+Prior to writing integration tests, the engineers must identify the different components of the system, and their intended behaviors and inputs and outputs. The architecture of the project must be fully documented or specified somewhere that can be readily referenced (e.g., the architecture diagram).
 
 There are two main techniques for integration testing.
 
@@ -48,7 +48,7 @@ A third approach known as the sandwich or hybrid model combines the bottom up an
 
 There is a tradeoff a developer must make between integration test code coverage and engineering cycles. With mock dependencies, test data, and multiple environments at test, too many integration tests are infeasible to maintain and become increasingly less meaningful. Too much mocking will slow down the test suite, make scaling difficult, and may be a sign the developer should consider other tests for the scenario such as acceptance or E2E.
 
-Integration tests of complex systems require high maintenance. Avoid testing business logic in integration tests by keeping test suites separate. Do not test beyond the acceptance criteria of the task and be sure to clean up any resources created for a given test. Additionally, avoid writing tests in a production environment. Instead write them in a scaled-down copy environment.
+Integration tests of complex systems require high maintenance. Avoid testing business logic in integration tests by keeping test suites separate. Do not test beyond the acceptance criteria of the task and be sure to clean up any resources created for a given test. Additionally, avoid writing tests in a production environment. Instead, write them in a scaled-down copy environment.
 
 ## Integration Testing Frameworks and Tools
 

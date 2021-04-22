@@ -16,10 +16,12 @@ type of testing; a unit test should be:
 It is no secret that writing unit tests is hard, and even harder to write well. Writing unit tests also increases the
 development time for every feature. So why should we write them?
 
-- Reduces costs by catching bugs earlier and preventing regressions
-- Increases developer confidence in changes
-- Speeds up developer inner loop
-- Documentation as code
+Unit tests
+
+- reduce costs by catching bugs earlier and preventing regressions
+- increase developer confidence in changes
+- speed up the developer inner loop
+- act as documentation as code
 
 For more details, see all the [detailed descriptions of the points above](./why-unit-tests.md).
 
@@ -28,12 +30,12 @@ For more details, see all the [detailed descriptions of the points above](./why-
 Unit testing is the lowest level of testing and as such generally has few components and dependencies.
 
 The **system under test** (abbreviated SUT) is the "unit" we are testing. Generally these are methods or functions, but
-depending on the language these could be different. In general you want the unit to be as small as possible though.
+depending on the language these could be different. In general, you want the unit to be as small as possible though.
 
 Most languages also have a wide suite of **unit testing frameworks** and test runners. These test frameworks have
 a wide range of functionality, but the base functionality should be a way to organize your tests and run them quickly.
 
-Finally there is your **unit test code**; unit test code is generally short and simple, preferring repetition to adding
+Finally, there is your **unit test code**; unit test code is generally short and simple, preferring repetition to adding
 layers and complexity to the code.
 
 ## Applying the Unit Testing
@@ -48,13 +50,13 @@ These are some commonly used techniques that will help when authoring unit tests
 using [abstraction and dependency injection to author a unit test](authoring_example.md), or how to do [test-driven development](tdd_example.md).
 
 Note that some of these techniques are more specific to strongly typed, object-oriented languages. Functional languages
-and scripting languages have similar techniques that may look different but these terms are commonly used in all unit
+and scripting languages have similar techniques that may look different, but these terms are commonly used in all unit
 testing examples.
 
 #### Abstraction
 
-Abstraction is when we take an exact implementation detail and we generalize it into a concept instead. This technique
-can be used in creating testable design and is used often especially in object oriented languages. For unit tests,
+Abstraction is when we take an exact implementation detail, and we generalize it into a concept instead. This technique
+can be used in creating testable design and is used often especially in object-oriented languages. For unit tests,
 abstraction is commonly used to break a hard dependency and replace it with an abstraction. That abstraction then allows
 for greater flexibility in the code and allows for the a [mock or simulator](mocking.md) to be used in its place.
 
@@ -82,7 +84,7 @@ control](https://martinfowler.com/articles/injection.html#InversionOfControl).
 One of the [downsides of dependency injection](https://en.wikipedia.org/wiki/Dependency_injection#Disadvantages) is that
 it can easily go overboard. While there are no longer hard dependencies, there is still coupling between the interfaces,
 and passing around every interface implementation into every class presents just as many downsides as not using
-Dependency Injection. Being intentional with what dependencies get injected to what classes is key to a maintainable
+Dependency Injection. Being intentional with what dependencies get injected to what classes, is key to developing a maintainable
 system.
 
 Many languages include special Dependency Injection frameworks that take care of the boilerplate code and construction
@@ -141,7 +143,7 @@ Unit tests should be short and test only one thing. This makes it easy to diagno
 needing something like which line number the test failed at. When using [Arrange/Act/Assert](#arrangeactassert), think
 of it like testing just one thing in the "Act" phase.
 
-There is some disagreement on whether or not testing one thing means "assert one thing" or "test one state, with
+There is some disagreement on whether testing one thing means "assert one thing" or "test one state, with
 multiple asserts if needed". Both have their advantages and disadvantages, but as with most technical disagreements
 there is no "right" answer. Consistency when writing your tests one way or the other is more important!
 
@@ -169,10 +171,10 @@ Some common pitfalls when writing a unit test that are important to avoid:
 - Reading from disk - It can be really tempting to the expected value of a function return in a file and read that file
   to compare the results. This creates a dependency with the system drive, and it breaks our tenet of keeping our unit
   tests isolated and 100% reliable. Any outside dependency such as file system access could potentially cause
-  intermittent failures. Additionally this could be a sign that perhaps the test or unit under test is too complex and
+  intermittent failures. Additionally, this could be a sign that perhaps the test or unit under test is too complex and
   should be simplified.
-- Calling third-party APIs - When you do not control a third-party library that you are calling into, its impossible to
-  know for sure what that is doing, and it is best to abstract it out. Otherwise you may be making REST calls or other
+- Calling third-party APIs - When you do not control a third-party library that you are calling into, it's impossible to
+  know for sure what that is doing, and it is best to abstract it out. Otherwise, you may be making REST calls or other
   potential areas of failure without directly writing the code for it. This is also generally a sign that the design of
   the system is not entirely testable. It is best to wrap third party API calls in interfaces or other structures so
   that they do not get invoked in unit tests.
@@ -182,7 +184,7 @@ Some common pitfalls when writing a unit test that are important to avoid:
 ### Test Frameworks
 
 Unit test frameworks are constantly changing. For a full list of every unit testing framework [see the page on
-Wikipedia](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks). Frameworks have many different features and
+Wikipedia](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks). Frameworks have many features and
 should be picked based on which feature-set fits best for the particular project.
 
 ### Mock Frameworks

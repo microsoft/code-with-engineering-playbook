@@ -3,7 +3,7 @@
 
 ## Why collaboration is important
 
-In engagements we aim to be highly collaborative because when we code together, we perform better, have a higher sprint velocity, and have a greater degree of knowledge sharing across the team.
+In engagements, we aim to be highly collaborative because when we code together, we perform better, have a higher sprint velocity, and have a greater degree of knowledge sharing across the team.
 
 There are two common patterns we use for collaboration: Pairing and swarming.
 
@@ -31,8 +31,8 @@ Pair programming helps collaboration because both engineers share equal responsi
 
 Some other benefits include:
 
-- Less defects and increased accountability. Having two sets of eyes allows the engineers more opportunity to catch errors and to remember often-overlooked tasks such as writing unit and integration tests.
-- Allows engineers with different experience and expertise to learn from one another by collaborating and receiving feedback in real-time. Instead of having an engineer work alone on a task for long hours and hit an isolation breaking point, pairing allows the pair to check in with one another.
+- Fewer defects and increased accountability. Having two sets of eyes allows the engineers more opportunity to catch errors and to remember often-overlooked tasks such as writing unit and integration tests.
+- Pairing allows engineers with different experience and expertise to learn from one another by collaborating and receiving feedback in real-time. Instead of having an engineer work alone on a task for long hours and hit an isolation breaking point, pairing allows the pair to check in with one another.
 - Even something as simple as describing the problem out loud can help uncover issues or bugs in the code.
 - Pairing can help brainstorming as well as validating details such as making the variable names consistent.
 
@@ -62,7 +62,7 @@ As soon the pair finds out that the PBI will warrant swarming, the pair brings i
 
 ## When to decide to swarm, pair, and/or split
 
-- While a lot of time can be spent on pair programming, it does make sense to split the work when folks understand how the work will be carried out and the work to be done is largely prescriptive.
+- While a lot of time can be spent on pair programming, it does make sense to split the work when folks understand how the work will be carried out, and the work to be done is largely prescriptive.
 - Once the story has been jointly tasked out by both engineers, the engineers may choose to tackle some tasks separately and then combine the work together at the end.
 - Pair programming is more helpful when the engineers do not have perfect clarity about what is needed to be done or how it can be done.
 - Swarming is done when the two engineers assigned to the story need an additional sounding board or need expertise that other team members could provide.

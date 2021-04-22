@@ -2,19 +2,19 @@
 
 End-to-end (E2E) testing is a Software testing methodology to test a functional and data application flow consisting of several sub-systems working together from  start to end.
 
-At times, these systems are developed in different technologies by different teams or organizations. Finally, they come together to form a functional business application.  Hence, testing a single system would not suffice. Therefore, end to end testing verifies the application from start to end putting all its components together.
+At times, these systems are developed in different technologies by different teams or organizations. Finally, they come together to form a functional business application.  Hence, testing a single system would not suffice. Therefore, end-to-end testing verifies the application from start to end putting all its components together.
 
 ![End to End Testing](./images/e2e-testing.png)
 
 ## Why E2E Testing [The Why]
 
-In many commercial software application scenarios, a modern software system comprises of its interconnection with multiple sub-systems. These sub-systems can be within the same organization or can be components of different organizations. Also, these sub-systems can have somewhat similar or different lifetime release cycle from the current system. As a result, if there is any failure or fault in any sub-system, it can adversely affect the whole software system leading to its collapse.
+In many commercial software application scenarios, a modern software system consists of its interconnection with multiple sub-systems. These sub-systems can be within the same organization or can be components of different organizations. Also, these sub-systems can have somewhat similar or different lifetime release cycle from the current system. As a result, if there is any failure or fault in any sub-system, it can adversely affect the whole software system leading to its collapse.
 
 ![E2E Testing Pyramid](./images/testing-pyramid.png)
 
 The above illustration is a testing pyramid from [Kent C. Dodd’s blog](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c) which is a combination of the pyramids from [Martin Fowler’s blog](https://martinfowler.com/bliki/TestPyramid.html) and the [Google Testing Blog](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html).
 
-The majority of your tests are at the bottom of the pyramid. As you move up the pyramid, the number of tests gets smaller. Also, going up the pyramid, tests get slower and more expensive to write, run, and maintain. Each type of testing vary for its purpose, application and the areas it suppose to cover. For more information on comparison analysis of different testing types, please see this [## Unit vs Integration vs System vs E2E Testing](../readme.md) document.
+The majority of your tests are at the bottom of the pyramid. As you move up the pyramid, the number of tests gets smaller. Also, going up the pyramid, tests get slower and more expensive to write, run, and maintain. Each type of testing vary for its purpose, application and the areas it's supposed to cover. For more information on comparison analysis of different testing types, please see this [## Unit vs Integration vs System vs E2E Testing](../readme.md) document.
 
 ## E2E Testing Design Blocks [The What]
 
@@ -26,7 +26,7 @@ We will look into all the 3 categories one by one:
 
 Following actions should be performed as a part of building user functions:
 
-- List user initiated functions of the software systems and their interconnected sub-systems.
+- List user initiated functions of the software systems, and their interconnected sub-systems.
 - For any function, keep track of the actions performed as well as Input and Output data.
 - Find the relations, if any between different Users functions.
 - Find out the nature of different user functions i.e. if they are independent or are reusable.
@@ -42,7 +42,7 @@ Following activities should be performed as a part of building conditions based 
 
 Following factors should be considered for building test cases:
 
-- For every scenario, one or more test cases should be created to test each and every functionality of the user functions. If possible, these test cases should be automated thru the standard CI/CD build pipeline processes with the track of each successful and failed build in AzDO.
+- For every scenario, one or more test cases should be created to test each and every functionality of the user functions. If possible, these test cases should be automated through the standard CI/CD build pipeline processes with the track of each successful and failed build in AzDO.
 - Every single condition should be enlisted as a separate test case.
 
 ## Applying the E2E testing [The How]
@@ -64,7 +64,7 @@ E2E testing is done with the following steps:
 ### Pre-requisite
 
 - System Testing should be complete for all the participating systems.
-- All subsystems should be combined together to work as a complete application.
+- All subsystems should be combined to work as a complete application.
 - Production like test environment should be ready.
 
 ### Test Execution
@@ -82,12 +82,12 @@ E2E testing is done with the following steps:
 
 ### Test Metrics
 
-The tracing the quality metrics gives insight about the current status of testing. Some of the common metrics of E2E testing are:
+The tracing the quality metrics gives insight about the current status of testing. Some common metrics of E2E testing are:
 
 - **Test case preparation status**: Number of test cases ready versus the total number of test cases.
 - **Frequent Test progress**: Number of test cases executed in the consistent frequent manner, e.g. weekly, versus a target number of the test cases in the same time period.
 - **Defects Status**: This metric represents the status of the defects found during testing. Defects should be logged into defect tracking tool (e.g. AzDO backlog) and resolved as per their severity and priority. Therefore, the percentage of open and closed defects as per their severity and priority should be calculated to track this metric. The AzDO Dashboard Query can be used to track this metric.
-- **Test environment availability**: This metric tracks the duration of the test environment used for end to end testing versus its scheduled allocation duration.
+- **Test environment availability**: This metric tracks the duration of the test environment used for end-to-end testing versus its scheduled allocation duration.
 
 ## E2E Testing Frameworks and Tools
 
@@ -95,10 +95,10 @@ The tracing the quality metrics gives insight about the current status of testin
 
 ![Gauge Framework](./images/gauge.jpg)
 
-Gauge is a free and open source framework for writing and running E2E tests. Some of the key features of Gauge that makes it unique include:
+Gauge is a free and open source framework for writing and running E2E tests. Some key features of Gauge that makes it unique include:
 
 - Simple, flexible and rich syntax based on Markdown.
-- Consistent cross platform/language support for writing test code.
+- Consistent cross-platform/language support for writing test code.
 - A modular architecture with plugins support.
 - Supports data driven execution and external data sources.
 - Helps you create maintainable test suites.
@@ -113,7 +113,7 @@ Gauge is a free and open source framework for writing and running E2E tests. Som
 
 Robot Framework is a generic open source automation framework. The framework has easy syntax, utilizing human-readable keywords. Its capabilities can be extended by libraries implemented with Python or Java.
 
-Robot shares a lot of the same "pros" as Gauge, with the exception of the developer tooling and the syntax. In our usage, we found the VS Code Intellisense offered with Gauge to be much more stable than the offerings for Robot. We also found the syntax to be less readable than what Gauge offered. While both frameworks allow for markup based test case definitions, the Gauge syntax reads much more like an English sentence than Robot. Finally, Intellisense is baked into the markup files for Gauge test cases, which will create a function stub for the actual test definition if the developer allows it. The same cannot be said of the Robot Framework.
+Robot shares a lot of the same "pros" as Gauge, except the developer tooling and the syntax. In our usage, we found the VS Code Intellisense offered with Gauge to be much more stable than the offerings for Robot. We also found the syntax to be less readable than what Gauge offered. While both frameworks allow for markup based test case definitions, the Gauge syntax reads much more like an English sentence than Robot. Finally, Intellisense is baked into the markup files for Gauge test cases, which will create a function stub for the actual test definition if the developer allows it. The same cannot be said of the Robot Framework.
 
 [Robot Framework Website](https://robotframework.org/#introduction)
 
@@ -123,7 +123,7 @@ Robot shares a lot of the same "pros" as Gauge, with the exception of the develo
 
 TestCraft is a codeless Selenium test automation platform. Its revolutionary AI technology and unique visual modeling allow for faster test creation and execution while eliminating test maintenance overhead.
 
-The testers create fully automated test scenarios without coding. Customers find bugs faster, release more frequently, integrate with the CI/CD approach and improve the overall quality of their digital products. This all creates a complete end to end testing experience.
+The testers create fully automated test scenarios without coding. Customers find bugs faster, release more frequently, integrate with the CI/CD approach and improve the overall quality of their digital products. This all creates a complete end-to-end testing experience.
 
 [TestCraft Website](https://www.testcraft.io/?utm_campaign=SoftwareTestingHelp%20&utm_source=SoftwareTestingHelp&utm_medium=EndtoEndTestingPage) or get it  from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=testcraft.build-release-task)
 
@@ -131,7 +131,7 @@ The testers create fully automated test scenarios without coding. Customers find
 
 ![Ranorex Studio](./images/ranorex-studio2.png)
 
-**Ranorex Studio** is a complete end-to-end test automation tool for desktop, web, and mobile applications. Create reliable tests fast without any coding at all, or using the full IDE. Use external CSV or Excel files or a SQL database as inputs to your tests.
+**Ranorex Studio** is a complete end-to-end test automation tool for desktop, web, and mobile applications. Create reliable tests fast without any coding at all, or using the full IDE. Use external CSV or Excel files, or a SQL database as inputs to your tests.
 
 Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ranorex Studio integrates with your CI/CD process to shorten your release cycles without sacrificing quality.
 

@@ -59,7 +59,7 @@ Much like [Synthetic Monitoring Tests](../synthetic-monitoring-tests/readme.md),
 
 Fault injection tests rely on metrics observability and are usually statistical; The following high-level steps provide a sample of practicing fault injection and chaos engineering:
 
-* Measure and define a steady (healthy) state for the system's operability.
+* Measure and define a steady (healthy) state for the system's interoperability.
 * hypothesize based on a fault mode.
 * Introduce real-world fault-events to the system.
 * Measure the state and compare it to the baseline state.
@@ -73,7 +73,7 @@ A test can either succeed or fail. In the event of failure, there will likely be
 
 * Run tests in a non-production environment first. Understand how the system behaves in a safe environment, using synthetic workload, before introducing potential risk to customer traffic.
 * Use fault injection as gates in different stages through the CD pipeline.
-* Deploy and test on Blue/Green and Canary deployments. Use methods such as traffic shadowing (a.k.a [Dark Traffic](https://cloud.google.com/blog/products/gcp/cre-life-lessons-what-is-a-dark-launch-and-what-does-it-do-for-me)) to get customer traffic to the staging slot.
+* Deploy and test on Blue/Green and Canary deployments. Use methods such as traffic shadowing (a.k.a. [Dark Traffic](https://cloud.google.com/blog/products/gcp/cre-life-lessons-what-is-a-dark-launch-and-what-does-it-do-for-me)) to get customer traffic to the staging slot.
 * Strive to achieve a balance between collecting actual result data while affecting as few production users as possible.
 * Use defensive design principles such as circuit breaking and the bulkhead patterns.
 * Agreed on a budget (in terms of Service Level Objective (SLO)) as an investment in chaos and fault injection.
@@ -107,5 +107,5 @@ Fault injection is a powerful tool and should be used with caution. Cases such a
 * [Cindy Sridharan's Testing in production blog post cont.](https://medium.com/@copyconstruct/testing-in-production-the-hard-parts-3f06cefaf592)
 * [Fault injection in Azure Search](https://azure.microsoft.com/es-es/blog/inside-azure-search-chaos-engineering/)
 * [Azure Architecture Framework - Chaos engineering](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering)
-* [Azure Architecture Framework - Testing reslience](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/testing)
+* [Azure Architecture Framework - Testing resilience](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/testing)
 * [Landscape of Software Failure Cause Models](https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models)

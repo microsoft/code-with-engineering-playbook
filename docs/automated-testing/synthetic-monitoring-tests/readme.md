@@ -68,7 +68,7 @@ Synthetic monitoring does not replace the need for RUM. Probes are predictable c
 
 Testing in production, in general, has a risk factor attached to it, which does not exist tests executed during CI/CD stages. Specifically, in synthetic monitoring tests, the following may affect the production environment:
 
-- Corrupted or invalid data - Tests inject test data which may be in some way corrupt. Consider using a testing schema.
+- Corrupted or invalid data - Tests inject test data which may be in some ways corrupt. Consider using a testing schema.
 - Protected data leakage - Tests run in a production environment and emit logs or trace that may contain protected data.
 - Overloaded systems - Synthetic tests may cause errors or overload the system.
 - Unintended side effects or impacts on other production systems.

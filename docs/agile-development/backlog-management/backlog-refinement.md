@@ -10,13 +10,13 @@ What are the intended outcomes of the ceremonies?
 
 What members of the team should participate?
 
-Ideally all of the team members could participate. This is an ongoing process in which the Product Owner and the Development Team collaborate on the details of Product Backlog items.
+Ideally all the team members could participate. This is an ongoing process in which the Product Owner and the Development Team collaborate on the details of Product Backlog items.
 
 ## Impact
 
 What positive impact has been observed as a result of this practice?
 
-The intent of backlog refinement is to ensure that the backlog keeps updating with items that are appropriate to their priority, i.e. higher priority items are with more details than lower priority ones. Also it is important that at any time there are enough user stories ready for planning in the next or even, where reasonable, the next two or three iterations but not too much further.
+The intent of backlog refinement is to ensure that the backlog keeps updating with items that are appropriate to their priority, i.e. higher priority items are with more details than lower priority ones. Also, it is important that at any time there are enough user stories ready for planning in the next or even, where reasonable, the next two or three iterations but not too much further.
 
 ## Measures
 
@@ -32,11 +32,11 @@ How might one go about running the ceremony? Is there a general pattern that the
 - Process Lead: ensure the timebox.
 - Team members: ask questions and request additional details on the backlog if needed.
 
-Make sure that the team does not focus on how to implement the items. Instead the the Product Owner and Team discuss the goals and context for these high - priority items on the Product Backlog, providing the Team with insight into the Product Owner’s thinking.
+Make sure that the team does not focus on how to implement the items. Instead, the Product Owner and Team discuss the goals and context for these high - priority items on the Product Backlog, providing the Team with insight into the Product Owner’s thinking.
 
 ## Useful Links
 
-- Always try and delivery in [Minimal Slices](minimal-slices.md)
+- Always try and deliver in [Minimal Slices](minimal-slices.md)
 - [Backlog Refinement: Who Should Attend and How to Maximize Value](https://www.mountaingoatsoftware.com/blog/backlog-grooming-who-should-attend-and-how-to-maximize-value#:~:text=A%20good%20rule%20of%20thumb,may%20be%20able%20to%20participate)
 - [You're doing backlog refinement wrong. Here's how to do it less wrong](https://clubhouse.io/blog/how-to-do-backlog-refinement-less-wrong/)
 - [multi team backlog refinement](https://www.scrum.org/resources/blog/multi-team-backlog-refinement)

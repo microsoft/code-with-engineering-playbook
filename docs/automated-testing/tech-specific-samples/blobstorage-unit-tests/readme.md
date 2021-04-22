@@ -12,7 +12,7 @@ To emulate a local Azure Blob Storage, we can use [Azure Storage Emulator](https
 
 Some differences in functionality exist between the Storage Emulator and Azure storage services. For more information about these differences, see the [Differences between the Storage Emulator and Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator#differences-between-the-storage-emulator-and-azure-storage).
 
-There are several different ways to install and run Azurite on your local system as listed [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-azurite-by-using-npm). In this document we will cover `Install and run Azurite using NPM` and `Install and run the Azurite Docker image`.
+There are several ways to install and run Azurite on your local system as listed [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-azurite-by-using-npm). In this document we will cover `Install and run Azurite using NPM` and `Install and run the Azurite Docker image`.
 
 ## 1. Install and run Azurite
 
@@ -93,7 +93,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
    ![connect blob](images/blob_storage_connection.png)
 
-1. Provide a Display name and port number, then your connection will be ready and you can use Storage Explorer to manage your local blob storage.
+1. Provide a Display name and port number, then your connection will be ready, and you can use Storage Explorer to manage your local blob storage.
 
    ![attach to local](images/blob_storage_connection_attach.png)
 

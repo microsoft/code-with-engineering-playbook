@@ -1,6 +1,6 @@
 # Sections of a working agreement
 
-A working agreement is a document or a set of documents that describe how we work together as a team and what our
+A working agreement is a document, or a set of documents that describe how we work together as a team and what our
 expectations and principles are.
 
 The working agreement created by the team at the beginning of the project, and is stored in the repository so that it is
@@ -23,7 +23,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 - We communicate all information relevant to the team through the Project Teams channel
 - We add all [technical spikes](../../design-reviews/recipes/technical-spike.md), [trade studies](../../design-reviews/trade-studies/readme.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design-reviews/recipes/async-design-reviews.md)
 
-## Work life balance
+## Work-life balance
 
 - Our office hours, when we can expect to collaborate via Microsoft Teams, phone or face-to-face are Monday to Friday 10AM - 5PM
 - We are not expected to answer emails past 6PM, on weekends or when we are on holidays or vacation.
@@ -75,7 +75,7 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 
 ## Code management
 
-- We follow the git flow branch naming convention for branches and identify the task number eg. `feature/123-add-working-agreement`
+- We follow the git flow branch naming convention for branches and identify the task number e.g. `feature/123-add-working-agreement`
 - We merge all code into main branches through PRs
 - All PRs are reviewed by one person from [Customer/Partner Name] and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
 - We always review existing PRs before starting work on a new task

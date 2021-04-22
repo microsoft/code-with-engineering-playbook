@@ -17,7 +17,7 @@ UI testing provides the ability to ensure that users have a consistent visual us
 
 ## Evidence and Measures
 
-Integrating UI Tests in to your CI/CD is necessary but more challenging than unit tests.  The increased challenge is that UI tests either need to run headlessly with something like [Puppeteer](https://github.com/puppeteer/puppeteer) or there needs to be more extensive orchestration with Azure DevOps or Github that would handle the full testing integration for you like [BrowserStack](https://www.browserstack.com/automate/azure)
+Integrating UI Tests in to your CI/CD is necessary but more challenging than unit tests.  The increased challenge is that UI tests either need to run headlessly with something like [Puppeteer](https://github.com/puppeteer/puppeteer) or there needs to be more extensive orchestration with Azure DevOps or GitHub that would handle the full testing integration for you like [BrowserStack](https://www.browserstack.com/automate/azure)
 
 Integrations like `BrowserStack` are nice since they provide Azure DevOps reports as part of the test run.
 
@@ -27,7 +27,7 @@ If you're using an Azure DevOps pipeline to run UI tests, consider using a [self
 
 ## General Guidance
 
-The scope of UI testing should be strategic. UI tests can take a significant amount of time to both implement and run, and it challenging to test every possibility of user interaction in a production application due to the large possible number of possible interactions.
+The scope of UI testing should be strategic. UI tests can take a significant amount of time to both implement and run, and it's challenging to test every type of user interaction in a production application due to the large number of possible interactions.
 
 Designing the UI tests around the functional tests makes sense.  For example, given an input form, a UI test would ensure that the visual representation is consistent across devices, is accessible and interactable, and is consistent across code changes.
 
@@ -48,7 +48,7 @@ Good UI tests follow a few general principles:
 
 UI Testing can get very challenging at the lower level, especially with a testing framework like Selenium.  If you choose to go this route, then you'll likely encounter timeouts, missing elements, and you'll have significant friction with the testing framework itself.  Due to many issues with UI testing there have been a number of free and paid solutions that help alleviate certain issues with frameworks like Selenium.  This is why you'll find Cypress in the recommended frameworks as it solves many of the known issues with Selenium.
 
-This is an important point though.  Depending on the UI testing framework you choose will result in either a smoother test creation experience, or a very frustrating and time consuming one.  If you were to choose just Selenium the development costs and time costs would likely be very high.  It's better to use either a framework built on top of Selenium or one that attempts to solve many of the problems with something like Selenium.
+This is an important point though.  Depending on the UI testing framework you choose will result in either a smoother test creation experience, or a very frustrating and time-consuming one.  If you were to choose just Selenium the development costs and time costs would likely be very high.  It's better to use either a framework built on top of Selenium or one that attempts to solve many of the problems with something like Selenium.
 
 Note there that there are further considerations as when running headlessly the UI can render differently than what you may see on your development machine, particularly with web applications.  Furthermore, note that when rendering in different page dimensions elements may disappear on the page due to CSS rules, therefore not be selectable by certain frameworks with default options out of the box.  All of these issues can be resolved and worked around, but the rendering demonstrates another particular challenge of UI testing.
 

@@ -33,7 +33,7 @@ There are a number of basic component which are required to carry out a load tes
 
 ### Execution
 
-It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios as well as how to execute those at load. It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.
+It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios and how to execute those at load. It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.
 
 You should also consider the origin of your load test traffic. Depending on the scope of the target system you may want to initiate from a different location to better replicate real world traffic such as from a different region.
 
@@ -50,7 +50,7 @@ After completing your load test you should be set up to continue on to additiona
 
 ## Load Testing Frameworks and Tools
 
-Here are a few popular load testing frameworks you may consider and the languages used to define your scenarios.
+Here are a few popular load testing frameworks you may consider, and the languages used to define your scenarios.
 
 - **JMeter** (<https://github.com/apache/jmeter>) - Has built in patterns to test without coding, but can be extended with Java.
 - **Artillery** (<https://artillery.io/>) - Write your scenarios in Javascript, executes a node application.

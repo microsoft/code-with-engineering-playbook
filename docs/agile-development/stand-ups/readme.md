@@ -18,7 +18,7 @@ The participation in the parking lot discussion is optional for all members exce
 
 ## Goals
 
-1. Bring awareness of the progress done towards the sprint goal and the sprint backlog.
+1. Bring awareness of the progress done towards the sprint goal, and the sprint backlog.
 2. Surface any impediments to one or more team members' contributions.
 3. Maintain contact between remote team members to reduce social barriers to collaboration.
 
@@ -72,9 +72,9 @@ The Process Lead should facilitate the stand-up meeting.
 When answering what was worked on and what will be worked on, refer directly to tasks. This has two benefits:
 
 1. The answer will naturally be short (e.g. "I finished task 114 yesterday; which was to update the build of the api container image. I will be starting on task 115 today; which is to update the release pipeline for the same container image.").
-2. Unplanned work will be easily identifiable. If the person is unable to refer to a task, that typically indicates they are working on something unplanned or out of scope for the sprint (e.g. Yesterday, I was attempting to optimize some of the unit tests from last sprint to run faster).
+2. Unplanned work will be easily identifiable. If the person is unable to refer to a task, that typically indicates they are working on something unplanned or out of scope for the sprint (e.g. Yesterday, I was attempting to optimize some unit tests from last sprint to run faster).
 
-If a contributor is not working on an existing sprint task they need to either create a new task under an existing sprint story to reflect that work, or defer that work until its scheduled for a later sprint.
+If a contributor is not working on an existing sprint task they need to either create a new task under an existing sprint story to reflect that work, or defer that work until it's scheduled for a later sprint.
 
 > If a contributor provides an update without referring to a task, ask the contributor which task.
 
@@ -88,7 +88,7 @@ Ensure discussion leaders call out necessary parties for their discussion points
 
 ### Social question
 
-Teams are frequently geographically distributed and include members who have not worked on projects together previously. Social interactions facilitate the development of trust between team members and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question and a list of starter questions are available within the [social question readme](social-question.md).
+Teams are frequently geographically distributed and include members who have not worked on projects together previously. Social interactions facilitate the development of trust between team members and lower the barriers to collaboration. A social question-of-the-day that has a one-sentence answer contributes to trust development over the course of many stand-ups, with a minimal additional time commitment. The answer to the social question should be brief and follow the project questions answer. The facilitator may choose the social question or take a suggestion from the room. Description of what makes a good question, and a list of starter questions are available within the [social question readme](social-question.md).
 
 ### Start On Time
 

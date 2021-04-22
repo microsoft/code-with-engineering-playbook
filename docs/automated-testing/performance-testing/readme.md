@@ -45,7 +45,7 @@ Performance testing is commonly conducted to accomplish one or more the followin
   
 ### Plan and design the tests
   
-  In general we need to consider the following points:
+  In general, we need to consider the following points:
 
 * Defining the load the application would be tested with
 * Establishing the metrics to be collected
@@ -58,9 +58,9 @@ Performance testing is commonly conducted to accomplish one or more the followin
 
 ### Result analysis and re-testing
 
-* The test are executed, the results are collected and the environments are monitored
+* The test are executed, the results are collected, and the environments are monitored
 * The results are analysed
-* Depending on the scenario, modification of application or configuration are done and testing cycle is repeated again.
+* Depending on the scenario, modification of application or configuration are done and testing cycle is repeated.
 
 ## Resources
 
