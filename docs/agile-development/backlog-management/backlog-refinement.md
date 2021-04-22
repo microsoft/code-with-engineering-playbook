@@ -36,7 +36,7 @@ Make sure that the team does not focus on how to implement the items. Instead th
 
 ## Useful Links
 
-- Always try and delivery in [Minimal Slices](../minimal-slices.md)
+- Always try and delivery in [Minimal Slices](minimal-slices.md)
 - [Backlog Refinement: Who Should Attend and How to Maximize Value](https://www.mountaingoatsoftware.com/blog/backlog-grooming-who-should-attend-and-how-to-maximize-value#:~:text=A%20good%20rule%20of%20thumb,may%20be%20able%20to%20participate)
 - [You're doing backlog refinement wrong. Here's how to do it less wrong](https://clubhouse.io/blog/how-to-do-backlog-refinement-less-wrong/)
 - [multi team backlog refinement](https://www.scrum.org/resources/blog/multi-team-backlog-refinement)

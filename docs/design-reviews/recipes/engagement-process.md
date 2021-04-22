@@ -12,11 +12,14 @@ The following guidelines outline how Microsoft and the customer together can inc
 
 ## Table of Contents
 
-- [Envisioning / Architecture Design Session (ADS)](#envisioning--architecture-design-session-ads)
-- [Sprint Planning](#sprint-planning)
-- [Sprint Backlog Refinement](#sprint-backlog-refinement)
-- [Sprint Retrospectives](#sprint-retrospectives)
-- [Wrap-up Sprints](#wrap-up-sprints)
+- [Incorporating Design Reviews into an Engagement](#incorporating-design-reviews-into-an-engagement)
+  - [Introduction](#introduction)
+  - [Table of Contents](#table-of-contents)
+  - [Envisioning / Architecture Design Session (ADS)](#envisioning--architecture-design-session-ads)
+  - [Sprint Planning](#sprint-planning)
+  - [Sprint Backlog Refinement](#sprint-backlog-refinement)
+  - [Sprint Retrospectives](#sprint-retrospectives)
+  - [Wrap-up Sprints](#wrap-up-sprints)
 
 ## Envisioning / Architecture Design Session (ADS)
 
@@ -44,7 +47,7 @@ Stories that will benefit from design reviews have one or more of the following 
 
 ## Sprint Backlog Refinement
 
-If you team is not already hosting a [Sprint Backlog Refinement](../../agile-development/backlog-management/refinement/readme.md) session at least once per week you should consider it.  It is a great opportunity to:
+If you team is not already hosting a [Sprint Backlog Refinement](../../agile-development/backlog-management/backlog-refinement.md) session at least once per week you should consider it.  It is a great opportunity to:
 
 1. Keep the backlog clean
 1. Re-prioritize work based on shifting business priorities

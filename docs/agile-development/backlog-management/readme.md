@@ -2,6 +2,6 @@
 
 ## Sections within Backlog Management
 
-* [Refinement](refinement/readme.md)
+* [Refinement](backlog-refinement.md)
 * [Minimal slices](minimal-slices.md)
 * [External feedback](external-feedback.md)
