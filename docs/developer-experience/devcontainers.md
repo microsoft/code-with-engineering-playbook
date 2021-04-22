@@ -2,7 +2,7 @@
 
 If you are a developer and have experience with Visual Studio Code (VS Code) or Docker, then it's probably time you look at [development containers](http://web.archive.org/web/20200806073925/https://code.visualstudio.com/docs/remote/containers) (dev containers). This readme is intended to assist developers in the decision-making process needed to build dev containers. The guidance provided should be especially helpful if you are experiencing VS Code dev containers for the first time.
 
-> NOTE: This guide is not about setting up a Docker file for deploying a running Python program for CI/CD.
+> **Note:** This guide is not about setting up a Docker file for deploying a running Python program for CI/CD.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ Development containers are a VS Code feature that allows developers to package a
 
 ![image](https://user-images.githubusercontent.com/10041279/93239062-e1b9a480-f747-11ea-94fb-3d50b14fd9b1.png)
 
-If the above diagram is not clear, a basic analogy that might help you intuitively understand dev containers is to think of them as a union between Docker's interactive mode (`docker exec -it 987654e0ff32`) and the VS Code UI experience that you are used to.
+If the above diagram is not clear, a basic analogy that might help you intuitively understand dev containers is to think of them as a union between Docker's interactive mode (`docker exec -it 987654e0ff32`), and the VS Code UI experience that you are used to.
 
 To set yourself up for the dev container experience described above, use your VS Code's Extension Marketplace to install the [Remote Development Extension Pack](http://web.archive.org/web/20200828150357/https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
 
@@ -26,7 +26,7 @@ VS Code dev containers have improved project collaboration between developers on
 - Inconsistent local developer experiences within a team.
 - Slow onboarding of developers joining a project.
 
-The problems listed above were addressed by configuring and then sharing a dev container definition. Dev containers are defined by their base image and the artifacts that support that base image. The base image and the artifacts that come with it live in the .devcontainer directory. This directory is where configuration begins. A central artifact to the dev container definition is a configuration file called `devcontainer.json`. This file orchestrates the artifacts needed to support the base image and the dev container lifecycle. Installation of the [Remote Development Extension Pack](http://web.archive.org/web/20200828150357/https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) is required to enable this orchestration within a project repo.
+The problems listed above were addressed by configuring and then sharing a dev container definition. Dev containers are defined by their base image, and the artifacts that support that base image. The base image and the artifacts that come with it live in the .devcontainer directory. This directory is where configuration begins. A central artifact to the dev container definition is a configuration file called `devcontainer.json`. This file orchestrates the artifacts needed to support the base image and the dev container lifecycle. Installation of the [Remote Development Extension Pack](http://web.archive.org/web/20200828150357/https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) is required to enable this orchestration within a project repo.
 
 All developers on the team are expected to share and use the dev container definition (.devcontainer directory) in order to spin-up a container. This definition provides consistent tooling for locally developing an application across a team.
 
@@ -73,5 +73,5 @@ Here are the final high-level steps it takes to build a dev container:
 
 1. Decide which platform you'd like to build a local development tool stack around.
 2. Browse the VS Code provided dev container gallery of project folders that target your platform and choose the most appropriate one.
-3. Inspect the dev container definitions (.devcontainer directory) of a project for the base image and the artifacts that support that base image.
+3. Inspect the dev container definitions (.devcontainer directory) of a project for the base image, and the artifacts that support that base image.
 4. Use what you've discovered to begin setting up the dev container as it is, extending it or building your own from scratch.

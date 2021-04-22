@@ -1,6 +1,6 @@
 # Developer Experience (DevEx)
 
-Developer experience refers to the how easy or difficult it is for a developer to perform essential tasks needed to implement a change. A positive developer experience would mean these tasks are relatively easy for the team (see measures below).
+Developer experience refers to how easy or difficult it is for a developer to perform essential tasks needed to implement a change. A positive developer experience would mean these tasks are relatively easy for the team (see measures below).
 
 The essential tasks are identified below.
 
@@ -9,7 +9,7 @@ The essential tasks are identified below.
 - Start - Launch end-to-end to simulate execution in a deployed environment.
 - Debug - Attach debugger to started solution, set breakpoints, step through code, and inspect variables.
 
-If effort is invested to make these activities as easy as possible, **the returns on that effort will be multiply the longer the project runs and the larger the team**.
+If effort is invested to make these activities as easy as possible, **the returns on that effort will increase the longer the project runs, and the larger the team is**.
 
 ## Defining End-to-End
 
@@ -23,10 +23,10 @@ This document makes several references to running a solution end-to-end (aka E2E
 
 ## Impact
 
-Developer experience can have a significant impact on the efficiency of the day to day execution of the team. A positive experience can pay dividends throughout the lifetime of the project; especially as new developers join the team.
+Developer experience can have a significant impact on the efficiency of the day-to-day execution of the team. A positive experience can pay dividends throughout the lifetime of the project; especially as new developers join the team.
 
 - Increased Velocity - Team spends less time on non-value-add activities such as dev/local environment setup, waiting on remote environments to test, and rework (fixing defects).
-- Improved Quality - When its easy to debug and test, developers will do more of it. This will translate to fewer defects being introduced.
+- Improved Quality - When it's easy to debug and test, developers will do more of it. This will translate to fewer defects being introduced.
 - Easier Onboarding & Adoption - When dev essential tasks are automated, there is less documentation to write and, subsequently, less to read to get started!
 
 **Most importantly, the customer will continue to accrue these benefits long after the code-with engagement.**
@@ -35,7 +35,7 @@ Developer experience can have a significant impact on the efficiency of the day 
 
 ### Time to First E2E Result (aka F5 Contract)
 
-Assuming a laptop/pc that has never run the solution, how long does it take to setup and run the whole system end-to-end and see a result.
+Assuming a laptop/pc that has never run the solution, how long does it take to set up and run the whole system end-to-end and see a result.
 
 ### Time To First Commit
 
@@ -64,14 +64,14 @@ The DevEx champion takes ownership in holding the team accountable for providing
 - Work with the Dev Lead to iteratively improve team expectations for developer experience
 
 - Curate a backlog actionable stories that identify areas for improvement and prioritize with respect to project delivery goals by engaging directly with the Product Owner and Customer.
-- Serve as subject matter expert for the rest of the team. Help the team determine how to implement DevEx expectations and identify deviations.
+- Serve as subject-matter expert for the rest of the team. Help the team determine how to implement DevEx expectations and identify deviations.
 
 ### Team Members - Assert Expectations
 
 The team members of the team can also help hold each other accountable for providing a positive developer experience. The following are examples of areas team members can help identify where the team's DevEx expectations are not being met.
 
 - Pull requests. Try the changes locally to see if they are adhering to the team's DevEx expectations.
-- Design Reviews. Look for proposals that may negatively effect the solution's DevEx. These might include
+- Design Reviews. Look for proposals that may negatively affect the solution's DevEx. These might include
   - Introduction of new tech whose testability is limited to manual steps in a deployed environment.
   - Addition of new repository
 
@@ -119,13 +119,13 @@ As opportunities are identified, the DevEx champion can translate these into act
 
 ### Make Tasks Cross Platform
 
-For essential tasks being standardized during the engagement, ensure that different platforms are accounted for. Team members may have different operating systems and ensuring the tasks are cross platform will provide an additional opportunity to improve the experience.
+For essential tasks being standardized during the engagement, ensure that different platforms are accounted for. Team members may have different operating systems and ensuring the tasks are cross-platform will provide an additional opportunity to improve the experience.
 
 - See the [making tasks cross platform recipe](./recipes/cross-platform-tasks.md) for guidance on how tasks can be configured to include different platforms.
 
 ### Create an Onboarding Guide
 
-When welcoming new team members on the engagement, there are many areas for them to get adjusted to and bring them up to speed including codebase, coding standards, team agreements, and team culture. By adopting a strong onboarding practice such as an onboarding guide in a centralized location that explains the scope of the project, processes, setup details, and software required, new members can have all the necessary resources for them to be efficient, successful and a valuable team member from the start.
+When welcoming new team members to the engagement, there are many areas for them to get adjusted to and bring them up to speed including codebase, coding standards, team agreements, and team culture. By adopting a strong onboarding practice such as an onboarding guide in a centralized location that explains the scope of the project, processes, setup details, and software required, new members can have all the necessary resources for them to be efficient, successful and a valuable team member from the start.
 
 See the [onboarding guide recipe](./recipes/onboarding-guide-template.md) for guidance on what an onboarding guide may look like.
 
