@@ -1,4 +1,4 @@
-# Creating good documentation
+# Creating Good Documentation
 
 Review the [Documentation Review Checklist](../../code-reviews/recipes/markdown.md#code-review-checklist) for advice on how to write good documentation.
 

@@ -1,4 +1,4 @@
-# Project and Repositories
+# Projects and Repositories
 
 Every source code repository should include documentation that is specific to it (e.g., in a Wiki within the repository), while the project itself should include general documentation that is common to all its associated repositories (e.g., in a Wiki within the backlog management tool).
 
@@ -9,8 +9,8 @@ Every source code repository should include documentation that is specific to it
   - Onboarding
   - Setup: programming language, frameworks, platforms, tools, etc.
   - Sandbox environment
-  - Working Agreement
-  - Contributing Guide
+  - Working agreement
+  - Contributing guide
 - Structure: folders, projects, etc.
 - How to compile, test, build, deploy the solution/each project
   - Different OS versions
@@ -34,10 +34,10 @@ Some sections in the documentation of the repository might point to the projectâ
 - [Team agreements](../../agile-development/team-agreements/readme.md)
   - [Team Manifesto](../../agile-development/team-agreements/team-manifesto.md)
     - Short summary of expectations around the technical way of working and supported mindset in the team.
-    - E.g., Ownership, Respect, Collaboration, Transparency.
+    - E.g., ownership, respect, collaboration, transparency.
   - [Working Agreement](../../agile-development/team-agreements/working-agreements.md)
     - How we work together as a team and what our expectations and principles are.
-    - E.g., Communication, Work Life Balance, Scrum Rhythm, Backlog Management, Code Management.
+    - E.g., communication, work-life balance, scrum rhythm, backlog management, code management.
   - [Definition of Done](../../agile-development/team-agreements/definition-of-done.md)
     - List of tasks that must be completed to close a user story, a sprint, or a milestone.
   - [Definition of Ready](../../agile-development/team-agreements/definition-of-ready.md)
