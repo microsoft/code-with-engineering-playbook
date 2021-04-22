@@ -6,11 +6,11 @@
 
 ## Code Analysis / Linting
 
-We strongly believe that consistent style increases readability and maintainability of a code base. Hence we are recommending analyzers / linters to enforce consistency and style rules.
+We strongly believe that consistent style increases readability and maintainability of a code base. Hence, we are recommending analyzers / linters to enforce consistency and style rules.
 
 ### Project Setup
 
-We recommend using a common setup for your solution that you can refer to in all the projects that are part of the solution. Create a common.props file that contains the defaults for all of your projects:
+We recommend using a common setup for your solution that you can refer to in all the projects that are part of the solution. Create a `common.props` file that contains the defaults for all of your projects:
 
 ```xml
 <Project>
@@ -35,7 +35,7 @@ We recommend using a common setup for your solution that you can refer to in all
 </Project>
 ```
 
-You can then reference the common.props in your other project files to ensure a consistent setup.
+You can then reference the `common.props` in your other project files to ensure a consistent setup.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
@@ -55,7 +55,7 @@ You can install the FxCop analyzers using nuget or a VSIX extension. We recommen
 
 ### StyleCop analyzer
 
-The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions around braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
+The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions about braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
 
 The minimum rules set teams should adopt is the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set.
 
@@ -102,14 +102,14 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
 * [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
 * [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?
-* [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead catch the specific exceptions that can happen e.g., `IOException`.
+* [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead, catch the specific exceptions that can happen e.g., `IOException`.
 * [ ] Is the use of #pragma fair?
-* [ ] Are tests arranged correctly with the Arrange/Act/Assert pattern and properly documented in this way?
+* [ ] Are tests arranged correctly with the **Arrange/Act/Assert** pattern and properly documented in this way?
 * [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
 * [ ] If a method is asynchronous, is `Task.Delay` used instead of `Thread.Sleep`? `Task.Delay` is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi-threaded, multi-task environment, this is the one to prefer.
 * [ ] Is a cancellation token for asynchronous tasks needed rather than bool patterns?
 * [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
 * [ ] Are internal vs private vs public classes and methods used the right way?
-* [ ] Are auto property set and get used the right way? In a model without constructor and for deserialization, it is ok to have all accessible. But for other classes usually a private set or internal set is better.
+* [ ] Are auto property set and get used the right way? In a model without constructor and for deserialization, it is ok to have all accessible. For other classes usually a private set or internal set is better.
 * [ ] Is the `using` pattern for streams and other disposable classes used? If not, better to have the `Dispose` method called explicitly.
 * [ ] Are the classes that maintain collections in memory, thread safe? When used under concurrency, use lock pattern.

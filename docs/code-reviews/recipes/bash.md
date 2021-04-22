@@ -6,7 +6,7 @@
 
 ## Code Analysis / Linting
 
-[CSE](../../CSE.md) projects must check Bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
+[CSE](../../CSE.md) projects must check bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/readme.md).
 Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automatically format shell scripts. There are few vscode code extensions which are based on shfmt like shell-format which can be used to automatically format shell scripts.
 
 ## Project Setup
@@ -17,7 +17,7 @@ Shellcheck extension should be used in VS Code, it provides static code analysis
 
 #### Install shellcheck on your machine:
 
-For MacOS
+For macOS
 
 ```bash
 brew install shellcheck
@@ -114,7 +114,7 @@ Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-com
 
 ### Step 3
 
-Run `$ pre-commit install` to setup the git hook scripts
+Run `$ pre-commit install` to set up the git hook scripts
 
 ## Dependencies
 

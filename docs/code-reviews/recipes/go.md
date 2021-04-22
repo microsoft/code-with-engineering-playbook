@@ -20,13 +20,13 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 #### golint
 
-[golint](https://github.com/golang/lint) can be an effective tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process. This is the default linter which is setup as part of the vscode-go extension.
+[golint](https://github.com/golang/lint) can be an effective tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process. This is the default linter which is set up as part of the vscode-go extension.
 
 ## Automatic Code Formatting
 
 ### gofmt
 
-`gofmt` is the automated code format style guide for Go. This is part of the vs-code extension and it is enabled by default to run on save of every file.
+`gofmt` is the automated code format style guide for Go. This is part of the vs-code extension, and it is enabled by default to run on save of every file.
 
 ### golangci-lint
 
@@ -97,7 +97,7 @@ Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-co
 
 ### Step 3
 
-Run `$ pre-commit install` to setup the git hook scripts
+Run `$ pre-commit install` to set up the git hook scripts
 
 ## Sample Build Validation Pipeline in Azure DevOps
 

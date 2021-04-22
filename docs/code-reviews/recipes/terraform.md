@@ -26,7 +26,7 @@ This extension provides Terraform command support, resource graph visualization 
 
 ## Build Validation
 
-Ensure you enforce the style guides during build. The following example script can be used to install terraform and a linter that
+Ensure you enforce the style guides during build. The following example script can be used to install terraform, and a linter that
 then checks for formatting and common errors.
 
 ```shell
@@ -84,7 +84,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
 * [ ] The Terraform project configured using Azure Storage as remote state backend?
 * [ ] The remote state backend storage account key stored a secure location (e.g. Azure Key Vault)?
-* [ ] The project is configured to use state files based on the environment and the deployment pipeline is configured to supply the state file name dynamically?
+* [ ] The project is configured to use state files based on the environment, and the deployment pipeline is configured to supply the state file name dynamically?
 
 ### Variables
 
@@ -109,7 +109,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
 ### General recommendations
 
-* Try avoiding nesting sub configuration within resources. Create a separate resource section for resources even though they can be declared as sub-element of a resource. For example, declaring subnets within virtual network vis-a-vis declaring subnets as a separate resources compared to virtual network on Azure.
+* Try avoiding nesting sub configuration within resources. Create a separate resource section for resources even though they can be declared as sub-element of a resource. For example, declaring subnets within virtual network vs declaring subnets as a separate resources compared to virtual network on Azure.
 * Never hard-code any value in configuration. Declare them in `locals` section if a variable is needed multiple times as a static value and are internal to the configuration.
 * The `name`s of the resources created on Azure should not be hard-coded or static. These names should be dynamic and user-provided using `variable` block. This is helpful especially in unit testing when multiple tests are running in parallel trying to create resources on Azure but need different names (few resources in Azure need to be named uniquely e.g. storage accounts).
 * It is a good practice to `output` the ID of resources created on Azure from configuration. This is especially helpful when adding dynamic blocks for sub-elements/child elements to the parent resource.

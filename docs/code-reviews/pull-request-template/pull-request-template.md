@@ -17,7 +17,7 @@
 
 ---
 
-> Use the check list below to ensure your branch is ready for PR.  If the item is not applicable, leave it blank.
+> Use the check-list below to ensure your branch is ready for PR.  If the item is not applicable, leave it blank.
 
 - [ ] I have updated the documentation accordingly.
 - [ ] I have added tests to cover my changes.

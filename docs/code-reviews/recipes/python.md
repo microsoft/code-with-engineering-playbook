@@ -60,7 +60,7 @@ pylint src  # lint the source directory
 
 ### Black
 
-[`Black`](https://github.com/psf/black) is an unapologetic code formatting tool. It removes all need from `pycodestyle` nagging about formatting so the team can focus on content vs style. It's not possible to configure black for your own style needs.
+[`Black`](https://github.com/psf/black) is an unapologetic code formatting tool. It removes all need from `pycodestyle` nagging about formatting, so the team can focus on content vs style. It's not possible to configure black for your own style needs.
 
 ```bash
 pip install black
@@ -88,7 +88,7 @@ autopep8 [file/folder] --in-place
 
 ### yapf
 
-[yapf](https://github.com/google/yapf) Yet Another Python Formatter is a python formatter from Google based on ideas from gofmt.  This is also more configurable and a good option for automatic code formatting.
+[yapf](https://github.com/google/yapf) Yet Another Python Formatter is a python formatter from Google based on ideas from gofmt.  This is also more configurable, and a good option for automatic code formatting.
 
 ```bash
 pip install yapf
@@ -210,7 +210,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 At the next attempted commit any lint failures will block the commit.
 
-> Note: Installing pre-commit hooks is voluntary and done by each developer individually. Thus it's not a replacement for build validation on the server
+> Note: Installing pre-commit hooks is voluntary and done by each developer individually. Thus, it's not a replacement for build validation on the server
 
 ## Code Review Checklist
 

@@ -4,25 +4,25 @@
 
 [CSE](../../CSE.md) developers treat documentation like other source code and follow the same rules and checklists when reviewing documentation as code.
 
-Documentation should both use good markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style-guidelines) to ensure the document is easy to read and understand.
+Documentation should both use good Markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style-guidelines) to ensure the document is easy to read and understand.
 
 ## Markdown
 
 Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.
 
-Using Markdown is different than using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax to the text to indicate which words and phrases should look different.
+Using Markdown is different from using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax to the text to indicate which words and phrases should look different.
 
 You can find more information and full documentation [here](https://www.markdownguide.org/).
 
 ## Linting
 
-Markdown has specific way of being formatted. It is important to respect this formatting, otherwise some interpreters which are strict won't properly display the document. Linters are often used to help developers properly create documents by both verifying proper markdown syntax as well as grammar and proper English language.
+Markdown has specific way of being formatted. It is important to respect this formatting, otherwise some interpreters which are strict won't properly display the document. Linters are often used to help developers properly create documents by both verifying proper Markdown syntax, grammar and proper English language.
 
 A good setup includes a markdown linter used during editing and PR build verification, and a grammar linter used while editing the document. The following are a list of linters that could be used in this setup.
 
 ### markdownlint
 
-[`markdownlint`](https://github.com/markdownlint/markdownlint) is a linter for markdown that verifies markdown syntax, and also enforces rules that make the text more readable. [Markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) is an easy-to-use CLI based on Markdownlint.
+[`markdownlint`](https://github.com/markdownlint/markdownlint) is a linter for markdown that verifies Markdown syntax, and also enforces rules that make the text more readable. [Markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) is an easy-to-use CLI based on Markdownlint.
 
 It's available as a [ruby gem](https://github.com/markdownlint/markdownlint), an [npm package](https://github.com/DavidAnson/markdownlint), a [Node.js CLI](https://github.com/igorshubovych/markdownlint-cli) and a [VS Code extension](https://github.com/DavidAnson/vscode-markdownlint). The VS Code extension [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) also catches all markdownlint errors.
 
@@ -93,7 +93,7 @@ The [`Write Good Linter Extension`](https://marketplace.visualstudio.com/items?i
 
 ### markdownlint extension
 
-The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) examines the markdown documents, showing warnings for rule violations while editing.
+The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) examines the Markdown documents, showing warnings for rule violations while editing.
 
 ## Build Validation
 
@@ -157,7 +157,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 The following are some examples of writing style guidelines.
 
 Agree in your team which guidelines you should apply to your project documentation.
-Save your guidelines together with your documentation so they are easy to refer back to.
+Save your guidelines together with your documentation, so they are easy to refer back to.
 
 ### Wording
 
@@ -194,7 +194,7 @@ Save your guidelines together with your documentation so they are easy to refer 
 - List items should start with capital letters if possible
 - Use ordered lists when the items describe a sequence to follow, otherwise use unordered lists
 - For ordered lists, prefix each item with `1.` When rendered, the list items will appear with sequential numbering. This avoids number-gaps in list
-- Do not add commas (,) or semicolons (;) to the end of list items, and avoid periods (.) unless the list item represents a complete sentence
+- Do not add commas `,` or semicolons `;` to the end of list items, and avoid periods `.` unless the list item represents a complete sentence
 
 ### Images
 
@@ -218,7 +218,7 @@ Save your guidelines together with your documentation so they are easy to refer 
   - [ ] Item 2
   - [x] Item 3
 - Add a References section to the end of the document with links to external references
-- Prefer tables over lists for comparisons and reports to make research and results more readable
+- Prefer tables to lists for comparisons and reports to make research and results more readable
 
   | Option     | Pros             | Cons               |
   | ---------- | ---------------- | ------------------ |
@@ -227,5 +227,5 @@ Save your guidelines together with your documentation so they are easy to refer 
 
 ### General
 
-- Always use markdown syntax, don't mix with HTML
+- Always use Markdown syntax, don't mix with HTML
 - Make sure the extension of the files is `.md` - if the extension is missing, a linter might ignore the files
