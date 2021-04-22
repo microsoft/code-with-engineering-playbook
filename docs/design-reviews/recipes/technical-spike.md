@@ -12,7 +12,7 @@ A distinction can be made between technical spikes and functional spikes. The te
 
 ## Deliverable
 
-Generally the deliverable from a Technical Spike should be a document detailing what was evaluated and the outcome of that evaluation. The specifics contained in the document will vary, but there are some general principals that might be helpful.
+Generally the deliverable from a Technical Spike should be a document detailing what was evaluated and the outcome of that evaluation. The specifics contained in the document will vary, but there are some general principles that might be helpful.
 
 - Problem Statement/Goals: Be sure to include a section that clearly details why an evaluation is being done and what the outcome of this evaluation should be. This is helpful to ensure that the technical spike was productive and advanced the overall project in some way.
 
@@ -24,12 +24,8 @@ Generally the deliverable from a Technical Spike should be a document detailing 
   - A new version of the technology has been released.
   - The technology needs to be tested on a new platform.
 
-- Fact-Finding: The goal of a spike should be fact-finding, not decision making or recommendation. Ideally, the technology spike digs into a number of technical questions and gets answers so that the _broader project team_ can then come back together and agree on an appropriate course forward.
+- Fact-Finding: The goal of a spike should be fact-finding, not decision-making or recommendation. Ideally, the technology spike digs into a number of technical questions and gets answers so that the _broader project team_ can then come back together and agree on an appropriate course forward.
 
-- Evidence: Generally you will sections to summarize the results of testing which do not include the potentially hundreds of detailed results, however, you should include all detailed testing results in an appendix or an attachment. Having full results detailed somewhere will help the team trust the results. In addition, data can be interpreted lots of different ways, and it may be necessary to go back to the original data for a new interpretation.
+- Evidence: Generally you will use sections to summarize the results of testing which do not include the potentially hundreds of detailed results, however, you should include all detailed testing results in an appendix or an attachment. Having full results detailed somewhere will help the team trust the results. In addition, data can be interpreted lots of different ways, and it may be necessary to go back to the original data for a new interpretation.
 
 - Organization: The technical documentation can be lengthy. It is generally a good idea to organize sections with headers and include a table of contents. Generally sections towards the beginning of the document should summarize data and use one or more appendices for more details.
-
-## Samples
-
-Sample redacted documents from previous engagements are available by contacting Peter Lasne.

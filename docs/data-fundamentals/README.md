@@ -6,23 +6,11 @@ Most projects involve some type of data storage, data processing and data ops. F
 
 The goal of this section is to briefly describe how to apply the fundamentals to data heavy projects or portions of the project.
 
-## Contents
-
-- [Concurrency Control](#concurrency-control)
-- [Data Tiering (Data Quality)](#data-tiering-data-quality)
-- [Data Validation](#data-validation)
-- [Idempotent Data Pipelines](#idempotent-data-pipelines)
-- [Testing](#testing)
-- [CI/CD, Source Control and Code Reviews](#cicd-source-control-and-code-reviews)
-- [Security and Configuration](#security-and-configuration)
-- [Observability](#observability)
-- [End to End and Azure Technology Samples](#end-to-end-and-azure-technology-samples)
-
 ## Isolation
 
-Please be cautious of which [isolation levels](https://en.wikipedia.org/wiki/Isolation_(database_systems)) you are using. Even with a database that offers serializability, it is possible that within a transaction or connection you are leveraging a lower isolation level than the database offers. In particular, read uncommitted (or eventual consistency), can have a lot of unpredictable side-effects and introduce bugs that are difficult to reason about. Eventually consistent systems should be treated as a last resort for achieving your scalability requirements; batching, sharding, and caching are all recommended solutions to increase your scalability. If none of these options are tenable, consider evaluating the "New SQL" databases like CockroachDB or TiDB, before leveraging an option that relies on eventual consistency.
+Please be cautious of which [isolation levels](https://en.wikipedia.org/wiki/Isolation_(database_systems)) you are using. Even with a database that offers serializability, it is possible that within a transaction or connection you are leveraging a lower isolation level than the database offers. In particular, read uncommitted (or eventual consistency), can have a lot of unpredictable side effects and introduce bugs that are difficult to reason about. Eventually consistent systems should be treated as a last resort for achieving your scalability requirements; batching, sharding, and caching are all recommended solutions to increase your scalability. If none of these options are tenable, consider evaluating the "New SQL" databases like CockroachDB or TiDB, before leveraging an option that relies on eventual consistency.
 
-There are other levels of isolation, outside of the isolation levels mentioned in the link above. Some of these have nuances different than the 4 main levels, and can be difficult to compare. Snapshot Isolation, strict serializability, "read your own writes"", monotonic reads, bounded staleness, causal consistency, and linearizability are all other terms you can look into to learn more on the subject.
+There are other levels of isolation, outside the isolation levels mentioned in the link above. Some of these have nuances different from the 4 main levels, and can be difficult to compare. Snapshot Isolation, strict serializability, "read your own writes", monotonic reads, bounded staleness, causal consistency, and linearizability are all other terms you can look into to learn more on the subject.
 
 ## Concurrency Control
 
@@ -50,7 +38,7 @@ Develop a common understanding of the quality of your datasets so that everyone 
 
 A common data quality model is `Bronze`, `Silver`, `Gold`
 
-- **Bronze:** This is a landing area for your raw datasets with no to minimal data transformations applied, and therefore are optimized for writes / ingestion. Treat these datasets as an immutable, append only store.
+- **Bronze:** This is a landing area for your raw datasets with none or minimal data transformations applied, and therefore are optimized for writes / ingestion. Treat these datasets as an immutable, append only store.
 - **Silver:** These are cleansed, semi-processed datasets. These conform to a known schema and predefined data invariants and might have further data augmentation applied. These are typically used by data scientists.
 - **Gold:** These are highly processed, highly read-optimized datasets primarily for consumption of business users. Typically, these are structured in your standard fact and dimension tables.
 

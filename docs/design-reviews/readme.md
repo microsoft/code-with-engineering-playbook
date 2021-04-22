@@ -26,7 +26,7 @@ Are these changes occurring before or after implementation? How large of effort 
 
 ### Reviewer Participation
 
-How many different individuals participate across the designs created? Cumulatively if this is a larger number this would indicate a wider contribution of ideas and perspectives. A lower number (i.e. same 2 individuals only on every review) might indicate a limited set of perspectives. Is there anyone participating from outside the core development team?
+How many individuals participate across the designs created? Cumulatively if this is a larger number this would indicate a wider contribution of ideas and perspectives. A lower number (i.e. same 2 individuals only on every review) might indicate a limited set of perspectives. Is anyone participating from outside the core development team?
 
 ### Time To Potential Solutions
 
@@ -62,14 +62,14 @@ The dev crew should always participate in all design review sessions
 Domain experts should participate in design review sessions as needed
 
 - CSE Tech Domain
-- Customer Subject Matter Experts (SME)
+- Customer subject-matter experts (SME)
 - Senior Leadership
 
 ## Facilitation Guidance
 
 ### Sync Design Reviews via in-person / virtual meetings
 
-Joint meetings with dev crew, subject matter experts (SMEs) and customer engineers
+Joint meetings with dev crew, subject-matter experts (SMEs) and customer engineers
 
 ### Async Design Reviews via Pull-Requests
 

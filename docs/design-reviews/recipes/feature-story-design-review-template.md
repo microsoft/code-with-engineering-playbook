@@ -53,7 +53,7 @@
 
 ## Risks & Mitigation
 
-* Does the team need assistance from subject matter experts?
+* Does the team need assistance from subject-matter experts?
 * What security and privacy concerns does this milestone/epic have?
 * Is all sensitive information and secrets treated in a safe and secure manner?
 

@@ -21,7 +21,7 @@ The participation should be same as any design review. See [design reviews](../r
 
 ## Facilitation Guidance
 
-The concept is to have the design follow the same workflow as any code changes to implement story or task. Rather than code however, the artifacts being added or changed are markdown documents as well as any other supporting artifacts (prototypes, code samples, diagrams, etc).
+The concept is to have the design follow the same workflow as any code changes to implement story or task. Rather than code however, the artifacts being added or changed are Markdown documents as well as any other supporting artifacts (prototypes, code samples, diagrams, etc).
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ Design documentation must live in a source control repository that supports pull
 
 ### Tips for Faster Review Cycles
 
-To make sure a design is reviewed in a timely manner, its important to directly request reviews from team members. If team members are assigned without asking, or if no one is assigned its likely the design will sit for longer without review. Try the following actions:
+To make sure a design is reviewed in a timely manner, it's important to directly request reviews from team members. If team members are assigned without asking, or if no one is assigned it's likely the design will sit for longer without review. Try the following actions:
 
 1. Make it the designer's responsibility to find reviewers for their design
 2. The designer should ask a team member directly (face-to-face conversation, async messaging, etc) if they are available to review. Only if they agree, then assign them as a reviewer.
@@ -65,7 +65,7 @@ It helps the reviewer to understand if the design is ready to be accepted or if 
 
 1. Mark the PR as a Draft. Some ALM tools support opening a pull request as a Draft such as Azure DevOps.
 2. Prefix the title with "DRAFT", "WIP", or "work-in-progress".
-3. Set the pull request to automatically merge after approvals and checks have passed. This can indicate to the reviewer the design is complete from the designers perspective.
+3. Set the pull request to automatically merge after approvals and checks have passed. This can indicate to the reviewer the design is complete from the designer's perspective.
 
 ### Practice Inclusive Behaviors
 

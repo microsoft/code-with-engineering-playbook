@@ -36,7 +36,7 @@ An architecture decision record has the structure
 - **Status:**
     Proposed/Accepted/Deprecated/Superseded
 
-    *A proposed design can be reviewed by the development team prior to accepting it. A previous decision can be superseded by a new one or the ADR record marked as deprecated in case it is not valid anymore.*
+    *A proposed design can be reviewed by the development team prior to accepting it. A previous decision can be superseded by a new one, or the ADR record marked as deprecated in case it is not valid anymore.*
 
 - **Context:**
 
@@ -50,7 +50,7 @@ An architecture decision record has the structure
 
 - **Decision:**
 
-    *The decision made, it should begin with 'We will..' or 'We have agreed to ...*.
+    *The decision made, it should begin with 'We will...' or 'We have agreed to ...*.
 
     Example:
 
