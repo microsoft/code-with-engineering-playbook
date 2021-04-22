@@ -80,4 +80,4 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 - All PRs are reviewed by one person from [Customer/Partner Name] and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
-- We treat documentation as code and apply the same [standards to Markdown](../../code-reviews/recipes/Markdown.md) as code
+- We treat documentation as code and apply the same [standards to Markdown](../../code-reviews/recipes/markdown.md) as code

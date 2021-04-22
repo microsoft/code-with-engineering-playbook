@@ -45,8 +45,8 @@ Some sections in the documentation of the repository might point to the projectâ
 - Contributing Guide
   - Repo structure
   - Design documents
-  - [Branching and branch name strategy](../../source-control/contributing/naming-branches.md)
-  - [Merge and commit history strategy](../../source-control/contributing/merge-strategies.md)
+  - [Branching and branch name strategy](../../source-control/naming-branches.md)
+  - [Merge and commit history strategy](../../source-control/merge-strategies.md)
   - [Pull Requests](./pull-requests.md)
   - [Code Review Process](../../code-reviews/README.md)
   - [Code Review Checklist](../../code-reviews/process-guidance/reviewer-guidance.md)

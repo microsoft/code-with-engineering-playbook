@@ -4,10 +4,10 @@ There are many different options when working with Source Control. In [CSE](../C
 
 ## Sections within Source Control
 
-* [Merge Strategies](contributing/merge-strategies.md)
-* [Branch Naming](contributing/naming-branches.md)
-* [Versioning](versioning/readme.md)
-* [Working with Secrets](secrets-management/readme.md)
+* [Merge Strategies](merge-strategies.md)
+* [Branch Naming](naming-branches.md)
+* [Versioning](component-versioning.md)
+* [Working with Secrets](secrets-management.md)
 * [Git Guidance](git-guidance/readme.md)
 
 ## Goal
@@ -25,9 +25,9 @@ Consistency is important, so agree to the approach as a team before starting to 
 When creating a new repository, the team should at least do the following
 
 * Agree on the **branch**, **release** and **merge strategy**
-* Define the merge strategy ([linear or non-linear](./contributing/merge-strategies.md))
+* Define the merge strategy ([linear or non-linear](merge-strategies.md))
 * Lock the default branch and merge using [pull requests (PRs)](../code-reviews/pull-requests.md)
-* Agree on [branch naming](./contributing/naming-branches.md) (e.g. `user/your_alias/feature_name`)
+* Agree on [branch naming](naming-branches.md) (e.g. `user/your_alias/feature_name`)
 * Establish [branch/PR policies](../code-reviews/pull-requests.md)
 * For public repositories the default branch should contain the following files:
   * [LICENSE](../resources/templates/LICENSE)
@@ -109,7 +109,7 @@ References:
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
 * [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/)
 * [The GitHub Hello World](https://guides.github.com/activities/hello-world/)
-* [CSE Git details](./git-guidance/readme.md) details on how to use Git as part of a [CSE](../CSE.md) project.
+* [CSE Git details](git-guidance/readme.md) details on how to use Git as part of a [CSE](../CSE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 * [How Git Works Pluralsight course](https://www.pluralsight.com/courses/how-git-works)
 * [Mastering Git Pluralsight course](https://www.pluralsight.com/courses/master-git)

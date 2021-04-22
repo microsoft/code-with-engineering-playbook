@@ -1,16 +1,16 @@
-# Runtime Variables in Github Actions
+# Runtime Variables in GitHub Actions
 
 ## Objective
 
-While Github Actions is a popular choice for writing and running CI/CD pipelines, especially for open source projects hosted on Github, it lacks specific quality of life features found in other CI/CD environments. One key feature that Github Actions has not yet implemented is the ability to **mock and inject runtime variables** into a workflow, in order to test the pipeline itself.
+While GitHub Actions is a popular choice for writing and running CI/CD pipelines, especially for open source projects hosted on GitHub, it lacks specific quality of life features found in other CI/CD environments. One key feature that GitHub Actions has not yet implemented is the ability to **mock and inject runtime variables** into a workflow, in order to test the pipeline itself.
 
 This provides a bridge between a pre-existing feature in Azure DevOps, and one that has not yet released inside GitHub Actions.
 
 ## Target Audience
 
-This guide assumes that you are familiar with CI/CD, and understand the security implications of CI/CD pipelines. We also assume basic knowledge with Github Actions, including how to write and run a basic CI/CD pipeline, checkout repositories inside the action, use Marketplace Actions with version control, etc.
+This guide assumes that you are familiar with CI/CD, and understand the security implications of CI/CD pipelines. We also assume basic knowledge with GitHub Actions, including how to write and run a basic CI/CD pipeline, checkout repositories inside the action, use Marketplace Actions with version control, etc.
 
-We assume that you, as a CI/CD engineer, want to inject environment variables or environment flags into your pipelines and workflows in order to test them, and are using Github Actions to accomplish this.
+We assume that you, as a CI/CD engineer, want to inject environment variables or environment flags into your pipelines and workflows in order to test them, and are using GitHub Actions to accomplish this.
 
 ## Usage Scenario
 
@@ -18,17 +18,17 @@ Many integration or end-to-end workflows require specific environment variables 
 
 ![Workflow Diagram](images/workflow-diagram.png)
 
-In this situation, testing the pipeline is extremely difficult without having to make external calls to the resource. In many cases, making external calls to the resource can be expensive or time consuming, significantly slowing down inner loop development.
+In this situation, testing the pipeline is extremely difficult without having to make external calls to the resource. In many cases, making external calls to the resource can be expensive or time-consuming, significantly slowing down inner loop development.
 
-Azure Dev Ops, as an example, offers a way to define pipeline variables on a manual trigger:
+Azure DevOps, as an example, offers a way to define pipeline variables on a manual trigger:
 
 ![AzDo Example](images/AzDoExample.PNG)
 
-Github Actions does not do so yet.
+GitHub Actions does not do so yet.
 
 ## Solution
 
-To workaround this, the easiest solution is to add runtime variables to either commit messages or the PR Body, and `grep` for the variable. Github Actions provides `grep` functionality natively using a `contains` function, which is what we shall be specifically using.
+To workaround this, the easiest solution is to add runtime variables to either commit messages or the PR Body, and `grep` for the variable. GitHub Actions provides `grep` functionality natively using a `contains` function, which is what we shall be specifically using.
 
 In scope:
 
@@ -95,9 +95,9 @@ The first part of the code is setting up Push triggers on the working branch and
       COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
 ```
 
-This is a named step inside the only Job in our Github Actions pipeline. Here, we set an environment variable for the step: Any code or action that the step calls will now have the environment variable available.
+This is a named step inside the only Job in our GitHub Actions pipeline. Here, we set an environment variable for the step: Any code or action that the step calls will now have the environment variable available.
 
-`contains` is a Github Actions function that is available by default in all workflows. It returns a Boolean `true` or `false` value. In this situation, it checks to see if the commit message on the last push, accessed using `github.event.head_commit.message`. The `${{...}}` is necessary to use the Github Context and make the functions and `github.event` variables available for the command.
+`contains` is a GitHub Actions function that is available by default in all workflows. It returns a Boolean `true` or `false` value. In this situation, it checks to see if the commit message on the last push, accessed using `github.event.head_commit.message`. The `${{...}}` is necessary to use the GitHub Context and make the functions and `github.event` variables available for the command.
 
 ```yaml
   run: |
@@ -122,7 +122,7 @@ The specific reason to do this is to allow for the `flag` variable to be used in
 
 In this part of the snippet, the next step in the same job is now using the `flag` that was set in the previous step. This allows the user to:
 
-1. Reuse the flag instead of repeatedly accessing the Github Context
+1. Reuse the flag instead of repeatedly accessing the GitHub Context
 2. Set the flag using multiple conditions, instead of just one. For example, a different step might ALSO set the flag to `true` or `false` for different reasons.
 3. Change the variable in exactly one place instead of having to change it in multiple places
 
@@ -171,7 +171,7 @@ Not Including the Variable
 
 ## PR Body Variables
 
-When a PR is made, the PR Body can also be used to setup variables. These variables can be made available to all the workflow runs that stem from that PR, which can help ensure that commit messages are more informative and less cluttered, and reduces the work on the developer.
+When a PR is made, the PR Body can also be used to set up variables. These variables can be made available to all the workflow runs that stem from that PR, which can help ensure that commit messages are more informative and less cluttered, and reduces the work on the developer.
 
 Once again, this for an expected key and value. In this case, the key is `PR_VAR` and the value is `[pr var]`.
 
@@ -223,7 +223,7 @@ The first part of the YAML file simply sets up the Pull Request Trigger. The maj
     PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
 ```
 
-In this section, the `PR_VAR` environment variable is set to `true` or `false` depending on whether or not the `[pr var]` string is in the PR Body.
+In this section, the `PR_VAR` environment variable is set to `true` or `false` depending on whether the `[pr var]` string is in the PR Body.
 
 Shorter Alternative:
 
@@ -244,7 +244,7 @@ Usage:
 
     ![PR Example](images/PRExample.PNG)
 
-2. The Github Action will trigger automatically, and since `[pr var]` is present in the PR Body, it will set the `flag` to true, as shown below:
+2. The GitHub Action will trigger automatically, and since `[pr var]` is present in the PR Body, it will set the `flag` to true, as shown below:
 
     ![PR True](images/PRTrue.PNG)
 
@@ -266,6 +266,6 @@ Developer B is in the process of writing and testing a CI/CD pipeline. The pipel
 
 ![Workflow B](images/DevBWorkflow.png)
 
-In this case, each CI stage needs to run before the next one starts, and errors in the middle of the process can cause the entire pipeline to fail. While this might be intended behavior for the pipeline in some situations (Perhaps you don't want to run a more involved, longer build or run a time consuming test coverage suite if the CI process is failing), it means that steps need to be commented out or deleted when testing the pipeline itself.
+In this case, each CI stage needs to run before the next one starts, and errors in the middle of the process can cause the entire pipeline to fail. While this might be intended behavior for the pipeline in some situations (Perhaps you don't want to run a more involved, longer build or run a time-consuming test coverage suite if the CI process is failing), it means that steps need to be commented out or deleted when testing the pipeline itself.
 
 Instead, an additional step could check for a `[skip ci $N]` tag in either the commit messages or PR Body, and skip a specific stage of the CI build. This ensures that the final pipeline does not have changes committed to it that render it broken, as sometimes happens when commenting out/deleting steps. It additionally allows for a mechanism to repeatedly test individual steps by skipping the others, making developing the pipeline significantly easier.

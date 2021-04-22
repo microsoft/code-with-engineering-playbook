@@ -18,8 +18,8 @@ Design at macroscopic level shows the interactions between systems and services 
 
 ## Examples
 
-![Sequence Diagram](assets/high-level-sequence-diagram.png)
+![Sequence Diagram](images/high-level-sequence-diagram.png)
 
-![Call Flow Diagram](assets/high-level-box-diagram.png)
+![Call Flow Diagram](images/high-level-box-diagram.png)
 
-![System Diagram](assets/high-level-system-diagram.png)
+![System Diagram](images/high-level-system-diagram.png)

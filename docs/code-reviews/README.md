@@ -18,7 +18,7 @@ Code reviews is a way to have a conversation about the code where participants w
     - [Size Guidance](./pull-requests.md#size-guidance)
     - [Best Practices](./pull-requests.md#best-practices)
     - [Pull Request Description](./pull-requests.md#pull-request-description)
-    - [Pull Request Template](./pull_request_template.md)
+    - [Pull Request Template](pull-request-template/pull-request-template.md)
   - Qualified PRs
     - Reflect well-defined, concise tasks
     - Compact in content
@@ -69,14 +69,14 @@ Code reviews is a way to have a conversation about the code where participants w
     - Collect metrics e.g. Defect Removal Efficiency, Time metrics, Lines of Code
     - Manual tracking vs. AzDO dashboards
 - [Language Specific Guidance](./recipes/README.md)
-  - [Bash](./recipes/Bash.md)
-  - [C#](./recipes/CSharp.md)
-  - [Go](./recipes/Go.md)
-  - [Java](./recipes/Java.md)
+  - [Bash](recipes/bash.md)
+  - [C#](recipes/csharp.md)
+  - [Go](recipes/go.md)
+  - [Java](recipes/java.md)
   - [JavaScript and TypeScript](./recipes/javascript-and-typescript.md)
-  - [Markdown](./recipes/Markdown.md)
-  - [Python](./recipes/Python.md)
-  - [Terraform](./recipes/Terraform.md)
+  - [Markdown](recipes/markdown.md)
+  - [Python](recipes/python.md)
+  - [Terraform](recipes/terraform.md)
 - [FAQ](./faq.md)
   - [Large PRs?](./faq.md#we-experience-very-large-prs-how-can-we-fix-this)
   - [Slow code reviews?](./faq.md#we-experience-slow-code-reviews-causing-delays-in-delivering-features)

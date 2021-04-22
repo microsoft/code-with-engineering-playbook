@@ -1,9 +1,9 @@
-# Introduction
+# Gauge Framework
 
-Gauge is a free and open source framework for writing and running E2E tests. Some of the key features of Gauge that makes it unique include:
+Gauge is a free and open source framework for writing and running E2E tests. Some key features of Gauge that makes it unique include:
 
 - Simple, flexible and rich syntax based on Markdown.
-- Consistent cross platform/language support for writing test code.
+- Consistent cross-platform/language support for writing test code.
 - A modular architecture with plugins support
 - Extensible through plugins and hackable.
 - Supports data driven execution and external data sources
@@ -170,7 +170,7 @@ If, when you run your first gauge spec you receive the error of missing python p
 python.exe -m pip install getgauge==0.3.7 --user
 ```
 
-## Installation Instructions for MacOS
+## Installation Instructions for macOS
 
 ### Step 1: Installing Gauge on macOS
 

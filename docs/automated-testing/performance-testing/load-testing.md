@@ -1,4 +1,3 @@
-
 # Load Testing
 
 "*Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.*" - [Load testing - Wikipedia](https://en.wikipedia.org/wiki/Load_testing)
@@ -9,7 +8,7 @@ A load test is designed to determine how a system behaves under expected normal 
 
 The main objective is to prove the system can behave normally under the expected normal load before releasing it to production. The criteria which defines "behave normally" will depend on your target, this may be as simple as "the system remains available", but it could also include meeting a response time SLA or error rate.
 
-Additionally the results of a load test can also be used as data to help with capacity planning and calculating scalability.
+Additionally, the results of a load test can also be used as data to help with capacity planning and calculating scalability.
 
 ## Load Testing Design Blocks
 
@@ -17,7 +16,7 @@ There are a number of basic component which are required to carry out a load tes
 
 1. In order to have meaningful results the system needs to be tested in a production-like environment with a network and hardware which closely resembles the expected deployment environment.
 
-2. The load test will consist of a module which simulates user activity. Of course what the composition of this "user activity" will be vary based on the type of application being tested. For example an e-commerce web site might simulate user browsing and purchasing items, but an IoT data ingestion pipeline would simulate a stream of device readings. Please ensure the simulation is as close to real activity as possible taking into account not just volume but also patterns and variability. For example if the simulator data is too uniform or predictable then cache/hit ratios may impact your results.
+2. The load test will consist of a module which simulates user activity. Of course what the composition of this "user activity" will be vary based on the type of application being tested. For example an e-commerce website might simulate user browsing and purchasing items, but an IoT data ingestion pipeline would simulate a stream of device readings. Please ensure the simulation is as close to real activity as possible taking into account not just volume but also patterns and variability. For example if the simulator data is too uniform or predictable then cache/hit ratios may impact your results.
 
 3. The load test will be initiated from a component external to the target system which can control the amount of load applied. This can be a single agent, but may need to scaled to multiple agents in order to achieve higher levels of activity.
 
@@ -63,7 +62,7 @@ Here are a few popular load testing frameworks you may consider and the language
 
 A load test is critical step to understand if a target system will be reliable under the expected real world traffic.
 
-Of course its only as good as your ability to predict the expected load, so its important to follow up with other further testing to truly understand how your system behaves in different situations.
+Of course, it's only as good as your ability to predict the expected load, so it's important to follow up with other further testing to truly understand how your system behaves in different situations.
 
 ## Resources
 

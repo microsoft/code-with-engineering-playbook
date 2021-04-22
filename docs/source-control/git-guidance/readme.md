@@ -325,11 +325,11 @@ git submodule foreach git pull origin
 
 Avoid committing frequently changed binary files, such as large images, video or compiled code to your git repository. Binary content is not diffed like text content, so cloning or pulling from the repository may pull each revision of the binary file.
 
-One solution to this problem is `Git LFS (Git Large File Storage)` - an open source Git extension for versioning large files. You can find more information on Git LFS in the [Git LFS and VFS document](./git-lfs-and-vfs.md).
+One solution to this problem is `Git LFS (Git Large File Storage)` - an open source Git extension for versioning large files. You can find more information on Git LFS in the [Git LFS and VFS document](git-lfs-and-vfs.md).
 
 ## Working with large repositories
 
-When working with a very large repository of which you don't require all the files, you can use `VFS for Git` - an open source Git extension that virtualizes the file system beneath your Git repository, so that you seem to work in a regular working directory but while VFS for Git only downloads objects as they are needed. You can find more information on VFS for Git in the [Git LFS and VFS document](./git-lfs-and-vfs.md).
+When working with a very large repository of which you don't require all the files, you can use `VFS for Git` - an open source Git extension that virtualizes the file system beneath your Git repository, so that you seem to work in a regular working directory but while VFS for Git only downloads objects as they are needed. You can find more information on VFS for Git in the [Git LFS and VFS document](git-lfs-and-vfs.md).
 
 ## Tools
 

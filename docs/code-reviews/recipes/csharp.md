@@ -81,7 +81,7 @@ If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enab
 
 The above steps also work in VS Code provided you enable Roslyn support for Omnisharp. The setting is `omnisharp.enableRoslynAnalyzers` and must be set to `true`. After enabling this setting you must "Restart Omnisharp" (this can be done from the Command Palette in VS Code or by restarting VS Code).
 
-![rosyln-support](./vscode-roslyn.png)
+![rosyln-support](images/vscode-roslyn.png)
 
 ## Code Review Checklist
 

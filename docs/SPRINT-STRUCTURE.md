@@ -33,7 +33,7 @@ The purpose of this document is to:
   - Discuss the purpose and goals of tests and how to measure test coverage
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
-- [ ] [Decide on branch naming](source-control/contributing/naming-branches.md)
+- [ ] [Decide on branch naming](source-control/naming-branches.md)
 - [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch.md)
 
 ### Day 2
@@ -50,7 +50,7 @@ The purpose of this document is to:
 
 - [ ] [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
 - [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/team-agreements/definition-of-done.md)
-- [ ] [Agree on a Code Merging strategy](source-control/contributing/merge-strategies.md) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
+- [ ] [Agree on a Code Merging strategy](source-control/merge-strategies.md) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
 - [ ] [Agree on logging and observability frameworks and strategies](observability/readme.md)
 
 ### Day 4
@@ -58,7 +58,7 @@ The purpose of this document is to:
 - [ ] [Set up Continuous Deployment](continuous-delivery/readme.md)
   - Determine what environments are appropriate for this solution
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
-- [ ] [Decide on a versioning strategy](source-control/versioning/readme.md)
+- [ ] [Decide on a versioning strategy](source-control/component-versioning.md)
 - [ ] Agree on how to [Design a feature and conduct a Design Review](design-reviews/readme.md)
 
 ### Day 5

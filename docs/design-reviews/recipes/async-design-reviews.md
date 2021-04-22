@@ -49,7 +49,7 @@ Design documentation must live in a source control repository that supports pull
 5. (OPTIONAL) Design review meeting might be held to give deeper explanation of design to reviewers.
 6. Design is approved/accepted and merged to main branch.
 
-![Async Design Review Workflow](assets/async-design-reviews-sequence.png)
+![Async Design Review Workflow](images/async-design-reviews-sequence.png)
 
 ### Tips for Faster Review Cycles
 

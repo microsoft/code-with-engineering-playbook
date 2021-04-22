@@ -1,4 +1,4 @@
-# Planning
+# Sprint Planning
 
 ## Goals
 
@@ -14,7 +14,7 @@ General guidance:
 
 - The sprint planning should happen at the beginning of the new sprint (or at the end of the previous one). It usually lasts between 1 and 4 hours depending on the size of the team and duration of the sprint.
 - Each story should be able to be completed within the duration of the sprint. Otherwise, the story should be broken up into multiple stories.
-- Each task duration should be somewhere between 2 to 8 hours.
+- Each task duration should be somewhere between 2 and 8 hours.
 
 ## Participation
 
@@ -22,7 +22,7 @@ General guidance:
 
 Specific roles:
 
-- [Process Lead]:
+- Process Lead:
   - Facilitate the conversation.
   - Ensure everyone is heard.
   - Remind scrums/agile/other principles and sprint planning goals if necessary, updating the working agreement where needed to ensure a mapping between principals and what is working/not working for the team.
@@ -31,7 +31,7 @@ Specific roles:
   
     - Is in the correct position in the backlog, by right priority order.
     - Is attending the [definition of ready](../team-agreements/definition-of-ready.md).
-  - Do NOT pre assign stories to the future sprint. This is the purpose of the sprint planning.
+  - Do NOT pre-assign stories to the future sprint. This is the purpose of the sprint planning.
   - During the meeting:
 
     - Clarify team's questions and improve the story accordingly, if necessary.
@@ -53,7 +53,7 @@ Sprint planning key benefits:
 
 - Everyone participates, the entire team is aware of the scope of the sprint.
 - The team has an agreement on the goal of the sprint.
-- Each team member takes responsibility in the sprint scope by participating in the stories discovery, prioritization and estimation.
+- Each team member takes responsibility in the sprint scope by participating in the story's discovery, prioritization and estimation.
 - Creates a channel to communicate, discover and discuss dependencies.
 
 ## Measures
