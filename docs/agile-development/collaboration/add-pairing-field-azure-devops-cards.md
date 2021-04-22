@@ -1,4 +1,4 @@
-# How to add a pairing custom field in Azure DevOps User Stories
+# How to add a Pairing Custom Field in Azure DevOps User Stories
 
 This document outlines the benefits of adding a custom field of type _Identity_ in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops) user stories, prerequisites, and a step-by-step guide.
 
@@ -12,7 +12,7 @@ Prior to customizing Azure DevOps, review [Configure and customize Azure Boards]
 
 In order to add a custom field to user stories in Azure DevOps changes must be made as an **Organizational setting**. This document therefore assumes use of an existing Organization in Azure DevOps and that the user account used to make these changes is a member of the [Project Collection Administrators Group](https://docs.microsoft.com/en-us/azure/devops/organizations/security/set-project-collection-level-permissions).
 
-## Step-by-step to change the organization settings
+### Change the organization settings
 
 1. Duplicate the process currently in use.
 
@@ -44,7 +44,7 @@ In order to add a custom field to user stories in Azure DevOps changes must be m
 
     This completes the change in Organization settings. The rest of the instructions must be completed under Project Settings.
 
-## Next, change the project settings
+### Change the project settings
 
 1. Go to the Project that is to be modified, select **Project Settings**.
 

@@ -1,4 +1,4 @@
-# Using Azurite to run blob storage tests in pipeline
+# Using Azurite to Run Blob Storage Tests in a Pipeline
 
 This document determines the approach for writing automated tests with a short feedback loop (i.e. unit tests) against security considerations (private endpoints) for the Azure Blob Storage functionality.
 
@@ -42,7 +42,7 @@ Azurite Queue service is starting at http://127.0.0.1:10001
 Azurite Queue service is successfully listening at http://127.0.0.1:10001
 ```
 
-### b. Using docker image
+### b. Using a docker image
 
 Another way to run Azurite is using docker, using default `HTTP` endpoint
 
@@ -66,7 +66,7 @@ services:
       - "10001:10001"
 ```
 
-## 2. Run tests on your local
+## 2. Run tests on your local machine
 
 Python 3.8.7 is used for this, but it should be fine on other 3.x versions as well.
 

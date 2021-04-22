@@ -1,4 +1,4 @@
-# Sections of a working agreement
+# Sections of a Working Agreement
 
 A working agreement is a document, or a set of documents that describe how we work together as a team and what our
 expectations and principles are.
@@ -23,19 +23,19 @@ their own, and adjust times, communication channels, branch naming policies etc.
 - We communicate all information relevant to the team through the Project Teams channel
 - We add all [technical spikes](../../design-reviews/recipes/technical-spike.md), [trade studies](../../design-reviews/trade-studies/readme.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design-reviews/recipes/async-design-reviews.md)
 
-## Work-life balance
+## Work-life Balance
 
 - Our office hours, when we can expect to collaborate via Microsoft Teams, phone or face-to-face are Monday to Friday 10AM - 5PM
 - We are not expected to answer emails past 6PM, on weekends or when we are on holidays or vacation.
 - We work in different time zones and respect this, especially when setting up recurring meetings.
 - We record meetings when possible, so that team members who could not attend live can listen later.
 
-## Quality and not quantity
+## Quality and not Quantity
 
 - We agree on a [Definition of Done](definition-of-done.md) for our user story's and sprints and live by it.
 - We follow engineering best practices like the [Code With Engineering Playbook](https://github.com/microsoft/code-with-engineering-playbook)
 
-## Scrum rhythm
+## Scrum Rhythm
 
 | Activity | When | Duration | Who | Accountable | Goal |
 |-|-|-|-|-|-|
@@ -62,7 +62,7 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 - Facilitate the sprint retrospective.
 - Coach Product Owner and the team in the process, as needed.
 
-## Backlog management
+## Backlog Management
 
 - We work together on a [Definition of Ready](definition-of-ready.md) and all user stories assigned to a sprint need to follow this
 - We communicate what we are working on through the board
@@ -73,7 +73,7 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 - If we add new tasks to the board, we make sure it matches the acceptance criteria of the user story (to avoid scope creep).
   If it doesn't match the acceptance criteria we should discuss with the PM to see if we need a new user story for the task or if we should adjust the acceptance criteria.
 
-## Code management
+## Code Management
 
 - We follow the git flow branch naming convention for branches and identify the task number e.g. `feature/123-add-working-agreement`
 - We merge all code into main branches through PRs

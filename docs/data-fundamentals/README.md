@@ -1,4 +1,4 @@
-# Data and DataOps fundamentals
+# Data and DataOps Fundamentals
 
 Most projects involve some type of data storage, data processing and data ops. For these projects, as with all projects, we follow the general guidelines laid out in other sections around security, testing, observability, CI/CD etc.
 

@@ -25,16 +25,15 @@ It's important to establish a common understanding between the Dev Lead and appl
 
 *Continuous Delivery* by Jez Humble, David Farley cover the key considerations to follow when creating a release strategy:
 
-> * Parties in charge of deployments to each environment, as well as in charge of the release.
-> * An asset and configuration management strategy.
-> * An enumeration of the environments available for acceptance, capacity, integration, and user acceptance testing, and the process by which builds will be moved through these environments.
-> * A description of the processes to be followed for deployment into testing and production environments, such as change requests to be opened and approvals that need to be granted.
-> * A discussion of the method by which the application’s deploy-time and runtime configuration will be managed, and how this relates to the automated deployment process.
-> * _Description of the integration with any external systems. At what stage and how are they tested as part of a release? How does the technical operator communicate with the provider in the event of a problem?
-> * _A disaster recovery plan so that the application’s state can be recovered following a disaster. Which steps will need to be in place to restart or redeploy the application should it fail.
-> * _Production sizing and capacity planning: How much data will your live application create? How many log files or databases will you need? How much bandwidth and disk space will you need? What latency are clients expecting?
-> * How the initial deployment to production works.
-
+* Parties in charge of deployments to each environment, as well as in charge of the release.
+* An asset and configuration management strategy.
+* An enumeration of the environments available for acceptance, capacity, integration, and user acceptance testing, and the process by which builds will be moved through these environments.
+* A description of the processes to be followed for deployment into testing and production environments, such as change requests to be opened and approvals that need to be granted.
+* A discussion of the method by which the application’s deploy-time and runtime configuration will be managed, and how this relates to the automated deployment process.
+* _Description of the integration with any external systems. At what stage and how are they tested as part of a release? How does the technical operator communicate with the provider in the event of a problem?
+* _A disaster recovery plan so that the application’s state can be recovered following a disaster. Which steps will need to be in place to restart or redeploy the application should it fail.
+* _Production sizing and capacity planning: How much data will your live application create? How many log files or databases will you need? How much bandwidth and disk space will you need? What latency are clients expecting?
+* How the initial deployment to production works.
 * How fixing defects and applying patches to the production environment will be handled.
 * How upgrades to the production environment will be handled, including data migration. How will upgrades be carried out to the application without destroying its state.
 

@@ -1,8 +1,8 @@
-# Azure DevOps: managing settings on a per-branch basis
+# Azure DevOps: Managing Settings on a Per-Branch Basis
 
 When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) for CI/CD, it's convenient to leverage the built-in [pipeline variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables) for [secrets management](../../readme.md), but using pipeline variables for secrets management has its disadvantages:
 
-- *Pipeline variables are managed outside of the code that references them.* This makes it easy to introduce drift between the source code and the secrets, e.g. adding a reference to a new secret in code but forgetting to add it to the pipeline variables (leads to confusing build breaks), or deleting a reference to a secret in code and forgetting to remote it from the pipeline variables (leads to confusing pipeline variables).
+- *Pipeline variables are managed outside the code that references them.* This makes it easy to introduce drift between the source code and the secrets, e.g. adding a reference to a new secret in code but forgetting to add it to the pipeline variables (leads to confusing build breaks), or deleting a reference to a secret in code and forgetting to remote it from the pipeline variables (leads to confusing pipeline variables).
 
 - *Pipeline variables are global shared state.* This can lead to confusing situations and hard to debug problems when developers make concurrent changes to the pipeline variables which may override each other. Having a single global set of pipeline variables also makes it impossible for secrets to vary per environment (e.g. when using a branch-based deployment model where 'master' deploys using the production secrets, 'development' deploys using the staging secrets, and so forth).
 

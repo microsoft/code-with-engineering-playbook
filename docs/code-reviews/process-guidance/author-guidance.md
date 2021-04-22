@@ -1,4 +1,4 @@
-# Author guidance
+# Author Guidance
 
 ## Properly describe your PR
 
