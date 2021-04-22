@@ -21,6 +21,6 @@ artifact upload/download times providing valuable insights into agents availabil
 - It is important to identify the Key Performance Indicators (KPIs) for evaluating a successful CI/CD pipeline. Where needed, additional tracing can be added to better record KPI metrics. For example, adding pipeline build tags to identify a 'Release Candidate' vs. 'Non-Release Candidate' helps in evaluating the end-to-end release process timeline.
 
 - Depending on the tooling used (Azure DevOps, Jenkins etc.,), basic reporting on the pipelines is
-available out-of-the-box. It is important to evaluate these reports againt the KPIs to understand if
+available out-of-the-box. It is important to evaluate these reports against the KPIs to understand if
 a custom reporting solution for their pipelines is needed. If required, custom dashboards can be built using
 third-party tools like Grafana or Power BI Dashboards.

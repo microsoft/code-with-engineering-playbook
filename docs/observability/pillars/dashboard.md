@@ -9,11 +9,11 @@ Dashboard is a form of data visualization that provides "at a glance" view of Ke
 - measure efficiency easily
 - identify data outliers and correlations
 - view health state or performance of the system
-- give an outlook of the KPI that is important to a business/proces
+- give an outlook of the KPI that is important to a business/process
 
 ## Best Practices
 
-Common questions to ask youself when building dashboard would be:
+Common questions to ask yourself when building dashboard would be:
 
 - Where did my user spend most of their time at?
 - What is my user searching?
@@ -58,4 +58,4 @@ For other tools, these can be used as a reference to recreate if a template is n
 
 ## Summary
 
-In order to build an observable dashboard, the goal is to make use of collected metrics, logs, traces to give an insight on how the system performs, user behaves and identify patterns. There are a lot of tools and templates out there. Whichever the choice is, a good dashboard is always a dashboad that can help you answer questions about the system and user, keep track of the KPI and goal while also allowing informed business decisions to be made.
+In order to build an observable dashboard, the goal is to make use of collected metrics, logs, traces to give an insight on how the system performs, user behaves and identify patterns. There are a lot of tools and templates out there. Whichever the choice is, a good dashboard is always a dashboard that can help you answer questions about the system and user, keep track of the KPI and goal while also allowing informed business decisions to be made.

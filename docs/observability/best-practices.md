@@ -4,7 +4,7 @@
 1. Ensure health of the services are **monitored** and provide insights into system's performance and behavior.
 1. Ensure **dependent services** are monitored properly. Errors and exceptions in dependent services like Redis cache, Service bus, etc. should be logged and alerted. Also metrics related to dependent services should be captured and logged.
 
-    - Additionally, failures in **dependent services** should be propoagated up each level of the stack by the healthcheck.
+    - Additionally, failures in **dependent services** should be propagated up each level of the stack by the health check.
 
 1. **Faults, crashes, and failures** are logged as discrete events. This helps engineers identify problem area(s) during failures.
 1. Ensure logging configuration (eg: setting logging to "verbose") can be controlled without code changes.

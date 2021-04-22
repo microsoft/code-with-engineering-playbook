@@ -69,7 +69,7 @@ In CSE we often choose from either `venv`, `Conda` or `Poetry`, depending on the
 
 Applied ML projects often contain source code, notebooks, devops scripts, documentation, scientific resources, datasets and more. We recommend to come up with an agreed folder structure to keep resources tidy. Consider deciding upon a generic folder structure for projects (e.g. which contains the folders `data`, `src`, `docs` and `notebooks`), or adopt popular structures like the [CookieCutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) folder structure.
 
-[Source control](https://github.com/microsoft/code-with-engineering-playbook/tree/master/source-control) should be applied to allow collaboration, versioning, code reviews, traceability and backup. In data science projects, source control should be used for code, and the storing and versioning of other  artifacts (e.g. data, scientific literature) should be decided upon depending on the scenario.
+[Source control](../source-control/readme.md) should be applied to allow collaboration, versioning, code reviews, traceability and backup. In data science projects, source control should be used for code, and the storing and versioning of other  artifacts (e.g. data, scientific literature) should be decided upon depending on the scenario.
 
 #### Folder structure and source control expected outcomes
 
@@ -89,7 +89,7 @@ Experiment tracking tools allow data scientists and researchers to keep track of
 
 #### Types of experiment tracking frameworks
 
-Experiment tracking frameworks differ by the set of features they provide for collecting experiment metadata, and comparing and analysing experiments. In CSE, we mainly use [MLFlow](https://mlflow.org/) on [Databricks](https://databricks.com/product/managed-mlflow) or [Azure ML Experimentation](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-track-experiments). Note that some experiment tracking frameworks require a deployment, while others are SaaS.
+Experiment tracking frameworks differ by the set of features they provide for collecting experiment metadata, and comparing and analyzing experiments. In CSE, we mainly use [MLFlow](https://mlflow.org/) on [Databricks](https://databricks.com/product/managed-mlflow) or [Azure ML Experimentation](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-track-experiments). Note that some experiment tracking frameworks require a deployment, while others are SaaS.
 
 #### Experiment tracking outcomes
 

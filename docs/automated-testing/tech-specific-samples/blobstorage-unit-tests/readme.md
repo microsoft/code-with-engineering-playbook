@@ -102,7 +102,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 1. Create a virtual python environment  
    `python -m venv .venv`
 
-1. Container name and initilize env variables: Use conftest.py for test integration.
+1. Container name and initialize env variables: Use conftest.py for test integration.
 
    ```python
    from azure.storage.blob import BlobServiceClient

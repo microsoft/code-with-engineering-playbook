@@ -89,7 +89,7 @@ module.exports = {
 };
 ```
 
-This will apply the `prettier` ruleset when linting with ESLint.
+This will apply the `prettier` rule set when linting with ESLint.
 
 ## Auto formatting with VS Code
 

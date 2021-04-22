@@ -1,12 +1,12 @@
 # Reliability
 
-All of the other CSE Eng Fundamentals work towards a more reliable infrastrucute. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.
+All of the other CSE Eng Fundamentals work towards a more reliable infrastructure. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.
 
 However there are some additional steps we can take, that don't neatly fit into the previous categories, to help ensure a more reliable solution. We'll explore these below.
 
 ## Remove "Foot-Guns"
 
-Prevent your dev team from shooting themselves in the foot. People make mistakes; any mistake made in production is not the fault of that person, moreso it's the collective fault of the system to not prevent that mistake from happening.
+Prevent your dev team from shooting themselves in the foot. People make mistakes; any mistake made in production is not the fault of that person, more so it's the collective fault of the system to not prevent that mistake from happening.
 
 Check out the below list for some common tooling to remove these foot guns:
 
@@ -24,15 +24,15 @@ Whenever possible, leverage autoscaling for your deployments. Vertical autoscali
 
 It should also be noted that the parameters that affect autoscaling can be difficult to tune. Typical metrics like CPU or RAM utilization, or request rate may not be enough. Sometimes you might want to consider custom metrics, like cache eviction rate.
 
-## Loadshedding & DOS Protection
+## Load shedding & DOS Protection
 
-Often we think of Denial of Service [DOS] attacks as an act from a malicious actor, so we place some Loadshedding at the gates to our system and call it a day. In reality, many DOS attacks are unintentional, and self-inflicted. A bad deployment that takes down a Cache results in hammering downstream services. Polling from a distributed system synchronizes and results in a [thundering herd](https://en.wikipedia.org/wiki/Thundering_herd_problem). A misconfiguration results in an error which triggers clients to retry uncontrollably. Requests append to a stored object until it is so big that future reads crash the server. The list goes on.
+Often we think of Denial of Service [DOS] attacks as an act from a malicious actor, so we place some load shedding at the gates to our system and call it a day. In reality, many DOS attacks are unintentional, and self-inflicted. A bad deployment that takes down a Cache results in hammering downstream services. Polling from a distributed system synchronizes and results in a [thundering herd](https://en.wikipedia.org/wiki/Thundering_herd_problem). A misconfiguration results in an error which triggers clients to retry uncontrollably. Requests append to a stored object until it is so big that future reads crash the server. The list goes on.
 
 Follow these steps to protect yourself:
 
-* Add a jitter (random) to any action that occurs from a non user triggered flow (ie: add a random duration to the sleep in a cron, or job that continously polls a downstream service).
+* Add a jitter (random) to any action that occurs from a non user triggered flow (ie: add a random duration to the sleep in a cron, or job that continuously polls a downstream service).
 * Implement [exponential backoff retry policies](https://en.wikipedia.org/wiki/Exponential_backoff) in your client code
-* Add loadshedding to your servers (yes, your internal microservices too).
+* Add load shedding to your servers (yes, your internal microservices too).
   * This can be configured easily when leveraging a sidecar like envoy.
 * Be careful when deserializing user requests, and use buffer limits.
   * ie: HTTP/gRPC Servers can set limits on how much data will get read from the socket.
@@ -63,7 +63,7 @@ We can build graceful failure (or graceful degradation) into our software stack 
 * Failover to healthy services
   * [Leader Election](https://en.wikipedia.org/wiki/Leader_election) can be used to keep healthy services on standby in case the leader experiences issues.
   * Entire cluster failover can redirect traffic to another region or availability zone.
-  * Propagate downstream failures of **dependent services** up the stack via healthchecks, so that your ingress points can re-route to healthy services.
+  * Propagate downstream failures of **dependent services** up the stack via health checks, so that your ingress points can re-route to healthy services.
 * [Circuit breakers](https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.) can bail early on requests vs. propogating errors throughout the system
 
 ## Practice

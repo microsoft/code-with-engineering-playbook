@@ -33,11 +33,11 @@ We should always aim to keep pull requests small. Small PRs have multiple advant
 * They are easier to deploy; this is aligned with the strategy of release fast and release often.
 * Minimizes possible conflicts and stale PRs.
 
-However, we should keep PRs focused - for example around a functional feature, optimization or code readbility and avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PRs could be difficult and therefore slower to review. We should always strive to have as small PRs as possible that still add value.
+However, we should keep PRs focused - for example around a functional feature, optimization or code readability and avoid having PRs that include code that is without context or loosely coupled. There is no right size, but keep in mind that a code review is a collaborative process, a big PRs could be difficult and therefore slower to review. We should always strive to have as small PRs as possible that still add value.
 
 ## Best Practices
 
-Beoynd the size, remember that every PR should:
+Beyond the size, remember that every PR should:
 
 * be consistent,
 * not break the build, and
@@ -53,7 +53,7 @@ These are some strategies to keep PRs small depending on the "cause" of the inev
 
 Well written PR descriptions helps maintain a clean, well-structured change history. While every team need not conform to the same specification, it is important that the convention is agreed upon at the start of the project.
 
-One popular specification for open-source projects and others is the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0-beta.2/), which is strucured as:
+One popular specification for open-source projects and others is the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0-beta.2/), which is structured as:
 
 ```txt
 <type>[optional scope]: <description>
