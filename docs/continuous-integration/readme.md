@@ -8,29 +8,6 @@ We encourage teams to implement the CI/CD pipelines before any service code is w
 
 These [principles](https://martinfowler.com/articles/continuousIntegration.html) map directly agile software development lifecycle [practices](https://en.wikipedia.org/wiki/Agile_software_development).
 
-<!-- markdownlint-disable MD036 -->
-**Table of contents**
-<!-- markdownlint-enable MD036 -->
-
-- [Continuous Integration](#continuous-integration)
-  - [Goals](#goals)
-  - [Build Definition Managed in Git](#build-definition-managed-in-git)
-  - [Build Automation](#build-automation)
-  - [Build Environment Dependencies](#build-environment-dependencies)
-  - [Infrastructure as Code](#infrastructure-as-code)
-    - [Sample DevOPS Workflow using Terraform and Cobalt](#sample-devops-workflow-using-terraform-and-cobalt)
-    - [Why](#why)
-    - [IAC DevOPS: Operations by Pull Request](#iac-devops-operations-by-pull-request)
-    - [Infrastructure Advocated Patterns](#infrastructure-advocated-patterns)
-    - [IAC Principles](#iac-principles)
-  - [Integration Validation](#integration-validation)
-  - [Git Driven Workflow](#git-driven-workflow)
-  - [Deliver Quickly and Daily](#deliver-quickly-and-daily)
-  - [Isolated Environments](#isolated-environments)
-  - [Developer Access to Latest Release Artifacts](#developer-access-to-latest-release-artifacts)
-  - [Integration Observability](#integration-observability)
-  - [Resources](#resources)
-
 ## Goals
 
 Continuous integration automation is an integral part of the software development lifecycle intended to reduce build integration errors and maximize velocity across a dev crew.
@@ -60,9 +37,9 @@ An automated build should encompass the following principles:
 - [ ] **Unit Testing**
   - Your build definition includes validation steps to execute a suite of automated unit tests to ensure that application components meets its design and behaves as intended.
 - [ ] **Code Style Checks**
-  - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
+  - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent, and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
   - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review section](../code-reviews/README.md#language-specific-guidance) of the playbook has suggestions for linters and preferred styles for a number of languages.
-  - We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOPS, you can add a security scan task to your pipeline by installing the [Microsoft Security Code Analysis Extension](https://secdevtools.azurewebsites.net/#pills-onboard). Github Actions supports a similar extension with the [RIPS security scan solution](https://github.com/marketplace/actions/rips-security-scan).
+  - We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOPS, you can add a security scan task to your pipeline by installing the [Microsoft Security Code Analysis Extension](https://secdevtools.azurewebsites.net/#pills-onboard). GitHub Actions supports a similar extension with the [RIPS security scan solution](https://github.com/marketplace/actions/rips-security-scan).
   - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
 - [ ] **Build Script Target**
   - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
@@ -124,7 +101,7 @@ Terraform resource providers like [Azure DevOPS](https://github.com/microsoft/te
   - Azure Portal should provide a read-only view on environment resources. Any  change applied to the environment should be made through the IAC CI tool-chain only.
   - Provisioning cloud environments should be a repeatable process that's driven off the infrastructure code artifacts checked into our git repository.
 - [ ] **IAC CI Workflow**
-  - When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by an cloud administer as a gate check prior to the deploy stage of the pipeline applying the execution plan.
+  - When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by a cloud administrator as a gate check prior to the deployment stage of the pipeline applying the execution plan.
 - [ ] **Developer Read-Only Access to Cloud Resources**
   - Developer accounts in the Azure portal should have read-only access to IAC environment resources in Azure.
 - [ ] **Secret Automation**
@@ -141,7 +118,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 - [ ] **End to end integration tests**
   - Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
-  - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev team's when parallel builds on a CI server are not an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
+  - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev teams when parallel builds on a CI server are not an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
 
 - [ ] **Avoid checking in broken builds**
   - Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
@@ -167,7 +144,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
   - Prevent commits directly into main branch.
 
 - [ ] **Branch strategy**
-  - Release branches should auto trigger the deployment of a build artifact to it's target cloud environment. One branch strategy worth considering is  [trunk-based development](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-releases) and [Release Flow's Branching Structure](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow).
+  - Release branches should auto trigger the deployment of a build artifact to its target cloud environment. One branch strategy worth considering is  [trunk-based development](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-releases) and [Release Flow's Branching Structure](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow).
 
 ## Deliver Quickly and Daily
 
@@ -189,19 +166,19 @@ One of the key goals of build validation is to isolate and identify failures in 
 - [ ] **Pull request update(s) trigger staged releases**
   - New commits related to a pull request should trigger a build / release into an integration environment. The production environment should be fully isolated from this process.
 - [ ] **Promote infrastructure changes across fixed environments**
-  - Infrastructure as code changes should be tested in a integration environment and promoted to all staging environment(s) then migrated to production with zero downtime for system users.
+  - Infrastructure as code changes should be tested in an integration environment and promoted to all staging environment(s) then migrated to production with zero downtime for system users.
 - [ ] **Testing in production**
   - There are various [approaches](https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1) with safely carrying out automated tests for production deployments. Some of these may include:
     - Feature flagging
     - A/B testing
     - Traffic shifting
 
-## Developer Access to Latest Release Artifacts
+## Developer Access to the Latest Release Artifacts
 
 Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s).
 
 - [ ] **Developers can access latest executable**
-  - Latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
+  - The latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
 - [ ] **Release artifact is published for each pull request or merges into main branch**
 

@@ -76,7 +76,7 @@ The stages within your release workflow are ultimately testing a version of your
 
 * Release Selection: The developer carrying out application testing should have the capability to select which release version to deploy to the testing environment.
 * Deployment - Release the application deployable build artifact (_created from the CI stage_) to the target cloud environment.
-* Configuration - Applications should be configured in a consistent manner across all your environments. This configuration is applied at the time of deployment.  Sensitive data like app secrets and certificates should be mastered in a fully managed PaaS key and secret store (eg [Key Vault](https://azure.microsoft.com/en-us/services/key-vault/), [KMS](https://aws.amazon.com/kms/)). Any secrets used by the application should be sourced internally within the application itself. Application Secrets should not be exposed within the runtime environment. We encourage 12 Factor principles, especially when it comes to [configuration management](https://12factor.net/config).
+* Configuration - Applications should be configured consistently across all your environments. This configuration is applied at the time of deployment.  Sensitive data like app secrets and certificates should be mastered in a fully managed PaaS key and secret store (eg [Key Vault](https://azure.microsoft.com/en-us/services/key-vault/), [KMS](https://aws.amazon.com/kms/)). Any secrets used by the application should be sourced internally within the application itself. Application Secrets should not be exposed within the runtime environment. We encourage 12 Factor principles, especially when it comes to [configuration management](https://12factor.net/config).
 * Data Migration - Pre populate application state and/or data records which is needed for your runtime environment. This may also include test data required for your end-to-end integration test suite.
 * Deployment smoke test. Your smoke test should also verify that your application is pointing to the correct configuration (e.g. production pointing to a UAT Database).
 * Perform any manual or automated acceptance test scenarios.
@@ -98,7 +98,7 @@ Your release strategy should account for rollback scenarios in the event of unex
 
 Rolling back releases can get tricky, especially when database record/object changes occur in result of your deployment (*either inadvertently or intentionally*). If there are no data changes which need to be backed out, then you can simply trigger a new release candidate for the last known production version and promote that release along your CD pipeline.
 
-For rollback scenarios involving data changes, there are several approaches to mitigating this which fall outside of the scope of this guide. Some involve database record versioning, time machining database records / objects, etc. All data files and databases should be backed up prior to each release so they could be restored. The mitigation strategy for this scenario will vary across our projects. The expectation is that this mitigation strategy should be covered as part of your release strategy.
+For rollback scenarios involving data changes, there are several approaches to mitigating this which fall outside the scope of this guide. Some involve database record versioning, time machining database records / objects, etc. All data files and databases should be backed up prior to each release so they could be restored. The mitigation strategy for this scenario will vary across our projects. The expectation is that this mitigation strategy should be covered as part of your release strategy.
 
 Another approach to consider when designing your release strategy is [deployment rings](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops). This approach simplifies rollback scenarios while limiting the impact of your release to end-users by gradually deploying and validating your changes in production.
 
@@ -138,13 +138,13 @@ Try to limit the number of versions of your application running parallel in prod
 
 ## References
 
-* [Continuous Delivery](https://www.continuousdelivery.com/) by by Jez Humble, David Farley.
+* [Continuous Delivery](https://www.continuousdelivery.com/) by Jez Humble, David Farley.
 * [Continuous integration vs. continuous delivery vs. continuous deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 * [Deployment Rings](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops)
 
 ### Tools
 
-Check out the below tools to help with some of the CD best practices listed above:
+Check out the below tools to help with some CD best practices listed above:
 
 * [Flux](https://github.com/fluxcd/flux) for gitops
 * [Tekton](https://github.com/tektoncd) for Kubernetes native pipelines

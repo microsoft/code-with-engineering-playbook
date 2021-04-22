@@ -1,12 +1,12 @@
 # GitHub Workflows
 
-A workflow is a configurable automated process made up of one or more jobs where each of these jobs can be an action in GitHub. Currently a YAML file format is supported for defining a workflow in GitHub.
+A workflow is a configurable automated process made up of one or more jobs where each of these jobs can be an action in GitHub. Currently, a YAML file format is supported for defining a workflow in GitHub.
 
 Additional information on GitHub actions and GitHub Workflows in the links posted in the [references](#References) section below.
 
 ## Workflow Per Environment
 
-The general approach is to have one pipeline, where the code is built, tested and deployed and the artifact is then promoted to the next environment, eventually to be deployed into production.
+The general approach is to have one pipeline, where the code is built, tested and deployed, and the artifact is then promoted to the next environment, eventually to be deployed into production.
 
 There are multiple ways in GitHub that an environment setup can be achieved. One way it can be done is to have one workflow for multiple environments, but the complexity increases as additional processes and jobs are added to a workflow, which does not mean it cannot be done for small pipelines. The plus point of having one workflow is that, when an artifact flows from one environment to another the state and environment values between the deployment environments can be passed easily.
 
