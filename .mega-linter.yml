@@ -6,9 +6,9 @@ DEFAULT_BRANCH: main
 SHOW_ELAPSED_TIME: true
 ENABLE:
   - MARKDOWN
-  # - SPELL
+  # - SPELL Currently 555 errors but would be nice to enable!
 DISABLE_LINTERS:
-  - MARKDOWN_MARKDOWN_TABLE_FORMATTER
+  - MARKDOWN_MARKDOWN_TABLE_FORMATTER   # Does not correctly support GFM
 
 # Linter specific settings
 MARKDOWN_MARKDOWNLINT_CONFIG_FILE: .markdownlintrc
