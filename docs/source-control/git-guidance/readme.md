@@ -2,7 +2,7 @@
 
 ## What is Git?
 
-Git is a distributed version control system. This means that - unlike SVN or CVS - it doesn't use a central server to synchronize. Instead, every participant has a local copy of the source code and the attached history that is kept in sync by comparing commit hashes (SHA hashes of changes between each git commit command) making up the latest version (called `HEAD`).
+Git is a distributed version control system. This means that - unlike SVN or CVS - it doesn't use a central server to synchronize. Instead, every participant has a local copy of the source-code, and the attached history that is kept in sync by comparing commit hashes (SHA hashes of changes between each git commit command) making up the latest version (called `HEAD`).
 
 For example:
 
@@ -13,9 +13,9 @@ repo 3: X -> Y -> Z -> HEAD
 repo 4: A -> J -> HEAD
 ```
 
-Since they share a common history, repo 1 and repo 2 can be synchronized fairly easily, repo 4 _may_ be able to synchronize as well but it's going to have to add a commit (J, and maybe a merge commit) to repo 1. Repo 3 cannot be easily synchronized with the others. Everything related to these commits is stored in a local .git directory in the root of the repository.
+Since they share a common history, repo 1 and repo 2 can be synchronized fairly easily, repo 4 _may_ be able to synchronize as well, but it's going to have to add a commit (J, and maybe a merge commit) to repo 1. Repo 3 cannot be easily synchronized with the others. Everything related to these commits is stored in a local .git directory in the root of the repository.
 
-In other words, by using Git you are simply creating immutable file histories that uniquely identify the current state and therefore allow to share whatever comes after. It's a [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree).
+In other words, by using Git you are simply creating immutable file histories that uniquely identify the current state and therefore allow sharing whatever comes after. It's a [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree).
 
 Be sure to run `git help` after Git installation to find really in-depth explanations of everything.
 
@@ -70,7 +70,7 @@ git push --set-upstream origin feature/123-add-git-instructions
 
 ### Cloning
 
-Whenever you want to make a change to a repository you need to first clone it. Cloning a repository pulls down a full copy of all the repository data, so that you can work on it locally. This copy includes all versions of every file and folder for the project.
+Whenever you want to make a change to a repository, you need to first clone it. Cloning a repository pulls down a full copy of all the repository data, so that you can work on it locally. This copy includes all versions of every file and folder for the project.
 
 ```cmd
 git clone https://github.com/username/repo-name
@@ -140,7 +140,7 @@ The first time you push, you first need to set an upstream branch as follows. Af
 git push --set-upstream origin feature/feature-name
 ```
 
-Once the feature branch is pushed to the remote repository it is visible to anyone with access to the code.
+Once the feature branch is pushed to the remote repository, it is visible to anyone with access to the code.
 
 ### Merging
 
@@ -169,7 +169,7 @@ git merge develop
 git status
 ```
 
-You can start an interactive process that will show which files have conflicts. Sometimes you removed a file, where it was changed in dev. Or you made changes to some lines in a file where another developer made changes as well. If you went through the installation steps mentioned before, Visual Studio Code is setup as merge tool. You can also use a merge tool like [kdiff3](https://github.com/KDE/kdiff3). When editing conflicts occur, the process will automatically open Visual Studio Code where the conflicting parts are highlighted in green and blue and you have make a selection:
+You can start an interactive process that will show which files have conflicts. Sometimes you removed a file, where it was changed in dev. Or you made changes to some lines in a file where another developer made changes as well. If you went through the installation steps mentioned before, Visual Studio Code is set up as merge tool. You can also use a merge tool like [kdiff3](https://github.com/KDE/kdiff3). When editing conflicts occur, the process will automatically open Visual Studio Code where the conflicting parts are highlighted in green and blue, and you have make a choice:
 
 * Accept your changes (current)
 * Accept the changes from dev branch (incoming)
@@ -200,11 +200,11 @@ git log
 git push
 ```
 
-If no other conflicts appear, the PR can now be merged and your branch deleted. Use `squash` to reduce your changes into a single commit, so the commit history can be within an acceptable size.
+If no other conflicts appear, the PR can now be merged, and your branch deleted. Use `squash` to reduce your changes into a single commit, so the commit history can be within an acceptable size.
 
 ### Stashing changes
 
-`git stash` is super handy if you have un-committed changes in your working directory but you want to work on a different branch. You can run `git stash` and save the un-committed work and reverts back to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
+`git stash` is super handy if you have un-committed changes in your working directory, but you want to work on a different branch. You can run `git stash`, save the un-committed work, and revert to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
 
 ```cmd
 git stash
@@ -220,7 +220,7 @@ git stash branch <new_branch_to_save_changes>
 
 ### Recovering lost commits
 
-If you "lost" a commit that you want to return to, for example to revert back a `git rebase` where your commits got squashed, you can use `git reflog` to find the commit:
+If you "lost" a commit that you want to return to, for example to revert a `git rebase` where your commits got squashed, you can use `git reflog` to find the commit:
 
 ```cmd
 git reflog
@@ -270,7 +270,7 @@ origin  https://hostname/username/new-repository-name.git (push)
 
 ### Reverting and deleting commits
 
-To "undo" a commit, run the following two commands: `git revert` and `git reset`. `git revert` creates a new commit that undoes commits while `git reset` allows to delete commits entirely from the commit history.
+To "undo" a commit, run the following two commands: `git revert` and `git reset`. `git revert` creates a new commit that undoes commits while `git reset` allows deleting commits entirely from the commit history.
 
 > If you have committed secrets/keys, `git reset` will remove them from the commit history!
 

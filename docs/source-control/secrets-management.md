@@ -1,4 +1,4 @@
-# Working with secrets in source control
+# Working with Secrets in Source Control
 
 The best way to avoid leaking secrets is to store them in local/private files and exclude these from git tracking with a [.gitignore](https://git-scm.com/docs/gitignore) file.
 E.g. the following pattern will exclude all files with the extension `.private.config`:

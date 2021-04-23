@@ -1,6 +1,6 @@
 # Source Control
 
-There are many different options when working with Source Control. In [CSE](../CSE.md) we use [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/) for private repositories and [GitHub](https://github.com/) for public repositories.
+There are many options when working with Source Control. In [CSE](../CSE.md) we use [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/) for private repositories and [GitHub](https://github.com/) for public repositories.
 
 ## Sections within Source Control
 

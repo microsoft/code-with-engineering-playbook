@@ -49,7 +49,7 @@ Version Updates happen through:
 
 * Commit messages or tags for Major / Minor / Revision updates.
 * Branch names (e.g. develop, release/..) for Alpha / Beta / RC
-* Otherwise: Number of commits (+12, ..)
+* Otherwise: Number of commits (+12, ...)
 
 Recommendation is to run semver during your CI process to make each build uniquely identifiable.
 
