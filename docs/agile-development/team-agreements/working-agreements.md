@@ -14,7 +14,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 - We work as one team towards a common goal and clear scope
 - We make sure everyone's voice is heard, listened to
 - We show all team members equal respect
-- We work as a team to have common expectations for technical delivery that are documented in a [Team Manifesto](../team-manifesto/readme.md).
+- We work as a team to have common expectations for technical delivery that are documented in a [Team Manifesto](team-manifesto.md).
 - We make sure to spread our expertise and skills in the team, so no single person is relied on for one skill
 - All times below are listed in CET
 
