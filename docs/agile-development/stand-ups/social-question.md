@@ -4,7 +4,7 @@ The social question of the day is an optional short question to follow the [thre
 
 The social question should be chosen before the stand-up. The facilitator should select the question either independently or from the team's asynchronous suggestions. This minimizes delays at the start of the stand-up.
 
-> Tip: having the stand-up facilitator role rotate each sprint lets the facilitator choose the social question independently without burdening any one team member.
+> **Tip:** having the stand-up facilitator role rotate each sprint lets the facilitator choose the social question independently without burdening any one team member.
 
 ## Properties of a good question
 
