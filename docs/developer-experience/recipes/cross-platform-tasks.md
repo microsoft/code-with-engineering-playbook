@@ -2,7 +2,7 @@
 
 There are several options to alleviate cross-platform compatibility issues.
 
-- Running tasks in a container 
+- Running tasks in a container
 - Using the tasks-system in VS Code which provides options to allow commands to be executed specific to an operating system.
 
 ## Docker or Container based
