@@ -12,7 +12,7 @@
 
 ## Goals / In-Scope
 
-> List a few bullet points of goals that this milestone/epic will achieve and that are most relevant for the design review discussion. You may include acceptable criteria required to meet the [Definition of Done](../../agile-development/team-agreements/definition-of-done/).
+> List a few bullet points of goals that this milestone/epic will achieve and that are most relevant for the design review discussion. You may include acceptable criteria required to meet the [Definition of Done](../../agile-development/team-agreements/definition-of-done.md).
 
 ## Non-goals / Out-of-Scope
 
