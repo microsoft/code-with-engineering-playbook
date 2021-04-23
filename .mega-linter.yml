@@ -12,4 +12,4 @@ DISABLE_LINTERS:
 
 # Linter specific settings
 MARKDOWN_MARKDOWNLINT_CONFIG_FILE: .markdownlintrc
-MARKDOWN_MARKDOWN_LINK_CHECK_CONFIG_FILE: .markdownlintcheck.json
+MARKDOWN_MARKDOWN_LINK_CHECK_CONFIG_FILE: .markdownlinkcheck.json
