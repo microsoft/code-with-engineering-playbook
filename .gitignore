@@ -341,3 +341,6 @@ _site
 # mkdocs
 site/
 mkdocs/
+
+# Mega-linter
+report/
