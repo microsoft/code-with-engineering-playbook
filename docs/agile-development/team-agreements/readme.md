@@ -5,6 +5,7 @@
 * [Definition of Done](definition-of-done.md)
 * [Definition of Ready](definition-of-ready.md)
 * [Working Agreements](working-agreements.md)
+* [Team Manifesto](team-manifesto/readme.md)
 
 ## Goals
 
