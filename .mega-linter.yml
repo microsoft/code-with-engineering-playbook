@@ -4,6 +4,7 @@
 APPLY_FIXES: all # all, none, or list of linter keys
 DEFAULT_BRANCH: main
 SHOW_ELAPSED_TIME: true
+FORMATTERS_DISABLE_ERRORS: false    # Display all warnings as errors
 ENABLE:
   - MARKDOWN
   # - SPELL Currently 555 errors but would be nice to enable!
