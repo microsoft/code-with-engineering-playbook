@@ -1,0 +1,29 @@
+site_name: Code With Engineering Playbook
+site_url: https://microsoft.github.io/code-with-engineering-playbook
+site_description: CSE Code With Engineering Playbook
+site_author: Microsoft CSE
+
+repo_url: https://github.com/microsoft/code-with-engineering-playbook/
+edit_uri: ""
+
+theme:
+  name: material
+  font:
+    text: Roboto
+  palette:
+    primary: black
+  logo: resources/ms_icon.png
+  favicon: resources/ms_icon.png
+  features:
+    - navigation.instant
+
+markdown_extensions:
+  - meta
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.pathconverter
+  - pymdownx.tabbed
+  - mdx_truly_sane_lists
+  - pymdownx.tasklist
+  
