@@ -1,7 +1,6 @@
 # Penetration Testing
 
 A penetration test is a simulated attack against your application to check for exploitable security issues.
-For further reading  see [CSEDevSecOps PenetrationTesting Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/PenetrationTesting)
 
 ## Why Penetration Testing
 
@@ -15,7 +14,7 @@ Insights provided by the penetration test can then be used to fine-tune your WAF
 
 ## Penetration Testing Frameworks and Tools
 
-Use the tools and pipelines as suggested in [CSEDevSecOps PenetrationTesting Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/PenetrationTesting)
+[OWASP Zed Attack Proxy (ZAP)](https://www.zaproxy.org/) - OWASP penetration testing tool for web applications.
 
 ## Conclusion
 

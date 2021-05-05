@@ -1,7 +1,7 @@
 # Secrets Rotation
 
 Secret rotation is the process of refreshing the secrets that are used by the application.
-For further reading see [CSEDevSecOps Secret Management Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/SecretManagement)
+The best way to authenticate to Azure services is by using a managed identity, but there are some scenarios where that isn't an option. In those cases, access keys or secrets are used. You should periodically rotate access keys or secrets.
 
 ## Why Secrets Rotation
 
@@ -20,7 +20,8 @@ The secret rotation process might result in a downtime when the application is r
 
 ## Secrets Rotation Frameworks and Tools
 
-Use the tools and pipelines as suggested in [CSEDevSecOps Secret Management Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/SecretManagement)
+1. For rotation of a secret for resources that use one set of authentication credentials [click here](https://docs.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation)
+1. For rotation of a secret for resources that have two sets of authentication credentials [click here](https://docs.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation-dual?tabs=azure-cli)
 
 ## Conclusion
 

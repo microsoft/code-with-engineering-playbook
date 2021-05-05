@@ -2,8 +2,6 @@
 
 Dependency and Container scanning is performed in order to search for vulnerabilities in operating systems, language and application packages.
 
-For further reading about Dependency and Container Scanning see [CSEDevSecOps Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/DependencyContainerScanning)
-
 ## Why Dependency and Container Scanning
 
 Container images are standard application delivery format in cloud-native environments.
@@ -33,7 +31,10 @@ To detect vulnerabilities contained within a project’s dependencies use contai
 
 ## Dependency and Container Scanning Frameworks and Tools
 
-Use the tools and pipelines as suggested in [CSEDevSecOps Dependency and Container Scanning Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/DependencyContainerScanning).
+1. [Trivy](https://github.com/aquasecurity/trivy) - a simple and comprehensive vulnerability scanner for containers (doesn't support Windows containers)
+1. [Aqua](https://www.aquasec.com/solutions/azure-container-security/) - dependency and container scanning for applications running on AKS, ACI and Windows Containers. Has an integration with AzDO pipelines.
+1. [Dependency-Check Plugin for SonarQube](https://github.com/dependency-check/dependency-check-sonar-plugin) - OnPrem dependency scanning
+1. [WhiteSource](https://www.whitesourcesoftware.com/open-source-security-lp/?utm_origin=ad&utm_from=Adwords&utm_pcampaign=fs.brand.rotw.search&utm_gen=Searched%20Term:whitesource&gclid=Cj0KCQjw4cOEBhDMARIsAA3XDRg55QPm_0DkVaDxJnVE7bX6s2hBCKa0QfezPZG1p-JhaxBCG8TgozsaAgIWEALw_wcB) - Open Source Scanning Software
 
 ## Conclusion
 

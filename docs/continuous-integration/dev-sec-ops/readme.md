@@ -24,7 +24,3 @@ Topics covered:
 1. [Static Code Analysis](./static-code-analysis/static_code_analysis.md) - analyze source code or compiled versions of code to help find security flaws.
 1. [Penetration Testing](./penetration-testing/penetration_testing.md) - a simulated attack against your application to check for exploitable vulnerabilities.
 1. [Container Dependencies Scanning](./dependency-container-scanning/dependency_container_scanning.md) - search for vulnerabilities in container operating systems, language packages and application dependencies.
-
-## Resources
-
-[CSEDevSecOps Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios)

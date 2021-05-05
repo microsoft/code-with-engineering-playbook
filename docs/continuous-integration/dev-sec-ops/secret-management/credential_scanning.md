@@ -1,7 +1,6 @@
 # Credential Scanning
 
 Credential scanning is the practice of automatically inspecting a project to ensure that no secrets are included in the project's source code. Secrets include database passwords, storage connection strings, admin logins, service principals, etc.
-For further reading see [CSEDevSecOps Credential Scanning Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/CredentialScanning).
 
 ## Why Credential scanning
 
@@ -24,9 +23,9 @@ To implement credential scanning for a project, consider the  following:
 
 Recipes and Scenarios-
 
-1. CSEDevSecOps [Credential Scanning Scenarios](https://github.com/microsoft/CSEDevSecOps/tree/master/Scenarios/CredentialScanning).
 1. [Detect-secrets](./recipes/detect-secrets.md) - detect-secrets is an aptly named module for detecting secrets within a code base.
 1. [detect-secrets inside Azure DevOps Pipeline](./recipes/detect-secrets-ado.md)
+1. [Microsoft Security Code Analysis extension](https://docs.microsoft.com/en-us/azure/security/develop/security-code-analysis-overview)
 
 Additional Tools -
 
