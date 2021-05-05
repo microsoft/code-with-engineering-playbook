@@ -135,23 +135,6 @@ Model monitoring should lead to:
 - Warnings when anomalies in model output or input data are occurring
 - Retraining decisions
 
-### Have any ethical concerns been taken into account in accordance with the Microsofts AI principles on responsible AI?
+### Have any ethical concerns been taken into account?
 
-[Check the Microsoft AI Principles for responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai)
-
-- Fairness
-- Inclusiveness
-- Reliability & Safety
-- Privacy & Security
-- Transparency
-- Accountability
-
-Potential areas to explore:
-
-- Has the team analysed the input data properly to make sure that the training data is suitable for machine learning?
-- Is the training data an accurate representation of data that will be used as input in production?
-- Is there a good representation of all users?
-- Is there a fall back mechanism (a human in the loop or a way to revert decisions based on the model)?
-- Does data used by the model for training or scoring contain PII? What measures have been taken to remove sensitive data?
-- Does the model impact consequential decisions, like blocking people from getting jobs, loans, health care etc. or in the cases where it may, have appropriate ethical considerations been discussed?
-- Have measures for re-training been considered?
+Every ML project goes through a [Responsible AI](responsible-ai.md) process to ensure that it upholds Microsoft's [6 Responsible AI principles](https://www.microsoft.com/en-us/ai/responsible-ai).
