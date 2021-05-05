@@ -31,7 +31,7 @@ detect-secrets scan > .secrets.baseline
 cp .secrets.baseline .secrets.new
 
 # find all the secrets in the repository
-detect-secrets scan --update .secrets.new $(find . -type f ! -name '.secrets.*' ! -path '*/.git*')
+detect-secrets scan --baseline .secrets.new $(find . -type f ! -name '.secrets.*' ! -path '*/.git*')
 
 # if there is any difference between the known and newly detected secrets, break the build
 list_secrets() { jq -r '.results | keys[] as $key | "\($key),\(.[$key] | .[] | .hashed_secret)"' "$1" | sort; }
