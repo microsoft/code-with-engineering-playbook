@@ -3,13 +3,11 @@ name: Markdownlint
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   lint:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js
@@ -20,3 +18,12 @@ jobs:
       run: |
         npm i
         npm run lint
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        use-quiet-mode: 'yes'
+        use-verbose-mode: 'no'
+        config-file: '.markdownlinkcheck.json'
