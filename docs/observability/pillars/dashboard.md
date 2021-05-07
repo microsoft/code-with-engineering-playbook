@@ -20,12 +20,12 @@ Common questions to ask yourself when building dashboard would be:
 - How do I better help my team with alerts and troubleshooting?
 - Is my system healthy for the past one day/week/month/quarter?
 
-Here are principles to consider to build a better dashboards:
+Here are principles to consider when building dashboards:
 
 1. Separate a dashboard in multiple sections for simplicity. Adding page jump or anchor(#section) is also a plus if applicable.
 2. Add multiple and simple charts. Build simple chart, have more of them rather than a complicated all in one chart.
 3. Identify goals or KPI measurement. Identifying goals or KPI helps in defining what needs to be achieved. Here are some examples - server downtime, mean time to address error, service level agreement.
-4. Ask questions that can help reach the defined goal or KPI. This may sound counter intuitive, the more questions asked while constructing dashboard the better the outcome will be. Questions like location, internet service provider, time of day the users make requests to server would be a good start.
+4. Ask questions that can help reach the defined goal or KPI. This may sound counter-intuitive, the more questions asked while constructing dashboard the better the outcome will be. Questions like location, internet service provider, time of day the users make requests to server would be a good start.
 5. Validate the questions. This is often done with stakeholders, sponsors, leads or project managers.
 6. Observe the dashboard that is built. Is the data reflecting what the stakeholders set out to answer?
 7. Always remember this process takes time. Building dashboard is easy, building an observable dashboard to show pattern is hard.

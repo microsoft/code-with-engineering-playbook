@@ -17,8 +17,8 @@
 
 ## Goals/In-Scope
 
-* List the goals that the feature/story will help us achieve that are most relevant for the design review discussion.  
-* This should include acceptance criteria required to meet [definition of done](../../agile-development/team-agreements/definition-of-done/).
+* List the goals that the feature/story will help us achieve that are most relevant for the design review discussion.
+* This should include acceptance criteria required to meet [definition of done](../../agile-development/team-agreements/definition-of-done.md).
 
 ## Non-goals / Out-of-Scope
 
@@ -53,7 +53,7 @@
 
 ## Risks & Mitigation
 
-* Does the team need assistance from subject matter experts?
+* Does the team need assistance from subject-matter experts?
 * What security and privacy concerns does this milestone/epic have?
 * Is all sensitive information and secrets treated in a safe and secure manner?
 

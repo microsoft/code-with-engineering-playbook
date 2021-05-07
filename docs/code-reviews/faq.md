@@ -12,7 +12,7 @@ More information can be found in [Pull Requests - Size Guidance](./pull-requests
 ### Possible actions you can take:
 
 - Add a rule for PR turnaround time to your work agreement.
-- Setup a slot after the standup to go through pending PRs and assign the ones that are inactive.
+- Set up a slot after the standup to go through pending PRs and assign the ones that are inactive.
 - Dedicate a PR review manager who will be responsible to keep things flowing by assigning or notifying people when PR got stale.
 - Use tools to better indicate stale reviews - [Customize ADO - Task Boards](./process-guidance/customize-ado.md#task-boards).
 
@@ -30,7 +30,7 @@ Our peer code reviews are structured around best practices to find specific kind
 
 ## What if we do pair programming
 
-Someone outside of the pair should perform the code review. One of the other major benefits of code reviews is spreading knowledge about the code base to other members of the team that don't usually work in the part of the codebase under review.
+Someone outside the pair should perform the code review. One of the other major benefits of code reviews is spreading knowledge about the code base to other members of the team that don't usually work in the part of the codebase under review.
 
 ## What if we do mob programming
 

@@ -12,7 +12,7 @@ Profiling does incur some cost, as it requires inspecting the call stack, and so
 
 Different tools visualize profiles differently. Common CPU profiles might use a directed graph ![graph](images/pprof-dot.png) or a flame graph. ![flame](images/flame.png)
 
-Unfortunately, each profiler tool typically uses it's own format for storing profiles, and comes with its own visualization.
+Unfortunately, each profiler tool typically uses its own format for storing profiles, and comes with its own visualization.
 
 ## Specific tools
 
