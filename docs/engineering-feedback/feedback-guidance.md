@@ -25,10 +25,10 @@ Which Azure service does this feedback item refer to? If there are multiple Azur
 
 Select one of the following to describe what type of feedback is being provided:
 
-- Business Blocker (eg. No SLA on X, Service Y not GA, Service A not in Region B)
-- Technical Blocker (eg. Accelerated networking not available on Service X)
-- Documentation (eg. Instructions for configuring scenario A missing)
-- Feature Request (eg. Enable simple integration to X on Service Y)
+- Business Blocker (e.g. No SLA on X, Service Y not GA, Service A not in Region B)
+- Technical Blocker (e.g. Accelerated networking not available on Service X)
+- Documentation (e.g. Instructions for configuring scenario X missing)
+- Feature Request (e.g. Enable simple integration to X on Service Y)
 
 ### Stage
 
@@ -64,21 +64,21 @@ The reproduction steps are important since they help confirm and replay the issu
 
 Provide a clear set of all conditions and pre-requisites required before following the set of reproduction steps. These could include:
 
-- Platform (eg. AKS 1.16.4 cluster with Azure CNI, Ubuntu 19.04 VM)
-- Services (eg. Azure Key Vault, Azure Monitor)
-- Networking (eg. VNET with subnet)
+- Platform (e.g. AKS 1.16.4 cluster with Azure CNI, Ubuntu 19.04 VM)
+- Services (e.g. Azure Key Vault, Azure Monitor)
+- Networking (e.g. VNET with subnet)
 
 ### Steps
 
 Provide a clear set of repeatable steps that will allow for this feedback to be reproduced. This can take the form of:
 
-- Scripts (eg. bash, PowerShell, terraform, arm template)
-- Command line instructions (eg. az, helm, terraform)
-- Screen shots (eg. azure portal screens)
+- Scripts (e.g. bash, PowerShell, terraform, arm template)
+- Command line instructions (e.g. az, helm, terraform)
+- Screen shots (e.g. azure portal screens)
 
 ## Notes
 
-Include items like architecture diagrams, screen shots, logs, traces etc which can help with understanding your notes and the feedback item. Also include details about the scenario customer/partner verbatim as much as possible in the main content.
+Include items like architecture diagrams, screenshots, logs, traces etc which can help with understanding your notes and the feedback item. Also include details about the scenario customer/partner verbatim as much as possible in the main content.
 
 ### What didn't work
 

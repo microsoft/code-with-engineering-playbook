@@ -6,13 +6,13 @@ Metrics provide a near real-time stream of data, informing operators and stakeho
 
 ## Collection Methods
 
-Metric collection approaches fall into two broad categories: push metrics & pull metrics. Push metrics means that the originating component sends the data to a remote service or agent. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor) and [Etsy's statsd](https://github.com/statsd/statsd) are examples of push metrics. Some of the strengths with push metrics include:
+Metric collection approaches fall into two broad categories: push metrics & pull metrics. Push metrics means that the originating component sends the data to a remote service or agent. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor) and [Etsy's statsd](https://github.com/statsd/statsd) are examples of push metrics. Some strengths with push metrics include:
 
 - Only require network egress to the remote target.
 - Originating component controls the frequency of measurement.
 - Simplified configuration as the component only needs to know the destination of where to send data.
 
-Some of the trade-offs with this approach:
+Some trade-offs with this approach:
 
 - At scale, it is much more difficult to control data transmission rates, which can cause service throttling or dropping of values.
 - Determining if every component, particularly in a dynamic scale environment, is healthy and sending data is difficult.

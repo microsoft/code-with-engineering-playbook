@@ -1,4 +1,4 @@
-# Envisioning & Problem formulation
+# Envisioning and Problem Formulation
 
 Before beginning a data science investigation, we need to define a problem statement which the data science team can explore; this problem statement can have a significant influence on whether the project is likely to be successful.
 
@@ -11,7 +11,7 @@ The main goals of the envisioning process are:
 * Determine what data is available to solve the problem
 * Understand the capabilities and working practices of the data science team
 
-The envisioning process usually entails a a series of 'envisioning' sessions where the data science team work alongside subject matter experts to formulate the problem in such a way that there is a shared understanding a shared understanding of the problem domain, a clear goal, and a predefined approach to evaluating a potential solution.
+The envisioning process usually entails a series of 'envisioning' sessions where the data science team work alongside subject-matter experts to formulate the problem in such a way that there is a shared understanding a shared understanding of the problem domain, a clear goal, and a predefined approach to evaluating a potential solution.
 
 ## Understanding the problem domain
 
@@ -27,16 +27,16 @@ However, establishing this understanding can prove difficult, especially for tho
 * Identify a measurable problem and define this in business terms. The objective should be clear, and we should have a good understanding of the factors that we can control - that can be used as inputs - and how they affect the objective. Be as specific as possible.
 * Decide how the performance of a solution should be measured and identify whether this is possible within the restrictions of this problem. Make sure it aligns with the business objective and that you have identified the data required to evaluate the solution. Note that the data required to evaluate a solution may differ from the data needed to create a solution.
 * Thinking about the solution as a black box, detail the function that a solution to this problem should perform to fulfil the objective and verify that the relevant data is available to solve the problem.
-  * One way of approaching this is by thinking about how a subject matter expert could solve the problem manually and the data that would be required; if a human subject matter expert is unable to solve the problem given the available data, this is indicative that additional information is required and/or more data needs to be collected.
+  * One way of approaching this is by thinking about how a subject-matter expert could solve the problem manually, and the data that would be required; if a human subject-matter expert is unable to solve the problem given the available data, this is indicative that additional information is required and/or more data needs to be collected.
 * Based on the available data, define specific hypothesis statements - which can be proved
-or disproved - to guide the exploration of the data science team. Where possible, each hypothesis statement should have a clearly defined success criteria (e.g., *with an accuracy of over 60%*), however, this is not always possible - especially for projects where no solution to the problem currently exists. In these cases, the measure of success could be based on a subject matter expert verifying that the results meet their expectations.
+or disproved - to guide the exploration of the data science team. Where possible, each hypothesis statement should have a clearly defined success criteria (e.g., *with an accuracy of over 60%*), however, this is not always possible - especially for projects where no solution to the problem currently exists. In these cases, the measure of success could be based on a subject-matter expert verifying that the results meet their expectations.
 * Document all the above information, to ensure alignment between stakeholders and establish a clear understanding of the problem to be solved. Try to ensure that as much relevant domain knowledge is captured as possible, and that the features present in available data - and the way that the data was collected - are clearly explained, such that they can be understood by a non-subject matter expert.
 
 Once an understanding of the problem domain has been established, it may be necessary to break down the overall problem into smaller, meaningful chunks of work to maintain team focus and ensure a realistic project scope within the given time frame.
 
 ## Envisioning Guidance
 
-During envisioning sessions, the following may prove useful for guiding the discussion. Many of these points are taken directly, or adapted from, [[1]](##References) and [[2]](##References).
+During envisioning sessions, the following may prove useful for guiding the discussion. Many of these points are taken directly, or adapted from, [[1]](#references) and [[2]](#references).
 
 ### Problem Framing
 
@@ -61,7 +61,7 @@ During envisioning sessions, the following may prove useful for guiding the disc
 2. What order of magnitude is the current data (e.g., GB, TB)? Is this all relevant?
 3. How does the organization decide when to collect additional data or purchase external data? Are there any examples of this?
 4. What data has been used so far to analyse recent data-driven projects? What has been found to be most useful? What was not useful? How was this judged?
-5. What additional internal data may provide insights useful for data-driven decision making for proposed projects? What external data could be useful?
+5. What additional internal data may provide insights useful for data-driven decision-making for proposed projects? What external data could be useful?
 6. What are the possible constraints or challenges in accessing or incorporating this data?
 7. How was the data collected? Are there any obvious biases due to how the data was collected?
 8. What changes to data collection, coding, integration, etc has occurred in the last 2 years that may impact the interpretation or availability of the collected data
@@ -79,7 +79,7 @@ During envisioning sessions, the following may prove useful for guiding the disc
 
 ## Example - a recommendation engine problem
 
-To illustrate how the above process can be applied to a tangible problem domain, as an example, consider that we are looking at implementing a recommendation engine for a clothing retailer. This example was, in part, inspired by [[3]](##References).
+To illustrate how the above process can be applied to a tangible problem domain, as an example, consider that we are looking at implementing a recommendation engine for a clothing retailer. This example was, in part, inspired by [[3]](#references).
 
 Often, the objective may be simply presented, in a form such as "to improve sales". However, whilst this is ultimately the main goal, we would benefit from being more specific here. Suppose that we were to deploy a solution in November and then observed a December sales surge; how would we be able to distinguish how much of this was as a result of the new recommendation engine, as opposed to the fact that December is a peak buying season?
 
@@ -87,7 +87,7 @@ A better objective, in this case, would be "to drive additional sales by present
 
 The data required to evaluate a potential solution in this case would be which recommendations resulted in new sales, and an estimation of a customer's likeliness to purchase a specific item without a recommendation. Note that, whilst this data could also be used to build a recommendation engine, it is unlikely that this data will be available before a recommendation system has been implemented, so it is likely that we will have to use an alternate data source to build the model.
 
-We can get an initial idea of how to approach a solution to this problem by considering how it would be solved by a subject matter expert. Thinking of how a personal stylist may provide a recommendation, they are likely to recommend items based on one or more of the following:
+We can get an initial idea of how to approach a solution to this problem by considering how it would be solved by a subject-matter expert. Thinking of how a personal stylist may provide a recommendation, they are likely to recommend items based on one or more of the following:
 
 * generally popular items
 * items similar to those liked/purchased by the customer

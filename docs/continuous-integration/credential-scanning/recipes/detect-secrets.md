@@ -1,4 +1,4 @@
-# Credential scanning tool suggestion: detect-secrets
+# Credential Scanning Tool: detect-secrets
 
 ## Background
 
