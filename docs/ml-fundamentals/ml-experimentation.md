@@ -48,7 +48,7 @@ All virtual environments frameworks create isolation, some also propose dependen
 
 #### Types of virtual environments
 
-In CSE we often choose from either `venv`, `Conda` or `Poetry`, depending on the project requirements and complexity.
+In CSE, we often choose from either `venv`, `Conda` or `Poetry`, depending on the project requirements and complexity.
 
 - [venv](https://docs.python.org/3/library/venv.html) is included in Python, is the easiest to use, but lacks more advanced features like dependency management.
 - [Conda](https://docs.conda.io/en/latest/) is a popular package, dependency and environment management framework. It supports multiple stacks (Python, R) and multiple versions of the same environment (e.g. multiple Python versions). `Conda` maintains its own package repository, therefore some packages might not be downloaded and managed directly through `Conda`.
@@ -67,9 +67,9 @@ In CSE we often choose from either `venv`, `Conda` or `Poetry`, depending on the
 
 ### Source control and folder/package structure
 
-Applied ML projects often contain source code, notebooks, devops scripts, documentation, scientific resources, datasets and more. We recommend to come up with an agreed folder structure to keep resources tidy. Consider deciding upon a generic folder structure for projects (e.g. which contains the folders `data`, `src`, `docs` and `notebooks`), or adopt popular structures like the [CookieCutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) folder structure.
+Applied ML projects often contain source code, notebooks, devops scripts, documentation, scientific resources, datasets and more. We recommend coming up with an agreed folder structure to keep resources tidy. Consider deciding upon a generic folder structure for projects (e.g. which contains the folders `data`, `src`, `docs` and `notebooks`), or adopt popular structures like the [CookieCutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) folder structure.
 
-[Source control](../source-control/readme.md) should be applied to allow collaboration, versioning, code reviews, traceability and backup. In data science projects, source control should be used for code, and the storing and versioning of other  artifacts (e.g. data, scientific literature) should be decided upon depending on the scenario.
+[Source control](../source-control/README.md) should be applied to allow collaboration, versioning, code reviews, traceability and backup. In data science projects, source control should be used for code, and the storing and versioning of other  artifacts (e.g. data, scientific literature) should be decided upon depending on the scenario.
 
 #### Folder structure and source control expected outcomes
 
@@ -112,7 +112,7 @@ By creating abstractions to building blocks (e.g., datasets, models, evaluators)
 we allow the easy introduction of new logic into the experimentation pipeline while keeping the agreed upon experimentation flow intact.
 
 These abstractions can be created using different mechanisms.
-For example, we can use Object Oriented Programming (OOP) solutions like abstract classes:
+For example, we can use Object-Oriented Programming (OOP) solutions like abstract classes:
 
 - [An example from scikit-learn describing the creation of new estimators compatible with the API](https://scikit-learn.org/stable/developers/develop.html).
 - [An example from PyTorch on extending the abstract `Dataset` class](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html#dataset-class).

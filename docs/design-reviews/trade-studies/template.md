@@ -6,7 +6,7 @@ architecture designs.
 
 ## Trade Study: {study name goes here}
 
-Conducted by: {Names and at least one email address for follow up questions}
+Conducted by: {Names and at least one email address for follow-up questions}
 
 Backlog Work Item: {Link to the work item to provide more context}
 
@@ -80,4 +80,4 @@ in the table entries and color coding the cells to represent good, fair, bad.
 The chosen solution, or a list of questions that need to be answered before the decision can be made.
 
 In the latter case, each question needs an action item and an assigned person for answering the question.
-Once those questions are answered, the document must be updated to reflect the answers and the final decision
+Once those questions are answered, the document must be updated to reflect the answers, and the final decision

@@ -19,7 +19,7 @@ There are times when not all solutions can be run locally. This limitation could
   - view and access logs
   - live view of the pods state (e.g. started, terminating, etc)
 
-- Different dashboards may provide different functionalities and the use case to choose a particular dashboard will depend on the requirements. For example, many dashboards provide a way to only monitor your applications on Kubernetes but do not provide a way to manage them.
+- Different dashboards may provide different functionalities, and the use case to choose a particular dashboard will depend on the requirements. For example, many dashboards provide a way to only monitor your applications on Kubernetes but do not provide a way to manage them.
 
 ## Open Source Dashboards
 
