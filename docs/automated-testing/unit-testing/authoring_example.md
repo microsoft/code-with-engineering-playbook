@@ -1,11 +1,11 @@
 # Example: Authoring a unit test
 
-To illustrate some of the unit testing techniques for an object oriented language, let's start with an example of some
+To illustrate some unit testing techniques for an object-oriented language, let's start with an example of some
 code we wish to add unit tests for. In this example, we have a configuration class that contains all the startup options
 for an app we are writing. Normally it reads from a `.config` file, but we are having three problems with the current
 implementation:
 
-1. There is a bug in the Configuration class and we have no unit tests since it relies on reading a config file
+1. There is a bug in the Configuration class, and we have no unit tests since it relies on reading a config file
 2. We can't unit test any of the code that relies on the Configuration class reading a config file
 3. In the future, we want to allow for configuration to be saved in the cloud and accessed via REST api.
 
@@ -39,11 +39,11 @@ public class Configuration
 
 In our example, we have a single dependency: the file system. Rather than just abstracting the file system entirely, let
 us think about why we need the file system and abstract the *concept* rather than the implementation. In this case, we
-are using the `File` class to read from the config file and the config contents. The abstraction concept here is some
+are using the `File` class to read from the config file, and the config contents. The abstraction concept here is some
 form or configuration reader that returns each line of the configuration in a string array. We could call it
 `ConfigurationReader`, and it has a single method, `Read`, which returns the contents.
 
-When creating abstractions, it can be good practice to create an interface for that abstraction, in languages that
+When creating abstractions, it can be good practice creating an interface for that abstraction, in languages that
 support it. In the example with C#, we can create an `IConfigurationReader` interface, and instead of just having a
 `ConfigurationReader` class we can be more specific and name if `FileConfigurationReader` to indicate that it reads from
 the file system:
@@ -122,7 +122,7 @@ public class Configuration
 ```
 
 Above, a technique was used called [Constructor Injection](https://en.wikipedia.org/wiki/Dependency_injection#Constructor_injection).
-This uses the objects constructor to set what our dependencies will be, which means whichever object creates the
+This uses the object's constructor to set what our dependencies will be, which means whichever object creates the
 `Configuration` object will control which reader needs to get passed in. This is an example of "inversion of control",
 previously the `Configuration` object controlled the dependency, but instead we pushed up the control to whatever
 component creates this object.
@@ -138,7 +138,7 @@ have unit tests. Let us write some unit tests that gives us full coverage of the
 that tests the scenario described by the bug (if there are multiple empty lines in the configuration file, an
 IndexOutOfRangeException is being thrown).
 
-However we still have one problem, we only have a single implementation of `IConfigurationReader`, and it uses the file
+However, we still have one problem, we only have a single implementation of `IConfigurationReader`, and it uses the file
 system, meaning any unit tests we write will still have a dependency on the file system! Luckily since we used
 dependency injection, all we need to do is create an implementation of `IConfigurationReader` that does not depend on
 the file system. We could create a mock here, but instead let's create a concrete implementation of the interface which
@@ -162,7 +162,7 @@ public class PassThroughConfigurationReader : IConfigurationReader
 }
 ```
 
-This simple class will be used in our unit tests so we can create different states without requiring lots of file
+This simple class will be used in our unit tests, so we can create different states without requiring lots of file
 access. Now that we have this in place, we can go ahead and write our unit tests, starting with the tests that describe
 the current behavior:
 
@@ -303,7 +303,7 @@ confidence in future changes.
 
 ## Untestable Code
 
-As described in the [abstraction section](readme.md#abstraction), not all code can be properly unit tested. In our case
+As described in the [abstraction section](README.md#abstraction), not all code can be properly unit tested. In our case
 we have a single class that has 0% test coverage: `FileConfigurationReader`. This is expected; in this case we kept
 `FileConfigurationReader` as light as possible with no additional logic other than calling into the third-party
 dependency. `FileConfigurationReader` is an example of the [facade design pattern](https://en.wikipedia.org/wiki/Facade_pattern).
@@ -313,7 +313,7 @@ dependency. `FileConfigurationReader` is an example of the [facade design patter
 One of our original problems described in this example is that in the future we expect to load the configuration from a
 web API. By doing all the work of abstracting the way we load the configuration text and breaking the dependency on the
 file system, we have already done all the hard work to enable this future scenario! All that needs to be done next is to
-create a `WebApiConfigurationReader` implementation and use that the construct the `Configuration` object and it should
+create a `WebApiConfigurationReader` implementation and use that the construct the `Configuration` object, and it should
 just work.
 
 That is one of the benefits of testable design, in the process of writing our tests in a safe way, a side effect of that

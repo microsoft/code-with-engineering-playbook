@@ -1,4 +1,4 @@
-# Agile development considerations for ML projects
+# Agile Development Considerations for ML Projects
 
 ## Overview
 
@@ -13,12 +13,12 @@ To learn more about how CSE runs the Agile process for software development team
 
 Within this framework, the team follows these Agile ceremonies:
 
-- [Backlog management](../agile-development/backlog-management/readme.md)
-- [Retrospectives](../agile-development/retrospectives/readme.md)
-- [Scrum of Scrums](../agile-development/scrum-of-scrums/readme.md) (where applicable)
-- [Sprint planning](../agile-development/sprint-planning/readme.md)
-- [Standups](../agile-development/stand-ups/readme.md)
-- [Working agreement](../agile-development/team-agreements/working-agreements/readme.md)
+- [Backlog management](../agile-development/backlog-management/README.md)
+- [Retrospectives](../agile-development/retrospectives.md)
+- [Scrum of Scrums](../agile-development/scrum-of-scrums.md) (where applicable)
+- [Sprint planning](../agile-development/sprint-planning/README.md)
+- [Stand-ups](../agile-development/stand-ups/README.md)
+- [Working agreement](../agile-development/team-agreements/working-agreements.md)
 
 ### Notes on Agile process during exploration and experimentation
 
@@ -30,13 +30,13 @@ Within this framework, the team follows these Agile ceremonies:
         2. [Hypothesis Driven Development](https://barryoreilly.com/explore/blog/how-to-implement-hypothesis-driven-development/) (from Barry Oreilly's website).
     - Exploratory Data Analysis (EDA) results and learnings documented
 
-2. User stories and spikes are usually estimated using [T-shirt sizes](../agile-development/sprint-planning/estimation/readme.md#t-shirt-sizes) or similar, and not in actual days/hours. See more [here](../agile-development/sprint-planning/estimation/readme.md) on story estimation.
+2. User stories and spikes are usually estimated using [T-shirt sizes](../agile-development/sprint-planning/estimation.md#t-shirt-sizes) or similar, and not in actual days/hours. See more [here](../agile-development/sprint-planning/estimation.md) on story estimation.
 
 3. ML design sessions should be included in each sprint.
 
 ## Notes on collaboration between ML team and software development team
 
-- The ML and Software Development teams work together on the project. The team uses one backlog and attend the same Agile ceremonies. In cases where the project has a large number of participants, we will divide into working groups, but still have the entire team join the Agile ceremonies.
+- The ML and Software Development teams work together on the project. The team uses one backlog and attend the same Agile ceremonies. In cases where the project has many participants, we will divide into working groups, but still have the entire team join the Agile ceremonies.
 
 - If possible, feasibility study and initial model experimentation takes place before the operationalization work kicks off.
 - The ML team and dev team both share the accountability for the MLOps solution.
