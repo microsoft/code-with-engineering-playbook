@@ -13,11 +13,11 @@ This in turn results in the following benefits:
 
 ## Measures
 
-The metrics and/or KPI's used for design reviews overall would still apply. See [design reviews](../readme.md#Measures) for measures guidance.
+The metrics and/or KPI's used for design reviews overall would still apply. See [design reviews](../README.md#Measures) for measures guidance.
 
 ## Participation
 
-The participation should be same as any design review. See [design reviews](../readme.md#Participation) for participation guidance.
+The participation should be same as any design review. See [design reviews](../README.md#Participation) for participation guidance.
 
 ## Facilitation Guidance
 

@@ -40,7 +40,7 @@ An extensive comparison of the four tools can be found as follows:
 
 ## Model in production
 
-The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](readme.md) section). MLFLow is an alternative way to deploy ML model as a service.
+The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](README.md) section). MLFLow is an alternative way to deploy ML model as a service.
 
 ## Training and re-training
 

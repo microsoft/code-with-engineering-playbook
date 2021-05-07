@@ -55,7 +55,7 @@ Examples of performing fault injection during the development lifecycle:
 
 #### Fault injection testing in the release cycle
 
-Much like [Synthetic Monitoring Tests](../synthetic-monitoring-tests/readme.md), fault injection testing in the release cycle is a part of [Shift-Right testing](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/shift-right-test-production) approach, which uses safe methods to perform tests in a production or pre-production environment. Given the nature of distributed, cloud-based applications, it is very difficult to simulate the real behavior of services outside their production environment. Testers are encouraged to run tests where it really matters, on a live system with customer traffic.
+Much like [Synthetic Monitoring Tests](../synthetic-monitoring-tests/README.md), fault injection testing in the release cycle is a part of [Shift-Right testing](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/shift-right-test-production) approach, which uses safe methods to perform tests in a production or pre-production environment. Given the nature of distributed, cloud-based applications, it is very difficult to simulate the real behavior of services outside their production environment. Testers are encouraged to run tests where it really matters, on a live system with customer traffic.
 
 Fault injection tests rely on metrics observability and are usually statistical; The following high-level steps provide a sample of practicing fault injection and chaos engineering:
 

@@ -62,7 +62,7 @@ for greater flexibility in the code and allows for the a [mock or simulator](moc
 
 One of the side effects of abstracting dependencies is that you may have an abstraction that has no test coverage. This
 is case where unit testing is not well-suited, you can not expect to unit test everything, things like dependencies will
-always be an uncovered case. This is why even if you have a robust unit testing suite, [integration or functional testing](../integration-testing/readme.md)
+always be an uncovered case. This is why even if you have a robust unit testing suite, [integration or functional testing](../integration-testing/README.md)
 should still be used - without that, a change in the way the dependency functions would never be caught.
 
 When building wrappers around third-party dependencies, it is best to keep the implementations with as little logic as

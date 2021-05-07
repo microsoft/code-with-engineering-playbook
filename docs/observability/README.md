@@ -20,7 +20,7 @@ Building observable systems enables development teams at CSE to measure how well
 
 ## Tools, Patterns and Recommended Practices
 
-- [Tooling and Patterns](tools/readme.md)
+- [Tooling and Patterns](tools/README.md)
 - [Observability As Code](observability-as-code.md)
 - [Recommended Practices](best-practices.md)
 

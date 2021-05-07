@@ -4,7 +4,7 @@ This document outlines the benefits of adding a custom field of type _Identity_ 
 
 ## Benefits of adding a custom field
 
-Having the names of both individuals [pairing on a story](./readme.md) visible on the Azure DevOps cards can be helpful during sprint ceremonies and lead to greater accountability by the pairing assignee. For example, it is easier to keep track of the individuals assigned stories as part of a pair during sprint planning by using the "pairing names" field. During stand-up it can also help the Process Lead filter stories assigned to the individual (both as an owner or as a pairing assignee) and show these on the board. Furthermore, the pairing field can provide an additional data point for reports and burndown rates.
+Having the names of both individuals [pairing on a story](README.md) visible on the Azure DevOps cards can be helpful during sprint ceremonies and lead to greater accountability by the pairing assignee. For example, it is easier to keep track of the individuals assigned stories as part of a pair during sprint planning by using the "pairing names" field. During stand-up it can also help the Process Lead filter stories assigned to the individual (both as an owner or as a pairing assignee) and show these on the board. Furthermore, the pairing field can provide an additional data point for reports and burndown rates.
 
 ## Prerequisites
 

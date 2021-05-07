@@ -44,18 +44,18 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 ## Engineering Fundamentals
 
 * [Agile Development](agile-development/README.md)
-* [Automated Testing](automated-testing/readme.md)
+* [Automated Testing](automated-testing/README.md)
 * [Code Reviews](code-reviews/README.md)
-* [Continuous Delivery (CD)](continuous-delivery/readme.md)
-* [Continuous Integration (CI)](continuous-integration/readme.md)
-* [Design Reviews](design-reviews/readme.md)
-* [Developer Experience](developer-experience/readme.md)
-* [Documentation](documentation/readme.md)
-* [Engineering Feedback](engineering-feedback/readme.md)
-* [Observability](observability/readme.md)
+* [Continuous Delivery (CD)](continuous-delivery/README.md)
+* [Continuous Integration (CI)](continuous-integration/README.md)
+* [Design Reviews](design-reviews/README.md)
+* [Developer Experience](developer-experience/README.md)
+* [Documentation](documentation/README.md)
+* [Engineering Feedback](engineering-feedback/README.md)
+* [Observability](observability/README.md)
 * [Reliability](reliability/README.md)
 * [Security](security/README.md)
-* [Source Control](source-control/readme.md)
+* [Source Control](source-control/README.md)
 
 ## Fundamentals for Specific Technology Areas
 

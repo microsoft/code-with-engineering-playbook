@@ -115,5 +115,5 @@ A technical spike is most often used for evaluating the impact new technology ha
 ## Design Documentation
 
 - Document and update the architecture design in the project design documentation
-- Track and document design decisions in a [decision log](./decision-log/readme.md)
-- Document decision process in [trade studies](./trade-studies/readme.md) when multiple solutions exist for the given problem
+- Track and document design decisions in a [decision log](decision-log/README.md)
+- Document decision process in [trade studies](trade-studies/README.md) when multiple solutions exist for the given problem

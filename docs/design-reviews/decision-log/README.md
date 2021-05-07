@@ -15,7 +15,7 @@ Tracking an architecture design decision can have many advantages:
 
 In addition to incorporating a design decision as an update of the overall design documentation of the project, the decisions could be tracked as [Architecture Decision Records](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions) as Michael Nygard proposed in his blog.
 
-The effort invested in design reviews and discussions can be different throughout the course of a project. Sometimes decisions are made quickly without having to go into a detailed comparison of competing technologies. In some cases, it is necessary to have a more elaborate study of advantages and disadvantages, as is described in the documentation of [Trade Studies](../trade-studies/readme.md). An ADR can incorporate each of these different approaches.
+The effort invested in design reviews and discussions can be different throughout the course of a project. Sometimes decisions are made quickly without having to go into a detailed comparison of competing technologies. In some cases, it is necessary to have a more elaborate study of advantages and disadvantages, as is described in the documentation of [Trade Studies](../trade-studies/README.md). An ADR can incorporate each of these different approaches.
 
 ### Architecture Decision Record (ADR)
 
@@ -46,7 +46,7 @@ An architecture decision record has the structure
 
     > *Due to the microservices design of the platform, we need to ensure consistency of logging throughout each service so tracking of usage, performance, errors etc. can be performed end-to-end. A single logging/monitoring framework should be used where possible to achieve this, whilst allowing the flexibility for integration/export into other tools at a later stage. The developers should be equipped with a simple interface to log messages and metrics.*
 
-    *If the development team had a data-driven approach to back the decision, i.e. a study that evaluates the potential choices against a set of objective criteria by following the guidance in [Trade Studies](../trade-studies/readme.md), the study should be referred to in this section.*  
+    *If the development team had a data-driven approach to back the decision, i.e. a study that evaluates the potential choices against a set of objective criteria by following the guidance in [Trade Studies](../trade-studies/README.md), the study should be referred to in this section.*  
 
 - **Decision:**
 

@@ -15,9 +15,9 @@ Every source code repository should include documentation that is specific to it
 - How to compile, test, build, deploy the solution/each project
   - Different OS versions
   - Command line + editors/IDEs
-- [Design Decision Logs](../../design-reviews/decision-log/readme.md)
-  - [Architecture Decision Record (ADRs)](../../design-reviews/decision-log/readme.md#architecture-decision-record-ADR)
-  - [Trade Studies](../../design-reviews/trade-studies/readme.md)
+- [Design Decision Logs](../../design-reviews/decision-log/README.md)
+  - [Architecture Decision Record (ADRs)](../../design-reviews/decision-log/README.md#architecture-decision-record-ADR)
+  - [Trade Studies](../../design-reviews/trade-studies/README.md)
 
 Some sections in the documentation of the repository might point to the projectâ€™s documentation (e.g., Onboarding, Working Agreement, Contributing Guide).
 
@@ -31,7 +31,7 @@ Some sections in the documentation of the repository might point to the projectâ
 - [Onboarding](../../developer-experience/recipes/onboarding-guide-template.md)
 - Repository guide
   - Production, Spikes
-- [Team agreements](../../agile-development/team-agreements/readme.md)
+- [Team agreements](../../agile-development/team-agreements/README.md)
   - [Team Manifesto](../../agile-development/team-agreements/team-manifesto.md)
     - Short summary of expectations around the technical way of working and supported mindset in the team.
     - E.g., ownership, respect, collaboration, transparency.
@@ -51,13 +51,13 @@ Some sections in the documentation of the repository might point to the projectâ
   - [Code Review Process](../../code-reviews/README.md)
   - [Code Review Checklist](../../code-reviews/process-guidance/reviewer-guidance.md)
     - [Language Specific Checklists](../../code-reviews/recipes/README.md)
-- [Project Design](../../design-reviews/readme.md)
+- [Project Design](../../design-reviews/README.md)
   - [High Level / Game Plan](../../design-reviews/recipes/high-level-design-recipe.md)
   - [Milestone / Epic Design Review](../../design-reviews/recipes/milestone-epic-design-review-recipe.md)
-- [Design Review Templates](../../design-reviews/readme.md#design-review-templates)
+- [Design Review Templates](../../design-reviews/README.md#design-review-templates)
   - [Milestone / Epic Design Review Template](../../design-reviews/recipes/milestone-epic-design-review-template.md)
   - [Feature / Story Design Review Template](../../design-reviews/recipes/feature-story-design-review-template.md)
   - [Task Design Review Template](../../design-reviews/recipes/task-design-review-template.md)
   - [Decision Log Template](../../design-reviews/decision-log/doc/decision-log.md)
-  - [Architecture Decision Record (ADR) Template](../../design-reviews/decision-log/readme.md#architecture-decision-record-ADR) ([Example 1](../../design-reviews/decision-log/doc/adr/0001-record-architecture-decisions.md), [Example 2](../../design-reviews/decision-log/doc/adr/0002-app-level-logging.md))
+  - [Architecture Decision Record (ADR) Template](../../design-reviews/decision-log/README.md#architecture-decision-record-ADR) ([Example 1](../../design-reviews/decision-log/doc/adr/0001-record-architecture-decisions.md), [Example 2](../../design-reviews/decision-log/doc/adr/0002-app-level-logging.md))
   - [Trade Study Template](../../design-reviews/trade-studies/template.md)

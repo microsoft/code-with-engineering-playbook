@@ -120,7 +120,7 @@ To avoid losing work, it is good to commit often in small chunks. This allows yo
     git add source-control/git-guidance/readme.md
     ```
 
-4. Commit the changes to your local branch with a descriptive [commit message](../readme.md#commit-best-practices)
+4. Commit the changes to your local branch with a descriptive [commit message](../README.md#commit-best-practices)
 
     ```cmd
     git commit -m "add basic git instructions"

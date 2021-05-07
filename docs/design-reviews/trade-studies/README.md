@@ -17,7 +17,7 @@ challenges that were not originally seen.
 
 Trade studies should be avoided if there is a clear solution choice. Because they require each solution to be fully thought out, they
 have the potential to take a lot of time to complete. When there is a clear design, the trade study should be omitted, and an entry
-should be made in the [Decision Log](../decision-log/readme.md) documenting the decision.
+should be made in the [Decision Log](../decision-log/README.md) documenting the decision.
 
 ## Why Trade Studies
 
@@ -42,4 +42,4 @@ Trade studies can vary widely in scope; however, they follow the common pattern 
 
 See [template.md](./template.md) for an example of how to structure the above information. This template was created to guide a user
 through conducting a trade study. Once the decision has been made we recommend adding an entry to the
-[Decision Log](../decision-log/readme.md) that has references back to the full text of the trade study.
+[Decision Log](../decision-log/README.md) that has references back to the full text of the trade study.

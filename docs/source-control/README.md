@@ -8,7 +8,7 @@ There are many options when working with Source Control. In [CSE](../CSE.md) we 
 * [Branch Naming](naming-branches.md)
 * [Versioning](component-versioning.md)
 * [Working with Secrets](secrets-management.md)
-* [Git Guidance](git-guidance/readme.md)
+* [Git Guidance](git-guidance/README.md)
 
 ## Goal
 
@@ -18,7 +18,7 @@ There are many options when working with Source Control. In [CSE](../CSE.md) we 
 
 ## General Guidance
 
-Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreements.md) and [Design Reviews](../design-reviews/readme.md)).
+Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreements.md) and [Design Reviews](../design-reviews/README.md)).
 
 ## Creating a new repository
 
@@ -109,7 +109,7 @@ References:
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
 * [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/)
 * [The GitHub Hello World](https://guides.github.com/activities/hello-world/)
-* [CSE Git details](git-guidance/readme.md) details on how to use Git as part of a [CSE](../CSE.md) project.
+* [CSE Git details](git-guidance/README.md) details on how to use Git as part of a [CSE](../CSE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 * [How Git Works Pluralsight course](https://www.pluralsight.com/courses/how-git-works)
 * [Mastering Git Pluralsight course](https://www.pluralsight.com/courses/master-git)
