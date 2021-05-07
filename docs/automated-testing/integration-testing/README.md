@@ -67,7 +67,9 @@ Integration testing demonstrates how one module of a system, or external system,
 
 ## Resources
 
+<!-- markdown-link-check-disable -->
 - [Integration testing approaches](https://www.softwaretestinghelp.com/what-is-integration-testing/)
+<!-- markdown-link-check-enable -->
 - [Integration testing pros and cons](https://www.geeksforgeeks.org/software-engineering-integration-testing/)
 - [Integration tests mocks and stubs](https://circleci.com/blog/how-to-test-software-part-i-mocking-stubbing-and-contract-testing/)
 - [Software Testing: Principles and Practices](https://www.goodreads.com/book/show/21278464-software-testing)
