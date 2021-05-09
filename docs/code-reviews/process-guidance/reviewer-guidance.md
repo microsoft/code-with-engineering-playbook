@@ -44,7 +44,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 
 - Does the PR description make sense?
 - Do all the changes logically fit in this PR, or are there unrelated changes?
-- If necessary, are the changes made reflected in updates to the README or other docs? If the changes affect how the user builds code especially.
+- If necessary, are the changes made reflected in updates to the README or other docs? Especially if the changes affect how the user builds code.
 
 ### User Facing Changes
 
@@ -82,7 +82,7 @@ Code reviews should use the below guidance and checklists to ensure positive and
 - How does the functionality fit in the bigger picture? Can it have negative effects to the overall system?
 - Are there security flaws?
 - Does a variable name reveal any customer specific information?
-- Is PII and EUII treated correctly? And not logging any PII information.
+- Is PII and EUII treated correctly? Are we logging any PII information?
 
 ### Style
 

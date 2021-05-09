@@ -1,12 +1,12 @@
 # Reliability
 
-All of the other CSE Eng Fundamentals work towards a more reliable infrastructure. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.
+All the other CSE Eng Fundamentals work towards a more reliable infrastructure. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.
 
-However there are some additional steps we can take, that don't neatly fit into the previous categories, to help ensure a more reliable solution. We'll explore these below.
+However, there are some additional steps we can take, that don't neatly fit into the previous categories, to help ensure a more reliable solution. We'll explore these below.
 
 ## Remove "Foot-Guns"
 
-Prevent your dev team from shooting themselves in the foot. People make mistakes; any mistake made in production is not the fault of that person, more so it's the collective fault of the system to not prevent that mistake from happening.
+Prevent your dev team from shooting themselves in the foot. People make mistakes; any mistake made in production is not the fault of that person, it's the collective fault of the system to not prevent that mistake from happening.
 
 Check out the below list for some common tooling to remove these foot guns:
 
@@ -30,7 +30,7 @@ Often we think of Denial of Service [DOS] attacks as an act from a malicious act
 
 Follow these steps to protect yourself:
 
-* Add a jitter (random) to any action that occurs from a non user triggered flow (ie: add a random duration to the sleep in a cron, or job that continuously polls a downstream service).
+* Add a jitter (random) to any action that occurs from a non-user triggered flow (ie: add a random duration to the sleep in a cron, or job that continuously polls a downstream service).
 * Implement [exponential backoff retry policies](https://en.wikipedia.org/wiki/Exponential_backoff) in your client code
 * Add load shedding to your servers (yes, your internal microservices too).
   * This can be configured easily when leveraging a sidecar like envoy.
@@ -64,11 +64,11 @@ We can build graceful failure (or graceful degradation) into our software stack 
   * [Leader Election](https://en.wikipedia.org/wiki/Leader_election) can be used to keep healthy services on standby in case the leader experiences issues.
   * Entire cluster failover can redirect traffic to another region or availability zone.
   * Propagate downstream failures of **dependent services** up the stack via health checks, so that your ingress points can re-route to healthy services.
-* [Circuit breakers](https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.) can bail early on requests vs. propogating errors throughout the system
+* [Circuit breakers](https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.) can bail early on requests vs. propagating errors throughout the system
 
 ## Practice
 
-[None of the above recommendations will work if they are not tested](https://thinkmeta.net/2010/11/06/what-is-an-untested-dr-plan-worth/). Your backups are meaningless if you don't know how to mount them. Your cluster failover and other mitigations will regress over time if they are not tested. Here's some tips to test the above:
+[None of the above recommendations will work if they are not tested](https://thinkmeta.net/2010/11/06/what-is-an-untested-dr-plan-worth/). Your backups are meaningless if you don't know how to mount them. Your cluster failover and other mitigations will regress over time if they are not tested. Here are some tips to test the above:
 
 ### Maintain Playbooks
 
@@ -91,4 +91,4 @@ Leverage automated chaos testing to see how things break. Check out the list of 
 
 Writing up a [post-mortem](https://en.wikipedia.org/wiki/Postmortem_documentation) is a great way to document the root causes, and action items for your failures. They're also a great way to track recurring issues, and create a strong case for prioritizing fixes.
 
-This can even be tied into your regular Agile [restrospectives](../agile-development/retrospectives/readme.md).
+This can even be tied into your regular Agile [restrospectives](../agile-development/retrospectives.md).

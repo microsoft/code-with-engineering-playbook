@@ -1,4 +1,4 @@
-# How to sync a wiki between repositories
+# How to Sync a Wiki between Repositories
 
 This is a quick guide to mirroring a Project Wiki to another repository.
 
@@ -18,7 +18,7 @@ Now each time you wish to sync run the following to get latest from the source w
 git pull -v
 ```
 
-**WARNING**: Check that the output of the pull shows "From source repo URL". If this shows the mirror repo url then you've forgotten to reset the tracking. Run `git branch -u origin/wikiMaster` then continue.
+> **Warning**: Check that the output of the pull shows "From source repo URL". If this shows the mirror repo url then you've forgotten to reset the tracking. Run `git branch -u origin/wikiMaster` then continue.
 
 Then run this to push it to the mirror repo and reset the branch to track the source repo again:
 
