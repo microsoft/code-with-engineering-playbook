@@ -11,7 +11,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] Consistent branch naming conventions.
 - [ ] Clear documentation of repository structure.
 - [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](continuous-integration/dev-sec-ops/secret-management/credential_scanning.md))
-- [ ] Public repositories follow the [OSS guidelines](source-control/readme.md#creating-a-new-repository), see `Required files in default branch for public repositories`.
+- [ ] Public repositories follow the [OSS guidelines](source-control/README.md#creating-a-new-repository), see `Required files in default branch for public repositories`.
 
 More details on [source control](source-control/README.md)
 

@@ -15,7 +15,7 @@ The purpose of this document is to:
   - [Definition of Ready](agile-development/team-agreements/definition-of-ready.md)
   - [Definition of Done](agile-development/team-agreements/definition-of-done.md)
   - [Estimation](agile-development/sprint-planning/estimation.md)
-- [ ] [Set up the repository/repositories](source-control/README.md#Creating-a-new-repository)
+- [ ] [Set up the repository/repositories](source-control/README.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
 - [ ] [Build a Product Backlog](agile-development/backlog-management/README.md)
