@@ -2,7 +2,7 @@
 
 ## Sections
 
-- [Delivery Plans](delivery-plans/readme.md)
+- [Delivery Plans](delivery-plan/readme.md)
 - [Backlog Management](backlog-management/README.md)
 - [Collaboration](collaboration/README.md)
 - [Retrospectives](retrospectives.md)
