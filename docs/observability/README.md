@@ -13,6 +13,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Metrics](pillars/metrics.md)
 - [Tracing](pillars/tracing.md)
 - [Logs vs Metrics](log-vs-metric.md)
+- [Microservices](microservices.md)
 
 ## Insights
 
