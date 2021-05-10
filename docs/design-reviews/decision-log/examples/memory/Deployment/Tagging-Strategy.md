@@ -4,7 +4,7 @@ Docker container tagging strategy to set a standard for tagging containers befor
 
 ## Stable Tags
 
-Stable tags mean a developer, or a build system, can continue to pull a specific tag, which continues to get updates. 
+Stable tags mean a developer, or a build system, can continue to pull a specific tag, which continues to get updates.
 Stable doesn’t mean the contents are frozen.
 Rather, stable implies the image should be stable for the intent of that version.
 To stay “stable”, it might be serviced to apply security patches or framework updates.
