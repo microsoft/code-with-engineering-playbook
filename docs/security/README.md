@@ -23,7 +23,7 @@ When requesting a security review for your application, please make sure you hav
 
 ## OWASP Cheat Sheets
 
-> Note: OWASP is considered to be the gold-standard in computer security information. OWASP maintains an extensive series of cheat sheets which cover all of the OWASP Top 10 and more. Below, many of the more relevant cheat sheets have been summarized. To view all of the cheat sheets, check out their [Cheat Sheet Index](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md).
+> Note: OWASP is considered to be the gold-standard in computer security information. OWASP maintains an extensive series of cheat sheets which cover all the OWASP Top 10 and more. Below, many of the more relevant cheat sheets have been summarized. To view all the cheat sheets, check out their [Cheat Sheet Index](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md).
 
 * [Access Control Basics](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Access_Control_Cheat_Sheet.md)
 * [Attack Surface Analysis](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.md)
@@ -47,9 +47,9 @@ When requesting a security review for your application, please make sure you hav
 
 Check out the list of tools to help enable security in your projects.
 
-> Note: Although some tools are agnostic, the below list is geared towards Cloud Native security, with a focus on Kubernetes.
+> **Note:** Although some tools are agnostic, the below list is geared towards Cloud Native security, with a focus on Kubernetes.
 
-* Vuln Scanning
+* Vulnerability Scanning
   * [SonarCloud](https://sonarcloud.io/)
     * Integrates with Azure Devops with the click of a button.
   * [Snyk](https://github.com/snyk/snyk)
@@ -70,7 +70,7 @@ Check out the list of tools to help enable security in your projects.
   Binary authorization can happen both at the docker registry layer, and runtime (ie: via a K8s admission controller).
   The authorization check ensures that the image is signed by a trusted authority. This can occur for both (pre-approved) 3rd party images,
   and internal images. Taking this a step further the signing should occur *only* on images where all code has been reviewed and approved.
-  Binary authorization can both reduce the impact of damage from a compromised hosting environment, as well as the damage from malicious insiders.
+  Binary authorization can both reduce the impact of damage from a compromised hosting environment, and the damage from malicious insiders.
 
   * [Harbor](https://github.com/goharbor/harbor/)
     * [Operator available](https://github.com/goharbor/harbor-operator)

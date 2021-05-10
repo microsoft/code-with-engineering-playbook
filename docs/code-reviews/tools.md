@@ -1,4 +1,4 @@
-# Code review tools
+# Code Review Tools
 
 ## Visual Studio Code
 
@@ -9,7 +9,7 @@ Supports processing GitHub pull requests inside VS Code.
 1. Open the plugin from the **Activity Bar**
 1. Select **Assigned To Me**
 1. Select a PR
-1. Under **Description** you can chose to **Check Out** the branch and get into **Review Mode** and get a more integrated experience
+1. Under **Description** you can choose to **Check Out** the branch and get into **Review Mode** and get a more integrated experience
 
 ### Azure DevOps: [Azure DevOps Pull Requests](https://marketplace.visualstudio.com/items?itemName=ankitbko.vscode-pull-request-azdo)
 
@@ -18,7 +18,7 @@ Supports processing Azure DevOps pull requests inside VS Code.
 1. Open the plugin from the **Activity Bar**
 1. Select **Assigned To Me**
 1. Select a PR
-1. Under **Description** you can chose to **Check Out** the branch and get into **Review Mode** and get a more integrated experience
+1. Under **Description** you can choose to **Check Out** the branch and get into **Review Mode** and get a more integrated experience
 
 ## Visual Studio
 
@@ -38,6 +38,6 @@ Work with pull requests on Azure DevOps directly out of Visual Studio.
 
 1. Open Team Explorer
 1. Click on **Pull Requests**
-1. Double click a pull request - the **Pull Request Details** open
+1. Double-click a pull request - the **Pull Request Details** open
 1. Click on **Checkout** if you want to have the full change locally and have a more integrated experience
 1. Go through the changes and make comments

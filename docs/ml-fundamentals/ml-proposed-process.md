@@ -1,4 +1,4 @@
-# Proposed ML process
+# Proposed ML Process
 
 ## Introduction
 
@@ -19,11 +19,11 @@ When developing ML applications, we consider the following approaches:
 
 * Cross-functional team:
 
-  * A cross-functional team comprising of different skill sets in data science, data engineering, development, operations, and industry domain specialists is required.
+  * A cross-functional team consisting of different skill sets in data science, data engineering, development, operations, and industry domain specialists is required.
 
 ## ML process
 
-The proposed ML development process is comprised of:
+The proposed ML development process consists of:
 
 1. Data and problem understanding
 2. Responsible AI assessment
@@ -37,7 +37,7 @@ The proposed ML development process is comprised of:
 
 ### Version control
 
-* During all stages of the process, it is suggested that artifacts should be version controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more [here](ml-experimentation.md#source-control-and-folder-package-structure).
+* During all stages of the process, it is suggested that artifacts should be version-controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more [here](ml-experimentation.md#source-control-and-folderpackage-structure).
 
 ### Understanding the problem
 
@@ -45,7 +45,7 @@ The proposed ML development process is comprised of:
   * Agree on the success criteria with the customer.
   * Identify potential data sources and determine the availability of these sources.
   * Define performance evaluation metrics on ground truth data
-* Conduct a Responsible AI assessment to ensure development and deployment of the ML solution in a responsible manner. See more [here](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1%3aprimaryr4).
+* Conduct a Responsible AI assessment to ensure responsible development and deployment of the ML solution. See more [here](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1%3aprimaryr4).
 * Conduct a feasibility study to assess whether the business problem is feasible to solve satisfactorily using ML with the available data. The objective of the feasibility study is to mitigate potential over-investment by ensuring sufficient evidence that ML is possible and would be the best solution. The study also provides initial indications of what the ML solution should look like. This ensures quality solutions supported by thorough consideration and evidence. Refer to [feasibility study](ml-feasibility-study.md).
 * Exploratory data analysis is performed and discussed with the team
 
@@ -61,9 +61,9 @@ The proposed ML development process is comprised of:
 
 * Data preparation: creating data source connectors, determining storage services to be used and potential versioning of raw datasets.
 * Feature engineering: create new features from raw source data to increase the predictive power of the learning algorithm. The features should capture additional information that is not apparent in the original feature set.
-* Split data into training, validation and test sets: creating training, validation, and test datasets with ground truth to develop ML models. This would entail joining or merging various feature engineered datasets. The training dataset is used to train the model to find the patterns between its features and labels (ground truth). The validation dataset is used to assess the model architecture and the test data is used to confirm the prediction quality of the model.
+* Split data into training, validation and test sets: creating training, validation, and test datasets with ground truth to develop ML models. This would entail joining or merging various feature engineered datasets. The training dataset is used to train the model to find the patterns between its features and labels (ground truth). The validation dataset is used to assess the model architecture, and the test data is used to confirm the prediction quality of the model.
 * Initial code to create access data sources, transform raw data into features and model training as well as scoring.
-* During this phase, experiment code (Jupyter notebooks or scripts) and accompanying utility code should be version controlled using tools such as ADO (Azure DevOps).
+* During this phase, experiment code (Jupyter notebooks or scripts) and accompanying utility code should be version-controlled using tools such as ADO (Azure DevOps).
 
 * **Typical output**: Rough Jupyter notebooks or scripts in Python or R, initial results from baseline model.
 
@@ -79,7 +79,7 @@ For more information on experimentation, refer to the [experimentation](ml-exper
 
 ### Model Operationalization
 
-* Taking "experimental" code and preparing it so it can be deployed. This includes data pre-processing, featurization code, training model code (if required to be trained using CI/CD) and model inference code.
+* Taking "experimental" code and preparing it, so it can be deployed. This includes data pre-processing, featurization code, training model code (if required to be trained using CI/CD) and model inference code.
 
 * **Typical output**:
   * Production-grade code (Preferably in the form of a package) for:
