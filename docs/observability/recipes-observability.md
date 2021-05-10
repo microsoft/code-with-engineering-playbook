@@ -4,6 +4,10 @@
 
 [Github Repo](https://github.com/Azure-Samples/application-insights-aspnet-sample-opentelemetry), [Article](https://devblogs.microsoft.com/aspnet/observability-asp-net-core-apps/).
 
+## Application Insights/ASP.NET Core with distributed Trace Context propagation to Kafka
+
+[Github Repo](https://github.com/MagdaPaj/application-insights-aspnet-sample-trace-context-propagation).
+
 ## Example: Setup Azure Monitor dashboards and alerts with Terraform
 
 [Github Repo](https://github.com/buzzfrog/azure-alert-dashboard-terraform)
