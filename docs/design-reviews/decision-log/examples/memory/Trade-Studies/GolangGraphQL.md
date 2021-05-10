@@ -120,7 +120,7 @@ object.FieldFunc("posts", func() []post {
 <!-- markdownlint-disable MD029 -->
 4. Documentation
    * Frankly, sparse.
-You get [the README](https://github.com/samsarahq/thunder), a [page on pagination](https://github.com/samsarahq/thunder/blob/master/doc/pagination.md), and that's about it.
+You get [the README](https://github.com/samsarahq/thunder), a [page on pagination](https://github.com/samsarahq/thunder/blob/main/doc/pagination.md), and that's about it.
 5. Typed Return
    * Yes.
 6. Resolver Discovery and Registration

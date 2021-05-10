@@ -22,9 +22,9 @@ Users of the application will be routed to the closest region based on latency b
 
 Ex) If we deployed 3 regions in West US, Western Europe and Asia and a user access the application from Seattle, WA, the users request should be serviced by the West US instance assuming it is online and available.
 
-1. Users will access the application through a single entry point, ex) <https://memory.contoso.com>
-1. Regional specific endpoints should not be accessible via the public internet
-1. If a region goes down due to maintenance or other issues requests are routed to an alternate region
+1. Users will access the application through a single entry point
+2. Regional specific endpoints should not be accessible via the public internet
+3. If a region goes down due to maintenance or other issues requests are routed to an alternate region
 
 This trade study will evaluate multiple routing / service mesh / gateway technologies.
 1 or more technology can be selected to complete the solution.

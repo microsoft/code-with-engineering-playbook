@@ -90,7 +90,7 @@ However, it doesn't look well-maintained or documented.
 
 ## Decision
 
-On the `demo/grammes-vs-gremcos` branch [there is a demo file](https://dev.azure.com/dwrdev/Memory/_git/Memory?version=GBdemo%2Fgrammes-vs-gremcos&path=%2Fdemo%2Fmain.go) you can test locally if you like:
+On the `demo/grammes-vs-gremcos` branch there is a demo file you can test locally if you like:
 Fill in the `<snip>`ed password with the primary key from a cosmos instance.
 The one [here](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/resource/subscriptions/2f4bae45-523c-4220-b7b2-db3b8d7d2a1b/resourceGroups/zm-memory/providers/Microsoft.DocumentDB/databaseAccounts/zamiller/keys) may work.
 If a new instance is needed, be sure to populate it with sample nodes and edges.

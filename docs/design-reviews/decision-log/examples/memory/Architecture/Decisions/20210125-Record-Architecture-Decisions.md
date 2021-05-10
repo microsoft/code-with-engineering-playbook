@@ -17,7 +17,7 @@ Having to scan through a large document to find a specific content takes time, a
 
 We will use Architecture Decision Records, as [described by Michael Nygard](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions).
 
-We are following [ADR guidance](https://github.com/microsoft/code-with-engineering-playbook/blob/master/design-reviews/decision-log/readme.md) from the CSE code-with engineering playbook
+We are following [ADR guidance](https://github.com/microsoft/code-with-engineering-playbook/blob/main/design-reviews/decision-log/readme.md) from the CSE code-with engineering playbook
 
 ## Consequences
 

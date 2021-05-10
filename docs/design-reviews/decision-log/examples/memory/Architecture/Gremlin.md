@@ -52,9 +52,9 @@ res, err := client.ExecuteQuery(
 edges, err := vertex4.QueryOutEdges(client)
 ```
 
-[Queries can also be run concurrently](https://github.com/northwesternmutual/grammes/blob/master/examples/concurrent-example/main.go).
+[Queries can also be run concurrently](https://github.com/northwesternmutual/grammes/blob/main/examples/concurrent-example/main.go).
 
-While the documentation is sparse and separated by folders without a table of contents, the potentially most useful example is the one for [querying vertices by edge](https://github.com/northwesternmutual/grammes/blob/master/examples/vertex-edge-example/main.go).
+While the documentation is sparse and separated by folders without a table of contents, the potentially most useful example is the one for [querying vertices by edge](https://github.com/northwesternmutual/grammes/blob/main/examples/vertex-edge-example/main.go).
 
 ### Obfuscating Querying
 
@@ -93,7 +93,7 @@ As of now, the plan is for the API to expose the exact same data model as the [d
 
 ### Authentication
 
-Grammes uses [user/password authentication](https://github.com/northwesternmutual/grammes/blob/master/examples/auth-example/main.go), however as demonstrated in the [grammes demo project](https://dev.azure.com/dwrdev/Memory/_git/Memory?path=%2Fdemo%2Fmain.go&version=GBdemo%2Fgrammes-vs-gremcos&_a=contents), the values here can be the graph for the user, and the primary key as the password. This is really the only option we have with grammes.
+Grammes uses [user/password authentication](https://github.com/northwesternmutual/grammes/blob/main/examples/auth-example/main.go), however as demonstrated in the grammes demo project, the values here can be the graph for the user, and the primary key as the password. This is really the only option we have with grammes.
 
 ### Row Based Security
 

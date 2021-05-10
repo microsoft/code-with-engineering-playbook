@@ -66,17 +66,15 @@ Other features to call out (see more on website)
 - Garbage collection
 - Deploy on commit
 
-![Architecture](https://toolkit.fluxcd.io/diagrams/gitops-toolkit.png)
-
 #### Variations
 
 ##### Controllers
 
 Both Controller options are optional.
 
-The [Helm Controller](https://toolkit.fluxcd.io/components/helm/controller/) additionally fetches helm artifacts to publish, see below diagram.
+The Helm Controller additionally fetches helm artifacts to publish, see below diagram.
 
-The [Kustomize Controller](https://toolkit.fluxcd.io/components/kustomize/controller/) manages state and continuous deployment.
+The Kustomize Controller manages state and continuous deployment.
 
 We will not decide between the controller to use here, as that's a separate trade study, however we will note that Helm is more widely documented within Flux documentation.
 
@@ -104,7 +102,7 @@ ArgoCD is a declarative, GitOps-based Continuous Delivery (CD) tool for Kubernet
    - Use [Kustomize](https://argoproj.github.io/argo-cd/user-guide/kustomize/) to apply some post-rendering to the Helm release templates
 1. Deployment Monitoring
    - Argo CD expose two sets of [Prometheus](https://argoproj.github.io/argo-cd/operator-manual/metrics/) metrics (application metrics and API server metrics) for deployment monitoring.
-   - [Grafana dashboard](https://github.com/argoproj/argo-cd/blob/master/examples/dashboard.json) is also available
+   - [Grafana dashboard](https://github.com/argoproj/argo-cd/blob/main/examples/dashboard.json) is also available
 1. Admission Control
    - ArgoCD use RBAC feature.
      [RBAC](https://argoproj.github.io/argo-cd/operator-manual/rbac/) requires SSO configuration or one or more local users setup.

@@ -16,4 +16,4 @@ Tracking an architecture design decision can have many advantages:
 - The context of a decision including the consequences for the team are documented with the decision.
 - It is easier to find the design decision in a log than having to read a large document.
 
-We are following [ADR guidance](https://github.com/microsoft/code-with-engineering-playbook/blob/master/design-reviews/decision-log/readme.md) from the CSE code-with engineering playbook.
+We are following [ADR guidance](https://github.com/microsoft/code-with-engineering-playbook/blob/main/design-reviews/decision-log/readme.md) from the CSE code-with engineering playbook.

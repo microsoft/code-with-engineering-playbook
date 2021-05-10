@@ -60,7 +60,7 @@ Importantly, Cosmos DB [is not opinionated on the access pattern](https://docs.m
      Frankly, it doesn't seem widely adopted, with only 3 stars.
    - Alternatively, [the golang package search site](https://pkg.go.dev/search?q=gremlin) suggests the [grammes package](https://github.com/northwesternmutual/grammes).
      This looks much better supported.
-   - As a fall-back, we can interact with [the REST API](https://docs.microsoft.com/en-us/rest/API/cosmos-db-resource-provider/2020-04-01/gremlinresources) if the above libraries turn out too cumbersome.
+   - As a fall-back, we can interact with the REST API if the above libraries turn out too cumbersome.
 1. Deployment: What are methods of deploying updates?
    - There is support for [terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_account).
    - There is support for [the Azure CLI](https://docs.microsoft.com/en-us/azure/cosmos-db/cli-samples-gremlin).
@@ -116,7 +116,7 @@ If that doesn't work, this quote from the conclusion should suffice.
 1. Graph database: Is this a graph database?
    - Yes, Neo4j is a native graph database that is commonly ranked #1 in many [graph database comparisons](https://db-engines.com/en/ranking/graph+dbms).
 1. GoLang: What is the Quality of DX (dev experience) using GoLang?
-   - There is a published and maintained [Neo4j driver for golang](https://pkg.go.dev/github.com/Neo4j/Neo4j-go-driver/Neo4j).
+   - There is a published and maintained Neo4j driver for golang.
 1. Deployment: What are methods of deploying updates?
    - Options available through [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/Neo4j.Neo4j-enterprise-edition?tab=Overview) which should support standard Azure deployment stacks like ARM templates / Azure CLI
 1. Access methods: Managed Identity?
