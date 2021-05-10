@@ -16,7 +16,7 @@ The team decided to integrate SonarCloud in Azure pipeline to detect any issues 
 We have agreed to not use SonarCloud for this project since the free version is limited only to public repositories and the Memory tool is a private repository.
 Using SonarCloud would involve subscribing to their paid plan.
 Other code smell tools like Checkstyle, PMD & FindBugs exist but they do not have extensive Go support like SonarCloud.
-Additional research into alternatives will be accomplished as part of backlog item [22169](https://dev.azure.com/dwrdev/Memory/_backlogs/backlog/Memory%20Team/Backlog%20items/?workitem=22169).
+Additional research into alternatives will be accomplished as part of backlog item #22169.
 
 Detailed SonarCloud pricing plan information can be found [here](https://sonarcloud.io/pricing).
 
