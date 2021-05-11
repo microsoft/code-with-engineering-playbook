@@ -24,6 +24,6 @@ This dashboard recipe provides observability for AzDO pipelines by displaying va
 
 ## Python Logger class for Application Insights using OpenCensus
 
-This repo contains "AppLogger" class which is a python logger class for Application Insights using Opencensus. Repo also contains sample code which shows the usage of "AppLogger".
+This repository contains "AppLogger" class which is a python logger class for Application Insights using Opencensus. It also contains sample code that shows the usage of "AppLogger".
 
 [GitHub Repo](https://github.com/Azure-Samples/azure-monitor-opencensus-python/tree/master/azure_monitor/python_logger_opencensus_azure)
