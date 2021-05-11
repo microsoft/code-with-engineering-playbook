@@ -131,3 +131,7 @@ The following steps lay out a clear pathway to creating new secrets and then uti
 2. [Get the Databricks personal access token](https://docs.databricks.com/api/latest/authentication.html#token-management)
 3. [Create a scope for the secrets](https://docs.azuredatabricks.net/user-guide/secrets/secret-scopes.html#create-a-databricks-backed-secret-scope)
 4. [Create secrets](https://docs.azuredatabricks.net/user-guide/secrets/secrets.html)
+
+### Validation
+
+Automated credential scanning can be performed on the code regardless of the programming language. Read more about it [here](../../continuous-integration/dev-sec-ops/secret-management/credential_scanning.md)

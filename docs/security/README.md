@@ -21,6 +21,10 @@ When requesting a security review for your application, please make sure you hav
 * [Security and Identity in Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/security/about-security-identity?view=azure-devops)
 * [Security Code Analysis](https://secdevtools.azurewebsites.net/)
 
+## DevSecOps
+
+Introduce security to your project at early stages. The [DevSecOps section](../continuous-integration/dev-sec-ops/README.md) covers security practices, automation, tools and frameworks as part of the application CI.
+
 ## OWASP Cheat Sheets
 
 > Note: OWASP is considered to be the gold-standard in computer security information. OWASP maintains an extensive series of cheat sheets which cover all the OWASP Top 10 and more. Below, many of the more relevant cheat sheets have been summarized. To view all the cheat sheets, check out their [Cheat Sheet Index](https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md).
