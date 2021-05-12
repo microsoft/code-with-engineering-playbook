@@ -13,14 +13,14 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/credential-scanning/recipes/detect-secrets-ado/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/secrets_rotation/">
       
       <link rel="icon" href="../../../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets - Code With Engineering Playbook</title>
+        <title>Secrets Rotation - Code With Engineering Playbook</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#detecting-secrets-in-your-azure-devops-pipeline-with-yelp-detect-secrets" class="md-skip">
+        <a href="#secrets-rotation" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+              Secrets Rotation
             
           </span>
         </div>
@@ -2040,13 +2040,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3" type="checkbox" id="__nav_9_3" checked>
       
       <label class="md-nav__link" for="__nav_9_3">
-        Credential scanning
+        Dev sec ops
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Credential scanning" data-md-level="2">
+      <nav class="md-nav" aria-label="Dev sec ops" data-md-level="2">
         <label class="md-nav__title" for="__nav_9_3">
           <span class="md-nav__icon md-icon"></span>
-          Credential scanning
+          Dev sec ops
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2056,8 +2056,86 @@
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        Credential Scanning
+        DevSecOps
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_2" type="checkbox" id="__nav_9_3_2" >
+      
+      <label class="md-nav__link" for="__nav_9_3_2">
+        Dependency container scanning
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dependency container scanning" data-md-level="3">
+        <label class="md-nav__title" for="__nav_9_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dependency container scanning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dependency-container-scanning/dependency_container_scanning/" class="md-nav__link">
+        Dependency and Container Scanning
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_3" type="checkbox" id="__nav_9_3_3" >
+      
+      <label class="md-nav__link" for="__nav_9_3_3">
+        Penetration testing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Penetration testing" data-md-level="3">
+        <label class="md-nav__title" for="__nav_9_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Penetration testing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../penetration-testing/penetration_testing/" class="md-nav__link">
+        Penetration Testing
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2072,18 +2150,30 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_2" type="checkbox" id="__nav_9_3_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_4" type="checkbox" id="__nav_9_3_4" checked>
       
-      <label class="md-nav__link" for="__nav_9_3_2">
-        Recipes
+      <label class="md-nav__link" for="__nav_9_3_4">
+        Secret management
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Recipes" data-md-level="3">
-        <label class="md-nav__title" for="__nav_9_3_2">
+      <nav class="md-nav" aria-label="Secret management" data-md-level="3">
+        <label class="md-nav__title" for="__nav_9_3_4">
           <span class="md-nav__icon md-icon"></span>
-          Recipes
+          Secret management
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credential_scanning/" class="md-nav__link">
+        Credential Scanning
+      </a>
+    </li>
+  
+
           
             
   
@@ -2099,12 +2189,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+          Secrets Rotation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+        Secrets Rotation
       </a>
       
         
@@ -2121,22 +2211,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#why-secrets-rotation" class="md-nav__link">
+    Why Secrets Rotation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-devops-pipeline" class="md-nav__link">
-    Azure DevOps Pipeline
+  <a href="#managed-identity" class="md-nav__link">
+    Managed Identity
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-plugin-example" class="md-nav__link">
-    Custom plugin example
+  <a href="#applying-secrets-rotation" class="md-nav__link">
+    Applying Secrets Rotation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secrets-rotation-frameworks-and-tools" class="md-nav__link">
+    Secrets Rotation Frameworks and Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -2153,9 +2257,87 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_4_3" type="checkbox" id="__nav_9_3_4_3" >
+      
+      <label class="md-nav__link" for="__nav_9_3_4_3">
+        Recipes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Recipes" data-md-level="4">
+        <label class="md-nav__title" for="__nav_9_3_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../detect-secrets/" class="md-nav__link">
+      <a href="../recipes/detect-secrets-ado/" class="md-nav__link">
+        Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recipes/detect-secrets/" class="md-nav__link">
         Credential Scanning Tool: detect-secrets
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_5" type="checkbox" id="__nav_9_3_5" >
+      
+      <label class="md-nav__link" for="__nav_9_3_5">
+        Static code analysis
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Static code analysis" data-md-level="3">
+        <label class="md-nav__title" for="__nav_9_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Static code analysis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../static-code-analysis/static_code_analysis/" class="md-nav__link">
+        Static Code Analysis
       </a>
     </li>
   
@@ -3860,22 +4042,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#why-secrets-rotation" class="md-nav__link">
+    Why Secrets Rotation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-devops-pipeline" class="md-nav__link">
-    Azure DevOps Pipeline
+  <a href="#managed-identity" class="md-nav__link">
+    Managed Identity
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-plugin-example" class="md-nav__link">
-    Custom plugin example
+  <a href="#applying-secrets-rotation" class="md-nav__link">
+    Applying Secrets Rotation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secrets-rotation-frameworks-and-tools" class="md-nav__link">
+    Secrets Rotation Frameworks and Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -3893,98 +4089,24 @@
               
                 
                 
-                <h1 id="detecting-secrets-in-your-azure-devops-pipeline-with-yelp-detect-secrets">Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets</h1>
-<h2 id="overview">Overview</h2>
-<p>In this article, you can find information on how to integrate YELP detect-secrets into your Azure DevOps Pipeline. The proposed code can be part of the classic CI process or (preferred way) build validation for PRs before merging to the main branch.</p>
-<h2 id="azure-devops-pipeline">Azure DevOps Pipeline</h2>
-<p>Proposed Azure DevOps Pipeline contains multiple steps described below:</p>
+                <h1 id="secrets-rotation">Secrets Rotation</h1>
+<p>Secret rotation is the process of refreshing the secrets that are used by the application.
+The best way to authenticate to Azure services is by using a managed identity, but there are some scenarios where that isn't an option. In those cases, access keys or secrets are used. You should periodically rotate access keys or secrets.</p>
+<h2 id="why-secrets-rotation">Why Secrets Rotation</h2>
+<p>Secrets are an asset and as such have a potential to be leaked or stolen. By rotating the secrets, we are revoking any secrets that may have been compromised. Therefore, secrets should be rotated frequently.</p>
+<h2 id="managed-identity">Managed Identity</h2>
+<p>Azure Managed identities are automatically issues by Azure in order to indentify individual resources, and can be used for authentication in place of secrets and passwords. The appeal in using Managed Identities is the elimination of management of secrets and credentials. They are not required on developers machines or checked into source control, and they don't need to be rotated. Managed identities are considered safer than the alternatives and is the recommended choice.</p>
+<h2 id="applying-secrets-rotation">Applying Secrets Rotation</h2>
+<p>If Azure Managed Identity can't be used. This and the following sections will explain how rotation of secrets can be achieved:</p>
+<p>To promote frequent rotation of a secret - define an automated periodic secret rotation process.
+The secret rotation process might result in a downtime when the application is restarted to introduce the new secret. A common solution for that is to have two versions of secret available, also referred to as Blue/Green Secret rotation. By having a second secret at hand, we can start a second instance of the application with that secret before the previous secret is revoked, thus avoiding any downtime.</p>
+<h2 id="secrets-rotation-frameworks-and-tools">Secrets Rotation Frameworks and Tools</h2>
 <ol>
-<li>Set Python 3 as default</li>
-<li>Install detect-secrets using pip</li>
-<li>Run detect-secrets tool<blockquote>
-<p>NOTE: In this example, the tool gets additional parameters. The most important is <code>--custom-plugins</code>, which points to the custom plugin for Azure Storage Account Key detection.
-This plugin is not part of the official YELP detect-secrets yet, so you have to provide it in your codebase. Reference code you can find under the <a href="#custom-plugin-example">Custom plugin example</a> section.</p>
-</blockquote>
-</li>
-<li>Publish results in the Pipeline Artifact<blockquote>
-<p>NOTE: It's an optional step, but for future investigation .json file with results may be helpful.</p>
-</blockquote>
-</li>
-<li>Analyzing detect-secrets results<blockquote>
-<p>NOTE: This step does a simple analysis of the .json file. If any secret has been detected, then break the build.</p>
-</blockquote>
-</li>
+<li>For rotation of a secret for resources that use one set of authentication credentials <a href="https://docs.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation">click here</a></li>
+<li>For rotation of a secret for resources that have two sets of authentication credentials <a href="https://docs.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation-dual?tabs=azure-cli">click here</a></li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">none</span>
-
-<span class="nt">pool</span><span class="p">:</span>
-  <span class="nt">vmImage</span><span class="p">:</span> <span class="s">&quot;windows-latest&quot;</span>
-
-<span class="nt">steps</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">UsePythonVersion@0</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">default&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">versionSpec</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
-
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CmdLine@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Install</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">pip&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">pip install detect-secrets</span>
-
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CmdLine@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">tool&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">detect-secrets scan --exclude-files &quot;src\\Web\\wwwroot\\lib\\*&quot; --use-all-plugins --custom-plugins yelp\azure_storage_key.py &gt; detect-secrets.json</span>
-
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishPipelineArtifact@1</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Publish</span><span class="nv"> </span><span class="s">results</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Pipeline</span><span class="nv"> </span><span class="s">Artifact&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">targetPath</span><span class="p">:</span> <span class="s">&quot;$(Pipeline.Workspace)/detect-secrets.json&quot;</span>
-      <span class="nt">artifact</span><span class="p">:</span> <span class="s">&quot;detect-secrets&quot;</span>
-      <span class="nt">publishLocation</span><span class="p">:</span> <span class="s">&quot;pipeline&quot;</span>
-
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PowerShell@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Analyzing</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">results&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">targetType</span><span class="p">:</span> <span class="s">&quot;inline&quot;</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">$ds = Get-Content detect-secrets.json</span>
-        <span class="no">Write-Output $ds</span>
-
-        <span class="no">$dsObj = $ds | ConvertFrom-Json</span>
-        <span class="no">$num = ($dsObj.results | Get-Member -MemberType NoteProperty).Count</span>
-
-        <span class="no">if ($num -gt 0) {</span>
-          <span class="no">Write-Host &quot;##vso[task.logissue type=error]Secrets were detected in code.&quot;</span>
-          <span class="no">exit 1</span>
-        <span class="no">}</span>
-        <span class="no">else {</span>
-          <span class="no">Write-Host &quot;No secrets detected.&quot;</span>
-        <span class="no">}</span>
-      <span class="nt">pwsh</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-</code></pre></div>
-<h2 id="custom-plugin-example">Custom plugin example</h2>
-<p>The below example contains a custom plugin for YELP detect-secrets. This plugin is a Detector for Azure Storage Account access keys.</p>
-<div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">This plugin searches for Azure Storage Account access keys.</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">re</span>
-
-
-<span class="kn">from</span> <span class="nn">detect_secrets.plugins.base</span> <span class="kn">import</span> <span class="n">RegexBasedDetector</span>
-
-
-<span class="k">class</span> <span class="nc">AzureStorageKeyDetector</span><span class="p">(</span><span class="n">RegexBasedDetector</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Scans for Azure Storage Account access keys.&quot;&quot;&quot;</span>
-    <span class="n">secret_type</span> <span class="o">=</span> <span class="s1">&#39;Azure Storage Account access key&#39;</span>
-
-    <span class="n">denylist</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;AccountKey=[a-zA-Z0-9+\/=]</span><span class="si">{88}</span><span class="s1">&#39;</span><span class="p">),</span>
-    <span class="p">]</span>
-</code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>Refreshing secrets is important to ensure that your secret stays a secret without causing downtime to your application.</p>
                 
               
               
@@ -4003,7 +4125,7 @@ This plugin is not part of the official YELP detect-secrets yet, so you have to 
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../credential_scanning/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4018,13 +4140,13 @@ This plugin is not part of the official YELP detect-secrets yet, so you have to 
         </a>
       
       
-        <a href="../detect-secrets/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../recipes/detect-secrets-ado/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Credential Scanning Tool: detect-secrets
+              Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
             </div>
           </div>
           <div class="md-footer__button md-icon">
