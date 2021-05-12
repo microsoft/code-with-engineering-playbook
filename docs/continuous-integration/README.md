@@ -45,6 +45,8 @@ An automated build should encompass the following principles:
   - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
 - [ ] **No IDE Dependencies**
   - It's essential to have a build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
+- [ ] **DevOps security checks**
+  - Introduce security to your project at early stages. Follow the [DevSecOps section](dev-sec-ops/README.md) to introduce security practices, automation, tools and frameworks as part of the CI.
 
 ## Build Environment Dependencies
 
