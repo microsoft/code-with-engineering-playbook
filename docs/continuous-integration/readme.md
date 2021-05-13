@@ -135,6 +135,44 @@ Terraform resource providers like [Azure DevOPS](https://github.com/microsoft/te
   - The deployment and cloud resource template topology should be documented and well understood within the README of the IAC git repo.
   - Local environment and CI workflow setup steps should be documented.
 
+## Configuration Validation
+
+Applications use configuration to allow different runtime behaviors and it’s quite common to use files to store these settings. As developers, we might introduce errors while editing these files which would cause issues for the application to start and/or run correctly. By applying validation techniques on both syntax and semantics of our configuration, we can detect errors before the application is deployed and execute, improving the developer (user) experience.
+
+### Application Configuration Files Examples
+
+- JSON, with support for complex data types and data structures
+- YAML, a super set of JSON with support for complex data types and structures
+- TOML, a super set of JSON and a formally specified configuration file format
+
+## Why Validate Application Configuration as a Separate Step?
+
+- **Easier Debugging & Time saving** - With a configuration validation step in our pipeline, we can avoid running the application just to find it fails. It saves time on having to deploy & run, wait and then realize something is wrong in configuration. In addition, it also saves time on going through the logs to figure out what failed and why.
+- **Better user/developer experience** - A simple reminder to the user that something in the configuration isn't in the right format can make all the difference between the joy of a successful deployment process and the intense frustration of having to guess what went wrong. For example, when there is a Boolean value expected, it can either be a string value like "True" or "False" or an integer value such as "0" or "1" . With configuration validation we make sure the meaning is correct for our application.
+- **Avoid data corruption and security breaches** - Since the data arrives from an untrusted source, such as a user or an external webservice, it’s particularly important to validate the input . Otherwise, it will run at the risk of performing errors, corrupting data, or, worse, be vulnerable to a whole array of injection attacks.
+
+## What is Json Schema?
+
+[JSON-Schema](https://json-schema.org/) is the standard of JSON documents that describes the structure and the requirements of your JSON data. Although it is called JSON-Schema, it also common to use this method for YAMLs, as it is a super set of JSON.
+The schema is very simple; point out which fields might exist, which are required or optional, what data format they use. Other validation rules can be added on top of that basic premise, along with human-readable information. The metadata lives in schemas which are .json files as well.
+In addition, schema has the widest adoption among all standards for JSON validation as it covers a big part of validation scenarios. It uses easy-to-parse JSON documents for schemas and is easily extensible.
+
+## How to Implement Schema Validation?
+
+Implementing schema validation is divided in two - the generation of the schemas and the validation of yaml/json files with those schemas.
+
+### Generation
+
+There are two options to generate a schema:
+
+- [From code](https://json-schema.org/implementations.html#from-code) - we can leverage the existing models and objects in the code and generate a customized schema.
+
+- [From data](https://json-schema.org/implementations.html#from-data) - we can take yaml/json samples which reflect the configuration in general and use the various online tools to generate a schema.
+
+### Validation
+
+The schema has 30+ [validators](https://json-schema.org/implementations.html#validators) for different languages, including 10+ for JavaScript, so no need to code it yourself.
+
 ## Integration Validation
 
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
