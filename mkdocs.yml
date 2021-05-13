@@ -16,6 +16,7 @@ theme:
   favicon: resources/ms_icon.png
   features:
     - navigation.instant
+    - navigation.indexes
 
 markdown_extensions:
   - meta
@@ -26,4 +27,3 @@ markdown_extensions:
   - pymdownx.tabbed
   - mdx_truly_sane_lists
   - pymdownx.tasklist
-  

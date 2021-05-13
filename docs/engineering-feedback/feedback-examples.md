@@ -36,8 +36,8 @@ Desired Experience: Partners should be able to update the Streaming Unit number 
 
 Several customers already use Python as part of their workflow, and would like to be able to use Python for Azure Functions. This is specially true since many of them are already have scripts running on other clouds and services.
 
-In addition, Python support has been in Preview for a very long time and it's missing a lot of functionality.  
+In addition, Python support has been in Preview for a very long time, and it's missing a lot of functionality.  
 
-This feature request is one of the most asked and a huge upside potential to pull through Machine Learning (ML) based workloads.
+This feature request is one of the most asked, and a huge upside potential to pull through Machine Learning (ML) based workloads.
 
 > This feedback was created as a feedback with the Azure Functions product group and also followed up internally until addressed. Here is [the announcement](https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-python-support-in-azure-functions/).
