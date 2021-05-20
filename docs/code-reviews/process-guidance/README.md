@@ -15,7 +15,7 @@ To ensure that the code review process is healthy, inclusive and meets the goals
 
 ## Measuring code review process
 
-If the team is finding that code reviews are taking a significant time to merge and it is becoming a blocker, consider the following additional recommendations:
+If the team is finding that code reviews are taking a significant time to merge, and it is becoming a blocker, consider the following additional recommendations:
 
 1. Measure the average time it takes to merge a PR per sprint cycle.
 1. Review during retrospective how the time to merge can be improved and prioritized.
@@ -24,9 +24,5 @@ If the team is finding that code reviews are taking a significant time to merge 
 
 ## Role specific guidance
 
-- [Author Guidance](./author-guidance.md)
-- [Reviewer Guidance](./reviewer-guidance.md)
-
-## Resources
-
-Further resources can be found in the [resource section](../README.md#resources) on the main page.
+- [Author Guidance](author-guidance.md)
+- [Reviewer Guidance](reviewer-guidance.md)

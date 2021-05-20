@@ -7,16 +7,16 @@ In this document we will explore a solution which will allow us to have the loca
 
 Using the suggested method will allow us to:
 
-1. Build
-2. Lint
-3. Unit test
-4. E2E test
-5. Run Solution
-6. Be OS and environment agnostic.
+- Build
+- Lint
+- Unit test
+- E2E test
+- Run Solution
+- Be OS and environment agnostic.
 
 ## Enter Docker Compose
 
-[Docker Compose](https://docs.docker.com/compose/) allows to build, push or run multi-container Docker applications.
+[Docker Compose](https://docs.docker.com/compose/) allows you to build push or run multi-container Docker applications.
 
 ### Method of work
 
@@ -24,7 +24,7 @@ Using the suggested method will allow us to:
 2. Add a step in your docker file to execute unit tests.
 3. Add a step in the docker file for linting.
 4. Create a new dockerfile, possibly in a different folder, which executes end-to-end tests against the cluster. Make sure the default endpoints are configurable (This will become handy in your remote CI server, where you will be able to test against a live environment, if you choose to).
-5. Create a docker-compose file which allows to choose which of the services to run. The default will run all applications and tests, and an optional parameter can run specific services, for example only the application without the tests.
+5. Create a docker-compose file which allows you to choose which of the services to run. The default will run all applications and tests, and an optional parameter can run specific services, for example only the application without the tests.
 
 ### Prerequisites
 
@@ -60,7 +60,7 @@ ENTRYPOINT ["dotnet", "SampleNetApi.dll"]
 
 This script restores all dependencies, builds and runs tests. The dotnet app includes `stylecop` which fails the build in case of linting issues.
 
-Next we will also create a dockerfile to perform an end-to-end test. Usually this will look like a set of scripts or a dedicated app which performs actual HTTP calls to a running application.
+Next we will also create a dockerfile to perform an end-to-end test. Usually this will look like a set of scripts, or a dedicated app which performs actual HTTP calls to a running application.
 For the sake of simplicity the dockerfile itself will run a simple curl command:
 
 ```sh
