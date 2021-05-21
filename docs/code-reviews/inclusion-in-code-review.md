@@ -45,6 +45,8 @@ In such cases, assuming positive intent of the author and reviewer is a good sta
 
 ## Tools
 
+Below are some tools which may help in establishing inclusive code review culture within our teams.
+
 * [anonymous_github](https://github.com/tdurieux/anonymous_github)
 * [blind-reviews](https://github.com/zombie/blind-reviews/)
 * [gitmask](https://www.gitmask.com/)
