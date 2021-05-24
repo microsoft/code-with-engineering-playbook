@@ -38,7 +38,7 @@ You will still need to submit a PR against master in order to merge your changes
 
 When you have an idea for contribution open an *issue*!
 
-> **Note:** * Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
+> **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
 
 ## Git guidance
 
