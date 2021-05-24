@@ -146,7 +146,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
   - Prevent commits directly into main branch.
 
 - [ ] **Branch strategy**
-  - Release branches should auto trigger the deployment of a build artifact to its target cloud environment. One branch strategy worth considering is  [trunk-based development](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-releases) and [Release Flow's Branching Structure](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow).
+  - Release branches should auto trigger the deployment of a build artifact to its target cloud environment. One branch strategy worth considering is  [trunk-based development](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-releases) and [Release Flow's Branching Structure](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#port-changes-back-to-the-main-branch).
 
 ## Deliver Quickly and Daily
 
