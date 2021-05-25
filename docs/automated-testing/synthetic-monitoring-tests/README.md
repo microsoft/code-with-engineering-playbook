@@ -94,5 +94,5 @@ When developing a PaaS/SaaS solution, Synthetic monitoring is key to the success
 ## Resources
 
 - [Google SRE book - Testing Reliability](https://landing.google.com/sre/sre-book/chapters/testing-reliability/)
-- [Microsoft DevOps Architectures - Shift Right to Test in Production](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/shift-right-test-production)
+- [Microsoft DevOps Architectures - Shift Right to Test in Production](https://docs.microsoft.com/en-us/devops/deliver/shift-right-test-production)
 - [Martin Fowler - Synthetic Monitoring](https://martinfowler.com/bliki/SyntheticMonitoring.html)
