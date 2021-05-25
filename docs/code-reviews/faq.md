@@ -5,10 +5,10 @@ This is a list of questions / frequently occurring issues when working with code
 ## What makes a code review different from a PR?
 
 | Code Review | Pull Request |
---- | --- |
-| Source code focused | Includes both source code and other relevant docs (e.g. design docs, readmes, etc.). Intended to enhance and enable code reviews for the final stages of a set of changes. |
-| Intended for **early feedback** before submitting a PR | Not intended for **early feedback** |
-| Usually a synchronous meeting with faster feedback cycles with draft PRs as an exception (e.g. Formal Meetings, Over-The-Shoulder Meetings, Pair Programming) | Usually a tool assisted asynchronous conversation but can be elevated to a synchronous meeting for faster feedback cycles |
+--- | ---
+| Source code focused | Intended to enhance and enable code reviews. Includes both source code but can have a broader scope (e.g., docs, integration tests, compiles) |
+| Intended for **early feedback** before submitting a PR | Not intended for **early feedback**. Created when author is ready to merge |
+| Usually a synchronous review with faster feedback cycles (draft PRs as an exception). Examples: scheduled meetings, over-the-shoulder review, pair programming | Usually a tool assisted asynchronous review but can be elevated to a synchronous meeting when needed |
 
 ## We experience very large PRs, how can we fix this?
 
