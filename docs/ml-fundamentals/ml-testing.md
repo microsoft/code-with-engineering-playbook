@@ -1,4 +1,4 @@
-# Testing Data Science and MLOps code
+# Testing Data Science and MLOps Code
 
 The purpose of this document is to provide samples of tests for the most common operations in MLOps/Data Science projects. Testing the code used for MLOps or data science projects follows the same principles of any other software project.
 
@@ -102,7 +102,7 @@ def test_clean_features_cleans_nan_values(house_features_json):
 
 def test_extract_features_extracts_price_per_area(house_features_json):
   extracted_features = extract_features(house_features_json)
-  assert extracted_features['price_per_area'] = 100
+  assert extracted_features['price_per_area'] == 100
 ```
 
 ## Transforming data
@@ -174,10 +174,10 @@ One way to do this is using marks
 ```python
 @pytest.mark.longrunning
 def test_integration_between_two_systems():
-  # this might take a while
+    # this might take a while
 ```
 
-Run all tests that are not marked longrunning
+Run all tests that are not marked `longrunning`
 
 ```bash
 pytest -v -m "not longrunning"
@@ -190,7 +190,7 @@ ML unit tests are not intended to check the accuracy or performance of a model. 
 * Does the model accept the correct inputs and produce the correctly shaped outputs?
 * Do the weights of the model update when running `fit`?
 
-To do this, the ML model tests do not strictly follow all of the best practices of standard Unit tests - not all outside calls are mocked. These tests are much closer to a [narrow integration test](https://martinfowler.com/bliki/IntegrationTest.html).
+To do this, the ML model tests do not strictly follow best practices of standard Unit tests - not all outside calls are mocked. These tests are much closer to a [narrow integration test](https://martinfowler.com/bliki/IntegrationTest.html).
 However, the benefits of having simple tests for the ML model help to stop a poorly configured model from spending hours in training, while still producing poor results.
 
 Examples of how to implement these tests (for Deep Learning models) include:

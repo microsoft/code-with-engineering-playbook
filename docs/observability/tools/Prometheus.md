@@ -11,7 +11,7 @@ The client libraries offer four [metric types](https://prometheus.io/docs/concep
 
 - Prometheus is a time series database and allow for events or measurements to be tracked, monitored, and aggregated over time.
 - Prometheus is a pull-based tool. One of the biggest advantages of Prometheus over other monitoring tools is that Prometheus actively scrapes targets in order to retrieve metrics from them. Prometheus also supports the push model for pushing metrics.
-- Prometheus allows for control over who to scrape, and how often to scrape them. Through the Prometheus server, there can be multiple scrape configurations, allowing for multiple rates for different targets.
+- Prometheus allows for control over how to scrape, and how often to scrape them. Through the Prometheus server, there can be multiple scrape configurations, allowing for multiple rates for different targets.
 - Similar to [Grafana](https://prometheus.io/docs/visualization/grafana/), visualization for the time series can be directly done through the Prometheus Web UI. The Web UI provides the ability to easily filter and have an overview of what is taking place with your different targets.
 - Prometheus provides a powerful functional query language called PromQL (Prometheus Query Language) that lets the user aggregate time series data in real time.
 
@@ -19,7 +19,7 @@ The client libraries offer four [metric types](https://prometheus.io/docs/concep
 
 The Prometheus client libraries allow you to add instrumentation to your code and expose internal metrics via an HTTP endpoint. The official [Prometheus client libraries](https://prometheus.io/docs/instrumenting/clientlibs/) currently are `Go`, `Java or Scala`, `Python` and `Ruby`. Unofficial third-party libraries include: `.NET/C#`, `Node.js`, and `C++`.
 
-Prometheus metrics format is supported by a wide array of tools and services including:
+Prometheus' metrics format is supported by a wide array of tools and services including:
 
 - [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-prometheus-integration)
 - [Stackdriver](https://cloud.google.com/stackdriver/docs/solutions/gke/prometheus)
