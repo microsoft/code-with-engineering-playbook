@@ -2115,6 +2115,67 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#configuration-validation" class="md-nav__link">
+    Configuration Validation
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-configuration-files-examples" class="md-nav__link">
+    Application Configuration Files Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-validate-application-configuration-as-a-separate-step" class="md-nav__link">
+    Why Validate Application Configuration as a Separate Step?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-json-schema" class="md-nav__link">
+    What is Json Schema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-implement-schema-validation" class="md-nav__link">
+    How to Implement Schema Validation?
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Implement Schema Validation?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generation" class="md-nav__link">
+    Generation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    Validation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#integration-validation" class="md-nav__link">
     Integration Validation
   </a>
@@ -4204,6 +4265,67 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#configuration-validation" class="md-nav__link">
+    Configuration Validation
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-configuration-files-examples" class="md-nav__link">
+    Application Configuration Files Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-validate-application-configuration-as-a-separate-step" class="md-nav__link">
+    Why Validate Application Configuration as a Separate Step?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-json-schema" class="md-nav__link">
+    What is Json Schema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-implement-schema-validation" class="md-nav__link">
+    How to Implement Schema Validation?
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Implement Schema Validation?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generation" class="md-nav__link">
+    Generation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    Validation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#integration-validation" class="md-nav__link">
     Integration Validation
   </a>
@@ -4398,6 +4520,36 @@
 </ul>
 </li>
 </ul>
+<h2 id="configuration-validation">Configuration Validation</h2>
+<p>Applications use configuration to allow different runtime behaviors and it’s quite common to use files to store these settings. As developers, we might introduce errors while editing these files which would cause issues for the application to start and/or run correctly. By applying validation techniques on both syntax and semantics of our configuration, we can detect errors before the application is deployed and execute, improving the developer (user) experience.</p>
+<h3 id="application-configuration-files-examples">Application Configuration Files Examples</h3>
+<ul>
+<li>JSON, with support for complex data types and data structures</li>
+<li>YAML, a super set of JSON with support for complex data types and structures</li>
+<li>TOML, a super set of JSON and a formally specified configuration file format</li>
+</ul>
+<h2 id="why-validate-application-configuration-as-a-separate-step">Why Validate Application Configuration as a Separate Step?</h2>
+<ul>
+<li><strong>Easier Debugging &amp; Time saving</strong> - With a configuration validation step in our pipeline, we can avoid running the application just to find it fails. It saves time on having to deploy &amp; run, wait and then realize something is wrong in configuration. In addition, it also saves time on going through the logs to figure out what failed and why.</li>
+<li><strong>Better user/developer experience</strong> - A simple reminder to the user that something in the configuration isn't in the right format can make all the difference between the joy of a successful deployment process and the intense frustration of having to guess what went wrong. For example, when there is a Boolean value expected, it can either be a string value like "True" or "False" or an integer value such as "0" or "1" . With configuration validation we make sure the meaning is correct for our application.</li>
+<li><strong>Avoid data corruption and security breaches</strong> - Since the data arrives from an untrusted source, such as a user or an external webservice, it’s particularly important to validate the input . Otherwise, it will run at the risk of performing errors, corrupting data, or, worse, be vulnerable to a whole array of injection attacks.</li>
+</ul>
+<h2 id="what-is-json-schema">What is Json Schema?</h2>
+<p><a href="https://json-schema.org/">JSON-Schema</a> is the standard of JSON documents that describes the structure and the requirements of your JSON data. Although it is called JSON-Schema, it also common to use this method for YAMLs, as it is a super set of JSON.
+The schema is very simple; point out which fields might exist, which are required or optional, what data format they use. Other validation rules can be added on top of that basic premise, along with human-readable information. The metadata lives in schemas which are .json files as well.
+In addition, schema has the widest adoption among all standards for JSON validation as it covers a big part of validation scenarios. It uses easy-to-parse JSON documents for schemas and is easily extensible.</p>
+<h2 id="how-to-implement-schema-validation">How to Implement Schema Validation?</h2>
+<p>Implementing schema validation is divided in two - the generation of the schemas and the validation of yaml/json files with those schemas.</p>
+<h3 id="generation">Generation</h3>
+<p>There are two options to generate a schema:</p>
+<ul>
+<li><a href="https://json-schema.org/implementations.html#from-code">From code</a> - we can leverage the existing models and objects in the code and generate a customized schema.</li>
+</ul>
+<ul>
+<li><a href="https://json-schema.org/implementations.html#from-data">From data</a> - we can take yaml/json samples which reflect the configuration in general and use the various online tools to generate a schema.</li>
+</ul>
+<h3 id="validation">Validation</h3>
+<p>The schema has 30+ <a href="https://json-schema.org/implementations.html#validators">validators</a> for different languages, including 10+ for JavaScript, so no need to code it yourself.</p>
 <h2 id="integration-validation">Integration Validation</h2>
 <p>An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:</p>
 <ul class="task-list">
