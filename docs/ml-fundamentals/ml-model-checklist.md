@@ -19,7 +19,7 @@ Before putting an individual ML model into production, the following aspects sho
 - [ ] [Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?](#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made)
 - [ ] [How will the model be integrated into other systems, and what impact will it have?](#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have)
 - [ ] [How will performance be monitored?](#how-will-performance-be-monitored)
-- [ ] [Have any ethical concerns been taken into account in accordance with the Microsofts AI principles on responsible AI?](#have-any-ethical-concerns-been-taken-into-account-in-accordance-with-the-microsofts-ai-principles-on-responsible-ai)
+- [ ] [Have any ethical concerns been taken into account?](#have-any-ethical-concerns-been-taken-into-account?)
 
 Please note that there might be scenarios where it is not possible to check all the items on this checklist. However, it is advised to go through all items and make informed decisions based on your specific use case.
 
@@ -137,4 +137,4 @@ Model monitoring should lead to:
 
 ### Have any ethical concerns been taken into account?
 
-Every ML project goes through a [Responsible AI](responsible-ai.md) process to ensure that it upholds Microsoft's [6 Responsible AI principles](https://www.microsoft.com/en-us/ai/responsible-ai).
+Every ML project goes through the [Responsible AI](responsible-ai.md) process to ensure that it upholds Microsoft's [6 Responsible AI principles](https://www.microsoft.com/en-us/ai/responsible-ai).
