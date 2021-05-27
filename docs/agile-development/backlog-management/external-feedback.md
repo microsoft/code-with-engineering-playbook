@@ -1,4 +1,4 @@
-# External feedback
+# External Feedback
 
 Various stakeholders can provide feedback to the working product during a project, beyond any formal
 review and feedback sessions required by the organization. The frequency and method of collecting

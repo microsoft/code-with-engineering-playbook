@@ -4,9 +4,9 @@
 
 ## Git LFS
 
-Git is very good and keeping track of changes in text-based files like code. But it is not that good in tracking binary files. For instance, if you store a Photoshop image file (PSD) in a repository, with every change, the complete file is stored again in the history. This can make the history of the Git repo very large, which makes a clone of the repository more and more time consuming.
+Git is very good and keeping track of changes in text-based files like code, but it is not that good at tracking binary files. For instance, if you store a Photoshop image file (PSD) in a repository, with every change, the complete file is stored again in the history. This can make the history of the Git repo very large, which makes a clone of the repository more and more time-consuming.
 
-A solution to work with these kind of files is using Git LFS (or Git Large File System). This is an extension to Git and must be installed separately. And it can only be used with a repository platform that supports LFS. GitHub.com and Azure DevOps for instance are platforms that have support for LFS.
+A solution to work with binary files is using Git LFS (or Git Large File System). This is an extension to Git and must be installed separately, and it can only be used with a repository platform that supports LFS. GitHub.com and Azure DevOps for instance are platforms that have support for LFS.
 
 The way it works in short, is that a placeholder file is stored in the repo with information for the LFS system. It looks something like this:
 
@@ -18,7 +18,7 @@ size 4923023
 
 The actual file is stored in a separate storage. This way Git will track changes in this placeholder file, not the large file. The combination of using Git and Git LFS will hide this from the developer though. You will just work with the repository and files as before.
 
-When working with these large files yourself, you'll still see the git history grown on your own machine, as git will still start tracking these large files locally. But when you clone the repo, the history is actually pretty small. So it's beneficial for others not working directly on the large files.
+When working with these large files yourself, you'll still see the Git history grown on your own machine, as Git will still start tracking these large files locally, but when you clone the repo, the history is actually pretty small. So it's beneficial for others not working directly on the large files.
 
 ### Pros of Git LFS
 
@@ -28,7 +28,7 @@ When working with these large files yourself, you'll still see the git history g
 
 ### Cons of Git LFS
 
-* Everyone contributing to the repository needs to install Git LFS
+* Everyone who contributes to the repository needs to install Git LFS
 * If not set up properly:
   * Binary files committed through Git LFS are not visible as Git will only download the data describing the large file
   * Committing large binaries will push the full binary to the repository
@@ -53,15 +53,15 @@ git lfs install
 git lfs track "*.psd"
 ```
 
-There are more fine grained ways to indicate files in a folder and more. See the [Git LFS Documentation](https://github.com/git-lfs/git-lfs/tree/master/docs?utm_source=gitlfs_site&utm_medium=docs_link&utm_campaign=gitlfs).
+There are more fine-grained ways to indicate files in a folder and more. See the [Git LFS Documentation](https://github.com/git-lfs/git-lfs/tree/master/docs?utm_source=gitlfs_site&utm_medium=docs_link&utm_campaign=gitlfs).
 
 With these commands a `.gitattribute` file is created which contains these settings and must be part of the repository.
 
-From here on you just use the standard git commands to work in the repository. The rest will be handled by Git and Git LFS.
+From here on you just use the standard Git commands to work in the repository. The rest will be handled by Git and Git LFS.
 
 ### Common LFS commands
 
-Install git lfs
+Install Git LFS
 
 ```bash
 git lfs install       # windows
@@ -104,9 +104,9 @@ git lfs pull --include="path/to/file"
 
 ## VFS for Git
 
-Imagine a large repository containing multiple projects, ex. one per feature. As a developer you may only be working on some of the features, and thus you don't want to download all the projects in the repo. By default with Git however, cloning the repository means you will download *all* files/projects.
+Imagine a large repository containing multiple projects, ex. one per feature. As a developer you may only be working on some features, and thus you don't want to download all the projects in the repo. By default, with Git however, cloning the repository means you will download *all* files/projects.
 
-VFS for Git (or Virtual File System for Git) solves this problem, as it will only download what you need to your local machine. But if you look in the file system, e.g. with Windows Explorer, it will show all the folders and files including the correct file sizes.
+VFS for Git (or Virtual File System for Git) solves this problem, as it will only download what you need to your local machine, but if you look in the file system, e.g. with Windows Explorer, it will show all the folders and files including the correct file sizes.
 
 The Git platform must support GVFS to make this work. GitHub.com and Azure DevOps both support this out of the box.
 
@@ -135,7 +135,7 @@ To clone a repository to your machine using VFS for Git you use `gvfs` instead o
 gvfs clone [URL] [dir]
 ```
 
-Once this is done, you have a folder which contains a `src` folder which contains the contents of the repository. This is done because of a practice to put all outputs of build systems outside of this tree. This makes it easier to manage `.gitignore` files and to keep Git performant with lots of files.
+Once this is done, you have a folder which contains a `src` folder which contains the contents of the repository. This is done because of a practice to put all outputs of build systems outside this tree. This makes it easier to manage `.gitignore` files and to keep Git performant with lots of files.
 
 For working with the repository you just use Git commands as before.
 
@@ -145,7 +145,7 @@ To remove a VFS for Git repository from your machine, make sure the VFS process 
 gvfs unmount
 ```
 
-This will stop the process and unregister it. After that you can safely remove the folder.
+This will stop the process and unregister it, after that you can safely remove the folder.
 
 ### References
 

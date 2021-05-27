@@ -1,4 +1,4 @@
-# ML Fundamentals checklist
+# ML Fundamentals Checklist
 
 This checklist helps ensure that our ML projects meet our ML Fundamentals. The items below are not sequential, but rather organized by different parts of an ML project.
 
@@ -31,16 +31,16 @@ This checklist helps ensure that our ML projects meet our ML Fundamentals. The i
 
 ## Model Baseline
 
-- [ ] Well defined baseline model exists and its performance is calculated. ([More details on well defined baselines](ml-model-checklist.md#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline))
+- [ ] Well-defined baseline model exists and its performance is calculated. ([More details on well defined baselines](ml-model-checklist.md#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline))
 - [ ] The performance of other ML models can be compared with the model baseline.
 
 ## Experimentation setup
 
-- [ ] Well defined train/test dataset with labels.
+- [ ] Well-defined train/test dataset with labels.
 - [ ] Reproducible and logged experiments in an environment accessible by all data scientists to quickly iterate.
 - [ ] Defined experiments/hypothesis to test.
 - [ ] Results of experiments are documented.
-- [ ] Model hyper parameters are tuned in a systematic way.
+- [ ] Model hyper parameters are tuned systematically.
 - [ ] Same performance evaluation metrics and consistent datasets are used when comparing candidate models.
 
 ## Production

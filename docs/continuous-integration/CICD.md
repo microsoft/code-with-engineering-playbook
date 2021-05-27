@@ -1,6 +1,6 @@
 # Continuous Integration and Delivery
 
-Continuous Integration is the engineering practice of frequently committing code in a shared repository, ideally several times a day, and performing an automated build on it. These changes are built with other simultaneous changes to the system, which enables early detection of integration issues between multiple developers working on a project. Build breaks due to integration failures are treated as the highest priority issue for all of the developers on a team and generally work stops until they are fixed.
+Continuous Integration is the engineering practice of frequently committing code in a shared repository, ideally several times a day, and performing an automated build on it. These changes are built with other simultaneous changes to the system, which enables early detection of integration issues between multiple developers working on a project. Build breaks due to integration failures are treated as the highest priority issue for all the developers on a team and generally work stops until they are fixed.
 
 Paired with an automated testing approach, continuous integration also allows us to also test the integrated build such that we can verify that not only does the code base still build correctly, but also is still functionally correct. This is also a best practice for building robust and flexible software systems.
 
@@ -10,7 +10,7 @@ The goal of all of this is to ensure that the main branch is always shippable, m
 
 If these concepts are unfamiliar to you, take a few minutes and read through [Continuous Integration](https://www.martinfowler.com/articles/continuousIntegration.html) and [Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html).
 
-Our expectation is that CI/CD should be used in all of the engineering projects that we do with our customers and that we are be building, testing, and deploying each change we make to any software system that we are building.
+Our expectation is that CI/CD should be used in all the engineering projects that we do with our customers and that we are building, testing, and deploying each change we make to any software system that we are building.
 
 For a much deeper understanding of all of these concepts, the books [Continuous Integration](https://www.amazon.com/Continuous-Integration-Improving-Software-Reducing/dp/0321336380) and [Continuous Delivery](https://www.amazon.com/gp/product/0321601912) provide a comprehensive background.
 

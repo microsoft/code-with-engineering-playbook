@@ -1,4 +1,4 @@
-# Authors guidance
+# Author Guidance
 
 ## Properly describe your PR
 
@@ -7,7 +7,7 @@
 
 ## Add relevant reviewers
 
-- Add one or more reviewers (depending on your project's guidelines) to the PR. Ideally, you would add at least someone who has expertise and is familiar with the project or the language used
+- Add one or more reviewers (depending on your project's guidelines) to the PR. Ideally, you would add at least someone who has expertise and is familiar with the project, or the language used
 - Adding someone less familiar with the project or the language can aid in verifying the changes are understandable, easy to read, and increases the expertise within the team
 - In CSE code-with projects with a customer team, it is important to include reviewers from both organizations for knowledge transfer - [Customize Reviewers Policy](./customize-ado.md#reviewer-policies)
 
