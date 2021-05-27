@@ -45,7 +45,7 @@ The proposed ML development process consists of:
   * Agree on the success criteria with the customer.
   * Identify potential data sources and determine the availability of these sources.
   * Define performance evaluation metrics on ground truth data
-* Conduct a Responsible AI assessment to ensure responsible development and deployment of the ML solution. See more [here](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1%3aprimaryr4).
+* Conduct a [Responsible AI assessment](responsible-ai.md) to ensure development and deployment of the ML solution in a responsible manner.
 * Conduct a feasibility study to assess whether the business problem is feasible to solve satisfactorily using ML with the available data. The objective of the feasibility study is to mitigate potential over-investment by ensuring sufficient evidence that ML is possible and would be the best solution. The study also provides initial indications of what the ML solution should look like. This ensures quality solutions supported by thorough consideration and evidence. Refer to [feasibility study](ml-feasibility-study.md).
 * Exploratory data analysis is performed and discussed with the team
 
@@ -98,7 +98,7 @@ For more information on experimentation, refer to the [experimentation](ml-exper
 
 #### Deployment
 
-* Responsible AI considerations such as bias and fairness analysis. Additionally, explainability/interpretability of the model should also be considered.
+* [Responsible AI](responsible-ai.md) considerations such as bias and fairness analysis. Additionally, explainability/interpretability of the model should also be considered.
 * It is recommended for a human-in-the-loop to verify the model and manually approve deployment to production.
 * Getting the model into production where it can start adding value by serving predictions. Typical artifacts are APIs for accessing the model and integrating the model to the solution architecture.
 * Additionally, certain scenarios may require training the model periodically in production.
