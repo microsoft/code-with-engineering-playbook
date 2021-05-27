@@ -134,7 +134,6 @@ Model monitoring should lead to:
 - Ability to identify abrupt changes in model performance
 - Warnings when anomalies in model output or input data are occurring
 - Retraining decisions
-
 ### Have any ethical concerns been taken into account?
 
 Every ML project goes through the [Responsible AI](responsible-ai.md) process to ensure that it upholds Microsoft's [6 Responsible AI principles](https://www.microsoft.com/en-us/ai/responsible-ai).
