@@ -51,4 +51,4 @@ This checklist helps ensure that our ML projects meet our ML Fundamentals. The i
 - [ ] SLAs requirements for models are gathered and documented.
 - [ ] Monitoring of data feeds and model output.
 - [ ] Ensure consistent schema is used across the system with expected input/output defined for each component of the pipelines (data processing as well as models).
-- [ ] Responsible AI review.
+- [ ] [Responsible AI](responsible-ai.md) reviewed.
