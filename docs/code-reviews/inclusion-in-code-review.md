@@ -24,9 +24,9 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 
 * Anyone and everyone in the team should be assigned PRs to review.
 * Reviewer should be clear about what is an opinion, their personal preference, best practice or a fact. Arguments over personal preferences and opinions are mostly avoidable.
-* Using inclusing language and tone in the code review comments. For example, being suggestive rather being prescriptive in the review comments is a good way to get the point across the table.
-* For the author of PRs- It's a good practise to thank the reviewer for the review if they have contributed in improving your code or you have learnt something new.
-* Using the Sandiwch technique, for recommending a code change to a new developer or a new customer, sandwich the suggestion between 2 compliments. Something like- "Great Work so far, but i would recommend a few changes here. Btw, i loved the use of XYZ here, great work!!."
+* Using inclusive language and tone in the code review comments. For example, being suggestive rather being prescriptive in the review comments is a good way to get the point across the table.
+* For the author of PRs- It's a good practice to thank the reviewer for the review if they have contributed in improving your code or you have learnt something new.
+* Using the Sandwich technique, for recommending a code change to a new developer or a new customer, sandwich the suggestion between 2 compliments. Something like- "Great Work so far, but i would recommend a few changes here. Btw, i loved the use of XYZ here, great work!!."
 
 ## Responsibility of the author to make code reviews inclusive
 
@@ -42,8 +42,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 * Write clear and elaborative comments on the PR
 * Identify subjectivity, choice of coding and best practice. It is good to discuss coding style and subjective coding choices in some other forum and not in the PR. A PR should not become a ground to discuss subjective coding choices and having long arguments over it
 * If you do not understand the code properly, refrain from commenting like for e.g. "This code is incomprehensible". Better is to get in a call with the author and get a basic understanding of what they have done.
-* Be suggestive and not prescriptive. A reviewer should suggest changes and not prescribe changes, let the author decide if they really want to accept the changes proposed. 
-
+* Be suggestive and not prescriptive. A reviewer should suggest changes and not prescribe changes, let the author decide if they really want to accept the changes proposed.
 
 ## Culture and Code Reviews
 
