@@ -1,0 +1,37 @@
+# Continuous delivery on low code solutions
+
+Low code, no code applications have taken a spot in solutions like process automation, AI models, Bots and Apps. The scenarios enabled by those platforms are constantly growing and they have left an exploration phase to take productive roles, this has been exactly the reason why bringing more professional tools to their development has became necessary.
+
+In the case of Power Platform products, the integration of a CI/CD process brings indeed more complexity to a solution oriented to [Citizen Developers](https://www.gartner.com/en/information-technology/glossary/citizen-developer) but on the other hand it strengthens the solution into a more scalable piece of software capable of dealing with new features and bug corrections in a faster way.
+
+## Environments in Power Platform Solutions
+
+Environments are the space where Power Platform Solutions exists. The store, manage and share everything related to the solution like data, apps, chatbots, flows and models. They also serve as containers to separate apps that might have different roles, security requirements or just target audiences. They will be used to create different stages of the solution development process, the expected model of working with environments in a CI/CD process will be as the following image suggests.
+
+![image](../images/environments.png)
+
+### Environments considerations
+
+Whenever an environment has been created, its resources can be only accessed by users within the same tenant. When you create an app in an environment that app can only interact with data sources that are also deployed in that same environment, this includes connections, flows and Dataverse databases. This is an important consideration when dealing with a CD process.
+
+## Deploy strategy
+
+With three environments already created the goal now is to make them interact. Each environment will require the creation of its own solution (data included).
+
+Development team will be working in **Dev** environment.
+
+Once done, the first step will be packaging the solution and export it into source control.
+
+Second step is about the solution, you need to have a managed solution to deploy to other environments such as **Stage** or **Production** so now you should use a JIT environment where you would import your unmanaged solution and export them as managed. These solution files won't be checked into source control but will be stored as a build artifact in the pipeline making them available to be deployed in the release pipeline. This is where the second environment will be used. This environment will be responsible of receiving the output managed solution.
+
+Third and final step will import the solution into the production environment, this means that this stage will take the artifact from last step and will export it. When working in this environment you can also version your product in order to make a better trace of the product.
+
+## Tools
+
+Most used tools to get this process completed are [Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools).
+
+There is also a non graphical tool that could be used to work with this CD process. The [Power CLI](https://aka.ms/PowerAppsCLI) tool.
+
+## References
+
+[Application lifecycle management with Microsoft Power Platform](https://docs.microsoft.com/en-us/power-platform/alm/)
