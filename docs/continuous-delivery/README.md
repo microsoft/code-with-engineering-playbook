@@ -139,7 +139,7 @@ Try to limit the number of versions of your application running parallel in prod
 
 Low code solutions have increased their participation in the applications and processes and because of that it is required that a proper conjunction of disciplines improve their development.
 
-Here is a guide for [continuous development in Low Code Solutions](low-code-solutions/low-code-solutions.md).
+Here is a guide for [continuous delivery for Low Code Solutions](low-code-solutions/low-code-solutions.md).
 
 ## References
 
