@@ -28,7 +28,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 ## Guidelines for the Author
 
 * Aim to write a code that is easy to read, review and maintain.
-* It’s important to ensure that whoever is looking at the code, whether that be the reviewer or a future engineer, can understand the motivations and how your code achieves that.
+* It’s important to ensure that whoever is looking at the code, whether that be the reviewer or a future engineer, can understand the motivations and how your code achieves its goals.
 * Proactively asking for targeted help or feedback.
 * Respond clearly to questions asked by the reviewers.
 * Avoid huge commits to submitting incremental changes.
