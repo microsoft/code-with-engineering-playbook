@@ -17,12 +17,6 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 * Biased decision making.
   * Example: Comments about the developer and not the code. Assuming code from developer X will always be good and hence not reviewing it properly and vice versa.
 
-## Examples of Non-Inclusive Code Reviews
-
-* Assigning lot of PRs to a single person for review and not assigning any PRs for other people in team. - _Inequitable review assignment_
-* Long arguments in the pull requests over subjective topics like style of coding . - _Negative Inter-Personal Interactions_
-* Commenting on the developer and not the code. Assuming code from developer X will always be good and hence not reviewing it properly and vice versa. - _Biased Decision Making_
-
 ## Examples of Inclusive Code Reviews
 
 * Anyone and everyone in the team should be assigned PRs to review.
