@@ -25,7 +25,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 * It's a good practice for the author of a PR to thank the reviewer for the review, when they have contributed in improving the code or you have learnt something new.
 * Using the sandwich method for recommending a code change to a new developer or a new customer: Sandwich the suggestion between 2 compliments. For example: "Great work so far, but I would recommend a few changes here. Btw, I loved the use of XYZ here, nice job!"
 
-## Responsibility of the author to make code reviews inclusive
+## Guidelines for the Author
 
 * Aim to write a code that is easy to read, review and maintain.
 * It’s important to ensure that whoever is looking at the code, whether that be the reviewer or a future engineer, can understand the motivations and how your code achieves that.
