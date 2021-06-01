@@ -63,6 +63,12 @@ Make sure the `.env` file is in the same folder as the locustfile.py in use and 
 docker-compose down --remove-orphans; docker-compose up --build --abort-on-container-exit; docker-compose rm -f
 ```
 
+[Here](dockerfile-docker-compose.md) is the example of the configuration files needed to run in Docker:
+
+- Dockerfile
+- docker-compose.yaml
+- docker-compose.override.yaml
+
 ## To run in the command line
 
 In this case it is needed to have the `.env` file _sourced_:
