@@ -33,7 +33,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 * Respond clearly to questions asked by the reviewers.
 * Avoid huge commits to submitting incremental changes.
 
-## Responsibility of the Reviewer to make code reviews inclusive
+## Guidelines for the Reviewer
 
 * Assume positive intent from the author
 * Write clear and elaborative comments on the PR
