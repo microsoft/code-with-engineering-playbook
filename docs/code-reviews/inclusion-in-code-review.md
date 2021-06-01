@@ -14,7 +14,8 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
   * Example: Assigning most reviews to few people and dismissing some members of the team altogether.
 * Negative interpersonal interactions.
   * Example: Long arguments over subjective topics such as code style.
-* Biased Decision Making;
+* Biased decision making.
+  * Example: Comments about the developer and not the code. Assuming code from developer X will always be good and hence not reviewing it properly and vice versa.
 
 ## Examples of Non-Inclusive Code Reviews
 
