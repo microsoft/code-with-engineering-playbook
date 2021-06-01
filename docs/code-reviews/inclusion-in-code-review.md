@@ -23,7 +23,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 * Reviewer should be clear about what is an opinion, their personal preference, best practice or a fact. Arguments over personal preferences and opinions are mostly avoidable.
 * Using inclusive language and tone in the code review comments. For example, being suggestive rather being prescriptive in the review comments is a good way to get the point across the table.
 * It's a good practice for the author of a PR to thank the reviewer for the review, when they have contributed in improving the code or you have learnt something new.
-* Using the Sandwich technique, for recommending a code change to a new developer or a new customer, sandwich the suggestion between 2 compliments. Something like- "Great Work so far, but i would recommend a few changes here. Btw, i loved the use of XYZ here, great work!!."
+* Using the sandwich method for recommending a code change to a new developer or a new customer: Sandwich the suggestion between 2 compliments. For example: "Great work so far, but I would recommend a few changes here. Btw, I loved the use of XYZ here, nice job!"
 
 ## Responsibility of the author to make code reviews inclusive
 
