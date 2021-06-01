@@ -11,7 +11,7 @@ To ensure that the code review process is healthy, inclusive and meets the goals
 - In the daily standup meeting check tasks pending for review and make sure they have reviewers assigned.
 - Junior teams and teams new to the process can consider creating separate tasks for reviews together with the tasks themselves.
 - Utilize tools to streamline the review process - [Code review tools](../tools.md)
-- Make sure the review process is inclusive by establishing and following some inclusion guidelines.[Inclusion in Code Review](../inclusion-in-code-review.md)
+- Foster inclusive code reviews - [Inclusion in Code Review](../inclusion-in-code-review.md)
 
 ## Measuring code review process
 
