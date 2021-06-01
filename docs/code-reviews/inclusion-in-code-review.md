@@ -5,7 +5,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 * Code reviews are an important part of our job as software professionals.
 * As CSE we work with cross cultural teams from across the globe.
 * How we communicate affects team morale.
-* Inclusive code reviews make new developer comfortable with the team;
+* Inclusive code reviews welcome new developers and make them comfortable with the team.
 * Rude or personal attacks doing code reviews are very common, people unknowingly make rude comments in reviewing Pull Requests.
 
 ## Types and Examples of Non-Inclusive Code Review Behavior
