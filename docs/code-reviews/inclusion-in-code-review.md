@@ -2,7 +2,7 @@
 
 You may be thinking why care about inclusiveness in code reviews. Below are some points which emphasize why inclusivity in code reviews is important:
 
-* Doing Code Review is an important part of our job as Software Professionals;
+* Code reviews are an important part of our job as software professionals.
 * As CSE, we work with cross cultural teams from across the globe;
 * How we communicate while doing code review affects team morale;
 * Inclusive code reviews make new developer comfortable with the team;
