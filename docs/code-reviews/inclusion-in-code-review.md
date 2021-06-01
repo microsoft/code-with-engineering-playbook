@@ -31,7 +31,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 * It’s important to ensure that whoever is looking at the code, whether that be the reviewer or a future engineer, can understand the motivations and how your code achieves its goals.
 * Proactively asking for targeted help or feedback.
 * Respond clearly to questions asked by the reviewers.
-* Avoid huge commits to submitting incremental changes.
+* Avoid huge commits by submitting incremental changes. Commits which are large and contain changes to multiple files will lead to unfair review of the code. Biased behavior of reviewers may kick in while reviewing such PRs. For e.g. a huge commit from a senior developer may get approved without thorough review whereas a huge commit from a junior developer may never get reviewed and approved. 
 
 ## Guidelines for the Reviewer
 
