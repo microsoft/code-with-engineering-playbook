@@ -19,7 +19,7 @@ Before putting an individual ML model into production, the following aspects sho
 - [ ] [Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?](#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made)
 - [ ] [How will the model be integrated into other systems, and what impact will it have?](#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have)
 - [ ] [How will performance be monitored?](#how-will-performance-be-monitored)
-- [ ] [Have any ethical concerns been taken into account in accordance with the Microsoft AI principles on responsible AI?](#have-any-ethical-concerns-been-taken-into-account-in-accordance-with-the-microsoft-ai-principles-on-responsible-ai)
+- [ ] [Have any ethical concerns been taken into account?](#have-any-ethical-concerns-been-taken-into-account?)
 
 Please note that there might be scenarios where it is not possible to check all the items on this checklist. However, it is advised to go through all items and make informed decisions based on your specific use case.
 
@@ -135,23 +135,6 @@ Model monitoring should lead to:
 - Warnings when anomalies in model output or input data are occurring
 - Retraining decisions
 
-### Have any ethical concerns been taken into account in accordance with the Microsoft AI principles on responsible AI?
+### Have any ethical concerns been taken into account?
 
-[Check the Microsoft AI Principles for responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai)
-
-- Fairness
-- Inclusiveness
-- Reliability & Safety
-- Privacy & Security
-- Transparency
-- Accountability
-
-Potential areas to explore:
-
-- Has the team analysed the input data properly to make sure that the training data is suitable for machine learning?
-- Is the training data an accurate representation of data that will be used as input in production?
-- Is there a good representation of all users?
-- Is there a fall back mechanism (a human in the loop, or a way to revert decisions based on the model)?
-- Does data used by the model for training or scoring contain PII? What measures have been taken to remove sensitive data?
-- Does the model impact consequential decisions, like blocking people from getting jobs, loans, health care etc. or in the cases where it may, have appropriate ethical considerations been discussed?
-- Have measures for re-training been considered?
+Every ML project goes through the [Responsible AI](responsible-ai.md) process to ensure that it upholds Microsoft's [6 Responsible AI principles](https://www.microsoft.com/en-us/ai/responsible-ai).
