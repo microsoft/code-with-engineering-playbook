@@ -12,7 +12,8 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 
 * Inequitable review assignments.
   * Example: Assigning most reviews to few people and dismissing some members of the team altogether.
-* Negative Inter-Personal Interactions;
+* Negative interpersonal interactions.
+  * Example: Long arguments over subjective topics such as code style.
 * Biased Decision Making;
 
 ## Examples of Non-Inclusive Code Reviews
