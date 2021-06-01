@@ -42,7 +42,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 
 * Assume positive intent from the author
 * Write clear and elaborative comments on the PR
-* Identify subjectivity, choice of coding and best practice. It is good to discuss coding style and subjective coding choices in some other forum and not in the PR. A PR should not become a ground to discuss subjective coding choices and having long arguments over it
+* Identify subjectivity, choice of coding and best practice. It is good to discuss coding style and subjective coding choices in some other forum and not in the PR. A PR should not become a ground to discuss subjective coding choices and having long arguments over it.
 * If you do not understand the code properly, refrain from commenting like for e.g. "This code is incomprehensible". Better is to get in a call with the author and get a basic understanding of what they have done.
 * Be suggestive and not prescriptive. A reviewer should suggest changes and not prescribe changes, let the author decide if they really want to accept the changes proposed.
 
