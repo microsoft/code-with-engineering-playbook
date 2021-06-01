@@ -10,7 +10,8 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 
 ## Types of non-inclusive code review behavior
 
-* Inequitable review assignment;
+* Inequitable review assignments.
+  * Example: Assigning most reviews to few people and dismissing some members of the team altogether.
 * Negative Inter-Personal Interactions;
 * Biased Decision Making;
 
