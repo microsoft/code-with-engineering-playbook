@@ -8,7 +8,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 * Inclusive code reviews make new developer comfortable with the team;
 * Rude or personal attacks doing code reviews are very common, people unknowingly make rude comments in reviewing Pull Requests.
 
-## Types of non-inclusive code review behavior
+## Types and Examples of Non-Inclusive Code Review Behavior
 
 * Inequitable review assignments.
   * Example: Assigning most reviews to few people and dismissing some members of the team altogether.
