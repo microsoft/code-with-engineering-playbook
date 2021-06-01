@@ -48,7 +48,7 @@ You may be thinking why care about inclusiveness in code reviews. Below are some
 
 ## Culture and Code Reviews
 
-We as CSE, may come across situations in which code reviews are not ideal and often we are observing non inclusive code review behaviors. Its important to be cognizant of the fact that culture and communication style of a particular geography also influences how people interact over pull requests.
+We as CSE, may come across situations in which code reviews are not ideal and often we are observing non inclusive code review behaviors. Its important to be aware of the fact that culture and communication style of a particular geography also influences how people interact over pull requests.
 In such cases, assuming positive intent of the author and reviewer is a good start to start analyzing quality of code reviews.
 
 ## Tools
