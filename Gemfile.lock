@@ -30,6 +30,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     ethon (0.13.0)
       ffi (>= 1.15.0)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
     execjs (2.7.0)
     faraday (1.4.1)
@@ -41,6 +42,7 @@ GEM
     faraday-excon (1.1.0)
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.1.0)
+    ffi (1.15.0)
     ffi (1.15.0-x64-mingw32)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
@@ -235,7 +237,9 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.14.4)
     multipart-post (2.1.1)
-    nokogiri (1.11.3-x64-mingw32)
+    nokogiri (1.11.5-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.11.5-x86_64-linux)
       racc (~> 1.4)
     octokit (4.20.0)
       faraday (>= 0.9)
@@ -276,6 +280,7 @@ GEM
       tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
+    unf_ext (0.0.7.7)
     unf_ext (0.0.7.7-x64-mingw32)
     unicode-display_width (1.7.0)
     verbal_expressions (0.1.5)
@@ -284,6 +289,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   github-pages
