@@ -39,7 +39,8 @@ $ tree vs-code-remote-try-python  # main repo directory
         ├───devcontainer.json
 ```
 
-```json # devcontainer.json
+```json
+# devcontainer.json
 {
     "name": "Python 3",
     "build": {
