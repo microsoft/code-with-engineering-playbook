@@ -2782,6 +2782,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-do-i-decide-which-dev-container-is-right-for-my-use-case" class="md-nav__link">
+    How do I decide which dev container is right for my use case?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4068,6 +4075,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-do-i-decide-which-dev-container-is-right-for-my-use-case" class="md-nav__link">
+    How do I decide which dev container is right for my use case?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4110,33 +4124,30 @@
         ├───Dockerfile
         ├───devcontainer.json
 </code></pre></div>
-<p>```json # devcontainer.json
-{
-    "name": "Python 3",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": "..",
-        // Update 'VARIANT' to pick a Python version: 3, 3.6, 3.7, 3.8
-        "args": {"VARIANT": "3.8"}
-    },
-}
-<div class="highlight"><pre><span></span><code>For a list of devcontainer.json configuration properties, visit VS Code documentation on [dev container properties](https://code.visualstudio.com/docs/remote/devcontainerjson-reference).
-
-## How do I decide which dev container is right for my use case?
-
-Fortunately, VS Code has a repo gallery of platform specific folders that host dev container definitions (.devcontainer directories) to make getting started with dev containers easier. The code snippet below shows a list of gallery folders that come directly from the [VS Code dev container gallery repo](https://github.com/microsoft/vscode-dev-containers/tree/master/containers):
-
-```bash
-$ tree vs-code-dev-containers  # main repo directory
+<div class="highlight"><pre><span></span><code><span class="err">#</span> <span class="err">devco</span><span class="kc">nta</span><span class="err">i</span><span class="kc">ner</span><span class="err">.jso</span><span class="kc">n</span>
+<span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Python 3&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;build&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;dockerfile&quot;</span><span class="p">:</span> <span class="s2">&quot;Dockerfile&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;context&quot;</span><span class="p">:</span> <span class="s2">&quot;..&quot;</span><span class="p">,</span>
+        <span class="err">//</span> <span class="err">Upda</span><span class="kc">te</span> <span class="err">&#39;VARIANT&#39;</span> <span class="kc">t</span><span class="err">o</span> <span class="err">pick</span> <span class="err">a</span> <span class="err">Py</span><span class="kc">t</span><span class="err">ho</span><span class="kc">n</span> <span class="err">versio</span><span class="kc">n</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="mf">3.7</span><span class="p">,</span> <span class="mf">3.8</span>
+        <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;VARIANT&quot;</span><span class="p">:</span> <span class="s2">&quot;3.8&quot;</span><span class="p">}</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>For a list of devcontainer.json configuration properties, visit VS Code documentation on <a href="https://code.visualstudio.com/docs/remote/devcontainerjson-reference">dev container properties</a>.</p>
+<h2 id="how-do-i-decide-which-dev-container-is-right-for-my-use-case">How do I decide which dev container is right for my use case?</h2>
+<p>Fortunately, VS Code has a repo gallery of platform specific folders that host dev container definitions (.devcontainer directories) to make getting started with dev containers easier. The code snippet below shows a list of gallery folders that come directly from the <a href="https://github.com/microsoft/vscode-dev-containers/tree/master/containers">VS Code dev container gallery repo</a>:</p>
+<div class="highlight"><pre><span></span><code>$ tree vs-code-dev-containers  <span class="c1"># main repo directory</span>
 └───containers
         ├───dotnetcore
-        |   └───.devcontainers # dev container
+        <span class="p">|</span>   └───.devcontainers <span class="c1"># dev container</span>
         ├───python-3
-        |   └───.devcontainers # dev container
+        <span class="p">|</span>   └───.devcontainers <span class="c1"># dev container</span>
         ├───ubuntu
-        |   └───.devcontainers # dev container
+        <span class="p">|</span>   └───.devcontainers <span class="c1"># dev container</span>
         └───....
-</code></pre></div></p>
+</code></pre></div>
 <p>Here are the final high-level steps it takes to build a dev container:</p>
 <ol>
 <li>Decide which platform you'd like to build a local development tool stack around.</li>
