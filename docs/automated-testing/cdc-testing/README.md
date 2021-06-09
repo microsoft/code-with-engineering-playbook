@@ -75,3 +75,4 @@ Additionally, [the CDC test scope](https://docs.pact.io/getting_started/testing-
 
 * Testing pyramid from [Kent C. Dodd’s blog](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c)
 * [Pact](https://docs.pact.io/), a code-first consumer-driven contract testing tool with support for several different programming languages.
+* A simple example of using [Pact consumer-driven contract testing in a Java client-server application](https://github.com/oottka/pact-spring).
