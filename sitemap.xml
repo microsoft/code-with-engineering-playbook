@@ -424,6 +424,10 @@
      <lastmod>2021-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/guidance/code/</loc>
+     <lastmod>2021-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/guidance/engineering-feedback/</loc>
      <lastmod>2021-06-09</lastmod>
      <changefreq>daily</changefreq>
@@ -433,6 +437,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/guidance/pull-requests/</loc>
+     <lastmod>2021-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/guidance/rest-apis/</loc>
      <lastmod>2021-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
