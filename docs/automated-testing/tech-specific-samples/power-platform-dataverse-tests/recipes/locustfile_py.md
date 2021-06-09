@@ -431,7 +431,7 @@ function below will run in a loop until the case is found in Dynamics or the max
 
 Until now the case was being created in Dynamics, now the same cases created will be closed. The process below will do that.
 
-In Dynamics, there are some options to close a case. The sample is considering **RESOLVE** cases.
+In Dynamics, there are some options to close a case. The sample is considering *RESOLVE* cases.
 
 To resolve a case, it is needed to have the `incidentId`. This value is stored in a entity named `incidents`. So the first
 step is to do an HTTP `GET`  request in that entity. The code below does that:
@@ -458,7 +458,7 @@ step is to do an HTTP `GET`  request in that entity. The code below does that:
                     "Unable to retrieve Incident ID from Dynamics: {}".format(list_resp.text))
 ```
 
-With the `incidentId` the process now is to set the case as `RESOLVED`. This is done with an HTTP `POST` call to `CloseIncident`
+With the `incidentId` the process now is to set the case as *RESOLVED*. This is done with an HTTP `POST` call to `CloseIncident`
 providing the `dataResolveCase` payload that is created below using the `incidentId`. Again, the process is async and the
 response will be `20X` meaning the API acknowledges the message.
 
@@ -528,11 +528,11 @@ calling until the service case is found or the maximum wait time is reached.
 The next section would work better with Azure Service Bus as it would retrieve a series of messages and compare
 the service case number resolved with what is in the messages.
 
-On the other hand it would not log anything to locust as it is using the Azure Service Bus Python library to achieve
+On the other hand it would not log anything to **Locust** as it is using the Azure Service Bus Python library to achieve
 these results.
 
 As a workaround, a timer is started in the beginning of the process and stopped once the closure is complete. This
-event is logged to Locust as an event:
+event is logged to **Locust** as an event:
 
 ```python
         headersGetServiceBusCloseCase = {
