@@ -18,7 +18,7 @@ This approach is quite useful if a project is about developing externally expose
 - Development teams can work in parallel.
 - Testing team can use API contracts to do an early test even before a business logic is in place. By looking at different models, paths, attributes and other aspects of the API testing can provide their input which can be very valuable.
 - During an agile development cycle API definitions are not impacted by incremental dev changes.
-- API design is not influenced by actual implementation limitations & code structure. 
+- API design is not influenced by actual implementation limitations & code structure.
 - Server side boilerplate code e.g. controllers, DTOs etc. can be auto generated from API contracts.
 - May improve collaboration between API producer & consumer teams.
 
@@ -26,5 +26,11 @@ This approach is quite useful if a project is about developing externally expose
 
 
 
-### Points to consider 
+### Points to consider
 
+
+
+## Resources
+
+- [Understanding  the API-First Approach to Building Products](https://swagger.io/resources/articles/adopting-an-api-first-approach/)
+- [Design First or Code First: What’s the Best Approach to API Development?](https://swagger.io/blog/api-design/design-first-or-code-first-api-development/)
