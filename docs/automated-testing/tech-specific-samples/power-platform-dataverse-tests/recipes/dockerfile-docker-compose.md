@@ -4,7 +4,7 @@ This recipe describes the required files to run Locust using Docker.
 
 ## Dockerfile
 
-The `Dockerfile` is pretty straight-forward and basicaly tells Docker the locust image to use.
+The `Dockerfile` is pretty straight-forward and basically tells Docker the locust image to use.
 
 ```yaml
 FROM locustio/locust
@@ -15,8 +15,12 @@ COPY ./ ./
 
 ## docker-compose.yml
 
-The docker-compose will used here is the basic one that should run in most environments. It uses the default port, start
-Locust in headless mode, and store the results, in `csv`, and the logs in the `/home/locust/test/result/result` directory.
+The docker-compose used here is the basic one that should run in most environments. It:
+
+- uses the default port,
+- starts Locust in headless mode,
+- stores the results in `csv` format,
+- stores the logs in the `/home/locust/test/result/result` directory.
 
 ```yaml
 version: '3'
@@ -85,10 +89,10 @@ services:
     command: <locust_command>
 ```
 
-The parameters in `< >` have to be update, they are as following:
+The parameters in `< >` have to be updated, here is a definition for each one of them:
 
-- `command`: the test class to run. In the [example](locustfile.py.md) this is `TestSmallScaleCreateAndCloseCase`
-- `LOCUST_USERS`: the number of users to be considered in the tests
-- `LOCUST_EXPECT_WORKERS`: number of workers to to be considered in the tests
-- `LOCUST_SPAWN_RATE`: number of simultaneous users to to be considered in the tests
-- `LOCUST_RUN_TIME`: time, in seconds, for the tests to run
+- `command`: The test class to run. In the [example](locustfile.py.md) this is `TestSmallScaleCreateAndCloseCase`
+- `LOCUST_USERS`: The number of users to be considered in the tests
+- `LOCUST_EXPECT_WORKERS`: Number of workers to be considered in the tests
+- `LOCUST_SPAWN_RATE`: Number of simultaneous users to be considered in the tests
+- `LOCUST_RUN_TIME`: Time, in seconds, for the tests to run

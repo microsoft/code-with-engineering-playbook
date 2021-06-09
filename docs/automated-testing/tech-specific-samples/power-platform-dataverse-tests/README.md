@@ -25,7 +25,7 @@ so we won't cover that part in this document.
 ### Alternative: Install Locust
 
 Locust is written in Python, so if one needs to run it locally a simple `pip install
-locust` would work.
+locust` would work. Locust has additional documentation regarding [installation](https://docs.locust.io/en/stable/installation.html)
 
 ## Writing the locust test file for reuse
 
@@ -119,7 +119,7 @@ services:
     command: -f /mnt/locust/locustfile.py --worker --master-host master ExecuteE2ETest
 ```
 
-This will run the integration test
+This will run the integration test:
 
 ```yml
 version: '3'
@@ -174,25 +174,33 @@ services:
 All the 3 scripts are basically doing the same thing. There are two places to be
 updated:
 
-1. the `environment` section handles the load of the test:
-    - how many users and workers should be used?
-    - what is the spawn rate? Should the test run will many users at the same time?
-    - for how long should the test run?
-1. the `command` line handles the command to run locust and which test should it
-run. If the command is specified, only one test will be executed, not the whole script.
+1. The `environment` section handles the load of the test:
+    - How many users and workers should be used?
+    - What is the spawn rate? Should the test run will many users at the same time?
+    - For how long should the test run?
+1. The `command` line handles the command to run locust and which test should it
+run. If `command` is specified, only one test will be executed, not the whole script.
 
-By changing this values alone is possible to reuse the test cases to cover different test
+By changing this values alone it is possible to reuse the test cases to cover different test
 strategies.
 
 ## The tests in Power Platform and Dataverse
 
-The diagram below demonstrates how the tests can run in Power Platform and Dataverse:
+The diagram below demonstrates how the tests can be executed for Power Platform and Dataverse:
 
 ![test flow](images/test-flow.png "Diagram with the data flow")
 
+In the next sections it will be described the overall process as shown in the diagram:
+
+- [Message to Open](#Message%20to%20Open)
+- [Message to close](#Message%20to%20close)
+
+A more detailed guide is available as a [recipe](recipes/locustfile_py.md), where a sample [source code](recipes/locustfile_py.md/#Source%20code)
+is published.
+
 ### Message to Open
 
-Locust start the process by sending a request to Service Bus (in this case Service
+Locust starts the process by sending a request to Service Bus (in this case Service
 Bus was available in the solution, but any other tool to call the API can be used,
 even a REST call to the API directly).
 
@@ -224,12 +232,12 @@ The case could potentially be checked in the Service Bus, but its architecture d
 not allow the test service to retrieve a specific message so three scenarios could
 happen if the test is done like this:
 
-1. the test service would retrieve the message in the first call and the case could
+1. The test service would retrieve the message in the first call and the case could
 be considered successful;
-1. the test service would retrieve several messages before finding the message for
+1. The test service would retrieve several messages before finding the message for
 for the registry closed in Dataverse. In this case the test will also be considered
 successful;
-1. the test service would retrieve several messages and the close registry could
+1. The test service would retrieve several messages and the close registry could
 not be found because the Service Bus already processed the message and sent it to
 the database. In this case it would be a false-negative test, as the message was
 successfully processed.
