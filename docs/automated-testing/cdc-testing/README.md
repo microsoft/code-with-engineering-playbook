@@ -64,7 +64,7 @@ CDC has some drawbacks as well. An extra layer of testing is added requiring a p
 
 Additionally, [the CDC test scope](https://docs.pact.io/getting_started/testing-scope) should be considered carefully to prevent blurring CDC with other higher level functional testing layers. Contract tests are not the place to verify internal business logic and correctness of the consumer.
 
-## References
+## Resources
 
 * Testing pyramid from [Kent C. Dodd’s blog](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c)
 * [Pact](https://docs.pact.io/), a code-first consumer-driven contract testing tool with support for several different programming languages.
