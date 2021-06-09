@@ -91,7 +91,7 @@ services:
 
 The parameters in `< >` have to be updated, here is a definition for each one of them:
 
-- `command`: The test class to run. In the [example](locustfile.py.md) this is `TestSmallScaleCreateAndCloseCase`
+- `command`: The test class to run. In the [example](locustfile_py.md) this is `TestSmallScaleCreateAndCloseCase`
 - `LOCUST_USERS`: The number of users to be considered in the tests
 - `LOCUST_EXPECT_WORKERS`: Number of workers to be considered in the tests
 - `LOCUST_SPAWN_RATE`: Number of simultaneous users to be considered in the tests
