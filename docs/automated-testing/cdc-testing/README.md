@@ -27,7 +27,7 @@ In a [consumer-driven approach](https://martinfowler.com/articles/consumerDriven
 
 ### Consumer Tests with Provider Mock
 
-Consumers start by creating integration tests against a provider mock and running them as part of its CI pipeline. Expected responses are defined in the provider mock for requests fired from the tests. Through this, the consumer is essentially defining the contract they expect the provider to fulfill.
+Consumers start by creating integration tests against a provider mock and running them as part of their CI pipeline. Expected responses are defined in the provider mock for requests fired from the tests. Through this, the consumer is essentially defining the contract they expect the provider to fulfill.
 
 ### Contract
 
@@ -50,8 +50,6 @@ Either way, thanks to CDC it is easy to pinpoint integration issues down to the 
 
 [Pact](https://docs.pact.io/) is an implementation of CDC testing that allows mocking of responses in the consumer codebase, and verification of the interactions in the provider codebase, while defining a [specification for contracts](https://github.com/pact-foundation/pact-specification). It was originally written in Ruby but has available wrappers for multiple languages. Pact is the de-facto utility to use when working with CDC.
 
-TBD
-
 ## Conclusion
 
 CDC has several benefits that make it an approach worth considering when dealing with systems composed of multiple components interacting together.
@@ -64,7 +62,7 @@ Additionally, a close collaboration between consumer and provider teams is stron
 
 CDC has some drawbacks as well. An extra layer of testing is added requiring a proper investment in education for team members to properly understand and use CDC correctly. 
 
-Additionally [considering the CDC test scope](https://docs.pact.io/getting_started/testing-scope) should be done carefully to prevent blurring CDC with other higher level functional testing layers. Contract tests are not the place to verify internal business logic and correctness of the consumer.
+Additionally, [considering the CDC test scope](https://docs.pact.io/getting_started/testing-scope) should be done carefully to prevent blurring CDC with other higher level functional testing layers. Contract tests are not the place to verify internal business logic and correctness of the consumer.
 
 ## References
 
