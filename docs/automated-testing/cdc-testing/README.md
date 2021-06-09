@@ -31,7 +31,7 @@ Consumers start by creating integration tests against a provider mock and runnin
 
 ### Contract
 
-Contracts are generated from the expectations defined in the provider mock as a result of a successful test run. CDC frameworks like [Pact](https://docs.pact.io/) provide [specifications for contracts](https://github.com/pact-foundation/pact-specification) in json format consisting of the list of request/responses generated from the consumer tests plus some additional metadata.
+Contracts are generated from the expectations defined in the provider mock as a result of a successful test run. CDC frameworks like [Pact](https://docs.pact.io/) provide a [specification for contracts](https://github.com/pact-foundation/pact-specification) in json format consisting of the list of request/responses generated from the consumer tests plus some additional metadata.
 
 Contracts are not a replacement for a discussion between the consumer and provider team. This is the moment where this discussion should take place (if not already done before). The consumer tests and generated contract are refined with the feedback and cooperation of the provider team. Lastly the finalized contract is versioned and stored in a central place accessible by both consumer and provider.
 
@@ -46,7 +46,11 @@ Either way, thanks to CDC it is easy to pinpoint integration issues down to the 
 
 ## CDC Testing Frameworks and Tools
 
-[Pact](https://docs.pact.io/) is a code-first consumer-driven contract testing tool for testing HTTP and message integrations originally written in Ruby but with available wrappers for multiple languages. Pact is the de-facto utility to use when working with CDC.
+![Pact](./images/pact-logo.png)
+
+[Pact](https://docs.pact.io/) is an implementation of CDC testing that allows mocking of responses in the consumer codebase, and verification of the interactions in the provider codebase, while defining a [specification for contracts](https://github.com/pact-foundation/pact-specification). It was originally written in Ruby but has available wrappers for multiple languages. Pact is the de-facto utility to use when working with CDC.
+
+[Pact documentation website](https://docs.pact.io/)
 
 TBD
 
