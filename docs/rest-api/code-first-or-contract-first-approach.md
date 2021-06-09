@@ -9,16 +9,18 @@ As different development teams exposes APIs to access various REST based service
 
 Contract-first approach means that APIs are treated as "first-class citizens" and everything about a project revolves around the idea that at the end these APIs will be consumed by clients. So based on the business requirements api development team first writes API contract in Open API format and collaborate with the stakeholders to gather feedback on the design of an API before any actual implementation code is written.
 
-This approach is quite useful if a project is about developing publicly exposed set of APIs which will be consumed by external partners. As here we first agreed upon an API contract definition that's why expectations on api producer and consumer side remains strictly clear and both side teams can work in parallel as per the pre-agreed API contract.
+This approach is quite useful if a project is about developing externally exposed set of APIs which will be consumed by partners. As here we first agreed upon an API contract definition that's why expectations on api producer and consumer side remains strictly clear and both side teams can work in parallel as per the pre-agreed API contract.
 
 ### Key Benefits
 
 - Early API design feedback.
 - Expectations remains clear on consumer & producer side as both agreed upon an API contract.
 - Development teams can work in parallel.
+- Testing team can use API contracts to do an early test even before a business logic is in place. By looking at different models, paths, attributes and other aspects of the API testing can provide their input which can be very valuable.
 - During an agile development cycle API definitions are not impacted by incremental dev changes.
 - API design is not influenced by actual implementation limitations & code structure. 
-- May improve collaboration between api producer & consumer teams.
+- Server side boilerplate code e.g. controllers, DTOs etc. can be auto generated from API contracts.
+- May improve collaboration between API producer & consumer teams.
 
 ### Planning a Contract-First Development
 
