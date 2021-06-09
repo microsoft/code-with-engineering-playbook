@@ -1355,6 +1355,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-makes-a-code-review-different-from-a-pr" class="md-nav__link">
+    What makes a code review different from a PR?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#we-experience-very-large-prs-how-can-we-fix-this" class="md-nav__link">
     We experience very large PRs, how can we fix this?
   </a>
@@ -1371,7 +1378,7 @@
         
           <li class="md-nav__item">
   <a href="#possible-actions-you-can-take" class="md-nav__link">
-    Possible actions you can take:
+    Possible actions you can take
   </a>
   
 </li>
@@ -4089,6 +4096,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-makes-a-code-review-different-from-a-pr" class="md-nav__link">
+    What makes a code review different from a PR?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#we-experience-very-large-prs-how-can-we-fix-this" class="md-nav__link">
     We experience very large PRs, how can we fix this?
   </a>
@@ -4105,7 +4119,7 @@
         
           <li class="md-nav__item">
   <a href="#possible-actions-you-can-take" class="md-nav__link">
-    Possible actions you can take:
+    Possible actions you can take
   </a>
   
 </li>
@@ -4165,11 +4179,34 @@
                 
                 <h1 id="faq">FAQ</h1>
 <p>This is a list of questions / frequently occurring issues when working with code reviews and answers how you can possibly tackle them.</p>
+<h2 id="what-makes-a-code-review-different-from-a-pr">What makes a code review different from a PR?</h2>
+<table>
+<thead>
+<tr>
+<th>Code Review</th>
+<th>Pull Request</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source code focused</td>
+<td>Intended to enhance and enable code reviews. Includes both source code but can have a broader scope (e.g., docs, integration tests, compiles)</td>
+</tr>
+<tr>
+<td>Intended for <strong>early feedback</strong> before submitting a PR</td>
+<td>Not intended for <strong>early feedback</strong>. Created when author is ready to merge</td>
+</tr>
+<tr>
+<td>Usually a synchronous review with faster feedback cycles (draft PRs as an exception). Examples: scheduled meetings, over-the-shoulder review, pair programming</td>
+<td>Usually a tool assisted asynchronous review but can be elevated to a synchronous meeting when needed</td>
+</tr>
+</tbody>
+</table>
 <h2 id="we-experience-very-large-prs-how-can-we-fix-this">We experience very large PRs, how can we fix this?</h2>
 <p>Make sure you size the work items smaller. They should be able to be completed on their own. The team is instructed to commit early, before the full product backlog item / user story is complete, but rather when an individual item is done. If the work would result in an incomplete feature, make sure it can be turned off, until the full feature is delivered.
 More information can be found in <a href="../pull-requests/#size-guidance">Pull Requests - Size Guidance</a>.</p>
 <h2 id="we-experience-slow-code-reviews-causing-delays-in-delivering-features">We experience slow code reviews, causing delays in delivering features</h2>
-<h3 id="possible-actions-you-can-take">Possible actions you can take:</h3>
+<h3 id="possible-actions-you-can-take">Possible actions you can take</h3>
 <ul>
 <li>Add a rule for PR turnaround time to your work agreement.</li>
 <li>Set up a slot after the standup to go through pending PRs and assign the ones that are inactive.</li>
