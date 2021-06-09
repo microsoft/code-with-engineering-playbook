@@ -6,7 +6,6 @@ Consumer-driven Contract Testing (or CDC for short) is a software testing method
 
 CDC tries to overcome the [several painful drawbacks](https://pactflow.io/blog/proving-e2e-tests-are-a-scam) of automated E2E tests with components interacting together:
 
-* E2E tests are complex
 * E2E tests are slow
 * E2E tests break easily
 * E2E tests are expensive and hard to maintain
@@ -16,7 +15,7 @@ Although testing best practices suggest to write just a few E2E tests compared t
 
 ![E2E Testing Pyramid](./images/testing-pyramid.png)
 
-CDC addresses these issues by testing interactions between components in isolation using mocks that conform to a shared understanding documented in a "contract". Contracts are agreed between consumer and provider, and are regularly verified against a real instance of the provider component. This effectively partitions a larger system into smaller pieces that can be tested individually in isolation of each other. This leads to simpler, fast and stable tests that also give confidence to release.
+CDC addresses these issues by testing interactions between components in isolation using mocks that conform to a shared understanding documented in a "contract". Contracts are agreed between consumer and provider, and are regularly verified against a real instance of the provider component. This effectively partitions a larger system into smaller pieces that can be tested individually in isolation of each other, leading to simpler, fast and stable tests that also give confidence to release.
 
 Some E2E tests are still required to verify the system as a whole when deployed in the real environment, but most functional interactions between components can be covered with CDC tests.
 
@@ -47,15 +46,13 @@ On the provider side tests are also executed as part of a separate pipeline whic
 1. Invalid expectations on the consumer side leading to incompatibility with the current provider implementation 
 2. Broken provider implementation due to some missing functionality or a regression 
 
-Either way, thanks to CDC it is easy to pinpoint integration issues down to the consumer/provider of the affected interaction. This is a big advantage in front of the debugging pain this could have been with an E2E test approach.
+Either way, thanks to CDC it is easy to pinpoint integration issues down to the consumer/provider of the affected interaction. This is a big advantage compared to the debugging pain this could have been with an E2E test approach.
 
 ## CDC Testing Frameworks and Tools
 
-![Pact](./images/pact-logo.png)
-
 [Pact](https://docs.pact.io/) is an implementation of CDC testing that allows mocking of responses in the consumer codebase, and verification of the interactions in the provider codebase, while defining a [specification for contracts](https://github.com/pact-foundation/pact-specification). It was originally written in Ruby but has available wrappers for multiple languages. Pact is the de-facto utility to use when working with CDC.
 
-[Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/reference/html/) is an implementation of CDC testing from Spring, and offers easy integration in the Spring ecosystem. Support for non-Spring and non-JVM providers and consumers also exists.
+[Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/reference/html) is an implementation of CDC testing from Spring, and offers easy integration in the Spring ecosystem. Support for non-Spring and non-JVM providers and consumers also exists.
 
 ## Conclusion
 
@@ -65,7 +62,7 @@ Maintenance efforts can be reduced by testing consumer-provider interactions in 
 
 ![CDC VS E2E tests](./images/cdc-vs-e2e.png)
 
-Additionally, a close collaboration between consumer and provider teams is strongly encouraged through the CDC development process, which can bring many other benefits. Contracts offer a formal way to document the shared understanding how components should interact with each other, and serve as a base for the communication between teams. In a way, the contract repository serves as a live documentation of all consumer-provider interactions of a system.
+Additionally, a close collaboration between consumer and provider teams is strongly encouraged through the CDC development process, which can bring many other benefits. Contracts offer a formal way to document the shared understanding how components interact with each other, and serve as a base for the communication between teams. In a way, the contract repository serves as a live documentation of all consumer-provider interactions of a system.
 
 CDC has some drawbacks as well. An extra layer of testing is added requiring a proper investment in education for team members to understand and use CDC correctly. 
 
