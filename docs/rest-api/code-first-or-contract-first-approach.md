@@ -24,11 +24,17 @@ This approach is quite useful if a project is about developing externally expose
 
 ### Planning a Contract-First Development
 
-
+1. Identify use cases & key services which API should offer.
+2. Identify key stakeholders of API and try to include them during API contract design to get continuous feedback.
+3. Write API contract definitions.
+4. Maintain consistent style for API status codes, versioning, error responses etc.
+5. Encourage peer reviews via pull requests.
+6. Generate server side boilerplate code & client SDKs from API contract definitions.
 
 ### Points to consider
 
-
+- If API requirements can changes often during initial development phase than Contract-First approach may not be a good fit as this will introduce an overhead to first update & maintain API contract definitions again & again.
+- A platform specific code generator might not be able to generate a flexible & maintainable implementation of actual code.
 
 ## Resources
 
