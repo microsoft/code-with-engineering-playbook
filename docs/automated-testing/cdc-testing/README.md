@@ -43,8 +43,8 @@ Contracts are complementary to API specification documents like OpenAPI. API spe
 
 On the provider side tests are also executed as part of a separate pipeline which verifies contracts against real responses of the provider. Contract verification fails if real responses differ from the expected responses as specified in the contract. The cause of this can be:
 
-1. Invalid expectations on the consumer side leading to incompatibility with the current provider implementation 
-2. Broken provider implementation due to some missing functionality or a regression 
+1. Invalid expectations on the consumer side leading to incompatibility with the current provider implementation
+2. Broken provider implementation due to some missing functionality or a regression
 
 Either way, thanks to CDC it is easy to pinpoint integration issues down to the consumer/provider of the affected interaction. This is a big advantage compared to the debugging pain this could have been with an E2E test approach.
 
@@ -64,12 +64,12 @@ Maintenance efforts can be reduced by testing consumer-provider interactions in 
 
 Additionally, a close collaboration between consumer and provider teams is strongly encouraged through the CDC development process, which can bring many other benefits. Contracts offer a formal way to document the shared understanding how components interact with each other, and serve as a base for the communication between teams. In a way, the contract repository serves as a live documentation of all consumer-provider interactions of a system.
 
-CDC has some drawbacks as well. An extra layer of testing is added requiring a proper investment in education for team members to understand and use CDC correctly. 
+CDC has some drawbacks as well. An extra layer of testing is added requiring a proper investment in education for team members to understand and use CDC correctly.
 
 Additionally, [the CDC test scope](https://docs.pact.io/getting_started/testing-scope) should be considered carefully to prevent blurring CDC with other higher level functional testing layers. Contract tests are not the place to verify internal business logic and correctness of the consumer.
 
 ## Resources
 
 * Testing pyramid from [Kent C. Dodd’s blog](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c)
-* [Pact](https://docs.pact.io/), a code-first consumer-driven contract testing tool with support for several different programming languages.
-* A simple example of using [Pact consumer-driven contract testing in a Java client-server application](https://github.com/oottka/pact-spring).
+* [Pact](https://docs.pact.io/), a code-first consumer-driven contract testing tool with support for several different programming languages
+* A simple example of using [Pact consumer-driven contract testing in a Java client-server application](https://github.com/oottka/pact-spring)
