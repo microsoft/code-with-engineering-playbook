@@ -54,8 +54,3 @@ Important Points to consider:
 - A generated Open API definition can be outdated, so its important to have automated checks to avoid this otherwise generated client SDKs will be out of sync and may cause issues for API consumers.
 - With Agile development, it is hard to ensure that definitions embedded in runtime code remain stable, especially across rounds of refactoring and when serving multiple concurrent API versions.
 - It might be useful to regularly generate Open API definition and store it in version control system otherwise generating the OpenAPI definition at runtime might makes it more complex in scenarios where that definition is required at development/CI time.
-
-## Resources
-
-- [Understanding  the API-First Approach to Building Products](https://swagger.io/resources/articles/adopting-an-api-first-approach/)
-- [Design First or Code First: What’s the Best Approach to API Development?](https://swagger.io/blog/api-design/design-first-or-code-first-api-development/)
