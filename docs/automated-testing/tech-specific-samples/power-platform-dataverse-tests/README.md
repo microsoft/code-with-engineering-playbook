@@ -188,7 +188,7 @@ strategies.
 
 The diagram below demonstrates how the tests can run in Power Platform and Dataverse:
 
-![test flow](assets/images/test-flow.png "Diagram with the data flow")
+![test flow](images/test-flow.png "Diagram with the data flow")
 
 ### Message to Open
 
