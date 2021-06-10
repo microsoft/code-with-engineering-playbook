@@ -10,96 +10,22 @@ the data is there.
 It is also possible to make changes to Dataverse that would trigger Power Automate
 flows to update data in a data set (Azure Tables, Database, Files) outside Dataverse.
 
-## Tests in Power Platform and Dataverse
-
-The diagram below demonstrates **in high level** how tests can be executed for Power Platform and Dataverse:
-
-![test flow](images/test-flow.png "Diagram with the data flow")
-
-In the next sections it will be described the overall process as shown in the diagram:
-
-- [Message to Open](#message-to-open)
-- [Message to Close](#message-to-close)
-
-A more detailed guide is available as a [recipe](recipes/locustfile_py.md), where a sample [source code](recipes/locustfile_py.md/#source-code)
-is published.
-
-### Message to Open
-
-Locust starts the process by sending a request to Service Bus (in this case Service
-Bus was available in the solution, but any other tool to call the API can be used,
-even a REST call to the API directly).
-
-This message is routed to the Connector API developed in Power Platform. This connector
-will traffic the message between the customer tenant and the Microsoft Platform.
-So it will call the Power Automate flow, that has the logic to send the message to
-be stored in Dataverse.
-
-Notice that neither the connector API nor the flows are highlighted. This means that
-these services do not provide messages to the testing tool. The flow is an asynchronous
-and the HTTP reply will be, for example, `202` meaning it was accepted for processing.
-
-Locust will then look for the message in Dataverse. If the message arrive there
-it is assumed that the process was successful.
-
-### Message to Close
-
-In the current scenario, changing the status in Dataverse to **closed** using the Dataverse API
-will trigger a flow that will send this message back to the customer tenant.
-
-As this is an **update** operation in Dataverse, a `PATCH` request is sent to the API to
-change the value in there. This change will trigger the Power Automate flow that will
-process the message, doing any transformation needed, to the Connector API.
-
-The connector API will send this message to the Service Bus, that will route it to
-a Database or other data storage the customer considers in the solution.
-
-The case could potentially be checked in the Service Bus, but its architecture does
-not allow the test service to retrieve a specific message so three scenarios could
-happen if the test is done like this:
-
-1. The test service would retrieve the message in the first call and the case could
-be considered successful;
-1. The test service would retrieve several messages before finding the message for
-for the registry closed in Dataverse. In this case the test will also be considered
-successful;
-1. The test service would retrieve several messages and the close registry could
-not be found because the Service Bus already processed the message and sent it to
-the database. In this case it would be a false-negative test, as the message was
-successfully processed.
-
-So the test will not check the Service Bus for the message and will go checking the
-database directly if the registry was updated there.
-
-## Prerequisites
-
-- [Docker](https://docker.io)
-- [Locust](https://locust.io)
-
 ## Using Locust
 
-### Locust in Docker
+### Use Locust in Docker
 
 In this case, Docker needs to be installed. In this document a `docker-compose`
 version of this solution will be presented.
 
-#### Configuring Docker and docker-compose
+### Configuring Docker and docker-compose
 
 Locust is well [documented regarding the installation and usage with Docker](https://docs.locust.io/en/stable/running-locust-docker.html),
-so we won't cover that part in this document.
+so that part will not be covered in this document.
 
-### Alternative: run Locust locally
+### Alternative: Install Locust
 
-Locust is written in Python, so if one prefers to run it locally, without Docker,
-a call in the command line would work:
-
-```bash
-locust -f locustfile.py --host http://127.0.0.1:8089 --headless -u 10 -t 120s Test
-```
-
-This will run `Test` for 120 seconds, using 10 users, without an User Interface.
-
-Other options can be found in the Locust [documentation](https://docs.locust.io/en/stable/running-locust-without-web-ui.html)
+Locust is written in Python, so if one needs to run it locally a simple `pip install
+locust` would work.
 
 ## Writing the locust test file for reuse
 
@@ -107,8 +33,8 @@ Considering lots of tests are run in a project, it is smart to have as many test
 as possible. At the same time, it is also smart to have as few places to update
 the tests as possible.
 
-Considering that, Locust is a tool to write not only Load Tests, but also other types of tests,
-like End-to-End and Integration test.
+Considering that, Locust is a great tool to write not only Load Tests, but also
+other types of tests, like End-to-End and Integration test.
 
 Here is an example:
 
@@ -193,7 +119,7 @@ services:
     command: -f /mnt/locust/locustfile.py --worker --master-host master ExecuteE2ETest
 ```
 
-This will run the integration test:
+This will run the integration test
 
 ```yml
 version: '3'
@@ -248,12 +174,65 @@ services:
 All the 3 scripts are basically doing the same thing. There are two places to be
 updated:
 
-1. The `environment` section handles the load of the test:
-    - How many users and workers should be used?
-    - What is the spawn rate? Should the test run will many users at the same time?
-    - For how long should the test run?
-1. The `command` line handles the command to run locust and which test should it
-run. If `command` is specified, only one test will be executed, not the whole script.
+1. the `environment` section handles the load of the test:
+    - how many users and workers should be used?
+    - what is the spawn rate? Should the test run will many users at the same time?
+    - for how long should the test run?
+1. the `command` line handles the command to run locust and which test should it
+run. If the command is specified, only one test will be executed, not the whole script.
 
-By changing this values alone it is possible to reuse the test cases to cover different test
+By changing this values alone is possible to reuse the test cases to cover different test
 strategies.
+
+## The tests in Power Platform and Dataverse
+
+The diagram below demonstrates how the tests can run in Power Platform and Dataverse:
+
+![test flow](assets/images/test-flow.png "Diagram with the data flow")
+
+### Message to Open
+
+Locust start the process by sending a request to Service Bus (in this case Service
+Bus was available in the solution, but any other tool to call the API can be used,
+even a REST call to the API directly).
+
+This message is routed to the Connector API developed in Power Platform. This connector
+will traffic the message between the customer tenant and the Microsoft Platform.
+So it will call the Power Automate flow, that has the logic to send the message to
+be stored in Dataverse.
+
+Notice that neither the connector API nor the flows are highlighted. This means that
+these services do not provide messages to the testing tool. The flow is an asynchronous
+and the HTTP reply will always be 20X.
+
+Locust will then look for the message in Dataverse. If the message arrive there
+it is assumed that the process was successful.
+
+### Message to close
+
+In the current scenario, changing the status in Dataverse to `closed` will trigger
+a flow that will send this message back to the customer tenant.
+
+As this is an `update` operation in Dataverse, a `PATCH` request is sent to change
+the value in there. This change will trigger the Power Automate flow that will process
+the message, doing any transformation needed, to the Connector API.
+
+The connector API will send this message to the Service Bus, that will route it to
+a Database or other data storage the customer considers in the solution.
+
+The case could potentially be checked in the Service Bus, but its architecture does
+not allow the test service to retrieve a specific message so three scenarios could
+happen if the test is done like this:
+
+1. the test service would retrieve the message in the first call and the case could
+be considered successful;
+1. the test service would retrieve several messages before finding the message for
+for the registry closed in Dataverse. In this case the test will also be considered
+successful;
+1. the test service would retrieve several messages and the close registry could
+not be found because the Service Bus already processed the message and sent it to
+the database. In this case it would be a false-negative test, as the message was
+successfully processed.
+
+So the test will not check the Service Bus for the message and will go checking the
+database directly if the registry was updated there.
