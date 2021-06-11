@@ -4,7 +4,7 @@ This recipe describes the required files to run Locust using Docker.
 
 ## Dockerfile
 
-The `Dockerfile` is pretty straight-forward and basically tells Docker the locust image to use.
+The `Dockerfile` is pretty straight-forward and tells Docker the locust image to use.
 
 ```yaml
 FROM locustio/locust
@@ -72,8 +72,8 @@ networks:
 
 ### docker-compose.override.yml
 
-This is where different parameters can be set, so the tests described in `locustfile.py` can perform different test cases
-or scenarios.
+This is where different parameters can be set, so the tests described in `locustfile.py` can perform different test
+cases or scenarios.
 
 ```yaml
 version: '3'
@@ -92,7 +92,7 @@ services:
 The parameters in `< >` have to be updated, here is a definition for each one of them:
 
 - `command`: The test class to run. In the [example](locustfile_py.md) this is `TestSmallScaleCreateAndCloseCase`
-- `LOCUST_USERS`: The number of users to be considered in the tests
+- `LOCUST_USERS`: Number of users to be considered in the tests
 - `LOCUST_EXPECT_WORKERS`: Number of workers to be considered in the tests
 - `LOCUST_SPAWN_RATE`: Number of simultaneous users to be considered in the tests
 - `LOCUST_RUN_TIME`: Time, in seconds, for the tests to run

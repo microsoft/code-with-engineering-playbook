@@ -204,7 +204,7 @@ all_users_spawned.acquire()
 logger = logging.getLogger(__name__)
 ```
 
-Now that the imports are done and the variables are set, the code starts.
+Now, that the imports are done and the variables are set, the code starts.
 
 The `GenerateAPIServiceBusToken` will generate a token so the tests can connect to Azure Service Bus.
 
@@ -229,7 +229,8 @@ def GenerateAPIServiceBusToken(url, topic, policy, policyKey):
            '&se=' + str(expiry) + '&skn=' + policy)
 ```
 
-The `GetDynamicsToken` will do a `GET` request to the Dynamics service to get the Dynamics token to be used in the script.
+The `GetDynamicsToken` will do a `GET` request to the Dynamics service to get the Dynamics token to be used
+in the script.
 
 ```python
 def GetDynamicsToken():
@@ -315,8 +316,8 @@ def CreatePayloadForAzureServiceBus(triggerDate, APIServiceCaseNumber):
             '\"}]}"}')
 ```
 
-The next function will create the listeners so all the users are spawned before the test starts. This is useful when there
-are load cases that require that a number of users need to run simultaneously.
+The next function will create the listeners so all the users are spawned before the test starts.
+This is useful when there are load cases that require that a number of users need to run simultaneously.
 
 ```python
 @events.init.add_listener
@@ -326,8 +327,8 @@ def _(environment, **kw):
         all_users_spawned.release()
 ```
 
-Now the main class is created. This is a scenario where all the components of the solution are tested so it will create cases
-and then close the same cases in the same process.
+Now the main class is created. This is a scenario where all the components of the solution are tested so it
+will create cases and then close the same cases in the same process.
 
 ```python
 class CreateCloseCaseTaskset(SequentialTaskSet):
@@ -350,11 +351,12 @@ for the open and close cases because there are different topics, and Dynamics.
 
 ```
 
-Now the process to create the case can start. For the case to be created an HTTP `POST` call is sent to the Service Bus along
-with the payload created before.
+Now the process to create the case can start. For the case to be created an HTTP `POST` call is sent to the Service Bus
+along with the payload created before.
 
-As this is an asynchronous call it will return a `201` status code. If there is any issue with the Create Case token, a `401`
-status code will return and be logged as error. Any other value is not expected and will also be logged as an error.
+As this is an asynchronous call it will return a `201` status code. If there is any issue with the Create Case token,
+a `401` status code will return and be logged as error. Any other value is not expected and will also be logged
+as an error.
 
 ```python
     @ task
@@ -393,9 +395,9 @@ status code will return and be logged as error. Any other value is not expected 
 
 ```
 
-The Service Bus request will trigger the Power Automate flows that will create the cases. Depending on the volume of cases
-being created, the duration of the test can take some minutes until the cases are finally created in Dynamics 365. The
-function below will run in a loop until the case is found in Dynamics or the maximum wait time is reached.
+The Service Bus request will trigger the Power Automate flows that will create the cases. Depending on the volume of
+cases being created, the duration of the test can take some minutes until the cases are finally created in Dynamics
+365. The function below will run in a loop until the case is found in Dynamics or the maximum wait time is reached.
 
 ```python
     @ task
@@ -429,12 +431,13 @@ function below will run in a loop until the case is found in Dynamics or the max
                 "Unable to find Service Case in Dynamics: {}".format(list_resp.text))
 ```
 
-Until now the case was being created in Dynamics, now the same cases created will be closed. The process below will do that.
+Until now the case was being created in Dynamics, now the same cases created will be closed.
+The process below will do that.
 
 In Dynamics, there are some options to close a case. The sample is considering *RESOLVE* cases.
 
-To resolve a case, it is needed to have the `incidentId`. This value is stored in a entity named `incidents`. So the first
-step is to do an HTTP `GET`  request in that entity. The code below does that:
+To resolve a case, it is needed to have the `incidentId`. This value is stored in a entity named `incidents`.
+So the first step is to do an HTTP `GET`  request in that entity. The code below does that:
 
 ```python
         headersGetDynamicsIncidentIdAndResolveCase = {
@@ -443,9 +446,11 @@ step is to do an HTTP `GET`  request in that entity. The code below does that:
         logger.info("GET the Incident ID for Service Case {} so it can be RESOLVED in Dynamics".format(
             self.APIServiceCaseNumber))
 
-        with self.client.request("GET", "{}/api/data/v{}/incidents?$filter=(ticketnumber%20eq%20%27{}%27)".format(dynResource,
-                                    dynApiVersion, self.APIServiceCaseNumber), headers=headersGetDynamicsIncidentIdAndResolveCase,
-                                    name="Get Incident Id for Case in Dynamics", catch_response=True) as list_resp:
+        with self.client.request("GET",
+                                "{}/api/data/v{}/incidents?$filter=(ticketnumber%20eq%20%27{}%27)".format(
+                                dynResource, dynApiVersion, self.APIServiceCaseNumber),
+                                headers=headersGetDynamicsIncidentIdAndResolveCase,
+                                name="Get Incident Id for Case in Dynamics", catch_response=True) as list_resp:
 
             if list_resp.status_code >= 200 and list_resp.status_code < 300 and len(list_resp.json().get("value")) > 0:
                 self.incidentId = list_resp.json().get("value")[
@@ -458,9 +463,9 @@ step is to do an HTTP `GET`  request in that entity. The code below does that:
                     "Unable to retrieve Incident ID from Dynamics: {}".format(list_resp.text))
 ```
 
-With the `incidentId` the process now is to set the case as *RESOLVED*. This is done with an HTTP `POST` call to `CloseIncident`
-providing the `dataResolveCase` payload that is created below using the `incidentId`. Again, the process is async and the
-response will be `20X` meaning the API acknowledges the message.
+With the `incidentId` the process now is to set the case as *RESOLVED*. This is done with an HTTP `POST` call to
+`CloseIncident` providing the `dataResolveCase` payload that is created below using the `incidentId`. Again, the
+process is async and the response will be `20X` meaning the API acknowledges the message.
 
 ```python
         headersGetDynamicsIncidentIdAndCloseCase = {
@@ -472,7 +477,7 @@ response will be `20X` meaning the API acknowledges the message.
                 "No incident Id found when retrieving a list of cases from Dynamics.")
         else:
             dataResolveCase =
-                '{"IncidentResolution": {"subject": "Resolved by Locust Test","incidentid@odata.bind": "/incidents(' + \
+                '{"IncidentResolution": {"subject": "Resolved by Locust Test","incidentid@odata.bind": "/incidents('+ \
                 self.incidentId + \
                 ')","timespent": 60,"description": "Resolved via Locust Test"},"Status": -1}'
 
@@ -489,12 +494,12 @@ response will be `20X` meaning the API acknowledges the message.
                         "Unable to Resolve Case in Dynamics: {}".format(list_resp.text))
 ```
 
-The next two sections are related to the check in Azure Service Bus. Because of the Service Bus architecture, it is not possible
-to directly retrieve a record, so a loop needs to be implemented to retrieve the message and check if that message is related
-to the service case in use in the process.
+The next two sections are related to the check in Azure Service Bus. Because of the Service Bus architecture,
+it is not possible to directly retrieve a record, so a loop needs to be implemented to retrieve the message and check
+if that message is related to the service case in use in the process.
 
-The first option is to use the standard **Locust** libraries to do an HTTP `POST` request to retrieve the messages and continue
-calling until the service case is found or the maximum wait time is reached.
+The first option is to use the standard **Locust** libraries to do an HTTP `POST` request to retrieve the messages and
+continue calling until the service case is found or the maximum wait time is reached.
 
 ```python
         headersGetServiceBusCloseCase = {
@@ -507,10 +512,10 @@ calling until the service case is found or the maximum wait time is reached.
             self.APIServiceCaseNumber))
 
         while respServiceCase != self.APIServiceCaseNumber or time.time() < finishServiceCase:
-            with self.client.request("POST", "https://{}/{}/subscriptions/{}/messages/head?timeout=120".format(sbUrlCloseCase,
-                                       sbTopicCloseCase, sbSubscriptionCloseCase),
-                                     name="Checking Case is marked as Resolved in Service Bus",
-                                     headers=headersGetServiceBusCloseCase, catch_response=True) as list_resp:
+            with self.client.request("POST", "https://{}/{}/subscriptions/{}/messages/head?timeout=120".format(
+                                    sbUrlCloseCase, sbTopicCloseCase, sbSubscriptionCloseCase),
+                                    name="Checking Case is marked as Resolved in Service Bus",
+                                    headers=headersGetServiceBusCloseCase, catch_response=True) as list_resp:
                 if list_resp.status_code >= 200 and list_resp.status_code < 300:
                     respServiceCase = list_resp.json().get("CaseId")
             time.sleep(waitTimeBetweenRetries)
@@ -553,7 +558,8 @@ event is logged to **Locust** as an event:
                     task_total_time = int(
                         (time.time() - task_start_time) * 1000)
                     events.request_success.fire(
-                        request_type="Service Bus", name="Verify case resolved in dynamics", response_time=task_total_time,
+                        request_type="Service Bus", name="Verify case resolved in dynamics",
+                        response_time=task_total_time,
                         response_length=0)
                 else:
                     task_total_time = int(
@@ -562,8 +568,8 @@ event is logged to **Locust** as an event:
                                                 response_time=task_total_time, response_length=0, exception=e)
 ```
 
-In this case the process will run until the run time is done. So the process will loop until the time set in **Locust** via
-the `-t` parameter is reached.
+In this case the process will run until the run time is done. So the process will loop until the time set in **Locust**
+via the `-t` parameter is reached.
 
 ```python
     def stop(self):
@@ -575,8 +581,12 @@ the `-t` parameter is reached.
         raise StopUser()
 ```
 
-This is the name of the command used by **Locust**. In the example we are not using this as a parameter, but it can be added
-to the command line: `locust -f locustfile.py --host <http://127.0.0.1:8089> --headless -u 10 -r 10 -t 900s TestSmallScaleCreateAndCloseCase`
+This is the name of the command used by **Locust**. In the example we are not using this as a parameter,
+but it can be added to the command line:
+
+```console
+locust -f locustfile.py --host <http://127.0.0.1:8089> --headless -u 10 -r 10 -t 900s TestSmallScaleCreateAndCloseCase
+```
 
 ```python
 class TestSmallScaleCreateAndCloseCase(HttpUser):
@@ -786,9 +796,11 @@ class CreateCloseCaseTaskset(SequentialTaskSet):
             self.APIServiceCaseNumber))
 
         while len(respConfirmCaseCreated) == 0 or time.time() < finishConfirmCaseCreated:
-            with self.client.request("GET", "{}/api/data/v{}/incidents?$filter=(ticketnumber%20eq%20%27{}%27)".format(dynResource,
-                                        dynApiVersion, self.APIServiceCaseNumber), name="Confirm Case is Created in Dynamics",
-                                        headers=headersGetDynamicsConfirmCaseCreated, catch_response=True) as list_resp:
+            with self.client.request("GET", "{}/api/data/v{}/incidents?$filter=(ticketnumber%20eq%20%27{}%27)".format(
+                                        dynResource, dynApiVersion, self.APIServiceCaseNumber),
+                                        name="Confirm Case is Created in Dynamics",
+                                        headers=headersGetDynamicsConfirmCaseCreated,
+                                        catch_response=True) as list_resp:
                 if list_resp.status_code >= 200 and
                    list_resp.status_code < 300 and
                    len(list_resp.json().get("value")) > 0:
@@ -818,8 +830,9 @@ class CreateCloseCaseTaskset(SequentialTaskSet):
         logger.info("GET the Incident ID for Service Case {} so it can be RESOLVED in Dynamics".format(
             self.APIServiceCaseNumber))
 
-        with self.client.request("GET", "{}/api/data/v{}/incidents?$filter=(ticketnumber%20eq%20%27{}%27)".format(dynResource,
-                                    dynApiVersion, self.APIServiceCaseNumber), headers=headersGetDynamicsIncidentIdAndResolveCase,
+        with self.client.request("GET", "{}/api/data/v{}/incidents?$filter=(ticketnumber%20eq%20%27{}%27)".format(
+                                    dynResource, dynApiVersion, self.APIServiceCaseNumber),
+                                    headers=headersGetDynamicsIncidentIdAndResolveCase,
                                     name="Get Incident Id for Case in Dynamics", catch_response=True) as list_resp:
 
             if list_resp.status_code >= 200 and list_resp.status_code < 300 and len(list_resp.json().get("value")) > 0:
@@ -864,20 +877,21 @@ class CreateCloseCaseTaskset(SequentialTaskSet):
         '''
         task: to POST call to confirm Service Bus has received the request to close the case in API
 
-        This task is temporary removed as sometimes there are false negatives as the Service Bus does not provide the message
-        related to the Service Case on time, or the message may have already left the Service Bus queue by the time the
-        test reach it.
+        This task is temporary removed as sometimes there are false negatives as the Service Bus does not provide the
+        message related to the Service Case on time, or the message may have already left the Service Bus queue by the
+        time the test reach it.
 
-        The best option would be to implement this check to the service that receive the message from the Service Bus (a
-        Database, Blob storage, or other) and check there if the Service Case was closed and reach the final destination.
+        The best option would be to implement this check to the service that receive the message from the Service Bus
+        (a Database, Blob storage, or other) and check there if the Service Case was closed and reach the final
+        destination.
         '''
 
         '''
-        The code below runs using standard Locust libraries and displays the message regarding how many calls are made to
-        the Service Bus until it gets the message needed to confirm the case is created.
+        The code below runs using standard Locust libraries and displays the message regarding how many calls are made
+        to the Service Bus until it gets the message needed to confirm the case is created.
 
-        There is an issue with this approach as the message with the service case number may never be retrieved as per how
-        Azure Service Bus works.
+        There is an issue with this approach as the message with the service case number may never be retrieved as per
+        how Azure Service Bus works.
 
         This piece of code will remain here for documentation purposes and future evaluation should it be used or not.
         '''
@@ -892,8 +906,8 @@ class CreateCloseCaseTaskset(SequentialTaskSet):
             self.APIServiceCaseNumber))
 
         while respServiceCase != self.APIServiceCaseNumber or time.time() < finishServiceCase:
-            with self.client.request("POST", "https://{}/{}/subscriptions/{}/messages/head?timeout=120".format(sbUrlCloseCase,
-                                       sbTopicCloseCase, sbSubscriptionCloseCase),
+            with self.client.request("POST", "https://{}/{}/subscriptions/{}/messages/head?timeout=120".format(
+                                        sbUrlCloseCase, sbTopicCloseCase, sbSubscriptionCloseCase),
                                      name="Checking Case is marked as Resolved in Service Bus",
                                      headers=headersGetServiceBusCloseCase, catch_response=True) as list_resp:
                 if list_resp.status_code >= 200 and list_resp.status_code < 300:
@@ -912,11 +926,11 @@ class CreateCloseCaseTaskset(SequentialTaskSet):
         The next section would work better with Azure Service Bus as it would retrieve a series of messages and compare
         the service case number resolved with what is in the messages.
 
-        On the other hand it would not log anything to locust as it is using the Azure Service Bus Python library to achieve
-        these results.
+        On the other hand it would not log anything to locust as it is using the Azure Service Bus Python library to
+        achieve these results.
 
-        As a work around, a timer is started in the beginning of the process and stopped once the closure is complete. This
-        event is logged to Locust as an event:
+        As a work around, a timer is started in the beginning of the process and stopped once the closure is complete.
+        This event is logged to Locust as an event:
 
         # events.request_success.fire
 
@@ -940,7 +954,8 @@ class CreateCloseCaseTaskset(SequentialTaskSet):
         #             task_total_time = int(
         #                 (time.time() - task_start_time) * 1000)
         #             events.request_success.fire(
-        #                 request_type="Service Bus", name="Verify case resolved in dynamics", response_time=task_total_time,
+        #                 request_type="Service Bus", name="Verify case resolved in dynamics",
+        #                 response_time=task_total_time,
         #                 response_length=0)
         #         else:
         #             task_total_time = int(
