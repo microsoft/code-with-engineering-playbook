@@ -45,7 +45,7 @@ To use the table, either eyeball-browse or search for keywords.
 | Staging; Operation | Measure behavior under rapid changes in traffic | Spike |
 | Staging; Optimizing | Discover cost metrics per unit load volume (what factors influence cost at what load points, e.g. cost per million concurrent users) | Load (stress) |
 | Development; Operation | Discover points where a system is not resilient to unpredictable yet inevitable failures (network outage, hardware failure, VM host servicing, rack/switch failures, random acts of the Malevolent Divine, solar flares, sharks that eat undersea cable relays, cosmic radiation, power outages, renegade backhoe operators, wolves chewing on junction boxes, …) | Chaos |
-| Development for Power Platform | Be sure the custom connector me and my team are developing will work correctly when submitted | [Custom Connector Testing](unit-testing/custom-connector.md) |
+| Development | Perform unit testing on Power platform custom connectors | [Custom Connector Testing](unit-testing/custom-connector.md) |
 
 ## Sections within Testing
 
