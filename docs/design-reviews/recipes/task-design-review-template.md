@@ -1,8 +1,8 @@
 # Your Task Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
 
 > When developing a design document for a new task, it should contain a detailed design proposal demonstrating how it will solve the goals outlined below.  
-> Not all tasks require a design review, but when they do it is likely that there many unknowns or the solution may be more complex.
-> The design should include diagrams, pseudo code, interface contracts as needed to provide a detailed understanding of the proposal.
+> Not all tasks require a design review, but when they do it is likely that there many unknowns, or the solution may be more complex.
+> The design should include diagrams, pseudocode, interface contracts as needed to provide a detailed understanding of the proposal.
 
 * [Task Name](http://link-to-task-work-item)
 * [Story Name](http://link-to-story-work-item)
@@ -19,7 +19,7 @@
 ## Goals/In-Scope
 
 * List a few bullet points of what this task will achieve and that are most relevant for the design review discussion.
-* This should include acceptance criteria required to meet the [definition of done](../../agile-development/team-agreements/definition-of-done/).
+* This should include acceptance criteria required to meet the [definition of done](../../agile-development/team-agreements/definition-of-done.md).
 
 ## Non-goals / Out-of-Scope
 

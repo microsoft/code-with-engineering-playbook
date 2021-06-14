@@ -19,11 +19,11 @@ increase confidence in the commit.
 
 ## Speed up development
 
-Unit tests take time to write but they also speed up development? While this may seem like a oxymoron, it is one of
+Unit tests take time to write, but they also speed up development? While this may seem like an oxymoron, it is one of
 the strengths of a unit testing suite - over time it continues to grow and evolve until the tests become an essential
 part of the developer workflow.
 
-If the only testing available to a developer is a long running system test, integration tests that require a deployment,
+If the only testing available to a developer is a long-running system test, integration tests that require a deployment,
 or manual testing, it will increase the amount of time taken to write a feature. These types of tests should be a part of
 the "Outer loop"; tests that may take some time to run and validate more than just the code you are writing. Usually
 these types of outer loop tests get run at the PR stage or even later during merges into branches.
@@ -39,4 +39,4 @@ also help to shorten the inner loop even more.
 
 Writing unit tests is a great way to show how the units of code you are writing are supposed to be used. In some ways,
 unit tests are better than any documentation or samples because they are (or at least should be) executed with every
-build so there is confidence that they are not out of date. Unit tests also should be simple so they are easy to follow.
+build so there is confidence that they are not out of date. Unit tests also should be so simple that they are easy to follow.

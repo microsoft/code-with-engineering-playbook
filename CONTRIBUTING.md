@@ -38,7 +38,7 @@ You will still need to submit a PR against master in order to merge your changes
 
 When you have an idea for contribution open an *issue*!
 
-More details can be found in the internal CSE Wiki under the page `Contributing_to_the_Code-With_Engineering_Playbook`.
+> **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
 
 ## Git guidance
 
@@ -69,19 +69,19 @@ extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode
 and ensure that all rules are followed. This will help ensure consistency in the
 look and feel of the documentation in this repo.
 
-You can find information about other linters, general writing guidelines and code review check lists for Markdown in the [Markdown code review recipe](docs/code-reviews/recipes/Markdown.md).
+You can find information about other linters, general writing guidelines and code review check lists for Markdown in the [Markdown code review recipe](docs/code-reviews/recipes/markdown.md).
 
 ### Contributions and pull requests
 
 When creating pull requests, follow guidance similar to the one suggested in
-this repo, as described in the ["Pull Request Template"](docs/code-reviews/pull_request_template.md)
+this repo, as described in the ["Pull Request Template"](docs/code-reviews/pull-request-template/pull-request-template.md)
 section, under "Code Reviews". This includes linking to the work item that
 prompted the pull request.
 
 ### Merging strategy
 
 The preferred merging strategy for this repo is **linear**.
-You can familiarize yourself with [merging strategies](docs/source-control/contributing/merge-strategies.md) described in the Source Control section of this repo.
+You can familiarize yourself with [merging strategies](docs/source-control/merge-strategies.md) described in the Source Control section of this repo.
 
 ## Adding a new section
 

@@ -4,7 +4,7 @@
 
 Markdown is one of the most popular markup languages to add rich formatting, tables and images to your documentation using plain text documents.
 
-Markdown files (.md) can be source controlled along with your code.
+Markdown files (.md) can be source-controlled along with your code.
 
 More information:
 
@@ -23,7 +23,7 @@ Tools:
 
 Mermaid lets you create diagrams using text definitions that can later be rendered with a diagramming and charting tool.
 
-Mermaid files (.mmd) can be source controlled along with your code. It's also recommended to include image files (.png) with the rendered diagrams under source control. Your markdown files should link the image files so they can be read without the need of a Mermaid rendering tool (e.g., during Pull Request review).
+Mermaid files (.mmd) can be source-controlled along with your code. It's also recommended to include image files (.png) with the rendered diagrams under source control. Your markdown files should link the image files, so they can be read without the need of a Mermaid rendering tool (e.g., during Pull Request review).
 
 More information:
 
