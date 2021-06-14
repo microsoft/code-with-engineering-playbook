@@ -62,7 +62,7 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 ## Fundamentals for Specific Technology Areas
 
 * [Data and DataOps Fundamentals](docs/data-fundamentals/README.md)
-* [Machine Learning Fundamentals](docs/ml-fundamentals/README.md)
+* [Machine Learning Fundamentals](docs/machine-learning/README.md)
 
 ## Contributing
 
