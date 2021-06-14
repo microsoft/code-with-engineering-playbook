@@ -13,14 +13,14 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/ml-fundamentals/ml-testing/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/machine-learning/responsible-ai/">
       
       <link rel="icon" href="../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>Testing Data Science and MLOps Code - Code With Engineering Playbook</title>
+        <title>Responsible AI in CSE - Code With Engineering Playbook</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#testing-data-science-and-mlops-code" class="md-skip">
+        <a href="#responsible-ai-in-cse" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Testing Data Science and MLOps Code
+              Responsible AI in CSE
             
           </span>
         </div>
@@ -3205,13 +3205,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" checked>
       
       <label class="md-nav__link" for="__nav_15">
-        Ml fundamentals
+        Machine learning
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Ml fundamentals" data-md-level="1">
+      <nav class="md-nav" aria-label="Machine learning" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
-          Ml fundamentals
+          Machine learning
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -3221,7 +3221,7 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        Machine Learning fundamentals at CSE
+        Machine Learning Fundamentals at CSE
       </a>
     </li>
   
@@ -3314,6 +3314,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../ml-testing/" class="md-nav__link">
+        Testing Data Science and MLOps Code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -3325,12 +3337,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Testing Data Science and MLOps Code
+          Responsible AI in CSE
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Testing Data Science and MLOps Code
+        Responsible AI in CSE
       </a>
       
         
@@ -3347,69 +3359,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#saving-and-loading-data" class="md-nav__link">
-    Saving and loading data
-  </a>
-  
-    <nav class="md-nav" aria-label="Saving and loading data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-verify-that-a-load-function-calls-read_csv-if-the-file-exists" class="md-nav__link">
-    Example: Verify that a load function calls read_csv if the file exists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-using-the-same-sample-data-for-multiple-tests" class="md-nav__link">
-    Example: Using the same sample data for multiple tests
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transforming-data" class="md-nav__link">
-    Transforming data
+  <a href="#microsofts-responsible-ai-principles" class="md-nav__link">
+    Microsoft's Responsible AI principles
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#model-load-or-predict" class="md-nav__link">
-    Model load or predict
-  </a>
-  
-    <nav class="md-nav" aria-label="Model load or predict">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-unit-tests-for-ml-models" class="md-nav__link">
-    Basic Unit Tests for ML Models
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-validation" class="md-nav__link">
-    Data Validation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-testing" class="md-nav__link">
-    Model Testing
+  <a href="#cses-responsible-ai-process" class="md-nav__link">
+    CSE's Responsible AI process
   </a>
   
 </li>
@@ -3418,18 +3376,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../responsible-ai/" class="md-nav__link">
-        Responsible AI in CSE
-      </a>
     </li>
   
 
@@ -4119,69 +4065,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#saving-and-loading-data" class="md-nav__link">
-    Saving and loading data
-  </a>
-  
-    <nav class="md-nav" aria-label="Saving and loading data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-verify-that-a-load-function-calls-read_csv-if-the-file-exists" class="md-nav__link">
-    Example: Verify that a load function calls read_csv if the file exists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-using-the-same-sample-data-for-multiple-tests" class="md-nav__link">
-    Example: Using the same sample data for multiple tests
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transforming-data" class="md-nav__link">
-    Transforming data
+  <a href="#microsofts-responsible-ai-principles" class="md-nav__link">
+    Microsoft's Responsible AI principles
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#model-load-or-predict" class="md-nav__link">
-    Model load or predict
-  </a>
-  
-    <nav class="md-nav" aria-label="Model load or predict">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-unit-tests-for-ml-models" class="md-nav__link">
-    Basic Unit Tests for ML Models
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-validation" class="md-nav__link">
-    Data Validation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-testing" class="md-nav__link">
-    Model Testing
+  <a href="#cses-responsible-ai-process" class="md-nav__link">
+    CSE's Responsible AI process
   </a>
   
 </li>
@@ -4199,171 +4091,38 @@
               
                 
                 
-                <h1 id="testing-data-science-and-mlops-code">Testing Data Science and MLOps Code</h1>
-<p>The purpose of this document is to provide samples of tests for the most common operations in MLOps/Data Science projects. Testing the code used for MLOps or data science projects follows the same principles of any other software project.</p>
-<p>Some scenarios might seem different or more difficult to test. The best way to approach this is to always have a test design session, where the focus is on the input/outputs, exceptions and testing the behavior of data transformations. Designing the tests first makes it easier to test as it forces a more modular style, where each function has one purpose, and extracting common functionality functions and modules.</p>
-<p>Below are some common operations in MLOps or Data Science projects, along with suggestions on how to test them.</p>
+                <h1 id="responsible-ai-in-cse">Responsible AI in CSE</h1>
+<h2 id="microsofts-responsible-ai-principles">Microsoft's Responsible AI principles</h2>
+<p>Every ML project in CSE goes through a Responsible AI (RAI) assessment to ensure that it upholds Microsoft's <a href="https://www.microsoft.com/en-us/ai/responsible-ai">6 Responsible AI principles</a>:</p>
 <ul>
-<li><a href="#saving-and-loading-data">Saving and loading data</a></li>
-<li><a href="#transforming-data">Transforming data</a></li>
-<li><a href="#model-load-or-predict">Model load or predict</a></li>
-<li><a href="#data-validation">Data validation</a></li>
-<li><a href="#model-testing">Model testing</a></li>
+<li>Fairness</li>
+<li>Reliability &amp; Safety</li>
+<li>Privacy &amp; Security</li>
+<li>Inclusiveness</li>
+<li>Transparency</li>
+<li>Accountability</li>
 </ul>
-<h2 id="saving-and-loading-data">Saving and loading data</h2>
-<p>Reading and writing to csv, reading images or loading audio files are common scenarios encountered in MLOps projects.</p>
-<h3 id="example-verify-that-a-load-function-calls-read_csv-if-the-file-exists">Example: Verify that a load function calls read_csv if the file exists</h3>
-<p><code>utils.py</code></p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">load_data</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;ID&#39;</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">df</span>
-    <span class="k">return</span> <span class="kc">None</span>
-</code></pre></div>
-<p>There's no need to test the <code>read_csv</code> function, or the <code>isfile</code> functions, we can leave testing them to the <strong>pandas</strong> and <strong>os</strong> developers.</p>
-<p>The only thing we need to test here is the logic in this function, i.e. that <code>load_data</code> loads the file if the file exists with the right index column, and doesn't load the file if it doesn't exist, and that it returns the expected results.</p>
-<p>One way to do this would be to provide a sample file and call the function, and verify that the output is <strong>None</strong> or a <strong>DataFrame</strong>. This requires separate files to be present, or not present, for the tests to run. This can cause the same test to run on one machine and then fail on a build server which is not a desired behavior.</p>
-<p>A much better way is to <strong>mock</strong> calls to <code>isfile</code>, and <code>read_csv</code>. Instead of calling the real function, we will return a predefined return value, or call a stub that doesn't have any side effects. This way no files are needed in the repository to execute the test, and the test will always work the same, independent of what machine it runs on.</p>
-<blockquote>
-<p>Note: Below we mock the specific os and pd functions referenced in the utils file, any others are left unaffected and would run as normal.</p>
-</blockquote>
-<p><code>test_utils.py</code></p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">utils</span>
-<span class="kn">from</span> <span class="nn">mock</span> <span class="kn">import</span> <span class="n">patch</span>
-
-
-<span class="nd">@patch</span><span class="p">(</span><span class="s1">&#39;utils.os.path.isfile&#39;</span><span class="p">)</span>
-<span class="nd">@patch</span><span class="p">(</span><span class="s1">&#39;utils.pd.read_csv&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">test_load_data_calls_read_csv_if_exists</span><span class="p">(</span><span class="n">mock_isfile</span><span class="p">,</span> <span class="n">mock_read_csv</span><span class="p">):</span>
-    <span class="c1"># arrange</span>
-    <span class="c1"># always return true for isfile</span>
-    <span class="n">utils</span><span class="o">.</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;file.csv&#39;</span>
-
-    <span class="c1"># act</span>
-    <span class="n">_</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-
-    <span class="c1"># assert</span>
-    <span class="c1"># check that read_csv is called with the correct parameters</span>
-    <span class="n">utils</span><span class="o">.</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="o">.</span><span class="n">assert_called_once_with</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;ID&#39;</span><span class="p">)</span>
-</code></pre></div>
-<p>Similarly, we can verify that it's called 0 or multiple times. In the example below where we verify that it's not called if the file doesn't exist</p>
-<div class="highlight"><pre><span></span><code><span class="nd">@patch</span><span class="p">(</span><span class="s1">&#39;utils.os.path.isfile&#39;</span><span class="p">)</span>
-<span class="nd">@patch</span><span class="p">(</span><span class="s1">&#39;utils.pd.read_csv&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">test_load_data_doesnt_call_read_csv_if_not_exists</span><span class="p">(</span><span class="n">mock_isfile</span><span class="p">,</span> <span class="n">mock_read_csv</span><span class="p">):</span>
-    <span class="c1"># arrange</span>
-    <span class="c1"># file doesnt exist</span>
-    <span class="n">utils</span><span class="o">.</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;file.csv&#39;</span>
-
-    <span class="c1"># act</span>
-    <span class="n">_</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-
-    <span class="c1"># assert</span>
-    <span class="c1"># check that read_csv is not called</span>
-    <span class="k">assert</span> <span class="n">utils</span><span class="o">.</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="o">.</span><span class="n">call_count</span> <span class="o">==</span> <span class="mi">0</span>
-</code></pre></div>
-<h3 id="example-using-the-same-sample-data-for-multiple-tests">Example: Using the same sample data for multiple tests</h3>
-<p>If more than one test will use the same sample data, fixtures are a good way to reuse this sample data. The sample data can be the contents of a json file, or a csv, or a DataFrame, or even an image.</p>
-<blockquote>
-<p>Note: The sample data is still hard coded if possible, and does not need to be large. Only add as much sample data as required for the tests to make the tests readable.</p>
-</blockquote>
-<p>Use the fixture to return the sample data, and add this as a parameter to the tests where you want to use the sample data.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pytest</span>
-
-
-<span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
-<span class="k">def</span> <span class="nf">house_features_json</span><span class="p">():</span>
-  <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;area&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">:</span> <span class="mi">2500</span><span class="p">,</span> <span class="s1">&#39;rooms&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">}</span>
-
-<span class="k">def</span> <span class="nf">test_clean_features_cleans_nan_values</span><span class="p">(</span><span class="n">house_features_json</span><span class="p">):</span>
-  <span class="n">cleaned_features</span> <span class="o">=</span> <span class="n">clean_features</span><span class="p">(</span><span class="n">house_features_json</span><span class="p">)</span>
-  <span class="k">assert</span> <span class="n">cleaned_features</span><span class="p">[</span><span class="s1">&#39;rooms&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span>
-
-<span class="k">def</span> <span class="nf">test_extract_features_extracts_price_per_area</span><span class="p">(</span><span class="n">house_features_json</span><span class="p">):</span>
-  <span class="n">extracted_features</span> <span class="o">=</span> <span class="n">extract_features</span><span class="p">(</span><span class="n">house_features_json</span><span class="p">)</span>
-  <span class="k">assert</span> <span class="n">extracted_features</span><span class="p">[</span><span class="s1">&#39;price_per_area&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">100</span>
-</code></pre></div>
-<h2 id="transforming-data">Transforming data</h2>
-<p>For cleaning and transforming data, test fixed input and output, but try to limit each test to one verification.</p>
-<p>For example, create one test to verify the output shape of the data.</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">test_resize_image_generates_the_correct_size</span><span class="p">():</span>
-  <span class="c1"># Arrange</span>
-  <span class="n">original_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-
-  <span class="c1"># act</span>
-  <span class="n">resized_image</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">resize_image</span><span class="p">(</span><span class="n">original_image</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-
-  <span class="c1"># assert</span>
-  <span class="n">resized_image</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-</code></pre></div>
-<p>and one to verify that any padding is made appropriately</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">test_resize_image_pads_correctly</span><span class="p">():</span>
-  <span class="c1"># Arrange</span>
-  <span class="n">original_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-
-  <span class="c1"># Act</span>
-  <span class="n">resized_image</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">resize_image</span><span class="p">(</span><span class="n">original_image</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-
-  <span class="c1"># Assert</span>
-  <span class="k">assert</span> <span class="n">resized_image</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span>
-  <span class="k">assert</span> <span class="n">resized_image</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span>
-</code></pre></div>
-<p>To test different inputs and expected outputs automatically, use parametrize</p>
-<div class="highlight"><pre><span></span><code><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s1">&#39;orig_height, orig_width, expected_height, expected_width&#39;</span><span class="p">,</span>
-                         <span class="p">[</span>
-                             <span class="c1"># smaller than target</span>
-                             <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span>
-                             <span class="c1"># larger than target</span>
-                             <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
-                             <span class="c1"># wider than target</span>
-                             <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-                         <span class="p">])</span>
-<span class="k">def</span> <span class="nf">test_resize_image_generates_the_correct_size</span><span class="p">(</span><span class="n">orig_height</span><span class="p">,</span> <span class="n">orig_width</span><span class="p">,</span> <span class="n">expected_height</span><span class="p">,</span> <span class="n">expected_width</span><span class="p">):</span>
-  <span class="c1"># Arrange</span>
-  <span class="n">original_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">orig_height</span><span class="p">,</span> <span class="n">orig_width</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-
-  <span class="c1"># act</span>
-  <span class="n">resized_image</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">resize_image</span><span class="p">(</span><span class="n">original_image</span><span class="p">,</span> <span class="n">expected_height</span><span class="p">,</span> <span class="n">expected_width</span><span class="p">)</span>
-
-  <span class="c1"># assert</span>
-  <span class="n">resized_image</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">expected_height</span><span class="p">,</span> <span class="n">expected_width</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="model-load-or-predict">Model load or predict</h2>
-<p>When <strong>unit</strong> testing we should mock model load and model predictions similarly to mocking file access.</p>
-<p>There may be cases when you want to load your model to do smoke tests, or integration tests.</p>
-<p>Since these will often take a bit longer to run it's important to be able to separate them from unit tests so that the developers on the team can still run unit tests as part of their test driven development.</p>
-<p>One way to do this is using marks</p>
-<div class="highlight"><pre><span></span><code><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">longrunning</span>
-<span class="k">def</span> <span class="nf">test_integration_between_two_systems</span><span class="p">():</span>
-    <span class="c1"># this might take a while</span>
-</code></pre></div>
-<p>Run all tests that are not marked <code>longrunning</code></p>
-<div class="highlight"><pre><span></span><code>pytest -v -m <span class="s2">&quot;not longrunning&quot;</span>
-</code></pre></div>
-<h3 id="basic-unit-tests-for-ml-models">Basic Unit Tests for ML Models</h3>
-<p>ML unit tests are not intended to check the accuracy or performance of a model. Unit tests for an ML model is for code quality checks - for example:</p>
+<p>Every project goes through the RAI process, whether we are building a new ML model from scratch, or putting an existing model in production.</p>
+<h2 id="cses-responsible-ai-process">CSE's Responsible AI process</h2>
+<p>The process begins as soon as we start a prospective project. We start to complete a Responsible AI review document, and an impact assessment, which provides a structured way to explore topics such as:</p>
 <ul>
-<li>Does the model accept the correct inputs and produce the correctly shaped outputs?</li>
-<li>Do the weights of the model update when running <code>fit</code>?</li>
+<li>Can the problem be addressed with a non-technical (e.g. social) solution?</li>
+<li>Can the problem be solved without AI? Would simpler technology suffice?</li>
+<li>Will the team have access to domain experts (e.g. doctors, refugees) in the field where the AI is applicable?</li>
+<li>Who are the stakeholders in this project? Who does the AI impact? Are there any vulnerable groups affected?</li>
+<li>What are the possible benefits and harms to each stakeholder?</li>
+<li>How can the technology be misused, and what can go wrong?</li>
+<li>Has the team analysed the input data properly to make sure that the training data is suitable for machine learning?</li>
+<li>Is the training data an accurate representation of data that will be used as input in production?</li>
+<li>Is there a good representation of all users?</li>
+<li>Is there a fall-back mechanism (a human in the loop, or a way to revert decisions based on the model)?</li>
+<li>Does data used by the model for training or scoring contain PII? What measures have been taken to remove sensitive data?</li>
+<li>Does the model impact consequential decisions, like blocking people from getting jobs, loans, health care etc. or in the cases where it may, have appropriate ethical considerations been discussed?</li>
+<li>Have measures for re-training been considered?</li>
+<li>How can we address any concerns that arise, and how can we mitigate risk?</li>
 </ul>
-<p>To do this, the ML model tests do not strictly follow best practices of standard Unit tests - not all outside calls are mocked. These tests are much closer to a <a href="https://martinfowler.com/bliki/IntegrationTest.html">narrow integration test</a>.
-However, the benefits of having simple tests for the ML model help to stop a poorly configured model from spending hours in training, while still producing poor results.</p>
-<p>Examples of how to implement these tests (for Deep Learning models) include:</p>
-<ul>
-<li>Build a model and compare the shape of input layers to that of an example source of data. Then, compare the output layer shape to the expected output.</li>
-<li>Initialize the model and record the weights of each layer. Then, run a single epoch of training on a dummy data set, and compare the weights of the "trained model" - only check if the values have changed.</li>
-<li>Train the model on a dummy dataset for a single epoch, and then validate with dummy data - only validate that the prediction is formatted correctly, this model will not be accurate.</li>
-</ul>
-<h2 id="data-validation">Data Validation</h2>
-<p>An important part of the unit testing is to include test cases for data validation. For example, no data supplied, images that are not in the expected format, data containing null values or outliers to make sure that the data processing pipeline is robust.</p>
-<h2 id="model-testing">Model Testing</h2>
-<p>Apart from unit testing code, we can also test, debug and validate our models in different ways during the training process</p>
-<p>Some options to consider at this stage:</p>
-<ul>
-<li><a href="https://medium.com/@deepmindsafetyresearch/towards-robust-and-verified-ai-specification-testing-robust-training-and-formal-verification-69bd1bc48bda">Adversarial and Boundary tests to increase robustness</a></li>
-<li>Verifying accuracy for under-represented classes</li>
-</ul>
+<p>At this point we research available <a href="https://www.microsoft.com/en-us/ai/responsible-ai-resources">tools and resources</a>, such as <a href="https://interpret.ml/">InterpretML</a> or <a href="https://fairlearn.org/">Fairlearn</a>, that we may use on the project. We may change the project scope or re-define the <a href="../ml-problem-formulation-envisioning/">ML problem definition</a> if necessary.</p>
+<p>The Responsible AI review documents remain living documents that we re-visit and update throughout project development, through the <a href="../ml-feasibility-study/">feasibility study</a>, as the model is developed and prepared for production, and new information unfolds. The documents can be used and expanded once the model is deployed, and monitored in production.</p>
                 
               
               
@@ -4382,7 +4141,7 @@ However, the benefits of having simple tests for the ML model help to stop a poo
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../ml-proposed-process/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../ml-testing/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4391,19 +4150,19 @@ However, the benefits of having simple tests for the ML model help to stop a poo
               <span class="md-footer__direction">
                 Previous
               </span>
-              Proposed ML Process
+              Testing Data Science and MLOps Code
             </div>
           </div>
         </a>
       
       
-        <a href="../responsible-ai/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../observability/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Responsible AI in CSE
+              Observability
             </div>
           </div>
           <div class="md-footer__button md-icon">

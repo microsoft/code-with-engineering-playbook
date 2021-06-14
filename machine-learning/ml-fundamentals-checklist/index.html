@@ -13,14 +13,14 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/ml-fundamentals/ml-project-management/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-fundamentals-checklist/">
       
       <link rel="icon" href="../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>Agile Development Considerations for ML Projects - Code With Engineering Playbook</title>
+        <title>ML Fundamentals Checklist - Code With Engineering Playbook</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#agile-development-considerations-for-ml-projects" class="md-skip">
+        <a href="#ml-fundamentals-checklist" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Agile Development Considerations for ML Projects
+              ML Fundamentals Checklist
             
           </span>
         </div>
@@ -3205,13 +3205,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" checked>
       
       <label class="md-nav__link" for="__nav_15">
-        Ml fundamentals
+        Machine learning
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Ml fundamentals" data-md-level="1">
+      <nav class="md-nav" aria-label="Machine learning" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
-          Ml fundamentals
+          Machine learning
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -3221,7 +3221,7 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        Machine Learning fundamentals at CSE
+        Machine Learning Fundamentals at CSE
       </a>
     </li>
   
@@ -3254,11 +3254,84 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ml-fundamentals-checklist/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ML Fundamentals Checklist
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         ML Fundamentals Checklist
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-quality-and-governance" class="md-nav__link">
+    Data Quality and Governance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feasibility-study" class="md-nav__link">
+    Feasibility Study
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation-and-metrics" class="md-nav__link">
+    Evaluation and Metrics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-baseline" class="md-nav__link">
+    Model Baseline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experimentation-setup" class="md-nav__link">
+    Experimentation setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production" class="md-nav__link">
+    Production
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3290,76 +3363,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Agile Development Considerations for ML Projects
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ml-project-management/" class="md-nav__link">
         Agile Development Considerations for ML Projects
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#goals" class="md-nav__link">
-    Goals
-  </a>
-  
-    <nav class="md-nav" aria-label="Goals">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#notes-on-agile-process-during-exploration-and-experimentation" class="md-nav__link">
-    Notes on Agile process during exploration and experimentation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-on-collaboration-between-ml-team-and-software-development-team" class="md-nav__link">
-    Notes on collaboration between ML team and software development team
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4085,35 +4093,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#data-quality-and-governance" class="md-nav__link">
+    Data Quality and Governance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#goals" class="md-nav__link">
-    Goals
+  <a href="#feasibility-study" class="md-nav__link">
+    Feasibility Study
   </a>
-  
-    <nav class="md-nav" aria-label="Goals">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#notes-on-agile-process-during-exploration-and-experimentation" class="md-nav__link">
-    Notes on Agile process during exploration and experimentation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes-on-collaboration-between-ml-team-and-software-development-team" class="md-nav__link">
-    Notes on collaboration between ML team and software development team
+  <a href="#evaluation-and-metrics" class="md-nav__link">
+    Evaluation and Metrics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-baseline" class="md-nav__link">
+    Model Baseline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experimentation-setup" class="md-nav__link">
+    Experimentation setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#production" class="md-nav__link">
+    Production
   </a>
   
 </li>
@@ -4131,52 +4147,58 @@
               
                 
                 
-                <h1 id="agile-development-considerations-for-ml-projects">Agile Development Considerations for ML Projects</h1>
-<h2 id="overview">Overview</h2>
-<p>When running ML projects, we follow the Agile methodology for software development with some adaptations, as we acknowledge that research and experimentation are sometimes difficult to plan and estimate.</p>
-<h2 id="goals">Goals</h2>
-<ol>
-<li>Run and manage ML projects effectively</li>
-<li>Create effective collaboration between the ML team and the other teams working on the project</li>
-</ol>
-<p>To learn more about how CSE runs the Agile process for software development teams, refer to this <a href="../agile-development">doc</a>.</p>
-<p>Within this framework, the team follows these Agile ceremonies:</p>
-<ul>
-<li><a href="../../agile-development/backlog-management/">Backlog management</a></li>
-<li><a href="../../agile-development/retrospectives/">Retrospectives</a></li>
-<li><a href="../../agile-development/scrum-of-scrums/">Scrum of Scrums</a> (where applicable)</li>
-<li><a href="../../agile-development/sprint-planning/">Sprint planning</a></li>
-<li><a href="../../agile-development/stand-ups/">Stand-ups</a></li>
-<li><a href="../../agile-development/team-agreements/working-agreements/">Working agreement</a></li>
+                <h1 id="ml-fundamentals-checklist">ML Fundamentals Checklist</h1>
+<p>This checklist helps ensure that our ML projects meet our ML Fundamentals. The items below are not sequential, but rather organized by different parts of an ML project.</p>
+<h2 id="data-quality-and-governance">Data Quality and Governance</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> There is access to data.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Labels exist for dataset of interest.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Data quality evaluation.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Able to track data lineage.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Understanding of where the data is coming from and any policies related to data access.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Gather Security and Compliance requirements.</li>
 </ul>
-<h3 id="notes-on-agile-process-during-exploration-and-experimentation">Notes on Agile process during exploration and experimentation</h3>
-<ol>
-<li>
-<p>While acknowledging the fact that ML user stories and research spikes are less predictable than software development ones, we strive to have a deliverable for every user story in every sprint. Such deliverable could be:</p>
-<p>- Working code (e.g. models, pipelines, exploratory code)
-  - Documentation of new hypotheses, and the acceptance or rejection of previous hypotheses as part of a Hypothesis Driven Analysis (HDA). See more resources on HDA here:
-      1. <a href="https://datasciencevademecum.com/2015/11/10/agile-data-science-iteration-0-the-hypothesis-driven-analysis">HDA</a> (from the Data Science Vademecum website).
-      2. <a href="https://barryoreilly.com/explore/blog/how-to-implement-hypothesis-driven-development/">Hypothesis Driven Development</a> (from Barry Oreilly's website).
-  - Exploratory Data Analysis (EDA) results and learnings documented</p>
-</li>
-<li>
-<p>User stories and spikes are usually estimated using <a href="../../agile-development/sprint-planning/estimation/#t-shirt-sizes">T-shirt sizes</a> or similar, and not in actual days/hours. See more <a href="../../agile-development/sprint-planning/estimation/">here</a> on story estimation.</p>
-</li>
-<li>
-<p>ML design sessions should be included in each sprint.</p>
-</li>
-</ol>
-<h2 id="notes-on-collaboration-between-ml-team-and-software-development-team">Notes on collaboration between ML team and software development team</h2>
-<ul>
-<li>The ML and Software Development teams work together on the project. The team uses one backlog and attend the same Agile ceremonies. In cases where the project has many participants, we will divide into working groups, but still have the entire team join the Agile ceremonies.</li>
+<h2 id="feasibility-study">Feasibility Study</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> A feasibility study was performed to assess if the data supports the proposed tasks.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Rigorous Exploratory data analysis was performed (including analysis of data distribution).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Hypotheses were tested producing sufficient evidence to either support or reject that an ML approach is feasible to solve the problem.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> ROI estimation and risk analysis was performed for the project.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> ML outputs/assets can be integrated within the production system.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Recommendations on how to proceed have been documented.</li>
 </ul>
-<ul>
-<li>If possible, feasibility study and initial model experimentation takes place before the operationalization work kicks off.</li>
-<li>The ML team and dev team both share the accountability for the MLOps solution.</li>
-<li>The ML model interface (API) is determined as early as possible, to allow the developers to consider its integration into the production pipeline.</li>
-<li>MLOps artifacts are developed with a continuous collaboration and review of the ML team, to ensure the appropriate approaches for experimentation and
-productization are used.</li>
-<li>Retrospectives and sprint planning are performed on the entire team level, and not the specific work groups level.</li>
+<h2 id="evaluation-and-metrics">Evaluation and Metrics</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Clear definition of how performance will be measured.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> The evaluation metrics are somewhat connected to the success criteria.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> The metrics can be calculated with the datasets available.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Evaluation flow can be applied to all versions of the model.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Evaluation code is unit-tested and reviewed by all team members.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Evaluation flow facilitates further results and error analysis.</li>
+</ul>
+<h2 id="model-baseline">Model Baseline</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Well-defined baseline model exists and its performance is calculated. (<a href="../ml-model-checklist/#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline">More details on well defined baselines</a>)</li>
+<li class="task-list-item"><input type="checkbox" disabled/> The performance of other ML models can be compared with the model baseline.</li>
+</ul>
+<h2 id="experimentation-setup">Experimentation setup</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Well-defined train/test dataset with labels.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Reproducible and logged experiments in an environment accessible by all data scientists to quickly iterate.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Defined experiments/hypothesis to test.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Results of experiments are documented.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Model hyper parameters are tuned systematically.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Same performance evaluation metrics and consistent datasets are used when comparing candidate models.</li>
+</ul>
+<h2 id="production">Production</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <a href="../ml-model-checklist/">Model readiness checklist</a> reviewed.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Model reviews were performed (covering model debugging, reviews of training and evaluation approaches, model performance).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Data pipeline for inferencing, including an end-to-end tests.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> SLAs requirements for models are gathered and documented.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Monitoring of data feeds and model output.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Ensure consistent schema is used across the system with expected input/output defined for each component of the pipelines (data processing as well as models).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <a href="../responsible-ai/">Responsible AI</a> reviewed.</li>
 </ul>
                 
               
@@ -4196,7 +4218,7 @@ productization are used.</li>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../ml-problem-formulation-envisioning/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../ml-feasibility-study/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4205,19 +4227,19 @@ productization are used.</li>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Envisioning and Problem Formulation
+              ML Feasibility Studies
             </div>
           </div>
         </a>
       
       
-        <a href="../ml-proposed-process/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../ml-model-checklist/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Proposed ML Process
+              ML model production checklist
             </div>
           </div>
           <div class="md-footer__button md-icon">

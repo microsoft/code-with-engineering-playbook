@@ -13,14 +13,14 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/ml-fundamentals/ml-model-checklist/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-proposed-process/">
       
       <link rel="icon" href="../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>ML model production checklist - Code With Engineering Playbook</title>
+        <title>Proposed ML Process - Code With Engineering Playbook</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ml-model-production-checklist" class="md-skip">
+        <a href="#proposed-ml-process" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ML model production checklist
+              Proposed ML Process
             
           </span>
         </div>
@@ -3205,13 +3205,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" checked>
       
       <label class="md-nav__link" for="__nav_15">
-        Ml fundamentals
+        Machine learning
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Ml fundamentals" data-md-level="1">
+      <nav class="md-nav" aria-label="Machine learning" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
-          Ml fundamentals
+          Machine learning
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -3221,7 +3221,7 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        Machine Learning fundamentals at CSE
+        Machine Learning Fundamentals at CSE
       </a>
     </li>
   
@@ -3266,125 +3266,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          ML model production checklist
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ml-model-checklist/" class="md-nav__link">
         ML model production checklist
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#checklist" class="md-nav__link">
-    Checklist
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#will-your-model-performance-be-different-in-production-than-during-training-phase" class="md-nav__link">
-    Will your model performance be different in production than during training phase
-  </a>
-  
-    <nav class="md-nav" aria-label="Will your model performance be different in production than during training phase">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline" class="md-nav__link">
-    Is there a well-defined baseline? Is the model performing better than the baseline?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#are-machine-learning-performance-metrics-defined-for-both-training-and-scoring" class="md-nav__link">
-    Are machine learning performance metrics defined for both training and scoring?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#is-the-model-benchmarked" class="md-nav__link">
-    Is the model benchmarked?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#can-ground-truth-be-obtained-or-inferred-in-production" class="md-nav__link">
-    Can ground truth be obtained or inferred in production?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data" class="md-nav__link">
-    Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made" class="md-nav__link">
-    Have goals and hard limits for performance, speed of prediction and costs been established, so they can be considered if trade-offs need to be made?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have" class="md-nav__link">
-    How will the model be integrated into other systems, and what impact will it have?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-will-performance-be-monitored" class="md-nav__link">
-    How will performance be monitored?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#have-any-ethical-concerns-been-taken-into-account" class="md-nav__link">
-    Have any ethical concerns been taken into account?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3416,11 +3302,124 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ml-proposed-process/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Proposed ML Process
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Proposed ML Process
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ml-process" class="md-nav__link">
+    ML process
+  </a>
+  
+    <nav class="md-nav" aria-label="ML process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-control" class="md-nav__link">
+    Version control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-problem" class="md-nav__link">
+    Understanding the problem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseline-model-experimentation" class="md-nav__link">
+    Baseline Model Experimentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-evaluation" class="md-nav__link">
+    Model Evaluation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-operationalization" class="md-nav__link">
+    Model Operationalization
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Operationalization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unit-and-integration-testing" class="md-nav__link">
+    Unit and Integration Testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    Deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-and-observability" class="md-nav__link">
+    Monitoring and Observability
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4134,80 +4133,79 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#checklist" class="md-nav__link">
-    Checklist
+  <a href="#introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#will-your-model-performance-be-different-in-production-than-during-training-phase" class="md-nav__link">
-    Will your model performance be different in production than during training phase
+  <a href="#ml-process" class="md-nav__link">
+    ML process
   </a>
   
-    <nav class="md-nav" aria-label="Will your model performance be different in production than during training phase">
+    <nav class="md-nav" aria-label="ML process">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline" class="md-nav__link">
-    Is there a well-defined baseline? Is the model performing better than the baseline?
+  <a href="#version-control" class="md-nav__link">
+    Version control
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#are-machine-learning-performance-metrics-defined-for-both-training-and-scoring" class="md-nav__link">
-    Are machine learning performance metrics defined for both training and scoring?
+  <a href="#understanding-the-problem" class="md-nav__link">
+    Understanding the problem
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#is-the-model-benchmarked" class="md-nav__link">
-    Is the model benchmarked?
+  <a href="#baseline-model-experimentation" class="md-nav__link">
+    Baseline Model Experimentation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#can-ground-truth-be-obtained-or-inferred-in-production" class="md-nav__link">
-    Can ground truth be obtained or inferred in production?
+  <a href="#model-evaluation" class="md-nav__link">
+    Model Evaluation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data" class="md-nav__link">
-    Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?
+  <a href="#model-operationalization" class="md-nav__link">
+    Model Operationalization
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Operationalization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unit-and-integration-testing" class="md-nav__link">
+    Unit and Integration Testing
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made" class="md-nav__link">
-    Have goals and hard limits for performance, speed of prediction and costs been established, so they can be considered if trade-offs need to be made?
+  <a href="#deployment" class="md-nav__link">
+    Deployment
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have" class="md-nav__link">
-    How will the model be integrated into other systems, and what impact will it have?
+  <a href="#monitoring-and-observability" class="md-nav__link">
+    Monitoring and Observability
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#how-will-performance-be-monitored" class="md-nav__link">
-    How will performance be monitored?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#have-any-ethical-concerns-been-taken-into-account" class="md-nav__link">
-    Have any ethical concerns been taken into account?
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -4229,120 +4227,143 @@
               
                 
                 
-                <h1 id="ml-model-production-checklist">ML model production checklist</h1>
-<p>The purpose of this checklist is to make sure that:</p>
+                <h1 id="proposed-ml-process">Proposed ML Process</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The objective of this document is to provide guidance to produce machine learning (ML) applications that are based on code, data and models that can be reproduced and reliably released to production environments.
+When developing ML applications, we consider the following approaches:</p>
 <ul>
-<li>The team assessed if the model is ready for production before moving to the scoring process</li>
-<li>The team has prepared a production plan for the model</li>
-</ul>
-<p>The checklist provides guidelines for creating this production plan. It should be used by teams/organizations that already built/trained an ML model and are now considering putting it into production.</p>
-<h2 id="checklist">Checklist</h2>
-<p>Before putting an individual ML model into production, the following aspects should be considered:</p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline">Is there a well defined baseline? Is the model performing better than the baseline?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#are-machine-learning-performance-metrics-defined-for-both-training-and-scoring">Are machine learning performance metrics defined for both training and scoring?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#is-the-model-benchmarked">Is the model benchmarked?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#can-ground-truth-be-obtained-or-inferred-in-production">Can ground truth be obtained or inferred in production?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data">Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made">Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have">How will the model be integrated into other systems, and what impact will it have?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#how-will-performance-be-monitored">How will performance be monitored?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#have-any-ethical-concerns-been-taken-into-account?">Have any ethical concerns been taken into account?</a></li>
-</ul>
-<p>Please note that there might be scenarios where it is not possible to check all the items on this checklist. However, it is advised to go through all items and make informed decisions based on your specific use case.</p>
-<h2 id="will-your-model-performance-be-different-in-production-than-during-training-phase">Will your model performance be different in production than during training phase</h2>
-<p>Once deployed into production, the model might be performing much worse than expected. This poor performance could be a result of:</p>
+<li>
+<p>Best practices in ML engineering:</p>
 <ul>
-<li>The data to be scored in production is significantly different from the train and test datasets</li>
-<li>The feature engineering steps are different or inconsistent in production compared to the training process</li>
-<li>The performance measure is not consistent (for example your test set covers several months of data where the performance metric for production has been calculated for one month of data)</li>
+<li>The ML application development should use engineering fundamentals to ensure high quality software deliverables.</li>
+<li>The ML application should be reliability released into production, leveraging automation as much as possible.</li>
+<li>The ML application can be deployed into production at any time. This makes the decision about when to release it a business decision rather than a technical one.</li>
 </ul>
-<h3 id="is-there-a-well-defined-baseline-is-the-model-performing-better-than-the-baseline">Is there a well-defined baseline? Is the model performing better than the baseline?</h3>
-<p>A good way to think of a model baseline is the simplest model one can come up with: either a simple threshold, a random guess or a very basic linear model. This baseline is the reference point your model needs to outperform. A well-defined baseline is different for each problem type and there is no one size fits all approach.</p>
-<p>As an example, let's consider some common types of machine learning problems:</p>
+</li>
+</ul>
 <ul>
-<li><strong>Classification</strong>: Predicting between a positive and a negative class. Either the class with the most observations or a simple logistic regression model can be the baseline.</li>
-<li><strong>Regression</strong>: Predicting the house prices in a city. The average house price for the last year or last month, a simple linear regression model, or the previous median house price in a neighborhood could be the baseline.</li>
-<li><strong>Image classification</strong>: Building an image classifier to distinguish between cats and no cats in an image. If your classes are unbalanced: 70% cats and 30% no cats and if you always predict cats, your naive classifier has 70% accuracy and this can be your baseline. If your classes are balanced: 52% cats and 48% no cats, then a simple convolutional architecture can be the baseline (1 conv layer + 1 max pooling + 1 dense). Additionally, human accuracy at labelling can also be the baseline in an image classification scenario.</li>
-</ul>
-<p>Some questions to ask when comparing to a baseline:</p>
+<li>
+<p>Best practices in ML research:</p>
 <ul>
-<li>How does your model compare to a random guess?</li>
-<li>How does your model performance compare to applying a simple threshold?</li>
-<li>How does your model compare with always predicting the most common value?</li>
+<li>All artifacts, specifically data, code and ML models, should be versioned and managed using standard tools and workflows, in order to facilitate continuous research and development.</li>
+<li>While the model outputs can be non-deterministic and hard to reproduce, the process of releasing ML software into production should be reproducible.</li>
+<li>Responsible AI aspects are carefully analysed and addressed.</li>
 </ul>
-<p><strong>Note</strong>: In some cases, human parity might be too ambitious as a baseline, but this should be decided on a case by case basis. Human accuracy is one of the available options, but not the only one.</p>
-<p>Resources:</p>
+</li>
+</ul>
 <ul>
-<li><a href="https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/">"How To Get Baseline Results And Why They Matter" article</a></li>
-<li><a href="https://blog.insightdatascience.com/always-start-with-a-stupid-model-no-exceptions-3a22314b9aaa">"Always start with a stupid model, no exceptions." article</a></li>
-</ul>
-<h3 id="are-machine-learning-performance-metrics-defined-for-both-training-and-scoring">Are machine learning performance metrics defined for both training and scoring?</h3>
-<p>The methodology of translating the training metrics to scoring metrics should be well-defined and understood. Depending on the data type and model, the model metrics calculation might differ in production and in training. For example, the training procedure calculated metrics for a long period of time (a year, a decade) with different seasonal characteristics while the scoring procedure will calculate the metrics per a restricted time interval (for example a week, a month, a quarter). Well-defined ML performance metrics are essential in production so that a decrease or increase in model performance can be accurately detected.</p>
-<p>Things to consider:</p>
+<li>
+<p>Cross-functional team:</p>
 <ul>
-<li>In forecasting, if you change the period of assessing the performance, from one month to a year for example, then you might get a different result. For example, if your model is predicting sales of a product per day and the RMSE (Root Mean Squared Error) is very low for the first month the model is in production. As the model is live for longer, the RMSE is increasing, becoming 10x the RMSE for the first year compared to the first month.</li>
-<li>In a classification scenario, the overall accuracy is good, but the model is performing poorly for some subgroups. For example, a classifier has an accuracy of 80% overall, but only 55% for the 20-30 age group. If this is a significant age group for the production data, then your accuracy might suffer greatly when in production.</li>
-<li>In scene classification scenario, the model is trying to identify a specific scene in a video, and the model has been trained and tested (80-20 split) on 50000 segments where half are segments containing the scene and half of the segments do not contain the scene. The accuracy on the training set is 85% and 84% on the test set. However, when an entire video is scored, scores are obtained on all segments, and we expect few segments to contain the scene. The accuracy for an entire video is not comparable with the training/test set procedure in this case, hence different metrics should be considered.</li>
-<li>If sampling techniques (over-sampling, under-sampling) are used to train model when classes are imbalanced, ensure the metrics used during training are comparable with the ones used in scoring.</li>
-<li>If the number of samples used for training and testing is small, the performance metrics might change significantly as new data is scored.</li>
+<li>A cross-functional team consisting of different skill sets in data science, data engineering, development, operations, and industry domain specialists is required.</li>
 </ul>
-<h3 id="is-the-model-benchmarked">Is the model benchmarked?</h3>
-<p>The trained model to be put into production is well benchmarked if machine learning performance metrics (such as accuracy, recall, RMSE or whatever is appropriate) are measured on the train and test set. Furthermore, the train and test set split should be well documented and reproducible.</p>
-<h3 id="can-ground-truth-be-obtained-or-inferred-in-production">Can ground truth be obtained or inferred in production?</h3>
-<p>Without a reliable ground truth, the machine learning metrics cannot be calculated. It is important to identify if the ground truth can be obtained as the model is scoring new data by either manual or automatic means. If the ground truth cannot be obtained systematically, other proxies and methodology should be investigated in order to obtain some measure of model performance.</p>
-<p>One option is to use humans to manually label samples. One important aspect of human labelling is to take into account the human accuracy. If there are two different individuals labelling an image, the labels will likely be different for some samples. It is important to understand how the labels were obtained to assess the reliability of the ground truth (that is why we talk about human accuracy).</p>
-<p>For clarity, let's consider the following examples (by no means an exhaustive list):</p>
+</li>
+</ul>
+<h2 id="ml-process">ML process</h2>
+<p>The proposed ML development process consists of:</p>
+<ol>
+<li>Data and problem understanding</li>
+<li>Responsible AI assessment</li>
+<li>Feasibility study</li>
+<li>Baseline model experimentation</li>
+<li>Model evaluation and experimentation</li>
+<li>Model operationalization
+    * Unit and Integration testing
+    * Deployment
+    * Monitoring and Observability</li>
+</ol>
+<h3 id="version-control">Version control</h3>
 <ul>
-<li><strong>Forecasting</strong>: Forecasting scenarios are an example of machine learning problems where the ground truth could be obtained in most cases even though a delay might occur. For example, for a model predicting the sales of ice cream in a local shop, the ground truth will be obtained as the sales are happening, but it might appear in the system at a later time than as the model prediction.</li>
-<li><strong>Recommender systems</strong>: For recommender system, obtaining the ground truth is a complex problem in most cases as there is no way of identifying the ideal recommendation. For a retail website for example, click/not click, buy/not buy or other user interaction with recommendation can be used as ground truth proxies.</li>
-<li><strong>Object detection in images</strong>: For an object detection model, as new images are scored, there are no new labels being generated automatically. One option to obtain the ground truth for the new images is to use people to manually label the images. Human labelling is costly, time-consuming and not 100% accurate, so in most cases, only a subset of images can be labelled. These samples can be chosen at random or by using active learning techniques of selecting the most informative unlabeled samples.</li>
+<li>During all stages of the process, it is suggested that artifacts should be version-controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more <a href="../ml-experimentation/#source-control-and-folderpackage-structure">here</a>.</li>
 </ul>
-<h3 id="has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data">Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?</h3>
-<p>The data distribution of your training, test and validation (if applicable) dataset (including labels) should be analysed to ensure they all come from the same distribution. If this is not the case, some options to consider are: re-shuffling,  re-sampling, modifying the data, more samples need to be gathered or features removed from the dataset.</p>
-<p>Furthermore, it is imperative to understand if the new data in production will be significantly different from the data in the training phase. It is also important to check that the data distribution information can be obtained for any of the new data coming in.</p>
-<p>Significant differences in the data distributions of the different datasets can greatly impact the performance of the model. Some potential questions to ask:</p>
+<h3 id="understanding-the-problem">Understanding the problem</h3>
 <ul>
-<li>How much does the training and test data represent the end result?</li>
-<li>Is the distribution of each individual feature consistent across all your datasets? (i.e. same representation of age groups, gender, race etc.)</li>
-<li>Is there any data lineage information? Where did the data come from? How was the data collected? Can collection and labelling be automated?</li>
+<li>Define the business problem for the ML project:<ul>
+<li>Agree on the success criteria with the customer.</li>
+<li>Identify potential data sources and determine the availability of these sources.</li>
+<li>Define performance evaluation metrics on ground truth data</li>
 </ul>
-<p>Resources:</p>
+</li>
+<li>Conduct a <a href="../responsible-ai/">Responsible AI assessment</a> to ensure development and deployment of the ML solution in a responsible manner.</li>
+<li>Conduct a feasibility study to assess whether the business problem is feasible to solve satisfactorily using ML with the available data. The objective of the feasibility study is to mitigate potential over-investment by ensuring sufficient evidence that ML is possible and would be the best solution. The study also provides initial indications of what the ML solution should look like. This ensures quality solutions supported by thorough consideration and evidence. Refer to <a href="../ml-feasibility-study/">feasibility study</a>.</li>
+<li>Exploratory data analysis is performed and discussed with the team</li>
+</ul>
 <ul>
-<li><a href="http://cs230.stanford.edu/blog/split/">"Splitting into train, dev and test" tutorial</a></li>
-<li><a href="https://dkopczyk.quantee.co.uk/covariate_shift/">Covariate shift in Machine Learning</a></li>
-<li><a href="https://towardsdatascience.com/understanding-dataset-shift-f2a5a262a766">Understanding dataset shift</a></li>
-</ul>
-<h3 id="have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made">Have goals and hard limits for performance, speed of prediction and costs been established, so they can be considered if trade-offs need to be made?</h3>
-<p>Some machine learning models achieve high ML performance, but they are costly and time-consuming to run. In those cases, a less performant and cheaper model could be preferred. Hence, it is important to calculate the model performance metrics (accuracy, precision, recall, RMSE etc), but also to gather data on how expensive it will be to run the model and how long it will take to run. Once this data is gathered, an informed decision should be made on what model to productionize.</p>
-<p>System metrics to consider:</p>
+<li>
+<p><strong>Typical output</strong>:</p>
 <ul>
-<li>CPU/GPU/memory usage</li>
-<li>Cost per prediction</li>
-<li>Time taken to make a prediction</li>
+<li>Data exploration source code (Jupyter notebooks/scripts) and slides/docs</li>
+<li>Initial ML model code (Jupyter notebook or scripts)</li>
+<li>Initial solution architecture with initial data engineering requirements</li>
+<li>Data dictionary (if not yet available)</li>
+<li>List of assumptions</li>
 </ul>
-<h3 id="how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have">How will the model be integrated into other systems, and what impact will it have?</h3>
-<p>Machine Learning models do not exist in isolation, but rather they are part of a much larger system. These systems could be old, proprietary systems or new systems being developed as a results of the creation a new machine learning model. In both of those cases, it is important to understand where the actual model is going to fit in, what output is expected from the model and how that output is going to be used by the larger system. Additionally, it is essential to decide if the model will be used for batch and/or real-time inference as production paths might differ.</p>
-<p>Possible questions to assess model impact:</p>
+</li>
+</ul>
+<h3 id="baseline-model-experimentation">Baseline Model Experimentation</h3>
 <ul>
-<li>Is there a human in the loop?</li>
-<li>How is feedback collected through the system? (for example how do we know if a prediction is wrong)</li>
-<li>Is there a fallback mechanism when things go wrong?</li>
-<li>Is the system transparent that there is a model making a prediction and what data is used to make this prediction?</li>
-<li>What is the cost of a wrong prediction?</li>
+<li>Data preparation: creating data source connectors, determining storage services to be used and potential versioning of raw datasets.</li>
+<li>Feature engineering: create new features from raw source data to increase the predictive power of the learning algorithm. The features should capture additional information that is not apparent in the original feature set.</li>
+<li>Split data into training, validation and test sets: creating training, validation, and test datasets with ground truth to develop ML models. This would entail joining or merging various feature engineered datasets. The training dataset is used to train the model to find the patterns between its features and labels (ground truth). The validation dataset is used to assess the model architecture, and the test data is used to confirm the prediction quality of the model.</li>
+<li>Initial code to create access data sources, transform raw data into features and model training as well as scoring.</li>
+<li>During this phase, experiment code (Jupyter notebooks or scripts) and accompanying utility code should be version-controlled using tools such as ADO (Azure DevOps).</li>
 </ul>
-<h3 id="how-will-performance-be-monitored">How will performance be monitored?</h3>
-<p>It is important to define how the model will be monitored when it is in production and how that data is going to be used to make decisions. For example, when will a model need retraining as the performance has degraded and how to identify what are the underlying causes of this degradation could be part of this monitoring methodology.</p>
-<p>Ideally, model monitoring should be done automatically. However, if this is not possible, then there should be a manual periodical check of the model performance.</p>
-<p>Model monitoring should lead to:</p>
 <ul>
-<li>Ability to identify abrupt changes in data characteristics</li>
-<li>Ability to identify abrupt changes in model performance</li>
-<li>Warnings when anomalies in model output or input data are occurring</li>
-<li>Retraining decisions</li>
+<li><strong>Typical output</strong>: Rough Jupyter notebooks or scripts in Python or R, initial results from baseline model.</li>
 </ul>
-<h3 id="have-any-ethical-concerns-been-taken-into-account">Have any ethical concerns been taken into account?</h3>
-<p>Every ML project goes through the <a href="../responsible-ai/">Responsible AI</a> process to ensure that it upholds Microsoft's <a href="https://www.microsoft.com/en-us/ai/responsible-ai">6 Responsible AI principles</a>.</p>
+<p>For more information on experimentation, refer to the <a href="../ml-experimentation/">experimentation</a> section.</p>
+<h3 id="model-evaluation">Model Evaluation</h3>
+<ul>
+<li>Compare the effectiveness of different algorithms on the given problem.</li>
+</ul>
+<ul>
+<li><strong>Typical output</strong>:<ul>
+<li>Evaluation flow is <a href="../ml-experimentation/#model-evaluation">fully set up</a>.</li>
+<li>Reproducible experiments for the different approaches experimented with.</li>
+</ul>
+</li>
+</ul>
+<h3 id="model-operationalization">Model Operationalization</h3>
+<ul>
+<li>Taking "experimental" code and preparing it, so it can be deployed. This includes data pre-processing, featurization code, training model code (if required to be trained using CI/CD) and model inference code.</li>
+</ul>
+<ul>
+<li><strong>Typical output</strong>:<ul>
+<li>Production-grade code (Preferably in the form of a package) for:<ul>
+<li>Data preprocessing / post processing</li>
+<li>Serving a model</li>
+<li>Training a model</li>
+</ul>
+</li>
+<li>CI/CD scripts.</li>
+<li>Reproducibility steps for the model in production.</li>
+<li>See more <a href="../ml-model-checklist/">here</a>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="unit-and-integration-testing">Unit and Integration Testing</h4>
+<ul>
+<li>Ensuring that production code behaves in the way we expect it to, and that its results match those we saw during the Model Evaluation and Experimentation phases.</li>
+<li>Refer to <a href="../ml-testing/">ML testing</a> post for further details.</li>
+<li><strong>Typical output</strong>: Test suite with unit and end-to-end tests is created and completes successfully.</li>
+</ul>
+<h4 id="deployment">Deployment</h4>
+<ul>
+<li><a href="../responsible-ai/">Responsible AI</a> considerations such as bias and fairness analysis. Additionally, explainability/interpretability of the model should also be considered.</li>
+<li>It is recommended for a human-in-the-loop to verify the model and manually approve deployment to production.</li>
+<li>Getting the model into production where it can start adding value by serving predictions. Typical artifacts are APIs for accessing the model and integrating the model to the solution architecture.</li>
+<li>Additionally, certain scenarios may require training the model periodically in production.</li>
+<li>Reproducibility steps of the production model are available.</li>
+<li><strong>Typical output</strong>: <a href="../ml-model-checklist/">model readiness checklist</a> is completed.</li>
+</ul>
+<h4 id="monitoring-and-observability">Monitoring and Observability</h4>
+<ul>
+<li>This is the final phase, where we ensure our model is doing what we expect it to in production.</li>
+<li>Read more about <a href="../../observability/ml-observability/">ML observability</a>.</li>
+<li>Read more about <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection">Azure ML's offerings around ML models production monitoring</a>.</li>
+<li>It is recommended to consider incorporating data drift monitoring process in the production solution. This will assist in detecting potential changes in new datasets presented for inference that may significantly impact model performance. For more info on detecting data drift with Azure ML see the Microsoft docs article on <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets">how to monitor datasets</a>.</li>
+<li><strong>Typical output</strong>: Logging and monitoring scripts and tools set up, permissions for users to access monitoring tools.</li>
+</ul>
                 
               
               
@@ -4361,7 +4382,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../ml-fundamentals-checklist/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../ml-project-management/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4370,19 +4391,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              ML Fundamentals Checklist
+              Agile Development Considerations for ML Projects
             </div>
           </div>
         </a>
       
       
-        <a href="../ml-problem-formulation-envisioning/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../ml-testing/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Envisioning and Problem Formulation
+              Testing Data Science and MLOps Code
             </div>
           </div>
           <div class="md-footer__button md-icon">
