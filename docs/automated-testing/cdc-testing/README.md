@@ -50,7 +50,7 @@ Either way, thanks to CDC it is easy to pinpoint integration issues down to the 
 
 ## CDC Testing Frameworks and Tools
 
-[Pact](https://docs.pact.io/) is an implementation of CDC testing that allows mocking of responses in the consumer codebase, and verification of the interactions in the provider codebase, while defining a [specification for contracts](https://github.com/pact-foundation/pact-specification). It was originally written in Ruby but has available wrappers for multiple languages. Pact is the de-facto utility to use when working with CDC.
+[Pact](https://docs.pact.io/) is an implementation of CDC testing that allows mocking of responses in the consumer codebase, and verification of the interactions in the provider codebase, while defining a [specification for contracts](https://github.com/pact-foundation/pact-specification). It was originally written in Ruby but has available wrappers for multiple languages. Pact is the de-facto standard to use when working with CDC.
 
 [Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/reference/html) is an implementation of CDC testing from Spring, and offers easy integration in the Spring ecosystem. Support for non-Spring and non-JVM providers and consumers also exists.
 
