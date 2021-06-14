@@ -1,7 +1,7 @@
 # Performance Testing
 
-Performance Testing is an overloaded term that is used to refer to several sub
-categories of performance related testing, each of which has different purpose.
+Performance Testing is an overloaded term that is used to refer to several
+subcategories of performance related testing, each of which has different purpose.
 
 A good description of overall performance testing is as follows:
 
@@ -9,12 +9,6 @@ A good description of overall performance testing is as follows:
 responsiveness, throughput, reliability, and/or scalability of a system under a
 given workload. [Performance Testing Guidance for Web
 Applications](https://docs.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications).
-
-The important take away here is that performance testing goes beyond simple user
-experience. Performance has a clear impact on scalability and reliability.
-Applications whether they are client applications are back in server services
-are unable to scale during peak demands and therefore impact reliability as
-well.
 
 Before getting into the different subcategories of performance tests let us
 understand why performance testing is typically done.
@@ -24,49 +18,38 @@ understand why performance testing is typically done.
 Performance testing is commonly conducted to accomplish one or more the
 following:
 
-- To help in assessing whether a **system is ready for Release**:
+- **Tune the system's performance**
 
-  - Estimating / Predicting the performance characteristics (such as response
-    time, throughput) which an application is likely to have when it is released
-    in to production. The results can help in predicting the satisfaction level
-    of the users when interacting with the system. The predicted values can also
-    be compared with agreed values (success criteria) for the performance
-    characteristics when available.
+  - Identifying bottlenecks and issues with the system at different load
+    levels.
 
-  - To help in accessing the adequacy of the infrastructure / managed service
-    SKUs to meet the desired performance characteristics of a system
+  - Comparing performance characteristics of the system for different system
+    configurations.
 
-  - Identifying bottlenecks and issues with the application at different load
-    levels
+  - Come up with a scaling strategy for the system.
 
-- To compare the **performance impact of application changes**
-
-  - Comparing the performance characteristics of an application after a change
-    to the values of performance characteristics during previous runs (or
-    baseline values), can provide an indication of performance issues or
-    enhancements introduced due to a change
-
-- To **support system tuning**
-
-  - Comparing performance characteristics of a system for different system
-    configurations
-
-- To assist **capacity planning**
+- Assist in **capacity planning**
 
   - Capacity planning is the process of determining what type of hardware and
-    software resources are required to run an application with the given user
-    load. Poor performing applications require more hardware and thus are more
-    expensive to operate. Capacity planning involves identifying business
+    software resources are required to run an application to support pre-defined performance goals.
+
+  - Capacity planning involves identifying business
     expectations, the periodic fluctuations of application usage, considering
     the cost of running the hardware and software infrastructure.
 
-- To reduce **downtime**
+- Assess the **system's readiness** for release:
+  
+  - Evaluating the system's performance characteristics (response time, throughput)
+  in a production-like environment.
+  The goal is to ensure that performance goals can be achieved upon release.
 
-  - Systems that go down cost money. Many estimates, as of 2020, suggest that
-    the average cost of IT downtime is $5,600 per minute. There are additional
-    costs that do not show up in dollar form, such as the cost of interruptions
-    to IT professionals who may otherwise be doing more productive work.
+- Evaluate the **performance impact of application changes**
 
+  - Comparing the performance characteristics of an application after a change
+    to the values of performance characteristics during previous runs (or
+    baseline values), can provide an indication of performance issues (performance regression) or
+    enhancements introduced due to a change
+  
 ## Key Performance Testing categories
 
 Performance testing is a broad topic. There are many areas where you can perform
@@ -76,25 +59,25 @@ the end\-to\-end functionality.
 
 There are several categories of tests as well:
 
-### Load Testing
+### [Load Testing](./load-testing.md)
 
-This is the subcategory of performance testing which focuses on validating the
-performance characteristics of a system, when the system faces load volumes
-which are expected during production operation. **Endurance Test** or **Soak
-Test** is a load test carried over a long duration ranging from several hours to
+This is the subcategory of performance testing that focuses on validating the
+performance characteristics of a system, when the system faces the load volumes
+which are expected during production operation. An **Endurance Test** or a **Soak Test**
+is a load test carried over a long duration ranging from several hours to
 days.
 
 ### Stress Testing
 
-This is the subcategory of performance testing which focuses on validating the
+This is the subcategory of performance testing that focuses on validating the
 performance characteristics of a system when the system faces extreme load. The
 goal is to evaluate how does the system handles being pressured to its limits,
 does it recover (i.e., scale\-out) or does it just break and fail?
 
-### Good Performance Under Extended Periods of Load
+### Endurance Testing
 
-The goal of endurance testing is to make sure that the software can maintain
-good performance when extended periods of load.
+The goal of endurance testing is to make sure that the system can maintain
+good performance under extended periods of load.
 
 ### Spike testing
 
@@ -113,7 +96,7 @@ fallback procedures function correctly.
 ## Performance monitor metrics
 
 When executing the various types of testing approaches, whether it is stress,
-endurance, spike, or chaos testing, it will be important to capture various
+endurance, spike, or chaos testing, it is important to capture various
 metrics to see how the system performs.
 
 At the basic hardware level, there are four areas to consider.
@@ -127,7 +110,7 @@ These four areas are inextricably linked, meaning that poor performance in one
 area will lead to poor performance in another area. Engineers concerned with
 understanding application performance, should focus on these four core areas.
 
-The classic example of how performs in one area can affect performance in
+The classic example of how performance in one area can affect performance in
 another area is memory pressure.
 
 If an application's available memory is running low, the operating system will
@@ -238,47 +221,47 @@ of data being sent and received within a unit of time.
 
 ## Key Performance testing activities
 
-Performance testing activities vary depending on sub category of performance
-test, the engagement requirements and constraints. For specific guidance you can
-follow the link to the sub category of performance tests listed above. Following
-are some activities which will generally be involved:
+Performance testing activities vary depending on the subcategory of performance
+testing and the system's requirements and constraints. For specific guidance you can
+follow the link to the subcategory of performance tests listed above.
+The following activities might be included depending on the performance test subcategory:
 
-### Identify and Define the Acceptance criteria for the tests
+### Identify the Acceptance criteria for the tests
 
-This will generally include identifying and defining the goals and constrains
+This will generally include identifying the goals and constraints
 for the performance characteristics of the system
 
 ### Plan and design the tests
 
 In general we need to consider the following points:
 
-- Defining the load the application would be tested with
+- Defining the load the application should be tested with
 
 - Establishing the metrics to be collected
 
-- Establish which tools will be used for the tests
+- Establish what tools will be used for the tests
 
-- Establish the performance test frequency : whether the performance tests be
+- Establish the performance test frequency: whether the performance tests be
   done as a part of the feature development sprints, or only prior to release to
   a major environment?
 
-### Test implementation
+### Implementation
 
-- Apply the design and create the performance tests based on them
+- Implement the performance tests according to the designed approach.
+
+- Instrument the system and ensure that is emitting the needed performance metrics.
 
 ### Test Execution
 
-- Execute the tests and collect the performance metrics. Take note of the
-  previous section Around Load Testing, Chaos Testing, Stress and Spike Testing
+- Execute the tests and collect performance metrics.
 
 ### Result analysis and re-testing
 
-- The test are executed, the results are collected and the environments are monitored
+- Analyze the results/performance metrics from the tests.
 
-- The results are analysed
+- Identify needed changes to tweak the system (i.e., code, infrastructure) to better accommodate the test objectives.
 
-- Depending on the scenario, modification of application or configuration are
-  done and testing cycle is repeated again
+- Then test again. This cycle continues until the test objective is achieved.
 
 ## Resources
 
