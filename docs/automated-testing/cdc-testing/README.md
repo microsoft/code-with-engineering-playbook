@@ -75,3 +75,4 @@ Additionally, [the CDC test scope](https://docs.pact.io/getting_started/testing-
 * [Consumer-driven contracts](https://martinfowler.com/articles/consumerDrivenContracts.html) from Ian Robinson
 * [Contract test](https://martinfowler.com/bliki/ContractTest.html) from Martin Fowler
 * A simple example of using [Pact consumer-driven contract testing in a Java client-server application](https://github.com/oottka/pact-spring)
+* [Pact dotnet workshop](https://github.com/pact-foundation/pact-workshop-dotnet-core-v1)
