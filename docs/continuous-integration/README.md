@@ -58,7 +58,7 @@ An automated build should encompass the following principles:
   - Well established software packaging tools like Docker, Maven, npm, etc should be considered when designing your build automation tool chain.
 - [ ] **Document local setup**
   - The setup process for setting up a local build environment should be well documented and easy for developers to follow.
-  
+
 ## Infrastructure as Code
 
 Manage as much of the following as possible, as code:
@@ -100,7 +100,7 @@ Terraform resource providers like [Azure DevOPS](https://github.com/microsoft/te
 
 - [ ] **Automate the Azure Environment**
   - All cloud resources are provisioned through a set of infrastructure as code templates. This also includes secrets, service configuration settings, role assignments and monitoring conditions.
-  - Azure Portal should provide a read-only view on environment resources. Any  change applied to the environment should be made through the IAC CI tool-chain only.
+  - Azure Portal should provide a read-only view on environment resources. Any change applied to the environment should be made through the IAC CI tool-chain only.
   - Provisioning cloud environments should be a repeatable process that's driven off the infrastructure code artifacts checked into our git repository.
 - [ ] **IAC CI Workflow**
   - When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by a cloud administrator as a gate check prior to the deployment stage of the pipeline applying the execution plan.
@@ -157,6 +157,7 @@ The schema has 30+ [validators](https://json-schema.org/implementations.html#val
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
 
 - [ ] **End to end integration tests**
+
   - Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
   - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev teams when parallel builds on a CI server are not an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
 
@@ -172,23 +173,26 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 ## Git Driven Workflow
 
 - [ ] **Build on commit**
+
   - Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate.
   - Build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
 
 - [ ] **Avoid commenting out failing tests**
+
   - Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
 - [ ] **Branch policy enforcement**
+
   - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/about-protected-branches) should be setup on the main branch to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
   - Broken builds should block pull request reviews.
   - Prevent commits directly into main branch.
 
 - [ ] **Branch strategy**
-  - Release branches should auto trigger the deployment of a build artifact to its target cloud environment. One branch strategy worth considering is  [trunk-based development](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-releases) and [Release Flow's Branching Structure](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow).
+  - Release branches should auto trigger the deployment of a build artifact to its target cloud environment. You can find additional guidance on the Azure DevOps documentation site under the [Manage deployments](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-deployments) section
 
 ## Deliver Quickly and Daily
 
->"By committing regularly, every committer can reduce the number of conflicting changes. Checking in a week's worth of work runs the risk of conflicting with other features and can be very difficult to resolve. Early, small conflicts in an area of the system cause team members to communicate about the change they are making."
+> "By committing regularly, every committer can reduce the number of conflicting changes. Checking in a week's worth of work runs the risk of conflicting with other features and can be very difficult to resolve. Early, small conflicts in an area of the system cause team members to communicate about the change they are making."
 
 In the spirit of transparency and embracing frequent communication across a dev crew, we encourage developers to commit code on a daily cadence. This approach provides visibility to feature progress and accelerates pair programming across the team. Here are some principles to consider:
 
@@ -218,6 +222,7 @@ One of the key goals of build validation is to isolate and identify failures in 
 Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s).
 
 - [ ] **Developers can access latest executable**
+
   - The latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
 - [ ] **Release artifact is published for each pull request or merges into main branch**

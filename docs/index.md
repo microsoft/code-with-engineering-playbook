@@ -60,7 +60,7 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 ## Fundamentals for Specific Technology Areas
 
 * [Data and DataOps Fundamentals](data-fundamentals/README.md)
-* [Machine Learning Fundamentals](ml-fundamentals/README.md)
+* [Machine Learning Fundamentals](machine-learning/README.md)
 
 ## Contributing
 
