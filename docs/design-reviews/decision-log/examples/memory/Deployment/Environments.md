@@ -26,10 +26,6 @@ They each have unique resource instances of Azure Traffic Manager, Cosmos DB, et
 | CI Quality Gates | Development | Staging         |
 |                  |             | Manual Approval |
 
-The Memory product consists of the following environments.
-
-![Azure Environments](../.attachments/azdo-environments.png)
-
 ### Local
 
 The local environment is used by individual software engineers during the development of new features and components.

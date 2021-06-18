@@ -102,7 +102,6 @@ ArgoCD is a declarative, GitOps-based Continuous Delivery (CD) tool for Kubernet
    - Use [Kustomize](https://argoproj.github.io/argo-cd/user-guide/kustomize/) to apply some post-rendering to the Helm release templates
 1. Deployment Monitoring
    - Argo CD expose two sets of [Prometheus](https://argoproj.github.io/argo-cd/operator-manual/metrics/) metrics (application metrics and API server metrics) for deployment monitoring.
-   - [Grafana dashboard](https://github.com/argoproj/argo-cd/blob/main/examples/dashboard.json) is also available
 1. Admission Control
    - ArgoCD use RBAC feature.
      [RBAC](https://argoproj.github.io/argo-cd/operator-manual/rbac/) requires SSO configuration or one or more local users setup.
