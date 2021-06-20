@@ -124,19 +124,19 @@ Applications use configuration to allow different runtime behaviors and it’s q
 - YAML, a super set of JSON with support for complex data types and structures
 - TOML, a super set of JSON and a formally specified configuration file format
 
-## Why Validate Application Configuration as a Separate Step?
+### Why Validate Application Configuration as a Separate Step?
 
 - **Easier Debugging & Time saving** - With a configuration validation step in our pipeline, we can avoid running the application just to find it fails. It saves time on having to deploy & run, wait and then realize something is wrong in configuration. In addition, it also saves time on going through the logs to figure out what failed and why.
 - **Better user/developer experience** - A simple reminder to the user that something in the configuration isn't in the right format can make all the difference between the joy of a successful deployment process and the intense frustration of having to guess what went wrong. For example, when there is a Boolean value expected, it can either be a string value like "True" or "False" or an integer value such as "0" or "1" . With configuration validation we make sure the meaning is correct for our application.
 - **Avoid data corruption and security breaches** - Since the data arrives from an untrusted source, such as a user or an external webservice, it’s particularly important to validate the input . Otherwise, it will run at the risk of performing errors, corrupting data, or, worse, be vulnerable to a whole array of injection attacks.
 
-## What is Json Schema?
+### What is Json Schema?
 
 [JSON-Schema](https://json-schema.org/) is the standard of JSON documents that describes the structure and the requirements of your JSON data. Although it is called JSON-Schema, it also common to use this method for YAMLs, as it is a super set of JSON.
 The schema is very simple; point out which fields might exist, which are required or optional, what data format they use. Other validation rules can be added on top of that basic premise, along with human-readable information. The metadata lives in schemas which are .json files as well.
 In addition, schema has the widest adoption among all standards for JSON validation as it covers a big part of validation scenarios. It uses easy-to-parse JSON documents for schemas and is easily extensible.
 
-## How to Implement Schema Validation?
+### How to Implement Schema Validation?
 
 Implementing schema validation is divided in two - the generation of the schemas and the validation of yaml/json files with those schemas.
 
