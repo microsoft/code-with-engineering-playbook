@@ -181,7 +181,7 @@ Some common pitfalls when writing a unit test that are important to avoid:
 
 ### Integration tests instead of unit tests
 
-In some situations it is worth considering to write integration tests instead of unit tests to provide full test coverage. The prerequisite for this approach to be successful is to have integration being able to execute at a speed comparable to that of unit tests both locally and in a CI environment.
+In some situations it is worth considering to write integration tests instead of unit tests to provide full test coverage. The prerequisite for this approach to be successful is to have integration tests being able to execute at a speed comparable to that of unit tests both locally and in a CI environment.
 Most modern web frameworks like ASP.NET or Spring Boot combined with the right mocking or stubbing approach for external dependencies offer excellent capabilities to enable such scenarios for testing.
 
 Usually, integration tests prove that independently developed modules connect together as designed.
