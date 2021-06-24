@@ -76,7 +76,7 @@ More details on [agile development](agile-development/README.md)
 - [ ] Project advisors are invited to design reviews or asked to give feedback to the design decisions captured in documentation.
 - [ ] Discover all the reviews that the customer's processes require and plan for them.
 
-More details on [design reviews](design-reviews/README.md)
+More details on [design reviews](design/design-reviews/README.md)
 
 ## Code Reviews
 

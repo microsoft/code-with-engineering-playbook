@@ -54,7 +54,7 @@ There is also a healthy balancing act in supporting a healthy debate while not h
 
 The dev crew should always participate in all design review sessions
 
-- [CSE](../CSE.md) Engineering
+- [CSE](../../CSE.md) Engineering
 - Customer Engineering
 
 ### Domain Experts
