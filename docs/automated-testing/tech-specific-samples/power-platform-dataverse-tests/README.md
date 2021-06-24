@@ -3,6 +3,18 @@
 This document determines the approach for writing automated tests for Power Platform,
 Power Automate and Dataverse.
 
+## Challenges
+
+Testing Power Apps and Power Automate flows can be as simple as running the test
+from the User Interface (UI). But for a more robust test, when there are different
+parts of the application running in different services there is a need to add some
+tooling that is able to handle that.
+
+## Overcoming the challenges
+
+The tool used in this case was Locust. Because it would allow different tests to
+run with few changes to the tests cases created to test a part of the application.
+
 Considering there is an entry point ready to receive REST calls that will trigger
 the Power Automate flows it is possible to insert data into Dataverse and confirm
 the data is there.
@@ -12,7 +24,8 @@ flows to update data in a data set (Azure Tables, Database, Files) outside Datav
 
 ## Tests in Power Platform and Dataverse
 
-The diagram below demonstrates **in high level** how tests can be executed for Power Platform and Dataverse:
+The diagram below demonstrates **in high level** how tests can be executed for Power
+Platform and Dataverse:
 
 ![test flow](images/test-flow.png "Diagram with the data flow")
 
@@ -21,8 +34,9 @@ In the next sections it will be described the overall process as shown in the di
 - [Message to Open](#message-to-open)
 - [Message to Close](#message-to-close)
 
-A more detailed guide is available as a [recipe](recipes/locustfile_py.md), where a sample
-[source code](recipes/locustfile_py.md/#source-code) is published.
+A more detailed guide is available as a [recipe](https://github.com/squassina/dataverse-locust-tests/blob/main/locustfile_py.md),
+where a sample [source code](https://github.com/squassina/dataverse-locust-tests/blob/main/locustfile_py.md/#source-code)
+is published.
 
 ### Message to Open
 
