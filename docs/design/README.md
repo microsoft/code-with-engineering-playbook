@@ -12,5 +12,5 @@ This covers not only technical design of software, but also architecture design 
 
 ## Sections
 
-* [Design Patterns](data-fundamentals/README.md)
-* [Design Reviews](design/design-reviews/README.md)
+* [Design Patterns](design-patterns/README.md)
+* [Design Reviews](design-reviews/README.md)
