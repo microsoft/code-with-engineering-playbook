@@ -112,7 +112,11 @@ a call in the command line would work:
 locust -f locustfile.py --host http://127.0.0.1:8089 --headless -u 10 -t 120s Test
 ```
 
-This will run `Test` for 120 seconds, using 10 users, without an User Interface.
+This will run `Test` for 120 seconds, using 10 users, without an User Interface. When the
+time is up, the process will kill itself and returns to the command prompt.
+
+Be aware that this process will not generate a report other the what is displayed in the
+screen.
 
 Other options can be found in the Locust
 [documentation](https://docs.locust.io/en/stable/running-locust-without-web-ui.html)
