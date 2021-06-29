@@ -133,7 +133,7 @@ This approach permits the retention of the logical hierarchy of elements themsel
       * Approved/Trusted
     * CI/CD
     * Artifact repositories
-* Production ecosystem [no stakeholder identified]
+* Production ecosystem
   * Platform/OS
     * Hardened
     * Approved base images
