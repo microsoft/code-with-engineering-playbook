@@ -48,7 +48,7 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 * [Code Reviews](code-reviews/README.md)
 * [Continuous Delivery (CD)](continuous-delivery/README.md)
 * [Continuous Integration (CI)](continuous-integration/README.md)
-* [Design Reviews](design/design-reviews/README.md)
+* [Design](design/README.md)
 * [Developer Experience](developer-experience/README.md)
 * [Documentation](documentation/README.md)
 * [Engineering Feedback](engineering-feedback/README.md)
@@ -59,7 +59,6 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 
 ## Fundamentals for Specific Technology Areas
 
-* [Data and DataOps Fundamentals](data-fundamentals/README.md)
 * [Machine Learning Fundamentals](machine-learning/README.md)
 
 ## Contributing
