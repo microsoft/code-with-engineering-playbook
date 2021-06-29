@@ -9,6 +9,7 @@ This covers not only technical design of software, but also architecture design 
 
 * Provide recommendations for how to design software for maintainability, ease of extension, and adherence to best practices.
 * Reference or define process or checklists to help ensure well-designed software.
+* Collate and point to reference sources (guides, repos, articles) that can help shortcut the learning process.
 
 ## Sections
 
