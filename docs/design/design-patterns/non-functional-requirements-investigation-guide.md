@@ -4,7 +4,7 @@
 
 In software engineering, detailed investigation of non-functional requirements is often deferred until later stages of the project in favor of a more exclusive initial focus on the functional requirements.
 
-However, introducing non-functional requirements in the later stages of the SDLC is often highly-disruptive and inefficient to the ongoing engineering process.  Because of this, important characteristics of the system designed to provide for necessary e.g., testability, reliability, scalability, observability, securability, manageability are better considered as first-class citizens in the requirements gathering process to be defined in detail early in the engagement.
+However, introducing non-functional requirements in the later stages of the Software Development Lifecycle (SDLC) is often highly-disruptive and inefficient to the ongoing engineering process.  Because of this, important characteristics of the system designed to provide for necessary e.g., testability, reliability, scalability, observability, securability, manageability are better considered as first-class citizens in the requirements gathering process to be defined in detail early in the engagement.
 
 While this is always a good _general_ rule to follow in software engineering, non-functional requirements for projects undertaken in highly-regulated environments (Financial Services, Gov, Healthcare) frequently have __outsized influence__ on the design and development of software systems. This makes their introduction later in the SDLC significantly more disruptive and expensive.  This increases even _further_ the importance of capturing these non-functional requirements as early in the engagement as possible when executing within a highly-regulated context.
 
