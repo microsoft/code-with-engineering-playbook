@@ -50,8 +50,7 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 * [Code Reviews](docs/code-reviews/README.md)
 * [Continuous Delivery (CD)](docs/continuous-delivery/README.md)
 * [Continuous Integration (CI)](docs/continuous-integration/README.md)
-* [Design Decision Logs](docs/design-reviews/decision-log/README.md)
-* [Design Reviews](docs/design-reviews/README.md)
+* [Design](docs/design/README.md)
 * [Developer Experience](docs/developer-experience/README.md)
 * [Engineering Feedback](docs/engineering-feedback/README.md)
 * [Observability](docs/observability/README.md)
@@ -61,7 +60,6 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 
 ## Fundamentals for Specific Technology Areas
 
-* [Data and DataOps Fundamentals](docs/data-fundamentals/README.md)
 * [Machine Learning Fundamentals](docs/machine-learning/README.md)
 
 ## Contributing
