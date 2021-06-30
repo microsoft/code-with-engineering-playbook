@@ -15,3 +15,4 @@ This covers not only technical design of software, but also architecture design 
 
 * [Design Patterns](design-patterns/README.md)
 * [Design Reviews](design-reviews/README.md)
+* [Non-Functional Requiurements Guidance](design-patterns/non-functional-requirements-investigation-guide.md)
