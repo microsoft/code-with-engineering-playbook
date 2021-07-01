@@ -13,7 +13,6 @@ When requesting a security review for your application, please make sure you hav
 - [Secure Coding Practices Quick Reference](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 - [Web Application Security Quick Reference](https://owasp.org/www-pdf-archive//OWASP_Web_Application_Security_Quick_Reference_Guide_0.3.pdf)
 - [Security Mindset/Creating a Security Program Quick Start](https://github.com/OWASP/Quick-Start-Guide/blob/master/OWASP%20Quick%20Start%20Guide.pdf?raw=true)
-- [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)
 
 ## Azure DevOps Security
 
@@ -91,3 +90,7 @@ Check out the list of tools to help enable security in your projects.
   - [OPA](https://github.com/open-policy-agent/opa), [Gatekeeper](https://github.com/open-policy-agent/gatekeeper), and the [Gatekeeper Library](https://github.com/open-policy-agent/gatekeeper-library/tree/master/library)
   - [cert-manager](https://github.com/jetstack/cert-manager) for easy certificate provisioning and automatic rotation.
   - [Quickly enable mTLS between your microservices with Linkerd](https://linkerd.io/2/features/automatic-mtls/).
+
+## Useful links
+
+- [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)
