@@ -13,7 +13,7 @@ To support the process of capturing a project's _comprehensive_ non-functional r
 ## Investigation Process
 
 1. Identify/brainstorm likely areas/topics requiring further investigation/definition
-1. Identify CUSTOMER stakeholder(s) responsible for each identified area/topic
+1. Identify customer stakeholder(s) responsible for each identified area/topic
 1. Schedule debrief/requirements definition session(s) with each stakeholder
    - as necessary to achieve sufficient understanding of the probable impact of each requirement to the project
    - both current/initial milestone and long-term/road map
@@ -41,13 +41,13 @@ e.g.,
 
 In the preceding example, 'Susan' is responsible for `Parent1` and all of its descendants _except_ for `Parent1/child2` and `Parent1/child2/grandchild1` (for which 'John' is the stakeholder). 'Sam' is responsible for the entirety of `Parent2` and all of its descendants.
 
-This approach permits the retention of the logical hierarchy of elements themselves while also flexibly interleaving the 'stakeholder' identifications within the hierarchy of topics if/when they may need to diverge due to e.g., CUSTOMER organizational nuances.
+This approach permits the retention of the logical hierarchy of elements themselves while also flexibly interleaving the 'stakeholder' identifications within the hierarchy of topics if/when they may need to diverge due to e.g., customer organizational nuances.
 
 ---
 
 ## Areas of Investigation
 
-- Enterprise Security
+- [Enterprise Security](../../security/README.md)
   - Privacy
     - PII
     - HIPAA
@@ -101,7 +101,7 @@ This approach permits the retention of the logical hierarchy of elements themsel
     - Other?
   - RBAC
     - Perms inheritance model
-- Enterprise Monitoring/Operations
+- [Enterprise Monitoring/Operations](../../observability/README.md)
   - Logging
     - Operations
     - Reporting
@@ -145,6 +145,6 @@ This approach permits the retention of the logical hierarchy of elements themsel
     - Reproducibility
       - IaC
       - Scripting
-      - Other???
+      - Other
 
-- Other areas/topics not addressed above ??? (requires CUSTOMER input to comprehensively enumerate)
+- Other areas/topics not addressed above (requires customer input to comprehensively enumerate)
