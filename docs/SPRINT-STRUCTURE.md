@@ -21,7 +21,7 @@ The purpose of this document is to:
 - [ ] [Build a Product Backlog](agile-development/backlog-management/README.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
   - [INVEST](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) in good User Stories and Acceptance Criteria
-  - [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)
+  - [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md)
 
 ### Day 1
 
