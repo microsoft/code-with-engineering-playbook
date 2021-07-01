@@ -210,7 +210,7 @@ extremely fast and allows for easy TDD:
 ### Integration tests instead of unit tests
 
 In some situations it is worth considering to write integration tests instead of unit tests to provide sufficient test coverage to ensure that the system is working properly. The prerequisite for this approach to be successful is to have integration tests being able to execute at a speed comparable to that of unit tests both locally and in a CI environment.
-Most modern web frameworks like ASP.NET or Spring Boot combined with the right mocking or stubbing approach for external dependencies offer excellent capabilities to enable such scenarios for testing.
+Modern application frameworks like .NET or Spring Boot combined with the right mocking or stubbing approach for external dependencies offer excellent capabilities to enable such scenarios for testing.
 
 Usually, integration tests prove that independently developed modules connect together as designed.
 In order to replace unit tests with integration tests, the test coverage of integration tests need to be extended to verify the correct behavior of the system as well. Instead of several unit tests needed to test a specific case of functionality of the system, one integration scenario is created that covers the entire flow. For example in case of an API, the received HTTP responses and their content are verified for each request in test. This covers both the integration between components of the API and the correctness of its business logic.
