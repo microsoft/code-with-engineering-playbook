@@ -24,7 +24,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Tooling and Patterns](tools/README.md)
 - [Observability As Code](observability-as-code.md)
 - [Recommended Practices](best-practices.md)
-- [Non-Functional Requiurements Guidance](../design/design-patterns/non-functional-requirements-investigation-guide.md)
+- [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-investigation-guide.md)
 
 ## Facets of Observability
 
