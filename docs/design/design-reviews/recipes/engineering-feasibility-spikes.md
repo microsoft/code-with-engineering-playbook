@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Oftentimes engagements come with significant risks. Even after envisioning and Architectural Design Session (ADS), the engagement may still have substantial unknowns. These types of engagements warrant an exploratory/validation phase where engineering feasibility spikes can be conducted to de-risk the engagement, bring clarity, and help drive a sound architecture.
+Some engagements require more de-risking than others, and after Architectural Design Sessions (ADS) may still have substantial unknowns. These types of engagements warrant an exploratory/validation phase where Engineering Feasibility Spikes are conducted to reduce risk in the engagement, bring clarity, and help drive a sound architecture.
 
 **Engineering feasibility spikes** are a regimented yet collaborative feedback loop to capitalize on individual learnings to inform the team and increase the team’s knowledge and understanding while minimizing engagement risks. These spikes can be conducted during an exploratory/investigate phase immediately after the ADS and before engineering sprints.
 
