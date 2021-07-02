@@ -14,7 +14,7 @@ The following guidelines outline how Microsoft and the customer together can inc
 
 Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microsoft dives deep into existing customer infrastructure and architecture to understand potential constraints.
 
-During this time the team uncovers many unknowns, leveraging all new-found information, in order to help generate an impactful design that meets customer goals.
+During this time the team uncovers many unknowns, leveraging all new-found information, in order to help generate an impactful design that meets customer goals. After ADS it can be helpful to conduct [engineering feasibility spikes](../recipes/engineering-feasibility-spikes.md) to further de-risk the engagement.
 
 > **Tip**: All unknowns have not been addressed at this point.
 
