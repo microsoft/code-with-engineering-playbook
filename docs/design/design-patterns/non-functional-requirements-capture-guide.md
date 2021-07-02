@@ -11,105 +11,115 @@ To support the process of capturing a project's _comprehensive_ non-functional r
 
 ## Areas of Investigation
 
-- [Enterprise Security](../../security/README.md)
-  - Privacy
-    - PII
-    - HIPAA
-  - Encryption
-  - Data mobility
-    - at rest
-    - in motion
-    - in process/memory
-  - Key Management
-    - responsibility
-      - platform
-      - BYOK
-      - CMK
-  - INFOSEC regulations/standards
-    - e.g., FIPS-140-2
-      - Level 2
-      - Level 3
-    - ISO 27000 series
-    - NIST
-    - Other
-  - Network security
-    - Physical/Logical traffic boundaries/flow topology
-      - Azure <-- --> On-prem
-      - Public <-- --> Azure
-      - VNET
-      - PIP
-      - Firewalls
-      - VPN
-      - ExpressRoute
-        - Topology
-        - Security
-    - Certificates
-      - Issuer
-        - CA
-        - Self-signed
-        - Rotation/expiry
-  - INFOSEC Incident Response
-    - Process
-    - People
-    - Responsibilities
-    - Systems
-    - Legal/Regulatory/Compliance
-- Enterprise AuthN/AuthZ
-  - Users
-  - Services
-  - Authorities/directories
-  - Mechanisms/handshakes
-    - Active Directory
-    - SAML
-    - OAuth
-    - Other
-  - RBAC
-    - Perms inheritance model
-- [Enterprise Monitoring/Operations](../../observability/README.md)
-  - Logging
-    - Operations
-    - Reporting
-    - Audit
-  - Monitoring
-    - Diagnostics/Alerts
-    - Operations
-  - HA/DR
-    - Redundancy
-    - Recovery/Mitigation
-  - Practices
-    - Principle of least-privilege
-    - Principle of separation-of-responsibilities
-- Other standard Enterprise technologies/practices
-  - Developer ecosystem
-    - Platform/OS
-      - Hardened
-      - Approved base images
-      - Image repository
-    - Tools, languages
-      - Approval process
-    - Code repositories
-      - Secrets management patterns
-        - Env var
-        - Config file(s)
-        - Secrets retrieval API
-    - Package manager source(s)
-      - Private
-      - Public
-      - Approved/Trusted
-    - CI/CD
-    - Artifact repositories
-- Production ecosystem
+### [Enterprise Security](../../security/README.md)
+
+- Privacy
+  - PII
+  - HIPAA
+- Encryption
+- Data mobility
+  - at rest
+  - in motion
+  - in process/memory
+- Key Management
+  - responsibility
+    - platform
+    - BYOK
+    - CMK
+- INFOSEC regulations/standards
+  - e.g., FIPS-140-2
+    - Level 2
+    - Level 3
+  - ISO 27000 series
+  - NIST
+  - Other
+- Network security
+  - Physical/Logical traffic boundaries/flow topology
+    - Azure <-- --> On-prem
+    - Public <-- --> Azure
+    - VNET
+    - PIP
+    - Firewalls
+    - VPN
+    - ExpressRoute
+      - Topology
+      - Security
+  - Certificates
+    - Issuer
+      - CA
+      - Self-signed
+      - Rotation/expiry
+- INFOSEC Incident Response
+  - Process
+  - People
+  - Responsibilities
+  - Systems
+  - Legal/Regulatory/Compliance
+
+### Enterprise AuthN/AuthZ
+
+- Users
+- Services
+- Authorities/directories
+- Mechanisms/handshakes
+  - Active Directory
+  - SAML
+  - OAuth
+  - Other
+- RBAC
+  - Perms inheritance model
+
+### [Enterprise Monitoring/Operations](../../observability/README.md)
+
+- Logging
+  - Operations
+  - Reporting
+  - Audit
+- Monitoring
+  - Diagnostics/Alerts
+  - Operations
+- HA/DR
+  - Redundancy
+  - Recovery/Mitigation
+- Practices
+  - Principle of least-privilege
+  - Principle of separation-of-responsibilities
+
+### Other standard Enterprise technologies/practices
+
+- Developer ecosystem
   - Platform/OS
     - Hardened
     - Approved base images
     - Image repository
-  - Deployment longevity/volatility
-    - Automation
-    - Reproducibility
-      - IaC
-      - Scripting
-      - Other
-- Other areas/topics not addressed above (requires customer input to comprehensively enumerate)
+  - Tools, languages
+    - Approval process
+  - Code repositories
+    - Secrets management patterns
+      - Env var
+      - Config file(s)
+      - Secrets retrieval API
+  - Package manager source(s)
+    - Private
+    - Public
+    - Approved/Trusted
+  - CI/CD
+  - Artifact repositories
+
+### Production ecosystem
+
+- Platform/OS
+  - Hardened
+  - Approved base images
+  - Image repository
+- Deployment longevity/volatility
+  - Automation
+  - Reproducibility
+    - IaC
+    - Scripting
+    - Other
+
+### Other areas/topics not addressed above (requires customer input to comprehensively enumerate)
 
 ---
 
