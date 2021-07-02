@@ -12,7 +12,7 @@ The following guidelines outline how Microsoft and the customer together can inc
 
 ## Envisioning / Architecture Design Session (ADS)
 
-Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microsoft dives deep into existing customer infrastructure and architecture to understand potential constraints. Recommend leveraging [Non-Functional Requirements Guidance](../../design-patterns/non-functional-requirements-capture-guide.md) to assist.
+Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microsoft dives deep into existing customer infrastructure and architecture to understand potential constraints. Additionally, we seek to understand and uncover specific [non-functional requirements](../../design-patterns/non-functional-requirements-capture-guide.md) that influence the solution.
 
 During this time the team uncovers many unknowns, leveraging all new-found information, in order to help generate an impactful design that meets customer goals.
 
