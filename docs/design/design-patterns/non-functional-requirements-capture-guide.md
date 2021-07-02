@@ -99,7 +99,6 @@ To support the process of capturing a project's _comprehensive_ non-functional r
     - CI/CD
     - Artifact repositories
 - Production ecosystem
-
   - Platform/OS
     - Hardened
     - Approved base images
@@ -110,7 +109,6 @@ To support the process of capturing a project's _comprehensive_ non-functional r
       - IaC
       - Scripting
       - Other
-
 - Other areas/topics not addressed above (requires customer input to comprehensively enumerate)
 
 ---
