@@ -1,4 +1,4 @@
-# Guidance for Privacy 
+# Guidance for Privacy
 
 ## Overview
 
@@ -47,10 +47,9 @@ namespace Example
 #### Elastic Stack
 
 Elastic Stack (formerly "ELK stack") allows logs interception by Logstash's [filter-plugins](https://www.elastic.co/guide/en/logstash/current/filter-plugins.html).
-Using some of the existing plugins, like 'mutate', 'alter' and 'prune' might be sufficient for most cases of deidentifying and redacting PIIs. 
-For a more robust and customized use-case, a 'ruby' plugin can be used, executing arbitrary Ruby code. 
-Filter plugins also exists in some Logstash alternatives, like [Fluentd](https://docs.fluentd.org/filter) and (Fluent Bit)[https://docs.fluentbit.io/manual/pipeline/filters].
-
+Using some of the existing plugins, like 'mutate', 'alter' and 'prune' might be sufficient for most cases of deidentifying and redacting PIIs.
+For a more robust and customized use-case, a 'ruby' plugin can be used, executing arbitrary Ruby code.
+Filter plugins also exists in some Logstash alternatives, like [Fluentd](https://docs.fluentd.org/filter) and [Fluent Bit](https://docs.fluentbit.io/manual/pipeline/filters).
 
 #### Presidio
 
@@ -58,8 +57,8 @@ Filter plugins also exists in some Logstash alternatives, like [Fluentd](https:/
 Elastic Stack, for example, can handle PII redaction using the 'ruby' filter plugin to call Presidio in REST HTTP API, or by calling a python script consuming Presidio as a package:
 
 `logstash.conf`
-```ruby
 
+```ruby
 input {
     ...
 }
