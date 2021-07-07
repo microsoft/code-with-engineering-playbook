@@ -8,6 +8,7 @@ edit_uri: ""
 
 theme:
   name: material
+  custom_dir: mkdocs-overrides
   font:
     text: Roboto
   palette:
