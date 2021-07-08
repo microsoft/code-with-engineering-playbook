@@ -1,13 +1,13 @@
 # Engagement Team Development in CSE
 
-In every engagement dynamics are different so are the team requirements. Based on transfer learning among teams, to aim to build right "code-with" environments in every CSE engagement, a high-level plan suggested plan may as the following although there is no one-fit-all solution.
+In every CSE engagement, dynamics are different so are the team requirements. Based on transfer learning among teams, we aim to build right "code-with" environments in every team.
 
 This documentation gives a high-level template with some suggestions by aiming to accelerate team swarming phase to achieve a high speed agility however it has no intention to provide a list of "must-do" items.
 
 ## Identification
 
 As it's stated in Tuckman's [team phases](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development), traditional team development has several stages.
-However those phases can be extremely fast or sometimes mismatch in CSE engagement teams due to external factors.
+However those phases can be extremely fast or sometimes mismatched in CSE engagement teams due to external factors.
 
 In order to minimize the risk and set the exceptations on the right way for all parties, an identification phase is important to understand each other.
 Some potential steps in this phase may be as following (not limited):
