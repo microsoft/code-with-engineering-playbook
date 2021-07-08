@@ -1,30 +1,32 @@
 # Engagement Team Development in CSE
 
-In every engagement dynamics are different so are the team requirements however by using transfer learning, we aim to build right "code-with" environments in every CSE
-engagement. It's not possible to give a one-fit-all solution however following a high-level plan may give an idea.
+In every engagement dynamics are different so are the team requirements. Based on transfer learning among teams, to aim to build right "code-with" environments in every CSE engagement, a high-level plan suggested plan may as the following although there is no one-fit-all solution.
 
-That's why this documentation gives a high-level template with some suggestions by aiming to accelerate team swarming phase to achieve a high speed agility however it has no intention to provide a list of "must-do"
+This documentation gives a high-level template with some suggestions by aiming to accelerate team swarming phase to achieve a high speed agility however it has no intention to provide a list of "must-do" items.
 
 ## Identification
 
 As it's stated in Tuckman's [team phases](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development), traditional team development has several stages.
-However these phases can be extremely fast or sometimes missed in CSE engagement teams.
+However those phases can be extremely fast or sometimes mismatch in CSE engagement teams due to external factors.
 
-An identification phase is important to understand each other and set the expectations on the required points. Some potential steps in this phase may be as following (not limited):
+In order to minimize the risk and set the exceptations on the right way for all parties, an identification phase is important to understand each other.
+Some potential steps in this phase may be as following (not limited):
 
 - [Working agreement](../team-agreements/working-agreements/readme.md)
 
 - Identification of styles/preferences in communication, sharing, learning, decision making of each team member
   
-  - Pair programming, backlog management & grooming meetings, weekly design sessions, social time sessions...etc.
-
+  - Talking about necessity of pair programming
+  - Decisions on backlog management & grooming meetings, weekly design sessions, social time sessions...etc.
   - Sync/Async communication methods, work hours/flexible times
 
-- Identification of charts that will be helpful to provide transparent and true information to everyone
+- Decisions and identifications of charts that will be helpful to provide transparent and true information to everyone
 
-- Identification of Software craftspersonship areas which means the tools and methods will be widely used during the engagement
+- Identification of "Software Craftspersonship" areas which means the tools and methods will be widely used during the engagement and taking the required actions on team upskilling side if necessary.
 
-- Identification of communication channels, feedback loops and recurrent team call slots
+  - Github, VSCode LiveShare, AzDevOps, necessary development tools & libraries ... more.
+
+- Identification of communication channels, feedback loops and recurrent team call slots out of regular sprint meetings
 
 - Introduction to [Technical Agility Team Manifesto](../team-agreements/team-manifesto/readme.md) and planning the technical delivery by aiming to keep
 technical debt risk minimum.
