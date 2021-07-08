@@ -55,6 +55,7 @@ Just as an example, agility debugging activities may include:
 - Is the estimation process in the team improving over time or does it meet the delivery/workload prediction?
 
 Kindly check [Scrum Values](https://scrumguides.org/scrum-guide.html) to have a better understanding to improve team commitment.
+
 Following that, above suggestions aim to remove agile/team disfunctionalities and provide a broader team understanding, potential time savings and full transparency.
 
 ## Resources
