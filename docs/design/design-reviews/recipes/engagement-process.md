@@ -12,7 +12,7 @@ The following guidelines outline how Microsoft and the customer together can inc
 
 ## Envisioning / Architecture Design Session (ADS)
 
-Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microsoft dives deep into existing customer infrastructure and architecture to understand potential constraints.
+Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microsoft dives deep into existing customer infrastructure and architecture to understand potential constraints. Additionally, we seek to understand and uncover specific [non-functional requirements](../../design-patterns/non-functional-requirements-capture-guide.md) that influence the solution.
 
 During this time the team uncovers many unknowns, leveraging all new-found information, in order to help generate an impactful design that meets customer goals.
 
@@ -36,7 +36,7 @@ Stories that will benefit from design reviews have one or more of the following 
 
 ## Sprint Backlog Refinement
 
-If your team is not already hosting a [Sprint Backlog Refinement](../../../agile-development/backlog-management/backlog-refinement.md) session at least once per week you should consider it.  It is a great opportunity to:
+If your team is not already hosting a [Sprint Backlog Refinement](../../../agile-development/backlog-management/backlog-refinement.md) session at least once per week you should consider it. It is a great opportunity to:
 
 1. Keep the backlog clean
 1. Re-prioritize work based on shifting business priorities

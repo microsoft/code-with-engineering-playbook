@@ -30,3 +30,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Observability in Machine Learning](ml-observability.md)
 - [Observability of CI/CD Pipelines](observability-pipelines.md)
 - [Recipes](recipes-observability.md)
+
+## Useful links
+
+- [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)
