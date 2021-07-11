@@ -112,7 +112,7 @@ In the newly created pipeline we add:
     1. Commit these changes to the repository:
 
     ```yml
-    - bash: | 
+    - bash: |
         git config --global user.email "build@dev.azure.com"
         git config --global user.name "build"
         git add .
