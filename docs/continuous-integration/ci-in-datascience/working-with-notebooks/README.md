@@ -65,10 +65,10 @@ In the newly created pipeline we add:
 
 1. Set the directory where we want to store the scripts:
 
-  ```yml
-  variables:
-    REPO_URL: # Azure DevOps URL in the format: dev.azure.com/<Organization>/<Project>/_git/<RepoName>
-  ```
+    ```yml
+    variables:
+      REPO_URL: # Azure DevOps URL in the format: dev.azure.com/<Organization>/<Project>/_git/<RepoName>
+    ```
 
 1. Now we will start the core of the pipeline:
     1. Upgrade pip
