@@ -34,7 +34,7 @@ Planning a Design-First Development:
 Important Points to consider:
 
 - If API requirements changes often during initial development phase, than a Design-First approach may not be a good fit as this will introduce an overhead to always first update & maintain API contract definitions again & again.
-- It might be worthwhile to first try out your platform specific code generator because it is possible that a particular platform specific code generator might not be able to generate a flexible & maintainable implementation of actual code. For instance If your web framework requires annotations to be present on your controller classes (e.g. for API versioning or authentication), make sure that the code generation tool you use fully supports them.
+- It might be worthwhile to first try out your platform specific code generator and evaluate how much more additional work will be required in order to meet your project requirements and coding guidelines because it is possible that a particular platform specific code generator might not be able to generate a flexible & maintainable implementation of actual code. For instance If your web framework requires annotations to be present on your controller classes (e.g. for API versioning or authentication), make sure that the code generation tool you use fully supports them.
 
 ## Code-First Approach
 
