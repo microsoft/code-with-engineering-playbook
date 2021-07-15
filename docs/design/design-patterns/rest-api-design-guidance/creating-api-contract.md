@@ -40,7 +40,7 @@ Important Points to consider:
 
 A Code-First approach means that development teams first implements server side api interface code e.g. controllers, DTOs etc. and than generates API contract definitions out of it. In current times this approach is more widely popular within developer community than Design-First Approach.
 
-This approach has advantage if team wants to quickly implement APIs and also provides flexibility to react very quickly on an unexpected API requirement change.
+This approach has the advantages of allowing the team to quickly implement APIs and also providing the flexibility to react very quickly to any unexpected API requirement changes.
 
 Key Benefits of this approach:
 
