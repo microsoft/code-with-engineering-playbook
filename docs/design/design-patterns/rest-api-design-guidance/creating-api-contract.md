@@ -7,9 +7,9 @@ As different development teams expose APIs to access various REST based services
 
 ## Design-First Approach
 
-A Design-First approach means that APIs are treated as "first-class citizens" and everything about a project revolves around the idea that at the end these APIs will be consumed by clients. So based on the business requirements api development team first start describing API designs as an Open API document and collaborate with the stakeholders to gather feedback.
+A Design-First approach means that APIs are treated as "first-class citizens" and everything about a project revolves around the idea that at the end these APIs will be consumed by clients. So based on the business requirements API development team first start describing API designs as an Open API document and collaborate with the stakeholders to gather feedback.
 
-This approach is quite useful if a project is about developing externally exposed set of APIs which will be consumed by partners. In this approach, we first agree upon an API contract (Open API document) creating clear expectations on both api producer and consumer sides so both teams can begin work in parallel as per the pre-agreed API design.
+This approach is quite useful if a project is about developing externally exposed set of APIs which will be consumed by partners. In this approach, we first agree upon an API contract (Open API document) creating clear expectations on both API producer and consumer sides so both teams can begin work in parallel as per the pre-agreed API design.
 
 Key Benefits of this approach:
 
@@ -38,14 +38,14 @@ Important Points to consider:
 
 ## Code-First Approach
 
-A Code-First approach means that development teams first implements server side api interface code e.g. controllers, DTOs etc. and than generates API contract definitions out of it. In current times this approach is more widely popular within developer community than Design-First Approach.
+A Code-First approach means that development teams first implements server side API interface code e.g. controllers, DTOs etc. and than generates API contract definitions out of it. In current times this approach is more widely popular within developer community than Design-First Approach.
 
 This approach has the advantages of allowing the team to quickly implement APIs and also providing the flexibility to react very quickly to any unexpected API requirement changes.
 
 Key Benefits of this approach:
 
 - Rapid development of APIs as development team can start implementing APIs much faster directly after understanding key requirements & use cases.
-- Development team has better control & flexibility to implement server side api interfaces in a way which best suited for project structure.
+- Development team has better control & flexibility to implement server side API interfaces in a way which best suited for project structure.
 - More popular among development teams so its easier to get consensus on a related topic and also has more ready to use code examples available on various blogs or developer forums regarding how to generate Open API definitions out of actual code.
 - During initial phase of development where both API producer & consumers requirements might change often this approach is better as it provides flexibility to quickly react on such changes.
 
