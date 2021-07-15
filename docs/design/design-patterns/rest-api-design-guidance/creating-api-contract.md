@@ -1,4 +1,4 @@
-# Creating API Contract
+# Creating API Contracts
 
 As different development teams expose APIs to access various REST based services, it's important to have an API contract to share between the producer and consumers of APIs. [Open API](https://www.openapis.org/) format is one of the most popular API description format. This Open API document can be produced in two ways:
 
