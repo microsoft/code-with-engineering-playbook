@@ -9,7 +9,7 @@ As different development teams expose APIs to access various REST based services
 
 A Design-First approach means that APIs are treated as "first-class citizens" and everything about a project revolves around the idea that at the end these APIs will be consumed by clients. So based on the business requirements api development team first start describing API designs as an Open API document and collaborate with the stakeholders to gather feedback.
 
-This approach is quite useful if a project is about developing externally exposed set of APIs which will be consumed by partners. As here we first agree upon an API contract (Open API document) that's why expectations on api producer and consumer side remains strictly clear and both side teams can work in parallel as per the pre-agreed API design.
+This approach is quite useful if a project is about developing externally exposed set of APIs which will be consumed by partners. In this approach, we first agree upon an API contract (Open API document) creating clear expectations on both api producer and consumer sides so both teams can begin work in parallel as per the pre-agreed API design.
 
 Key Benefits of this approach:
 
