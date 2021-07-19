@@ -121,4 +121,4 @@ In the newly created pipeline we add:
       displayName: "Commit notebook to repository"
     ```
 
-It's done! Now you have a pipeline that will generate the scripts as you commit your notebooks.
+Now you have a pipeline that will generate the scripts as you commit your notebooks.
