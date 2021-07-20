@@ -12,7 +12,7 @@ However those phases can be extremely fast or sometimes mismatched in teams due 
 In order to minimize the risk and set the exceptations on the right way for all parties, an identification phase is important to understand each other.
 Some potential steps in this phase may be as following (not limited):
 
-- [Working agreement](/docs/agile-development/team-agreements/README.md)
+- [Working agreement](./docs/agile-development/team-agreements/README.md)
 
 - Identification of styles/preferences in communication, sharing, learning, decision making of each team member
   
@@ -29,7 +29,7 @@ Some potential steps in this phase may be as following (not limited):
 
 - Identification of communication channels, feedback loops and recurrent team call slots out of regular sprint meetings
 
-- Introduction to [Technical Agility Team Manifesto](/docs/agile-development/team-agreements/team-manifesto.md) and planning the technical delivery by aiming to keep
+- Introduction to [Technical Agility Team Manifesto](./docs/agile-development/team-agreements/team-manifesto.md) and planning the technical delivery by aiming to keep
 technical debt risk minimum.
 
 ## Following the Plan and Agile Debugging
@@ -44,13 +44,13 @@ Just as an example, agility debugging activities may include:
 
 - Dashboards related with "Goal" such as burndown/burnout, Item/PR Aging, Mood Chart ..etc. are accessible to the team and team is always up-to-date
 
-- [Backlog Refinement meetings](/docs/agile-development/backlog-management/backlog-refinement.md)
+- [Backlog Refinement meetings](./docs/agile-development/backlog-management/backlog-refinement.md)
   - Size of stories (Too big? Too small?)
   - Are "User Stories" and "Tasks" clear ?
   - Are Acceptance Criterias enough and right?
   - Is everyone ready-to-go after taking the User Story/Task?
 
-- Running [Efficient Retrospectives](../retrospectives/readme.md)
+- Running [Efficient Retrospectives](./docs/agile-development/retrospectives/readme.md)
 
 - Is the Sprint Goal clear in every iteration ?
 
