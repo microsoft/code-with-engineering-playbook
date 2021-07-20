@@ -12,7 +12,7 @@ However those phases can be extremely fast or sometimes mismatched in teams due 
 In order to minimize the risk and set the exceptations on the right way for all parties, an identification phase is important to understand each other.
 Some potential steps in this phase may be as following (not limited):
 
-- [Working agreement](./docs/agile-development/team-agreements/README.md)
+- [Working agreement](./docs/agile-development/team-agreements/working-agreements.md)
 
 - Identification of styles/preferences in communication, sharing, learning, decision making of each team member
   
@@ -50,7 +50,7 @@ Just as an example, agility debugging activities may include:
   - Are Acceptance Criterias enough and right?
   - Is everyone ready-to-go after taking the User Story/Task?
 
-- Running [Efficient Retrospectives](./docs/agile-development/retrospectives/readme.md)
+- Running [Efficient Retrospectives](./docs/agile-development/retrospectives.md)
 
 - Is the Sprint Goal clear in every iteration ?
 
