@@ -44,7 +44,7 @@ Just as an example, agility debugging activities may include:
 
 - Backlog Refinement meetings
   - Size of stories (Too big? Too small?)
-  - Are US and tasks clear ?
+  - Are "User Stories" and "Tasks" clear ?
   - Are Acceptance Criterias enough and right?
   - Is everyone ready-to-go after taking the User Story/Task?
 
