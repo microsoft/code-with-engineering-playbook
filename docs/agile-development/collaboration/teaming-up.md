@@ -17,7 +17,7 @@ Some potential steps in this phase may be as following (not limited):
 - Identification of styles/preferences in communication, sharing, learning, decision making of each team member
   
   - Talking about necessity of pair programming
-  - Decisions on backlog management & grooming meetings, weekly design sessions, social time sessions...etc.
+  - Decisions on backlog management & refinement meetings, weekly design sessions, social time sessions...etc.
   - Sync/Async communication methods, work hours/flexible times
 
 - Decisions and identifications of charts that will be helpful to provide transparent and true information to everyone
@@ -42,7 +42,7 @@ Just as an example, agility debugging activities may include:
 
 - Dashboards related with "Goal" such as burndown/burnout, Item/PR Aging, Mood Chart ..etc. are accessible to the team and team is always up-to-date
 
-- Backlog Grooming meetings
+- Backlog Refinement meetings
   - Size of stories (Too big? Too small?)
   - Are US and tasks clear ?
   - Are Acceptance Criterias enough and right?
