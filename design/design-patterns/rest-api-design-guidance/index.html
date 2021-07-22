@@ -2702,6 +2702,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#creating-api-contracts" class="md-nav__link">
+    Creating API Contracts
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating API Contracts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-first-approach" class="md-nav__link">
+    Design-First Approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-first-approach" class="md-nav__link">
+    Code-First Approach
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-to-interpret-and-apply-the-guidelines" class="md-nav__link">
     How to Interpret and Apply The Guidelines
   </a>
@@ -4427,6 +4454,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#creating-api-contracts" class="md-nav__link">
+    Creating API Contracts
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating API Contracts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-first-approach" class="md-nav__link">
+    Design-First Approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-first-approach" class="md-nav__link">
+    Code-First Approach
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-to-interpret-and-apply-the-guidelines" class="md-nav__link">
     How to Interpret and Apply The Guidelines
   </a>
@@ -4472,6 +4526,56 @@ The following sections are a good place to start as they are likely required con
 <li><a href="https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#12-versioning">Versioning</a></li>
 <li><a href="https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#17-naming-guidelines">Naming</a></li>
 </ul>
+<h2 id="creating-api-contracts">Creating API Contracts</h2>
+<p>As different development teams expose APIs to access various REST based services, it's important to have an API contract to share between the producer and consumers of APIs. <a href="https://www.openapis.org/">Open API</a> format is one of the most popular API description format. This Open API document can be produced in two ways:</p>
+<ul>
+<li>Design-First - Team starts developing APIs by first describing API designs as an Open API document and later generates server side boilerplate code with the help of this document.</li>
+<li>Code-First - Team starts writing the server side API interface code e.g. controllers, DTOs etc. and later generates and Open API document from it.</li>
+</ul>
+<h3 id="design-first-approach">Design-First Approach</h3>
+<p>A Design-First approach means that APIs are treated as "first-class citizens" and everything about a project revolves around the idea that at the end these APIs will be consumed by clients. So based on the business requirements API development team first start describing API designs as an Open API document and collaborate with the stakeholders to gather feedback.</p>
+<p>This approach is quite useful if a project is about developing externally exposed set of APIs which will be consumed by partners. In this approach, we first agree upon an API contract (Open API document) creating clear expectations on both API producer and consumer sides so both teams can begin work in parallel as per the pre-agreed API design.</p>
+<p>Key Benefits of this approach:</p>
+<ul>
+<li>Early API design feedback.</li>
+<li>Clearly established expectations for both consumer &amp; producer as both have agreed upon an API contract.</li>
+<li>Development teams can work in parallel.</li>
+<li>Testing team can use API contracts to write early tests even before business logic is in place. By looking at different models, paths, attributes and other aspects of the API testing can provide their input which can be very valuable.</li>
+<li>During an agile development cycle API definitions are not impacted by incremental dev changes.</li>
+<li>API design is not influenced by actual implementation limitations &amp; code structure.</li>
+<li>Server side boilerplate code e.g. controllers, DTOs etc. can be auto generated from API contracts.</li>
+<li>May improve collaboration between API producer &amp; consumer teams.</li>
+</ul>
+<p>Planning a Design-First Development:</p>
+<ol>
+<li>Identify use cases &amp; key services which API should offer.</li>
+<li>Identify key stakeholders of API and try to include them during API design phase to get continuous feedback.</li>
+<li>Write API contract definitions.</li>
+<li>Maintain consistent style for API status codes, versioning, error responses etc.</li>
+<li>Encourage peer reviews via pull requests.</li>
+<li>Generate server side boilerplate code &amp; client SDKs from API contract definitions.</li>
+</ol>
+<p>Important Points to consider:</p>
+<ul>
+<li>If API requirements changes often during initial development phase, than a Design-First approach may not be a good fit as this will introduce additional overhead, requiring repeated updates &amp; maintenance to the API contract definitions.</li>
+<li>It might be worthwhile to first try out your platform specific code generator and evaluate how much more additional work will be required in order to meet your project requirements and coding guidelines because it is possible that a particular platform specific code generator might not be able to generate a flexible &amp; maintainable implementation of actual code. For instance If your web framework requires annotations to be present on your controller classes (e.g. for API versioning or authentication), make sure that the code generation tool you use fully supports them.</li>
+</ul>
+<h3 id="code-first-approach">Code-First Approach</h3>
+<p>A Code-First approach means that development teams first implements server side API interface code e.g. controllers, DTOs etc. and than generates API contract definitions out of it. In current times this approach is more widely popular within developer community than Design-First Approach.</p>
+<p>This approach has the advantages of allowing the team to quickly implement APIs and also providing the flexibility to react very quickly to any unexpected API requirement changes.</p>
+<p>Key Benefits of this approach:</p>
+<ul>
+<li>Rapid development of APIs as development team can start implementing APIs much faster directly after understanding key requirements &amp; use cases.</li>
+<li>Development team has better control &amp; flexibility to implement server side API interfaces in a way which best suited for project structure.</li>
+<li>More popular among development teams so its easier to get consensus on a related topic and also has more ready to use code examples available on various blogs or developer forums regarding how to generate Open API definitions out of actual code.</li>
+<li>During initial phase of development where both API producer &amp; consumers requirements might change often this approach is better as it provides flexibility to quickly react on such changes.</li>
+</ul>
+<p>Important Points to consider:</p>
+<ul>
+<li>A generated Open API definition can become outdated, so its important to have automated checks to avoid this otherwise generated client SDKs will be out of sync and may cause issues for API consumers.</li>
+<li>With Agile development, it is hard to ensure that definitions embedded in runtime code remain stable, especially across rounds of refactoring and when serving multiple concurrent API versions.</li>
+<li>It might be useful to regularly generate Open API definition and store it in version control system otherwise generating the OpenAPI definition at runtime might makes it more complex in scenarios where that definition is required at development/CI time.</li>
+</ul>
 <h2 id="how-to-interpret-and-apply-the-guidelines">How to Interpret and Apply The Guidelines</h2>
 <p>The API guidelines document includes a section on <a href="https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#4-interpreting-the-guidelines">how to apply the guidelines</a> depending on whether the API is new or existing.
 In particular, when working in an existing API ecosystem, be sure to align with stakeholders on a definition of what constitutes a <a href="https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#123-definition-of-a-breaking-change">breaking change</a> to understand the impact of implementing certain best practices.</p>
@@ -4484,6 +4588,7 @@ In particular, when working in an existing API ecosystem, be sure to align with 
 <li><a href="https://www.restapitutorial.com/httpstatuscodes.html">Detailed HTTP status code definitions</a></li>
 <li><a href="https://semver.org/">Semantic Versioning</a></li>
 <li><a href="http://apistylebook.com/design/guidelines/">Other Public API Guidelines</a></li>
+<li><a href="https://oai.github.io/Documentation/best-practices.html">OpenAPI Design Practices</a></li>
 </ul>
                 
               
