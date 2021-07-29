@@ -69,5 +69,3 @@ Generally team sessions are enough for building a manifesto and having a consens
 [Building a Team Manifesto*](https://www.scrum.nl/blog/building-team-manifesto/)
 
 [Technical Agility*](https://v46.scaledagileframework.com/team-and-technical-agility/)
-
-[Team Building and Retrospective activities*](https://www.funretrospectives.com/category/team-building/)
