@@ -15,7 +15,7 @@ Tracking an architecture design decision can have many advantages:
 
 In addition to incorporating a design decision as an update of the overall design documentation of the project, the decisions could be tracked as [Architecture Decision Records](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions) as Michael Nygard proposed in his blog.
 
-The effort invested in design reviews and discussions can be different throughout the course of a project. Sometimes decisions are made quickly without having to go into a detailed comparison of competing technologies. In some cases, it is necessary to have a more elaborate study of advantages and disadvantages, as is described in the documentation of [Trade Studies](../trade-studies/README.md). An ADR can incorporate each of these different approaches.
+The effort invested in design reviews and discussions can be different throughout the course of a project. Sometimes decisions are made quickly without having to go into a detailed comparison of competing technologies. In some cases, it is necessary to have a more elaborate study of advantages and disadvantages, as is described in the documentation of [Trade Studies](../trade-studies/README.md). In other cases, it can be helpful to conduct [Engineering Feasibility Spikes](../recipes/engineering-feasibility-spikes.md). An ADR can incorporate each of these different approaches.
 
 ### Architecture Decision Record (ADR)
 
