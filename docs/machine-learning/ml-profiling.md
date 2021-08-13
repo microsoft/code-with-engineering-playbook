@@ -15,7 +15,7 @@ Below are some common scenarios in MLOps/Data Science projects, along with sugge
 ## Generic Python profiling
 
 Usually an MLOps/Data Science solution contains plain Python code serving different purposes (e.g., data processing) along
-with the specialized model training code. Whereas many Machine Learning frameworks provide their own profiler,
+with specialized model training code. Whereas many Machine Learning frameworks provide their own profiler,
 sometimes it is also very useful to profile the whole solution.
 
 There are two types of profilers: deterministic (all events are tracked) and statistical (sampling with regular intervals). In this
