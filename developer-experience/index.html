@@ -1135,118 +1135,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_1_1" type="checkbox" id="__nav_6_10_1_1" >
-      
-      <label class="md-nav__link" for="__nav_6_10_1_1">
-        Automated testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Automated testing" data-md-level="4">
-        <label class="md-nav__title" for="__nav_6_10_1_1">
-          <span class="md-nav__icon md-icon"></span>
-          Automated testing
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_1_1_1" type="checkbox" id="__nav_6_10_1_1_1" >
-      
-      <label class="md-nav__link" for="__nav_6_10_1_1_1">
-        Tech specific samples
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Tech specific samples" data-md-level="5">
-        <label class="md-nav__title" for="__nav_6_10_1_1_1">
-          <span class="md-nav__icon md-icon"></span>
-          Tech specific samples
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_1_1_1_1" type="checkbox" id="__nav_6_10_1_1_1_1" >
-      
-      <label class="md-nav__link" for="__nav_6_10_1_1_1_1">
-        Container testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Container testing" data-md-level="6">
-        <label class="md-nav__title" for="__nav_6_10_1_1_1_1">
-          <span class="md-nav__icon md-icon"></span>
-          Container testing
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_1_1_1_1_1" type="checkbox" id="__nav_6_10_1_1_1_1_1" >
-      
-      <label class="md-nav__link" for="__nav_6_10_1_1_1_1_1">
-        Azdo container dev test release
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Azdo container dev test release" data-md-level="7">
-        <label class="md-nav__title" for="__nav_6_10_1_1_1_1_1">
-          <span class="md-nav__icon md-icon"></span>
-          Azdo container dev test release
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../automated-testing/tech-specific-samples/azdo-container-dev-test-release/automated-testing/tech-specific-samples/container-testing/azdo-container-dev-test-release/" class="md-nav__link">
+      <a href="../automated-testing/tech-specific-samples/azdo-container-dev-test-release/" class="md-nav__link">
         Building Containers with Azure DevOps using DevTest Pattern
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -4981,7 +4873,7 @@
 <p>Much of this strategy can be simplified with proper dependency injection technique and/or framework.</p>
 <p>See example below that swaps Azure Service Bus implementation for RabbitMQ which can be run locally.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nx">IPublisher</span> <span class="p">{</span>
-    <span class="nx">send</span><span class="p">(</span><span class="nx">message</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span>
+    <span class="nx">send</span><span class="p">(</span><span class="nx">message</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="ow">void</span>
 <span class="p">}</span>
 <span class="kd">class</span> <span class="nx">RabbitMQPublisher</span> <span class="k">implements</span> <span class="nx">IPublisher</span> <span class="p">{</span>
     <span class="nx">send</span><span class="p">(</span><span class="nx">message</span>: <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
@@ -5000,10 +4892,10 @@
     <span class="nx">create</span><span class="p">()</span><span class="o">:</span> <span class="nx">IPublisher</span> <span class="p">{</span>
         <span class="c1">// use env var value to determine which instance should be used</span>
         <span class="k">if</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">UseAsb</span><span class="p">){</span>
-            <span class="k">return</span> <span class="k">new</span> <span class="nx">AzureServiceBusPublisher</span><span class="p">();</span>
+            <span class="k">return</span> <span class="ow">new</span> <span class="nx">AzureServiceBusPublisher</span><span class="p">();</span>
         <span class="p">}</span>
         <span class="k">else</span><span class="p">{</span>
-            <span class="k">return</span> <span class="k">new</span> <span class="nx">RabbitMqPublisher</span><span class="p">();</span>
+            <span class="k">return</span> <span class="ow">new</span> <span class="nx">RabbitMqPublisher</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -5011,13 +4903,26 @@
     <span class="c1">//inject the factory</span>
     <span class="kr">constructor</span><span class="p">(</span><span class="k">private</span> <span class="k">readonly</span> <span class="nx">publisherFactory</span>: <span class="kt">IPublisherFactory</span><span class="p">){</span>
     <span class="p">}</span>
-    <span class="nx">sendAMessage</span><span class="p">(</span><span class="nx">message</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">{</span>
+    <span class="nx">sendAMessage</span><span class="p">(</span><span class="nx">message</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="ow">void</span><span class="p">{</span>
         <span class="c1">//use the factory to determine which instance to use</span>
         <span class="kd">const</span> <span class="nx">publisher</span>: <span class="kt">IPublisher</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">publisherFactory</span><span class="p">.</span><span class="nx">create</span><span class="p">();</span>
         <span class="nx">publisher</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+    
+  </small>
+</div>
+                  
                 
               
               
