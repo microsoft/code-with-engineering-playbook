@@ -1,6 +1,6 @@
 # Data Science Pipeline
 
-As Azure DevOps doesn't allow the code reviewers to comment directly in Jupyter Notebooks, the Data Scientists(DSs) have
+As Azure DevOps doesn't allow code reviewers to comment directly in Jupyter Notebooks, Data Scientists(DSs) have
 to convert the notebooks to scripts before they commit and push these files to the repository.
 
 This document aims to automate this process in Azure DevOps, so the DSs don't need to execute anything locally.
@@ -25,19 +25,17 @@ A Data Science repository has this folder structure:
 
 ```
 
-We need this as Azure DevOps doesn't allow the Pull Request reviewers to add comments to the notebooks, so they add comments
+The python files are needed to allow Pull Request reviewers to add comments to the notebooks, they can add comments
 to the Python scripts and we apply these comments to the notebooks.
 
-We run (or used to run) this process manually before we add the files to a commit to the repository. This manual process
-can lead to errors, e.g.: I create the notebook, generate the script from it, but later I make some changes. I forgot to
-generate a new script for the changes and push asynchronous files to the repo.
+Since we have to run this process manually before we add files to a commit, this manual process is error prone, e.g. If we create a notebook, generate the script from it, but later make some changes and forget to generate a new script for the changes.
 
 ## Solution
 
-One way to avoid this is to create the scripts in the repository, from the commit I made. This document will describe this
+One way to avoid this is to create the scripts in the repository from the commit. This document will describe this
 process.
 
-This is a Pipeline that we will add to the repository to run in `ipynb` files. The steps are as follows:
+We can add a pipeline with the following steps to the repository to run in `ipynb` files:
 
 1. Go to the *Project Settings* -> *Repositories* -> *Security* -> *User Permissions*
 1. Add the *Build Service* in *Users* the permission to *Contribute*
@@ -121,4 +119,4 @@ In the newly created pipeline we add:
       displayName: "Commit notebook to repository"
     ```
 
-Now you have a pipeline that will generate the scripts as you commit your notebooks.
+Now we have a pipeline that will generate the scripts as we commit our notebooks.
