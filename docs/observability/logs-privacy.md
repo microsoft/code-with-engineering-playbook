@@ -9,7 +9,7 @@ This includes customer's sensitive, Personal Identifiable Information (PII), and
 
 1. Break-up components and minimize the parts of the system that log sensitive data.
 2. Keep sensitive data out of URLs, since request URLs are typically logged by proxies and web servers.
-3. Redact data used for system debugging as much as possible. For example, use ids instead of usernames.
+3. Avoid using PII data for system debugging as much as possible. For example, use ids instead of usernames.
 4. Use Structured Logging and include a deny-list for sensitive properties.
 5. Put an extra effort on spotting logging statements with sensitive data during code review, as it is common for reviewers to skip reading logging statements. This can be added as an additional checkbox if you're using Pull Request Templates.
 6. Include spotting sensitive data in logs, on your organizational pipelines for QA or Automated Testing.
