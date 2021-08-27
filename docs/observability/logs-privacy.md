@@ -55,7 +55,7 @@ Filter plugins also exists in some Logstash alternatives, like [Fluentd](https:/
 
 [Presidio](https://github.com/microsoft/presidio) offers data protection and anonymization API. It provides fast identification and anonymization modules for private entities in text.
 Presidio allows using predefined or custom PII recognizers, leveraging Named Entity Recognition, regular expressions, rule based logic and checksum with relevant context in multiple languages.
-It can be used alongside the log interception methods mentioned above to help and ensure sensitive data is properly managed and governed. 
+It can be used alongside the log interception methods mentioned above to help and ensure sensitive data is properly managed and governed.
 Presidio is containerized for REST HTTP API and also can be installed as a python package, to be called from python code.
 Instead of handling the anonymization in the application code, both APIs can be used using external calls.
 Elastic Stack, for example, can handle PII redaction using the 'ruby' filter plugin to call Presidio in REST HTTP API, or by calling a python script consuming Presidio as a package:
