@@ -7,12 +7,12 @@ This includes customer's sensitive, Personal Identifiable Information (PII), and
 
 ### Recommended Practices
 
-1. Break-up components and minimize the parts of the system that log sensitive data.
+1. Separate components and minimize the parts of the system that log sensitive data.
 2. Keep sensitive data out of URLs, since request URLs are typically logged by proxies and web servers.
 3. Avoid using PII data for system debugging as much as possible. For example, use ids instead of usernames.
 4. Use Structured Logging and include a deny-list for sensitive properties.
 5. Put an extra effort on spotting logging statements with sensitive data during code review, as it is common for reviewers to skip reading logging statements. This can be added as an additional checkbox if you're using Pull Request Templates.
-6. Include spotting sensitive data in logs, on your organizational pipelines for QA or Automated Testing.
+6. Include mechanisms to detect sensitive data in logs, on your organizational pipelines for QA or Automated Testing.
 
 ### Tools and Implementation Methods
 
@@ -53,7 +53,11 @@ Filter plugins also exists in some Logstash alternatives, like [Fluentd](https:/
 
 #### Presidio
 
-[Presidio](https://github.com/microsoft/presidio) offers data protection and anonymization API, and can be used alongside to the log interception methods above. Presidio is containerized for REST HTTP API and also can be installed as a python package, to be called from python code. Instead of handling the anonymization in the application code, both APIs can be used using external calls.
+[Presidio](https://github.com/microsoft/presidio) offers data protection and anonymization API. It provides fast identification and anonymization modules for private entities in text.
+Presidio allows using predefined or custom PII recognizers, leveraging Named Entity Recognition, regular expressions, rule based logic and checksum with relevant context in multiple languages.
+It can be used alongside the log interception methods mentioned above to help and ensure sensitive data is properly managed and governed. 
+Presidio is containerized for REST HTTP API and also can be installed as a python package, to be called from python code.
+Instead of handling the anonymization in the application code, both APIs can be used using external calls.
 Elastic Stack, for example, can handle PII redaction using the 'ruby' filter plugin to call Presidio in REST HTTP API, or by calling a python script consuming Presidio as a package:
 
 `logstash.conf`
