@@ -2,7 +2,7 @@
 
 ## Overview
 
-To ensure the privacy or your system users, as well as comply with several regulations like GDPR, some types of data that shouldn’t exist in logs.
+To ensure the privacy of your system users, as well as comply with several regulations like GDPR, some types of data shouldn’t exist in logs.
 This includes customer's sensitive, Personal Identifiable Information (PII), and any other data that wasn't legally sanctioned.
 
 ### Recommended Practices
