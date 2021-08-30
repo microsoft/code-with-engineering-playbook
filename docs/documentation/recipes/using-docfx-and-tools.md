@@ -134,7 +134,8 @@ Below is a good configuration to start with, where documentation is in the **/do
             { 
                 "files": ["docs/.attachments/**"],
                 "exclude": [ "_site/**", "**/bin/**", "**/obj/**", "**/[Tt]ests/**" ]
-            }
+            },
+            { "files": ["web.config"] }
         ],
         "template": [ "templates/cse" ],
         "globalMetadata": {
