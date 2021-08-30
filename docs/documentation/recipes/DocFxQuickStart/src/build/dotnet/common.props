@@ -1,0 +1,35 @@
+<Project>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <PropertyGroup>
+      <LangVersion>9.0</LangVersion>
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+      <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)/CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+      <MicrosoftMainLibrariesVersion>3.1.10</MicrosoftMainLibrariesVersion>
+      <EntityFrameworkCoreVersion>5.0.1</EntityFrameworkCoreVersion>
+      <MediatRVersion>9.0.0</MediatRVersion>
+      <MicrosoftAzureDevicesClientVersion>1.35.0</MicrosoftAzureDevicesClientVersion>
+      <MicrosoftAzureDevicesVersion>1.30.0</MicrosoftAzureDevicesVersion>
+      <AzureMessagingEventHubsVersion>5.3.0</AzureMessagingEventHubsVersion>
+      <AzureStorageBlobsVersion>12.8.3</AzureStorageBlobsVersion>
+      <VisualStudioAzureContainersToolsVersion>1.10.9</VisualStudioAzureContainersToolsVersion>
+      <AutoMapperVersion>10.1.1</AutoMapperVersion>
+      <AutoMapperDependencyInjectionVersion>8.1.0</AutoMapperDependencyInjectionVersion>
+      <AzureMessagingServiceBusVersion>7.1.0</AzureMessagingServiceBusVersion>
+      <DiagnosticsHealthChecksVersion>5.0.1</DiagnosticsHealthChecksVersion>
+      <NewtonsoftJsonVersion>12.0.3</NewtonsoftJsonVersion>
+      <PollyVersion>7.2.1</PollyVersion>
+      <PollyExtensionsHttpVersion>3.0.0</PollyExtensionsHttpVersion>
+      <ApplicationInsightsVersion>2.17.0</ApplicationInsightsVersion>
+      <SystemVersion>5.0.0</SystemVersion>
+      <AzureIdentityVersion>1.3.0</AzureIdentityVersion>
+    </PropertyGroup>
+</Project>

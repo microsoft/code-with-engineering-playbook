@@ -1,0 +1,78 @@
+trigger:
+- master
+
+variables:
+- name: AzureConnectionName
+  value: '<INSERT THE NAME OF YOUR SERVICE CONNECTION FROM AZURE DEVOPS>'
+- name: AzureAppServiceName
+  value: '<INSERT THE NAME OF THE APP SERVICE FROM infrastructure/variables.tf>'
+
+pool:
+  vmImage: windows-latest
+
+steps:
+
+# Scan markdownfiles on style consistency
+  - bash: npm install -g markdownlint-cli
+    displayName: 'Install markdownlint'
+
+  - bash: markdownlint **/*.md
+    env:
+      WORKDIR: $(System.DefaultWorkingDirectory)
+      CONFIGFILE: $(System.DefaultWorkingDirectory)/.markdownlint.json
+    displayName: 'Run markdownlint'
+
+# run DocLinkChecker to validate documentation links
+  - task: DotNetCoreCLI@2
+    displayName: 'Checking documentation links with DocLinkChecker'
+    inputs:
+      command: 'run'
+      projects: '$(System.DefaultWorkingDirectory)/src/DocLinkChecker/DocLinkChecker'
+      arguments: '-d $(System.DefaultWorkingDirectory) -a'
+
+  # install docfx
+  - powershell: choco install docfx -y
+    displayName: Install docfx
+
+  # run the toc generator
+  - task: DotNetCoreCLI@2
+    displayName: 'Building automatically toc.yml'
+    inputs:
+      command: 'run'
+      projects: '$(System.DefaultWorkingDirectory)/src/TocDocFxCreation'
+      arguments: '-d $(System.DefaultWorkingDirectory)\docs -si'
+
+  - task: UseDotNet@2
+    displayName: "Using .NET Core 3.1.x"
+    inputs:
+      version: "3.1.x"
+      packageType: sdk
+
+  # run docfx
+  - powershell: |
+        &docfx docfx.json
+        
+        if ($lastexitcode -ne 0)
+        {
+          throw [System.Exception] "docfx build failed with exit code $lastexitcode."
+        }
+    condition: succeeded()
+    displayName: Run docfx
+
+    # Create an archive
+  - task: ArchiveFiles@2
+    displayName: 'Packing Documentation Web Site'
+    inputs:
+      rootFolderOrFile: '$(System.DefaultWorkingDirectory)/_site'
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/site.zip'
+      replaceExistingArchive: true
+
+  # deployment
+  - task: AzureRmWebAppDeployment@4
+    displayName: 'Azure App Service Deploy: Documentation website'
+    inputs:
+      azureSubscription: $(AzureConnectionName)
+      WebAppName: $(AzureAppServiceName)
+      packageForLinux: '$(Build.ArtifactStagingDirectory)/site.zip'

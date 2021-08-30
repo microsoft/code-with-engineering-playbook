@@ -1,0 +1,16 @@
+<RuleSet Name="Microsoft.Analyzers.ManagedCodeAnalysis" Description="Microsoft.Analyzers.ManagedCodeAnalysis" ToolsVersion="14.0">
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.NetAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.NetAnalyzers">
+    <Rule Id="CA1031" Action="None" />          <!-- Do not catch general exception types -->
+    <Rule Id="CA1056" Action="None" />          <!-- Uri properties should not be strings -->
+    <Rule Id="CA1303" Action="None" />          <!-- Do not pass literals as localized parameters -->
+    <Rule Id="CA1308" Action="None" />          <!-- Normalize strings to uppercase -->
+    <Rule Id="CA1310" Action="None" />          <!-- Specify StringComparison for correctness -->
+    <Rule Id="CA1822" Action="None" />          <!-- Mark members as static -->
+  </Rules>
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <Rule Id="AD0001" Action="None" />          <!-- Analyzer threw an exception -->
+    <Rule Id="SA1101" Action="None" />          <!-- Prefix local calls with this -->
+    <Rule Id="SA1633" Action="None" />          <!-- File should have header -->
+    <Rule Id="SA1309" Action="None" />          <!-- Field should not begin with an underscore -->
+  </Rules>
+</RuleSet>
