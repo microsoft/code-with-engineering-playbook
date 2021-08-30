@@ -11,4 +11,5 @@ This folder contains guidelines on  procedure, best practices and more. You can 
 
 ## Other options
 
-Other guidelines you can add here can be used from [CSE Playbook - Source Control](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/source-control), like branch naming, merge strategies and such.
+> [!TIP]
+> Other guidelines you can add here can be used from [CSE Playbook - Source Control](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/source-control), like branch naming, merge strategies and such.

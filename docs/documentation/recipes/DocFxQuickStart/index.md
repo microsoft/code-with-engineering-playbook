@@ -35,18 +35,13 @@ There are some extra DocFx annotations in Quotes you can use to have information
 ```
 
 This will result in:
-Note:
 > [!NOTE]
 > note content
-Tip:
 > [!TIP]
 > tip content
-Warning:
 > [!WARNING]
 > warning content
-Important:
 > [!IMPORTANT]
 > important content
-Caution:
 > [!CAUTION]
 > caution content
