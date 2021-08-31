@@ -33,9 +33,9 @@ In the steps below we'll consider the generation of the documentation website fr
 ├── infrastructure       // Terraform scripts for creation of the Azure website
 │
 ├── src                        // all projects
-│   ├── build	           // build settings
-│          ├── dotnet	  // .NET build settings
-│   ├── Directory.Build.props	// project settings for all .NET projects in sub folders
+│   ├── build              // build settings
+│          ├── dotnet     // .NET build settings
+│   ├── Directory.Build.props   // project settings for all .NET projects in sub folders
 │   ├── [Project folders]
 │
 ├── x-cross
@@ -60,7 +60,7 @@ A `.markdownlint.json` is included with the contents below. The [MD013 setting](
 }
 ```
 
-The contents of the **.pipelines** and **infrastructure** folders are explained in the recipe [Deploy the DocFx Documentation website to an Azure Website automatically](deploy-docfx-azure-website).
+The contents of the **.pipelines** and **infrastructure** folders are explained in the recipe [Deploy the DocFx Documentation website to an Azure Website automatically](deploy-docfx-azure-website.md).
 
 ## Reference documentation from source code
 

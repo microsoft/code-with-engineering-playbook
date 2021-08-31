@@ -2,7 +2,7 @@
 
 This folder contains all the solutions for this project. Provide more details for your project here.
 
-In this sample we have included the companion tools in this folder. More details can be found in [Getting Started readme](../docs/getting-started/readme.md).
+In this sample we have included the companion tools in this folder. More details can be found in [Getting Started readme](../getting-started/readme.md).
 
 ## defaults for your projects
 
