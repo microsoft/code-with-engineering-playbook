@@ -295,7 +295,14 @@ namespace DocFxTocGenerate
                 newTocItem.Filename = dirInfo.FullName;
                 newTocItem.Title = title;
                 string entryFile = WalkDirectoryTree(dirInfo, newTocItem);
-                newTocItem.Href = GetRelativePath(entryFile, options.DocFolder);
+                if (subFiles.Length == 1 && dirInfo.GetDirectories().Length == 0)
+                {
+                    newTocItem.Href = GetRelativePath(subFiles[0].FullName, options.DocFolder);
+                }
+                else
+                {
+                    newTocItem.Href = GetRelativePath(entryFile, options.DocFolder);
+                }
 
                 message.Verbose($"Add directory seq={newTocItem.Sequence} title={newTocItem.Title} href={newTocItem.Href}");
 

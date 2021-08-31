@@ -13,19 +13,14 @@
     ],
     "build": {
         "content": [
-            {
-                "files": [ "reference/**" ]
-            },
+            { "files": [ "reference/**" ] },
             {
                 "files": [ "**.md", "**/toc.yml" ],
                 "exclude": [ "_site/**", "**/bin/**", "**/obj/**", "**/[Tt]ests/**" ]
             }
         ],
         "resource": [
-            { 
-                "files": ["docs/.attachments/**"],
-                "exclude": [ "_site/**", "**/bin/**", "**/obj/**", "**/[Tt]ests/**" ]
-            },
+            { "files": ["docs/.attachments/**"] },
             { "files": ["web.config"] }
         ],
         "template": [ "templates/cse" ],

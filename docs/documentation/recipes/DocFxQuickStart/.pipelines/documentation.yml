@@ -13,14 +13,17 @@ pool:
 steps:
 
 # Scan markdownfiles on style consistency
-  - bash: npm install -g markdownlint-cli
-    displayName: 'Install markdownlint'
-
-  - bash: markdownlint **/*.md
-    env:
-      WORKDIR: $(System.DefaultWorkingDirectory)
-      CONFIGFILE: $(System.DefaultWorkingDirectory)/.markdownlint.json
+  - powershell: |
+        npm install -g markdownlint-cli
+        markdownlint **/*.md
+        
+        if ($lastexitcode -ne 0)
+        {
+          throw [System.Exception] "markdownlint failed with exit code $lastexitcode."
+        }
+    workingDirectory: $(System.DefaultWorkingDirectory)
     displayName: 'Run markdownlint'
+    failOnStderr: true
 
 # run DocLinkChecker to validate documentation links
   - task: DotNetCoreCLI@2
@@ -36,7 +39,7 @@ steps:
 
   # run the toc generator
   - task: DotNetCoreCLI@2
-    displayName: 'Building automatically toc.yml'
+    displayName: 'Building automatically toc.yml for /docs'
     inputs:
       command: 'run'
       projects: '$(System.DefaultWorkingDirectory)/src/TocDocFxCreation'
