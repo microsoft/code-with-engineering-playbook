@@ -227,7 +227,7 @@ TocDocFxCreation.exe -d ./docs -sri
 
 Run the `docfx` command to generate the website, by default in the **_site** folder.
 
-> **TIP:** If you want to check the website in your local environment, provide the **--serve** option to either the *docfx* command or the *GenerateDocWebsite* script. A small webserver is launched that hosts your website, which is accessible with <http://localhost:8080>.
+> **TIP:** If you want to check the website in your local environment, provide the **--serve** option to either the *docfx* command or the *GenerateDocWebsite* script. A small webserver is launched that hosts your website, which is accessible on localhost.
 
 ### Style of the website
 
@@ -235,7 +235,7 @@ If you started with the Quick Start folder, the website is generated using a cus
 
 ## Deploy to an Azure Website
 
-After you completed the steps, you should have a default website generated in the *_site* folder. But of course, you want this to be accessible for everyone. So, the next step is to create for instance an Azure Website and have a process to automatically generate and deploy the contents to that website. That process is described in the recipe [Deploy the DocFx Documentation website to an Azure Website automatically](deploy-docfx-azure-website).
+After you completed the steps, you should have a default website generated in the *_site* folder. But of course, you want this to be accessible for everyone. So, the next step is to create for instance an Azure Website and have a process to automatically generate and deploy the contents to that website. That process is described in the recipe [Deploy the DocFx Documentation website to an Azure Website automatically](deploy-docfx-azure-website.md).
 
 ## References
 
