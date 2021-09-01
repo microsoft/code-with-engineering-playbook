@@ -2,7 +2,7 @@
 
 This folder contains the Terraform scripts for creating the documentation website. The terraform command to deploy this website is executed in the **.pipelines/documentation.yml**.
 
-More explanation of the use of these files can be found int the article [Deploy the DocFx Documentation website to an Azure Website automatically](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/documentation/recipes/deploy-docfx-azure-website.html).
+More explanation of the use of these files can be found int the article Deploy the DocFx Documentation website to an Azure Website automatically **TODO: fix url**  ://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/documentation/recipes/deploy-docfx-azure-website.html).
 
 ## Running Terraform locally
 

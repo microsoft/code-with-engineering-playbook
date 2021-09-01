@@ -4,7 +4,7 @@ If you want a quick way to have a website with all your documentation coming fro
 
 ## Quick Start
 
-To get you started quickly from scratch, a zip-file is provided which can be used with some common folder, files and settings mentioned in the steps below. Copy the content from the [DocFxQuickStart folder](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/documentation/recipes/DocFxQuickStart) folder to your own folder.
+To get you started quickly from scratch, a zip-file is provided which can be used with some common folder, files and settings mentioned in the steps below. Copy the content from the DocFxQuickStart folder **TODO: fix url** ://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/documentation/recipes/DocFxQuickStart) folder to your own folder.
 
 > **TLDR;**
 >
@@ -13,11 +13,11 @@ To get you started quickly from scratch, a zip-file is provided which can be use
 > 1. If you don't have it yet, create a project in Azure DevOps and create a Service Connection to your Azure environment. Clone the repository.
 > 2. Copy the contents of the DocFxQuickStart folder to the root of the repository
 > 3. Create a resource group in your Azure environment where the documentation website resources should be created.
-> 4. Fill in the default values in **infrastructure/variables.tf** and run the commands from [Step 4 - Deploy Azure resources from your local machine](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/documentation/recipes/deploy-docfx-azure-website/#4-Running-the-commands-locally) to create the Azure Resources.
+> 4. Fill in the default values in **infrastructure/variables.tf** and run the commands from Step 4 - Deploy Azure resources from your local machine **TODO: fix url** ://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/documentation/recipes/deploy-docfx-azure-website/#4-Running-the-commands-locally) to create the Azure Resources.
 > 5. Fill in the variables in **.pipelines/documentation.yml**, commit the changes and push the contents of the repository to your branch (possibly through a PR).
 > 6. Create a pipeline in your Azure DevOps project that uses the **.pipelines/documentation.yml** and run it.
 >
 
 ## More on this
 
-This is just the quick start of the complete documentation. Please go to [Using DocFx and Companion Tools to generate a Documentation website in the CSE Playbook](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/documentation/recipes/using-docfx-and-tools/) for all the contents of this walkthrough.
+This is just the quick start of the complete documentation. Please go to Using DocFx and Companion Tools to generate a Documentation website in the CSE Playbook **TODO: fix url** ://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/documentation/recipes/using-docfx-and-tools/) for all the contents of this walkthrough.
