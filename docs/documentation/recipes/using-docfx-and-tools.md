@@ -240,6 +240,6 @@ After you completed the steps, you should have a default website generated in th
 ## References
 
 * [DocFX - static documentation generator](https://dotnet.github.io/docfx/index.html)
-* [Deploy the DocFx Documentation website to an Azure Website automatically](deploy-docfx-azure-website)
+* [Deploy the DocFx Documentation website to an Azure Website automatically](deploy-docfx-azure-website.md)
 * [Providing quality documentation in your project with DocFx and Companion Tools](https://mtirion.medium.com/providing-quality-documentation-in-your-project-with-docfx-and-companion-tools-76aed42b1ddd)
 * [Monorepo For Beginners](https://mtirion.medium.com/monorepo-for-beginners-45d5059ab40e)
