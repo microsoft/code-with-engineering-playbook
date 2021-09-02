@@ -75,6 +75,8 @@ When working in an engineering project, we typically encounter one or more of th
 ## Recipes
 
 - [How to sync a wiki between repositories](./recipes/sync-wiki-between-repos.md)
+- [Using DocFx and Companion Tools to generate a Documentation website](./recipes/using-docfx-and-tools.md)
+- [Deploy the DocFx Documentation website to an Azure Website automatically](./recipes/deploy-docfx-azure-website.md)
 
 ## Resources
 
