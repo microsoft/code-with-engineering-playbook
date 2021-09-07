@@ -48,7 +48,7 @@ You should add the following details to the items:
 - *Business Value*: Priority of an item compared to other items of the same type.
 - *Original Estimate*: The amount of estimated work required to complete a task.
 
-Remember to use the Discussion section of the items to keep track of related comments, and mention individuals, groups, work items or pull requests when required.
+Remember to use the *Discussion* section of the items to keep track of related comments, and mention individuals, groups, work items or pull requests when required.
 
 ## Tasks
 
@@ -56,17 +56,16 @@ Each Task should be sized so that they can be completed within a day.
 
 You should at least add the following details to the items:
 
-- Title.
-- Description.
-- Reference to the working branch in related code repository.
+- *Title*.
+- *Description*: Provide enough detail to create shared understanding of scope. Any developer should be able to take the item and know what needs to be implemented.
+  - Include Design Reviews.
+- Reference to the working *branch* in related code repository.
 
 Remember to use the Discussion section of the tasks to keep track of related comments.
 
-```// TODO https://docs.microsoft.com/en-us/azure/devops/boards/sprints/add-tasks?view=azure-devops```
-
 ### Actions from Retrospectives
 
-```// TODO https://docs.microsoft.com/en-us/azure/devops/boards/sprints/add-tasks?view=azure-devops```
+After a retrospective, every action that requires work should be tracked with its own task. These tasks might be unparented (without link to parent backlog item or user story).
 
 ## Bugs
 
