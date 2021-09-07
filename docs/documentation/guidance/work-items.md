@@ -39,16 +39,16 @@ Each User Story / Product Backlog Item should be sized so that they can be compl
 
 You should add the following details to the items:
 
-- Title. ```// TODO```
-- Description.
-  - Design Reviews.
-- Acceptance Criteria.
-- Activity: Deployment, Design, Development, Documentation, Requirements, Testing.
-- Original Estimate: The amount of estimated work required to complete a task.
+- *Title*: Usually expressed as "As a [persona], I want [to perform an action], so that [I can achieve an end result].".
+- *Description*: Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don't describe how to develop the product. Provide enough details so the team can write tasks and test cases to implement the item.
+  - Include Design Reviews.
+- *Acceptance Criteria*: Define what "Done" means.
+- *Activity*: Deployment, Design, Development, Documentation, Requirements, Testing.
+- *Effort / Story Points / Size*: Relative estimate of the amount of work required to complete the item.
+- *Business Value*: Priority of an item compared to other items of the same type.
+- *Original Estimate*: The amount of estimated work required to complete a task.
 
 Remember to use the Discussion section of the items to keep track of related comments, and mention individuals, groups, work items or pull requests when required.
-
-```// TODO https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops&tabs=agile-process```
 
 ## Tasks
 
