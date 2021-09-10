@@ -16,7 +16,7 @@ We recommend using a common setup for your solution that you can refer to in all
 <Project>
 ...
     <ItemGroup>
-        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+        <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.3">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
@@ -47,11 +47,11 @@ The [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconf
 
 [Details about the configuration of different rules](https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019).
 
-### FxCop analyzers
+### .NET analyzers
 
-Microsoft's FxCop analyzers check your code for security, performance, and design issues, among others. [Install FxCop analyzers in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019).
+Microsoft's .NET analyzers has code quality rules and .NET API usage rules implemented as analyzers using the .NET Compiler Platform (Roslyn). This is the replacement for Microsoft's legacy [FxCop analyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/). Starting in Visual Studio 2019 16.8 and .NET 5.0, these analyzers are included with the .NET SDK. It is recommended that you enable the analyzers from the .NET SDK when possible. [Enable or install first-party .NET analyzers](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019).
 
-You can install the FxCop analyzers using nuget or a VSIX extension. We recommend using the nuget package ([see Project setup](#project-setup)). Which allows for consistent use across all developers on a project as well as CI validation.
+If you don't want to move to the .NET 5+ SDK or if you prefer a NuGet package-based model, the analyzers are also available in the `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers/).
 
 ### StyleCop analyzer
 
