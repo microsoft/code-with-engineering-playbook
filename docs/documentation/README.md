@@ -77,6 +77,7 @@ When working in an engineering project, we typically encounter one or more of th
 ## Recipes
 
 - [How to sync a wiki between repositories](./recipes/sync-wiki-between-repos.md)
+- [How to create a static website for your documentation based on mkdocs and mkdocs-material](./recipes/static-website-with-mkdocs.md)
 
 ## Resources
 
