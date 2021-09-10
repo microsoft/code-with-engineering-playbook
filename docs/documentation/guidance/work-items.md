@@ -69,7 +69,25 @@ After a retrospective, every action that requires work should be tracked with it
 
 ## Bugs
 
-```// TODO https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/manage-bugs?view=azure-devops```
+You should use bugs to capture both the initial issue and ongoing discoveries.
+
+You should at least add the following details to the bug items:
+
+- *Title*.
+- *Description*.
+- *Steps to Reproduce*.
+- *System Info* / *Found in Build*: Software and system configuration that is relevant to the bug and tests to appply.
+- *Acceptance Criteria*: Criteria to meet so the bug can be closed.
+- *Integrated in Build*: Name of the build that incorporates the code that fixes the bug.
+- *Priority*:
+  - 1: Product should not ship without the successful resolution of the work item. The bug should be addressed as soon as possible.
+  - 2: Product should not ship without the successful resolution of the work item, but it does not need to be addressed immediately.
+  - 3: Resolution of the work item is optional based on resources, time, and risk.
+- *Severity*:
+  - 1 - Critical: Must fix. No acceptable alternative methods.
+  - 2 - High: Consider fix. An acceptable alternative method exists.
+  - 3 - Medium: (Default).
+  - 4 - Low.
 
 ## Issues / Impediments
 
