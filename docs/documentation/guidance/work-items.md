@@ -63,10 +63,6 @@ You should at least add the following details to the items:
 
 Remember to use the Discussion section of the tasks to keep track of related comments.
 
-### Actions from Retrospectives
-
-After a retrospective, every action that requires work should be tracked with its own task. These tasks might be unparented (without link to parent backlog item or user story).
-
 ## Bugs
 
 You should use bugs to capture both the initial issue and ongoing discoveries.
@@ -91,7 +87,13 @@ You should at least add the following details to the bug items:
 
 ## Issues / Impediments
 
-```// TODO https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops```
+Don't confuse with bugs. They represent unplanned activities that may block work from getting done. For example: feature ambiguity, personnel or resource issues, problems with environments, or other risks that impact scope, quality, or schedule.
+
+In general, you link these items to user stories or other work items.
+
+## Actions from Retrospectives
+
+After a retrospective, every action that requires work should be tracked with its own Task or Issue / Impediment. These items might be unparented (without link to parent backlog item or user story).
 
 ## Related information
 
