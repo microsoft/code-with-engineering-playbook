@@ -49,9 +49,11 @@ The [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconf
 
 ### .NET analyzers
 
-Microsoft's .NET analyzers has code quality rules and .NET API usage rules implemented as analyzers using the .NET Compiler Platform (Roslyn). This is the replacement for Microsoft's legacy [FxCop analyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/). Starting in Visual Studio 2019 16.8 and .NET 5.0, these analyzers are included with the .NET SDK. It is recommended that you enable the analyzers from the .NET SDK when possible. [Enable or install first-party .NET analyzers](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019).
+Microsoft's .NET analyzers has code quality rules and .NET API usage rules implemented as analyzers using the .NET Compiler Platform (Roslyn). This is the replacement for Microsoft's legacy [FxCop analyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/).
 
-If you don't want to move to the .NET 5+ SDK or if you prefer a NuGet package-based model, the analyzers are also available in the `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers/).
+[Enable or install first-party .NET analyzers](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019).
+
+If you are currently using the legacy FxCop analyzers, [migrate from FxCop analyzers to .NET analyzers](https://docs.microsoft.com/en-us/visualstudio/code-quality/migrate-from-fxcop-analyzers-to-net-analyzers?view=vs-2019).
 
 ### StyleCop analyzer
 
