@@ -92,16 +92,14 @@ Questions to consider when working with data:
 - Can we turn this data into Not in a Position to Identify (NPI) data to be used later on?
 - How is the system architected so data subject rights can be fulfilled? (ex manually, automated)
 - If personal data is involved have engaged privacy and legal teams for this project?
-
 It is important to only pull in data that is needed for the problem at hand,
 when this is put in practice we find that we only maintain data that is adequate,
 relevant and limited to what is necessary in relation to the purposes for which they are processed.
 This is particularly important for personal data. Once you have personal data there are many rules and regulations that apply,
 some examples of these might be HIPPA, GDPR, CCPA.
 The customer should be aware of and surface any applicable regulations that apply to their data.
-Furthermore the [seven principles of privacy by design](https://morethandigital.info/en/7-principles-for-privacy-by-design-boost-your-data-protection-compliance/)
+Furthermore the [seven principles of privacy by design](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
 should be reviewed and considered when handling any type of sensitive data.
-
 Additional information:
 
 - [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center/privacy)
@@ -111,4 +109,3 @@ Additional information:
 - [Microsoft Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide)
 - [Accountability Readiness Checklists](https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-arc?view=o365-worldwide#gdpr-compliance-controls)
 - [Privacy by Design The 7 Foundational Principles](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
-- [7 Principles for Privacy by Design](https://morethandigital.info/en/7-principles-for-privacy-by-design-boost-your-data-protection-compliance/)
