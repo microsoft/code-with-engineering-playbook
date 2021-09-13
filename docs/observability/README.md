@@ -29,6 +29,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Observability for Microservices](microservices.md)
 - [Observability in Machine Learning](ml-observability.md)
 - [Observability of CI/CD Pipelines](observability-pipelines.md)
+- [Observability in Azure Databricks](observability-databricks.md)
 - [Recipes](recipes-observability.md)
 
 ## Useful links
