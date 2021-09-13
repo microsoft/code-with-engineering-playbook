@@ -19,7 +19,7 @@ with specialized model training code. Although many Machine Learning frameworks 
 sometimes it is also very useful to profile the whole solution.
 
 There are two types of profilers: deterministic (all events are tracked) and statistical (sampling with regular intervals). In this
-document we'll cover an example of a deterministic profiler.
+The following sample shows an example of a deterministic profiler.
 
 There are many options of generic deterministic Python code profiling. The default option for profiling used to be a built-in
 [cProfile](https://docs.python.org/3/library/profile.html) profiler. Using *cProfile* one can easily profile
