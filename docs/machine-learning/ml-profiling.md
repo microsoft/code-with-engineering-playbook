@@ -1,6 +1,6 @@
 # Profiling Machine Learning and MLOps Code
 
-Data Science projects, especially the ones that involve Deep Learning techniques, usually are very resource intensive. One model training iteration might be multiple hours long. Although large data volumes processing genuinely takes time, minor bugs and nonoptimal implementation of some functional pieces might cause extra resources consumption.
+Data Science projects, especially the ones that involve Deep Learning techniques, usually are resource intensive. One model training iteration might be multiple hours long. Although large data volumes processing genuinely takes time, minor bugs and nonoptimal implementation of some functional pieces might cause extra resources consumption.
 
 Profiling can be used to identify performance bottlenecks and see which functions are the costliest in the application code. Based on the outputs of the profiler, one can focus on largest and easiest-to-resolve inefficiencies and therefore achieve better code performance.
 Although profiling follows the same principles of any other software project, the purpose of this document is to provide profiling samples for the most common scenarios in MLOps/Data Science projects.
@@ -15,10 +15,10 @@ Below are some common scenarios in MLOps/Data Science projects, along with sugge
 
 Usually an MLOps/Data Science solution contains plain Python code serving different purposes (e.g. data processing) along
 with specialized model training code. Although many Machine Learning frameworks provide their own profiler,
-sometimes it is also very useful to profile the whole solution.
+sometimes it is also useful to profile the whole solution.
 
 There are two types of profilers: deterministic (all events are tracked) and statistical (sampling with regular intervals). In this
-The following sample shows an example of a deterministic profiler.
+The following sample shows an example of a deterministic profiler. As for the statistical profilers, [py-spy](https://pypi.org/project/py-spy/) might be used as an example.
 
 There are many options of generic deterministic Python code profiling. One of the default options for profiling used to be a built-in
 [cProfile](https://docs.python.org/3/library/profile.html) profiler. Using *cProfile* one can easily profile
