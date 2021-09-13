@@ -94,7 +94,7 @@ More information on *PyTorch profiler*:
 
 In our projects we often use [Azure Machine Learning](https://azure.microsoft.com/en-us/services/machine-learning/)
 pipelines to train Machine Learning models. Most of the profilers can also be used in conjunction with Azure Machine Learning.
-In a nutshell, you need to choose a profiler, that meets the following criteria:
+For a profiler to be used with Azure Machine Learning, it should meet the following criteria:
 
 - The profiler can be enabled and disabled inside of the code
 - The profiler produces a file as an output
