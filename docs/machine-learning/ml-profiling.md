@@ -99,7 +99,7 @@ In a nutshell, you need to choose a profiler, that meets the following criteria:
 - The profiler can be enabled and disabled inside of the code
 - The profiler produces a file as an output
 
-The general recipe of using profilers with Azure Machine Learning is the following:
+The general, a recipe for using profilers with Azure Machine Learning is the following:
 
 1. (Optional) If you're using profiling with an Azure Machine Learning pipeline, you might want to add `--profile`
 Boolean flag as a pipeline parameter
