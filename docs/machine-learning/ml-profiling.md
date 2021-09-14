@@ -17,8 +17,7 @@ Usually an MLOps/Data Science solution contains plain Python code serving differ
 with specialized model training code. Although many Machine Learning frameworks provide their own profiler,
 sometimes it is also useful to profile the whole solution.
 
-There are two types of profilers: deterministic (all events are tracked) and statistical (sampling with regular intervals).
-The following sample shows an example of a deterministic profiler. As for the statistical profilers, [py-spy](https://pypi.org/project/py-spy/) might be used as an example.
+There are two types of profilers: deterministic (all events are tracked, e.g. [cProfile](https://docs.python.org/3/library/profile.html)) and statistical (sampling with regular intervals, e.g., [py-spy](https://pypi.org/project/py-spy/)). The sample below shows an example of a deterministic profiler. 
 
 There are many options of generic deterministic Python code profiling. One of the default options for profiling used to be a built-in
 [cProfile](https://docs.python.org/3/library/profile.html) profiler. Using *cProfile* one can easily profile
@@ -53,7 +52,7 @@ python -m cProfile [-o output_file] [-s sort_order] (-m module | myscript.py)
 > Note: one epoch of model training is usually enough for profiling. There's no need to run more epochs and produce
 additional cost.
 
-Refer to [The Python Profilers](https://docs.python.org/3/library/profile.html) for further details.
+Refer to [The Python Profilers](https://docs.python.org/3/library/profile.html) for further details.  
 
 ## PyTorch model training profiling
 
@@ -99,7 +98,7 @@ In our projects we often use [Azure Machine Learning](https://azure.microsoft.co
 pipelines to train Machine Learning models. Most of the profilers can also be used in conjunction with Azure Machine Learning.
 For a profiler to be used with Azure Machine Learning, it should meet the following criteria:
 
-- The profiler can be enabled and disabled inside of the code
+- Turning the profiler on/off can be achieved by passing a parameter to the script ran by Azure Machine Learning
 - The profiler produces a file as an output
 
 In general, a recipe for using profilers with Azure Machine Learning is the following:
