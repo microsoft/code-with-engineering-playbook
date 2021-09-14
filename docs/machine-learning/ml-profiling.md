@@ -17,7 +17,7 @@ Usually an MLOps/Data Science solution contains plain Python code serving differ
 with specialized model training code. Although many Machine Learning frameworks provide their own profiler,
 sometimes it is also useful to profile the whole solution.
 
-There are two types of profilers: deterministic (all events are tracked, e.g. [cProfile](https://docs.python.org/3/library/profile.html)) and statistical (sampling with regular intervals, e.g., [py-spy](https://pypi.org/project/py-spy/)). The sample below shows an example of a deterministic profiler. 
+There are two types of profilers: deterministic (all events are tracked, e.g. [cProfile](https://docs.python.org/3/library/profile.html)) and statistical (sampling with regular intervals, e.g., [py-spy](https://pypi.org/project/py-spy/)). The sample below shows an example of a deterministic profiler.
 
 There are many options of generic deterministic Python code profiling. One of the default options for profiling used to be a built-in
 [cProfile](https://docs.python.org/3/library/profile.html) profiler. Using *cProfile* one can easily profile
