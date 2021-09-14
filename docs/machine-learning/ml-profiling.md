@@ -86,7 +86,7 @@ tensorboard --logdir=<LOG_DIR_PATH>
 # Navigate to `http://localhost:6006/#pytorch_profiler`
 ```
 
-> Note: make sure to provide right parameters to the `torch.profiler.schedule`. Usually you need several steps of training to be profiled rather than the whole epoch.
+> Note: make sure to provide the right parameters to the `torch.profiler.schedule`. Usually you would need several steps of training to be profiled rather than the whole epoch.
 
 More information on *PyTorch profiler*:
 
