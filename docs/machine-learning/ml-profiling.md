@@ -102,7 +102,7 @@ For a profiler to be used with Azure Machine Learning, it should meet the follow
 - The profiler can be enabled and disabled inside of the code
 - The profiler produces a file as an output
 
-The general, a recipe for using profilers with Azure Machine Learning is the following:
+In general, a recipe for using profilers with Azure Machine Learning is the following:
 
 1. (Optional) If you're using profiling with an Azure Machine Learning pipeline, you might want to add `--profile`
 Boolean flag as a pipeline parameter
