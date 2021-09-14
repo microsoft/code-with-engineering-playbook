@@ -77,7 +77,7 @@ on bottlenecks and potential code improvements.
         profiler.step()
 ```
 
-The `tensorboard_trace_handler` can be used to generate result files for TensorBoar. Those can be visualized by installing the TensorBoard
+The `tensorboard_trace_handler` can be used to generate result files for TensorBoard. Those can be visualized by installing TensorBoard.
 plugin and running TensorBoard on your log directory.
 
 ```bash
