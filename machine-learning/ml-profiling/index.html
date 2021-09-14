@@ -13,21 +13,21 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/developer-experience/recipes/execute-local-pipeline-with-docker/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-profiling/">
       
-      <link rel="icon" href="../../../resources/ms_icon.png">
+      <link rel="icon" href="../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>Execute Local Pipeline - Code With Engineering Playbook</title>
+        <title>Profiling Machine Learning and MLOps Code - Code With Engineering Playbook</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9299cb39.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -67,7 +67,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#execute-local-pipeline" class="md-skip">
+        <a href="#profiling-machine-learning-and-mlops-code" class="md-skip">
           Skip to content
         </a>
       
@@ -86,9 +86,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Code With Engineering Playbook" class="md-header__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
+    <a href="../.." title="Code With Engineering Playbook" class="md-header__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
       
-  <img src="../../../resources/ms_icon.png" alt="logo">
+  <img src="../../resources/ms_icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Execute Local Pipeline
+              Profiling Machine Learning and MLOps Code
             
           </span>
         </div>
@@ -178,9 +178,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Code With Engineering Playbook" class="md-nav__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
+    <a href="../.." title="Code With Engineering Playbook" class="md-nav__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
       
-  <img src="../../../resources/ms_icon.png" alt="logo">
+  <img src="../../resources/ms_icon.png" alt="logo">
 
     </a>
     Code With Engineering Playbook
@@ -209,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         CSE Code-With Engineering Playbook
       </a>
     </li>
@@ -224,7 +224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CSE/" class="md-nav__link">
+      <a href="../../CSE/" class="md-nav__link">
         Who We Are
       </a>
     </li>
@@ -239,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ENG-FUNDAMENTALS-CHECKLIST/" class="md-nav__link">
+      <a href="../../ENG-FUNDAMENTALS-CHECKLIST/" class="md-nav__link">
         Engineering Fundamentals Checklist
       </a>
     </li>
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../SPRINT-STRUCTURE/" class="md-nav__link">
+      <a href="../../SPRINT-STRUCTURE/" class="md-nav__link">
         Structure of a Sprint
       </a>
     </li>
@@ -290,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/" class="md-nav__link">
+      <a href="../../agile-development/" class="md-nav__link">
         Agile Development
       </a>
     </li>
@@ -302,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/retrospectives/" class="md-nav__link">
+      <a href="../../agile-development/retrospectives/" class="md-nav__link">
         Retrospectives
       </a>
     </li>
@@ -314,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/scrum-of-scrums/" class="md-nav__link">
+      <a href="../../agile-development/scrum-of-scrums/" class="md-nav__link">
         Scrum of Scrums
       </a>
     </li>
@@ -347,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/backlog-management/" class="md-nav__link">
+      <a href="../../agile-development/backlog-management/" class="md-nav__link">
         Backlog Management
       </a>
     </li>
@@ -359,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/backlog-management/backlog-refinement/" class="md-nav__link">
+      <a href="../../agile-development/backlog-management/backlog-refinement/" class="md-nav__link">
         Backlog Refinement
       </a>
     </li>
@@ -371,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/backlog-management/external-feedback/" class="md-nav__link">
+      <a href="../../agile-development/backlog-management/external-feedback/" class="md-nav__link">
         External Feedback
       </a>
     </li>
@@ -383,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/backlog-management/minimal-slices/" class="md-nav__link">
+      <a href="../../agile-development/backlog-management/minimal-slices/" class="md-nav__link">
         Minimalism Slices
       </a>
     </li>
@@ -422,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/collaboration/" class="md-nav__link">
+      <a href="../../agile-development/collaboration/" class="md-nav__link">
         Collaboration
       </a>
     </li>
@@ -434,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/collaboration/add-pairing-field-azure-devops-cards/" class="md-nav__link">
+      <a href="../../agile-development/collaboration/add-pairing-field-azure-devops-cards/" class="md-nav__link">
         How to add a Pairing Custom Field in Azure DevOps User Stories
       </a>
     </li>
@@ -446,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/collaboration/teaming-up/" class="md-nav__link">
+      <a href="../../agile-development/collaboration/teaming-up/" class="md-nav__link">
         Engagement Team Development - CSE approach
       </a>
     </li>
@@ -458,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/collaboration/virtual-collaboration/" class="md-nav__link">
+      <a href="../../agile-development/collaboration/virtual-collaboration/" class="md-nav__link">
         Virtual Collaboration and Pair Programming
       </a>
     </li>
@@ -497,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/sprint-planning/" class="md-nav__link">
+      <a href="../../agile-development/sprint-planning/" class="md-nav__link">
         Sprint Planning
       </a>
     </li>
@@ -509,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/sprint-planning/estimation/" class="md-nav__link">
+      <a href="../../agile-development/sprint-planning/estimation/" class="md-nav__link">
         Goals for Estimation
       </a>
     </li>
@@ -548,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/stand-ups/" class="md-nav__link">
+      <a href="../../agile-development/stand-ups/" class="md-nav__link">
         Stand-ups
       </a>
     </li>
@@ -560,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/stand-ups/social-question/" class="md-nav__link">
+      <a href="../../agile-development/stand-ups/social-question/" class="md-nav__link">
         Social Question of the Day
       </a>
     </li>
@@ -599,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/" class="md-nav__link">
+      <a href="../../agile-development/team-agreements/" class="md-nav__link">
         Team Agreements
       </a>
     </li>
@@ -611,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/definition-of-done/" class="md-nav__link">
+      <a href="../../agile-development/team-agreements/definition-of-done/" class="md-nav__link">
         Definition of Done
       </a>
     </li>
@@ -623,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/definition-of-ready/" class="md-nav__link">
+      <a href="../../agile-development/team-agreements/definition-of-ready/" class="md-nav__link">
         Definition of Ready
       </a>
     </li>
@@ -635,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/team-manifesto/" class="md-nav__link">
+      <a href="../../agile-development/team-agreements/team-manifesto/" class="md-nav__link">
         Team Manifesto
       </a>
     </li>
@@ -647,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/working-agreements/" class="md-nav__link">
+      <a href="../../agile-development/team-agreements/working-agreements/" class="md-nav__link">
         Sections of a Working Agreement
       </a>
     </li>
@@ -695,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/" class="md-nav__link">
+      <a href="../../automated-testing/" class="md-nav__link">
         Testing
       </a>
     </li>
@@ -728,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/cdc-testing/" class="md-nav__link">
+      <a href="../../automated-testing/cdc-testing/" class="md-nav__link">
         Consumer-driven Contract Testing (CDC)
       </a>
     </li>
@@ -767,7 +767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/e2e-testing/" class="md-nav__link">
+      <a href="../../automated-testing/e2e-testing/" class="md-nav__link">
         E2E Testing
       </a>
     </li>
@@ -779,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/e2e-testing/testing-comparison/" class="md-nav__link">
+      <a href="../../automated-testing/e2e-testing/testing-comparison/" class="md-nav__link">
         Unit vs Integration vs System vs E2E Testing
       </a>
     </li>
@@ -791,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/e2e-testing/testing-methods/" class="md-nav__link">
+      <a href="../../automated-testing/e2e-testing/testing-methods/" class="md-nav__link">
         E2E Testing Methods
       </a>
     </li>
@@ -824,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/e2e-testing/recipes/gauge-framework/" class="md-nav__link">
+      <a href="../../automated-testing/e2e-testing/recipes/gauge-framework/" class="md-nav__link">
         Gauge Framework
       </a>
     </li>
@@ -869,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/fault-injection-testing/" class="md-nav__link">
+      <a href="../../automated-testing/fault-injection-testing/" class="md-nav__link">
         Fault Injection Testing
       </a>
     </li>
@@ -908,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/integration-testing/" class="md-nav__link">
+      <a href="../../automated-testing/integration-testing/" class="md-nav__link">
         Integration Testing
       </a>
     </li>
@@ -947,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/performance-testing/" class="md-nav__link">
+      <a href="../../automated-testing/performance-testing/" class="md-nav__link">
         Performance Testing
       </a>
     </li>
@@ -959,7 +959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/performance-testing/load-testing/" class="md-nav__link">
+      <a href="../../automated-testing/performance-testing/load-testing/" class="md-nav__link">
         Load Testing
       </a>
     </li>
@@ -998,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/shadow-testing/" class="md-nav__link">
+      <a href="../../automated-testing/shadow-testing/" class="md-nav__link">
         Shadow Testing
       </a>
     </li>
@@ -1037,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/smoke-testing/" class="md-nav__link">
+      <a href="../../automated-testing/smoke-testing/" class="md-nav__link">
         Smoke Testing
       </a>
     </li>
@@ -1076,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/synthetic-monitoring-tests/" class="md-nav__link">
+      <a href="../../automated-testing/synthetic-monitoring-tests/" class="md-nav__link">
         Synthetic Monitoring Tests
       </a>
     </li>
@@ -1136,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/tech-specific-samples/azdo-container-dev-test-release/" class="md-nav__link">
+      <a href="../../automated-testing/tech-specific-samples/azdo-container-dev-test-release/" class="md-nav__link">
         Building Containers with Azure DevOps using DevTest Pattern
       </a>
     </li>
@@ -1175,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/tech-specific-samples/blobstorage-unit-tests/" class="md-nav__link">
+      <a href="../../automated-testing/tech-specific-samples/blobstorage-unit-tests/" class="md-nav__link">
         Using Azurite to Run Blob Storage Tests in a Pipeline
       </a>
     </li>
@@ -1220,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/templates/case-study-template/" class="md-nav__link">
+      <a href="../../automated-testing/templates/case-study-template/" class="md-nav__link">
         ~Customer Project~ Case Study
       </a>
     </li>
@@ -1232,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/templates/test_type_template/" class="md-nav__link">
+      <a href="../../automated-testing/templates/test_type_template/" class="md-nav__link">
         Insert Test Technique Name Here
       </a>
     </li>
@@ -1271,7 +1271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/ui-testing/" class="md-nav__link">
+      <a href="../../automated-testing/ui-testing/" class="md-nav__link">
         User Interface Testing
       </a>
     </li>
@@ -1310,7 +1310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/" class="md-nav__link">
+      <a href="../../automated-testing/unit-testing/" class="md-nav__link">
         Unit Testing
       </a>
     </li>
@@ -1322,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/authoring_example/" class="md-nav__link">
+      <a href="../../automated-testing/unit-testing/authoring_example/" class="md-nav__link">
         Example: Authoring a unit test
       </a>
     </li>
@@ -1334,7 +1334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/custom-connector/" class="md-nav__link">
+      <a href="../../automated-testing/unit-testing/custom-connector/" class="md-nav__link">
         Custom Connector Testing
       </a>
     </li>
@@ -1346,7 +1346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/mocking/" class="md-nav__link">
+      <a href="../../automated-testing/unit-testing/mocking/" class="md-nav__link">
         Mocking in Unit Tests
       </a>
     </li>
@@ -1358,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/tdd_example/" class="md-nav__link">
+      <a href="../../automated-testing/unit-testing/tdd_example/" class="md-nav__link">
         Test-Driven Development Example
       </a>
     </li>
@@ -1370,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/why-unit-tests/" class="md-nav__link">
+      <a href="../../automated-testing/unit-testing/why-unit-tests/" class="md-nav__link">
         Why Unit Tests
       </a>
     </li>
@@ -1418,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/" class="md-nav__link">
+      <a href="../../code-reviews/" class="md-nav__link">
         Code Reviews
       </a>
     </li>
@@ -1430,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/faq/" class="md-nav__link">
+      <a href="../../code-reviews/faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -1442,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/inclusion-in-code-review/" class="md-nav__link">
+      <a href="../../code-reviews/inclusion-in-code-review/" class="md-nav__link">
         Inclusion in Code Review
       </a>
     </li>
@@ -1454,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/pull-requests/" class="md-nav__link">
+      <a href="../../code-reviews/pull-requests/" class="md-nav__link">
         Pull Requests
       </a>
     </li>
@@ -1466,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/tools/" class="md-nav__link">
+      <a href="../../code-reviews/tools/" class="md-nav__link">
         Code Review Tools
       </a>
     </li>
@@ -1499,7 +1499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/evidence-and-measures/" class="md-nav__link">
+      <a href="../../code-reviews/evidence-and-measures/" class="md-nav__link">
         Evidence and Measures
       </a>
     </li>
@@ -1511,7 +1511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/evidence-and-measures/branch-policy/" class="md-nav__link">
+      <a href="../../code-reviews/evidence-and-measures/branch-policy/" class="md-nav__link">
         Configuring Branch Policies
       </a>
     </li>
@@ -1550,7 +1550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/process-guidance/" class="md-nav__link">
+      <a href="../../code-reviews/process-guidance/" class="md-nav__link">
         Process Guidance
       </a>
     </li>
@@ -1562,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/process-guidance/author-guidance/" class="md-nav__link">
+      <a href="../../code-reviews/process-guidance/author-guidance/" class="md-nav__link">
         Author Guidance
       </a>
     </li>
@@ -1574,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/process-guidance/customize-ado/" class="md-nav__link">
+      <a href="../../code-reviews/process-guidance/customize-ado/" class="md-nav__link">
         Customize ADO
       </a>
     </li>
@@ -1586,7 +1586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/process-guidance/reviewer-guidance/" class="md-nav__link">
+      <a href="../../code-reviews/process-guidance/reviewer-guidance/" class="md-nav__link">
         Reviewer Guidance
       </a>
     </li>
@@ -1625,7 +1625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/pull-request-template/pull-request-template/" class="md-nav__link">
+      <a href="../../code-reviews/pull-request-template/pull-request-template/" class="md-nav__link">
         [Work Item ID](./link-to-the-work-item)
       </a>
     </li>
@@ -1664,7 +1664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/" class="md-nav__link">
         Language Specific Guidance
       </a>
     </li>
@@ -1676,7 +1676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/azure-pipelines-yaml/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/azure-pipelines-yaml/" class="md-nav__link">
         YAML(Azure Pipelines) Code Reviews
       </a>
     </li>
@@ -1688,7 +1688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/bash/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/bash/" class="md-nav__link">
         Bash Code Reviews
       </a>
     </li>
@@ -1700,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/csharp/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/csharp/" class="md-nav__link">
         C# Code Reviews
       </a>
     </li>
@@ -1712,7 +1712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/go/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/go/" class="md-nav__link">
         Go Code Reviews
       </a>
     </li>
@@ -1724,7 +1724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/java/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/java/" class="md-nav__link">
         Java Code Reviews
       </a>
     </li>
@@ -1736,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/javascript-and-typescript/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/javascript-and-typescript/" class="md-nav__link">
         JavaScript/TypeScript Code Reviews
       </a>
     </li>
@@ -1748,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/markdown/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/markdown/" class="md-nav__link">
         Markdown Code Reviews
       </a>
     </li>
@@ -1760,7 +1760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/python/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/python/" class="md-nav__link">
         Python Code Reviews
       </a>
     </li>
@@ -1772,7 +1772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/terraform/" class="md-nav__link">
+      <a href="../../code-reviews/recipes/terraform/" class="md-nav__link">
         Terraform Code Reviews
       </a>
     </li>
@@ -1820,7 +1820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/" class="md-nav__link">
+      <a href="../../continuous-delivery/" class="md-nav__link">
         Continuous Delivery
       </a>
     </li>
@@ -1895,7 +1895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/devops-provider-recipes/github-actions/runtime-variables/runtime-variables/" class="md-nav__link">
+      <a href="../../continuous-delivery/devops-provider-recipes/github-actions/runtime-variables/runtime-variables/" class="md-nav__link">
         Runtime Variables in GitHub Actions
       </a>
     </li>
@@ -1967,7 +1967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/recipes/github-workflows/workflow-per-environment/" class="md-nav__link">
+      <a href="../../continuous-delivery/recipes/github-workflows/workflow-per-environment/" class="md-nav__link">
         GitHub Workflows
       </a>
     </li>
@@ -2012,7 +2012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/secrets-management/" class="md-nav__link">
+      <a href="../../continuous-delivery/secrets-management/" class="md-nav__link">
         Secrets Management
       </a>
     </li>
@@ -2066,7 +2066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch/" class="md-nav__link">
+      <a href="../../continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch/" class="md-nav__link">
         Azure DevOps: Managing Settings on a Per-Branch Basis
       </a>
     </li>
@@ -2126,7 +2126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/" class="md-nav__link">
+      <a href="../../continuous-integration/" class="md-nav__link">
         Continuous Integration
       </a>
     </li>
@@ -2138,7 +2138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/CICD/" class="md-nav__link">
+      <a href="../../continuous-integration/CICD/" class="md-nav__link">
         Continuous Integration and Delivery
       </a>
     </li>
@@ -2171,7 +2171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/" class="md-nav__link">
+      <a href="../../continuous-integration/dev-sec-ops/" class="md-nav__link">
         DevSecOps
       </a>
     </li>
@@ -2204,7 +2204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/dependency-container-scanning/dependency_container_scanning/" class="md-nav__link">
+      <a href="../../continuous-integration/dev-sec-ops/dependency-container-scanning/dependency_container_scanning/" class="md-nav__link">
         Dependency and Container Scanning
       </a>
     </li>
@@ -2243,7 +2243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/penetration-testing/penetration_testing/" class="md-nav__link">
+      <a href="../../continuous-integration/dev-sec-ops/penetration-testing/penetration_testing/" class="md-nav__link">
         Penetration Testing
       </a>
     </li>
@@ -2282,7 +2282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/secret-management/credential_scanning/" class="md-nav__link">
+      <a href="../../continuous-integration/dev-sec-ops/secret-management/credential_scanning/" class="md-nav__link">
         Credential Scanning
       </a>
     </li>
@@ -2294,7 +2294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/secret-management/secrets_rotation/" class="md-nav__link">
+      <a href="../../continuous-integration/dev-sec-ops/secret-management/secrets_rotation/" class="md-nav__link">
         Secrets Rotation
       </a>
     </li>
@@ -2327,7 +2327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/" class="md-nav__link">
+      <a href="../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/" class="md-nav__link">
         Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
       </a>
     </li>
@@ -2339,7 +2339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets/" class="md-nav__link">
+      <a href="../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets/" class="md-nav__link">
         Credential Scanning Tool: detect-secrets
       </a>
     </li>
@@ -2384,7 +2384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/static-code-analysis/static_code_analysis/" class="md-nav__link">
+      <a href="../../continuous-integration/dev-sec-ops/static-code-analysis/static_code_analysis/" class="md-nav__link">
         Static Code Analysis
       </a>
     </li>
@@ -2438,7 +2438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/" class="md-nav__link">
+      <a href="../../design/" class="md-nav__link">
         Design
       </a>
     </li>
@@ -2471,7 +2471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-patterns/" class="md-nav__link">
+      <a href="../../design/design-patterns/" class="md-nav__link">
         Design Patterns
       </a>
     </li>
@@ -2483,7 +2483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-patterns/non-functional-requirements-capture-guide/" class="md-nav__link">
+      <a href="../../design/design-patterns/non-functional-requirements-capture-guide/" class="md-nav__link">
         Non-Functional Requirements Capture
       </a>
     </li>
@@ -2516,7 +2516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-patterns/data-heavy-design-guidance/" class="md-nav__link">
+      <a href="../../design/design-patterns/data-heavy-design-guidance/" class="md-nav__link">
         Data and DataOps Fundamentals
       </a>
     </li>
@@ -2555,7 +2555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-patterns/rest-api-design-guidance/" class="md-nav__link">
+      <a href="../../design/design-patterns/rest-api-design-guidance/" class="md-nav__link">
         REST API Design Guidance
       </a>
     </li>
@@ -2600,7 +2600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/" class="md-nav__link">
+      <a href="../../design/design-reviews/" class="md-nav__link">
         Design Reviews
       </a>
     </li>
@@ -2633,7 +2633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/" class="md-nav__link">
+      <a href="../../design/design-reviews/decision-log/" class="md-nav__link">
         Design Decision Log
       </a>
     </li>
@@ -2666,7 +2666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/doc/decision-log/" class="md-nav__link">
+      <a href="../../design/design-reviews/decision-log/doc/decision-log/" class="md-nav__link">
         Decision Log
       </a>
     </li>
@@ -2699,7 +2699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/" class="md-nav__link">
+      <a href="../../design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/" class="md-nav__link">
         1. Record architecture decisions
       </a>
     </li>
@@ -2711,7 +2711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/doc/adr/0002-app-level-logging/" class="md-nav__link">
+      <a href="../../design/design-reviews/decision-log/doc/adr/0002-app-level-logging/" class="md-nav__link">
         2. App-level Logging with Serilog and Application Insights
       </a>
     </li>
@@ -2762,7 +2762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/async-design-reviews/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/async-design-reviews/" class="md-nav__link">
         Async Design Reviews
       </a>
     </li>
@@ -2774,7 +2774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/engagement-process/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/engagement-process/" class="md-nav__link">
         Incorporating Design Reviews into an Engagement
       </a>
     </li>
@@ -2786,7 +2786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/engineering-feasibility-spikes/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/engineering-feasibility-spikes/" class="md-nav__link">
         Engineering Feasibility Spikes: identifying and mitigating risk
       </a>
     </li>
@@ -2798,7 +2798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/feature-story-design-review-template/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/feature-story-design-review-template/" class="md-nav__link">
         Your Feature or Story Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -2810,7 +2810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/high-level-design-recipe/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/high-level-design-recipe/" class="md-nav__link">
         High Level / Game Plan Design Recipe
       </a>
     </li>
@@ -2822,7 +2822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/milestone-epic-design-review-recipe/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/milestone-epic-design-review-recipe/" class="md-nav__link">
         Milestone / Epic Design Review Recipe
       </a>
     </li>
@@ -2834,7 +2834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/milestone-epic-design-review-template/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/milestone-epic-design-review-template/" class="md-nav__link">
         Your Milestone/Epic Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -2846,7 +2846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/task-design-review-template/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/task-design-review-template/" class="md-nav__link">
         Your Task Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -2858,7 +2858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/technical-spike/" class="md-nav__link">
+      <a href="../../design/design-reviews/recipes/technical-spike/" class="md-nav__link">
         Technical Spike
       </a>
     </li>
@@ -2897,7 +2897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/trade-studies/" class="md-nav__link">
+      <a href="../../design/design-reviews/trade-studies/" class="md-nav__link">
         Trade Studies
       </a>
     </li>
@@ -2909,7 +2909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/trade-studies/template/" class="md-nav__link">
+      <a href="../../design/design-reviews/trade-studies/template/" class="md-nav__link">
         Trade Study Template
       </a>
     </li>
@@ -2940,14 +2940,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
       <label class="md-nav__link" for="__nav_11">
         Developer experience
@@ -2965,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../developer-experience/" class="md-nav__link">
         Developer Experience (DevEx)
       </a>
     </li>
@@ -2977,7 +2975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcontainers/" class="md-nav__link">
+      <a href="../../developer-experience/devcontainers/" class="md-nav__link">
         Getting Started with Dev Containers
       </a>
     </li>
@@ -2987,14 +2985,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_3" type="checkbox" id="__nav_11_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_3" type="checkbox" id="__nav_11_3" >
       
       <label class="md-nav__link" for="__nav_11_3">
         Recipes
@@ -3012,7 +3008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cross-platform-tasks/" class="md-nav__link">
+      <a href="../../developer-experience/recipes/cross-platform-tasks/" class="md-nav__link">
         Cross Platform Tasks
       </a>
     </li>
@@ -3022,83 +3018,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Execute Local Pipeline
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../developer-experience/recipes/execute-local-pipeline-with-docker/" class="md-nav__link">
         Execute Local Pipeline
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enter-docker-compose" class="md-nav__link">
-    Enter Docker Compose
-  </a>
-  
-    <nav class="md-nav" aria-label="Enter Docker Compose">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#method-of-work" class="md-nav__link">
-    Method of work
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-by-step-with-examples" class="md-nav__link">
-    Step by step with examples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3108,7 +3032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onboarding-guide-template/" class="md-nav__link">
+      <a href="../../developer-experience/recipes/onboarding-guide-template/" class="md-nav__link">
         Onboarding Guide Template
       </a>
     </li>
@@ -3156,7 +3080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/" class="md-nav__link">
+      <a href="../../documentation/" class="md-nav__link">
         Documentation
       </a>
     </li>
@@ -3189,7 +3113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/best-practices/automation/" class="md-nav__link">
+      <a href="../../documentation/best-practices/automation/" class="md-nav__link">
         Replacing Documentation with Automation
       </a>
     </li>
@@ -3201,7 +3125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/best-practices/establish-and-manage/" class="md-nav__link">
+      <a href="../../documentation/best-practices/establish-and-manage/" class="md-nav__link">
         Establishing and Managing Documentation
       </a>
     </li>
@@ -3213,7 +3137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/best-practices/good-documentation/" class="md-nav__link">
+      <a href="../../documentation/best-practices/good-documentation/" class="md-nav__link">
         Creating Good Documentation
       </a>
     </li>
@@ -3252,7 +3176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/code/" class="md-nav__link">
+      <a href="../../documentation/guidance/code/" class="md-nav__link">
         Code
       </a>
     </li>
@@ -3264,7 +3188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/engineering-feedback/" class="md-nav__link">
+      <a href="../../documentation/guidance/engineering-feedback/" class="md-nav__link">
         Engineering Feedback
       </a>
     </li>
@@ -3276,7 +3200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/project-and-repositories/" class="md-nav__link">
+      <a href="../../documentation/guidance/project-and-repositories/" class="md-nav__link">
         Projects and Repositories
       </a>
     </li>
@@ -3288,7 +3212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/pull-requests/" class="md-nav__link">
+      <a href="../../documentation/guidance/pull-requests/" class="md-nav__link">
         Pull Requests
       </a>
     </li>
@@ -3300,7 +3224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/rest-apis/" class="md-nav__link">
+      <a href="../../documentation/guidance/rest-apis/" class="md-nav__link">
         REST APIs
       </a>
     </li>
@@ -3339,7 +3263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/recipes/sync-wiki-between-repos/" class="md-nav__link">
+      <a href="../../documentation/recipes/sync-wiki-between-repos/" class="md-nav__link">
         How to Sync a Wiki between Repositories
       </a>
     </li>
@@ -3378,7 +3302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/tools/automation/" class="md-nav__link">
+      <a href="../../documentation/tools/automation/" class="md-nav__link">
         How to Automate Simple Checks
       </a>
     </li>
@@ -3390,7 +3314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/tools/integrations/" class="md-nav__link">
+      <a href="../../documentation/tools/integrations/" class="md-nav__link">
         Integration with Teams/Slack
       </a>
     </li>
@@ -3402,7 +3326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/tools/languages/" class="md-nav__link">
+      <a href="../../documentation/tools/languages/" class="md-nav__link">
         Languages
       </a>
     </li>
@@ -3414,7 +3338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/tools/wikis/" class="md-nav__link">
+      <a href="../../documentation/tools/wikis/" class="md-nav__link">
         Wikis
       </a>
     </li>
@@ -3462,7 +3386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../engineering-feedback/" class="md-nav__link">
+      <a href="../../engineering-feedback/" class="md-nav__link">
         Microsoft Engineering Feedback
       </a>
     </li>
@@ -3474,7 +3398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../engineering-feedback/feedback-examples/" class="md-nav__link">
+      <a href="../../engineering-feedback/feedback-examples/" class="md-nav__link">
         Engineering Feedback Examples
       </a>
     </li>
@@ -3486,7 +3410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../engineering-feedback/feedback-faq/" class="md-nav__link">
+      <a href="../../engineering-feedback/feedback-faq/" class="md-nav__link">
         Engineering Feedback Frequently Asked Questions (F.A.Q.)
       </a>
     </li>
@@ -3498,7 +3422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../engineering-feedback/feedback-guidance/" class="md-nav__link">
+      <a href="../../engineering-feedback/feedback-guidance/" class="md-nav__link">
         Engineering Feedback Guidance
       </a>
     </li>
@@ -3517,12 +3441,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" checked>
       
       <label class="md-nav__link" for="__nav_14">
         Machine learning
@@ -3540,7 +3466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Machine Learning Fundamentals at CSE
       </a>
     </li>
@@ -3552,7 +3478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-experimentation/" class="md-nav__link">
+      <a href="../ml-experimentation/" class="md-nav__link">
         Model Experimentation
       </a>
     </li>
@@ -3564,7 +3490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-feasibility-study/" class="md-nav__link">
+      <a href="../ml-feasibility-study/" class="md-nav__link">
         ML Feasibility Studies
       </a>
     </li>
@@ -3576,7 +3502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-fundamentals-checklist/" class="md-nav__link">
+      <a href="../ml-fundamentals-checklist/" class="md-nav__link">
         ML Fundamentals Checklist
       </a>
     </li>
@@ -3588,7 +3514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-model-checklist/" class="md-nav__link">
+      <a href="../ml-model-checklist/" class="md-nav__link">
         ML model production checklist
       </a>
     </li>
@@ -3600,7 +3526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-problem-formulation-envisioning/" class="md-nav__link">
+      <a href="../ml-problem-formulation-envisioning/" class="md-nav__link">
         Envisioning and Problem Formulation
       </a>
     </li>
@@ -3610,11 +3536,63 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-profiling/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Profiling Machine Learning and MLOps Code
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Profiling Machine Learning and MLOps Code
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generic-python-profiling" class="md-nav__link">
+    Generic Python profiling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytorch-model-training-profiling" class="md-nav__link">
+    PyTorch model training profiling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-machine-learning-pipeline-profiling" class="md-nav__link">
+    Azure Machine Learning pipeline profiling
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3624,7 +3602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-project-management/" class="md-nav__link">
+      <a href="../ml-project-management/" class="md-nav__link">
         Agile Development Considerations for ML Projects
       </a>
     </li>
@@ -3636,7 +3614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-proposed-process/" class="md-nav__link">
+      <a href="../ml-proposed-process/" class="md-nav__link">
         Proposed ML Process
       </a>
     </li>
@@ -3648,7 +3626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-testing/" class="md-nav__link">
+      <a href="../ml-testing/" class="md-nav__link">
         Testing Data Science and MLOps Code
       </a>
     </li>
@@ -3660,7 +3638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/responsible-ai/" class="md-nav__link">
+      <a href="../responsible-ai/" class="md-nav__link">
         Responsible AI in CSE
       </a>
     </li>
@@ -3702,7 +3680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/" class="md-nav__link">
+      <a href="../../observability/" class="md-nav__link">
         Observability
       </a>
     </li>
@@ -3714,7 +3692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/alerting/" class="md-nav__link">
+      <a href="../../observability/alerting/" class="md-nav__link">
         Guidance for Alerting
       </a>
     </li>
@@ -3726,7 +3704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/best-practices/" class="md-nav__link">
+      <a href="../../observability/best-practices/" class="md-nav__link">
         Recommended Practices
       </a>
     </li>
@@ -3738,7 +3716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/correlation-id/" class="md-nav__link">
+      <a href="../../observability/correlation-id/" class="md-nav__link">
         Correlation IDs
       </a>
     </li>
@@ -3750,7 +3728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/log-vs-metric/" class="md-nav__link">
+      <a href="../../observability/log-vs-metric/" class="md-nav__link">
         Logs vs Metrics
       </a>
     </li>
@@ -3762,7 +3740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/logs-privacy/" class="md-nav__link">
+      <a href="../../observability/logs-privacy/" class="md-nav__link">
         Guidance for Privacy
       </a>
     </li>
@@ -3774,7 +3752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/microservices/" class="md-nav__link">
+      <a href="../../observability/microservices/" class="md-nav__link">
         Observability in Microservices
       </a>
     </li>
@@ -3786,7 +3764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/ml-observability/" class="md-nav__link">
+      <a href="../../observability/ml-observability/" class="md-nav__link">
         Observability in Machine Learning
       </a>
     </li>
@@ -3798,7 +3776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/observability-as-code/" class="md-nav__link">
+      <a href="../../observability/observability-as-code/" class="md-nav__link">
         Observability as Code
       </a>
     </li>
@@ -3810,7 +3788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/observability-pipelines/" class="md-nav__link">
+      <a href="../../observability/observability-pipelines/" class="md-nav__link">
         Observability of CI/CD Pipelines
       </a>
     </li>
@@ -3822,7 +3800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pitfalls/" class="md-nav__link">
+      <a href="../../observability/pitfalls/" class="md-nav__link">
         Things to Watch for when Building Observable Systems
       </a>
     </li>
@@ -3834,7 +3812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/profiling/" class="md-nav__link">
+      <a href="../../observability/profiling/" class="md-nav__link">
         Profiling
       </a>
     </li>
@@ -3846,7 +3824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/recipes-observability/" class="md-nav__link">
+      <a href="../../observability/recipes-observability/" class="md-nav__link">
         Recipes
       </a>
     </li>
@@ -3879,7 +3857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/dashboard/" class="md-nav__link">
+      <a href="../../observability/pillars/dashboard/" class="md-nav__link">
         Dashboard
       </a>
     </li>
@@ -3891,7 +3869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/logging/" class="md-nav__link">
+      <a href="../../observability/pillars/logging/" class="md-nav__link">
         Logging
       </a>
     </li>
@@ -3903,7 +3881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/metrics/" class="md-nav__link">
+      <a href="../../observability/pillars/metrics/" class="md-nav__link">
         Metrics
       </a>
     </li>
@@ -3915,7 +3893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/tracing/" class="md-nav__link">
+      <a href="../../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
     </li>
@@ -3954,7 +3932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/" class="md-nav__link">
+      <a href="../../observability/tools/" class="md-nav__link">
         Tools and Patterns
       </a>
     </li>
@@ -3966,7 +3944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/KubernetesDashboards/" class="md-nav__link">
+      <a href="../../observability/tools/KubernetesDashboards/" class="md-nav__link">
         Kubernetes UI Dashboards
       </a>
     </li>
@@ -3978,7 +3956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/OpenTelemetry/" class="md-nav__link">
+      <a href="../../observability/tools/OpenTelemetry/" class="md-nav__link">
         Open Telemetry
       </a>
     </li>
@@ -3990,7 +3968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/Prometheus/" class="md-nav__link">
+      <a href="../../observability/tools/Prometheus/" class="md-nav__link">
         Prometheus
       </a>
     </li>
@@ -4002,7 +3980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/loki/" class="md-nav__link">
+      <a href="../../observability/tools/loki/" class="md-nav__link">
         Loki
       </a>
     </li>
@@ -4050,7 +4028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reliability/" class="md-nav__link">
+      <a href="../../reliability/" class="md-nav__link">
         Reliability
       </a>
     </li>
@@ -4113,7 +4091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/templates/" class="md-nav__link">
+      <a href="../../resources/templates/" class="md-nav__link">
         project-xyz
       </a>
     </li>
@@ -4125,7 +4103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/templates/CONTRIBUTING/" class="md-nav__link">
+      <a href="../../resources/templates/CONTRIBUTING/" class="md-nav__link">
         Contributing
       </a>
     </li>
@@ -4173,7 +4151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security/" class="md-nav__link">
+      <a href="../../security/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -4185,7 +4163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security/rules-of-engagement/" class="md-nav__link">
+      <a href="../../security/rules-of-engagement/" class="md-nav__link">
         Rules of Engagement
       </a>
     </li>
@@ -4227,7 +4205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/" class="md-nav__link">
+      <a href="../../source-control/" class="md-nav__link">
         Source Control
       </a>
     </li>
@@ -4239,7 +4217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/component-versioning/" class="md-nav__link">
+      <a href="../../source-control/component-versioning/" class="md-nav__link">
         Component Versioning
       </a>
     </li>
@@ -4251,7 +4229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/merge-strategies/" class="md-nav__link">
+      <a href="../../source-control/merge-strategies/" class="md-nav__link">
         Merge strategies
       </a>
     </li>
@@ -4263,7 +4241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/naming-branches/" class="md-nav__link">
+      <a href="../../source-control/naming-branches/" class="md-nav__link">
         Naming branches
       </a>
     </li>
@@ -4275,7 +4253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/secrets-management/" class="md-nav__link">
+      <a href="../../source-control/secrets-management/" class="md-nav__link">
         Working with Secrets in Source Control
       </a>
     </li>
@@ -4308,7 +4286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/git-guidance/" class="md-nav__link">
+      <a href="../../source-control/git-guidance/" class="md-nav__link">
         Git Guidance
       </a>
     </li>
@@ -4320,7 +4298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/git-guidance/git-lfs-and-vfs/" class="md-nav__link">
+      <a href="../../source-control/git-guidance/git-lfs-and-vfs/" class="md-nav__link">
         Using Git LFS and VFS for Git introduction
       </a>
     </li>
@@ -4364,43 +4342,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract" class="md-nav__link">
-    Abstract
+  <a href="#generic-python-profiling" class="md-nav__link">
+    Generic Python profiling
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#enter-docker-compose" class="md-nav__link">
-    Enter Docker Compose
-  </a>
-  
-    <nav class="md-nav" aria-label="Enter Docker Compose">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#method-of-work" class="md-nav__link">
-    Method of work
+  <a href="#pytorch-model-training-profiling" class="md-nav__link">
+    PyTorch model training profiling
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
+      
+        <li class="md-nav__item">
+  <a href="#azure-machine-learning-pipeline-profiling" class="md-nav__link">
+    Azure Machine Learning pipeline profiling
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-by-step-with-examples" class="md-nav__link">
-    Step by step with examples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4417,113 +4375,111 @@
               
                 
                 
-                <h1 id="execute-local-pipeline">Execute Local Pipeline</h1>
-<h2 id="abstract">Abstract</h2>
-<p>Having the ability to execute pipeline activities locally has been identified as an opportunity to promote positive developer experience.
-In this document we will explore a solution which will allow us to have the local CI experience to be as similar as possible to the remote process in the CI server.</p>
-<p>Using the suggested method will allow us to:</p>
+                <h1 id="profiling-machine-learning-and-mlops-code">Profiling Machine Learning and MLOps Code</h1>
+<p>Data Science projects, especially the ones that involve Deep Learning techniques, usually are resource intensive. One model training iteration might be multiple hours long. Although large data volumes processing genuinely takes time, minor bugs and nonoptimal implementation of some functional pieces might cause extra resources consumption.</p>
+<p>Profiling can be used to identify performance bottlenecks and see which functions are the costliest in the application code. Based on the outputs of the profiler, one can focus on largest and easiest-to-resolve inefficiencies and therefore achieve better code performance.
+Although profiling follows the same principles of any other software project, the purpose of this document is to provide profiling samples for the most common scenarios in MLOps/Data Science projects.</p>
+<p>Below are some common scenarios in MLOps/Data Science projects, along with suggestions on how to profile them.</p>
 <ul>
-<li>Build</li>
-<li>Lint</li>
-<li>Unit test</li>
-<li>E2E test</li>
-<li>Run Solution</li>
-<li>Be OS and environment agnostic.</li>
+<li><a href="#generic-python-profiling">Generic Python profiling</a></li>
+<li><a href="#pytorch-model-training-profiling">PyTorch model training profiling</a></li>
+<li><a href="#azure-machine-learning-pipeline-profiling">Azure Machine Learning pipeline profiling</a></li>
 </ul>
-<h2 id="enter-docker-compose">Enter Docker Compose</h2>
-<p><a href="https://docs.docker.com/compose/">Docker Compose</a> allows you to build push or run multi-container Docker applications.</p>
-<h3 id="method-of-work">Method of work</h3>
+<h2 id="generic-python-profiling">Generic Python profiling</h2>
+<p>Usually an MLOps/Data Science solution contains plain Python code serving different purposes (e.g. data processing) along
+with specialized model training code. Although many Machine Learning frameworks provide their own profiler,
+sometimes it is also useful to profile the whole solution.</p>
+<p>There are two types of profilers: deterministic (all events are tracked, e.g. <a href="https://docs.python.org/3/library/profile.html">cProfile</a>) and statistical (sampling with regular intervals, e.g., <a href="https://pypi.org/project/py-spy/">py-spy</a>). The sample below shows an example of a deterministic profiler.</p>
+<p>There are many options of generic deterministic Python code profiling. One of the default options for profiling used to be a built-in
+<a href="https://docs.python.org/3/library/profile.html">cProfile</a> profiler. Using <em>cProfile</em> one can easily profile
+either a Python script or just a chunk of code. This profiling tool produces a file that can be either
+visualized using open source tools or analyzed using <code>stats.Stats</code> class. The latter option requires setting up filtering
+and sorting parameters for better analysis experience.</p>
+<p>Below you can find an example of using <em>cProfile</em> to profile a chunk of code.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">cProfile</span>
+
+<span class="c1"># Start profiling</span>
+<span class="n">profiler</span> <span class="o">=</span> <span class="n">cProfile</span><span class="o">.</span><span class="n">Profile</span><span class="p">()</span>
+<span class="n">profiler</span><span class="o">.</span><span class="n">enable</span><span class="p">()</span>
+
+<span class="c1"># -- YOUR CODE GOES HERE ---</span>
+
+<span class="c1"># Stop profiling</span>
+<span class="n">profiler</span><span class="o">.</span><span class="n">disable</span><span class="p">()</span>
+
+<span class="c1"># Write profiler results to an html file</span>
+<span class="n">profiler</span><span class="o">.</span><span class="n">dump_stats</span><span class="p">(</span><span class="s2">&quot;profiler_results.prof&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>You can also run <em>cProfile</em> outside of the Python script using the following command:</p>
+<div class="highlight"><pre><span></span><code>python -m cProfile <span class="o">[</span>-o output_file<span class="o">]</span> <span class="o">[</span>-s sort_order<span class="o">]</span> <span class="o">(</span>-m module <span class="p">|</span> myscript.py<span class="o">)</span>
+</code></pre></div>
+<blockquote>
+<p>Note: one epoch of model training is usually enough for profiling. There's no need to run more epochs and produce
+additional cost.</p>
+</blockquote>
+<p>Refer to <a href="https://docs.python.org/3/library/profile.html">The Python Profilers</a> for further details.  </p>
+<h2 id="pytorch-model-training-profiling">PyTorch model training profiling</h2>
+<p>PyTorch 1.8 includes an updated PyTorch
+<a href="https://pytorch.org/blog/introducing-pytorch-profiler-the-new-and-improved-performance-tool/">profiler</a>
+that is supplied together with the PyTorch distribution and doesn't require any additional installation.
+Using <em>PyTorch profiler</em> one can record CPU side operations as well as CUDA kernel launches on GPU side.
+The profiler can visualize analysis results using TensorBoard plugin as well as provide suggestions
+on bottlenecks and potential code improvements.</p>
+<div class="highlight"><pre><span></span><code> <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">profiler</span><span class="o">.</span><span class="n">profile</span><span class="p">(</span>
+    <span class="c1"># Limit number of training steps included in profiling</span>
+    <span class="n">schedule</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">profiler</span><span class="o">.</span><span class="n">schedule</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">warmup</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">active</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
+    <span class="c1"># Automatically saves profiling results to disk</span>
+    <span class="n">on_trace_ready</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">profiler</span><span class="o">.</span><span class="n">tensorboard_trace_handler</span><span class="p">,</span>
+    <span class="n">with_stack</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span> <span class="k">as</span> <span class="n">profiler</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">step</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">trainloader</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="c1"># -- TRAINING STEP CODE GOES HERE ---</span>
+        <span class="n">profiler</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+</code></pre></div>
+<p>The <code>tensorboard_trace_handler</code> can be used to generate result files for TensorBoard. Those can be visualized by installing TensorBoard.
+plugin and running TensorBoard on your log directory.</p>
+<div class="highlight"><pre><span></span><code>pip install torch_tb_profiler
+tensorboard --logdir<span class="o">=</span>&lt;LOG_DIR_PATH&gt;
+<span class="c1"># Navigate to `http://localhost:6006/#pytorch_profiler`</span>
+</code></pre></div>
+<blockquote>
+<p>Note: make sure to provide the right parameters to the <code>torch.profiler.schedule</code>. Usually you would need several steps of training to be profiled rather than the whole epoch.</p>
+</blockquote>
+<p>More information on <em>PyTorch profiler</em>:</p>
+<ul>
+<li><a href="https://pytorch.org/tutorials/recipes/recipes/profiler_recipe.html">PyTorch Profiler Recipe</a></li>
+<li><a href="https://pytorch.org/blog/introducing-pytorch-profiler-the-new-and-improved-performance-tool/">Introducing PyTorch Profiler - the new and improved performance tool</a></li>
+</ul>
+<h2 id="azure-machine-learning-pipeline-profiling">Azure Machine Learning pipeline profiling</h2>
+<p>In our projects we often use <a href="https://azure.microsoft.com/en-us/services/machine-learning/">Azure Machine Learning</a>
+pipelines to train Machine Learning models. Most of the profilers can also be used in conjunction with Azure Machine Learning.
+For a profiler to be used with Azure Machine Learning, it should meet the following criteria:</p>
+<ul>
+<li>Turning the profiler on/off can be achieved by passing a parameter to the script ran by Azure Machine Learning</li>
+<li>The profiler produces a file as an output</li>
+</ul>
+<p>In general, a recipe for using profilers with Azure Machine Learning is the following:</p>
 <ol>
-<li>Dockerize your application(s), including a build step if possible.</li>
-<li>Add a step in your docker file to execute unit tests.</li>
-<li>Add a step in the docker file for linting.</li>
-<li>Create a new dockerfile, possibly in a different folder, which executes end-to-end tests against the cluster. Make sure the default endpoints are configurable (This will become handy in your remote CI server, where you will be able to test against a live environment, if you choose to).</li>
-<li>Create a docker-compose file which allows you to choose which of the services to run. The default will run all applications and tests, and an optional parameter can run specific services, for example only the application without the tests.</li>
+<li>(Optional) If you're using profiling with an Azure Machine Learning pipeline, you might want to add <code>--profile</code>
+Boolean flag as a pipeline parameter</li>
+<li>Use one of the profilers described above or any other profiler that can produce a file as an output</li>
+<li>
+<p>Inside of your Python script, create step output folder, e.g.:</p>
+<div class="highlight"><pre><span></span><code><span class="n">output_dir</span> <span class="o">=</span> <span class="s2">&quot;./outputs/profiler_results&quot;</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+</li>
+<li>
+<p>Run your training pipeline</p>
+</li>
+<li>Once the pipeline is completed, navigate to Azure ML portal and open details of the step that contains training code.
+The results can be found in the <code>Outputs+logs</code> tab, under <code>outputs/profiler_results</code> folder.</li>
+<li>You might want to download the results and visualize it locally.</li>
 </ol>
-<h3 id="prerequisites">Prerequisites</h3>
-<ol>
-<li><a href="https://www.docker.com/products/docker-desktop">Docker</a></li>
-<li>Optional: if you clone the sample app, you need to have <a href="https://dotnet.microsoft.com/download">dotnet core</a> installed.</li>
-</ol>
-<h3 id="step-by-step-with-examples">Step by step with examples</h3>
-<p>For this tutorial we are going to use a <a href="https://github.com/itye-msft/cse-engagement-template">sample dotnet core api application</a>.
-Here is the docker file for the sample app:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># https://hub.docker.com/_/microsoft-dotnet</span>
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
-WORKDIR /app
-
-<span class="c1"># copy csproj and restore as distinct layers</span>
-COPY ./ ./
-RUN dotnet restore
-
-RUN dotnet <span class="nb">test</span>
-
-<span class="c1"># copy everything else and build app</span>
-COPY SampleApp/. ./
-RUN dotnet publish -c release -o out --no-restore
-
-<span class="c1"># final stage/image</span>
-FROM mcr.microsoft.com/dotnet/aspnet:5.0
-WORKDIR /app
-COPY --from<span class="o">=</span>build /app/out .
-ENTRYPOINT <span class="o">[</span><span class="s2">&quot;dotnet&quot;</span>, <span class="s2">&quot;SampleNetApi.dll&quot;</span><span class="o">]</span>
-</code></pre></div>
-<p>This script restores all dependencies, builds and runs tests. The dotnet app includes <code>stylecop</code> which fails the build in case of linting issues.</p>
-<p>Next we will also create a dockerfile to perform an end-to-end test. Usually this will look like a set of scripts, or a dedicated app which performs actual HTTP calls to a running application.
-For the sake of simplicity the dockerfile itself will run a simple curl command:</p>
-<div class="highlight"><pre><span></span><code>FROM alpine:3.7
-RUN apk --no-cache add curl
-ENTRYPOINT <span class="o">[</span><span class="s2">&quot;curl&quot;</span>,<span class="s2">&quot;0.0.0.0:8080/weatherforecast&quot;</span><span class="o">]</span>
-</code></pre></div>
-<p>Now we are ready to combine both of the dockerfiles in a docker-compose script:</p>
-<div class="highlight"><pre><span></span><code>version: <span class="s1">&#39;3&#39;</span>
-services:
-  app:
-    image: app:0.01
-    build:
-      context: .
-    ports:
-      - <span class="s2">&quot;8080:80&quot;</span>
-  e2e:
-    image: e2e:0.01
-    build:
-      context: ./E2E
-</code></pre></div>
-<p>The docker-compose script will launch the 2 dockerfiles, and it will build them if they were not built before.
-The following command will run docker compose:</p>
-<div class="highlight"><pre><span></span><code>docker-compose up --build -d
-</code></pre></div>
-<p>Once the images are up, you can make calls to the service. The e2e image will perform the set of e2e tests.
-If you want to skip the tests, you can simply tell compose to run a specific service by appending the name of the service, as follows:</p>
-<div class="highlight"><pre><span></span><code>docker-compose up --build -d app
-</code></pre></div>
-<p>Now you have a local script which builds and tests you application.
-The next step would be make your CI run the docker-compose script.</p>
-<p>Here is an example of a yaml file used by Azure DevOps pipelines:</p>
-<div class="highlight"><pre><span></span><code>trigger:
-- master
-
-pool:
-  vmImage: <span class="s1">&#39;ubuntu-latest&#39;</span>
-
-variables:
-  solution: <span class="s1">&#39;**/*.sln&#39;</span>
-  buildPlatform: <span class="s1">&#39;Any CPU&#39;</span>
-  buildConfiguration: <span class="s1">&#39;Release&#39;</span>
-
-steps:
-- task: DockerCompose@0
-  displayName: Build, Test, E2E
-  inputs:
-    action: Run services
-    dockerComposeFile: docker-compose.yml
-- script: dotnet restore SampleApp
-- script: dotnet build --configuration <span class="k">$(</span>buildConfiguration<span class="k">)</span> SampleApp
-  displayName: <span class="s1">&#39;dotnet build $(buildConfiguration)&#39;</span>
-</code></pre></div>
-<p>In this script the first step is docker-compose, which uses the same file we created the previous steps.
-The next steps, do the same using scripts, and are here for comparison.
-By the end of this step, your CI effectively runs the same build and test commands you run locally.</p>
+<blockquote>
+<p>Note: it's not recommended to run profilers simultaneously. Profiles also consume resources, therefore a simultaneous run
+might significantly affect the results.</p>
+</blockquote>
                 
                   
                     
@@ -4532,7 +4488,7 @@ By the end of this step, your CI effectively runs the same build and test comman
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 14, 2021</span>
     
   </small>
 </div>
@@ -4555,7 +4511,7 @@ By the end of this step, your CI effectively runs the same build and test comman
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../cross-platform-tasks/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../ml-problem-formulation-envisioning/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4564,19 +4520,19 @@ By the end of this step, your CI effectively runs the same build and test comman
               <span class="md-footer__direction">
                 Previous
               </span>
-              Cross Platform Tasks
+              Envisioning and Problem Formulation
             </div>
           </div>
         </a>
       
       
-        <a href="../onboarding-guide-template/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../ml-project-management/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Onboarding Guide Template
+              Agile Development Considerations for ML Projects
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -4605,10 +4561,10 @@ By the end of this step, your CI effectively runs the same build and test comman
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7353b375.min.js"></script>
       
     
   </body>
