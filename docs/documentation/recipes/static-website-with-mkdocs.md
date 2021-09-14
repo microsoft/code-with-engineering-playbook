@@ -26,3 +26,8 @@ To setup an MKDocs website, the main assets needed are:
 Setting up locally is very easy. See [Getting Started with MkDocs](https://www.mkdocs.org/getting-started/) for details.
 
 For publishing the website, there's a [good integration with Github for storing the website as a Github Page](https://www.mkdocs.org/user-guide/deploying-your-docs/).
+
+## Additional links
+
+- [MkDocs Plugins](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins)
+- [The best MkDocs plugins and customizations](https://chrieke.medium.com/the-best-mkdocs-plugins-and-customizations-fc820eb19759)
