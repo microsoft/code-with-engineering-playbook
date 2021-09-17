@@ -1757,8 +1757,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fxcop-analyzers" class="md-nav__link">
-    FxCop analyzers
+  <a href="#net-analyzers" class="md-nav__link">
+    .NET analyzers
   </a>
   
 </li>
@@ -4414,8 +4414,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fxcop-analyzers" class="md-nav__link">
-    FxCop analyzers
+  <a href="#net-analyzers" class="md-nav__link">
+    .NET analyzers
   </a>
   
 </li>
@@ -4483,7 +4483,7 @@
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;Project&gt;</span>
 ...
     <span class="nt">&lt;ItemGroup&gt;</span>
-        <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">&quot;Microsoft.CodeAnalysis.FxCopAnalyzers&quot;</span> <span class="na">Version=</span><span class="s">&quot;2.9.8&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">&quot;Microsoft.CodeAnalysis.NetAnalyzers&quot;</span> <span class="na">Version=</span><span class="s">&quot;5.0.3&quot;</span><span class="nt">&gt;</span>
           <span class="nt">&lt;PrivateAssets&gt;</span>all<span class="nt">&lt;/PrivateAssets&gt;</span>
           <span class="nt">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span class="nt">&lt;/IncludeAssets&gt;</span>
         <span class="nt">&lt;/PackageReference&gt;</span>
@@ -4508,9 +4508,10 @@
 </code></pre></div>
 <p>The <a href="https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019">.editorconfig</a> allows for configuration and overrides of rules. You can have an .editorconfig file at project level to customize rules for different projects (test projects for example).</p>
 <p><a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019">Details about the configuration of different rules</a>.</p>
-<h3 id="fxcop-analyzers">FxCop analyzers</h3>
-<p>Microsoft's FxCop analyzers check your code for security, performance, and design issues, among others. <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019">Install FxCop analyzers in Visual Studio</a>.</p>
-<p>You can install the FxCop analyzers using nuget or a VSIX extension. We recommend using the nuget package (<a href="#project-setup">see Project setup</a>). Which allows for consistent use across all developers on a project as well as CI validation.</p>
+<h3 id="net-analyzers">.NET analyzers</h3>
+<p>Microsoft's .NET analyzers has code quality rules and .NET API usage rules implemented as analyzers using the .NET Compiler Platform (Roslyn). This is the replacement for Microsoft's legacy <a href="https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/">FxCop analyzers</a>.</p>
+<p><a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019">Enable or install first-party .NET analyzers</a>.</p>
+<p>If you are currently using the legacy FxCop analyzers, <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/migrate-from-fxcop-analyzers-to-net-analyzers?view=vs-2019">migrate from FxCop analyzers to .NET analyzers</a>.</p>
 <h3 id="stylecop-analyzer">StyleCop analyzer</h3>
 <p>The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions about braces and spaces. Detailed information can be found here: <a href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers">StyleCop Analyzers for the .NET Compiler Platform</a>.</p>
 <p>The minimum rules set teams should adopt is the <a href="https://msdn.microsoft.com/en-us/library/dd264893.aspx">Managed Recommended Rules</a> rule set.</p>
@@ -4566,7 +4567,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2021</span>
     
   </small>
 </div>
