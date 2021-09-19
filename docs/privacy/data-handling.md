@@ -93,7 +93,7 @@ the team should promptly work to clean up engagement copies of data.
 - How is the system architected so data subject rights can be fulfilled? (ex manually, automated)
 - If personal data is involved have engaged privacy and legal teams for this project?
 
-## Summary 
+## Summary
 
 It is important to only pull in data that is needed for the problem at hand,
 when this is put in practice we find that we only maintain data that is adequate,
@@ -106,10 +106,10 @@ should be reviewed and considered when handling any type of sensitive data.
 
 ## Additional information
 
-  - [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center/privacy)
-  - [Tools for responsible AI - Protect](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1:primaryr5)
-  - [Data Protection Resources](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
-  - [FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
-  - [Microsoft Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide)
-  - [Accountability Readiness Checklists](https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-arc?view=o365-worldwide#gdpr-compliance-controls)
-  - [Privacy by Design The 7 Foundational Principles](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
+- [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center/privacy)
+- [Tools for responsible AI - Protect](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1:primaryr5)
+- [Data Protection Resources](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
+- [FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
+- [Microsoft Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide)
+- [Accountability Readiness Checklists](https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-arc?view=o365-worldwide#gdpr-compliance-controls)
+- [Privacy by Design The 7 Foundational Principles](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
