@@ -4,7 +4,7 @@
 
 The goal of this section is to briefly describe best practices in privacy fundamentals for data heavy projects or portions of a project that may contain data.
 
-**What it is not**: This document is not a checklist for how customers or readers should handle data in their environment.
+**What it is not**: This document is not a checklist for how customers or readers should handle data in their environment, and does not override Microsoft's or che customers' policies for data handling, data protection and information security.
 
 ## Introduction
 
@@ -43,8 +43,8 @@ It is important to be aware of data handling best practices and ensure the requi
 
 ## Handling data in CSE engagements
 
- Data should never leave customer-controlled environments and contractors and/or other members in the engagement
- should never have access to complete customer data sets but use limited customer data sets using the following prioritized approaches:
+Data should never leave customer-controlled environments and contractors and/or other members in the engagement
+should never have access to complete customer data sets but use limited customer data sets using the following prioritized approaches:
 
 1. Contractors or engagement partners do not work directly with production data, data will be copied before processing per the guidelines below.
 1. Always apply [data minimization](https://www.forbes.com/sites/bernardmarr/2016/03/16/why-data-minimization-is-an-important-concept-in-the-age-of-big-data/#3fb711e91da4)
@@ -67,17 +67,17 @@ Customers should provide CSE with a copy of the requested data in a location man
 The customer should consider turning any logging capabilities on so they can clearly identify who has access and what they do with that access.
 CSE should notify the customer when they are done with the data and suggest the customer destroy copies of the data if they are no longer needed.
 
-Our guiding principles when handling data in an engagement include:
+### Our guiding principles when handling data in an engagement
 
-- Only provide access to production data when required and explicitly state 5Ws behind the data access.
-- Limit access to the data set required to meet the engagement objectives.
+- Never directly access production data.
 - Explicitly state the intended purpose of data that can be used for engagement.
-- Only share production data with the approved members of the engagement team.
+- Only share copies of the production data with the approved members of the engagement team.
 - The entire team should work together to ensure that there are no dead copies of data. When the data is no longer needed,
 the team should promptly work to clean up engagement copies of data.
-- Do not send any production data outside the customer-controlled environment.
+- Do not send any copies of the production data outside the customer-controlled environment.
+- Only use the minimal subset of the data needed for the purpose of the engagement.
 
-Questions to consider when working with data:
+### Questions to consider when working with data
 
 - What data do we need?
 - What is the legal basis for processing this data?
@@ -92,6 +92,9 @@ Questions to consider when working with data:
 - Can we turn this data into Not in a Position to Identify (NPI) data to be used later on?
 - How is the system architected so data subject rights can be fulfilled? (ex manually, automated)
 - If personal data is involved have engaged privacy and legal teams for this project?
+
+## Summary 
+
 It is important to only pull in data that is needed for the problem at hand,
 when this is put in practice we find that we only maintain data that is adequate,
 relevant and limited to what is necessary in relation to the purposes for which they are processed.
@@ -100,12 +103,13 @@ some examples of these might be HIPPA, GDPR, CCPA.
 The customer should be aware of and surface any applicable regulations that apply to their data.
 Furthermore the [seven principles of privacy by design](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
 should be reviewed and considered when handling any type of sensitive data.
-Additional information:
 
-- [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center/privacy)
-- [Tools for responsible AI - Protect](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1:primaryr5)
-- [Data Protection Resources](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
-- [FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
-- [Microsoft Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide)
-- [Accountability Readiness Checklists](https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-arc?view=o365-worldwide#gdpr-compliance-controls)
-- [Privacy by Design The 7 Foundational Principles](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
+## Additional information
+
+  - [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center/privacy)
+  - [Tools for responsible AI - Protect](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1:primaryr5)
+  - [Data Protection Resources](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
+  - [FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
+  - [Microsoft Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide)
+  - [Accountability Readiness Checklists](https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-arc?view=o365-worldwide#gdpr-compliance-controls)
+  - [Privacy by Design The 7 Foundational Principles](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
