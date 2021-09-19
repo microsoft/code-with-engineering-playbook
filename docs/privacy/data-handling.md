@@ -104,7 +104,7 @@ The customer should be aware of and surface any applicable regulations that appl
 Furthermore the [seven principles of privacy by design](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
 should be reviewed and considered when handling any type of sensitive data.
 
-## Additional information
+## Resources
 
 - [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center/privacy)
 - [Tools for responsible AI - Protect](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1:primaryr5)
