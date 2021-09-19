@@ -29,7 +29,8 @@ We focus on four main use cases in the data lifecycle:
 
 In many scenarios, analysts, researchers and data scientists require access to a non-sensitive version or sample of the private data.
 In this section we focus on two approaches for obtaining non-sensitive data.
-Note that these two approaches do not guarantee that the outcome would not include private data, and additional measures should be applied.
+
+**Note:** These two approaches do not guarantee that the outcome would not include private data, and additional measures should be applied.
 
 #### Data de-identification
 
