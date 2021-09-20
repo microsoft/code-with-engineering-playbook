@@ -1,6 +1,6 @@
 # How to create a static website for your documentation based on mkdocs and mkdocs-material
 
-[MKDocs](https://www.mkdocs.org/) is a tool built to create static websites from raw markdown files. Other alternatives include [Sphinx](https://www.sphinx-doc.org/en/master/), and [Jekyll](https://jekyllrb.com/).
+[MkDocs](https://www.mkdocs.org/) is a tool built to create static websites from raw markdown files. Other alternatives include [Sphinx](https://www.sphinx-doc.org/en/master/), and [Jekyll](https://jekyllrb.com/).
 
 We used MKDocs to create [CSE Code-With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/) static website from the contents in [microsoft / code-with-engineering-playbook](https://github.com/microsoft/code-with-engineering-playbook) GitHub repository. Then we deployed it to a [GitHub Page](https://pages.github.com/).
 
