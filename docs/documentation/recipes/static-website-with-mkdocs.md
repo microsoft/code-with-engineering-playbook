@@ -4,7 +4,7 @@
 
 We used MKDocs to create [CSE Code-With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/) static website from the contents in [microsoft / code-with-engineering-playbook](https://github.com/microsoft/code-with-engineering-playbook) GitHub repository. Then we deployed it to a [GitHub Page](https://pages.github.com/).
 
-We found MKDocs to be a good choice since:
+We found MkDocs to be a good choice since:
 
 1. It's easy to set up and looks great even with the vanilla version.
 2. It works well with markdown, which is what we already have in the Playbook.
