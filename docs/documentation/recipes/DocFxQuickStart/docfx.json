@@ -1,0 +1,35 @@
+{
+    "metadata": [
+    {
+          "src": [
+          {
+              "files": [ "src/**.csproj" ],
+              "exclude": [ "_site/**", "**/bin/**", "**/obj/**", "**/[Tt]ests/**" ]
+          }
+          ],
+          "dest": "reference",
+          "disableGitFeatures": false
+       }
+    ],
+    "build": {
+        "content": [
+            { "files": [ "reference/**" ] },
+            {
+                "files": [ "**.md", "**/toc.yml" ],
+                "exclude": [ "_site/**", "**/bin/**", "**/obj/**", "**/[Tt]ests/**" ]
+            }
+        ],
+        "resource": [
+            { "files": ["docs/.attachments/**"] },
+            { "files": ["web.config"] }
+        ],
+        "template": [ "templates/cse" ],
+        "globalMetadata": {
+            "_appTitle": "CSE Documentation",
+            "_enableSearch": true
+        },
+        "markdownEngineName": "markdig",
+        "dest": "_site",
+        "xrefService": ["https://xref.docs.microsoft.com/query?uid={uid}"]
+    }
+}
