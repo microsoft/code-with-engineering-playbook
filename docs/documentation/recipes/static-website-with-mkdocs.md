@@ -19,7 +19,7 @@ To setup an MKDocs website, the main assets needed are:
 3. A [Github Action](https://docs.github.com/actions/learn-github-actions/understanding-github-actions) for automatically generating the website (e.g. on every commit to main), similar to [this one from the Playbook](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/workflows/mkdocs.yml).
 4. A list of plugins used during the build phase of the website. We specified ours [here](https://github.com/microsoft/code-with-engineering-playbook/blob/main/requirements-docs.txt). And these are the plugins we've used:
 
-    - [Material for MKDocs](https://squidfunk.github.io/mkdocs-material/): Material design appearance and user experience.
+    - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/): Material design appearance and user experience.
     - [pymdown-extensions](https://facelessuser.github.io/pymdown-extensions/): Improves the appearance of markdown based content.
     - [mdx_truly_sane_lists](https://github.com/radude/mdx_truly_sane_lists): For defining the indent level for lists without having to refactor the entire documentation we already had in the Playbook.
 
