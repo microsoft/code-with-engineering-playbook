@@ -12,7 +12,7 @@ We found MkDocs to be a good choice since:
 
 For comparison, Sphinx mainly generates docs from restructured-text (rst) format, and Jekyll is written in Ruby.
 
-To setup an MKDocs website, the main assets needed are:
+To setup an MkDocs website, the main assets needed are:
 
 1. An ```mkdocs.yaml``` file, similar to the one we have [in the Playbook](https://github.com/microsoft/code-with-engineering-playbook/blob/main/mkdocs.yml). This is the configuration file that defines the appearance of the website, the navigation, the plugins used and more.
 2. A folder named ```docs``` (the default value for the directory) that contains the documentation source files.
