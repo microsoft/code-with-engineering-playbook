@@ -28,8 +28,8 @@ A Data Science repository has this folder structure:
 The python files are needed to allow Pull Request reviewers to add comments to the notebooks, they can add comments
 to the Python scripts and we apply these comments to the notebooks.
 
-Since we have to run this process manually before we add files to a commit, this manual process is error prone, e.g. 
-If we create a notebook, generate the script from it, but later make some changes and forget to generate a new script 
+Since we have to run this process manually before we add files to a commit, this manual process is error prone, e.g.
+If we create a notebook, generate the script from it, but later make some changes and forget to generate a new script
 for the changes.
 
 ## Solution
