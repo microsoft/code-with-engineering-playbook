@@ -13,21 +13,21 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/automated-testing/cdc-testing/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/automated-testing/tech-specific-samples/power-platform-dataverse-tests/">
       
-      <link rel="icon" href="../../resources/ms_icon.png">
+      <link rel="icon" href="../../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>Consumer-driven Contract Testing (CDC) - Code With Engineering Playbook</title>
+        <title>Using Locust to Run Tests in Power Platform - Code With Engineering Playbook</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -67,7 +67,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#consumer-driven-contract-testing-cdc" class="md-skip">
+        <a href="#using-locust-to-run-tests-in-power-platform" class="md-skip">
           Skip to content
         </a>
       
@@ -86,9 +86,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Code With Engineering Playbook" class="md-header__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
+    <a href="../../.." title="Code With Engineering Playbook" class="md-header__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
       
-  <img src="../../resources/ms_icon.png" alt="logo">
+  <img src="../../../resources/ms_icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Consumer-driven Contract Testing (CDC)
+              Using Locust to Run Tests in Power Platform
             
           </span>
         </div>
@@ -178,9 +178,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Code With Engineering Playbook" class="md-nav__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
+    <a href="../../.." title="Code With Engineering Playbook" class="md-nav__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
       
-  <img src="../../resources/ms_icon.png" alt="logo">
+  <img src="../../../resources/ms_icon.png" alt="logo">
 
     </a>
     Code With Engineering Playbook
@@ -209,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         CSE Code-With Engineering Playbook
       </a>
     </li>
@@ -224,7 +224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CSE/" class="md-nav__link">
+      <a href="../../../CSE/" class="md-nav__link">
         Who We Are
       </a>
     </li>
@@ -239,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ENG-FUNDAMENTALS-CHECKLIST/" class="md-nav__link">
+      <a href="../../../ENG-FUNDAMENTALS-CHECKLIST/" class="md-nav__link">
         Engineering Fundamentals Checklist
       </a>
     </li>
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SPRINT-STRUCTURE/" class="md-nav__link">
+      <a href="../../../SPRINT-STRUCTURE/" class="md-nav__link">
         Structure of a Sprint
       </a>
     </li>
@@ -290,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/" class="md-nav__link">
+      <a href="../../../agile-development/" class="md-nav__link">
         Agile Development
       </a>
     </li>
@@ -302,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/retrospectives/" class="md-nav__link">
+      <a href="../../../agile-development/retrospectives/" class="md-nav__link">
         Retrospectives
       </a>
     </li>
@@ -314,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/scrum-of-scrums/" class="md-nav__link">
+      <a href="../../../agile-development/scrum-of-scrums/" class="md-nav__link">
         Scrum of Scrums
       </a>
     </li>
@@ -347,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/backlog-management/" class="md-nav__link">
+      <a href="../../../agile-development/backlog-management/" class="md-nav__link">
         Backlog Management
       </a>
     </li>
@@ -359,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/backlog-management/backlog-refinement/" class="md-nav__link">
+      <a href="../../../agile-development/backlog-management/backlog-refinement/" class="md-nav__link">
         Backlog Refinement
       </a>
     </li>
@@ -371,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/backlog-management/external-feedback/" class="md-nav__link">
+      <a href="../../../agile-development/backlog-management/external-feedback/" class="md-nav__link">
         External Feedback
       </a>
     </li>
@@ -383,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/backlog-management/minimal-slices/" class="md-nav__link">
+      <a href="../../../agile-development/backlog-management/minimal-slices/" class="md-nav__link">
         Minimalism Slices
       </a>
     </li>
@@ -422,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/collaboration/" class="md-nav__link">
+      <a href="../../../agile-development/collaboration/" class="md-nav__link">
         Collaboration
       </a>
     </li>
@@ -434,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/collaboration/add-pairing-field-azure-devops-cards/" class="md-nav__link">
+      <a href="../../../agile-development/collaboration/add-pairing-field-azure-devops-cards/" class="md-nav__link">
         How to add a Pairing Custom Field in Azure DevOps User Stories
       </a>
     </li>
@@ -446,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/collaboration/teaming-up/" class="md-nav__link">
+      <a href="../../../agile-development/collaboration/teaming-up/" class="md-nav__link">
         Engagement Team Development - CSE approach
       </a>
     </li>
@@ -458,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/collaboration/virtual-collaboration/" class="md-nav__link">
+      <a href="../../../agile-development/collaboration/virtual-collaboration/" class="md-nav__link">
         Virtual Collaboration and Pair Programming
       </a>
     </li>
@@ -497,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/sprint-planning/" class="md-nav__link">
+      <a href="../../../agile-development/sprint-planning/" class="md-nav__link">
         Sprint Planning
       </a>
     </li>
@@ -509,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/sprint-planning/estimation/" class="md-nav__link">
+      <a href="../../../agile-development/sprint-planning/estimation/" class="md-nav__link">
         Goals for Estimation
       </a>
     </li>
@@ -548,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/stand-ups/" class="md-nav__link">
+      <a href="../../../agile-development/stand-ups/" class="md-nav__link">
         Stand-ups
       </a>
     </li>
@@ -560,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/stand-ups/social-question/" class="md-nav__link">
+      <a href="../../../agile-development/stand-ups/social-question/" class="md-nav__link">
         Social Question of the Day
       </a>
     </li>
@@ -599,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/team-agreements/" class="md-nav__link">
+      <a href="../../../agile-development/team-agreements/" class="md-nav__link">
         Team Agreements
       </a>
     </li>
@@ -611,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/team-agreements/definition-of-done/" class="md-nav__link">
+      <a href="../../../agile-development/team-agreements/definition-of-done/" class="md-nav__link">
         Definition of Done
       </a>
     </li>
@@ -623,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/team-agreements/definition-of-ready/" class="md-nav__link">
+      <a href="../../../agile-development/team-agreements/definition-of-ready/" class="md-nav__link">
         Definition of Ready
       </a>
     </li>
@@ -635,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/team-agreements/team-manifesto/" class="md-nav__link">
+      <a href="../../../agile-development/team-agreements/team-manifesto/" class="md-nav__link">
         Team Manifesto
       </a>
     </li>
@@ -647,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agile-development/team-agreements/working-agreements/" class="md-nav__link">
+      <a href="../../../agile-development/team-agreements/working-agreements/" class="md-nav__link">
         Sections of a Working Agreement
       </a>
     </li>
@@ -697,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         Testing
       </a>
     </li>
@@ -707,14 +707,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
       
       <label class="md-nav__link" for="__nav_6_2">
         Cdc testing
@@ -730,104 +728,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Consumer-driven Contract Testing (CDC)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../cdc-testing/" class="md-nav__link">
         Consumer-driven Contract Testing (CDC)
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-consumer-driven-contract-testing" class="md-nav__link">
-    Why Consumer-driven Contract Testing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consumer-driven-contract-testing-design-blocks" class="md-nav__link">
-    Consumer-driven Contract Testing Design Blocks
-  </a>
-  
-    <nav class="md-nav" aria-label="Consumer-driven Contract Testing Design Blocks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#consumer-tests-with-provider-mock" class="md-nav__link">
-    Consumer Tests with Provider Mock
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contract" class="md-nav__link">
-    Contract
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#provider-contract-verification" class="md-nav__link">
-    Provider Contract Verification
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cdc-testing-frameworks-and-tools" class="md-nav__link">
-    CDC Testing Frameworks and Tools
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -864,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../e2e-testing/" class="md-nav__link">
+      <a href="../../e2e-testing/" class="md-nav__link">
         E2E Testing
       </a>
     </li>
@@ -876,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../e2e-testing/testing-comparison/" class="md-nav__link">
+      <a href="../../e2e-testing/testing-comparison/" class="md-nav__link">
         Unit vs Integration vs System vs E2E Testing
       </a>
     </li>
@@ -888,7 +793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../e2e-testing/testing-methods/" class="md-nav__link">
+      <a href="../../e2e-testing/testing-methods/" class="md-nav__link">
         E2E Testing Methods
       </a>
     </li>
@@ -921,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../e2e-testing/recipes/gauge-framework/" class="md-nav__link">
+      <a href="../../e2e-testing/recipes/gauge-framework/" class="md-nav__link">
         Gauge Framework
       </a>
     </li>
@@ -966,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fault-injection-testing/" class="md-nav__link">
+      <a href="../../fault-injection-testing/" class="md-nav__link">
         Fault Injection Testing
       </a>
     </li>
@@ -1005,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../integration-testing/" class="md-nav__link">
+      <a href="../../integration-testing/" class="md-nav__link">
         Integration Testing
       </a>
     </li>
@@ -1044,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../performance-testing/" class="md-nav__link">
+      <a href="../../performance-testing/" class="md-nav__link">
         Performance Testing
       </a>
     </li>
@@ -1056,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../performance-testing/load-testing/" class="md-nav__link">
+      <a href="../../performance-testing/load-testing/" class="md-nav__link">
         Load Testing
       </a>
     </li>
@@ -1095,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shadow-testing/" class="md-nav__link">
+      <a href="../../shadow-testing/" class="md-nav__link">
         Shadow Testing
       </a>
     </li>
@@ -1134,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../smoke-testing/" class="md-nav__link">
+      <a href="../../smoke-testing/" class="md-nav__link">
         Smoke Testing
       </a>
     </li>
@@ -1173,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../synthetic-monitoring-tests/" class="md-nav__link">
+      <a href="../../synthetic-monitoring-tests/" class="md-nav__link">
         Synthetic Monitoring Tests
       </a>
     </li>
@@ -1189,12 +1094,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10" type="checkbox" id="__nav_6_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10" type="checkbox" id="__nav_6_10" checked>
       
       <label class="md-nav__link" for="__nav_6_10">
         Tech specific samples
@@ -1233,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tech-specific-samples/azdo-container-dev-test-release/" class="md-nav__link">
+      <a href="../azdo-container-dev-test-release/" class="md-nav__link">
         Building Containers with Azure DevOps using DevTest Pattern
       </a>
     </li>
@@ -1272,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tech-specific-samples/blobstorage-unit-tests/" class="md-nav__link">
+      <a href="../blobstorage-unit-tests/" class="md-nav__link">
         Using Azurite to Run Blob Storage Tests in a Pipeline
       </a>
     </li>
@@ -1288,12 +1195,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_3" type="checkbox" id="__nav_6_10_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_3" type="checkbox" id="__nav_6_10_3" checked>
       
       <label class="md-nav__link" for="__nav_6_10_3">
         Power platform dataverse tests
@@ -1309,11 +1218,137 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../tech-specific-samples/power-platform-dataverse-tests/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Using Locust to Run Tests in Power Platform
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Using Locust to Run Tests in Power Platform
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    Challenges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overcoming-the-challenges" class="md-nav__link">
+    Overcoming the challenges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests-in-power-platform-and-dataverse" class="md-nav__link">
+    Tests in Power Platform and Dataverse
+  </a>
+  
+    <nav class="md-nav" aria-label="Tests in Power Platform and Dataverse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-to-open" class="md-nav__link">
+    Message to Open
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-to-close" class="md-nav__link">
+    Message to Close
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-locust" class="md-nav__link">
+    Using Locust
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Locust">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locust-in-docker" class="md-nav__link">
+    Locust in Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="Locust in Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-docker-and-docker-compose" class="md-nav__link">
+    Configuring Docker and docker-compose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-run-locust-locally" class="md-nav__link">
+    Alternative: run Locust locally
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-the-locust-test-file-for-reuse" class="md-nav__link">
+    Writing the locust test file for reuse
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1356,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../templates/case-study-template/" class="md-nav__link">
+      <a href="../../templates/case-study-template/" class="md-nav__link">
         ~Customer Project~ Case Study
       </a>
     </li>
@@ -1368,7 +1403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../templates/test_type_template/" class="md-nav__link">
+      <a href="../../templates/test_type_template/" class="md-nav__link">
         Insert Test Technique Name Here
       </a>
     </li>
@@ -1407,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui-testing/" class="md-nav__link">
+      <a href="../../ui-testing/" class="md-nav__link">
         User Interface Testing
       </a>
     </li>
@@ -1446,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit-testing/" class="md-nav__link">
+      <a href="../../unit-testing/" class="md-nav__link">
         Unit Testing
       </a>
     </li>
@@ -1458,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit-testing/authoring_example/" class="md-nav__link">
+      <a href="../../unit-testing/authoring_example/" class="md-nav__link">
         Example: Authoring a unit test
       </a>
     </li>
@@ -1470,7 +1505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit-testing/custom-connector/" class="md-nav__link">
+      <a href="../../unit-testing/custom-connector/" class="md-nav__link">
         Custom Connector Testing
       </a>
     </li>
@@ -1482,7 +1517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit-testing/mocking/" class="md-nav__link">
+      <a href="../../unit-testing/mocking/" class="md-nav__link">
         Mocking in Unit Tests
       </a>
     </li>
@@ -1494,7 +1529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit-testing/tdd_example/" class="md-nav__link">
+      <a href="../../unit-testing/tdd_example/" class="md-nav__link">
         Test-Driven Development Example
       </a>
     </li>
@@ -1506,7 +1541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit-testing/why-unit-tests/" class="md-nav__link">
+      <a href="../../unit-testing/why-unit-tests/" class="md-nav__link">
         Why Unit Tests
       </a>
     </li>
@@ -1554,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/" class="md-nav__link">
+      <a href="../../../code-reviews/" class="md-nav__link">
         Code Reviews
       </a>
     </li>
@@ -1566,7 +1601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/faq/" class="md-nav__link">
+      <a href="../../../code-reviews/faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -1578,7 +1613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/inclusion-in-code-review/" class="md-nav__link">
+      <a href="../../../code-reviews/inclusion-in-code-review/" class="md-nav__link">
         Inclusion in Code Review
       </a>
     </li>
@@ -1590,7 +1625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/pull-requests/" class="md-nav__link">
+      <a href="../../../code-reviews/pull-requests/" class="md-nav__link">
         Pull Requests
       </a>
     </li>
@@ -1602,7 +1637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/tools/" class="md-nav__link">
+      <a href="../../../code-reviews/tools/" class="md-nav__link">
         Code Review Tools
       </a>
     </li>
@@ -1635,7 +1670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/evidence-and-measures/" class="md-nav__link">
+      <a href="../../../code-reviews/evidence-and-measures/" class="md-nav__link">
         Evidence and Measures
       </a>
     </li>
@@ -1647,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/evidence-and-measures/branch-policy/" class="md-nav__link">
+      <a href="../../../code-reviews/evidence-and-measures/branch-policy/" class="md-nav__link">
         Configuring Branch Policies
       </a>
     </li>
@@ -1686,7 +1721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/process-guidance/" class="md-nav__link">
+      <a href="../../../code-reviews/process-guidance/" class="md-nav__link">
         Process Guidance
       </a>
     </li>
@@ -1698,7 +1733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/process-guidance/author-guidance/" class="md-nav__link">
+      <a href="../../../code-reviews/process-guidance/author-guidance/" class="md-nav__link">
         Author Guidance
       </a>
     </li>
@@ -1710,7 +1745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/process-guidance/customize-ado/" class="md-nav__link">
+      <a href="../../../code-reviews/process-guidance/customize-ado/" class="md-nav__link">
         Customize ADO
       </a>
     </li>
@@ -1722,7 +1757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/process-guidance/reviewer-guidance/" class="md-nav__link">
+      <a href="../../../code-reviews/process-guidance/reviewer-guidance/" class="md-nav__link">
         Reviewer Guidance
       </a>
     </li>
@@ -1761,7 +1796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/pull-request-template/pull-request-template/" class="md-nav__link">
+      <a href="../../../code-reviews/pull-request-template/pull-request-template/" class="md-nav__link">
         [Work Item ID](./link-to-the-work-item)
       </a>
     </li>
@@ -1800,7 +1835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/" class="md-nav__link">
         Language Specific Guidance
       </a>
     </li>
@@ -1812,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/azure-pipelines-yaml/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/azure-pipelines-yaml/" class="md-nav__link">
         YAML(Azure Pipelines) Code Reviews
       </a>
     </li>
@@ -1824,7 +1859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/bash/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/bash/" class="md-nav__link">
         Bash Code Reviews
       </a>
     </li>
@@ -1836,7 +1871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/csharp/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/csharp/" class="md-nav__link">
         C# Code Reviews
       </a>
     </li>
@@ -1848,7 +1883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/go/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/go/" class="md-nav__link">
         Go Code Reviews
       </a>
     </li>
@@ -1860,7 +1895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/java/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/java/" class="md-nav__link">
         Java Code Reviews
       </a>
     </li>
@@ -1872,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/javascript-and-typescript/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/javascript-and-typescript/" class="md-nav__link">
         JavaScript/TypeScript Code Reviews
       </a>
     </li>
@@ -1884,7 +1919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/markdown/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/markdown/" class="md-nav__link">
         Markdown Code Reviews
       </a>
     </li>
@@ -1896,7 +1931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/python/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/python/" class="md-nav__link">
         Python Code Reviews
       </a>
     </li>
@@ -1908,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code-reviews/recipes/terraform/" class="md-nav__link">
+      <a href="../../../code-reviews/recipes/terraform/" class="md-nav__link">
         Terraform Code Reviews
       </a>
     </li>
@@ -1956,7 +1991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-delivery/" class="md-nav__link">
+      <a href="../../../continuous-delivery/" class="md-nav__link">
         Continuous Delivery
       </a>
     </li>
@@ -2031,7 +2066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-delivery/devops-provider-recipes/github-actions/runtime-variables/runtime-variables/" class="md-nav__link">
+      <a href="../../../continuous-delivery/devops-provider-recipes/github-actions/runtime-variables/runtime-variables/" class="md-nav__link">
         Runtime Variables in GitHub Actions
       </a>
     </li>
@@ -2103,7 +2138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-delivery/recipes/github-workflows/workflow-per-environment/" class="md-nav__link">
+      <a href="../../../continuous-delivery/recipes/github-workflows/workflow-per-environment/" class="md-nav__link">
         GitHub Workflows
       </a>
     </li>
@@ -2148,7 +2183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-delivery/secrets-management/" class="md-nav__link">
+      <a href="../../../continuous-delivery/secrets-management/" class="md-nav__link">
         Secrets Management
       </a>
     </li>
@@ -2202,7 +2237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch/" class="md-nav__link">
+      <a href="../../../continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch/" class="md-nav__link">
         Azure DevOps: Managing Settings on a Per-Branch Basis
       </a>
     </li>
@@ -2262,7 +2297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/" class="md-nav__link">
+      <a href="../../../continuous-integration/" class="md-nav__link">
         Continuous Integration
       </a>
     </li>
@@ -2274,7 +2309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/CICD/" class="md-nav__link">
+      <a href="../../../continuous-integration/CICD/" class="md-nav__link">
         Continuous Integration and Delivery
       </a>
     </li>
@@ -2307,7 +2342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/dev-sec-ops/" class="md-nav__link">
+      <a href="../../../continuous-integration/dev-sec-ops/" class="md-nav__link">
         DevSecOps
       </a>
     </li>
@@ -2340,7 +2375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/dev-sec-ops/dependency-container-scanning/dependency_container_scanning/" class="md-nav__link">
+      <a href="../../../continuous-integration/dev-sec-ops/dependency-container-scanning/dependency_container_scanning/" class="md-nav__link">
         Dependency and Container Scanning
       </a>
     </li>
@@ -2379,7 +2414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/dev-sec-ops/penetration-testing/penetration_testing/" class="md-nav__link">
+      <a href="../../../continuous-integration/dev-sec-ops/penetration-testing/penetration_testing/" class="md-nav__link">
         Penetration Testing
       </a>
     </li>
@@ -2418,7 +2453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/dev-sec-ops/secret-management/credential_scanning/" class="md-nav__link">
+      <a href="../../../continuous-integration/dev-sec-ops/secret-management/credential_scanning/" class="md-nav__link">
         Credential Scanning
       </a>
     </li>
@@ -2430,7 +2465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/dev-sec-ops/secret-management/secrets_rotation/" class="md-nav__link">
+      <a href="../../../continuous-integration/dev-sec-ops/secret-management/secrets_rotation/" class="md-nav__link">
         Secrets Rotation
       </a>
     </li>
@@ -2463,7 +2498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/" class="md-nav__link">
+      <a href="../../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/" class="md-nav__link">
         Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
       </a>
     </li>
@@ -2475,7 +2510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets/" class="md-nav__link">
+      <a href="../../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets/" class="md-nav__link">
         Credential Scanning Tool: detect-secrets
       </a>
     </li>
@@ -2520,7 +2555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../continuous-integration/dev-sec-ops/static-code-analysis/static_code_analysis/" class="md-nav__link">
+      <a href="../../../continuous-integration/dev-sec-ops/static-code-analysis/static_code_analysis/" class="md-nav__link">
         Static Code Analysis
       </a>
     </li>
@@ -2574,7 +2609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/" class="md-nav__link">
+      <a href="../../../design/" class="md-nav__link">
         Design
       </a>
     </li>
@@ -2607,7 +2642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-patterns/" class="md-nav__link">
+      <a href="../../../design/design-patterns/" class="md-nav__link">
         Design Patterns
       </a>
     </li>
@@ -2619,7 +2654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-patterns/non-functional-requirements-capture-guide/" class="md-nav__link">
+      <a href="../../../design/design-patterns/non-functional-requirements-capture-guide/" class="md-nav__link">
         Non-Functional Requirements Capture
       </a>
     </li>
@@ -2652,7 +2687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-patterns/data-heavy-design-guidance/" class="md-nav__link">
+      <a href="../../../design/design-patterns/data-heavy-design-guidance/" class="md-nav__link">
         Data and DataOps Fundamentals
       </a>
     </li>
@@ -2691,7 +2726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-patterns/rest-api-design-guidance/" class="md-nav__link">
+      <a href="../../../design/design-patterns/rest-api-design-guidance/" class="md-nav__link">
         REST API Design Guidance
       </a>
     </li>
@@ -2736,7 +2771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/" class="md-nav__link">
+      <a href="../../../design/design-reviews/" class="md-nav__link">
         Design Reviews
       </a>
     </li>
@@ -2769,7 +2804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/decision-log/" class="md-nav__link">
+      <a href="../../../design/design-reviews/decision-log/" class="md-nav__link">
         Design Decision Log
       </a>
     </li>
@@ -2802,7 +2837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/decision-log/doc/decision-log/" class="md-nav__link">
+      <a href="../../../design/design-reviews/decision-log/doc/decision-log/" class="md-nav__link">
         Decision Log
       </a>
     </li>
@@ -2835,7 +2870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/" class="md-nav__link">
+      <a href="../../../design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/" class="md-nav__link">
         1. Record architecture decisions
       </a>
     </li>
@@ -2847,7 +2882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/decision-log/doc/adr/0002-app-level-logging/" class="md-nav__link">
+      <a href="../../../design/design-reviews/decision-log/doc/adr/0002-app-level-logging/" class="md-nav__link">
         2. App-level Logging with Serilog and Application Insights
       </a>
     </li>
@@ -2898,7 +2933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/async-design-reviews/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/async-design-reviews/" class="md-nav__link">
         Async Design Reviews
       </a>
     </li>
@@ -2910,7 +2945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/engagement-process/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/engagement-process/" class="md-nav__link">
         Incorporating Design Reviews into an Engagement
       </a>
     </li>
@@ -2922,7 +2957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/engineering-feasibility-spikes/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/engineering-feasibility-spikes/" class="md-nav__link">
         Engineering Feasibility Spikes: identifying and mitigating risk
       </a>
     </li>
@@ -2934,7 +2969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/feature-story-design-review-template/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/feature-story-design-review-template/" class="md-nav__link">
         Your Feature or Story Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -2946,7 +2981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/high-level-design-recipe/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/high-level-design-recipe/" class="md-nav__link">
         High Level / Game Plan Design Recipe
       </a>
     </li>
@@ -2958,7 +2993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/milestone-epic-design-review-recipe/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/milestone-epic-design-review-recipe/" class="md-nav__link">
         Milestone / Epic Design Review Recipe
       </a>
     </li>
@@ -2970,7 +3005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/milestone-epic-design-review-template/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/milestone-epic-design-review-template/" class="md-nav__link">
         Your Milestone/Epic Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -2982,7 +3017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/task-design-review-template/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/task-design-review-template/" class="md-nav__link">
         Your Task Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -2994,7 +3029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/recipes/technical-spike/" class="md-nav__link">
+      <a href="../../../design/design-reviews/recipes/technical-spike/" class="md-nav__link">
         Technical Spike
       </a>
     </li>
@@ -3033,7 +3068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/trade-studies/" class="md-nav__link">
+      <a href="../../../design/design-reviews/trade-studies/" class="md-nav__link">
         Trade Studies
       </a>
     </li>
@@ -3045,7 +3080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/design-reviews/trade-studies/template/" class="md-nav__link">
+      <a href="../../../design/design-reviews/trade-studies/template/" class="md-nav__link">
         Trade Study Template
       </a>
     </li>
@@ -3099,7 +3134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developer-experience/" class="md-nav__link">
+      <a href="../../../developer-experience/" class="md-nav__link">
         Developer Experience (DevEx)
       </a>
     </li>
@@ -3111,7 +3146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developer-experience/devcontainers/" class="md-nav__link">
+      <a href="../../../developer-experience/devcontainers/" class="md-nav__link">
         Getting Started with Dev Containers
       </a>
     </li>
@@ -3144,7 +3179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developer-experience/recipes/cross-platform-tasks/" class="md-nav__link">
+      <a href="../../../developer-experience/recipes/cross-platform-tasks/" class="md-nav__link">
         Cross Platform Tasks
       </a>
     </li>
@@ -3156,7 +3191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developer-experience/recipes/execute-local-pipeline-with-docker/" class="md-nav__link">
+      <a href="../../../developer-experience/recipes/execute-local-pipeline-with-docker/" class="md-nav__link">
         Execute Local Pipeline
       </a>
     </li>
@@ -3168,7 +3203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../developer-experience/recipes/onboarding-guide-template/" class="md-nav__link">
+      <a href="../../../developer-experience/recipes/onboarding-guide-template/" class="md-nav__link">
         Onboarding Guide Template
       </a>
     </li>
@@ -3216,7 +3251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/" class="md-nav__link">
+      <a href="../../../documentation/" class="md-nav__link">
         Documentation
       </a>
     </li>
@@ -3249,7 +3284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/best-practices/automation/" class="md-nav__link">
+      <a href="../../../documentation/best-practices/automation/" class="md-nav__link">
         Replacing Documentation with Automation
       </a>
     </li>
@@ -3261,7 +3296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/best-practices/establish-and-manage/" class="md-nav__link">
+      <a href="../../../documentation/best-practices/establish-and-manage/" class="md-nav__link">
         Establishing and Managing Documentation
       </a>
     </li>
@@ -3273,7 +3308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/best-practices/good-documentation/" class="md-nav__link">
+      <a href="../../../documentation/best-practices/good-documentation/" class="md-nav__link">
         Creating Good Documentation
       </a>
     </li>
@@ -3312,7 +3347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/guidance/code/" class="md-nav__link">
+      <a href="../../../documentation/guidance/code/" class="md-nav__link">
         Code
       </a>
     </li>
@@ -3324,7 +3359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/guidance/engineering-feedback/" class="md-nav__link">
+      <a href="../../../documentation/guidance/engineering-feedback/" class="md-nav__link">
         Engineering Feedback
       </a>
     </li>
@@ -3336,7 +3371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/guidance/project-and-repositories/" class="md-nav__link">
+      <a href="../../../documentation/guidance/project-and-repositories/" class="md-nav__link">
         Projects and Repositories
       </a>
     </li>
@@ -3348,7 +3383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/guidance/pull-requests/" class="md-nav__link">
+      <a href="../../../documentation/guidance/pull-requests/" class="md-nav__link">
         Pull Requests
       </a>
     </li>
@@ -3360,7 +3395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/guidance/rest-apis/" class="md-nav__link">
+      <a href="../../../documentation/guidance/rest-apis/" class="md-nav__link">
         REST APIs
       </a>
     </li>
@@ -3399,7 +3434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/recipes/static-website-with-mkdocs/" class="md-nav__link">
+      <a href="../../../documentation/recipes/static-website-with-mkdocs/" class="md-nav__link">
         How to create a static website for your documentation based on mkdocs and mkdocs-material
       </a>
     </li>
@@ -3411,7 +3446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/recipes/sync-wiki-between-repos/" class="md-nav__link">
+      <a href="../../../documentation/recipes/sync-wiki-between-repos/" class="md-nav__link">
         How to Sync a Wiki between Repositories
       </a>
     </li>
@@ -3450,7 +3485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/tools/automation/" class="md-nav__link">
+      <a href="../../../documentation/tools/automation/" class="md-nav__link">
         How to Automate Simple Checks
       </a>
     </li>
@@ -3462,7 +3497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/tools/integrations/" class="md-nav__link">
+      <a href="../../../documentation/tools/integrations/" class="md-nav__link">
         Integration with Teams/Slack
       </a>
     </li>
@@ -3474,7 +3509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/tools/languages/" class="md-nav__link">
+      <a href="../../../documentation/tools/languages/" class="md-nav__link">
         Languages
       </a>
     </li>
@@ -3486,7 +3521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/tools/wikis/" class="md-nav__link">
+      <a href="../../../documentation/tools/wikis/" class="md-nav__link">
         Wikis
       </a>
     </li>
@@ -3534,7 +3569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../engineering-feedback/" class="md-nav__link">
+      <a href="../../../engineering-feedback/" class="md-nav__link">
         Microsoft Engineering Feedback
       </a>
     </li>
@@ -3546,7 +3581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../engineering-feedback/feedback-examples/" class="md-nav__link">
+      <a href="../../../engineering-feedback/feedback-examples/" class="md-nav__link">
         Engineering Feedback Examples
       </a>
     </li>
@@ -3558,7 +3593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../engineering-feedback/feedback-faq/" class="md-nav__link">
+      <a href="../../../engineering-feedback/feedback-faq/" class="md-nav__link">
         Engineering Feedback Frequently Asked Questions (F.A.Q.)
       </a>
     </li>
@@ -3570,7 +3605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../engineering-feedback/feedback-guidance/" class="md-nav__link">
+      <a href="../../../engineering-feedback/feedback-guidance/" class="md-nav__link">
         Engineering Feedback Guidance
       </a>
     </li>
@@ -3612,7 +3647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/" class="md-nav__link">
+      <a href="../../../machine-learning/" class="md-nav__link">
         Machine Learning Fundamentals at CSE
       </a>
     </li>
@@ -3624,7 +3659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-experimentation/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-experimentation/" class="md-nav__link">
         Model Experimentation
       </a>
     </li>
@@ -3636,7 +3671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-feasibility-study/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-feasibility-study/" class="md-nav__link">
         ML Feasibility Studies
       </a>
     </li>
@@ -3648,7 +3683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-fundamentals-checklist/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-fundamentals-checklist/" class="md-nav__link">
         ML Fundamentals Checklist
       </a>
     </li>
@@ -3660,7 +3695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-model-checklist/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-model-checklist/" class="md-nav__link">
         ML model production checklist
       </a>
     </li>
@@ -3672,7 +3707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-problem-formulation-envisioning/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-problem-formulation-envisioning/" class="md-nav__link">
         Envisioning and Problem Formulation
       </a>
     </li>
@@ -3684,7 +3719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-profiling/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-profiling/" class="md-nav__link">
         Profiling Machine Learning and MLOps Code
       </a>
     </li>
@@ -3696,7 +3731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-project-management/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-project-management/" class="md-nav__link">
         Agile Development Considerations for ML Projects
       </a>
     </li>
@@ -3708,7 +3743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-proposed-process/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-proposed-process/" class="md-nav__link">
         Proposed ML Process
       </a>
     </li>
@@ -3720,7 +3755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/ml-testing/" class="md-nav__link">
+      <a href="../../../machine-learning/ml-testing/" class="md-nav__link">
         Testing Data Science and MLOps Code
       </a>
     </li>
@@ -3732,7 +3767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/responsible-ai/" class="md-nav__link">
+      <a href="../../../machine-learning/responsible-ai/" class="md-nav__link">
         Responsible AI in CSE
       </a>
     </li>
@@ -3774,7 +3809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/" class="md-nav__link">
+      <a href="../../../observability/" class="md-nav__link">
         Observability
       </a>
     </li>
@@ -3786,7 +3821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/alerting/" class="md-nav__link">
+      <a href="../../../observability/alerting/" class="md-nav__link">
         Guidance for Alerting
       </a>
     </li>
@@ -3798,7 +3833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/best-practices/" class="md-nav__link">
+      <a href="../../../observability/best-practices/" class="md-nav__link">
         Recommended Practices
       </a>
     </li>
@@ -3810,7 +3845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/correlation-id/" class="md-nav__link">
+      <a href="../../../observability/correlation-id/" class="md-nav__link">
         Correlation IDs
       </a>
     </li>
@@ -3822,7 +3857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/log-vs-metric/" class="md-nav__link">
+      <a href="../../../observability/log-vs-metric/" class="md-nav__link">
         Logs vs Metrics
       </a>
     </li>
@@ -3834,7 +3869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/logs-privacy/" class="md-nav__link">
+      <a href="../../../observability/logs-privacy/" class="md-nav__link">
         Guidance for Privacy
       </a>
     </li>
@@ -3846,7 +3881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/microservices/" class="md-nav__link">
+      <a href="../../../observability/microservices/" class="md-nav__link">
         Observability in Microservices
       </a>
     </li>
@@ -3858,7 +3893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/ml-observability/" class="md-nav__link">
+      <a href="../../../observability/ml-observability/" class="md-nav__link">
         Observability in Machine Learning
       </a>
     </li>
@@ -3870,7 +3905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/observability-as-code/" class="md-nav__link">
+      <a href="../../../observability/observability-as-code/" class="md-nav__link">
         Observability as Code
       </a>
     </li>
@@ -3882,7 +3917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/observability-pipelines/" class="md-nav__link">
+      <a href="../../../observability/observability-pipelines/" class="md-nav__link">
         Observability of CI/CD Pipelines
       </a>
     </li>
@@ -3894,7 +3929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/pitfalls/" class="md-nav__link">
+      <a href="../../../observability/pitfalls/" class="md-nav__link">
         Things to Watch for when Building Observable Systems
       </a>
     </li>
@@ -3906,7 +3941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/profiling/" class="md-nav__link">
+      <a href="../../../observability/profiling/" class="md-nav__link">
         Profiling
       </a>
     </li>
@@ -3918,7 +3953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/recipes-observability/" class="md-nav__link">
+      <a href="../../../observability/recipes-observability/" class="md-nav__link">
         Recipes
       </a>
     </li>
@@ -3951,7 +3986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/pillars/dashboard/" class="md-nav__link">
+      <a href="../../../observability/pillars/dashboard/" class="md-nav__link">
         Dashboard
       </a>
     </li>
@@ -3963,7 +3998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/pillars/logging/" class="md-nav__link">
+      <a href="../../../observability/pillars/logging/" class="md-nav__link">
         Logging
       </a>
     </li>
@@ -3975,7 +4010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/pillars/metrics/" class="md-nav__link">
+      <a href="../../../observability/pillars/metrics/" class="md-nav__link">
         Metrics
       </a>
     </li>
@@ -3987,7 +4022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/pillars/tracing/" class="md-nav__link">
+      <a href="../../../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
     </li>
@@ -4026,7 +4061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/tools/" class="md-nav__link">
+      <a href="../../../observability/tools/" class="md-nav__link">
         Tools and Patterns
       </a>
     </li>
@@ -4038,7 +4073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/tools/KubernetesDashboards/" class="md-nav__link">
+      <a href="../../../observability/tools/KubernetesDashboards/" class="md-nav__link">
         Kubernetes UI Dashboards
       </a>
     </li>
@@ -4050,7 +4085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/tools/OpenTelemetry/" class="md-nav__link">
+      <a href="../../../observability/tools/OpenTelemetry/" class="md-nav__link">
         Open Telemetry
       </a>
     </li>
@@ -4062,7 +4097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/tools/Prometheus/" class="md-nav__link">
+      <a href="../../../observability/tools/Prometheus/" class="md-nav__link">
         Prometheus
       </a>
     </li>
@@ -4074,7 +4109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../observability/tools/loki/" class="md-nav__link">
+      <a href="../../../observability/tools/loki/" class="md-nav__link">
         Loki
       </a>
     </li>
@@ -4122,7 +4157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reliability/" class="md-nav__link">
+      <a href="../../../reliability/" class="md-nav__link">
         Reliability
       </a>
     </li>
@@ -4185,7 +4220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/templates/" class="md-nav__link">
+      <a href="../../../resources/templates/" class="md-nav__link">
         project-xyz
       </a>
     </li>
@@ -4197,7 +4232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/templates/CONTRIBUTING/" class="md-nav__link">
+      <a href="../../../resources/templates/CONTRIBUTING/" class="md-nav__link">
         Contributing
       </a>
     </li>
@@ -4245,7 +4280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/" class="md-nav__link">
+      <a href="../../../security/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -4257,7 +4292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/rules-of-engagement/" class="md-nav__link">
+      <a href="../../../security/rules-of-engagement/" class="md-nav__link">
         Rules of Engagement
       </a>
     </li>
@@ -4299,7 +4334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../source-control/" class="md-nav__link">
+      <a href="../../../source-control/" class="md-nav__link">
         Source Control
       </a>
     </li>
@@ -4311,7 +4346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../source-control/component-versioning/" class="md-nav__link">
+      <a href="../../../source-control/component-versioning/" class="md-nav__link">
         Component Versioning
       </a>
     </li>
@@ -4323,7 +4358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../source-control/merge-strategies/" class="md-nav__link">
+      <a href="../../../source-control/merge-strategies/" class="md-nav__link">
         Merge strategies
       </a>
     </li>
@@ -4335,7 +4370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../source-control/naming-branches/" class="md-nav__link">
+      <a href="../../../source-control/naming-branches/" class="md-nav__link">
         Naming branches
       </a>
     </li>
@@ -4347,7 +4382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../source-control/secrets-management/" class="md-nav__link">
+      <a href="../../../source-control/secrets-management/" class="md-nav__link">
         Working with Secrets in Source Control
       </a>
     </li>
@@ -4380,7 +4415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../source-control/git-guidance/" class="md-nav__link">
+      <a href="../../../source-control/git-guidance/" class="md-nav__link">
         Git Guidance
       </a>
     </li>
@@ -4392,7 +4427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../source-control/git-guidance/git-lfs-and-vfs/" class="md-nav__link">
+      <a href="../../../source-control/git-guidance/git-lfs-and-vfs/" class="md-nav__link">
         Using Git LFS and VFS for Git introduction
       </a>
     </li>
@@ -4436,37 +4471,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-consumer-driven-contract-testing" class="md-nav__link">
-    Why Consumer-driven Contract Testing
+  <a href="#challenges" class="md-nav__link">
+    Challenges
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#consumer-driven-contract-testing-design-blocks" class="md-nav__link">
-    Consumer-driven Contract Testing Design Blocks
+  <a href="#overcoming-the-challenges" class="md-nav__link">
+    Overcoming the challenges
   </a>
   
-    <nav class="md-nav" aria-label="Consumer-driven Contract Testing Design Blocks">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests-in-power-platform-and-dataverse" class="md-nav__link">
+    Tests in Power Platform and Dataverse
+  </a>
+  
+    <nav class="md-nav" aria-label="Tests in Power Platform and Dataverse">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#consumer-tests-with-provider-mock" class="md-nav__link">
-    Consumer Tests with Provider Mock
+  <a href="#message-to-open" class="md-nav__link">
+    Message to Open
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#contract" class="md-nav__link">
-    Contract
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#provider-contract-verification" class="md-nav__link">
-    Provider Contract Verification
+  <a href="#message-to-close" class="md-nav__link">
+    Message to Close
   </a>
   
 </li>
@@ -4477,22 +4512,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cdc-testing-frameworks-and-tools" class="md-nav__link">
-    CDC Testing Frameworks and Tools
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
+  <a href="#using-locust" class="md-nav__link">
+    Using Locust
   </a>
+  
+    <nav class="md-nav" aria-label="Using Locust">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#locust-in-docker" class="md-nav__link">
+    Locust in Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="Locust in Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-docker-and-docker-compose" class="md-nav__link">
+    Configuring Docker and docker-compose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-run-locust-locally" class="md-nav__link">
+    Alternative: run Locust locally
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
+  <a href="#writing-the-locust-test-file-for-reuse" class="md-nav__link">
+    Writing the locust test file for reuse
   </a>
   
 </li>
@@ -4510,56 +4578,234 @@
               
                 
                 
-                <h1 id="consumer-driven-contract-testing-cdc">Consumer-driven Contract Testing (CDC)</h1>
-<p>Consumer-driven Contract Testing (or CDC for short) is a software testing methodology used to test components of a system in isolation while ensuring that provider components are compatible with the expectations that consumer components have of them.</p>
-<h2 id="why-consumer-driven-contract-testing">Why Consumer-driven Contract Testing</h2>
-<p>CDC tries to overcome the <a href="https://pactflow.io/blog/proving-e2e-tests-are-a-scam">several painful drawbacks</a> of automated E2E tests with components interacting together:</p>
+                <h1 id="using-locust-to-run-tests-in-power-platform">Using Locust to Run Tests in Power Platform</h1>
+<p>This document determines the approach for writing automated tests for Power Platform,
+Power Automate and Dataverse.</p>
+<h2 id="challenges">Challenges</h2>
+<p>Testing Power Apps and Power Automate flows can be as simple as running the test
+from the User Interface (UI). But for a more robust test, when there are different
+parts of the application running in different services there is a need to add some
+tooling that is able to handle that.</p>
+<h2 id="overcoming-the-challenges">Overcoming the challenges</h2>
+<p>The tool used in this case was Locust. Because it would allow different tests to
+run with few changes to the tests cases created to test a part of the application.</p>
+<p>Considering there is an entry point ready to receive REST calls that will trigger
+the Power Automate flows it is possible to insert data into Dataverse and confirm
+the data is there.</p>
+<p>It is also possible to make changes to Dataverse that would trigger Power Automate
+flows to update data in a data set (Azure Tables, Database, Files) outside Dataverse.</p>
+<h2 id="tests-in-power-platform-and-dataverse">Tests in Power Platform and Dataverse</h2>
+<p>The diagram below demonstrates <strong>in high level</strong> how tests can be executed for Power
+Platform and Dataverse:</p>
+<p><img alt="test flow" src="images/test-flow.png" title="Diagram with the data flow" /></p>
+<p>In the next sections it will be described the overall process as shown in the diagram:</p>
 <ul>
-<li>E2E tests are slow</li>
-<li>E2E tests break easily</li>
-<li>E2E tests are expensive and hard to maintain</li>
-<li>E2E tests of larger systems may be hard or impossible to run outside a dedicated testing environment</li>
+<li><a href="#message-to-open">Message to Open</a></li>
+<li><a href="#message-to-close">Message to Close</a></li>
 </ul>
-<p>Although testing best practices suggest to write just a few E2E tests compared to the cheaper, faster and more stable integration and unit tests as pictured in the testing pyramid below, experience shows <a href="https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html">many teams end up writing too many E2E tests</a>. A reason for this is that E2E tests give developers the highest confidence to release as they are testing the "real" system.</p>
-<p><img alt="E2E Testing Pyramid" src="images/testing-pyramid.png" /></p>
-<p>CDC addresses these issues by testing interactions between components in isolation using mocks that conform to a shared understanding documented in a "contract". Contracts are agreed between consumer and provider, and are regularly verified against a real instance of the provider component. This effectively partitions a larger system into smaller pieces that can be tested individually in isolation of each other, leading to simpler, fast and stable tests that also give confidence to release.</p>
-<p>Some E2E tests are still required to verify the system as a whole when deployed in the real environment, but most functional interactions between components can be covered with CDC tests.</p>
-<p>CDC testing was initially developed for testing RESTful API's, but the pattern scales to all consumer-provider systems and tooling for other messaging protocols besides HTTP does exist.</p>
-<h2 id="consumer-driven-contract-testing-design-blocks">Consumer-driven Contract Testing Design Blocks</h2>
-<p>In a <a href="https://martinfowler.com/articles/consumerDrivenContracts.html">consumer-driven approach</a> the consumer drives changes to contracts between a consumer (the client) and a provider (the server). This may sound counterintuitive, but it helps providers create APIs that fit the real requirements of the consumers rather than trying to guess these in advance. Next we describe the CDC building blocks ordered by their occurrence in the development cycle.</p>
-<p><img alt="CDC testing" src="images/cdc-testing.png" /></p>
-<h3 id="consumer-tests-with-provider-mock">Consumer Tests with Provider Mock</h3>
-<p>The consumers start by creating integration tests against a provider mock and running them as part of their CI pipeline. Expected responses are defined in the provider mock for requests fired from the tests. Through this, the consumer essentially defines the contract they expect the provider to fulfill.</p>
-<h3 id="contract">Contract</h3>
-<p>Contracts are generated from the expectations defined in the provider mock as a result of a successful test run. CDC frameworks like <a href="https://docs.pact.io/">Pact</a> provide a <a href="https://github.com/pact-foundation/pact-specification">specification for contracts</a> in json format consisting of the list of request/responses generated from the consumer tests plus some additional metadata.</p>
-<p>Contracts are not a replacement for a discussion between the consumer and provider team. This is the moment where this discussion should take place (if not already done before). The consumer tests and generated contract are refined with the feedback and cooperation of the provider team. Lastly the finalized contract is versioned and stored in a central place accessible by both consumer and provider.</p>
-<p>Contracts are complementary to API specification documents like OpenAPI. API specifications describe the structure and the format of the API. A contract instead specifies that for a given request, a given response is expected. An API specifications document is helpful in writing an API contract and can be used to validate that the contract conforms to the API specification.</p>
-<h3 id="provider-contract-verification">Provider Contract Verification</h3>
-<p>On the provider side tests are also executed as part of a separate pipeline which verifies contracts against real responses of the provider. Contract verification fails if real responses differ from the expected responses as specified in the contract. The cause of this can be:</p>
+<p>A more detailed guide is available as a <a href="https://github.com/squassina/dataverse-locust-tests/blob/main/locustfile_py.md">recipe</a>,
+where a sample <a href="https://github.com/squassina/dataverse-locust-tests/blob/main/locustfile_py.md/#source-code">source code</a>
+is published.</p>
+<h3 id="message-to-open">Message to Open</h3>
+<p>Locust starts the process by sending a request to Service Bus (in this case Service
+Bus was available in the solution, but any other tool to call the API can be used,
+even a REST call to the API directly).</p>
+<p>This message is routed to the Connector API developed in Power Platform. This connector
+will traffic the message between the customer tenant and the Microsoft Platform.
+So it will call the Power Automate flow, that has the logic to send the message to
+be stored in Dataverse.</p>
+<p>Notice that neither the connector API nor the flows are highlighted. This means that
+these services do not provide messages to the testing tool. The flow is an asynchronous
+and the HTTP reply will be, for example, <code>202</code> meaning it was accepted for processing.</p>
+<p>Locust will then look for the message in Dataverse. If the message arrive there
+it is assumed that the process was successful.</p>
+<h3 id="message-to-close">Message to Close</h3>
+<p>In the current scenario, changing the status in Dataverse to <strong>closed</strong> using the Dataverse API
+will trigger a flow that will send this message back to the customer tenant.</p>
+<p>As this is an <strong>update</strong> operation in Dataverse, a <code>PATCH</code> request is sent to the API to
+change the value in there. This change will trigger the Power Automate flow that will
+process the message, doing any transformation needed, to the Connector API.</p>
+<p>The connector API will send this message to the Service Bus, that will route it to
+a Database or other data storage the customer considers in the solution.</p>
+<p>The case could potentially be checked in the Service Bus, but its architecture does
+not allow the test service to retrieve a specific message so three scenarios could
+happen if the test is done like this:</p>
 <ol>
-<li>Invalid expectations on the consumer side leading to incompatibility with the current provider implementation</li>
-<li>Broken provider implementation due to some missing functionality or a regression</li>
+<li>The test service would retrieve the message in the first call and the case could
+be considered successful;</li>
+<li>The test service would retrieve several messages before finding the message for
+for the registry closed in Dataverse. In this case the test will also be considered
+successful;</li>
+<li>The test service would retrieve several messages and the close registry could
+not be found because the Service Bus already processed the message and sent it to
+the database. In this case it would be a false-negative test, as the message was
+successfully processed.</li>
 </ol>
-<p>Either way, thanks to CDC it is easy to pinpoint integration issues down to the consumer/provider of the affected interaction. This is a big advantage compared to the debugging pain this could have been with an E2E test approach.</p>
-<h2 id="cdc-testing-frameworks-and-tools">CDC Testing Frameworks and Tools</h2>
-<p><a href="https://docs.pact.io/">Pact</a> is an implementation of CDC testing that allows mocking of responses in the consumer codebase, and verification of the interactions in the provider codebase, while defining a <a href="https://github.com/pact-foundation/pact-specification">specification for contracts</a>. It was originally written in Ruby but has available wrappers for multiple languages. Pact is the de-facto standard to use when working with CDC.</p>
-<p><a href="https://cloud.spring.io/spring-cloud-contract/reference/html">Spring Cloud Contract</a> is an implementation of CDC testing from Spring, and offers easy integration in the Spring ecosystem. Support for non-Spring and non-JVM providers and consumers also exists.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>CDC has several benefits that make it an approach worth considering when dealing with systems composed of multiple components interacting together.</p>
-<p>Maintenance efforts can be reduced by testing consumer-provider interactions in isolation without the need of a complex integrated environment, specially as the interactions between components grow in number and become more complex.</p>
-<p><img alt="CDC VS E2E tests" src="images/cdc-vs-e2e.png" /></p>
-<p>Additionally, a close collaboration between consumer and provider teams is strongly encouraged through the CDC development process, which can bring many other benefits. Contracts offer a formal way to document the shared understanding how components interact with each other, and serve as a base for the communication between teams. In a way, the contract repository serves as a live documentation of all consumer-provider interactions of a system.</p>
-<p>CDC has some drawbacks as well. An extra layer of testing is added requiring a proper investment in education for team members to understand and use CDC correctly.</p>
-<p>Additionally, <a href="https://docs.pact.io/getting_started/testing-scope">the CDC test scope</a> should be considered carefully to prevent blurring CDC with other higher level functional testing layers. Contract tests are not the place to verify internal business logic and correctness of the consumer.</p>
-<h2 id="resources">Resources</h2>
+<p>So the test will not check the Service Bus for the message and will go checking the
+database directly if the registry was updated there.</p>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>Testing pyramid from <a href="https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c">Kent C. Dodd’s blog</a></li>
-<li><a href="https://docs.pact.io/">Pact</a>, a code-first consumer-driven contract testing tool with support for several different programming languages</li>
-<li><a href="https://martinfowler.com/articles/consumerDrivenContracts.html">Consumer-driven contracts</a> from Ian Robinson</li>
-<li><a href="https://martinfowler.com/bliki/ContractTest.html">Contract test</a> from Martin Fowler</li>
-<li>A simple example of using <a href="https://github.com/oottka/pact-spring">Pact consumer-driven contract testing in a Java client-server application</a></li>
-<li><a href="https://github.com/pact-foundation/pact-workshop-dotnet-core-v1">Pact dotnet workshop</a></li>
+<li><a href="https://docker.io">Docker</a></li>
+<li><a href="https://locust.io">Locust</a></li>
 </ul>
+<h2 id="using-locust">Using Locust</h2>
+<h3 id="locust-in-docker">Locust in Docker</h3>
+<p>In this case, Docker needs to be installed. In this document a <code>docker-compose</code>
+version of this solution will be presented.</p>
+<h4 id="configuring-docker-and-docker-compose">Configuring Docker and docker-compose</h4>
+<p>Locust is well documented regarding the
+<a href="https://docs.locust.io/en/stable/running-locust-docker.html">installation and usage with Docker</a>,
+so that part will not be covered in this document.</p>
+<h3 id="alternative-run-locust-locally">Alternative: run Locust locally</h3>
+<p>Locust is written in Python, so if one prefers to run it locally, without Docker,
+a call in the command line would work:</p>
+<div class="highlight"><pre><span></span><code>locust -f locustfile.py --host http://127.0.0.1:8089 --headless -u <span class="m">10</span> -t 120s Test
+</code></pre></div>
+<p>This will run <code>Test</code> for 120 seconds, using 10 users, without an User Interface. When the
+time is up, the process will kill itself and returns to the command prompt.</p>
+<p>Be aware that this process will not generate a report other the what is displayed in the
+screen.</p>
+<p>Other options can be found in the Locust
+<a href="https://docs.locust.io/en/stable/running-locust-without-web-ui.html">documentation</a></p>
+<h2 id="writing-the-locust-test-file-for-reuse">Writing the locust test file for reuse</h2>
+<p>Considering that multiple tests are run in a project, it is smart to have as many tests
+as possible. At the same time, it is also smart to have as few places to update
+the tests as possible.</p>
+<p>Therefore, Locust is a tool to write not only Load Tests, but also other types of tests,
+like End-to-End and Integration tests.</p>
+<p>Here is an example:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">function1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="o">//</span> <span class="n">do</span> <span class="n">something</span>
+
+<span class="k">def</span> <span class="nf">function2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="o">//</span> <span class="n">do</span> <span class="n">something</span>
+
+<span class="k">def</span> <span class="nf">function3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="o">//</span> <span class="n">do</span> <span class="n">something</span>
+
+<span class="k">class</span> <span class="nc">e2e_test</span><span class="p">(</span><span class="n">SequentialTaskSet</span><span class="p">):</span>
+    <span class="nd">@task</span>
+    <span class="n">function1</span><span class="p">()</span>
+    <span class="n">function2</span><span class="p">()</span>
+    <span class="n">function3</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">integration_test1</span><span class="p">(</span><span class="n">SequentialTaskSet</span><span class="p">):</span>
+    <span class="nd">@task</span>
+    <span class="n">function1</span><span class="p">()</span>
+    <span class="n">function2</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">integration_test2</span><span class="p">(</span><span class="n">SequentialTaskSet</span><span class="p">):</span>
+    <span class="nd">@task</span>
+    <span class="n">function2</span><span class="p">()</span>
+    <span class="n">function3</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">load_test</span><span class="p">(</span><span class="n">SequentialTaskSet</span><span class="p">):</span>
+    <span class="nd">@task</span>
+    <span class="n">function1</span><span class="p">()</span>
+    <span class="n">function3</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">ExecuteE2ETest</span><span class="p">(</span><span class="n">HttpUser</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Start test of the classes.&quot;&quot;&quot;</span>
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="n">e2e_test</span><span class="p">]</span>
+    <span class="n">wait_time</span> <span class="o">=</span> <span class="n">constant</span><span class="p">(</span><span class="mf">30.0</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ExecuteIntegrationTest1</span><span class="p">(</span><span class="n">HttpUser</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Start test of the classes.&quot;&quot;&quot;</span>
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="n">integration_test1</span><span class="p">]</span>
+    <span class="n">wait_time</span> <span class="o">=</span> <span class="n">constant</span><span class="p">(</span><span class="mf">30.0</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ExecuteIntegrationTest2</span><span class="p">(</span><span class="n">HttpUser</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Start test of the classes.&quot;&quot;&quot;</span>
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="n">integration_test2</span><span class="p">]</span>
+    <span class="n">wait_time</span> <span class="o">=</span> <span class="n">constant</span><span class="p">(</span><span class="mf">30.0</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">ExecuteLoadTest</span><span class="p">(</span><span class="n">HttpUser</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Start test of the classes.&quot;&quot;&quot;</span>
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="n">load_test</span><span class="p">]</span>
+    <span class="n">wait_time</span> <span class="o">=</span> <span class="n">between</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">)</span>
+</code></pre></div>
+<p>Then the tests can be called as <code>ExecuteE2ETest</code>, <code>ExecuteIntegrationTest</code>, or <code>ExecuteLoadTest</code>,
+depending on what test is supposed to run.</p>
+<p>The following will work for end-to-end tests in docker-compose:</p>
+<div class="highlight"><pre><span></span><code>version: &#39;3&#39;
+
+services:
+  master:
+    image: locustio/locust
+    ports:
+     - &quot;8089:8089&quot;
+    volumes:
+      - ./:/mnt/locust
+    environment:
+        LOCUST_USERS: 1
+        LOCUST_EXPECT_WORKERS: 1
+        LOCUST_SPAWN_RATE: 1
+        LOCUST_RUN_TIME: 120s
+    command: -f /mnt/locust/locustfile.py --master -H http://master:8089 ExecuteE2ETest
+
+  worker:
+    image: locustio/locust
+    volumes:
+      - ./:/mnt/locust
+    command: -f /mnt/locust/locustfile.py --worker --master-host master ExecuteE2ETest
+</code></pre></div>
+<p>This will run the integration test:</p>
+<div class="highlight"><pre><span></span><code>version: &#39;3&#39;
+
+services:
+  master:
+    image: locustio/locust
+    ports:
+     - &quot;8089:8089&quot;
+    volumes:
+      - ./:/mnt/locust
+    environment:
+        LOCUST_USERS: 1
+        LOCUST_EXPECT_WORKERS: 1
+        LOCUST_SPAWN_RATE: 1
+        LOCUST_RUN_TIME: 20s
+    command: -f /mnt/locust/locustfile.py --master -H http://master:8089 ExecuteIntegrationTest1
+
+  worker:
+    image: locustio/locust
+    volumes:
+      - ./:/mnt/locust
+    command: -f /mnt/locust/locustfile.py --worker --master-host master ExecuteIntegrationTest1
+</code></pre></div>
+<p>And the below will execute the load test:</p>
+<div class="highlight"><pre><span></span><code>version: &#39;3&#39;
+
+services:
+  master:
+    image: locustio/locust
+    ports:
+     - &quot;8089:8089&quot;
+    volumes:
+      - ./:/mnt/locust
+    environment:
+        LOCUST_USERS: 10
+        LOCUST_EXPECT_WORKERS: 1
+        LOCUST_SPAWN_RATE: 10
+        LOCUST_RUN_TIME: 300s
+    command: -f /mnt/locust/locustfile.py --master -H http://master:8089 ExecuteLoadTest
+
+  worker:
+    image: locustio/locust
+    volumes:
+      - ./:/mnt/locust
+    command: -f /mnt/locust/locustfile.py --worker --master-host master ExecuteLoadTest
+</code></pre></div>
+<p>All the 3 scripts are practically doing the same thing. There are two places to be updated:</p>
+<ol>
+<li>The <code>environment</code> section handles the load of the test:
+    - How many users and workers should be used?
+    - What is the spawn rate? Should the test run will many users at the same time?
+    - For how long should the test run?</li>
+<li>The <code>command</code> line handles the command to run locust and which test should it
+run. If <code>command</code> is specified, only one test will be executed, not the whole script.</li>
+</ol>
+<p>By changing this values alone it is possible to reuse the test cases to cover different test
+strategies.</p>
                 
                   
                     
@@ -4568,7 +4814,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 21, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 21, 2021</span>
     
   </small>
 </div>
@@ -4591,7 +4837,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../blobstorage-unit-tests/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4600,19 +4846,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Testing
+              Using Azurite to Run Blob Storage Tests in a Pipeline
             </div>
           </div>
         </a>
       
       
-        <a href="../e2e-testing/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../templates/case-study-template/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              E2E Testing
+              ~Customer Project~ Case Study
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -4641,10 +4887,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
       
     
   </body>
