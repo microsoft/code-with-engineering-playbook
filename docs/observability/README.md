@@ -23,6 +23,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Tooling and Patterns](tools/README.md)
 - [Observability As Code](observability-as-code.md)
 - [Recommended Practices](best-practices.md)
+- [Diagnostics tools](diagnostic-tools.md)
 
 ## Facets of Observability
 
