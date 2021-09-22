@@ -3,7 +3,7 @@
 ## Overview
 
 Azure Databricks is an Apache Spark–based analytics service that makes it easy to rapidly develop and
-deploy big data analytics. Monitoring and troubleshooting performance issues is  critical when
+deploy big data analytics. Monitoring and troubleshooting performance issues is critical when
 operating production Azure Databricks workloads. It is important to log adequate information from Azure
 Databricks so that it is helpful to monitor and troubleshoot performance issues.
 
