@@ -13,7 +13,7 @@
 
 The set of vertices (entities) and edges (relationships) of the graph model
 
-| Vertex (Source) | Edge Type        | Relationship Type | Vertex (Target) | Notes                                                                                                | Required |
+| Vertex (Source) | Edge Type       | Relationship Type | Vertex (Target) | Notes                                                                                                | Required |
 | --------------- | ---------------- | ----------------- | --------------- | ---------------------------------------------------------------------------------------------------- | -------- |
 | Profession      | _Applies_        | 1:many            | Discipline      | Top most level of categorization                                                                     | \*       |
 | Discipline      | _Defines_        | 1:many            | Role            | Groups of related roles within a profession                                                          | \*       |
