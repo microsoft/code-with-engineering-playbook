@@ -13,14 +13,14 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/observability/pitfalls/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/observability/diagnostic-tools/">
       
       <link rel="icon" href="../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>Things to Watch for when Building Observable Systems - Code With Engineering Playbook</title>
+        <title>Diagnostic tools - Code With Engineering Playbook</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#things-to-watch-for-when-building-observable-systems" class="md-skip">
+        <a href="#diagnostic-tools" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Things to Watch for when Building Observable Systems
+              Diagnostic tools
             
           </span>
         </div>
@@ -3737,11 +3737,102 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../diagnostic-tools/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Diagnostic tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Diagnostic tools
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#profilers-and-memory-analyzers" class="md-nav__link">
+    Profilers and Memory Analyzers
+  </a>
+  
+    <nav class="md-nav" aria-label="Profilers and Memory Analyzers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profiling" class="md-nav__link">
+    Profiling
+  </a>
+  
+    <nav class="md-nav" aria-label="Profiling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-sampling-vs-instrumentation" class="md-nav__link">
+    When to use Sampling vs Instrumentation?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-analyzers" class="md-nav__link">
+    Memory analyzers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-for-profiling" class="md-nav__link">
+    Environment for profiling
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment for profiling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagnostics-in-containers" class="md-nav__link">
+    Diagnostics in containers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3821,70 +3912,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Things to Watch for when Building Observable Systems
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pitfalls/" class="md-nav__link">
         Things to Watch for when Building Observable Systems
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#observability-as-an-afterthought" class="md-nav__link">
-    Observability as an afterthought
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metric-fatigue" class="md-nav__link">
-    Metric Fatigue
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#personally-identifiable-information" class="md-nav__link">
-    Personally Identifiable Information
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4490,30 +4522,62 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#observability-as-an-afterthought" class="md-nav__link">
-    Observability as an afterthought
+  <a href="#profilers-and-memory-analyzers" class="md-nav__link">
+    Profilers and Memory Analyzers
   </a>
+  
+    <nav class="md-nav" aria-label="Profilers and Memory Analyzers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profiling" class="md-nav__link">
+    Profiling
+  </a>
+  
+    <nav class="md-nav" aria-label="Profiling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-sampling-vs-instrumentation" class="md-nav__link">
+    When to use Sampling vs Instrumentation?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-analyzers" class="md-nav__link">
+    Memory analyzers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#metric-fatigue" class="md-nav__link">
-    Metric Fatigue
+  <a href="#environment-for-profiling" class="md-nav__link">
+    Environment for profiling
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment for profiling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagnostics-in-containers" class="md-nav__link">
+    Diagnostics in containers
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#personally-identifiable-information" class="md-nav__link">
-    Personally Identifiable Information
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4530,26 +4594,44 @@
               
                 
                 
-                <h1 id="things-to-watch-for-when-building-observable-systems">Things to Watch for when Building Observable Systems</h1>
-<h2 id="observability-as-an-afterthought">Observability as an afterthought</h2>
-<p>One of the design goals when building a system should be to enable monitoring of the system. This helps planning and thinking application availability, logging and metrics at the time of design and development. Observability also acts as a great debugging tool providing developers a bird's eye view of the system. By leaving instrumentation and logging of metrics towards the end, the development teams lose valuable insights during development.</p>
-<h2 id="metric-fatigue">Metric Fatigue</h2>
-<ol>
-<li>It is recommended to collect and measure <em>what you need</em> <strong>and</strong> <em>not what you can</em>. Don't attempt to monitor everything.</li>
-<li>If the data is not actionable, it is useless and becomes noise. On the contrary, it is sometimes very difficult to forecast every possible scenario that could go wrong.</li>
-<li>
-<p>There must be a balance between collecting what is needed vs. logging every single activity in the system. A general rule of thumb is to follow these principles</p>
+                <h1 id="diagnostic-tools">Diagnostic tools</h1>
+<p>Besides <a href="../pillars/logging/">Logging</a>, <a href="../pillars/tracing/">Tracing</a> and <a href="../pillars/metrics/">Metrics</a>, there are additional tools to help diagnose issues when applications do not behave as expected. In some scenarios, analyzing the memory consumption and drilling down into why a specific process takes longer than expected may require additional measures. In these cases, platform or programming language specific diagnostic tools come into play and are useful to debug a memory leak, profile the CPU usage, or the cause of delays in multi-threading.</p>
+<h2 id="profilers-and-memory-analyzers">Profilers and Memory Analyzers</h2>
+<p>There are two types of diagnostics tools you may want to use: profilers and memory analyzers.</p>
+<h3 id="profiling">Profiling</h3>
+<p>Profiling is a technique where you take small snapshots of all the threads in a running application to see the stack trace of each thread for a specified duration. This tool can help you identify where you are spending CPU time during the execution of your application. There are two main techniques to achieve this: CPU-Sampling and Instrumentation.</p>
+<p>CPU-Sampling is a non-invasive method which takes snapshots of all the stacks at a set interval. It is the most common technique for profiling and doesn't require any modification to your code.</p>
+<p>Instrumentation is the other technique where you insert a small piece of code at the beginning and end of each function which is going to signal back to the profiler about the time spent in the function, the function name, parameters and others. This way you modify the code of your running application. There are two effects to this: your code may run a little bit more slowly, but on the other hand you have a more accurate view of every function and class that has been executed so far in your application.</p>
+<h4 id="when-to-use-sampling-vs-instrumentation">When to use Sampling vs Instrumentation?</h4>
+<p>Not all programming languages support instrumentation. Instrumentation is mostly supported for compiled languages like .NET and Java, and some languages interpreted at runtime like Python and Javascript. Keep in mind that enabling instrumentation can require to modify your build pipeline, i.e. by adding special parameters to the command line argument. You should normally start with Sampling because it doesn't require to modify your binaries, it doesn't affect your process performance, and can be quicker to start with.</p>
+<p>Once you have your profiling data, there are multiple ways to visualize this information depending of the format you saved it. As an example for .NET (dotnet-trace), there are three available formats to save these traces: Chromium, NetTrace and SpeedScope. Select the output format depending on the tool you are going to use. <a href="https://www.speedscope.app/">SpeedScope</a> is an online web application you can use to visualize and analyze traces, and you only need a modern browser. Be careful with online tools, as dumps/traces might contain confidential information that you don't want to share outside of your organization.</p>
+<h3 id="memory-analyzers">Memory analyzers</h3>
+<p>Memory analyzers and memory dumps are another set of diagnostic tools you can use to identify issues in your process.  Normally these types of tools take the whole memory the process is using at a point in time and saves it in a file which  can be analyzed. When using these types of tools, you want to stress your process as much as possible to amplify whatever deficiency you may have in terms of memory management. The memory dump should then be taken when the process is in this stressed state.</p>
+<p>In some scenarios we recommend to take more than one memory dump during the reproduction of a problem. For example, if you suspect a memory leak and you are running a test for 30 min, it is useful to take at least 3 dumps at different intervals (i.e. 10, 20 &amp; 30 min) to compare them with each other.</p>
+<p>There are multiple ways to take a memory dump depending the operating system you are using. Also, each operating system has it own debugger which is able to load this memory dump, and explore the state of the process at the time the memory dump was taken.</p>
+<p>The most common debuggers are:</p>
 <ul>
-<li>rules that catch incidents must be simple, relevant and reliable</li>
-<li>any data that is collected but not aggregated or alerted on must be reviewed if it is still required.</li>
+<li>Windows - <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools">WinDdg and WinDgbNext</a> (included in the Windows SDK), <a href="https://visualstudio.microsoft.com/">Visual Studio</a> can also load a memory dump for a .NET Framework and .NET Core process</li>
+<li>Linux - <a href="https://www.gnu.org/software/gdb/">GDB is the GNU Debugger</a></li>
+<li>Mac OS - <a href="https://lldb.llvm.org/">LLDB Debugger</a></li>
 </ul>
-</li>
-</ol>
-<h2 id="context">Context</h2>
-<p>All data logged must contain rich context, which is useful for getting an overall view of the system and easy to trace back errors/failures during troubleshooting. While logging data, care must also be taken to avoid data silos.</p>
-<h2 id="personally-identifiable-information">Personally Identifiable Information</h2>
-<p>As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.)
-Read more <a href="../logs-privacy/">here</a> on how to keep sensitive data out of logs.</p>
+<p>There are a range of developer platform specific diagnostic tools which can be used:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/core/diagnostics/#net-core-diagnostic-global-tools">.NET Core diagnostic tools</a>, <a href="https://github.com/dotnet/diagnostics">GitHub repository</a></li>
+<li><a href="https://docs.oracle.com/en/java/javase/16/troubleshoot/general-java-troubleshooting.html">Java diagnostic tools - version specific</a></li>
+<li><a href="https://docs.python.org/3/library/debug.html">Python debugging and profiling - version specific</a></li>
+<li><a href="https://github.com/nodejs/diagnostics">Node.js Diagnostics working group</a></li>
+</ul>
+<h2 id="environment-for-profiling">Environment for profiling</h2>
+<p>To create an application profile as close to production as possible, the environment in which the application is intended to run in production has to be considered and it might be necessary to perform a snapshot of the application state <a href="../../automated-testing/performance-testing/">under load</a>.</p>
+<h3 id="diagnostics-in-containers">Diagnostics in containers</h3>
+<p>For monolithic applications, diagnostics tools can be installed and run on the VM hosting them. Most scalable applications are developed as <a href="../microservices/">microservices</a> and have complex interactions which require to install the tools in the containers running the process or to leverage a sidecar container (see <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar">sidecar pattern</a>). Some platforms expose endpoints to interact with the application and return a dump.</p>
+<p>Useful links:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/core/diagnostics/diagnostics-in-containers">.NET Core diagnostics in containers</a></li>
+<li><a href="https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/">Experimental tool dotnet-monitor</a>, <a href="https://devblogs.microsoft.com/dotnet/whats-new-in-dotnet-monitor/">What's new</a>, <a href="https://github.com/dotnet/dotnet-monitor/tree/main/documentation">GItHub repository</a></li>
+<li><a href="https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#actuator.endpoints">Spring Boot actuator endpoints</a></li>
+</ul>
                 
                   
                     
@@ -4558,7 +4640,7 @@ Read more <a href="../logs-privacy/">here</a> on how to keep sensitive data out 
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2021</span>
     
   </small>
 </div>
@@ -4581,7 +4663,7 @@ Read more <a href="../logs-privacy/">here</a> on how to keep sensitive data out 
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../observability-pipelines/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../correlation-id/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4590,19 +4672,19 @@ Read more <a href="../logs-privacy/">here</a> on how to keep sensitive data out 
               <span class="md-footer__direction">
                 Previous
               </span>
-              Observability of CI/CD Pipelines
+              Correlation IDs
             </div>
           </div>
         </a>
       
       
-        <a href="../profiling/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../log-vs-metric/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Profiling
+              Logs vs Metrics
             </div>
           </div>
           <div class="md-footer__button md-icon">
