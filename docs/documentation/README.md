@@ -56,6 +56,7 @@ When working in an engineering project, we typically encounter one or more of th
 - [Commit Messages](../source-control/README.md#commit-best-practices)
 - [Pull Requests](./guidance/pull-requests.md)
 - [Code](./guidance/code.md)
+- [Work Items](./guidance/work-items.md)
 - [REST APIs](./guidance/rest-apis.md)
 - [Engineering Feedback](./guidance/engineering-feedback.md)
 
