@@ -10,8 +10,8 @@ The Memory project uses multiple environments to isolate and test changes before
 
 New environment rollouts are automatically triggered based upon a successful deployment of the previous stage /environment.
 
-The **development**, **staging** and **production** environments leverage slot deployment during a environment rollout.
-After a new release is deployed to a staging slot it is validated through a series of functional integration tests.
+The **development**, **staging** and **production** environments leverage slot deployment during an environment rollout.
+After a new release is deployed to a staging slot, it is validated through a series of functional integration tests.
 Upon a 100% pass rate of all tests the staging & production slots are swapped effectively making updates to the environment available.
 
 Any errors or failed tests halt the deployment in the current stage and prevent changes to further environments.
@@ -50,7 +50,7 @@ All code that is checked into the `main` branch is automatically deployed to thi
 ### Staging
 
 The staging environment is used to validate new features, components and other changes prior to production rollout.
-This environment is primarily used by developers, QA and other company stake holders.
+This environment is primarily used by developers, QA and other company stakeholders.
 
 #### Staging Regions
 

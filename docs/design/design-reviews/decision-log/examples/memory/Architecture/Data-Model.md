@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-- [Graph vertices and edges](#Graph-vertices-and-Edges)
-- [Graph Properties](#Graph-Properties)
-- [Vertex Descriptions](#Vertex-Descriptions)
-- [Full Role JSON Example](#Full-Role-JSON-Example)
+- [Graph vertices and edges](#graph-vertices-and-edges)
+- [Graph Properties](#graph-properties)
+- [Vertex Descriptions](#vertex-descriptions)
+- [Full Role JSON Example](#full-role-json-example)
 
 ## Graph Model
 
@@ -93,7 +93,7 @@ Top most level of categorization
 {
     "title": "Software Engineering",
     "description": "Description of profession",
-    "disciplines: []
+    "disciplines": []
 }
 ```
 
@@ -166,7 +166,7 @@ The way in which one acts or conducts oneself
 
 ### User
 
-The user object refers to who a person is.
+The user object refers to whom a person is.
 We do not store our own rather use Azure OIDs.
 
 ### User Profile
@@ -179,9 +179,9 @@ A user may hold multiple personas.
 
 ### Entry
 
-The same entry object can hold many different kinds of data, and at this stage of the project we decide that we will not store external data, so it's up to the user to provide a link to the data for a reader to click into and get redirected to a new tab to open.
+The same entry object can hold many kinds of data, and at this stage of the project we decide that we will not store external data, so it's up to the user to provide a link to the data for a reader to click into and get redirected to a new tab to open.
 
-> Note: This means that in the web app, we will need to ensure links are opened in new tabs.
+> **Note:** This means that in the web app, we will need to ensure links are opened in new tabs.
 
 ### Project
 

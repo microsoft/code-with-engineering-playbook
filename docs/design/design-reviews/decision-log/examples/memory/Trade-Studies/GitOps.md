@@ -54,7 +54,7 @@ The other does the same, with additional features that may or may not be worth t
    - [v2 is published under Apache license in GitHub](https://github.com/fluxcd/flux2), it works with Helm v3, and has PR commits from as recently as today
    - 945 stars, 94 forks
 1. User Interface
-   - CLI, simplest lightweight option
+   - CLI, the simplest lightweight option
 
 Other features to call out (see more on website)
 
@@ -107,7 +107,7 @@ ArgoCD is a declarative, GitOps-based Continuous Delivery (CD) tool for Kubernet
      [RBAC](https://argoproj.github.io/argo-cd/operator-manual/rbac/) requires SSO configuration or one or more local users setup.
      Once SSO or local users are configured, additional RBAC roles can be defined
    - Argo CD does not have its own user management system and has only one built-in user admin.
-     The admin user is a superuser and it has unrestricted access to the system
+     The admin user is a superuser, and it has unrestricted access to the system
    - [Authorization is handled via JWT tokens](https://argoproj.github.io/argo-cd/operator-manual/security/#authentication) and checking group claims in them
 1. Azure Documentation availability
    - Argo has [documentation](https://argoproj.github.io/argo-cd/operator-manual/user-management/microsoft/) on Azure AD
@@ -122,7 +122,7 @@ ArgoCD is a declarative, GitOps-based Continuous Delivery (CD) tool for Kubernet
 Other features to call out (see more on website)
 
 - ArgoCD support both pull model and push model for continuous delivery
-- Argo can send notifications but you need a separate tool for it
+- Argo can send notifications, but you need a separate tool for it
 - Argo can receive webhooks
 - Health assessments
 - Potentially much more useful multi-tenancy tools.
