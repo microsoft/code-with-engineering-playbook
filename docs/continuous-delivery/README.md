@@ -135,6 +135,12 @@ Canary releases simplify rollbacks as you can avoid routing users to bad applica
 
 Try to limit the number of versions of your application running parallel in production, as it can complicate maintenance and monitoring controls.
 
+### Low code solutions
+
+Low code solutions have increased their participation in the applications and processes and because of that it is required that a proper conjunction of disciplines improve their development.
+
+Here is a guide for [continuous deployment for Low Code Solutions](low-code-solutions/low-code-solutions.md).
+
 ## References
 
 * [Continuous Delivery](https://www.continuousdelivery.com/) by Jez Humble, David Farley.
