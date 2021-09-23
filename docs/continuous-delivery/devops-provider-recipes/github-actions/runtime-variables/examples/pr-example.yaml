@@ -15,10 +15,10 @@ jobs:
           PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
         run: |
           if ${PR_VAR} == true; then
-            echo "::set-env name=flag::true"
+            echo "flag=true" >> $GITHUB_ENV
             echo "flag set to true"
           else
-            echo "::set-env name=flag::false"
+            echo "flag=false" >> $GITHUB_ENV
             echo "flag set to false"
           fi
 
