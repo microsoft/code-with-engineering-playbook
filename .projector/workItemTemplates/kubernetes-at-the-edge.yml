@@ -1,0 +1,205 @@
+name: kubernetes-at-the-edge
+description: A template for adding tasks for scenarios that require Kubernetes at the edge
+items:
+  - name: Kubernetes at the Edge common decisions
+    type: epic
+    description: This Epic guides engineers through common decisions that are needed in Kubernetes at the Edge projects. This Epic is suggestive and is subject to adaptation by development crews as challenges specific to the engagement arise
+    children:
+      - name: Compute option
+        type: feature
+        description: Determine which compute option you will go with
+        acceptanceCriteria:
+          - Compute options have been evaluated and the appropriate option has been selected
+        children:
+          - name: As a cluster operator, I want to evaluate and determine available compute options so that I can be confident my solution leverages the option best suited for the workloads that will run on the cluster
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting compute requirements and chosen compute option
+            children:
+              - name: Define compute requirements
+                type: task
+                description: Understand what workloads will be running on the cluster and the compute requirements including any requirements for mixed clusters (OS, cpu, mem, etc.)
+              - name: Evaluate compute options
+                type: task
+                description: Reference this [trade-off doc](https://docs.microsoft.com/en-us/azure/architecture/operator-guides/aks/choose-kubernetes-edge-compute-option) to help evaluate trade-offs between bare-metal kubernetes, kubernetes on Azure Stack Edge, and AKS on Azure Stack HCI. 
+              - name: If applicable, evaluate virtualization options
+                type: task
+                description: In the case of bare-metal, you will likely leverage virtualization of host systems. Look into what options are available for the respective host and evaluate against requirements
+      - name: Cluster network
+        type: feature
+        description: Define your networking requirements and constraints
+        acceptanceCriteria:
+          - Network design allows for successful configuration and complies with other compute and network constraints and requirements. The acceptance criteria for this should be further scoped and defined by the dev crew.
+        children:
+          - name: As a cluster operator, I want to design my network with necessary external and internal networking requirements so that my cluster can function properly and is seamlessly integrated with existing networking and can be setup correctly
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting networking requirements, supporting diagrams, different considerations and designs evaluated, and chosen design
+            children:
+              - name: Define IP constraints and ensure IP availability
+                type: task
+                description: It's important to understand the IP range that is available per cluster. This may greatly effect the networking design of your cluster particularly for bare metal clusters. 
+              - name: Enable outbound internet access
+                type: task
+                description: Certain artifacts required for cluster configuration are retrieved from the internet
+              - name: Enable node to node communication
+                type: task
+                description: Cluster nodes need to be able to communicate with each other to function properly
+          - name: As a cluster operator, I want to choose a networking interface so that workloads on the cluster can function properly
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting networking interface considerations and chosen interface
+            children:
+              - name: Identify resource constraints and networking requirements
+                type: task
+                description: Some container networking interfaces are only supported on certain OSes. There may also be special networking requirements 
+              - name: Evaluate CNI options
+                type: task
+                description: Calico provides a full networking stack but support on Windows has some limitations (https://docs.projectcalico.org/getting-started/windows-calico/limitations)
+          - name: As a cluster operator, I want to ensure the network design does not interfere with application networking requirements so that applications can function properly on the cluster
+            type: story
+            acceptanceCriteria:
+              - Section in networking design to address application networking requirements and appropriate plan to support
+      - name: (If Applicable) Base VM Image
+        type: feature
+        description: This is more for projects that are looking to configure a kubernetes cluster from the ground up, such as in bare-metal scenarios. Define the base image(s) that will be used for your nodes and plan for lifecycle and access management.
+        acceptanceCriteria:
+          - Base image lifecycle and access is planned and implemented. The acceptance criteria for this should be further scoped and defined by the dev crew.
+        children:
+          - name: As a cluster operator, I want to define the base image(s) for my nodes so that I can ensure my nodes remain consistent and reliable. Note, depending on the needs of the customer, it may make sense to build and store custom VM images for your kubernetes nodes. 
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting plans for base image
+            children:
+              - name: Leverage existing tools to retrieve base image
+                type: task
+                description: Either Packer or image builder (https://image-builder.sigs.k8s.io/) can be useful for creating a base image for your nodes
+              - name: Image versioning and security validation
+                type: task
+                description: Versioning and validation will not only help ensure consistent and accurate deployments, but will also help in maintenance tasks such as upgrades and rollbacks.
+          - name: As a cluster operator, I want execute against my plan for building and managing a base image for my cluster so that my cluster nodes are consistent and reliable
+            type: story
+            acceptanceCriteria:
+              - Base image plan implemented
+          - name: As a cluster operator, I want to ensure the cluster configuration process has access to retrieve the base image I have defined so that the correct images are used during cluster configuration. Note, determine where the base image will be stored and how it will be retrieved during the configuration of your Kubernetes cluster
+            type: story
+            acceptanceCriteria:
+              - Decision record for chosen image store and specific versions of a base image can be retrieved from that store
+      - name: Cluster lifecycle management
+        type: feature
+        description: Configuration, provisioning and lifecycle management of your cluster including upgrades and maintenance
+        acceptanceCriteria:
+          - Repeatable, scalable cluster configuration implemented. The acceptance criteria for this should be further scoped and defined by the dev crew.
+        children:
+          - name: As a cluster operator, I want to leverage existing tooling so that I can setup and configure my clusters at the edge with vetted tools
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting chosen tool for cluster configuration
+            children:
+              - name: Identify tooling to be used to spin up Kubernetes 
+                type: task
+                description: For baremetal clusters, reference this [decision-tree](https://docs.microsoft.com/en-us/azure/architecture/operator-guides/aks/choose-bare-metal-kubernetes) to determine which tooling shall be used
+          - name: As a cluster operator, I want to leverage existing tools (AzDO, Ansible or cluster api) to configure my clusters so that configuration may be repeatable and scalable. Note, in cases where cluster setup requires a lot of manual coordination, it's important to determine how to automate and manage configuration such that clusters can be configured at scale
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting approach for cluster configuration automation at scale
+            children:
+              - name: For baremetal ground-up configuration, refer to sample to leverage Ansible to manage configuration
+                type: task
+                description: Customers have leveraged Ansible's ability to execute scripts remotely and reusable playbooks in order to manage and automate configuration. Check out [this sample](https://github.com/Azure-Samples/k8s-on-windows-host) for reference
+          - name: As a cluster operator, I want to determine a schedule for updating various opensource projects including kubernetes so that I can ensure that my cluster and other open sourced tools are up-to-date with critical updates such as security patches. 
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting upgrade schedule for appropriate tools, including any maintenance windows, plan for patches, etc.
+          - name: As a cluster operator, I want to Implement tests to ensure critical upgrades will not bring down my cluster or interfere with workloads
+            type: story
+            acceptanceCriteria:
+              - Tests implemented in pipeline to ensure health of clusters post updates
+          - name: As a cluster operator, I want to use a tool like azure arc for k8s (https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/) so that I can manage multiple clusters from a single pane of glass
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting requirements of single pane view, alternative considerations, and chosen tooling
+          - name: As a cluster operator, I want to plan for disaster recovery so that I can protect critical functions against significant disruptive events
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting disaster recovery plan
+      - name: Cluster security
+        type: feature
+        description: Manage any credentials, secrets, keys in a secure manner
+        acceptanceCriteria:
+          - Sensitive information is protected and accessible. The acceptance criteria for this should be further scoped and defined by the dev crew.
+        children:
+          - name: As a cluster operator, I want to store my secrets/keys/credentials in a key store so that I can secure and protect any sensitive information. Securing and protecting vulnerable information should be a priority in any project. In the case of kubernetes clusters at the edge, consider the many access points and what information needs to be protected and where, from VM login credentials to workload secrets and keys.
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting credential management requirements and approach
+            children:
+              - name: Ensure cluster and workloads are able to access credentials
+                type: task
+                description: Wherever credentials are being stored, ensuring the clusters will be able to access
+          - name: As a cluster operator, I want to enable RBAC so that I can protect my cluster and workloads from unauthorized access
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting access requirements. Demonstrate only authorized access is allowed and unauthorized access is prohibited
+            children:
+              - name: Enable RBAC
+                type: task
+                description: Enabled RBAC on your cluster
+              - name: Define and implement access policies
+                type: task
+                description: Determine access perimeters, roles, and implement policies to comply with requirements
+          - name: As a cluster operator, I want to ensure the workloads on my cluster are authorized so that I can prevent unauthorized and potentially malicious processes
+            type: story
+            acceptanceCriteria:
+              - Decision record documenting approach for limiting workloads. Demonstrate only authorized workloads are allowed and unauthorized are prohibited
+            children:
+              - name: Pull from a private registry only
+                type: task
+                description: Preventing workloads from arbitrary public repos to be deployed minimizes the risk of unauthorized workloads running on your cluster
+              - name: Enforce policies with Gatekeeper/Kyverno/Azure policies
+                type: task
+                description: Use Gatekeeper/Kyverno/Azure policies to enforce policies to further harden the security of your cluster (e.g. prohibiting privileged containers, requiring read-only root filesystems, etc.)
+          - name: As a cluster operator, I want to ensure the traffic in my cluster is secure so that I can protect information flowing through my cluster
+            type: story
+            acceptanceCriteria:
+              - Encrypted traffic, enforce network policies, controlled egress
+      - name: Observability
+        type: feature
+        description: Logging and monitoring of cluster and workloads
+        acceptanceCriteria:
+          - The acceptance criteria for this should be further scoped and defined by the dev crew.
+        children:
+          - name: As a cluster operator, I want to implement logging and monitoring of my host and my nodes so that I can track and act on the health of my cluster
+            type: story
+            acceptanceCriteria:
+              - Dashboard displaying node, resource usage, alerts for unhealthy nodes
+          - name: As a cluster operator, I want to implement logging and monitoring of the workloads on the clusters so that I can track and act on the health of the workloads running on the clusters
+            type: story
+            acceptanceCriteria:
+              - Dashboard displaying workloads, resource usage, corresponding node health, alerts when workloads are unhealthy
+          - name: As a cluster operator, I want to monitor my cluster fleet so that I can have a single place to view the health of all my clusters
+            type: story
+            acceptanceCriteria:
+              - Dashboard displaying health of various clusters in a single view
+      - name: Application deployment
+        type: feature
+        description: Deploying your application to your cluster
+        acceptanceCriteria:
+          - Applications can run on cluster successfully. The acceptance criteria for this should be further scoped and defined by the dev crew.
+        children:
+          - name: As a cluster operator, I want to deploy an application to my cluster so I can ensure my cluster has access to the container registries that I expect. 
+            type: story
+            acceptanceCriteria:
+              - Cluster can access container registries and applications are able to run successfully 
+          - name: As an engineer, I want to deploy my application to the cluster so that I can be sure my application functions properly on the cluster
+            type: story
+            acceptanceCriteria:
+              - Test application deployed and functions as expected on cluster
+            children:
+              - name: Evaluate GitOps as option
+                type: task
+                description: GitOps with flux (https://github.com/fluxcd/flux) is becoming a popular practice and may make sense for your project. A feature of Azure Arc for K8s is enabling GitOps, but manual deployments of GitOps is also an option.
+          - name: As a cluster operator, I want to provide deployment strategies so that application dev teams can deploy to my cluster with confidence
+            type: story
+            acceptanceCriteria:
+              - Deployment strategies documented and tested
