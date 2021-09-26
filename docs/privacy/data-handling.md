@@ -4,7 +4,7 @@
 
 The goal of this section is to briefly describe best practices in privacy fundamentals for data heavy projects or portions of a project that may contain data.
 
-**What it is not**: This document is not a checklist for how customers or readers should handle data in their environment, and does not override Microsoft's or che customers' policies for data handling, data protection and information security.
+**What it is not**: This document is not a checklist for how customers or readers should handle data in their environment, and does not override Microsoft's or the customers' policies for data handling, data protection and information security.
 
 ## Introduction
 
