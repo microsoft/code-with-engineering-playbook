@@ -20,7 +20,8 @@ The purpose of this document is to:
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
 - [ ] [Build a Product Backlog](agile-development/backlog-management/README.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
-  - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
+  - [INVEST](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) in good User Stories and Acceptance Criteria
+  - [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md)
 
 ### Day 1
 
@@ -59,7 +60,7 @@ The purpose of this document is to:
   - Determine what environments are appropriate for this solution
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
 - [ ] [Decide on a versioning strategy](source-control/component-versioning.md)
-- [ ] Agree on how to [Design a feature and conduct a Design Review](design-reviews/README.md)
+- [ ] Agree on how to [Design a feature and conduct a Design Review](design/design-reviews/README.md)
 
 ### Day 5
 

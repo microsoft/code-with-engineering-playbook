@@ -151,7 +151,8 @@ Here is a guide for [continuous deployment for Low Code Solutions](low-code-solu
 
 Check out the below tools to help with some CD best practices listed above:
 
-* [Flux](https://github.com/fluxcd/flux) for gitops
+* [Flux](https://fluxcd.io/docs/concepts/) for gitops
+* [CI/CD workflow using GitOps](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd#example-workflow)
 * [Tekton](https://github.com/tektoncd) for Kubernetes native pipelines
   * Note Jenkins-X uses Tekton under the hood.
 * [Argo Workflows](https://github.com/argoproj/argo-workflows)

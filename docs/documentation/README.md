@@ -55,6 +55,9 @@ When working in an engineering project, we typically encounter one or more of th
 - [Project and Repositories](./guidance/project-and-repositories.md)
 - [Commit Messages](../source-control/README.md#commit-best-practices)
 - [Pull Requests](./guidance/pull-requests.md)
+- [Code](./guidance/code.md)
+- [Work Items](./guidance/work-items.md)
+- [REST APIs](./guidance/rest-apis.md)
 - [Engineering Feedback](./guidance/engineering-feedback.md)
 
 ## Best practices
@@ -75,6 +78,7 @@ When working in an engineering project, we typically encounter one or more of th
 ## Recipes
 
 - [How to sync a wiki between repositories](./recipes/sync-wiki-between-repos.md)
+- [How to create a static website for your documentation based on MkDocs and Material for MkDocs](./recipes/static-website-with-mkdocs.md)
 
 ## Resources
 

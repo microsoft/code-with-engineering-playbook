@@ -38,7 +38,7 @@ You will still need to submit a PR against master in order to merge your changes
 
 When you have an idea for contribution open an *issue*!
 
-More details can be found in the internal CSE Wiki under the page `Contributing_to_the_Code-With_Engineering_Playbook`.
+> **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
 
 ## Git guidance
 
@@ -70,6 +70,14 @@ and ensure that all rules are followed. This will help ensure consistency in the
 look and feel of the documentation in this repo.
 
 You can find information about other linters, general writing guidelines and code review check lists for Markdown in the [Markdown code review recipe](docs/code-reviews/recipes/markdown.md).
+
+We have automatic quality gates for pull requests.
+As such, we've provided tooling to lint locally through `npm`.
+
+1. [Install npm](https://www.npmjs.com/get-npm).
+2. Run `npm i` at the root of this repository.
+3. Run `npm run lint` to run all linters.
+Please see [the `package.json` file](package.json) for other scripts.
 
 ### Contributions and pull requests
 

@@ -20,3 +20,4 @@ All data logged must contain rich context, which is useful for getting an overal
 ## Personally Identifiable Information
 
 As a general rule, do not log any customer sensitive and Personal Identifiable Information (PII). Ensure any pertinent privacy regulations are followed regarding PII (Ex: GDPR etc.)
+Read more [here](logs-privacy.md) on how to keep sensitive data out of logs.
