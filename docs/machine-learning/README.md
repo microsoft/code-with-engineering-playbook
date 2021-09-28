@@ -31,6 +31,7 @@ The diagram below shows different phases in an ideal ML project. Due to practica
 * [ML Fundamentals checklist](ml-fundamentals-checklist.md)
 * [Agile ML development](ml-project-management.md)
 * [Testing Data Science and ML Ops code](ml-testing.md)
+* [Profiling Machine Learning and ML Ops code](ml-profiling.md)
 * [Responsible AI](responsible-ai.md)
 
 ## References

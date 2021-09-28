@@ -57,7 +57,7 @@ items:
             type: story
             description: All design reviews should follow a well-known template. If that
               template is not found in the
-              [playbook](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/design-reviews),
+              [playbook](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/design/design-reviews),
               consider contributing your template back to it.
             acceptanceCriteria:
               - Team has decided on a template for design review documents

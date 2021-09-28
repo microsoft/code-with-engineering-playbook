@@ -10,15 +10,16 @@ To use the table, either eyeball-browse or search for keywords.
 |--|--|--|
 | Development | Prove backward compatibility with existing callers and clients | [Shadow testing](shadow-testing/README.md) |
 | Development; [Integration testing](integration-testing/README.md) | Ensure telemetry is sufficiently detailed and complete to trace and diagnose malfunction in [End-to-End testing](e2e-testing/README.md) flows | Distributed Debug challenges ;  Orphaned call chain analysis |
-| Development | Ensure program logic is correct for a variety of expected, mainline, edge and unexpected inputs | [Unit testing](unit-testing/README.md); Functional tests; [Integration testing](integration-testing/README.md) |
-| Development | Prevent regressions in logical correctness; earlier is better | [Unit testing](unit-testing/README.md); Functional tests; [Integration testing](integration-testing/README.md); Rings (each of these are expanding scopes of coverage) |
+| Development | Ensure program logic is correct for a variety of expected, mainline, edge and unexpected inputs | [Unit testing](unit-testing/README.md); Functional tests; [Consumer-driven Contract Testing](cdc-testing/README.md); [Integration testing](integration-testing/README.md) |
+| Development | Prevent regressions in logical correctness; earlier is better | [Unit testing](unit-testing/README.md); Functional tests; [Consumer-driven Contract Testing](cdc-testing/README.md); [Integration testing](integration-testing/README.md); Rings (each of these are expanding scopes of coverage) |
 | Development | Quickly validate mainline correctness of a point of functionality (e.g. single API), manually | Manual smoke testing Tools: postman, powershell, curl |
+| Development | Validate interactions between components in isolation, ensuring that consumer and provider components are compatible and conform to a shared understanding documented in a contract | [Consumer-driven Contract Testing](cdc-testing/README.md) |
 | Development; [Integration testing](integration-testing/README.md) | Validate that multiple components function together across multiple interfaces in a call chain, incl network hops | [Integration testing](integration-testing/README.md); End-to-end ([End-to-End testing](e2e-testing/README.md)) tests; Segmented end-to-end ([End-to-End testing](e2e-testing/README.md)) |
 | Development | Prove disaster recoverability – recover from corruption of data | DR drills |
 | Development | Find vulnerabilities in service Authentication or Authorization | Scenario (security) |
 | Development | Prove correct RBAC and claims interpretation of Authorization code | Scenario (security) |
-| Development | Document and/or enforce valid API usage | [Unit testing](unit-testing/README.md); Functional tests|
-| Development | Prove implementation correctness in advance of a dependency or absent a dependency | [Unit testing](unit-testing/README.md) (with mocks); [Unit testing](unit-testing/README.md) (with emulators) |
+| Development | Document and/or enforce valid API usage | [Unit testing](unit-testing/README.md); Functional tests; [Consumer-driven Contract Testing](cdc-testing/README.md)|
+| Development | Prove implementation correctness in advance of a dependency or absent a dependency | [Unit testing](unit-testing/README.md) (with mocks); [Unit testing](unit-testing/README.md) (with emulators); [Consumer-driven Contract Testing](cdc-testing/README.md) |
 | Development | Ensure that the user interface is accessible | Accessibility |
 | Development | Ensure that users can operate the interface | [UI testing (automated)](ui-testing/README.md) (human usability observation) |
 | Development | Prevent regression in user experience | UI automation; [End-to-End testing](e2e-testing/README.md) |
@@ -61,4 +62,5 @@ To use the table, either eyeball-browse or search for keywords.
 
 ## Technology Specific Testing
 
+- [Using DevTest Pattern for building containers with AzDO](tech-specific-samples/azdo-container-dev-test-release)
 - [Using Azurite to run blob storage tests in pipeline](tech-specific-samples/blobstorage-unit-tests/README.md)
