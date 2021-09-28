@@ -119,7 +119,7 @@ Be aware that this process will not generate a report other the what is displaye
 screen.
 
 Other options can be found in the Locust
-[documentation](https://docs.locust.io/en/stable/running-locust-without-web-ui.html)
+[documentation](https://docs.locust.io/en/0.13.2/running-locust-without-web-ui.html)
 
 ## Writing the locust test file for reuse
 

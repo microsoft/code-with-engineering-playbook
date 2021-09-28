@@ -145,7 +145,8 @@ Try to limit the number of versions of your application running parallel in prod
 
 Check out the below tools to help with some CD best practices listed above:
 
-* [Flux](https://github.com/fluxcd/flux) for gitops
+* [Flux](https://fluxcd.io/docs/concepts/) for gitops
+* [CI/CD workflow using GitOps](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd#example-workflow)
 * [Tekton](https://github.com/tektoncd) for Kubernetes native pipelines
   * Note Jenkins-X uses Tekton under the hood.
 * [Argo Workflows](https://github.com/argoproj/argo-workflows)

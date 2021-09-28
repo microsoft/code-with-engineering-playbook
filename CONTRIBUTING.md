@@ -71,6 +71,14 @@ look and feel of the documentation in this repo.
 
 You can find information about other linters, general writing guidelines and code review check lists for Markdown in the [Markdown code review recipe](docs/code-reviews/recipes/markdown.md).
 
+We have automatic quality gates for pull requests.
+As such, we've provided tooling to lint locally through `npm`.
+
+1. [Install npm](https://www.npmjs.com/get-npm).
+2. Run `npm i` at the root of this repository.
+3. Run `npm run lint` to run all linters.
+Please see [the `package.json` file](package.json) for other scripts.
+
 ### Contributions and pull requests
 
 When creating pull requests, follow guidance similar to the one suggested in
