@@ -4790,8 +4790,12 @@
 <p><code>detect-secrets</code> employs the concept of a "baseline file", i.e. a list of known secrets already present in the repository, and we can configure it to ignore any of these pre-existing secrets when running. This makes it easy to gradually introduce the tool into a pre-existing project.</p>
 <p>The baseline file also provides a simple and convenient way of handling false positives. We can white-list the false positive in the baseline file to ignore it on future invocations of the tool.</p>
 <h2 id="setup">Setup</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># install system dependencies: diff, jq, python3</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># install system dependencies: diff, jq, python3 (if on Linux-based OS)</span>
 apt-get install -y diffutils jq python3 python3-pip
+
+<span class="c1"># install system dependencies: diff, jq, python3 (if on Windows)</span>
+winget install Python.Python.3
+choco install diffutils jq -y
 
 <span class="c1"># install the detect-secrets tool</span>
 python3 -m pip install detect-secrets
@@ -4823,7 +4827,7 @@ list_secrets<span class="o">()</span> <span class="o">{</span> jq -r <span class
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 12, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 29, 2021</span>
     
   </small>
 </div>
