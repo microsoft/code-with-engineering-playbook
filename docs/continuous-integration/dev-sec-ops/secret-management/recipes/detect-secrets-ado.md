@@ -96,10 +96,10 @@ jobs:
         publishLocation: "pipeline"
 
     - pwsh: |
-        $ds = Get-Content $(Pipeline.Workspace)/detect-secrets.json
+        $dsjson = Get-Content $(Pipeline.Workspace)/detect-secrets.json
         Write-Output $ds
         
-        $dsObj = $ds | ConvertFrom-Json
+        $dsObj = $dsjson | ConvertFrom-Json
         $count = ($dsObj.results | Get-Member -MemberType NoteProperty).Count
         
         if ($count -gt 0) {
