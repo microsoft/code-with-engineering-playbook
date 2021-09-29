@@ -96,7 +96,7 @@ jobs:
 
     - pwsh: |
         $dsjson = Get-Content $(Pipeline.Workspace)/detect-secrets.json
-        Write-Output $ds
+        Write-Output $dsjson
         
         $dsObj = $dsjson | ConvertFrom-Json
         $count = ($dsObj.results | Get-Member -MemberType NoteProperty).Count
