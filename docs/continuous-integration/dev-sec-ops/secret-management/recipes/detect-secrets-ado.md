@@ -62,7 +62,6 @@ jobs:
           msg="Secrets were detected in code. ${count} file(s) affected."
           echo "##vso[task.logissue type=error]${msg}"
           echo "##vso[task.complete result=Failed;]${msg}."
-          exit 1
         else
           echo "##vso[task.complete result=Succeeded;]No secrets detected."
         fi
@@ -106,7 +105,6 @@ jobs:
           $msg = "Secrets were detected in code. $count file(s) affected. "
           Write-Host "##vso[task.logissue type=error]$msg"
           Write-Host "##vso[task.complete result=Failed;]$msg"
-          exit 1
         }
         else {
           Write-Host "##vso[task.complete result=Succeeded;]No secrets detected."
