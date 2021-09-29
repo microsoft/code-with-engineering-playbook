@@ -42,7 +42,7 @@ jobs:
 
       - bash: |
           detect-secrets --version
-          detect-secrets scan --force-use-all-plugins > $(Pipeline.Workspace)/detect-secrets.json
+          detect-secrets scan --all-files --force-use-all-plugins > $(Pipeline.Workspace)/detect-secrets.json
         displayName: "Run detect-secrets tool"
 
       - task: PublishPipelineArtifact@1
@@ -84,7 +84,7 @@ jobs:
 
       - script: |
           detect-secrets --version
-          detect-secrets scan --force-use-all-plugins > $(Pipeline.Workspace)/detect-secrets.json
+          detect-secrets scan --all-files --force-use-all-plugins > $(Pipeline.Workspace)/detect-secrets.json
         displayName: "Run detect-secrets tool"
 
       - task: PublishPipelineArtifact@1
