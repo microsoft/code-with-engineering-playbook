@@ -31,8 +31,13 @@ Ideas to help draft this section (delete after creating first draft)
 * Seperate code quality issues for developer quality issues
 
 ## Identifying Common Patterns to Resolve
-Ideas to help draft this section (delete after creating first draft)
-* Find common issues and commit to stop making those mistakes on all future dev (prioritize this issue in your code reviews)
+- For the language that you are using, find the most adopted form of style and code static analysis tools and enable them.
+- Style guidelines represent aspects of the code that involve naming, organization and basic maintenance of code.
+- Code static analysis guidelines represent aspects of the code that involve performance, security and general rules to follow.
+- Ensure that the rules are reporting issues as errors and not warnings.
+- Address all issues that come up during the static analysis tool evaluation.
+- In the beginning of switching over to the new rules, evaluate each issue together as a team to ensure everyone agrees with the rules - and most importantly modify the rule if necessary. 
+- Ensure that you and your team are following [code review](./code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
 
 ## ADDITIONAL NOTES TO DELETE AFTER FIRST DRAFT
 * Acknowledge technical debt as early as possible. Make conscious decisions to take short cuts and add it to the backlog at the time.
