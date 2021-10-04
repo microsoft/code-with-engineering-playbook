@@ -30,7 +30,7 @@ When dealing with legacy code it's helpful to identify 2 types of expected mitig
   
 *Example*: Adding unit tests to an existing code base would be a good  illustration of a non-invasive change.  Additionally, it will help guard the functionality of the code before making a more invasive change.
 
-For some suggestions of how you might classify rules, here's an example of some rule classifications for a specific C# & .NET solution: [Rules Classification C Sharp Example](docs/technical-debt/RulesClassification-CSharpExample.md).
+For some suggestions of how you might classify rules, here's an example of some rule classifications that can be tailored for use in a C# & .NET solution: [Rules Classification C Sharp Example](docs/technical-debt/RulesClassification-CSharpExample.md).
 
 ## Adding Technical Debt to Your Backlog
 Technical debt should be added to your backlog alongside the other important user stories you need to accomplish. If your choose to incur some technical debt during your project, you should add the backlog item immediately after you make the decision while the details are fresh in your mind. For example, if you decide to write some prototype code that isn't as scalable as you would expect for a production deployment, create a quick backlog item outlining what steps you would take to refactor the code to be more scalable in the future. Your new backlog story doesn't need to be perfect, as long as it indicates what the issue is and where in the codebase someone can look to work on that issue in the future.  
