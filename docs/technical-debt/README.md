@@ -20,8 +20,17 @@ Ideas to help draft this section (delete after creating first draft)
 
 ## Invasive vs. Non-invasive Changes
 
-Ideas to help draft this section (delete after creating first draft)
-* 
+When dealing with legacy code it's helpful to identify 2 types of expected mitigation impact: Invasive and Non-Invasive.
+
+**Invasive**: Deep changes that require integration and unit tests to prevent breaks
+
+*Example*: Consider a large code base that's already in production and that has multiple areas where the Single-responsibility principle isn’t applied. Chances are, that methods that aren’t following that principle are probably referenced in multiple areas of the code. They might also be part of a dynamic library that's re-used in external projects. Since refactoring the method could have a significant impact on the behavior of the method we would consider it invasive. Keep in mind that none of these are hard rules and are merely guidance. In practice what is an invasive change in one case might not be in another.
+
+**Non-invasive**: Changes that are unlikely to break the overall solution and are safer to make without integration and unit tests.
+  
+*Example*: Adding unit tests to an existing code base would be a good  illustration of a non-invasive change.  Additionally, it will help guard the functionality of the code before making a more invasive change.
+
+For some suggestions of how you might classify rules, here's an example of some rule classifications for a specific C# & .NET solution: [Rules Classification C Sharp Example](docs/technical-debt/RulesClassification-CSharpExample.md).
 
 ## Adding Technical Debt to Your Backlog
 
@@ -66,11 +75,11 @@ Group all the rules into categories. This will help structure and plan your code
 
 Our proposed list of categories is: **Static Code Analysis**, **Test Coverage**, **Observability**, **Style and Readability**, **Code Clarity and Commenting**, **Performance**, and **Security**.
 
-### Step 3: Define the types of expected mitigation impact for each rule
+### Step 3: Determine the types of expected mitigation impact for each rule
 
 As mentioned earlier in this document, we identify 2 types of expected mitigation impact: **Invasive** and **Non-Invasive**.
 
-For each rule, think about examples of instances where it can be broken. Go through a mental exercise of fixing these and decide if the change would likely be breaking and impact existing behavior (Invasive) or if it would likely be non-impactful (Non-invasive). As an example, consider a large code base that is already in production and that has multiple areas where the Single-responsibility principle isn’t applied. Chances are, that methods that aren’t following that principle are probably referenced in multiple areas of the code. They might also be part of a DLL that is re-used in external projects. Since refactoring the method could have a significant impact on the behavior of the method we would consider it **invasive**. Keep in mind that none of these are hard rules and are merely guidance. In practice what is an invasive change in one case might not be in another.
+For each rule, think about examples of instances where it can be broken. Go through a mental exercise of fixing these and decide if the change would likely be breaking and impact existing behavior (Invasive) or if it would likely be non-impactful (Non-invasive).
 
 ## ADDITIONAL NOTES TO DELETE AFTER FIRST DRAFT
 
