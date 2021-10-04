@@ -24,12 +24,12 @@ Ideas to help draft this section (delete after creating first draft)
 * 
 
 ## Adding Technical Debt to Your Backlog
+Technical debt should be added to your backlog alongside the other important user stories you need to accomplish. If your choose to incur some technical debt during your project, you should add the backlog item immediately after you make the decision while the details are fresh in your mind. For example, if you decide to write some prototype code that isn't as scalable as you would expect for a production deployment, create a quick backlog item outlining what steps you would take to refactor the code to be more scalable in the future. Your new backlog story doesn't need to be perfect, as long as it indicates what the issue is and where in the codebase someone can look to work on that issue in the future.  
+  
+The next most likely time to identify technical debt and add it to your backlog is during code reviews for PRs. When you are finalizing a PR, look for any comments that were resolved with suggestions for improvements. If you don't have time to incorporate the improvement now, add it to the backlog so another team member can make the change in the future when time permits.  
+  
+Finally, if you are beginning work on a codebase the you inheritted from another team, you may need to assess the code for exiting technical debt. This work can take time and should be included in the sprint plan or in a sprint zero phase prior to the project kickoff. Remember to add this work to the backlog to ensure that the assessment itself is a high priority work item that gets proper attention from the team.
 
-Ideas to help draft this section (delete after creating first draft)
-
-* Code quality assessment should be work added to your backlog
-* Core vs. complete fixes
-* Adding to the backlog as soon as you identify technical debt
 
 ## Improving Another Team's Codebase
 
