@@ -57,9 +57,86 @@ If you are currently using the legacy FxCop analyzers, [migrate from FxCop analy
 
 ### StyleCop analyzer
 
-The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions about braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
+The StyleCop analyzer is a NuGet package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions about braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
 
 The minimum rules set teams should adopt is the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set.
+
+### Improving Code Quality on an Existing Code Base
+This describes a method to follow to review and improve the quality of an existing code base. This method is independent from the programming language. 
+- **Step 1:** Gather state-of-the-art code quality guidelines and rules for the language you are including. (See above)
+- **Step 2:** Group the list of rules you selected in Step 1 (such as the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set, mentioned above) into the following code quality categories: 
+  - "Static Code Analysis," "Test Coverage," "Observability," "Style and Readability," "Code Clarity and Commenting," "Performance," and "Security" 
+  - This will help structure and plan your code review exercise. 
+- **Step 3:** Define the types of expected mitigation impact for each rule.
+  - For each rule, think about instances where it can be broken. Go through a mental exercise of fixing these, and decide if the change would likely be breaking/impact existing behavior (Invasive), or if it would likely be non-impactful (Non-invasive).
+  - For example, if refactoring a method could have a big impact on the behavior of the method, and would cause a breaking change where any other code references it, that would be considered "invasive".
+- **Step 4:** Define "review phases" for each rule.
+  - For example, group each rule under labels such as "MVP" and "Completion". 
+  - "MVP" should focus on improving the debuggability of the code in production, via adding unit tests, continuous integration, overall reducing the chances that breaking changes can be introduced. 
+  - "Completion" should contain the rest. "What else needs to be done to reach completion on the review?"
+
+Once all these steps are completed, you can follow this generic code review plan on the code base you are targeting.
+
+### "Treat Warnings as Errors"
+
+As mentioned above, the [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019) allows for configuration and overrides of rules. One approach we reccommend is to set all rules to Error as soon as you begin code quality improvement work. 
+
+If it is your intention to improve the overall quality of a code base, it is recommended to set all Warnings to Errors. All too often, if a rule is set to Suggestion or Warning, it is not likely to be fixed. This is a strategy to prevent these rules from falling victim to the "take care of all the warnings later" procrastination phenomenon.
+
+This approach--of changing most rules to Error by default--allows teams to start a discussion about what process they want to follow for moving the rules back to Warning/None. When all rules are set to raise an error, the first time that an error appears, there can then be a conversation in the team to decide whether to ignore that rule, or switch it to Warning. 
+
+This example `.editorconfig` has all the following rules set to "error":
+
+```cs
+dotnet_analyzer_diagnostic.category-Style.severity = error
+dotnet_analyzer_diagnostic.category-Design.severity = error
+dotnet_analyzer_diagnostic.category-Documentation.severity = error
+dotnet_analyzer_diagnostic.category-Globalization.severity = error
+dotnet_analyzer_diagnostic.category-Maintainability.severity = error
+dotnet_analyzer_diagnostic.category-Naming.severity = error
+dotnet_analyzer_diagnostic.category-Performance.severity = error
+dotnet_analyzer_diagnostic.category-Publish.severity = error
+dotnet_analyzer_diagnostic.category-Reliability.severity = error
+dotnet_analyzer_diagnostic.category-Security.severity = error
+dotnet_analyzer_diagnostic.category-Usage.severity = error
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.DocumentationRules.severity = error
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.LayoutRules.severity = error
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.MaintainabilityRules.severity = error
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.NamingRules.severity = error
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.OrderingRules.severity = error
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.ReadabilityRules.severity = error
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.SpacingRules.severity = error
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.SpecialRules.severity = error
+```
+
+|     | Acronym Glossary               |
+|-----|--------------------------------|
+| CA  | Code Analyzer (FxCop)          |
+| CS  | C Sharp (C#) compiler          |
+| IDE | Visual Studio IDE message      |
+| IL  | FxCop (Intermediate language)  |
+| SA  | StyleCop (Style Analyzers)     |
+| SX  | Style Analyzers Extension      |
+
+> What is the default behavior if a CA rule is not specified in editorconfig? Does it default to error?
+
+By default, each of those rules listed above will be set to Warning. Unless overridden, it will remain Warning.
+
+> What is the difference between not listing a rule, versus setting it to "none"?
+
+"None" means that it will not show an error. Therefore, you may set certain rules to "none" if you do not think is a rule to worry about, and you do not want to see it in your error list.
+
+> Can I add comments in .editorconfig to describe what the error codes stand for? 
+
+Commenting the rules will save developers the step of looking it up online. It is not strictly necessary, however, it could be convenient if you are updating .editorconfig a lot. Yes, this would result in a file twice the size, but no, there is not a performance issue caused by it. 
+
+> Where can I get a set of FxCop rules and Style rules that make sense for my project and enforce consistency?
+
+Draft: Ideally it would use the above list to set all rules to error. Each individual project may call for different overrides in the rest of the file to match the developers' preferences.
+
+Lastly, an approach you may consider is to change certain rules to "Warning" or "None," based on the stage of analysis you are in ("MVP" vs. "Completion"). It may be helpful to ignore "invasive" changes that your team is not ready to make, in order to compile the code, submit pull requests, and continue building. Then, once you reach a later phase where your team is ready to tackle larger or more complex issues, you may adjust the rules you were previously ignoring to allow them to error.
+
+May this additional context and process guidance be helpful for future crews.
 
 ## Automatic Code Formatting
 
