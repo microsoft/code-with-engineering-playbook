@@ -30,23 +30,23 @@ The next most likely time to identify technical debt and add it to your backlog 
   
 Finally, if you are beginning work on a codebase the you inheritted from another team, you may need to assess the code for exiting technical debt. This work can take time and should be included in the sprint plan or in a sprint zero phase prior to the project kickoff. Remember to add this work to the backlog to ensure that the assessment itself is a high priority work item that gets proper attention from the team.
 
-
 ## Improving Another Team's Codebase
 
-Ideas to help draft this section (delete after creating first draft)
-
-* Inheriting a code base from another team; what process should you use?
-* Don't assume the original developer didn't know how to write high quality code? Assume they didn't have the time to do it.
-* Seperate code quality issues for developer quality issues
+- Please follow the recommendations listed inside [inclusion in code reviews](../code-reviews/inclusion-in-code-review.md) when working with another team's code base.
+- Code should be considered in it's current state as-of today, which means it can change using an iterative approach.
+- Don't assume the original developer didn't know how to write high quality code, instead consider that they didn't have the time to do it or other factors came into play.
+- Any issue that's listed as technical debt should be considered as a compromise vs. time or a milestone instead of whether one team is "better" or "faster" than another at writing code.
+- Take into consideration "onus" of the code base. That is to say, who will be the person taking the pager call at 3 am when the code doesn't work. If they don't like a change find out why and see if there's an opportunity to make it better.
 
 ## Identifying Common Patterns to Resolve
-- For the language that you are using, find the most adopted form of style and code static analysis tools and enable them.
+
+- For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review recipes](../code-reviews/recipes/README.md).
 - Style guidelines represent aspects of the code that involve naming, organization and basic maintenance of code.
 - Code static analysis guidelines represent aspects of the code that involve performance, security and general rules to follow.
 - Ensure that the rules are reporting issues as errors and not warnings.
 - Address all issues that come up during the static analysis tool evaluation.
 - In the beginning of switching over to the new rules, evaluate each issue together as a team to ensure everyone agrees with the rules - and most importantly modify the rule if necessary. 
-- Ensure that you and your team are following [code review](./code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
+- Ensure that you and your team are following [code review](../code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
 
 ## Organizing and classifying code quality rules to make them actionable
 
