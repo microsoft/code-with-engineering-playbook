@@ -4933,10 +4933,10 @@
           <span class="nt">COMMIT_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span>
         <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
           <span class="no">if ${COMMIT_VAR} == true; then</span>
-            <span class="no">echo &quot;::set-env name=flag::true&quot;</span>
+            <span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span>
             <span class="no">echo &quot;flag set to true&quot;</span>
           <span class="no">else</span>
-            <span class="no">echo &quot;::set-env name=flag::false&quot;</span>
+            <span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span>
             <span class="no">echo &quot;flag set to false&quot;</span>
           <span class="no">fi</span>
 
@@ -4947,20 +4947,20 @@
 <p>Available as a .YAML <a href="../examples/commit-example.yaml">here</a>.</p>
 <p>Code Explanation:</p>
 <p>The first part of the code is setting up Push triggers on the working branch and checking out the repository, so we will not explore that in detail.</p>
-<div class="highlight"><pre><span></span><code>  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">Commit&quot;</span>
-    <span class="nt">env</span><span class="p">:</span>
-      <span class="nt">COMMIT_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">Commit&quot;</span>
+  <span class="nt">env</span><span class="p">:</span>
+    <span class="nt">COMMIT_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span>
 </code></pre></div>
 <p>This is a named step inside the only Job in our GitHub Actions pipeline. Here, we set an environment variable for the step: Any code or action that the step calls will now have the environment variable available.</p>
 <p><code>contains</code> is a GitHub Actions function that is available by default in all workflows. It returns a Boolean <code>true</code> or <code>false</code> value. In this situation, it checks to see if the commit message on the last push, accessed using <code>github.event.head_commit.message</code>. The <code>${{...}}</code> is necessary to use the GitHub Context and make the functions and <code>github.event</code> variables available for the command.</p>
-<div class="highlight"><pre><span></span><code>  <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-    <span class="no">if ${COMMIT_VAR} == true; then</span>
-      <span class="no">echo &quot;::set-env name=flag::true&quot;</span>
-      <span class="no">echo &quot;flag set to true&quot;</span>
-    <span class="no">else</span>
-      <span class="no">echo &quot;::set-env name=flag::false&quot;</span>
-      <span class="no">echo &quot;flag set to false&quot;</span>
-    <span class="no">fi</span>
+<div class="highlight"><pre><span></span><code><span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+  <span class="no">if ${COMMIT_VAR} == true; then</span>
+    <span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span>
+    <span class="no">echo &quot;flag set to true&quot;</span>
+  <span class="no">else</span>
+    <span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span>
+    <span class="no">echo &quot;flag set to false&quot;</span>
+  <span class="no">fi</span>
 </code></pre></div>
 <p>The <code>run</code> command here checks to see if the <code>COMMIT_VAR</code> variable has been set to <code>true</code>, and if it has, it sets a secondary flag to true, and echoes this behavior. It does the same if the variable is <code>false</code>.</p>
 <p>The specific reason to do this is to allow for the <code>flag</code> variable to be used in further steps instead of having to reuse the <code>COMMIT_VAR</code> in every step. Further, it allows for the flag to be used in the <code>if</code> step of an action, as in the next part of the snippet.</p>
@@ -4980,7 +4980,7 @@
   <span class="nt">env</span><span class="p">:</span>
     <span class="nt">COMMIT_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span>
   <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-    <span class="no">echo &quot;::set-env name=flag::${COMMIT_VAR}&quot;</span>
+    <span class="no">echo &quot;flag=${COMMIT_VAR}&quot; &gt;&gt; $GITHUB_ENV</span>
     <span class="no">echo &quot;set flag to ${COMMIT_VAR}&quot;</span>
 </code></pre></div>
 <p>Usage:</p>
@@ -5001,7 +5001,7 @@
 <p>Not Including the Variable</p>
 <ol>
 <li>
-<p>Push to  branch <code>master</code>:</p>
+<p>Push to branch <code>master</code>:</p>
 <div class="highlight"><pre><span></span><code>&gt; git add.
 &gt; git commit -m &quot;Running Github Actions Test&quot;
 &gt; git push
@@ -5037,10 +5037,10 @@
           <span class="nt">PR_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.pull_request.body, &#39;[pr var]&#39;) }}</span>
         <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
           <span class="no">if ${PR_VAR} == true; then</span>
-            <span class="no">echo &quot;::set-env name=flag::true&quot;</span>
+            <span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span>
             <span class="no">echo &quot;flag set to true&quot;</span>
           <span class="no">else</span>
-            <span class="no">echo &quot;::set-env name=flag::false&quot;</span>
+            <span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span>
             <span class="no">echo &quot;flag set to false&quot;</span>
           <span class="no">fi</span>
 
@@ -5062,7 +5062,7 @@
   <span class="nt">env</span><span class="p">:</span>
     <span class="nt">PR_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.pull_request.body, &#39;[pr var]&#39;) }}</span>
   <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-  <span class="l l-Scalar l-Scalar-Plain">echo &quot;::set-env name=flag::${PR_VAR}&quot;</span>
+  <span class="l l-Scalar l-Scalar-Plain">echo &quot;flag=${PR_VAR}&quot; &gt;&gt; $GITHUB_ENV</span>
   <span class="l l-Scalar l-Scalar-Plain">echo &quot;set flag to ${PR_VAR}&quot;</span>
 </code></pre></div>
 <p>Usage:</p>
@@ -5095,7 +5095,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 6, 2021</span>
     
   </small>
 </div>
