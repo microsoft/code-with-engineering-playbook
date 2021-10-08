@@ -4,10 +4,10 @@
 
 Most projects start with spikes, where developers and analysts produce lots of documentation.
 
-But sometimes, these documents don't have a standard and each one write them accordingly with their preference. Add to that
+Sometimes, these documents don't have a standard and each one write them accordingly with their preference. Add to that
 the time a reviewer will spend confirming grammar, searching for typos or non-inclusive language.
 
-This pipeline addresses that!
+This pipeline helps address that!
 
 ## The Pipeline
 
