@@ -18,7 +18,7 @@ The pipeline uses the following `npm` modules:
 ones
 - [write-good](https://github.com/btford/write-good): linter for English prose
 
-We have been use this pipeline for more than one year in different engagements and always received great feedback from the
+We have been using this pipeline for more than one year in different engagements and always received great feedback from the
 customers!
 
 ## How does it work
