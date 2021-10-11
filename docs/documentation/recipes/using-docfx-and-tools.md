@@ -11,7 +11,7 @@ To get you started quickly from scratch, a Quick Start folder is provided which 
 > If you want a really quick start using Azure DevOps and Azure App Service without reading the what and how, follow these steps:
 >
 > 1. **Azure DevOps:** If you don't have it yet, create a project in Azure DevOps and [create a Service Connection to your Azure environment](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops). Clone the repository.
-> 2. **Quick Start folder:** Copy the contents of the DocFxQuickStart folder to the root of the repository
+> 2. **Quick Start folder:** Copy the contents of the DocFxQuickStart folder to the root of the repository. Also retrieve the src/DocLinkChecker and src/TocDocFxCreation folders from the repo at <https://github.com/Ellerbach/docfx-companion-tools>.
 > 3. **Azure:** Create a resource group in your Azure environment where the documentation website resources should be created.
 > 4. **Create Azure resources:** Fill in the default values in *infrastructure/variables.tf* and run the commands from [Step 3 - Deploy Azure resources from your local machine](deploy-docfx-azure-website.md#3-Running-the-commands-locally) to create the Azure Resources.
 > 5. **Pipeline:** Fill in the variables in *.pipelines/documentation.yml*, commit the changes and push the contents of the repository to your branch (possibly through a PR).
@@ -197,6 +197,10 @@ To get started with the setup of this website, read the getting started document
 
 ## 4. Compile the companion tools and run them
 
+> **IMPORTANT:** because we want to exclude source code from this repository, you have to download the necessary tools first from <https://github.com/Ellerbach/docfx-companion-tools/src>. Just copy the DocLinkChecker and TocDocFxCreation folders to the src folder in the sample directory.
+>
+> The tools are needed by the build tools and pipelines. The sources also show how you can have tripple-slash comments there which generate documentation in the website as well. If you skip this step, you get errors all over the place.
+
 > **NOTE:** To explain each step, we'll be going through the various steps in the next few paragraphs. In the provided sample, a batch-file called **GenerateDocWebsite.cmd** is included. This script will take all the necessary steps to compile the tools, execute the checks, generate the table of contents and execute docfx to generate the website.
 
 To check for proper markdown formatting the **markdownlint-cli** tool is used. The command takes it's configuration from the `.markdownlint.json` file in the root of the project. To check all markdown files, simply execute this command:
@@ -205,9 +209,7 @@ To check for proper markdown formatting the **markdownlint-cli** tool is used. T
 markdownlint **/*.md
 ```
 
-In the Quick Start folder we've also included the two companion tools **TocDocFxCreation** and **DocLinkChecker**.
-
-> **NOTE**: The Quick Start folder contains a static version of the companion tools. To use the latest version, download it from the [DocFx Companion Tools repository](https://github.com/Ellerbach/docfx-companion-tools).
+In the Quick Start folder you should have copied in the two companion tools **TocDocFxCreation** and **DocLinkChecker** as described in the introduction of this article.
 
 You can compile the tools from Visual Studio, but you can also run `dotnet build` in both tool folders.
 
