@@ -57,6 +57,7 @@ Here are a few popular load testing frameworks you may consider, and the languag
 - **Gatling** (<https://gatling.io/>) -  Write your scenarios in Scala with their DSL.
 - **Locust** (<https://locust.io/>) - Write your scenarios in Python using the concept of concurrent user activity.
 - **K6** (<https://k6.io/>) - Write your test scenarios in Javascript, available as open source or as SaaS.
+- **NBomber** (<https://nbomber.com/>) - Write your test scenarios in C# or F#, available integration with test runners (NUnit/xUnit).
 
 ## Conclusion
 

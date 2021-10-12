@@ -1,8 +1,14 @@
 {
   "scripts": {
-    "lint": "markdownlint \"**/*.md\" --ignore node_modules"
+    "lint": "npm run lint:md && npm run lint:links",
+    "lint:links": "run-script-os",
+    "lint:links:default": "find . -name '*node_modules*' -prune -o -name '*CHANGELOG.md' -prune -o -name '*.md' -exec markdown-link-check -c .markdownlinkcheck.json {} \\;",
+    "lint:links:windows": "find . -name '*node_modules*' -prune -o -name '*CHANGELOG.md' -prune -o -name '*.md' -exec markdown-link-check -c .markdownlinkcheck.json {} ;",
+    "lint:md": "markdownlint \"**/*.md\" --ignore node_modules"
   },
   "dependencies": {
-    "markdownlint-cli": "^0.22.0"
+    "markdown-link-check": "3.8.7",
+    "markdownlint-cli": "^0.22.0",
+    "run-script-os": "1.1.5"
   }
 }

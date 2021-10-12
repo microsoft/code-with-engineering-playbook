@@ -56,6 +56,11 @@ Here are principles to consider when building dashboards:
 
 For other tools, these can be used as a reference to recreate if a template is not readily available.
 
+### Grafana with Azure Monitor as Data Source:
+
+- [Azure Kubernetes Service - Cluster & Namespace Metrics](https://grafana.com/grafana/dashboards/10956) - Container Insights metrics for Kubernetes clusters. Cluster utilization, namespace utilization, Node cpu & memory, Node disk usage & disk io, node network & kubelet docker operation metrics
+- [Azure Kubernetes Service - Container Level & Pod Metrics](https://grafana.com/grafana/dashboards/14891) - This contains Container level and Pod Metrics like CPU and Memory which are missing in the above dashboard.
+
 ## Summary
 
 In order to build an observable dashboard, the goal is to make use of collected metrics, logs, traces to give an insight on how the system performs, user behaves and identify patterns. There are a lot of tools and templates out there. Whichever the choice is, a good dashboard is always a dashboard that can help you answer questions about the system and user, keep track of the KPI and goal while also allowing informed business decisions to be made.

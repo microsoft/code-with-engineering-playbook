@@ -13,8 +13,12 @@ The baseline file also provides a simple and convenient way of handling false po
 ## Setup
 
 ```sh
-# install system dependencies: diff, jq, python3
+# install system dependencies: diff, jq, python3 (if on Linux-based OS)
 apt-get install -y diffutils jq python3 python3-pip
+
+# install system dependencies: diff, jq, python3 (if on Windows)
+winget install Python.Python.3
+choco install diffutils jq -y
 
 # install the detect-secrets tool
 python3 -m pip install detect-secrets
