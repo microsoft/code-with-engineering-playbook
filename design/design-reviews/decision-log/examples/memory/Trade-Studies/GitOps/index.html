@@ -5101,25 +5101,25 @@ So this section does not consider the v1 option a valid option.</p>
 </ul>
 </li>
 <li>Deployment Methods<ul>
-<li>Deploy with <a href="https://argoproj.github.io/argo-cd/user-guide/helm/">Helm</a> Chart</li>
-<li>Use <a href="https://argoproj.github.io/argo-cd/user-guide/kustomize/">Kustomize</a> to apply some post-rendering to the Helm release templates</li>
+<li>Deploy with <a href="https://argo-cd.readthedocs.io/en/stable/user-guide/helm/">Helm</a> Chart</li>
+<li>Use <a href="https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/">Kustomize</a> to apply some post-rendering to the Helm release templates</li>
 </ul>
 </li>
 <li>Deployment Monitoring<ul>
-<li>Argo CD expose two sets of <a href="https://argoproj.github.io/argo-cd/operator-manual/metrics/">Prometheus</a> metrics (application metrics and API server metrics) for deployment monitoring.</li>
+<li>Argo CD expose two sets of <a href="https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/">Prometheus</a> metrics (application metrics and API server metrics) for deployment monitoring.</li>
 </ul>
 </li>
 <li>Admission Control<ul>
 <li>ArgoCD use RBAC feature.
-   <a href="https://argoproj.github.io/argo-cd/operator-manual/rbac/">RBAC</a> requires SSO configuration or one or more local users setup.
+   <a href="https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/">RBAC</a> requires SSO configuration or one or more local users setup.
    Once SSO or local users are configured, additional RBAC roles can be defined</li>
 <li>Argo CD does not have its own user management system and has only one built-in user admin.
    The admin user is a superuser, and it has unrestricted access to the system</li>
-<li><a href="https://argoproj.github.io/argo-cd/operator-manual/security/#authentication">Authorization is handled via JWT tokens</a> and checking group claims in them</li>
+<li><a href="https://argo-cd.readthedocs.io/en/stable/operator-manual/security/#authentication">Authorization is handled via JWT tokens</a> and checking group claims in them</li>
 </ul>
 </li>
 <li>Azure Documentation availability<ul>
-<li>Argo has <a href="https://argoproj.github.io/argo-cd/operator-manual/user-management/microsoft/">documentation</a> on Azure AD</li>
+<li>Argo has <a href="https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/microsoft/">documentation</a> on Azure AD</li>
 </ul>
 </li>
 <li>Maturity<ul>
@@ -5147,7 +5147,7 @@ So this section does not consider the v1 option a valid option.</p>
 <li>SSO Integration</li>
 <li>Garbage collection</li>
 </ul>
-<p><img alt="Architecture" src="https://argoproj.github.io/argo-cd/assets/argocd_architecture.png" /></p>
+<p><img alt="Architecture" src="https://argo-cd.readthedocs.io/en/stable/assets/argocd_architecture.png" /></p>
 <h2 id="results">Results</h2>
 <p>This section should contain a table that has each solution rated against each of the evaluation criteria:</p>
 <table>
@@ -5212,7 +5212,7 @@ So we have decided at this point to go with ArgoCD.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 14, 2021</span>
     
   </small>
 </div>
