@@ -33,14 +33,14 @@ reviewers:
       - biancafbmd
       - omri374
       - TessFerrandez
-    machine-learning:
-      - biancafbmd
     observability:
       - NarmathaBala
     privacy: 
       - prnata
+      - omri374
     source-code:
       - TessFerrandez
+      - tompaana
 
 files:
   # Keys are glob expressions.
