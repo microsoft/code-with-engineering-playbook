@@ -13,7 +13,7 @@ reviewers:
       - omri374
     automated-testing:
       - alkofahi
-      - omri374
+      - omusavi
     code-reviews:
       - katyamust
       - TessFerrandez
@@ -27,14 +27,20 @@ reviewers:
       - madossan01
     documentation: 
       - magencio
+      - tompaana
+      - TessFerrandez
     machine-learning:
       - biancafbmd
+      - omri374
+      - TessFerrandez
     observability:
       - NarmathaBala
     privacy: 
       - prnata
+      - omri374
     source-code:
       - TessFerrandez
+      - tompaana
 
 files:
   # Keys are glob expressions.
