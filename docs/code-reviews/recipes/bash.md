@@ -58,8 +58,7 @@ To automate this process in Azure DevOps you can add the following snippet to yo
 - bash: |
     echo "This checks for formatting and common bash errors. See wiki for error details and ignore options: https://github.com/koalaman/shellcheck/wiki/SC1000"
     export scversion="stable"
-    wget -qO- "https://github.com/koalaman/shellcheck/releases/download/${scversion}/shellcheck-${scversion}.linux.x86_64.tar.xz
-" | tar -xJv
+    wget -qO- "https://github.com/koalaman/shellcheck/releases/download/${scversion?}/shellcheck-${scversion?}.linux.x86_64.tar.xz" | tar -xJv
     sudo mv "shellcheck-${scversion}/shellcheck" /usr/bin/
     rm -r "shellcheck-${scversion}"
     shellcheck ./scripts/*.sh
