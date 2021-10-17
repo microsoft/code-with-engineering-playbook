@@ -15,7 +15,7 @@ Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automati
 
 Shellcheck extension should be used in VS Code, it provides static code analysis capabilities and auto fixing linting issues. To use vscode-shellcheck in vscode do the following:
 
-#### Install shellcheck on your machine:
+#### Install shellcheck on your machine
 
 For macOS
 
@@ -29,7 +29,7 @@ For Ubuntu:
 apt-get install shellcheck
 ```
 
-#### Install shellcheck on vscode:
+#### Install shellcheck on vscode
 
 Find the vscode-shellcheck extension in vscode and install it.
 
@@ -40,13 +40,13 @@ Find the vscode-shellcheck extension in vscode and install it.
 shell-format extension does automatic formatting of your bash scripts, docker files and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:
 
-#### Install shfmt(Requires Go 1.13 or later) on your machine:
+#### Install shfmt(Requires Go 1.13 or later) on your machine
 
 ```bash
 GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
 ```
 
-#### Install shell-format on vscode:
+#### Install shell-format on vscode
 
 Find the shell-format extension in vscode and install it.
 
@@ -58,7 +58,7 @@ To automate this process in Azure DevOps you can add the following snippet to yo
 - bash: |
     echo "This checks for formatting and common bash errors. See wiki for error details and ignore options: https://github.com/koalaman/shellcheck/wiki/SC1000"
     export scversion="stable"
-    wget -qO- "https://storage.googleapis.com/shellcheck/shellcheck-${scversion?}.linux.x86_64.tar.xz" | tar -xJv
+    wget -qO- "https://github.com/koalaman/shellcheck/releases/download/${scversion?}/shellcheck-${scversion?}.linux.x86_64.tar.xz" | tar -xJv
     sudo mv "shellcheck-${scversion}/shellcheck" /usr/bin/
     rm -r "shellcheck-${scversion}"
     shellcheck ./scripts/*.sh
