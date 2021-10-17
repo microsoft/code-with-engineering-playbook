@@ -2484,13 +2484,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#custom-plugin-example" class="md-nav__link">
-    Custom plugin example
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4763,13 +4756,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#custom-plugin-example" class="md-nav__link">
-    Custom plugin example
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4785,95 +4771,115 @@
                 
                 <h1 id="detecting-secrets-in-your-azure-devops-pipeline-with-yelp-detect-secrets">Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets</h1>
 <h2 id="overview">Overview</h2>
-<p>In this article, you can find information on how to integrate YELP detect-secrets into your Azure DevOps Pipeline. The proposed code can be part of the classic CI process or (preferred way) build validation for PRs before merging to the main branch.</p>
+<p>In this article, you can find information on how to integrate YELP detect-secrets into your Azure DevOps Pipeline. The proposed code can be part of the classic CI process or (preferred way) build validation for PRs before merging to the <code>main</code> branch.</p>
 <h2 id="azure-devops-pipeline">Azure DevOps Pipeline</h2>
 <p>Proposed Azure DevOps Pipeline contains multiple steps described below:</p>
 <ol>
 <li>Set Python 3 as default</li>
 <li>Install detect-secrets using pip</li>
-<li>Run detect-secrets tool<blockquote>
-<p>NOTE: In this example, the tool gets additional parameters. The most important is <code>--custom-plugins</code>, which points to the custom plugin for Azure Storage Account Key detection.
-This plugin is not part of the official YELP detect-secrets yet, so you have to provide it in your codebase. Reference code you can find under the <a href="#custom-plugin-example">Custom plugin example</a> section.</p>
-</blockquote>
-</li>
+<li>Run detect-secrets tool</li>
 <li>Publish results in the Pipeline Artifact<blockquote>
 <p>NOTE: It's an optional step, but for future investigation .json file with results may be helpful.</p>
 </blockquote>
 </li>
 <li>Analyzing detect-secrets results<blockquote>
-<p>NOTE: This step does a simple analysis of the .json file. If any secret has been detected, then break the build.</p>
+<p>NOTE: This step does a simple analysis of the .json file. If any secret has been detected, then break the build with exit code 1.</p>
 </blockquote>
 </li>
 </ol>
+<blockquote>
+<p>NOTE: The below example has 2 jobs: for Linux and Windows agents. You do not have to use both jobs - just adjust the pipeline to your needs.</p>
+<p>NOTE: Windows example does not use the latest version of detect-secrets. It is related to the bug in the detect-secret tool (see more in <a href="https://github.com/Yelp/detect-secrets/issues/452">Issue#452</a>). It is highly recommended to monitor the fix for the issue and use the latest version if possible by removing version tag <code>==1.0.3</code> in the pip install command.</p>
+</blockquote>
 <div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">none</span>
 
-<span class="nt">pool</span><span class="p">:</span>
-  <span class="nt">vmImage</span><span class="p">:</span> <span class="s">&quot;windows-latest&quot;</span>
+<span class="nt">jobs</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">job</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu</span>
+    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;detect-secrets</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Ubuntu</span><span class="nv"> </span><span class="s">Linux</span><span class="nv"> </span><span class="s">agent&quot;</span>
+    <span class="nt">pool</span><span class="p">:</span>
+      <span class="nt">vmImage</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">UsePythonVersion@0</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">default&quot;</span>
+        <span class="nt">inputs</span><span class="p">:</span>
+          <span class="nt">versionSpec</span><span class="p">:</span> <span class="s">&quot;3&quot;</span>
+          <span class="nt">addToPath</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+          <span class="nt">architecture</span><span class="p">:</span> <span class="s">&quot;x64&quot;</span>
 
-<span class="nt">steps</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">UsePythonVersion@0</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">default&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">versionSpec</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+      <span class="p p-Indicator">-</span> <span class="nt">bash</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pip install detect-secrets</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Install</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">pip&quot;</span>
 
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CmdLine@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Install</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">pip&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">pip install detect-secrets</span>
+      <span class="p p-Indicator">-</span> <span class="nt">bash</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+          <span class="no">detect-secrets --version</span>
+          <span class="no">detect-secrets scan --all-files --force-use-all-plugins &gt; $(Pipeline.Workspace)/detect-secrets.json</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">tool&quot;</span>
 
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CmdLine@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">tool&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">detect-secrets scan --exclude-files &quot;src\\Web\\wwwroot\\lib\\*&quot; --use-all-plugins --custom-plugins yelp\azure_storage_key.py &gt; detect-secrets.json</span>
+      <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishPipelineArtifact@1</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Publish</span><span class="nv"> </span><span class="s">results</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Pipeline</span><span class="nv"> </span><span class="s">Artifact&quot;</span>
+        <span class="nt">inputs</span><span class="p">:</span>
+          <span class="nt">targetPath</span><span class="p">:</span> <span class="s">&quot;$(Pipeline.Workspace)/detect-secrets.json&quot;</span>
+          <span class="nt">artifact</span><span class="p">:</span> <span class="s">&quot;detect-secrets-ubuntu&quot;</span>
+          <span class="nt">publishLocation</span><span class="p">:</span> <span class="s">&quot;pipeline&quot;</span>
 
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishPipelineArtifact@1</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Publish</span><span class="nv"> </span><span class="s">results</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Pipeline</span><span class="nv"> </span><span class="s">Artifact&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">targetPath</span><span class="p">:</span> <span class="s">&quot;$(Pipeline.Workspace)/detect-secrets.json&quot;</span>
-      <span class="nt">artifact</span><span class="p">:</span> <span class="s">&quot;detect-secrets&quot;</span>
-      <span class="nt">publishLocation</span><span class="p">:</span> <span class="s">&quot;pipeline&quot;</span>
+      <span class="p p-Indicator">-</span> <span class="nt">bash</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+          <span class="no">dsjson=$(cat $(Pipeline.Workspace)/detect-secrets.json)</span>
+          <span class="no">echo &quot;${dsjson}&quot;</span>
 
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PowerShell@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Analyzing</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">results&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">targetType</span><span class="p">:</span> <span class="s">&quot;inline&quot;</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">$ds = Get-Content detect-secrets.json</span>
-        <span class="no">Write-Output $ds</span>
+          <span class="no">count=$(echo &quot;${dsjson}&quot; | jq -c -r &#39;.results | length&#39;)</span>
 
-        <span class="no">$dsObj = $ds | ConvertFrom-Json</span>
-        <span class="no">$num = ($dsObj.results | Get-Member -MemberType NoteProperty).Count</span>
+          <span class="no">if [ count &gt; 0 ]; then</span>
+            <span class="no">msg=&quot;Secrets were detected in code. ${count} file(s) affected.&quot;</span>
+            <span class="no">echo &quot;##vso[task.logissue type=error]${msg}&quot;</span>
+            <span class="no">echo &quot;##vso[task.complete result=Failed;]${msg}.&quot;</span>
+          <span class="no">else</span>
+            <span class="no">echo &quot;##vso[task.complete result=Succeeded;]No secrets detected.&quot;</span>
+          <span class="no">fi</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Analyzing</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">results&quot;</span>
 
-        <span class="no">if ($num -gt 0) {</span>
-          <span class="no">Write-Host &quot;##vso[task.logissue type=error]Secrets were detected in code.&quot;</span>
-          <span class="no">exit 1</span>
-        <span class="no">}</span>
-        <span class="no">else {</span>
-          <span class="no">Write-Host &quot;No secrets detected.&quot;</span>
-        <span class="no">}</span>
-      <span class="nt">pwsh</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-</code></pre></div>
-<h2 id="custom-plugin-example">Custom plugin example</h2>
-<p>The below example contains a custom plugin for YELP detect-secrets. This plugin is a Detector for Azure Storage Account access keys.</p>
-<div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">This plugin searches for Azure Storage Account access keys.</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">re</span>
+  <span class="p p-Indicator">-</span> <span class="nt">job</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">windows</span>
+    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;detect-secrets</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Windows</span><span class="nv"> </span><span class="s">agent&quot;</span>
+    <span class="nt">pool</span><span class="p">:</span>
+      <span class="nt">vmImage</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">windows-latest</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">UsePythonVersion@0</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">default&quot;</span>
+        <span class="nt">inputs</span><span class="p">:</span>
+          <span class="nt">versionSpec</span><span class="p">:</span> <span class="s">&quot;3&quot;</span>
+          <span class="nt">addToPath</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+          <span class="nt">architecture</span><span class="p">:</span> <span class="s">&quot;x64&quot;</span>
 
+      <span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pip install detect-secrets==1.0.3</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Install</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">pip&quot;</span>
 
-<span class="kn">from</span> <span class="nn">detect_secrets.plugins.base</span> <span class="kn">import</span> <span class="n">RegexBasedDetector</span>
+      <span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+          <span class="no">detect-secrets --version</span>
+          <span class="no">detect-secrets scan --all-files --force-use-all-plugins &gt; $(Pipeline.Workspace)/detect-secrets.json</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">tool&quot;</span>
 
+      <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishPipelineArtifact@1</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Publish</span><span class="nv"> </span><span class="s">results</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Pipeline</span><span class="nv"> </span><span class="s">Artifact&quot;</span>
+        <span class="nt">inputs</span><span class="p">:</span>
+          <span class="nt">targetPath</span><span class="p">:</span> <span class="s">&quot;$(Pipeline.Workspace)/detect-secrets.json&quot;</span>
+          <span class="nt">artifact</span><span class="p">:</span> <span class="s">&quot;detect-secrets-windows&quot;</span>
+          <span class="nt">publishLocation</span><span class="p">:</span> <span class="s">&quot;pipeline&quot;</span>
 
-<span class="k">class</span> <span class="nc">AzureStorageKeyDetector</span><span class="p">(</span><span class="n">RegexBasedDetector</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Scans for Azure Storage Account access keys.&quot;&quot;&quot;</span>
-    <span class="n">secret_type</span> <span class="o">=</span> <span class="s1">&#39;Azure Storage Account access key&#39;</span>
+      <span class="p p-Indicator">-</span> <span class="nt">pwsh</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+          <span class="no">$dsjson = Get-Content $(Pipeline.Workspace)/detect-secrets.json</span>
+          <span class="no">Write-Output $dsjson</span>
 
-    <span class="n">denylist</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;AccountKey=[a-zA-Z0-9+\/=]</span><span class="si">{88}</span><span class="s1">&#39;</span><span class="p">),</span>
-    <span class="p">]</span>
+          <span class="no">$dsObj = $dsjson | ConvertFrom-Json</span>
+          <span class="no">$count = ($dsObj.results | Get-Member -MemberType NoteProperty).Count</span>
+
+          <span class="no">if ($count -gt 0) {</span>
+            <span class="no">$msg = &quot;Secrets were detected in code. $count file(s) affected. &quot;</span>
+            <span class="no">Write-Host &quot;##vso[task.logissue type=error]$msg&quot;</span>
+            <span class="no">Write-Host &quot;##vso[task.complete result=Failed;]$msg&quot;</span>
+          <span class="no">}</span>
+          <span class="no">else {</span>
+            <span class="no">Write-Host &quot;##vso[task.complete result=Succeeded;]No secrets detected.&quot;</span>
+          <span class="no">}</span>
+        <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Analyzing</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">results&quot;</span>
 </code></pre></div>
                 
                   
@@ -4883,7 +4889,7 @@ This plugin is not part of the official YELP detect-secrets yet, so you have to 
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 12, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 17, 2021</span>
     
   </small>
 </div>
