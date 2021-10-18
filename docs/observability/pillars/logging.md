@@ -6,7 +6,7 @@ Logs are discrete events with the goal of helping engineers identify problem are
 
 ## Collection Methods
 
-When it comes to log collection methods, two of the standard techniques are a direct-write or an agent-based approach.
+When it comes to log collection methods, two of the standard techniques are a direct-write, or an agent-based approach.
 
 Directly written log events are handled in-process of the particular component, usually utilizing a provided library. [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor) has direct send capabilities, but it's not recommended for serious/production use. This approach has some advantages:
 
@@ -58,7 +58,7 @@ This approach isn't without trade-offs:
 **At application startup**:
 
 - Unrecoverable errors from startup.
-- Warnings if application still runnable, but not as expected (i.e. not providing blob connection string, thus resorting to local files. Another example is if there's a need to fail back to a secondary service or a known good state, because it didn’t get an answer from a primary dependency.
+- Warnings if application still runnable, but not as expected (i.e. not providing blob connection string, thus resorting to local files. Another example is if there's a need to fail back to a secondary service or a known good state, because it didn’t get an answer from a primary dependency.)
 - Information about the service’s state at startup (build #, configs loaded, etc.)
 
 **Per incoming request**:

@@ -13,9 +13,9 @@ Here are some the general challenges -
 
 ## Solution
 
-A Correlation ID is a unique identifier that is added to the very first interaction (incoming request) to  identify the context and is passed to all components that are involved in the transaction flow. Correlation ID becomes the glue that binds the transaction together and helps to draw a overall picture of events.
+A Correlation ID is a unique identifier that is added to the very first interaction (incoming request) to  identify the context and is passed to all components that are involved in the transaction flow. Correlation ID becomes the glue that binds the transaction together and helps to draw an overall picture of events.
 
->Note: Before implementing your own Correlation ID, investigate if your telemetry tool of choice provides a auto-generated Correlation ID and that it serves the purposes of your application. For instance, [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/auto-collect-dependencies) offers dependency auto-collection for some application frameworks
+>Note: Before implementing your own Correlation ID, investigate if your telemetry tool of choice provides an auto-generated Correlation ID and that it serves the purposes of your application. For instance, [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/auto-collect-dependencies) offers dependency auto-collection for some application frameworks
 
 ### Recommended Practices
 
@@ -23,8 +23,8 @@ A Correlation ID is a unique identifier that is added to the very first interact
 2. The Correlation ID for a transaction must be assigned as early as you can.
 3. Propagate Correlation ID to all downstream components/services.
 4. All components/services of the transaction use this Correlation ID in their logs.
-5. For a HTTP Request, Correlation ID is typically passed in the header.
-6. Where possible also add it to an outgoing response.
+5. For an HTTP Request, Correlation ID is typically passed in the header.
+6. Add it to an outgoing response where possible.
 7. Based on the use case, there can be additional correlation IDs that may be needed. For instance, tracking logs based on both Session ID and User ID may be required. While adding multiple correlation ID, remember to propagate them through the components.
 
 ## Use Cases

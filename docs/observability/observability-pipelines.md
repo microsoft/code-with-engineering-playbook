@@ -14,7 +14,7 @@ artifact upload/download times providing valuable insights into agents availabil
 
 - Helps to identify trends in failures, thus allowing developers to quickly do root cause analysis.
 
-- Helps to provide a organization-wide view of pipeline health to easily identify trends.
+- Helps to provide an organization-wide view of pipeline health to easily identify trends.
 
 ## Points to Consider
 

@@ -14,7 +14,7 @@ In this method, all most critical transactions of any application are verified a
 
 ![Vertical Test](./images/vertical-e2e-testing.png)
 
- In such case, each layer (tier) is required to be fully tested in conjunction with the "connected" layers above and beneath, in which services "talk" to each other during the end to end data flow. All these complex testing scenarios will require proper validation and dedicated automated testing. Thus this method is much more difficult.
+ In such case, each layer (tier) is required to be fully tested in conjunction with the "connected" layers above and beneath, in which services "talk" to each other during the end to end data flow. All these complex testing scenarios will require proper validation and dedicated automated testing. Thus, this method is much more difficult.
 
 ## E2E Test Cases Design Guidelines
 

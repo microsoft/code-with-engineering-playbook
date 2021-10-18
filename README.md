@@ -46,23 +46,21 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 ## Engineering Fundamentals
 
 * [Agile Development](docs/agile-development/README.md)
-* [Automated Testing](docs/automated-testing/readme.md)
+* [Automated Testing](docs/automated-testing/README.md)
 * [Code Reviews](docs/code-reviews/README.md)
-* [Continuous Delivery (CD)](docs/continuous-delivery/readme.md)
-* [Continuous Integration (CI)](docs/continuous-integration/readme.md)
-* [Design Decision Logs](docs/design-reviews/decision-log/readme.md)
-* [Design Reviews](docs/design-reviews/readme.md)
-* [Developer Experience](docs/developer-experience/readme.md)
-* [Engineering Feedback](docs/engineering-feedback/readme.md)
-* [Observability](docs/observability/readme.md)
+* [Continuous Delivery (CD)](docs/continuous-delivery/README.md)
+* [Continuous Integration (CI)](docs/continuous-integration/README.md)
+* [Design](docs/design/README.md)
+* [Developer Experience](docs/developer-experience/README.md)
+* [Engineering Feedback](docs/engineering-feedback/README.md)
+* [Observability](docs/observability/README.md)
 * [Security](docs/security/README.md)
-* [Source Control](docs/source-control/readme.md)
+* [Source Control](docs/source-control/README.md)
 * [Reliability](docs/reliability/README.md)
 
 ## Fundamentals for Specific Technology Areas
 
-* [Data and DataOps Fundamentals](docs/data-fundamentals/README.md)
-* [Machine Learning Fundamentals](docs/ml-fundamentals/README.md)
+* [Machine Learning Fundamentals](docs/machine-learning/README.md)
 
 ## Contributing
 

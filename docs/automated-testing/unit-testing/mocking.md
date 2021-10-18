@@ -77,7 +77,7 @@ mock framework that allows this, you never run the risk of writing tests that ar
 
 **Fake** objects actually have working implementations, but usually take some shortcut which may make them not suitable
 for production. One of the common examples of using a Fake is an in-memory database - typically you want your database
-to be save data somewhere between application runs, but when writing unit tests if you have a fake implementation of
+to be able to save data somewhere between application runs, but when writing unit tests if you have a fake implementation of
 your database APIs that are store all data in memory, you can use these for unit tests and not break abstraction as well
 as still keep your tests fast.
 
@@ -86,11 +86,11 @@ their own suite of unit tests. In this sense though, they increase confidence in
 double has been thoroughly tested for bugs before you even use it as a downstream dependency.
 
 Similarly to mocks, fakes also promote testable design, but unlike mocks they do not require any frameworks to write.
-Writing a fake is as easy as writing any other implementation class. Fakes can been included in the test code only, but
+Writing a fake is as easy as writing any other implementation class. Fakes can be included in the test code only, but
 many times they end up being "promoted" to the product code, and in some cases can even start off in the product code
 since it is held to the same standard with full unit tests. Especially if writing a library or an API that other
 developers can use, providing a fake in the product code means those developers no longer need to write their own mock
-implementations, further increasing reusability of code.
+implementations, further increasing re-usability of code.
 
 ### Upsides
 
