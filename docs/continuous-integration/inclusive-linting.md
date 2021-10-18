@@ -1,6 +1,6 @@
 # Inclusive Linting
 
-As software professionals we should strive to promote an inclusive work environment, which naturally extends to the code we write. It's important to keep the use of inclusive language consistent across an entire project or repository.
+As software professionals we should strive to promote an inclusive work environment, which naturally extends to the code and documentation we write. It's important to keep the use of inclusive language consistent across an entire project or repository.
 
 To achieve this, we recommend using a text file analysis tool such as an inclusive linter and including this as a step in your CI pipelines.
 
@@ -16,7 +16,7 @@ The ability to add additional terms to your linter has the added benefit of enab
 
 ### [`woke`]
 
-One inclusive linter we recommend is `woke`. It is a language-agnostic CLI tool that detects non-inclusive language in your source code and recommends alternatives. While it has a default ruleset, you can customize it and/or define your own ruleset yaml file to be run against.
+One inclusive linter we recommend is `woke`. It is a language-agnostic CLI tool that detects non-inclusive language in your source code and recommends alternatives. While `woke` automatically applies a [default ruleset] with non-inclusive terms to lint for, you can also apply a custom rule config (via a yaml file) with additional terms to lint for. See [`example.yaml`] for an example of adding custom rules.
 
 Running the tool locally is relatively straightforward:
 
@@ -31,5 +31,7 @@ test.txt:2:2-11: `Blacklist` may be insensitive, use `denylist`, `blocklist` ins
 `woke` can be run locally on your machine or CI/CD system and is also available as a [GitHub Action]. For more information about configuration and usage, see the official [docs].
 
 [`woke`]: https://github.com/get-woke/woke
+[default ruleset]: https://github.com/get-woke/woke/blob/main/pkg/rule/default.yaml
+[`example.yaml`]: https://github.com/get-woke/woke/blob/main/example.yaml
 [GitHub Action]: https://github.com/marketplace/actions/run-woke
 [docs]: https://docs.getwoke.tech/
