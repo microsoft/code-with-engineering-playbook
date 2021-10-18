@@ -23,8 +23,8 @@ Running the tool locally is relatively straightforward:
 ```sh
 $ woke test.txt
 
-test.txt:2:2-11: `Blacklist` may be insensitive, use `denylist`, `blocklist` instead (warning)
-* Blacklist
+test.txt:2:2-11: `guys` may be insensitive, use `folks`, `people` instead (warning)
+* guys
   ^
 ```
 
