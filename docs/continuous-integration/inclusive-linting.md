@@ -28,7 +28,7 @@ test.txt:2:2-11: `Blacklist` may be insensitive, use `denylist`, `blocklist` ins
   ^
 ```
 
-It can be run locally on your machine or on a CI/CD system, even being offered as a [GitHub Action]. More information about configuration and usage is available in the `woke` [docs].
+`woke` can be run locally on your machine or CI/CD system and is also available as a [GitHub Action]. For more information about configuration and usage, see the official [docs].
 
 [`woke`]: https://github.com/get-woke/woke
 [GitHub Action]: https://github.com/marketplace/actions/run-woke
