@@ -28,9 +28,12 @@ test.txt:2:2-6: `guys` may be insensitive, use `folks`, `people` instead (warnin
   ^
 ```
 
-`woke` can be run locally on your machine or CI/CD system via CLI and is also available as a [GitHub Action].
+`woke` can be run locally on your machine or CI/CD system via CLI and is also available as a two GitHub Actions:
 
-To use the GitHub Action with the default ruleset in a CI pipeline:
+- [Run woke]
+- [Run woke with Reviewdog]
+
+To use the standard "Run woke" GitHub Action with the default ruleset in a CI pipeline:
 
 1. Add the `woke` action as a step in your project's CI pipeline yaml:
 
@@ -61,5 +64,6 @@ For more information about additional configuration and usage, see the official 
 [`woke`]: https://github.com/get-woke/woke
 [default ruleset]: https://github.com/get-woke/woke/blob/main/pkg/rule/default.yaml
 [`example.yaml`]: https://github.com/get-woke/woke/blob/main/example.yaml
-[GitHub Action]: https://github.com/marketplace/actions/run-woke
+[Run woke]: https://github.com/marketplace/actions/run-woke
+[Run woke with reviewdog]: https://github.com/marketplace/actions/run-woke-with-reviewdog
 [docs]: https://docs.getwoke.tech/
