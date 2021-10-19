@@ -58,6 +58,6 @@ This is the easiest recommendation to follow and yet the most absent form code r
 
 ## Automate whenever possible
 
-Before doing any code review it's important to set automated builds, tests and checks (something achievable in the CI process), this can save human reviewers some time and focus in areas like design and functionality for proper evaluation. Reviewing code with some questions in mind can help team focus on the right things. One of the possible questions to ask when reviewing is **Do I understand what the code does?** and it's important to start from there in order to get the best qualified team reviewing the code.
+Before doing any code review it's important to set automated builds, tests and checks (something achievable in the [CI process](../continuous-integration/README.md)), this can save human reviewers some time and focus in areas like design and functionality for proper evaluation. Reviewing code with some questions in mind can help team focus on the right things. One of the possible questions to ask when reviewing is **Do I understand what the code does?** and it's important to start from there in order to get the best qualified team reviewing the code.
 
 This way of critical evaluation will ensure the team is checking the right things and it will reduce time when it comes to deal with human reviewing.
