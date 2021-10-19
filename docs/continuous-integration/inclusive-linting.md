@@ -18,17 +18,45 @@ The ability to add additional terms to your linter has the added benefit of enab
 
 One inclusive linter we recommend is `woke`. It is a language-agnostic CLI tool that detects non-inclusive language in your source code and recommends alternatives. While `woke` automatically applies a [default ruleset] with non-inclusive terms to lint for, you can also apply a custom rule config (via a yaml file) with additional terms to lint for. See [`example.yaml`] for an example of adding custom rules.
 
-Running the tool locally is relatively straightforward:
+Running the tool locally on a file or directory is relatively straightforward:
 
 ```sh
 $ woke test.txt
 
-test.txt:2:2-11: `guys` may be insensitive, use `folks`, `people` instead (warning)
+test.txt:2:2-6: `guys` may be insensitive, use `folks`, `people` instead (warning)
 * guys
   ^
 ```
 
-`woke` can be run locally on your machine or CI/CD system and is also available as a [GitHub Action]. For more information about configuration and usage, see the official [docs].
+`woke` can be run locally on your machine or CI/CD system via CLI and is also available as a [GitHub Action].
+
+To use the GitHub Action with the default ruleset in a CI pipeline:
+
+1. Add the `woke` action as a step in your project's CI pipeline yaml:
+
+    ```yaml
+    name: ci
+    on:
+      - pull_request
+    jobs:
+      woke:
+        name: woke
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v2
+
+          - name: woke
+            uses: get-woke/woke-action@v0
+            with:
+              # Cause the check to fail on any broke rules
+              fail-on-error: true
+    ```
+
+1. Run your pipeline
+1. View the output in the "Actions" tab in the main repository view
+
+For more information about additional configuration and usage, see the official [docs].
 
 [`woke`]: https://github.com/get-woke/woke
 [default ruleset]: https://github.com/get-woke/woke/blob/main/pkg/rule/default.yaml
