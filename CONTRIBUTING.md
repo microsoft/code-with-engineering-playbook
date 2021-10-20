@@ -17,17 +17,19 @@ FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any
 additional questions or comments.
 
+## Purpose of this repo
+
+Demonstrating Engineering Fundamentals is core to what we do at CSE and is one of the primary values we bring to our customers, we help level them up while we deliver on their business scenarios.
+
+The purpose of this repo is to provide guidance to dev crews with regard to engineering fundamentals. It  describes recommended practices based on continuous project learnings in different areas. It could be used as a tool at the beginning of the project that could be shared with the customer and will help set the project for success. This repo is *not* intended as a code repo, instead it could link to appropriate sample code repos that represent a good example.
+
 ## Permissions & Contributions
 
 There are two ways in which you can help update the content:
 
 * **One-off:** \
 If you are not a regular contributor to the project, but you would like to
-contribute some changes, the best way to do it is:
-
-  1. Fork this repository or create a new feature branch
-  2. Add your contributions
-  3. Submit a PR to merge your contribution to this repository
+contribute some changes, the best way to do it is to follow these [steps](#how-to-contribute)
 
 * **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added
@@ -36,9 +38,16 @@ You will still need to submit a PR against master in order to merge your changes
 
 ## How to contribute
 
-When you have an idea for contribution open an *issue*!
+When you have an idea for contribution do one of two things:
 
-> **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
+* Contact one of the [champions](https://www.cwcwiki.com/wiki/Engineering_Fundamentals_Champions) in the appropriate fundamental area and discuss your idea with them
+* Look in the opened issues, if you cannot find a similar one then open an issue following the issue templates
+  * **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
+
+Once you have discussed your contribution:
+
+* Add your changes to a new branch following [this](#branch-naming-convention)
+* Open a PR and automatically one reviewer will be assigned based on the files changed.
 
 ## Git guidance
 
@@ -47,12 +56,7 @@ specifics regarding git as described in this section.
 
 ### Branch naming convention
 
-In this repo, we use the following branch naming conventions:
-
-| Branch Type | Pattern | Example |
-| - | - | - |
-| Feature | feature/\<issue#>-\<short description> | feature/498-reorganize-scm-section |
-| Bug Fix | fix/\<bug#>-\<short description> | bug/978-correct-grammar-myfile.md |
+In this repo, we use this branch naming [approach](docs/source-control/naming-branches.md)
 
 > **Note:**
 >
@@ -79,10 +83,10 @@ As such, we've provided tooling to lint locally through `npm`.
 3. Run `npm run lint` to run all linters.
 Please see [the `package.json` file](package.json) for other scripts.
 
-### Contributions and pull requests
+### Pull requests
 
 When creating pull requests, follow guidance similar to the one suggested in
-this repo, as described in the ["Pull Request Template"](docs/code-reviews/pull-request-template/pull-request-template.md)
+this repo, as described in the [Pull Request Template](docs/code-reviews/pull-request-template/pull-request-template.md)
 section, under "Code Reviews". This includes linking to the work item that
 prompted the pull request.
 
