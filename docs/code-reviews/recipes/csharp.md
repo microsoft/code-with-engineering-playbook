@@ -62,28 +62,30 @@ The StyleCop analyzer is a NuGet package (StyleCop.Analyzers) that can be instal
 The minimum rules set teams should adopt is the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set.
 
 ### Improving Code Quality on an Existing Code Base
-This describes a method to follow to review and improve the quality of an existing code base. This method is independent from the programming language. 
+
+This describes a method to follow to review and improve the quality of an existing code base. This method is independent from the programming language.
+
 - **Step 1:** Gather state-of-the-art code quality guidelines and rules for the language you are including. (See above)
-- **Step 2:** Group the list of rules you selected in Step 1 (such as the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set, mentioned above) into the following code quality categories: 
-  - "Static Code Analysis," "Test Coverage," "Observability," "Style and Readability," "Code Clarity and Commenting," "Performance," and "Security" 
-  - This will help structure and plan your code review exercise. 
+- **Step 2:** Group the list of rules you selected in Step 1 (such as the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set, mentioned above) into the following code quality categories:
+  - "Static Code Analysis," "Test Coverage," "Observability," "Style and Readability," "Code Clarity and Commenting," "Performance," and "Security"
+  - This will help structure and plan your code review exercise.
 - **Step 3:** Define the types of expected mitigation impact for each rule.
   - For each rule, think about instances where it can be broken. Go through a mental exercise of fixing these, and decide if the change would likely be breaking/impact existing behavior (Invasive), or if it would likely be non-impactful (Non-invasive).
   - For example, if refactoring a method could have a big impact on the behavior of the method, and would cause a breaking change where any other code references it, that would be considered "invasive".
 - **Step 4:** Define "review phases" for each rule.
-  - For example, group each rule under labels such as "MVP" and "Completion". 
-  - "MVP" should focus on improving the debuggability of the code in production, via adding unit tests, continuous integration, overall reducing the chances that breaking changes can be introduced. 
+  - For example, group each rule under labels such as "MVP" and "Completion".
+  - "MVP" should focus on improving the debuggability of the code in production, via adding unit tests, continuous integration, overall reducing the chances that breaking changes can be introduced.
   - "Completion" should contain the rest. "What else needs to be done to reach completion on the review?"
 
 Once all these steps are completed, you can follow this generic code review plan on the code base you are targeting.
 
 ### "Treat Warnings as Errors"
 
-As mentioned above, the [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019) allows for configuration and overrides of rules. One approach we reccommend is to set all rules to Error as soon as you begin code quality improvement work. 
+As mentioned above, the [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019) allows for configuration and overrides of rules. One approach we reccommend is to set all rules to Error as soon as you begin code quality improvement work.
 
 If it is your intention to improve the overall quality of a code base, it is recommended to set all Warnings to Errors. All too often, if a rule is set to Suggestion or Warning, it is not likely to be fixed. This is a strategy to prevent these rules from falling victim to the "take care of all the warnings later" procrastination phenomenon.
 
-This approach--of changing most rules to Error by default--allows teams to start a discussion about what process they want to follow for moving the rules back to Warning/None. When all rules are set to raise an error, the first time that an error appears, there can then be a conversation in the team to decide whether to ignore that rule, or switch it to Warning. 
+This approach--of changing most rules to Error by default--allows teams to start a discussion about what process they want to follow for moving the rules back to Warning/None. When all rules are set to raise an error, the first time that an error appears, there can then be a conversation in the team to decide whether to ignore that rule, or switch it to Warning.
 
 This example `.editorconfig` has all the following rules set to "error":
 
@@ -126,9 +128,9 @@ By default, each of those rules listed above will be set to Warning. Unless over
 
 "None" means that it will not show an error. Therefore, you may set certain rules to "none" if you do not think is a rule to worry about, and you do not want to see it in your error list.
 
-> Can I add comments in .editorconfig to describe what the error codes stand for? 
+> Can I add comments in .editorconfig to describe what the error codes stand for?
 
-Commenting the rules will save developers the step of looking it up online. It is not strictly necessary, however, it could be convenient if you are updating .editorconfig a lot. Yes, this would result in a file twice the size, but no, there is not a performance issue caused by it. 
+Commenting the rules will save developers the step of looking it up online. It is not strictly necessary, however, it could be convenient if you are updating .editorconfig a lot. Yes, this would result in a file twice the size, but no, there is not a performance issue caused by it.
 
 > Where can I get a set of FxCop rules and Style rules that make sense for my project and enforce consistency?
 
@@ -166,29 +168,29 @@ The above steps also work in VS Code provided you enable Roslyn support for Omni
 
 In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these C# specific code review items
 
-* [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
-* [ ] Is the code subject to concurrency issues? Are shared objects properly protected?
-* [ ] Is dependency injection (DI) used? Is it setup correctly?
-* [ ] Are [middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
-* [ ] Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed ([using pattern](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement))?
-* [ ] Is the code creating a lot of short-lived objects. Could we optimize GC pressure?
-* [ ] Is the code written in a way that causes boxing operations to happen?
-* [ ] Does the code [handle exceptions correctly](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)?
-* [ ] Is package management being used (NuGet) instead of committing DLLs?
-* [ ] Does this code use LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.
-* [ ] Does this code properly validate arguments sanity (i.e. [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
-* [ ] Does this code include telemetry ([metrics, tracing](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
-* [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
-* [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
-* [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?
-* [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead, catch the specific exceptions that can happen e.g., `IOException`.
-* [ ] Is the use of #pragma fair?
-* [ ] Are tests arranged correctly with the **Arrange/Act/Assert** pattern and properly documented in this way?
-* [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
-* [ ] If a method is asynchronous, is `Task.Delay` used instead of `Thread.Sleep`? `Task.Delay` is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi-threaded, multi-task environment, this is the one to prefer.
-* [ ] Is a cancellation token for asynchronous tasks needed rather than bool patterns?
-* [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
-* [ ] Are internal vs private vs public classes and methods used the right way?
-* [ ] Are auto property set and get used the right way? In a model without constructor and for deserialization, it is ok to have all accessible. For other classes usually a private set or internal set is better.
-* [ ] Is the `using` pattern for streams and other disposable classes used? If not, better to have the `Dispose` method called explicitly.
-* [ ] Are the classes that maintain collections in memory, thread safe? When used under concurrency, use lock pattern.
+- [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
+- [ ] Is the code subject to concurrency issues? Are shared objects properly protected?
+- [ ] Is dependency injection (DI) used? Is it setup correctly?
+- [ ] Are [middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
+- [ ] Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed ([using pattern](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement))?
+- [ ] Is the code creating a lot of short-lived objects. Could we optimize GC pressure?
+- [ ] Is the code written in a way that causes boxing operations to happen?
+- [ ] Does the code [handle exceptions correctly](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)?
+- [ ] Is package management being used (NuGet) instead of committing DLLs?
+- [ ] Does this code use LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.
+- [ ] Does this code properly validate arguments sanity (i.e. [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
+- [ ] Does this code include telemetry ([metrics, tracing](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
+- [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
+- [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
+- [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?
+- [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead, catch the specific exceptions that can happen e.g., `IOException`.
+- [ ] Is the use of #pragma fair?
+- [ ] Are tests arranged correctly with the **Arrange/Act/Assert** pattern and properly documented in this way?
+- [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
+- [ ] If a method is asynchronous, is `Task.Delay` used instead of `Thread.Sleep`? `Task.Delay` is not blocking the current thread and creates a task that will complete without blocking the thread, so in a multi-threaded, multi-task environment, this is the one to prefer.
+- [ ] Is a cancellation token for asynchronous tasks needed rather than bool patterns?
+- [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
+- [ ] Are internal vs private vs public classes and methods used the right way?
+- [ ] Are auto property set and get used the right way? In a model without constructor and for deserialization, it is ok to have all accessible. For other classes usually a private set or internal set is better.
+- [ ] Is the `using` pattern for streams and other disposable classes used? If not, better to have the `Dispose` method called explicitly.
+- [ ] Are the classes that maintain collections in memory, thread safe? When used under concurrency, use lock pattern.

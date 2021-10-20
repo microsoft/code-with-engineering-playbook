@@ -31,6 +31,7 @@ When dealing with legacy code it's helpful to identify 2 types of expected mitig
 For some suggestions of how you might classify rules, here's an example of some rule classifications that can be tailored for use in a C# & .NET solution: [Rules Classification C Sharp Example](docs/technical-debt/RulesClassification-CSharpExample.md).
 
 ## Adding Technical Debt to Your Backlog
+
 Technical debt should be added to your backlog alongside the other important user stories you need to accomplish. If your choose to incur some technical debt during your project, you should add the backlog item immediately after you make the decision while the details are fresh in your mind. For example, if you decide to write some prototype code that isn't as scalable as you would expect for a production deployment, create a quick backlog item outlining what steps you would take to refactor the code to be more scalable in the future. Your new backlog story doesn't need to be perfect, as long as it indicates what the issue is and where in the codebase someone can look to work on that issue in the future.  
   
 The next most likely time to identify technical debt and add it to your backlog is during code reviews for PRs. When you are finalizing a PR, look for any comments that were resolved with suggestions for improvements. If you don't have time to incorporate the improvement now, add it to the backlog so another team member can make the change in the future when time permits.  
@@ -39,27 +40,27 @@ Finally, if you are beginning work on a codebase the you inherited from another 
 
 ## Improving Another Team's Codebase
 
-- Please follow the recommendations listed inside [inclusion in code reviews](../code-reviews/inclusion-in-code-review.md) when working with another team's codebase.
-- Code should be considered in it's current state as-of today, which means it can change using an iterative approach.
-- Don't assume the original developer didn't know how to write high quality code, instead consider that they didn't have the time to do it or other factors came into play.
-- Any issue that's listed as technical debt should be considered as a compromise vs. time or a milestone instead of whether one team is "better" or "faster" than another at writing code.
-- Take into consideration "onus" of the codebase. That is to say, who will be the person taking the pager call at 3 am when the code doesn't work. If they don't like a change find out why and see if there's an opportunity to make it better.
+* Please follow the recommendations listed inside [inclusion in code reviews](../code-reviews/inclusion-in-code-review.md) when working with another team's codebase.
+* Code should be considered in it's current state as-of today, which means it can change using an iterative approach.
+* Don't assume the original developer didn't know how to write high quality code, instead consider that they didn't have the time to do it or other factors came into play.
+* Any issue that's listed as technical debt should be considered as a compromise vs. time or a milestone instead of whether one team is "better" or "faster" than another at writing code.
+* Take into consideration "onus" of the codebase. That is to say, who will be the person taking the pager call at 3 am when the code doesn't work. If they don't like a change find out why and see if there's an opportunity to make it better.
 
 ## Identifying Common Patterns to Resolve
 
-- For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review recipes](../code-reviews/recipes/README.md).
-- Style guidelines represent aspects of the code that involve naming, organization and basic maintenance of code.
-- Code static analysis guidelines represent aspects of the code that involve performance, security and general rules to follow.
-- Ensure that the rules are reporting issues as errors and not warnings.
-- Address all issues that come up during the static analysis tool evaluation.
-- In the beginning of switching over to the new rules, evaluate each issue together as a team to ensure everyone agrees with the rules - and most importantly modify the rule if necessary. 
-- Ensure that you and your team are following [code review](../code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
+* For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review recipes](../code-reviews/recipes/README.md).
+* Style guidelines represent aspects of the code that involve naming, organization and basic maintenance of code.
+* Code static analysis guidelines represent aspects of the code that involve performance, security and general rules to follow.
+* Ensure that the rules are reporting issues as errors and not warnings.
+* Address all issues that come up during the static analysis tool evaluation.
+* In the beginning of switching over to the new rules, evaluate each issue together as a team to ensure everyone agrees with the rules - and most importantly modify the rule if necessary.
+* Ensure that you and your team are following [code review](../code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
 
 ## Organizing and classifying code quality rules to make them actionable
 
 To be efficient in your effort to reduce technical debt, we highly recommend following a structured approach. For each language or technology in your code, identify the code quality rules you want to apply and sort them into categories and types of potential changes (i.e. Invasive/Non-Invasive).
 
-You can find an example of rules classification in [this playbook](./RulesClassification-CSharpExample.md). 
+You can find an example of rules classification in [this playbook](./RulesClassification-CSharpExample.md).
 
 Here are a few steps to follow for each language:
 
