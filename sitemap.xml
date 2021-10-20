@@ -520,11 +520,19 @@
      <lastmod>2021-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/recipes/deploy-docfx-azure-website/</loc>
+     <lastmod>2021-10-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/recipes/static-website-with-mkdocs/</loc>
      <lastmod>2021-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/recipes/sync-wiki-between-repos/</loc>
+     <lastmod>2021-10-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/recipes/using-docfx-and-tools/</loc>
      <lastmod>2021-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
