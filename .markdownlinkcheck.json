@@ -9,6 +9,8 @@
         {"pattern": "^http://link-to-work-item"},
         {"pattern": "^https://tanzu.vmware.com/developer/guides/kubernetes/observability-prometheus-grafana-p1"},
         {"pattern": "^https://www.w3.org/blog/2019/12/trace-context-enters-proposed-recommendation/"},
-        {"pattern": "^https://blog.cloudflare.com/cloudflare-outage/"}
+        {"pattern": "^https://blog.cloudflare.com/cloudflare-outage/"},
+        {"pattern": "^https://www.pluralsight.com/courses/how-git-works"},
+        {"pattern": "^https://www.pluralsight.com/courses/master-git"}
     ]
 }
