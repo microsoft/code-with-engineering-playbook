@@ -1793,14 +1793,14 @@
         
           <li class="md-nav__item">
   <a href="#install-shellcheck-on-your-machine" class="md-nav__link">
-    Install shellcheck on your machine:
+    Install shellcheck on your machine
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#install-shellcheck-on-vscode" class="md-nav__link">
-    Install shellcheck on vscode:
+    Install shellcheck on vscode
   </a>
   
 </li>
@@ -1833,14 +1833,14 @@
         
           <li class="md-nav__item">
   <a href="#install-shfmtrequires-go-113-or-later-on-your-machine" class="md-nav__link">
-    Install shfmt(Requires Go 1.13 or later) on your machine:
+    Install shfmt(Requires Go 1.13 or later) on your machine
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#install-shell-format-on-vscode" class="md-nav__link">
-    Install shell-format on vscode:
+    Install shell-format on vscode
   </a>
   
 </li>
@@ -4983,14 +4983,14 @@
         
           <li class="md-nav__item">
   <a href="#install-shellcheck-on-your-machine" class="md-nav__link">
-    Install shellcheck on your machine:
+    Install shellcheck on your machine
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#install-shellcheck-on-vscode" class="md-nav__link">
-    Install shellcheck on vscode:
+    Install shellcheck on vscode
   </a>
   
 </li>
@@ -5023,14 +5023,14 @@
         
           <li class="md-nav__item">
   <a href="#install-shfmtrequires-go-113-or-later-on-your-machine" class="md-nav__link">
-    Install shfmt(Requires Go 1.13 or later) on your machine:
+    Install shfmt(Requires Go 1.13 or later) on your machine
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#install-shell-format-on-vscode" class="md-nav__link">
-    Install shell-format on vscode:
+    Install shell-format on vscode
   </a>
   
 </li>
@@ -5122,30 +5122,30 @@ Apart from linting, <a href="https://github.com/mvdan/sh">shfmt</a> can be used 
 <h2 id="project-setup">Project Setup</h2>
 <h3 id="vscode-shellcheck">vscode-shellcheck</h3>
 <p>Shellcheck extension should be used in VS Code, it provides static code analysis capabilities and auto fixing linting issues. To use vscode-shellcheck in vscode do the following:</p>
-<h4 id="install-shellcheck-on-your-machine">Install shellcheck on your machine:</h4>
+<h4 id="install-shellcheck-on-your-machine">Install shellcheck on your machine</h4>
 <p>For macOS</p>
 <div class="highlight"><pre><span></span><code>brew install shellcheck
 </code></pre></div>
 <p>For Ubuntu:</p>
 <div class="highlight"><pre><span></span><code>apt-get install shellcheck
 </code></pre></div>
-<h4 id="install-shellcheck-on-vscode">Install shellcheck on vscode:</h4>
+<h4 id="install-shellcheck-on-vscode">Install shellcheck on vscode</h4>
 <p>Find the vscode-shellcheck extension in vscode and install it.</p>
 <h2 id="automatic-code-formatting">Automatic Code Formatting</h2>
 <h3 id="shell-format">shell-format</h3>
 <p>shell-format extension does automatic formatting of your bash scripts, docker files and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:</p>
-<h4 id="install-shfmtrequires-go-113-or-later-on-your-machine">Install shfmt(Requires Go 1.13 or later) on your machine:</h4>
+<h4 id="install-shfmtrequires-go-113-or-later-on-your-machine">Install shfmt(Requires Go 1.13 or later) on your machine</h4>
 <div class="highlight"><pre><span></span><code><span class="nv">GO111MODULE</span><span class="o">=</span>on go get mvdan.cc/sh/v3/cmd/shfmt
 </code></pre></div>
-<h4 id="install-shell-format-on-vscode">Install shell-format on vscode:</h4>
+<h4 id="install-shell-format-on-vscode">Install shell-format on vscode</h4>
 <p>Find the shell-format extension in vscode and install it.</p>
 <h2 id="build-validation">Build Validation</h2>
 <p>To automate this process in Azure DevOps you can add the following snippet to you <code>azure-pipelines.yaml</code> file. This will lint any scripts in the <code>./scripts/</code> folder.</p>
 <div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">bash</span><span class="p">:</span> <span class="p p-Indicator">|</span>
     <span class="no">echo &quot;This checks for formatting and common bash errors. See wiki for error details and ignore options: https://github.com/koalaman/shellcheck/wiki/SC1000&quot;</span>
     <span class="no">export scversion=&quot;stable&quot;</span>
-    <span class="no">wget -qO- &quot;https://storage.googleapis.com/shellcheck/shellcheck-${scversion?}.linux.x86_64.tar.xz&quot; | tar -xJv</span>
+    <span class="no">wget -qO- &quot;https://github.com/koalaman/shellcheck/releases/download/${scversion?}/shellcheck-${scversion?}.linux.x86_64.tar.xz&quot; | tar -xJv</span>
     <span class="no">sudo mv &quot;shellcheck-${scversion}/shellcheck&quot; /usr/bin/</span>
     <span class="no">rm -r &quot;shellcheck-${scversion}&quot;</span>
     <span class="no">shellcheck ./scripts/*.sh</span>
@@ -5212,7 +5212,7 @@ Alternatively you can run <code>brew install pre-commit</code> if you are using 
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 20, 2021</span>
     
   </small>
 </div>
