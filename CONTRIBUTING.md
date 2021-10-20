@@ -44,6 +44,7 @@ Contribute to the playbook repo anything that is:
 * could be publicly visible (avoid confidential info)
 * generally applicable (not specific to internal processes)
 * short code snippets or links to OSS repos (no large code assets)
+
 ## How to contribute
 
 When you have an idea for contribution do one of two things:
