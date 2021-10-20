@@ -36,18 +36,26 @@ If you plan to update the content semi-regularly or regularly, you can be added
 to the project's Contributors group. Please contact [Federica Nocera](https://github.com/fnocera) or [Brock Davis](https://github.com/brockneedscoffee) to be added to the group.
 You will still need to submit a PR against master in order to merge your changes.
 
+## What to contribute
+
+Contribute to the playbook repo anything that is:
+
+* related to the fundamentals
+* could be publicly visible (avoid confidential info)
+* generally applicable (not specific to internal processes)
+* short code snippets or links to OSS repos (no large code assets)
 ## How to contribute
 
 When you have an idea for contribution do one of two things:
 
-* Contact one of the [champions](https://www.cwcwiki.com/wiki/Engineering_Fundamentals_Champions) in the appropriate fundamental area and discuss your idea with them
+* Contact one of the champions in the appropriate fundamental area and discuss your idea with them
 * Look in the opened issues, if you cannot find a similar one then open an issue following the issue templates
   * **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
 
 Once you have discussed your contribution:
 
 * Add your changes to a new branch following [this](#branch-naming-convention)
-* Open a PR and automatically one reviewer will be assigned based on the files changed.
+* Open a PR and automatically one reviewer should be assigned based on the files changed. You need 2 approvals to merge your PR.
 
 ## Git guidance
 
