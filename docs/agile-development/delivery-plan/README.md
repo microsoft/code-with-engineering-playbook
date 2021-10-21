@@ -22,7 +22,6 @@ Step 1: Stack rank the features for EVERYTHING in the backlog; including
 
 - Functional Features
 
-- [Non-functional Features](docs/TECH-LEADS-CHECKLIST.md)
 
 - User Research and Design (e.g. research, mockups, prototype, usability studies)
 - Testing
