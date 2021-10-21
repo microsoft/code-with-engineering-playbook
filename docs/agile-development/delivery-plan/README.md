@@ -39,7 +39,7 @@ Step 4: Based on your capacity, you now have additional options:
 
 - Reduce the scope to an MVP. Caution: as you trim more of the scope, you risk negatively impacting the project's value propositions. Consider a cupcake which is everything you need. You don't want to skimp on the frosting.
 
-- Ask for more time. Usually, this is the most flexible, but if there is a marketing date that you need to hit, this might be a flexiblity point.
+- Ask for more time. Usually, this is the most flexible, but depends on the customer (there could be a fixed marketing date for a new product).
 
 ## Tools
 
