@@ -2,7 +2,7 @@
 
 ## Goals
 
-While Scrum does not require, and in fact discourages planning more than one sprint at a time, most of us work in enterprises where we are dependent on each other. For example: marketing, sales, and support needs to have know what is coming up so they can make plans for budget, people and resources. A delivery plan helps to ensure your teams are aligning with your organizational goals.
+While Agile does not require, and in fact discourages planning more than one sprint at a time, most of us work in enterprises where we are dependent on each other. For example: marketing, sales, and support needs to know what is coming up so they can make plans for budget, people and resources. A delivery plan helps to ensure your teams are aligning with your organizational goals.
 
 A rough assessment of the planned project scope should be achievable within a reasonable time frame leveraging the available resources. The goal is to have a rough plan and estimate as a starting point, not to implement "Agilefall."
 
