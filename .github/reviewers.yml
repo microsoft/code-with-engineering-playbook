@@ -17,27 +17,37 @@ reviewers:
     code-reviews:
       - katyamust
       - TessFerrandez
+      - ikivanc
+      - tompaa
+      - saroup
     ci-cd:
       - brockneedscoffee
     design: 
       - zmmille2
+      - sbohlen
+      - charleszipp
     dev-experience:
       - olasowemimo
+      - charleszipp
     div-inclusion:
       - madossan01
     documentation: 
       - magencio
       - tompaana
       - TessFerrandez
+      - mtirion
     machine-learning:
       - biancafbmd
       - omri374
       - TessFerrandez
     observability:
       - NarmathaBala
+      - ivaramme
     privacy: 
       - prnata
       - omri374
+    security:
+      - charleszipp
     source-code:
       - TessFerrandez
       - tompaana
@@ -67,6 +77,8 @@ files:
     - observability # group
   'docs/privacy/**':
     - privacy # group
+  'docs/security/**':
+    - security # group
   'docs/source-control/**':
     - source-code # group
   '.projector/**':
@@ -78,3 +90,4 @@ options:
   ignored_keywords:
     - DO NOT REVIEW
   enable_group_assignment: false
+  number_of_reviewers: 4
