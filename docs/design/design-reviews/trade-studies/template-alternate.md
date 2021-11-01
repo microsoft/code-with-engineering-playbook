@@ -2,7 +2,7 @@
 
 - **Conducted by:** {Names of those that can answer follow-up questions}
 - **Backlog Work Item:** {Link to the work item to provide more context}
-- **Sprint**: {Which sprint did the study take place. Include sprint start date}
+- **Sprint:** {Which sprint did the study take place? Include sprint start date}
 
 **IMPORTANT** Designs should be completed within a sprint. Most designs will benefit from brevity. To accomplish this:
 
@@ -21,17 +21,17 @@ The following section should establish the desired capabilities of the solution 
 
 ### Key Metrics (Optional)
 
-If available, describe any measurable metrics that are important to the success of the solution. Examples include but, not limited to:
+If available, describe any measurable metrics that are important to the success of the solution. Examples include, but are not limited to:
 
-- Performance & Scale targets such as, Requests/Second, Latency, Response time (at a given percentile
+- Performance & Scale targets such as, Requests/Second, Latency, and Response time (at a given percentile).
 - Azure consumption cost budget. For example, given certain usage, solution expected to cost X dollars per month.
-- Availability uptime of XX% over X time period
+- Availability uptime of XX% over X time period.
 - Consistency. Writes available for read within X milliseconds.
-- Recovery point objective (RPO) & Recovery time objective (RTO)
+- Recovery point objective (RPO) & Recovery time objective (RTO).
 
 ### Constraints (Optional)
 
-If applicable, describe the boundaries from which we have to design the solution. This could be thought of as the "box" from which the team has to work within. This box may be defined as:
+If applicable, describe the boundaries from which we have to design the solution. This could be thought of as the "box" the team has to work within. This box may be defined as:
 
 - Technologies, services, and languages an organization is comfortable operating/managing.
 - Devices, operating systems, and/or browsers that must be supported.
@@ -42,7 +42,7 @@ If applicable, describe the boundaries from which we have to design the solution
 
 Enumerate the solutions that are believed to deliver the outcomes defined above.
 
-> NOTE: Limiting the evaluated solutions to 2 or 3 potential candidates can help manage the time spent on the evaluation. If there are more than 3 candidates prioritize what the team feels are the top 3. If appropriate, the eliminated candidates can be mentioned to capture why they were eliminated.
+> NOTE: Limiting the evaluated solutions to 2 or 3 potential candidates can help manage the time spent on the evaluation. If there are more than 3 candidates, prioritize what the team feels are the top 3. If appropriate, the eliminated candidates can be mentioned to capture why they were eliminated.
 
 ### {Solution 1} - Short and recognizable name
 
@@ -60,11 +60,11 @@ Additionally, **document any assumptions** made as part of the experiment.
 
 #### Evidence
 
-Present the evidence collected during that experimentation that supports the hypothesis that this solution will meet the desired outcomes. Examples may include:
+Present the evidence collected during experimentation that supports the hypothesis that this solution will meet the desired outcomes. Examples may include:
 
-- Recorded or live demo's of a prototype providing the desired capabilities
+- Recorded or live demos of a prototype providing the desired capabilities
 - Metrics collected while testing the prototype
-- Documentation that indicates the solution can provided the desired capabilities
+- Documentation that indicates the solution can provide the desired capabilities
 
 > NOTE: **Evidence is not required for every capability, metric, or constraint for the design to be considered done.** Instead, focus on presenting evidence that is most relevant and impactful towards supporting or eliminating the hypothesis.
 
@@ -80,7 +80,7 @@ Present the evidence collected during that experimentation that supports the hyp
 
 Describe which solution was chosen and why. Summarize what evidence informed the decision and how that evidence mapped to the desired outcomes.
 
-> **IMPORTANT**: Decisions should be made with the understanding that they can change the team learns more. Its a starting point, not a contract.
+> **IMPORTANT**: Decisions should be made with the understanding that they can change as the team learns more. It's a starting point, not a contract.
 
 ## Next Steps
 
