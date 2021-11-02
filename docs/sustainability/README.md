@@ -67,7 +67,3 @@ Turn off idle developer VMs and consider leveraging Spot VMs for non-production 
 
 - [Green Energy Hub (Energinet)](https://github.com/Energinet-DataHub/green-energy-hub)
 - [Sustainability through SpotVMs](https://github.com/hybridflux/SparkOnSpot)
-
-
-
-
