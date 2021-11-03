@@ -62,6 +62,8 @@ Turn off idle developer VMs and consider leveraging Spot VMs for non-production 
 
 - [Emissions Impact](https://appsource.microsoft.com/en-us/product/power-bi/coi-sustainability.emissions_impact_dashboard)
 - [Azure GreenAI Carbon-Intensity API](http://azure-uw-cli-2021.azurewebsites.net/home)
+- [Learning Module: Sustainable Software
+Engineering](https://docs.microsoft.com/en-us/learn/modules/sustainable-software-engineering-overview/)
 
 ## Projects
 
