@@ -43,4 +43,3 @@ Trade studies can vary widely in scope; however, they follow the common pattern 
 See [template.md](./template.md) for an example of how to structure the above information. This template was created to guide a user
 through conducting a trade study. Once the decision has been made we recommend adding an entry to the
 [Decision Log](../decision-log/README.md) that has references back to the full text of the trade study.
-See [template-alternate.md](./template-alternate.md) for another example that evolved from the original.
