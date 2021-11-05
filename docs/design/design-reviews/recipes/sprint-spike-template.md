@@ -13,8 +13,8 @@ Describe what question(s) the spike intends to answer and why.
 Describe how the team will uncover the answer to the question(s) the spike intends to answer. For example:
 
 1. Build prototype to test.
-2. Research existing documents and samples.
-3. Discuss with subject matter experts.
+1. Research existing documents and samples.
+1. Discuss with subject matter experts.
 
 ## Evidence
 
