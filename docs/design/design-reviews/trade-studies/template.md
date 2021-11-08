@@ -15,24 +15,24 @@ architecture designs.
 **IMPORTANT** Designs should be completed within a sprint. Most designs will benefit from brevity. To accomplish this:
 
 1. Narrow the scope of the design.
-2. Narrow evaluation to 2 to 3 solutions.
-3. Design experiments to collect evidence as fast as possible.
+1. Narrow evaluation to 2 to 3 solutions.
+1. Design experiments to collect evidence as fast as possible.
 
 ## Overview
 
 Description of the problem we are solving. This should include:
 
 1. Assumptions about the rest of the system
-2. Constraints that apply to the system, both business and technical
-3. Requirements for the functionality that needs to be implemented, including possible inputs and outputs
-4. (optional) A diagram showing the different pieces
+1. Constraints that apply to the system, both business and technical
+1. Requirements for the functionality that needs to be implemented, including possible inputs and outputs
+1. (optional) A diagram showing the different pieces
 
 ### Desired Outcomes
 
 The following section should establish the desired capabilities of the solution for it to be successful. This can be done by answering the following questions either directly or via link to related artifact (i.e. PBI or Feature description).
 
 1. Acceptance: What capabilities should be demonstrable for a stakeholder to accept the solution?
-2. Justification: How does this contribute to the broader project objectives?
+1. Justification: How does this contribute to the broader project objectives?
 
 > **IMPORTANT** This is **not** intended to define outcomes for the design activity itself. It is intended to define the outcomes for the solution being designed.
 
@@ -143,6 +143,6 @@ In the first case, describe which solution was chosen and why. Summarize what ev
 What work is expected once a decision has been reached? Examples include but are not limited to:
 
 1. Creating new PBI's or modifying existing ones
-2. Follow up spikes
-3. Creating specification for public interfaces and integrations between other work streams.
-4. Decision Log Entry
+1. Follow up spikes
+1. Creating specification for public interfaces and integrations between other work streams.
+1. Decision Log Entry
