@@ -20,7 +20,7 @@ Describe how the team will uncover the answer to the question(s) the spike inten
 
 Document the evidence collected that informed the conclusions below. Examples may include:
 
-- Recorded or live demo's of a prototype providing the desired capabilities
+- Recorded or live demos of a prototype providing the desired capabilities
 - Metrics collected while testing the prototype
 - Documentation that indicates the solution can provided the desired capabilities
 
@@ -30,4 +30,4 @@ What was the answer to the question(s) outlined at the start of the spike? Captu
 
 ## Next Steps
 
-What work is expected as an outcome of the learning within this spike. Was there work that was blocked or dependent on the learning within this effort?
+What work is expected as an outcome of the learning within this spike. Was there work that was blocked or dependent on the learning within this spike?
