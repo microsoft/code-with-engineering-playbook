@@ -51,4 +51,8 @@ npm init vite@latest my-app -- --template react-ts
 
 ## HTML/CSS/JS
 
+> Coming soon!
+
 ## Web Components
+
+> Coming soon!
