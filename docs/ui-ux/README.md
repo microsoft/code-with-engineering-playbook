@@ -12,10 +12,12 @@ Keep in mind that like all software, there is no "right way" to build a user int
 
 The state of web platform engineering is fast moving. There is no one-size-fits-all solution. For any dev crew to be successful in building a UI, they need to have an understanding of the higher-level aspects of all UI project.
 
-1. **Accessibility** - applications must be accessible for everyone. Exclusive design may work in the immediate time frame but will create major problems in the future. Accessibility is not complicated when included from the beginning. Furthermore, at Microsoft **accessibility is never optional**.
-1. **Usability** - how effortless should it be for any given user to use the application? Do they need special training or a document to understand how to use it, or will it be intuitive?
-1. **Maintainability** - is the application just a proof of concept to showcase an idea for future work, or will it be an MVP and act as the starting point for a larger, production-ready application? Sometimes you don't need React or any other framework. Sometimes you need React, but not all the bells and whistles from create-react-app. Understanding project maintainability requirements can simplify an engagement’s tooling needs significantly and let folks iterate without headaches.
-1. **Stability** - what is the cost of adding a dependency? Is it actively stable/updated/maintained? If not, can you afford the tech debt (sometimes the answer can be yes!)? Could you get 90% of the way there without adding another dependency?
+1. [**Accessibility**](./accessibility.md) - applications must be accessible for everyone. Exclusive design may work in the immediate time frame but will create major problems in the future. Accessibility is not complicated when included from the beginning. Furthermore, at Microsoft **accessibility is never optional**.
+1. [**Usability**](./usability.md) - how effortless should it be for any given user to use the application? Do they need special training or a document to understand how to use it, or will it be intuitive?
+1. [**Maintainability**](./maintainability.md) - is the application just a proof of concept to showcase an idea for future work, or will it be an MVP and act as the starting point for a larger, production-ready application? Sometimes you don't need React or any other framework. Sometimes you need React, but not all the bells and whistles from create-react-app. Understanding project maintainability requirements can simplify an engagement’s tooling needs significantly and let folks iterate without headaches.
+1. [**Stability**](./stability.md) - what is the cost of adding a dependency? Is it actively stable/updated/maintained? If not, can you afford the tech debt (sometimes the answer can be yes!)? Could you get 90% of the way there without adding another dependency?
+
+More information is available for each general guidance section in the corresponding pages.
 
 ## Design Document
 
@@ -76,8 +78,6 @@ For more information of choosing the right implementation tool, read the [Recomm
 #### {Story Title 1}
 
 #### {Story Title 2}
-
-{Step-by-step user story scenario}
 
 ## Accessibility Requirements
 
