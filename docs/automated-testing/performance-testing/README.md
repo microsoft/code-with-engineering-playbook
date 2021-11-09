@@ -263,6 +263,8 @@ In general we need to consider the following points:
 
 - Then test again. This cycle continues until the test objective is achieved.
 
+The [Iterative Performance Test Template](docs/automated-testing/performance-testing/iterative-perf-test-template.md) can be used to capture details about the test result for every iterations.
+
 ## Resources
 
 - [Patters and Practices: Performance Testing Guidance for Web
