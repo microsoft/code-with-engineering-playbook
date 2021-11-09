@@ -4,7 +4,7 @@ Also known as _UI/UX_, _Front End Development_, or _Web Development_, user inter
 
 ## Goal
 
-The goal of the **User Interface Engineering Fundamentals** group is to provide guidance on developing web applications for CSE engagements. Everyone should begin by reading the [General Guidance](#general-guidance) for a quick introduction to the four main aspects of every web application project. From there, readers are encouraged to dive deeper into each topic or begin reviewing technical guidance that pertains to their engagement. All UI/UX projects should begin with a detailed design document. Review the [Design Document](#design-document) section for more details and a template to get your crew started.
+The goal of the **User Interface** section is to provide guidance on developing web applications. Everyone should begin by reading the [General Guidance](#general-guidance) for a quick introduction to the four main aspects of every web application project. From there, readers are encouraged to dive deeper into each topic, or begin reviewing technical guidance that pertains to their engagement. All UI/UX projects should begin with a detailed design document. Review the [Design Document](#design-document) section for more details, and a template to get started.
 
 Keep in mind that like all software, there is no "right way" to build a user interface application. Leverage and trust your team's or your customer's experience and expertise for the best development experience.
 
