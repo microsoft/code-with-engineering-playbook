@@ -33,7 +33,7 @@ contribute some changes, the best way to do it is to follow these [steps](#how-t
 
 * **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added
-to the project's Contributors group. Please contact [Federica Nocera](https://github.com/fnocera) or [Brock Davis](https://github.com/brockneedscoffee) to be added to the group.
+to the project's Contributors group. Please contact [Federica Nocera](https://github.com/fnocera) or [ [Tess Ferrandez](https://github.com/TessFerrandez) or [Wallace Breza](https://github.com/wbreza) to be added to the group.
 You will still need to submit a PR against master in order to merge your changes.
 
 ## What to contribute
