@@ -23,7 +23,7 @@ More information is available for each general guidance section in the correspon
 
 When beginning a UI/UX project, the first step is to produce a detailed design document that outlines the prospective solution. Design documents are meant to be a starting point, and can change throughout an engagement.
 
-> When committing to a UI/UX project, be certain to not over-promise on the web application requirements. Delivering a production-ready application involves a large number of engineering complexities resulting in a very long timeline. Always start with a proof-of-concept or minimum-valuable-product first. These projects can easily be achieved within a couple month timeline (and sometimes even less).
+> When committing to a UI/UX project, be certain to not over-promise on the web application requirements. Delivering a production-ready application involves a large number of engineering complexities resulting in a very long timeline. Always start with a proof-of-concept or minimum-viable-product first. These projects can easily be achieved within a couple month timeline (and sometimes even less).
 
 User interface application design documents cover a variety of aspects. Before detailling the technical implementation requirements, the design document should focus on the intended user and the proposed solutions. Commonly referred to as "user stories", this section should contain prose-like paragraphs describing a literal user of the application attempting to do something with it. Generally, this section appears as a list with the personas and stories listed together. Personas are generally used more than once for each of the applications intended user paths. Stories should specific to the persona.
 
@@ -35,7 +35,7 @@ For example, here are some user stories and personas for an application for sear
 
 1. Persona: A user that requires an audio-aide for browsing the web since they cannot see.
 
-   Story: I start by accessing the application in my browser and with my audio-aide enabled. I am immediately focussed on the authentication form and enter my corporate information. Once I land on the main page, I'm focussed on the search box. I tab to the image list and use my aide to listen to the first 10 images displayed. I tab back to the search box and type "dog". I then tab to the image list against and listen to the list of images, now all returning some form of my search "dog".
+   Story: I start by accessing the application in my browser and with my audio-aide enabled. I am immediately focussed on the authentication form and enter my corporate information. Once I land on the main page, I'm focused on the search box. I tab to the image list and use my aide to listen to the first 10 images displayed. I tab back to the search box and type "dog". I then tab to the image list against and listen to the list of images, now all returning some form of my search "dog".
 
 User stories help you and your team understand application and feature requirements. In application design, the user drives the features. By completely understanding your user, you in turn can completely understand what you need to build.
 
@@ -43,11 +43,11 @@ Following the user stories, the design document should detail the accessibility 
 
 > If you haven't already, download the [Accessibility Insights](https://accessibilityinsights.io/) browser tool. You can use this, in combination with other accessibility-related tools, to easily check your application for accessibility issues.
 
-Accessibility requirements vary from project-to-project based on your intended user base. Aside from the default level of accessibility, this section should contain details about any other aspects you must consider during development. Could the application be used by someone who cannot see? What about someone with color blindness? What about someone who cannot use a mouse? If your application has an audio aspect, what about users that cannot hear?
+Accessibility requirements vary from project to project based on your intended user base. Aside from the default level of accessibility, this section should contain details about any other aspects you must consider during development. Could the application be used by someone who cannot see? What about someone with color blindness? What about someone who cannot use a mouse? If your application has an audio aspect, what about users that cannot hear?
 
 > Did you know that approximately 4.5% of the worlds population is color blind[*](https://www.colorblindguide.com/post/colorblind-people-population-live-counter)? That is over 355 Million people! Accessible design is a requirement for all user interface applications.
 
-After listing accessibility requirements, the last section of the design document is technical considerations. This section outlines any and all implementation options your team wants to consider. Within CSE, we often reach for tools such as the [React] framework. React is a great tool when wielded by an experienced team. Otherwise, it can create more hurdles than it is worth. Keep in mind that even if _you_ feel capable with React, the rest of your team and your customer's dev team needs to as well. Some other great options to consider when building a proof-of-concept or minimum-valuable-product are:
+After listing accessibility requirements, the last section of the design document is technical considerations. This section outlines any and all implementation options your team wants to consider. Within CSE, we often reach for tools such as the [React] framework. React is a great tool when wielded by an experienced team. Otherwise, it can create more hurdles than it is worth. Keep in mind that even if _you_ feel capable with React, the rest of your team and your customer's dev team needs to as well. Some other great options to consider when building a proof-of-concept or minimum-viable-product are:
 
 1. HTML/CSS/JavaScript
    - Back to the basics! Start with a single **index.html**, include a popular CSS framework such as [Bootstrap](https://getbootstrap.com/) using their CDN link, and start prototyping!

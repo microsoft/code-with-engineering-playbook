@@ -1,6 +1,6 @@
 # Recommended Technologies
 
-The purpose of this page is review the commonly selected technology options when developing user interface applications.The reiterate from the general guidance section:
+The purpose of this page is to review the commonly selected technology options when developing user interface applications. To reiterate from the general guidance section:
 
 > Keep in mind that like all software, there is no "right way" to build a user interface application. Leverage and trust your team's or your customer's experience and expertise for the best development experience.
 
