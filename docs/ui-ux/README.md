@@ -21,9 +21,9 @@ More information is available for each general guidance section in the correspon
 
 ## Design Document
 
-When beginning a UI/UX project, the first step is to produce a detailed design document that outlines the prospective solution. Design documents are meant to be a starting point, and unlike a gameplan document, they can change throughout an engagement.
+When beginning a UI/UX project, the first step is to produce a detailed design document that outlines the prospective solution. Design documents are meant to be a starting point, and can change throughout an engagement.
 
-> Be certain to not over-promise on UI/UX requirements in the gameplan document. CSE teams should **not** agree to delivering production-ready user interface applications. The engineering complexities and requirements are far too much for an engagement. Committing to proof-of-concept or minimum-valuable-product applications is significantly more achievable within the timeline of a single (or even multiple) engagements.
+> When committing to a UI/UX project, be certain to not over-promise on the web application requirements. Delivering a production-ready application involves a large number of engineering complexities resulting in a very long timeline. Always start with a proof-of-concept or minimum-valuable-product first. These projects can easily be achieved within a couple month timeline (and sometimes even less).
 
 User interface application design documents cover a variety of aspects. Before detailling the technical implementation requirements, the design document should focus on the intended user and the proposed solutions. Commonly referred to as "user stories", this section should contain prose-like paragraphs describing a literal user of the application attempting to do something with it. Generally, this section appears as a list with the personas and stories listed together. Personas are generally used more than once for each of the applications intended user paths. Stories should specific to the persona.
 
@@ -59,6 +59,8 @@ After listing accessibility requirements, the last section of the design documen
 For more information of choosing the right implementation tool, read the [Recommended Technologies](./recommended-technologies.md) document.
 
 ### Template
+
+This template is also available as a standalone file available here: [design-document-template.md](./design-document-template.md)
 
 ```md
 # {User Interface Application Solution Title}
