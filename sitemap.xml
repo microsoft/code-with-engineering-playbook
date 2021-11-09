@@ -775,5 +775,33 @@
      <loc>https://microsoft.github.io/code-with-engineering-playbook/source-control/git-guidance/git-lfs-and-vfs/</loc>
      <lastmod>2021-11-09</lastmod>
      <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/ui-ux/</loc>
+     <lastmod>2021-11-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/ui-ux/accessibility/</loc>
+     <lastmod>2021-11-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/ui-ux/design-document-template/</loc>
+     <lastmod>2021-11-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/ui-ux/maintainability/</loc>
+     <lastmod>2021-11-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/ui-ux/recommended-technologies/</loc>
+     <lastmod>2021-11-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/ui-ux/stability/</loc>
+     <lastmod>2021-11-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://microsoft.github.io/code-with-engineering-playbook/ui-ux/usability/</loc>
+     <lastmod>2021-11-09</lastmod>
+     <changefreq>daily</changefreq>
     </url>
 </urlset>
