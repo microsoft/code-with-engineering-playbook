@@ -1,6 +1,6 @@
 # [Work Item ID](./link-to-the-work-item)
 
-For more information about how to contribute to this repo, visit this [page](../../../contributing.md)
+For more information about how to contribute to this repo, visit this [page](../../../CONTRIBUTING.md)
 
 ## Description
 
