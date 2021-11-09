@@ -42,8 +42,8 @@ Contribute to the playbook repo anything that is:
 
 * related to the fundamentals
 * can be publicly visible (avoid confidential info)
-* generally applicable (not specific to internal processes)
-* short code snippets or links to OSS repos (no large code assets)
+* Generally applicable (not specific to internal processes)
+* Short code snippets or links to OSS repos (no large code assets)
 
 ## How to contribute
 
