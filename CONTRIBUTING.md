@@ -41,7 +41,7 @@ You will still need to submit a PR against master in order to merge your changes
 Contribute to the playbook repo anything that is:
 
 * related to the fundamentals
-* could be publicly visible (avoid confidential info)
+* can be publicly visible (avoid confidential info)
 * generally applicable (not specific to internal processes)
 * short code snippets or links to OSS repos (no large code assets)
 
