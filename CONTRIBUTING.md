@@ -19,7 +19,7 @@ additional questions or comments.
 
 ## Purpose of this repo
 
-Demonstrating Engineering Fundamentals is core to what we do at CSE and is one of the primary values we bring to our customers, we help level them up while we deliver on their business scenarios.
+Demonstrating Engineering Fundamentals is core to what we do at CSE and is one of the primary values we bring to our customers, helping them to level up while collaborating on their business scenarios.
 
 The purpose of this repo is to provide guidance to dev crews with regard to engineering fundamentals. It  describes recommended practices based on continuous project learnings in different areas. It could be used as a tool at the beginning of the project that could be shared with the customer and will help set the project for success. This repo is *not* intended as a code repo, instead it could link to appropriate sample code repos that represent a good example.
 
