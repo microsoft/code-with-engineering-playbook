@@ -26,12 +26,12 @@
 
 ### {Option 1}
 
-#### Pros
+#### Pros 1
 
-#### Cons
+#### Cons 1
 
 ### {Option 2}
 
-#### Pros
+#### Pros 2
 
-#### Cons
+#### Cons 2
