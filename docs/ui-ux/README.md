@@ -10,7 +10,7 @@ Keep in mind that like all software, there is no "right way" to build a user int
 
 ## General Guidance
 
-The state of web platform engineering is fast moving. There is no one-size-fits-all solution. For any dev crew to be successful in building a UI, they need to have an understanding of the higher-level aspects of all UI project.
+The state of web platform engineering is fast moving. There is no one-size-fits-all solution. For any team to be successful in building a UI, they need to have an understanding of the higher-level aspects of all UI project.
 
 1. [**Accessibility**](./accessibility.md) - applications must be accessible for everyone. Exclusive design may work in the immediate time frame but will create major problems in the future. Accessibility is not complicated when included from the beginning. Furthermore, at Microsoft **accessibility is never optional**.
 1. [**Usability**](./usability.md) - how effortless should it be for any given user to use the application? Do they need special training or a document to understand how to use it, or will it be intuitive?
