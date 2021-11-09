@@ -1,4 +1,6 @@
-# {User Interface Application Solution Title}
+# Design Document Template
+
+> Replace "# Design Document Tempalte" with the application title
 
 {General Description; 3-5 sentences.}
 
