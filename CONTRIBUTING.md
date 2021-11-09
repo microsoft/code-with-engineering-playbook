@@ -47,7 +47,7 @@ Contribute to the playbook repo anything that is:
 
 ## How to contribute
 
-When you have an idea for contribution do one of two things:
+When you have an idea for a contribution do one of two things:
 
 * Contact one of the champions in the appropriate fundamental area and discuss your idea with them
 * Look in the opened issues, if you cannot find a similar one then open an issue following the issue templates
