@@ -58,7 +58,7 @@ In bullet points document the results from the test.
     - ASB SDK
       - Prefetch: 1
       - ASB Lock Duration - 2 min
-  - **System Configuration:** 
+  - **System Configuration:**
     - DB SKU: xxx
     - VM SKU: xxx
 
@@ -87,4 +87,4 @@ In bullet points document the results from the test.
 
 - Sanity test
 
-*Trimmed for brevity*
+...*Trimmed for brevity*
