@@ -65,7 +65,11 @@ specifics regarding git as described in this section.
 
 ### Branch naming convention
 
-In this repo, we use this branch naming [approach](docs/source-control/naming-branches.md)
+In this repo, we use this branch naming approach:
+
+```plaintext
+<user alias>/<work item ID>_<title>
+```
 
 > **Note:**
 >
