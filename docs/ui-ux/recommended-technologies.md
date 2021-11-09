@@ -17,7 +17,7 @@ There are many ways to integrate TypeScript into a web application. The easiest 
 
 ## React
 
-Easily the most commonly selected framework for CSE UI projects, React is a framework developed and maintained by Facebook. React is used throughout Microsoft and has a vast open source community.
+React is a framework developed and maintained by Facebook. React is used throughout Microsoft and has a vast open source community.
 
 ### Documentation & Recommended Resources
 
