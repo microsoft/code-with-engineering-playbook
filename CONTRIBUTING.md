@@ -56,7 +56,7 @@ When you have an idea for a contribution do one of two things:
 Once you have discussed your contribution:
 
 * Add your changes to a new branch following [this](#branch-naming-convention)
-* Open a PR and automatically one reviewer should be assigned based on the files changed. You need 2 approvals to merge your PR.
+* Open a PR and reviewers should be automatically assigned based on the location of your files changed. You need 2 approvals to merge your PR.
 
 ## Git guidance
 
