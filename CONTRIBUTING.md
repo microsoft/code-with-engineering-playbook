@@ -49,7 +49,7 @@ Contribute to the playbook repo anything that is:
 
 When you have an idea for a contribution do one of two things:
 
-* Contact one of the champions in the appropriate fundamental area and discuss your idea with them
+* Contact one of the champions in the appropriate fundamental area and discuss your idea with them (check the reviewer groups [here](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/reviewers.yml) to find a champion in the appropriate fundamental area)
 * Look in the opened issues, if you cannot find a similar one then open an issue following the issue templates
   * **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
 
