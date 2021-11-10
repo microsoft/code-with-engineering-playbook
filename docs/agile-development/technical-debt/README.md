@@ -28,7 +28,7 @@ When dealing with legacy code it's helpful to identify 2 types of expected mitig
   
 *Example*: Adding unit tests to an existing codebase would be a good  illustration of a non-invasive change.  Additionally, it will help guard the functionality of the code before making a more invasive change.
 
-For some suggestions of how you might classify rules, here's an example of some rule classifications that can be tailored for use in a C# & .NET solution: [Rules Classification C Sharp Example](docs/technical-debt/RulesClassification-CSharpExample.md).
+For some suggestions of how you might classify rules, here's an example of some rule classifications that can be tailored for use in a C# & .NET solution: [Rules Classification C Sharp Example](docs/agile-development/technical-debt/RulesClassification-CSharpExample.md).
 
 ## Adding Technical Debt to Your Backlog
 
@@ -40,7 +40,7 @@ Finally, if you are beginning work on a codebase the you inherited from another 
 
 ## Improving Another Team's Codebase
 
-* Please follow the recommendations listed inside [inclusion in code reviews](../code-reviews/inclusion-in-code-review.md) when working with another team's codebase.
+* Please follow the recommendations listed inside [inclusion in code reviews](../../code-reviews/inclusion-in-code-review.md) when working with another team's codebase.
 * Code should be considered in it's current state as-of today, which means it can change using an iterative approach.
 * Don't assume the original developer didn't know how to write high quality code, instead consider that they didn't have the time to do it or other factors came into play.
 * Any issue that's listed as technical debt should be considered as a compromise vs. time or a milestone instead of whether one team is "better" or "faster" than another at writing code.
@@ -48,13 +48,13 @@ Finally, if you are beginning work on a codebase the you inherited from another 
 
 ## Identifying Common Patterns to Resolve
 
-* For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review recipes](../code-reviews/recipes/README.md).
+* For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review recipes](../../code-reviews/recipes/README.md).
 * Style guidelines represent aspects of the code that involve naming, organization and basic maintenance of code.
 * Code static analysis guidelines represent aspects of the code that involve performance, security and general rules to follow.
 * Ensure that the rules are reporting issues as errors and not warnings.
 * Address all issues that come up during the static analysis tool evaluation.
 * In the beginning of switching over to the new rules, evaluate each issue together as a team to ensure everyone agrees with the rules - and most importantly modify the rule if necessary.
-* Ensure that you and your team are following [code review](../code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
+* Ensure that you and your team are following [code review](../../code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
 
 ## Organizing and classifying code quality rules to make them actionable
 
@@ -66,7 +66,7 @@ Here are a few steps to follow for each language:
 
 ### Step 1: Gather state of the art code quality guidelines and rules for the language you are including
 
-Most of the programming languages have an official definition of quality when it comes to writing software with them. These can be found on the programming language (or platform) official website, on articles and blog posts from advanced users of the language or from experts in your team, organization, and company. In the playbook, you can find [recipes for some languages](../code-review/recipes/README.md). Additionally, research whether any tool exists to automate the detection of broken rules in the existing code. [Linters](https://en.wikipedia.org/wiki/Lint_(software)) and other [code analyzers](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) exist for most of the popular programming languages.
+Most of the programming languages have an official definition of quality when it comes to writing software with them. These can be found on the programming language (or platform) official website, on articles and blog posts from advanced users of the language or from experts in your team, organization, and company. In the playbook, you can find [recipes for some languages](../../code-review/recipes/README.md). Additionally, research whether any tool exists to automate the detection of broken rules in the existing code. [Linters](https://en.wikipedia.org/wiki/Lint_(software)) and other [code analyzers](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) exist for most of the popular programming languages.
 
 ### Step 2: Group the list of rules you selected in step 1 into each code quality category
 
