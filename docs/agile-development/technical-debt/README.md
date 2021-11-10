@@ -28,7 +28,7 @@ When dealing with legacy code it's helpful to identify 2 types of expected mitig
   
 *Example*: Adding unit tests to an existing codebase would be a good  illustration of a non-invasive change.  Additionally, it will help guard the functionality of the code before making a more invasive change.
 
-For some suggestions of how you might classify rules, here's an example of some rule classifications that can be tailored for use in a C# & .NET solution: [Rules Classification C Sharp Example](docs/agile-development/technical-debt/RulesClassification-CSharpExample.md).
+For some suggestions of how you might classify rules, here's an example of some rule classifications that can be tailored for use in a C# & .NET solution: [Rules Classification C Sharp Example](/RulesClassification-CSharpExample.md).
 
 ## Adding Technical Debt to Your Backlog
 

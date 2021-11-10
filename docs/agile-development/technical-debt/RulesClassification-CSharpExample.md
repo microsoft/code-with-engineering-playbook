@@ -1,7 +1,7 @@
 # C\# Example Rules Classification
 
 This is an example of rules classifications for reviewing and reducing technical debt. This example is for C# and was used on a real life case, to improve the quality of an existing code base.
-For more information, please read [this document](README.md) about technical debt.
+For more information, please read [this document](./README.md) about technical debt.
 
 ## Rules, organized per category:
 
