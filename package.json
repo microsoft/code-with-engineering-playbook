@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "markdown-link-check": "3.8.7",
+    "markdownlint": "^0.24.0",
     "markdownlint-cli": "^0.22.0",
     "run-script-os": "1.1.5"
   }
