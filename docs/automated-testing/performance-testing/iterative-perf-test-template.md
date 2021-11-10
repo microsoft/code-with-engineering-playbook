@@ -2,8 +2,7 @@
 
 > This document provides template for capturing results of performance tests. Performance tests are done in iterations and each iteration should have a clear goal. The results of any iteration is immutable regardless whether the goal was achieved or not. If the iteration failed or the goal is not achieved then a new iteration of testing is carried out with appropriate fixes. Recording results for each iteration in single document maintains a timeline of how system evolved and which changes affected the performance in what way. Feel free to modify this template as needed.
 
-
-# Table of Content
+## Table of Content
 
 - [Iteration 2](#iteration-2)
 - [Iteration 1](#iteration-1)
