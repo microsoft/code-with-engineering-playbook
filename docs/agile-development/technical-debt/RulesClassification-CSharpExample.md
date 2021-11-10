@@ -1,7 +1,7 @@
 # C\# Example Rules Classification
 
 This is an example of rules classifications for reviewing and reducing technical debt. This example is for C# and was used on a real life case, to improve the quality of an existing code base.
-For more information, please read [this document](./README.md) about technical debt.
+For more information, please read [this document](../technical-debt/README.md) about technical debt.
 
 ## Rules, organized per category:
 
@@ -45,7 +45,7 @@ We used the documentation listed in the derived from section to specify some rul
 
 ## Code Analysis (fxcop) for C\#
 
-Following the recommendations of using and FxCop (now Microsoft.CodeAnalysis.NetAnalyzers) per: [playbook](../../code-reviews/recipes/CSharp.md).
+Following the recommendations of using and FxCop (now Microsoft.CodeAnalysis.NetAnalyzers) per: [playbook](../../code-reviews/recipes/csharp.md).
 
 This model allows for suppressions and their justification in the code, providing reviewers the ability to reason about suppressions and whether they are appropriate.
 
