@@ -28,7 +28,7 @@ When dealing with legacy code it's helpful to identify 2 types of expected mitig
   
 *Example*: Adding unit tests to an existing codebase would be a good  illustration of a non-invasive change.  Additionally, it will help guard the functionality of the code before making a more invasive change.
 
-For some suggestions of how you might classify rules, here's an example of some rule classifications that can be tailored for use in a C# & .NET solution: [Rules Classification C Sharp Example](/RulesClassification-CSharpExample.md).
+For some suggestions of how you might classify rules, here's an example of some rule classifications that can be tailored for use in a C# & .NET solution: [Rules Classification C Sharp Example](./RulesClassification-CSharpExample.md).
 
 ## Adding Technical Debt to Your Backlog
 
@@ -48,7 +48,7 @@ Finally, if you are beginning work on a codebase the you inherited from another 
 
 ## Identifying Common Patterns to Resolve
 
-* For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review recipes](../../code-reviews/recipes/README.md).
+* For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review recipes](/code-reviews/recipes/README.md).
 * Style guidelines represent aspects of the code that involve naming, organization and basic maintenance of code.
 * Code static analysis guidelines represent aspects of the code that involve performance, security and general rules to follow.
 * Ensure that the rules are reporting issues as errors and not warnings.
