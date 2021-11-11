@@ -72,7 +72,6 @@ public static void Bootstrap(IUnityContainer container)
     container.RegisterSingleton\<IUserServiceClient, MockUserService>();
 #else
     container.RegisterSingleton\<IUserServiceClient, UserServiceClient>();
-
 #endif
 
 }
