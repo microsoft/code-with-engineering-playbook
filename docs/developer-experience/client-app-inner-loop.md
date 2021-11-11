@@ -72,7 +72,6 @@ public static void Bootstrap(IUnityContainer container)
     container.RegisterSingleton\<IUserServiceClient, MockUserService>();
 #else
     container.RegisterSingleton\<IUserServiceClient, UserServiceClient>();
-
 #endif
 
 }
@@ -157,10 +156,10 @@ would respond with predetermined and configured JSON messages.
 || No external dependencies to manage | Hard coded data | Initial integration with services |
 ||| Mocking via Dependency Injection can be a non-trivial effort ||
 | High-Fidelity Local Services | Loosely Coupled from Client | Extra tooling required  i.e. local infrastructure overhead | URL Routes  | When API contract are not available   |
-||Easier to independently modify response| Extra setup and configuraiton of services |
+||Easier to independently modify response| Extra setup and configuration of services |
 ||Independent updates to services||
 ||Can utilize HTTP traffic|||
-||Easier to repace with real services at a later time |||
+||Easier to replace with real services at a later time |||
 |Stub/Fake Services|Loosely coupled from client|Extra tooling required  i.e. local infrastructure overhead| Response Codes | When API Contracts available |
 ||Easier to independently modify reponse|Extra setup and configuration of services|Complex/variable data scenarios| When API Contracts are note available |
 ||Independent updates to services|Might not provide full fidelity of expected API ||
