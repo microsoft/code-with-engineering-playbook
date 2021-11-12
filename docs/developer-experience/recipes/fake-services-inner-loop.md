@@ -6,8 +6,8 @@ Consumers of remote services often find that their development cycle is not in s
 
 This document will focus on providing an example using the Fake Services approach.
 
-## API to Mock
-For our example API, we will work against a /User endpoint and the properties for User will be:
+## API
+For our example API, we will work against a `/User` endpoint and the properties for `User` will be:
 1. id - int
 2. username - string
 3. firstName - string
@@ -24,9 +24,9 @@ npm install -g json-server
 ```
 
 ## Setup
-In order to run Json-Server, it simply requires a source for data and will infer routes, etc. based on the data file. Note that additional customization can be performed (e.g. custom routes). Details can be found [here](https://github.com/typicode/json-server#add-custom-routes).
+In order to run Json-Server, it simply requires a source for data and will infer routes, etc. based on the data file. Note that additional customization can be performed for more advanced scenarios (e.g. custom routes). Details can be found [here](https://github.com/typicode/json-server#add-custom-routes).
 
-For our example, we will use the following data file, db.json:
+For our example, we will use the following data file, `db.json`:
 ```
 {
   "user": [
@@ -60,11 +60,11 @@ Running Json-Server can be performed by simply running:
 json-server --watch src/db.json
 ```
 
-Once running, the User endpoint can be hit on the default localhost port: http:/localhost:3000/user
+Once running, the User endpoint can be hit on the default localhost port: `http:/localhost:3000/user`
 
 Note that Json-Server can be configured to use other ports using the following syntax:
 ```
-$ json-server --watch db.json --port 3004
+json-server --watch db.json --port 3004
 ```
 
 ## Endpoint

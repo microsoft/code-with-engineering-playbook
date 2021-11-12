@@ -147,6 +147,8 @@ fake json server API Service for prototyping and
 testing.](https://www.jsonserver.io/)) or Postman. All these services
 would respond with predetermined and configured JSON messages.
 
+An example of how to implement using Fake Services can be found [here](./recipes/fake-services-inner-loop.md).
+
 # How to decide
 
 
