@@ -69,3 +69,7 @@ Engineering](https://docs.microsoft.com/en-us/learn/modules/sustainable-software
 
 - [Green Energy Hub (Energinet)](https://github.com/Energinet-DataHub/green-energy-hub)
 - [Sustainability through SpotVMs](https://github.com/hybridflux/SparkOnSpot)
+
+## Other resources
+
+- [Green Software](https://github.com/Green-Software-Foundation/awesome-green-software)
