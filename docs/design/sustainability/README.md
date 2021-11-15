@@ -12,7 +12,7 @@ Engineering project, aligning with the sustainability strategy of the company an
 
 ### Architecture Design
 
-During the [design](../design/) phase, choices on the type of infrastructure and services can have a big impact on the
+During the [design](../) phase, choices on the type of infrastructure and services can have a big impact on the
 carbon footprint of the solution.
 
 #### Platform  vs. Infratructure services
@@ -40,12 +40,12 @@ Compression of payload data can reduce the load on network layers.
 
 ### Observability
 
-[Observability](../observability) can surface information on load and capacity of the system. If not already supported by
+[Observability](../../observability) can surface information on load and capacity of the system. If not already supported by
 the chosen services, consider to automate scaling down when resources are idle.
 
 ### CI/CD Pipelines
 
-[CI/CD pipelines](../continuous-integration) offer the capability to re-create an environment from scratch, and to
+[CI/CD pipelines](../../continuous-integration) offer the capability to re-create an environment from scratch, and to
 deprovision the whole infrastructure if it is not in-use. Load test or staging environments are often not in use during
 the development cycle and could be deprovisioned after testing.
 
