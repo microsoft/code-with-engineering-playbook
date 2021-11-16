@@ -1,13 +1,8 @@
-# Test Name
+# Performance Test Iteration Template
 
-> This document provides template for capturing results of performance tests. Performance tests are done in iterations and each iteration should have a clear goal. The results of any iteration is immutable regardless whether the goal was achieved or not. If the iteration failed or the goal is not achieved then a new iteration of testing is carried out with appropriate fixes. Recording results for each iteration in single document maintains a timeline of how system evolved and which changes affected the performance in what way. Feel free to modify this template as needed.
+> This document provides template for capturing results of performance tests. Performance tests are done in iterations and each iteration should have a clear goal. The results of any iteration is immutable regardless whether the goal was achieved or not. If the iteration failed or the goal is not achieved then a new iteration of testing is carried out with appropriate fixes. It is recommended to keep track of the recorded iterations to maintain a timeline of how system evolved and which changes affected the performance in what way. Feel free to modify this template as needed.
 
-## Table of Content
-
-- [Iteration 2](#iteration-2)
-- [Iteration 1](#iteration-1)
-
-## Iteration 2
+## Iteration Template
 
 ### Goal
 
@@ -40,13 +35,3 @@ In bullet points document the results from the test.
 ### Observations
 
 > Observations are insights derived from test results. Keep the observations brief and as bullet points. Mention outcomes supporting the goal of the iteration. If any of the observation results in a work item (task, story, bug) then add the link to the work item together with the observation.  
-
----
-
-## Iteration 1
-
-### Goal
-
-- Sanity test
-
-...*Trimmed for brevity*
