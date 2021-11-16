@@ -38,9 +38,7 @@ cancellationToken)
     PetProfile result =
 Newtonsoft.Json.JsonConvert.DeserializeObject\<UserProfile>(
 
-            MockUserProfile.UserProfile,
-
-                new Newtonsoft.Json.JsonSerializerSettings());
+            MockUserProfile.UserProfile, new Newtonsoft.Json.JsonSerializerSettings());
 
     return Task.FromResult(result);
 }
@@ -77,7 +75,7 @@ public static void Bootstrap(IUnityContainer container)
 }
 ```
 
-## 
+### Consuming mocks via Dependency Injection
 
 The code consuming the interfaces will not notice the difference.
 
@@ -91,7 +89,6 @@ public class UserPageModel
     public UserPageModel(IUserServiceClient userServiceClient)
     {
         this.userServiceClient = userServiceClient;
-
     }
 
 // ...
