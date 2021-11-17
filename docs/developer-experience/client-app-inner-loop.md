@@ -6,7 +6,7 @@ don't always fully align. For a high velocity inner dev loop, client app
 development must be decoupled from the backend services while still
 allowing the app to "invoke" the services for local testing.
 
-# Options
+## Options
 
 Several options exist to decouple client app development from the
 backend services. The options range from embedding mock implementation
@@ -31,7 +31,7 @@ A simple service implementation can return a static response. For
 RESTful services, the JSON responses for the stubs can be stored as
 application resources or simply as static strings.
 
-```
+```C#
 public Task\<UserProfile> GetUserAsync(long userId, CancellationToken
 cancellationToken)
 {
@@ -64,7 +64,7 @@ it easy to switch between mock services and real service client
 implementations. Since both implement the same interface,
 implementations can be registered with the Unity container.
 
-```
+```C#
 public static void Bootstrap(IUnityContainer container)
 {
 
@@ -77,11 +77,9 @@ public static void Bootstrap(IUnityContainer container)
 }
 ```
 
-## 
-
 The code consuming the interfaces will not notice the difference.
 
-```
+```C#
 public class UserPageModel
 
 {
@@ -149,8 +147,7 @@ would respond with predetermined and configured JSON messages.
 
 An example of how to implement using Fake Services can be found [here](./recipes/fake-services-inner-loop.md).
 
-# How to decide
-
+## How to decide
 
 || Pros| Cons| Example when developing for: | Example When not to Use  |
 |------------|-------------|-------------|---------------|------------|
