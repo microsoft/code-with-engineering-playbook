@@ -55,7 +55,7 @@ For our example, we will use the following data file, `db.json`:
       "password": "superSecure2",
       "phone": "(123) 123-1235",
       "userStatus": 0
-    }    
+    }
   ]
 }
 ```
