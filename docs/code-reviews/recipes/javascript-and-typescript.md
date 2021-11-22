@@ -17,7 +17,7 @@ TypeScript code should be linted with [ESLint](https://github.com/eslint/eslint)
 linting TypeScript code with ESLint can be found in the [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
 repository.
 
-To [install and configure linting with ESLint](https://github.com/typescript-eslint/typescript-eslint/tree/master/docs/getting-started/linting),
+To [install and configure linting with ESLint](https://github.com/typescript-eslint/typescript-eslint/tree/main/docs/linting),
 install the following packages as dev-dependencies:
 
 ```bash
