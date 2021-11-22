@@ -15,6 +15,7 @@
         {"pattern": "^https://opentelemetry.io/status/"},
         {"pattern": "^https://opentelemetry.io/docs/collector/getting-started/"},
         {"pattern": "^https://thanos.io"},
-        {"pattern": "^https://gitlab.com/palisade/palisade-release"}
+        {"pattern": "^https://gitlab.com/palisade/palisade-release"},
+        {"pattern": "^https://www.github.com"}
     ]
 }
