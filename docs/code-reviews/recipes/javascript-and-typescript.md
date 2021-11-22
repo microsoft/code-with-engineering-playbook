@@ -12,10 +12,8 @@ For higher level style guidance not covered by prettier, we follow the [AirBnB S
 
 ### eslint
 
-Per guidance outlined in [Palantir's 2019 TSLint roadmap](https://medium.com/palantir/tslint-in-2019-1a144c2317a9),
-TypeScript code should be linted with [ESLint](https://github.com/eslint/eslint). Resources for
-linting TypeScript code with ESLint can be found in the [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
-repository.
+Per guidance outlined in [Palantir's 2019 TSLint road map](https://medium.com/palantir/tslint-in-2019-1a144c2317a9),
+TypeScript code should be linted with [ESLint](https://github.com/eslint/eslint). See the [typescript-eslint](https://typescript-eslint.io/) documentation for more information around linting TypeScript code with ESLint.
 
 To [install and configure linting with ESLint](https://github.com/typescript-eslint/typescript-eslint/tree/master/docs/getting-started/linting),
 install the following packages as dev-dependencies:

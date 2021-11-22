@@ -101,7 +101,7 @@ relevant and limited to what is necessary in relation to the purposes for which 
 This is particularly important for personal data. Once you have personal data there are many rules and regulations that apply,
 some examples of these might be HIPPA, GDPR, CCPA.
 The customer should be aware of and surface any applicable regulations that apply to their data.
-Furthermore the [seven principles of privacy by design](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
+Furthermore the [seven principles of privacy by design](https://privacy.ucsc.edu/resources/privacy-by-design---foundational-principles.pdf)
 should be reviewed and considered when handling any type of sensitive data.
 
 ## Resources
