@@ -14,6 +14,7 @@
         {"pattern": "^https://www.pluralsight.com/courses/master-git"},
         {"pattern": "^https://opentelemetry.io/status/"},
         {"pattern": "^https://opentelemetry.io/docs/collector/getting-started/"},
-        {"pattern": "^https://thanos.io"}
+        {"pattern": "^https://thanos.io"},
+        {"pattern": "^https://gitlab.com/palisade/palisade-release"}
     ]
 }
