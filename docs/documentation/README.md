@@ -56,6 +56,7 @@ When working in an engineering project, we typically encounter one or more of th
 - [Commit Messages](../source-control/README.md#commit-best-practices)
 - [Pull Requests](./guidance/pull-requests.md)
 - [Code](./guidance/code.md)
+- [Work Items](./guidance/work-items.md)
 - [REST APIs](./guidance/rest-apis.md)
 - [Engineering Feedback](./guidance/engineering-feedback.md)
 
@@ -77,6 +78,9 @@ When working in an engineering project, we typically encounter one or more of th
 ## Recipes
 
 - [How to sync a wiki between repositories](./recipes/sync-wiki-between-repos.md)
+- [Using DocFx and Companion Tools to generate a Documentation website](./recipes/using-docfx-and-tools.md)
+- [Deploy the DocFx Documentation website to an Azure Website automatically](./recipes/deploy-docfx-azure-website.md)
+- [How to create a static website for your documentation based on MkDocs and Material for MkDocs](./recipes/static-website-with-mkdocs.md)
 
 ## Resources
 

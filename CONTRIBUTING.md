@@ -17,28 +17,46 @@ FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any
 additional questions or comments.
 
+## Purpose of this repo
+
+Demonstrating Engineering Fundamentals is core to what we do at CSE and is one of the primary values we bring to our customers, helping them to level up while collaborating on their business scenarios.
+
+The purpose of this repo is to provide guidance to CSE Dev Crews with regards to engineering fundamentals. It  describes recommended practices based on continuous project learnings in different areas. It can be used as a tool at the beginning of an engagement that can be shared with customers to help set the project up for success. This repo is *not* intended as a code repo, instead it provides guidance and links to appropriate sample code repos that represent good examples.
+
 ## Permissions & Contributions
 
 There are two ways in which you can help update the content:
 
 * **One-off:** \
 If you are not a regular contributor to the project, but you would like to
-contribute some changes, the best way to do it is:
-
-  1. Fork this repository or create a new feature branch
-  2. Add your contributions
-  3. Submit a PR to merge your contribution to this repository
+contribute some changes, the best way to do it is to follow these [steps](#how-to-contribute)
 
 * **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added
-to the project's Contributors group. Please contact [Federica Nocera](https://github.com/fnocera) or [Brock Davis](https://github.com/brockneedscoffee) to be added to the group.
+to the project's Contributors group. Please contact [Federica Nocera](https://github.com/fnocera) or [ [Tess Ferrandez](https://github.com/TessFerrandez) or [Wallace Breza](https://github.com/wbreza) to be added to the group.
 You will still need to submit a PR against master in order to merge your changes.
+
+## What to contribute
+
+Contribute to the playbook repo anything that is:
+
+* Related to the fundamentals
+* can be publicly visible (avoid confidential info)
+* Generally applicable (not specific to internal processes)
+* Short code snippets or links to OSS repos (no large code assets)
 
 ## How to contribute
 
-When you have an idea for contribution open an *issue*!
+When you have an idea for a contribution do one of two things:
 
-> **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
+* Contact one of the champions in the appropriate fundamental area and discuss your idea with them (check the reviewer groups [here](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/reviewers.yml) to find a champion in the appropriate fundamental area)
+* Look in the opened issues, if you cannot find a similar one then open an issue following the issue templates
+  * **Note:** Adding new labels for an issue are only available for the project's Contributors group. Proposals for new labels are welcomed.
+
+Once you have discussed your contribution:
+
+* Add your changes to a new branch following [this branch naming convention](#branch-naming-convention)
+* Open a PR and reviewers should be automatically assigned based on the location of your files changed. You need 2 approvals to merge your PR.
 
 ## Git guidance
 
@@ -47,12 +65,11 @@ specifics regarding git as described in this section.
 
 ### Branch naming convention
 
-In this repo, we use the following branch naming conventions:
+In this repo, we use this branch naming approach:
 
-| Branch Type | Pattern | Example |
-| - | - | - |
-| Feature | feature/\<issue#>-\<short description> | feature/498-reorganize-scm-section |
-| Bug Fix | fix/\<bug#>-\<short description> | bug/978-correct-grammar-myfile.md |
+```plaintext
+<user alias>/<work item ID>_<title>
+```
 
 > **Note:**
 >
@@ -79,10 +96,10 @@ As such, we've provided tooling to lint locally through `npm`.
 3. Run `npm run lint` to run all linters.
 Please see [the `package.json` file](package.json) for other scripts.
 
-### Contributions and pull requests
+### Pull requests
 
 When creating pull requests, follow guidance similar to the one suggested in
-this repo, as described in the ["Pull Request Template"](docs/code-reviews/pull-request-template/pull-request-template.md)
+this repo, as described in the [Pull Request Template](docs/code-reviews/pull-request-template/pull-request-template.md)
 section, under "Code Reviews". This includes linking to the work item that
 prompted the pull request.
 

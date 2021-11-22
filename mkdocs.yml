@@ -19,6 +19,10 @@ theme:
     - navigation.instant
     - navigation.indexes
 
+plugins:
+  - search
+  - git-revision-date-localized
+
 markdown_extensions:
   - meta
   - admonition
