@@ -53,9 +53,7 @@ The code consuming the interfaces will not notice the difference.
 
 ```cs
 public class UserPageModel
-
 {
-
     private readonly IUserServiceClient userServiceClient;
 
     public UserPageModel(IUserServiceClient userServiceClient)
