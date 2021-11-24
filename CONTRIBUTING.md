@@ -33,7 +33,7 @@ contribute some changes, the best way to do it is to follow these [steps](#how-t
 
 * **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added
-to the project's Contributors group. Please contact [Federica Nocera](https://github.com/fnocera) or [ [Tess Ferrandez](https://github.com/TessFerrandez) or [Wallace Breza](https://github.com/wbreza) to be added to the group.
+to the project's Contributors group. Please contact one of the [maintainers](#maintainers) to be added to the group.
 You will still need to submit a PR against master in order to merge your changes.
 
 ## What to contribute
@@ -71,14 +71,6 @@ In this repo, we use this branch naming approach:
 <user alias>/<work item ID>_<title>
 ```
 
-> **Note:**
->
-> * Please, do not use personal branches. Work should refer back to a
-feature/bug fix in the backlog.
-> * Mind the capitalization of the branch prefix (feature, fix). Tools that
-display branches as a hierarchy are typically case sensitive, and will display
-different hierarchies for the same words with different capitalization.
-
 ### Linting
 
 If you use VSCode as your preferred editor, please install the [markdownlint
@@ -96,6 +88,19 @@ As such, we've provided tooling to lint locally through `npm`.
 3. Run `npm run lint` to run all linters.
 Please see [the `package.json` file](package.json) for other scripts.
 
+### Link checks
+
+Before a pull request can be merged, any links in the documents will be checked to make sure that they are still live.
+
+On occasion, you will find that the link checker will fail on links that you can reach fine with a browser. It may also fail on links that are not in the documents that you submitted changes to.
+
+When this occurs, do the following
+
+1. Verify that the link is OK, if it redirects, change the path to be the final link.
+1. If the link is not ok, fix the link (even if it is not in your document) if you find a good equivalent link. If you can't find a good equivalent link, contact one of the [maintainers](#maintainers) for a solution.
+1. Re-run the job, or ask to have the job re-run (if you are a first time contributor). Sometimes the link checker fails due to temporary connectivity issues.
+1. If the link checker still fails, and you have confirmed that the link is ok, exclude the link from checking, in the `.markodownlinkcheck.json` file in the root of the repository.
+
 ### Pull requests
 
 When creating pull requests, follow guidance similar to the one suggested in
@@ -109,6 +114,10 @@ The preferred merging strategy for this repo is **linear**.
 You can familiarize yourself with [merging strategies](docs/source-control/merge-strategies.md) described in the Source Control section of this repo.
 
 ## Adding a new section
+
+> **Note:**
+>
+> Please discuss with one of the [maintainers](#maintainers) before adding a new top level section. Try to find a suitable home in an existing section if possible.
 
 ### Structure/Pattern
 
@@ -167,3 +176,7 @@ Privacy information can be found at <https://privacy.microsoft.com/en-us/>
 Microsoft and any contributors reserve all others rights, whether under their
 respective copyrights, patents, or trademarks, whether by implication, estoppel
 or otherwise.
+
+## Maintainers
+
+For any questions or concerns, please contact [Federica Nocera](https://github.com/fnocera), [Tess Ferrandez](https://github.com/TessFerrandez) or [Wallace Breza](https://github.com/wbreza)
