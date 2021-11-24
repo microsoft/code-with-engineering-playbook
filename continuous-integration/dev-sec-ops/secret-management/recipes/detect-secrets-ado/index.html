@@ -5100,7 +5100,7 @@
 
       <span class="p p-Indicator">-</span> <span class="nt">bash</span><span class="p">:</span> <span class="p p-Indicator">|</span>
           <span class="no">detect-secrets --version</span>
-          <span class="no">detect-secrets scan --all-files --force-use-all-plugins &gt; $(Pipeline.Workspace)/detect-secrets.json</span>
+          <span class="no">detect-secrets scan --all-files --force-use-all-plugins --exclude-files FETCH_HEAD &gt; $(Pipeline.Workspace)/detect-secrets.json</span>
         <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">tool&quot;</span>
 
       <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishPipelineArtifact@1</span>
@@ -5116,7 +5116,7 @@
 
           <span class="no">count=$(echo &quot;${dsjson}&quot; | jq -c -r &#39;.results | length&#39;)</span>
 
-          <span class="no">if [ count &gt; 0 ]; then</span>
+          <span class="no">if [ $count -gt 0 ]; then</span>
             <span class="no">msg=&quot;Secrets were detected in code. ${count} file(s) affected.&quot;</span>
             <span class="no">echo &quot;##vso[task.logissue type=error]${msg}&quot;</span>
             <span class="no">echo &quot;##vso[task.complete result=Failed;]${msg}.&quot;</span>
@@ -5177,7 +5177,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 17, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2021</span>
     
   </small>
 </div>

@@ -5209,9 +5209,7 @@ it easy to switch between mock services and real service client implementations.
 <h4 id="consuming-mocks-via-dependency-injection">Consuming mocks via Dependency Injection</h4>
 <p>The code consuming the interfaces will not notice the difference.</p>
 <div class="highlight"><pre><span></span><code>public class UserPageModel
-
 {
-
     private readonly IUserServiceClient userServiceClient;
 
     public UserPageModel(IUserServiceClient userServiceClient)
