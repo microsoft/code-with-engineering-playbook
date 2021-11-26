@@ -42,7 +42,7 @@ jobs:
 
       - bash: |
           detect-secrets --version
-          detect-secrets scan --all-files --force-use-all-plugins > $(Pipeline.Workspace)/detect-secrets.json
+          detect-secrets scan --all-files --force-use-all-plugins --exclude-files FETCH_HEAD > $(Pipeline.Workspace)/detect-secrets.json
         displayName: "Run detect-secrets tool"
 
       - task: PublishPipelineArtifact@1
@@ -58,7 +58,7 @@ jobs:
 
           count=$(echo "${dsjson}" | jq -c -r '.results | length')
 
-          if [ count > 0 ]; then
+          if [ $count -gt 0 ]; then
             msg="Secrets were detected in code. ${count} file(s) affected."
             echo "##vso[task.logissue type=error]${msg}"
             echo "##vso[task.complete result=Failed;]${msg}."
