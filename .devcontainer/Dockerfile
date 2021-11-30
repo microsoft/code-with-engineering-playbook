@@ -15,7 +15,7 @@ RUN if ! cat /etc/group | grep -e "^pip-global:" > /dev/null 2>&1; then groupadd
     && ( [ ! -f "/etc/profile.d/00-restore-env.sh" ] || sed -i -e "s/export PATH=/export PATH=\/usr\/local\/pip-global:/" /etc/profile.d/00-restore-env.sh )
 
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
-ARG NODE_VERSION="none"
+ARG NODE_VERSION="lts/*"
 RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
