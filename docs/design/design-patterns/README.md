@@ -7,4 +7,5 @@ Rather than duplicate or replace the cited sources, this section aims to complim
 ## Subsections
 
 * [Data Heavy Design Guidance](data-heavy-design-guidance/README.md)
+* [Object Oriented Design Guidance](object-oriented-design-reference/README.md)
 * [REST API Design Guidance](rest-api-design-guidance/README.md)
