@@ -177,6 +177,16 @@ Microsoft and any contributors reserve all others rights, whether under their
 respective copyrights, patents, or trademarks, whether by implication, estoppel
 or otherwise.
 
+## Running Locally (_Remotely_)
+
+To run the site locally, you must have [VSCode](https://code.visualstudio.com/), [Docker](https://www.docker.com/), and the [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) installed on your machine.
+
+After cloning this repo, open it in VSCode. Open the VSCode command prompt using `CTRL/CMD + SHIFT + P` and run the `Remote-Container: Rebuild and Reopen in Container` command (make sure Docker is also running on your machine).
+
+After sometime, VSCode should reopen this repository in the remote dev container and install the required dependencies.
+
+Finally, launch the site locally using the `mkdocs serve` command from the root of the repo.
+
 ## Maintainers
 
 For any questions or concerns, please contact [Federica Nocera](https://github.com/fnocera), [Tess Ferrandez](https://github.com/TessFerrandez) or [Wallace Breza](https://github.com/wbreza)
