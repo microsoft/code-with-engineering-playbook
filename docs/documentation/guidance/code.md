@@ -88,7 +88,7 @@ In **C#**, doc comments can be processed by the compiler to generate XML documen
 
 More information:
 
-- [Recommended XML tags for C# documentation comments](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags).
+- [Recommended XML tags for C# documentation comments](https://docs.microsoft.com/dotnet/csharp/language-reference/xmldoc/recommended-tags).
 
 In other languages, you may require external tools. For example, **Java** doc comments can be processed by Javadoc tool to generate HTML documentation files.
 
