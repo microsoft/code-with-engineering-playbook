@@ -5109,9 +5109,9 @@
 <ul>
 <li>Multi-line comment in C# that provides <strong>additional context</strong> (from a private method in <a href="https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Reader/Utf8JsonReader.cs">System.Text.Json.Utf8JsonReader</a>):</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="c1">// Transcoding from UTF-16 to UTF-8 will change the length by somwhere between 1x and 3x.</span>
-<span class="c1">// Unescaping the token value will at most shrink its length by 6x.</span>
-<span class="c1">// There is no point incurring the transcoding/unescaping/comparing cost if:</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Transcoding from UTF-16 to UTF-8 will change the length by somewhere between 1x and 3x.</span>
+<span class="c1">// Un-escaping the token value will at most shrink its length by 6x.</span>
+<span class="c1">// There is no point incurring the transcoding/un-escaping/comparing cost if:</span>
 <span class="c1">// - The token value is smaller than charTextLength</span>
 <span class="c1">// - The token value needs to be transcoded AND unescaped and it is more than 6x larger than charTextLength</span>
 <span class="c1">//      - For an ASCII UTF-16 characters, transcoding = 1x, escaping = 6x =&gt; 6x factor</span>
@@ -5164,9 +5164,7 @@
 <p>In <strong>C#</strong>, doc comments can be processed by the compiler to generate XML documentation files. These files can be distributed alongside your libraries so that Visual Studio and other IDEs can use IntelliSense to show quick information about types or members. Additionally, these files can be run through tools like <a href="https://dotnet.github.io/docfx/">DocFx</a> to generate API reference websites.</p>
 <p>More information:</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/codedoc">C# guide / C# Concepts / Documenting your code: Document your C# code with XML comments</a>.</li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/documentation-comments">C# guide / C# Lenguage reference / C# specification: Documentation comments</a>.</li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/">C# guide / C# Programming Guide / XML documentation comments: Overview</a>.</li>
+<li><a href="https://docs.microsoft.com/dotnet/csharp/language-reference/xmldoc/recommended-tags">Recommended XML tags for C# documentation comments</a>.</li>
 </ul>
 <p>In other languages, you may require external tools. For example, <strong>Java</strong> doc comments can be processed by Javadoc tool to generate HTML documentation files.</p>
 <p>More information:</p>
@@ -5182,7 +5180,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 9, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 13, 2021</span>
     
   </small>
 </div>
