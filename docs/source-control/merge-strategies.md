@@ -2,7 +2,7 @@
 
 Agree if you want a linear or non-linear commit history. There are pros and cons to both approaches:
 
-* Pro linear: [A tidy, linear Git history](https://www.bitsnbites.eu/a-tidy-linear-git-history/)
+* Pro linear: [Avoid messy git history, use linear history](https://dev.to/bladesensei/avoid-messy-git-history-3g26)
 * Con linear: [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
 
 ## Approach for non-linear commit history
