@@ -7,6 +7,17 @@
         {"pattern": "^http://link-to-task-work-item"},
         {"pattern": "^http://link-to-story-work-item"},
         {"pattern": "^http://link-to-work-item"},
-        {"pattern": "^https://tanzu.vmware.com/developer/guides/kubernetes/observability-prometheus-grafana-p1"}
-    ]
+        {"pattern": "^https://tanzu.vmware.com/developer/guides/kubernetes/observability-prometheus-grafana-p1"},
+        {"pattern": "^https://www.w3.org/blog/2019/12/trace-context-enters-proposed-recommendation/"},
+        {"pattern": "^https://blog.cloudflare.com/cloudflare-outage/"},
+        {"pattern": "^https://www.pluralsight.com/courses/how-git-works"},
+        {"pattern": "^https://www.pluralsight.com/courses/master-git"},
+        {"pattern": "^https://opentelemetry.io/status/"},
+        {"pattern": "^https://opentelemetry.io/docs/collector/getting-started/"},
+        {"pattern": "^https://thanos.io"},
+        {"pattern": "^https://gitlab.com/palisade/palisade-release"},
+        {"pattern": "^https://www.github.com"},
+        {"pattern": "^https://github.com"}
+    ],
+    "retryOn429": true
 }
