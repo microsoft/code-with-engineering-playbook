@@ -18,5 +18,6 @@
         {"pattern": "^https://gitlab.com/palisade/palisade-release"},
         {"pattern": "^https://www.github.com"},
         {"pattern": "^https://github.com"}
-    ]
+    ],
+    "retryOn429": true
 }
