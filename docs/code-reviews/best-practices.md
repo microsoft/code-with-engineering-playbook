@@ -1,4 +1,4 @@
-# Best practices for code reviews
+# Lessons shared for code reviews
 
 There is a conversation about how to work with Code Reviews and Pull Requests, they are made to work together, not to compete each other.
 
@@ -28,15 +28,17 @@ Pull request-->>-New branch: Delete branch
 
 After looking at the process we can start with the recommendations about code reviews.
 
-## Code reviews shouldn't include more than 400 lines of code
+## Code reviews shouldn't include many lines of code
 
-It's easy to say a developer can review 400 but when code surpasses even 200 lines of code effectiveness of defects discovery can decrease and there is a chance of not having a good review or just letting bugs pass to main branch or another stage. Setting a line of code limit is as important as a time limit.
+It's easy to say a developer can review 400 or more lines but when code surpasses certain amount of lines of code effectiveness of defects discovery can decrease and there is a chance of not having a good review or just letting bugs pass to main branch or another stage. Setting a line of code limit is as important as a time limit.
 
-## Take your time to review but don't go beyond than 60 minutes at a time
+## Take your time to review but don't go beyond of the specific task
 
-There is a small, very small gap when reviewing code talking about time, you shouldn't review code too quickly but neither take too long in one sitting. If you have many pull requests that could lead to many code reviews or complexity of code is demanding the recommendation is to spend no more than 60 minutes at the time, take a break, spend some minutes between reviews to recover.
+There is a small, very small gap when reviewing code talking about time, you shouldn't review code too quickly but neither take too long in one sitting. If you have many pull requests that could lead to many code reviews or complexity of code is demanding the recommendation is to not invest muc time, take a break, spend some minutes between reviews to recover.
 
 Avoiding big files can prevent teams to spend a lot of time and to let bugs pass without being noticed.
+
+But at the end, no matter how many lines of code or time you can invest on a code review. The important goal in a code review is to verify the specified task has been achieved, there is a common practice of analyzing tasks beyond the scope of a PR by suggesting improvements that are are not being considered for this you can raise a bug, an improvement or a technical debt but not postpone a review because of a different task.
 
 ## Code should have annotations before the review
 
