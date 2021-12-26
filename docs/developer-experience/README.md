@@ -231,3 +231,5 @@ class MyService {
     }
 }
 ```
+
+The recipes section has a more complete discussion on [DI as part of a high productivity inner dev loop](./recipes/client-app-inner-loop.md)  
