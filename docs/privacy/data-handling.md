@@ -4,7 +4,7 @@
 
 The goal of this section is to briefly describe best practices in privacy fundamentals for data heavy projects or portions of a project that may contain data.
 
-**What it is not**: This document is not a checklist for how customers or readers should handle data in their environment, and does not override Microsoft's or che customers' policies for data handling, data protection and information security.
+**What it is not**: This document is not a checklist for how customers or readers should handle data in their environment, and does not override Microsoft's or the customers' policies for data handling, data protection and information security.
 
 ## Introduction
 
@@ -101,7 +101,7 @@ relevant and limited to what is necessary in relation to the purposes for which 
 This is particularly important for personal data. Once you have personal data there are many rules and regulations that apply,
 some examples of these might be HIPPA, GDPR, CCPA.
 The customer should be aware of and surface any applicable regulations that apply to their data.
-Furthermore the [seven principles of privacy by design](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
+Furthermore the [seven principles of privacy by design](https://privacy.ucsc.edu/resources/privacy-by-design---foundational-principles.pdf)
 should be reviewed and considered when handling any type of sensitive data.
 
 ## Resources
@@ -112,4 +112,4 @@ should be reviewed and considered when handling any type of sensitive data.
 - [FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
 - [Microsoft Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide)
 - [Accountability Readiness Checklists](https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-arc?view=o365-worldwide#gdpr-compliance-controls)
-- [Privacy by Design The 7 Foundational Principles](http://dataprotection.industries/wp-content/uploads/2017/10/privacy-by-design.pdf)
+- [Privacy by Design The 7 Foundational Principles](https://privacy.ucsc.edu/resources/privacy-by-design---foundational-principles.pdf)

@@ -24,9 +24,9 @@ Span<byte> utf8 = json.Length <= (ArrayPoolMaxSizeBeforeUsingNormalAlloc / JsonC
 - Multi-line comment in C# that provides **additional context** (from a private method in [System.Text.Json.Utf8JsonReader](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Reader/Utf8JsonReader.cs)):
 
 ```csharp
-// Transcoding from UTF-16 to UTF-8 will change the length by somwhere between 1x and 3x.
-// Unescaping the token value will at most shrink its length by 6x.
-// There is no point incurring the transcoding/unescaping/comparing cost if:
+// Transcoding from UTF-16 to UTF-8 will change the length by somewhere between 1x and 3x.
+// Un-escaping the token value will at most shrink its length by 6x.
+// There is no point incurring the transcoding/un-escaping/comparing cost if:
 // - The token value is smaller than charTextLength
 // - The token value needs to be transcoded AND unescaped and it is more than 6x larger than charTextLength
 //      - For an ASCII UTF-16 characters, transcoding = 1x, escaping = 6x => 6x factor
@@ -88,9 +88,7 @@ In **C#**, doc comments can be processed by the compiler to generate XML documen
 
 More information:
 
-- [C# guide / C# Concepts / Documenting your code: Document your C# code with XML comments](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc).
-- [C# guide / C# Lenguage reference / C# specification: Documentation comments](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/documentation-comments).
-- [C# guide / C# Programming Guide / XML documentation comments: Overview](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/).
+- [Recommended XML tags for C# documentation comments](https://docs.microsoft.com/dotnet/csharp/language-reference/xmldoc/recommended-tags).
 
 In other languages, you may require external tools. For example, **Java** doc comments can be processed by Javadoc tool to generate HTML documentation files.
 

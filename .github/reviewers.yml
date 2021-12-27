@@ -1,0 +1,93 @@
+reviewers:
+  # The default reviewers
+  defaults:
+    - repository-owners # group
+
+  # Reviewer groups each of which has a list of GitHub usernames
+  groups:
+    repository-owners:
+      - wbreza
+      - fnocera
+    agile:
+      - meulta
+      - omri374
+    automated-testing:
+      - alkofahi
+      - omusavi
+    code-reviews:
+      - katyamust
+      - TessFerrandez
+      - ikivanc
+      - tompaana
+      - saroup
+    ci-cd:
+      - brockneedscoffee
+    design: 
+      - zmmille2
+      - sbohlen
+      - charleszipp
+    dev-experience:
+      - olasowemimo
+      - charleszipp
+    div-inclusion:
+      - madossan01
+    documentation: 
+      - magencio
+      - tompaana
+      - TessFerrandez
+      - mtirion
+    machine-learning:
+      - biancafbmd
+      - omri374
+      - TessFerrandez
+    observability:
+      - NarmathaBala
+      - ivaramme
+    privacy: 
+      - prnata
+      - omri374
+    security:
+      - charleszipp
+    source-code:
+      - TessFerrandez
+      - tompaana
+
+files:
+  # Keys are glob expressions.
+  # You can assign groups defined above as well as GitHub usernames.
+  'docs/agile-development/**':
+    - agile # group
+  'docs/automated-testing/**':
+    - automated-testing # group
+  'docs/code-reviews/**':
+    - code-reviews # group
+  'docs/continuous-delivery/**':
+    - ci-cd # group
+  'docs/continuous-integration/**':
+    - ci-cd # group
+  'docs/design/**':
+    - design # group
+  'docs/developer-experience/**':
+    - dev-experience # group
+  'docs/documentation/**':
+    - documentation # group
+  'docs/machine-learning/**':
+    - machine-learning # group
+  'docs/observability/**':
+    - observability # group
+  'docs/privacy/**':
+    - privacy # group
+  'docs/security/**':
+    - security # group
+  'docs/source-control/**':
+    - source-code # group
+  '.projector/**':
+    - design # group
+    - wbreza  # username
+
+options:
+  ignore_draft: true
+  ignored_keywords:
+    - DO NOT REVIEW
+  enable_group_assignment: false
+  number_of_reviewers: 4
