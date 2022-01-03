@@ -20,4 +20,4 @@ This covers not only technical design of software, but also architecture design 
 
 ## Recipes
 
-- [Design Recipes](design-reviews/README.md#Design-Review-Recipes)
+- [Design Recipes](design-reviews/recipes/README.md)
