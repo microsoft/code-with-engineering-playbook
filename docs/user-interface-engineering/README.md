@@ -56,7 +56,7 @@ For more information of choosing the right implementation tool, read the [Recomm
 
 Continue reading the [Trade Study](./../design/design-reviews/trade-studies/README.md) section of this site for more information on completing this step in the design process.
 
-After itertating through multiple trade study documents, this design process can be considered complete! With an agreed upon solution and implementation in mind, it is now time to begin development. A natural continuation of the design process to get users (or stakeholders) involved as early as possible. Constantly look for design and usability feedback, and utilize this to improve the application as it is being developed.
+After iterating through multiple trade study documents, this design process can be considered complete! With an agreed upon solution and implementation in mind, it is now time to begin development. A natural continuation of the design process is to get users (or stakeholders) involved as early as possible. Constantly look for design and usability feedback, and utilize this to improve the application as it is being developed.
 
 ### Example
 
