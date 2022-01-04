@@ -5276,9 +5276,9 @@
 </blockquote>
 <div class="highlight"><pre><span></span><code><span class="c1">-- Please treat this as pseudo code, and adjust as necessary.</span>
 
-<span class="k">UPDATE</span> <span class="o">&lt;</span><span class="k">table_name</span><span class="o">&gt;</span>
-<span class="k">SET</span> <span class="n">field1</span> <span class="o">=</span> <span class="n">value1</span><span class="p">,</span> <span class="p">...,</span> <span class="n">fieldN</span> <span class="o">=</span> <span class="n">valueN</span><span class="p">,</span> <span class="k">version</span> <span class="o">=</span> <span class="err">$</span><span class="n">new_version</span>
-<span class="k">WHERE</span> <span class="n">ID</span> <span class="o">=</span> <span class="err">$</span><span class="n">id</span> <span class="k">AND</span> <span class="k">version</span> <span class="o">=</span> <span class="err">$</span><span class="k">version</span>
+<span class="k">UPDATE</span><span class="w"> </span><span class="o">&lt;</span><span class="k">table_name</span><span class="o">&gt;</span><span class="w"></span>
+<span class="k">SET</span><span class="w"> </span><span class="n">field1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">fieldN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valueN</span><span class="p">,</span><span class="w"> </span><span class="k">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">$</span><span class="n">new_version</span><span class="w"></span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">$</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">$</span><span class="k">version</span><span class="w"></span>
 </code></pre></div>
 <h2 id="data-tiering-data-quality">Data Tiering (Data Quality)</h2>
 <p>Develop a common understanding of the quality of your datasets so that everyone understands the quality of the data, and expected use cases and limitations.</p>

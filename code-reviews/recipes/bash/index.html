@@ -5430,26 +5430,26 @@ To use shell-format in vscode do the following:</p>
 <p>Find the shell-format extension in vscode and install it.</p>
 <h2 id="build-validation">Build Validation</h2>
 <p>To automate this process in Azure DevOps you can add the following snippet to you <code>azure-pipelines.yaml</code> file. This will lint any scripts in the <code>./scripts/</code> folder.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">bash</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-    <span class="no">echo &quot;This checks for formatting and common bash errors. See wiki for error details and ignore options: https://github.com/koalaman/shellcheck/wiki/SC1000&quot;</span>
-    <span class="no">export scversion=&quot;stable&quot;</span>
-    <span class="no">wget -qO- &quot;https://github.com/koalaman/shellcheck/releases/download/${scversion?}/shellcheck-${scversion?}.linux.x86_64.tar.xz&quot; | tar -xJv</span>
-    <span class="no">sudo mv &quot;shellcheck-${scversion}/shellcheck&quot; /usr/bin/</span>
-    <span class="no">rm -r &quot;shellcheck-${scversion}&quot;</span>
-    <span class="no">shellcheck ./scripts/*.sh</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Validate</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">Shellcheck&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;This checks for formatting and common bash errors. See wiki for error details and ignore options: https://github.com/koalaman/shellcheck/wiki/SC1000&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="no">export scversion=&quot;stable&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="no">wget -qO- &quot;https://github.com/koalaman/shellcheck/releases/download/${scversion?}/shellcheck-${scversion?}.linux.x86_64.tar.xz&quot; | tar -xJv</span><span class="w"></span>
+<span class="w">    </span><span class="no">sudo mv &quot;shellcheck-${scversion}/shellcheck&quot; /usr/bin/</span><span class="w"></span>
+<span class="w">    </span><span class="no">rm -r &quot;shellcheck-${scversion}&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="no">shellcheck ./scripts/*.sh</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Validate</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">Shellcheck&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>Also, your shell scripts can be formatted in your build pipeline by using the <code>shfmt</code> tool. To integrate <code>shfmt</code> in your build pipeline do the following:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">bash</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-    <span class="no">echo &quot;This step does auto formatting of shell scripts&quot;</span>
-    <span class="no">shfmt -l -w ./scripts/*.sh</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Format</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">shfmt&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;This step does auto formatting of shell scripts&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="no">shfmt -l -w ./scripts/*.sh</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Format</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">shfmt&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>Unit testing using <a href="https://github.com/kward/shunit2">shunit2</a> can also be added to the build pipeline, using the following block:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">bash</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-    <span class="no">echo &quot;This step unit tests shell scripts by using shunit2&quot;</span>
-    <span class="no">./shunit2</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Format</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">shfmt&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;This step unit tests shell scripts by using shunit2&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="no">./shunit2</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Format</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">shfmt&quot;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="pre-commit-hooks">Pre-Commit Hooks</h2>
 <p>All developers should run shellcheck and shfmt as pre-commit hooks.</p>
@@ -5458,17 +5458,17 @@ To use shell-format in vscode do the following:</p>
 Alternatively you can run <code>brew install pre-commit</code> if you are using homebrew.</p>
 <h3 id="step-2-add-shellcheck-and-shfmt">Step 2- Add shellcheck and shfmt</h3>
 <p>Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-commit by adding it to .pre-commit-config.yaml file like below.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span>   <span class="nt">repo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">git://github.com/pecigonzalo/pre-commit-fmt</span>
-    <span class="nt">sha</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
-    <span class="nt">hooks</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span>   <span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">shell-fmt</span>
-          <span class="nt">args</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">--indent=4</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git://github.com/pecigonzalo/pre-commit-fmt</span><span class="w"></span>
+<span class="w">    </span><span class="nt">sha</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shell-fmt</span><span class="w"></span>
+<span class="w">          </span><span class="nt">args</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--indent=4</span><span class="w"></span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span>   <span class="nt">repo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/shellcheck-py/shellcheck-py</span>
-    <span class="nt">rev</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">v0.7.1.1</span>
-    <span class="nt">hooks</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span>   <span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">shellcheck</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/shellcheck-py/shellcheck-py</span><span class="w"></span>
+<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v0.7.1.1</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shellcheck</span><span class="w"></span>
 </code></pre></div>
 <h3 id="step-3">Step 3</h3>
 <p>Run <code>$ pre-commit install</code> to set up the git hook scripts</p>

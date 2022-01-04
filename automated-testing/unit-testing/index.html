@@ -5559,19 +5559,19 @@ your unit tests.</p>
 <h5 id="example">Example</h5>
 <p>Let's assume we have a class <code>MyObject</code> with a method <code>TrySomething</code> that interacts with an array of strings, but if the
 array has no elements, it will return false. We want to write a test that checks the case where array has no elements:</p>
-<div class="highlight"><pre><span></span><code><span class="na">[Fact]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">TrySomething_NoElements_ReturnsFalse</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="c1">// Arrange</span>
-    <span class="kt">var</span> <span class="n">elements</span> <span class="p">=</span> <span class="n">Array</span><span class="p">.</span><span class="n">Empty</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
-    <span class="kt">var</span> <span class="n">myObject</span> <span class="p">=</span> <span class="k">new</span> <span class="n">MyObject</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><code><span class="na">[Fact]</span><span class="w"></span>
+<span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">TrySomething_NoElements_ReturnsFalse</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Arrange</span>
+<span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">elements</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Array</span><span class="p">.</span><span class="n">Empty</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span><span class="w"></span>
+<span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">myObject</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MyObject</span><span class="p">();</span><span class="w"></span>
 
-    <span class="c1">// Act</span>
-    <span class="kt">var</span> <span class="n">myReturn</span> <span class="p">=</span> <span class="n">myObject</span><span class="p">.</span><span class="n">TrySomething</span><span class="p">(</span><span class="n">elements</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Act</span>
+<span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">myReturn</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">myObject</span><span class="p">.</span><span class="n">TrySomething</span><span class="p">(</span><span class="n">elements</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Assert</span>
-    <span class="n">Assert</span><span class="p">.</span><span class="n">False</span><span class="p">(</span><span class="n">myReturn</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="c1">// Assert</span>
+<span class="w">    </span><span class="n">Assert</span><span class="p">.</span><span class="n">False</span><span class="p">(</span><span class="n">myReturn</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h4 id="keep-tests-small-and-test-only-one-thing">Keep tests small and test only one thing</h4>
 <p>Unit tests should be short and test only one thing. This makes it easy to diagnose when there was a failure without

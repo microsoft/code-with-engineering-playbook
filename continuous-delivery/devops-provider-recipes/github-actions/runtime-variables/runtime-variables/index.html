@@ -5282,57 +5282,57 @@
 <li>Pipeline triggers are correctly set up to trigger on pushed commits (Here we will use <code>actions-test-branch</code> as the branch of choice)</li>
 </ul>
 <p>Code Snippet:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">on</span><span class="p">:</span>
-  <span class="nt">push</span><span class="p">:</span>
-    <span class="nt">branches</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">actions-test-branch</span>
+<div class="highlight"><pre><span></span><code><span class="nt">on</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions-test-branch</span><span class="w"></span>
 
-<span class="nt">jobs</span><span class="p">:</span>
-  <span class="nt">Echo-On-Commit</span><span class="p">:</span>
-    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-    <span class="nt">steps</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Checkout</span><span class="nv"> </span><span class="s">Repository&quot;</span>
-        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+<span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">Echo-On-Commit</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Checkout</span><span class="nv"> </span><span class="s">Repository&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"></span>
 
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">Commit&quot;</span>
-        <span class="nt">env</span><span class="p">:</span>
-          <span class="nt">COMMIT_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span>
-        <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-          <span class="no">if ${COMMIT_VAR} == true; then</span>
-            <span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span>
-            <span class="no">echo &quot;flag set to true&quot;</span>
-          <span class="no">else</span>
-            <span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span>
-            <span class="no">echo &quot;flag set to false&quot;</span>
-          <span class="no">fi</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">Commit&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="nt">COMMIT_VAR</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span><span class="w"></span>
+<span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">          </span><span class="no">if ${COMMIT_VAR} == true; then</span><span class="w"></span>
+<span class="w">            </span><span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"></span>
+<span class="w">            </span><span class="no">echo &quot;flag set to true&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="no">else</span><span class="w"></span>
+<span class="w">            </span><span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"></span>
+<span class="w">            </span><span class="no">echo &quot;flag set to false&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="no">fi</span><span class="w"></span>
 
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Use</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">if</span><span class="nv"> </span><span class="s">true&quot;</span>
-        <span class="nt">if</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">env.flag</span>
-        <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">echo &quot;Flag is available and true&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Use</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">if</span><span class="nv"> </span><span class="s">true&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">env.flag</span><span class="w"></span>
+<span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Flag is available and true&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>Available as a .YAML <a href="../examples/commit-example.yaml">here</a>.</p>
 <p>Code Explanation:</p>
 <p>The first part of the code is setting up Push triggers on the working branch and checking out the repository, so we will not explore that in detail.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">Commit&quot;</span>
-  <span class="nt">env</span><span class="p">:</span>
-    <span class="nt">COMMIT_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">Commit&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">COMMIT_VAR</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span><span class="w"></span>
 </code></pre></div>
 <p>This is a named step inside the only Job in our GitHub Actions pipeline. Here, we set an environment variable for the step: Any code or action that the step calls will now have the environment variable available.</p>
 <p><code>contains</code> is a GitHub Actions function that is available by default in all workflows. It returns a Boolean <code>true</code> or <code>false</code> value. In this situation, it checks to see if the commit message on the last push, accessed using <code>github.event.head_commit.message</code>. The <code>${{...}}</code> is necessary to use the GitHub Context and make the functions and <code>github.event</code> variables available for the command.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-  <span class="no">if ${COMMIT_VAR} == true; then</span>
-    <span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span>
-    <span class="no">echo &quot;flag set to true&quot;</span>
-  <span class="no">else</span>
-    <span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span>
-    <span class="no">echo &quot;flag set to false&quot;</span>
-  <span class="no">fi</span>
+<div class="highlight"><pre><span></span><code><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">  </span><span class="no">if ${COMMIT_VAR} == true; then</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;flag set to true&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="no">else</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;flag set to false&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="no">fi</span><span class="w"></span>
 </code></pre></div>
 <p>The <code>run</code> command here checks to see if the <code>COMMIT_VAR</code> variable has been set to <code>true</code>, and if it has, it sets a secondary flag to true, and echoes this behavior. It does the same if the variable is <code>false</code>.</p>
 <p>The specific reason to do this is to allow for the <code>flag</code> variable to be used in further steps instead of having to reuse the <code>COMMIT_VAR</code> in every step. Further, it allows for the flag to be used in the <code>if</code> step of an action, as in the next part of the snippet.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Use</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">if</span><span class="nv"> </span><span class="s">true&quot;</span>
-  <span class="nt">if</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">env.flag</span>
-  <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">echo &quot;Flag is available and true&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Use</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">if</span><span class="nv"> </span><span class="s">true&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">env.flag</span><span class="w"></span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Flag is available and true&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>In this part of the snippet, the next step in the same job is now using the <code>flag</code> that was set in the previous step. This allows the user to:</p>
 <ol>
@@ -5342,12 +5342,12 @@
 </ol>
 <p>Shorter Alternative:</p>
 <p>The "Set flag from commit" step can be simplified to the following in order to make the code much shorter, although not necessarily more readable:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">Commit&quot;</span>
-  <span class="nt">env</span><span class="p">:</span>
-    <span class="nt">COMMIT_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span>
-  <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-    <span class="no">echo &quot;flag=${COMMIT_VAR}&quot; &gt;&gt; $GITHUB_ENV</span>
-    <span class="no">echo &quot;set flag to ${COMMIT_VAR}&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">Commit&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">COMMIT_VAR</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.head_commit.message, &#39;[commit var]&#39;) }}</span><span class="w"></span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;flag=${COMMIT_VAR}&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"></span>
+<span class="w">    </span><span class="no">echo &quot;set flag to ${COMMIT_VAR}&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>Usage:</p>
 <p>Including the Variable</p>
@@ -5386,50 +5386,50 @@
 <li>Pipeline triggers are correctly set up to trigger on a pull request into a specific branch. (Here we will use master as the destination branch.)</li>
 </ul>
 <p>Code Snippet:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">on</span><span class="p">:</span>
-  <span class="nt">pull_request</span><span class="p">:</span>
-    <span class="nt">branches</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
+<div class="highlight"><pre><span></span><code><span class="nt">on</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
 
-<span class="nt">jobs</span><span class="p">:</span>
-  <span class="nt">Echo-On-PR</span><span class="p">:</span>
-    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-    <span class="nt">steps</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Checkout</span><span class="nv"> </span><span class="s">Repository&quot;</span>
-        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+<span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">Echo-On-PR</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Checkout</span><span class="nv"> </span><span class="s">Repository&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"></span>
 
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">PR&quot;</span>
-        <span class="nt">env</span><span class="p">:</span>
-          <span class="nt">PR_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.pull_request.body, &#39;[pr var]&#39;) }}</span>
-        <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-          <span class="no">if ${PR_VAR} == true; then</span>
-            <span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span>
-            <span class="no">echo &quot;flag set to true&quot;</span>
-          <span class="no">else</span>
-            <span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span>
-            <span class="no">echo &quot;flag set to false&quot;</span>
-          <span class="no">fi</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">PR&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="nt">PR_VAR</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.pull_request.body, &#39;[pr var]&#39;) }}</span><span class="w"></span>
+<span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">          </span><span class="no">if ${PR_VAR} == true; then</span><span class="w"></span>
+<span class="w">            </span><span class="no">echo &quot;flag=true&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"></span>
+<span class="w">            </span><span class="no">echo &quot;flag set to true&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="no">else</span><span class="w"></span>
+<span class="w">            </span><span class="no">echo &quot;flag=false&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"></span>
+<span class="w">            </span><span class="no">echo &quot;flag set to false&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="no">fi</span><span class="w"></span>
 
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Use</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">if</span><span class="nv"> </span><span class="s">true&quot;</span>
-        <span class="nt">if</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">env.flag</span>
-        <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">echo &quot;Flag is available and true&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Use</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">if</span><span class="nv"> </span><span class="s">true&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">env.flag</span><span class="w"></span>
+<span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;Flag is available and true&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>Available as a .YAML <a href="../examples/pr-example.yaml">here</a>.</p>
 <p>Code Explanation:</p>
 <p>The first part of the YAML file simply sets up the Pull Request Trigger. The majority of the following code is identical, so we will only explain the differences.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">PR&quot;</span>
-  <span class="nt">env</span><span class="p">:</span>
-    <span class="nt">PR_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.pull_request.body, &#39;[pr var]&#39;) }}</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">PR&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PR_VAR</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.pull_request.body, &#39;[pr var]&#39;) }}</span><span class="w"></span>
 </code></pre></div>
 <p>In this section, the <code>PR_VAR</code> environment variable is set to <code>true</code> or <code>false</code> depending on whether the <code>[pr var]</code> string is in the PR Body.</p>
 <p>Shorter Alternative:</p>
 <p>Similarly to the above, the YAML step can be simplified to the following in order to make the code much shorter, although not necessarily more readable:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">PR&quot;</span>
-  <span class="nt">env</span><span class="p">:</span>
-    <span class="nt">PR_VAR</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.pull_request.body, &#39;[pr var]&#39;) }}</span>
-  <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-  <span class="l l-Scalar l-Scalar-Plain">echo &quot;flag=${PR_VAR}&quot; &gt;&gt; $GITHUB_ENV</span>
-  <span class="l l-Scalar l-Scalar-Plain">echo &quot;set flag to ${PR_VAR}&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Set</span><span class="nv"> </span><span class="s">flag</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">PR&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PR_VAR</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ contains(github.event.pull_request.body, &#39;[pr var]&#39;) }}</span><span class="w"></span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;flag=${PR_VAR}&quot; &gt;&gt; $GITHUB_ENV</span><span class="w"></span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;set flag to ${PR_VAR}&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>Usage:</p>
 <ol>

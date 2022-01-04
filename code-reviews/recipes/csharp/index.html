@@ -5288,11 +5288,11 @@
 <h2 id="build-validation">Build validation</h2>
 <p>It's important that you enforce your code style and rules in the CI to avoid any team member merging code that does not comply with your standards into your git repo.</p>
 <p>If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enable those in the CI. You have to make sure you are setting up the project using nuget and .editorconfig (<a href="#project-setup">see Project setup</a>). Once you have this setup, you will have to configure the pipeline to build your code. That's pretty much it. The FxCop analyzers will run and report the result in your build pipeline. If there are rules that are violated, your build will be red.</p>
-<div class="highlight"><pre><span></span><code>    <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">DotNetCoreCLI@2</span>
-      <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Style</span><span class="nv"> </span><span class="s">Check</span><span class="nv"> </span><span class="s">&amp;</span><span class="nv"> </span><span class="s">Build&#39;</span>
-      <span class="nt">inputs</span><span class="p">:</span>
-        <span class="nt">command</span><span class="p">:</span> <span class="s">&#39;build&#39;</span>
-        <span class="nt">projects</span><span class="p">:</span> <span class="s">&#39;**/*.csproj&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DotNetCoreCLI@2</span><span class="w"></span>
+<span class="w">      </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Style</span><span class="nv"> </span><span class="s">Check</span><span class="nv"> </span><span class="s">&amp;</span><span class="nv"> </span><span class="s">Build&#39;</span><span class="w"></span>
+<span class="w">      </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;build&#39;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">projects</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;**/*.csproj&#39;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="enable-roslyn-support-in-visual-studio-code">Enable Roslyn Support in Visual Studio Code</h2>
 <p>The above steps also work in VS Code provided you enable Roslyn support for Omnisharp. The setting is <code>omnisharp.enableRoslynAnalyzers</code> and must be set to <code>true</code>. After enabling this setting you must "Restart Omnisharp" (this can be done from the Command Palette in VS Code or by restarting VS Code).</p>

@@ -5235,17 +5235,17 @@ Azurite Queue service is successfully listening at http://127.0.0.1:10001
 <div class="highlight"><pre><span></span><code>docker run -p <span class="m">10000</span>:10000 mcr.microsoft.com/azure-storage/azurite azurite-blob --blobHost <span class="m">0</span>.0.0.0
 </code></pre></div>
 <p>Docker Compose is another option and can run the same docker image using the <code>docker-compose.yml</code> file below.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;3.4&#39;</span>
-<span class="nt">services</span><span class="p">:</span>
-  <span class="nt">azurite</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mcr.microsoft.com/azure-storage/azurite</span>
-    <span class="nt">hostname</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">azurite</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./cert/azurite:/data</span>
-    <span class="nt">command</span><span class="p">:</span> <span class="s">&quot;azurite-blob</span><span class="nv"> </span><span class="s">--blobHost</span><span class="nv"> </span><span class="s">0.0.0.0</span><span class="nv"> </span><span class="s">-l</span><span class="nv"> </span><span class="s">/data</span><span class="nv"> </span><span class="s">--cert</span><span class="nv"> </span><span class="s">/data/127.0.0.1.pem</span><span class="nv"> </span><span class="s">--key</span><span class="nv"> </span><span class="s">/data/127.0.0.1-key.pem</span><span class="nv"> </span><span class="s">--oauth</span><span class="nv"> </span><span class="s">basic&quot;</span>
-    <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;10000:10000&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;10001:10001&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.4&#39;</span><span class="w"></span>
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">azurite</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mcr.microsoft.com/azure-storage/azurite</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">azurite</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./cert/azurite:/data</span><span class="w"></span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;azurite-blob</span><span class="nv"> </span><span class="s">--blobHost</span><span class="nv"> </span><span class="s">0.0.0.0</span><span class="nv"> </span><span class="s">-l</span><span class="nv"> </span><span class="s">/data</span><span class="nv"> </span><span class="s">--cert</span><span class="nv"> </span><span class="s">/data/127.0.0.1.pem</span><span class="nv"> </span><span class="s">--key</span><span class="nv"> </span><span class="s">/data/127.0.0.1-key.pem</span><span class="nv"> </span><span class="s">--oauth</span><span class="nv"> </span><span class="s">basic&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;10000:10000&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;10001:10001&quot;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="2-run-tests-on-your-local-machine">2. Run tests on your local machine</h2>
 <p>Python 3.8.7 is used for this, but it should be fine on other 3.x versions as well.</p>

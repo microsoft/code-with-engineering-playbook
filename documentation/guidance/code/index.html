@@ -5143,7 +5143,7 @@
 <li>Single line comment in C# that explains <strong>why</strong> that piece of code is there (from a private method in <a href="https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/JsonSerializer.Read.String.cs">System.Text.Json.JsonSerializer</a>):</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c1">// For performance, avoid obtaining actual byte count unless memory usage is higher than the threshold.</span>
-<span class="n">Span</span><span class="p">&lt;</span><span class="kt">byte</span><span class="p">&gt;</span> <span class="n">utf8</span> <span class="p">=</span> <span class="n">json</span><span class="p">.</span><span class="n">Length</span> <span class="p">&lt;=</span> <span class="p">(</span><span class="n">ArrayPoolMaxSizeBeforeUsingNormalAlloc</span> <span class="p">/</span> <span class="n">JsonConstants</span><span class="p">.</span><span class="n">MaxExpansionFactorWhileTranscoding</span><span class="p">)</span> <span class="p">?</span> <span class="p">...</span>
+<span class="n">Span</span><span class="p">&lt;</span><span class="kt">byte</span><span class="p">&gt;</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">json</span><span class="p">.</span><span class="n">Length</span><span class="w"> </span><span class="p">&lt;=</span><span class="w"> </span><span class="p">(</span><span class="n">ArrayPoolMaxSizeBeforeUsingNormalAlloc</span><span class="w"> </span><span class="p">/</span><span class="w"> </span><span class="n">JsonConstants</span><span class="p">.</span><span class="n">MaxExpansionFactorWhileTranscoding</span><span class="p">)</span><span class="w"> </span><span class="p">?</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
 </code></pre></div>
 <ul>
 <li>Multi-line comment in C# that provides <strong>additional context</strong> (from a private method in <a href="https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Reader/Utf8JsonReader.cs">System.Text.Json.Utf8JsonReader</a>):</li>
@@ -5161,9 +5161,9 @@
 <span class="c1">//      - For non-ASCII UTF-16 characters within the BMP, transcoding = 2-3x,</span>
 <span class="c1">//      - For non-ASCII UTF-16 characters outside of the BMP, transcoding = 2x, (surrogate pairs - 2 characters transcode to 4 UTF-8 bytes)</span>
 
-<span class="k">if</span> <span class="p">(</span><span class="n">sourceLength</span> <span class="p">&lt;</span> <span class="n">charTextLength</span>
-    <span class="p">||</span> <span class="n">sourceLength</span> <span class="p">/</span> <span class="p">(</span><span class="n">_stringHasEscaping</span> <span class="p">?</span> <span class="n">JsonConstants</span><span class="p">.</span><span class="n">MaxExpansionFactorWhileEscaping</span> <span class="p">:</span> <span class="n">JsonConstants</span><span class="p">.</span><span class="n">MaxExpansionFactorWhileTranscoding</span><span class="p">)</span> <span class="p">&gt;</span> <span class="n">charTextLength</span><span class="p">)</span>
-<span class="p">{</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sourceLength</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="n">charTextLength</span><span class="w"></span>
+<span class="w">    </span><span class="p">||</span><span class="w"> </span><span class="n">sourceLength</span><span class="w"> </span><span class="p">/</span><span class="w"> </span><span class="p">(</span><span class="n">_stringHasEscaping</span><span class="w"> </span><span class="p">?</span><span class="w"> </span><span class="n">JsonConstants</span><span class="p">.</span><span class="n">MaxExpansionFactorWhileEscaping</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">JsonConstants</span><span class="p">.</span><span class="n">MaxExpansionFactorWhileTranscoding</span><span class="p">)</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">charTextLength</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
 </code></pre></div>
 <h2 id="documentation-comments">Documentation comments</h2>
 <p>Doc comments are a special kind of comment, added above the definition of any user-defined type or member, and are intended for anyone who may need to use those types or members in their own code.</p>
@@ -5196,9 +5196,9 @@
 <span class="c1">/// &lt;remarks&gt;Using a &lt;see cref=&quot;string&quot;/&gt; is not as efficient as using the</span>
 <span class="c1">/// UTF-8 methods since the implementation natively uses UTF-8.</span>
 <span class="c1">/// &lt;/remarks&gt;</span>
-<span class="na">[RequiresUnreferencedCode(SerializationUnreferencedCodeMessage)]</span>
-<span class="k">public</span> <span class="k">static</span> <span class="n">TValue</span><span class="p">?</span> <span class="n">Deserialize</span><span class="p">&lt;</span><span class="n">TValue</span><span class="p">&gt;(</span><span class="kt">string</span> <span class="n">json</span><span class="p">,</span> <span class="n">JsonSerializerOptions</span><span class="p">?</span> <span class="n">options</span> <span class="p">=</span> <span class="k">null</span><span class="p">)</span>
-<span class="p">{</span>
+<span class="na">[RequiresUnreferencedCode(SerializationUnreferencedCodeMessage)]</span><span class="w"></span>
+<span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="n">TValue</span><span class="p">?</span><span class="w"> </span><span class="n">Deserialize</span><span class="p">&lt;</span><span class="n">TValue</span><span class="p">&gt;(</span><span class="kt">string</span><span class="w"> </span><span class="n">json</span><span class="p">,</span><span class="w"> </span><span class="n">JsonSerializerOptions</span><span class="p">?</span><span class="w"> </span><span class="n">options</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
 </code></pre></div>
 <p>In <strong>C#</strong>, doc comments can be processed by the compiler to generate XML documentation files. These files can be distributed alongside your libraries so that Visual Studio and other IDEs can use IntelliSense to show quick information about types or members. Additionally, these files can be run through tools like <a href="https://dotnet.github.io/docfx/">DocFx</a> to generate API reference websites.</p>
 <p>More information:</p>

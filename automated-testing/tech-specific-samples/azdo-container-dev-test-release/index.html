@@ -5188,17 +5188,17 @@
 <h2 id="build-the-container">Build the Container</h2>
 <p>The first step in container development, after creating the necessary Dockerfiles and source code, is building the container. Even the Dockerfile itself can include some basic testing. Code tests are performed when pushing the code to the repository origin, where it is then used to build the container.</p>
 <p>The first step in our pipeline is to run the <code>docker build</code> command with a temporary tag and the required build arguments:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Bash@3</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">BuildImage</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Build</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">image</span><span class="nv"> </span><span class="s">via</span><span class="nv"> </span><span class="s">docker&#39;</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">workingDirectory</span><span class="p">:</span> <span class="s">&quot;$(System.DefaultWorkingDirectory)${{</span><span class="nv"> </span><span class="s">parameters.buildDirectory</span><span class="nv"> </span><span class="s">}}&quot;</span>
-    <span class="nt">targetType</span><span class="p">:</span> <span class="s">&#39;inline&#39;</span>
-    <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-      <span class="no">docker build -t ${{ parameters.imageName }} --build-arg YOUR_BUILD_ARG -f ${{ parameters.dockerfileName }} .</span>
-  <span class="nt">env</span><span class="p">:</span>
-    <span class="nt">PredefinedPassword</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(Password)</span>
-    <span class="nt">NewVariable</span><span class="p">:</span> <span class="s">&quot;newVariableValue&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bash@3</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BuildImage</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Build</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">image</span><span class="nv"> </span><span class="s">via</span><span class="nv"> </span><span class="s">docker&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$(System.DefaultWorkingDirectory)${{</span><span class="nv"> </span><span class="s">parameters.buildDirectory</span><span class="nv"> </span><span class="s">}}&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">targetType</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;inline&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">      </span><span class="no">docker build -t ${{ parameters.imageName }} --build-arg YOUR_BUILD_ARG -f ${{ parameters.dockerfileName }} .</span><span class="w"></span>
+<span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">PredefinedPassword</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Password)</span><span class="w"></span>
+<span class="w">    </span><span class="nt">NewVariable</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;newVariableValue&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>This task includes the parameters <code>buildDirectory</code>, <code>imageName</code> and <code>dockerfileName</code>, which have to be set beforehand.
 This task can for example be used in a template for multiple containers to improve code reuse.</p>
@@ -5282,15 +5282,15 @@ Testinfra is a Python-based tool which can be used to start a container, gather 
 </code></pre></div>
 <p>To start the test, a <a href="http://pytest.org">pytest</a> command is executed through tox.</p>
 <p>A task containing the tox command can look like this:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Bash@3</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">RunTestCommands</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Test</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Run</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">commands&quot;</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">workingDirectory</span><span class="p">:</span> <span class="s">&quot;$(System.DefaultWorkingDirectory)&quot;</span>
-    <span class="nt">targetType</span><span class="p">:</span> <span class="s">&#39;inline&#39;</span>
-    <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-      <span class="no">tox -e testinfra-${{ parameters.makeTarget }} -- ${{ parameters.imageName }}</span>
-    <span class="nt">failOnStderr</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bash@3</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RunTestCommands</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Test</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Run</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">commands&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$(System.DefaultWorkingDirectory)&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">targetType</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;inline&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">      </span><span class="no">tox -e testinfra-${{ parameters.makeTarget }} -- ${{ parameters.imageName }}</span><span class="w"></span>
+<span class="w">    </span><span class="nt">failOnStderr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </code></pre></div>
 <p>Which could trigger the following pytest code, which is contained in the tox.ini file:</p>
 <div class="highlight"><pre><span></span><code>pytest -vv tests/<span class="o">{</span>env:CONTEXT<span class="o">}</span> --container-image<span class="o">={</span>posargs:<span class="o">{</span>env:IMAGE_TAG<span class="o">}}</span> --volume<span class="o">={</span>env:VOLUME<span class="o">}</span>

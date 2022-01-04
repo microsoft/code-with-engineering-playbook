@@ -5105,9 +5105,9 @@ git add .env.enc .env.template
 git commit -m <span class="s2">&quot;Update secrets&quot;</span>
 </code></pre></div>
 <p>When running the CI/CD, the build server can now access the secrets by decrypting them. E.g. for Azure DevOps, configure <code>ENCRYPTION_KEY</code> as a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables#secret-variables">secret pipeline variable</a> and then add the following step to <code>azure-pipelines.yml</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">echo &quot;$(ENCRYPTION_KEY)&quot; | openssl enc -aes-256-cbc -md sha512 -pass stdin -in .env.enc -out .env -d</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Decrypt secrets</span>
+<div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;$(ENCRYPTION_KEY)&quot; | openssl enc -aes-256-cbc -md sha512 -pass stdin -in .env.enc -out .env -d</span><span class="w"></span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Decrypt secrets</span><span class="w"></span>
 </code></pre></div>
 <p>You can also use <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&amp;tabs=yaml#link-secrets-from-an-azure-key-vault">variable groups linked directly to Azure key vault</a> for your pipelines to manage all secrets in one location.</p>
                 

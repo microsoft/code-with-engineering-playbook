@@ -5395,28 +5395,28 @@
 <p>One awesome feature of <code>golangci-lint</code> is that is can be easily introduced to an existing large codebase using the <code>--new-from-rev COMMITID</code>. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions. golangci-lint can also be setup as the default linter in VS Code.</p>
 <p>Installation options for golangci-lint are present at <a href="https://github.com/golangci/golangci-lint#binary">golangci-lint</a>.</p>
 <p>To use golangci-lint with VS Code, use the below recommended settings:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;go.lintTool&quot;</span><span class="p">:</span><span class="s2">&quot;golangci-lint&quot;</span><span class="p">,</span>
-   <span class="nt">&quot;go.lintFlags&quot;</span><span class="p">:</span> <span class="p">[</span>
-     <span class="s2">&quot;--fast&quot;</span>
-   <span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;go.lintTool&quot;</span><span class="p">:</span><span class="s2">&quot;golangci-lint&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="nt">&quot;go.lintFlags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">     </span><span class="s2">&quot;--fast&quot;</span><span class="w"></span>
+<span class="w">   </span><span class="p">]</span><span class="w"></span>
 </code></pre></div>
 <h2 id="build-validation">Build Validation</h2>
 <p><code>gofmt</code> should be run as a part of every build to enforce the common standard.</p>
 <p>To automate this process in Azure Devops you can add the following snippet to your <code>azure-pipelines.yaml</code> file. This will format any scripts in the <code>./scripts/</code> folder.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">go fmt</span>
-  <span class="nt">workingDirectory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">formatting&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">go fmt</span><span class="w"></span>
+<span class="w">  </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">formatting&quot;</span><span class="w"></span>
 </code></pre></div>
 <p><code>govet</code> should be run as a part of every build to check code linting.</p>
 <p>To automate this process in Azure Devops you can add the following snippet to your <code>azure-pipelines.yaml</code> file. This will check linting of any scripts in the <code>./scripts/</code> folder.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">go vet</span>
-  <span class="nt">workingDirectory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">linting&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">go vet</span><span class="w"></span>
+<span class="w">  </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">linting&quot;</span><span class="w"></span>
 </code></pre></div>
 <p>Alternatively you can use golangci-lint as a step in the pipeline to do multiple enabled validations(including go vet and go fmt) of golangci-lint.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">golangci-lint run --enable gofmt --fix</span>
-  <span class="nt">workingDirectory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">linting&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">golangci-lint run --enable gofmt --fix</span><span class="w"></span>
+<span class="w">  </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">linting&quot;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="pre-commit-hooks">Pre-Commit Hooks</h2>
 <p>All developers should run <code>gofmt</code> in a pre-commit hook to ensure standard formatting.</p>
@@ -5425,51 +5425,51 @@
 Alternatively you can run <code>brew install pre-commit</code> if you are using homebrew.</p>
 <h3 id="step-2-add-go-fmt-in-pre-commit">Step 2- Add go-fmt in pre-commit</h3>
 <p>Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-commit by adding it to .pre-commit-config.yaml file like below.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">repo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">git://github.com/dnephin/pre-commit-golang</span>
-  <span class="nt">rev</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
-  <span class="nt">hooks</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">go-fmt</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git://github.com/dnephin/pre-commit-golang</span><span class="w"></span>
+<span class="w">  </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
+<span class="w">  </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">go-fmt</span><span class="w"></span>
 </code></pre></div>
 <h3 id="step-3">Step 3</h3>
 <p>Run <code>$ pre-commit install</code> to set up the git hook scripts</p>
 <h2 id="sample-build-validation-pipeline-in-azure-devops">Sample Build Validation Pipeline in Azure DevOps</h2>
-<div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
+<div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
 
-<span class="nt">pool</span><span class="p">:</span>
-   <span class="nt">vmImage</span><span class="p">:</span> <span class="s">&#39;ubuntu-latest&#39;</span>
+<span class="nt">pool</span><span class="p">:</span><span class="w"></span>
+<span class="w">   </span><span class="nt">vmImage</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ubuntu-latest&#39;</span><span class="w"></span>
 
-<span class="nt">steps</span><span class="p">:</span>
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
 
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GoTool@0</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">version</span><span class="p">:</span> <span class="s">&#39;1.13.5&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">GoTool@0</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;1.13.5&#39;</span><span class="w"></span>
 
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Go@0</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">command</span><span class="p">:</span> <span class="s">&#39;get&#39;</span>
-    <span class="nt">arguments</span><span class="p">:</span> <span class="s">&#39;-d&#39;</span>
-    <span class="nt">workingDirectory</span><span class="p">:</span> <span class="s">&#39;$(System.DefaultWorkingDirectory)/scripts&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Go@0</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;get&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">arguments</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;-d&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(System.DefaultWorkingDirectory)/scripts&#39;</span><span class="w"></span>
 
 
-<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">go fmt</span>
-  <span class="nt">workingDirectory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">formatting&quot;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">go fmt</span><span class="w"></span>
+<span class="w">  </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">formatting&quot;</span><span class="w"></span>
 
-<span class="p p-Indicator">-</span> <span class="nt">script</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">go vet</span>
-  <span class="nt">workingDirectory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Run</span><span class="nv"> </span><span class="s">go</span><span class="nv"> </span><span class="s">vet&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">go vet</span><span class="w"></span>
+<span class="w">  </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Run</span><span class="nv"> </span><span class="s">go</span><span class="nv"> </span><span class="s">vet&#39;</span><span class="w"></span>
 
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Go@0</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">command</span><span class="p">:</span> <span class="s">&#39;build&#39;</span>
-    <span class="nt">workingDirectory</span><span class="p">:</span> <span class="s">&#39;$(System.DefaultWorkingDirectory)&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Go@0</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;build&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(System.DefaultWorkingDirectory)&#39;</span><span class="w"></span>
 
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CopyFiles@2</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">TargetFolder</span><span class="p">:</span> <span class="s">&#39;$(Build.ArtifactStagingDirectory)&#39;</span>
-<span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-     <span class="nt">artifactName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">drop</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CopyFiles@2</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">TargetFolder</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(Build.ArtifactStagingDirectory)&#39;</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishBuildArtifacts@1</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">     </span><span class="nt">artifactName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">drop</span><span class="w"></span>
 </code></pre></div>
 <h2 id="code-review-checklist">Code Review Checklist</h2>
 <p>The Go language team maintains a list of common <a href="https://github.com/golang/go/wiki/CodeReviewComments">Code Review Comments</a> for go that form the basis for a solid checklist for a team working in Go that should be followed in addition to the <a href="../../process-guidance/reviewer-guidance/">CSE Code Review Checklist</a></p>

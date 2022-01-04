@@ -5329,9 +5329,9 @@
 <p>We'll be using the <code>DocLinkChecker</code> tool to validate all links in documentation and for orphaned attachments. That's the reason we have all attachments in the <code>.attachments</code> folder.</p>
 <p>In the generated website from the QuickStart folder you'll see that the hierarchies of documentation and references is combined in the left table of contents. This is achieved by the definition and use of <strong>x-cross\toc.yml</strong>. If you don't want the hierarchies combined, just remove the  folder and file from your environment and (re)generate the website.</p>
 <p>A <code>.markdownlint.json</code> is included with the contents below. The <a href="https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md013---line-length">MD013 setting</a> is set to false to prevent checking for maximum line length. You can modify this file to your likings to include or exclude certain tests.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;MD013&quot;</span><span class="p">:</span> <span class="kc">false</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;MD013&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>The contents of the <strong>.pipelines</strong> and <strong>infrastructure</strong> folders are explained in the recipe <a href="../deploy-docfx-azure-website/">Deploy the DocFx Documentation website to an Azure Website automatically</a>.</p>
 <h2 id="reference-documentation-from-source-code">Reference documentation from source code</h2>
@@ -5365,41 +5365,41 @@ choco install markdownlint-cli
 <p><strong>NOTE:</strong> You can store the docfx.json somewhere else in the hierarchy, but then you need to provide the path of the file as an argument to the docfx command so it can be located.</p>
 </blockquote>
 <p>Below is a good configuration to start with, where documentation is in the <strong>/docs</strong> folder and the sources are in the <strong>/src</strong> folder:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-          <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="p">[</span>
-          <span class="p">{</span>
-              <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;src/**.csproj&quot;</span> <span class="p">],</span>
-              <span class="nt">&quot;exclude&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;_site/**&quot;</span><span class="p">,</span> <span class="s2">&quot;**/bin/**&quot;</span><span class="p">,</span> <span class="s2">&quot;**/obj/**&quot;</span><span class="p">,</span> <span class="s2">&quot;**/[Tt]ests/**&quot;</span> <span class="p">]</span>
-          <span class="p">}</span>
-          <span class="p">],</span>
-          <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;reference&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;disableGitFeatures&quot;</span><span class="p">:</span> <span class="kc">false</span>
-       <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;build&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span> <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;reference/**&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;**.md&quot;</span><span class="p">,</span> <span class="s2">&quot;**/toc.yml&quot;</span> <span class="p">],</span>
-                <span class="nt">&quot;exclude&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;_site/**&quot;</span><span class="p">,</span> <span class="s2">&quot;**/bin/**&quot;</span><span class="p">,</span> <span class="s2">&quot;**/obj/**&quot;</span><span class="p">,</span> <span class="s2">&quot;**/[Tt]ests/**&quot;</span> <span class="p">]</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;resource&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span> <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;docs/.attachments/**&quot;</span><span class="p">]</span> <span class="p">},</span>
-            <span class="p">{</span> <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;web.config&quot;</span><span class="p">]</span> <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;template&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;templates/cse&quot;</span> <span class="p">],</span>
-        <span class="nt">&quot;globalMetadata&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;_appTitle&quot;</span><span class="p">:</span> <span class="s2">&quot;CSE Documentation&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;_enableSearch&quot;</span><span class="p">:</span> <span class="kc">true</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;markdownEngineName&quot;</span><span class="p">:</span> <span class="s2">&quot;markdig&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;_site&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;xrefService&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;https://xref.docs.microsoft.com/query?uid={uid}&quot;</span><span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;src&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;src/**.csproj&quot;</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;exclude&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;_site/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/bin/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/obj/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/[Tt]ests/**&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"></span>
+<span class="w">          </span><span class="p">}</span><span class="w"></span>
+<span class="w">          </span><span class="p">],</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;dest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reference&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;disableGitFeatures&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="w">       </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;reference/**&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;**.md&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/toc.yml&quot;</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;exclude&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;_site/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/bin/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/obj/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/[Tt]ests/**&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;docs/.attachments/**&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;web.config&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;template&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;templates/cse&quot;</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;globalMetadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;_appTitle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CSE Documentation&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;_enableSearch&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;markdownEngineName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;markdig&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;dest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;_site&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;xrefService&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;https://xref.docs.microsoft.com/query?uid={uid}&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h2 id="3-setup-some-basic-documents">3. Setup some basic documents</h2>
 <p>We suggest starting with a basic documentation structure in the <strong>/docs</strong> folder. In the provided QuickStart folder we have a basic setup:</p>

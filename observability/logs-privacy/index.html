@@ -5227,24 +5227,24 @@ This includes customer's sensitive, Personal Identifiable Information (PII), and
 <h4 id="application-insights">Application Insights</h4>
 <p>Application Insights offers telemetry interception in some of the SDKs, that can be done by implementing the <code>ITelemetryProcessor</code> interface.
 ITelemetryProcessor processes the telemetry information before it is sent to Application Insights, and can be useful in many situations, such as filtering and modifications. Below is an example of intercepting 'trace' typed telemetry:</p>
-<div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">Microsoft.ApplicationInsights.DataContracts</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.DataContracts</span><span class="p">;</span><span class="w"></span>
 
-<span class="k">namespace</span> <span class="nn">Example</span>
-<span class="p">{</span>
-    <span class="k">using</span> <span class="nn">Microsoft.ApplicationInsights.Channel</span><span class="p">;</span>
-    <span class="k">using</span> <span class="nn">Microsoft.ApplicationInsights.Extensibility</span><span class="p">;</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">Example</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.Channel</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.Extensibility</span><span class="p">;</span><span class="w"></span>
 
-    <span class="k">internal</span> <span class="k">class</span> <span class="nc">RedactTelemetryInitializer</span> <span class="p">:</span> <span class="n">ITelemetryInitializer</span>
-    <span class="p">{</span>
-        <span class="k">public</span> <span class="k">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">ITelemetry</span> <span class="n">telemetry</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">var</span> <span class="n">requestTelemetry</span> <span class="p">=</span> <span class="n">telemetry</span> <span class="k">as</span> <span class="n">TraceTelemetry</span><span class="p">;</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">requestTelemetry</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-            <span class="err">#</span> <span class="n">redact</span> <span class="n">emails</span> <span class="k">from</span> <span class="n">the</span> <span class="n">message</span> <span class="n">parameter</span>
-            <span class="n">requestTelemetry</span><span class="p">.</span><span class="n">Message</span> <span class="p">=</span> <span class="n">Regex</span><span class="p">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">requestTelemetry</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span> <span class="s">@&quot;[^@\s]+@[^@\s]+\.[^@\s]+&quot;</span><span class="p">,</span> <span class="s">&quot;[email removed]&quot;</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="k">internal</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">RedactTelemetryInitializer</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ITelemetryInitializer</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Initialize</span><span class="p">(</span><span class="n">ITelemetry</span><span class="w"> </span><span class="n">telemetry</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">requestTelemetry</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">telemetry</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">TraceTelemetry</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">requestTelemetry</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="err">#</span><span class="w"> </span><span class="n">redact</span><span class="w"> </span><span class="n">emails</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="n">parameter</span><span class="w"></span>
+<span class="w">            </span><span class="n">requestTelemetry</span><span class="p">.</span><span class="n">Message</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Regex</span><span class="p">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">requestTelemetry</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span><span class="w"> </span><span class="s">@&quot;[^@\s]+@[^@\s]+\.[^@\s]+&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;[email removed]&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h4 id="elastic-stack">Elastic Stack</h4>
 <p>Elastic Stack (formerly "ELK stack") allows logs interception by Logstash's <a href="https://www.elastic.co/guide/en/logstash/current/filter-plugins.html">filter-plugins</a>.

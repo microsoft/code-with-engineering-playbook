@@ -5185,21 +5185,21 @@
 <h2 id="build-validation">Build Validation</h2>
 <p>It's important to enforce your code style and rules in the CI to avoid any team members merging code that does not comply with standards into your git repo.  If building using Azure DevOps, the <a href="https://docs.microsoft.com/en-us/azure/devops/java/standalone-tools?view=azure-devops">Maven and Gradle build tasks support</a> using <a href="https://pmd.github.io/">PMD</a>, <a href="https://checkstyle.sourceforge.io/">Checkstyle</a>, and <a href="http://findbugs.sourceforge.net/">FindBugs</a> code analysis tools as part of every build.</p>
 <p>Here is an example yaml for a Maven build task with all three analysis tools enabled:</p>
-<div class="highlight"><pre><span></span><code>    <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Maven@3</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Maven</span><span class="nv"> </span><span class="s">pom.xml&#39;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-        <span class="nt">mavenPomFile</span><span class="p">:</span> <span class="s">&#39;$(Parameters.mavenPOMFile)&#39;</span>
-        <span class="nt">checkStyleRunAnalysis</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-        <span class="nt">pmdRunAnalysis</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-        <span class="nt">findBugsRunAnalysis</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Maven@3</span><span class="w"></span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Maven</span><span class="nv"> </span><span class="s">pom.xml&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">mavenPomFile</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(Parameters.mavenPOMFile)&#39;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">checkStyleRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">        </span><span class="nt">pmdRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">        </span><span class="nt">findBugsRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </code></pre></div>
 <p>Here is an example yaml for a Gradle build task with all three analysis tools enabled:</p>
-<div class="highlight"><pre><span></span><code>    <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Gradle@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;gradlew</span><span class="nv"> </span><span class="s">build&#39;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-        <span class="nt">checkStyleRunAnalysis</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-        <span class="nt">findBugsRunAnalysis</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-        <span class="nt">pmdRunAnalysis</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Gradle@2</span><span class="w"></span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;gradlew</span><span class="nv"> </span><span class="s">build&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">checkStyleRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">        </span><span class="nt">findBugsRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">        </span><span class="nt">pmdRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </code></pre></div>
 <h2 id="code-review-checklist">Code Review Checklist</h2>
 <p>In addition to the <a href="../../process-guidance/reviewer-guidance/">Code Review Checklist</a> you should also look for these Java specific code review items</p>

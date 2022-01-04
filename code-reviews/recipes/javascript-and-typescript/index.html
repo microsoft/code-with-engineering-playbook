@@ -5295,9 +5295,9 @@ install the following packages as dev-dependencies:</p>
 <span class="p">};</span>
 </code></pre></div>
 <p>Add the following to the <code>scripts</code> of your <code>package.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;lint&quot;</span><span class="p">:</span> <span class="s2">&quot;eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore&quot;</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;lint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>This will lint all <code>.js</code>, <code>.jsx</code>, <code>.ts</code>, <code>.tsx</code> files in your project and omit any files or
 directories specified in your <code>.gitignore</code>.</p>
@@ -5331,27 +5331,27 @@ directories specified in your <code>.gitignore</code>.</p>
 <p>VS Code can be configured to automatically perform <code>eslint --fix</code> on save.</p>
 <p>Create a <code>.vscode</code> folder in the root of your project and add the following to your
 <code>.vscode/settings.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;editor.codeActionsOnSave&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;source.fixAll.eslint&quot;</span><span class="p">:</span> <span class="kc">true</span>
-  <span class="p">},</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;editor.codeActionsOnSave&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;source.fixAll.eslint&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>By default, we use the following overrides should be added to the VS Code configuration to standardize on single quotes, a four space drop, and to do ESLinting:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;prettier.singleQuote&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;prettier.eslintIntegration&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;prettier.tabWidth&quot;</span><span class="p">:</span> <span class="mi">4</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;prettier.singleQuote&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;prettier.eslintIntegration&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;prettier.tabWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h2 id="build-validation">Build Validation</h2>
 <p>To automate this process in Azure Devops you can add the following snippet to your pipeline definition yaml file. This will lint any scripts in the <code>./scripts/</code> folder.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Npm@1</span>
-  <span class="nt">displayName</span><span class="p">:</span> <span class="s">&#39;Lint&#39;</span>
-  <span class="nt">inputs</span><span class="p">:</span>
-    <span class="nt">command</span><span class="p">:</span> <span class="s">&#39;custom&#39;</span>
-    <span class="nt">customCommand</span><span class="p">:</span> <span class="s">&#39;run</span><span class="nv"> </span><span class="s">lint&#39;</span>
-    <span class="nt">workingDir</span><span class="p">:</span> <span class="s">&#39;./scripts/&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Npm@1</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Lint&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;custom&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">customCommand</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;run</span><span class="nv"> </span><span class="s">lint&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workingDir</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;./scripts/&#39;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="pre-commit-hooks">Pre-commit hooks</h2>
 <p>All developers should run <code>eslint</code> in a pre-commit hook to ensure standard formatting. We highly recommend using an editor integration like <a href="https://github.com/Microsoft/vscode-eslint">vscode-eslint</a> to provide realtime feedback.</p>
