@@ -17,3 +17,7 @@ This covers not only technical design of software, but also architecture design 
 - [Design Reviews](design-reviews/README.md)
 - [Non-Functional Requirements Guidance](design-patterns/non-functional-requirements-capture-guide.md)
 - [Sustainable Software Engineering](sustainability/README.md)
+
+## Recipes
+
+- [Design Recipes](design-reviews/recipes/README.md)
