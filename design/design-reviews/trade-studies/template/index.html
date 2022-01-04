@@ -3493,6 +3493,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    Accessibility
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5199,18 +5206,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../user-interface-engineering/design-document-template/" class="md-nav__link">
-        Design Document Template
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../../user-interface-engineering/maintainability/" class="md-nav__link">
         Maintainability
       </a>
@@ -5324,6 +5319,13 @@
           <li class="md-nav__item">
   <a href="#constraints-optional" class="md-nav__link">
     Constraints (Optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    Accessibility
   </a>
   
 </li>
@@ -5461,6 +5463,7 @@ architecture designs.</p>
 <blockquote>
 <p><strong>IMPORTANT</strong> This is <strong>not</strong> intended to define outcomes for the design activity itself. It is intended to define the outcomes for the solution being designed.</p>
 </blockquote>
+<p>As mentioned in the <a href="../../../../user-interface-engineering/">User Interface</a> section, if the trade study is analyzing an application development solution, make use of the <em>persona stories</em> to derive desired outcomes. For example, if a persona story exemplifies a certain accessibility requirement, the parallel desired outcome may be "The application must be accessible for people with vision-based disabilities".</p>
 <h3 id="evaluation-criteria">Evaluation Criteria</h3>
 <p>The former should be condensed down to a set of "evaluation criteria" that we can rate any potential solutions
 against. Examples of evaluation criteria:</p>
@@ -5487,6 +5490,16 @@ against. Examples of evaluation criteria:</p>
 <li>Backward Compatibility. For example, public interfaces consumed by client or third party apps cannot introduce breaking changes.</li>
 <li>Integrations or dependencies with other systems. For example, push notifications to client apps must be done via existing websockets channel.</li>
 </ul>
+<h4 id="accessibility">Accessibility</h4>
+<p><strong>Accessibility is never optional</strong>. Microsoft has made a public commitment to always produce accessible appliations. For more information visit the official <a href="https://www.microsoft.com/en-us/accessibility">Microsoft accessibility site</a> and read the <a href="../../../../user-interface-engineering/accessibility/">Accessibility</a> page in the User Interface Engineering section.</p>
+<p>Consider the following prompts when determining application accessibility requirements:</p>
+<ul>
+<li>Will the application be used by an individual who cannot see or hear? What about someone who cannot use a mouse or a keyboard?</li>
+<li>Will the application need to be directly compatible with accessibilty aide tooling such as screen readers?</li>
+<li>Will users require detailed instructions to use the application? (Instructions/Documentation must be accessible as well)</li>
+<li>Does the application need to support multiple languages (internationalization)</li>
+</ul>
+<p>Remember, accessibility features are always easiest when included from the very beginning.</p>
 <h2 id="solution-hypotheses">Solution Hypotheses</h2>
 <p>Enumerate the solutions that are believed to deliver the outcomes defined above.</p>
 <blockquote>
@@ -5594,7 +5607,7 @@ in the table entries and color coding the cells to represent good, fair, bad.</p
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2022</span>
     
   </small>
 </div>

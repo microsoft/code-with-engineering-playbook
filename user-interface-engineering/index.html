@@ -5056,30 +5056,17 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#design-document" class="md-nav__link">
-    Design Document
+  <a href="#design-process" class="md-nav__link">
+    Design Process
   </a>
   
-    <nav class="md-nav" aria-label="Design Document">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    Template
-  </a>
-  
-    <nav class="md-nav" aria-label="Template">
+    <nav class="md-nav" aria-label="Design Process">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     Example
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -5103,18 +5090,6 @@
     <li class="md-nav__item">
       <a href="accessibility/" class="md-nav__link">
         Accessibility
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="design-document-template/" class="md-nav__link">
-        Design Document Template
       </a>
     </li>
   
@@ -5213,30 +5188,17 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#design-document" class="md-nav__link">
-    Design Document
+  <a href="#design-process" class="md-nav__link">
+    Design Process
   </a>
   
-    <nav class="md-nav" aria-label="Design Document">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    Template
-  </a>
-  
-    <nav class="md-nav" aria-label="Template">
+    <nav class="md-nav" aria-label="Design Process">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     Example
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -5272,33 +5234,27 @@
 <li><a href="stability/"><strong>Stability</strong></a> - what is the cost of adding a dependency? Is it actively stable/updated/maintained? If not, can you afford the tech debt (sometimes the answer can be yes!)? Could you get 90% of the way there without adding another dependency?</li>
 </ol>
 <p>More information is available for each general guidance section in the corresponding pages.</p>
-<h2 id="design-document">Design Document</h2>
-<p>When beginning a UI/UX project, the first step is to produce a detailed design document that outlines the prospective solution. Design documents are meant to be a starting point, and can change throughout an engagement.</p>
+<h2 id="design-process">Design Process</h2>
+<p>All user interface applications begin with the design process. The true definition for "the design process" is ever changing and highly opinion based as well. This sections aims to deliver a general overview of a design process <em>any</em> engineering team could conduct when starting an UI application engagement.</p>
 <blockquote>
 <p>When committing to a UI/UX project, be certain to not over-promise on the web application requirements. Delivering a production-ready application involves a large number of engineering complexities resulting in a very long timeline. Always start with a proof-of-concept or minimum-viable-product first. These projects can easily be achieved within a couple month timeline (and sometimes even less).</p>
 </blockquote>
-<p>User interface application design documents cover a variety of aspects. Before detailling the technical implementation requirements, the design document should focus on the intended user and the proposed solutions. Commonly referred to as "user stories", this section should contain prose-like paragraphs describing a literal user of the application attempting to do something with it. Generally, this section appears as a list with the personas and stories listed together. Personas are generally used more than once for each of the applications intended user paths. Stories should specific to the persona.</p>
-<p>For example, here are some user stories and personas for an application for searching through a data set of images tagged with common descriptors.</p>
+<p>The first step in the design process is to understand the problem at hand and outline what the solution should achieve. Commonly referred to as <em>Desired Outcomes</em>, the output of this first step should be a generalized list of outcomes that the solution will accomplish. Consider the following example:</p>
+<p>A public library has a set of data containing information about its collection. The data stores text, images, and the status of a book (borrowed, available, reserved). The library librarian wants to share this data with its users.</p>
 <ol>
-<li>
-<p>Persona: A user that can see and use a mouse without assistance.</p>
-<p>Story: I start by accessing the application in my browser. I log in using my corporate account, and then see a search box and a list of images. I start typing "dog" into the search box. The images begin shuffling around, with ones tagged "dog" appearing at the top.</p>
-</li>
-<li>
-<p>Persona: A user that requires an audio-aide for browsing the web since they cannot see.</p>
-<p>Story: I start by accessing the application in my browser and with my audio-aide enabled. I am immediately focussed on the authentication form and enter my corporate information. Once I land on the main page, I'm focused on the search box. I tab to the image list and use my aide to listen to the first 10 images displayed. I tab back to the search box and type "dog". I then tab to the image list against and listen to the list of images, now all returning some form of my search "dog".</p>
-</li>
+<li>As the librarian, I want to notify users before they recieve late penalties for overdue books</li>
+<li>As the librarian, I want to notify users when a book they have reserved becomes available</li>
 </ol>
-<p>User stories help you and your team understand application and feature requirements. In application design, the user drives the features. By completely understanding your user, you in turn can completely understand what you need to build.</p>
-<p>Following the user stories, the design document should detail the accessibility requirements of the application. <strong>Accessibility is never optional</strong>. No matter who you determine your users are, Microsoft has made a public commitment to always produce accessible appliations. For more information visit the official <a href="https://www.microsoft.com/en-us/accessibility">Microsoft accessibility site</a>.</p>
-<blockquote>
-<p>If you haven't already, download the <a href="https://accessibilityinsights.io/">Accessibility Insights</a> browser tool. You can use this, in combination with other accessibility-related tools, to easily check your application for accessibility issues.</p>
-</blockquote>
-<p>Accessibility requirements vary from project to project based on your intended user base. Aside from the default level of accessibility, this section should contain details about any other aspects you must consider during development. Could the application be used by someone who cannot see? What about someone with color blindness? What about someone who cannot use a mouse? If your application has an audio aspect, what about users that cannot hear?</p>
-<blockquote>
-<p>Did you know that approximately 4.5% of the worlds population is color blind<a href="https://www.colorblindguide.com/post/colorblind-people-population-live-counter">*</a>? That is over 355 Million people! Accessible design is a requirement for all user interface applications.</p>
-</blockquote>
-<p>After listing accessibility requirements, the last section of the design document is technical considerations. This section outlines any and all implementation options your team wants to consider. Within CSE, we often reach for tools such as the [React] framework. React is a great tool when wielded by an experienced team. Otherwise, it can create more hurdles than it is worth. Keep in mind that even if <em>you</em> feel capable with React, the rest of your team and your customer's dev team needs to as well. Some other great options to consider when building a proof-of-concept or minimum-viable-product are:</p>
+<p>With the desired outcomes in mind, the next step in the design process is to define user personas. Regardless of the solution for a given problem, understanding the user needs leads to a better understanding of feature development and technological choices. Personas are written as prose-like paragraphs that describe different types of users. Considering the previous example, the various user personas could be:</p>
+<ol>
+<li>An individual with no disabilities, but is unfamiliar with using software interfaces</li>
+<li>An individual with no disabilities, and is familiar with using software interfaces</li>
+<li>An individual with disabilities, and is unfamiliar with using software interfaces (with or without the use of accessibility tooling)</li>
+<li>An individual with disabilities, but familiar with using software interfaces through the use of accessibility tooling</li>
+</ol>
+<p>After defining these personas it is clear that whatever the solution is, it requires a lot of accessibility and user experience design work. Sometimes personas can be simpler than this, but <strong>always include disabled users</strong>. Even when a user set is predefined as a group of individuals without disabilities, there is no guarrantee that the user set will remain that way.</p>
+<p>After defining the <em>desired outcomes</em> as well as the <em>personas</em>, the next step in the design process is to begin conducting <a href="../design/design-reviews/trade-studies/">Trade Studies</a> for potential solutions. The first trade study should be high-level and solution oriented. It will utilize the results of previous steps and propose multiple solutions for achieving the desired outcomes with the listed personas in mind. Continuing with the library example, this first trade study may compare various application solutions such as automated emails or text messages, an RSS feed, or an user interface application. There are pros and cons for each solution both from an user experience and a developer experience perspective, but at this stage it is important to focus on the users. After arriving on the best solution, the next trade study can dive into different implementation methods. It is in this subsequent trade studies that developer experience becomes more important.</p>
+<p>The benefit of building software applications is that there are truly infinite ways to build something. A team can use the latest shiny tools, or they can utilize the tried-and-tested ones. It is for this reason that focussing completely on the user until a solution is defined is better than obsessing over technology choices. Within CSE, we often reach for tools such as the <a href="https://reactjs.org/">React</a> framework. React is a great tool when wielded by an experienced team. Otherwise, it can create more hurdles than it is worth. Keep in mind that even if <em>you</em> feel capable with React, the rest of your team and your customer's dev team needs to as well. Some other great options to consider when building a proof-of-concept or minimum-viable-product are:</p>
 <ol>
 <li>HTML/CSS/JavaScript<ul>
 <li>Back to the basics! Start with a single <strong>index.html</strong>, include a popular CSS framework such as <a href="https://getbootstrap.com/">Bootstrap</a> using their CDN link, and start prototyping!</li>
@@ -5312,47 +5268,9 @@
 </li>
 </ol>
 <p>For more information of choosing the right implementation tool, read the <a href="recommended-technologies/">Recommended Technologies</a> document.</p>
-<h3 id="template">Template</h3>
-<p>This template is also available as a standalone file available here: <a href="design-document-template/">design-document-template.md</a></p>
-<div class="highlight"><pre><span></span><code><span class="gh"># {User Interface Application Solution Title}</span>
-
-{General Description; 3-5 sentences.}
-
-<span class="gu">## User Stories</span>
-
-<span class="gu">### Personas</span>
-
-<span class="gu">#### {Persona Title 1}</span>
-
-<span class="gu">#### {Persona Title 2}</span>
-
-<span class="gu">### Stories</span>
-
-<span class="gu">#### {Story Title 1}</span>
-
-<span class="gu">#### {Story Title 2}</span>
-
-<span class="gu">## Accessibility Requirements</span>
-
-<span class="gu">### {Requirement 1}</span>
-
-<span class="gu">### {Requirement 2}</span>
-
-<span class="gu">## Technical Considerations</span>
-
-<span class="gu">### {Option 1}</span>
-
-<span class="gu">#### Pros</span>
-
-<span class="gu">#### Cons</span>
-
-<span class="gu">### {Option 2}</span>
-
-<span class="gu">#### Pros</span>
-
-<span class="gu">#### Cons</span>
-</code></pre></div>
-<h4 id="example">Example</h4>
+<p>Continue reading the <a href="../design/design-reviews/trade-studies/">Trade Study</a> section of this site for more information on completing this step in the design process.</p>
+<p>After iterating through multiple trade study documents, this design process can be considered complete! With an agreed upon solution and implementation in mind, it is now time to begin development. A natural continuation of the design process is to get users (or stakeholders) involved as early as possible. Constantly look for design and usability feedback, and utilize this to improve the application as it is being developed.</p>
+<h3 id="example">Example</h3>
 <blockquote>
 <p>Coming soon!</p>
 </blockquote>
@@ -5364,7 +5282,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 10, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2022</span>
     
   </small>
 </div>
