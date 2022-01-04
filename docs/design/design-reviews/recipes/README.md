@@ -4,7 +4,7 @@ Design reviews come in all shapes and sizes. There are also different items to c
 
 ## Design Review Process
 
-- [Incorporate design reviews throughout the lifetime of an engagement](./recipes/engagement-process.md)
+- [Incorporate design reviews throughout the lifetime of an engagement](./engagement-process.md)
 
 ## Design Review Templates
 
