@@ -36,6 +36,8 @@ The following section should establish the desired capabilities of the solution 
 
 > **IMPORTANT** This is **not** intended to define outcomes for the design activity itself. It is intended to define the outcomes for the solution being designed.
 
+As mentioned in the [User Interface](../../../user-interface-engineering/README.md) section, if the trade study is analyzing an application development solution, make use of the _persona stories_ to derive desired outcomes. For example, if a persona story exemplifies a certain accessibility requirement, the parallel desired outcome may be "The application must be accessible for people with vision-based disabilities".
+
 ### Evaluation Criteria
 
 The former should be condensed down to a set of "evaluation criteria" that we can rate any potential solutions
@@ -65,6 +67,19 @@ If applicable, describe the boundaries from which we have to design the solution
 - Devices, operating systems, and/or browsers that must be supported.
 - Backward Compatibility. For example, public interfaces consumed by client or third party apps cannot introduce breaking changes.
 - Integrations or dependencies with other systems. For example, push notifications to client apps must be done via existing websockets channel.
+
+#### Accessibility
+
+**Accessibility is never optional**. Microsoft has made a public commitment to always produce accessible appliations. For more information visit the official [Microsoft accessibility site](https://www.microsoft.com/en-us/accessibility) and read the [Accessibility](../../../user-interface-engineering/accessibility.md) page in the User Interface Engineering section.
+
+Consider the following prompts when determining application accessibility requirements:
+
+- Will the application be used by an individual who cannot see or hear? What about someone who cannot use a mouse or a keyboard?
+- Will the application need to be directly compatible with accessibilty aide tooling such as screen readers?
+- Will users require detailed instructions to use the application? (Instructions/Documentation must be accessible as well)
+- Does the application need to support multiple languages (internationalization)
+
+Remember, accessibility features are always easiest when included from the very beginning.
 
 ## Solution Hypotheses
 
