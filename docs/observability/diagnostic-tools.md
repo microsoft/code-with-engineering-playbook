@@ -30,7 +30,7 @@ There are multiple ways to take a memory dump depending the operating system you
 
 The most common debuggers are:
 
-- Windows - [WinDdg and WinDgbNext](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) (included in the Windows SDK), [Visual Studio](https://visualstudio.microsoft.com/) can also load a memory dump for a .NET Framework and .NET Core process
+- Windows - [WinDbg and WinDgbNext](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) (included in the Windows SDK), [Visual Studio](https://visualstudio.microsoft.com/) can also load a memory dump for a .NET Framework and .NET Core process
 - Linux - [GDB is the GNU Debugger](https://www.gnu.org/software/gdb/)
 - Mac OS - [LLDB Debugger](https://lldb.llvm.org/)
 

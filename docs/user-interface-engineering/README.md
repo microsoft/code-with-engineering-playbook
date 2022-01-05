@@ -19,35 +19,31 @@ The state of web platform engineering is fast moving. There is no one-size-fits-
 
 More information is available for each general guidance section in the corresponding pages.
 
-## Design Document
+## Design Process
 
-When beginning a UI/UX project, the first step is to produce a detailed design document that outlines the prospective solution. Design documents are meant to be a starting point, and can change throughout an engagement.
+All user interface applications begin with the design process. The true definition for "the design process" is ever changing and highly opinion based as well. This sections aims to deliver a general overview of a design process _any_ engineering team could conduct when starting an UI application engagement.
 
 > When committing to a UI/UX project, be certain to not over-promise on the web application requirements. Delivering a production-ready application involves a large number of engineering complexities resulting in a very long timeline. Always start with a proof-of-concept or minimum-viable-product first. These projects can easily be achieved within a couple month timeline (and sometimes even less).
 
-User interface application design documents cover a variety of aspects. Before detailling the technical implementation requirements, the design document should focus on the intended user and the proposed solutions. Commonly referred to as "user stories", this section should contain prose-like paragraphs describing a literal user of the application attempting to do something with it. Generally, this section appears as a list with the personas and stories listed together. Personas are generally used more than once for each of the applications intended user paths. Stories should specific to the persona.
+The first step in the design process is to understand the problem at hand and outline what the solution should achieve. Commonly referred to as _Desired Outcomes_, the output of this first step should be a generalized list of outcomes that the solution will accomplish. Consider the following example:
 
-For example, here are some user stories and personas for an application for searching through a data set of images tagged with common descriptors.
+A public library has a set of data containing information about its collection. The data stores text, images, and the status of a book (borrowed, available, reserved). The library librarian wants to share this data with its users.
 
-1. Persona: A user that can see and use a mouse without assistance.
+1. As the librarian, I want to notify users before they recieve late penalties for overdue books
+1. As the librarian, I want to notify users when a book they have reserved becomes available
 
-   Story: I start by accessing the application in my browser. I log in using my corporate account, and then see a search box and a list of images. I start typing "dog" into the search box. The images begin shuffling around, with ones tagged "dog" appearing at the top.
+With the desired outcomes in mind, the next step in the design process is to define user personas. Regardless of the solution for a given problem, understanding the user needs leads to a better understanding of feature development and technological choices. Personas are written as prose-like paragraphs that describe different types of users. Considering the previous example, the various user personas could be:
 
-1. Persona: A user that requires an audio-aide for browsing the web since they cannot see.
+1. An individual with no disabilities, but is unfamiliar with using software interfaces
+1. An individual with no disabilities, and is familiar with using software interfaces
+1. An individual with disabilities, and is unfamiliar with using software interfaces (with or without the use of accessibility tooling)
+1. An individual with disabilities, but familiar with using software interfaces through the use of accessibility tooling
 
-   Story: I start by accessing the application in my browser and with my audio-aide enabled. I am immediately focussed on the authentication form and enter my corporate information. Once I land on the main page, I'm focused on the search box. I tab to the image list and use my aide to listen to the first 10 images displayed. I tab back to the search box and type "dog". I then tab to the image list against and listen to the list of images, now all returning some form of my search "dog".
+After defining these personas it is clear that whatever the solution is, it requires a lot of accessibility and user experience design work. Sometimes personas can be simpler than this, but **always include disabled users**. Even when a user set is predefined as a group of individuals without disabilities, there is no guarrantee that the user set will remain that way.
 
-User stories help you and your team understand application and feature requirements. In application design, the user drives the features. By completely understanding your user, you in turn can completely understand what you need to build.
+After defining the _desired outcomes_ as well as the _personas_, the next step in the design process is to begin conducting [Trade Studies](./../design/design-reviews/trade-studies/README.md) for potential solutions. The first trade study should be high-level and solution oriented. It will utilize the results of previous steps and propose multiple solutions for achieving the desired outcomes with the listed personas in mind. Continuing with the library example, this first trade study may compare various application solutions such as automated emails or text messages, an RSS feed, or an user interface application. There are pros and cons for each solution both from an user experience and a developer experience perspective, but at this stage it is important to focus on the users. After arriving on the best solution, the next trade study can dive into different implementation methods. It is in this subsequent trade studies that developer experience becomes more important.
 
-Following the user stories, the design document should detail the accessibility requirements of the application. **Accessibility is never optional**. No matter who you determine your users are, Microsoft has made a public commitment to always produce accessible appliations. For more information visit the official [Microsoft accessibility site](https://www.microsoft.com/en-us/accessibility).
-
-> If you haven't already, download the [Accessibility Insights](https://accessibilityinsights.io/) browser tool. You can use this, in combination with other accessibility-related tools, to easily check your application for accessibility issues.
-
-Accessibility requirements vary from project to project based on your intended user base. Aside from the default level of accessibility, this section should contain details about any other aspects you must consider during development. Could the application be used by someone who cannot see? What about someone with color blindness? What about someone who cannot use a mouse? If your application has an audio aspect, what about users that cannot hear?
-
-> Did you know that approximately 4.5% of the worlds population is color blind[*](https://www.colorblindguide.com/post/colorblind-people-population-live-counter)? That is over 355 Million people! Accessible design is a requirement for all user interface applications.
-
-After listing accessibility requirements, the last section of the design document is technical considerations. This section outlines any and all implementation options your team wants to consider. Within CSE, we often reach for tools such as the [React] framework. React is a great tool when wielded by an experienced team. Otherwise, it can create more hurdles than it is worth. Keep in mind that even if _you_ feel capable with React, the rest of your team and your customer's dev team needs to as well. Some other great options to consider when building a proof-of-concept or minimum-viable-product are:
+The benefit of building software applications is that there are truly infinite ways to build something. A team can use the latest shiny tools, or they can utilize the tried-and-tested ones. It is for this reason that focussing completely on the user until a solution is defined is better than obsessing over technology choices. Within CSE, we often reach for tools such as the [React](https://reactjs.org/) framework. React is a great tool when wielded by an experienced team. Otherwise, it can create more hurdles than it is worth. Keep in mind that even if _you_ feel capable with React, the rest of your team and your customer's dev team needs to as well. Some other great options to consider when building a proof-of-concept or minimum-viable-product are:
 
 1. HTML/CSS/JavaScript
    - Back to the basics! Start with a single **index.html**, include a popular CSS framework such as [Bootstrap](https://getbootstrap.com/) using their CDN link, and start prototyping!
@@ -58,50 +54,10 @@ After listing accessibility requirements, the last section of the design documen
 
 For more information of choosing the right implementation tool, read the [Recommended Technologies](./recommended-technologies.md) document.
 
-### Template
+Continue reading the [Trade Study](./../design/design-reviews/trade-studies/README.md) section of this site for more information on completing this step in the design process.
 
-This template is also available as a standalone file available here: [design-document-template.md](./design-document-template.md)
+After iterating through multiple trade study documents, this design process can be considered complete! With an agreed upon solution and implementation in mind, it is now time to begin development. A natural continuation of the design process is to get users (or stakeholders) involved as early as possible. Constantly look for design and usability feedback, and utilize this to improve the application as it is being developed.
 
-```md
-# {User Interface Application Solution Title}
-
-{General Description; 3-5 sentences.}
-
-## User Stories
-
-### Personas
-
-#### {Persona Title 1}
-
-#### {Persona Title 2}
-
-### Stories
-
-#### {Story Title 1}
-
-#### {Story Title 2}
-
-## Accessibility Requirements
-
-### {Requirement 1}
-
-### {Requirement 2}
-
-## Technical Considerations
-
-### {Option 1}
-
-#### Pros
-
-#### Cons
-
-### {Option 2}
-
-#### Pros
-
-#### Cons
-```
-
-#### Example
+### Example
 
 > Coming soon!
