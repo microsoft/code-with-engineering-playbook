@@ -34,6 +34,10 @@ Code reviews should use the below guidance and checklists to ensure positive and
 - Suggest changes to a PR by using the suggestion feature (available in [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request) and Azure DevOps) or by creating a PR to the author branch.
 - If one or two comments don’t resolve a disagreement, talk in person or create group discussion.
 
+### Code reviews shouldn't include many lines of code
+
+It's easy to say a developer can review 400 or more lines but when code surpasses certain amount of lines of code effectiveness of defects discovery can decrease and there is a chance of not having a good review or just letting bugs pass to main branch or another stage. Setting a line of code limit is as important as a time limit.
+
 ### Decide on a common standard for each language
 
 - Automate as much as possible (styling, etc.) to avoid the need for "Nit's" and allow the reviewer to focus more on functional aspects of the PR.

@@ -24,11 +24,17 @@ Discuss design/code logic and address all comments as follows:
 
 ## Use checklists
 
-At the moment of creating a pull request it is a very good idea to put in the description of it a checklist of expected objectives to achieve in the PR. This way reviewers can be able to focus on specific areas and also consider some other tasks as secondary according to this list.
+At the moment of creating a pull request it is a good idea to put in the description of it a checklist of expected objectives to achieve in the PR. This way reviewers can be able to focus on specific areas and also consider some other tasks as secondary according to this list.
+
+### Get a process for fixing found issues
+
+Before getting started with any commit, your team should define how you will measure the effectiveness of peer review and get some goals. Using a [SMART criteria](https://en.wikipedia.org/wiki/SMART_criteria) the team can get this objectives in the most accurate way and not something very general like **fix more bugs**, the more precise a goal can be the easier it will be to hit the target.
+
+Metrics can play a significant role in this part, you can include an **Inspection rate** (the speed with which review is performed), **Defect rate** (the number of bugs found within an hour of review) and **Defect density** (the number of bugs found per piece of code) as the most common ones to be considered.
 
 ## Code should have annotations before the review
 
-If big files are something that can not be avoided then you need to include comments in order to make it easier to the teams to review, with clear comments developers can go faster in the process and also can identify goals for every code block.
+If you can't avoid large PRs, include explanations of the changes in order to make it easier for the reviewer to review the code, with clear comments the reviewer can identify the goal of every code block.
 
 ## Track progress
 
@@ -36,4 +42,4 @@ If big files are something that can not be avoided then you need to include comm
 
 ## Foster a positive code review culture
 
-This is the easiest recommendation to follow and yet the most absent form code reviews. Code reviews play a critical role in product quality and it should not represent an arena for long discussions or even worse a battle of egos. What matters is a bug caught not who made it, not who found it, not who solved it. The only thing that matters is having the best possible product.
+Code reviews play a critical role in product quality and it should not represent an arena for long discussions or even worse a battle of egos. What matters is a bug caught not who made it, not who found it, not who solved it. The only thing that matters is having the best possible product.
