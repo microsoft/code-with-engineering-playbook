@@ -65,9 +65,7 @@ And in order to use the `docker-compose.yml` file, we need to adjust `devcontain
 ```json
 {
     "name": "My Application",
-    "dockerComposeFile": [
-		"docker-compose.yml"
-	],
+    "dockerComposeFile": ["docker-compose.yml"],
     "service": "my-workspace"
     ...
 }
@@ -77,7 +75,7 @@ This approach can be applied for many other tools by preparing what would be req
 
 ## Custom tools
 
-While working on a project, any developer might end up writing a script to automate a task. This script can be in `bash`, `python` or whatever scripting language they are comfortable with. 
+While working on a project, any developer might end up writing a script to automate a task. This script can be in `bash`, `python` or whatever scripting language they are comfortable with.
 
 Let's say you want to ensure that all markdown files written are validated against specific rules you have set up. As we have seen above, you can include in your Dev Container the tool [markdownlint](https://github.com/DavidAnson/markdownlint). Having the tool installed does not mean developer will know how to use it!
 
@@ -154,7 +152,7 @@ fi
 
 ### Allow some customization
 
-As a final note, it is also interesting to leave developers some flexibility in their environment for customization. 
+As a final note, it is also interesting to leave developers some flexibility in their environment for customization.
 
 For instance, one might want to add aliases to their environment. However, changing the `~/.bashrc` file in the Dev Container is not a good approach as the container might be destroyed. There are numerous ways to set persistence, here is below one approach.
 
