@@ -17,7 +17,7 @@ There are other tools you can think of:
 * Linting checks for your [bash](https://www.shellcheck.net/) scripts,
 * Etc...
 
-Linting checks on files that are not *the source code* can ensure a common format with common rules for each developer. These checks should be also run in a [Continuous Integration Pipeline](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp), but it is a good practice to run them prior opening a [Pull Request](https://docs.microsoft.com/en-us/azure/devops/repos/git/about-pull-requests?view=azure-devops).
+Linting checks on files that are not *the source code* can ensure a common format with common rules for each developer. These checks should be also run in a [Continuous Integration Pipeline](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp), but it is a good practice to run them prior opening a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Limitation of custom tools
 
