@@ -141,7 +141,7 @@ Here is below a snippet to call from the Dockerfile:
 ```bash
 # If Intel based, then use the deb file
 if [[ `dpkg --print-architecture` == "amd64" ]]; then
-    sudo curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash; 
+    sudo curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash;
 else
 # arm based, install pip (and gcc) then azure-cli
     sudo apt-get -y install gcc
