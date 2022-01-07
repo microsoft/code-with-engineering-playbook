@@ -31,7 +31,6 @@ Consider the following files structure:
 My Application  # main repo directory
 └───.devcontainer
 |       ├───Dockerfile
-|       ├───docker-compose.yml
 |       ├───devcontainer.json
 └───config
 |       ├───.env
@@ -47,7 +46,21 @@ SUBSCRIPTION_ID=
 
 Then, each developer who clones the repository can create the file `config/.env` and fills it in with the appropriate values.
 
-Under the folder `.devcontainer`, we introduce a `docker-compose.yml` file to be able to inject this `.env` file
+In order now to inject the `.env` file into the container, you can update the file `devcontainer.json` with the following:
+
+```json
+{
+    ...
+    "runArgs": ["--env-file","config/.env"],
+    ...
+}
+```
+
+As soon as the Dev Container is started, these environment variables are sent to the container.
+
+Another approach would be to use Docker Compose, a little bit more complex, and probably *too much* for just environment variables. Using Docker Compose can unlock other settings such as custom dns, ports forwarding or multiple containers.
+
+To achieve this, you need to add a file `.devcontainer/docker-compose.yml` with the following:
 
 ```yaml
 version: '3'
@@ -60,7 +73,7 @@ services:
     command: sleep infinity
 ```
 
-And in order to use the `docker-compose.yml` file, we need to adjust `devcontainer.json`:
+Too use the `docker-compose.yml` file instead of `Dockerfile`, we need to adjust `devcontainer.json` with:
 
 ```json
 {
@@ -149,6 +162,42 @@ else
     python3 -m pip install azure-cli
 fi
 ```
+
+### Reuse of credentials for Github
+
+If you develop inside a Dev Container, you would also want to share your Github credentials between your host and the Dev Container. Doing that you would avoid copying your ssh keys back and forth (if you are using ssh to access your repositories).
+
+An approach would be to mount your local `~/.ssh` folder into your Dev Container. You can either use the `mounts` option of the `devcontainer.json`, or use Docker Compose
+
+* Using `mounts`:
+
+```json
+{
+    ...
+    "mounts": ["source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind"],
+    ...
+}
+```
+
+As you can see, `${localEnv:HOME}` returns the host `home` folder, and it maps it to the container `home` folder.
+
+* Using Docker Compose:
+
+```yaml
+version: '3'
+services:
+  my-worspace:
+    env_file: ../configs/.env
+    build:
+      context: .
+      dockerfile: Dockerfile
+      - "~/.ssh:/home/alex/.ssh"
+    command: sleep infinity
+```
+
+Please note that using Docker Compose requires to edit the `devcontainer.json` file as we have seen above.
+
+You can now access Github using the same credentials as your host machine, without worrying of persistence.
 
 ### Allow some customization
 
