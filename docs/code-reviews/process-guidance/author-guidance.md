@@ -36,10 +36,6 @@ Metrics can play a significant role in this part, you can include an **Inspectio
 
 If you can't avoid large PRs, include explanations of the changes in order to make it easier for the reviewer to review the code, with clear comments the reviewer can identify the goal of every code block.
 
-## Track progress
-
-- If the reviewers have not responded in a reasonable time (generally a day or two), ping them or raise the issue in a daily meeting.
-
 ## Foster a positive code review culture
 
 Code reviews play a critical role in product quality and it should not represent an arena for long discussions or even worse a battle of egos. What matters is a bug caught not who made it, not who found it, not who solved it. The only thing that matters is having the best possible product.
