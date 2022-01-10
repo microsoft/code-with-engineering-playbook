@@ -38,10 +38,6 @@ Code reviews should use the below guidance and checklists to ensure positive and
 
 It's easy to say a developer can review 400 or more lines but when code surpasses certain amount of lines of code effectiveness of defects discovery can decrease and there is a chance of not having a good review or just letting bugs pass to main branch or another stage. Setting a line of code limit is as important as a time limit.
 
-### Decide on a common standard for each language
-
-- Automate as much as possible (styling, etc.) to avoid the need for "Nit's" and allow the reviewer to focus more on functional aspects of the PR.
-
 ## First Design Pass
 
 ### Pull Request Overview
