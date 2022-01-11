@@ -11,13 +11,13 @@ Dev containers also allow us to:
 
 In the development phase, you will most probably need to use tools not installed by default in your Dev Container. For instance, if your project's target is to be deployed on Azure, you will need [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) and maybe [Terraform](https://www.terraform.io/) for resources and application deployment. You can find such Dev Containers in the [VS Code dev container gallery repo](https://github.com/microsoft/vscode-dev-containers/tree/master/containers).
 
-There are other tools you can think of:
+Some other tools may be:
 
-* Linting checks for your [markdown](https://github.com/DavidAnson/markdownlint) files,
-* Linting checks for your [bash](https://www.shellcheck.net/) scripts,
+* Linters for [markdown](https://github.com/DavidAnson/markdownlint) files,
+* Linters for [bash](https://www.shellcheck.net/) scripts,
 * Etc...
 
-Linting checks on files that are not *the source code* can ensure a common format with common rules for each developer. These checks should be also run in a [Continuous Integration Pipeline](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp), but it is a good practice to run them prior opening a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+Linting files that are not *the source code* can ensure a common format with common rules for each developer. These checks should be also run in a [Continuous Integration Pipeline](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp), but it is a good practice to run them prior opening a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Limitation of custom tools
 
