@@ -149,7 +149,7 @@ For instance, if you want to install [Azure-cli](https://docs.microsoft.com/en-u
 
 To achieve this you need to check the architecture of the host building the Dev Container, either in the Dockerfile, or by calling an external bash script to install remaining tools not having a universal version.
 
-Here is below a snippet to call from the Dockerfile:
+Here is a snippet to call from the Dockerfile:
 
 ```bash
 # If Intel based, then use the deb file
