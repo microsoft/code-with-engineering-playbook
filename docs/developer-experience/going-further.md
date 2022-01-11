@@ -21,7 +21,7 @@ Linting files that are not *the source code* can ensure a common format with com
 
 ## Limitation of custom tools
 
-If you decide to include [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) in your Dev Container, developers will be able to run commands against their tenant. However, to make developers' life easier, we could go further by letting them prefill their connection information, such as the `tenant ID` and the `subscription ID` in a secure and persistent way (do not forget that your Dev Container, being a [Docker](https://www.docker.com/) container, might get deleted, or the image could be rebuilt, hence, all customization *inside* will be lost).
+If you decide to include [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) in your Dev Container, developers will be able to run commands against their tenant. However, to make the developers' lives easier, we could go further by letting them prefill their connection information, such as the `tenant ID` and the `subscription ID` in a secure and persistent way (do not forget that your Dev Container, being a [Docker](https://www.docker.com/) container, might get deleted, or the image could be rebuilt, hence, all customization *inside* will be lost).
 
 One way to achieve this is to leverage environment variables, with untracked `.env` file part of the solution being injected in the Dev Container.
 
