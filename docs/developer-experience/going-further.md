@@ -145,7 +145,7 @@ This is a small use case, there are unlimited other possibilities to capitalize 
 When installing tooling, you also need to ensure that you know what host computers developers are using. All Intel based computer, whether they are running Windows, Linux or MacOs will have the same behavior.
 However, the latest Mac architecture (Apple M1/Silicon) being ARM64, behavior is not the same when building Dev Containers.
 
-For instance, if you want to install [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) in your Dev Container, you won't be able to do it the same way you do it for Intel based machine. On Intel based computer you can install the `deb` package. However, this package is not available on ARM architecture. The only way to install [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) on Linux ARM is via the Python installer `pip`.
+For instance, if you want to install [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) in your Dev Container, you won't be able to do it the same way you do it for Intel based machines. On Intel based computers you can install the `deb` package. However, this package is not available on ARM architecture. The only way to install [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) on Linux ARM is via the Python installer `pip`.
 
 To achieve this you need to check the architecture of the host building the Dev Container, either in the Dockerfile, or by calling an external bash script to install remaining tools not having a universal version.
 
