@@ -2,9 +2,9 @@
 
 Dev Containers allow developers to share a common working environment, ensuring that the runtime and all dependencies versions are consistent for all developers.
 
-There are also other aspects that we do not necessarily think of at the beginning: tooling. And this, can mean two things:
+Dev containers also allow us to:
 
-1. Leverage existing tools to enhance Dev Containers with more features,
+1. Leverage existing tools to enhance the Dev Containers with more features,
 2. Provide custom tools (such as scripts) for other developers.
 
 ## Existing tools
