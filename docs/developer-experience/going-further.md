@@ -90,7 +90,7 @@ This approach can be applied for many other tools by preparing what would be req
 
 While working on a project, any developer might end up writing a script to automate a task. This script can be in `bash`, `python` or whatever scripting language they are comfortable with.
 
-Let's say you want to ensure that all markdown files written are validated against specific rules you have set up. As we have seen above, you can include in your Dev Container the tool [markdownlint](https://github.com/DavidAnson/markdownlint). Having the tool installed does not mean developer will know how to use it!
+Let's say you want to ensure that all markdown files written are validated against specific rules you have set up. As we have seen above, you can include the tool [markdownlint](https://github.com/DavidAnson/markdownlint) in your Dev Container . Having the tool installed does not mean developer will know how to use it!
 
 Consider the following solution structure:
 
