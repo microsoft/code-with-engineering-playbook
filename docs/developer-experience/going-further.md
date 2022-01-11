@@ -84,7 +84,7 @@ Too use the `docker-compose.yml` file instead of `Dockerfile`, we need to adjust
 }
 ```
 
-This approach can be applied for many other tools by preparing what would be required. The idea is to simplify developers' life and new developers joining the project.
+This approach can be applied for many other tools by preparing what would be required. The idea is to simplify developers' lives and new developers joining the project.
 
 ## Custom tools
 
