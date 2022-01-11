@@ -203,7 +203,7 @@ You can now access Github using the same credentials as your host machine, witho
 
 As a final note, it is also interesting to leave developers some flexibility in their environment for customization.
 
-For instance, one might want to add aliases to their environment. However, changing the `~/.bashrc` file in the Dev Container is not a good approach as the container might be destroyed. There are numerous ways to set persistence, here is below one approach.
+For instance, one might want to add aliases to their environment. However, changing the `~/.bashrc` file in the Dev Container is not a good approach as the container might be destroyed. There are numerous ways to set persistence, here is one approach.
 
 Consider the following solution structure:
 
