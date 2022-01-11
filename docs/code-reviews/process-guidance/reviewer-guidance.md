@@ -27,13 +27,6 @@ Code reviews should use the below guidance and checklists to ensure positive and
 - If you make a direct comment, explain why the code needs to be changed, preferably with an example.
 - If a few back-and-forth comments don't resolve a disagreement, have a quick talk with each other (in-person or call). Don't forget to update the PR with what you agreed on and why.
 
-### Make comments clear
-
-- Explain why the code needs to change.
-- Prefix a “point of polish” with “Nit:”.
-- Suggest changes to a PR by using the suggestion feature (available in [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request) and Azure DevOps) or by creating a PR to the author branch.
-- If one or two comments don’t resolve a disagreement, talk in person or create group discussion.
-
 ### Code reviews shouldn't include many lines of code
 
 It's easy to say a developer can review 400 or more lines but when code surpasses certain amount of lines of code effectiveness of defects discovery can decrease and there is a chance of not having a good review or just letting bugs pass to main branch or another stage. Setting a line of code limit is as important as a time limit.

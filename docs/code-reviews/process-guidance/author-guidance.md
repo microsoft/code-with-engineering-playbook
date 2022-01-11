@@ -32,10 +32,17 @@ Before getting started with any commit, your team should define how you will mea
 
 Metrics can play a significant role in this part, you can include an **Inspection rate** (the speed with which review is performed), **Defect rate** (the number of bugs found within an hour of review) and **Defect density** (the number of bugs found per piece of code) as the most common ones to be considered.
 
-## Code should have annotations before the review
+### Code should have annotations before the review
 
 If you can't avoid large PRs, include explanations of the changes in order to make it easier for the reviewer to review the code, with clear comments the reviewer can identify the goal of every code block.
 
-## Foster a positive code review culture
+### Make comments clear
+
+- Explain why the code needs to change.
+- Prefix a “point of polish” with “Nit:”.
+- Suggest changes to a PR by using the suggestion feature (available in [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request) and Azure DevOps) or by creating a PR to the author branch.
+- If one or two comments don’t resolve a disagreement, talk in person or create group discussion.
+
+### Foster a positive code review culture
 
 Code reviews play a critical role in product quality and it should not represent an arena for long discussions or even worse a battle of egos. What matters is a bug caught not who made it, not who found it, not who solved it. The only thing that matters is having the best possible product.
