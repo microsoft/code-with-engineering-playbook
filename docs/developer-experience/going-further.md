@@ -1,6 +1,6 @@
 # Going further with Dev Containers
 
-Dev Containers allow each developer to share a common working environment, ensuring that the runtime, whatever it is, is the same, same version with all the libraries required by the project.
+Dev Containers allow developers to share a common working environment, ensuring that the runtime and all dependencies versions are consistent for all developers.
 
 There are also other aspects that we do not necessarily think of at the beginning: tooling. And this, can mean two things:
 
