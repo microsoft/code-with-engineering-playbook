@@ -76,3 +76,7 @@ Here are the final high-level steps it takes to build a dev container:
 2. Browse the VS Code provided dev container gallery of project folders that target your platform and choose the most appropriate one.
 3. Inspect the dev container definitions (.devcontainer directory) of a project for the base image, and the artifacts that support that base image.
 4. Use what you've discovered to begin setting up the dev container as it is, extending it or building your own from scratch.
+
+## Going further
+
+There are use cases where you would want to go further in configuring your Dev Container. [More details here](./going-further.md)
