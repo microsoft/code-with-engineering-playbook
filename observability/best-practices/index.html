@@ -5189,6 +5189,7 @@
 <li>Start small and add where there is customer impact. <a href="../pitfalls/#metric-fatigue">Avoiding metric fatigue</a> is very crucial to collecting actionable data.</li>
 <li>It is important that every data that is collected contains relevant and rich context.</li>
 <li>Personally Identifiable Information or any other customer sensitive information should never be logged. Special attention should be paid to any local privacy data regulations and collected data must adhere to those. (ex: GPDR)</li>
+<li><strong>Health checks</strong> : Appropriate health checks should added to determine if service is healthy and ready to serve traffic. On a kubernetes platform different types of probes e.g. Liveness, Readiness, Startup etc. can be used to determine health and readiness of the deployed service.</li>
 </ol>
 <p>Read more <a href="../pitfalls/">here</a> to understand what to watch out for while designing and building an observable system.</p>
                 
@@ -5199,7 +5200,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2022</span>
     
   </small>
 </div>
