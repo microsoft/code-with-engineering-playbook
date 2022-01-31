@@ -198,7 +198,6 @@ Refer to [de-identification tools](#data-de-identification) for such tools.
 Additional resources:
 
 - [Example guidelines for data classification](https://www.cmu.edu/iso/governance/guidelines/data-classification.html)
-- [Examples of Sensitive Data by Classification Level](https://safecomputing.umich.edu/protect-the-u/safely-use-sensitive-data/examples-by-level)
 - [Learn about sensitivity levels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
 
 #### Access management
