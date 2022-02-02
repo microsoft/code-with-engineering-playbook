@@ -34,7 +34,8 @@ Pull request->>+Code review: Review process
 Code review->>+Pull request: Code updates
 Pull request->>+New branch: Merge Pull Request
 Pull request-->>-New branch: Delete branch
-Main branch -->>-New branch: Ultimate goal
+Pull request ->>+ Main branch: Merge after completion
+New branch->>+Main branch: Goal of the Pull request
 ```
 
 ## Size Guidance
