@@ -22,18 +22,18 @@ Discuss design/code logic and address all comments as follows:
 - If you don't understand a comment, ask questions in the review itself as opposed to a private chat
 - If a thread gets bloated without a conclusion, have a meeting with the reviewer (call them or knock on door)
 
-### Use checklists
+## Use checklists
 
 At the moment of creating a pull request it is a good idea to put in the description of it a checklist of expected objectives to achieve in the PR. This way reviewers can be able to focus on specific areas and also consider some other tasks as secondary according to this list.
 
-### Link a task to your PR
+## Link a task to your PR
 
 One good addition to get more detail of a PR is linking a working item in it. There is no need to duplicate information between them but if something is missing in either one they can work together to present the reviewer more context.
 
-### Code should have annotations before the review
+## Code should have annotations before the review
 
 If you can't avoid large PRs, include explanations of the changes in order to make it easier for the reviewer to review the code, with clear comments the reviewer can identify the goal of every code block.
 
-### Foster a positive code review culture
+## Foster a positive code review culture
 
 Code reviews play a critical role in product quality and it should not represent an arena for long discussions or even worse a battle of egos. What matters is a bug caught not who made it, not who found it, not who solved it. The only thing that matters is having the best possible product.
