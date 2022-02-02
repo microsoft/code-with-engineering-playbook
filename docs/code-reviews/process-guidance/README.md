@@ -30,13 +30,9 @@ You shouldn't review code too quickly but neither take too long in one sitting. 
 
 Always remember, the goal of a code review is to verify that the specified task has been achieved. If your suggestions are on code related to, but not included in the PR, raise those suggestions as separate tasks (bugs, technical debt etc.). Don't block the current PR on suggestions outside the scope of the PR.
 
-### Decide on a common standard for each language
-
-Automate as much as possible (styling, etc.) to avoid the need for "[Nit's](https://en.wikipedia.org/wiki/Nitpicking)" and allow the reviewer to focus more on functional aspects of the PR.
-
 ### Automate whenever possible
 
-Before doing any code review it's important to set automated builds, tests and checks (something achievable in the [CI process](../../continuous-integration/README.md)), this can save human reviewers some time and focus in areas like design and functionality for proper evaluation.
+Automate as much as possible (styling, etc.) to avoid the need for "[Nit's](https://en.wikipedia.org/wiki/Nitpicking)" and allow the reviewer to focus more on functional aspects of the PR. By setting automated builds, tests and checks (something achievable in the [CI process](../../continuous-integration/README.md)), teams can save human reviewers some time and focus in areas like design and functionality for proper evaluation.
 
 This will ensure the team is focusing on the right things and it will reduce review time.
 

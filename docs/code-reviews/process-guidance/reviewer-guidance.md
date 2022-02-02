@@ -22,14 +22,16 @@ Code reviews should use the below guidance and checklists to ensure positive and
 ### Be considerate
 
 - Be positive – encouraging, appreciation for good practices.
+- Prefix a “point of polish” with “Nit:”.
 - Avoid language that points fingers like “you” but rather use “we” or “this line” -- code reviews are not personal and language matters.
 - Prefer asking questions above making statements. There might be a good reason for the author to do something.
 - If you make a direct comment, explain why the code needs to be changed, preferably with an example.
-- If a few back-and-forth comments don't resolve a disagreement, have a quick talk with each other (in-person or call). Don't forget to update the PR with what you agreed on and why.
+- Talking about changes, you can suggest changes to a PR by using the suggestion feature (available in [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request) and Azure DevOps) or by creating a PR to the author branch.
+- If a few back-and-forth comments don't resolve a disagreement, have a quick talk with each other (in-person or call) or create a group discussion this can lead to an array of improvements for upcoming PRs. Don't forget to update the PR with what you agreed on and why.
 
 ### Code reviews shouldn't include many lines of code
 
-It's easy to say a developer can review 400 or more lines but when code surpasses certain amount of lines of code effectiveness of defects discovery can decrease and there is a chance of not having a good review or just letting bugs pass to main branch or another stage. Setting a line of code limit is as important as a time limit.
+It's easy to say a developer can review 400 or more lines but when code surpasses certain amount of lines of code effectiveness of defects discovery can decrease and there is a chance of not having a good review or just letting bugs pass to main branch or another stage. It's not a matter of setting a line of code limit it's about common sense, the more code to review the more chances to let a bug pass.
 
 ## First Design Pass
 
