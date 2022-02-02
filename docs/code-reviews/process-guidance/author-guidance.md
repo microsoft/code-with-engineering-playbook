@@ -22,15 +22,13 @@ Discuss design/code logic and address all comments as follows:
 - If you don't understand a comment, ask questions in the review itself as opposed to a private chat
 - If a thread gets bloated without a conclusion, have a meeting with the reviewer (call them or knock on door)
 
-## Use checklists
+### Use checklists
 
 At the moment of creating a pull request it is a good idea to put in the description of it a checklist of expected objectives to achieve in the PR. This way reviewers can be able to focus on specific areas and also consider some other tasks as secondary according to this list.
 
-### Get a process for fixing found issues
+### Link a task to your PR
 
-Before getting started with any commit, your team should define how you will measure the effectiveness of peer review and get some goals. Using a [SMART criteria](https://en.wikipedia.org/wiki/SMART_criteria) the team can get this objectives in the most accurate way and not something very general like **fix more bugs**, the more precise a goal can be the easier it will be to hit the target.
-
-Metrics can play a significant role in this part, you can include an **Inspection rate** (the speed with which review is performed), **Defect rate** (the number of bugs found within an hour of review) and **Defect density** (the number of bugs found per piece of code) as the most common ones to be considered.
+One good addition to get more detail of a PR is linking a working item in it. There is no need to duplicate information between them but if something is missing in either one they can work together to present the reviewer more context.
 
 ### Code should have annotations before the review
 

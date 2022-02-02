@@ -32,7 +32,7 @@ Always remember, the goal of a code review is to verify that the specified task 
 
 ### Decide on a common standard for each language
 
-Automate as much as possible (styling, etc.) to avoid the need for "Nit's" and allow the reviewer to focus more on functional aspects of the PR.
+Automate as much as possible (styling, etc.) to avoid the need for "[Nit's](https://en.wikipedia.org/wiki/Nitpicking)" and allow the reviewer to focus more on functional aspects of the PR.
 
 ### Automate whenever possible
 
