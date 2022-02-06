@@ -24,6 +24,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Observability As Code](observability-as-code.md)
 - [Recommended Practices](best-practices.md)
 - [Diagnostics tools](diagnostic-tools.md)
+- [OpenTelemetry](tools/OpenTelemetry.md)
 
 ## Facets of Observability
 

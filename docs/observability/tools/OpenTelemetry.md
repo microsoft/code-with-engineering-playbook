@@ -3,7 +3,7 @@ Building observable systems enable one to measure how well or bad the applicatio
 
 OpenTelemetry is an open-source observability standard that defines how to generate, collect and describe telemetry in distributed systems. OpenTelemetry also provides a single-point distribution of a set of APIs, SDKs, and instrumentation libraries that implements the open-source standard, which can collect, process, and orchestrate telemetry data (signals) like traces, metrics, and logs. It supports multiple popular languages (Java, .NET, Python, JavaScript, Golang, Erlang, etc.). Open telemetry follows a vendor-agnostic and standards-based approach for collecting and managing telemetry data. An important point to note is that OpenTelemetry does not have its own backend; all telemetry collected by OpenTelemetry Collector must be sent to a backend like Prometheus, Jaeger, Zipkin, Azure Monitor, etc. Open telemetry is also the 2nd most active CNCF project only after Kubernetes.
 
-The main two Problems OpenTelemetry solves are: First, vendor neutrality for tracing, monitoring, and logging APIs and second, out-of-the-box cross-platform context propagation implementation for end-to-end tracing over heterogeneous components.
+The main two Problems OpenTelemetry solves are: First, vendor neutrality for tracing, monitoring, and logging APIs and second, out-of-the-box cross-platform context propagation implementation for end-to-end distributed tracing over heterogeneous components.
 
 
 ## Open Telemetry Core Concepts
@@ -17,7 +17,7 @@ However, understanding the core implementation patterns will help you know what 
 
 * Automatic telemetry: Support for automatic instrumentation is available for some languages. For those available, OpenTelemetry automated instrumentation (100% codeless) is implemented by running the OpenTelemetry Agent. The agent would be deployed with your service and run as a separate process or in a sidecar. The agent reads a set of predefined environment variables used to configure its behavior and various exporter/collector settings. The agent will intercept all interactions and dependencies and automatically send the telemetry to the configured exporters. 
 
-* Manual tracing: This must be done by coding using the OpenTelemetry SDK, managing the `tracer` objects to obtain Spans, and forming instrumented OpenTelemetry Scopes to identify the code segments to be manually traced. Also, by using the @WithSpan annotations (decorates in C#) to mark whole methods that will be automatically traced. 
+* Manual tracing: This must be done by coding using the OpenTelemetry SDK, managing the `tracer` objects to obtain Spans, and forming instrumented OpenTelemetry Scopes to identify the code segments to be manually traced. Also, by using the @WithSpan annotations (method decorations in C#) to mark whole methods that will be automatically traced. 
 
 * Hybrid approach: Most Production-ready scenarios will require a mix of both techniques, using the OpenTelemetry Agent to collect automatic telemetry and the OpenTelemetry SDK to identify code segments that are important to instrument manually. When considering production-ready scenarios, the hybrid approach is the way to go as it allows for a throughout cover over the whole solution. It means it implements the OpenTelemetry Agent for automatic tracing, combined with the OpenTelemetry SDK for manual instrumentation. It provides automatic context propagation and events correlation out of the box. 
 

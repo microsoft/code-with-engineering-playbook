@@ -51,3 +51,5 @@ Finally, microservice C, reads the value for the incoming trace-id and sets as h
 ## Summary
 
 A number of Application Monitoring (APM) technology products already supports most of this Correlation Propagation. The most popular is [OpenZipkin/B3-Propagation](https://github.com/openzipkin/b3-propagation). W3C already proposed a recommendation for the [W3C Trace Context](https://www.w3.org/blog/2019/12/trace-context-enters-proposed-recommendation/), where you can see what SDK and frameworks already support this functionality. It's important to correctly implement the propagation specially when there are different teams that used different technology stacks in the same project.
+
+  > Consider using [OpenTelemetry](./tools/OpenTelemetry.md) as it implements open-source cross-platform context propagation for end-to-end distributed transactions over heterogeneous components out-of-the-box. It takes care of automatically creating and managing the Trace Context object among a full stack of microservices implemented across different technical stacks.
