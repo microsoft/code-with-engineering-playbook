@@ -10,7 +10,7 @@
 
 ## Example: OpenTelemetry over a message oriented architecture in Java with Jaeger, Prometheus and Azure Monitor
 
-[Github Repo](OpenTelemetry-Async-Java-with-Jaeger-Prometheus-AzMonitor)
+[Github Repo](https://github.com/iamnicoj/OpenTelemetry-Async-Java-with-Jaeger-Prometheus-AzMonitor)
 
 ## Example: IoT Edge Distributed Tracing sample
 
