@@ -27,7 +27,7 @@ A Correlation ID is a unique identifier that is added to the very first interact
 6. Add it to an outgoing response where possible.
 7. Based on the use case, there can be additional correlation IDs that may be needed. For instance, tracking logs based on both Session ID and User ID may be required. While adding multiple correlation ID, remember to propagate them through the components.
 
-  > Consider using [OpenTelemetry](./tools/OpenTelemetry.md) as it implements open-source cross-platform context propagation for end-to-end distributed transactions over heterogeneous components out-of-the-box. It takes care of automatically creating and managing the "Correlation-id", called TraceId. 
+>Consider using [OpenTelemetry](./tools/OpenTelemetry.md) as it implements open-source cross-platform context propagation for end-to-end distributed transactions over heterogeneous components out-of-the-box. It takes care of automatically creating and managing the "Correlation-id", called TraceId. 
 
 ## Use Cases
 
