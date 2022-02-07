@@ -177,7 +177,7 @@ Microsoft and any contributors reserve all others rights, whether under their
 respective copyrights, patents, or trademarks, whether by implication, estoppel
 or otherwise.
 
-## Running Locally (_Remotely_)
+## Running Locally (*Remotely*)
 
 To run the site locally, you must have [VSCode](https://code.visualstudio.com/), [Docker](https://www.docker.com/), and the [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) installed on your machine.
 
