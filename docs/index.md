@@ -62,6 +62,7 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 ## Fundamentals for Specific Technology Areas
 
 * [Machine Learning Fundamentals](machine-learning/README.md)
+* [User-Interface Engineering](user-interface-engineering/README.md)
 
 ## Contributing
 
