@@ -55,6 +55,7 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 * [Engineering Feedback](docs/engineering-feedback/README.md)
 * [Observability](docs/observability/README.md)
 * [Security](docs/security/README.md)
+* [Privacy](docs/privacy/README.md)
 * [Source Control](docs/source-control/README.md)
 * [Reliability](docs/reliability/README.md)
 
