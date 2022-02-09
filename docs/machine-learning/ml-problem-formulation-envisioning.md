@@ -119,7 +119,7 @@ which can be used to create and rank recommendations. Depending on the project s
 
 ## Next Steps
 
-After the envisioning sessions, we want to draft an exit document that summarizes the findings during the envisioning session, the proposed detailed scenarios, the decisions that were made regarding the engagement, and the next steps following the envisioning to have everyone on the same page.
+To ensure clarity and alignment, it is useful to summarise the envisioning stage findings focusing on proposed detailed scenarios, assumptions and agreed decisions as well next steps.
 
 We also want to start the onboarding process once the CWAA is signed so that we have access to their data and are ready to jump into a data hack.
 
