@@ -1,8 +1,34 @@
 # Data Exploration
 
-After [envisioning](./ml-problem-formulation-envisioning.md) and [onboarding](./ml-datahack-onboarding-questions.md), the next step is to dive deep into the available data with the customer through data exploration workshops, also known as "data hacks".
+After [envisioning](./ml-problem-formulation-envisioning.md), the next step is to confirm resource access and then dive deep into the available data with the customer through data exploration workshops.
 
-## Key Objectives
+## Accessing Resources
+
+Prior to diving into data exploration workshops, it is important to confirm that you have access to the necessary resources (including data).
+
+Below is an **example** list of questions to consider before starting a data exploration workshop.
+
+1. Is an external customer account needed in order for the Microsoft team to access the data and compute?
+2. Are there security requirements around accessing resources (Subscriptions, Azure Resources, project management, etc.) such as VPN, 2FA, jump boxes, etc.?
+3. Data access:
+    * Is it on-prem or on Azure already?
+    * If it is on-prem, can we move the needed data to Azure under the customers subscription? Will the Microsoft team be able to do so once onboarding is completed, or do we need someone from the customer's team to do that?
+    * Is the data access approved from a legal/compliance perspective?
+4. Computation:
+    * Is a VPN needed for the Microsoft team to access these computation nodes (Virtual Machines, Databricks clusters, etc) from Microsoft PCs/Macs?
+    * Any restrictions on accessing the source data system from these computation nodes?
+    * If we want to create some compute resources, can the Microsoft team do so or does it need to be created by the customers?
+        * If we are allowed to do so, we will keep customer colleagues informed.
+5. Source code repository:
+    * Do you have any preference on source code repository location?
+6. Backlog management and work planning:
+    * Do you have any preference on backlog management and work planning, such as Azure DevOps, Jira or anything else?
+    * If an existing system, are special accounts / system setups required to access?
+7. Programming Language:
+    * Is Python/PySpark a preferred language?
+    * Is there any customer internal approval process for the Python/PySpark libraries we want to use for this engagement?
+
+## Data Exploration Workshop
 
 Key objectives of the exploration workshops include the following:
 

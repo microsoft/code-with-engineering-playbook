@@ -35,18 +35,18 @@ or disproved - to guide the exploration of the data science team. Where possible
 
 Once an understanding of the problem domain has been established, it may be necessary to break down the overall problem into smaller, meaningful chunks of work to maintain team focus and ensure a realistic project scope within the given time frame.
 
-## Listening to the customer
+## Listening to the end user
 
-Throughout each session, we must keep in mind and proactively practice the exercise of listening to our customer. They are the center of gravity of any engagement, so we need to practice compassion by stepping into their shoes to feel their pain point. Therefore, it is important to always be mindful of their thoughts by asking leading questions to understand:
+These problems are complex and require understanding from a variety of perspectives. It is not uncommon for the stakeholders to not be the end user of the solution framework. In these cases, listening to the actual end users is critical to the success of the project.
+
+The following questions can help guide discussion in understanding the stakeholders' perspectives:
 
 * Who is the end user?
 * What is the current practice related to the business problem?
-* What's the performance of the current framework?
+* What's the performance of the current solution?
 * What are their pain points?
 * What is their toughest problem?
 * What is the state of the data used to build the solution?
-
-It is not uncommon for the party who reached out CSE to not be the end user of the framework. In these cases, listening to the actual end users is critical to the success of the project.
 
 ## Envisioning Guidance
 
@@ -121,12 +121,12 @@ which can be used to create and rank recommendations. Depending on the project s
 
 After the envisioning sessions, we want to draft an exit document that summarizes the findings during the envisioning session, the proposed detailed scenarios, the decisions that were made regarding the engagement, and the next steps following the envisioning to have everyone on the same page.
 
-We also want to start the onboarding process once the CWAA is signed so that we have access to their data and are ready to jump into a data hack.
+We suggest confirming that you have access to all necessary resources (including data) as a next step before proceeding with data exploration workshops.
 
-Below are the links to the exit document template and to some onboarding questions to send to the customer in advance.
+Below are the links to the exit document template and to some questions which may be helpful in confirming resource access.
 
 * [Summary of Scope Exit Document Template](./templates/envisioning-exit-template.docx)
-* [List of Onboarding Questions](./ml-datahack-onboarding-questions.md)
+* [List of Resource Access Questions](./ml-datahack-onboarding-questions.md)
 * [List of Data Exploration Workshop Questions](./ml-data-exploration.md)
 
 ## References
