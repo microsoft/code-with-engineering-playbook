@@ -1,6 +1,6 @@
 # Data Exploration
 
-After [envisioning](./ml-problem-formulation-envisioning.md) and [onboarding](./ml-datahack-onboarding-questions.md), the next step is to dive deep into the available data with the customer through data exploration workshops, also known as "data hacks".
+After [envisioning](./ml-problem-formulation-envisioning.md) and [data discovery](./ml-datahack-onboarding-questions.md), the next step is to dive deep into the available data through data exploration workshops.
 
 ## Key Objectives
 
