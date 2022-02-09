@@ -282,6 +282,7 @@ We recommend integrating Teams or Slack with CI/CD pipeline runs which helps kee
 - Your CI dashboard should be able to correlate a build failure with a git commit.
 
 ### Build status badge in project readme
+
 - There should be a build status badge included in the root README of the project.
 
 ### Build notifications
