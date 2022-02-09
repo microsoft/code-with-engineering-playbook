@@ -51,10 +51,10 @@ Provide a time frame that this feedback item needs to be resolved within (if rel
 
 Please provide the customer perspective priority of the feedback.  Feedback is prioritized at one of the following four levels:
 
-- __P0 - Impact is critical and large__: Needs to be addressed immediately; impact is critical and large in scope (i.e. major service outage; makes service or functions unusable/unavailable to a high portion of addressable space; no known workaround).
-- __P1 - Impact is high and significant__: Needs to be addressed quickly; impacts a large percentage of addressable space and impedes progress. A partial workaround exists or is overly painful.
-- __P2 - Impact is moderate and varies in scope__: Needs to be addressed in a reasonable time frame (i.e. issues that are impeding adoption and usage with no reasonable workarounds). For example, feedback may be related to feature-level issue to solve for friction.
-- __P3 - Impact is low__: Issue can be address when able or eventually (i.e. relevant to core addressable space but issue does not impede progress or has reasonable workaround). For example, feedback may be related to feature ideas or opportunities.
+- **P0 - Impact is critical and large**: Needs to be addressed immediately; impact is critical and large in scope (i.e. major service outage; makes service or functions unusable/unavailable to a high portion of addressable space; no known workaround).
+- **P1 - Impact is high and significant**: Needs to be addressed quickly; impacts a large percentage of addressable space and impedes progress. A partial workaround exists or is overly painful.
+- **P2 - Impact is moderate and varies in scope**: Needs to be addressed in a reasonable time frame (i.e. issues that are impeding adoption and usage with no reasonable workarounds). For example, feedback may be related to feature-level issue to solve for friction.
+- **P3 - Impact is low**: Issue can be address when able or eventually (i.e. relevant to core addressable space but issue does not impede progress or has reasonable workaround). For example, feedback may be related to feature ideas or opportunities.
 
 ## Reproduction Steps
 
