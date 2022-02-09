@@ -10,7 +10,7 @@ The main goals of the envisioning process are:
 * Define how a potential solution would be used and how its performance should be measured
 * Determine what data is available to solve the problem
 * Understand the capabilities and working practices of the data science team
-* Ensure both the Microsoft side and the customer side have the same understanding of the scope and next steps (e.g., onboarding, data exploration workshop)
+* Ensure all parties have the same understanding of the scope and next steps (e.g., onboarding, data exploration workshop)
 
 The envisioning process usually entails a series of 'envisioning' sessions where the data science team work alongside subject-matter experts to formulate the problem in such a way that there is a shared understanding a shared understanding of the problem domain, a clear goal, and a predefined approach to evaluating a potential solution.
 
@@ -119,7 +119,7 @@ which can be used to create and rank recommendations. Depending on the project s
 
 ## Next Steps
 
-After the envisioning sessions, we want to draft an exit document that summarizes the findings during the envisioning session, the proposed detailed scenarios, the decisions that were made regarding the engagement, and the next steps following the envisioning to have everyone on the same page.
+To ensure clarity and alignment, it is useful to summarise the envisioning stage findings focusing on proposed detailed scenarios, assumptions and agreed decisions as well next steps.
 
 We suggest confirming that you have access to all necessary resources (including data) as a next step before proceeding with data exploration workshops.
 
