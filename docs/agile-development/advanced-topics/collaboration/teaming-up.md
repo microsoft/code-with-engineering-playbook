@@ -1,4 +1,4 @@
-# Engagement Team Development - CSE approach
+# Engagement Team Development
 
 In every CSE engagement, dynamics are different so are the team requirements. Based on transfer learning among teams, we aim to build right "code-with" environments in every team.
 
