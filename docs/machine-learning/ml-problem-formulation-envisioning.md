@@ -47,6 +47,7 @@ The following questions can help guide discussion in understanding the stakehold
 * What are their pain points?
 * What is their toughest problem?
 * What is the state of the data used to build the solution?
+* How does the end user or SME envision the solution?
 
 ## Envisioning Guidance
 
