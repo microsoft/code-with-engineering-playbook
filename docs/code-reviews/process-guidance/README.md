@@ -22,19 +22,13 @@ If the team is finding that code reviews are taking a significant time to merge,
 1. Assess the time to merge across sprints to see if the process is improving.
 1. Ping required approvers directly as a reminder.
 
-## Recommendations for a better code review
+## Code reviews shouldn't include too many lines of code
 
-### Take your time to review but don't go beyond of the specific task
+It's easy to say a developer can review few hundred lines of code, but when the code surpasses certain amount of lines, the effectiveness of defects discovery will decrease and there is a lesser chance of doing a good review. It's not a matter of setting a code line limit, but rather using common sense. More code there is to review, the higher chances there are letting a bug sneak through. See [PR size guidance](../pull-requests.md#size-guidance).
 
-You shouldn't review code too quickly but neither take too long in one sitting. If you have many pull requests or if the complexity of code is demanding the recommendation is to take a break between reviews to recover, and focus on the ones you are most experienced with.
+## Automate whenever reasonable
 
-Always remember, the goal of a code review is to verify that the specified task has been achieved. If your suggestions are on code related to, but not included in the PR, raise those suggestions as separate tasks (bugs, technical debt etc.). Don't block the current PR on suggestions outside the scope of the PR.
-
-### Automate whenever possible
-
-Automate as much as possible (styling, etc.) to avoid the need for "[Nit's](https://en.wikipedia.org/wiki/Nitpicking)" and allow the reviewer to focus more on functional aspects of the PR. By setting automated builds, tests and checks (something achievable in the [CI process](../../continuous-integration/README.md)), teams can save human reviewers some time and focus in areas like design and functionality for proper evaluation.
-
-This will ensure the team is focusing on the right things and it will reduce review time.
+Use automation (linting, code analysis etc.) to avoid the need for "[nits](https://en.wikipedia.org/wiki/Nitpicking)" and allow the reviewer to focus more on the functional aspects of the PR. By configuring automated builds, tests and checks (something achievable in the [CI process](../../continuous-integration/README.md)), teams can save human reviewers some time and let them focus in areas like design and functionality for proper evaluation. This will ensure higher chances of success as the team is focusing on the things that matter.
 
 ## Role specific guidance
 

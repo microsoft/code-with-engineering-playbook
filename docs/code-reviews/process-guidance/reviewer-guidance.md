@@ -19,6 +19,16 @@ Code reviews should use the below guidance and checklists to ensure positive and
 - If you don’t fully understand a change in a file because you don’t have context, click to view the whole file and read through the surrounding code or checkout the changes and view them in IDE.
 - Ask the author to clarify.
 
+### Take your time and keep focus on scope
+
+You shouldn't review code hastily but neither take too long in one sitting. If you have many pull requests (PRs) to review or if the complexity of code is demanding, the recommendation is to take a break between the reviews to recover and focus on the ones you are most experienced with.
+
+Always remember that a goal of a code review is to verify that the goals of the corresponding task have been achieved. If you have concerns about the related, adjacent code that isn't in the scope of the PR, address those as separate tasks (e.g., bugs, technical debt). Don't block the current PR due to issues that are out of scope.
+
+## Foster a positive code review culture
+
+Code reviews play a critical role in product quality and it should not represent an arena for long discussions or even worse a battle of egos. What matters is a bug caught, not who made it, not who found it, not who fixed it. The only thing that matters is having the best possible product.
+
 ## Be considerate
 
 - Be positive – encouraging, appreciation for good practices.
@@ -28,10 +38,6 @@ Code reviews should use the below guidance and checklists to ensure positive and
 - If you make a direct comment, explain why the code needs to be changed, preferably with an example.
 - Talking about changes, you can suggest changes to a PR by using the suggestion feature (available in [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request) and Azure DevOps) or by creating a PR to the author branch.
 - If a few back-and-forth comments don't resolve a disagreement, have a quick talk with each other (in-person or call) or create a group discussion this can lead to an array of improvements for upcoming PRs. Don't forget to update the PR with what you agreed on and why.
-
-## Code reviews shouldn't include many lines of code
-
-It's easy to say a developer can review 400 or more lines but when code surpasses certain amount of lines of code effectiveness of defects discovery can decrease and there is a chance of not having a good review or just letting bugs pass to main branch or another stage. It's not a matter of setting a line of code limit it's about common sense, the more code to review the more chances to let a bug pass.
 
 ## First Design Pass
 
