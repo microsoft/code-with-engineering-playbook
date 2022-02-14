@@ -1,3 +1,3 @@
 ## Definition of Done in Agile
 
-[Definition f Done](https://scrumguides.org/scrum-guide.html#increment 'Definition of Done')
+[Definition of Done](https://scrumguides.org/scrum-guide.html#increment 'Definition of Done')
