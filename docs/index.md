@@ -55,11 +55,14 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 * [Observability](observability/README.md)
 * [Reliability](reliability/README.md)
 * [Security](security/README.md)
+* [Privacy](privacy/README.md)
+* [Reliability](reliability/README.md)
 * [Source Control](source-control/README.md)
 
 ## Fundamentals for Specific Technology Areas
 
 * [Machine Learning Fundamentals](machine-learning/README.md)
+* [User-Interface Engineering](user-interface-engineering/README.md)
 
 ## Contributing
 
