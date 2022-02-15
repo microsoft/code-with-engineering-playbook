@@ -52,15 +52,18 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 * [Continuous Integration (CI)](docs/continuous-integration/README.md)
 * [Design](docs/design/README.md)
 * [Developer Experience](docs/developer-experience/README.md)
+* [Documentation](docs/documentation/README.md)
 * [Engineering Feedback](docs/engineering-feedback/README.md)
 * [Observability](docs/observability/README.md)
 * [Security](docs/security/README.md)
+* [Privacy](docs/privacy/README.md)
 * [Source Control](docs/source-control/README.md)
 * [Reliability](docs/reliability/README.md)
 
 ## Fundamentals for Specific Technology Areas
 
 * [Machine Learning Fundamentals](docs/machine-learning/README.md)
+* [User-Interface Engineering](docs/user-interface-engineering/README.md)
 
 ## Contributing
 
