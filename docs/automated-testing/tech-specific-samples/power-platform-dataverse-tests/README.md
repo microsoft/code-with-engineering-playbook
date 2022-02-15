@@ -100,7 +100,7 @@ version of this solution will be presented.
 #### Configuring Docker and docker-compose
 
 Locust is well documented regarding the
-[installation and usage with Docker](https://docs.locust.io/en/stable/running-locust-docker.html),
+[installation and usage with Docker](https://docs.locust.io/en/stable/running-in-docker.html),
 so that part will not be covered in this document.
 
 ### Alternative: run Locust locally
