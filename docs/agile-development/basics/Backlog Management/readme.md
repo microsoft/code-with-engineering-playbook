@@ -3,6 +3,6 @@
 - [Product Backlog](https://scrumguides.org/scrum-guide.html#product-backlog 'Product Backlog')
 - [Sprint Backlog](https://scrumguides.org/scrum-guide.html#sprint-backlog 'Sprint Backlog')
 - [acceptance criteria](./acceptance%20criteria/)
-- [definition of done](./definition of done/)
-- [definition of ready](./definition of ready/)
+- [definition of done](./definition%20of%20done/)
+- [definition of ready](./definition%20of%20ready/)
 - [estimation](./estimation/)
