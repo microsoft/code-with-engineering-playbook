@@ -125,7 +125,7 @@ thereby introducing uncertainty in the data.
 However, the insights gleaned still accurately represent what we intend to learn about the population in the aggregate.
 This approach is known to be robust to re-identification attacks and data reconstruction by adversaries who possess auxiliary information.
 For a more comprehensive overview,
-check out [Differential privacy: A primer for a non-technical audience](https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf?sequence=1&isAllowed=y).
+check out [Differential privacy: A primer for a non-technical audience](https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf).
 
 DP has been widely adopted in various scenarios such as learning from census data, user telemetry data analysis,
 audience engagement to advertisements, and health data insights where PII protection is of paramount importance. However, DP is less suitable for small datasets.
