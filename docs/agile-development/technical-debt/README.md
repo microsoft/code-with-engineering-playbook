@@ -66,7 +66,7 @@ Here are a few steps to follow for each language:
 
 ### Step 1: Gather state of the art code quality guidelines and rules for the language you are including
 
-Most of the programming languages have an official definition of quality when it comes to writing software with them. These can be found on the programming language (or platform) official website, on articles and blog posts from advanced users of the language or from experts in your team, organization, and company. In the playbook, you can find [recipes for some languages](/code-review/README.md). Additionally, research whether any tool exists to automate the detection of broken rules in the existing code. [Linters](https://en.wikipedia.org/wiki/Lint_(software)) and other [code analyzers](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) exist for most of the popular programming languages.
+Most of the programming languages have an official definition of quality when it comes to writing software with them. These can be found on the programming language (or platform) official website, on articles and blog posts from advanced users of the language or from experts in your team, organization, and company. In the playbook, you can find [recipes for some languages](/docs/code-reviews/README.md). Additionally, research whether any tool exists to automate the detection of broken rules in the existing code. [Linters](https://en.wikipedia.org/wiki/Lint_(software)) and other [code analyzers](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) exist for most of the popular programming languages.
 
 ### Step 2: Group the list of rules you selected in step 1 into each code quality category
 
