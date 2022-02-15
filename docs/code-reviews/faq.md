@@ -3,6 +3,7 @@
 This is a list of questions / frequently occurring issues when working with code reviews and answers how you can possibly tackle them.
 
 ## What makes a code review different from a PR?
+
 A pull request is a way to notify a feature is finished and can be merged into the master branch.  
 A code review is having someone go over the code in the pull request and validate it before it is merged.
 
@@ -17,7 +18,9 @@ A code review is having someone go over the code in the pull request and validat
 Our peer code reviews are structured around best practices, to find specific kinds of errors. Much like you would still run a linter over mobbed code, you would still ask someone to make the last pass to make sure the code conforms to expected standards and avoids common pitfalls.
 
 ## How to perform a review?
+
 There are two ways to perform a code review:
+
 1. Pair - Someone outside the pair should perform the code review. One of the other major benefits of code reviews is spreading knowledge about the code base to other members of the team that don't usually work in the part of the codebase under review.
 2. Mob - A member of the mob who spent less (or no) time at the keyboard should perform the code review.
 
@@ -27,6 +30,7 @@ Make sure you size the work items into small clear chunks, so the reviewer will 
 More information can be found in [Pull Requests - Size Guidance](./pull-requests.md#size-guidance).
 
 ## How can we speed them up code reviews?
+
 Slow code reviews might cause delays in delivering features and cause frustration amongst team members.
 
 ### Possible actions you can take
@@ -43,5 +47,3 @@ Checkout the [Tools](./tools.md) for help on how to perform reviews out of Visua
 ## How can we enforce code reviews?
 
 Checkout the [Branch Policy](./evidence-and-measures/branch-policy.md) for instructions on how to configure branch policies that enforce code review requirements.
-
-
