@@ -98,19 +98,19 @@ ArgoCD is a declarative, GitOps-based Continuous Delivery (CD) tool for Kubernet
 1. Policy Enforcement
    - [Azure Policy is in Preview](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy)
 1. Deployment Methods
-   - Deploy with [Helm](https://argoproj.github.io/argo-cd/user-guide/helm/) Chart
-   - Use [Kustomize](https://argoproj.github.io/argo-cd/user-guide/kustomize/) to apply some post-rendering to the Helm release templates
+   - Deploy with [Helm](https://argo-cd.readthedocs.io/en/stable/user-guide/helm/) Chart
+   - Use [Kustomize](https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/) to apply some post-rendering to the Helm release templates
 1. Deployment Monitoring
-   - Argo CD expose two sets of [Prometheus](https://argoproj.github.io/argo-cd/operator-manual/metrics/) metrics (application metrics and API server metrics) for deployment monitoring.
+   - Argo CD expose two sets of [Prometheus](https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/) metrics (application metrics and API server metrics) for deployment monitoring.
 1. Admission Control
    - ArgoCD use RBAC feature.
-     [RBAC](https://argoproj.github.io/argo-cd/operator-manual/rbac/) requires SSO configuration or one or more local users setup.
+     [RBAC](https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/) requires SSO configuration or one or more local users setup.
      Once SSO or local users are configured, additional RBAC roles can be defined
    - Argo CD does not have its own user management system and has only one built-in user admin.
      The admin user is a superuser, and it has unrestricted access to the system
-   - [Authorization is handled via JWT tokens](https://argoproj.github.io/argo-cd/operator-manual/security/#authentication) and checking group claims in them
+   - [Authorization is handled via JWT tokens](https://argo-cd.readthedocs.io/en/stable/operator-manual/security/#authentication) and checking group claims in them
 1. Azure Documentation availability
-   - Argo has [documentation](https://argoproj.github.io/argo-cd/operator-manual/user-management/microsoft/) on Azure AD
+   - Argo has [documentation](https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/microsoft/) on Azure AD
 1. Maturity
    - Has PR commits from as recently as today
    - 5,000 stars, 1,100 forks
@@ -130,7 +130,7 @@ Other features to call out (see more on website)
 - SSO Integration
 - Garbage collection
 
-![Architecture](https://argoproj.github.io/argo-cd/assets/argocd_architecture.png)
+![Architecture](https://argo-cd.readthedocs.io/en/stable/assets/argocd_architecture.png)
 
 ## Results
 

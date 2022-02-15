@@ -71,10 +71,10 @@ jobs:
           COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
         run: |
           if ${COMMIT_VAR} == true; then
-            echo "::set-env name=flag::true"
+            echo "flag=true" >> $GITHUB_ENV
             echo "flag set to true"
           else
-            echo "::set-env name=flag::false"
+            echo "flag=false" >> $GITHUB_ENV
             echo "flag set to false"
           fi
 
@@ -90,9 +90,9 @@ Code Explanation:
 The first part of the code is setting up Push triggers on the working branch and checking out the repository, so we will not explore that in detail.
 
 ```yaml
-  - name: "Set flag from Commit"
-    env:
-      COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
+- name: "Set flag from Commit"
+  env:
+    COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
 ```
 
 This is a named step inside the only Job in our GitHub Actions pipeline. Here, we set an environment variable for the step: Any code or action that the step calls will now have the environment variable available.
@@ -100,14 +100,14 @@ This is a named step inside the only Job in our GitHub Actions pipeline. Here, w
 `contains` is a GitHub Actions function that is available by default in all workflows. It returns a Boolean `true` or `false` value. In this situation, it checks to see if the commit message on the last push, accessed using `github.event.head_commit.message`. The `${{...}}` is necessary to use the GitHub Context and make the functions and `github.event` variables available for the command.
 
 ```yaml
-  run: |
-    if ${COMMIT_VAR} == true; then
-      echo "::set-env name=flag::true"
-      echo "flag set to true"
-    else
-      echo "::set-env name=flag::false"
-      echo "flag set to false"
-    fi
+run: |
+  if ${COMMIT_VAR} == true; then
+    echo "flag=true" >> $GITHUB_ENV
+    echo "flag set to true"
+  else
+    echo "flag=false" >> $GITHUB_ENV
+    echo "flag set to false"
+  fi
 ```
 
 The `run` command here checks to see if the `COMMIT_VAR` variable has been set to `true`, and if it has, it sets a secondary flag to true, and echoes this behavior. It does the same if the variable is `false`.
@@ -135,7 +135,7 @@ The "Set flag from commit" step can be simplified to the following in order to m
   env:
     COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
   run: |
-    echo "::set-env name=flag::${COMMIT_VAR}"
+    echo "flag=${COMMIT_VAR}" >> $GITHUB_ENV
     echo "set flag to ${COMMIT_VAR}"
 ```
 
@@ -145,29 +145,29 @@ Including the Variable
 
 1. Push to branch `master`:
 
-    ```cmd
-    > git add.
-    > git commit -m "Running Github Actions Test [commit var]"
-    > git push
-    ```
+   ```cmd
+   > git add.
+   > git commit -m "Running Github Actions Test [commit var]"
+   > git push
+   ```
 
 2. This triggers the workflow (as will any push). As the `[commit var]` is in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `true` and result in the following:
 
-    ![Commit True Scenario](images/CommitTrue.PNG)
+   ![Commit True Scenario](images/CommitTrue.PNG)
 
 Not Including the Variable
 
-1. Push to  branch `master`:
+1. Push to branch `master`:
 
-    ```cmd
-    > git add.
-    > git commit -m "Running Github Actions Test"
-    > git push
-    ```
+   ```cmd
+   > git add.
+   > git commit -m "Running Github Actions Test"
+   > git push
+   ```
 
 2. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
 
-    ![Commit False Scenario](images/CommitFalse.PNG)
+   ![Commit False Scenario](images/CommitFalse.PNG)
 
 ## PR Body Variables
 
@@ -199,10 +199,10 @@ jobs:
           PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
         run: |
           if ${PR_VAR} == true; then
-            echo "::set-env name=flag::true"
+            echo "flag=true" >> $GITHUB_ENV
             echo "flag set to true"
           else
-            echo "::set-env name=flag::false"
+            echo "flag=false" >> $GITHUB_ENV
             echo "flag set to false"
           fi
 
@@ -234,7 +234,7 @@ Similarly to the above, the YAML step can be simplified to the following in orde
   env:
     PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
   run: |
-  echo "::set-env name=flag::${PR_VAR}"
+  echo "flag=${PR_VAR}" >> $GITHUB_ENV
   echo "set flag to ${PR_VAR}"
 ```
 
@@ -242,11 +242,11 @@ Usage:
 
 1. Create a Pull Request into `master`, and include the expected variable in the body somewhere:
 
-    ![PR Example](images/PRExample.PNG)
+   ![PR Example](images/PRExample.PNG)
 
 2. The GitHub Action will trigger automatically, and since `[pr var]` is present in the PR Body, it will set the `flag` to true, as shown below:
 
-    ![PR True](images/PRTrue.PNG)
+   ![PR True](images/PRTrue.PNG)
 
 ## Real World Scenarios
 

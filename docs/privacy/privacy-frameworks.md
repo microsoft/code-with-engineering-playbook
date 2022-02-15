@@ -189,6 +189,8 @@ Tools for data classification on Azure:
 | ----- | ----- |
 | [Microsoft Information Protection](https://docs.microsoft.com/en-us/microsoft-365/compliance/information-protection) (MIP) | A suite for DLP, sensitive data classification, cataloging  and more.|
 | [Azure Purview](https://azure.microsoft.com/en-us/services/purview/) | A unified data governance service, which includes the classification and cataloging of sensitive data. Azure Purview leverages the MIP technology for data classification and more.|
+| [Data Discovery & Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse](https://docs.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview) | Basic capabilities for discovering, classifying, labeling, and reporting the sensitive data in Azure SQL and Synapse databases. |
+| [Data Discovery & Classification for SQL Server](https://docs.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver15&tabs=t-sql) | Capabilities for discovering, classifying, labeling & reporting the sensitive data in SQL Server databases. |
 
 Often, tools used for de-identification can also serve as sensitive data classifiers.
 Refer to [de-identification tools](#data-de-identification) for such tools.
@@ -196,7 +198,6 @@ Refer to [de-identification tools](#data-de-identification) for such tools.
 Additional resources:
 
 - [Example guidelines for data classification](https://www.cmu.edu/iso/governance/guidelines/data-classification.html)
-- [Examples of Sensitive Data by Classification Level](https://safecomputing.umich.edu/protect-the-u/safely-use-sensitive-data/examples-by-level)
 - [Learn about sensitivity levels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
 
 #### Access management

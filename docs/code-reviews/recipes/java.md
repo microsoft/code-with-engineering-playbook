@@ -18,7 +18,7 @@ Eclipse, and other Java IDEs, support automatic code formatting.  If using Maven
 
 ## Build Validation
 
-It's important to enforce your code style and rules in the CI to avoid any team members merging code that does not comply with standards into your git repo.  If building using Azure DevOps, the [Maven and Gradle build tasks support](https://docs.microsoft.com/en-us/azure/devops/java/standalone-tools?view=azure-devops) using [PMD](https://pmd.github.io/), [Checkstyle](https://checkstyle.sourceforge.io/), and [FindBugs](http://findbugs.sourceforge.net/) code analysis tools as part of every build.
+It's important to enforce your code style and rules in the CI to avoid any team members merging code that does not comply with standards into your git repo.  If building using Azure DevOps, Azure DevOps support [Maven](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/maven?view=azure-devops) and [Gradle](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/gradle?view=azure-devops) build tasks using [PMD](https://pmd.github.io/), [Checkstyle](https://checkstyle.sourceforge.io/), and [FindBugs](http://findbugs.sourceforge.net/) code analysis tools as part of every build.
 
 Here is an example yaml for a Maven build task with all three analysis tools enabled:
 

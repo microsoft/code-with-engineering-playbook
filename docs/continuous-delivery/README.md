@@ -41,13 +41,13 @@ It's important to establish a common understanding between the Dev Lead and appl
 
 Your release manifestation process should take the deployable build artifact created from your commit stage and deploy them across all cloud environments, starting with your test environment.
 
-The test environment (_often called Integration_) acts as a gate to validate if your test suite completes successfully for all release candidates. This validation should always begin in a test environment while inspecting the deployed release integrated from the feature / release branch containing your code changes.
+The test environment (*often called Integration*) acts as a gate to validate if your test suite completes successfully for all release candidates. This validation should always begin in a test environment while inspecting the deployed release integrated from the feature / release branch containing your code changes.
 
-Code changes released into the _test_ environment typically targets the main branch (when doing [trunk](https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/#why-trunk-based-development)) or release branch (when doing [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)).
+Code changes released into the *test* environment typically targets the main branch (when doing [trunk](https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/#why-trunk-based-development)) or release branch (when doing [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)).
 
 #### The First Deployment
 
-The very first deployment of any application should be showcased to the customer in a production-like environment (_UAT_) to solicit feedback early. The UAT environment is used to obtain product owner sign-off acceptance to ultimately promote the release to production.
+The very first deployment of any application should be showcased to the customer in a production-like environment (*UAT*) to solicit feedback early. The UAT environment is used to obtain product owner sign-off acceptance to ultimately promote the release to production.
 
 #### Criteria for a production-like environment
 
@@ -74,7 +74,7 @@ It's critical to model your test and release process to establish a common under
 The stages within your release workflow are ultimately testing a version of your application to validate it can be released in accordance to your acceptance criteria. The release pipeline should account for the following conditions:
 
 * Release Selection: The developer carrying out application testing should have the capability to select which release version to deploy to the testing environment.
-* Deployment - Release the application deployable build artifact (_created from the CI stage_) to the target cloud environment.
+* Deployment - Release the application deployable build artifact (*created from the CI stage*) to the target cloud environment.
 * Configuration - Applications should be configured consistently across all your environments. This configuration is applied at the time of deployment.  Sensitive data like app secrets and certificates should be mastered in a fully managed PaaS key and secret store (eg [Key Vault](https://azure.microsoft.com/en-us/services/key-vault/), [KMS](https://aws.amazon.com/kms/)). Any secrets used by the application should be sourced internally within the application itself. Application Secrets should not be exposed within the runtime environment. We encourage 12 Factor principles, especially when it comes to [configuration management](https://12factor.net/config).
 * Data Migration - Pre populate application state and/or data records which is needed for your runtime environment. This may also include test data required for your end-to-end integration test suite.
 * Deployment smoke test. Your smoke test should also verify that your application is pointing to the correct configuration (e.g. production pointing to a UAT Database).
@@ -83,11 +83,11 @@ The stages within your release workflow are ultimately testing a version of your
 
 #### Live Release Warm Up
 
-A release should be running for a period of time before it's considered live and allowed to accept user traffic. These _warm up_ activities may include application server(s) and database(s) pre-fill any dependent cache(s) as well as establish all service connections (eg _connection pool allocations, etc_).
+A release should be running for a period of time before it's considered live and allowed to accept user traffic. These *warm up* activities may include application server(s) and database(s) pre-fill any dependent cache(s) as well as establish all service connections (eg *connection pool allocations, etc*).
 
 #### Pre-production releases
 
-Application release candidates should be deployed to a staging environment similar to production for carrying out final manual/automated tests (_including capacity testing_). Your production and staging / pre-prod cloud environments should be setup at the beginning of your project.
+Application release candidates should be deployed to a staging environment similar to production for carrying out final manual/automated tests (*including capacity testing*). Your production and staging / pre-prod cloud environments should be setup at the beginning of your project.
 
 Application warm up should be a quantified measurement that's validated as part of your pre-prod smoke tests.
 
@@ -109,7 +109,7 @@ Kubernetes natively supports [rolling updates](https://kubernetes.io/docs/tutori
 
 ### Blue-Green Deployments
 
-Blue / Green is a deployment technique which reduces downtime by running two identical instances of a production environment called _Blue_ and _Green_.
+Blue / Green is a deployment technique which reduces downtime by running two identical instances of a production environment called *Blue* and *Green*.
 
 Only one of these environments accepts live production traffic at a given time.
 
@@ -125,7 +125,7 @@ Database providers like Cosmos and Azure SQL natively support data replication t
 
 ### Canary Releasing
 
-Canary releasing enables development teams to gather faster feedback when deploying new features to production. These releases are rolled out to a subset of production nodes (_where no users are routed to_) to collect early insights around capacity testing and functional completeness and impact.
+Canary releasing enables development teams to gather faster feedback when deploying new features to production. These releases are rolled out to a subset of production nodes (*where no users are routed to*) to collect early insights around capacity testing and functional completeness and impact.
 
 ![image](./images/canary_release.png)
 
@@ -134,6 +134,12 @@ Once smoke and capacity tests are completed, you can route a small subset of use
 Canary releases simplify rollbacks as you can avoid routing users to bad application versions.
 
 Try to limit the number of versions of your application running parallel in production, as it can complicate maintenance and monitoring controls.
+
+### Low code solutions
+
+Low code solutions have increased their participation in the applications and processes and because of that it is required that a proper conjunction of disciplines improve their development.
+
+Here is a guide for [continuous deployment for Low Code Solutions](low-code-solutions/low-code-solutions.md).
 
 ## References
 
