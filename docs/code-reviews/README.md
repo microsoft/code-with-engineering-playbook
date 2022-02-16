@@ -4,11 +4,11 @@ Developers working on [CSE](../CSE.md) projects should conduct peer code reviews
 
 ## Goals
 
-Code reviews is a way to have a conversation about the code where participants will:
+Code review is a way to have a conversation about the code where participants will:
 
-- Improve code quality by identifying and removing defects before they can be introduced into shared code branches.
-- Grow by learning from each other about unfamiliar design patterns or languages among other topics, and even break some bad habits.
-- Develop a shared understanding of the project's code.
+- **Improve code quality** by identifying and removing defects before they can be introduced into shared code branches.
+- **Learn and grow** by having others review the code, we get exposed to unfamiliar design patterns or languages among other topics, and even break some bad habits.
+- **Shared understanding** between the developers over the project's code.
 
 ## Resources
 
