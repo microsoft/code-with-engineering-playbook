@@ -17,7 +17,8 @@
         {"pattern": "^https://thanos.io"},
         {"pattern": "^https://gitlab.com/palisade/palisade-release"},
         {"pattern": "^https://www.github.com"},
-        {"pattern": "^https://github.com"}
+        {"pattern": "^https://github.com"},
+        {"pattern": "^https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf"}
     ],
     "retryOn429": true
 }
