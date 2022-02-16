@@ -4,8 +4,7 @@ This is a list of questions / frequently occurring issues when working with code
 
 ## What makes a code review different from a PR?
 
-A pull request is a way to notify a feature is finished and can be merged into the master branch.  
-A code review is having someone go over the code in the pull request and validate it before it is merged.
+A pull request (PR) is a way to notify a task is finished and ready to be merged into the main working branch (source of truth). A code review is having someone go over the code in a PR and validate it before it is merged, but, in general, code reviews can take place outside PRs too.
 
 | Code Review | Pull Request |
 --- | ---
