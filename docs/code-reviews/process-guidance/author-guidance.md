@@ -1,6 +1,6 @@
 # Author Guidance
 
-## Properly describe your PR
+## Properly describe your pull request (PR)
 
 - Give the PR a descriptive title, so that other members can easily (in one short sentence) understand what a PR is about.
 - Every PR should have a proper description, that shows the reviewer what has been changed and why.
@@ -22,6 +22,14 @@ Discuss design/code logic and address all comments as follows:
 - If you don't understand a comment, ask questions in the review itself as opposed to a private chat
 - If a thread gets bloated without a conclusion, have a meeting with the reviewer (call them or knock on door)
 
-## Track progress
+## Use checklists
 
-- If the reviewers have not responded in a reasonable time (generally a day or two), ping them or raise the issue in a daily meeting.
+When creating a PR, it is a good idea to add a checklist of objectives of the PR in the description. This helps the reviewers to focus on the key areas of the code changes.
+
+## Link a task to your PR
+
+Link the corresponding work items/tasks to the PR. There is no need to duplicate information between the work item and the PR, but if some details are missing in either one, together they provide more context to the reviewer.
+
+## Code should have annotations before the review
+
+If you can't avoid large PRs, include explanations of the changes in order to make it easier for the reviewer to review the code, with clear comments the reviewer can identify the goal of every code block.

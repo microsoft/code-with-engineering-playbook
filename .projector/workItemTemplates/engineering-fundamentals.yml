@@ -385,60 +385,30 @@ items:
             type: story
       - name: Observability
         type: feature
-        description: ""
-        acceptanceCriteria: []
+        description: "Foundational observability practices"
+        acceptanceCriteria:
+          - One or more key SLO identified for the solution
+          - If dashboards and alerts are utilized, then at least some of them are associated with SLO/SLIs
+          - Solution has ability to diagnose and troubleshoot failures
         children:
-          - name: As a dev crew, we have documented a strategy for the observability of the
-              system
+          - name: As a dev crew, we have identified the key SLOs for the overall solution
             type: story
-          - name: As a dev crew, we have captured observability design components as
-              stories/work items
+          - name: As a dev crew, we have established all the SLIs required for at least one of the key SLOs
             type: story
-          - name: As a dev crew, we can correlate logs with deployments and service versions
+          - name: As a dev crew, we have documented a strategy for how to implement all the SLIs for at least one SLO
             type: story
-          - name: As a dev crew, we have logs that provide operational context of the
-              application
+          - name: As a dev crew, we have enabled tooling and instrumentation which is able to measure the SLIs for at least one SLO
             type: story
-          - name: As a dev crew, we can change the granularity of logs without making code
-              changes
+          - name: As a dev crew, we have setup alerts relevant for at least one of the SLOs
             type: story
-          - name: As a dev crew, we have implemented logging instrumentation using a
-              structured format
+          - name: As a dev crew, we have setup dashboards for the SLIs associated with at least one SLO
             type: story
-          - name: As a dev crew, we have identified key business and operation metrics to be
-              instrumented
+          - name: As a dev crew, we have created observability as code for at least some of the alerts/dashboards
             type: story
-          - name: As a dev crew, we have implemented instrumentation within components to
-              provide metric telemetry and provides full context to understand
-              component's health
+          - name: As a dev crew, we have identified a strategy how to diagnose and troubleshoot failures for the most important aspect of the solution
             type: story
-          - name: As a dev crew, logs provide detailed context on component health and
-              performance
-            type: story
-          - name: As a dev crew, we have alerts and reporting driven through instrumented
-              metrics
-            type: story
-          - name: As a dev crew, we have identified key business transactions to be traced
-            type: story
-          - name: As a dev crew, we can trace an internal processing call across components
-            type: story
-          - name: As a dev crew, we can trace adequately trace external I/O calls
-            type: story
-          - name: As a dev crew, we can understand the complete request or processing cycle
-              call stack from the tracing data
-            type: story
-          - name: As a dev crew, we have involved the customer and sought their input during
-              dashboard designs
-            type: story
-          - name: As a dev crew, we have developed dashboards for one or more systems that
-              provided better visibility and understanding into component health
-            type: story
-          - name: As a dev crew, we have designed our reporting dashboards from a Site
-              Reliability Engineering perspective
-            type: story
-          - name: As a dev crew, we can reliably use metrics, logs and traces to derive
-              actionable alerts and insightful analysis
-            type: story
+          - name: As a dev crew, we have implemented the strategy to diagnose and troubleshoot failures for the most important aspect of the solution
+            type: story 
       - name: Engineering Feedback
         type: feature
         description: ""

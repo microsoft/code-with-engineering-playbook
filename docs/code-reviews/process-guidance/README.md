@@ -22,6 +22,14 @@ If the team is finding that code reviews are taking a significant time to merge,
 1. Assess the time to merge across sprints to see if the process is improving.
 1. Ping required approvers directly as a reminder.
 
+## Code reviews shouldn't include too many lines of code
+
+It's easy to say a developer can review few hundred lines of code, but when the code surpasses certain amount of lines, the effectiveness of defects discovery will decrease and there is a lesser chance of doing a good review. It's not a matter of setting a code line limit, but rather using common sense. More code there is to review, the higher chances there are letting a bug sneak through. See [PR size guidance](../pull-requests.md#size-guidance).
+
+## Automate whenever reasonable
+
+Use automation (linting, code analysis etc.) to avoid the need for "[nits](https://en.wikipedia.org/wiki/Nitpicking)" and allow the reviewer to focus more on the functional aspects of the PR. By configuring automated builds, tests and checks (something achievable in the [CI process](../../continuous-integration/README.md)), teams can save human reviewers some time and let them focus in areas like design and functionality for proper evaluation. This will ensure higher chances of success as the team is focusing on the things that matter.
+
 ## Role specific guidance
 
 - [Author Guidance](author-guidance.md)
