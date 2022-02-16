@@ -1560,18 +1560,25 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#we-experience-very-large-prs-how-can-we-fix-this" class="md-nav__link">
-    We experience very large PRs, how can we fix this?
+  <a href="#why-do-we-need-code-reviews" class="md-nav__link">
+    Why do we need code reviews?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#we-experience-slow-code-reviews-causing-delays-in-delivering-features" class="md-nav__link">
-    We experience slow code reviews, causing delays in delivering features
+  <a href="#prs-are-too-large-how-can-we-fix-this" class="md-nav__link">
+    PRs are too large, how can we fix this?
   </a>
   
-    <nav class="md-nav" aria-label="We experience slow code reviews, causing delays in delivering features">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-expedite-code-reviews" class="md-nav__link">
+    How can we expedite code reviews?
+  </a>
+  
+    <nav class="md-nav" aria-label="How can we expedite code reviews?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1587,8 +1594,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reviewing-a-complex-pr-on-github-can-be-hard-is-there-a-more-integrated-way" class="md-nav__link">
-    Reviewing a complex PR on GitHub can be hard, is there a more integrated way?
+  <a href="#which-tools-can-i-use-to-review-a-complex-pr" class="md-nav__link">
+    Which tools can I use to review a complex PR?
   </a>
   
 </li>
@@ -1601,22 +1608,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#we-pair-or-mob-why-do-we-need-code-reviews" class="md-nav__link">
-    We pair or mob. Why do we need code reviews
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-if-we-do-pair-programming" class="md-nav__link">
-    What if we do pair programming
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-if-we-do-mob-programming" class="md-nav__link">
-    What if we do mob programming
+  <a href="#we-pair-or-mob-how-should-this-reflect-in-our-code-reviews" class="md-nav__link">
+    We pair or mob. How should this reflect in our code reviews?
   </a>
   
 </li>
@@ -5267,18 +5260,25 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#we-experience-very-large-prs-how-can-we-fix-this" class="md-nav__link">
-    We experience very large PRs, how can we fix this?
+  <a href="#why-do-we-need-code-reviews" class="md-nav__link">
+    Why do we need code reviews?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#we-experience-slow-code-reviews-causing-delays-in-delivering-features" class="md-nav__link">
-    We experience slow code reviews, causing delays in delivering features
+  <a href="#prs-are-too-large-how-can-we-fix-this" class="md-nav__link">
+    PRs are too large, how can we fix this?
   </a>
   
-    <nav class="md-nav" aria-label="We experience slow code reviews, causing delays in delivering features">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-expedite-code-reviews" class="md-nav__link">
+    How can we expedite code reviews?
+  </a>
+  
+    <nav class="md-nav" aria-label="How can we expedite code reviews?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -5294,8 +5294,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reviewing-a-complex-pr-on-github-can-be-hard-is-there-a-more-integrated-way" class="md-nav__link">
-    Reviewing a complex PR on GitHub can be hard, is there a more integrated way?
+  <a href="#which-tools-can-i-use-to-review-a-complex-pr" class="md-nav__link">
+    Which tools can I use to review a complex PR?
   </a>
   
 </li>
@@ -5308,22 +5308,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#we-pair-or-mob-why-do-we-need-code-reviews" class="md-nav__link">
-    We pair or mob. Why do we need code reviews
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-if-we-do-pair-programming" class="md-nav__link">
-    What if we do pair programming
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-if-we-do-mob-programming" class="md-nav__link">
-    What if we do mob programming
+  <a href="#we-pair-or-mob-how-should-this-reflect-in-our-code-reviews" class="md-nav__link">
+    We pair or mob. How should this reflect in our code reviews?
   </a>
   
 </li>
@@ -5344,6 +5330,7 @@
                 <h1 id="faq">FAQ</h1>
 <p>This is a list of questions / frequently occurring issues when working with code reviews and answers how you can possibly tackle them.</p>
 <h2 id="what-makes-a-code-review-different-from-a-pr">What makes a code review different from a PR?</h2>
+<p>A pull request (PR) is a way to notify a task is finished and ready to be merged into the main working branch (source of truth). A code review is having someone go over the code in a PR and validate it before it is merged, but, in general, code reviews can take place outside PRs too.</p>
 <table>
 <thead>
 <tr>
@@ -5366,10 +5353,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="we-experience-very-large-prs-how-can-we-fix-this">We experience very large PRs, how can we fix this?</h2>
-<p>Make sure you size the work items smaller. They should be able to be completed on their own. The team is instructed to commit early, before the full product backlog item / user story is complete, but rather when an individual item is done. If the work would result in an incomplete feature, make sure it can be turned off, until the full feature is delivered.
+<h2 id="why-do-we-need-code-reviews">Why do we need code reviews?</h2>
+<p>Our peer code reviews are structured around best practices, to find specific kinds of errors. Much like you would still run a linter over mobbed code, you would still ask someone to make the last pass to make sure the code conforms to expected standards and avoids common pitfalls.</p>
+<h2 id="prs-are-too-large-how-can-we-fix-this">PRs are too large, how can we fix this?</h2>
+<p>Make sure you size the work items into small clear chunks, so the reviewer will be able to understand the code on their own. The team is instructed to commit early, before the full product backlog item / user story is complete, but rather when an individual item is done. If the work would result in an incomplete feature, make sure it can be turned off, until the full feature is delivered.
 More information can be found in <a href="../pull-requests/#size-guidance">Pull Requests - Size Guidance</a>.</p>
-<h2 id="we-experience-slow-code-reviews-causing-delays-in-delivering-features">We experience slow code reviews, causing delays in delivering features</h2>
+<h2 id="how-can-we-expedite-code-reviews">How can we expedite code reviews?</h2>
+<p>Slow code reviews might cause delays in delivering features and cause frustration amongst team members.</p>
 <h3 id="possible-actions-you-can-take">Possible actions you can take</h3>
 <ul>
 <li>Add a rule for PR turnaround time to your work agreement.</li>
@@ -5377,16 +5367,16 @@ More information can be found in <a href="../pull-requests/#size-guidance">Pull 
 <li>Dedicate a PR review manager who will be responsible to keep things flowing by assigning or notifying people when PR got stale.</li>
 <li>Use tools to better indicate stale reviews - <a href="../process-guidance/customize-ado/#task-boards">Customize ADO - Task Boards</a>.</li>
 </ul>
-<h2 id="reviewing-a-complex-pr-on-github-can-be-hard-is-there-a-more-integrated-way">Reviewing a complex PR on GitHub can be hard, is there a more integrated way?</h2>
+<h2 id="which-tools-can-i-use-to-review-a-complex-pr">Which tools can I use to review a complex PR?</h2>
 <p>Checkout the <a href="../tools/">Tools</a> for help on how to perform reviews out of Visual Studio or Visual Studio Code.</p>
 <h2 id="how-can-we-enforce-code-reviews">How can we enforce code reviews?</h2>
 <p>Checkout the <a href="../evidence-and-measures/branch-policy/">Branch Policy</a> for instructions on how to configure branch policies that enforce code review requirements.</p>
-<h2 id="we-pair-or-mob-why-do-we-need-code-reviews">We pair or mob. Why do we need code reviews</h2>
-<p>Our peer code reviews are structured around best practices to find specific kinds of errors. Much like you would still run a linter over mobbed code, you would still ask someone to make the last pass to make sure the code conforms to expected standards and avoids common pitfalls.</p>
-<h2 id="what-if-we-do-pair-programming">What if we do pair programming</h2>
-<p>Someone outside the pair should perform the code review. One of the other major benefits of code reviews is spreading knowledge about the code base to other members of the team that don't usually work in the part of the codebase under review.</p>
-<h2 id="what-if-we-do-mob-programming">What if we do mob programming</h2>
-<p>A member of the mob who spent less (or no) time at the keyboard should perform the code review.</p>
+<h2 id="we-pair-or-mob-how-should-this-reflect-in-our-code-reviews">We pair or mob. How should this reflect in our code reviews?</h2>
+<p>There are two ways to perform a code review:</p>
+<ol>
+<li>Pair - Someone outside the pair should perform the code review. One of the other major benefits of code reviews is spreading knowledge about the code base to other members of the team that don't usually work in the part of the codebase under review.</li>
+<li>Mob - A member of the mob who spent less (or no) time at the keyboard should perform the code review.</li>
+</ol>
                 
                   
                     
@@ -5395,7 +5385,7 @@ More information can be found in <a href="../pull-requests/#size-guidance">Pull 
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 9, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 16, 2022</span>
     
   </small>
 </div>
