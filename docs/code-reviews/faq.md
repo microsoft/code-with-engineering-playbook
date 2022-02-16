@@ -28,7 +28,7 @@ There are two ways to perform a code review:
 Make sure you size the work items into small clear chunks, so the reviewer will be able to understand the code on their own. The team is instructed to commit early, before the full product backlog item / user story is complete, but rather when an individual item is done. If the work would result in an incomplete feature, make sure it can be turned off, until the full feature is delivered.
 More information can be found in [Pull Requests - Size Guidance](./pull-requests.md#size-guidance).
 
-## How can we speed them up code reviews?
+## How can we expedite code reviews?
 
 Slow code reviews might cause delays in delivering features and cause frustration amongst team members.
 
