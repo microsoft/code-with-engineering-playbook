@@ -48,13 +48,13 @@ Finally, if you are beginning work on a codebase the you inherited from another 
 
 ## Identifying Common Patterns to Resolve
 
-* For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review]((../../code-reviews/README.md).
+* For the language that you are using, find the most adopted form of style and code static analysis tools and enable them see also [code review](../../code-reviews/README.md).
 * Style guidelines represent aspects of the code that involve naming, organization and basic maintenance of code.
 * Code static analysis guidelines represent aspects of the code that involve performance, security and general rules to follow.
 * Ensure that the rules are reporting issues as errors and not warnings.
 * Address all issues that come up during the static analysis tool evaluation.
 * In the beginning of switching over to the new rules, evaluate each issue together as a team to ensure everyone agrees with the rules - and most importantly modify the rule if necessary.
-* Ensure that you and your team are following [code review]((../../code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
+* Ensure that you and your team are following [code review](../../code-reviews/README.md) practices as closely as you can to catch any code issues that aren't caught by automated tools.
 
 ## Organizing and classifying code quality rules to make them actionable
 
@@ -66,7 +66,7 @@ Here are a few steps to follow for each language:
 
 ### Step 1: Gather state of the art code quality guidelines and rules for the language you are including
 
-Most of the programming languages have an official definition of quality when it comes to writing software with them. These can be found on the programming language (or platform) official website, on articles and blog posts from advanced users of the language or from experts in your team, organization, and company. In the playbook, you can find [recipes for some languages]((../../code-reviews/README.md). Additionally, research whether any tool exists to automate the detection of broken rules in the existing code. [Linters](https://en.wikipedia.org/wiki/Lint_(software)) and other [code analyzers](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) exist for most of the popular programming languages.
+Most of the programming languages have an official definition of quality when it comes to writing software with them. These can be found on the programming language (or platform) official website, on articles and blog posts from advanced users of the language or from experts in your team, organization, and company. In the playbook, you can find [recipes for some languages](../../code-reviews/README.md). Additionally, research whether any tool exists to automate the detection of broken rules in the existing code. [Linters](https://en.wikipedia.org/wiki/Lint_(software)) and other [code analyzers](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) exist for most of the popular programming languages.
 
 ### Step 2: Group the list of rules you selected in step 1 into each code quality category
 
