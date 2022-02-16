@@ -5299,6 +5299,16 @@
 <li>Once convinced the criteria above are met, create and submit a new pull request adhering to the <a href="../pull-request-template/pull-request-template/">pull request template</a></li>
 <li>Follow the <a href="../process-guidance/">code review</a> process to merge the changes to the main codebase</li>
 </ol>
+<p>The following diagram illustrates this approach.</p>
+<div class="highlight"><pre><span></span><code>sequenceDiagram
+New branch-&gt;&gt;+Pull request: New PR creation
+Pull request-&gt;&gt;+Code review: Review process
+Code review-&gt;&gt;+Pull request: Code updates
+Pull request-&gt;&gt;+New branch: Merge Pull Request
+Pull request--&gt;&gt;-New branch: Delete branch
+Pull request -&gt;&gt;+ Main branch: Merge after completion
+New branch-&gt;&gt;+Main branch: Goal of the Pull request
+</code></pre></div>
 <h2 id="size-guidance">Size Guidance</h2>
 <p>We should always aim to keep pull requests small. Small PRs have multiple advantages:</p>
 <ul>
@@ -5348,7 +5358,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2022</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 16, 2022</span>
     
   </small>
 </div>
