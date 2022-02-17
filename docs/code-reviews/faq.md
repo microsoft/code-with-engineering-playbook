@@ -38,7 +38,7 @@ Checkout the [Tools](./tools.md) for help on how to perform reviews out of Visua
 
 ## How can we enforce code reviews policies?
 
-[By configuring Branch Policies](tools.md#Configuring Branch Policies), you can easily enforce code reviews rules. 
+[By configuring Branch Policies](tools.md#Configuring Branch Policies), you can easily enforce code reviews rules.
 
 ## We pair or mob. How should this reflect in our code reviews?
 
