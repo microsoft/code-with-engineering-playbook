@@ -14,10 +14,10 @@
 ## Configuring Branch Policies
 
 1. AzDO: [Configure branch policies](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops#configure-branch-policies)
-2. AzDO: Configuring branch policies with the CLI tool:
+1. AzDO: Configuring branch policies with the CLI tool:
    * [Create a policy configuration file](https://docs.microsoft.com/en-us/azure/devops/cli/policy-configuration-file?view=azure-devops#create-a-policy-configuration-file)
    * [Approval count policy](https://docs.microsoft.com/en-us/rest/api/azure/devops/policy/configurations/create?view=azure-devops-rest-5.1#approval-count-policy)
-3. GitHub: [Configuring protected branches](https://help.github.com/en/github/administering-a-repository/about-protected-branches)
+1. GitHub: [Configuring protected branches](https://help.github.com/en/github/administering-a-repository/about-protected-branches)
 
 ## Visual Studio Code
 
