@@ -30,15 +30,15 @@ Slow code reviews might cause delays in delivering features and cause frustratio
 - Add a rule for PR turnaround time to your work agreement.
 - Set up a slot after the standup to go through pending PRs and assign the ones that are inactive.
 - Dedicate a PR review manager who will be responsible to keep things flowing by assigning or notifying people when PR got stale.
-- Use tools to better indicate stale reviews - [Customize ADO - Task Boards](./process-guidance/customize-ado.md#task-boards).
+- Use tools to better indicate stale reviews - [Customize ADO - Task Boards](tools.md#task-boards).
 
 ## Which tools can I use to review a complex PR?
 
 Checkout the [Tools](./tools.md) for help on how to perform reviews out of Visual Studio or Visual Studio Code.
 
-## How can we enforce code reviews?
+## How can we enforce code review policies?
 
-Checkout the [Branch Policy](./evidence-and-measures/branch-policy.md) for instructions on how to configure branch policies that enforce code review requirements.
+[By configuring Branch Policies](tools.md#Configuring Branch Policies), you can easily enforce code reviews rules.
 
 ## We pair or mob. How should this reflect in our code reviews?
 
