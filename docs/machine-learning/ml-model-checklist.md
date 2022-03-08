@@ -97,7 +97,6 @@ Significant differences in the data distributions of the different datasets can 
 Resources:
 
 - ["Splitting into train, dev and test" tutorial](http://cs230.stanford.edu/blog/split/)
-- [Covariate shift in Machine Learning](https://dkopczyk.quantee.co.uk/covariate_shift/)
 - [Understanding dataset shift](https://towardsdatascience.com/understanding-dataset-shift-f2a5a262a766)
 
 ### Have goals and hard limits for performance, speed of prediction and costs been established, so they can be considered if trade-offs need to be made?
