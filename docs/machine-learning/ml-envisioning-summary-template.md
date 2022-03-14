@@ -8,7 +8,7 @@ This is an example of an envisioning summary, to completed after envisioning ses
 
 ### Introduction
 
-Hi **insert customer stakeholder names here**,
+This document is to summarize what we have discussed in these envisioning sessions, and what we have decided to work on in this machine learning (ML) engagement. With this document, we hope that everyone can be on the same page regarding the scope of this ML engagement, and will ensure a successful start for the project.
 
 Thank you for joining us in these envisioning sessions.  
 
