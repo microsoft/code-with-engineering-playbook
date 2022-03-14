@@ -88,7 +88,7 @@ A data exploration workshop is planned for **DATE RANGE**. This data exploration
 
 1. Ensure the team can access the data and compute resources that are necessary for the ML feasibility study
 
-2. Ensure that the data provided by **Customer** is of quality and is relevant to the ML solution  
+2. Ensure that the data provided is of quality and is relevant to the ML solution  
 
 3. Make sure that the Microsoft team has a good understanding of the data
 
