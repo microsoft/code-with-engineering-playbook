@@ -50,7 +50,7 @@ For each scenario, discuss:
 
 3. Who would use the solution
 
-4. What would it look like to use our solution? An example of how it benefits someone at the customer.
+4. What would it look like to use our solution? An example of how it would bring value to the end user.
 
 ### Selected Scenario for this ML Engagement
 
