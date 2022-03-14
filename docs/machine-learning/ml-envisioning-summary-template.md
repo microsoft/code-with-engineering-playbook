@@ -56,7 +56,7 @@ For each scenario, discuss:
 
 Which scenario was selected?
 
-Why did we choose this scenario over the others?
+Why was this scenario prioritised over the others?
 
 Will other scenarios be considered in the future? When will we revisit them / what conditions need to be met to pursue them?
 
