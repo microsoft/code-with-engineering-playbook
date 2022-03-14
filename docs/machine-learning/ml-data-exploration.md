@@ -8,17 +8,16 @@ Prior to diving into data exploration workshops, it is important to confirm that
 
 Below is an **example** list of questions to consider before starting a data exploration workshop.
 
-1. Is an external customer account needed in order for the Microsoft team to access the data and compute?
+1. What are the requirements for an account to be set up in order for the team to access data and compute resources?
 2. Are there security requirements around accessing resources (Subscriptions, Azure Resources, project management, etc.) such as VPN, 2FA, jump boxes, etc.?
 3. Data access:
     * Is it on-prem or on Azure already?
-    * If it is on-prem, can we move the needed data to Azure under the customers subscription? Will the Microsoft team be able to do so once onboarding is completed, or do we need someone from the customer's team to do that?
+    * If it is on-prem, can we move the needed data to Azure under the appropriate subscription? Who has permission to move the data?
     * Is the data access approved from a legal/compliance perspective?
 4. Computation:
-    * Is a VPN needed for the Microsoft team to access these computation nodes (Virtual Machines, Databricks clusters, etc) from Microsoft PCs/Macs?
+    * Is a VPN needed for the project team to access these computation nodes (Virtual Machines, Databricks clusters, etc) from their work PCs/Macs?
     * Any restrictions on accessing the source data system from these computation nodes?
-    * If we want to create some compute resources, can the Microsoft team do so or does it need to be created by the customers?
-        * If we are allowed to do so, we will keep customer colleagues informed.
+    * If we want to create some compute resources, who has permissions to do so?
 5. Source code repository:
     * Do you have any preference on source code repository location?
 6. Backlog management and work planning:
@@ -26,7 +25,7 @@ Below is an **example** list of questions to consider before starting a data exp
     * If an existing system, are special accounts / system setups required to access?
 7. Programming Language:
     * Is Python/PySpark a preferred language?
-    * Is there any customer internal approval process for the Python/PySpark libraries we want to use for this engagement?
+    * Is there any internal approval processes for the Python/PySpark libraries we want to use for this engagement?
 
 ## Data Exploration Workshop
 

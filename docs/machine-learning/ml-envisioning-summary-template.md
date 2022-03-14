@@ -2,17 +2,13 @@
 
 ## Purpose of this template
 
-This is an example of an envisioning summary, to completed after envisioning sessions have concluded. It summarizes the materials reviewed, application scenarios discussed and decided, and the next steps in the process. 
+This is an example of an envisioning summary completed after envisioning sessions have concluded. It summarizes the materials reviewed, application scenarios discussed and decided, and the next steps in the process.
 
 ## Summary of Envisioning
 
 ### Introduction
 
 This document is to summarize what we have discussed in these envisioning sessions, and what we have decided to work on in this machine learning (ML) engagement. With this document, we hope that everyone can be on the same page regarding the scope of this ML engagement, and will ensure a successful start for the project.
-
-Thank you for joining us in these envisioning sessions.  
-
-This document is to summarize what we have discussed in these envisioning sessions, and what we have decided to work on in this machine learning (ML) engagement. With this document, we hope that everyone can be on the same page regarding the scope of this ML engagement, and the things we can do together beyond this ML engagement to empower **Customer** to be more successful in the future.  
 
 ### Materials Shared with the team
 
@@ -28,7 +24,7 @@ Also discuss:
 
 1. How the current solution is built and implemented
 
-2. Details about the current state of the customer’s systems and processes.
+2. Details about the current state of the systems and processes.
 
 ### Applications Scenarios that Can Help [People] Achieve [Task]
 
