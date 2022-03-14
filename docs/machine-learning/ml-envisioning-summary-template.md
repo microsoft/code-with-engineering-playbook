@@ -86,7 +86,7 @@ Plan when to conduct a responsible AI process. What are the prerequisites to sta
 
 A data exploration workshop is planned for **DATE RANGE**. This data exploration workshops will be **X**-**Y** days, not including the time to gain access resources. The purpose of the data exploration workshop is as follows:
 
-1. Ensure that Microsoft team can access the data and compute resources that are necessary for the ML feasibility study
+1. Ensure the team can access the data and compute resources that are necessary for the ML feasibility study
 
 2. Ensure that the data provided by **Customer** is of quality and is relevant to the ML solution  
 
