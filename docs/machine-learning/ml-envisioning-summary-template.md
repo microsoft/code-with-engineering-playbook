@@ -2,7 +2,7 @@
 
 ## Purpose of this template
 
-This is an example of an envisioning summary, to send to customers after envisioning sessions have concluded. It summarizes the materials reviewed, application scenarios discussed and decided, and the next steps in the process. After filling out this template, we recommend exporting this markdown document to PDF for sharing with customer.
+This is an example of an envisioning summary, to completed after envisioning sessions have concluded. It summarizes the materials reviewed, application scenarios discussed and decided, and the next steps in the process. 
 
 ## Summary of Envisioning
 
