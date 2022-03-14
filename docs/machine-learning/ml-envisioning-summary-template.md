@@ -22,7 +22,7 @@ This document is to summarize what we have discussed in these envisioning sessio
 
 2. Sample Data
 
-3. Customer’s current problem statement
+3. Current problem statement
 
 Also discuss:
 
