@@ -90,7 +90,7 @@ A data exploration workshop is planned for **DATE RANGE**. This data exploration
 
 2. Ensure that the data provided is of quality and is relevant to the ML solution  
 
-3. Make sure that the Microsoft team has a good understanding of the data
+3. Make sure that the project team has a good understanding of the data
 
 4. Make sure that the Microsoft and **Customer** teams have the personnel needed for Data Exploration Workshop
 
