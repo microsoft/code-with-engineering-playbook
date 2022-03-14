@@ -14,7 +14,7 @@ Thank you for joining us in these envisioning sessions.
 
 This document is to summarize what we have discussed in these envisioning sessions, and what we have decided to work on in this machine learning (ML) engagement. With this document, we hope that everyone can be on the same page regarding the scope of this ML engagement, and the things we can do together beyond this ML engagement to empower **Customer** to be more successful in the future.  
 
-### Materials Shared with Microsoft
+### Materials Shared with the team
 
 **List materials shared with you here. The list below contains some examples. You will want to be more specific.**
 
