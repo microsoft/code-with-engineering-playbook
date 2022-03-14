@@ -44,7 +44,7 @@ For each scenario, provide an appropriately descriptive name and then follow up 
 
 For each scenario, discuss:
 
-1. What problem we heard from the customer
+1. What problem statement was discussed
 
 2. How we propose to solve the problem (there may be several proposals)
 
