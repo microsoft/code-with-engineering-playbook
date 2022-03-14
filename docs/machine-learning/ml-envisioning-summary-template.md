@@ -92,7 +92,7 @@ A data exploration workshop is planned for **DATE RANGE**. This data exploration
 
 3. Make sure that the project team has a good understanding of the data
 
-4. Make sure that the Microsoft and **Customer** teams have the personnel needed for Data Exploration Workshop
+4. Make sure that the SMEs (Subject Matter Experts) needed are present for Data Exploration Workshop
 
 5. List people needed for the data exploration workshop
 
