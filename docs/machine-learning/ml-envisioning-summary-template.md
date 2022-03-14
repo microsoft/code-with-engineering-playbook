@@ -58,7 +58,7 @@ Which scenario was selected?
 
 Why did we choose this scenario over the others?
 
-Is there any place for the other scenarios in future work with Microsoft? When will we revisit them / what conditions need to be met to pursue them?
+Will other scenarios be considered in the future? When will we revisit them / what conditions need to be met to pursue them?
 
 ### More Details of the Scope for Selected Scenario –  
 
