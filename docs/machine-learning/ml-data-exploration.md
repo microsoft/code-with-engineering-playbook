@@ -1,6 +1,6 @@
 # Data Exploration
 
-After [envisioning](./ml-problem-formulation-envisioning.md), the next step is to confirm resource access and then dive deep into the available data with the customer through data exploration workshops.
+After [envisioning](./ml-problem-formulation-envisioning.md), the next step is to confirm resource access and then dive deep into the available data through data exploration workshops.
 
 ## Accessing Resources
 
