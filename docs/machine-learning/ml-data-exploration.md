@@ -2,6 +2,20 @@
 
 After [envisioning](./ml-problem-formulation-envisioning.md), the next step is to confirm resource access and then dive deep into the available data through data exploration workshops.
 
+## Purpose of the Data Exploration Workshop
+
+The purpose of the data exploration workshop is as follows:
+
+1. Ensure the team can access the data and compute resources that are necessary for the ML feasibility study
+
+2. Ensure that the data provided is of quality and is relevant to the ML solution  
+
+3. Make sure that the project team has a good understanding of the data
+
+4. Make sure that the SMEs (Subject Matter Experts) needed are present for Data Exploration Workshop
+
+5. List people needed for the data exploration workshop
+
 ## Accessing Resources
 
 Prior to diving into data exploration workshops, it is important to confirm that you have access to the necessary resources (including data).

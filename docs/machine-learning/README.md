@@ -19,8 +19,7 @@ The diagram below shows different phases in an ideal ML project. Due to practica
 
 ![Project flow](images/flow.png)
 
-* **[Envisioning](ml-problem-formulation-envisioning.md)**: Initial problem understanding, customer goals and objectives. See [template for envisioning outcomes summary document](ml-envisioning-summary-template.md).
-* **[Data Exploration](ml-data-exploration.md)**: Initial in-depth assessment of the data.
+* **[Envisioning](ml-problem-formulation-envisioning.md)**: Initial problem understanding, customer goals and objectives.
 * **[Feasibility Study](ml-feasibility-study.md)**: Assess whether the problem in question is feasible to solve satisfactorily using ML with the available data.
 * **Model Milestone**: There is a basic model that is achieving the minimum required performance, both in terms of ML performance and system performance. Using the knowledge gathered to this milestone, define the scope, objectives, high-level architecture, definition of done and plan for the entire project.
 * **[Model(s) experimentation](ml-experimentation.md)**: Tools and best practices for conducting successful model experimentation.
@@ -30,6 +29,7 @@ The diagram below shows different phases in an ideal ML project. Due to practica
 
 * [ML Process Guidance](ml-proposed-process.md)
 * [ML Fundamentals checklist](ml-fundamentals-checklist.md)
+* [Data Exploration](ml-data-exploration.md)
 * [Agile ML development](ml-project-management.md)
 * [Testing Data Science and ML Ops code](ml-testing.md)
 * [Profiling Machine Learning and ML Ops code](ml-profiling.md)
