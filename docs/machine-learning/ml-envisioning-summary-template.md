@@ -56,7 +56,7 @@ Why was this scenario prioritised over the others?
 
 Will other scenarios be considered in the future? When will we revisit them / what conditions need to be met to pursue them?
 
-### More Details of the Scope for Selected Scenario –  
+### More Details of the Scope for Selected Scenario  
 
 1. What is in scope?
 
