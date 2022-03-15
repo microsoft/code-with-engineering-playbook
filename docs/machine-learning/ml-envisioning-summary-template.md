@@ -114,4 +114,4 @@ Detail here
 
 Below is a high-level summary of the upcoming timeline:
 
-Discuss dates for data hack, and feasibility study along with any to-do items such as starting responsible AI process, identifying engineering resources. We suggest using a concise bulleted list or a table to easily convey the information.
+Discuss dates for the data exploration workshop, and feasibility study along with any to-do items such as starting responsible AI process, identifying engineering resources. We suggest using a concise bulleted list or a table to easily convey the information.
