@@ -59,7 +59,7 @@ Some tips for overcoming the impostor phenomenon for authors:
 
 Some tips for overcoming the impostor phenomenon for reviewers:
 
-* Anyone can have valuable insights. A fresh new pair of eyes are always welcome. Study the review until you have clearly understood it, and check for ways to improve it or better the corner cases.
+* Anyone can have valuable insights. A fresh new pair of eyes are always welcome. Study the review until you have clearly understood it, check the corner cases and look for ways to improve it.
 * If something is not clear, a simple specific question should be asked.
 * If you have learnt something, you can always compliment the author.
 
