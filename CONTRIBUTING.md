@@ -83,7 +83,7 @@ You can find information about other linters, general writing guidelines and cod
 We have automatic quality gates for pull requests.
 As such, we've provided tooling to lint locally through `npm`.
 
-1. [Install npm](https://www.npmjs.com/get-npm).
+1. [Install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 2. Run `npm i` at the root of this repository.
 3. Run `npm run lint` to run all linters.
 Please see [the `package.json` file](package.json) for other scripts.
@@ -177,7 +177,7 @@ Microsoft and any contributors reserve all others rights, whether under their
 respective copyrights, patents, or trademarks, whether by implication, estoppel
 or otherwise.
 
-## Running Locally (_Remotely_)
+## Running Locally (*Remotely*)
 
 To run the site locally, you must have [VSCode](https://code.visualstudio.com/), [Docker](https://www.docker.com/), and the [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) installed on your machine.
 
