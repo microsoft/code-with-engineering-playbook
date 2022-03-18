@@ -1,12 +1,12 @@
 # Scrum of Scrums
 
-Scrum of scrums is a technique used to scale Scrum to a larger group working towards the same project goal. In Scrum, we consider a team being too big when going over 10-12 individuals. This should be decided on a case by case basis. If the project is set up in multiple work streams that contain a fixed group of people and a common [stand-up](stand-ups/README.md) meeting is slowing down productivity: scrum of scrums should be considered. The team would identify the different subgroups that would act as a separate scrum teams with their own backlog, board and [stand-up](stand-ups/README.md).
+Scrum of scrums is a technique used to scale Scrum to a larger group working towards the same project goal. In Scrum, we consider a team being too big when going over 10-12 individuals. This should be decided on a case by case basis. If the project is set up in multiple work streams that contain a fixed group of people and a common [stand-up](../../core-expectations/README.md) meeting is slowing down productivity: scrum of scrums should be considered. The team would identify the different subgroups that would act as a separate scrum teams with their own backlog, board and [stand-up](../../core-expectations/README.md).
 
 ## Goals
 
 The goal of the scrum of scrums ceremony is to give sub-teams the agility they need while not loosing visibility and coordination. It also helps to ensure that the sub-teams are achieving their sprint goals, and they are going in the right direction to achieve the overall project goal.
 
-The scrum of scrums ceremony happens every day and can be seen as a regular [stand-up](stand-ups/README.md):
+The scrum of scrums ceremony happens every day and can be seen as a regular [stand-up](../../core-expectations/README.md):
 
 - What was done the day before by the sub-team.
 - What will be done today by the sub-team.
@@ -15,7 +15,7 @@ The scrum of scrums ceremony happens every day and can be seen as a regular [sta
 
 The outcome of the meeting will result in a list of impediments related to coordination of the whole project. Solutions could be: agreeing on interfaces between teams, discussing architecture changes, evolving responsibility boundaries, etc.
 
-This list of impediments is usually managed in a separate [backlog](backlog-management/README.md) but does not have to.
+This list of impediments is usually managed in a separate [backlog](../backlog-management/README.md) but does not have to.
 
 ## Participation
 
