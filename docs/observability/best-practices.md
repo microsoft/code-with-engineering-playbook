@@ -1,6 +1,6 @@
 # Recommended Practices
 
-1. **Correlation Id**: Include unique identifier at the start of the interaction to tie down aggregated data from various system components and provide a holistic view. Read more guidelines about using [correlation id](correlation-id.md). Consider using [OpenTelemetry](./tools/OpenTelemetry.md) as it implements open-source cross-platform context propagation for end-to-end distributed transactions over heterogeneous components out-of-the-box. It takes care of automatically creating and managing the "Correlation-id", called TraceId.
+1. **Correlation Id**: Include unique identifier at the start of the interaction to tie down aggregated data from various system components and provide a holistic view. Read more guidelines about using [correlation id](correlation-id.md). 
 1. Ensure health of the services are **monitored** and provide insights into system's performance and behavior.
 1. Ensure **dependent services** are monitored properly. Errors and exceptions in dependent services like Redis cache, Service bus, etc. should be logged and alerted. Also, metrics related to dependent services should be captured and logged.
 
