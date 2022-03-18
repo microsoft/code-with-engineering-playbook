@@ -50,18 +50,21 @@ In such cases, assuming positive intent of the author and reviewer is a good sta
 
 Impostor phenomenon is a psychological pattern in which an individual doubts their skills, talents, or accomplishments and has a persistent internalized fear of being exposed as a "fraud" - [wikipedia](https://en.wikipedia.org/wiki/Impostor_phenomenon).
 
-Someone experiencing impostor phenomenon may find submitting a code review particularly stressful. It is important to realise that everybody can have meaningful contributions and to not let the perceived weaknesses prevent said contributions.
+Someone experiencing impostor phenomenon may find submitting a code review particularly stressful. It is important to realise that everybody can have meaningful contributions and to not let the perceived weaknesses prevent contributions.
 
 Some tips for overcoming the impostor phenomenon for authors:
 
-* Review the guidelines highlighted above and make sure your code change adhere the them.
+* Review the guidelines highlighted above and make sure your code change adhere to them.
 * Ask for help from a colleague - pair program with an experienced colleague that you can learn from.
 
 Some tips for overcoming the impostor phenomenon for reviewers:
 
-* Anyone can have valuable insights. A fresh new pair of eyes are always welcome. Study the review until you have clearly understood it, check the corner cases and look for ways to improve it.
+* Anyone can have valuable insights.
+* A fresh new pair of eyes are always welcome.
+* Study the review until you have clearly understood it, check the corner cases and look for ways to improve it.
 * If something is not clear, a simple specific question should be asked.
 * If you have learnt something, you can always compliment the author.
+* If possible, pair with someone for code reviewing so that you establish a personal connection and have a more complex discussion about the code.
 
 ## Tools
 
