@@ -48,7 +48,7 @@ In such cases, assuming positive intent of the author and reviewer is a good sta
 
 ## Dealing with the Impostor Phenomenon
 
-Impostor phenomenon is a psychological pattern in which an individual doubts their skills, talents, or accomplishments and has a persistent internalized fear of being exposed as a "fraud" - [wikipedia](https://en.wikipedia.org/wiki/Impostor_phenomenon).
+Impostor phenomenon is a psychological pattern in which an individual doubts their skills, talents, or accomplishments and has a persistent internalized fear of being exposed as a "fraud" - [Wikipedia](https://en.wikipedia.org/wiki/Impostor_phenomenon).
 
 Someone experiencing impostor phenomenon may find submitting a code review particularly stressful. It is important to realise that everybody can have meaningful contributions and to not let the perceived weaknesses prevent contributions.
 
