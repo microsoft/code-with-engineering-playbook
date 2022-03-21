@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers follow the [hashicorp style guide](https://www.terraform.io/docs/configuration/style.html).
+[CSE](../../CSE.md) developers follow the [terraform style guide](https://github.com/jonbrouse/terraform-style-guide/blob/master/README.md).
 
 [CSE](../../CSE.md) projects should check Terraform scripts with automated tools.
 
@@ -71,7 +71,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
 ### Providers
 
-* [ ] Are all providers used in the terraform scripts [versioned](https://www.terraform.io/docs/configuration/providers.html#provider-versions) to prevent breaking changes in the future?
+* [ ] Are all providers used in the terraform scripts [versioned](https://www.terraform.io/language/providers/requirements#best-practices-for-provider-versions) to prevent breaking changes in the future?
 
 ### Repository Organization
 
