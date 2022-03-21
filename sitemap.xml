@@ -766,6 +766,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-data-exploration/</loc>
+         <lastmod>2022-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-envisioning-summary-template/</loc>
+         <lastmod>2022-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-experimentation/</loc>
          <lastmod>2022-03-21</lastmod>
          <changefreq>daily</changefreq>

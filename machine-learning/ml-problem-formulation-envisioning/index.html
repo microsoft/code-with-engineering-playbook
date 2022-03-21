@@ -4132,6 +4132,30 @@
   
   
     <li class="md-nav__item">
+      <a href="../ml-data-exploration/" class="md-nav__link">
+        Data Exploration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ml-envisioning-summary-template/" class="md-nav__link">
+        Generic Envisioning Summary
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ml-experimentation/" class="md-nav__link">
         Model Experimentation
       </a>
@@ -4225,6 +4249,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#listening-to-the-end-user" class="md-nav__link">
+    Listening to the end user
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#envisioning-guidance" class="md-nav__link">
     Envisioning Guidance
   </a>
@@ -4235,13 +4266,6 @@
           <li class="md-nav__item">
   <a href="#problem-framing" class="md-nav__link">
     Problem Framing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-exploration" class="md-nav__link">
-    Data Exploration
   </a>
   
 </li>
@@ -4261,6 +4285,13 @@
         <li class="md-nav__item">
   <a href="#example-a-recommendation-engine-problem" class="md-nav__link">
     Example - a recommendation engine problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
   </a>
   
 </li>
@@ -5243,6 +5274,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#listening-to-the-end-user" class="md-nav__link">
+    Listening to the end user
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#envisioning-guidance" class="md-nav__link">
     Envisioning Guidance
   </a>
@@ -5253,13 +5291,6 @@
           <li class="md-nav__item">
   <a href="#problem-framing" class="md-nav__link">
     Problem Framing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-exploration" class="md-nav__link">
-    Data Exploration
   </a>
   
 </li>
@@ -5279,6 +5310,13 @@
         <li class="md-nav__item">
   <a href="#example-a-recommendation-engine-problem" class="md-nav__link">
     Example - a recommendation engine problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
   </a>
   
 </li>
@@ -5312,6 +5350,7 @@
 <li>Define how a potential solution would be used and how its performance should be measured</li>
 <li>Determine what data is available to solve the problem</li>
 <li>Understand the capabilities and working practices of the data science team</li>
+<li>Ensure all parties have the same understanding of the scope and next steps (e.g., onboarding, data exploration workshop)</li>
 </ul>
 <p>The envisioning process usually entails a series of 'envisioning' sessions where the data science team work alongside subject-matter experts to formulate the problem in such a way that there is a shared understanding a shared understanding of the problem domain, a clear goal, and a predefined approach to evaluating a potential solution.</p>
 <h2 id="understanding-the-problem-domain">Understanding the problem domain</h2>
@@ -5335,6 +5374,18 @@ or disproved - to guide the exploration of the data science team. Where possible
 <li>Document all the above information, to ensure alignment between stakeholders and establish a clear understanding of the problem to be solved. Try to ensure that as much relevant domain knowledge is captured as possible, and that the features present in available data - and the way that the data was collected - are clearly explained, such that they can be understood by a non-subject matter expert.</li>
 </ul>
 <p>Once an understanding of the problem domain has been established, it may be necessary to break down the overall problem into smaller, meaningful chunks of work to maintain team focus and ensure a realistic project scope within the given time frame.</p>
+<h2 id="listening-to-the-end-user">Listening to the end user</h2>
+<p>These problems are complex and require understanding from a variety of perspectives. It is not uncommon for the stakeholders to not be the end user of the solution framework. In these cases, listening to the actual end users is critical to the success of the project.</p>
+<p>The following questions can help guide discussion in understanding the stakeholders' perspectives:</p>
+<ul>
+<li>Who is the end user?</li>
+<li>What is the current practice related to the business problem?</li>
+<li>What's the performance of the current solution?</li>
+<li>What are their pain points?</li>
+<li>What is their toughest problem?</li>
+<li>What is the state of the data used to build the solution?</li>
+<li>How does the end user or SME envision the solution?</li>
+</ul>
 <h2 id="envisioning-guidance">Envisioning Guidance</h2>
 <p>During envisioning sessions, the following may prove useful for guiding the discussion. Many of these points are taken directly, or adapted from, <a href="#references">[1]</a> and <a href="#references">[2]</a>.</p>
 <h3 id="problem-framing">Problem Framing</h3>
@@ -5353,17 +5404,6 @@ or disproved - to guide the exploration of the data science team. Where possible
 <li>List the assumptions you or others have made so far. Verify these assumptions if possible.</li>
 <li>Define some initial hypothesis statements to be explored.</li>
 <li>Highlight and discuss any responsible AI concerns if appropriate.</li>
-</ol>
-<h3 id="data-exploration">Data Exploration</h3>
-<ol>
-<li>Understand and document the features, location, and availability of the data.</li>
-<li>What order of magnitude is the current data (e.g., GB, TB)? Is this all relevant?</li>
-<li>How does the organization decide when to collect additional data or purchase external data? Are there any examples of this?</li>
-<li>What data has been used so far to analyse recent data-driven projects? What has been found to be most useful? What was not useful? How was this judged?</li>
-<li>What additional internal data may provide insights useful for data-driven decision-making for proposed projects? What external data could be useful?</li>
-<li>What are the possible constraints or challenges in accessing or incorporating this data?</li>
-<li>How was the data collected? Are there any obvious biases due to how the data was collected?</li>
-<li>What changes to data collection, coding, integration, etc has occurred in the last 2 years that may impact the interpretation or availability of the collected data</li>
 </ol>
 <h3 id="workflow">Workflow</h3>
 <ol>
@@ -5408,6 +5448,15 @@ or disproved - to guide the exploration of the data science team. Where possible
 <li>Based on the behavior of customers with similar purchasing histories, we are able to predict certain items that a customer is likely to purchase; with a certainty which is greater than random choice.</li>
 <li>Using sets of items which have previously been sold together, we can formulate rules around the features which determine whether items are complementary or not which can be verified by a stylist.</li>
 </ul>
+<h2 id="next-steps">Next Steps</h2>
+<p>To ensure clarity and alignment, it is useful to summarise the envisioning stage findings focusing on proposed detailed scenarios, assumptions and agreed decisions as well next steps.</p>
+<p>We suggest confirming that you have access to all necessary resources (including data) as a next step before proceeding with data exploration workshops.</p>
+<p>Below are the links to the exit document template and to some questions which may be helpful in confirming resource access.</p>
+<ul>
+<li><a href="../ml-envisioning-summary-template/">Summary of Scope Exit Document Template</a></li>
+<li><a href="../ml-data-exploration/">List of Resource Access Questions</a></li>
+<li><a href="../ml-data-exploration/">List of Data Exploration Workshop Questions</a></li>
+</ul>
 <h2 id="references">References</h2>
 <p>Many of the ideas presented here - and much more - were inspired by, and can be found in the following resources; all of which are highly recommended.</p>
 <p>[1]: <a href="https://github.com/ageron/handson-ml/blob/master/ml-project-checklist.md">Aurélien Géron's Machine learning project checklist</a></p>
@@ -5421,7 +5470,7 @@ or disproved - to guide the exploration of the data science team. Where possible
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 14, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 21, 2022</span>
     
   </small>
 </div>
