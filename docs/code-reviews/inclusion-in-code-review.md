@@ -64,7 +64,7 @@ Some tips for overcoming the impostor phenomenon for reviewers:
 * Study the review until you have clearly understood it, check the corner cases and look for ways to improve it.
 * If something is not clear, a simple specific question should be asked.
 * If you have learnt something, you can always compliment the author.
-* If possible, pair with someone for code reviewing so that you establish a personal connection and have a more complex discussion about the code.
+* If possible, pair with someone to review the code so that you can establish a personal connection and have a more profound discussion about the code.
 
 ## Tools
 
