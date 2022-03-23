@@ -10,6 +10,7 @@ The main goals of the envisioning process are:
 * Define how a potential solution would be used and how its performance should be measured
 * Determine what data is available to solve the problem
 * Understand the capabilities and working practices of the data science team
+* Ensure all parties have the same understanding of the scope and next steps (e.g., onboarding, data exploration workshop)
 
 The envisioning process usually entails a series of 'envisioning' sessions where the data science team work alongside subject-matter experts to formulate the problem in such a way that there is a shared understanding a shared understanding of the problem domain, a clear goal, and a predefined approach to evaluating a potential solution.
 
@@ -34,6 +35,20 @@ or disproved - to guide the exploration of the data science team. Where possible
 
 Once an understanding of the problem domain has been established, it may be necessary to break down the overall problem into smaller, meaningful chunks of work to maintain team focus and ensure a realistic project scope within the given time frame.
 
+## Listening to the end user
+
+These problems are complex and require understanding from a variety of perspectives. It is not uncommon for the stakeholders to not be the end user of the solution framework. In these cases, listening to the actual end users is critical to the success of the project.
+
+The following questions can help guide discussion in understanding the stakeholders' perspectives:
+
+* Who is the end user?
+* What is the current practice related to the business problem?
+* What's the performance of the current solution?
+* What are their pain points?
+* What is their toughest problem?
+* What is the state of the data used to build the solution?
+* How does the end user or SME envision the solution?
+
 ## Envisioning Guidance
 
 During envisioning sessions, the following may prove useful for guiding the discussion. Many of these points are taken directly, or adapted from, [[1]](#references) and [[2]](#references).
@@ -54,17 +69,6 @@ During envisioning sessions, the following may prove useful for guiding the disc
 12. List the assumptions you or others have made so far. Verify these assumptions if possible.
 13. Define some initial hypothesis statements to be explored.
 14. Highlight and discuss any responsible AI concerns if appropriate.
-
-### Data Exploration
-
-1. Understand and document the features, location, and availability of the data.
-2. What order of magnitude is the current data (e.g., GB, TB)? Is this all relevant?
-3. How does the organization decide when to collect additional data or purchase external data? Are there any examples of this?
-4. What data has been used so far to analyse recent data-driven projects? What has been found to be most useful? What was not useful? How was this judged?
-5. What additional internal data may provide insights useful for data-driven decision-making for proposed projects? What external data could be useful?
-6. What are the possible constraints or challenges in accessing or incorporating this data?
-7. How was the data collected? Are there any obvious biases due to how the data was collected?
-8. What changes to data collection, coding, integration, etc has occurred in the last 2 years that may impact the interpretation or availability of the collected data
 
 ### Workflow
 
@@ -113,6 +117,18 @@ which can be used to create and rank recommendations. Depending on the project s
 * From the descriptions of each item, we can determine a measure of similarity between different items to a degree of accuracy which is specified by a stylist.
 * Based on the behavior of customers with similar purchasing histories, we are able to predict certain items that a customer is likely to purchase; with a certainty which is greater than random choice.
 * Using sets of items which have previously been sold together, we can formulate rules around the features which determine whether items are complementary or not which can be verified by a stylist.
+
+## Next Steps
+
+To ensure clarity and alignment, it is useful to summarise the envisioning stage findings focusing on proposed detailed scenarios, assumptions and agreed decisions as well next steps.
+
+We suggest confirming that you have access to all necessary resources (including data) as a next step before proceeding with data exploration workshops.
+
+Below are the links to the exit document template and to some questions which may be helpful in confirming resource access.
+
+* [Summary of Scope Exit Document Template](./ml-envisioning-summary-template.md)
+* [List of Resource Access Questions](./ml-data-exploration.md)
+* [List of Data Exploration Workshop Questions](./ml-data-exploration.md)
 
 ## References
 
