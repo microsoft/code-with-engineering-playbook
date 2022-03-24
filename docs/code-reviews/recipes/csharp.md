@@ -59,7 +59,7 @@ If you are currently using the legacy FxCop analyzers, [migrate from FxCop analy
 
 The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions about braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
 
-The minimum rules set teams should adopt is the [Managed Recommended Rules](https://msdn.microsoft.com/en-us/library/dd264893.aspx) rule set.
+The minimum rules set teams should adopt is the [Managed Recommended Rules](https://docs.microsoft.com/en-us/visualstudio/code-quality/managed-minimum-rules-rule-set-for-managed-code?view=vs-2022) rule set.
 
 ## Automatic Code Formatting
 
