@@ -1,4 +1,5 @@
-## Agile/Scrum Roles
+# Agile/Scrum Roles
+
 This section has links directing you to definitions for the traditional roles within Agile/Scrum.  After reading through the best practices you should have a basic understanding of the key Agile roles in terms of what they are and the expectations for the role.
 
 - [Product Owner](https://scrumguides.org/scrum-guide.html#product-owner 'Product Owner')

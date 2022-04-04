@@ -10,7 +10,7 @@ When the development team picks a user story from the top of the backlog, the us
 
 It can be understood as a checklist that helps the Product Owner to ensure that the user story they wrote contains all the necessary details for the scrum team to understand the work to be done.
 
-### Examples of ready checklist items:
+### Examples of ready checklist items
 
 * [ ] Does the description have the details including any input values required to implement the user story?
 * [ ] Does the user story have clear and complete acceptance criteria?

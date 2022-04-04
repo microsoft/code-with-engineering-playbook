@@ -1,4 +1,5 @@
-## Backlog Management basics for the Product and Sprint backlog
+# Backlog Management basics for the Product and Sprint backlog
+
 This section has links directing you to best practices for managing Product and Sprint backlogs.  After reading through the best practices you should have a basic understanding for managing both product and sprint backlogs, how to create acceptance criteria for user stories, creating a definition of done and definition of ready for user stories and the basics around estimating user stories.
 
 - [Product Backlog](https://scrumguides.org/scrum-guide.html#product-backlog 'Product Backlog')
