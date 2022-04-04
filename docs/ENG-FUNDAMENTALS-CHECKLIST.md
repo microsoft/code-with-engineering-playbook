@@ -20,7 +20,7 @@ More details on [source control](source-control/README.md)
 - [ ] All items are tracked in AzDevOps (or similar).
 - [ ] The board is organized (swim lanes, feature tags, technology tags).
 
-More details on [backlog management](agile-development/advanced-topics/backlog-management/README.md)
+More details on [backlog management](agile-development/advanced-topics/backlog-management/readme.md)
 
 ## Testing
 

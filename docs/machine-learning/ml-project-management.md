@@ -13,12 +13,12 @@ To learn more about how CSE runs the Agile process for software development team
 
 Within this framework, the team follows these Agile ceremonies:
 
-- [Backlog management](../agile-development/backlog-management/README.md)
-- [Retrospectives](../agile-development/retrospectives.md)
-- [Scrum of Scrums](../agile-development/scrum-of-scrums.md) (where applicable)
-- [Sprint planning](../agile-development/sprint-planning/README.md)
-- [Stand-ups](../agile-development/stand-ups/README.md)
-- [Working agreement](../agile-development/team-agreements/working-agreements.md)
+- [Backlog management](../agile-development/advanced-topics/backlog-management/readme.md)
+- [Retrospectives](../agile-development/core-expectations/README.md)
+- [Scrum of Scrums](../agile-development/advanced-topics/effective-organization/scrum-of-scrums.md) (where applicable)
+- [Sprint planning](../agile-development/core-expectations/README.md)
+- [Stand-ups](../agile-development/core-expectations/README.md)
+- [Working agreement](../agile-development/advanced-topics/team-agreements/working-agreements.md)
 
 ### Notes on Agile process during exploration and experimentation
 
