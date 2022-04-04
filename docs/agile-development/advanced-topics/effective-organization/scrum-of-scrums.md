@@ -15,7 +15,7 @@ The scrum of scrums ceremony happens every day and can be seen as a regular [sta
 
 The outcome of the meeting will result in a list of impediments related to coordination of the whole project. Solutions could be: agreeing on interfaces between teams, discussing architecture changes, evolving responsibility boundaries, etc.
 
-This list of impediments is usually managed in a separate [backlog](../backlog-management/README.md) but does not have to.
+This list of impediments is usually managed in a separate [backlog](../backlog-management/readme.md) but does not have to.
 
 ## Participation
 
@@ -29,8 +29,8 @@ When choosing to implement Scrum of Scrums, you need to keep in mind that some t
 
 ## Measures
 
-The easiest way to measure the impact is by tracking the time to resolve issues in the scrum of scrums backlog. You can also track issues reported during the [retrospective](retrospectives.md) related to global coordination (is it well done? can it be improved?).
+The easiest way to measure the impact is by tracking the time to resolve issues in the scrum of scrums backlog. You can also track issues reported during the [retrospective](../../core-expectations/README.md) related to global coordination (is it well done? can it be improved?).
 
 ## Facilitation Guidance
 
-This should be facilitated like a regular [stand-up](stand-ups/README.md).
+This should be facilitated like a regular [stand-up](../../core-expectations/README.md).

@@ -21,7 +21,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 ## Communication
 
 - We communicate all information relevant to the team through the Project Teams channel
-- We add all [technical spikes](../../design/design-reviews/recipes/technical-spike.md), [trade studies](../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design/design-reviews/recipes/async-design-reviews.md)
+- We add all [technical spikes](../../../design/design-reviews/recipes/technical-spike.md), [trade studies](../../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../../design/design-reviews/recipes/async-design-reviews.md)
 
 ## Work-life Balance
 
