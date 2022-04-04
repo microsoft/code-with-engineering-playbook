@@ -4,6 +4,6 @@ This section has links directing you to best practices for conducting the Agile 
 
 - [Planning](https://scrumguides.org/scrum-guide.html#sprint-planning 'Sprint Planning')
 - [Refinement](https://docs.microsoft.com/en-us/devops/plan/what-is-agile-development#diligent-backlog-refinement 'Refinement')
-- [Retrospective](https://scrumguides.org/scrum-guide.html#sprint-retrospective 'Retrospective') 
+- [Retrospective](https://scrumguides.org/scrum-guide.html#sprint-retrospective 'Retrospective')
 - [Sprint Review/Demo](https://scrumguides.org/scrum-guide.html#sprint-review 'Sprint Review')
 - [Stand-Up/Daily Scrum](https://scrumguides.org/scrum-guide.html#daily-scrum 'Stand-up/Daily Scrum')

@@ -4,4 +4,4 @@ This section has links directing you to definitions for the traditional roles wi
 
 - [Product Owner](https://scrumguides.org/scrum-guide.html#product-owner 'Product Owner')
 - [Scrum Master](https://scrumguides.org/scrum-guide.html#scrum-master 'Scrum Master')
-- [Development Team](https://scrumguides.org/scrum-guide.html#developers 'Developers') 
+- [Development Team](https://scrumguides.org/scrum-guide.html#developers 'Developers')

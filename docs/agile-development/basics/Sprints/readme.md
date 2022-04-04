@@ -4,5 +4,5 @@ This section has links directing you to best practices in regards to what a spri
 
 - [Sprint Planning and the Sprint Backlog](https://docs.microsoft.com/en-us/devops/plan/what-is-scrum#sprint-planning-and-the-sprint-backlog 'Sprint Planning and Sprint Backlog')
 - [Sprint Execution and the Daily Standup](https://docs.microsoft.com/en-us/devops/plan/what-is-scrum#sprint-execution-and-daily-scrum 'Sprint Execution and the Daily Standup')
-- [Sprint Review and Sprint Retrospective](https://docs.microsoft.com/en-us/devops/plan/what-is-scrum#sprint-review-and-sprint-retrospective 'Sprint Review and Sprint Retrospective') 
+- [Sprint Review and Sprint Retrospective](https://docs.microsoft.com/en-us/devops/plan/what-is-scrum#sprint-review-and-sprint-retrospective 'Sprint Review and Sprint Retrospective')
 - [Increment](https://docs.microsoft.com/en-us/devops/plan/what-is-scrum#increment 'Increment')
