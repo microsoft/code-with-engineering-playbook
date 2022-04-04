@@ -18,7 +18,7 @@ There are many options when working with Source Control. In [CSE](../CSE.md) we 
 
 ## General Guidance
 
-Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreements.md) and [Design Reviews](../design/design-reviews/README.md)).
+Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/advanced-topics/team-agreements/working-agreements.md) and [Design Reviews](../design/design-reviews/README.md)).
 
 ## Creating a new repository
 

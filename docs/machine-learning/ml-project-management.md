@@ -24,7 +24,7 @@ Within this framework, the team follows these Agile ceremonies:
 
 1. While acknowledging the fact that ML user stories and research spikes are less predictable than software development ones, we strive to have a deliverable for every user story in every sprint.
 
-2. User stories and spikes are usually estimated using [T-shirt sizes](../agile-development/sprint-planning/estimation.md#t-shirt-sizes) or similar, and not in actual days/hours. See more [here](../agile-development/sprint-planning/estimation.md) on story estimation.
+2. User stories and spikes are usually estimated using [T-shirt sizes](../agile-development/core-expectations/README.md) or similar, and not in actual days/hours. See more [here](../agile-development/core-expectations/README.md) on story estimation.
 
 3. ML design sessions should be included in each sprint.
 

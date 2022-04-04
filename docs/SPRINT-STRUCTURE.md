@@ -10,11 +10,11 @@ The purpose of this document is to:
 
 ### Before starting the project
 
-- [ ] [Discuss and start writing the Team Agreements](agile-development/team-agreements/README.md). Update these documents with any process decisions made throughout the project
-  - [Working Agreement](agile-development/team-agreements/working-agreements.md)
-  - [Definition of Ready](agile-development/team-agreements/definition-of-ready.md)
-  - [Definition of Done](agile-development/team-agreements/definition-of-done.md)
-  - [Estimation](agile-development/sprint-planning/estimation.md)
+- [ ] [Discuss and start writing the Team Agreements](agile-development/advanced-topics/team-agreements/README.md). Update these documents with any process decisions made throughout the project
+  - [Working Agreement](agile-development/advanced-topics/team-agreements/working-agreements.md)
+  - [Definition of Ready](agile-development/advanced-topics/team-agreements/definition-of-ready.md)
+  - [Definition of Done](agile-development/advanced-topics/team-agreements/definition-of-done.md)
+  - [Estimation](agile-development/core-expectations/README.md)
 - [ ] [Set up the repository/repositories](source-control/README.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
@@ -25,7 +25,7 @@ The purpose of this document is to:
 
 ### Day 1
 
-- [ ] [Plan the first sprint](agile-development/sprint-planning/README.md)
+- [ ] [Plan the first sprint](agile-development/core-expectations/README.md)
   - Agree on a sprint goal, and how to measure the sprint progress
   - Determine team capacity
   - Assign user stories to the sprint and split user stories into tasks
@@ -42,15 +42,15 @@ The purpose of this document is to:
 - [ ] [Set up Source Control](source-control/README.md)
   - Agree on [best practices for commits](source-control/README.md#commit-best-practices)
 - [ ] [Set up basic Continuous Integration with linters and automated tests](continuous-integration/README.md)
-- [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/stand-ups/README.md)
+- [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/core-expectations/README.md)
   - Discuss purpose, goals, participants and facilitation guidance
   - Discuss timing, and how to run an efficient stand-up
-- [ ] [If the project has sub-teams, set up a Scrum of Scrums](agile-development/scrum-of-scrums.md)
+- [ ] [If the project has sub-teams, set up a Scrum of Scrums](agile-development/advanced-topics/effective-organization/scrum-of-scrums.md)
 
 ### Day 3
 
 - [ ] [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
-- [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/team-agreements/definition-of-done.md)
+- [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/advanced-topics/team-agreements/definition-of-done.md)
 - [ ] [Agree on a Code Merging strategy](source-control/merge-strategies.md) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
 - [ ] [Agree on logging and observability frameworks and strategies](observability/README.md)
 
@@ -65,11 +65,11 @@ The purpose of this document is to:
 ### Day 5
 
 - [ ] Conduct a Sprint Demo
-- [ ] [Conduct a Retrospective](agile-development/retrospectives.md)
+- [ ] [Conduct a Retrospective](agile-development/core-expectations/README.md)
   - Determine required participants, how to capture input (tools) and outcome
   - Set a timeline, and discuss facilitation, meeting structure etc.
-- [ ] [Refine the Backlog](agile-development/backlog-management/backlog-refinement.md)
+- [ ] [Refine the Backlog](agile-development/advanced-topics/backlog-management/readme.md)
   - Determine required participants
-  - Update the [Definition of Ready](agile-development/team-agreements/definition-of-ready.md)
-  - Update estimates, and the [Estimation](agile-development/sprint-planning/estimation.md) document
+  - Update the [Definition of Ready](agile-development/advanced-topics/team-agreements/definition-of-ready.md)
+  - Update estimates, and the [Estimation](agile-development/core-expectations/README.md) document
 - [ ] [Submit Engineering Feedback for issues encountered](engineering-feedback/README.md)
