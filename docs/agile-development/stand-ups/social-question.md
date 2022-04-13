@@ -37,3 +37,20 @@ Potentially good questions include:
 - Would you rather live underwater or in space for a year?
 - What's your favorite phone app?
 - What's your favorite fish, to eat or otherwise?
+- What was your best costume?
+- Who is someone you admire (from history, from your personal life, etc.)? Give one reason why.
+- What's the best compliment you've ever received?
+- What's your favorite or most used emoji right now?
+- What was your biggest DIY project?
+- What's a spice that you use on everything?
+- What's your top Spotify (or just your favorite) genre/artist for this year?
+- What was your first computer?
+- What's your favorite kind of taco?
+- What's your favorite decade?
+- What's the best way to eat potatoes?
+- What was your best vacation (stay-cations acceptable)?
+- Favorite cartoon?
+- Pick someone in your family and tell us something awesome about them.
+- What was your longest road trip?
+- What thing do you remember learning when you were young that is taught differently now?
+- What was your favorite toy as a child?
