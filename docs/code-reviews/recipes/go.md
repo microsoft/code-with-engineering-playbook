@@ -49,7 +49,7 @@ To use golangci-lint with VS Code, use the below recommended settings:
 
 `gofmt` should be run as a part of every build to enforce the common standard.
 
-To automate this process in Azure Devops you can add the following snippet to your `azure-pipelines.yaml` file. This will format any scripts in the `./scripts/` folder.
+To automate this process in Azure DevOps you can add the following snippet to your `azure-pipelines.yaml` file. This will format any scripts in the `./scripts/` folder.
 
 ```yaml
 - script: go fmt
@@ -59,7 +59,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
 
   `govet` should be run as a part of every build to check code linting.
 
-To automate this process in Azure Devops you can add the following snippet to your `azure-pipelines.yaml` file. This will check linting of any scripts in the `./scripts/` folder.
+To automate this process in Azure DevOps you can add the following snippet to your `azure-pipelines.yaml` file. This will check linting of any scripts in the `./scripts/` folder.
 
 ```yaml
 - script: go vet

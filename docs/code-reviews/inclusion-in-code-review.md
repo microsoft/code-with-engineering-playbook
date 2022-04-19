@@ -46,11 +46,31 @@ Below are some points which emphasize why inclusivity in code reviews is importa
 We as CSE, may come across situations in which code reviews are not ideal and often we are observing non inclusive code review behaviors. Its important to be aware of the fact that culture and communication style of a particular geography also influences how people interact over pull requests.
 In such cases, assuming positive intent of the author and reviewer is a good start to start analyzing quality of code reviews.
 
+## Dealing with the Impostor Phenomenon
+
+Impostor phenomenon is a psychological pattern in which an individual doubts their skills, talents, or accomplishments and has a persistent internalized fear of being exposed as a "fraud" - [Wikipedia](https://en.wikipedia.org/wiki/Impostor_phenomenon).
+
+Someone experiencing impostor phenomenon may find submitting code for a review particularly stressful. It is important to realize that everybody can have meaningful contributions and not to let the perceived weaknesses prevent contributions.
+
+Some tips for overcoming the impostor phenomenon for authors:
+
+* Review the guidelines highlighted above and make sure your code change adhere to them.
+* Ask for help from a colleague - pair program with an experienced colleague that you can learn from.
+
+Some tips for overcoming the impostor phenomenon for reviewers:
+
+* Anyone can have valuable insights.
+* A fresh new pair of eyes are always welcome.
+* Study the review until you have clearly understood it, check the corner cases and look for ways to improve it.
+* If something is not clear, a simple specific question should be asked.
+* If you have learnt something, you can always compliment the author.
+* If possible, pair with someone to review the code so that you can establish a personal connection and have a more profound discussion about the code.
+
 ## Tools
 
 Below are some tools which may help in establishing inclusive code review culture within our teams.
 
-* [Anonymous Github](https://github.com/tdurieux/anonymous_github)
+* [Anonymous GitHub](https://github.com/tdurieux/anonymous_github)
 * [Blind Code Reviews](https://github.com/zombie/blind-reviews)
 * [Gitmask](https://www.gitmask.com)
 * [inclusivelint](https://github.com/inclusivelint)

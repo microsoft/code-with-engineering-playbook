@@ -163,9 +163,9 @@ else
 fi
 ```
 
-### Reuse of credentials for Github
+### Reuse of credentials for GitHub
 
-If you develop inside a Dev Container, you will also want to share your Github credentials between your host and the Dev Container. Doing so, you would avoid copying your ssh keys back and forth (if you are using ssh to access your repositories).
+If you develop inside a Dev Container, you will also want to share your GitHub credentials between your host and the Dev Container. Doing so, you would avoid copying your ssh keys back and forth (if you are using ssh to access your repositories).
 
 One approach would be to mount your local `~/.ssh` folder into your Dev Container. You can either use the `mounts` option of the `devcontainer.json`, or use Docker Compose
 
@@ -197,7 +197,7 @@ services:
 
 Please note that using Docker Compose requires to edit the `devcontainer.json` file as we have seen above.
 
-You can now access Github using the same credentials as your host machine, without worrying of persistence.
+You can now access GitHub using the same credentials as your host machine, without worrying of persistence.
 
 ### Allow some customization
 
