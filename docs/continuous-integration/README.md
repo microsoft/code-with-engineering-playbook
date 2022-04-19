@@ -46,7 +46,7 @@ An automated build should encompass the following principles:
 - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent, and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
 - There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review section](../code-reviews/README.md#language-specific-guidance) of the playbook has suggestions for linters and preferred styles for a number of languages.
 - Your code and documentation should avoid the use of non-inclusive language wherever possible. Follow the [Inclusive Linting section](inclusive-linting.md) to ensure your project promotes an inclusive work environment for both the team and for customers.
-- We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOPS, you can add a security scan task to your pipeline by installing the [Microsoft Security Code Analysis Extension](https://secdevtools.azurewebsites.net/#pills-onboard). GitHub Actions supports a similar extension with the [RIPS security scan solution](https://github.com/marketplace/actions/rips-security-scan).
+- We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOps, you can add a security scan task to your pipeline by installing the [Microsoft Security Code Analysis Extension](https://secdevtools.azurewebsites.net/#pills-onboard). GitHub Actions supports a similar extension with the [RIPS security scan solution](https://github.com/marketplace/actions/rips-security-scan).
 - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
 
 ### Build Script Target
@@ -89,9 +89,9 @@ Manage as much of the following as possible, as code:
 
 Decoupling infrastructure from the application codebase simplifies engineering teams move to cloud native applications.
 
-Terraform resource providers like [Azure DevOPS](https://github.com/microsoft/terraform-provider-azuredevops) is making it easier for developers to manage build pipeline variables, service connections and CI/CD pipeline definitions.
+Terraform resource providers like [Azure DevOps](https://github.com/microsoft/terraform-provider-azuredevops) is making it easier for developers to manage build pipeline variables, service connections and CI/CD pipeline definitions.
 
-### Sample DevOPS Workflow using Terraform and Cobalt
+### Sample DevOps Workflow using Terraform and Cobalt
 
 ![image](https://user-images.githubusercontent.com/7635865/76626035-652eda80-6506-11ea-8870-6070365f10d6.png)
 
@@ -294,8 +294,8 @@ We recommend integrating Teams or Slack with CI/CD pipeline runs which helps kee
 - [Martin Fowler's Continuous Integration Best Practices](https://martinfowler.com/articles/continuousIntegration.html)
 - [Bedrock Getting Started Quick Guide](https://github.com/microsoft/bedrock#getting-started)
 - [Cobalt Quick Start Guide](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md)
-- [Terraform Azure DevOPS Provider](https://github.com/microsoft/terraform-provider-azuredevops)
-- [Azure DevOPS multi stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
+- [Terraform Azure DevOps Provider](https://github.com/microsoft/terraform-provider-azuredevops)
+- [Azure DevOps multi stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
 - [Azure Pipeline Key Concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
 - [Azure Pipeline Environments](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
 - [Artifacts in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/artifacts-overview?view=azure-devops)

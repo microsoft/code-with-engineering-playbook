@@ -12,7 +12,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Logs](pillars/logging.md)
 - [Metrics](pillars/metrics.md)
 - [Tracing](pillars/tracing.md)
-- [Logs vs Metrics](log-vs-metric.md)
+- [Logs vs Metrics vs Traces](log-vs-metric-vs-trace.md)
 
 ## Insights
 
@@ -24,6 +24,7 @@ Building observable systems enables development teams at CSE to measure how well
 - [Observability As Code](observability-as-code.md)
 - [Recommended Practices](best-practices.md)
 - [Diagnostics tools](diagnostic-tools.md)
+- [OpenTelemetry](tools/OpenTelemetry.md)
 
 ## Facets of Observability
 

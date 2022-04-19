@@ -40,7 +40,7 @@ When working on an existing project, `git clone` the repository and ensure you u
 
 ## Mixed DevOps Environments
 
-For most engagements having a single hosted DevOps environment (i.e. AzureDevOps) is the preferred path but there are times when a mixed DevOps environment (i.e. AzureDevOps for Agile/Work item tracking & GitHub for Source Control) is needed due to customer requirements. When working in a mixed environment:
+For most engagements having a single hosted DevOps environment (i.e. Azure DevOps) is the preferred path but there are times when a mixed DevOps environment (i.e. Azure DevOps for Agile/Work item tracking & GitHub for Source Control) is needed due to customer requirements. When working in a mixed environment:
 
 * Manually tag PR's in work items
 * Ensure that the scope of work items / tasks align with PR's
@@ -107,7 +107,7 @@ References:
 ## Resources
 
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
-* [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/)
+* [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
 * [The GitHub Hello World](https://guides.github.com/activities/hello-world/)
 * [CSE Git details](git-guidance/README.md) details on how to use Git as part of a [CSE](../CSE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
