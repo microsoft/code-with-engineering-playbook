@@ -8,6 +8,14 @@
 
 [GitHub Repo](https://github.com/MagdaPaj/application-insights-aspnet-sample-trace-context-propagation).
 
+## Example: OpenTelemetry over a message oriented architecture in Java with Jaeger, Prometheus and Azure Monitor
+
+[Github Repo](https://github.com/iamnicoj/OpenTelemetry-Async-Java-with-Jaeger-Prometheus-AzMonitor)
+
+## Example: IoT Edge Distributed Tracing sample
+
+[Github Repo](https://github.com/eedorenko/iotedge-logging-and-monitoring-solution/tree/eedorenko/dist-tracing/DistributedTracing)
+
 ## Example: Setup Azure Monitor dashboards and alerts with Terraform
 
 [GitHub Repo](https://github.com/buzzfrog/azure-alert-dashboard-terraform)
