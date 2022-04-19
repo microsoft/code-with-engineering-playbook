@@ -7,7 +7,7 @@ In this document, we explore some of the Program Management considerations for M
 In Artificial Intelligence (AI) projects, the ML component is generally a part of an overall business problem and **NOT** the problem itself. Determine the overall business problem first and then evaluate if ML can help address a part of the problem space.
 Few considerations for identifying the right fit for the project:
 
-- Engage experts in human experience and employ techniques such as [Design Thinking](https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/) and [Problem Formulation](/docs/machine-learning/ml-problem-formulation-envisioning.md) to **understand the customer needs** and human behavior first. Identify the right stakeholders from both business and technical leadership and invite them to these workshops. The outcome should be end-user scenarios and [personas](https://en.wikipedia.org/wiki/Persona_(user_experience)) to determine the real needs of the users.
+- Engage experts in human experience and employ techniques such as [Design Thinking](https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/) and [Problem Formulation](ml-problem-formulation-envisioning.md) to **understand the customer needs** and human behavior first. Identify the right stakeholders from both business and technical leadership and invite them to these workshops. The outcome should be end-user scenarios and [personas](https://en.wikipedia.org/wiki/Persona_(user_experience)) to determine the real needs of the users.
 
 - Focus on [System Design](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/ai-overview) principles to identify the architectural components, entities, interfaces, constraints. Ask the right questions early and explore design alternatives with the engineering team.
 
@@ -18,10 +18,10 @@ Few considerations for identifying the right fit for the project:
 ML projects can be plagued with a phenomenon we can call as the "**Death by Unknowns**". Unlike software engineering projects, ML focused projects can result in quick success early (aka sudden decrease in error rate), but this may flatten eventually. Few things to consider:
 
 - **Set clear expectations**: Identify the performance metrics and discuss on a "good enough" prediction rate that will bring value to the business. An 80% "good enough" rate may save business costs and increase productivity but if going from 80 to 95% would require unimaginable cost and effort. Is it worth it? Can it be a progressive road map?
-  
-- Create a smaller team and **undertake a feasibility analysis** through techniques like [EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis) (Exploratory Data Analysis). A [feasibility study](/docs/machine-learning/ml-feasibility-study.md) is much cheaper to evaluate data quality, customer constraints and model feasibility. It allows a TPM to better understand customer use cases and current environment and can act as a fail-fast mechanism. Note that feasibility should be shorter (in weeks) else it misses the point of saving costs.
 
-- As in any project, there will be new needs (additional data sources, technical constraints, hiring data labelers, business users time etc.). Incorporate [Agile](/docs/machine-learning/ml-project-management.md) techniques to fail fast and minimize cost and schedule surprises.
+- Create a smaller team and **undertake a feasibility analysis** through techniques like [EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis) (Exploratory Data Analysis). A [feasibility study](ml-feasibility-study.md) is much cheaper to evaluate data quality, customer constraints and model feasibility. It allows a TPM to better understand customer use cases and current environment and can act as a fail-fast mechanism. Note that feasibility should be shorter (in weeks) else it misses the point of saving costs.
+
+- As in any project, there will be new needs (additional data sources, technical constraints, hiring data labelers, business users time etc.). Incorporate [Agile](ml-project-management.md) techniques to fail fast and minimize cost and schedule surprises.
 
 ### Notebooks != ML Production
 
@@ -29,8 +29,8 @@ Notebooks are a great way to kick start Data Analytics and Applied Machine Learn
 
 - Understand the [end-end flow of data management](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/ai-overview), how data will be made available (ingestion flows), what's the frequency, storage, retention of data. Plan user stories and design spikes around these flows to ensure a robust ML pipeline is developed.
 
-- Engineering team should follow the same rigor in building ML projects as in any software engineering project. We at CSE (Commercial Software Engineering) have built a good set of resources from our learnings in our [CSE Engineering Playbook](/README.md).
-- Think about the how the model will be deployed, for example, are there technical constraints due to an edge device, or network constraints that will prevent updating the model. Understanding of the environment is critical, refer to the [Model Production Checklist](/docs/machine-learning/ml-model-checklist.md) as a reference to determine model deployment choices.
+- Engineering team should follow the same rigor in building ML projects as in any software engineering project. We at CSE (Commercial Software Engineering) have built a good set of resources from our learnings in our [CSE Engineering Playbook](../index.md).
+- Think about the how the model will be deployed, for example, are there technical constraints due to an edge device, or network constraints that will prevent updating the model. Understanding of the environment is critical, refer to the [Model Production Checklist](ml-model-checklist.md) as a reference to determine model deployment choices.
 
 - ML Focussed projects are not a "one-shot" release solution, they need to be nurtured, evolved, and improved over time. Plan for a continuos improvement lifecycle, the initial phases can be model feasibility and validation to get the good enough prediction rate, the later phases can be then be scaling and improving the models through feedback loops and fresh data sets.
 
@@ -38,7 +38,7 @@ Notebooks are a great way to kick start Data Analytics and Applied Machine Learn
 
 Data quality is a major factor in affecting model performance and production roll-out, consider the following:
 
-- Conduct a [data exploration](/docs/machine-learning/ml-data-exploration.md) workshop and **generate a report on data quality** that includes missing values, duplicates, unlabeled data, expired or not valid data, incomplete data (e.g., only having male representation in a people dataset).
+- Conduct a [data exploration](ml-data-exploration.md) workshop and **generate a report on data quality** that includes missing values, duplicates, unlabeled data, expired or not valid data, incomplete data (e.g., only having male representation in a people dataset).
 
 - **Identify data source reliability** to ensure data is coming from a production source. (e.g., are the images from a production or industrial camera or taken from an iPhone/Android phone.)
 
@@ -56,7 +56,7 @@ Feature Engineering enables the transformation of data so that it becomes usable
 
 ### Responsible AI considerations
 
-Bias in machine learning could be the number one issue of a model not performing to its intended needs. Plan to incorporate [Responsible AI principles](/docs/machine-learning/responsible-ai.md) from Day 1 to ensure fairness, security, privacy and transparency of the models.  For example, for a person recognition algorithm, if the data source is only feeding a specific skin type, then production scenarios may not provide good results.
+Bias in machine learning could be the number one issue of a model not performing to its intended needs. Plan to incorporate [Responsible AI principles](responsible-ai.md) from Day 1 to ensure fairness, security, privacy and transparency of the models.  For example, for a person recognition algorithm, if the data source is only feeding a specific skin type, then production scenarios may not provide good results.
 
 ### PM Fundamentals
 
