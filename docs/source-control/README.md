@@ -108,7 +108,6 @@ References:
 
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
 * [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
-* [The GitHub Hello World](https://guides.github.com/activities/hello-world/)
 * [CSE Git details](git-guidance/README.md) details on how to use Git as part of a [CSE](../CSE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 * [How Git Works Pluralsight course](https://www.pluralsight.com/courses/how-git-works)
