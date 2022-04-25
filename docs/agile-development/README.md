@@ -1,12 +1,5 @@
-# Agile Development
+# Agile documentation
 
-## Sections
-
-- [Backlog Management](backlog-management/README.md)
-- [Collaboration](collaboration/README.md)
-- [Delivery Plan](delivery-plan/README.md)
-- [Retrospectives](retrospectives.md)
-- [Scrum of Scrums](scrum-of-scrums.md)
-- [Sprint Planning](sprint-planning/README.md)
-- [Standups](stand-ups/README.md)
-- [Team Agreements](team-agreements/README.md)
+- [Agile Basics](./basics/): Learn or refresh your basic agile knowledge.
+- [Agile Core Expectations](./core-expectations/): What are our core expectations from an Agile team.
+- [Agile Advanced Topics](./advanced-topics/): Go beyond the basics.
