@@ -51,7 +51,7 @@ This approach isn't without trade-offs:
 
 ### If there's sufficient log data, is there a need for instrumenting metrics?
 
-[Logs vs Metrics](../log-vs-metric.md) covers some high level guidance on when to utilize metric data and when to use log data. Both have a valuable part to play in creating observable systems.
+[Logs vs Metrics vs Traces](../log-vs-metric-vs-trace.md) covers some high level guidance on when to utilize metric data and when to use log data. Both have a valuable part to play in creating observable systems.
 
 ### Having problems identifying what to log?
 

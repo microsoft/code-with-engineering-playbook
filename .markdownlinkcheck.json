@@ -17,7 +17,10 @@
         {"pattern": "^https://thanos.io"},
         {"pattern": "^https://gitlab.com/palisade/palisade-release"},
         {"pattern": "^https://www.github.com"},
-        {"pattern": "^https://github.com"}
+        {"pattern": "^https://docs.github.com"},
+        {"pattern": "^https://help.github.com"},
+        {"pattern": "^https://github.com"},
+        {"pattern": "^https://marketplace.visualstudio.com"}
     ],
     "retryOn429": true
 }

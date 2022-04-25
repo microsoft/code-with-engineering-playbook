@@ -41,7 +41,7 @@ Out of Scope:
 
 > Security Warning:  
 > **This is NOT for injecting secrets** as the commit messages and PR body can be retrieved by a third party, are stored in `git log`, and can otherwise be read by a malicious individual using a variety of tools. Rather, this is for testing a workflow that needs simple variables to be injected into it, as above.  
-> **If you need to retrieve secrets or sensitive information**, use the [Github Action for Azure Key Vault](https://github.com/marketplace/actions/azure-key-vault-get-secrets) or some other similar secret storage and retrieval service.
+> **If you need to retrieve secrets or sensitive information**, use the [GitHub Action for Azure Key Vault](https://github.com/marketplace/actions/azure-key-vault-get-secrets) or some other similar secret storage and retrieval service.
 
 ## Commit Message Variables
 
@@ -161,7 +161,7 @@ Not Including the Variable
 
    ```cmd
    > git add.
-   > git commit -m "Running Github Actions Test"
+   > git commit -m "Running GitHub Actions Test"
    > git push
    ```
 
