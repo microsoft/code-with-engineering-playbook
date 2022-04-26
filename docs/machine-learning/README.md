@@ -34,6 +34,7 @@ The diagram below shows different phases in an ideal ML project. Due to practica
 * [Testing Data Science and ML Ops code](ml-testing.md)
 * [Profiling Machine Learning and ML Ops code](ml-profiling.md)
 * [Responsible AI](responsible-ai.md)
+* [Program Management for ML projects](ml-tpm-guidance.md)
 
 ## References
 
