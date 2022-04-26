@@ -89,4 +89,4 @@ Conducting engineering feasibility spikes sets the team and the customer up for 
 - The key purpose of the engineering feasibility spike is learning.
 - Learning comes from both conducting and sharing insights from spikes.
 - Use new spike infused learnings to revise, refine, re-prioritize, or create the next set of spikes.
-- When spikes are completed, look for new weekly rhythms like adding a ‘risk’ column to the retro board or raising topics at [daily standup](../../../agile-development/stand-ups/README.md) to identify emerging risks.
+- When spikes are completed, look for new weekly rhythms like adding a ‘risk’ column to the retro board or raising topics at [daily standup](../../../agile-development/core-expectations/README.md) to identify emerging risks.

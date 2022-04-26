@@ -21,7 +21,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 ## Communication
 
 - We communicate all information relevant to the team through the Project Teams channel
-- We add all [technical spikes](../../design/design-reviews/recipes/technical-spike.md), [trade studies](../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design/design-reviews/recipes/async-design-reviews.md)
+- We add all [technical spikes](../../../design/design-reviews/recipes/technical-spike.md), [trade studies](../../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../../design/design-reviews/recipes/async-design-reviews.md)
 
 ## Work-life Balance
 
@@ -39,19 +39,19 @@ their own, and adjust times, communication channels, branch naming policies etc.
 
 | Activity | When | Duration | Who | Accountable | Goal |
 |-|-|-|-|-|-|
-| [Project Standup](../stand-ups/README.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
+| [Project Standup](../../core-expectations/README.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
 | Sprint Demo | Monday 9AM | 1 hour | Everyone | Dev Lead | Present work done and sign off on user story completion |
-| [Sprint Retro](../retrospectives.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
-| [Sprint Planning](../sprint-planning/README.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
+| [Sprint Retro](../../core-expectations/README.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
+| [Sprint Planning](../../core-expectations/README.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
 | Task Creation | After Sprint Planning | - | Dev Team | Dev Lead | Create tasks to clarify and determine velocity |
-| [Backlog refinement](../backlog-management/backlog-refinement.md) | Wednesday 2PM | 1 hour | Dev Lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
+| [Backlog refinement](../backlog-management/readme.md) | Wednesday 2PM | 1 hour | Dev Lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
 
 ## Process Lead
 
 The Process Lead is responsible for leading any scrum or agile practices to enable the project to move forward.
 
 - Facilitate standup meetings and hold team accountable for attendance and participation.
-- Keep the meeting moving as described in the [Project Standup](../stand-ups/README.md) page.
+- Keep the meeting moving as described in the [Project Standup](../../core-expectations/README.md) page.
 - Make sure all action items are documented and ensure each has an owner and a due date and tracks the open issues.
 - Notes as needed after planning / stand-ups.
 - Make sure that items are moved to the parking lot and ensure follow-up afterwards.
@@ -80,4 +80,4 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 - All PRs are reviewed by one person from [Customer/Partner Name] and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
-- We treat documentation as code and apply the same [standards to Markdown](../../code-reviews/recipes/markdown.md) as code
+- We treat documentation as code and apply the same [standards to Markdown](../../../code-reviews/recipes/markdown.md) as code
