@@ -9,14 +9,13 @@
         <meta name="description" content="CSE Code With Engineering Playbook">
       
       
-      
         <meta name="author" content="Microsoft CSE">
       
       
         <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/custom-connector/">
       
       <link rel="icon" href="../../../resources/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.10">
     
     
       
@@ -24,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.df45aa19.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9647289d.min.css">
         
           
           
@@ -39,13 +38,14 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:""}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
 <script type="text/javascript">
   (function(c,l,a,r,i,t,y){
@@ -67,7 +67,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -84,7 +83,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="Code With Engineering Playbook" class="md-header__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
       
@@ -92,7 +94,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -114,21 +116,24 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -145,11 +150,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/microsoft/code-with-engineering-playbook/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/microsoft/code-with-engineering-playbook/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -158,11 +162,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -187,11 +194,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/microsoft/code-with-engineering-playbook/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/microsoft/code-with-engineering-playbook/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -274,10 +280,32 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Agile development
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../agile-development/">Agile development</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Agile development" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -286,42 +314,723 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../agile-development/advanced-topics/">Advanced topics</a>
+          
+            <label for="__nav_5_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Advanced topics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Advanced topics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_2" type="checkbox" id="__nav_5_2_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2_2">
+          Backlog management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Backlog management" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Backlog management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/" class="md-nav__link">
-        Agile Development
+      <a href="../../../agile-development/advanced-topics/backlog-management/external-feedback/" class="md-nav__link">
+        External Feedback
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/retrospectives/" class="md-nav__link">
-        Retrospectives
+      <a href="../../../agile-development/advanced-topics/backlog-management/minimal-slices/" class="md-nav__link">
+        Minimalism Slices
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/scrum-of-scrums/" class="md-nav__link">
+      <a href="../../../agile-development/advanced-topics/backlog-management/readme/" class="md-nav__link">
+        Advanced recommendations for Backlog Management
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_3" type="checkbox" id="__nav_5_2_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../agile-development/advanced-topics/collaboration/">Collaboration</a>
+          
+            <label for="__nav_5_2_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Collaboration" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Collaboration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/collaboration/add-pairing-field-azure-devops-cards/" class="md-nav__link">
+        How to add a Pairing Custom Field in Azure DevOps User Stories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/collaboration/social-question/" class="md-nav__link">
+        Social Question of the Day
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/collaboration/teaming-up/" class="md-nav__link">
+        Engagement Team Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/collaboration/virtual-collaboration/" class="md-nav__link">
+        Virtual Collaboration and Pair Programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/collaboration/why-collaboration/" class="md-nav__link">
+        Why Collaboration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_4" type="checkbox" id="__nav_5_2_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../agile-development/advanced-topics/effective-organization/">Effective organization</a>
+          
+            <label for="__nav_5_2_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Effective organization" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Effective organization
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/effective-organization/delivery-plan/" class="md-nav__link">
+        Delivery Plan
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/effective-organization/scrum-of-scrums/" class="md-nav__link">
         Scrum of Scrums
       </a>
     </li>
   
 
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
           
             
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_5" type="checkbox" id="__nav_5_2_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../agile-development/advanced-topics/team-agreements/">Team agreements</a>
+          
+            <label for="__nav_5_2_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Team agreements" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Team agreements
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/team-agreements/definition-of-done/" class="md-nav__link">
+        Definition of Done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/team-agreements/definition-of-ready/" class="md-nav__link">
+        Definition of Ready
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/team-agreements/team-manifesto/" class="md-nav__link">
+        Team Manifesto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/advanced-topics/team-agreements/working-agreements/" class="md-nav__link">
+        Sections of a Working Agreement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../agile-development/basics/">Basics</a>
+          
+            <label for="__nav_5_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Basics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_2" type="checkbox" id="__nav_5_3_2" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3_2">
+          Backlog Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Backlog Management" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Backlog Management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/basics/Backlog%20Management/readme/" class="md-nav__link">
+        Backlog Management basics for the Product and Sprint backlog
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_3" type="checkbox" id="__nav_5_3_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3_3">
+          Ceremonies
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ceremonies" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Ceremonies
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/basics/Ceremonies/readme/" class="md-nav__link">
+        Agile Ceremonies basics
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_4" type="checkbox" id="__nav_5_3_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3_4">
+          Roles
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Roles" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Roles
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/basics/Roles/readme/" class="md-nav__link">
+        Agile/Scrum Roles
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_5" type="checkbox" id="__nav_5_3_5" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3_5">
+          Sprints
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Sprints" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Sprints
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agile-development/basics/Sprints/readme/" class="md-nav__link">
+        The Sprint
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -331,373 +1040,37 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
       
-      <label class="md-nav__link" for="__nav_5_4">
-        Backlog management
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Backlog management" data-md-level="2">
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../agile-development/core-expectations/">Core expectations</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Core expectations" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_4">
           <span class="md-nav__icon md-icon"></span>
-          Backlog management
+          Core expectations
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/backlog-management/" class="md-nav__link">
-        Backlog Management
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/backlog-management/backlog-refinement/" class="md-nav__link">
-        Backlog Refinement
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/backlog-management/external-feedback/" class="md-nav__link">
-        External Feedback
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/backlog-management/minimal-slices/" class="md-nav__link">
-        Minimalism Slices
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
-          
             
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
-      
-      <label class="md-nav__link" for="__nav_5_5">
-        Collaboration
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Collaboration" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_5">
-          <span class="md-nav__icon md-icon"></span>
-          Collaboration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/collaboration/" class="md-nav__link">
-        Collaboration
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/collaboration/add-pairing-field-azure-devops-cards/" class="md-nav__link">
-        How to add a Pairing Custom Field in Azure DevOps User Stories
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/collaboration/teaming-up/" class="md-nav__link">
-        Engagement Team Development - CSE approach
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/collaboration/virtual-collaboration/" class="md-nav__link">
-        Virtual Collaboration and Pair Programming
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
-      
-      <label class="md-nav__link" for="__nav_5_6">
-        Delivery plan
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Delivery plan" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_6">
-          <span class="md-nav__icon md-icon"></span>
-          Delivery plan
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/delivery-plan/" class="md-nav__link">
-        Delivery Plan
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" type="checkbox" id="__nav_5_7" >
-      
-      <label class="md-nav__link" for="__nav_5_7">
-        Sprint planning
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Sprint planning" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_7">
-          <span class="md-nav__icon md-icon"></span>
-          Sprint planning
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/sprint-planning/" class="md-nav__link">
-        Sprint Planning
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/sprint-planning/estimation/" class="md-nav__link">
-        Goals for Estimation
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" type="checkbox" id="__nav_5_8" >
-      
-      <label class="md-nav__link" for="__nav_5_8">
-        Stand ups
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Stand ups" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_8">
-          <span class="md-nav__icon md-icon"></span>
-          Stand ups
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/stand-ups/" class="md-nav__link">
-        Stand-ups
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/stand-ups/social-question/" class="md-nav__link">
-        Social Question of the Day
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_9" type="checkbox" id="__nav_5_9" >
-      
-      <label class="md-nav__link" for="__nav_5_9">
-        Team agreements
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Team agreements" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_9">
-          <span class="md-nav__icon md-icon"></span>
-          Team agreements
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/" class="md-nav__link">
-        Team Agreements
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/definition-of-done/" class="md-nav__link">
-        Definition of Done
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/definition-of-ready/" class="md-nav__link">
-        Definition of Ready
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/team-manifesto/" class="md-nav__link">
-        Team Manifesto
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agile-development/team-agreements/working-agreements/" class="md-nav__link">
-        Sections of a Working Agreement
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -720,10 +1093,50 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
-      <label class="md-nav__link" for="__nav_6">
-        Automated testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">Automated testing</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Automated testing" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -732,18 +1145,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
-        Testing
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -753,10 +1157,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
       
-      <label class="md-nav__link" for="__nav_6_2">
-        Cdc testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../cdc-testing/">Cdc testing</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Cdc testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_2">
           <span class="md-nav__icon md-icon"></span>
@@ -765,24 +1181,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdc-testing/" class="md-nav__link">
-        Consumer-driven Contract Testing (CDC)
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -792,10 +1200,32 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
       
-      <label class="md-nav__link" for="__nav_6_3">
-        E2e testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../e2e-testing/">E2e testing</a>
+          
+            <label for="__nav_6_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="E2e testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_3">
           <span class="md-nav__icon md-icon"></span>
@@ -804,18 +1234,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../e2e-testing/" class="md-nav__link">
-        E2E Testing
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -826,8 +1247,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -838,8 +1261,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -849,10 +1274,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3_4" type="checkbox" id="__nav_6_3_4" >
       
-      <label class="md-nav__link" for="__nav_6_3_4">
-        Recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_3_4">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Recipes" data-md-level="3">
         <label class="md-nav__title" for="__nav_6_3_4">
           <span class="md-nav__icon md-icon"></span>
@@ -861,6 +1294,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -871,20 +1305,24 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -894,10 +1332,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_4">
-        Fault injection testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../fault-injection-testing/">Fault injection testing</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Fault injection testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
@@ -906,24 +1356,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../fault-injection-testing/" class="md-nav__link">
-        Fault Injection Testing
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -933,10 +1375,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_5">
-        Integration testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../integration-testing/">Integration testing</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Integration testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
@@ -945,24 +1399,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integration-testing/" class="md-nav__link">
-        Integration Testing
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -972,10 +1418,30 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
       
-      <label class="md-nav__link" for="__nav_6_6">
-        Performance testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../performance-testing/">Performance testing</a>
+          
+            <label for="__nav_6_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Performance testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_6">
           <span class="md-nav__icon md-icon"></span>
@@ -984,18 +1450,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../performance-testing/" class="md-nav__link">
-        Performance Testing
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -1006,8 +1463,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1018,14 +1477,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1035,10 +1497,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_7" type="checkbox" id="__nav_6_7" >
       
-      <label class="md-nav__link" for="__nav_6_7">
-        Shadow testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../shadow-testing/">Shadow testing</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Shadow testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1047,24 +1521,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../shadow-testing/" class="md-nav__link">
-        Shadow Testing
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1074,10 +1540,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_8" type="checkbox" id="__nav_6_8" >
       
-      <label class="md-nav__link" for="__nav_6_8">
-        Smoke testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../smoke-testing/">Smoke testing</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Smoke testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1086,24 +1564,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../smoke-testing/" class="md-nav__link">
-        Smoke Testing
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1113,10 +1583,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_9" type="checkbox" id="__nav_6_9" >
       
-      <label class="md-nav__link" for="__nav_6_9">
-        Synthetic monitoring tests
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../synthetic-monitoring-tests/">Synthetic monitoring tests</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Synthetic monitoring tests" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1125,24 +1607,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../synthetic-monitoring-tests/" class="md-nav__link">
-        Synthetic Monitoring Tests
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1152,10 +1626,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10" type="checkbox" id="__nav_6_10" >
       
-      <label class="md-nav__link" for="__nav_6_10">
-        Tech specific samples
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_10">
+          Tech specific samples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Tech specific samples" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_10">
           <span class="md-nav__icon md-icon"></span>
@@ -1164,6 +1650,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1173,10 +1660,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_1" type="checkbox" id="__nav_6_10_1" >
       
-      <label class="md-nav__link" for="__nav_6_10_1">
-        Azdo container dev test release
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../tech-specific-samples/azdo-container-dev-test-release/">Azdo container dev test release</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Azdo container dev test release" data-md-level="3">
         <label class="md-nav__title" for="__nav_6_10_1">
           <span class="md-nav__icon md-icon"></span>
@@ -1185,24 +1684,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tech-specific-samples/azdo-container-dev-test-release/" class="md-nav__link">
-        Building Containers with Azure DevOps using DevTest Pattern
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1212,10 +1703,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_2" type="checkbox" id="__nav_6_10_2" >
       
-      <label class="md-nav__link" for="__nav_6_10_2">
-        Blobstorage unit tests
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../tech-specific-samples/blobstorage-unit-tests/">Blobstorage unit tests</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Blobstorage unit tests" data-md-level="3">
         <label class="md-nav__title" for="__nav_6_10_2">
           <span class="md-nav__icon md-icon"></span>
@@ -1224,24 +1727,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tech-specific-samples/blobstorage-unit-tests/" class="md-nav__link">
-        Using Azurite to Run Blob Storage Tests in a Pipeline
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1251,10 +1746,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_10_3" type="checkbox" id="__nav_6_10_3" >
       
-      <label class="md-nav__link" for="__nav_6_10_3">
-        Power platform dataverse tests
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../tech-specific-samples/power-platform-dataverse-tests/">Power platform dataverse tests</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Power platform dataverse tests" data-md-level="3">
         <label class="md-nav__title" for="__nav_6_10_3">
           <span class="md-nav__icon md-icon"></span>
@@ -1263,30 +1770,23 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tech-specific-samples/power-platform-dataverse-tests/" class="md-nav__link">
-        Using Locust to Run Tests in Power Platform
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1296,10 +1796,20 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_11" type="checkbox" id="__nav_6_11" >
       
-      <label class="md-nav__link" for="__nav_6_11">
-        Templates
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_11">
+          Templates
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Templates" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_11">
           <span class="md-nav__icon md-icon"></span>
@@ -1308,6 +1818,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1318,8 +1829,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1330,14 +1843,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1347,10 +1863,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" type="checkbox" id="__nav_6_12" >
       
-      <label class="md-nav__link" for="__nav_6_12">
-        Ui testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../ui-testing/">Ui testing</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Ui testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_12">
           <span class="md-nav__icon md-icon"></span>
@@ -1359,24 +1887,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ui-testing/" class="md-nav__link">
-        User Interface Testing
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1388,10 +1908,36 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_13" type="checkbox" id="__nav_6_13" checked>
       
-      <label class="md-nav__link" for="__nav_6_13">
-        Unit testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Unit testing</a>
+          
+            <label for="__nav_6_13">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Unit testing" data-md-level="2">
         <label class="md-nav__title" for="__nav_6_13">
           <span class="md-nav__icon md-icon"></span>
@@ -1400,18 +1946,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        Unit Testing
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -1422,8 +1959,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1432,6 +1971,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -1446,7 +1986,9 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1472,8 +2014,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1484,8 +2028,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1496,8 +2042,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1508,12 +2056,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1534,10 +2084,42 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Code reviews
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../code-reviews/">Code reviews</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Code reviews" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1546,18 +2128,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../code-reviews/" class="md-nav__link">
-        Code Reviews
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -1568,8 +2141,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1580,8 +2155,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1592,8 +2169,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1604,8 +2183,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1615,10 +2196,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" type="checkbox" id="__nav_7_6" >
       
-      <label class="md-nav__link" for="__nav_7_6">
-        Evidence and measures
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../code-reviews/evidence-and-measures/">Evidence and measures</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Evidence and measures" data-md-level="2">
         <label class="md-nav__title" for="__nav_7_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1627,24 +2220,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../code-reviews/evidence-and-measures/" class="md-nav__link">
-        Evidence and Measures
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1654,10 +2239,30 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_7" type="checkbox" id="__nav_7_7" >
       
-      <label class="md-nav__link" for="__nav_7_7">
-        Process guidance
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../code-reviews/process-guidance/">Process guidance</a>
+          
+            <label for="__nav_7_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Process guidance" data-md-level="2">
         <label class="md-nav__title" for="__nav_7_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1666,18 +2271,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../code-reviews/process-guidance/" class="md-nav__link">
-        Process Guidance
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -1688,8 +2284,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1700,14 +2298,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1717,10 +2318,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_8" type="checkbox" id="__nav_7_8" >
       
-      <label class="md-nav__link" for="__nav_7_8">
-        Pull request template
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_8">
+          Pull request template
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Pull request template" data-md-level="2">
         <label class="md-nav__title" for="__nav_7_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1729,6 +2338,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1739,14 +2349,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1756,10 +2369,44 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_9" type="checkbox" id="__nav_7_9" >
       
-      <label class="md-nav__link" for="__nav_7_9">
-        Recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../code-reviews/recipes/">Recipes</a>
+          
+            <label for="__nav_7_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Recipes" data-md-level="2">
         <label class="md-nav__title" for="__nav_7_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1768,18 +2415,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/" class="md-nav__link">
-        Language Specific Guidance
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -1790,8 +2428,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1802,8 +2442,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1814,8 +2456,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1826,8 +2470,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1838,8 +2484,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1850,8 +2498,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1862,8 +2512,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1874,8 +2526,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1886,12 +2540,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1912,10 +2568,34 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Continuous delivery
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../continuous-delivery/">Continuous delivery</a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Continuous delivery" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1924,18 +2604,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../continuous-delivery/" class="md-nav__link">
-        Continuous Delivery
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -1945,10 +2616,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2" type="checkbox" id="__nav_8_2" >
       
-      <label class="md-nav__link" for="__nav_8_2">
-        Devops provider recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_2">
+          Devops provider recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Devops provider recipes" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_2">
           <span class="md-nav__icon md-icon"></span>
@@ -1957,6 +2636,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1966,10 +2646,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2_1" type="checkbox" id="__nav_8_2_1" >
       
-      <label class="md-nav__link" for="__nav_8_2_1">
-        Github actions
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_2_1">
+          Github actions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Github actions" data-md-level="3">
         <label class="md-nav__title" for="__nav_8_2_1">
           <span class="md-nav__icon md-icon"></span>
@@ -1978,6 +2666,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1987,10 +2676,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2_1_1" type="checkbox" id="__nav_8_2_1_1" >
       
-      <label class="md-nav__link" for="__nav_8_2_1_1">
-        Runtime variables
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_2_1_1">
+          Runtime variables
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Runtime variables" data-md-level="4">
         <label class="md-nav__title" for="__nav_8_2_1_1">
           <span class="md-nav__icon md-icon"></span>
@@ -1999,6 +2696,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2009,26 +2707,31 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2038,10 +2741,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" type="checkbox" id="__nav_8_3" >
       
-      <label class="md-nav__link" for="__nav_8_3">
-        Low code solutions
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_3">
+          Low code solutions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Low code solutions" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_3">
           <span class="md-nav__icon md-icon"></span>
@@ -2050,6 +2761,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2060,14 +2772,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2077,10 +2792,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_4" type="checkbox" id="__nav_8_4" >
       
-      <label class="md-nav__link" for="__nav_8_4">
-        Recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_4">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Recipes" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_4">
           <span class="md-nav__icon md-icon"></span>
@@ -2089,6 +2812,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2098,10 +2822,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_4_1" type="checkbox" id="__nav_8_4_1" >
       
-      <label class="md-nav__link" for="__nav_8_4_1">
-        Github workflows
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_4_1">
+          Github workflows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Github workflows" data-md-level="3">
         <label class="md-nav__title" for="__nav_8_4_1">
           <span class="md-nav__icon md-icon"></span>
@@ -2110,6 +2842,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2120,20 +2853,24 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2143,10 +2880,28 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5" type="checkbox" id="__nav_8_5" >
       
-      <label class="md-nav__link" for="__nav_8_5">
-        Secrets management
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../continuous-delivery/secrets-management/">Secrets management</a>
+          
+            <label for="__nav_8_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Secrets management" data-md-level="2">
         <label class="md-nav__title" for="__nav_8_5">
           <span class="md-nav__icon md-icon"></span>
@@ -2155,18 +2910,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../continuous-delivery/secrets-management/" class="md-nav__link">
-        Secrets Management
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -2176,10 +2922,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_2" type="checkbox" id="__nav_8_5_2" >
       
-      <label class="md-nav__link" for="__nav_8_5_2">
-        Recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_5_2">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Recipes" data-md-level="3">
         <label class="md-nav__title" for="__nav_8_5_2">
           <span class="md-nav__icon md-icon"></span>
@@ -2188,6 +2942,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2197,10 +2952,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_2_1" type="checkbox" id="__nav_8_5_2_1" >
       
-      <label class="md-nav__link" for="__nav_8_5_2_1">
-        Azure devops
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_5_2_1">
+          Azure devops
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Azure devops" data-md-level="4">
         <label class="md-nav__title" for="__nav_8_5_2_1">
           <span class="md-nav__icon md-icon"></span>
@@ -2209,6 +2972,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2219,24 +2983,28 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2257,10 +3025,36 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
-      <label class="md-nav__link" for="__nav_9">
-        Continuous integration
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../continuous-integration/">Continuous integration</a>
+          
+            <label for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Continuous integration" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
@@ -2269,18 +3063,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../continuous-integration/" class="md-nav__link">
-        Continuous Integration
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -2291,8 +3076,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2303,8 +3090,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2314,10 +3103,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" >
       
-      <label class="md-nav__link" for="__nav_9_4">
-        Ci in datascience
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_4">
+          Ci in datascience
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Ci in datascience" data-md-level="2">
         <label class="md-nav__title" for="__nav_9_4">
           <span class="md-nav__icon md-icon"></span>
@@ -2326,6 +3123,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2335,10 +3133,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4_1" type="checkbox" id="__nav_9_4_1" >
       
-      <label class="md-nav__link" for="__nav_9_4_1">
-        Working with notebooks
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../continuous-integration/ci-in-datascience/working-with-notebooks/">Working with notebooks</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Working with notebooks" data-md-level="3">
         <label class="md-nav__title" for="__nav_9_4_1">
           <span class="md-nav__icon md-icon"></span>
@@ -2347,30 +3157,23 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../continuous-integration/ci-in-datascience/working-with-notebooks/" class="md-nav__link">
-        Data Science Pipeline
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2380,10 +3183,34 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5" type="checkbox" id="__nav_9_5" >
       
-      <label class="md-nav__link" for="__nav_9_5">
-        Dev sec ops
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../continuous-integration/dev-sec-ops/">Dev sec ops</a>
+          
+            <label for="__nav_9_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Dev sec ops" data-md-level="2">
         <label class="md-nav__title" for="__nav_9_5">
           <span class="md-nav__icon md-icon"></span>
@@ -2392,18 +3219,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../continuous-integration/dev-sec-ops/" class="md-nav__link">
-        DevSecOps
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -2413,10 +3231,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5_2" type="checkbox" id="__nav_9_5_2" >
       
-      <label class="md-nav__link" for="__nav_9_5_2">
-        Dependency container scanning
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_5_2">
+          Dependency container scanning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Dependency container scanning" data-md-level="3">
         <label class="md-nav__title" for="__nav_9_5_2">
           <span class="md-nav__icon md-icon"></span>
@@ -2425,6 +3251,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2435,14 +3262,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2452,10 +3282,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5_3" type="checkbox" id="__nav_9_5_3" >
       
-      <label class="md-nav__link" for="__nav_9_5_3">
-        Penetration testing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_5_3">
+          Penetration testing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Penetration testing" data-md-level="3">
         <label class="md-nav__title" for="__nav_9_5_3">
           <span class="md-nav__icon md-icon"></span>
@@ -2464,6 +3302,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2474,14 +3313,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2491,10 +3333,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5_4" type="checkbox" id="__nav_9_5_4" >
       
-      <label class="md-nav__link" for="__nav_9_5_4">
-        Secret management
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_5_4">
+          Secret management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Secret management" data-md-level="3">
         <label class="md-nav__title" for="__nav_9_5_4">
           <span class="md-nav__icon md-icon"></span>
@@ -2503,6 +3357,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2513,8 +3368,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2525,8 +3382,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2536,10 +3395,20 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5_4_3" type="checkbox" id="__nav_9_5_4_3" >
       
-      <label class="md-nav__link" for="__nav_9_5_4_3">
-        Recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_5_4_3">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Recipes" data-md-level="4">
         <label class="md-nav__title" for="__nav_9_5_4_3">
           <span class="md-nav__icon md-icon"></span>
@@ -2548,6 +3417,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2558,8 +3428,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2570,20 +3442,24 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2593,10 +3469,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5_5" type="checkbox" id="__nav_9_5_5" >
       
-      <label class="md-nav__link" for="__nav_9_5_5">
-        Static code analysis
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9_5_5">
+          Static code analysis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Static code analysis" data-md-level="3">
         <label class="md-nav__title" for="__nav_9_5_5">
           <span class="md-nav__icon md-icon"></span>
@@ -2605,6 +3489,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2615,20 +3500,24 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2638,10 +3527,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_6" type="checkbox" id="__nav_9_6" >
       
-      <label class="md-nav__link" for="__nav_9_6">
-        Markdown linting
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../continuous-integration/markdown-linting/">Markdown linting</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Markdown linting" data-md-level="2">
         <label class="md-nav__title" for="__nav_9_6">
           <span class="md-nav__icon md-icon"></span>
@@ -2650,22 +3551,13 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../continuous-integration/markdown-linting/" class="md-nav__link">
-        CI Pipeline for better documentation
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2686,10 +3578,32 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
-      <label class="md-nav__link" for="__nav_10">
-        Design
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/">Design</a>
+          
+            <label for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
@@ -2698,18 +3612,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/" class="md-nav__link">
-        Design
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -2719,10 +3624,36 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
       
-      <label class="md-nav__link" for="__nav_10_2">
-        Design patterns
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-patterns/">Design patterns</a>
+          
+            <label for="__nav_10_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Design patterns" data-md-level="2">
         <label class="md-nav__title" for="__nav_10_2">
           <span class="md-nav__icon md-icon"></span>
@@ -2731,18 +3662,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-patterns/" class="md-nav__link">
-        Design Patterns
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -2753,8 +3675,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2764,10 +3688,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2_3" type="checkbox" id="__nav_10_2_3" >
       
-      <label class="md-nav__link" for="__nav_10_2_3">
-        Data heavy design guidance
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-patterns/data-heavy-design-guidance/">Data heavy design guidance</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Data heavy design guidance" data-md-level="3">
         <label class="md-nav__title" for="__nav_10_2_3">
           <span class="md-nav__icon md-icon"></span>
@@ -2776,24 +3712,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-patterns/data-heavy-design-guidance/" class="md-nav__link">
-        Data and DataOps Fundamentals
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2803,10 +3731,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2_4" type="checkbox" id="__nav_10_2_4" >
       
-      <label class="md-nav__link" for="__nav_10_2_4">
-        Distributed system design reference
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-patterns/distributed-system-design-reference/">Distributed system design reference</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Distributed system design reference" data-md-level="3">
         <label class="md-nav__title" for="__nav_10_2_4">
           <span class="md-nav__icon md-icon"></span>
@@ -2815,24 +3755,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-patterns/distributed-system-design-reference/" class="md-nav__link">
-        Distributed System Design Reference
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2842,10 +3774,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2_5" type="checkbox" id="__nav_10_2_5" >
       
-      <label class="md-nav__link" for="__nav_10_2_5">
-        Object oriented design reference
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-patterns/object-oriented-design-reference/">Object oriented design reference</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Object oriented design reference" data-md-level="3">
         <label class="md-nav__title" for="__nav_10_2_5">
           <span class="md-nav__icon md-icon"></span>
@@ -2854,24 +3798,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-patterns/object-oriented-design-reference/" class="md-nav__link">
-        Object-Oriented Design Reference
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2881,10 +3817,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2_6" type="checkbox" id="__nav_10_2_6" >
       
-      <label class="md-nav__link" for="__nav_10_2_6">
-        Rest api design guidance
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-patterns/rest-api-design-guidance/">Rest api design guidance</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Rest api design guidance" data-md-level="3">
         <label class="md-nav__title" for="__nav_10_2_6">
           <span class="md-nav__icon md-icon"></span>
@@ -2893,30 +3841,23 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-patterns/rest-api-design-guidance/" class="md-nav__link">
-        REST API Design Guidance
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2926,10 +3867,32 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3" type="checkbox" id="__nav_10_3" >
       
-      <label class="md-nav__link" for="__nav_10_3">
-        Design reviews
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-reviews/">Design reviews</a>
+          
+            <label for="__nav_10_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Design reviews" data-md-level="2">
         <label class="md-nav__title" for="__nav_10_3">
           <span class="md-nav__icon md-icon"></span>
@@ -2938,18 +3901,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-reviews/" class="md-nav__link">
-        Design Reviews
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -2959,10 +3913,30 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_2" type="checkbox" id="__nav_10_3_2" >
       
-      <label class="md-nav__link" for="__nav_10_3_2">
-        Decision log
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-reviews/decision-log/">Decision log</a>
+          
+            <label for="__nav_10_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Decision log" data-md-level="3">
         <label class="md-nav__title" for="__nav_10_3_2">
           <span class="md-nav__icon md-icon"></span>
@@ -2971,18 +3945,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/" class="md-nav__link">
-        Design Decision Log
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -2992,10 +3957,20 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_2_2" type="checkbox" id="__nav_10_3_2_2" >
       
-      <label class="md-nav__link" for="__nav_10_3_2_2">
-        Doc
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3_2_2">
+          Doc
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Doc" data-md-level="4">
         <label class="md-nav__title" for="__nav_10_3_2_2">
           <span class="md-nav__icon md-icon"></span>
@@ -3004,6 +3979,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3014,8 +3990,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3025,10 +4003,20 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_2_2_2" type="checkbox" id="__nav_10_3_2_2_2" >
       
-      <label class="md-nav__link" for="__nav_10_3_2_2_2">
-        Adr
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3_2_2_2">
+          Adr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Adr" data-md-level="5">
         <label class="md-nav__title" for="__nav_10_3_2_2_2">
           <span class="md-nav__icon md-icon"></span>
@@ -3037,6 +4025,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3047,8 +4036,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3059,20 +4050,24 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3082,10 +4077,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_2_3" type="checkbox" id="__nav_10_3_2_3" >
       
-      <label class="md-nav__link" for="__nav_10_3_2_3">
-        Examples
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3_2_3">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Examples" data-md-level="4">
         <label class="md-nav__title" for="__nav_10_3_2_3">
           <span class="md-nav__icon md-icon"></span>
@@ -3094,6 +4097,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3103,10 +4107,34 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_2_3_1" type="checkbox" id="__nav_10_3_2_3_1" >
       
-      <label class="md-nav__link" for="__nav_10_3_2_3_1">
-        Memory
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-reviews/decision-log/examples/memory/">Memory</a>
+          
+            <label for="__nav_10_3_2_3_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Memory" data-md-level="5">
         <label class="md-nav__title" for="__nav_10_3_2_3_1">
           <span class="md-nav__icon md-icon"></span>
@@ -3115,18 +4143,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/examples/memory/" class="md-nav__link">
-        Memory
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -3137,8 +4156,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3148,10 +4169,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_2_3_1_3" type="checkbox" id="__nav_10_3_2_3_1_3" >
       
-      <label class="md-nav__link" for="__nav_10_3_2_3_1_3">
-        Architecture
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3_2_3_1_3">
+          Architecture
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Architecture" data-md-level="6">
         <label class="md-nav__title" for="__nav_10_3_2_3_1_3">
           <span class="md-nav__icon md-icon"></span>
@@ -3160,6 +4189,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3170,14 +4200,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3187,10 +4220,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_2_3_1_4" type="checkbox" id="__nav_10_3_2_3_1_4" >
       
-      <label class="md-nav__link" for="__nav_10_3_2_3_1_4">
-        Deployment
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3_2_3_1_4">
+          Deployment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Deployment" data-md-level="6">
         <label class="md-nav__title" for="__nav_10_3_2_3_1_4">
           <span class="md-nav__icon md-icon"></span>
@@ -3199,6 +4240,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3209,14 +4251,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3226,10 +4271,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_2_3_1_5" type="checkbox" id="__nav_10_3_2_3_1_5" >
       
-      <label class="md-nav__link" for="__nav_10_3_2_3_1_5">
-        Trade Studies
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10_3_2_3_1_5">
+          Trade Studies
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Trade Studies" data-md-level="6">
         <label class="md-nav__title" for="__nav_10_3_2_3_1_5">
           <span class="md-nav__icon md-icon"></span>
@@ -3238,6 +4291,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3248,32 +4302,38 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3283,10 +4343,46 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_3" type="checkbox" id="__nav_10_3_3" >
       
-      <label class="md-nav__link" for="__nav_10_3_3">
-        Recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-reviews/recipes/">Recipes</a>
+          
+            <label for="__nav_10_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Recipes" data-md-level="3">
         <label class="md-nav__title" for="__nav_10_3_3">
           <span class="md-nav__icon md-icon"></span>
@@ -3295,18 +4391,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/" class="md-nav__link">
-        Design Review Recipes
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -3317,8 +4404,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3329,8 +4418,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3341,8 +4432,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3353,8 +4446,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3365,8 +4460,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3377,8 +4474,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3389,8 +4488,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3401,8 +4502,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3413,8 +4516,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3425,14 +4530,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3442,10 +4550,28 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3_4" type="checkbox" id="__nav_10_3_4" >
       
-      <label class="md-nav__link" for="__nav_10_3_4">
-        Trade studies
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/design-reviews/trade-studies/">Trade studies</a>
+          
+            <label for="__nav_10_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Trade studies" data-md-level="3">
         <label class="md-nav__title" for="__nav_10_3_4">
           <span class="md-nav__icon md-icon"></span>
@@ -3454,18 +4580,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/design-reviews/trade-studies/" class="md-nav__link">
-        Trade Studies
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -3476,20 +4593,24 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3499,10 +4620,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4" type="checkbox" id="__nav_10_4" >
       
-      <label class="md-nav__link" for="__nav_10_4">
-        Sustainability
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../design/sustainability/">Sustainability</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_10_4">
           <span class="md-nav__icon md-icon"></span>
@@ -3511,22 +4644,13 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../design/sustainability/" class="md-nav__link">
-        Sustainable Software Engineering
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -3547,10 +4671,34 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
-      <label class="md-nav__link" for="__nav_11">
-        Developer experience
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../developer-experience/">Developer experience</a>
+          
+            <label for="__nav_11">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Developer experience" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
@@ -3559,18 +4707,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../developer-experience/" class="md-nav__link">
-        Developer Experience (DevEx)
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -3581,8 +4720,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3593,8 +4734,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3605,8 +4748,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3616,10 +4761,26 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_5" type="checkbox" id="__nav_11_5" >
       
-      <label class="md-nav__link" for="__nav_11_5">
-        Recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11_5">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Recipes" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_5">
           <span class="md-nav__icon md-icon"></span>
@@ -3628,6 +4789,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3638,8 +4800,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3650,8 +4814,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3662,8 +4828,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3674,8 +4842,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3686,12 +4856,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -3712,10 +4884,34 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
       
-      <label class="md-nav__link" for="__nav_12">
-        Documentation
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../documentation/">Documentation</a>
+          
+            <label for="__nav_12">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Documentation" data-md-level="1">
         <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
@@ -3724,18 +4920,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../documentation/" class="md-nav__link">
-        Documentation
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -3745,10 +4932,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_2" type="checkbox" id="__nav_12_2" >
       
-      <label class="md-nav__link" for="__nav_12_2">
-        Best practices
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12_2">
+          Best practices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Best practices" data-md-level="2">
         <label class="md-nav__title" for="__nav_12_2">
           <span class="md-nav__icon md-icon"></span>
@@ -3757,6 +4956,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3767,8 +4967,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3779,8 +4981,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3791,14 +4995,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3808,10 +5015,28 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_3" type="checkbox" id="__nav_12_3" >
       
-      <label class="md-nav__link" for="__nav_12_3">
-        Guidance
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12_3">
+          Guidance
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Guidance" data-md-level="2">
         <label class="md-nav__title" for="__nav_12_3">
           <span class="md-nav__icon md-icon"></span>
@@ -3820,6 +5045,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3830,8 +5056,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3842,8 +5070,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3854,8 +5084,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3866,8 +5098,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3878,8 +5112,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3890,14 +5126,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3907,10 +5146,24 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_4" type="checkbox" id="__nav_12_4" >
       
-      <label class="md-nav__link" for="__nav_12_4">
-        Recipes
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12_4">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Recipes" data-md-level="2">
         <label class="md-nav__title" for="__nav_12_4">
           <span class="md-nav__icon md-icon"></span>
@@ -3919,6 +5172,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3929,8 +5183,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3941,8 +5197,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3953,8 +5211,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3965,14 +5225,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3982,10 +5245,24 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_5" type="checkbox" id="__nav_12_5" >
       
-      <label class="md-nav__link" for="__nav_12_5">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12_5">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Tools" data-md-level="2">
         <label class="md-nav__title" for="__nav_12_5">
           <span class="md-nav__icon md-icon"></span>
@@ -3994,6 +5271,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -4004,8 +5282,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4016,8 +5296,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4028,8 +5310,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4040,12 +5324,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -4066,10 +5352,32 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
       
-      <label class="md-nav__link" for="__nav_13">
-        Engineering feedback
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../engineering-feedback/">Engineering feedback</a>
+          
+            <label for="__nav_13">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Engineering feedback" data-md-level="1">
         <label class="md-nav__title" for="__nav_13">
           <span class="md-nav__icon md-icon"></span>
@@ -4078,18 +5386,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../engineering-feedback/" class="md-nav__link">
-        Microsoft Engineering Feedback
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -4100,8 +5399,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4112,8 +5413,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4124,6 +5427,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -4144,10 +5448,52 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
-      <label class="md-nav__link" for="__nav_14">
-        Machine learning
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../machine-learning/">Machine learning</a>
+          
+            <label for="__nav_14">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Machine learning" data-md-level="1">
         <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
@@ -4156,18 +5502,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../machine-learning/" class="md-nav__link">
-        Machine Learning Fundamentals at CSE
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -4178,8 +5515,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4190,8 +5529,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4202,8 +5543,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4214,8 +5557,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4226,8 +5571,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4238,8 +5585,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4250,8 +5599,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4262,8 +5613,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4274,8 +5627,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4286,8 +5641,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4298,8 +5655,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../machine-learning/ml-tpm-guidance/" class="md-nav__link">
+        TPM considerations for Machine Learning projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -4310,6 +5683,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -4330,10 +5704,58 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
-      <label class="md-nav__link" for="__nav_15">
-        Observability
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../observability/">Observability</a>
+          
+            <label for="__nav_15">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Observability" data-md-level="1">
         <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
@@ -4342,18 +5764,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../observability/" class="md-nav__link">
-        Observability
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -4364,8 +5777,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4376,8 +5791,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4388,8 +5805,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4400,20 +5819,24 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/log-vs-metric/" class="md-nav__link">
-        Logs vs Metrics
+      <a href="../../../observability/log-vs-metric-vs-trace/" class="md-nav__link">
+        Logs vs Metrics vs Traces
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4424,8 +5847,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4436,8 +5861,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4448,8 +5875,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4460,8 +5889,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4472,8 +5903,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4484,8 +5917,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4496,8 +5931,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4508,8 +5945,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4520,8 +5959,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4531,10 +5972,24 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_16" type="checkbox" id="__nav_15_16" >
       
-      <label class="md-nav__link" for="__nav_15_16">
-        Pillars
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_15_16">
+          Pillars
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Pillars" data-md-level="2">
         <label class="md-nav__title" for="__nav_15_16">
           <span class="md-nav__icon md-icon"></span>
@@ -4543,6 +5998,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -4553,8 +6009,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4565,8 +6023,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4577,8 +6037,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4589,14 +6051,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4606,10 +6071,34 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_17" type="checkbox" id="__nav_15_17" >
       
-      <label class="md-nav__link" for="__nav_15_17">
-        Tools
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../observability/tools/">Tools</a>
+          
+            <label for="__nav_15_17">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Tools" data-md-level="2">
         <label class="md-nav__title" for="__nav_15_17">
           <span class="md-nav__icon md-icon"></span>
@@ -4618,18 +6107,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../observability/tools/" class="md-nav__link">
-        Tools and Patterns
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -4640,8 +6120,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4652,8 +6134,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4664,8 +6148,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4676,12 +6162,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -4702,10 +6190,30 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
       
-      <label class="md-nav__link" for="__nav_16">
-        Privacy
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../privacy/">Privacy</a>
+          
+            <label for="__nav_16">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Privacy" data-md-level="1">
         <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
@@ -4714,18 +6222,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../privacy/" class="md-nav__link">
-        Privacy fundamentals
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -4736,8 +6235,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4748,6 +6249,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -4768,10 +6270,22 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
       
-      <label class="md-nav__link" for="__nav_17">
-        Reliability
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../reliability/">Reliability</a>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Reliability" data-md-level="1">
         <label class="md-nav__title" for="__nav_17">
           <span class="md-nav__icon md-icon"></span>
@@ -4780,16 +6294,6 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../reliability/" class="md-nav__link">
-        Reliability
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -4810,10 +6314,18 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
       
-      <label class="md-nav__link" for="__nav_18">
-        Resources
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_18">
+          Resources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Resources" data-md-level="1">
         <label class="md-nav__title" for="__nav_18">
           <span class="md-nav__icon md-icon"></span>
@@ -4822,6 +6334,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -4831,10 +6344,28 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18_1" type="checkbox" id="__nav_18_1" >
       
-      <label class="md-nav__link" for="__nav_18_1">
-        Templates
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../resources/templates/">Templates</a>
+          
+            <label for="__nav_18_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Templates" data-md-level="2">
         <label class="md-nav__title" for="__nav_18_1">
           <span class="md-nav__icon md-icon"></span>
@@ -4843,18 +6374,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../resources/templates/" class="md-nav__link">
-        project-xyz
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -4865,12 +6387,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -4891,10 +6415,28 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19" type="checkbox" id="__nav_19" >
       
-      <label class="md-nav__link" for="__nav_19">
-        Security
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../security/">Security</a>
+          
+            <label for="__nav_19">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Security" data-md-level="1">
         <label class="md-nav__title" for="__nav_19">
           <span class="md-nav__icon md-icon"></span>
@@ -4903,18 +6445,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../security/" class="md-nav__link">
-        Security
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -4925,6 +6458,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -4945,10 +6479,36 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20" type="checkbox" id="__nav_20" >
       
-      <label class="md-nav__link" for="__nav_20">
-        Source control
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../source-control/">Source control</a>
+          
+            <label for="__nav_20">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Source control" data-md-level="1">
         <label class="md-nav__title" for="__nav_20">
           <span class="md-nav__icon md-icon"></span>
@@ -4957,18 +6517,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../source-control/" class="md-nav__link">
-        Source Control
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -4979,8 +6530,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -4991,8 +6544,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -5003,8 +6558,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -5015,8 +6572,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -5026,10 +6585,28 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20_6" type="checkbox" id="__nav_20_6" >
       
-      <label class="md-nav__link" for="__nav_20_6">
-        Git guidance
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../source-control/git-guidance/">Git guidance</a>
+          
+            <label for="__nav_20_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="Git guidance" data-md-level="2">
         <label class="md-nav__title" for="__nav_20_6">
           <span class="md-nav__icon md-icon"></span>
@@ -5038,18 +6615,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../source-control/git-guidance/" class="md-nav__link">
-        Git Guidance
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -5060,12 +6628,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -5086,10 +6656,36 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_21" type="checkbox" id="__nav_21" >
       
-      <label class="md-nav__link" for="__nav_21">
-        User interface engineering
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../user-interface-engineering/">User interface engineering</a>
+          
+            <label for="__nav_21">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
       <nav class="md-nav" aria-label="User interface engineering" data-md-level="1">
         <label class="md-nav__title" for="__nav_21">
           <span class="md-nav__icon md-icon"></span>
@@ -5098,18 +6694,9 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-interface-engineering/" class="md-nav__link">
-        User Interface and User Experience Engineering
-      </a>
-    </li>
-  
-
           
             
+              
   
   
   
@@ -5120,8 +6707,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -5132,8 +6721,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -5144,8 +6735,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -5156,8 +6749,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -5168,6 +6763,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -5187,7 +6783,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -5218,8 +6816,9 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="custom-connector-testing">Custom Connector Testing</h1>
+
+
+<h1 id="custom-connector-testing">Custom Connector Testing</h1>
 <p>When developing Custom Connectors to put data into the Power Platform there are some strategies you can follow:</p>
 <h2 id="unit-testing">Unit Testing</h2>
 <p>There are several verifications one can do while developing custom connectors in order to be sure the code is working properly.</p>
@@ -5231,24 +6830,17 @@
 <p>(the later one is optional, but necessary in case you want to publish it as a certified connector).</p>
 <p>There are several tool to help validate the OpenAPI schema, a list of them are available in this <a href="https://openapi.tools/#description-validators">link</a>. A suggested tool would be <a href="https://github.com/APIDevTools/swagger-cli">swagger-cli</a>.</p>
 <p>On the other hand, to validate if the custom connector you are building is correct to become a certified connector, use the <a href="https://github.com/microsoft/PowerPlatformConnectors/tree/dev/tools/paconn-cli">paconn-cli</a>, since it has a validate command that shows missing information from the custom connector definition.</p>
-                
-                  
-                    
 
-<hr>
-<div class="md-source-date">
+  <hr>
+<div class="md-source-file">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 14, 2021</span>
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 14, 2021</span>
+      
     
   </small>
 </div>
-                  
-                
-              
-              
-                
-
 
               
             </article>
@@ -5257,14 +6849,14 @@
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../authoring_example/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../authoring_example/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Example: Authoring a unit test" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -5277,7 +6869,8 @@
         </a>
       
       
-        <a href="../mocking/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../mocking/" class="md-footer__link md-footer__link--next" aria-label="Next: Mocking in Unit Tests" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -5287,7 +6880,7 @@
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
           </div>
         </a>
       
@@ -5295,14 +6888,15 @@
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -5312,10 +6906,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.748e2769.min.js"></script>
       
     
   </body>
