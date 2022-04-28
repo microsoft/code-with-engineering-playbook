@@ -20,7 +20,7 @@ More details on [source control](source-control/README.md)
 - [ ] All items are tracked in AzDevOps (or similar).
 - [ ] The board is organized (swim lanes, feature tags, technology tags).
 
-More details on [backlog management](agile-development/backlog-management/README.md)
+More details on [backlog management](agile-development/advanced-topics/backlog-management/readme.md)
 
 ## Testing
 
@@ -69,7 +69,7 @@ More details on [agile development](agile-development/README.md)
 
 ## Design Reviews
 
-- [ ] Process for conducting design reviews is included in the [Working Agreement](agile-development/team-agreements/working-agreements.md).
+- [ ] Process for conducting design reviews is included in the [Working Agreement](agile-development/advanced-topics/team-agreements/working-agreements.md).
 - [ ] Design reviews for each major component of the solution are carried out and documented, including alternatives.
 - [ ] Stories and/or PRs link to the design document.
 - [ ] Each user story includes a task for design review by default, which is assigned or removed during sprint planning.
@@ -96,7 +96,7 @@ More details on [code reviews](code-reviews/README.md)
 - [ ] Experiments have owners and are added to project backlog.
 - [ ] The team conducts longer retrospective for Milestones and project completion.
 
-More details on [retrospectives](agile-development/retrospectives.md)
+More details on [retrospectives](agile-development/core-expectations/README.md)
 
 ## Engineering Feedback
 

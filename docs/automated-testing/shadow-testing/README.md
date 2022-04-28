@@ -10,7 +10,7 @@ In our test cases, code coverage is very important however sometimes providing c
 
 ![Shadow Testing Overview](images/shadow-testing.png)
 
- Referencing back to one of the [Principles of Chaos Engineering](https://principlesofchaos.org/), mentions importance of sampling real traffic like below:
+ Referencing back to one of the Principles of Chaos Engineering, mentions importance of sampling real traffic like below:
 
 > Systems behave differently depending on environment and traffic patterns. Since the behavior of utilization can change at any time, sampling real traffic is the only way to reliably capture the request path. To guarantee both authenticity of the way in which the system is exercised and relevance to the current deployed system, Chaos strongly prefers to experiment directly on production traffic.
 
