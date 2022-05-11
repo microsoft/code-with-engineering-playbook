@@ -30,5 +30,5 @@ Human beings are the real experts in adapting to diversity. Inclusive design put
 
 ## Additional Resources
 
-- [Microsoft Accessibility Technology & Tools](https://www.microsoft.com/accessibility)
-- [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20/#intro)
+* [Microsoft Accessibility Technology & Tools](https://www.microsoft.com/accessibility)
+* [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20/#intro)
