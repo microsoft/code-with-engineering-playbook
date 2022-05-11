@@ -70,16 +70,13 @@ If applicable, describe the boundaries from which we have to design the solution
 
 #### Accessibility
 
-**Accessibility is never optional**. Microsoft has made a public commitment to always produce accessible appliations. For more information visit the official [Microsoft accessibility site](https://www.microsoft.com/en-us/accessibility) and read the [Accessibility](../../../user-interface-engineering/accessibility.md) page in the User Interface Engineering section.
+**Accessibility is never optional**. Microsoft has made a public commitment to always produce accessible appliations. For more information visit the official [Microsoft accessibility site](https://www.microsoft.com/accessibility) and read the [Accessibility](../../../accessibility/README.md) page.
 
 Consider the following prompts when determining application accessibility requirements:
 
-- Will the application be used by an individual who cannot see or hear? What about someone who cannot use a mouse or a keyboard?
-- Will the application need to be directly compatible with accessibilty aide tooling such as screen readers?
-- Will users require detailed instructions to use the application? (Instructions/Documentation must be accessible as well)
-- Does the application need to support multiple languages (internationalization)
-
-Remember, accessibility features are always easiest when included from the very beginning.
+- Does the application meet industry accessibility standards?
+- Are training, support, and documentation resources accessible?
+- Is the application designed to be inclusive for people will a broad range of abilities, languages, and cultures?
 
 ## Solution Hypotheses
 
