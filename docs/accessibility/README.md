@@ -12,8 +12,23 @@
 
 ## Inclusive Design
 
-## Resources
+Inclusive design is a methodology that embraces the full range of human diversity as a resource to help build better products and services. Inclusive design compliments accessibility going beyond accessibility compliance standards to ensure products are usable and enjoyed by all people. By leveraging the inclusive design methodology early in a project, you can expect a more inclusive and better solution for everyone. The [Microsoft Inclusive Design](https://www.microsoft.com/design/inclusive/) website offers a variety of resources for incorporating inclusive design in your projects including inclusive design activities that can be used in envisioning and architecure design sessions.
 
-- [Accessibility Insights](https://accessibilityinsights.io/)
+The Microsoft Inclusive Design methodology includes the following principles:
+
+### Recognize exclusion
+
+Designing for inclusivity not only opens up our products and services to more people, it also reflects how people really are. All humans grow and adapt to the world around them and we want our designs to reflect that.
+
+### Solve for one, extend to many
+
+Everyone has abilities, and limits to those abilities. Designing for people with permanent disabilities actually results in designs that benefit people universally. Constraints are a beautiful thing.
+
+### Learn from diversity
+
+Human beings are the real experts in adapting to diversity. Inclusive design puts people in the center from the very start of the process, and those fresh, diverse perspectives are the key to true insight.
+
+## Additional Resources
+
 - [Microsoft Accessibility Technology & Tools](https://www.microsoft.com/accessibility)
 - [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20/#intro)
