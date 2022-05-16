@@ -18,9 +18,9 @@ Before putting an individual ML model into production, the following aspects sho
 - [ ] [Has the data distribution of training, testing and validation sets been analysed?](#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data)
 - [ ] [Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?](#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made)
 - [ ] [How will the model be integrated into other systems, and what impact will it have?](#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have)
+- [ ] [How will incoming data quality be monitored?](#how-will-incoming-data-quality-be-monitored)
+- [ ] [How will drift in data characteristics be monitored?](#how-will-drift-in-data-characteristics-be-monitored)
 - [ ] [How will performance be monitored?](#how-will-performance-be-monitored)
-- [ ] [How will incoming data quality be monitored?](#how-will-incoming-data-quality-be-monitored?)
-- [ ] [How will drift in data characteristics be monitored?](#how-will-drift-in-data-characteristics-be-monitored?)
 - [ ] [Have any ethical concerns been taken into account?](#have-any-ethical-concerns-been-taken-into-account?)
 
 Please note that there might be scenarios where it is not possible to check all the items on this checklist. However, it is advised to go through all items and make informed decisions based on your specific use case.
