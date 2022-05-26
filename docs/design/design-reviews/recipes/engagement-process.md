@@ -7,6 +7,7 @@ Design reviews should not feel like a burden. Design reviews can be easily incor
 - Only create design reviews when needed. Not every story or task requires a complete design review.
 - Leverage this guidance to make changes that best fit in with the team. Every team works differently.
 - Leverage Microsoft subject-matter experts (SME) as needed during design reviews. Not every story needs SME or leadership sign-off. Most design reviews can be fully executed within a dev crew.
+- [Use diagrams](./preferred-diagram-tooling.md) to visualize concepts and architecture.
 
 The following guidelines outline how Microsoft and the customer together can incorporate design reviews into their day-to-day agile processes.
 
