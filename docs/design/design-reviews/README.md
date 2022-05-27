@@ -87,3 +87,9 @@ A technical spike is most often used for evaluating the impact new technology ha
 - Document and update the architecture design in the project design documentation
 - Track and document design decisions in a [decision log](decision-log/README.md)
 - Document decision process in [trade studies](trade-studies/README.md) when multiple solutions exist for the given problem
+
+Early on in engagements, the team must decide where to land artifacts generated from design reviews.
+Typically, we meet the customer where they are at (for example, using their Confluence instance to land documentation if that is their preferred process).
+However, similar to storing decision logs, trade studies, etc. in the development repo, there are also large benefits to maintaining design review artifacts in the repo as well.
+Usually these artifacts can be further added to root level documentation directory or even at the root of the corresponding project if the repo is monolithic.
+In adding them to the project repo, these artifacts must similarly be reviewed in Pull Requests (typically preceding but sometimes accompanying implementation) and can easily link to other sections of the repo and source code files (via [markdown links](https://www.w3schools.io/file/markdown-links/)).
