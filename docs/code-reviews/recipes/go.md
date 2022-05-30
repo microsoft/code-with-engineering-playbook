@@ -28,7 +28,7 @@ The linter revive (below) might be a suitable replacement.
 
 #### revive
 
-[Revive](https://revive.run/) is a linter for go. Revive provides a framework for development of custom rules, and lets you define a strict preset for enhancing your development & code review processes.
+[Revive](https://revive.run/) is a linter for go, it provides a framework for development of custom rules, and lets you define a strict preset for enhancing your development & code review processes.
 
 ## Automatic Code Formatting
 
