@@ -10,7 +10,7 @@ This guide will demonstrate two easy to use tools using the Detect-Secrets frame
 
 The Detect-Secrets pre-commit hook is a tool that keeps secrets from being entering the codebase at one of the earliest stages of development.
 This tool will run a detect-secrets scan right before a Git commit occurs and if any findings occur, then mitigation can occur before any history of the secret is generated in Git history.
-Using the Detect Secrets Pre-Commit approach developers can insure they don't accidentally commit secrets at the earliest point in the development cycle but at a project level it requires all developers to adopt this approach to provide protection.
+Using the Detect Secrets Pre-Commit approach developers can ensure they don't accidentally commit secrets at the earliest point in the development cycle but at a project level it requires all developers to adopt this approach to provide protection.
 
 ### Configuration for Environment
 
