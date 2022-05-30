@@ -169,7 +169,7 @@ referenced in the documentation may be either trademarks or registered
 trademarks of Microsoft in the United States and/or other countries.
 The licenses for this project do not grant you rights to use any Microsoft
 names, logos, or trademarks. Microsoft's general trademark guidelines can be
-found at <http://go.microsoft.com/fwlink/?LinkID=254653>.
+found at <https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks>.
 
 Privacy information can be found at <https://privacy.microsoft.com/en-us/>
 
