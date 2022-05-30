@@ -10,17 +10,13 @@
         {"pattern": "^https://tanzu.vmware.com/developer/guides/kubernetes/observability-prometheus-grafana-p1"},
         {"pattern": "^https://www.w3.org/blog/2019/12/trace-context-enters-proposed-recommendation/"},
         {"pattern": "^https://blog.cloudflare.com/cloudflare-outage/"},
-        {"pattern": "^https://www.pluralsight.com/courses/how-git-works"},
-        {"pattern": "^https://www.pluralsight.com/courses/master-git"},
-        {"pattern": "^https://opentelemetry.io/status/"},
-        {"pattern": "^https://opentelemetry.io/docs/collector/getting-started/"},
         {"pattern": "^https://thanos.io"},
         {"pattern": "^https://gitlab.com/palisade/palisade-release"},
-        {"pattern": "^https://www.github.com"},
-        {"pattern": "^https://docs.github.com"},
-        {"pattern": "^https://help.github.com"},
-        {"pattern": "^https://github.com"},
+        {"pattern": "(.*\\.)?.opentelemetry.io"},
+        {"pattern": "(.*\\.)?.pluralsight.com"},
+        {"pattern": "(.*\\.)?.github.com"},
         {"pattern": "^https://marketplace.visualstudio.com"}
+        {"pattern": "^https://opensource.org/licenses/MIT"}
     ],
     "retryOn429": true
 }
