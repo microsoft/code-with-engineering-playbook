@@ -1,10 +1,8 @@
 # Secret Detection
 
-Following software assurance security best practices can easily deter secrets from entering a codebase.
-Ensure your application data is not compromised by introducing a simple and easy way to detect secrets during its development, and gate for secrets in your CI/CD pipelines.
-Today we introduce to you an open-source secrets detection framework [Yelp Detect-Secrets](https://github.com/Yelp/detect-secrets), brought to you by Yelp.
-This tool utilizes a Shannon Entropy model to detect secrets in codebases and prevents new secrets from being entered.
-This guide will demonstrate two easy to use tools using the Detect-Secrets framework brought to you by the CSE Engineering Fundamentals and Security group to keep secrets from entering from pre-commit and pre-production environment.
+It is important to ensure that secrets don't make it in to the code base and compromise the security of our application data. The best way of doing so is by introducing a simple and easy way to detect secrets during its development, and gate for secrets in your CI/CD pipelines.
+This section describes how we can use the open-source secrets detection framework [Yelp Detect-Secrets](https://github.com/Yelp/detect-secrets), to accomplish this together with two tools from the Detect-Secrets framework created by the CSE Engineering Fundamentals and Security group.
+The Yelp Detect-Secrets tool utilizes a Shannon Entropy model to detect secrets in codebases and prevents new secrets from being entered.
 
 ## Detect Secrets Pre-Commit Hook
 
