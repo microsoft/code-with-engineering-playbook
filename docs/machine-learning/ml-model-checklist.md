@@ -15,9 +15,11 @@ Before putting an individual ML model into production, the following aspects sho
 - [ ] [Are machine learning performance metrics defined for both training and scoring?](#are-machine-learning-performance-metrics-defined-for-both-training-and-scoring)
 - [ ] [Is the model benchmarked?](#is-the-model-benchmarked)
 - [ ] [Can ground truth be obtained or inferred in production?](#can-ground-truth-be-obtained-or-inferred-in-production)
-- [ ] [Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?](#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data)
+- [ ] [Has the data distribution of training, testing and validation sets been analysed?](#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data)
 - [ ] [Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?](#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made)
 - [ ] [How will the model be integrated into other systems, and what impact will it have?](#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have)
+- [ ] [How will incoming data quality be monitored?](#how-will-incoming-data-quality-be-monitored)
+- [ ] [How will drift in data characteristics be monitored?](#how-will-drift-in-data-characteristics-be-monitored)
 - [ ] [How will performance be monitored?](#how-will-performance-be-monitored)
 - [ ] [Have any ethical concerns been taken into account?](#have-any-ethical-concerns-been-taken-into-account?)
 
@@ -82,11 +84,9 @@ For clarity, let's consider the following examples (by no means an exhaustive li
 - **Recommender systems**: For recommender system, obtaining the ground truth is a complex problem in most cases as there is no way of identifying the ideal recommendation. For a retail website for example, click/not click, buy/not buy or other user interaction with recommendation can be used as ground truth proxies.
 - **Object detection in images**: For an object detection model, as new images are scored, there are no new labels being generated automatically. One option to obtain the ground truth for the new images is to use people to manually label the images. Human labelling is costly, time-consuming and not 100% accurate, so in most cases, only a subset of images can be labelled. These samples can be chosen at random or by using active learning techniques of selecting the most informative unlabeled samples.
 
-### Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?
+### Has the data distribution of training, testing and validation sets been analysed?
 
 The data distribution of your training, test and validation (if applicable) dataset (including labels) should be analysed to ensure they all come from the same distribution. If this is not the case, some options to consider are: re-shuffling,  re-sampling, modifying the data, more samples need to be gathered or features removed from the dataset.
-
-Furthermore, it is imperative to understand if the new data in production will be significantly different from the data in the training phase. It is also important to check that the data distribution information can be obtained for any of the new data coming in.
 
 Significant differences in the data distributions of the different datasets can greatly impact the performance of the model. Some potential questions to ask:
 
@@ -97,7 +97,6 @@ Significant differences in the data distributions of the different datasets can 
 Resources:
 
 - ["Splitting into train, dev and test" tutorial](http://cs230.stanford.edu/blog/split/)
-- [Understanding dataset shift](https://towardsdatascience.com/understanding-dataset-shift-f2a5a262a766)
 
 ### Have goals and hard limits for performance, speed of prediction and costs been established, so they can be considered if trade-offs need to be made?
 
@@ -121,6 +120,38 @@ Possible questions to assess model impact:
 - Is the system transparent that there is a model making a prediction and what data is used to make this prediction?
 - What is the cost of a wrong prediction?
 
+### How will incoming data quality be monitored?
+
+As data systems become increasingly complex in the mainstream, it is especially vital to employ data quality monitoring, alerting and rectification protocols. Following data validation best practices can prevent insidious issues from creeping into machine learning models that, at best, reduce the usefulness of the model, and at worst, introduce harm. Data validation, reduces the risk of data downtime (increasing headroom) and technical debt and supports long-term success of machine learning models and other applications that rely on the data.
+
+Data validation best practices include:
+
+- Employing automated data quality testing processes at each stage of the data pipeline
+- Re-routing data that fails quality tests to a separate data store for diagnosis and resolution
+- Employing end-to-end data observability on data freshness, distribution, volume, schema and lineage
+
+Note that data validation is distinct from data drift detection. Data validation detects errors in the data (ex. a datum is outside of the expected range), while data drift detection uncovers legitimate changes in the data that are truly representative of the phenomenon being modeled (ex. user preferences change). Data validation issues should trigger re-routing and rectification, while data drift should trigger adaptation or retraining of a model.
+
+Resources:
+
+- ["Data Quality Fundamentals" by Moses et al.](https://www.oreilly.com/library/view/data-quality-fundamentals/9781098112035/)
+
+### How will drift in data characteristics be monitored?
+
+Data drift detection uncovers legitimate changes in incoming data that are truly representative of the phenomenon being modeled,and are not erroneous (ex. user preferences change). It is imperative to understand if the new data in production will be significantly different from the data in the training phase. It is also important to check that the data distribution information can be obtained for any of the new data coming in. Drift monitoring can inform when changes are occurring and what their characteristics are (ex. abrupt vs gradual) and guide effective adaptation or retraining strategies to maintain performance.
+
+Possible questions to ask:
+
+- What are some examples of drift, or deviation from the norm, that have been experience in the past or that might be expected?
+- Is there a drift detection strategy in place? Does it align with expected types of changes?
+- Are there warnings when anomalies in input data are occurring?
+- Is there an adaptation strategy in place? Does it align with expected types of changes?
+
+Resources:
+
+- ["Learning Under Concept Drift: A Review" by Lu at al.](https://arxiv.org/pdf/2004.05785.pdf)
+- [Understanding dataset shift](https://towardsdatascience.com/understanding-dataset-shift-f2a5a262a766)
+
 ### How will performance be monitored?
 
 It is important to define how the model will be monitored when it is in production and how that data is going to be used to make decisions. For example, when will a model need retraining as the performance has degraded and how to identify what are the underlying causes of this degradation could be part of this monitoring methodology.
@@ -129,10 +160,9 @@ Ideally, model monitoring should be done automatically. However, if this is not 
 
 Model monitoring should lead to:
 
-- Ability to identify abrupt changes in data characteristics
-- Ability to identify abrupt changes in model performance
-- Warnings when anomalies in model output or input data are occurring
-- Retraining decisions
+- Ability to identify changes in model performance
+- Warnings when anomalies in model output are occurring
+- Retraining decisions and adaptation strategy
 
 ### Have any ethical concerns been taken into account?
 
