@@ -60,6 +60,18 @@ All design artifacts should be treated as a living document. As requirements cha
 
 > **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../../agile-development/advanced-topics/team-agreements/definition-of-done.md) for all user stories.
 
+## Sync Design Reviews
+
+It is often helpful to schedule 1-2 design sessions per sprint as part of the normal aforementioned meeting cadence.
+Throughout the sprint, folks can add design topics to the meeting agenda and if there is nothing to discuss for a particular meeting occurrence, it can simply be cancelled.
+While these sessions may not always be used, they help project members align on timing and purpose early on and establish precedence, often encouraging participation so design topics don't slip through the cracks.
+Oftentimes, it is helpful for those project members intending to present their design to the wider group to distribute documentation on their design prior to the session so that other participants can come prepared with context heading into the session.
+
+It should be noted that the necessity of these sessions certainly evolves over the course of the engagement.
+Early on, or in other times of more ambiguity, these meetings are typically used more often and more fully.
+
+Lastly, while it is suggested that sync design reviews are scheduled during the normal sprint cadence, scheduling ad-hoc sessions should not be discouraged - even if these reviews are limited to the participants of a specific workstream.
+
 ## Wrap-up Sprints
 
 Wrap-up sprints are a great time to tie up loose ends with the customer and hand-off solution. Customer hand-off becomes a lot easier when there are design artifacts to reference and deliver alongside the completed solution.
