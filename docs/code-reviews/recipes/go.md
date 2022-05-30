@@ -41,7 +41,7 @@ The linter revive (below) might be a suitable replacement.
 
 [golangci-lint](https://github.com/golangci/golangci-lint/) is the replacement for the now deprecated `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
 
-golangci-lint is an aggregator of linters. By default, several are enabled but not all. A full list of linters and their usages can be found [here](https://github.com/golangci/awesome-go-linters).
+golangci-lint is a powerful, customisable aggregator of linters. By default, several are enabled but not all. A full list of linters and their usages can be found [here](https://github.com/golangci/awesome-go-linters).
 
 It will allow you to configure each linter and choose which ones you would like to enable in your project.
 
