@@ -22,11 +22,11 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 **:exclamation: <span style="color:red">NOTICE: The golint library is deprecated and archived.</span>**
 
-[Revive might be a suitable replacement](#revive)
+The linter revive (below) might be a suitable replacement.
 
 [golint](https://github.com/golang/lint) can be an effective tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process. This is the default linter which is set up as part of the vscode-go extension.
 
-#### <a name="revive"></a>revive
+#### revive
 
 [Revive](https://revive.run/) is a linter for go. Revive provides a framework for development of custom rules, and lets you define a strict preset for enhancing your development & code review processes.
 
