@@ -22,7 +22,7 @@ Below contain two ways of setting up your environment depending on your use case
 
 ## Detect Secrets Azure DevOps Marketplace Extension
 
-This extension scans the code base for secrets by using sophisticated algorithms utilizing Shannon entropy and reports the findings into the Azure DevOps Pipeline model to enable quick feedback and response from development teams throughout the development life cycle.
+This extension scans the code base for secrets using sophisticated algorithms such as Shannon entropy and reports the findings into the Azure DevOps Pipeline model to enable quick feedback and response from development teams throughout the development life cycle.
 As an extension deployed in the CI/CD pipeline Detect Secrets does not rely on developers to change their development environment.
 Depending on how your pipeline is configured replying on the CI/CD extension can lead to situations where secrets are leaked into the repository before being detected.
 Leaking secrets into source the repository does require cleanup which is why using both pre-commit and CI/CD protections are recommended.
