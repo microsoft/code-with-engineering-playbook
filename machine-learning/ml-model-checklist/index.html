@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-model-checklist/">
       
       <link rel="icon" href="../../resources/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.16">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1c3799f8.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -5629,8 +5629,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data" class="md-nav__link">
-    Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?
+  <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed" class="md-nav__link">
+    Has the data distribution of training, testing and validation sets been analysed?
   </a>
   
 </li>
@@ -5645,6 +5645,20 @@
           <li class="md-nav__item">
   <a href="#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have" class="md-nav__link">
     How will the model be integrated into other systems, and what impact will it have?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-will-incoming-data-quality-be-monitored" class="md-nav__link">
+    How will incoming data quality be monitored?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-will-drift-in-data-characteristics-be-monitored" class="md-nav__link">
+    How will drift in data characteristics be monitored?
   </a>
   
 </li>
@@ -6931,8 +6945,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data" class="md-nav__link">
-    Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?
+  <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed" class="md-nav__link">
+    Has the data distribution of training, testing and validation sets been analysed?
   </a>
   
 </li>
@@ -6947,6 +6961,20 @@
           <li class="md-nav__item">
   <a href="#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have" class="md-nav__link">
     How will the model be integrated into other systems, and what impact will it have?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-will-incoming-data-quality-be-monitored" class="md-nav__link">
+    How will incoming data quality be monitored?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-will-drift-in-data-characteristics-be-monitored" class="md-nav__link">
+    How will drift in data characteristics be monitored?
   </a>
   
 </li>
@@ -6998,9 +7026,11 @@
 <li class="task-list-item"><input type="checkbox" disabled/> <a href="#are-machine-learning-performance-metrics-defined-for-both-training-and-scoring">Are machine learning performance metrics defined for both training and scoring?</a></li>
 <li class="task-list-item"><input type="checkbox" disabled/> <a href="#is-the-model-benchmarked">Is the model benchmarked?</a></li>
 <li class="task-list-item"><input type="checkbox" disabled/> <a href="#can-ground-truth-be-obtained-or-inferred-in-production">Can ground truth be obtained or inferred in production?</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data">Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?</a></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <a href="#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data">Has the data distribution of training, testing and validation sets been analysed?</a></li>
 <li class="task-list-item"><input type="checkbox" disabled/> <a href="#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made">Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?</a></li>
 <li class="task-list-item"><input type="checkbox" disabled/> <a href="#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have">How will the model be integrated into other systems, and what impact will it have?</a></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <a href="#how-will-incoming-data-quality-be-monitored">How will incoming data quality be monitored?</a></li>
+<li class="task-list-item"><input type="checkbox" disabled/> <a href="#how-will-drift-in-data-characteristics-be-monitored">How will drift in data characteristics be monitored?</a></li>
 <li class="task-list-item"><input type="checkbox" disabled/> <a href="#how-will-performance-be-monitored">How will performance be monitored?</a></li>
 <li class="task-list-item"><input type="checkbox" disabled/> <a href="#have-any-ethical-concerns-been-taken-into-account?">Have any ethical concerns been taken into account?</a></li>
 </ul>
@@ -7053,9 +7083,8 @@
 <li><strong>Recommender systems</strong>: For recommender system, obtaining the ground truth is a complex problem in most cases as there is no way of identifying the ideal recommendation. For a retail website for example, click/not click, buy/not buy or other user interaction with recommendation can be used as ground truth proxies.</li>
 <li><strong>Object detection in images</strong>: For an object detection model, as new images are scored, there are no new labels being generated automatically. One option to obtain the ground truth for the new images is to use people to manually label the images. Human labelling is costly, time-consuming and not 100% accurate, so in most cases, only a subset of images can be labelled. These samples can be chosen at random or by using active learning techniques of selecting the most informative unlabeled samples.</li>
 </ul>
-<h3 id="has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data">Has the data distribution of training, testing and validation sets been analysed? Can data distribution be obtained for new data?</h3>
+<h3 id="has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed">Has the data distribution of training, testing and validation sets been analysed?</h3>
 <p>The data distribution of your training, test and validation (if applicable) dataset (including labels) should be analysed to ensure they all come from the same distribution. If this is not the case, some options to consider are: re-shuffling,  re-sampling, modifying the data, more samples need to be gathered or features removed from the dataset.</p>
-<p>Furthermore, it is imperative to understand if the new data in production will be significantly different from the data in the training phase. It is also important to check that the data distribution information can be obtained for any of the new data coming in.</p>
 <p>Significant differences in the data distributions of the different datasets can greatly impact the performance of the model. Some potential questions to ask:</p>
 <ul>
 <li>How much does the training and test data represent the end result?</li>
@@ -7065,7 +7094,6 @@
 <p>Resources:</p>
 <ul>
 <li><a href="http://cs230.stanford.edu/blog/split/">"Splitting into train, dev and test" tutorial</a></li>
-<li><a href="https://towardsdatascience.com/understanding-dataset-shift-f2a5a262a766">Understanding dataset shift</a></li>
 </ul>
 <h3 id="have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made">Have goals and hard limits for performance, speed of prediction and costs been established, so they can be considered if trade-offs need to be made?</h3>
 <p>Some machine learning models achieve high ML performance, but they are costly and time-consuming to run. In those cases, a less performant and cheaper model could be preferred. Hence, it is important to calculate the model performance metrics (accuracy, precision, recall, RMSE etc), but also to gather data on how expensive it will be to run the model and how long it will take to run. Once this data is gathered, an informed decision should be made on what model to productionize.</p>
@@ -7085,15 +7113,41 @@
 <li>Is the system transparent that there is a model making a prediction and what data is used to make this prediction?</li>
 <li>What is the cost of a wrong prediction?</li>
 </ul>
+<h3 id="how-will-incoming-data-quality-be-monitored">How will incoming data quality be monitored?</h3>
+<p>As data systems become increasingly complex in the mainstream, it is especially vital to employ data quality monitoring, alerting and rectification protocols. Following data validation best practices can prevent insidious issues from creeping into machine learning models that, at best, reduce the usefulness of the model, and at worst, introduce harm. Data validation, reduces the risk of data downtime (increasing headroom) and technical debt and supports long-term success of machine learning models and other applications that rely on the data.</p>
+<p>Data validation best practices include:</p>
+<ul>
+<li>Employing automated data quality testing processes at each stage of the data pipeline</li>
+<li>Re-routing data that fails quality tests to a separate data store for diagnosis and resolution</li>
+<li>Employing end-to-end data observability on data freshness, distribution, volume, schema and lineage</li>
+</ul>
+<p>Note that data validation is distinct from data drift detection. Data validation detects errors in the data (ex. a datum is outside of the expected range), while data drift detection uncovers legitimate changes in the data that are truly representative of the phenomenon being modeled (ex. user preferences change). Data validation issues should trigger re-routing and rectification, while data drift should trigger adaptation or retraining of a model.</p>
+<p>Resources:</p>
+<ul>
+<li><a href="https://www.oreilly.com/library/view/data-quality-fundamentals/9781098112035/">"Data Quality Fundamentals" by Moses et al.</a></li>
+</ul>
+<h3 id="how-will-drift-in-data-characteristics-be-monitored">How will drift in data characteristics be monitored?</h3>
+<p>Data drift detection uncovers legitimate changes in incoming data that are truly representative of the phenomenon being modeled,and are not erroneous (ex. user preferences change). It is imperative to understand if the new data in production will be significantly different from the data in the training phase. It is also important to check that the data distribution information can be obtained for any of the new data coming in. Drift monitoring can inform when changes are occurring and what their characteristics are (ex. abrupt vs gradual) and guide effective adaptation or retraining strategies to maintain performance.</p>
+<p>Possible questions to ask:</p>
+<ul>
+<li>What are some examples of drift, or deviation from the norm, that have been experience in the past or that might be expected?</li>
+<li>Is there a drift detection strategy in place? Does it align with expected types of changes?</li>
+<li>Are there warnings when anomalies in input data are occurring?</li>
+<li>Is there an adaptation strategy in place? Does it align with expected types of changes?</li>
+</ul>
+<p>Resources:</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/2004.05785.pdf">"Learning Under Concept Drift: A Review" by Lu at al.</a></li>
+<li><a href="https://towardsdatascience.com/understanding-dataset-shift-f2a5a262a766">Understanding dataset shift</a></li>
+</ul>
 <h3 id="how-will-performance-be-monitored">How will performance be monitored?</h3>
 <p>It is important to define how the model will be monitored when it is in production and how that data is going to be used to make decisions. For example, when will a model need retraining as the performance has degraded and how to identify what are the underlying causes of this degradation could be part of this monitoring methodology.</p>
 <p>Ideally, model monitoring should be done automatically. However, if this is not possible, then there should be a manual periodical check of the model performance.</p>
 <p>Model monitoring should lead to:</p>
 <ul>
-<li>Ability to identify abrupt changes in data characteristics</li>
-<li>Ability to identify abrupt changes in model performance</li>
-<li>Warnings when anomalies in model output or input data are occurring</li>
-<li>Retraining decisions</li>
+<li>Ability to identify changes in model performance</li>
+<li>Warnings when anomalies in model output are occurring</li>
+<li>Retraining decisions and adaptation strategy</li>
 </ul>
 <h3 id="have-any-ethical-concerns-been-taken-into-account">Have any ethical concerns been taken into account?</h3>
 <p>Every ML project goes through the <a href="../responsible-ai/">Responsible AI</a> process to ensure that it upholds Microsoft's <a href="https://www.microsoft.com/en-us/ai/responsible-ai">6 Responsible AI principles</a>.</p>
@@ -7103,7 +7157,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 30, 2022</span>
       
     
   </small>
@@ -7176,7 +7230,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3a4b43e5.min.js"></script>
       
     
   </body>
