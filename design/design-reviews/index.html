@@ -6988,13 +6988,19 @@
 <li>Track and document design decisions in a <a href="decision-log/">decision log</a></li>
 <li>Document decision process in <a href="trade-studies/">trade studies</a> when multiple solutions exist for the given problem</li>
 </ul>
+<p>Early on in engagements, the team must decide where to land artifacts generated from design reviews.
+Typically, we meet the customer where they are at (for example, using their Confluence instance to land documentation if that is their preferred process).
+However, similar to storing decision logs, trade studies, etc. in the development repo, there are also large benefits to maintaining design review artifacts in the repo as well.
+Usually these artifacts can be further added to root level documentation directory or even at the root of the corresponding project if the repo is monolithic.
+In adding them to the project repo, these artifacts must similarly be reviewed in Pull Requests (typically preceding but sometimes accompanying implementation) which allows async review/discussion.
+Furthermore, artifacts can then easily link to other sections of the repo and source code files (via <a href="https://www.w3schools.io/file/markdown-links/">markdown links</a>).</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 30, 2022</span>
       
     
   </small>
