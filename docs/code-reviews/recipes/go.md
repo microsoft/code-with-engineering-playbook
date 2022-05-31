@@ -20,7 +20,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 #### golint
 
-**:exclamation: <span style="color:red">NOTICE: The golint library is deprecated and archived.</span>**
+**:exclamation: NOTICE: The golint library is deprecated and archived.**
 
 The linter revive (below) might be a suitable replacement.
 
@@ -37,6 +37,7 @@ The linter revive (below) might be a suitable replacement.
 `gofmt` is the automated code format style guide for Go. This is part of the vs-code extension, and it is enabled by default to run on save of every file.
 
 ## Aggregator
+
 ### golangci-lint
 
 [golangci-lint](https://github.com/golangci/golangci-lint/) is the replacement for the now deprecated `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
