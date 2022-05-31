@@ -12,7 +12,7 @@ Using the Detect Secrets Pre-Commit approach developers can ensure they don't ac
 
 ### Configuration for Environment
 
-Below contain two ways of setting up your environment depending on your use case.
+Below are two ways of setting up your environment depending on your use case.
 
 - [Pre-Commit Hook within Existing Repo](https://github.com/wbreza/pre-commit-hooks/blob/main/detect-secrets/README.md)
   - Simple install script bootstraps existing repos with pre-commit hooks and helper scripts to help manage the secret detection lifecycle
