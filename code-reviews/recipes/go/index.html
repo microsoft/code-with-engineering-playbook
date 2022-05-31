@@ -2500,6 +2500,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#revive" class="md-nav__link">
+    revive
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2525,6 +2532,19 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aggregator" class="md-nav__link">
+    Aggregator
+  </a>
+  
+    <nav class="md-nav" aria-label="Aggregator">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#golangci-lint" class="md-nav__link">
     golangci-lint
@@ -2534,13 +2554,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-validation" class="md-nav__link">
-    Build Validation
-  </a>
   
 </li>
       
@@ -2575,6 +2588,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-validation" class="md-nav__link">
+    Build Validation
+  </a>
   
 </li>
       
@@ -6986,6 +7006,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#revive" class="md-nav__link">
+    revive
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7011,6 +7038,19 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aggregator" class="md-nav__link">
+    Aggregator
+  </a>
+  
+    <nav class="md-nav" aria-label="Aggregator">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#golangci-lint" class="md-nav__link">
     golangci-lint
@@ -7020,13 +7060,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-validation" class="md-nav__link">
-    Build Validation
-  </a>
   
 </li>
       
@@ -7061,6 +7094,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-validation" class="md-nav__link">
+    Build Validation
+  </a>
   
 </li>
       
@@ -7103,12 +7143,19 @@
 <h4 id="go-vet">go vet</h4>
 <p><code>go vet</code> is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. <a href="../../../CSE/">CSE</a> Go code should be able to build with no <code>go vet</code> errors. This will be part of vscode-go extension.</p>
 <h4 id="golint">golint</h4>
+<p><strong>:exclamation: NOTICE: The golint library is deprecated and archived.</strong></p>
+<p>The linter revive (below) might be a suitable replacement.</p>
 <p><a href="https://github.com/golang/lint">golint</a> can be an effective tool for finding many issues, but it errors on the side of false positives. It is best used by developers when working on code, not as part of an automated build process. This is the default linter which is set up as part of the vscode-go extension.</p>
+<h4 id="revive">revive</h4>
+<p><a href="https://revive.run/">Revive</a> is a linter for go, it provides a framework for development of custom rules, and lets you define a strict preset for enhancing your development &amp; code review processes.</p>
 <h2 id="automatic-code-formatting">Automatic Code Formatting</h2>
 <h3 id="gofmt">gofmt</h3>
 <p><code>gofmt</code> is the automated code format style guide for Go. This is part of the vs-code extension, and it is enabled by default to run on save of every file.</p>
+<h2 id="aggregator">Aggregator</h2>
 <h3 id="golangci-lint">golangci-lint</h3>
 <p><a href="https://github.com/golangci/golangci-lint/">golangci-lint</a> is the replacement for the now deprecated <code>gometalinter</code>. It is 2-7x faster than <code>gometalinter</code> <a href="https://github.com/golangci/golangci-lint/#comparison">along with a host of other benefits</a>.</p>
+<p>golangci-lint is a powerful, customizable aggregator of linters. By default, several are enabled but not all. A full list of linters and their usages can be found <a href="https://github.com/golangci/awesome-go-linters">here</a>.</p>
+<p>It will allow you to configure each linter and choose which ones you would like to enable in your project.</p>
 <p>One awesome feature of <code>golangci-lint</code> is that is can be easily introduced to an existing large codebase using the <code>--new-from-rev COMMITID</code>. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions. golangci-lint can also be setup as the default linter in VS Code.</p>
 <p>Installation options for golangci-lint are present at <a href="https://github.com/golangci/golangci-lint#binary">golangci-lint</a>.</p>
 <p>To use golangci-lint with VS Code, use the below recommended settings:</p>
@@ -7117,6 +7164,20 @@
 <span class="w">     </span><span class="s2">&quot;--fast&quot;</span><span class="w"></span>
 <span class="w">   </span><span class="p">]</span><span class="w"></span>
 </code></pre></div>
+<h2 id="pre-commit-hooks">Pre-Commit Hooks</h2>
+<p>All developers should run <code>gofmt</code> in a pre-commit hook to ensure standard formatting.</p>
+<h3 id="step-1-install-pre-commit">Step 1- Install pre-commit</h3>
+<p>Run <code>pip install pre-commit</code> to install pre-commit.
+Alternatively you can run <code>brew install pre-commit</code> if you are using homebrew.</p>
+<h3 id="step-2-add-go-fmt-in-pre-commit">Step 2- Add go-fmt in pre-commit</h3>
+<p>Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-commit by adding it to .pre-commit-config.yaml file like below.</p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git://github.com/dnephin/pre-commit-golang</span><span class="w"></span>
+<span class="w">  </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
+<span class="w">  </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">go-fmt</span><span class="w"></span>
+</code></pre></div>
+<h3 id="step-3">Step 3</h3>
+<p>Run <code>$ pre-commit install</code> to set up the git hook scripts</p>
 <h2 id="build-validation">Build Validation</h2>
 <p><code>gofmt</code> should be run as a part of every build to enforce the common standard.</p>
 <p>To automate this process in Azure DevOps you can add the following snippet to your <code>azure-pipelines.yaml</code> file. This will format any scripts in the <code>./scripts/</code> folder.</p>
@@ -7135,20 +7196,6 @@
 <span class="w">  </span><span class="nt">workingDirectory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(System.DefaultWorkingDirectory)/scripts</span><span class="w"></span>
 <span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Run</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">linting&quot;</span><span class="w"></span>
 </code></pre></div>
-<h2 id="pre-commit-hooks">Pre-Commit Hooks</h2>
-<p>All developers should run <code>gofmt</code> in a pre-commit hook to ensure standard formatting.</p>
-<h3 id="step-1-install-pre-commit">Step 1- Install pre-commit</h3>
-<p>Run <code>pip install pre-commit</code> to install pre-commit.
-Alternatively you can run <code>brew install pre-commit</code> if you are using homebrew.</p>
-<h3 id="step-2-add-go-fmt-in-pre-commit">Step 2- Add go-fmt in pre-commit</h3>
-<p>Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-commit by adding it to .pre-commit-config.yaml file like below.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git://github.com/dnephin/pre-commit-golang</span><span class="w"></span>
-<span class="w">  </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
-<span class="w">  </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">go-fmt</span><span class="w"></span>
-</code></pre></div>
-<h3 id="step-3">Step 3</h3>
-<p>Run <code>$ pre-commit install</code> to set up the git hook scripts</p>
 <h2 id="sample-build-validation-pipeline-in-azure-devops">Sample Build Validation Pipeline in Azure DevOps</h2>
 <div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
 
@@ -7208,7 +7255,7 @@ Alternatively you can run <code>brew install pre-commit</code> if you are using 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 19, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2022</span>
       
     
   </small>
