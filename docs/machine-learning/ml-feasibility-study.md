@@ -37,8 +37,10 @@ Collaboration from individuals with diverse skill sets is desired at this stage,
 
 ### Data discovery
 
-* Hold a data exploration workshop and deep dive with domain experts
-* Understand the data dictionary, data quality and access (availability)
+* Hold a [data exploration](./ml-data-exloration.md) workshop and deep dive with domain experts
+* Understand data availability and confirm the team's access
+* Understand the data dictionary, if available
+* Understand the quality of the data. Is there already a data validation strategy in place?
 * Ensure required data is present in reasonable volumes
 * For supervised problems (most common), assess the availability of labels or data that can be used to effectively approximate labels
 * If applicable, ensure all data can be joined as required and understand how
