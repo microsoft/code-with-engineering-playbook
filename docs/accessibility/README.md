@@ -2,6 +2,10 @@
 
 Accessibility is a critical component of any successful project and ensures the solutions we build are usable and enjoyed by as many people as possible. While meeting accessibilty compliance standards is required, accessibility is much broader than compliance alone. Accessibility is about using techniques like inclusive design to infuse different perspectives and the full range of human diversity into the products we build. By incporating accessibilty into your project from the initial envisioning through MVP and beyond, you are promoting a more inclusive environment for your team and helping close the "Disability Divide" that exists for many people living with disabilities.
 
+## Getting Started
+
+If you are new to accessibility or are looking for an overview of accessibility fundamentals, Microsoft Learn offers a great training course that covers a broad range of topics from creating accessible content in Office to designing accessibility features in your own apps. You can learn more about the course or get started at [Microsoft Learn: Accessibility Fundamentals](https://docs.microsoft.com/en-us/learn/paths/accessibility-fundamentals/).
+
 ## Accessibility Insights
 
 [Accessibility Insights](https://accessibilityinsights.io/) is a free, open source solution for identifying accessibility issues in Windows, Android, and web applications. Accessibility Insights can identify a broad range of accessibility issues including problems with missing image alt tags, heading organization, tab order, color contrast, and many more. In addition, you can use Accessibility Insights to simulate color blindness to ensure your user interface is accessible to those that experience some form of color blindness. You can download Accessibility Insights here: [https://accessibilityinsights.io/downloads/](https://accessibilityinsights.io/downloads/)
