@@ -1,6 +1,6 @@
 # Accessibility
 
-Accessibility is a critical component of any successful project and ensures the solutions we build are usable and enjoyed by as many people as possible. While meeting accessibilty compliance standards is required, accessibility is much broader than compliance alone. Accessibility is about using techniques like inclusive design to infuse different perspectives and the full range of human diversity into the products we build. By incporating accessibilty into your project from the initial envisioning through MVP and beyond, you are promoting a more inclusive environment for your team and helping close the "Disability Divide" that exists for many people living with disabilities.
+Accessibility is a critical component of any successful project and ensures the solutions we build are usable and enjoyed by as many people as possible. While meeting accessibility compliance standards is required, accessibility is much broader than compliance alone. Accessibility is about using techniques like inclusive design to infuse different perspectives and the full range of human diversity into the products we build. By incorporating accessibility into your project from the initial envisioning through MVP and beyond, you are promoting a more inclusive environment for your team and helping close the "Disability Divide" that exists for many people living with disabilities.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ If you are new to accessibility or are looking for an overview of accessibility 
 
 ## Accessibility Insights
 
-[Accessibility Insights](https://accessibilityinsights.io/) is a free, open source solution for identifying accessibility issues in Windows, Android, and web applications. Accessibility Insights can identify a broad range of accessibility issues including problems with missing image alt tags, heading organization, tab order, color contrast, and many more. In addition, you can use Accessibility Insights to simulate color blindness to ensure your user interface is accessible to those that experience some form of color blindness. You can download Accessibility Insights here: [https://accessibilityinsights.io/downloads/](https://accessibilityinsights.io/downloads/)
+[Accessibility Insights](https://accessibilityinsights.io/) is a free, open-source solution for identifying accessibility issues in Windows, Android, and web applications. Accessibility Insights can identify a broad range of accessibility issues including problems with missing image alt tags, heading organization, tab order, color contrast, and many more. In addition, you can use Accessibility Insights to simulate color blindness to ensure your user interface is accessible to those that experience some form of color blindness. You can download Accessibility Insights here: [https://accessibilityinsights.io/downloads/](https://accessibilityinsights.io/downloads/)
 
 ## Accessibility Linter
 
@@ -16,13 +16,13 @@ If you are new to accessibility or are looking for an overview of accessibility 
 
 ## Accessibility Testing
 
-Accessibilty testing is a specialized subset of software testing and includes automated tools and manual testing processes that vary from project to project. In addition to tools like Accessiblity Insights discussed earlier, there are many other solutions for accessibility testing. The W3C provides a comprehensive list of evaluation and testing tools on their website at [https://www.w3.org/WAI/ER/tools/](https://www.w3.org/WAI/ER/tools/).
+Accessibility testing is a specialized subset of software testing and includes automated tools and manual testing processes that vary from project to project. In addition to tools like Accessibility Insights discussed earlier, there are many other solutions for accessibility testing. The W3C provides a comprehensive list of evaluation and testing tools on their website at [https://www.w3.org/WAI/ER/tools/](https://www.w3.org/WAI/ER/tools/).
 
 If you are looking to add automated testing to your Azure Pipelines, you may want to consider the [Accessibility Testing extension](https://marketplace.visualstudio.com/items?itemName=DrewLewis.Accessibility) built by Drew Lewis, a former Microsoft employee.
 
 ## Inclusive Design
 
-Inclusive design is a methodology that embraces the full range of human diversity as a resource to help build better products and services. Inclusive design compliments accessibility going beyond accessibility compliance standards to ensure products are usable and enjoyed by all people. By leveraging the inclusive design methodology early in a project, you can expect a more inclusive and better solution for everyone. The [Microsoft Inclusive Design](https://www.microsoft.com/design/inclusive/) website offers a variety of resources for incorporating inclusive design in your projects including inclusive design activities that can be used in envisioning and architecure design sessions.
+Inclusive design is a methodology that embraces the full range of human diversity as a resource to help build better products and services. Inclusive design compliments accessibility going beyond accessibility compliance standards to ensure products are usable and enjoyed by all people. By leveraging the inclusive design methodology early in a project, you can expect a more inclusive and better solution for everyone. The [Microsoft Inclusive Design](https://www.microsoft.com/design/inclusive/) website offers a variety of resources for incorporating inclusive design in your projects including inclusive design activities that can be used in envisioning and architecture design sessions.
 
 The Microsoft Inclusive Design methodology includes the following principles:
 
