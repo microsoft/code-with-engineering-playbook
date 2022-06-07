@@ -4,8 +4,6 @@
 
 The table below maps outcomes -- the results that you may want to achieve in your validation efforts -- to one or more techniques that can be used to accomplish that outcome.
 
-To use the table, either eyeball-browse or search for keywords.
-
 | When I am working on... | I want to get this outcome... | ...so I should consider |
 |--|--|--|
 | Development | Prove backward compatibility with existing callers and clients | [Shadow testing](shadow-testing/README.md) |
