@@ -7,7 +7,7 @@
     "lint:md": "markdownlint \"**/*.md\" --ignore node_modules"
   },
   "dependencies": {
-    "markdown-link-check": "3.9.3",
+    "markdown-link-check": "3.10.2",
     "markdownlint-cli": "^0.31.0",
     "run-script-os": "1.1.5"
   }
