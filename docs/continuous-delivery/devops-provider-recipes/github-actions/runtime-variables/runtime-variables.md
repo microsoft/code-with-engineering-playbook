@@ -147,7 +147,7 @@ Including the Variable
 
    ```cmd
    > git add.
-   > git commit -m "Running Github Actions Test [commit var]"
+   > git commit -m "Running GitHub Actions Test [commit var]"
    > git push
    ```
 

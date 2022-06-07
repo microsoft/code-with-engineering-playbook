@@ -9,7 +9,7 @@ An engineer working for a [CSE](docs/CSE.md) project...
 
 This is our playbook. All contributions welcome! Please feel free to submit a [pull request](https://github.com/microsoft/code-with-engineering-playbook/pulls) to get involved.
 
-> **Note:** If you are reading this on github - head over to [https://microsoft.github.io/code-with-engineering-playbook/](https://microsoft.github.io/code-with-engineering-playbook/) for a better reading experience
+> **Note:** If you are reading this on GitHub - head over to [https://microsoft.github.io/code-with-engineering-playbook/](https://microsoft.github.io/code-with-engineering-playbook/) for a better reading experience
 
 ## Why Have A Playbook
 

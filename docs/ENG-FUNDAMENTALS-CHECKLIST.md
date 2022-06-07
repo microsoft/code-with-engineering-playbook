@@ -39,7 +39,7 @@ More details on [continuous integration](continuous-integration/README.md) and [
 
 ## Security
 
-- [ ] Access is only granted on an as needed bases
+- [ ] Access is only granted on an as-needed basis
 - [ ] Secrets are stored in secured locations and not checked in to code
 - [ ] Data is encrypted in transit (and if necessary at rest) and passwords are hashed
 - [ ] Is the system split into logical segments with separation of concerns? This helps limiting security vulnerabilities.

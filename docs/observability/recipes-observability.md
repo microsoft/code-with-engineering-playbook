@@ -10,11 +10,11 @@
 
 ## Example: OpenTelemetry over a message oriented architecture in Java with Jaeger, Prometheus and Azure Monitor
 
-[Github Repo](https://github.com/iamnicoj/OpenTelemetry-Async-Java-with-Jaeger-Prometheus-AzMonitor)
+[GitHub Repo](https://github.com/iamnicoj/OpenTelemetry-Async-Java-with-Jaeger-Prometheus-AzMonitor)
 
 ## Example: IoT Edge Distributed Tracing sample
 
-[Github Repo](https://github.com/eedorenko/iotedge-logging-and-monitoring-solution/tree/eedorenko/dist-tracing/DistributedTracing)
+[GitHub Repo](https://github.com/eedorenko/iotedge-logging-and-monitoring-solution/tree/eedorenko/dist-tracing/DistributedTracing)
 
 ## Example: Setup Azure Monitor dashboards and alerts with Terraform
 

@@ -29,7 +29,7 @@ Recipes and Scenarios-
 
 Additional Tools -
 
-1. [CodeQL](https://securitylab.github.com/tools/codeql)  – Github security. CodeQL lets you query code as if it was data. Write a query to find all variants of a vulnerability
+1. [CodeQL](https://securitylab.github.com/tools/codeql)  – GitHub security. CodeQL lets you query code as if it was data. Write a query to find all variants of a vulnerability
 1. [Git-secrets](https://github.com/awslabs/git-secrets)  - Prevents you from committing passwords and other sensitive information to a git repository.
 
 ## Conclusion
