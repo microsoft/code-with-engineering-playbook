@@ -7,6 +7,7 @@ Design reviews should not feel like a burden. Design reviews can be easily incor
 - Only create design reviews when needed. Not every story or task requires a complete design review.
 - Leverage this guidance to make changes that best fit in with the team. Every team works differently.
 - Leverage Microsoft subject-matter experts (SME) as needed during design reviews. Not every story needs SME or leadership sign-off. Most design reviews can be fully executed within a dev crew.
+- [Use diagrams](./preferred-diagram-tooling.md) to visualize concepts and architecture.
 
 The following guidelines outline how Microsoft and the customer together can incorporate design reviews into their day-to-day agile processes.
 
@@ -58,6 +59,18 @@ It is also a great time to check in on design reviews
 All design artifacts should be treated as a living document. As requirements change or uncover more unknowns the dev crew should retroactively update all design artifacts. Missing this critical step may cause the customer to incur future technical debt. Artifacts that are not up to date are `bugs` in the design.
 
 > **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../../agile-development/advanced-topics/team-agreements/definition-of-done.md) for all user stories.
+
+## Sync Design Reviews
+
+It is often helpful to schedule 1-2 design sessions per sprint as part of the normal aforementioned meeting cadence.
+Throughout the sprint, folks can add design topics to the meeting agenda and if there is nothing to discuss for a particular meeting occurrence, it can simply be cancelled.
+While these sessions may not always be used, they help project members align on timing and purpose early on and establish precedence, often encouraging participation so design topics don't slip through the cracks.
+Oftentimes, it is helpful for those project members intending to present their design to the wider group to distribute documentation on their design prior to the session so that other participants can come prepared with context heading into the session.
+
+It should be noted that the necessity of these sessions certainly evolves over the course of the engagement.
+Early on, or in other times of more ambiguity, these meetings are typically used more often and more fully.
+
+Lastly, while it is suggested that sync design reviews are scheduled during the normal sprint cadence, scheduling ad-hoc sessions should not be discouraged - even if these reviews are limited to the participants of a specific workstream.
 
 ## Wrap-up Sprints
 

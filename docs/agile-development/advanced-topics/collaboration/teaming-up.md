@@ -24,7 +24,7 @@ Some potential steps in this phase may be as following (not limited):
 
 - Identification of "Software Craftspersonship" areas which means the tools and methods will be widely used during the engagement and taking the required actions on team upskilling side if necessary.
 
-  - Github, VSCode LiveShare, AzDevOps, necessary development tools & libraries ... more.
+  - GitHub, VSCode LiveShare, AzDevOps, necessary development tools & libraries ... more.
   - If upskilling on certain topic(s) is needed, identifying the areas and arranging code spikes for increasing the team knowledge on the regarding topic(s).
 
 - Identification of communication channels, feedback loops and recurrent team call slots out of regular sprint meetings

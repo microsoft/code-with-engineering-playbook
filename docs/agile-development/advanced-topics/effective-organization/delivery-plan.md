@@ -44,4 +44,4 @@ You can also leverage one of these tools by creating your epics and features and
 
 The [Plans (Preview) feature on Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/project/navigation/preview-features?view=azure-devops) will help you make a plan. Delivery Plans provide a schedule of stories or features your team plan to deliver. Delivery Plans show the scheduled work items by a sprint (iteration path) of selected teams against a calendar view.
 
-Confluence JIRA, Trello, Rally, Asana, Basecamp, and Github Issues are other similar tools in the market (some are free, others you pay a monthly fee, or you can install on-prem) that you can leverage.
+Confluence JIRA, Trello, Rally, Asana, Basecamp, and GitHub Issues are other similar tools in the market (some are free, others you pay a monthly fee, or you can install on-prem) that you can leverage.
