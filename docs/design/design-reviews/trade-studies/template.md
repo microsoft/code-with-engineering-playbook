@@ -70,7 +70,7 @@ If applicable, describe the boundaries from which we have to design the solution
 
 #### Accessibility
 
-**Accessibility is never optional**. Microsoft has made a public commitment to always produce accessible appliations. For more information visit the official [Microsoft accessibility site](https://www.microsoft.com/accessibility) and read the [Accessibility](../../../accessibility/README.md) page.
+**Accessibility is never optional**. Microsoft has made a public commitment to always produce accessible applications. For more information visit the official [Microsoft accessibility site](https://www.microsoft.com/accessibility) and read the [Accessibility](../../../accessibility/README.md) page.
 
 Consider the following prompts when determining application accessibility requirements:
 
