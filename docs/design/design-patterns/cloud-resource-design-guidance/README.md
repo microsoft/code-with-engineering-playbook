@@ -2,10 +2,9 @@
 
 As cloud usage scales, considerations for subscription design, management groups, and resource naming/tagging conventions have an impact on governance, operations management, and adoption patterns.
 
-> **NOTE**
-> When working in an existing cloud environment, always work with the relevant stakeholders to ensure that introducing new patterns provides the intended value.
+> **NOTE:** Always work with the relevant stakeholders to ensure that introducing new patterns provides the intended value.
 >
-> We do not recommend implementing these guidelines simply for their own sake.
+> When working in an existing cloud environment, it is important to understand any current patterns and how they are used before making a change to them.
 
 ## References
 
