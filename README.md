@@ -45,6 +45,7 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 
 ## Engineering Fundamentals
 
+* [Accessibility](docs/accessibility/README.md)
 * [Agile Development](docs/agile-development/README.md)
 * [Automated Testing](docs/automated-testing/README.md)
 * [Code Reviews](docs/code-reviews/README.md)
