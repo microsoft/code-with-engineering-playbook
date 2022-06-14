@@ -491,6 +491,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/design-patterns/cloud-resource-design-guidance/</loc>
+         <lastmod>2022-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/design/design-patterns/data-heavy-design-guidance/</loc>
          <lastmod>2022-06-14</lastmod>
          <changefreq>daily</changefreq>
