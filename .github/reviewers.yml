@@ -6,8 +6,12 @@ reviewers:
   # Reviewer groups each of which has a list of GitHub usernames
   groups:
     repository-owners:
-      - wbreza
+      - tessferrandez
       - fnocera
+      - nyouens
+    general:
+      - tessferrandez
+      - shiranr
     agile:
       - meulta
       - omri374
@@ -15,14 +19,13 @@ reviewers:
       - alkofahi
       - omusavi
     code-reviews:
-      - katyamust
-      - TessFerrandez
       - ikivanc
       - tompaana
-      - saroup
+      - shiranr
+      - tessferrandez
     ci-cd:
       - brockneedscoffee
-    design: 
+    design:
       - zmmille2
       - sbohlen
       - charleszipp
@@ -31,30 +34,35 @@ reviewers:
       - charleszipp
     div-inclusion:
       - madossan01
-    documentation: 
+    documentation:
       - magencio
       - tompaana
-      - TessFerrandez
+      - tessferrandez
       - mtirion
     machine-learning:
       - biancafbmd
       - omri374
-      - TessFerrandez
+      - tessferrandez
     observability:
-      - NarmathaBala
+      - narmathabala
       - ivaramme
-    privacy: 
+    privacy:
       - prnata
       - omri374
     security:
       - charleszipp
+      - msebragge
     source-code:
-      - TessFerrandez
+      - tessferrandez
       - tompaana
+    ux:
+      - jankakoen
 
 files:
   # Keys are glob expressions.
   # You can assign groups defined above as well as GitHub usernames.
+  'docs/**':
+    - general # group
   'docs/agile-development/**':
     - agile # group
   'docs/automated-testing/**':
@@ -83,7 +91,8 @@ files:
     - source-code # group
   '.projector/**':
     - design # group
-    - wbreza  # username
+  'docs/user-interface-engineering/**'
+    - ux # group
 
 options:
   ignore_draft: true

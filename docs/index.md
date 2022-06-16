@@ -43,6 +43,7 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 
 ## Engineering Fundamentals
 
+* [Accessibility](accessibility/README.md)
 * [Agile Development](agile-development/README.md)
 * [Automated Testing](automated-testing/README.md)
 * [Code Reviews](code-reviews/README.md)

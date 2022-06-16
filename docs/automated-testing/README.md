@@ -4,8 +4,6 @@
 
 The table below maps outcomes -- the results that you may want to achieve in your validation efforts -- to one or more techniques that can be used to accomplish that outcome.
 
-To use the table, either eyeball-browse or search for keywords.
-
 | When I am working on... | I want to get this outcome... | ...so I should consider |
 |--|--|--|
 | Development | Prove backward compatibility with existing callers and clients | [Shadow testing](shadow-testing/README.md) |
@@ -20,7 +18,7 @@ To use the table, either eyeball-browse or search for keywords.
 | Development | Prove correct RBAC and claims interpretation of Authorization code | Scenario (security) |
 | Development | Document and/or enforce valid API usage | [Unit testing](unit-testing/README.md); Functional tests; [Consumer-driven Contract Testing](cdc-testing/README.md)|
 | Development | Prove implementation correctness in advance of a dependency or absent a dependency | [Unit testing](unit-testing/README.md) (with mocks); [Unit testing](unit-testing/README.md) (with emulators); [Consumer-driven Contract Testing](cdc-testing/README.md) |
-| Development | Ensure that the user interface is accessible | Accessibility |
+| Development | Ensure that the user interface is accessible | [Accessibility](../accessibility/README.md) |
 | Development | Ensure that users can operate the interface | [UI testing (automated)](ui-testing/README.md) (human usability observation) |
 | Development | Prevent regression in user experience | UI automation; [End-to-End testing](e2e-testing/README.md) |
 | Development | Detect and prevent &#39;noisy neighbor&#39; phenomena | [Load testing](performance-testing/load-testing.md) |

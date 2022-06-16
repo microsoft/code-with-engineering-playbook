@@ -10,3 +10,4 @@ Rather than duplicate or replace the cited sources, this section aims to complim
 * [Object Oriented Design Reference](object-oriented-design-reference/README.md)
 * [Distributed System Design Reference](distributed-system-design-reference/README.md)
 * [REST API Design Guidance](rest-api-design-guidance/README.md)
+* [Cloud Resource Design Guidance](cloud-resource-design-guidance/README.md)
