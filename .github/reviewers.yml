@@ -91,7 +91,7 @@ files:
     - source-code # group
   '.projector/**':
     - design # group
-  'docs/user-interface-engineering/**'
+  'docs/user-interface-engineering/**':
     - ux # group
 
 options:
