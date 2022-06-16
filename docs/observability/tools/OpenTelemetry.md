@@ -75,7 +75,7 @@ From the website:
 
 As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due diligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some features are not in GA, there may be some incompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of CNCF, so it is expected that many more features would reach GA soon.
 
-### January 2022 UPDATE:
+### January 2022 UPDATE
 
 Apart from the logging specification and implementation that are still marked as draft or beta, all other specifications and implementations regarding tracing and metrics are marked as stable or feature-freeze. Many libraries are still on active development whatsoever, so thorough analysis has to be made depending on the language on a feature basis.
 
@@ -95,15 +95,15 @@ The main difference between running the OpenTelemetry agent vs. the Application 
 
 ### OtelTelemetry vs Application Insights agents compared
 
-|Highlight | OtelTelemetry Agent | App Insights Agent |
-|------|-------------|------|
-| Automatic Telemetry| Y | Y |
-| Manual OpenTelemetry| Y | Y |
-| Plug and Play Exportes| Y | N |
-| Multiple Exportes| Y | N |
-| Full Open Telemetry layout (decoupling agents, collectors and exporters)| Y | N |
-| Enriched out of the box telemetry | N | Y |
-| Unified telemetry backend | N | Y |
+| Highlight                                                                | OtelTelemetry Agent | App Insights Agent |
+|--------------------------------------------------------------------------|---------------------|--------------------|
+| Automatic Telemetry                                                      | Y                   | Y                  |
+| Manual OpenTelemetry                                                     | Y                   | Y                  |
+| Plug and Play Exports                                                    | Y                   | N                  |
+| Multiple Exports                                                         | Y                   | N                  |
+| Full Open Telemetry layout (decoupling agents, collectors and exporters) | Y                   | N                  |
+| Enriched out of the box telemetry                                        | N                   | Y                  |
+| Unified telemetry backend                                                | N                   | Y                  |
 
 ### Summary
 

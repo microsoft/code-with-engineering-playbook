@@ -91,7 +91,7 @@ The following outline examples of several strategies that can be adopted to prom
 Assign hotkeys to each of the essential tasks.
 
 | Task                 | Windows      |
-| -------------------- | ------------ |
+|----------------------|--------------|
 | Build                | CTRL+SHIFT+B |
 | Test                 | CTRL+R,T     |
 | Start With Debugging | F5           |

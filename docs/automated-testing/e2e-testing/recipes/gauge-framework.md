@@ -119,11 +119,11 @@ Gauge also supports data driven testing using Markdown tables as well as externa
 ```bash
 # Search for the data blob
 
-|query    |
+| query   |
 |---------|
-|store_1  |
-|store_2  |
-|store_3  |
+| store_1 |
+| store_2 |
+| store_3 |
 
 ## Look for stores data
 * Search Azure Storage for <query>

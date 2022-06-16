@@ -42,13 +42,13 @@ Here are principles to consider when building dashboards:
 
 ## Dashboard Samples and Recipes
 
-### Azure Workbooks:
+### Azure Workbooks
 
 - Performance analysis - A measurement on how the system performs. Workbook template available in gallery.
 - Failure analysis - A report about system failure with details. Workbook template available in gallery.
 - Application Performance Index([Appdex](https://en.wikipedia.org/wiki/Apdex)) - This is a way to measure user satisfaction. It classifies performance into three zones based on a baseline performance threshold T. The template for Appdex is available in Azure Workbooks gallery as well.
 
-### Application Insights:
+### Application Insights
 
 - [User retention analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-retention)
 - [User navigation patterns analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-flows)
@@ -56,7 +56,7 @@ Here are principles to consider when building dashboards:
 
 For other tools, these can be used as a reference to recreate if a template is not readily available.
 
-### Grafana with Azure Monitor as Data Source:
+### Grafana with Azure Monitor as Data Source
 
 - [Azure Kubernetes Service - Cluster & Namespace Metrics](https://grafana.com/grafana/dashboards/10956) - Container Insights metrics for Kubernetes clusters. Cluster utilization, namespace utilization, Node cpu & memory, Node disk usage & disk io, node network & kubelet docker operation metrics
 - [Azure Kubernetes Service - Container Level & Pod Metrics](https://grafana.com/grafana/dashboards/14891) - This contains Container level and Pod Metrics like CPU and Memory which are missing in the above dashboard.

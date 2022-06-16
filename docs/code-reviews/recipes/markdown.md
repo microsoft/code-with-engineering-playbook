@@ -220,10 +220,10 @@ Save your guidelines together with your documentation, so they are easy to refer
 - Add a References section to the end of the document with links to external references
 - Prefer tables to lists for comparisons and reports to make research and results more readable
 
-  | Option     | Pros             | Cons               |
-  | ---------- | ---------------- | ------------------ |
-  | Option 1   | Some pros        | Some cons          |
-  | Option 2   | Some pros        | Some cons          |
+  | Option   | Pros      | Cons      |
+  |----------|-----------|-----------|
+  | Option 1 | Some pros | Some cons |
+  | Option 2 | Some pros | Some cons |
 
 ### General
 

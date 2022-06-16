@@ -37,14 +37,14 @@ their own, and adjust times, communication channels, branch naming policies etc.
 
 ## Scrum Rhythm
 
-| Activity | When | Duration | Who | Accountable | Goal |
-|-|-|-|-|-|-|
-| [Project Standup](../../core-expectations/README.md) | Tue-Fri 9AM | 15 min | Everyone | Process Lead | What has been accomplished, next steps, blockers |
-| Sprint Demo | Monday 9AM | 1 hour | Everyone | Dev Lead | Present work done and sign off on user story completion |
-| [Sprint Retro](../../core-expectations/README.md) | Monday 10AM | 1 hour | Everyone | Process Lead | Dev Teams shares learnings and what can be improved |
-| [Sprint Planning](../../core-expectations/README.md) | Monday 11AM | 1 hour | Everyone | PO | Size and plan user stories for the sprint |
-| Task Creation | After Sprint Planning | - | Dev Team | Dev Lead | Create tasks to clarify and determine velocity |
-| [Backlog refinement](../backlog-management/readme.md) | Wednesday 2PM | 1 hour | Dev Lead, PO | PO | Prepare for next sprint and ensure that stories are ready for next sprint. |
+| Activity                                              | When                  | Duration | Who          | Accountable  | Goal                                                                       |
+|-------------------------------------------------------|-----------------------|----------|--------------|--------------|----------------------------------------------------------------------------|
+| [Project Standup](../../core-expectations/README.md)  | Tue-Fri 9AM           | 15 min   | Everyone     | Process Lead | What has been accomplished, next steps, blockers                           |
+| Sprint Demo                                           | Monday 9AM            | 1 hour   | Everyone     | Dev Lead     | Present work done and sign off on user story completion                    |
+| [Sprint Retro](../../core-expectations/README.md)     | Monday 10AM           | 1 hour   | Everyone     | Process Lead | Dev Teams shares learnings and what can be improved                        |
+| [Sprint Planning](../../core-expectations/README.md)  | Monday 11AM           | 1 hour   | Everyone     | PO           | Size and plan user stories for the sprint                                  |
+| Task Creation                                         | After Sprint Planning | -        | Dev Team     | Dev Lead     | Create tasks to clarify and determine velocity                             |
+| [Backlog refinement](../backlog-management/readme.md) | Wednesday 2PM         | 1 hour   | Dev Lead, PO | PO           | Prepare for next sprint and ensure that stories are ready for next sprint. |
 
 ## Process Lead
 

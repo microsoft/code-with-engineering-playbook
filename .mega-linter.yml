@@ -9,6 +9,7 @@ DISABLE:
   - HTML
   - DOCKERFILE
   - JSON
+  - SPELL_CSPELL
   # - SPELL # Uncomment to disable checks of spelling mistakes
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false

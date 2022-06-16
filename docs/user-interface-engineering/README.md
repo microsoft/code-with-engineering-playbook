@@ -29,7 +29,7 @@ The first step in the design process is to understand the problem at hand and ou
 
 A public library has a set of data containing information about its collection. The data stores text, images, and the status of a book (borrowed, available, reserved). The library librarian wants to share this data with its users.
 
-1. As the librarian, I want to notify users before they recieve late penalties for overdue books
+1. As the librarian, I want to notify users before they receive late penalties for overdue books
 1. As the librarian, I want to notify users when a book they have reserved becomes available
 
 With the desired outcomes in mind, the next step in the design process is to define user personas. Regardless of the solution for a given problem, understanding the user needs leads to a better understanding of feature development and technological choices. Personas are written as prose-like paragraphs that describe different types of users. Considering the previous example, the various user personas could be:
