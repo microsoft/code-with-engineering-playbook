@@ -6,6 +6,8 @@ APPLY_FIXES: all # all, none, or list of linter keys
 # ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
 DISABLE:
   - COPYPASTE # Comment to enable checks of excessive copy-pastes
+  - HTML
+  - DOCKERFILE
   # - SPELL # Uncomment to disable checks of spelling mistakes
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
