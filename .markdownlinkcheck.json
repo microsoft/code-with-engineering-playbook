@@ -15,7 +15,7 @@
         {"pattern": "(.*\\.)?.opentelemetry.io"},
         {"pattern": "(.*\\.)?.pluralsight.com"},
         {"pattern": "(.*\\.)?.github.com"},
-        {"pattern": "^https://marketplace.visualstudio.com"}
+        {"pattern": "^https://marketplace.visualstudio.com"},
         {"pattern": "^https://opensource.org/licenses/MIT"}
     ],
     "retryOn429": true

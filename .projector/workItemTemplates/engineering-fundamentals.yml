@@ -3,12 +3,14 @@ description: A template for adding engineering fundamentals tasks to engagement 
 items:
   - name: Establish best practices and bootstrap project
     type: epic
-    description: This is a collection of work for establishing best practices within
+    description:
+      This is a collection of work for establishing best practices within
       the engagement
     children:
       - name: Agile
         type: feature
-        description: Initial work items to set best practices around Agile methodology
+        description:
+          Initial work items to set best practices around Agile methodology
           within engagement
         acceptanceCriteria:
           - Team has scheduled agile ceremonies
@@ -32,18 +34,22 @@ items:
             type: story
           - name: As a dev crew, we have scheduled time for sprint demos
             type: story
-          - name: As a dev crew, we have created and committed a working agreement to the
+          - name:
+              As a dev crew, we have created and committed a working agreement to the
               repo
             type: story
       - name: Design Reviews
         type: feature
-        description: Initial work items to set best practices around Design Reviews
+        description:
+          Initial work items to set best practices around Design Reviews
           within engagement
         children:
-          - name: As a dev crew, we have defined the process for conducting design reviews
+          - name:
+              As a dev crew, we have defined the process for conducting design reviews
               in the working agreement
             type: story
-            description: The process for design reviews should be documented and available
+            description:
+              The process for design reviews should be documented and available
               to the whole team from the outset of the project. This story is to
               explicitly document that process in the team's [working
               agreement](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/working-agreements/readme/)
@@ -52,10 +58,12 @@ items:
                 agreement
               - Process has been reviewed by both the Microsoft and customer team
               - Document committed to customer repo
-          - name: As a dev crew, we have standardized on a template for conducting design
+          - name:
+              As a dev crew, we have standardized on a template for conducting design
               reviews and have a link in the developer docs
             type: story
-            description: All design reviews should follow a well-known template. If that
+            description:
+              All design reviews should follow a well-known template. If that
               template is not found in the
               [playbook](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/design/design-reviews),
               consider contributing your template back to it.
@@ -65,7 +73,8 @@ items:
               - If playbook does not include template, contribute template back
                 to playbook with description of why existing templates didn't
                 meet requirements
-          - name: As a dev crew, we have agreed upon and documented a location for storing
+          - name:
+              As a dev crew, we have agreed upon and documented a location for storing
               design documents and artifacts so that they are available to all
               stakeholders
             type: story
@@ -81,42 +90,54 @@ items:
         description: ""
         acceptanceCriteria: []
         children:
-          - name: As a dev crew, we have defined the process for conducting code reviews in
+          - name:
+              As a dev crew, we have defined the process for conducting code reviews in
               the working agreement
             type: story
-          - name: As a dev crew, we have defined and documented a checklist to be used in
+          - name:
+              As a dev crew, we have defined and documented a checklist to be used in
               reviewing code
             type: story
-          - name: As a dev crew, we can locally run automated tooling to enforce basic
+          - name:
+              As a dev crew, we can locally run automated tooling to enforce basic
               conventions/standards
             type: story
-          - name: As a dev crew, we run automated tooling in a CI pipeline to enforce basic
+          - name:
+              As a dev crew, we run automated tooling in a CI pipeline to enforce basic
               conventions/standards
             type: story
-          - name: As a dev crew, we have branch protection policies that enforce multiple
+          - name:
+              As a dev crew, we have branch protection policies that enforce multiple
               reviewers before merging
             type: story
-          - name: As a dev crew, we have branch protection policies that enforce reviews
+          - name:
+              As a dev crew, we have branch protection policies that enforce reviews
               from customer team before merging
             type: story
-          - name: As a dev crew, we have branch protection policies that enforce reviews
+          - name:
+              As a dev crew, we have branch protection policies that enforce reviews
               from Microsoft team before merging
             type: story
-          - name: As a dev crew, we have branch protection policies that enforce linking
+          - name:
+              As a dev crew, we have branch protection policies that enforce linking
               pull requests to work items before merging
             type: story
-          - name: As a dev crew, we have a pull request template in place to guide
+          - name:
+              As a dev crew, we have a pull request template in place to guide
               developers in creating a meaningful PR description
             type: story
           - name: As a dev crew, automated tooling to notify team of pending reviews
             type: story
-          - name: As a dev crew, we have a scheduled a dedicated time to go through pending
+          - name:
+              As a dev crew, we have a scheduled a dedicated time to go through pending
               reviews and triage them
             type: story
-          - name: As a dev crew, we have a dedicated code review champion that actively
+          - name:
+              As a dev crew, we have a dedicated code review champion that actively
               triages pending reviews
             type: story
-          - name: As a dev crew, we have defined an actionable post-mortem process for when
+          - name:
+              As a dev crew, we have defined an actionable post-mortem process for when
               bugs or security issues are introduced
             type: story
       - name: Source Code Management
@@ -124,39 +145,50 @@ items:
         description: ""
         acceptanceCriteria: []
         children:
-          - name: As a dev crew, we have automated tooling enforcing that no secrets are
+          - name:
+              As a dev crew, we have automated tooling enforcing that no secrets are
               committed to the repo
             type: story
-          - name: As a dev crew, we do not have any placeholders or TODOs in our mainline
+          - name:
+              As a dev crew, we do not have any placeholders or TODOs in our mainline
               branches
             type: story
-          - name: As a dev crew, we have installation, build and test instructions
+          - name:
+              As a dev crew, we have installation, build and test instructions
               documented in the README
             type: story
           - name: As a dev crew, we pin to specific versions for all dependencies in project
             type: story
-          - name: As a dev crew, we tag all releases or make them accessible via git
+          - name:
+              As a dev crew, we tag all releases or make them accessible via git
               reference
             type: story
-          - name: As a dev crew, we keep all proof of concept or spike work stored
+          - name:
+              As a dev crew, we keep all proof of concept or spike work stored
               separately from production code
             type: story
-          - name: As a dev crew, we manage any large files and/or data via git LFS or
+          - name:
+              As a dev crew, we manage any large files and/or data via git LFS or
               external links
             type: story
-          - name: As a dev crew, we have all the right access and permissions to work
+          - name:
+              As a dev crew, we have all the right access and permissions to work
               effectively in the customer repository
             type: story
-          - name: As a dev crew, we have branch policies set up and enforced to maintain a
+          - name:
+              As a dev crew, we have branch policies set up and enforced to maintain a
               clean main branch
             type: story
-          - name: As a dev crew, we have established and documented our branching and branch
+          - name:
+              As a dev crew, we have established and documented our branching and branch
               naming strategy
             type: story
-          - name: As a dev crew, have established and documented our merge and commit
+          - name:
+              As a dev crew, have established and documented our merge and commit
               history strategy
             type: story
-          - name: As a dev crew, we have added dependencies, outputs, configuration files,
+          - name:
+              As a dev crew, we have added dependencies, outputs, configuration files,
               etc. to .gitignore to avoid needing to manually select files to
               commit
             type: story
@@ -177,7 +209,8 @@ items:
             type: story
           - name: As a dev crew, we have a manual way to run infrastructure-as-code tests
             type: story
-          - name: As a dev crew, we have an automated way to run infrastructure-as-code
+          - name:
+              As a dev crew, we have an automated way to run infrastructure-as-code
               tests
             type: story
           - name: As a dev crew, we have a manual way to run accessibility tests
@@ -186,17 +219,20 @@ items:
             type: story
           - name: As a dev crew, we have a manual way to run security/vulnerability tests
             type: story
-          - name: As a dev crew, we have an automated way to run security/vulnerability
+          - name:
+              As a dev crew, we have an automated way to run security/vulnerability
               tests
             type: story
           - name: As a dev crew, we have a manual way to run performance tests
             type: story
           - name: As a dev crew, we have an automated way to run performance tests
             type: story
-          - name: As a dev crew, we have a manual way to run production/deployment
+          - name:
+              As a dev crew, we have a manual way to run production/deployment
               verification tests
             type: story
-          - name: As a dev crew, we have an automated way to run production/deployment
+          - name:
+              As a dev crew, we have an automated way to run production/deployment
               verification tests
             type: story
       - name: Security
@@ -204,56 +240,72 @@ items:
         description: ""
         acceptanceCriteria: []
         children:
-          - name: As a dev crew, we have set up automated tooling to ensure secrets are
+          - name:
+              As a dev crew, we have set up automated tooling to ensure secrets are
               never committed to codebase
             type: story
-          - name: As a dev crew, we have set up Key Vault or similar secure vault mechanism
+          - name:
+              As a dev crew, we have set up Key Vault or similar secure vault mechanism
               for storing keys/secrets
             type: story
-          - name: As a dev crew, we have established a key/secret rotation policy to enforce
+          - name:
+              As a dev crew, we have established a key/secret rotation policy to enforce
               regular rotations
             type: story
-          - name: As a dev crew, we have consistently implemented input validation for any
+          - name:
+              As a dev crew, we have consistently implemented input validation for any
               form of user-controllable input
             type: story
-          - name: As a dev crew, we use parameters instead of string concatenation in query
+          - name:
+              As a dev crew, we use parameters instead of string concatenation in query
               building
             type: story
-          - name: As a dev crew, we enforce that queries can only request columns they need
+          - name:
+              As a dev crew, we enforce that queries can only request columns they need
               to fulfill a request at that RBAC level
             type: story
-          - name: As a dev crew, we have automated checks in place to locate security issues
+          - name:
+              As a dev crew, we have automated checks in place to locate security issues
               in upstream dependencies
             type: story
-          - name: As a dev crew, we have manually spot-checked all dependencies to identify
+          - name:
+              As a dev crew, we have manually spot-checked all dependencies to identify
               typosquatted dependency names
             type: story
-          - name: As a dev crew, we have information stored in a way where a client cannot
+          - name:
+              As a dev crew, we have information stored in a way where a client cannot
               mutate it independent of validation/access controls
             type: story
-          - name: As a dev crew, we have the "Principle of Least Privilege" applied to all
+          - name:
+              As a dev crew, we have the "Principle of Least Privilege" applied to all
               application roles
             type: story
-          - name: As a dev crew, we use managed identities where possible in lieu of
+          - name:
+              As a dev crew, we use managed identities where possible in lieu of
               passwords
             type: story
           - name: As a dev crew, we have captured any threat models and security
               requirements as part of the engagement's deliverables
             type: story
-          - name: As a dev crew, we have security artifacts and reports produced by security
+          - name:
+              As a dev crew, we have security artifacts and reports produced by security
               tools (SAST/DAST)
             type: story
-          - name: As a dev crew, we have security artifacts and reports that act as gates
+          - name:
+              As a dev crew, we have security artifacts and reports that act as gates
               for the product as it moves into its next phase of the development
               lifecycle
             type: story
-          - name: As a dev crew, we have documented the engagement's security shortfalls for
+          - name:
+              As a dev crew, we have documented the engagement's security shortfalls for
               future use
             type: story
-          - name: As a dev crew, we have defined all categories of threat-actor for the
+          - name:
+              As a dev crew, we have defined all categories of threat-actor for the
               system
             type: story
-          - name: As a dev crew, we have all services isolated from each other and the
+          - name:
+              As a dev crew, we have all services isolated from each other and the
               internet using VNETs and NSGs, requiring explicit trust
               relationships and/or access controls
             type: story
@@ -262,7 +314,8 @@ items:
         description: ""
         acceptanceCriteria: []
         children:
-          - name: As a dev crew, we can locally build/compile to execute binary and/or the
+          - name:
+              As a dev crew, we can locally build/compile to execute binary and/or the
               container image
             type: story
           - name: As a dev crew, we can locally execute unit tests
@@ -281,16 +334,20 @@ items:
             type: story
           - name: As a dev crew, we can locally debug the solution end-to-end
             type: story
-          - name: As a dev crew, as part of running the solution, we can automatically
+          - name:
+              As a dev crew, as part of running the solution, we can automatically
               install pre-requisite software
             type: story
-          - name: As a dev crew, as part of running the solution, we can automatically
+          - name:
+              As a dev crew, as part of running the solution, we can automatically
               compile source code to execute binary and/or container image
             type: story
-          - name: As a dev crew, we can easily start the solution (i.e. click 'Start
+          - name:
+              As a dev crew, we can easily start the solution (i.e. click 'Start
               Debugging' or press F5)
             type: story
-          - name: As a dev crew, as part of running the solution, we can automatically use
+          - name:
+              As a dev crew, as part of running the solution, we can automatically use
               local dev configuration values
             type: story
       - name: CI/CD
@@ -298,15 +355,18 @@ items:
         description: ""
         acceptanceCriteria: []
         children:
-          - name: As a dev crew, we can generate and publish an application build artifact
+          - name:
+              As a dev crew, we can generate and publish an application build artifact
               in a CI/CD pipeline
             type: story
           - name: As a dev crew, we can report on code coverage in a CI/CD pipeline
             type: story
-          - name: As a dev crew, we can run security code analysis/secrets detection scan in
+          - name:
+              As a dev crew, we can run security code analysis/secrets detection scan in
               a CI/CD pipeline
             type: story
-          - name: As a dev crew, we can run unit tests and validation checks in a CI/CD
+          - name:
+              As a dev crew, we can run unit tests and validation checks in a CI/CD
               pipeline
             type: story
           - name: As a dev crew, we can enforce minimum code coverage in a CI/CD pipeline
@@ -315,72 +375,92 @@ items:
             type: story
           - name: As a dev crew, we can enforce code documentation style in a CI/CD pipeline
             type: story
-          - name: As a dev crew, we can scan built container(s)/artifact(s) against known
+          - name:
+              As a dev crew, we can scan built container(s)/artifact(s) against known
               vulnerabilities in a CI/CD pipeline
             type: story
-          - name: As a dev crew, we can trigger CI pipelines on a PR created against a
+          - name:
+              As a dev crew, we can trigger CI pipelines on a PR created against a
               protected branch
             type: story
-          - name: As a dev crew, we can trigger CI pipelines on a PR merge against a
+          - name:
+              As a dev crew, we can trigger CI pipelines on a PR merge against a
               protected branch
             type: story
-          - name: As a dev crew, we can trigger CI pipelines on new commits to any feature
+          - name:
+              As a dev crew, we can trigger CI pipelines on new commits to any feature
               branch
             type: story
-          - name: As a dev crew, we can trigger CI pipelines on new commits to PR against a
+          - name:
+              As a dev crew, we can trigger CI pipelines on new commits to PR against a
               protected branch
             type: story
           - name: As a dev crew, we have all cloud resources provisioned through
               infrastructure-as-code template(s)
             type: story
-          - name: As a dev crew, we have an automated toolchain which applies our
+          - name:
+              As a dev crew, we have an automated toolchain which applies our
               infrastructure-as-code template(s)
             type: story
-          - name: As a dev crew, we have cloud environment teardown/destroy operations
+          - name:
+              As a dev crew, we have cloud environment teardown/destroy operations
               carried out through an automated toolchain
             type: story
           - name: As a dev crew, we have management locks enabled for critical
               infrastructure resources to prevent accidental removal via the
               Azure Portal
             type: story
-          - name: As a dev crew, we have all scripts, templates or other provisioning code
+          - name:
+              As a dev crew, we have all scripts, templates or other provisioning code
               committed to source control
             type: story
-          - name: As a dev crew, we deploy all release candidates to a non-production
+          - name:
+              As a dev crew, we deploy all release candidates to a non-production
               environment continuously through our DevOps pipeline
             type: story
-          - name: As a dev crew, we have production releases gated within our CD toolchain
+          - name:
+              As a dev crew, we have production releases gated within our CD toolchain
               while requiring human authorization to proceed
             type: story
-          - name: As a dev crew, we have our CD pipeline execution completing within a
+          - name:
+              As a dev crew, we have our CD pipeline execution completing within a
               reasonable amount of time
             type: story
-          - name: As a dev crew, our release toolchain follow either a canary or blue/green
+          - name:
+              As a dev crew, our release toolchain follow either a canary or blue/green
               deployment strategy
             type: story
-          - name: As a dev crew, we have release rollbacks carried out through a repeatable
+          - name:
+              As a dev crew, we have release rollbacks carried out through a repeatable
               process
             type: story
-          - name: As a dev crew, we validate any databse schema changes through our
+          - name:
+              As a dev crew, we validate any databse schema changes through our
               end-to-end test harness
             type: story
-          - name: As a dev crew, we have configurable feature flags to enable/disable newly
+          - name:
+              As a dev crew, we have configurable feature flags to enable/disable newly
               added system functionality
             type: story
-          - name: As a dev crew, we validate that our process of switching users from one
+          - name:
+              As a dev crew, we validate that our process of switching users from one
               release to another does not impact the user experience
             type: story
-          - name: As a dev crew, our release pipeline runs an automated test suite
+          - name:
+              As a dev crew, our release pipeline runs an automated test suite
               validating all release candidate artifact(s) end-to-end against a
               non-production environment
             type: story
-          - name: As a dev crew, we enforce that all protected branches require validation
+          - name:
+              As a dev crew, we enforce that all protected branches require validation
               with the end-to-end/integration test suite(s)
             type: story
-          - name: As a dev crew, we run our end-to-end test suite for all production
+          - name:
+              As a dev crew, we run our end-to-end test suite for all production
               releases
             type: story
-          - name: As a dev crew, we validate all external/internal service dependencies
+          - name:
+              As a dev crew, we validate all external/internal service dependencies
               through our end-to-end/integration test suite
             type: story
       - name: Observability
@@ -408,13 +488,14 @@ items:
           - name: As a dev crew, we have identified a strategy how to diagnose and troubleshoot failures for the most important aspect of the solution
             type: story
           - name: As a dev crew, we have implemented the strategy to diagnose and troubleshoot failures for the most important aspect of the solution
-            type: story 
+            type: story
       - name: Engineering Feedback
         type: feature
         description: ""
         acceptanceCriteria: []
         children:
-          - name: As a dev crew, we have provided reproducible, actionable, specific and
+          - name:
+              As a dev crew, we have provided reproducible, actionable, specific and
               goal-oriented CSE feedback on any blockers or potential
               improvements identified
             type: story
@@ -423,28 +504,34 @@ items:
         description: ""
         acceptanceCriteria: []
         children:
-          - name: As a dev crew, if this engagement is considered a tented project or
+          - name:
+              As a dev crew, if this engagement is considered a tented project or
               sensitive work, we have ensured that project details are not
               tracked within CSE tooling
             type: story
-          - name: As a dev crew, if applicable, all crew members have acknowledged any
+          - name:
+              As a dev crew, if applicable, all crew members have acknowledged any
               restrictions of not being able to work with any competitors or
               similar technologies
             type: story
-          - name: As a dev crew, we inform the customer in a timely manner when any crew
+          - name:
+              As a dev crew, we inform the customer in a timely manner when any crew
               member is off the engagement
             type: story
-          - name: As a dev crew, we store all customer information in their own environment
+          - name:
+              As a dev crew, we store all customer information in their own environment
               or we delete any customer information from our own environment
               when no longer needed
             type: story
           - name: As a dev crew, all members have taken the recommended privacy training
             type: story
-          - name: As a dev crew, we have privacy consent with every crew member for handling
+          - name:
+              As a dev crew, we have privacy consent with every crew member for handling
               customer data
             type: story
           - name: As a dev crew, all members have acknowledged privacy consent
             type: story
-          - name: As a dev crew, we track any customer IT equipment and notify within 48
+          - name:
+              As a dev crew, we track any customer IT equipment and notify within 48
               hours when no longer needed
             type: story
