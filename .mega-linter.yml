@@ -8,6 +8,7 @@ DISABLE:
   - COPYPASTE # Comment to enable checks of excessive copy-pastes
   - HTML
   - DOCKERFILE
+  - JSON
   # - SPELL # Uncomment to disable checks of spelling mistakes
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
