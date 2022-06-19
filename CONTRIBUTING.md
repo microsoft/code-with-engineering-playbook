@@ -85,7 +85,6 @@ As such, we've provided tooling to lint locally through `npm`.
 1. [Install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 2. Run `npm i` at the root of this repository.
 3. Run `npm run lint` to run all linters.
-Please see [the `package.json` file](package.json) for other scripts.
 
 ### Link checks
 

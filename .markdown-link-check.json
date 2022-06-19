@@ -1,0 +1,34 @@
+{
+  "ignorePatterns": [
+    {"pattern": "^./INSERT_URL_TO_ISSUE"},
+    {"pattern": "^./link-to-the-work-item"},
+    {"pattern": "^https://portal.azure.com"},
+    {"pattern": "^http://link-to-feature-or-story-work-item"},
+    {"pattern": "^http://link-to-task-work-item"},
+    {"pattern": "^http://link-to-story-work-item"},
+    {"pattern": "^http://link-to-work-item"},
+    {"pattern": "^https://tanzu.vmware.com/developer/guides/kubernetes/observability-prometheus-grafana-p1"},
+    {"pattern": "^https://www.w3.org/blog/2019/12/trace-context-enters-proposed-recommendation/"},
+    {"pattern": "^https://blog.cloudflare.com/cloudflare-outage/"},
+    {"pattern": "^https://thanos.io"},
+    {"pattern": "^https://gitlab.com/palisade/palisade-release"},
+    {"pattern": "(.*\\.)?.opentelemetry.io"},
+    {"pattern": "(.*\\.)?.pluralsight.com"},
+    {"pattern": "(.*\\.)?.github.com"},
+    {"pattern": "^https://marketplace.visualstudio.com"},
+    {"pattern": "^https://opensource.org/licenses/MIT"}
+  ],
+  "httpHeaders": [
+    {
+      "urls": ["https://docs.github.com/",
+        "https://help.github.com/",
+        "https://github.com/",
+        "https://blog.cloudflare.com/",
+        "https://www.researchgate.net/"],
+      "headers": {
+        "Accept-Encoding": "zstd, br, gzip, deflate"
+      }
+    }
+  ],
+  "retryOn429": true
+}
