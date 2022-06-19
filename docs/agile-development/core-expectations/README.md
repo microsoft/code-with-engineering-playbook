@@ -88,7 +88,7 @@ ___
 
 - The planning supports Diversity and Inclusion principles and provides equal opportunities.
 - The Planning defines how the work is going to be completed in the sprint.
-- Stories fit in a sprint and are [designed](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/design/design-reviews) and [ready](https://github.com/microsoft/code-with-engineering-playbook/blob/main/docs/agile-development/team-agreements/definition-of-ready.md) before the planning.
+- Stories fit in a sprint and are [designed](https://github.com/microsoft/code-with-engineering-playbook/tree/main/docs/design/design-reviews) and [ready](../advanced-topics/team-agreements/definition-of-ready.md) before the planning.
 
 **Suggestions:**
 
@@ -130,7 +130,7 @@ The sprint goal can be used :
 
 **Links:**
 
-- [Definition of Ready](https://github.com/microsoft/code-with-engineering-playbook/blob/main/docs/agile-development/team-agreements/definition-of-ready.md)
+- [Definition of Ready](../advanced-topics/team-agreements/definition-of-ready.md)
 - [Sprint Goal Template](https://www.scrum.org/resources/blog/five-questions-sprint-goal)
 
 *Notes: Self assignment by team members can give a feeling of fairness in how work is split in the team. Sometime, this ends up not being the case as it can give an advantage to the loudest or more experienced voices in the team. Individuals also tend to stay in their comfort zone, which might not be the right approach for their own growth.*
