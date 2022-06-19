@@ -149,7 +149,6 @@ ___
 - Consider the backlog refinement as an ongoing activity, that expands outside of the typical "Refinement meeting".
 - Technical debt is mostly due to shortcuts made in the implementation as well as the future maintenance cost as the natural result of continuous improvement. Shortcuts should generally be avoided. In some rare instances where they happen, prioritizing and planning improvement activities to reduce this debt at a later time is the recommended approach.
 
-
 ### Retrospectives
 
 ___
