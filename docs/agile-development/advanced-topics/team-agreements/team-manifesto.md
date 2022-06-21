@@ -62,10 +62,8 @@ Below, you can find some including, but not limited, topics many teams touch dur
 
 ## Tools
 
-Generally team sessions are enough for building a manifesto and having a consensus around it, and if there is a need for improving it in a structured way, [Building a Team Manifesto](https://www.scrum.nl/blog/building-team-manifesto/) or any retrospective tool can be used.
+Generally team sessions are enough for building a manifesto and having a consensus around it, and if there is a need for improving it in a structured way, there are many blogs and tools online, any retrospective tool can be used.
 
 ## Resources
-
-[Building a Team Manifesto*](https://www.scrum.nl/blog/building-team-manifesto/)
 
 [Technical Agility*](https://v46.scaledagileframework.com/team-and-technical-agility/)
