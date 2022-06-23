@@ -10,3 +10,6 @@ Furthermore, it can be edited within VSCode very easily using the [Draw.io Integ
 
 This tooling can be used like Visio or LucidChart, without the licensing/remote storage concerns.
 Furthermore, Diagrams.net has a collection of Azure/Office/Microsoft icons, as well as other well-known tech, so it is not only useful for swimlanes and flow diagrams, but also for architecture diagrams.
+
+Furthermore, we recommend also storing the exported PNG images from these diagrams in the repo along with the .drawio files so they can easily be referenced in documentation and reviewed during PRs.
+Lastly, while diagrams.net is generally preferred, if any other diagraming tooling is used that can generate diagram images from code, both the diagram file and the image file should be stored together in the repo for the above reasons.
