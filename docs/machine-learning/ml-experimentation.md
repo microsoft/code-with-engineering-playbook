@@ -31,7 +31,7 @@ The following tools and guidelines are aimed at achieving experimentation goals 
 ## Tools and guidelines for successful model experimentation
 
 - [Virtual environments](#virtual-environments)
-- [Source control and folder/package structure](#source-control-and-folder-package-structure)
+- [Source control and folder/package structure](#source-control-and-folder/package-structure)
 - [Experiment tracking](#experiment-tracking)
 - [Datasets and models abstractions](#datasets-and-models-abstractions)
 - [Model evaluation](#model-evaluation)

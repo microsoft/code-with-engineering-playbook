@@ -16,15 +16,15 @@
     {"pattern": "(.*\\.)?.pluralsight.com"},
     {"pattern": "(.*\\.)?.github.com"},
     {"pattern": "^https://marketplace.visualstudio.com"},
-    {"pattern": "^https://opensource.org/licenses/MIT"}
+    {"pattern": "^https://opensource.org/licenses/MIT"},
+    {"pattern": "^https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models"}
   ],
   "httpHeaders": [
     {
       "urls": ["https://docs.github.com/",
         "https://help.github.com/",
         "https://github.com/",
-        "https://blog.cloudflare.com/",
-        "https://www.researchgate.net/"],
+        "https://blog.cloudflare.com/"],
       "headers": {
         "Accept-Encoding": "zstd, br, gzip, deflate"
       }
