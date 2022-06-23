@@ -21,7 +21,7 @@ Before putting an individual ML model into production, the following aspects sho
 - [ ] [How will incoming data quality be monitored?](#how-will-incoming-data-quality-be-monitored)
 - [ ] [How will drift in data characteristics be monitored?](#how-will-drift-in-data-characteristics-be-monitored)
 - [ ] [How will performance be monitored?](#how-will-performance-be-monitored)
-- [ ] [Have any ethical concerns been taken into account?](#have-any-ethical-concerns-been-taken-into-account?)
+- [ ] [Have any ethical concerns been taken into account?](#have-any-ethical-concerns-been-taken-into-account)
 
 Please note that there might be scenarios where it is not possible to check all the items on this checklist. However, it is advised to go through all items and make informed decisions based on your specific use case.
 

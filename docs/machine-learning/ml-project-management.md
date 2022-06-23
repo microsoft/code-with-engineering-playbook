@@ -13,7 +13,7 @@ To learn more about how CSE runs the Agile process for software development team
 
 Within this framework, the team follows these Agile ceremonies:
 
-- [Backlog management](../agile-development/advanced-topics/backlog-management/readme.md)
+- [Backlog management](../agile-development/advanced-topics/backlog-management/README.md)
 - [Retrospectives](../agile-development/core-expectations/README.md)
 - [Scrum of Scrums](../agile-development/advanced-topics/effective-organization/scrum-of-scrums.md) (where applicable)
 - [Sprint planning](../agile-development/core-expectations/README.md)
