@@ -329,7 +329,7 @@ One solution to this problem is `Git LFS (Git Large File Storage)` - an open sou
 
 ## Working with large repositories
 
-When working with a very large repository of which you don't require all the files, you can use `VFS for Git` - an open source Git extension that virtualizes the file system beneath your Git repository, so that you seem to work in a regular working directory but while VFS for Git only downloads objects as they are needed. You can find more information on VFS for Git in the [Git LFS and VFS document](git-lfs-and-vfs.md).
+When working with a very large repository of which you don't require all the files, you can use `VFS for Git` - an open source Git extension that virtualize the file system beneath your Git repository, so that you seem to work in a regular working directory but while VFS for Git only downloads objects as they are needed. You can find more information on VFS for Git in the [Git LFS and VFS document](git-lfs-and-vfs.md).
 
 ## Tools
 
