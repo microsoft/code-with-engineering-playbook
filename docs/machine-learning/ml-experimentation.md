@@ -137,7 +137,7 @@ For example, we can use Object-Oriented Programming (OOP) solutions like abstrac
 When deciding on the evaluation of the ML model/process, consider the following checklist:
 
 - [ ] Evaluation logic is approved by all stakeholders.
-- [ ] Relationship between evaluation logic and business KPIs is analysed and decided.
+- [ ] Relationship between evaluation logic and business KPIs is analyzed and decided.
 - [ ] Evaluation flow is applicable for all present and future models (i.e. does not assume some prediction structure or method-specific process).
 - [ ] Evaluation code is unit-tested and reviewed by all team members.
 - [ ] Evaluation flow facilitates further results and error analysis.

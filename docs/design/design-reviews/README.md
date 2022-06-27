@@ -41,7 +41,7 @@ There is also a healthy balancing act in supporting a healthy debate while not h
 
 ## Impact
 
-- Solutions can be quickly operationalized into customer's production environment
+- Solutions can be quickly be operated into customer's production environment
 - Easier for other dev crews to leverage your teams work
 - Easier for engineers to ramp up on projects
 - Increase team velocity by front-loading changes and decisions when they cost the least

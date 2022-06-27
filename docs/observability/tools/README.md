@@ -27,4 +27,4 @@ A sidecar works by intercepting all incoming and outgoing traffic to your image.
 
 In a microservice architecture, pinpointing the root cause of a spike in 500's can be non-trivial, but with the added observability from a sidecar you can quickly determine which service in your service mesh resulted in the spike in errors.
 
-Service Mesh's have a large surface area for configurability, and can seem like a daunting undertaking to deploy. However, most services (including Linkerd) offer a sane set of defaults, and can be deployed via the happy path to quickly land these observability wins.
+Service Mesh's have a large surface area for configuration, and can seem like a daunting undertaking to deploy. However, most services (including Linkerd) offer a sane set of defaults, and can be deployed via the happy path to quickly land these observability wins.

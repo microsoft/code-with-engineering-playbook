@@ -435,7 +435,7 @@ items:
               process
             type: story
           - name:
-              As a dev crew, we validate any databse schema changes through our
+              As a dev crew, we validate any database schema changes through our
               end-to-end test harness
             type: story
           - name:
