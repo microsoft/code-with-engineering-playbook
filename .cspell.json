@@ -6,7 +6,11 @@
     ".vscode",
     "megalinter",
     "package-lock.json",
-    "report"
+    "report",
+    "**/.devcontainer/**",
+    "**/.github/workflows/**",
+    "**/.github/reviewers.yml",
+    "**/.gitignore"
   ],
   "language": "en",
   "noConfigSearch": true,
