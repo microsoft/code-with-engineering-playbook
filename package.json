@@ -2,7 +2,6 @@
   "scripts": {
   },
   "dependencies": {
-    "markdownlint-cli": "^0.31.0",
     "run-script-os": "1.1.5"
   }
 }
