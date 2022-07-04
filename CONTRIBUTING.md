@@ -83,8 +83,9 @@ We have automatic quality gates for pull requests.
 As such, we've provided tooling to lint locally through `npm`.
 
 1. [Install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
-2. Run `npm i` at the root of this repository.
-3. Run `npm run lint` to run all linters.
+2. Run `npm install -g npx`
+3. Run `npx mega-linter-runner --install` at the root of this repository.
+4. Run `npx mega-linter-runner` to run all linters.
 
 ### Link checks
 
