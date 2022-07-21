@@ -12,21 +12,21 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/ci-in-datascience/working-with-notebooks/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/continuous-delivery/recipes/terraform/share-common-variables-naming-conventions/">
       
-      <link rel="icon" href="../../../resources/ms_icon.png">
+      <link rel="icon" href="../../../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.2.16">
     
     
       
-        <title>Data Science Pipeline - Code With Engineering Playbook</title>
+        <title>Sharing Common Variables / Naming Conventions Between Terraform Modules - Code With Engineering Playbook</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1c3799f8.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.1c3799f8.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
           
           
@@ -45,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
 <script type="text/javascript">
   (function(c,l,a,r,i,t,y){
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-science-pipeline" class="md-skip">
+        <a href="#sharing-common-variables-naming-conventions-between-terraform-modules" class="md-skip">
           Skip to content
         </a>
       
@@ -88,9 +88,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Code With Engineering Playbook" class="md-header__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
+    <a href="../../../.." title="Code With Engineering Playbook" class="md-header__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
       
-  <img src="../../../resources/ms_icon.png" alt="logo">
+  <img src="../../../../resources/ms_icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Science Pipeline
+              Sharing Common Variables / Naming Conventions Between Terraform Modules
             
           </span>
         </div>
@@ -185,9 +185,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Code With Engineering Playbook" class="md-nav__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
+    <a href="../../../.." title="Code With Engineering Playbook" class="md-nav__button md-logo" aria-label="Code With Engineering Playbook" data-md-component="logo">
       
-  <img src="../../../resources/ms_icon.png" alt="logo">
+  <img src="../../../../resources/ms_icon.png" alt="logo">
 
     </a>
     Code With Engineering Playbook
@@ -215,7 +215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         CSE Code-With Engineering Playbook
       </a>
     </li>
@@ -230,7 +230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CSE/" class="md-nav__link">
+      <a href="../../../../CSE/" class="md-nav__link">
         Who We Are
       </a>
     </li>
@@ -245,7 +245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ENG-FUNDAMENTALS-CHECKLIST/" class="md-nav__link">
+      <a href="../../../../ENG-FUNDAMENTALS-CHECKLIST/" class="md-nav__link">
         Engineering Fundamentals Checklist
       </a>
     </li>
@@ -260,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../SPRINT-STRUCTURE/" class="md-nav__link">
+      <a href="../../../../SPRINT-STRUCTURE/" class="md-nav__link">
         Structure of a Sprint
       </a>
     </li>
@@ -292,7 +292,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../accessibility/">Accessibility</a>
+          <a href="../../../../accessibility/">Accessibility</a>
           
         </div>
       
@@ -342,7 +342,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/">Agile development</a>
+          <a href="../../../../agile-development/">Agile development</a>
           
             <label for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
@@ -390,7 +390,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/advanced-topics/">Advanced topics</a>
+          <a href="../../../../agile-development/advanced-topics/">Advanced topics</a>
           
             <label for="__nav_6_2">
               <span class="md-nav__icon md-icon"></span>
@@ -434,7 +434,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/advanced-topics/backlog-management/">Backlog management</a>
+          <a href="../../../../agile-development/advanced-topics/backlog-management/">Backlog management</a>
           
             <label for="__nav_6_2_2">
               <span class="md-nav__icon md-icon"></span>
@@ -457,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/backlog-management/external-feedback/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/backlog-management/external-feedback/" class="md-nav__link">
         External Feedback
       </a>
     </li>
@@ -471,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/backlog-management/minimal-slices/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/backlog-management/minimal-slices/" class="md-nav__link">
         Minimalism Slices
       </a>
     </li>
@@ -519,7 +519,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/advanced-topics/collaboration/">Collaboration</a>
+          <a href="../../../../agile-development/advanced-topics/collaboration/">Collaboration</a>
           
             <label for="__nav_6_2_3">
               <span class="md-nav__icon md-icon"></span>
@@ -542,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/collaboration/add-pairing-field-azure-devops-cards/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/collaboration/add-pairing-field-azure-devops-cards/" class="md-nav__link">
         How to add a Pairing Custom Field in Azure DevOps User Stories
       </a>
     </li>
@@ -556,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/collaboration/social-question/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/collaboration/social-question/" class="md-nav__link">
         Social Question of the Day
       </a>
     </li>
@@ -570,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/collaboration/teaming-up/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/collaboration/teaming-up/" class="md-nav__link">
         Engagement Team Development
       </a>
     </li>
@@ -584,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/collaboration/virtual-collaboration/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/collaboration/virtual-collaboration/" class="md-nav__link">
         Virtual Collaboration and Pair Programming
       </a>
     </li>
@@ -598,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/collaboration/why-collaboration/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/collaboration/why-collaboration/" class="md-nav__link">
         Why Collaboration
       </a>
     </li>
@@ -640,7 +640,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/advanced-topics/effective-organization/">Effective organization</a>
+          <a href="../../../../agile-development/advanced-topics/effective-organization/">Effective organization</a>
           
             <label for="__nav_6_2_4">
               <span class="md-nav__icon md-icon"></span>
@@ -663,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/effective-organization/delivery-plan/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/effective-organization/delivery-plan/" class="md-nav__link">
         Delivery Plan
       </a>
     </li>
@@ -677,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/effective-organization/scrum-of-scrums/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/effective-organization/scrum-of-scrums/" class="md-nav__link">
         Scrum of Scrums
       </a>
     </li>
@@ -723,7 +723,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/advanced-topics/team-agreements/">Team agreements</a>
+          <a href="../../../../agile-development/advanced-topics/team-agreements/">Team agreements</a>
           
             <label for="__nav_6_2_5">
               <span class="md-nav__icon md-icon"></span>
@@ -746,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/team-agreements/definition-of-done/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/team-agreements/definition-of-done/" class="md-nav__link">
         Definition of Done
       </a>
     </li>
@@ -760,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/team-agreements/definition-of-ready/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/team-agreements/definition-of-ready/" class="md-nav__link">
         Definition of Ready
       </a>
     </li>
@@ -774,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/team-agreements/team-manifesto/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/team-agreements/team-manifesto/" class="md-nav__link">
         Team Manifesto
       </a>
     </li>
@@ -788,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agile-development/advanced-topics/team-agreements/working-agreements/" class="md-nav__link">
+      <a href="../../../../agile-development/advanced-topics/team-agreements/working-agreements/" class="md-nav__link">
         Sections of a Working Agreement
       </a>
     </li>
@@ -841,7 +841,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/basics/">Basics</a>
+          <a href="../../../../agile-development/basics/">Basics</a>
           
             <label for="__nav_6_3">
               <span class="md-nav__icon md-icon"></span>
@@ -881,7 +881,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/basics/Backlog%20Management/">Backlog Management</a>
+          <a href="../../../../agile-development/basics/Backlog%20Management/">Backlog Management</a>
           
         </div>
       
@@ -924,7 +924,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/basics/Ceremonies/">Ceremonies</a>
+          <a href="../../../../agile-development/basics/Ceremonies/">Ceremonies</a>
           
         </div>
       
@@ -967,7 +967,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/basics/Roles/">Roles</a>
+          <a href="../../../../agile-development/basics/Roles/">Roles</a>
           
         </div>
       
@@ -1010,7 +1010,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/basics/Sprints/">Sprints</a>
+          <a href="../../../../agile-development/basics/Sprints/">Sprints</a>
           
         </div>
       
@@ -1060,7 +1060,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../agile-development/core-expectations/">Core expectations</a>
+          <a href="../../../../agile-development/core-expectations/">Core expectations</a>
           
         </div>
       
@@ -1135,7 +1135,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/">Automated testing</a>
+          <a href="../../../../automated-testing/">Automated testing</a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -1175,7 +1175,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/cdc-testing/">Cdc testing</a>
+          <a href="../../../../automated-testing/cdc-testing/">Cdc testing</a>
           
         </div>
       
@@ -1224,7 +1224,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/e2e-testing/">E2e testing</a>
+          <a href="../../../../automated-testing/e2e-testing/">E2e testing</a>
           
             <label for="__nav_7_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1247,7 +1247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/e2e-testing/testing-comparison/" class="md-nav__link">
+      <a href="../../../../automated-testing/e2e-testing/testing-comparison/" class="md-nav__link">
         Unit vs Integration vs System vs E2E Testing
       </a>
     </li>
@@ -1261,7 +1261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/e2e-testing/testing-methods/" class="md-nav__link">
+      <a href="../../../../automated-testing/e2e-testing/testing-methods/" class="md-nav__link">
         E2E Testing Methods
       </a>
     </li>
@@ -1305,7 +1305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/e2e-testing/recipes/gauge-framework/" class="md-nav__link">
+      <a href="../../../../automated-testing/e2e-testing/recipes/gauge-framework/" class="md-nav__link">
         Gauge Framework
       </a>
     </li>
@@ -1350,7 +1350,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/fault-injection-testing/">Fault injection testing</a>
+          <a href="../../../../automated-testing/fault-injection-testing/">Fault injection testing</a>
           
         </div>
       
@@ -1393,7 +1393,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/integration-testing/">Integration testing</a>
+          <a href="../../../../automated-testing/integration-testing/">Integration testing</a>
           
         </div>
       
@@ -1440,7 +1440,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/performance-testing/">Performance testing</a>
+          <a href="../../../../automated-testing/performance-testing/">Performance testing</a>
           
             <label for="__nav_7_6">
               <span class="md-nav__icon md-icon"></span>
@@ -1463,7 +1463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/performance-testing/iterative-perf-test-template/" class="md-nav__link">
+      <a href="../../../../automated-testing/performance-testing/iterative-perf-test-template/" class="md-nav__link">
         Performance Test Iteration Template
       </a>
     </li>
@@ -1477,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/performance-testing/load-testing/" class="md-nav__link">
+      <a href="../../../../automated-testing/performance-testing/load-testing/" class="md-nav__link">
         Load Testing
       </a>
     </li>
@@ -1515,7 +1515,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/shadow-testing/">Shadow testing</a>
+          <a href="../../../../automated-testing/shadow-testing/">Shadow testing</a>
           
         </div>
       
@@ -1558,7 +1558,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/smoke-testing/">Smoke testing</a>
+          <a href="../../../../automated-testing/smoke-testing/">Smoke testing</a>
           
         </div>
       
@@ -1601,7 +1601,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/synthetic-monitoring-tests/">Synthetic monitoring tests</a>
+          <a href="../../../../automated-testing/synthetic-monitoring-tests/">Synthetic monitoring tests</a>
           
         </div>
       
@@ -1678,7 +1678,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/tech-specific-samples/azdo-container-dev-test-release/">Azdo container dev test release</a>
+          <a href="../../../../automated-testing/tech-specific-samples/azdo-container-dev-test-release/">Azdo container dev test release</a>
           
         </div>
       
@@ -1721,7 +1721,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/tech-specific-samples/blobstorage-unit-tests/">Blobstorage unit tests</a>
+          <a href="../../../../automated-testing/tech-specific-samples/blobstorage-unit-tests/">Blobstorage unit tests</a>
           
         </div>
       
@@ -1764,7 +1764,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/tech-specific-samples/power-platform-dataverse-tests/">Power platform dataverse tests</a>
+          <a href="../../../../automated-testing/tech-specific-samples/power-platform-dataverse-tests/">Power platform dataverse tests</a>
           
         </div>
       
@@ -1829,7 +1829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/templates/case-study-template/" class="md-nav__link">
+      <a href="../../../../automated-testing/templates/case-study-template/" class="md-nav__link">
         ~Customer Project~ Case Study
       </a>
     </li>
@@ -1843,7 +1843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/templates/test_type_template/" class="md-nav__link">
+      <a href="../../../../automated-testing/templates/test_type_template/" class="md-nav__link">
         Insert Test Technique Name Here
       </a>
     </li>
@@ -1881,7 +1881,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/ui-testing/">Ui testing</a>
+          <a href="../../../../automated-testing/ui-testing/">Ui testing</a>
           
         </div>
       
@@ -1934,7 +1934,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../automated-testing/unit-testing/">Unit testing</a>
+          <a href="../../../../automated-testing/unit-testing/">Unit testing</a>
           
             <label for="__nav_7_13">
               <span class="md-nav__icon md-icon"></span>
@@ -1957,7 +1957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/authoring_example/" class="md-nav__link">
+      <a href="../../../../automated-testing/unit-testing/authoring_example/" class="md-nav__link">
         Example: Authoring a unit test
       </a>
     </li>
@@ -1971,7 +1971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/custom-connector/" class="md-nav__link">
+      <a href="../../../../automated-testing/unit-testing/custom-connector/" class="md-nav__link">
         Custom Connector Testing
       </a>
     </li>
@@ -1985,7 +1985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/mocking/" class="md-nav__link">
+      <a href="../../../../automated-testing/unit-testing/mocking/" class="md-nav__link">
         Mocking in Unit Tests
       </a>
     </li>
@@ -1999,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/tdd_example/" class="md-nav__link">
+      <a href="../../../../automated-testing/unit-testing/tdd_example/" class="md-nav__link">
         Test-Driven Development Example
       </a>
     </li>
@@ -2013,7 +2013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automated-testing/unit-testing/why-unit-tests/" class="md-nav__link">
+      <a href="../../../../automated-testing/unit-testing/why-unit-tests/" class="md-nav__link">
         Why Unit Tests
       </a>
     </li>
@@ -2075,7 +2075,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../code-reviews/">Code reviews</a>
+          <a href="../../../../code-reviews/">Code reviews</a>
           
             <label for="__nav_8">
               <span class="md-nav__icon md-icon"></span>
@@ -2098,7 +2098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/faq/" class="md-nav__link">
+      <a href="../../../../code-reviews/faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -2112,7 +2112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/inclusion-in-code-review/" class="md-nav__link">
+      <a href="../../../../code-reviews/inclusion-in-code-review/" class="md-nav__link">
         Inclusion in Code Review
       </a>
     </li>
@@ -2126,7 +2126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/pull-requests/" class="md-nav__link">
+      <a href="../../../../code-reviews/pull-requests/" class="md-nav__link">
         Pull Requests
       </a>
     </li>
@@ -2140,7 +2140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/tools/" class="md-nav__link">
+      <a href="../../../../code-reviews/tools/" class="md-nav__link">
         Code Review Tools
       </a>
     </li>
@@ -2171,7 +2171,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../code-reviews/evidence-and-measures/">Evidence and measures</a>
+          <a href="../../../../code-reviews/evidence-and-measures/">Evidence and measures</a>
           
         </div>
       
@@ -2218,7 +2218,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../code-reviews/process-guidance/">Process guidance</a>
+          <a href="../../../../code-reviews/process-guidance/">Process guidance</a>
           
             <label for="__nav_8_7">
               <span class="md-nav__icon md-icon"></span>
@@ -2241,7 +2241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/process-guidance/author-guidance/" class="md-nav__link">
+      <a href="../../../../code-reviews/process-guidance/author-guidance/" class="md-nav__link">
         Author Guidance
       </a>
     </li>
@@ -2255,7 +2255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/process-guidance/reviewer-guidance/" class="md-nav__link">
+      <a href="../../../../code-reviews/process-guidance/reviewer-guidance/" class="md-nav__link">
         Reviewer Guidance
       </a>
     </li>
@@ -2306,7 +2306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/pull-request-template/pull-request-template/" class="md-nav__link">
+      <a href="../../../../code-reviews/pull-request-template/pull-request-template/" class="md-nav__link">
         [Work Item ID](./link-to-the-work-item)
       </a>
     </li>
@@ -2362,7 +2362,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../code-reviews/recipes/">Recipes</a>
+          <a href="../../../../code-reviews/recipes/">Recipes</a>
           
             <label for="__nav_8_9">
               <span class="md-nav__icon md-icon"></span>
@@ -2385,7 +2385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/azure-pipelines-yaml/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/azure-pipelines-yaml/" class="md-nav__link">
         YAML(Azure Pipelines) Code Reviews
       </a>
     </li>
@@ -2399,7 +2399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/bash/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/bash/" class="md-nav__link">
         Bash Code Reviews
       </a>
     </li>
@@ -2413,7 +2413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/csharp/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/csharp/" class="md-nav__link">
         C# Code Reviews
       </a>
     </li>
@@ -2427,7 +2427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/go/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/go/" class="md-nav__link">
         Go Code Reviews
       </a>
     </li>
@@ -2441,7 +2441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/java/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/java/" class="md-nav__link">
         Java Code Reviews
       </a>
     </li>
@@ -2455,7 +2455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/javascript-and-typescript/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/javascript-and-typescript/" class="md-nav__link">
         JavaScript/TypeScript Code Reviews
       </a>
     </li>
@@ -2469,7 +2469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/markdown/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/markdown/" class="md-nav__link">
         Markdown Code Reviews
       </a>
     </li>
@@ -2483,7 +2483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/python/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/python/" class="md-nav__link">
         Python Code Reviews
       </a>
     </li>
@@ -2497,7 +2497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code-reviews/recipes/terraform/" class="md-nav__link">
+      <a href="../../../../code-reviews/recipes/terraform/" class="md-nav__link">
         Terraform Code Reviews
       </a>
     </li>
@@ -2524,12 +2524,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       
       
@@ -2551,7 +2553,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../continuous-delivery/">Continuous delivery</a>
+          <a href="../../../">Continuous delivery</a>
           
             <label for="__nav_9">
               <span class="md-nav__icon md-icon"></span>
@@ -2664,7 +2666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/devops-provider-recipes/github-actions/runtime-variables/runtime-variables/" class="md-nav__link">
+      <a href="../../../devops-provider-recipes/github-actions/runtime-variables/runtime-variables/" class="md-nav__link">
         Runtime Variables in GitHub Actions
       </a>
     </li>
@@ -2729,7 +2731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/low-code-solutions/low-code-solutions/" class="md-nav__link">
+      <a href="../../../low-code-solutions/low-code-solutions/" class="md-nav__link">
         Continuous delivery on low-code and no-code solutions
       </a>
     </li>
@@ -2748,12 +2750,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" checked>
       
       
       
@@ -2812,7 +2816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/recipes/github-workflows/workflow-per-environment/" class="md-nav__link">
+      <a href="../../github-workflows/workflow-per-environment/" class="md-nav__link">
         GitHub Workflows
       </a>
     </li>
@@ -2831,12 +2835,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4_2" type="checkbox" id="__nav_9_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4_2" type="checkbox" id="__nav_9_4_2" checked>
       
       
       
@@ -2861,11 +2867,107 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../continuous-delivery/recipes/terraform/share-common-variables-naming-conventions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sharing Common Variables / Naming Conventions Between Terraform Modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Sharing Common Variables / Naming Conventions Between Terraform Modules
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-we-trying-to-solve" class="md-nav__link">
+    What are we trying to solve?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-do-it" class="md-nav__link">
+    How to do it?
+  </a>
+  
+    <nav class="md-nav" aria-label="How to do it?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    Context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about-terraform-variables" class="md-nav__link">
+    About Terraform variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-terraform-module" class="md-nav__link">
+    Common Terraform module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-the-common-terraform-module" class="md-nav__link">
+    Use the common Terraform module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#centralize-input-variables-definitions" class="md-nav__link">
+    Centralize input variables definitions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2910,7 +3012,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../continuous-delivery/secrets-management/">Secrets management</a>
+          <a href="../../../secrets-management/">Secrets management</a>
           
             <label for="__nav_9_5">
               <span class="md-nav__icon md-icon"></span>
@@ -2993,7 +3095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch/" class="md-nav__link">
+      <a href="../../../secrets-management/recipes/azure-devops/secrets-per-branch/" class="md-nav__link">
         Azure DevOps: Managing Settings on a Per-Branch Basis
       </a>
     </li>
@@ -3034,14 +3136,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
       
       
       
@@ -3065,7 +3165,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">Continuous integration</a>
+          <a href="../../../../continuous-integration/">Continuous integration</a>
           
             <label for="__nav_10">
               <span class="md-nav__icon md-icon"></span>
@@ -3088,7 +3188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CICD/" class="md-nav__link">
+      <a href="../../../../continuous-integration/CICD/" class="md-nav__link">
         Continuous Integration and Delivery
       </a>
     </li>
@@ -3102,7 +3202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../inclusive-linting/" class="md-nav__link">
+      <a href="../../../../continuous-integration/inclusive-linting/" class="md-nav__link">
         Inclusive Linting
       </a>
     </li>
@@ -3114,14 +3214,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4" type="checkbox" id="__nav_10_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4" type="checkbox" id="__nav_10_4" >
       
       
       
@@ -3146,14 +3244,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4_1" type="checkbox" id="__nav_10_4_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4_1" type="checkbox" id="__nav_10_4_1" >
       
       
       
@@ -3166,8 +3262,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">Working with notebooks</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../continuous-integration/ci-in-datascience/working-with-notebooks/">Working with notebooks</a>
           
         </div>
       
@@ -3225,7 +3321,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../dev-sec-ops/">Dev sec ops</a>
+          <a href="../../../../continuous-integration/dev-sec-ops/">Dev sec ops</a>
           
             <label for="__nav_10_5">
               <span class="md-nav__icon md-icon"></span>
@@ -3278,7 +3374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev-sec-ops/dependency-container-scanning/dependency_container_scanning/" class="md-nav__link">
+      <a href="../../../../continuous-integration/dev-sec-ops/dependency-container-scanning/dependency_container_scanning/" class="md-nav__link">
         Dependency and Container Scanning
       </a>
     </li>
@@ -3329,7 +3425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev-sec-ops/penetration-testing/penetration_testing/" class="md-nav__link">
+      <a href="../../../../continuous-integration/dev-sec-ops/penetration-testing/penetration_testing/" class="md-nav__link">
         Penetration Testing
       </a>
     </li>
@@ -3384,7 +3480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev-sec-ops/secret-management/credential_scanning/" class="md-nav__link">
+      <a href="../../../../continuous-integration/dev-sec-ops/secret-management/credential_scanning/" class="md-nav__link">
         Credential Scanning
       </a>
     </li>
@@ -3398,7 +3494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev-sec-ops/secret-management/secrets_rotation/" class="md-nav__link">
+      <a href="../../../../continuous-integration/dev-sec-ops/secret-management/secrets_rotation/" class="md-nav__link">
         Secrets Rotation
       </a>
     </li>
@@ -3444,7 +3540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev-sec-ops/secret-management/recipes/detect-secrets-ado/" class="md-nav__link">
+      <a href="../../../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/" class="md-nav__link">
         Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
       </a>
     </li>
@@ -3458,7 +3554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev-sec-ops/secret-management/recipes/detect-secrets/" class="md-nav__link">
+      <a href="../../../../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets/" class="md-nav__link">
         Credential Scanning Tool: detect-secrets
       </a>
     </li>
@@ -3516,7 +3612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev-sec-ops/static-code-analysis/static_code_analysis/" class="md-nav__link">
+      <a href="../../../../continuous-integration/dev-sec-ops/static-code-analysis/static_code_analysis/" class="md-nav__link">
         Static Code Analysis
       </a>
     </li>
@@ -3561,7 +3657,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../markdown-linting/">Markdown linting</a>
+          <a href="../../../../continuous-integration/markdown-linting/">Markdown linting</a>
           
         </div>
       
@@ -3618,7 +3714,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
+          <a href="../../../../design/">Design</a>
           
             <label for="__nav_11">
               <span class="md-nav__icon md-icon"></span>
@@ -3670,7 +3766,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-patterns/">Design patterns</a>
+          <a href="../../../../design/design-patterns/">Design patterns</a>
           
             <label for="__nav_11_2">
               <span class="md-nav__icon md-icon"></span>
@@ -3693,7 +3789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-patterns/non-functional-requirements-capture-guide/" class="md-nav__link">
+      <a href="../../../../design/design-patterns/non-functional-requirements-capture-guide/" class="md-nav__link">
         Non-Functional Requirements Capture
       </a>
     </li>
@@ -3724,7 +3820,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-patterns/cloud-resource-design-guidance/">Cloud resource design guidance</a>
+          <a href="../../../../design/design-patterns/cloud-resource-design-guidance/">Cloud resource design guidance</a>
           
         </div>
       
@@ -3767,7 +3863,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-patterns/data-heavy-design-guidance/">Data heavy design guidance</a>
+          <a href="../../../../design/design-patterns/data-heavy-design-guidance/">Data heavy design guidance</a>
           
         </div>
       
@@ -3810,7 +3906,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-patterns/distributed-system-design-reference/">Distributed system design reference</a>
+          <a href="../../../../design/design-patterns/distributed-system-design-reference/">Distributed system design reference</a>
           
         </div>
       
@@ -3853,7 +3949,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-patterns/object-oriented-design-reference/">Object oriented design reference</a>
+          <a href="../../../../design/design-patterns/object-oriented-design-reference/">Object oriented design reference</a>
           
         </div>
       
@@ -3896,7 +3992,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-patterns/rest-api-design-guidance/">Rest api design guidance</a>
+          <a href="../../../../design/design-patterns/rest-api-design-guidance/">Rest api design guidance</a>
           
         </div>
       
@@ -3952,7 +4048,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-reviews/">Design reviews</a>
+          <a href="../../../../design/design-reviews/">Design reviews</a>
           
             <label for="__nav_11_3">
               <span class="md-nav__icon md-icon"></span>
@@ -3996,7 +4092,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-reviews/decision-log/">Decision log</a>
+          <a href="../../../../design/design-reviews/decision-log/">Decision log</a>
           
             <label for="__nav_11_3_2">
               <span class="md-nav__icon md-icon"></span>
@@ -4051,7 +4147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/doc/decision-log/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/decision-log/doc/decision-log/" class="md-nav__link">
         Decision Log
       </a>
     </li>
@@ -4097,7 +4193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions/" class="md-nav__link">
         1. Record architecture decisions
       </a>
     </li>
@@ -4111,7 +4207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/doc/adr/0002-app-level-logging/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/decision-log/doc/adr/0002-app-level-logging/" class="md-nav__link">
         2. App-level Logging with Serilog and Application Insights
       </a>
     </li>
@@ -4194,7 +4290,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-reviews/decision-log/examples/memory/">Memory</a>
+          <a href="../../../../design/design-reviews/decision-log/examples/memory/">Memory</a>
           
             <label for="__nav_11_3_2_3_1">
               <span class="md-nav__icon md-icon"></span>
@@ -4217,7 +4313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/examples/memory/Decision-Log/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/decision-log/examples/memory/Decision-Log/" class="md-nav__link">
         Decision Log
       </a>
     </li>
@@ -4261,7 +4357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/examples/memory/Architecture/Data-Model/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/decision-log/examples/memory/Architecture/Data-Model/" class="md-nav__link">
         Data Model
       </a>
     </li>
@@ -4312,7 +4408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/examples/memory/Deployment/Environments/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/decision-log/examples/memory/Deployment/Environments/" class="md-nav__link">
         Application Deployment
       </a>
     </li>
@@ -4363,7 +4459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/decision-log/examples/memory/Trade-Studies/GitOps/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/decision-log/examples/memory/Trade-Studies/GitOps/" class="md-nav__link">
         Trade Study: GitOps
       </a>
     </li>
@@ -4444,7 +4540,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-reviews/recipes/">Recipes</a>
+          <a href="../../../../design/design-reviews/recipes/">Recipes</a>
           
             <label for="__nav_11_3_3">
               <span class="md-nav__icon md-icon"></span>
@@ -4467,7 +4563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/async-design-reviews/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/async-design-reviews/" class="md-nav__link">
         Async Design Reviews
       </a>
     </li>
@@ -4481,7 +4577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/engagement-process/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/engagement-process/" class="md-nav__link">
         Incorporating Design Reviews into an Engagement
       </a>
     </li>
@@ -4495,7 +4591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/engineering-feasibility-spikes/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/engineering-feasibility-spikes/" class="md-nav__link">
         Engineering Feasibility Spikes: identifying and mitigating risk
       </a>
     </li>
@@ -4509,7 +4605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/feature-story-design-review-template/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/feature-story-design-review-template/" class="md-nav__link">
         Your Feature or Story Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -4523,7 +4619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/high-level-design-recipe/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/high-level-design-recipe/" class="md-nav__link">
         High Level / Game Plan Design Recipe
       </a>
     </li>
@@ -4537,7 +4633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/milestone-epic-design-review-recipe/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/milestone-epic-design-review-recipe/" class="md-nav__link">
         Milestone / Epic Design Review Recipe
       </a>
     </li>
@@ -4551,7 +4647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/milestone-epic-design-review-template/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/milestone-epic-design-review-template/" class="md-nav__link">
         Your Milestone/Epic Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -4565,7 +4661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/preferred-diagram-tooling/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/preferred-diagram-tooling/" class="md-nav__link">
         Preferred Diagram Tooling
       </a>
     </li>
@@ -4579,7 +4675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/sprint-spike-template/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/sprint-spike-template/" class="md-nav__link">
         Spike: {Name}
       </a>
     </li>
@@ -4593,7 +4689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/task-design-review-template/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/task-design-review-template/" class="md-nav__link">
         Your Task Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
       </a>
     </li>
@@ -4607,7 +4703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/recipes/technical-spike/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/recipes/technical-spike/" class="md-nav__link">
         Technical Spike
       </a>
     </li>
@@ -4647,7 +4743,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/design-reviews/trade-studies/">Trade studies</a>
+          <a href="../../../../design/design-reviews/trade-studies/">Trade studies</a>
           
             <label for="__nav_11_3_4">
               <span class="md-nav__icon md-icon"></span>
@@ -4670,7 +4766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design/design-reviews/trade-studies/template/" class="md-nav__link">
+      <a href="../../../../design/design-reviews/trade-studies/template/" class="md-nav__link">
         Trade Study Template
       </a>
     </li>
@@ -4715,7 +4811,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
+          <a href="../../../../design/sustainability/">Sustainability</a>
           
         </div>
       
@@ -4774,7 +4870,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../developer-experience/">Developer experience</a>
+          <a href="../../../../developer-experience/">Developer experience</a>
           
             <label for="__nav_12">
               <span class="md-nav__icon md-icon"></span>
@@ -4797,7 +4893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer-experience/client-app-inner-loop/" class="md-nav__link">
+      <a href="../../../../developer-experience/client-app-inner-loop/" class="md-nav__link">
         Problem Statement
       </a>
     </li>
@@ -4811,7 +4907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer-experience/devcontainers/" class="md-nav__link">
+      <a href="../../../../developer-experience/devcontainers/" class="md-nav__link">
         Getting Started with Dev Containers
       </a>
     </li>
@@ -4825,7 +4921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer-experience/going-further/" class="md-nav__link">
+      <a href="../../../../developer-experience/going-further/" class="md-nav__link">
         Going further with Dev Containers
       </a>
     </li>
@@ -4877,7 +4973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer-experience/recipes/client-app-inner-loop/" class="md-nav__link">
+      <a href="../../../../developer-experience/recipes/client-app-inner-loop/" class="md-nav__link">
         Problem Statement
       </a>
     </li>
@@ -4891,7 +4987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer-experience/recipes/cross-platform-tasks/" class="md-nav__link">
+      <a href="../../../../developer-experience/recipes/cross-platform-tasks/" class="md-nav__link">
         Cross Platform Tasks
       </a>
     </li>
@@ -4905,7 +5001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer-experience/recipes/execute-local-pipeline-with-docker/" class="md-nav__link">
+      <a href="../../../../developer-experience/recipes/execute-local-pipeline-with-docker/" class="md-nav__link">
         Execute Local Pipeline
       </a>
     </li>
@@ -4919,7 +5015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer-experience/recipes/fake-services-inner-loop/" class="md-nav__link">
+      <a href="../../../../developer-experience/recipes/fake-services-inner-loop/" class="md-nav__link">
         Fake Services Inner Dev Loop
       </a>
     </li>
@@ -4933,7 +5029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../developer-experience/recipes/onboarding-guide-template/" class="md-nav__link">
+      <a href="../../../../developer-experience/recipes/onboarding-guide-template/" class="md-nav__link">
         Onboarding Guide Template
       </a>
     </li>
@@ -4987,7 +5083,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../documentation/">Documentation</a>
+          <a href="../../../../documentation/">Documentation</a>
           
             <label for="__nav_13">
               <span class="md-nav__icon md-icon"></span>
@@ -5044,7 +5140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/best-practices/automation/" class="md-nav__link">
+      <a href="../../../../documentation/best-practices/automation/" class="md-nav__link">
         Replacing Documentation with Automation
       </a>
     </li>
@@ -5058,7 +5154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/best-practices/establish-and-manage/" class="md-nav__link">
+      <a href="../../../../documentation/best-practices/establish-and-manage/" class="md-nav__link">
         Establishing and Managing Documentation
       </a>
     </li>
@@ -5072,7 +5168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/best-practices/good-documentation/" class="md-nav__link">
+      <a href="../../../../documentation/best-practices/good-documentation/" class="md-nav__link">
         Creating Good Documentation
       </a>
     </li>
@@ -5133,7 +5229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/code/" class="md-nav__link">
+      <a href="../../../../documentation/guidance/code/" class="md-nav__link">
         Code
       </a>
     </li>
@@ -5147,7 +5243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/engineering-feedback/" class="md-nav__link">
+      <a href="../../../../documentation/guidance/engineering-feedback/" class="md-nav__link">
         Engineering Feedback
       </a>
     </li>
@@ -5161,7 +5257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/project-and-repositories/" class="md-nav__link">
+      <a href="../../../../documentation/guidance/project-and-repositories/" class="md-nav__link">
         Projects and Repositories
       </a>
     </li>
@@ -5175,7 +5271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/pull-requests/" class="md-nav__link">
+      <a href="../../../../documentation/guidance/pull-requests/" class="md-nav__link">
         Pull Requests
       </a>
     </li>
@@ -5189,7 +5285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/rest-apis/" class="md-nav__link">
+      <a href="../../../../documentation/guidance/rest-apis/" class="md-nav__link">
         REST APIs
       </a>
     </li>
@@ -5203,7 +5299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/guidance/work-items/" class="md-nav__link">
+      <a href="../../../../documentation/guidance/work-items/" class="md-nav__link">
         Work Items
       </a>
     </li>
@@ -5260,7 +5356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/recipes/deploy-docfx-azure-website/" class="md-nav__link">
+      <a href="../../../../documentation/recipes/deploy-docfx-azure-website/" class="md-nav__link">
         Deploy the DocFx Documentation website to an Azure Website automatically
       </a>
     </li>
@@ -5274,7 +5370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/recipes/static-website-with-mkdocs/" class="md-nav__link">
+      <a href="../../../../documentation/recipes/static-website-with-mkdocs/" class="md-nav__link">
         How to create a static website for your documentation based on mkdocs and mkdocs-material
       </a>
     </li>
@@ -5288,7 +5384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/recipes/sync-wiki-between-repos/" class="md-nav__link">
+      <a href="../../../../documentation/recipes/sync-wiki-between-repos/" class="md-nav__link">
         How to Sync a Wiki between Repositories
       </a>
     </li>
@@ -5302,7 +5398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/recipes/using-docfx-and-tools/" class="md-nav__link">
+      <a href="../../../../documentation/recipes/using-docfx-and-tools/" class="md-nav__link">
         Using DocFx and Companion Tools to generate a Documentation website
       </a>
     </li>
@@ -5359,7 +5455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/tools/automation/" class="md-nav__link">
+      <a href="../../../../documentation/tools/automation/" class="md-nav__link">
         How to Automate Simple Checks
       </a>
     </li>
@@ -5373,7 +5469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/tools/integrations/" class="md-nav__link">
+      <a href="../../../../documentation/tools/integrations/" class="md-nav__link">
         Integration with Teams/Slack
       </a>
     </li>
@@ -5387,7 +5483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/tools/languages/" class="md-nav__link">
+      <a href="../../../../documentation/tools/languages/" class="md-nav__link">
         Languages
       </a>
     </li>
@@ -5401,7 +5497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../documentation/tools/wikis/" class="md-nav__link">
+      <a href="../../../../documentation/tools/wikis/" class="md-nav__link">
         Wikis
       </a>
     </li>
@@ -5453,7 +5549,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../engineering-feedback/">Engineering feedback</a>
+          <a href="../../../../engineering-feedback/">Engineering feedback</a>
           
             <label for="__nav_14">
               <span class="md-nav__icon md-icon"></span>
@@ -5476,7 +5572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../engineering-feedback/feedback-examples/" class="md-nav__link">
+      <a href="../../../../engineering-feedback/feedback-examples/" class="md-nav__link">
         Engineering Feedback Examples
       </a>
     </li>
@@ -5490,7 +5586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../engineering-feedback/feedback-faq/" class="md-nav__link">
+      <a href="../../../../engineering-feedback/feedback-faq/" class="md-nav__link">
         Engineering Feedback Frequently Asked Questions (F.A.Q.)
       </a>
     </li>
@@ -5504,7 +5600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../engineering-feedback/feedback-guidance/" class="md-nav__link">
+      <a href="../../../../engineering-feedback/feedback-guidance/" class="md-nav__link">
         Engineering Feedback Guidance
       </a>
     </li>
@@ -5569,7 +5665,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../machine-learning/">Machine learning</a>
+          <a href="../../../../machine-learning/">Machine learning</a>
           
             <label for="__nav_15">
               <span class="md-nav__icon md-icon"></span>
@@ -5592,7 +5688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-data-exploration/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-data-exploration/" class="md-nav__link">
         Data Exploration
       </a>
     </li>
@@ -5606,7 +5702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-envisioning-summary-template/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-envisioning-summary-template/" class="md-nav__link">
         Generic Envisioning Summary
       </a>
     </li>
@@ -5620,7 +5716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-experimentation/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-experimentation/" class="md-nav__link">
         Model Experimentation
       </a>
     </li>
@@ -5634,7 +5730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-feasibility-study/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-feasibility-study/" class="md-nav__link">
         ML Feasibility Studies
       </a>
     </li>
@@ -5648,7 +5744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-fundamentals-checklist/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-fundamentals-checklist/" class="md-nav__link">
         ML Fundamentals Checklist
       </a>
     </li>
@@ -5662,7 +5758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-model-checklist/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-model-checklist/" class="md-nav__link">
         ML model production checklist
       </a>
     </li>
@@ -5676,7 +5772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-problem-formulation-envisioning/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-problem-formulation-envisioning/" class="md-nav__link">
         Envisioning and Problem Formulation
       </a>
     </li>
@@ -5690,7 +5786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-profiling/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-profiling/" class="md-nav__link">
         Profiling Machine Learning and MLOps Code
       </a>
     </li>
@@ -5704,7 +5800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-project-management/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-project-management/" class="md-nav__link">
         Agile Development Considerations for ML Projects
       </a>
     </li>
@@ -5718,7 +5814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-proposed-process/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-proposed-process/" class="md-nav__link">
         Proposed ML Process
       </a>
     </li>
@@ -5732,7 +5828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-testing/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-testing/" class="md-nav__link">
         Testing Data Science and MLOps Code
       </a>
     </li>
@@ -5746,7 +5842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/ml-tpm-guidance/" class="md-nav__link">
+      <a href="../../../../machine-learning/ml-tpm-guidance/" class="md-nav__link">
         TPM considerations for Machine Learning projects
       </a>
     </li>
@@ -5760,7 +5856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../machine-learning/responsible-ai/" class="md-nav__link">
+      <a href="../../../../machine-learning/responsible-ai/" class="md-nav__link">
         Responsible AI in CSE
       </a>
     </li>
@@ -5831,7 +5927,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../observability/">Observability</a>
+          <a href="../../../../observability/">Observability</a>
           
             <label for="__nav_16">
               <span class="md-nav__icon md-icon"></span>
@@ -5854,7 +5950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/alerting/" class="md-nav__link">
+      <a href="../../../../observability/alerting/" class="md-nav__link">
         Guidance for Alerting
       </a>
     </li>
@@ -5868,7 +5964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/best-practices/" class="md-nav__link">
+      <a href="../../../../observability/best-practices/" class="md-nav__link">
         Recommended Practices
       </a>
     </li>
@@ -5882,7 +5978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/correlation-id/" class="md-nav__link">
+      <a href="../../../../observability/correlation-id/" class="md-nav__link">
         Correlation IDs
       </a>
     </li>
@@ -5896,7 +5992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/diagnostic-tools/" class="md-nav__link">
+      <a href="../../../../observability/diagnostic-tools/" class="md-nav__link">
         Diagnostic tools
       </a>
     </li>
@@ -5910,7 +6006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/log-vs-metric-vs-trace/" class="md-nav__link">
+      <a href="../../../../observability/log-vs-metric-vs-trace/" class="md-nav__link">
         Logs vs Metrics vs Traces
       </a>
     </li>
@@ -5924,7 +6020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/logs-privacy/" class="md-nav__link">
+      <a href="../../../../observability/logs-privacy/" class="md-nav__link">
         Guidance for Privacy
       </a>
     </li>
@@ -5938,7 +6034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/microservices/" class="md-nav__link">
+      <a href="../../../../observability/microservices/" class="md-nav__link">
         Observability in Microservices
       </a>
     </li>
@@ -5952,7 +6048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/ml-observability/" class="md-nav__link">
+      <a href="../../../../observability/ml-observability/" class="md-nav__link">
         Observability in Machine Learning
       </a>
     </li>
@@ -5966,7 +6062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/observability-as-code/" class="md-nav__link">
+      <a href="../../../../observability/observability-as-code/" class="md-nav__link">
         Observability as Code
       </a>
     </li>
@@ -5980,7 +6076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/observability-databricks/" class="md-nav__link">
+      <a href="../../../../observability/observability-databricks/" class="md-nav__link">
         Observability for Azure Databricks
       </a>
     </li>
@@ -5994,7 +6090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/observability-pipelines/" class="md-nav__link">
+      <a href="../../../../observability/observability-pipelines/" class="md-nav__link">
         Observability of CI/CD Pipelines
       </a>
     </li>
@@ -6008,7 +6104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pitfalls/" class="md-nav__link">
+      <a href="../../../../observability/pitfalls/" class="md-nav__link">
         Things to Watch for when Building Observable Systems
       </a>
     </li>
@@ -6022,7 +6118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/profiling/" class="md-nav__link">
+      <a href="../../../../observability/profiling/" class="md-nav__link">
         Profiling
       </a>
     </li>
@@ -6036,7 +6132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/recipes-observability/" class="md-nav__link">
+      <a href="../../../../observability/recipes-observability/" class="md-nav__link">
         Recipes
       </a>
     </li>
@@ -6086,7 +6182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/dashboard/" class="md-nav__link">
+      <a href="../../../../observability/pillars/dashboard/" class="md-nav__link">
         Dashboard
       </a>
     </li>
@@ -6100,7 +6196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/logging/" class="md-nav__link">
+      <a href="../../../../observability/pillars/logging/" class="md-nav__link">
         Logging
       </a>
     </li>
@@ -6114,7 +6210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/metrics/" class="md-nav__link">
+      <a href="../../../../observability/pillars/metrics/" class="md-nav__link">
         Metrics
       </a>
     </li>
@@ -6128,7 +6224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/pillars/tracing/" class="md-nav__link">
+      <a href="../../../../observability/pillars/tracing/" class="md-nav__link">
         Tracing
       </a>
     </li>
@@ -6174,7 +6270,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../observability/tools/">Tools</a>
+          <a href="../../../../observability/tools/">Tools</a>
           
             <label for="__nav_16_17">
               <span class="md-nav__icon md-icon"></span>
@@ -6197,7 +6293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/KubernetesDashboards/" class="md-nav__link">
+      <a href="../../../../observability/tools/KubernetesDashboards/" class="md-nav__link">
         Kubernetes UI Dashboards
       </a>
     </li>
@@ -6211,7 +6307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/OpenTelemetry/" class="md-nav__link">
+      <a href="../../../../observability/tools/OpenTelemetry/" class="md-nav__link">
         Open Telemetry
       </a>
     </li>
@@ -6225,7 +6321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/Prometheus/" class="md-nav__link">
+      <a href="../../../../observability/tools/Prometheus/" class="md-nav__link">
         Prometheus
       </a>
     </li>
@@ -6239,7 +6335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../observability/tools/loki/" class="md-nav__link">
+      <a href="../../../../observability/tools/loki/" class="md-nav__link">
         Loki
       </a>
     </li>
@@ -6289,7 +6385,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../privacy/">Privacy</a>
+          <a href="../../../../privacy/">Privacy</a>
           
             <label for="__nav_17">
               <span class="md-nav__icon md-icon"></span>
@@ -6312,7 +6408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../privacy/data-handling/" class="md-nav__link">
+      <a href="../../../../privacy/data-handling/" class="md-nav__link">
         Privacy and Data
       </a>
     </li>
@@ -6326,7 +6422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../privacy/privacy-frameworks/" class="md-nav__link">
+      <a href="../../../../privacy/privacy-frameworks/" class="md-nav__link">
         Privacy related frameworks
       </a>
     </li>
@@ -6365,7 +6461,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../reliability/">Reliability</a>
+          <a href="../../../../reliability/">Reliability</a>
           
         </div>
       
@@ -6441,7 +6537,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../resources/templates/">Templates</a>
+          <a href="../../../../resources/templates/">Templates</a>
           
             <label for="__nav_19_1">
               <span class="md-nav__icon md-icon"></span>
@@ -6464,7 +6560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/templates/CONTRIBUTING/" class="md-nav__link">
+      <a href="../../../../resources/templates/CONTRIBUTING/" class="md-nav__link">
         Contributing
       </a>
     </li>
@@ -6514,7 +6610,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../security/">Security</a>
+          <a href="../../../../security/">Security</a>
           
             <label for="__nav_20">
               <span class="md-nav__icon md-icon"></span>
@@ -6537,7 +6633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security/rules-of-engagement/" class="md-nav__link">
+      <a href="../../../../security/rules-of-engagement/" class="md-nav__link">
         Rules of Engagement
       </a>
     </li>
@@ -6551,7 +6647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security/secret-detection/" class="md-nav__link">
+      <a href="../../../../security/secret-detection/" class="md-nav__link">
         Secret Detection
       </a>
     </li>
@@ -6600,7 +6696,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../source-control/">Source control</a>
+          <a href="../../../../source-control/">Source control</a>
           
             <label for="__nav_21">
               <span class="md-nav__icon md-icon"></span>
@@ -6623,7 +6719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/component-versioning/" class="md-nav__link">
+      <a href="../../../../source-control/component-versioning/" class="md-nav__link">
         Component Versioning
       </a>
     </li>
@@ -6637,7 +6733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/merge-strategies/" class="md-nav__link">
+      <a href="../../../../source-control/merge-strategies/" class="md-nav__link">
         Merge strategies
       </a>
     </li>
@@ -6651,7 +6747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/naming-branches/" class="md-nav__link">
+      <a href="../../../../source-control/naming-branches/" class="md-nav__link">
         Naming branches
       </a>
     </li>
@@ -6665,7 +6761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/secrets-management/" class="md-nav__link">
+      <a href="../../../../source-control/secrets-management/" class="md-nav__link">
         Working with Secrets in Source Control
       </a>
     </li>
@@ -6698,7 +6794,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../source-control/git-guidance/">Git guidance</a>
+          <a href="../../../../source-control/git-guidance/">Git guidance</a>
           
             <label for="__nav_21_6">
               <span class="md-nav__icon md-icon"></span>
@@ -6721,7 +6817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../source-control/git-guidance/git-lfs-and-vfs/" class="md-nav__link">
+      <a href="../../../../source-control/git-guidance/git-lfs-and-vfs/" class="md-nav__link">
         Using Git LFS and VFS for Git introduction
       </a>
     </li>
@@ -6775,7 +6871,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user-interface-engineering/">User interface engineering</a>
+          <a href="../../../../user-interface-engineering/">User interface engineering</a>
           
             <label for="__nav_22">
               <span class="md-nav__icon md-icon"></span>
@@ -6798,7 +6894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-interface-engineering/maintainability/" class="md-nav__link">
+      <a href="../../../../user-interface-engineering/maintainability/" class="md-nav__link">
         Maintainability
       </a>
     </li>
@@ -6812,7 +6908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-interface-engineering/recommended-technologies/" class="md-nav__link">
+      <a href="../../../../user-interface-engineering/recommended-technologies/" class="md-nav__link">
         Recommended Technologies
       </a>
     </li>
@@ -6826,7 +6922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-interface-engineering/stability/" class="md-nav__link">
+      <a href="../../../../user-interface-engineering/stability/" class="md-nav__link">
         Stability
       </a>
     </li>
@@ -6840,7 +6936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-interface-engineering/usability/" class="md-nav__link">
+      <a href="../../../../user-interface-engineering/usability/" class="md-nav__link">
         Usability
       </a>
     </li>
@@ -6881,15 +6977,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#problem-statement" class="md-nav__link">
-    Problem statement
+  <a href="#what-are-we-trying-to-solve" class="md-nav__link">
+    What are we trying to solve?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
-    Solution
+  <a href="#how-to-do-it" class="md-nav__link">
+    How to do it?
+  </a>
+  
+    <nav class="md-nav" aria-label="How to do it?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    Context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about-terraform-variables" class="md-nav__link">
+    About Terraform variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-terraform-module" class="md-nav__link">
+    Common Terraform module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-the-common-terraform-module" class="md-nav__link">
+    Use the common Terraform module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#centralize-input-variables-definitions" class="md-nav__link">
+    Centralize input variables definitions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -6908,108 +7052,264 @@
                 
 
 
-<h1 id="data-science-pipeline">Data Science Pipeline</h1>
-<p>As Azure DevOps doesn't allow code reviewers to comment directly in Jupyter Notebooks, Data Scientists(DSs) have
-to convert the notebooks to scripts before they commit and push these files to the repository.</p>
-<p>This document aims to automate this process in Azure DevOps, so the DSs don't need to execute anything locally.</p>
-<h2 id="problem-statement">Problem statement</h2>
-<p>A Data Science repository has this folder structure:</p>
-<div class="highlight"><pre><span></span><code>    .
-    ├── notebooks
-    │   ├── Machine Learning Experiments - <span class="m">00</span>.ipynb
-    │   ├── Machine Learning Experiments - <span class="m">01</span>.ipynb
-    │   ├── Machine Learning Experiments - <span class="m">02</span>.ipynb
-    │   ├── Machine Learning Experiments - <span class="m">03</span>.ipynb
-    └── scripts
-       ├── Machine Learning Experiments - <span class="m">00</span>.py
-       ├── Machine Learning Experiments - <span class="m">01</span>.py
-       ├── Machine Learning Experiments - <span class="m">02</span>.py
-       └── Machine Learning Experiments - <span class="m">03</span>.py
+<h1 id="sharing-common-variables-naming-conventions-between-terraform-modules">Sharing Common Variables / Naming Conventions Between Terraform Modules</h1>
+<h2 id="what-are-we-trying-to-solve">What are we trying to solve?</h2>
+<p>When deploying infrastructure using code, it's common practice to split the code into different modules that are responsible for the deployment of a part or a component of the infrastructure. In Terraform, this can be done by using <a href="https://www.terraform.io/language/modules/develop">modules</a>.</p>
+<p>In this case, it is useful to be able to share some common variables as well as centralize naming conventions of the different resources, to ensure it will be easy to refactor when it has to change, despite the dependencies that exist between modules.</p>
+<p>For example, let's consider 2 modules:</p>
+<ul>
+<li>Network module, responsible for deploying Virtual Network, Subnets, NSGs and Private DNS Zones</li>
+<li>Azure Kubernetes Service module responsible for deploying AKS cluster</li>
+</ul>
+<p>There are dependencies between these modules, like the Kubernetes cluster that will be deployed into the virtual network from the Network module. To do that, it must reference the name of the virtual network, as well as the resource group it is deployed in. And ideally, we would like these dependencies to be loosely coupled, as much as possible, to keep agility in how the modules are deployed and keep independent lifecycle.</p>
+<p>This page explains a way to solve this with Terraform.</p>
+<h2 id="how-to-do-it">How to do it?</h2>
+<h3 id="context">Context</h3>
+<p>Let's consider the following structure for our modules:</p>
+<div class="highlight"><pre><span></span><code><span class="go">modules</span>
+<span class="go">├── kubernetes</span>
+<span class="go">│   ├── main.tf</span>
+<span class="go">│   ├── provider.tf</span>
+<span class="go">│   └── variables.tf</span>
+<span class="go">├── network</span>
+<span class="go">│   ├── main.tf</span>
+<span class="go">│   ├── provider.tf</span>
+<span class="go">│   └── variables.tf</span>
 </code></pre></div>
-<p>The python files are needed to allow Pull Request reviewers to add comments to the notebooks, they can add comments
-to the Python scripts and we apply these comments to the notebooks.</p>
-<p>Since we have to run this process manually before we add files to a commit, this manual process is error prone, e.g.
-If we create a notebook, generate the script from it, but later make some changes and forget to generate a new script
-for the changes.</p>
-<h2 id="solution">Solution</h2>
-<p>One way to avoid this is to create the scripts in the repository from the commit. This document will describe this
-process.</p>
-<p>We can add a pipeline with the following steps to the repository to run in <code>ipynb</code> files:</p>
-<ol>
-<li>Go to the <em>Project Settings</em> -&gt; <em>Repositories</em> -&gt; <em>Security</em> -&gt; <em>User Permissions</em></li>
-<li>Add the <em>Build Service</em> in <em>Users</em> the permission to <em>Contribute</em>
-    <img alt="Contribute" src="assets/repository-properties.png" /></li>
-<li>Create a new pipeline.</li>
-</ol>
-<p>In the newly created pipeline we add:</p>
-<ol>
-<li>
-<p>Trigger to run on ipynb files:</p>
-<div class="highlight"><pre><span></span><code>trigger:
-  paths:
-  include:
-    - &#39;*.ipynb&#39;
-    - &#39;**/*.ipynb&#39;
+<p>Now, assume that you deploy a virtual network for the development environment, with the following properties:</p>
+<ul>
+<li>name: vnet-dev</li>
+<li>resource group: rg-dev-network</li>
+</ul>
+<p>Then at some point, you need to inject these values into the Kubernetes module, to get a reference to it through a data source, for example:</p>
+<div class="highlight"><pre><span></span><code>data &quot;azurem_virtual_network&quot; &quot;vnet&quot; {
+    name                = var.vnet_name
+    resource_group_name = var.vnet_rg_name
+}
 </code></pre></div>
-</li>
-<li>
-<p>Select the pool as Linux:</p>
-<div class="highlight"><pre><span></span><code>pool:
-  vmImage: ubuntu-latest
+<p>In the snippet above, the virtual network name and resource group are defined through variable. This is great, but if this changes in the future, then the values of these variables must change too. In every module they are used.</p>
+<p>Being able to manage naming in a central place will make sure the code can easily be refactored in the future, without updating all modules.</p>
+<h3 id="about-terraform-variables">About Terraform variables</h3>
+<p>In Terraform, every <a href="https://www.terraform.io/language/values/variables">input variable</a> must be defined at the configuration (or module) level, using the <code>variable</code> block. By convention, this is often done in a <code>variables.tf</code> file, in the module. This file contains variable declaration and default values. Values can be set using variables configuration files (.tfvars), environment variables or CLI arg when using the terraform <code>plan</code> or <code>apply</code> commands.</p>
+<p>One of the limitation of the variables declaration is that it's not possible to compose variables, <a href="https://www.terraform.io/language/values/locals">locals</a> or Terraform <a href="https://www.terraform.io/language/functions">built-in functions</a> are used for that.</p>
+<h3 id="common-terraform-module">Common Terraform module</h3>
+<p>One way to bypass this limitations is to introduce a "common" module, that will not deploy any resources, but just compute / calculate and output the resource names and shared variables, and be used by all other modules, as a dependency.</p>
+<div class="highlight"><pre><span></span><code><span class="go">modules</span>
+<span class="go">├── common</span>
+<span class="go">│   ├── output.tf</span>
+<span class="go">│   └── variables.tf</span>
+<span class="go">├── kubernetes</span>
+<span class="go">│   ├── main.tf</span>
+<span class="go">│   ├── provider.tf</span>
+<span class="go">│   └── variables.tf</span>
+<span class="go">├── network</span>
+<span class="go">│   ├── main.tf</span>
+<span class="go">│   ├── provider.tf</span>
+<span class="go">│   └── variables.tf</span>
 </code></pre></div>
-</li>
-<li>
-<p>Set the directory where we want to store the scripts:</p>
-<div class="highlight"><pre><span></span><code>variables:
-  REPO_URL: # Azure DevOps URL in the format: dev.azure.com/&lt;Organization&gt;/&lt;Project&gt;/_git/&lt;RepoName&gt;
+<p><em>variables.tf:</em></p>
+<div class="highlight"><pre><span></span><code>variable &quot;environment_name&quot; {
+  type = string
+  description = &quot;The name of the environment.&quot;
+}
+
+variable &quot;location&quot; {
+  type = string
+  description = &quot;The Azure region where the resources will be created. Default is westeurope.&quot;
+  default = &quot;westeurope&quot;
+}
 </code></pre></div>
-</li>
-<li>
-<p>Now we will start the core of the pipeline:
-    1. Upgrade pip</p>
-<div class="highlight"><pre><span></span><code>- script: |
-    python -m pip install --upgrade pip
-  displayName: &#39;Upgrade pip&#39;
+<p><em>output.tf:</em></p>
+<div class="highlight"><pre><span></span><code># Shared variables
+output &quot;location&quot; {
+  value = var.location
+}
+
+output &quot;subscription&quot; {
+  value = var.subscription
+}
+
+# Virtual Network Naming
+
+output &quot;vnet_rg_name&quot; {
+  value = &quot;rg-network-${var.environment_name}&quot;
+}
+
+output &quot;vnet_name&quot; {
+  value = &quot;vnet-${var.environment_name}&quot;
+}
+
+# AKS Naming
+
+output &quot;aks_rg_name&quot; {
+  value = &quot;rg-aks-${var.environment_name}&quot;
+}
+
+output &quot;aks_name&quot; {
+  value = &quot;aks-${var.environment_name}&quot;
+}
 </code></pre></div>
-<p>1. Install <code>nbconvert</code> and <code>ipython</code>:</p>
-<div class="highlight"><pre><span></span><code>- script: |
-    pip install nbconvert ipython
-  displayName: &#39;install nbconvert &amp; ipython&#39;
+<p>Now, if you execute the Terraform apply for the common module, you get all the shared/common variables in outputs:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>terraform plan -var <span class="nv">environment_name</span><span class="o">=</span><span class="s2">&quot;dev&quot;</span> -var <span class="nv">subscription</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>az account show --query id -o tsv<span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="go">Changes to Outputs:</span>
+<span class="go">  + aks_name     = &quot;aks-dev&quot;</span>
+<span class="go">  + aks_rg_name  = &quot;rg-aks-dev&quot;</span>
+<span class="go">  + location     = &quot;westeurope&quot;</span>
+<span class="go">  + subscription = &quot;01010101-1010-0101-1010-010101010101&quot;</span>
+<span class="go">  + vnet_name    = &quot;vnet-dev&quot;</span>
+<span class="go">  + vnet_rg_name = &quot;rg-network-dev&quot;</span>
+
+<span class="go">You can apply this plan to save these new output values to the Terraform state, without changing any real infrastructure.</span>
 </code></pre></div>
-<p>1. Install <code>pandoc</code>:</p>
-<div class="highlight"><pre><span></span><code>- script: |
-    sudo apt install -y pandoc
-  displayName: &quot;Install pandoc&quot;
+<h3 id="use-the-common-terraform-module">Use the common Terraform module</h3>
+<p>Using the common Terraform module in any other module is super easy. For example, this is what you can do in the Azure Kubernetes module <code>main.tf</code> file:</p>
+<div class="highlight"><pre><span></span><code>module &quot;common&quot; {
+  source           = &quot;../common&quot;
+  environment_name = var.environment_name
+  subscription     = var.subscription
+}
+
+data &quot;azurerm_subnet&quot; &quot;aks_subnet&quot; {
+  name                 = &quot;AksSubnet&quot;
+  virtual_network_name = module.common.vnet_name
+  resource_group_name  = module.common.vnet_rg_name
+}
+
+resource &quot;azurerm_kubernetes_cluster&quot; &quot;aks&quot; {
+  name                = module.common.aks_name
+  resource_group_name = module.common.aks_rg_name
+  location            = module.common.location
+  dns_prefix          = module.common.aks_name
+
+  identity {
+    type = &quot;SystemAssigned&quot;
+  }
+
+  default_node_pool {
+    name           = &quot;default&quot;
+    vm_size        = &quot;Standard_DS2_v2&quot;
+    vnet_subnet_id = data.azurerm_subnet.aks_subnet.id
+  }
+}
 </code></pre></div>
-<p>1. Find the notebook files (<code>ipynb</code>) in the last commit to the repo and convert it to scripts (<code>py</code>):</p>
-<div class="highlight"><pre><span></span><code>- task: Bash@3
-    inputs:
-      targetType: &#39;inline&#39;
-      script: |
-        IPYNB_PATH=($(git diff-tree --no-commit-id --name-only -r $(Build.SourceVersion) | grep &#39;[.]ipynb$&#39;))
-        echo $IPYNB_PATH
-        [ -z &quot;$IPYNB_PATH&quot; ] &amp;&amp; echo &quot;Nothing to convert&quot; || jupyter nbconvert --to script $IPYNB_PATH
-    displayName: &quot;Convert Notebook to script&quot;
+<p>Then, you can execute the <code>terraform plan</code> and <code>terraform apply</code> commands to deploy!</p>
+<div class="highlight"><pre><span></span><code><span class="go">terraform plan -var environment_name=&quot;dev&quot; -var subscription=&quot;$(az account show --query id -o tsv)&quot;</span>
+<span class="go">data.azurerm_subnet.aks_subnet: Reading...</span>
+<span class="go">data.azurerm_subnet.aks_subnet: Read complete after 1s [id=/subscriptions/01010101-1010-0101-1010-010101010101/resourceGroups/rg-network-dev/providers/Microsoft.Network/virtualNetworks/vnet-dev/subnets/AksSubnet]</span>
+
+<span class="go">Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:</span>
+<span class="go">  + create</span>
+
+<span class="go">Terraform will perform the following actions:</span>
+
+<span class="gp">  # </span>azurerm_kubernetes_cluster.aks will be created
+<span class="go">  + resource &quot;azurerm_kubernetes_cluster&quot; &quot;aks&quot; {</span>
+<span class="go">      + dns_prefix                          = &quot;aks-dev&quot;</span>
+<span class="go">      + fqdn                                = (known after apply)</span>
+<span class="go">      + id                                  = (known after apply)</span>
+<span class="go">      + kube_admin_config                   = (known after apply)</span>
+<span class="go">      + kube_admin_config_raw               = (sensitive value)</span>
+<span class="go">      + kube_config                         = (known after apply)</span>
+<span class="go">      + kube_config_raw                     = (sensitive value)</span>
+<span class="go">      + kubernetes_version                  = (known after apply)</span>
+<span class="go">      + location                            = &quot;westeurope&quot;</span>
+<span class="go">      + name                                = &quot;aks-dev&quot;</span>
+<span class="go">      + node_resource_group                 = (known after apply)</span>
+<span class="go">      + portal_fqdn                         = (known after apply)</span>
+<span class="go">      + private_cluster_enabled             = (known after apply)</span>
+<span class="go">      + private_cluster_public_fqdn_enabled = false</span>
+<span class="go">      + private_dns_zone_id                 = (known after apply)</span>
+<span class="go">      + private_fqdn                        = (known after apply)</span>
+<span class="go">      + private_link_enabled                = (known after apply)</span>
+<span class="go">      + public_network_access_enabled       = true</span>
+<span class="go">      + resource_group_name                 = &quot;rg-aks-dev&quot;</span>
+<span class="go">      + sku_tier                            = &quot;Free&quot;</span>
+
+<span class="go">      [...] truncated</span>
+
+<span class="go">      + default_node_pool {</span>
+<span class="go">          + kubelet_disk_type    = (known after apply)</span>
+<span class="go">          + max_pods             = (known after apply)</span>
+<span class="go">          + name                 = &quot;default&quot;</span>
+<span class="go">          + node_count           = (known after apply)</span>
+<span class="go">          + node_labels          = (known after apply)</span>
+<span class="go">          + orchestrator_version = (known after apply)</span>
+<span class="go">          + os_disk_size_gb      = (known after apply)</span>
+<span class="go">          + os_disk_type         = &quot;Managed&quot;</span>
+<span class="go">          + os_sku               = (known after apply)</span>
+<span class="go">          + type                 = &quot;VirtualMachineScaleSets&quot;</span>
+<span class="go">          + ultra_ssd_enabled    = false</span>
+<span class="go">          + vm_size              = &quot;Standard_DS2_v2&quot;</span>
+<span class="go">          + vnet_subnet_id       = &quot;/subscriptions/01010101-1010-0101-1010-010101010101/resourceGroups/rg-network-dev/providers/Microsoft.Network/virtualNetworks/vnet-dev/subnets/AksSubnet&quot;</span>
+<span class="go">        }</span>
+
+<span class="go">      + identity {</span>
+<span class="go">          + principal_id = (known after apply)</span>
+<span class="go">          + tenant_id    = (known after apply)</span>
+<span class="go">          + type         = &quot;SystemAssigned&quot;</span>
+<span class="go">        }</span>
+
+<span class="go">      [...] truncated</span>
+<span class="go">    }</span>
+
+<span class="go">Plan: 1 to add, 0 to change, 0 to destroy.</span>
 </code></pre></div>
-<p>1. Commit these changes to the repository:</p>
-<div class="highlight"><pre><span></span><code>- bash: |
-    git config --global user.email &quot;build@dev.azure.com&quot;
-    git config --global user.name &quot;build&quot;
-    git add .
-    git commit -m &#39;Convert Jupyter notebooks&#39; || echo &quot;No changes to commit&quot; &amp;&amp; NO_CHANGES=1
-    [ -z &quot;$NO_CHANGES&quot; ] || git push https://$(System.AccessToken)@$(REPO_URL) HEAD:$(Build.SourceBranchName)
-  displayName: &quot;Commit notebook to repository&quot;
+<p>Note: the usage of a common module is also valid if you decide to deploy all your modules in the same operation from a main Terraform configuration file, like:</p>
+<div class="highlight"><pre><span></span><code>module &quot;common&quot; {
+  source           = &quot;./common&quot;
+  environment_name = var.environment_name
+  subscription     = var.subscription
+}
+
+module &quot;network&quot; {
+  source           = &quot;./network&quot;
+  vnet_name        = module.common.vnet_name
+  vnet_rg_name     = module.common.vnet_rg_name
+}
+
+module &quot;kubernetes&quot; {
+  source           = &quot;./kubernetes&quot;
+  aks_name         = module.common.aks_name
+  aks_rg           = module.common.aks_rg_name
+}
 </code></pre></div>
-</li>
-</ol>
-<p>Now we have a pipeline that will generate the scripts as we commit our notebooks.</p>
+<h3 id="centralize-input-variables-definitions">Centralize input variables definitions</h3>
+<p>In case you chose to define variables values directly in the source control (e.g. gitops scenario) using <a href="https://www.terraform.io/language/values/variables#variable-definitions-tfvars-files">variables definitions files</a> (<code>.tfvars</code>), having a common module will also help to not have to duplicate the common variables definitions in all modules. Indeed, it is possible to have a global file that is defined once, at the common module level, and merge it with a module-specific variables definitions files at Terraform <code>plan</code> or <code>apply</code> time.</p>
+<p>Let's consider the following structure:</p>
+<div class="highlight"><pre><span></span><code><span class="go">modules</span>
+<span class="go">├── common</span>
+<span class="go">│   ├── dev.tfvars</span>
+<span class="go">│   ├── prod.tfvars</span>
+<span class="go">│   ├── output.tf</span>
+<span class="go">│   └── variables.tf</span>
+<span class="go">├── kubernetes</span>
+<span class="go">│   ├── dev.tfvars</span>
+<span class="go">│   ├── prod.tfvars</span>
+<span class="go">│   ├── main.tf</span>
+<span class="go">│   ├── provider.tf</span>
+<span class="go">│   └── variables.tf</span>
+<span class="go">├── network</span>
+<span class="go">│   ├── dev.tfvars</span>
+<span class="go">│   ├── prod.tfvars</span>
+<span class="go">│   ├── main.tf</span>
+<span class="go">│   ├── provider.tf</span>
+<span class="go">│   └── variables.tf</span>
+</code></pre></div>
+<p>The common module as well as all other modules contain variables files for <code>dev</code> and <code>prod</code> environment. <code>tfvars</code> files from the common module will define all the global variables that will be shared with other modules (like subscription, environment name, etc.) and <code>.tfvars</code> files of each module will define only the module-specific values.</p>
+<p>Then, it's possible to merge these files when running the <code>terraform apply</code> or <code>terraform plan</code> command, using the following syntax:</p>
+<div class="highlight"><pre><span></span><code>terraform plan -var-file<span class="o">=</span>&lt;<span class="o">(</span>cat ../common/dev.tfvars ./dev.tfvars<span class="o">)</span>
+</code></pre></div>
+<p><em>Note: using this, it is really important to ensure that you have not the same variable names in both files, otherwise that will generate an error.</em></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>By having a common module that owns shared variables as well as naming convention, it is now easier to refactor your Terraform configuration code base. Imagine that for some reason you need change the pattern that is used for the virtual network name: you change it in the common module output files, and just have to re-apply all modules!</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 21, 2022</span>
       
     
   </small>
@@ -7027,7 +7327,7 @@ process.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../inclusive-linting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Inclusive Linting" rel="prev">
+        <a href="../../github-workflows/workflow-per-environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GitHub Workflows" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -7036,20 +7336,20 @@ process.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Inclusive Linting
+              GitHub Workflows
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../dev-sec-ops/" class="md-footer__link md-footer__link--next" aria-label="Next: DevSecOps" rel="next">
+        <a href="../../../secrets-management/" class="md-footer__link md-footer__link--next" aria-label="Next: Secrets Management" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              DevSecOps
+              Secrets Management
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -7079,10 +7379,10 @@ process.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.3a4b43e5.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.3a4b43e5.min.js"></script>
       
     
   </body>
