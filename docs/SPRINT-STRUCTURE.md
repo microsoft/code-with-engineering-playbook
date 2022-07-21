@@ -18,7 +18,7 @@ The purpose of this document is to:
 - [ ] [Set up the repository/repositories](source-control/README.md#creating-a-new-repository)
   - Decide on repository structure/s
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
-- [ ] [Build a Product Backlog](agile-development/advanced-topics/backlog-management/readme.md)
+- [ ] [Build a Product Backlog](agile-development/advanced-topics/backlog-management/README.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
   - [INVEST](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) in good User Stories and Acceptance Criteria
   - [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md)
@@ -68,7 +68,7 @@ The purpose of this document is to:
 - [ ] [Conduct a Retrospective](agile-development/core-expectations/README.md)
   - Determine required participants, how to capture input (tools) and outcome
   - Set a timeline, and discuss facilitation, meeting structure etc.
-- [ ] [Refine the Backlog](agile-development/advanced-topics/backlog-management/readme.md)
+- [ ] [Refine the Backlog](agile-development/advanced-topics/backlog-management/README.md)
   - Determine required participants
   - Update the [Definition of Ready](agile-development/advanced-topics/team-agreements/definition-of-ready.md)
   - Update estimates, and the [Estimation](agile-development/core-expectations/README.md) document
