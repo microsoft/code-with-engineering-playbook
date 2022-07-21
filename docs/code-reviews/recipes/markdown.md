@@ -171,7 +171,7 @@ Save your guidelines together with your documentation, so they are easy to refer
 ### Document Organization
 
 - Organize documents by topic rather than type, this makes it easier to find the documentation
-- Each folder should have a top-level readme.md and any other documents within that folder should link directly or indirectly from that readme.md
+- Each folder should have a top-level README.md and any other documents within that folder should link directly or indirectly from that README.md
 - Document names with more than one word should use underscores instead of spaces, for example `machine_learning_pipeline_design.md`. The same applies to images
 
 ### Headings

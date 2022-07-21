@@ -15,7 +15,7 @@ The scrum of scrums ceremony happens every day and can be seen as a regular [sta
 
 The outcome of the meeting will result in a list of impediments related to coordination of the whole project. Solutions could be: agreeing on interfaces between teams, discussing architecture changes, evolving responsibility boundaries, etc.
 
-This list of impediments is usually managed in a separate [backlog](../backlog-management/readme.md) but does not have to.
+This list of impediments is usually managed in a separate [backlog](../backlog-management/README.md) but does not have to.
 
 ## Participation
 
