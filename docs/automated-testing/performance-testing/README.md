@@ -125,7 +125,7 @@ memory, you will also notice spikes in disk activity as well as CPU.
 
 Almost all software systems are dependent on the performance of the physical
 disk. This is especially true for the performance of databases. More modern
-approaches to using SSD’s for physical disk storage can dramatically improve the
+approaches to using SSDs for physical disk storage can dramatically improve the
 performance of applications. Here are some of the metrics that you can capture
 and analyze:
 
