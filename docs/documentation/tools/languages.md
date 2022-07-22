@@ -33,7 +33,7 @@ This is an example of a Mermaid flowchart diagram written as code.
 graph LR
     A[Diagram Idea] -->|Write mermaid code| B(mermaid.mmd file)
     B -->|Add to source control| C{Code repo}
-    B -->|Export as PNG| G(PNG file of diagram)
+    B -->|Export as .png| G(.png file of diagram)
     G -->|Add to source control| C
 ```
 
