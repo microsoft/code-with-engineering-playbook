@@ -193,7 +193,7 @@ You can add specific links that are important to provide direct access.
 
 > Try not to duplicate the links on the top of the page, unless it really makes sense.
 
-To get started with the setup of this website, read the getting started document with the title [Using DocFx and Companion Tools](docs/getting-started/readme.md).
+To get started with the setup of this website, read the getting started document with the title [Using DocFx and Companion Tools](using-docfx-and-tools.md).
 
 ```
 

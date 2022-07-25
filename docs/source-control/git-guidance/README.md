@@ -105,7 +105,7 @@ To avoid losing work, it is good to commit often in small chunks. This allows yo
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git restore <file>..." to discard changes in working directory)
-            modified:   source-control/git-guidance/readme.md
+            modified:   source-control/git-guidance/README.md
     ```
 
 3. Track the files you wish to include in the commit. To track all modified files:
@@ -117,7 +117,7 @@ To avoid losing work, it is good to commit often in small chunks. This allows yo
    Or to track only specific files:
 
     ```cmd
-    git add source-control/git-guidance/readme.md
+    git add source-control/git-guidance/README.md
     ```
 
 4. Commit the changes to your local branch with a descriptive [commit message](../README.md#commit-best-practices)
