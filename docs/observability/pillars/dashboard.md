@@ -50,9 +50,9 @@ Here are principles to consider when building dashboards:
 
 ### Application Insights
 
-- [User retention analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-retention)
-- [User navigation patterns analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-flows)
-- [User session analysis](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-users)
+- [User retention analysis](https://docs.microsoft.com/azure/azure-monitor/app/usage-retention)
+- [User navigation patterns analysis](https://docs.microsoft.com/azure/azure-monitor/app/usage-flows)
+- [User session analysis](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 
 For other tools, these can be used as a reference to recreate if a template is not readily available.
 
