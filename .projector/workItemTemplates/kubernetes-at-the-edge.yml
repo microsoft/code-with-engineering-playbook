@@ -21,7 +21,7 @@ items:
                 description: Understand what workloads will be running on the cluster and the compute requirements including any requirements for mixed clusters (OS, cpu, mem, etc.)
               - name: Evaluate compute options
                 type: task
-                description: Reference this [trade-off doc](https://docs.microsoft.com/en-us/azure/architecture/operator-guides/aks/choose-kubernetes-edge-compute-option) to help evaluate trade-offs between bare-metal kubernetes, kubernetes on Azure Stack Edge, and AKS on Azure Stack HCI.
+                description: Reference this [trade-off doc](https://docs.microsoft.com/azure/architecture/operator-guides/aks/choose-kubernetes-edge-compute-option) to help evaluate trade-offs between bare-metal kubernetes, kubernetes on Azure Stack Edge, and AKS on Azure Stack HCI.
               - name: If applicable, evaluate virtualization options
                 type: task
                 description: In the case of bare-metal, you will likely leverage virtualization of host systems. Look into what options are available for the respective host and evaluate against requirements
