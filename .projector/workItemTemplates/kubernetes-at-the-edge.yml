@@ -98,7 +98,7 @@ items:
             children:
               - name: Identify tooling to be used to spin up Kubernetes
                 type: task
-                description: For baremetal clusters, reference this [decision-tree](https://docs.microsoft.com/en-us/azure/architecture/operator-guides/aks/choose-bare-metal-kubernetes) to determine which tooling shall be used
+                description: For baremetal clusters, reference this [decision-tree](https://docs.microsoft.com/azure/architecture/operator-guides/aks/choose-bare-metal-kubernetes) to determine which tooling shall be used
           - name: As a cluster operator, I want to leverage existing tools (AzDO, Ansible or cluster api) to configure my clusters so that configuration may be repeatable and scalable. Note, in cases where cluster setup requires a lot of manual coordination, it's important to determine how to automate and manage configuration such that clusters can be configured at scale
             type: story
             acceptanceCriteria:
