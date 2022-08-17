@@ -31,7 +31,7 @@ The following tools and guidelines are aimed at achieving experimentation goals 
 ## Tools and guidelines for successful model experimentation
 
 - [Virtual environments](#virtual-environments)
-- [Source control and folder/package structure](#source-control-and-folder-package-structure)
+- [Source control and folder/package structure](#source-control-and-folder-or-package-structure)
 - [Experiment tracking](#experiment-tracking)
 - [Datasets and models abstractions](#datasets-and-models-abstractions)
 - [Model evaluation](#model-evaluation)
@@ -65,7 +65,7 @@ In CSE, we often choose from either `venv`, `Conda` or `Poetry`, depending on th
 - Collaboration
 - Reproducibility
 
-### Source control and folder/package structure
+### Source control and folder or package structure
 
 Applied ML projects often contain source code, notebooks, devops scripts, documentation, scientific resources, datasets and more. We recommend coming up with an agreed folder structure to keep resources tidy. Consider deciding upon a generic folder structure for projects (e.g. which contains the folders `data`, `src`, `docs` and `notebooks`), or adopt popular structures like the [CookieCutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) folder structure.
 
@@ -137,7 +137,7 @@ For example, we can use Object-Oriented Programming (OOP) solutions like abstrac
 When deciding on the evaluation of the ML model/process, consider the following checklist:
 
 - [ ] Evaluation logic is approved by all stakeholders.
-- [ ] Relationship between evaluation logic and business KPIs is analysed and decided.
+- [ ] Relationship between evaluation logic and business KPIs is analyzed and decided.
 - [ ] Evaluation flow is applicable for all present and future models (i.e. does not assume some prediction structure or method-specific process).
 - [ ] Evaluation code is unit-tested and reviewed by all team members.
 - [ ] Evaluation flow facilitates further results and error analysis.

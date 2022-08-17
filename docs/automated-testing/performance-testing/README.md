@@ -125,16 +125,16 @@ memory, you will also notice spikes in disk activity as well as CPU.
 
 Almost all software systems are dependent on the performance of the physical
 disk. This is especially true for the performance of databases. More modern
-approaches to using SSD’s for physical disk storage can dramatically improve the
+approaches to using SSDs for physical disk storage can dramatically improve the
 performance of applications. Here are some of the metrics that you can capture
 and analyze:
 
-| Counter | Description  |
-|:-------------------- |:--------------------  |
-| Avg. Disk Queue Length | This value is derived using the (Disk Transfers/sec)*(Disk sec/Transfer) counters. This metric describes the disk queue over time, smoothing out any quick spikes. Having any physical disk with an average queue length over 2 for prolonged periods of time can be an indication that your disk is a bottleneck.  |
-| % Idle Time | This is a measure of the percentage of time that the disk was idle. ie. there are no pending disk requests from the operating system waiting to be completed. A low number here is a positive sign that disk has excess capacity to service or write requests from the operating system.  |
-| Avg. Disk sec/Read and Avg. Disk sec/Write | These both measure the latency of your disks. Latency is defined as the average time it takes for a disk transfer to complete. You obviously want is low numbers as possible but need to be careful to account for inherent speed differences between SSD and traditional spinning disks. For this counter is important to define a baseline after the hardware is installed. Then use this value going forward to determine if you are experiencing any latency issues related to the hardware.  |
-| Disk Reads/sec and Disk Writes/sec | These counters each measure the total number of IO requests completed per second. Similar to the latency counters, good and bad values for these counters depend on your disk hardware but values higher than your initial baseline don't normally point to a hardware issue in this case. This counter can be useful to identify spikes in disk I/O.  |
+| Counter                                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|:-------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avg. Disk Queue Length                     | This value is derived using the (Disk Transfers/sec)*(Disk sec/Transfer) counters. This metric describes the disk queue over time, smoothing out any quick spikes. Having any physical disk with an average queue length over 2 for prolonged periods of time can be an indication that your disk is a bottleneck.                                                                                                                                                                               |
+| % Idle Time                                | This is a measure of the percentage of time that the disk was idle. ie. there are no pending disk requests from the operating system waiting to be completed. A low number here is a positive sign that disk has excess capacity to service or write requests from the operating system.                                                                                                                                                                                                         |
+| Avg. Disk sec/Read and Avg. Disk sec/Write | These both measure the latency of your disks. Latency is defined as the average time it takes for a disk transfer to complete. You obviously want is low numbers as possible but need to be careful to account for inherent speed differences between SSD and traditional spinning disks. For this counter is important to define a baseline after the hardware is installed. Then use this value going forward to determine if you are experiencing any latency issues related to the hardware. |
+| Disk Reads/sec and Disk Writes/sec         | These counters each measure the total number of IO requests completed per second. Similar to the latency counters, good and bad values for these counters depend on your disk hardware but values higher than your initial baseline don't normally point to a hardware issue in this case. This counter can be useful to identify spikes in disk I/O.                                                                                                                                            |
 
 ## Processor
 
@@ -196,14 +196,14 @@ The table above gives you some reference points to better understand what you
 can expect out of your network. Here are some counters that can help you
 understand where the bottlenecks might exist:
 
-| Counter | Description  |
-|:-------------------- |:--------------------  |
-| Bytes Received/sec | The rate at which bytes are received over each network adapter.  |
-| Bytes Sent/sec | The rate at which bytes are sent over each network adapter.  |
-| Bytes Total/sec | The number of bytes sent and received over the network.  |
-| Segments Received/sec | The rate at which segments are received for the protocol  |
-| Segments Sent/sec | The rate at which segments are sent.  |
-| % Interrupt Time | The percentage of time the processor spends receiving and servicing hardware interrupts. This value is an indirect indicator of the activity of devices that generate interrupts, such as network adapters.  |
+| Counter               | Description                                                                                                                                                                                                 |
+|:----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Bytes Received/sec    | The rate at which bytes are received over each network adapter.                                                                                                                                             |
+| Bytes Sent/sec        | The rate at which bytes are sent over each network adapter.                                                                                                                                                 |
+| Bytes Total/sec       | The number of bytes sent and received over the network.                                                                                                                                                     |
+| Segments Received/sec | The rate at which segments are received for the protocol                                                                                                                                                    |
+| Segments Sent/sec     | The rate at which segments are sent.                                                                                                                                                                        |
+| % Interrupt Time      | The percentage of time the processor spends receiving and servicing hardware interrupts. This value is an indirect indicator of the activity of devices that generate interrupts, such as network adapters. |
 
 > There is an important distinction between **latency** and **throughput**.
 **Latency** measures the time it takes for a packet to be transferred across the
@@ -213,11 +213,11 @@ of data being sent and received within a unit of time.
 
 ## Memory
 
-| Counter | Description  |
-|:-------------------- |:--------------------  |
-| Available MBs | This counter represents the amount of memory that is available to applications that are executing. Low memory can trigger Page Faults, whereby additional pressure is put on the CPU to swap memory to and from the disk. if the amount of available memory dips below 10%, more memory should be obtained.  |
-| Pages/sec | This is actually the sum of &quot;Pages Input/sec&quot; and &quot;Pages Output/sec&quot; counters which is the rate at which pages are being read and written as a result of pages faults. Small spikes with this value do not mean there is an issue but sustained values of greater than 50 can mean that system memory is a bottleneck.  |
-| Paging File(_Total)\% Usage | The percentage of the system page file that is currently in use. This is not directly related to performance, but you can run into serious application issues if the page file does become completely full and additional memory is still being requested by applications.  |
+| Counter                     | Description                                                                                                                                                                                                                                                                                                                                |
+|:----------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Available MBs               | This counter represents the amount of memory that is available to applications that are executing. Low memory can trigger Page Faults, whereby additional pressure is put on the CPU to swap memory to and from the disk. if the amount of available memory dips below 10%, more memory should be obtained.                                |
+| Pages/sec                   | This is actually the sum of &quot;Pages Input/sec&quot; and &quot;Pages Output/sec&quot; counters which is the rate at which pages are being read and written as a result of pages faults. Small spikes with this value do not mean there is an issue but sustained values of greater than 50 can mean that system memory is a bottleneck. |
+| Paging File(_Total)\% Usage | The percentage of the system page file that is currently in use. This is not directly related to performance, but you can run into serious application issues if the page file does become completely full and additional memory is still being requested by applications.                                                                 |
 
 ## Key Performance testing activities
 

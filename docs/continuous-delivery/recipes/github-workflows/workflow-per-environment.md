@@ -2,7 +2,7 @@
 
 A workflow is a configurable automated process made up of one or more jobs where each of these jobs can be an action in GitHub. Currently, a YAML file format is supported for defining a workflow in GitHub.
 
-Additional information on GitHub actions and GitHub Workflows in the links posted in the [references](#References) section below.
+Additional information on GitHub actions and GitHub Workflows in the links posted in the [references](#references) section below.
 
 ## Workflow Per Environment
 

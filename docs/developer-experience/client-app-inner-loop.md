@@ -149,9 +149,9 @@ An example of how to implement using Fake Services can be found [here](./recipes
 
 ## How to decide
 
-|| Pros| Cons| Example when developing for: | Example When not to Use  |
-|------------|-------------|-------------|---------------|------------|
-| Embedded Mocks | Simplifies the F5 developer experience |Tightly coupled with Client | More static type data scenarios      | Testing  (e.g. unit tests, integration tests )  |
+|                | Pros                                   | Cons                        | Example when developing for:    | Example When not to Use                        |
+|----------------|----------------------------------------|-----------------------------|---------------------------------|------------------------------------------------|
+| Embedded Mocks | Simplifies the F5 developer experience | Tightly coupled with Client | More static type data scenarios | Testing  (e.g. unit tests, integration tests ) |
 || No external dependencies to manage | Hard coded data | Initial integration with services |
 ||| Mocking via Dependency Injection can be a non-trivial effort ||
 | High-Fidelity Local Services | Loosely Coupled from Client | Extra tooling required  i.e. local infrastructure overhead | URL Routes  | When API contract are not available   |
@@ -160,7 +160,7 @@ An example of how to implement using Fake Services can be found [here](./recipes
 ||Can utilize HTTP traffic|||
 ||Easier to replace with real services at a later time |||
 |Stub/Fake Services|Loosely coupled from client|Extra tooling required  i.e. local infrastructure overhead| Response Codes | When API Contracts available |
-||Easier to independently modify reponse|Extra setup and configuration of services|Complex/variable data scenarios| When API Contracts are note available |
+||Easier to independently modify response|Extra setup and configuration of services|Complex/variable data scenarios| When API Contracts are note available |
 ||Independent updates to services|Might not provide full fidelity of expected API ||
 ||Can utilize HTTP traffic|||
 ||Easier to reapce with real services at a later time |||

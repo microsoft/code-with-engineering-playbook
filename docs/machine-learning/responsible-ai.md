@@ -23,7 +23,7 @@ The process begins as soon as we start a prospective project. We start to comple
 - Who are the stakeholders in this project? Who does the AI impact? Are there any vulnerable groups affected?
 - What are the possible benefits and harms to each stakeholder?
 - How can the technology be misused, and what can go wrong?
-- Has the team analysed the input data properly to make sure that the training data is suitable for machine learning?
+- Has the team analyzed the input data properly to make sure that the training data is suitable for machine learning?
 - Is the training data an accurate representation of data that will be used as input in production?
 - Is there a good representation of all users?
 - Is there a fall-back mechanism (a human in the loop, or a way to revert decisions based on the model)?

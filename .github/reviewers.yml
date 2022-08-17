@@ -61,37 +61,37 @@ reviewers:
 files:
   # Keys are glob expressions.
   # You can assign groups defined above as well as GitHub usernames.
-  'docs/**':
+  "docs/**":
     - general # group
-  'docs/agile-development/**':
+  "docs/agile-development/**":
     - agile # group
-  'docs/automated-testing/**':
+  "docs/automated-testing/**":
     - automated-testing # group
-  'docs/code-reviews/**':
+  "docs/code-reviews/**":
     - code-reviews # group
-  'docs/continuous-delivery/**':
+  "docs/continuous-delivery/**":
     - ci-cd # group
-  'docs/continuous-integration/**':
+  "docs/continuous-integration/**":
     - ci-cd # group
-  'docs/design/**':
+  "docs/design/**":
     - design # group
-  'docs/developer-experience/**':
+  "docs/developer-experience/**":
     - dev-experience # group
-  'docs/documentation/**':
+  "docs/documentation/**":
     - documentation # group
-  'docs/machine-learning/**':
+  "docs/machine-learning/**":
     - machine-learning # group
-  'docs/observability/**':
+  "docs/observability/**":
     - observability # group
-  'docs/privacy/**':
+  "docs/privacy/**":
     - privacy # group
-  'docs/security/**':
+  "docs/security/**":
     - security # group
-  'docs/source-control/**':
+  "docs/source-control/**":
     - source-code # group
-  '.projector/**':
+  ".projector/**":
     - design # group
-  'docs/user-interface-engineering/**':
+  "docs/user-interface-engineering/**":
     - ux # group
 
 options:

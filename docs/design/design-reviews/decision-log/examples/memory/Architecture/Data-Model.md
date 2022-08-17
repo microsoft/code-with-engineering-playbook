@@ -13,8 +13,8 @@
 
 The set of vertices (entities) and edges (relationships) of the graph model
 
-| Vertex (Source) | Edge Type       | Relationship Type | Vertex (Target) | Notes                                                                                                | Required |
-| --------------- | ---------------- | ----------------- | --------------- | ---------------------------------------------------------------------------------------------------- | -------- |
+| Vertex (Source) | Edge Type        | Relationship Type | Vertex (Target) | Notes                                                                                                | Required |
+|-----------------|------------------|-------------------|-----------------|------------------------------------------------------------------------------------------------------|----------|
 | Profession      | _Applies_        | 1:many            | Discipline      | Top most level of categorization                                                                     | \*       |
 | Discipline      | _Defines_        | 1:many            | Role            | Groups of related roles within a profession                                                          | \*       |
 |                 | _AppliedBy_      | 1:1               | Profession      |                                                                                                      | 1        |
@@ -53,7 +53,7 @@ The set of vertices (entities) and edges (relationships) of the graph model
 The full set of data properties available on each vertex and edge
 
 | Vertex/Edge    | Property        | Data Type | Notes                                                  | Required |
-| -------------- | --------------- | --------- | ------------------------------------------------------ | -------- |
+|----------------|-----------------|-----------|--------------------------------------------------------|----------|
 | **(Any)**      | ID              | guid      |                                                        | 1        |
 | Profession     | Title           | String    |                                                        | 1        |
 |                | Description     | String    |                                                        | 0        |

@@ -32,7 +32,7 @@ Notebooks are a great way to kick start Data Analytics and Applied Machine Learn
 - Engineering team should follow the same rigor in building ML projects as in any software engineering project. We at CSE (Commercial Software Engineering) have built a good set of resources from our learnings in our [CSE Engineering Playbook](../index.md).
 - Think about the how the model will be deployed, for example, are there technical constraints due to an edge device, or network constraints that will prevent updating the model. Understanding of the environment is critical, refer to the [Model Production Checklist](ml-model-checklist.md) as a reference to determine model deployment choices.
 
-- ML Focussed projects are not a "one-shot" release solution, they need to be nurtured, evolved, and improved over time. Plan for a continuos improvement lifecycle, the initial phases can be model feasibility and validation to get the good enough prediction rate, the later phases can be then be scaling and improving the models through feedback loops and fresh data sets.
+- ML Focussed projects are not a "one-shot" release solution, they need to be nurtured, evolved, and improved over time. Plan for a continuous improvement lifecycle, the initial phases can be model feasibility and validation to get the good enough prediction rate, the later phases can be then be scaling and improving the models through feedback loops and fresh data sets.
 
 ### Garbage Data In -\> Garbage Model Out
 

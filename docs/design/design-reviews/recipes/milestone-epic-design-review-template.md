@@ -27,7 +27,7 @@
 * List a few of the alternative approaches that were considered and include the brief key **Pros and Cons** used to help rationalize the decision. For example:
 
 | Pros                             | Cons                                  |
-| -------------------------------- | ------------------------------------- |
+|----------------------------------|---------------------------------------|
 | Simple to implement              | Creates secondary identity system     |
 | Repeatable pattern/code artifact | Deployment requires admin credentials |
 |                                  |                                       |

@@ -25,7 +25,7 @@ A robust build automation pipeline will:
 
 ## Build Definition Managed in Git
 
-### Code / manifest artifacts required to build your project should be maintained in within your project(s) git repository(s).
+### Code / manifest artifacts required to build your project should be maintained in within your project(s) git repository(s)
 
 - CI provider-specific build pipeline definition(s) should reside within your project(s) git repository(s).
 

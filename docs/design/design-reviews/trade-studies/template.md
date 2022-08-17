@@ -130,12 +130,12 @@ Present the evidence collected during experimentation that supports the hypothes
 
 This section should contain a table that has each solution rated against each of the evaluation criteria:
 
-|Solution|Evaluation Criteria 1|Evaluation Criteria 2|...|Evaluation Criteria N|
-|--------|---------------------|---------------------|---|---------------------|
-|Solution 1|||||
-|Solution 2|||||
-|...|||||
-|Solution M|||||
+| Solution   | Evaluation Criteria 1 | Evaluation Criteria 2 | ... | Evaluation Criteria N |
+|------------|-----------------------|-----------------------|-----|-----------------------|
+| Solution 1 |                       |                       |     |                       |
+| Solution 2 |                       |                       |     |                       |
+| ...        |                       |                       |     |                       |
+| Solution M |                       |                       |     |                       |
 
 Note: The formatting of the table can change. In the past, we have had success with qualitative descriptions
 in the table entries and color coding the cells to represent good, fair, bad.
