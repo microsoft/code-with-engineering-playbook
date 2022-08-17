@@ -7117,7 +7117,7 @@
 <h1 id="secret-detection">Secret Detection</h1>
 <p>It is important to ensure that secrets don't make it in to the code base and compromise the security of our application data. The best way of doing so is by introducing a simple and easy way to detect secrets during its development, and gate for secrets in your CI/CD pipelines.
 This section describes how we can use the open-source secrets detection framework <a href="https://github.com/Yelp/detect-secrets">Yelp Detect-Secrets</a>, to accomplish this together with two tools from the Detect-Secrets framework created by the CSE Engineering Fundamentals and Security group.
-The Yelp Detect-Secrets tool utilizes a Shannon Entropy model to detect secrets in codebases and prevents new secrets from being entered.</p>
+The Yelp Detect-Secrets tool utilizes a Shannon Entropy model to detect secrets in code bases and prevents new secrets from being entered.</p>
 <h2 id="detect-secrets-pre-commit-hook">Detect Secrets Pre-Commit Hook</h2>
 <p>The Detect-Secrets pre-commit hook is a tool that keeps secrets from being entering the codebase at one of the earliest stages of development.
 This tool will run a detect-secrets scan right before a Git commit occurs and if any findings occur, then mitigation can occur before any history of the secret is generated in Git history.
@@ -7204,7 +7204,7 @@ Following both practices provides the best coverage and by following the instruc
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
       
     
   </small>
