@@ -12,4 +12,5 @@ DISABLE:
 SPELL_CSPELL_DISABLE_ERRORS: true
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
+PARALLEL: true
 # DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
