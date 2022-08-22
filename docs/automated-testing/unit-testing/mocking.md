@@ -102,6 +102,119 @@ implementations, further increasing re-usability of code.
 
 - Takes more time to implement.
 
+## Best Practices
+
+To keep your mocking efficient, consider these best practices to make your code testable, save time and make your 
+test assertions more meaningful.
+
+### Dependency Injection
+
+If you don’t keep testability in mind from the beginning, once you start writing your tests, you might realize you have 
+to do a time-intensive refactor to make the code unit testable. A common problem that leads to non-testable code is not 
+using dependency injection. Use dependency injection so that a mock can easily be injected into your SUT during a unit test. 
+
+More information on using dependency injection can be found [here](authoring_example.md#dependency-injection).
+
+### Assertions
+
+When it comes to assertions in unit tests you want to make sure that you assert the right things, not necessarily lots 
+of things. Some assertions can be inefficient and not give you the confidence you need in the test result. When you are 
+mocking a client or configuration and your method passes the mock result directly as a return value without significant 
+changes, consider not asserting on the return value. Because if you do, you are mainly asserting whether you set up the 
+mock correctly. For a very simple example, look at 
+this class:
+
+```csharp
+
+public class SearchController : ControllerBase {
+
+   public ISearchClient SearchClient { get; }
+
+   public SearchController(ISearchClient searchClient)
+   {
+      SearchClient = searchClient;
+   }
+
+   public String GetName(string id)
+   {
+      return this.SearchClient.GetName(id);
+   }
+}
+```
+
+When testing the `GetName` method, you can set up a mock search client to return a certain value. Then, it’s easy to 
+assert that the return value is, in fact, this value from the mock. 
+
+```csharp
+mockSearchClient.Setup(x => x.GetName(id))
+   .ReturnsAsync("myResult");
+var result = searchController.GetName(id);
+Assert.Equal("myResult",result.Value);
+```
+
+But now, your method could look like this, and the test would still pass:
+
+```csharp
+public String GetName(string id)
+{
+   return "myResult";
+}
+```
+
+Similarly, if you set up your mock wrong, the test would fail even though the logic inside the method is sound. For efficient 
+assertions that will give you confidence in your SUT, make assertions on your logic, not mock return values. 
+The simple example above doesn’t have a lot of logic, but you want to make sure that it calls the search client to retrieve 
+the result. For this, you can use the verify method to make sure the search client was called using the right parameters even 
+though you don’t care about the result.
+
+```csharp
+mockSearchClient.Verify(mock => mock.GetName(id), Times.Once());
+```
+
+If there is more logic, you can make assertions on the part of the result that was modified by your SUT.
+
+### Callbacks 
+
+It can be time-consuming to set up mocks if you want to make sure they are being called with the right parameters, especially 
+if the parameters are complex. To make your testing more efficient, consider using callbacks to make assertions on the 
+parameters after a method was called. Often you don’t care about all the parameters but only a few, or even only parts of 
+them if the parameters are also objects. It’s easy to make a small mistake in the creation of the parameter, like missing 
+an attribute that the actual method sets, and then your mock won’t be called, even though you might not care about this 
+attribute at all. To avoid this, you can define only the most relevant parameters to differentiate between method calls and 
+use an `any`-statement for the others. In this example, the method has a complex search options parameter which would take a 
+lot of time to set up manually. Since you only care about 2 attributes in the search options, you use an `any`-statement and 
+store the options in a callback for later assertions.
+
+```csharp
+var actualOptions = new SearchOptions();
+
+mockSearchClient
+   .Setup(x => 
+      x.Search(
+         "[This parameter is most relevant]", 
+         It.IsAny<SearchOptions>()
+      ) 
+   )
+   .Returns(mockResults)
+   .Callback<string, SearchOptions>((query, searchOptions) =>
+     {
+       actualOptions = searchOptions;
+     }
+   );
+```
+
+Since you want to test your method logic, you should care only about the parts of the parameter which are influenced by your SUT, 
+in this example, let's say the search mode and the search query type. So, with the variable you stored in the callback, you can 
+make assertions on only these two attributes.
+
+```csharp
+Assert.Equal(SearchMode.All, actualOptions.SearchMode);
+Assert.Equal(SearchQueryType.Full, actualOptions.QueryType);
+```
+
+This makes the test more explicit since it shows which parts of the logic you care about. It’s also more efficient since you don’t 
+have to spend a lot of time setting up the parameters for the mock.
+
 ## Conclusion
 
 Using test doubles in unit tests is an essential part of having a healthy test suite. When looking at mocking frameworks
