@@ -1,2 +1,2 @@
 theme: jekyll-theme-slate
-include: ['CONTRIBUTING.md', 'LICENSE']
+include: ["CONTRIBUTING.md", "LICENSE"]

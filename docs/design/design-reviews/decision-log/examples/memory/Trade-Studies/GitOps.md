@@ -137,7 +137,7 @@ Other features to call out (see more on website)
 This section should contain a table that has each solution rated against each of the evaluation criteria:
 
 | Solution | Repo style  | Policy Enforcement    | Deployment Methods            | Deployment Monitoring | Admission Control | Azure Doc              | Maintainability       | Maturity                                  | UI                                 |
-| -------- | ----------- | --------------------- | ----------------------------- | --------------------- | ----------------- | ---------------------- | --------------------- | ----------------------------------------- | ---------------------------------- |
+|----------|-------------|-----------------------|-------------------------------|-----------------------|-------------------|------------------------|-----------------------|-------------------------------------------|------------------------------------|
 | Flux     | mono, multi | Azure Policy, preview | Helm, Kustomize               | Prometheus, Grafana   | RBAC              | Yes on Azure           | YAML in git repo      | 945 stars, 94 forks, currently maintained | CLI                                |
 | ArgoCD   | mono, multi | Azure Policy, preview | Helm, Kustomize, KSonnet, ... | Prometheus, Grafana   | RBAC              | Only in their own docs | manifests in git repo | 5,000 stars, 1,100 forks                  | GUI, multiple clusters in same GUI |
 

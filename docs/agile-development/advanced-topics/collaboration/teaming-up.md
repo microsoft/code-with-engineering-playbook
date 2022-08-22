@@ -9,7 +9,7 @@ This documentation gives a high-level template with some suggestions by aiming t
 As it's stated in Tuckman's [team phases](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development), traditional team development has several stages.
 However those phases can be extremely fast or sometimes mismatched in teams due to external factors, what applies to CSE engagements.
 
-In order to minimize the risk and set the exceptations on the right way for all parties, an identification phase is important to understand each other.
+In order to minimize the risk and set the expectations on the right way for all parties, an identification phase is important to understand each other.
 Some potential steps in this phase may be as following (not limited):
 
 - [Working agreement](../team-agreements/working-agreements.md)
@@ -47,7 +47,7 @@ Just as an example, agility debugging activities may include:
 - Backlog Refinement meetings
   - Size of stories (Too big? Too small?)
   - Are "User Stories" and "Tasks" clear ?
-  - Are Acceptance Criterias enough and right?
+  - Are Acceptance Criteria enough and right?
   - Is everyone ready-to-go after taking the User Story/Task?
 
 - Running [Efficient Retrospectives](../../core-expectations/README.md)

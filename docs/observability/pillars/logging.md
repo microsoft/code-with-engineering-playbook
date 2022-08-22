@@ -45,7 +45,7 @@ This approach isn't without trade-offs:
 - If using sampling, implement this at the service level rather than defining it in the logging system. This way we have control over what gets logged. An additional benefit is reduced number of roundtrips.
 - Only include failures from health checks and non-business driven requests.
 - Ensure a downstream system malfunction won't cause repetitive logs being stored.
-- Don't reinvent the wheel, use existing tools to collect and analyse the data.
+- Don't reinvent the wheel, use existing tools to collect and analyze the data.
 - Ensure personal identifiable information policies and restrictions are followed.
 - Ensure errors and exceptions in dependent services are captured and logged. For example, if an application uses Redis cache, Service Bus or any other service, any errors/exceptions raised while accessing these services should be captured and logged.
 

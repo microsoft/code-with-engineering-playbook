@@ -54,7 +54,7 @@ An architecture decision record has the structure
 
     Example:
 
-    > *We have agreed to utilise Serilog as the Dotnet Logging framework of choice at the application level, with integration into Log Analytics and Application Insights for analysis.*
+    > *We have agreed to utilize Serilog as the Dotnet Logging framework of choice at the application level, with integration into Log Analytics and Application Insights for analysis.*
 
 - **Consequences:**
 

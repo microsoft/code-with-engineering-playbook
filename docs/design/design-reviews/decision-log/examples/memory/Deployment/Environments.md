@@ -22,7 +22,7 @@ They each have unique resource instances of Azure Traffic Manager, Cosmos DB, et
 ### Deployment Dependencies
 
 | Development      | Staging     | Production      |
-| ---------------- | ----------- | --------------- |
+|------------------|-------------|-----------------|
 | CI Quality Gates | Development | Staging         |
 |                  |             | Manual Approval |
 

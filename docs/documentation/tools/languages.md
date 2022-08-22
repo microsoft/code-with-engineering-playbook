@@ -25,6 +25,22 @@ Mermaid lets you create diagrams using text definitions that can later be render
 
 Mermaid files (.mmd) can be source-controlled along with your code. It's also recommended to include image files (.png) with the rendered diagrams under source control. Your markdown files should link the image files, so they can be read without the need of a Mermaid rendering tool (e.g., during Pull Request review).
 
+### Example Mermaid diagram
+
+This is an example of a Mermaid flowchart diagram written as code.
+
+```mermaid
+graph LR
+    A[Diagram Idea] -->|Write mermaid code| B(mermaid.mmd file)
+    B -->|Add to source control| C{Code repo}
+    B -->|Export as .png| G(.png file of diagram)
+    G -->|Add to source control| C
+```
+
+This is an example of how it can be rendered as an image.
+
+![Example mermaid diagram](images/example-mermaid-diagram.png "Example mermaid diagram")
+
 More information:
 
 - [About Mermaid](https://mermaid-js.github.io/mermaid/#/)
@@ -32,5 +48,5 @@ More information:
 
 Tools:
 
-- [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor)
+- [Mermaid Live Editor](https://mermaid.live)
 - [Markdown Preview Mermaid Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
