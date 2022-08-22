@@ -341,3 +341,4 @@ _site
 # mkdocs
 site/
 mkdocs/
+megalinter-reports/

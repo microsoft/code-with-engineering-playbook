@@ -49,7 +49,7 @@ Key objectives of the exploration workshops include the following:
 2. What order of magnitude is the current data (e.g., GB, TB)? Is this all relevant?
 3. How does the organization decide when to collect additional data or purchase external data? Are there any examples of this?
 4. Understand the quality of the data. Is there already a data validation strategy in place?
-5. What data has been used so far to analyse recent data-driven projects? What has been found to be most useful? What was not useful? How was this judged?
+5. What data has been used so far to analyze recent data-driven projects? What has been found to be most useful? What was not useful? How was this judged?
 6. What additional internal data may provide insights useful for data-driven decision-making for proposed projects? What external data could be useful?
 7. What are the possible constraints or challenges in accessing or incorporating this data?
 8. How was the data collected? Are there any obvious biases due to how the data was collected?

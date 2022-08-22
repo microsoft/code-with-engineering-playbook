@@ -15,7 +15,7 @@ When developing ML applications, we consider the following approaches:
 
   * All artifacts, specifically data, code and ML models, should be versioned and managed using standard tools and workflows, in order to facilitate continuous research and development.
   * While the model outputs can be non-deterministic and hard to reproduce, the process of releasing ML software into production should be reproducible.
-  * Responsible AI aspects are carefully analysed and addressed.
+  * Responsible AI aspects are carefully analyzed and addressed.
 
 * Cross-functional team:
 

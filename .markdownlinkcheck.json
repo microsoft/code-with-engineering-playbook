@@ -15,8 +15,20 @@
         {"pattern": "(.*\\.)?.opentelemetry.io"},
         {"pattern": "(.*\\.)?.pluralsight.com"},
         {"pattern": "(.*\\.)?.github.com"},
-        {"pattern": "^https://marketplace.visualstudio.com"}
+        {"pattern": "^https://marketplace.visualstudio.com"},
         {"pattern": "^https://opensource.org/licenses/MIT"}
+    ],
+    "httpHeaders": [
+        {
+            "urls": ["https://docs.github.com/",
+                "https://help.github.com/",
+                "https://github.com/",
+                "https://blog.cloudflare.com/",
+                "https://www.researchgate.net/"],
+            "headers": {
+                "Accept-Encoding": "zstd, br, gzip, deflate"
+            }
+        }
     ],
     "retryOn429": true
 }

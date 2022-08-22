@@ -10,7 +10,7 @@ Smoke tests are meant to find, as early as possible, if an application is workin
 
 ### ROI Tipping Point
 
-Smoke tests cover only the most critical application path, and should not be used to actually test the application's behaviour, keeping execution time and complexity to minimum. The tests can be formed of a subset of the application's integration or e2e tests, and they cover as much of the functionality with as little depth as required.
+Smoke tests cover only the most critical application path, and should not be used to actually test the application's behavior, keeping execution time and complexity to minimum. The tests can be formed of a subset of the application's integration or e2e tests, and they cover as much of the functionality with as little depth as required.
 
 The golden rule of a good smoke test is that it saves time on validating that the application is acceptable to a stage where better, more thorough testing will begin.
 

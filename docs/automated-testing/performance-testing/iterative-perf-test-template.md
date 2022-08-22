@@ -17,7 +17,7 @@
   - **Application Configuration:** *In bullet points mention the configuration for application that should be recorded*
   - **System Configuration:** *In bullet points mention the configuration of the infrastructure*
 
-> Record different types of configurations. Usually application specific configuation changes between iterations where as system or infrastructure configurations rarely change
+> Record different types of configurations. Usually application specific configuration changes between iterations whereas system or infrastructure configurations rarely change
 
 ### Work Items
 

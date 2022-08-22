@@ -15,7 +15,7 @@ To implement credential scanning for a project, consider the  following:
 
 1. Store secrets in an external secure store that is meant to store sensitive information
 1. Use secrets scanning tools to asses your repositories current state by scanning it's full history for secrets
-1. Incorporate an automated secrets scanning tool into your CI pipeline to detect unintentional commiting of secrets
+1. Incorporate an automated secrets scanning tool into your CI pipeline to detect unintentional committing of secrets
 1. Avoid `git add .` commands on git
 1. Add sensitive files to .gitignore
 

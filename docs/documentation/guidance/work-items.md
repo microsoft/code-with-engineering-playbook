@@ -72,7 +72,7 @@ You should at least add the following details to the bug items:
 - *Title*.
 - *Description*.
 - *Steps to Reproduce*.
-- *System Info* / *Found in Build*: Software and system configuration that is relevant to the bug and tests to appply.
+- *System Info* / *Found in Build*: Software and system configuration that is relevant to the bug and tests to apply.
 - *Acceptance Criteria*: Criteria to meet so the bug can be closed.
 - *Integrated in Build*: Name of the build that incorporates the code that fixes the bug.
 - *Priority*:

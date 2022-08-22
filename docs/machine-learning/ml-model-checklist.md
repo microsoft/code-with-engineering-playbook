@@ -15,13 +15,13 @@ Before putting an individual ML model into production, the following aspects sho
 - [ ] [Are machine learning performance metrics defined for both training and scoring?](#are-machine-learning-performance-metrics-defined-for-both-training-and-scoring)
 - [ ] [Is the model benchmarked?](#is-the-model-benchmarked)
 - [ ] [Can ground truth be obtained or inferred in production?](#can-ground-truth-be-obtained-or-inferred-in-production)
-- [ ] [Has the data distribution of training, testing and validation sets been analysed?](#has-the-data-distribution-of-training-testing-and-validation-sets-been-analysed-can-data-distribution-be-obtained-for-new-data)
+- [ ] [Has the data distribution of training, testing and validation sets been analyzed?](#has-the-data-distribution-of-training-testing-and-validation-sets-been-analyzed)
 - [ ] [Have goals and hard limits for performance, speed of prediction and costs been established so they can be considered if trade-offs need to be made?](#have-goals-and-hard-limits-for-performance-speed-of-prediction-and-costs-been-established-so-they-can-be-considered-if-trade-offs-need-to-be-made)
 - [ ] [How will the model be integrated into other systems, and what impact will it have?](#how-will-the-model-be-integrated-into-other-systems-and-what-impact-will-it-have)
 - [ ] [How will incoming data quality be monitored?](#how-will-incoming-data-quality-be-monitored)
 - [ ] [How will drift in data characteristics be monitored?](#how-will-drift-in-data-characteristics-be-monitored)
 - [ ] [How will performance be monitored?](#how-will-performance-be-monitored)
-- [ ] [Have any ethical concerns been taken into account?](#have-any-ethical-concerns-been-taken-into-account?)
+- [ ] [Have any ethical concerns been taken into account?](#have-any-ethical-concerns-been-taken-into-account)
 
 Please note that there might be scenarios where it is not possible to check all the items on this checklist. However, it is advised to go through all items and make informed decisions based on your specific use case.
 
@@ -84,9 +84,9 @@ For clarity, let's consider the following examples (by no means an exhaustive li
 - **Recommender systems**: For recommender system, obtaining the ground truth is a complex problem in most cases as there is no way of identifying the ideal recommendation. For a retail website for example, click/not click, buy/not buy or other user interaction with recommendation can be used as ground truth proxies.
 - **Object detection in images**: For an object detection model, as new images are scored, there are no new labels being generated automatically. One option to obtain the ground truth for the new images is to use people to manually label the images. Human labelling is costly, time-consuming and not 100% accurate, so in most cases, only a subset of images can be labelled. These samples can be chosen at random or by using active learning techniques of selecting the most informative unlabeled samples.
 
-### Has the data distribution of training, testing and validation sets been analysed?
+### Has the data distribution of training, testing and validation sets been analyzed?
 
-The data distribution of your training, test and validation (if applicable) dataset (including labels) should be analysed to ensure they all come from the same distribution. If this is not the case, some options to consider are: re-shuffling,  re-sampling, modifying the data, more samples need to be gathered or features removed from the dataset.
+The data distribution of your training, test and validation (if applicable) dataset (including labels) should be analyzed to ensure they all come from the same distribution. If this is not the case, some options to consider are: re-shuffling,  re-sampling, modifying the data, more samples need to be gathered or features removed from the dataset.
 
 Significant differences in the data distributions of the different datasets can greatly impact the performance of the model. Some potential questions to ask:
 

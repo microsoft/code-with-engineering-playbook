@@ -129,8 +129,8 @@ The following steps lay out a clear pathway to creating new secrets and then uti
 
 1. [Install and configure the Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html#set-up-the-cli) on your local machine
 2. [Get the Databricks personal access token](https://docs.databricks.com/api/latest/authentication.html#token-management)
-3. [Create a scope for the secrets](https://docs.azuredatabricks.net/user-guide/secrets/secret-scopes.html#create-a-databricks-backed-secret-scope)
-4. [Create secrets](https://docs.azuredatabricks.net/user-guide/secrets/secrets.html)
+3. [Create a scope for the secrets](https://docs.microsoft.com/azure/databricks/security/secrets/secret-scopes)
+4. [Create secrets](https://docs.microsoft.com/azure/databricks/security/secrets/)
 
 ### Validation
 
