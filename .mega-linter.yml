@@ -15,4 +15,5 @@ FILEIO_REPORTER: false
 PARALLEL: true
 GITHUB_STATUS_REPORTER: true
 VALIDATE_ALL_CODEBASE: false
+SARIF_REPORTER: true
 # DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
