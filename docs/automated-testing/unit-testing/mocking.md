@@ -171,7 +171,11 @@ though you don’t care about the result.
 mockSearchClient.Verify(mock => mock.GetName(id), Times.Once());
 ```
 
-If there is more logic, you can make assertions on the part of the result that was modified by your SUT.
+This example is kept simple to visualize the principle of making meaningful assertions. In a real world application, your SUT
+will probably have more logic inside. Pieces of glue code that have as little logic as this example don't always have to be
+unit tested and might instead be covered by integration tests. If there is more logic and a unit test with mocking is required,
+you should apply this principle by verifying mock calls and making assertions on the part of the mock result that was modified
+by your SUT.
 
 ### Callbacks
 
