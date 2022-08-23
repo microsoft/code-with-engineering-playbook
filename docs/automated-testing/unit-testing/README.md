@@ -79,9 +79,9 @@ in isolation. Dependencies could be things like classes wrapping a REST API, or 
 By injecting the dependencies into our system rather than constructing them, we have "inverted control" of the
 dependency. You may see "Inversion of Control" and "Dependency Injection" used as separate terms, but it is very hard to
 have one and not the other, with some arguing that [Dependency Injection is a more specific way of saying inversion of
-control](https://martinfowler.com/articles/injection.html#InversionOfControl). Not using dependency injection can lead to 
+control](https://martinfowler.com/articles/injection.html#InversionOfControl). Not using dependency injection can lead to
 code that is not unit testable since there is no way to inject mocked objects. Keeping testability in mind from the beginning
-and using dependency injection can save you from a time-intensive refactor later. 
+and using dependency injection can save you from a time-intensive refactor later.
 
 One of the [downsides of dependency injection](https://en.wikipedia.org/wiki/Dependency_injection#Disadvantages) is that
 it can easily go overboard. While there are no longer hard dependencies, there is still coupling between the interfaces,
@@ -179,7 +179,7 @@ Some common pitfalls when writing a unit test that are important to avoid:
   know for sure what that is doing, and it is best to abstract it out. Otherwise, you may be making REST calls or other
   potential areas of failure without directly writing the code for it. This is also generally a sign that the design of
   the system is not entirely testable. It is best to wrap third party API calls in interfaces or other structures so
-  that they do not get invoked in unit tests.
+  that they do not get invoked in unit tests. For more information see the page on [mocking](mocking.md).
 
 ## Unit Testing Frameworks and Tools
 
