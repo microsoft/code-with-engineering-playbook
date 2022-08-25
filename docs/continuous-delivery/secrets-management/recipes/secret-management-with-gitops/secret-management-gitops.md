@@ -52,5 +52,5 @@ CSI driver will need access to Azure Key vault either through service principle 
 
 - [Sealed Secrets with Flux v2](https://toolkit.fluxcd.io/guides/sealed-secrets/)
 - [Mozilla SOPS with Flux v2](https://toolkit.fluxcd.io/guides/mozilla-sops/)
-- [Secret Management with Argo CD](https://argoproj.github.io/argo-cd/operator-manual/secret-management/)
+- [Secret Management with Argo CD](https://argo-cd.readthedocs.io/en/stable/operator-manual/secret-management/)
 - [Secret management Workflow](https://www.youtube.com/watch?v=-k6HEXaE75k)
