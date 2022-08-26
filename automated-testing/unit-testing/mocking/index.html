@@ -2058,8 +2058,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#upsides_1" class="md-nav__link">
-    Upsides
+  <a href="#upsides-to-mocking" class="md-nav__link">
+    Upsides to Mocking
   </a>
   
 </li>
@@ -2085,15 +2085,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#upsides_2" class="md-nav__link">
-    Upsides
+  <a href="#upsides-to-fakes" class="md-nav__link">
+    Upsides to Fakes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#downsides_1" class="md-nav__link">
-    Downsides
+  <a href="#downsides-to-fakes" class="md-nav__link">
+    Downsides to Fakes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best Practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependency-injection" class="md-nav__link">
+    Dependency Injection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assertions" class="md-nav__link">
+    Assertions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callbacks" class="md-nav__link">
+    Callbacks
   </a>
   
 </li>
@@ -7036,8 +7070,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#upsides_1" class="md-nav__link">
-    Upsides
+  <a href="#upsides-to-mocking" class="md-nav__link">
+    Upsides to Mocking
   </a>
   
 </li>
@@ -7063,15 +7097,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#upsides_2" class="md-nav__link">
-    Upsides
+  <a href="#upsides-to-fakes" class="md-nav__link">
+    Upsides to Fakes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#downsides_1" class="md-nav__link">
-    Downsides
+  <a href="#downsides-to-fakes" class="md-nav__link">
+    Downsides to Fakes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best Practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependency-injection" class="md-nav__link">
+    Dependency Injection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assertions" class="md-nav__link">
+    Assertions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callbacks" class="md-nav__link">
+    Callbacks
   </a>
   
 </li>
@@ -7153,7 +7221,7 @@ introduces more areas for bugs to sneak in.</p>
 implementation, and that may be true; but one of the biggest problems with using mocks (and specifically mocking
 frameworks that allow these verifications), is that it encourages these types of tests to be written. By not using a
 mock framework that allows this, you never run the risk of writing tests that are validating the implementation.</p>
-<h3 id="upsides_1">Upsides</h3>
+<h3 id="upsides-to-mocking">Upsides to Mocking</h3>
 <ul>
 <li>Easy to write.</li>
 <li>Encourages testable design.</li>
@@ -7178,16 +7246,105 @@ many times they end up being "promoted" to the product code, and in some cases c
 since it is held to the same standard with full unit tests. Especially if writing a library or an API that other
 developers can use, providing a fake in the product code means those developers no longer need to write their own mock
 implementations, further increasing re-usability of code.</p>
-<h3 id="upsides_2">Upsides</h3>
+<h3 id="upsides-to-fakes">Upsides to Fakes</h3>
 <ul>
 <li>No framework needed, is just like any other implementation.</li>
 <li>Encourages testable design.</li>
 <li>Code can be "promoted" to product code, so it is not wasted effort.</li>
 </ul>
-<h3 id="downsides_1">Downsides</h3>
+<h3 id="downsides-to-fakes">Downsides to Fakes</h3>
 <ul>
 <li>Takes more time to implement.</li>
 </ul>
+<h2 id="best-practices">Best Practices</h2>
+<p>To keep your mocking efficient, consider these best practices to make your code testable, save time and make your
+test assertions more meaningful.</p>
+<h3 id="dependency-injection">Dependency Injection</h3>
+<p>If you don’t keep testability in mind from the beginning, once you start writing your tests, you might realize you have
+to do a time-intensive refactor to make the code unit testable. A common problem that can lead to non-testable code in certain
+languages such as C# is not using dependency injection. Consider using dependency injection so that a mock can easily be injected 
+into your Subject Under Test (SUT) during a unit test.</p>
+<p>More information on using dependency injection can be found <a href="../authoring_example/#dependency-injection">here</a>.</p>
+<h3 id="assertions">Assertions</h3>
+<p>When it comes to assertions in unit tests you want to make sure that you assert the right things, not necessarily lots
+of things. Some assertions can be inefficient and not give you the confidence you need in the test result. When you are
+mocking a client or configuration and your method passes the mock result directly as a return value without significant
+changes, consider not asserting on the return value. Because if you do, you are mainly asserting whether you set up the
+mock correctly. For a very simple example, look at this class:</p>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SearchController</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ControllerBase</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="n">ISearchClient</span><span class="w"> </span><span class="n">SearchClient</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="nf">SearchController</span><span class="p">(</span><span class="n">ISearchClient</span><span class="w"> </span><span class="n">searchClient</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">SearchClient</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">searchClient</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">GetName</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">SearchClient</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>When testing the <code>GetName</code> method, you can set up a mock search client to return a certain value. Then, it’s easy to
+assert that the return value is, in fact, this value from the mock.</p>
+<div class="highlight"><pre><span></span><code><span class="n">mockSearchClient</span><span class="p">.</span><span class="n">Setup</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">))</span><span class="w"></span>
+<span class="w">   </span><span class="p">.</span><span class="n">ReturnsAsync</span><span class="p">(</span><span class="s">&quot;myResult&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="kt">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">searchController</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">);</span><span class="w"></span>
+<span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="s">&quot;myResult&quot;</span><span class="p">,</span><span class="n">result</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<p>But now, your method could look like this, and the test would still pass:</p>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">GetName</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;myResult&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Similarly, if you set up your mock wrong, the test would fail even though the logic inside the method is sound. For efficient
+assertions that will give you confidence in your SUT, make assertions on your logic, not mock return values.
+The simple example above doesn’t have a lot of logic, but you want to make sure that it calls the search client to retrieve
+the result. For this, you can use the verify method to make sure the search client was called using the right parameters even
+though you don’t care about the result.</p>
+<div class="highlight"><pre><span></span><code><span class="n">mockSearchClient</span><span class="p">.</span><span class="n">Verify</span><span class="p">(</span><span class="n">mock</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="n">mock</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">Times</span><span class="p">.</span><span class="n">Once</span><span class="p">());</span><span class="w"></span>
+</code></pre></div>
+<p>This example is kept simple to visualize the principle of making meaningful assertions. In a real world application, your SUT
+will probably have more logic inside. Pieces of glue code that have as little logic as this example don't always have to be
+unit tested and might instead be covered by integration tests. If there is more logic and a unit test with mocking is required,
+you should apply this principle by verifying mock calls and making assertions on the part of the mock result that was modified
+by your SUT.</p>
+<h3 id="callbacks">Callbacks</h3>
+<p>It can be time-consuming to set up mocks if you want to make sure they are being called with the right parameters, especially
+if the parameters are complex. To make your testing more efficient, consider using callbacks to make assertions on the
+parameters after a method was called. Often you don’t care about all the parameters but only a few, or even only parts of
+them if the parameters are also objects. It’s easy to make a small mistake in the creation of the parameter, like missing
+an attribute that the actual method sets, and then your mock won’t be called, even though you might not care about this
+attribute at all. To avoid this, you can define only the most relevant parameters to differentiate between method calls and
+use an <code>any</code>-statement for the others. In this example, the method has a complex search options parameter which would take a
+lot of time to set up manually. Since you only care about 2 attributes in the search options, you use an <code>any</code>-statement and
+store the options in a callback for later assertions.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">var</span><span class="w"> </span><span class="n">actualOptions</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SearchOptions</span><span class="p">();</span><span class="w"></span>
+
+<span class="n">mockSearchClient</span><span class="w"></span>
+<span class="w">   </span><span class="p">.</span><span class="n">Setup</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span>
+<span class="w">      </span><span class="n">x</span><span class="p">.</span><span class="n">Search</span><span class="p">(</span><span class="w"></span>
+<span class="w">         </span><span class="s">&quot;[This parameter is most relevant]&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">         </span><span class="n">It</span><span class="p">.</span><span class="n">IsAny</span><span class="p">&lt;</span><span class="n">SearchOptions</span><span class="p">&gt;()</span><span class="w"></span>
+<span class="w">      </span><span class="p">)</span><span class="w"> </span>
+<span class="w">   </span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="p">.</span><span class="n">Returns</span><span class="p">(</span><span class="n">mockResults</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="p">.</span><span class="n">Callback</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="n">SearchOptions</span><span class="p">&gt;((</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="n">searchOptions</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"></span>
+<span class="w">     </span><span class="p">{</span><span class="w"></span>
+<span class="w">       </span><span class="n">actualOptions</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">searchOptions</span><span class="p">;</span><span class="w"></span>
+<span class="w">     </span><span class="p">}</span><span class="w"></span>
+<span class="w">   </span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<p>Since you want to test your method logic, you should care only about the parts of the parameter which are influenced by your SUT,
+in this example, let's say the search mode and the search query type. So, with the variable you stored in the callback, you can
+make assertions on only these two attributes.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="n">SearchMode</span><span class="p">.</span><span class="n">All</span><span class="p">,</span><span class="w"> </span><span class="n">actualOptions</span><span class="p">.</span><span class="n">SearchMode</span><span class="p">);</span><span class="w"></span>
+<span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="n">SearchQueryType</span><span class="p">.</span><span class="n">Full</span><span class="p">,</span><span class="w"> </span><span class="n">actualOptions</span><span class="p">.</span><span class="n">QueryType</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<p>This makes the test more explicit since it shows which parts of the logic you care about. It’s also more efficient since you don’t
+have to spend a lot of time setting up the parameters for the mock.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Using test doubles in unit tests is an essential part of having a healthy test suite. When looking at mocking frameworks
 and using test doubles, it is important to consider the future implications of integrating with a mocking framework from
@@ -7202,7 +7359,7 @@ mocks may be overused, rely too much on implementation details, or end up not te
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 26, 2022</span>
       
     
   </small>

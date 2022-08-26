@@ -7135,7 +7135,10 @@ in isolation. Dependencies could be things like classes wrapping a REST API, or 
 By injecting the dependencies into our system rather than constructing them, we have "inverted control" of the
 dependency. You may see "Inversion of Control" and "Dependency Injection" used as separate terms, but it is very hard to
 have one and not the other, with some arguing that <a href="https://martinfowler.com/articles/injection.html#InversionOfControl">Dependency Injection is a more specific way of saying inversion of
-control</a>.</p>
+control</a>. In certain languages such as C#, not using
+dependency injection can lead to code that is not unit testable since there is no way to inject mocked objects.
+Keeping testability in mind from the beginning and evaluating using dependency injection can save you from a time-intensive
+refactor later.</p>
 <p>One of the <a href="https://en.wikipedia.org/wiki/Dependency_injection#Disadvantages">downsides of dependency injection</a> is that
 it can easily go overboard. While there are no longer hard dependencies, there is still coupling between the interfaces,
 and passing around every interface implementation into every class presents just as many downsides as not using
@@ -7213,7 +7216,7 @@ why it failed (especially coupled with a test framework that logs helpful output
   know for sure what that is doing, and it is best to abstract it out. Otherwise, you may be making REST calls or other
   potential areas of failure without directly writing the code for it. This is also generally a sign that the design of
   the system is not entirely testable. It is best to wrap third party API calls in interfaces or other structures so
-  that they do not get invoked in unit tests.</li>
+  that they do not get invoked in unit tests. For more information see the page on <a href="mocking/">mocking</a>.</li>
 </ul>
 <h2 id="unit-testing-frameworks-and-tools">Unit Testing Frameworks and Tools</h2>
 <h3 id="test-frameworks">Test Frameworks</h3>
@@ -7254,7 +7257,7 @@ regressions, bugs, and increase developer velocity.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 26, 2022</span>
       
     
   </small>
