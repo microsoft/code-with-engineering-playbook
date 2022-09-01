@@ -115,6 +115,17 @@ Either way, instrumenting your code with OpenTelemetry seems the right approach 
 
 Use the [Azure OpenTelemetry Tracing plugin library for Java](https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/core/azure-core-tracing-opentelemetry) to enable distributed tracing across Azure components through OpenTelemetry.
 
+### Manual trace context propagation
+
+In some scenarios, in addition to automatic instrumentation and the custom spans you might want to manually connect the traces into one end to end trace chain. Teh automatic intrumentation is not sufficient when the tracked request is processed by different threads during its logical flow in an application.
+Example of that behavior is state machine processing. In this case the request can be processed by different threads depending on the state. From the monitoring perspective you might want to see these small traces connected as parts of one end to end trace to understand the logical operations flow.
+To achieve that you need to propagate the context manually, eg. by storing it in the database. OpenTelemetry SDKs allow for such [context propagation](https://opentelemetry.io/docs/instrumentation/java/manual/#context-propagation).
+
+### Traces testing
+
+In some cases, you might want to test the traces, to make sure the traces are collected correctly. Without testing the custom traces can be lost during a refactoring or redesign of the code. It can be especially important in frameorks and libraries that offer monitoring capabilities to the users.
+One idea how to test the traces would be to use the [OpenTelemetry OLTP exporter features](https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md#otlp-exporter-span-metric-and-log-exporters). You can use a mock server to mock the OLTP traces endpoint and test that the expected traces were recieved by the mock server.
+
 ## References
 
 * [OpenTelemetry Official Site](https://opentelemetry.io/)
