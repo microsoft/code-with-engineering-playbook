@@ -111,7 +111,7 @@ test assertions more meaningful.
 
 If you don’t keep testability in mind from the beginning, once you start writing your tests, you might realize you have
 to do a time-intensive refactor to make the code unit testable. A common problem that can lead to non-testable code in certain
-languages such as C# is not using dependency injection. Consider using dependency injection so that a mock can easily be injected 
+languages such as C# is not using dependency injection. Consider using dependency injection so that a mock can easily be injected
 into your Subject Under Test (SUT) during a unit test.
 
 More information on using dependency injection can be found [here](authoring_example.md#dependency-injection).
