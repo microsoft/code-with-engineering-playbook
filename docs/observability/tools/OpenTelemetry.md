@@ -117,14 +117,13 @@ Use the [Azure OpenTelemetry Tracing plugin library for Java](https://github.com
 
 ### Manual trace context propagation
 
-The trace context is stored in Thread-local storage. When the application flow involves multiple threads (eg. multithreaded work-queue, asynchronous processing with threads handover) then the traces won't get combined into one end-to-end trace chain with automatic context propagation.
-To achieve that you need to manually [propagate the trace context](https://opentelemetry.io/docs/instrumentation/java/manual/#context-propagation) by storing the [trace headers](https://www.w3.org/TR/trace-context/#traceparent-header) along with the work-queue item.
+The trace context is stored in Thread-local storage. When the application flow involves multiple threads (eg. multithreaded work-queue, asynchronous processing with threads handover) then the traces won't get combined into one end-to-end trace chain with automatic [context propagation](https://opentelemetry.io/docs/concepts/signals/traces/#context-propagation).
+To achieve that you need to manually propagate the trace context ([example in Java](https://opentelemetry.io/docs/instrumentation/java/manual/#context-propagation)) by storing the [trace headers](https://www.w3.org/TR/trace-context/#traceparent-header) along with the work-queue item.
 
 ### Telemetry testing
 
-Mission critical telemetry data should be covered by testing. Testing the telemetry is possible when using OpenTelemetry Agent. For testing, the OpenTelemetry Agent should be configured to use [OTLP exporter](https://opentelemetry.io/docs/reference/specification/protocol/exporter/) and point the [OTLP exporter endpoint]((https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md#otlp-exporter-span-metric-and-log-exporters)
+Mission critical telemetry data should be covered by testing. Testing the telemetry is possible when using OpenTelemetry Agent. In automated testing environment he OpenTelemetry Agent can be configured to use [OTLP exporter](https://opentelemetry.io/docs/reference/specification/protocol/exporter/) and point the [OTLP exporter endpoint]((https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md#otlp-exporter-span-metric-and-log-exporters)
 ) to the collector web server. Using mocking servers libraries (eg. MockServer in Java) can help verify the telemetry data pushed to the collector.
-<!-- TBD: link to the Testing telemetry example in opentelemetry-java-docs repo   -->
 
 ## References
 
