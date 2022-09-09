@@ -100,7 +100,7 @@ choco install docfx
 choco install markdownlint-cli
 ```
 
-## 2.  Configure DocFx
+## 2. Configure DocFx
 
 Configuration for DocFx is done in a `docfx.json` file. Store this file in the root of your repository.
 
