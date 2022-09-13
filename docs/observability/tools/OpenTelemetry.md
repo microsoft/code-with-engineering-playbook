@@ -12,19 +12,19 @@ The main two Problems OpenTelemetry solves are: First, vendor neutrality for tra
 
 ![Automatic and Manual Telemetry](../images/automaticamanual.png)
 
-A detailed explanation of OpenTelemetry concepts is out of the scope of this repo. There is plenty of available information about how the SDK and the Agent are configured and how the Exporters, Tracers, Context, and Span's hierarchy work. See the Reference section for valuable OpenTelemetry resources.
+A detailed explanation of OpenTelemetry concepts is out of the scope of this repo. There is plenty of available information about how the SDK and the automatic instrumentation are configured and how the Exporters, Tracers, Context, and Span's hierarchy work. See the Reference section for valuable OpenTelemetry resources.
 
 However, understanding the core implementation patterns will help you know what approach better fits the scenario you are trying to solve. These are three main patterns as follows:
 
-* Automatic telemetry: Support for automatic instrumentation is available for some languages. For those available, OpenTelemetry automated instrumentation (100% codeless) is implemented by running the [OpenTelemetry Agent](https://opentelemetry.io/docs/collector/deployment/). The agent reads a set of predefined environment variables used to configure its behavior and various exporter/collector settings. The agent will intercept all interactions and dependencies and automatically send the telemetry to the configured exporters.
+* Automatic telemetry: Support for automatic instrumentation is available for some languages. OpenTelemetry automated instrumentation (100% codeless) is implemented by monkey-patching mechanism (e.g. [.Net](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation#opentelemetry-net-automatic-instrumentation), [Python](https://opentelemetry.io/docs/instrumentation/python/automatic/#overview)) or Java Agent jar ([Java](https://opentelemetry.io/docs/instrumentation/java/automatic/)). The instrumentation will intercept all interactions and dependencies and automatically send the telemetry to the configured exporters.
 * Manual tracing: This must be done by coding using the OpenTelemetry SDK, managing the `tracer` objects to obtain Spans, and forming instrumented OpenTelemetry Scopes to identify the code segments to be manually traced. Also, by using the @WithSpan annotations (method decorations in C#) to mark whole methods that will be automatically traced.
-* Hybrid approach: Most Production-ready scenarios will require a mix of both techniques, using the OpenTelemetry Agent to collect automatic telemetry and the OpenTelemetry SDK to identify code segments that are important to instrument manually. When considering production-ready scenarios, the hybrid approach is the way to go as it allows for a throughout cover over the whole solution. It means it implements the OpenTelemetry Agent for automatic tracing, combined with the OpenTelemetry SDK for manual instrumentation. It provides automatic context propagation and events correlation out of the box.
+* Hybrid approach: Most Production-ready scenarios will require a mix of both techniques, using the automatic instrumentation to collect automatic telemetry and the OpenTelemetry SDK to identify code segments that are important to instrument manually. When considering production-ready scenarios, the hybrid approach is the way to go as it allows for a throughout cover over the whole solution. It means it implements the OpenTelemetry Agent for automatic tracing, combined with the OpenTelemetry SDK for manual instrumentation. It provides automatic context propagation and events correlation out of the box.
 
 ### Collector
 
 ![Collectors option](../images/collectors.png)
 
-The collector is a separate process that is designed to be a ‘sink’ for telemetry data emitted by many processes, which can then export that data to backend systems. The collector has two different deployment strategies – either running as an agent alongside a service or as a remote application. In general, using both is recommended: the agent would be deployed with your service and run as a separate process or in a sidecar; meanwhile, the collector would be deployed separately, as its own application running in a container or virtual machine. Each agent would forward telemetry data to the collector, which could then export it to a variety of backend systems such as Lightstep, Jaeger, or Prometheus.
+[The collector](https://opentelemetry.io/docs/collector/) is a separate process that is designed to be a ‘sink’ for telemetry data emitted by many processes, which can then export that data to backend systems. The collector has two different deployment strategies – either running as an agent alongside a service or as a remote application. In general, using both is recommended: the agent would be deployed with your service and run as a separate process or in a sidecar; meanwhile, the collector would be deployed separately, as its own application running in a container or virtual machine. Each agent would forward telemetry data to the collector, which could then export it to a variety of backend systems such as Lightstep, Jaeger, or Prometheus.
 
 Regardless of how you choose to instrument or deploy OpenTelemetry, exporters provide powerful options for reporting telemetry data. You can directly export from your service, you can proxy through the collector, or you can aggregate into standalone collectors – or even a mix of these.
 
@@ -81,7 +81,7 @@ Apart from the logging specification and implementation that are still marked as
 
 ## Integration Options with Azure Monitor
 
-There are two possible approaches when integrating an OpenTelemetry instrumented application with Azure Monitor as an OpenTemetry exporter.
+There are two possible approaches when integrating an OpenTelemetry instrumented application with Azure Monitor as an OpenTelemetry exporter.
 
 ### Using the Azure Monitor OpenTelemetry Exporter Library
   
@@ -108,7 +108,7 @@ The main difference between running the OpenTelemetry agent vs. the Application 
 ### Summary
 
 As you may have guessed, there is no "one size fits all" approach when implementing OpenTelemetry with Azure Monitor as a backend. At the time of this writing, if you want to have the flexibility of having different OpenTelemetry backends, you should definitively go with the OpenTelemetry Agent, even though you'd sacrifice all automating tracing flowing to Azure Monitor.
-On the other hand, if you want to get the best of Azure Monitor and still want to instrument your code with the OpenTelemetry SDK, you should use the Application Insights  Agent and manually instrument your code with the OpenTelemetry SDK to get the best of both worlds.
+On the other hand, if you want to get the best of Azure Monitor and still want to instrument your code with the OpenTelemetry SDK, you should use the Application Insights Agent and manually instrument your code with the OpenTelemetry SDK to get the best of both worlds.
 Either way, instrumenting your code with OpenTelemetry seems the right approach as the ecosystem will only get bigger, better, and more robust.
 
 ## Advanced topics
@@ -122,8 +122,8 @@ To achieve that you need to manually propagate the trace context ([example in Ja
 
 ### Telemetry testing
 
-Mission critical telemetry data should be covered by testing. Testing the telemetry is possible when using OpenTelemetry Agent. In automated testing environment he OpenTelemetry Agent can be configured to use [OTLP exporter](https://opentelemetry.io/docs/reference/specification/protocol/exporter/) and point the [OTLP exporter endpoint](https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md#otlp-exporter-span-metric-and-log-exporters)
-to the collector web server. Using mocking servers libraries (eg. MockServer in Java) can help verify the telemetry data pushed to the collector.
+Mission critical telemetry data should be covered by testing. You can cover telemetry by tests by mocking the telemetry collector web server. In automated testing environment the telemetry instrumentation can be configured to use [OTLP exporter](https://opentelemetry.io/docs/reference/specification/protocol/exporter/) and point the [OTLP exporter endpoint](https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md#otlp-exporter-span-metric-and-log-exporters)
+to the collector web server. Using mocking servers libraries (eg. MockServer or WireMock) can help verify the telemetry data pushed to the collector.
 
 ## References
 
