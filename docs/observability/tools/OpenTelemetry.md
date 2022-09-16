@@ -12,19 +12,20 @@ The main two Problems OpenTelemetry solves are: First, vendor neutrality for tra
 
 ![Automatic and Manual Telemetry](../images/automaticamanual.png)
 
-A detailed explanation of OpenTelemetry concepts is out of the scope of this repo. There is plenty of available information about how the SDK and the Agent are configured and how the Exporters, Tracers, Context, and Span's hierarchy work. See the Reference section for valuable OpenTelemetry resources.
+A detailed explanation of OpenTelemetry concepts is out of the scope of this repo. There is plenty of available information about how the SDK and the automatic instrumentation are configured and how the Exporters, Tracers, Context, and Span's hierarchy work. See the Reference section for valuable OpenTelemetry resources.
 
 However, understanding the core implementation patterns will help you know what approach better fits the scenario you are trying to solve. These are three main patterns as follows:
 
-* Automatic telemetry: Support for automatic instrumentation is available for some languages. For those available, OpenTelemetry automated instrumentation (100% codeless) is implemented by running the OpenTelemetry Agent. The agent would be deployed with your service and run as a separate process or in a sidecar. The agent reads a set of predefined environment variables used to configure its behavior and various exporter/collector settings. The agent will intercept all interactions and dependencies and automatically send the telemetry to the configured exporters.
-* Manual tracing: This must be done by coding using the OpenTelemetry SDK, managing the `tracer` objects to obtain Spans, and forming instrumented OpenTelemetry Scopes to identify the code segments to be manually traced. Also, by using the @WithSpan annotations (method decorations in C#) to mark whole methods that will be automatically traced.
-* Hybrid approach: Most Production-ready scenarios will require a mix of both techniques, using the OpenTelemetry Agent to collect automatic telemetry and the OpenTelemetry SDK to identify code segments that are important to instrument manually. When considering production-ready scenarios, the hybrid approach is the way to go as it allows for a throughout cover over the whole solution. It means it implements the OpenTelemetry Agent for automatic tracing, combined with the OpenTelemetry SDK for manual instrumentation. It provides automatic context propagation and events correlation out of the box.
+* Automatic telemetry: Support for automatic instrumentation is available for some languages. OpenTelemetry automatic instrumentation (100% codeless) is typically done through library hooks or monkey-patching library code. Automatic instrumentation will intercept all interactions and dependencies and automatically send the telemetry to the configured exporters. More information about this concept can be found in the [OpenTelemetry instrumentation doc](https://opentelemetry.io/docs/instrumentation/).
+* Manual tracing: This must be done by coding using the OpenTelemetry SDK, managing the `tracer` objects to obtain Spans, and forming instrumented OpenTelemetry Scopes to identify the code segments to be manually traced. Also, by using the @WithSpan annotations (method decorations in C# and Java) to mark whole methods that will be automatically traced.
+* Hybrid approach: Most Production-ready scenarios will require a mix of both techniques, using the automatic instrumentation to collect automatic telemetry and the OpenTelemetry SDK to identify code segments that are important to instrument manually. When considering production-ready scenarios, the hybrid approach is the way to go as it allows for a throughout cover over the whole solution. It provides automatic context propagation and events correlation out of the box.
+
 
 ### Collector
 
 ![Collectors option](../images/collectors.png)
 
-The collector is a separate process that is designed to be a ‘sink’ for telemetry data emitted by many processes, which can then export that data to backend systems. The collector has two different deployment strategies – either running as an agent alongside a service or as a remote application. In general, using both is recommended: the agent would be deployed with your service and run as a separate process or in a sidecar; meanwhile, the collector would be deployed separately, as its own application running in a container or virtual machine. Each agent would forward telemetry data to the collector, which could then export it to a variety of backend systems such as Lightstep, Jaeger, or Prometheus.
+The collector is a separate process that is designed to be a ‘sink’ for telemetry data emitted by many processes, which can then export that data to backend systems. The collector has two different [deployment strategies](https://opentelemetry.io/docs/collector/deployment/) – either running as an agent alongside a service or as a gateway which is a remote application. In general, using both is recommended: the agent would be deployed with your service and run as a separate process or in a sidecar; meanwhile, the collector would be deployed separately, as its own application running in a container or virtual machine. Each agent would forward telemetry data to the collector, which could then export it to a variety of backend systems such as Lightstep, Jaeger, or Prometheus. The agent can be also replaced with the automatic instrumentation if supported. The automatic instrumentation provides the collector capabilities of retrieving, processing and exporting the telemetry.
 
 Regardless of how you choose to instrument or deploy OpenTelemetry, exporters provide powerful options for reporting telemetry data. You can directly export from your service, you can proxy through the collector, or you can aggregate into standalone collectors – or even a mix of these.
 
@@ -73,7 +74,7 @@ From the website:
 
 ## What to watch out for
 
-As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due diligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some features are not in GA, there may be some incompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of CNCF, so it is expected that many more features would reach GA soon.
+As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due diligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some features are not in GA, there may be some incompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of [CNCF](https://www.cncf.io), so it is expected that many more features would reach GA soon.
 
 ### January 2022 UPDATE
 
@@ -81,19 +82,20 @@ Apart from the logging specification and implementation that are still marked as
 
 ## Integration Options with Azure Monitor
 
-There are two possible approaches when integrating an OpenTelemetry instrumented application with Azure Monitor as an OpenTemetry exporter.
-
 ### Using the Azure Monitor OpenTelemetry Exporter Library
   
-  This scenario uses the OpenTelemetry SDK as the core instrumentation library. Basically this means you will instrument your application using the OpenTelemetry libraries, but you will additionally use the Azure Monitor OpenTelemetry Exporter and then added it as an additional exporter with the OpenTelemetry SDK. In this way, the OpenTelemetry traces your application creates will be pushed to your Azure Monitor Instance
+This scenario uses the OpenTelemetry SDK as the core instrumentation library. Basically this means you will instrument your application using the OpenTelemetry libraries, but you will additionally use the Azure Monitor OpenTelemetry Exporter and then added it as an additional exporter with the OpenTelemetry SDK. In this way, the OpenTelemetry traces your application creates will be pushed to your Azure Monitor Instance.
 
-### Using the Application Insights Agent Jar file
+### Using the Application Insights Agent Jar file - Java only
+
+Java OpenTelemetry instrumentation provides another way to integrate with Azure Monitor, by using [Applications Insights Java Agent jar](https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent).
 
 When configuring this option, the Applications Insights Agent file is added when executing the application. The `applicationinsights.json` configuration file must be also be added as part of the applications artifacts. Pay close attention to the preview section, where the `"openTelemetryApiSupport": true,` property is set to true, enabling the agent to intercept OpenTelemetry telemetry created in the application code pushing it to Azure Monitor.
 
-The main difference between running the OpenTelemetry agent vs. the Application Insights agent is demonstrated in the amount of traces getting logged in Azure Monitor. When running in OpenTelemetry only mode, **only the manual traces are getting pushed to Azure Monitor**. No other automatic traces are sent from the application or the OpenTelemetry agent. On the other hand, when running the solution using the Application Insights agent mode, it is essential to highlight that nothing gets logged on Jaeger (or any other OpenTelemetry exporter). All traces will be pushed exclusively to Azure Monitor. However, both manual instrumentation done via the OpenTelemetry SDK and all automatic traces, dependencies, performance counters, and metrics being instrumented by the Application Insights agent are sent to Azure Monitor. Although there is a rich amount of additional data automatically instrumented by the Application Insights agent, it can be deduced that it is not necessarily OpenTelemetry compliant. Only the traces logged by the manual instrumentation using the OpenTelemetry SDK are.
+OpenTelemetry Java Agent instrumentation supports many [libraries and frameworks and application servers](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#supported-libraries-frameworks-application-servers-and-jvms). Application Insights Java Agent adds more [dependencies](https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent#auto-instrumentation) to this list. 
+Therefore, the main difference between running the OpenTelemetry Java Agent vs. the Application Insights Java Agent is demonstrated in the amount of traces getting logged in Azure Monitor. When running with Application Insights Java agent there's more telemetry getting pushed to Azure Monitor. On the other hand, when running the solution using the Application Insights agent mode, it is essential to highlight that nothing gets logged on Jaeger (or any other OpenTelemetry exporter). All traces will be pushed exclusively to Azure Monitor. However, both manual instrumentation done via the OpenTelemetry SDK and all automatic traces, dependencies, performance counters, and metrics being instrumented by the Application Insights agent are sent to Azure Monitor. Although there is a rich amount of additional data automatically instrumented by the Application Insights agent, it can be deduced that it is not necessarily OpenTelemetry compliant. Only the traces logged by the manual instrumentation using the OpenTelemetry SDK are.
 
-### OtelTelemetry vs Application Insights agents compared
+#### OtelTelemetry vs Application Insights agents compared
 
 | Highlight                                                                | OtelTelemetry Agent | App Insights Agent |
 |--------------------------------------------------------------------------|---------------------|--------------------|
@@ -105,10 +107,10 @@ The main difference between running the OpenTelemetry agent vs. the Application 
 | Enriched out of the box telemetry                                        | N                   | Y                  |
 | Unified telemetry backend                                                | N                   | Y                  |
 
-### Summary
+#### Summary
 
 As you may have guessed, there is no "one size fits all" approach when implementing OpenTelemetry with Azure Monitor as a backend. At the time of this writing, if you want to have the flexibility of having different OpenTelemetry backends, you should definitively go with the OpenTelemetry Agent, even though you'd sacrifice all automating tracing flowing to Azure Monitor.
-On the other hand, if you want to get the best of Azure Monitor and still want to instrument your code with the OpenTelemetry SDK, you should use the Application Insights  Agent and manually instrument your code with the OpenTelemetry SDK to get the best of both worlds.
+On the other hand, if you want to get the best of Azure Monitor and still want to instrument your code with the OpenTelemetry SDK, you should use the Application Insights Agent and manually instrument your code with the OpenTelemetry SDK to get the best of both worlds.
 Either way, instrumenting your code with OpenTelemetry seems the right approach as the ecosystem will only get bigger, better, and more robust.
 
 ## Advanced topics
