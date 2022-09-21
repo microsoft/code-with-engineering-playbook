@@ -17,7 +17,7 @@ Feasibility studies can last between 3-12 weeks, depending on specific problem d
 
 ## Who collaborates on feasibility studies?
 
-Collaboration from individuals with diverse skill sets is desired at this stage, including data scientists, data engineers, software engineers, PMs, human experience researchers, and domain experts. It embraces the use of engineering fundamentals, with some flexibility. For example, not all experimentation requires full test coverage and code review. Experimentation is typically not part of a CI/CD pipeline. Artifacts may live in the master branch as a folder excluded from the CI/CD pipeline, or as a separate experimental branch, depending on customer/team preferences.
+Collaboration from individuals with diverse skill sets is desired at this stage, including data scientists, data engineers, software engineers, PMs, human experience researchers, and domain experts. It embraces the use of engineering fundamentals, with some flexibility. For example, not all experimentation requires full test coverage and code review. Experimentation is typically not part of a CI/CD pipeline. Artifacts may live in the `main` branch as a folder excluded from the CI/CD pipeline, or as a separate experimental branch, depending on customer/team preferences.
 
 ## What do feasibility studies entail?
 
