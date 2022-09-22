@@ -159,7 +159,7 @@ Katalon is endorsed by Gartner, IT professionals, and a large testing community.
 
 ![BugBug](./images/bugbug-logo-208x65.png)
 
-**BugBug** is the easiest way to automate tests for web applications. The tool focuses on simplicity, yet allows you to cover all essential test cases without coding. It's an all-in-one solution - you can easily create tests and use the built-in cloud to run them on schedule or from your CI/CD, without changes to your own infrastructure. 
+**BugBug** is an easy way to automate tests for web applications. The tool focuses on simplicity, yet allows you to cover all essential test cases without coding. It's an all-in-one solution - you can easily create tests and use the built-in cloud to run them on schedule or from your CI/CD, without changes to your own infrastructure. 
 
 BugBug is an interesting alternative to Selenium because it's actually a completely different technology. It is based on a Chrome extension that allows BugBug to record and run tests faster than old-school frameworks. 
 
