@@ -6461,6 +6461,26 @@
     Advanced topics
   </a>
   
+    <nav class="md-nav" aria-label="Advanced topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-trace-context-propagation" class="md-nav__link">
+    Manual trace context propagation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telemetry-testing" class="md-nav__link">
+    Telemetry testing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -7261,6 +7281,26 @@
     Advanced topics
   </a>
   
+    <nav class="md-nav" aria-label="Advanced topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-trace-context-propagation" class="md-nav__link">
+    Manual trace context propagation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telemetry-testing" class="md-nav__link">
+    Telemetry testing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -7300,7 +7340,7 @@
 </ul>
 <h3 id="collector">Collector</h3>
 <p><img alt="Collectors option" src="../../images/collectors.png" /></p>
-<p>The collector is a separate process that is designed to be a ‘sink’ for telemetry data emitted by many processes, which can then export that data to backend systems. The collector has two different deployment strategies – either running as an agent alongside a service or as a remote application. In general, using both is recommended: the agent would be deployed with your service and run as a separate process or in a sidecar; meanwhile, the collector would be deployed separately, as its own application running in a container or virtual machine. Each agent would forward telemetry data to the collector, which could then export it to a variety of backend systems such as Lightstep, Jaeger, or Prometheus.</p>
+<p><a href="https://opentelemetry.io/docs/collector/">The collector</a> is a separate process that is designed to be a ‘sink’ for telemetry data emitted by many processes, which can then export that data to backend systems. The collector has two different deployment strategies – either running as an agent alongside a service or as a remote application. In general, using both is recommended: the agent would be deployed with your service and run as a separate process or in a sidecar; meanwhile, the collector would be deployed separately, as its own application running in a container or virtual machine. Each agent would forward telemetry data to the collector, which could then export it to a variety of backend systems such as Lightstep, Jaeger, or Prometheus.</p>
 <p>Regardless of how you choose to instrument or deploy OpenTelemetry, exporters provide powerful options for reporting telemetry data. You can directly export from your service, you can proxy through the collector, or you can aggregate into standalone collectors – or even a mix of these.</p>
 <h3 id="instrumentation-libraries">Instrumentation Libraries</h3>
 <p>A library that enables observability for another library is called an instrumentation library. OpenTelemetry libraries are language specific, currently there is good support for Java, Python, Javascript, dotnet and golang. Support for automatic instrumentation is available for some libraries which make using OpenTelemetry easy and trivial. In case automatic instrumentation is not available, manual instrumentation can be configured by using the OpenTelemetry SDK.</p>
@@ -7338,7 +7378,7 @@
 <h3 id="january-2022-update">January 2022 UPDATE</h3>
 <p>Apart from the logging specification and implementation that are still marked as draft or beta, all other specifications and implementations regarding tracing and metrics are marked as stable or feature-freeze. Many libraries are still on active development whatsoever, so thorough analysis has to be made depending on the language on a feature basis.</p>
 <h2 id="integration-options-with-azure-monitor">Integration Options with Azure Monitor</h2>
-<p>There are two possible approaches when integrating an OpenTelemetry instrumented application with Azure Monitor as an OpenTemetry exporter.</p>
+<p>There are two possible approaches when integrating an OpenTelemetry instrumented application with Azure Monitor as an OpenTelemetry exporter.</p>
 <h3 id="using-the-azure-monitor-opentelemetry-exporter-library">Using the Azure Monitor OpenTelemetry Exporter Library</h3>
 <p>This scenario uses the OpenTelemetry SDK as the core instrumentation library. Basically this means you will instrument your application using the OpenTelemetry libraries, but you will additionally use the Azure Monitor OpenTelemetry Exporter and then added it as an additional exporter with the OpenTelemetry SDK. In this way, the OpenTelemetry traces your application creates will be pushed to your Azure Monitor Instance</p>
 <h3 id="using-the-application-insights-agent-jar-file">Using the Application Insights Agent Jar file</h3>
@@ -7393,10 +7433,16 @@
 </table>
 <h3 id="summary">Summary</h3>
 <p>As you may have guessed, there is no "one size fits all" approach when implementing OpenTelemetry with Azure Monitor as a backend. At the time of this writing, if you want to have the flexibility of having different OpenTelemetry backends, you should definitively go with the OpenTelemetry Agent, even though you'd sacrifice all automating tracing flowing to Azure Monitor.
-On the other hand, if you want to get the best of Azure Monitor and still want to instrument your code with the OpenTelemetry SDK, you should use the Application Insights  Agent and manually instrument your code with the OpenTelemetry SDK to get the best of both worlds.
+On the other hand, if you want to get the best of Azure Monitor and still want to instrument your code with the OpenTelemetry SDK, you should use the Application Insights Agent and manually instrument your code with the OpenTelemetry SDK to get the best of both worlds.
 Either way, instrumenting your code with OpenTelemetry seems the right approach as the ecosystem will only get bigger, better, and more robust.</p>
 <h2 id="advanced-topics">Advanced topics</h2>
 <p>Use the <a href="https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/core/azure-core-tracing-opentelemetry">Azure OpenTelemetry Tracing plugin library for Java</a> to enable distributed tracing across Azure components through OpenTelemetry.</p>
+<h3 id="manual-trace-context-propagation">Manual trace context propagation</h3>
+<p>The trace context is stored in Thread-local storage. When the application flow involves multiple threads (eg. multithreaded work-queue, asynchronous processing) then the traces won't get combined into one end-to-end trace chain with automatic <a href="https://opentelemetry.io/docs/concepts/signals/traces/#context-propagation">context propagation</a>.
+To achieve that you need to manually propagate the trace context (<a href="https://opentelemetry.io/docs/instrumentation/java/manual/#context-propagation">example in Java</a>) by storing the <a href="https://www.w3.org/TR/trace-context/#trace-context-http-headers-format">trace headers</a> along with the work-queue item.</p>
+<h3 id="telemetry-testing">Telemetry testing</h3>
+<p>Mission critical telemetry data should be covered by testing. You can cover telemetry by tests by mocking the telemetry collector web server. In automated testing environment the telemetry instrumentation can be configured to use <a href="https://opentelemetry.io/docs/reference/specification/protocol/exporter/">OTLP exporter</a> and point the <a href="https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md#otlp-exporter-span-metric-and-log-exporters">OTLP exporter endpoint</a>
+to the collector web server. Using mocking servers libraries (eg. MockServer or WireMock) can help verify the telemetry data pushed to the collector.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://opentelemetry.io/">OpenTelemetry Official Site</a></li>
@@ -7434,7 +7480,7 @@ Either way, instrumenting your code with OpenTelemetry seems the right approach 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2022</span>
       
     
   </small>
