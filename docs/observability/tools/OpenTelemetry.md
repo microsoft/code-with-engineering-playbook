@@ -97,7 +97,7 @@ Therefore, the main difference between running the OpenTelemetry Java Agent vs. 
 
 #### OpenTelemetry vs Application Insights agents compared
 
-| Highlight                                                                | OtelTelemetry Agent | App Insights Agent |
+| Highlight                                                                | OpenTelemetry Agent | App Insights Agent |
 |--------------------------------------------------------------------------|---------------------|--------------------|
 | Automatic Telemetry                                                      | Y                   | Y                  |
 | Manual OpenTelemetry                                                     | Y                   | Y                  |
