@@ -125,7 +125,7 @@ TestCraft is a codeless Selenium test automation platform. Its revolutionary AI 
 
 The testers create fully automated test scenarios without coding. Customers find bugs faster, release more frequently, integrate with the CI/CD approach and improve the overall quality of their digital products. This all creates a complete end-to-end testing experience.
 
-[Perfecto (TestCraft) Website](https://www.perfecto.io/products/scriptless) or get it  from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=testcraft.build-release-task)
+[Perfecto (TestCraft) Website](https://www.perfecto.io/) or get it  from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=testcraft.build-release-task)
 
 ### 4. Ranorex Studio
 
