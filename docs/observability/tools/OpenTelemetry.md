@@ -24,7 +24,7 @@ However, understanding the core implementation patterns will help you know what 
 
 ![Collectors option](../images/collectors.png)
 
-The collector is a separate process that is designed to be a ‘sink’ for telemetry data emitted by many processes, which can then export that data to backend systems. The collector has two different deployment strategies – either running as an agent alongside a service or as a remote application. In general, using both is recommended: the agent would be deployed with your service and run as a separate process or in a sidecar; meanwhile, the collector would be deployed separately, as its own application running in a container or virtual machine. Each agent would forward telemetry data to the collector, which could then export it to a variety of backend systems such as Lightstep, Jaeger, or Prometheus.
+[The collector](https://opentelemetry.io/docs/collector/) is a separate process that is designed to be a ‘sink’ for telemetry data emitted by many processes, which can then export that data to backend systems. The collector has two different deployment strategies – either running as an agent alongside a service or as a remote application. In general, using both is recommended: the agent would be deployed with your service and run as a separate process or in a sidecar; meanwhile, the collector would be deployed separately, as its own application running in a container or virtual machine. Each agent would forward telemetry data to the collector, which could then export it to a variety of backend systems such as Lightstep, Jaeger, or Prometheus.
 
 Regardless of how you choose to instrument or deploy OpenTelemetry, exporters provide powerful options for reporting telemetry data. You can directly export from your service, you can proxy through the collector, or you can aggregate into standalone collectors – or even a mix of these.
 
@@ -81,7 +81,7 @@ Apart from the logging specification and implementation that are still marked as
 
 ## Integration Options with Azure Monitor
 
-There are two possible approaches when integrating an OpenTelemetry instrumented application with Azure Monitor as an OpenTemetry exporter.
+There are two possible approaches when integrating an OpenTelemetry instrumented application with Azure Monitor as an OpenTelemetry exporter.
 
 ### Using the Azure Monitor OpenTelemetry Exporter Library
   
@@ -108,12 +108,22 @@ The main difference between running the OpenTelemetry agent vs. the Application 
 ### Summary
 
 As you may have guessed, there is no "one size fits all" approach when implementing OpenTelemetry with Azure Monitor as a backend. At the time of this writing, if you want to have the flexibility of having different OpenTelemetry backends, you should definitively go with the OpenTelemetry Agent, even though you'd sacrifice all automating tracing flowing to Azure Monitor.
-On the other hand, if you want to get the best of Azure Monitor and still want to instrument your code with the OpenTelemetry SDK, you should use the Application Insights  Agent and manually instrument your code with the OpenTelemetry SDK to get the best of both worlds.
+On the other hand, if you want to get the best of Azure Monitor and still want to instrument your code with the OpenTelemetry SDK, you should use the Application Insights Agent and manually instrument your code with the OpenTelemetry SDK to get the best of both worlds.
 Either way, instrumenting your code with OpenTelemetry seems the right approach as the ecosystem will only get bigger, better, and more robust.
 
 ## Advanced topics
 
 Use the [Azure OpenTelemetry Tracing plugin library for Java](https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/core/azure-core-tracing-opentelemetry) to enable distributed tracing across Azure components through OpenTelemetry.
+
+### Manual trace context propagation
+
+The trace context is stored in Thread-local storage. When the application flow involves multiple threads (eg. multithreaded work-queue, asynchronous processing) then the traces won't get combined into one end-to-end trace chain with automatic [context propagation](https://opentelemetry.io/docs/concepts/signals/traces/#context-propagation).
+To achieve that you need to manually propagate the trace context ([example in Java](https://opentelemetry.io/docs/instrumentation/java/manual/#context-propagation)) by storing the [trace headers](https://www.w3.org/TR/trace-context/#trace-context-http-headers-format) along with the work-queue item.
+
+### Telemetry testing
+
+Mission critical telemetry data should be covered by testing. You can cover telemetry by tests by mocking the telemetry collector web server. In automated testing environment the telemetry instrumentation can be configured to use [OTLP exporter](https://opentelemetry.io/docs/reference/specification/protocol/exporter/) and point the [OTLP exporter endpoint](https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md#otlp-exporter-span-metric-and-log-exporters)
+to the collector web server. Using mocking servers libraries (eg. MockServer or WireMock) can help verify the telemetry data pushed to the collector.
 
 ## References
 
