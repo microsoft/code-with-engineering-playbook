@@ -89,7 +89,8 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
   After passing these variables as parameter, it loads values properly.
 
-  ```yaml
+{% raw %}
+```yaml
     - template: steps-deployment.yaml
       parameters:
         azureServiceConnectionId: ${{ variables.azureServiceConnectionId  }}
@@ -105,6 +106,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
       package: $(Pipeline.Workspace)/drop/Application$(Build.BuildId).zip
       startUpCommand: 'gunicorn --bind=0.0.0.0 --workers=4 app:app'
   ```
+{% endraw %}
 
 - Use `issecret` for printing secrets for debugging
 
