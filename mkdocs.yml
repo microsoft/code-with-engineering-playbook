@@ -23,6 +23,7 @@ plugins:
   - tags
   - git-revision-date-localized
   - markdownextradata
+
 markdown_extensions:
   - meta
   - admonition
