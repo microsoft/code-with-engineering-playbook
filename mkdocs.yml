@@ -18,13 +18,11 @@ theme:
   features:
     - navigation.instant
     - navigation.indexes
-
 plugins:
   - search
   - tags
   - git-revision-date-localized
   - markdownextradata
-
 markdown_extensions:
   - meta
   - admonition
