@@ -137,7 +137,7 @@ Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ra
 
 **Ranorex Studio** tests also integrate with Azure DevOps (AzDO), which can be run as part of a build pipeline in AzDO.
 
-[Ranorex Studio Website](https://www.ranorex.com/free-trial/?utm_source=Google&utm_medium=cpc&utm_id=7015a000001ohs3AAA&utm_campaign=14484569941&utm_source=g_c&utm_medium=cpc&utm_content=588982669352&utm_term=p_ranorex%20studio&adgroupid=132316228251&gclid=EAIaIQobChMIsoqzgdzD-AIVygMGAB1pHQrpEAAYASAAEgKed_D_BwE)
+[Ranorex Studio Website](https://www.ranorex.com/free-trial)
 
 ### 5. Katalon Studio
 
