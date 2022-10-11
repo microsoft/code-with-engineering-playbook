@@ -155,6 +155,19 @@ Katalon is endorsed by Gartner, IT professionals, and a large testing community.
 
 [Katalon Studio Website](https://www.katalon.com/) or read about its [integration with AzDO](https://docs.katalon.com/katalon-studio/docs/azure-devops-extension.html#installation)
 
+### 6. BugBug.io
+
+![BugBug](./images/bugbug-logo-208x65.png)
+
+**BugBug** is an easy way to automate tests for web applications. The tool focuses on simplicity, yet allows you to cover all essential test cases without coding. It's an all-in-one solution - you can easily create tests and use the built-in cloud to run them on schedule or from your CI/CD, without changes to your own infrastructure. 
+
+BugBug is an interesting alternative to Selenium because it's actually a completely different technology. It is based on a Chrome extension that allows BugBug to record and run tests faster than old-school frameworks. 
+
+The biggest advantage of BugBug is its user-friendliness. Most tests created with BugBug simply work out of the box. This makes it easier for non-technical people to maintain tests - with BugBug you can save money on hiring a QA engineer. 
+
+[BugBug Website](https://bugbug.io?utm_source=microsoft_github&utm_medium=referral)
+
+
 ## Conclusion
 
 Hope you learned various aspects of E2E testing like its processes, metrics, the difference between Unit, Integration  and E2E testing, and the various recommended E2E test frameworks and tools.
