@@ -137,6 +137,7 @@ Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ra
 
 **Ranorex Studio** tests also integrate with Azure DevOps (AzDO), which can be run as part of a build pipeline in AzDO.
 
+[Ranorex Studio Website](https://www.ranorex.com/free-trial/?utm_source=Google&utm_medium=cpc&utm_id=7015a000001ohs3AAA&utm_campaign=14484569941&utm_source=g_c&utm_medium=cpc&utm_content=588982669352&utm_term=p_ranorex%20studio&adgroupid=132316228251&gclid=EAIaIQobChMIsoqzgdzD-AIVygMGAB1pHQrpEAAYASAAEgKed_D_BwE)
 
 ### 5. Katalon Studio
 
@@ -158,11 +159,11 @@ Katalon is endorsed by Gartner, IT professionals, and a large testing community.
 
 ![BugBug](./images/bugbug-logo-208x65.png)
 
-**BugBug** is an easy way to automate tests for web applications. The tool focuses on simplicity, yet allows you to cover all essential test cases without coding. It's an all-in-one solution - you can easily create tests and use the built-in cloud to run them on schedule or from your CI/CD, without changes to your own infrastructure.
+**BugBug** is an easy way to automate tests for web applications. The tool focuses on simplicity, yet allows you to cover all essential test cases without coding. It's an all-in-one solution - you can easily create tests and use the built-in cloud to run them on schedule or from your CI/CD, without changes to your own infrastructure. 
 
-BugBug is an interesting alternative to Selenium because it's actually a completely different technology. It is based on a Chrome extension that allows BugBug to record and run tests faster than old-school frameworks.
+BugBug is an interesting alternative to Selenium because it's actually a completely different technology. It is based on a Chrome extension that allows BugBug to record and run tests faster than old-school frameworks. 
 
-The biggest advantage of BugBug is its user-friendliness. Most tests created with BugBug simply work out of the box. This makes it easier for non-technical people to maintain tests - with BugBug you can save money on hiring a QA engineer.
+The biggest advantage of BugBug is its user-friendliness. Most tests created with BugBug simply work out of the box. This makes it easier for non-technical people to maintain tests - with BugBug you can save money on hiring a QA engineer. 
 
 [BugBug Website](https://bugbug.io?utm_source=microsoft_github&utm_medium=referral)
 
