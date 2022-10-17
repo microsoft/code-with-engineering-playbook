@@ -20,7 +20,8 @@
     {"pattern": "^https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models"},
     {"pattern": "^https://www.cmu.edu/iso/governance/guidelines/data-classification.html"},
     {"pattern": "^https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/"},
-    {"pattern": "^https://www.perfecto.io/"}
+    {"pattern": "^https://www.perfecto.io/"},
+    {"pattern": "^https://www.ranorex.com/free-trial/"}
   ],
   "httpHeaders": [
     {
