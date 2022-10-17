@@ -1,10 +1,10 @@
 # Feasibility Studies
 
 The main goal of feasibility studies is to assess whether it is feasible to solve the problem satisfactorily using ML with the available data. We want to avoid investing too much in the solution before we have:
-*	Sufficient evidence that a solution would be the best technical solution given the business case
-*	Sufficient evidence that a solution is compatible with the problem context
-*	Sufficient evidence that a solution is possible
-*	Some vetted direction on what a solution should look like
+* Sufficient evidence that a solution would be the best technical solution given the business case
+* Sufficient evidence that a solution is compatible with the problem context
+* Sufficient evidence that a solution is possible
+* Some vetted direction on what a solution should look like
 This effort ensures quality solutions backed by the appropriate, thorough amount of consideration and evidence.
 
 ## When are feasibility studies useful?
@@ -23,25 +23,25 @@ Collaboration from individuals with diverse skill sets is desired at this stage,
 
 ### Problem definition and desired outcome
 
-*	Ensure that the problem is complex enough that coding rules or manual scaling is unrealistic
-*	Clear definition of the problem from business and technical perspectives
+* Ensure that the problem is complex enough that coding rules or manual scaling is unrealistic
+* Clear definition of the problem from business and technical perspectives
 
 ### Deep contextual understanding
 
 Confirm that the following questions can be answered based on what was learned during the Discovery Phase of the project. For items that can not be satisfactorily answered, undertake additional investigation to answer.
-*	Understanding the people who are using and/or affected by the solution
-*	Understanding the contextual forces at play around the problem, including goals, culture, and historical context
-*	To accomplish this a researcher will:
-  *	Collaborate with customers and colleagues to explore the landscape of people who relate to and may be affected by the problem space being explored (Users, stakeholders, subject matter experts, etc)
-  *	Formulate the research question(s) to be addressed
-  *	Select and design research to best serve the research question(s) 
-  *	Identify and select representative research participants across the problem space with whom to conduct the research
-  *	Construct a research plan and necessary preparation documents for the selected research method(s)
-  *	Conduct research activity with the participants via the selected method(s)
-  *	Synthesize, analyze, and interpret research findings
-  *	Where relevant, build frameworks, artefacts and processes that help explore the findings and implications of the research across the team
-  *	Share what was uncovered and understood, and the implications thereof across the engagement team and relevant stakeholders.
-*	If the above research was conducted during the Discovery phase, it should be reviewed, and any substantial knowledge gaps should be identified and filled by following the above process.
+* Understanding the people who are using and/or affected by the solution
+* Understanding the contextual forces at play around the problem, including goals, culture, and historical context
+* To accomplish this a researcher will:
+* Collaborate with customers and colleagues to explore the landscape of people who relate to and may be affected by the problem space being explored (Users, stakeholders, subject matter experts, etc)
+* Formulate the research question(s) to be addressed
+* Select and design research to best serve the research question(s)
+* Identify and select representative research participants across the problem space with whom to conduct the research
+* Construct a research plan and necessary preparation documents for the selected research method(s)
+* Conduct research activity with the participants via the selected method(s)
+* Synthesize, analyze, and interpret research findings
+* Where relevant, build frameworks, artefacts and processes that help explore the findings and implications of the research across the team
+* Share what was uncovered and understood, and the implications thereof across the engagement team and relevant stakeholders.
+* If the above research was conducted during the Discovery phase, it should be reviewed, and any substantial knowledge gaps should be identified and filled by following the above process.
 
 ### Data access
 
@@ -69,13 +69,13 @@ Confirm that the following questions can be answered based on what was learned d
 
 ### Concept ideation and iteration
 
-*	Develop value proposition(s) for users and stakeholders based on the contextual understanding developed through the discovery process (e.g. key elements of value, benefits)
-*	As relevant, make use of
-  *	Co-creation with team 
-  *	Co-creation with users and stakeholders
-*	As relevant, create vignettes, narratives or other materials to communicate the concept
-*	Identify the next set of hypotheses or unknowns to be tested (see concept testing)
-*	Revisit and iterate on the concept throughout discovery as understanding of the problem space evolves
+* Develop value proposition(s) for users and stakeholders based on the contextual understanding developed through the discovery process (e.g. key elements of value, benefits)
+* As relevant, make use of
+* Co-creation with team
+* Co-creation with users and stakeholders
+* As relevant, create vignettes, narratives or other materials to communicate the concept
+* Identify the next set of hypotheses or unknowns to be tested (see concept testing)
+* Revisit and iterate on the concept throughout discovery as understanding of the problem space evolves
 
 ### Exploratory data analysis (EDA)
 
@@ -106,13 +106,13 @@ Confirm that the following questions can be answered based on what was learned d
 
 ### Concept testing
 
-*	Where relevant, to test the value proposition, concepts or aspects of the experience
-  *	Plan user, stakeholder and expert research
-  *	Develop and design necessary research materials 
-  *	Synthesize and evaluate feedback to incorporate into concept development
-*	Continue to iterate and test different elements of the concept as necessary, including testing to best serve RAI goals and guidelines
-*	Ensure that the proposed solution and framing are compatible with and acceptable to affected people
-*	Ensure that the proposed solution and framing is compatible with existing business goals and context
+* Where relevant, to test the value proposition, concepts or aspects of the experience
+* Plan user, stakeholder and expert research
+* Develop and design necessary research materials
+* Synthesize and evaluate feedback to incorporate into concept development
+* Continue to iterate and test different elements of the concept as necessary, including testing to best serve RAI goals and guidelines
+* Ensure that the proposed solution and framing are compatible with and acceptable to affected people
+* Ensure that the proposed solution and framing is compatible with existing business goals and context
 
 ### Risk assessment
 
@@ -121,9 +121,9 @@ Confirm that the following questions can be answered based on what was learned d
 ### Responsible AI
 
 * Consideration of responsible AI principles
-*	Understanding of users and stakeholders’ contexts, needs and concerns to inform development of RAI
-*	Testing AI concept and experience elements with users and stakeholders
-*	Discussion and feedback from diverse perspectives around any responsible AI concerns
+* Understanding of users and stakeholders’ contexts, needs and concerns to inform development of RAI
+* Testing AI concept and experience elements with users and stakeholders
+* Discussion and feedback from diverse perspectives around any responsible AI concerns
 
 
 ## Output of a feasibility study
