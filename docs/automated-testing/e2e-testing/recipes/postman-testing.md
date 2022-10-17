@@ -161,7 +161,7 @@ Ending with this approach has the following downsides:
 
 ### Use Case - E2E testing With Continuous Integration and Newman
 
-A developer or qa analyst may have an existing API test suite of local Postman Collections that follow security best practise for development, however, they now want E2E tests to run as part of automated CI pipeline. With the advent of Newman, you can now more readily use Postman to craft an API test suite executable in your CI.
+A developer or qa analyst may have an existing API test suite of local Postman Collections that follow security best practices for development, however, they now want E2E tests to run as part of automated CI pipeline. With the advent of Newman, you can now more readily use Postman to craft an API test suite executable in your CI.
 
 Steps may look like the following:
 
