@@ -6,7 +6,7 @@
 - Postman Environment Files
 - Postman Scripts
 
-[Newman](https://github.com/postmanlabs/newman) is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line. As input to Newman we are looking to configure the collection file path and the environment file path to unlock End-to-end (E2E) automated tests. Key features highlighted in this guidance include:
+[Newman](https://github.com/postmanlabs/newman) is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line. As input to Newman we are looking to configure the collection file path and the environment file path to unlock automated End-to-end (E2E) tests. Key features highlighted in this guidance include:
 
 - Newman Run Command
 
