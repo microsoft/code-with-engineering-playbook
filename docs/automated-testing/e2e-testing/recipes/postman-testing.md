@@ -42,7 +42,10 @@ A developer or qa analyst would like to locally test input data against API serv
 
 Steps may look like the following:
 
-1. For each of your existing API services, use the Postman IDE's import feature to import its OpenAPI Spec (Swagger) as a Postman Collection. If a service is not already using Swagger, look for language specific guidance on how to use Swagger to generate an OpenAPI Spec for your service. Finally, if your service only has a few endpoints, read Postman docs for guidance on how to manually build a Postman Collection.
+1. For each of your existing API services, use the Postman IDE's import feature to import its OpenAPI Spec (Swagger) as a Postman Collection.
+
+    If a service is not already using Swagger, look for language specific guidance on how to use Swagger to generate an OpenAPI Spec for your service. Finally, if your service only has a few endpoints, read Postman docs for guidance on how to manually build a Postman Collection.
+
 2. Provide extra clarity about a request in a Postman Collection by using Postman's Example feature to save its responses as examples. You can also simply add an example manually. Please read Postman docs for guidance on how to specify examples.
 3. Combine each Postman Collection into a centralized Postman Collection.
 4. Build Postman Environment files (local, Dev and/or QA) and parameterize all saved requests of the Postman Collection in a way that references the Postman Environment files.
