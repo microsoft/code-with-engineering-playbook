@@ -34,11 +34,11 @@ For specific instruction on installing Newman, visit the [NPMJS Newman package](
 
 ## Implementing Automated End-to-end (E2E) Tests With Postman Collections
 
-In order to provide guidance on implementing E2E automated tests with Postman, the section below begins with a use case that explains the trade-offs a dev or qa analyst might face when intending to use Postman for early testing. Each use case represents scenarios that facilitate the end goal of automated E2E tests.
+In order to provide guidance on implementing E2E automated tests with Postman, the section below begins with a use case that explains the trade-offs a dev or QA analyst might face when intending to use Postman for early testing. Each use case represents scenarios that facilitate the end goal of automated E2E tests.
 
 ### Use Case - Hands-on Functional Testing Of Endpoints
 
-A developer or qa analyst would like to locally test input data against API services that all share a common oauth2 token. As a result, they use Postman to craft an API test suite of Postman Collections that can be locally executed against individual endpoints across environments. After validating that their Postman Collection works, they share it with their team.
+A developer or QA analyst would like to locally test input data against API services all sharing a common oauth2 token. As a result, they use Postman to craft an API test suite of Postman Collections that can be locally executed against individual endpoints across environments. After validating that their Postman Collection works, they share it with their team.
 
 Steps may look like the following:
 
@@ -96,7 +96,7 @@ Ending with this approach has the following downsides:
 
 ### Use Case - Hands-on Functional Testing Of Endpoints with Azure Key Vault and Azure App Config
 
-A developer or qa analyst may have an existing API test suite of Postman Collections, however, they now want to discourage unsafe sharing of secrets. As a result, they build a script that connects to both Keyvault and Azure App Config in order to automatically generate Postman Environment files instead of checking them into a shared repository.
+A developer or QA analyst may have an existing API test suite of Postman Collections, however, they now want to discourage unsafe sharing of secrets. As a result, they build a script that connects to both Key Vault and Azure App Config in order to automatically generate Postman Environment files instead of checking them into a shared repository.
 
 Steps may look like the following:
 
@@ -116,7 +116,7 @@ Steps may look like the following:
     az login
     # validate login
     az account show
-    # validate access to Keyvault
+    # validate access to Key Vault
     az keyvault secret list --vault-name "$KeyvaultName"
     # validate access to App Configuration
     az appconfig kv list --name "$AppConfigName"
@@ -153,7 +153,7 @@ Steps may look like the following:
 This approach has the following upsides:
 
 - Inherits all the upsides of the previous case.
-- Discourages unsafe sharing of secrets. Secrets are now pulled from Key Vault via Azure CLI. Keyvault Uri also no longer needs to be shared for access to auth tokens.
+- Discourages unsafe sharing of secrets. Secrets are now pulled from Key Vault via Azure CLI. Key Vault Uri also no longer needs to be shared for access to auth tokens.
 - Single source of truth for Postman Environment files. There's no longer a need to share them via repo.
 - Developer only has to manage a single Postman Collection.
 
@@ -164,7 +164,7 @@ Ending with this approach has the following downsides:
 
 ### Use Case - E2E testing With Continuous Integration and Newman
 
-A developer or qa analyst may have an existing API test suite of local Postman Collections that follow security best practices for development, however, they now want E2E tests to run as part of automated CI pipeline. With the advent of Newman, you can now more readily use Postman to craft an API test suite executable in your CI.
+A developer or QA analyst may have an existing API test suite of local Postman Collections that follow security best practices for development, however, they now want E2E tests to run as part of automated CI pipeline. With the advent of Newman, you can now more readily use Postman to craft an API test suite executable in your CI.
 
 Steps may look like the following:
 
@@ -227,4 +227,4 @@ This approach has the following upside:
 
 Ending with this approach has the following downside:
 
-- Postman Environment files are no longer being output to a local environment for hands-on manual testing. However, this can be solved by managing 2 scripts. 1 script to output environment variables locally and 1 for ci. Of course, reintroducing the script that outputs environment files invites the opportunity for files with secrets to get checked into git.
+- Postman Environment files are no longer being output to a local environment for hands-on manual testing. However, this can be solved by managing 2 scripts.
