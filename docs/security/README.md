@@ -14,6 +14,7 @@ When requesting a security review for your application, please make sure you hav
 - [Web Application Security Quick Reference](https://owasp.org/www-pdf-archive//OWASP_Web_Application_Security_Quick_Reference_Guide_0.3.pdf)
 - [Security Mindset/Creating a Security Program Quick Start](https://github.com/OWASP/Quick-Start-Guide/blob/master/OWASP%20Quick%20Start%20Guide.pdf?raw=true)
 - [Automated Secret Detection](./secret-detection.md)
+- [Threat Modelling](./threat-modelling.md)
 
 ## Azure DevOps Security
 
