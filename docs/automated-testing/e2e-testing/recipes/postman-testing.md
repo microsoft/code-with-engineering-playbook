@@ -1,4 +1,14 @@
-# Postman and Newman
+# Overview
+
+This purpose of this document is to provide guidance on how to use Newman in your CI/CD pipeline to run End-to-end (E2E) tests defined in Postman Collections while following security best practices.
+
+First, we'll introduce Postman and Newman and then outline several Postman testing use cases that answer why you may want to go beyond local testing with Postman Collections.
+
+In the final use case, we are looking to use a shell script that references the Postman Collection file path and Environment file path as inputs to Newman. Below is a flow diagram representing the outcome of the final use case:
+
+[![E2E Postman Script Dependencies](https://mermaid.ink/img/pako:eNqVk11vmzAUhv_KkXsLjK8Y8MWklNCpWtdVXdqLjl14cEisgUHYrM2S_PeZwEWym6mWL6yj93nPh473pGhLJIxset5tYX2dSzBHDT-nQMVZxe1RYzfYbxDS2w_pCh5Eh7WQOKmv95OsEjWetPA4yIdW6YbLzMc1Kq2cTnnHSY6ynDmw7Y8Hz4G7diPkAdLvc7q6HUpYvsAaJZf6x7nad-BTtmYw20Mmf8Mz79UBVhf0iC-7DtJWVmJzYRE4c1uDwt5WWPSoJ9Ovy0FvfUh7LI1h9m85n3Fncg31ZUWhA49P92cV-RnoseUD3MwOGvtGSF7DPb6OkvTudrZQeleboYIZXc2ukiR2KbWU7ttfyK6CIJjf9qso9Zb53ds5tpqxuEiSd2DZjFH6LuzmDIuL_2DEImZfGi5Ks1v70SYneosN5oSZZ4nVOMec5PJopHzQ7bedLAjT_YAWGbqSa1wJbpawIWaCtTLRjkvC9uSNMJ8mThSFEV3QYBEufD-0yI4wSh3Pc10vimPqxkkUHi3yp22Ng-tESRj41IvNdT0vpBbBUui2_zKt_-kXnFK8nICxjuNfKID5aw?type=png)](https://mermaid.live/edit#pako:eNqVk11vmzAUhv_KkXsLjK8Y8MWklNCpWtdVXdqLjl14cEisgUHYrM2S_PeZwEWym6mWL6yj93nPh473pGhLJIxset5tYX2dSzBHDT-nQMVZxe1RYzfYbxDS2w_pCh5Eh7WQOKmv95OsEjWetPA4yIdW6YbLzMc1Kq2cTnnHSY6ynDmw7Y8Hz4G7diPkAdLvc7q6HUpYvsAaJZf6x7nad-BTtmYw20Mmf8Mz79UBVhf0iC-7DtJWVmJzYRE4c1uDwt5WWPSoJ9Ovy0FvfUh7LI1h9m85n3Fncg31ZUWhA49P92cV-RnoseUD3MwOGvtGSF7DPb6OkvTudrZQeleboYIZXc2ukiR2KbWU7ttfyK6CIJjf9qso9Zb53ds5tpqxuEiSd2DZjFH6LuzmDIuL_2DEImZfGi5Ks1v70SYneosN5oSZZ4nVOMec5PJopHzQ7bedLAjT_YAWGbqSa1wJbpawIWaCtTLRjkvC9uSNMJ8mThSFEV3QYBEufD-0yI4wSh3Pc10vimPqxkkUHi3yp22Ng-tESRj41IvNdT0vpBbBUui2_zKt_-kXnFK8nICxjuNfKID5aw)
+
+## Postman and Newman
 
 [Postman](https://www.postman.com/) is a free API platform for testing APIs. Key features highlighted in this guidance include:
 
@@ -6,27 +16,27 @@
 - Postman Environment Files
 - Postman Scripts
 
-[Newman](https://github.com/postmanlabs/newman) is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line. As input to Newman we are looking to configure the collection file path and the environment file path to unlock automated End-to-end (E2E) tests. Key features highlighted in this guidance include:
+[Newman](https://github.com/postmanlabs/newman) is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line. Key features highlighted in this guidance include:
 
 - Newman Run Command
 
-## What is a Collection
+### What is a Collection
 
-A Postman Collection is a group of executable saved requests. A collection can be exported as an json file.
+A Postman Collection is a group of executable saved requests. A collection can be exported as a json file.
 
-## What is an Environment File
+### What is an Environment File
 
 A Postman Environment file holds environment variables that can be referenced by a valid Postman Collection.
 
-## What is a Postman Script
+### What is a Postman Script
 
 A Postman Script is Javascript hosted within a Postman Collection that can be written to execute against your Postman Collection and Environment File.
 
-## What is the Newman Run Command
+### What is the Newman Run Command
 
 A Newman CLI command that allows you to specify a Postman Collection to be run.
 
-## Installing Postman and Newman
+### Installing Postman and Newman
 
 For specific instruction on installing Postman, visit the [Downloads Postman](https://www.postman.com/downloads/) page.
 
@@ -34,7 +44,7 @@ For specific instruction on installing Newman, visit the [NPMJS Newman package](
 
 ## Implementing Automated End-to-end (E2E) Tests With Postman Collections
 
-In order to provide guidance on implementing E2E automated tests with Postman, the section below begins with a use case that explains the trade-offs a dev or QA analyst might face when intending to use Postman for early testing. Each use case represents scenarios that facilitate the end goal of automated E2E tests.
+In order to provide guidance on implementing automated E2E tests with Postman, the section below begins with a use case that explains the trade-offs a dev or QA analyst might face when intending to use Postman for early testing. Each use case represents scenarios that facilitate the end goal of automated E2E tests.
 
 ### Use Case - Hands-on Functional Testing Of Endpoints
 
