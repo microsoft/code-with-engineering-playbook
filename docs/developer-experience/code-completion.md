@@ -1,10 +1,12 @@
 # Code Completion
 
-Code completion is a feature used in live programming that actively reads the users current code in context to present code suggestions in real-time to the user. The code suggestions may be intended to complete the code for efficiency or improve the code for quality.
+Code completion is a feature used in live programming that actively reads the user's current code in context to present code suggestions in real-time. The code suggestions may be intended to complete the code for efficiency or improve the code quality.
 
 ## Code Completion Tools
 
 ### 1. GitHub Co-Pilot: A Code Completion Tool
+
+![GitHub Code Pilot](./images/github-copilot.png)
 
 #### Benefits
 
