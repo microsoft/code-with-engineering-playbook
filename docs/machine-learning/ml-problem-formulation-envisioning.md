@@ -79,7 +79,7 @@ During the envisioning phase and related efforts, the following guides may prove
 9. Define the minimum performance needed to reach the business objective.
 10. Identify any known constraints around non-functional requirements that would have to be considered. (e.g., computation times)
 11. Provide a framing for this problem based on understanding from discovery activities and participant input (supervised/unsupervised, online/offline, etc.)
-12. Identify if human expertise is available.
+12. Confirm that human expertise is available.
 13. Identify any restrictions on the type of approaches which can be used? (e.g., does the solution need to be completely explainable?)
 14. List the assumptions you or others have made so far. Verify these assumptions if possible.
 15. Define some initial hypothesis statements to be explored.
