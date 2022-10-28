@@ -72,7 +72,7 @@ During the envisioning phase and related efforts, the following guides may prove
    3.	Potential impact of intended outcomes
 3. What are the current solutions/workarounds (if any). Is it possible to solve manually? How?
 4. Review the work that has been done in this area so far.
-5. Identify if this solution need to fit into existing business IT systems.
+5. Identify if this solution needs to fit into existing business IT/production systems.
 6. Identify the existing or proposed business processes that this solution must fit within.
 7. Determine how performance should be measured.
 8. Confirm the performance measure is aligned with the business objective.
