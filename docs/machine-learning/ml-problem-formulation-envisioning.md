@@ -10,7 +10,7 @@ The main goals of the discovery process are:
 *	Examine the nature and dimensions of the problem domain, and reframe where relevant to ensure appropriate problem scoping 
 *	State how potential hypothesized solutions might interface with the existing context, and how their performance might be measured
 *	Determine what data is available to solve the problem, as well as the availability, preparedness, and origin of that data. Special care should be taken to understand how the data is collected, and if any potential bias or framing might be affecting it.
-*	Understand the capabilities and working practices of  the combined team of data scientists, designers and researchers involved in the project.¬¬
+*	Understand the capabilities and working practices of the combined team of data scientists, designers and researchers involved in the project.
 *	Ensure all parties have the same understanding of the scope and next steps (e.g., onboarding, data exploration workshop)
 
 The Discovery phase seeks to understand the social, technical, and organizational aspects of a problem space, with deep attention paid to potential users and people impacted by a Machine Learning solution. This is particularly important in AI projects given the amplification and acceleration of bias and error inherent in this type of technology. Focusing on the social, technical, and organizational aspects helps to create an awareness of the opportunities and constraints of possible future scenarios and solutions. 
