@@ -74,4 +74,3 @@ For more information about additional configuration and usage, see the official 
 [`example.yaml`]: https://github.com/get-woke/woke/blob/main/example.yaml
 [Run woke]: https://github.com/marketplace/actions/run-woke
 [Run woke with reviewdog]: https://github.com/marketplace/actions/run-woke-with-reviewdog
-[docs]: https://docs.getwoke.tech/
