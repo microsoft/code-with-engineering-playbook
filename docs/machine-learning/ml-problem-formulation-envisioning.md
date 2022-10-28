@@ -66,7 +66,7 @@ During the envisioning phase and related efforts, the following guides may prove
 
 1. Define the objective in business terms, if there is a lack of consensus re-visit previous work undertaken to achieve this objective definition, and consider any new information or perspectives brought forward.
 2. Review the understanding of the problem context that was gathered through research and sensemaking activities prior to the workshop, including but not limited to:
-   0.	History of the problem
+   1.	History of the problem
    1.	Human context and impact
    2.	Social and organizational context
    3.	Potential impact of intended outcomes
