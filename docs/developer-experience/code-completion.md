@@ -38,7 +38,7 @@ Docs:
 
 ### 2. VS Code's Intellisense
 
-![Visual Studio Code - Intellisense](./images/VSCODE.png)
+![Visual Studio Code - Intellisense](./images/VSCode.png)
 
 Benefits:
 
