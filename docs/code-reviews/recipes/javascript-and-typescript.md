@@ -18,11 +18,17 @@ TypeScript code should be linted with [ESLint](https://github.com/eslint/eslint)
 To [install and configure linting with ESLint](https://typescript-eslint.io/),
 install the following packages as dev-dependencies:
 
+{% raw %}
+
 ```bash
 npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
+{% endraw %}
+
 Add a `.eslintrc.js` to the root of your project:
+
+{% raw %}
 
 ```javascript
 module.exports = {
@@ -39,7 +45,11 @@ module.exports = {
 };
 ```
 
+{% endraw %}
+
 Add the following to the `scripts` of your `package.json`:
+
+{% raw %}
 
 ```json
 "scripts": {
@@ -47,14 +57,20 @@ Add the following to the `scripts` of your `package.json`:
 }
 ```
 
+{% endraw %}
+
 This will lint all `.js`, `.jsx`, `.ts`, `.tsx` files in your project and omit any files or
 directories specified in your `.gitignore`.
 
 You can run linting with:
 
+{% raw %}
+
 ```bash
 npm run lint
 ```
+
+{% endraw %}
 
 ## Setting up Prettier
 
@@ -64,11 +80,17 @@ npm run lint
 
 Install with `npm` as a dev-dependency:
 
+{% raw %}
+
 ```bash
 npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
+{% endraw %}
+
 Add `prettier` to your `.eslintrc.js`:
+
+{% raw %}
 
 ```javascript
 module.exports = {
@@ -87,6 +109,8 @@ module.exports = {
 };
 ```
 
+{% endraw %}
+
 This will apply the `prettier` rule set when linting with ESLint.
 
 ## Auto formatting with VS Code
@@ -96,6 +120,8 @@ VS Code can be configured to automatically perform `eslint --fix` on save.
 Create a `.vscode` folder in the root of your project and add the following to your
 `.vscode/settings.json`:
 
+{% raw %}
+
 ```json
 {
   "editor.codeActionsOnSave": {
@@ -104,7 +130,11 @@ Create a `.vscode` folder in the root of your project and add the following to y
 }
 ```
 
+{% endraw %}
+
 By default, we use the following overrides should be added to the VS Code configuration to standardize on single quotes, a four space drop, and to do ESLinting:
+
+{% raw %}
 
 ```json
 {
@@ -114,9 +144,13 @@ By default, we use the following overrides should be added to the VS Code config
 }
 ```
 
+{% endraw %}
+
 ## Build Validation
 
 To automate this process in Azure Devops you can add the following snippet to your pipeline definition yaml file. This will lint any scripts in the `./scripts/` folder.
+
+{% raw %}
 
 ```yaml
 - task: Npm@1
@@ -126,6 +160,8 @@ To automate this process in Azure Devops you can add the following snippet to yo
     customCommand: 'run lint'
     workingDir: './scripts/'
 ```
+
+{% endraw %}
 
 ## Pre-commit hooks
 

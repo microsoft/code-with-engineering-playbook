@@ -25,12 +25,16 @@
 
 ### Results
 
+{% raw %}
+
 ```md
 In bullet points document the results from the test.  
 - Attach any documents supporting the test results.
 - Add links to the dashboard for metrics and logs such as Application Insights.
 - Capture screenshots for metrics and include it in the results. Good candidate for this is CPU/Memory/Disk usage.
 ```
+
+{% endraw %}
 
 ### Observations
 

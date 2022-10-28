@@ -124,6 +124,8 @@ your unit tests.
 Let's assume we have a class `MyObject` with a method `TrySomething` that interacts with an array of strings, but if the
 array has no elements, it will return false. We want to write a test that checks the case where array has no elements:
 
+{% raw %}
+
 ```csharp
 [Fact]
 public void TrySomething_NoElements_ReturnsFalse()
@@ -139,6 +141,8 @@ public void TrySomething_NoElements_ReturnsFalse()
     Assert.False(myReturn);
 }
 ```
+
+{% endraw %}
 
 #### Keep tests small and test only one thing
 

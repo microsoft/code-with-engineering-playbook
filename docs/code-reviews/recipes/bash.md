@@ -19,15 +19,23 @@ Shellcheck extension should be used in VS Code, it provides static code analysis
 
 For macOS
 
+{% raw %}
+
 ```bash
 brew install shellcheck
 ```
 
+{% endraw %}
+
 For Ubuntu:
+
+{% raw %}
 
 ```bash
 apt-get install shellcheck
 ```
+
+{% endraw %}
 
 #### Install shellcheck on vscode
 
@@ -42,9 +50,13 @@ To use shell-format in vscode do the following:
 
 #### Install shfmt(Requires Go 1.13 or later) on your machine
 
+{% raw %}
+
 ```bash
 GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
 ```
+
+{% endraw %}
 
 #### Install shell-format on vscode
 
@@ -53,6 +65,8 @@ Find the shell-format extension in vscode and install it.
 ## Build Validation
 
 To automate this process in Azure DevOps you can add the following snippet to you `azure-pipelines.yaml` file. This will lint any scripts in the `./scripts/` folder.
+
+{% raw %}
 
 ```yaml
 - bash: |
@@ -65,7 +79,11 @@ To automate this process in Azure DevOps you can add the following snippet to yo
   displayName: "Validate Scripts: Shellcheck"
 ```
 
+{% endraw %}
+
 Also, your shell scripts can be formatted in your build pipeline by using the `shfmt` tool. To integrate `shfmt` in your build pipeline do the following:
+
+{% raw %}
 
 ```yaml
 - bash: |
@@ -74,7 +92,11 @@ Also, your shell scripts can be formatted in your build pipeline by using the `s
   displayName: "Format Scripts: shfmt"
 ```
 
+{% endraw %}
+
 Unit testing using [shunit2](https://github.com/kward/shunit2) can also be added to the build pipeline, using the following block:
+
+{% raw %}
 
 ```yaml
 - bash: |
@@ -82,6 +104,8 @@ Unit testing using [shunit2](https://github.com/kward/shunit2) can also be added
     ./shunit2
   displayName: "Format Scripts: shfmt"
 ```
+
+{% endraw %}
 
 ## Pre-Commit Hooks
 
@@ -96,6 +120,8 @@ Alternatively you can run `brew install pre-commit` if you are using homebrew.
 
 Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-commit by adding it to .pre-commit-config.yaml file like below.
 
+{% raw %}
+
 ```yaml
 -   repo: git://github.com/pecigonzalo/pre-commit-fmt
     sha: master
@@ -105,12 +131,18 @@ Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-com
             - --indent=4
 ```
 
+{% endraw %}
+
+{% raw %}
+
 ```yaml
 -   repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.7.1.1
     hooks:
     -   id: shellcheck
 ```
+
+{% endraw %}
 
 ### Step 3
 
@@ -119,6 +151,8 @@ Run `$ pre-commit install` to set up the git hook scripts
 ## Dependencies
 
 Bash scripts are often used to 'glue together' other systems and tools. As such, Bash scripts can often have numerous and/or complicated dependencies. Consider using Docker containers to ensure that scripts are executed in a portable and reproducible environment that is guaranteed to contain all the correct dependencies. To ensure that dockerized scripts are nevertheless easy to execute, consider making the use of Docker transparent to the script's caller by wrapping the script in a 'bootstrap' which checks whether the script is running in Docker and re-executes itself in Docker if it's not the case. This provides the best of both worlds: easy script execution and consistent environments.
+
+{% raw %}
 
 ```bash
 if [[ "${DOCKER}" != "true" ]]; then
@@ -130,6 +164,8 @@ fi
 # ... implementation of my_script here can assume that all of its dependencies exist since it's always running in Docker ...
 ```
 
+{% endraw %}
+
 ## Code Review Checklist
 
 In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these bash specific code review items
@@ -138,5 +174,5 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Is the code modularized? Shell scripts can be modularized like python modules. Portions of bash scripts should be sourced in complex bash projects.
 * [ ] Are all exceptions handled correctly? Exceptions should be handled correctly using exit codes or trapping signals.
 * [ ] Does the code pass all linting checks as per shellcheck and unit tests as per shunit2 ?
-* [ ] Does the code uses relative paths or absolute paths? Relative paths should be avoided as they are prone to environment attacks. If relative path is needed, check that the ```PATH``` variable is set.
+* [ ] Does the code uses relative paths or absolute paths? Relative paths should be avoided as they are prone to environment attacks. If relative path is needed, check that the `PATH` variable is set.
 * [ ] Does the code take credentials as user input? Are the credentials masked or encrypted in the script?

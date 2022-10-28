@@ -8,6 +8,8 @@ When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/d
 
 A solution to these limitations is to manage secrets in the Git repository jointly with the project's source code. As described in [secrets management](../../README.md), don't check secrets into the repository in plain text. Instead we can add an encrypted version of our secrets to the repository and enable our CI/CD agents and developers to decrypt the secrets for local usage with some pre-shared key. This gives us the best of both worlds: a secure storage for secrets as well as side-by-side management of secrets and code.
 
+{% raw %}
+
 ```sh
 # first, make sure that we never commit our plain text secrets and generate a strong encryption key
 echo ".env" >> .gitignore
@@ -28,12 +30,18 @@ git add .env.enc .env.template
 git commit -m "Update secrets"
 ```
 
+{% endraw %}
+
 When running the CI/CD, the build server can now access the secrets by decrypting them. E.g. for Azure DevOps, configure `ENCRYPTION_KEY` as a [secret pipeline variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables#secret-variables) and then add the following step to `azure-pipelines.yml`:
+
+{% raw %}
 
 ```yaml
 steps:
   - script: echo "$(ENCRYPTION_KEY)" | openssl enc -aes-256-cbc -md sha512 -pass stdin -in .env.enc -out .env -d
     displayName: Decrypt secrets
 ```
+
+{% endraw %}
 
 You can also use [variable groups linked directly to Azure key vault](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault) for your pipelines to manage all secrets in one location.

@@ -20,6 +20,8 @@ One inclusive linter we recommend is `woke`. It is a language-agnostic CLI tool 
 
 Running the tool locally on a file or directory is relatively straightforward:
 
+{% raw %}
+
 ```sh
 $ woke test.txt
 
@@ -27,6 +29,8 @@ test.txt:2:2-6: `guys` may be insensitive, use `folks`, `people` instead (warnin
 * guys
   ^
 ```
+
+{% endraw %}
 
 `woke` can be run locally on your machine or CI/CD system via CLI and is also available as a two GitHub Actions:
 
@@ -37,7 +41,9 @@ To use the standard "Run woke" GitHub Action with the default ruleset in a CI pi
 
 1. Add the `woke` action as a step in your project's CI pipeline yaml:
 
-    ```yaml
+    {% raw %}
+
+```yaml
     name: ci
     on:
       - pull_request
@@ -55,6 +61,8 @@ To use the standard "Run woke" GitHub Action with the default ruleset in a CI pi
               # Cause the check to fail on any broke rules
               fail-on-error: true
     ```
+
+{% endraw %}
 
 1. Run your pipeline
 1. View the output in the "Actions" tab in the main repository view

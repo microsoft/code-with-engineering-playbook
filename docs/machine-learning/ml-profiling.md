@@ -27,6 +27,8 @@ and sorting parameters for better analysis experience.
 
 Below you can find an example of using *cProfile* to profile a chunk of code.
 
+{% raw %}
+
 ```python
 import cProfile
 
@@ -43,11 +45,17 @@ profiler.disable()
 profiler.dump_stats("profiler_results.prof")
 ```
 
+{% endraw %}
+
 You can also run *cProfile* outside of the Python script using the following command:
+
+{% raw %}
 
 ```bash
 python -m cProfile [-o output_file] [-s sort_order] (-m module | myscript.py)
 ```
+
+{% endraw %}
 
 > Note: one epoch of model training is usually enough for profiling. There's no need to run more epochs and produce
 additional cost.
@@ -63,6 +71,8 @@ Using *PyTorch profiler* one can record CPU side operations as well as CUDA kern
 The profiler can visualize analysis results using TensorBoard plugin as well as provide suggestions
 on bottlenecks and potential code improvements.
 
+{% raw %}
+
 ```python
  with torch.profiler.profile(
     # Limit number of training steps included in profiling
@@ -76,14 +86,20 @@ on bottlenecks and potential code improvements.
         profiler.step()
 ```
 
+{% endraw %}
+
 The `tensorboard_trace_handler` can be used to generate result files for TensorBoard. Those can be visualized by installing TensorBoard.
 plugin and running TensorBoard on your log directory.
+
+{% raw %}
 
 ```bash
 pip install torch_tb_profiler
 tensorboard --logdir=<LOG_DIR_PATH>
 # Navigate to `http://localhost:6006/#pytorch_profiler`
 ```
+
+{% endraw %}
 
 > Note: make sure to provide the right parameters to the `torch.profiler.schedule`. Usually you would need several steps of training to be profiled rather than the whole epoch.
 
@@ -108,10 +124,14 @@ Boolean flag as a pipeline parameter
 2. Use one of the profilers described above or any other profiler that can produce a file as an output
 3. Inside of your Python script, create step output folder, e.g.:
 
-    ```python
+    {% raw %}
+
+```python
     output_dir = "./outputs/profiler_results"
     os.makedirs(output_dir, exist_ok=True)
     ```
+
+{% endraw %}
 
 4. Run your training pipeline
 5. Once the pipeline is completed, navigate to Azure ML portal and open details of the step that contains training code.

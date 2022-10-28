@@ -2,6 +2,8 @@
 
 This is a quick guide to mirroring a Project Wiki to another repository.
 
+{% raw %}
+
 ```bash
 # Clone the wiki
 git clone <source wiki repo url>
@@ -11,16 +13,24 @@ cd <source wiki repo working folder>
 git remote add mirror <mirror repo that must already exist>
 ```
 
+{% endraw %}
+
 Now each time you wish to sync run the following to get latest from the source wiki repo:
+
+{% raw %}
 
 ```bash
 # Get everything
 git pull -v
 ```
 
+{% endraw %}
+
 > **Warning**: Check that the output of the pull shows "From source repo URL". If this shows the mirror repo url then you've forgotten to reset the tracking. Run `git branch -u origin/wikiMaster` then continue.
 
 Then run this to push it to the mirror repo and reset the branch to track the source repo again:
+
+{% raw %}
 
 ```bash
 # Push all branches up to mirror remote
@@ -31,7 +41,11 @@ git branch -u origin/wikiMaster
 
 ```
 
+{% endraw %}
+
 Your output should look like this when run:
+
+{% raw %}
 
 ```powershell
 PS C:\Git\MyProject.wiki> git pull -v
@@ -64,3 +78,5 @@ Branch 'wikiMaster' set up to track remote branch 'wikiMaster' from 'mirror'.
 PS C:\Git\MyProject.wiki> git branch -u origin/wikiMaster
 Branch 'wikiMaster' set up to track remote branch 'wikiMaster' from 'origin'.
 ```
+
+{% endraw %}

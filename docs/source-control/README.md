@@ -78,6 +78,8 @@ Good message structure:
 
 Example of a well-structured git commit message:
 
+{% raw %}
+
 ```md
 Add code review recipe for Go
 
@@ -90,11 +92,17 @@ be added in issue #124
 Closes: #123
 ```
 
+{% endraw %}
+
 You can specify the default git editor, which allows you to write your commit messages using your favorite editor. The following command makes Visual Studio Code your default git editor:
+
+{% raw %}
 
 ```bash
 git config --global core.editor "code --wait"
 ```
+
+{% endraw %}
 
 References:
 
