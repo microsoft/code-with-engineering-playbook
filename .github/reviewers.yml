@@ -12,87 +12,13 @@ reviewers:
     general:
       - tessferrandez
       - shiranr
-    agile:
-      - meulta
-      - omri374
-    automated-testing:
-      - alkofahi
-      - omusavi
-    code-reviews:
-      - ikivanc
       - tompaana
-      - shiranr
-      - tessferrandez
-    ci-cd:
-      - brockneedscoffee
-    design:
-      - zmmille2
-      - sbohlen
-      - charleszipp
-    dev-experience:
-      - olasowemimo
-      - charleszipp
-    div-inclusion:
-      - madossan01
-    documentation:
-      - magencio
-      - tompaana
-      - tessferrandez
-      - mtirion
-    machine-learning:
-      - biancafbmd
-      - omri374
-      - tessferrandez
-    observability:
-      - narmathabala
-      - ivaramme
-    privacy:
-      - prnata
-      - omri374
-    security:
-      - charleszipp
-      - msebragge
-    source-code:
-      - tessferrandez
-      - tompaana
-    ux:
-      - jankakoen
 
 files:
   # Keys are glob expressions.
   # You can assign groups defined above as well as GitHub usernames.
   "docs/**":
     - general # group
-  "docs/agile-development/**":
-    - agile # group
-  "docs/automated-testing/**":
-    - automated-testing # group
-  "docs/code-reviews/**":
-    - code-reviews # group
-  "docs/continuous-delivery/**":
-    - ci-cd # group
-  "docs/continuous-integration/**":
-    - ci-cd # group
-  "docs/design/**":
-    - design # group
-  "docs/developer-experience/**":
-    - dev-experience # group
-  "docs/documentation/**":
-    - documentation # group
-  "docs/machine-learning/**":
-    - machine-learning # group
-  "docs/observability/**":
-    - observability # group
-  "docs/privacy/**":
-    - privacy # group
-  "docs/security/**":
-    - security # group
-  "docs/source-control/**":
-    - source-code # group
-  ".projector/**":
-    - design # group
-  "docs/user-interface-engineering/**":
-    - ux # group
 
 options:
   ignore_draft: true
