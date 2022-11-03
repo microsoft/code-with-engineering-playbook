@@ -16,7 +16,7 @@ Developers working on CSE projects should implement best practices and guidance 
 
 - [Microsoft's Information Security Policy](https://aka.ms/CTRMSsecppext)
 - [Limited Data Protection Addendum](https://aka.ms/mpsldpa)
-- [Professional Services Data Protection Addendum](https://www.microsoftvolumelicensing.com/Downloader.aspx?DocumentId=18983)
+- [Professional Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
 
 ## 5 W's of data handling
 
