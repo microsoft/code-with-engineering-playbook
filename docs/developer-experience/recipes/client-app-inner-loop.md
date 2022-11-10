@@ -15,6 +15,8 @@ An embedded mock solution includes classes that implement the service interfaces
 
 A simple service implementation can return a static response. For RESTful services, the JSON responses for the stubs can be stored as application resources or simply as static strings.
 
+{% raw %}
+
 ```cs
 public Task<UserProfile> GetUserAsync(long userId, CancellationToken cancellationToken)
 {
@@ -25,6 +27,8 @@ public Task<UserProfile> GetUserAsync(long userId, CancellationToken cancellatio
 }
 ```
 
+{% endraw %}
+
 More sophisticated can randomly return errors to test the app's resiliency code paths.
 
 Mocks can be activated via conditional compilation or dynamically via app configuration. In either case, it is recommended to ensure that mocks, service responses and externalized configurations are not included in the final release to avoid confusing behavior and inclusion of potential vulnerabilities.
@@ -33,6 +37,8 @@ Mocks can be activated via conditional compilation or dynamically via app config
 
 Dependency Injection Containers like Unity ([Unity Container Introduction \| Unity Container](http://unitycontainer.org/articles/introduction.html)) make
 it easy to switch between mock services and real service client implementations. Since both implement the same interface, implementations can be registered with the Unity container.
+
+{% raw %}
 
 ```cs
 public static void Bootstrap(IUnityContainer container)
@@ -47,9 +53,13 @@ public static void Bootstrap(IUnityContainer container)
 }
 ```
 
+{% endraw %}
+
 #### Consuming mocks via Dependency Injection
 
 The code consuming the interfaces will not notice the difference.
+
+{% raw %}
 
 ```cs
 public class UserPageModel
@@ -64,6 +74,8 @@ public class UserPageModel
     // ...
 }
 ```
+
+{% endraw %}
 
 ### Local Services
 

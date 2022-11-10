@@ -12,6 +12,8 @@ The baseline file also provides a simple and convenient way of handling false po
 
 ## Setup
 
+{% raw %}
+
 ```sh
 # install system dependencies: diff, jq, python3 (if on Linux-based OS)
 apt-get install -y diffutils jq python3 python3-pip
@@ -28,7 +30,11 @@ python3 -m pip install detect-secrets
 detect-secrets scan > .secrets.baseline
 ```
 
+{% endraw %}
+
 ## Usage
+
+{% raw %}
 
 ```sh
 # backup the list of known secrets
@@ -45,3 +51,5 @@ if ! diff <(list_secrets .secrets.baseline) <(list_secrets .secrets.new) >&2; th
   exit 1
 fi
 ```
+
+{% endraw %}

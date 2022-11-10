@@ -50,7 +50,9 @@ These techniques make the loading of secrets  transparent to the developer.
 
 Use the [`file`](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration) attribute of the appSettings element to load secrets from a local file.
 
-``` XML
+{% raw %}
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <appSettings file="..\..\secrets.config">
@@ -63,7 +65,11 @@ Use the [`file`](https://docs.microsoft.com/en-us/dotnet/framework/configure-app
 </configuration>
 ```
 
+{% endraw %}
+
 Access secrets:
+
+{% raw %}
 
 ```C#
 static void Main(string[] args)
@@ -72,34 +78,50 @@ static void Main(string[] args)
 }
 ```
 
+{% endraw %}
+
 When running in Azure, ConfigurationManager will load these settings from the process environment. We don't need to upload secrets files to the server or change any code.
 
 ### Node
 
 Store secrets in environment variables or in a `.env` file
 
+{% raw %}
+
 ```bash
 $ cat .env
 MY_SECRET=mySecret
 ```
 
+{% endraw %}
+
 Use the [dotenv](https://www.npmjs.com/package/dotenv) package to load and access environment variables
+
+{% raw %}
 
 ```node
 require('dotenv').config()
 let mySecret = process.env("MY_SECRET")
 ```
 
+{% endraw %}
+
 ### Python
 
 Store secrets in environment variables or in a `.env` file
+
+{% raw %}
 
 ```bash
 $ cat .env
 MY_SECRET=mySecret
 ```
 
+{% endraw %}
+
 Use the [dotenv](https://pypi.org/project/python-dotenv/) package to load and access environment variables
+
+{% raw %}
 
 ```Python
 import os
@@ -110,7 +132,11 @@ load_dotenv()
 my_secret = os.getenv('MY_SECRET')
 ```
 
+{% endraw %}
+
 Another good library for reading environment variables is `environs`
+
+{% raw %}
 
 ```Python
 from environs import Env
@@ -120,6 +146,8 @@ env = Env()
 env.read_env()
 my_secret = os.environ["MY_SECRET"]
 ```
+
+{% endraw %}
 
 ### Databricks
 

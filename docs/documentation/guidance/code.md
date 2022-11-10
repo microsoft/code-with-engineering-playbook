@@ -16,12 +16,18 @@ Examples of useful comments:
 
 - Single line comment in C# that explains **why** that piece of code is there (from a private method in [System.Text.Json.JsonSerializer](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/JsonSerializer.Read.String.cs)):
 
+{% raw %}
+
 ```csharp
 // For performance, avoid obtaining actual byte count unless memory usage is higher than the threshold.
 Span<byte> utf8 = json.Length <= (ArrayPoolMaxSizeBeforeUsingNormalAlloc / JsonConstants.MaxExpansionFactorWhileTranscoding) ? ...
 ```
 
+{% endraw %}
+
 - Multi-line comment in C# that provides **additional context** (from a private method in [System.Text.Json.Utf8JsonReader](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Reader/Utf8JsonReader.cs)):
+
+{% raw %}
 
 ```csharp
 // Transcoding from UTF-16 to UTF-8 will change the length by somewhere between 1x and 3x.
@@ -42,6 +48,8 @@ if (sourceLength < charTextLength
 {
 ```
 
+{% endraw %}
+
 ## Documentation comments
 
 Doc comments are a special kind of comment, added above the definition of any user-defined type or member, and are intended for anyone who may need to use those types or members in their own code.
@@ -51,6 +59,8 @@ If, for example, you are building a library or framework, doc comments can be us
 Doc comments won't be included by the compiler in the final executable, as with single and multi-line comments.
 
 Example of a doc comment in C# (from Deserialize method in [System.Text.Json.JsonSerializer](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/JsonSerializer.Read.String.cs)):
+
+{% raw %}
 
 ```csharp
 /// <summary>
@@ -83,6 +93,8 @@ Example of a doc comment in C# (from Deserialize method in [System.Text.Json.Jso
 public static TValue? Deserialize<TValue>(string json, JsonSerializerOptions? options = null)
 {
 ```
+
+{% endraw %}
 
 In **C#**, doc comments can be processed by the compiler to generate XML documentation files. These files can be distributed alongside your libraries so that Visual Studio and other IDEs can use IntelliSense to show quick information about types or members. Additionally, these files can be run through tools like [DocFx](https://dotnet.github.io/docfx/) to generate API reference websites.
 

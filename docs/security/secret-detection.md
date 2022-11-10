@@ -37,6 +37,8 @@ You can either reach out directly or email csesecuritysa@microsoft.com
 - Add the Detect-Secrets plugin from the task assistant and configure the tool to point to you source location and word list file (allow list).
 The source location default will point to your repositories root directory.
 
+{% raw %}
+
 ```YAML
 - task: CSEDetectSecrets@1
   inputs:
@@ -45,7 +47,11 @@ The source location default will point to your repositories root directory.
     wordListFile: 'allow-list.txt'
 ```
 
+{% endraw %}
+
 To report on the detect-secrets scan results add the following underneath the Yelp task:
+
+{% raw %}
 
 ```YAML
 - task: PublishTestResults@2
@@ -56,6 +62,8 @@ To report on the detect-secrets scan results add the following underneath the Ye
     testResultsFiles: 'report.xml'
     searchFolder: '$(Build.Repository.LocalPath)'
 ```
+
+{% endraw %}
 
 ### Scan Argument Notes
 

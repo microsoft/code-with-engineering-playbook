@@ -21,6 +21,8 @@ This page explains a way to solve this with Terraform.
 
 Let's consider the following structure for our modules:
 
+{% raw %}
+
 ```console
 modules
 ├── kubernetes
@@ -33,6 +35,8 @@ modules
 │   └── variables.tf
 ```
 
+{% endraw %}
+
 Now, assume that you deploy a virtual network for the development environment, with the following properties:
 
 - name: vnet-dev
@@ -40,12 +44,16 @@ Now, assume that you deploy a virtual network for the development environment, w
 
 Then at some point, you need to inject these values into the Kubernetes module, to get a reference to it through a data source, for example:
 
+{% raw %}
+
 ```hcl
 data "azurem_virtual_network" "vnet" {
     name                = var.vnet_name
     resource_group_name = var.vnet_rg_name
 }
 ```
+
+{% endraw %}
 
 In the snippet above, the virtual network name and resource group are defined through variable. This is great, but if this changes in the future, then the values of these variables must change too. In every module they are used.
 
@@ -60,6 +68,8 @@ One of the limitation of the variables declaration is that it's not possible to 
 ### Common Terraform module
 
 One way to bypass this limitations is to introduce a "common" module, that will not deploy any resources, but just compute / calculate and output the resource names and shared variables, and be used by all other modules, as a dependency.
+
+{% raw %}
 
 ```console
 modules
@@ -76,7 +86,11 @@ modules
 │   └── variables.tf
 ```
 
+{% endraw %}
+
 *variables.tf:*
+
+{% raw %}
 
 ```hcl
 variable "environment_name" {
@@ -91,7 +105,11 @@ variable "location" {
 }
 ```
 
+{% endraw %}
+
 *output.tf:*
+
+{% raw %}
 
 ```hcl
 # Shared variables
@@ -124,7 +142,11 @@ output "aks_name" {
 }
 ```
 
+{% endraw %}
+
 Now, if you execute the Terraform apply for the common module, you get all the shared/common variables in outputs:
+
+{% raw %}
 
 ```console
 $ terraform plan -var environment_name="dev" -var subscription="$(az account show --query id -o tsv)"
@@ -140,9 +162,13 @@ Changes to Outputs:
 You can apply this plan to save these new output values to the Terraform state, without changing any real infrastructure.
 ```
 
+{% endraw %}
+
 ### Use the common Terraform module
 
 Using the common Terraform module in any other module is super easy. For example, this is what you can do in the Azure Kubernetes module `main.tf` file:
+
+{% raw %}
 
 ```hcl
 module "common" {
@@ -175,7 +201,11 @@ resource "azurerm_kubernetes_cluster" "aks" {
 }
 ```
 
+{% endraw %}
+
 Then, you can execute the `terraform plan` and `terraform apply` commands to deploy!
+
+{% raw %}
 
 ```console
 terraform plan -var environment_name="dev" -var subscription="$(az account show --query id -o tsv)"
@@ -240,7 +270,11 @@ Terraform will perform the following actions:
 Plan: 1 to add, 0 to change, 0 to destroy.
 ```
 
+{% endraw %}
+
 Note: the usage of a common module is also valid if you decide to deploy all your modules in the same operation from a main Terraform configuration file, like:
+
+{% raw %}
 
 ```hcl
 module "common" {
@@ -262,11 +296,15 @@ module "kubernetes" {
 }
 ```
 
+{% endraw %}
+
 ### Centralize input variables definitions
 
 In case you chose to define variables values directly in the source control (e.g. gitops scenario) using [variables definitions files](https://www.terraform.io/language/values/variables#variable-definitions-tfvars-files) (`.tfvars`), having a common module will also help to not have to duplicate the common variables definitions in all modules. Indeed, it is possible to have a global file that is defined once, at the common module level, and merge it with a module-specific variables definitions files at Terraform `plan` or `apply` time.
 
 Let's consider the following structure:
+
+{% raw %}
 
 ```console
 modules
@@ -289,13 +327,19 @@ modules
 │   └── variables.tf
 ```
 
+{% endraw %}
+
 The common module as well as all other modules contain variables files for `dev` and `prod` environment. `tfvars` files from the common module will define all the global variables that will be shared with other modules (like subscription, environment name, etc.) and `.tfvars` files of each module will define only the module-specific values.
 
 Then, it's possible to merge these files when running the `terraform apply` or `terraform plan` command, using the following syntax:
 
+{% raw %}
+
 ```bash
 terraform plan -var-file=<(cat ../common/dev.tfvars ./dev.tfvars)
 ```
+
+{% endraw %}
 
 *Note: using this, it is really important to ensure that you have not the same variable names in both files, otherwise that will generate an error.*
 

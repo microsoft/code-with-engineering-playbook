@@ -29,6 +29,8 @@ Mermaid files (.mmd) can be source-controlled along with your code. It's also re
 
 This is an example of a Mermaid flowchart diagram written as code.
 
+{% raw %}
+
 ```mermaid
 graph LR
     A[Diagram Idea] -->|Write mermaid code| B(mermaid.mmd file)
@@ -36,6 +38,8 @@ graph LR
     B -->|Export as .png| G(.png file of diagram)
     G -->|Add to source control| C
 ```
+
+{% endraw %}
 
 This is an example of how it can be rendered as an image.
 

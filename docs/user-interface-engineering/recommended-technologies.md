@@ -33,13 +33,19 @@ There are many different ways to bootstrap a React application. Two great tool s
 
 From [Adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 
+{% raw %}
+
 ```sh
 npx create-react-app my-app --template typescript
 ```
 
+{% endraw %}
+
 #### Vite
 
 From [Scaffolding your First Vite Project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+
+{% raw %}
 
 ```sh
 # npm 6.x
@@ -48,6 +54,8 @@ npm init vite@latest my-app --template react-ts
 # npm 7.x
 npm init vite@latest my-app -- --template react-ts
 ```
+
+{% endraw %}
 
 ## HTML/CSS/JS
 

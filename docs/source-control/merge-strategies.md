@@ -9,6 +9,8 @@ Agree if you want a linear or non-linear commit history. There are pros and cons
 
 Merging `topic` into `main`
 
+{% raw %}
+
 ```md
   A---B---C topic
  /         \
@@ -19,11 +21,15 @@ git checkout main
 git merge topic
 ```
 
+{% endraw %}
+
 ## Two approaches to achieve a linear commit history
 
 ### Rebase topic branch before merging into main
 
 Before merging `topic` into `main`, we rebase `topic` with the `main` branch:
+
+{% raw %}
 
 ```bash
           A---B---C topic
@@ -36,16 +42,22 @@ git checkout topic
 git rebase origin/main
 ```
 
+{% endraw %}
+
 Create a PR topic --> main in Azure DevOps and approve using the squash merge option
 
 ### Rebase topic branch before squash merge into main
 
 [Squash merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops) is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of adding each commit on `topic` to the history of `main`, a squash merge takes all the file changes and adds them to a single new commit on `main`.
 
+{% raw %}
+
 ```bash
           A---B---C topic
          /
 D---E---F-----------G---H main
 ```
+
+{% endraw %}
 
 Create a PR topic --> main in Azure DevOps and approve using the squash merge option

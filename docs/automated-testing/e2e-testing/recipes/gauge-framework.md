@@ -14,6 +14,8 @@ Gauge is a free and open source framework for writing and running E2E tests. Som
 
 Gauge specifications are written using a Markdown syntax. For example
 
+{% raw %}
+
 ```bash
 # Search for the data blob
 
@@ -21,11 +23,15 @@ Gauge specifications are written using a Markdown syntax. For example
 * Goto Azure blob
 ```
 
+{% endraw %}
+
 In this specification *Search for the data blob* is the **specification heading**, *Look for file* is a **scenario** with a step *Goto Azure blob*
 
 ## What is an Implementation
 
 You can implement the steps in a specification using a programming language, for example:
+
+{% raw %}
 
 ```bash
 from getgauge.python import step
@@ -37,7 +43,11 @@ def gotoAzureStorage():
   Driver.driver.get(URL)
 ```
 
+{% endraw %}
+
 The Gauge runner reads and runs steps and its implementation for every scenario in the specification and generates a report of passing or failing scenarios.
+
+{% raw %}
 
 ```bash
 # Search for the data blob
@@ -49,11 +59,15 @@ Specifications:       1 executed      1 passed        0 failed        0 skipped
 Scenarios:    1 executed      1 passed        0 failed        0 skipped
 ```
 
+{% endraw %}
+
 ## Re-using Steps
 
 Gauge helps you focus on testing the flow of an application. Gauge does this by making steps as re-usable as possible. With Gauge, you don’t need to build custom frameworks using a programming language.
 
 For example, Gauge steps can pass parameters to an implementation by using a text with quotes.
+
+{% raw %}
 
 ```bash
 # Search for the data blob
@@ -63,7 +77,11 @@ For example, Gauge steps can pass parameters to an implementation by using a tex
 * Search for "store_data.csv"
 ```
 
+{% endraw %}
+
 The implementation can now use “store_data.csv” as follows
+
+{% raw %}
 
 ```bash
 from getgauge.python import step
@@ -78,7 +96,11 @@ step("Search for <query>", (query) => {
   press("Enter");
 ```
 
+{% endraw %}
+
 You can then re-use this step within or across scenarios with different parameters:
+
+{% raw %}
 
 ```bash
 # Search for the data blob
@@ -92,7 +114,11 @@ You can then re-use this step within or across scenarios with different paramete
 * Search for "store_2.csv"
 ```
 
+{% endraw %}
+
 Or combine more than one step into **concepts**
+
+{% raw %}
 
 ```bash
 # Search Azure Storage for <query>
@@ -100,7 +126,11 @@ Or combine more than one step into **concepts**
 * Search for "store_1.csv"
 ```
 
+{% endraw %}
+
 The concept, Search Azure Storage for `<query>` can be used like a step in a specification
+
+{% raw %}
 
 ```bash
 # Search for the data blob
@@ -112,9 +142,13 @@ The concept, Search Azure Storage for `<query>` can be used like a step in a spe
 * Search Azure Storage for "store_2.csv"
 ```
 
+{% endraw %}
+
 ## Data-Driven Testing
 
 Gauge also supports data driven testing using Markdown tables as well as external csv files for example
+
+{% raw %}
 
 ```bash
 # Search for the data blob
@@ -128,6 +162,8 @@ Gauge also supports data driven testing using Markdown tables as well as externa
 ## Look for stores data
 * Search Azure Storage for <query>
 ```
+
+{% endraw %}
 
 This will execute the scenario for all rows in the table.
 
@@ -166,9 +202,13 @@ Follow the steps to add the Gauge Visual Studio Code plugin from the IDE
 
 If, when you run your first gauge spec you receive the error of missing python packages, open the command line terminal window and run this command:
 
+{% raw %}
+
 ```bash
 python.exe -m pip install getgauge==0.3.7 --user
 ```
+
+{% endraw %}
 
 ## Installation Instructions for macOS
 
@@ -179,11 +219,17 @@ This section gives specific instructions on setting up Gauge in a macOS environm
 1. Install brew if you haven’t already: Go to the [brew website](https://brew.sh/), and follow the directions there.
 2. Run the brew command to install Gauge
 
-   ```bash
+   {% raw %}
+
+```bash
    > brew install gauge
    ```
 
+{% endraw %}
+
    if HomeBrew is working properly, you should see something similar to the following:
+
+{% raw %}
 
 ```bash
 ==> Downloading https://homebrew.bintray.com/bottles/gauge-1.0.6.mojave.bottle.tar.gz
@@ -192,6 +238,8 @@ This section gives specific instructions on setting up Gauge in a macOS environm
 ==> Pouring gauge-1.0.6.mojave.bottle.tar.gz
 🍺  /usr/local/Cellar/gauge/1.0.6: 3 files, 18.5MB
 ```
+
+{% endraw %}
 
 ### Step 2 : Installing Gauge extension for Visual Studio Code
 
@@ -203,6 +251,10 @@ Follow the steps to add the Gauge Visual Studio Code plugin from the IDE
 
 If, when you run your first gauge spec you receive the error of missing python packages, open the command line terminal window and run this command:
 
+{% raw %}
+
 ```bash
 python.exe -m pip install getgauge==0.3.7 --user
 ```
+
+{% endraw %}

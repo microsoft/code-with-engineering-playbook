@@ -124,6 +124,8 @@ mocking a client or configuration and your method passes the mock result directl
 changes, consider not asserting on the return value. Because if you do, you are mainly asserting whether you set up the
 mock correctly. For a very simple example, look at this class:
 
+{% raw %}
+
 ```csharp
 
 public class SearchController : ControllerBase {
@@ -142,8 +144,12 @@ public class SearchController : ControllerBase {
 }
 ```
 
+{% endraw %}
+
 When testing the `GetName` method, you can set up a mock search client to return a certain value. Then, it’s easy to
 assert that the return value is, in fact, this value from the mock.
+
+{% raw %}
 
 ```csharp
 mockSearchClient.Setup(x => x.GetName(id))
@@ -152,7 +158,11 @@ var result = searchController.GetName(id);
 Assert.Equal("myResult",result.Value);
 ```
 
+{% endraw %}
+
 But now, your method could look like this, and the test would still pass:
+
+{% raw %}
 
 ```csharp
 public String GetName(string id)
@@ -161,15 +171,21 @@ public String GetName(string id)
 }
 ```
 
+{% endraw %}
+
 Similarly, if you set up your mock wrong, the test would fail even though the logic inside the method is sound. For efficient
 assertions that will give you confidence in your SUT, make assertions on your logic, not mock return values.
 The simple example above doesn’t have a lot of logic, but you want to make sure that it calls the search client to retrieve
 the result. For this, you can use the verify method to make sure the search client was called using the right parameters even
 though you don’t care about the result.
 
+{% raw %}
+
 ```csharp
 mockSearchClient.Verify(mock => mock.GetName(id), Times.Once());
 ```
+
+{% endraw %}
 
 This example is kept simple to visualize the principle of making meaningful assertions. In a real world application, your SUT
 will probably have more logic inside. Pieces of glue code that have as little logic as this example don't always have to be
@@ -189,6 +205,8 @@ use an `any`-statement for the others. In this example, the method has a complex
 lot of time to set up manually. Since you only care about 2 attributes in the search options, you use an `any`-statement and
 store the options in a callback for later assertions.
 
+{% raw %}
+
 ```csharp
 var actualOptions = new SearchOptions();
 
@@ -207,14 +225,20 @@ mockSearchClient
    );
 ```
 
+{% endraw %}
+
 Since you want to test your method logic, you should care only about the parts of the parameter which are influenced by your SUT,
 in this example, let's say the search mode and the search query type. So, with the variable you stored in the callback, you can
 make assertions on only these two attributes.
+
+{% raw %}
 
 ```csharp
 Assert.Equal(SearchMode.All, actualOptions.SearchMode);
 Assert.Equal(SearchQueryType.Full, actualOptions.QueryType);
 ```
+
+{% endraw %}
 
 This makes the test more explicit since it shows which parts of the logic you care about. It’s also more efficient since you don’t
 have to spend a lot of time setting up the parameters for the mock.

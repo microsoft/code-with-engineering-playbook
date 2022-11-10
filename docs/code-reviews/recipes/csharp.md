@@ -12,6 +12,8 @@ We strongly believe that consistent style increases readability and maintainabil
 
 We recommend using a common setup for your solution that you can refer to in all the projects that are part of the solution. Create a `common.props` file that contains the defaults for all of your projects:
 
+{% raw %}
+
 ```xml
 <Project>
 ...
@@ -35,13 +37,19 @@ We recommend using a common setup for your solution that you can refer to in all
 </Project>
 ```
 
+{% endraw %}
+
 You can then reference the `common.props` in your other project files to ensure a consistent setup.
+
+{% raw %}
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <Import Project="..\common.props" />
 </Project>
 ```
+
+{% endraw %}
 
 The [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019) allows for configuration and overrides of rules. You can have an .editorconfig file at project level to customize rules for different projects (test projects for example).
 
@@ -71,6 +79,8 @@ It's important that you enforce your code style and rules in the CI to avoid any
 
 If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enable those in the CI. You have to make sure you are setting up the project using nuget and .editorconfig ([see Project setup](#project-setup)). Once you have this setup, you will have to configure the pipeline to build your code. That's pretty much it. The FxCop analyzers will run and report the result in your build pipeline. If there are rules that are violated, your build will be red.
 
+{% raw %}
+
 ```yaml
     - task: DotNetCoreCLI@2
       displayName: 'Style Check & Build'
@@ -78,6 +88,8 @@ If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enab
         command: 'build'
         projects: '**/*.csproj'
 ```
+
+{% endraw %}
 
 ## Enable Roslyn Support in Visual Studio Code
 
@@ -89,7 +101,7 @@ The above steps also work in VS Code provided you enable Roslyn support for Omni
 
 In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these C# specific code review items
 
-* [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
+* [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of `await` and `Task.WhenAll` including CancellationTokens?
 * [ ] Is the code subject to concurrency issues? Are shared objects properly protected?
 * [ ] Is dependency injection (DI) used? Is it setup correctly?
 * [ ] Are [middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?

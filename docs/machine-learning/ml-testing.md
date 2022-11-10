@@ -20,6 +20,8 @@ Reading and writing to csv, reading images or loading audio files are common sce
 
 `utils.py`
 
+{% raw %}
+
 ```python
 def load_data(filename: str) -> pd.DataFrame:
     if os.path.isfile(filename):
@@ -27,6 +29,8 @@ def load_data(filename: str) -> pd.DataFrame:
         return df
     return None
 ```
+
+{% endraw %}
 
 There's no need to test the `read_csv` function, or the `isfile` functions, we can leave testing them to the **pandas** and **os** developers.
 
@@ -39,6 +43,8 @@ A much better way is to **mock** calls to `isfile`, and `read_csv`. Instead of c
 > Note: Below we mock the specific os and pd functions referenced in the utils file, any others are left unaffected and would run as normal.
 
 `test_utils.py`
+
+{% raw %}
 
 ```python
 import utils
@@ -61,7 +67,11 @@ def test_load_data_calls_read_csv_if_exists(mock_isfile, mock_read_csv):
     utils.pd.read_csv.assert_called_once_with(filename, index_col='ID')
 ```
 
+{% endraw %}
+
 Similarly, we can verify that it's called 0 or multiple times. In the example below where we verify that it's not called if the file doesn't exist
+
+{% raw %}
 
 ```python
 @patch('utils.os.path.isfile')
@@ -80,6 +90,8 @@ def test_load_data_doesnt_call_read_csv_if_not_exists(mock_isfile, mock_read_csv
     assert utils.pd.read_csv.call_count == 0
 ```
 
+{% endraw %}
+
 ### Example: Using the same sample data for multiple tests
 
 If more than one test will use the same sample data, fixtures are a good way to reuse this sample data. The sample data can be the contents of a json file, or a csv, or a DataFrame, or even an image.
@@ -87,6 +99,8 @@ If more than one test will use the same sample data, fixtures are a good way to 
 > Note: The sample data is still hard coded if possible, and does not need to be large. Only add as much sample data as required for the tests to make the tests readable.
 
 Use the fixture to return the sample data, and add this as a parameter to the tests where you want to use the sample data.
+
+{% raw %}
 
 ```python
 import pytest
@@ -105,11 +119,15 @@ def test_extract_features_extracts_price_per_area(house_features_json):
   assert extracted_features['price_per_area'] == 100
 ```
 
+{% endraw %}
+
 ## Transforming data
 
 For cleaning and transforming data, test fixed input and output, but try to limit each test to one verification.
 
 For example, create one test to verify the output shape of the data.
+
+{% raw %}
 
 ```python
 def test_resize_image_generates_the_correct_size():
@@ -123,7 +141,11 @@ def test_resize_image_generates_the_correct_size():
   resized_image.shape[:2] = (100, 100)
 ```
 
+{% endraw %}
+
 and one to verify that any padding is made appropriately
+
+{% raw %}
 
 ```python
 def test_resize_image_pads_correctly():
@@ -138,7 +160,11 @@ def test_resize_image_pads_correctly():
   assert resized_image[0][0][2][0] == 1
 ```
 
+{% endraw %}
+
 To test different inputs and expected outputs automatically, use parametrize
+
+{% raw %}
 
 ```python
 @pytest.mark.parametrize('orig_height, orig_width, expected_height, expected_width',
@@ -161,6 +187,8 @@ def test_resize_image_generates_the_correct_size(orig_height, orig_width, expect
   resized_image.shape[:2] = (expected_height, expected_width)
 ```
 
+{% endraw %}
+
 ## Model load or predict
 
 When **unit** testing we should mock model load and model predictions similarly to mocking file access.
@@ -171,17 +199,25 @@ Since these will often take a bit longer to run it's important to be able to sep
 
 One way to do this is using marks
 
+{% raw %}
+
 ```python
 @pytest.mark.longrunning
 def test_integration_between_two_systems():
     # this might take a while
 ```
 
+{% endraw %}
+
 Run all tests that are not marked `longrunning`
+
+{% raw %}
 
 ```bash
 pytest -v -m "not longrunning"
 ```
+
+{% endraw %}
 
 ### Basic Unit Tests for ML Models
 

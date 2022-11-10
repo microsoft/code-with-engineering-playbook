@@ -61,7 +61,9 @@ Steps may look like the following:
 4. Build Postman Environment files (local, Dev and/or QA) and parameterize all saved requests of the Postman Collection in a way that references the Postman Environment files.
 5. Use the Postman Script feature to create a shared prefetch script that automatically refreshes expired auth tokens per saved request. This would require referencing secrets from a Postman Environment file.
 
-    ```javascript
+    {% raw %}
+
+```javascript
     // Please treat this as pseudocode, and adjust as necessary.
 
     /* The request to an oauth2 authorization endpoint that will issue a token 
@@ -86,6 +88,8 @@ Steps may look like the following:
         });
     }
     ```
+
+{% endraw %}
 
 6. Use Postman IDE to exercise endpoints.
 7. Export collection and environment files then remove any secrets before committing to your repo.
@@ -121,7 +125,9 @@ Steps may look like the following:
 3. Install Powershell or Bash. Powershell works for both Azure Powershell and Azure CLI.
 4. Download Azure CLI, login to the appropriate subscription and ensure you have access to the appropriate resources. Some helpful commands are below:
 
-    ```powershell
+    {% raw %}
+
+```powershell
     # login to the appropriate subscription
     az login
     # validate login
@@ -132,10 +138,14 @@ Steps may look like the following:
     az appconfig kv list --name "$AppConfigName"
     ```
 
+{% endraw %}
+
 5. Build a script that automatically generates your environment files.
     > NOTE: App Configuration references Key Vault, however, your script is responsible for authenticating properly to both App Configuration and Key Vault. The two services don't communicate directly.
 
-    ```powershell (CreatePostmanEnvironmentFiles.ps1)
+    {% raw %}
+
+```powershell (CreatePostmanEnvironmentFiles.ps1)
     # Please treat this as pseudocode, and adjust as necessary.
     ############################################################
 
@@ -157,6 +167,8 @@ Steps may look like the following:
     }
     $envFile | ConvertTo-Json -depth 50 | Out-File -encoding ASCII -FilePath .\$env.postman_environment.json
     ```
+
+{% endraw %}
 
 6. Use Postman IDE to import the Postman Environment files to be referenced by your collection.
 
@@ -181,14 +193,20 @@ Steps may look like the following:
 1. Update your Postman Collection to use the Postman Test feature in order to craft test assertions that will cover all saved requests E2E. Read Postman docs for guidance on how to use the Postman Test feature.
 2. Locally use Newman to validate tests are working as intended
 
-    ```powershell
+    {% raw %}
+
+```powershell
     newman run tests\e2e_Postman_collection.json -e qa.postman_environment.json
     ```
+
+{% endraw %}
 
 3. Build a script that automatically executes Postman Test assertions via Newman and Azure CLI.
     > NOTE: An Azure Service Principal must be setup to continue using azure cli in this CI pipeline example.
 
-    ```powershell (RunPostmanE2eTests.ps1)
+    {% raw %}
+
+```powershell (RunPostmanE2eTests.ps1)
     # Please treat this as pseudocode, and adjust as necessary.
     ############################################################
 
@@ -216,9 +234,13 @@ Steps may look like the following:
     node_modules\.bin\newman run tests\e2e_Postman_collection.json -e $env.postman_environment.json
     ```
 
+{% endraw %}
+
 4. Create a yaml file and define a step that will run your test script. (ex. A yaml file targeting Azure Devops that runs a Powershell script.)
 
-    ```yaml
+    {% raw %}
+
+```yaml
     # Please treat this as pseudocode, and adjust as necessary.
     ############################################################
     displayName: 'Run Postman E2E tests'
@@ -230,6 +252,8 @@ Steps may look like the following:
         AZURE_SECRET: $(environment.secret)
         AZURE_TENANT: $(environment.tenant)
     ```
+
+{% endraw %}
 
 This approach has the following upside:
 

@@ -26,6 +26,8 @@ The easiest is to work with a [mono repository](https://mtirion.medium.com/monor
 
 In the steps below we'll consider the generation of the documentation website from this content structure:
 
+{% raw %}
+
 ```xaml
 ├── .pipelines             // Azure DevOps pipeline for automatic generation and deployment
 │
@@ -50,17 +52,23 @@ In the steps below we'll consider the generation of the documentation website fr
 ├── web.config              // web.config to enable search in deployed website
 ```
 
+{% endraw %}
+
 We'll be using the `DocLinkChecker` tool to validate all links in documentation and for orphaned attachments. That's the reason we have all attachments in the `.attachments` folder.
 
 In the generated website from the QuickStart folder you'll see that the hierarchies of documentation and references is combined in the left table of contents. This is achieved by the definition and use of **x-cross\toc.yml**. If you don't want the hierarchies combined, just remove the  folder and file from your environment and (re)generate the website.
 
 A `.markdownlint.json` is included with the contents below. The [MD013 setting](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md013---line-length) is set to false to prevent checking for maximum line length. You can modify this file to your likings to include or exclude certain tests.
 
+{% raw %}
+
 ```json
 {
     "MD013": false
 }
 ```
+
+{% endraw %}
 
 The contents of the **.pipelines** and **infrastructure** folders are explained in the recipe [Deploy the DocFx Documentation website to an Azure Website automatically](deploy-docfx-azure-website.md).
 
@@ -71,6 +79,8 @@ DocFx can generate reference documentation from code, where C# and Typescript ar
 First, you can use the **Directory.Build.props** file in the **/src** folder in combination with the files in the **build/dotnet** folder. By having this, you enforce StyleCop in all Visual Studio project files in it's sub folders with a configuration of which rules should be used or ignored. You can tailor this to your needs of course. For more information, see [Customize your build](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019) and [Use rule sets to group code analysis rules](https://docs.microsoft.com/en-us/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules?view=vs-2019).
 
 To make sure developers are forced to add the triple-slash comments by throwing compiler errors and to have the proper settings for the generation of documentation XML-files, add the **TreatWarningsAsErrors** and **GenerateDocumentationFile** settings to every *.csproj* file. You can add that in the first *PropertyGroup* settings like this:
+
+{% raw %}
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -85,6 +95,8 @@ To make sure developers are forced to add the triple-slash comments by throwing 
 </Project>
 ```
 
+{% endraw %}
+
 Now you are all set to generate documentation from your C# code. For more information about languages supported by DocFx and how to configure it, see [Introduction to Multiple Languages Support](https://dotnet.github.io/docfx/tutorial/universalreference/intro_multiple_langs_support.html?q=typescript).
 
 > **NOTE:** You can also add a PropertyGroup definition with the two settings in *Directory.Build.props* to have that settings in all projects. But in that case it will also be inherited in your Test projects.
@@ -95,10 +107,14 @@ Go to the [DocFx](https://dotnet.github.io/docfx/) website to the Download secti
 
 You can also use tools like [Chocolatey](https://chocolatey.org/) to install:
 
+{% raw %}
+
 ```bash
 choco install docfx
 choco install markdownlint-cli
 ```
+
+{% endraw %}
 
 ## 2. Configure DocFx
 
@@ -107,6 +123,8 @@ Configuration for DocFx is done in a `docfx.json` file. Store this file in the r
 > **NOTE:** You can store the docfx.json somewhere else in the hierarchy, but then you need to provide the path of the file as an argument to the docfx command so it can be located.
 
 Below is a good configuration to start with, where documentation is in the **/docs** folder and the sources are in the **/src** folder:
+
+{% raw %}
 
 ```json
 {
@@ -146,9 +164,13 @@ Below is a good configuration to start with, where documentation is in the **/do
 }
 ```
 
+{% endraw %}
+
 ## 3. Setup some basic documents
 
 We suggest starting with a basic documentation structure in the **/docs** folder. In the provided QuickStart folder we have a basic setup:
+
+{% raw %}
 
 ```xaml
 ├── docs
@@ -180,9 +202,13 @@ We suggest starting with a basic documentation structure in the **/docs** folder
 │   ├── index.md                          // Landing page documentation
 ```
 
+{% endraw %}
+
 You can use templates like working agreements and such from the [CSE Playbook](https://github.com/microsoft/code-with-engineering-playbook/).
 
 To have a proper landing page of your documentation website, you can use a markdown file called INDEX.MD in the root of your repository. Contents can be something like this:
+
+{% raw %}
 
 ```markdown
 # CSE Documentation
@@ -197,15 +223,21 @@ To get started with the setup of this website, read the getting started document
 
 ```
 
+{% endraw %}
+
 ## 4. Compile the companion tools and run them
 
 > **NOTE:** To explain each step, we'll be going through the various steps in the next few paragraphs. In the provided sample, a batch-file called **GenerateDocWebsite.cmd** is included. This script will take all the necessary steps to compile the tools, execute the checks, generate the table of contents and execute docfx to generate the website.
 
 To check for proper markdown formatting the **markdownlint-cli** tool is used. The command takes it's configuration from the `.markdownlint.json` file in the root of the project. To check all markdown files, simply execute this command:
 
+{% raw %}
+
 ```shell
 markdownlint **/*.md
 ```
+
+{% endraw %}
 
 In the QuickStart folder you should have copied in the two companion tools **TocDocFxCreation** and **DocLinkChecker** as described in the introduction of this article.
 
@@ -213,15 +245,23 @@ You can compile the tools from Visual Studio, but you can also run `dotnet build
 
 The **DocLinkChecker** companion tool is used to validate what's in the docs folder. It validates links between documents and attachments in the docs folder and checks if there aren't orphaned attachments. An example of executing this tool, where the check of attachments is included:
 
+{% raw %}
+
 ```shell
 DocLinkChecker.exe -d ./docs -a
 ```
 
+{% endraw %}
+
 The **TocDocFxCreation** tool is needed to generate a table of contents for your documentation, so users can navigate between folders and documents. If you have compiled the tool, use this command to generate a table of content file `toc.yml`. To generate a table of contents with the use of the .order files for determining the sequence of articles and to automatically generate index.md documents if no default document is available in a folder, this command can be used:
+
+{% raw %}
 
 ```shell
 TocDocFxCreation.exe -d ./docs -sri
 ```
+
+{% endraw %}
 
 ## 5. Run DocFx to generate the website
 

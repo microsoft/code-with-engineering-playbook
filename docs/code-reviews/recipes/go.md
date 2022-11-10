@@ -52,12 +52,16 @@ Installation options for golangci-lint are present at [golangci-lint](https://gi
 
 To use golangci-lint with VS Code, use the below recommended settings:
 
+{% raw %}
+
 ```json
 "go.lintTool":"golangci-lint",
    "go.lintFlags": [
      "--fast"
    ]
 ```
+
+{% endraw %}
 
 ## Pre-Commit Hooks
 
@@ -72,12 +76,16 @@ Alternatively you can run `brew install pre-commit` if you are using homebrew.
 
 Add .pre-commit-config.yaml file to root of the go project. Run go-fmt on pre-commit by adding it to .pre-commit-config.yaml file like below.
 
+{% raw %}
+
 ```yaml
 - repo: git://github.com/dnephin/pre-commit-golang
   rev: master
   hooks:
     - id: go-fmt
 ```
+
+{% endraw %}
 
 ### Step 3
 
@@ -89,15 +97,21 @@ Run `$ pre-commit install` to set up the git hook scripts
 
 To automate this process in Azure DevOps you can add the following snippet to your `azure-pipelines.yaml` file. This will format any scripts in the `./scripts/` folder.
 
+{% raw %}
+
 ```yaml
 - script: go fmt
   workingDirectory: $(System.DefaultWorkingDirectory)/scripts
   displayName: "Run code formatting"
 ```
 
+{% endraw %}
+
 `govet` should be run as a part of every build to check code linting.
 
 To automate this process in Azure DevOps you can add the following snippet to your `azure-pipelines.yaml` file. This will check linting of any scripts in the `./scripts/` folder.
+
+{% raw %}
 
 ```yaml
 - script: go vet
@@ -105,7 +119,11 @@ To automate this process in Azure DevOps you can add the following snippet to yo
   displayName: "Run code linting"
 ```
 
+{% endraw %}
+
 Alternatively you can use golangci-lint as a step in the pipeline to do multiple enabled validations(including go vet and go fmt) of golangci-lint.
+
+{% raw %}
 
 ```yaml
 - script: golangci-lint run --enable gofmt --fix
@@ -113,7 +131,11 @@ Alternatively you can use golangci-lint as a step in the pipeline to do multiple
   displayName: "Run code linting"
 ```
 
+{% endraw %}
+
 ## Sample Build Validation Pipeline in Azure DevOps
+
+{% raw %}
 
 ```yaml
 trigger: master
@@ -154,6 +176,8 @@ steps:
   inputs:
      artifactName: drop
 ```
+
+{% endraw %}
 
 ## Code Review Checklist
 

@@ -10,9 +10,13 @@ The following steps can be followed when using the Quick Start folder. In the **
 
 You can use tools like [Chocolatey](https://chocolatey.org/) to install Terraform:
 
+{% raw %}
+
 ```shell
 choco install terraform
 ```
+
+{% endraw %}
 
 ## 2. Set the proper variables
 
@@ -34,12 +38,16 @@ To secure a website with a custom domain name and a certificate, you can find th
 
 You can store this script in a PowerShell script file (ps1 extension).
 
+{% raw %}
+
 ```powershell
 $cert = New-SelfSignedCertificate -CertStoreLocation cert:\currentuser\my -Subject "cn=[YOUR DOMAIN]" -DnsName "[YOUR DOMAIN]"
 $pwd = ConvertTo-SecureString -String '[PASSWORD]' -Force -AsPlainText
 $path = 'cert:\currentuser\my\' + $cert.thumbprint
 Export-PfxCertificate -cert $path -FilePath [FILENAME].pfx -Password $pwd
 ```
+
+{% endraw %}
 
 The certificate needs to be stored in the common Key Vault. Go to `Settings > Certificates` in the left menu of the Key Vault and click `Generate/Import`. Provide these details:
 
@@ -69,39 +77,63 @@ Once we have the SSL certificate and there is a complete DNS registration as des
 
 Open up a command prompt. For the commands to be executed, you need to have a connection to your Azure subscription. This can be done using [Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli). Type this command:
 
+{% raw %}
+
 ```shell
 az login
 ```
 
+{% endraw %}
+
 This will use the web browser to login to your account. You can check the connected subscription with this command:
+
+{% raw %}
 
 ```shell
 az account show
 ```
 
+{% endraw %}
+
 If you have to change to another subscription, use this command where you replace *[id]* with the id of the subscription to select:
+
+{% raw %}
 
 ```shell
 az account set --subscription [id]
 ```
 
+{% endraw %}
+
 Once this is done run this command to initialize:
+
+{% raw %}
 
 ```shell
 terraform init
 ```
 
+{% endraw %}
+
 Now you can run the command to plan what the script will do. You run this command every time changes are made to the terraform scripts:
+
+{% raw %}
 
 ```shell
 terraform plan
 ```
 
+{% endraw %}
+
 Inspect the result shown. If that is what you expect, apply these changes with this command:
+
+{% raw %}
 
 ```shell
 terraform apply
 ```
+
+{% endraw %}
 
 When asked for approval, type "yes" and ENTER. You can also add the *-auto-approve* flag to the apply command.
 
