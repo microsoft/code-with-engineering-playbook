@@ -73,9 +73,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
 - When we assign variable like below it won't set during initialize time, it'll assign during runtime, then we can retrieve some errors based on when template runs.
 
-  {% raw %}
-
-```yaml
+  ```yaml
   - task: AzureWebApp@1
     displayName: 'Deploy Azure Web App : $(webAppName)'
     inputs:
@@ -85,28 +83,20 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
       startUpCommand: 'gunicorn --bind=0.0.0.0 --workers=4 app:app'
   ```
 
-{% endraw %}
-
   Error:
 
   ![authorization issue due to initialize time](images/authorization_issue_due_to_initialize_time.png)
 
   After passing these variables as parameter, it loads values properly.
 
-  {% raw %}
-
-```yaml
+  ```yaml
     - template: steps-deployment.yaml
       parameters:
         azureServiceConnectionId: ${{ variables.azureServiceConnectionId  }}
         webAppName: ${{ variables.webAppName  }}
   ```
 
-{% endraw %}
-
-  {% raw %}
-
-```yaml
+  ```yaml
   - task: AzureWebApp@1
     displayName: 'Deploy Azure Web App :${{ parameters.webAppName }}'
     inputs:
@@ -116,14 +106,8 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
       startUpCommand: 'gunicorn --bind=0.0.0.0 --workers=4 app:app'
   ```
 
-{% endraw %}
-
 - Use `issecret` for printing secrets for debugging
 
-  {% raw %}
-
-```bash
+  ```bash
   echo "##vso[task.setvariable variable=token;issecret=true]${token}"
   ```
-
-{% endraw %}

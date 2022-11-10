@@ -22,8 +22,6 @@ In order to run Azurite V3 you need Node.js >= 8.0 installed on your system. Azu
 
 After the Node.js installation, you can install Azurite simply with npm which is the Node.js package management tool included with every Node.js installation.
 
-{% raw %}
-
 ```bash
 # Install Azurite
 npm install -g azurite
@@ -35,11 +33,7 @@ mkdir c:/azurite
 azurite --silent --location c:\azurite --debug c:\azurite\debug.log
 ```
 
-{% endraw %}
-
 The output will be:
-
-{% raw %}
 
 ```shell
 Azurite Blob service is starting at http://127.0.0.1:10000
@@ -48,23 +42,15 @@ Azurite Queue service is starting at http://127.0.0.1:10001
 Azurite Queue service is successfully listening at http://127.0.0.1:10001
 ```
 
-{% endraw %}
-
 ### b. Using a docker image
 
 Another way to run Azurite is using docker, using default `HTTP` endpoint
-
-{% raw %}
 
 ```bash
 docker run -p 10000:10000 mcr.microsoft.com/azure-storage/azurite azurite-blob --blobHost 0.0.0.0
 ```
 
-{% endraw %}
-
 Docker Compose is another option and can run the same docker image using the `docker-compose.yml` file below.
-
-{% raw %}
 
 ```yaml
 version: '3.4'
@@ -80,8 +66,6 @@ services:
       - "10001:10001"
 ```
 
-{% endraw %}
-
 ## 2. Run tests on your local machine
 
 Python 3.8.7 is used for this, but it should be fine on other 3.x versions as well.
@@ -90,9 +74,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
    Option 1: using npm:
 
-   {% raw %}
-
-```bash
+   ```bash
    # Install Azurite
    npm install -g azurite
    # Create azurite directory
@@ -101,17 +83,11 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
    azurite --silent --location c:\azurite --debug c:\azurite\debug.log
    ```
 
-{% endraw %}
-
    Option 2: using docker
 
-   {% raw %}
-
-```bash
+   ```bash
    docker run -p 10000:10000 mcr.microsoft.com/azure-storage/azurite azurite-blob --blobHost 0.0.0.0
    ```
-
-{% endraw %}
 
 1. In Azure Storage Explorer, select `Attach to a local emulator`
 
@@ -128,9 +104,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
 1. Container name and initialize env variables: Use conftest.py for test integration.
 
-   {% raw %}
-
-```python
+   ```python
    from azure.storage.blob import BlobServiceClient
    import os
 
@@ -146,8 +120,6 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
          print(e)
    ```
 
-{% endraw %}
-
    **Note: value for `STORAGE_CONNECTION_STRING` is default value for Azurite, it's not a private key*
 
 1. Install the dependencies  
@@ -156,13 +128,9 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
 1. Run tests:
 
-   {% raw %}
-
-```bash
+   ```bash
    python -m pytest ./tests
    ```
-
-{% endraw %}
 
 After running tests, you can see the files in your local blob storage
 
@@ -171,8 +139,6 @@ After running tests, you can see the files in your local blob storage
 ## 3. Run tests on Azure Pipelines
 
 After running tests locally we need to make sure these tests pass on Azure Pipelines too. We have 2 options here, we can use docker image as hosted agent on Azure or install an npm package in the Pipeline steps.
-
-{% raw %}
 
 ```bash
 trigger:
@@ -210,8 +176,6 @@ steps:
     testResultsFiles: '**/*_tests_report.xml'
     failTaskOnFailedTests: true
 ```
-
-{% endraw %}
 
 Once we set up our pipeline in Azure Pipelines, result will be like below
 

@@ -11,8 +11,6 @@ The password format should be a string larger than 8 characters containing at le
 simplest possible test; one of the easiest ways to do this is to first write tests that validate inputs into the
 function:
 
-{% raw %}
-
 ```csharp
 // Tests.cs
 public class Tests
@@ -35,13 +33,9 @@ public class MyClass
 }
 ```
 
-{% endraw %}
-
 If we run this code, the test will fail as no exception was thrown since our code in `ValidateString` is just a stub.
 This is ok! This is the "Red" part of Red-Green-Refactor. Now we want to move onto the "Green" part - making the minimal
 change required to make this test pass:
-
-{% raw %}
 
 ```csharp
 // MyClass.cs
@@ -54,16 +48,12 @@ public class MyClass
 }
 ```
 
-{% endraw %}
-
 Our tests pass, but this function doesn't really work, it will always throw the exception. That's ok! As we
 continue to write tests we will slowly add the logic for this function, and it will build on itself, all while
 guaranteeing our tests continue to pass.
 
 We will skip the "Refactor" stage at this point because there isn't anything to refactor. Next let's add a test that
 checks that the function returns false if the password is less than size 8:
-
-{% raw %}
 
 ```csharp
 [Fact]
@@ -74,12 +64,8 @@ public void ValidatePassword_SmallSize_ReturnsFalse()
 }
 ```
 
-{% endraw %}
-
 This test will pass as it still only throws an `ArgumentNullException`, but again, that is an expected failure. Fixing
 our function should see it pass:
-
-{% raw %}
 
 ```csharp
 public bool ValidatePassword(string input)
@@ -93,8 +79,6 @@ public bool ValidatePassword(string input)
 }
 ```
 
-{% endraw %}
-
 Finally, some code that looks real! Note how it wasn't the test that checked for null that had us add the `if` statement
 for the null-check, but rather the subsequent test which unlocked a whole new branch. By adding that if statement, we
 made the bare minimum change necessary in order to get **both** tests to pass, but we still have work to do.
@@ -106,8 +90,6 @@ full well that we will be adding logic later that will expand on this.
 
 Speaking of which, let's add the positive test now:
 
-{% raw %}
-
 ```csharp
 [Fact]
 public void ValidatePassword_RightSize_ReturnsTrue()
@@ -117,8 +99,6 @@ public void ValidatePassword_RightSize_ReturnsTrue()
 }
 ```
 
-{% endraw %}
-
 Again, this test will fail at the start. One thing to note here if that its important that we try and make our tests
 resilient to future changes. When we write the code under test, we act very naively, only trying to make the current
 tests we have pass; when you write tests though, you want to ensure that everything you are doing is a valid case in the
@@ -127,8 +107,6 @@ would pass, but later when we add tests that validate the function has the rest 
 incorrectly.
 
 Anyways, the next code change is:
-
-{% raw %}
 
 ```csharp
 public bool ValidatePassword(string input)
@@ -146,13 +124,9 @@ public bool ValidatePassword(string input)
 }
 ```
 
-{% endraw %}
-
 Here we now have a passing test! However, the logic doesn't actually make much sense. We did the bare minimum
 change which was adding a new condition that passed for longer strings, but thinking forward we know this
 won't work as soon as we add additional validations. So let's use our first "Refactor" step in the Red-Green-Refactor flow!
-
-{% raw %}
 
 ```csharp
 public bool ValidatePassword(string input)
@@ -170,8 +144,6 @@ public bool ValidatePassword(string input)
 }
 ```
 
-{% endraw %}
-
 That looks better. Note how from a functional perspective, inverting the if-statement does not change what the function returns.
 This is an important part of the refactor flow, maintaining the logic by doing provably safe refactors, usually through the use of tooling and automated refactors from
 your IDE.
@@ -179,8 +151,6 @@ your IDE.
 Finally, we have one last requirement for our `ValidatePassword` method and that is that it needs to check that there is
 a number in the password. Let's again start with the negative test and validate that with a string with the valid length
 that the function returns `false` if we do not pass in a number:
-
-{% raw %}
 
 ```csharp
 [Fact]
@@ -191,11 +161,7 @@ public void ValidatePassword_ValidLength_ReturnsFalse()
 }
 ```
 
-{% endraw %}
-
 Of course the test fails as it is only checking length requirements. Let's fix the method to check for numbers:
-
-{% raw %}
 
 ```csharp
 public bool ValidatePassword(string input)
@@ -218,12 +184,8 @@ public bool ValidatePassword(string input)
 }
 ```
 
-{% endraw %}
-
 Here we use a handy LINQ method to check if any of the `char`s in the `string` are a digit, and if not, return false.
 Tests now pass, and we can refactor. For readability, why not combine the `if` statements:
-
-{% raw %}
 
 ```csharp
 public bool ValidatePassword(string input)
@@ -242,8 +204,6 @@ public bool ValidatePassword(string input)
     return true;
 }
 ```
-
-{% endraw %}
 
 As we refactor this code, we feel 100% confident in the changes we made as we have 100% test coverage which tests both
 positive and negative scenarios. In this case we actually already have a method that tests the positive case, so our function is done!

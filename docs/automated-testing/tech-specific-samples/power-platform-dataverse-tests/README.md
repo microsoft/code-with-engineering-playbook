@@ -108,13 +108,9 @@ so that part will not be covered in this document.
 Locust is written in Python, so if one prefers to run it locally, without Docker,
 a call in the command line would work:
 
-{% raw %}
-
 ```bash
 locust -f locustfile.py --host http://127.0.0.1:8089 --headless -u 10 -t 120s Test
 ```
-
-{% endraw %}
 
 This will run `Test` for 120 seconds, using 10 users, without an User Interface. When the
 time is up, the process will kill itself and returns to the command prompt.
@@ -135,8 +131,6 @@ Therefore, Locust is a tool to write not only Load Tests, but also other types o
 like End-to-End and Integration tests.
 
 Here is an example:
-
-{% raw %}
 
 ```python
 def function1(self):
@@ -190,14 +184,10 @@ class ExecuteLoadTest(HttpUser):
     wait_time = between(3.0, 9.0)
 ```
 
-{% endraw %}
-
 Then the tests can be called as `ExecuteE2ETest`, `ExecuteIntegrationTest`, or `ExecuteLoadTest`,
 depending on what test is supposed to run.
 
 The following will work for end-to-end tests in docker-compose:
-
-{% raw %}
 
 ```yml
 version: '3'
@@ -223,11 +213,7 @@ services:
     command: -f /mnt/locust/locustfile.py --worker --master-host master ExecuteE2ETest
 ```
 
-{% endraw %}
-
 This will run the integration test:
-
-{% raw %}
 
 ```yml
 version: '3'
@@ -253,11 +239,7 @@ services:
     command: -f /mnt/locust/locustfile.py --worker --master-host master ExecuteIntegrationTest1
 ```
 
-{% endraw %}
-
 And the below will execute the load test:
-
-{% raw %}
 
 ```yml
 version: '3'
@@ -282,8 +264,6 @@ services:
       - ./:/mnt/locust
     command: -f /mnt/locust/locustfile.py --worker --master-host master ExecuteLoadTest
 ```
-
-{% endraw %}
 
 All the 3 scripts are practically doing the same thing. There are two places to be updated:
 

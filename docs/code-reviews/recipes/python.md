@@ -20,65 +20,41 @@ Flake8 is a simple and fast wrapper around [`Pyflakes`](https://github.com/PyCQA
 
 Install `Flake8`
 
-{% raw %}
-
 ```bash
 pip install flake8
 ```
 
-{% endraw %}
-
 Add an extension for the [`pydocstyle`](https://github.com/PyCQA/pydocstyle) (for [doc strings](https://www.python.org/dev/peps/pep-0257/)) tool to flake8.
-
-{% raw %}
 
 ```bash
 pip install flake8-docstrings
 ```
 
-{% endraw %}
-
 Add an extension for [`pep8-naming`](https://github.com/PyCQA/pep8-naming) (for [naming conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions) in pep8) tool to flake8.
-
-{% raw %}
 
 ```bash
 pip install pep8-naming
 ```
 
-{% endraw %}
-
 Run `Flake8`
-
-{% raw %}
 
 ```bash
 flake8 .    # lint the whole project
 ```
 
-{% endraw %}
-
 ### Pylint
 
 Install `Pylint`
-
-{% raw %}
 
 ```bash
 pip install pylint
 ```
 
-{% endraw %}
-
 Run `Pylint`
-
-{% raw %}
 
 ```bash
 pylint src  # lint the source directory
 ```
-
-{% endraw %}
 
 ## Automatic Code Formatting
 
@@ -86,67 +62,43 @@ pylint src  # lint the source directory
 
 [`Black`](https://github.com/psf/black) is an unapologetic code formatting tool. It removes all need from `pycodestyle` nagging about formatting, so the team can focus on content vs style. It's not possible to configure black for your own style needs.
 
-{% raw %}
-
 ```bash
 pip install black
 ```
 
-{% endraw %}
-
 Format python code
-
-{% raw %}
 
 ```bash
 black [file/folder]
 ```
 
-{% endraw %}
-
 ### Autopep8
 
 [`Autopep8`](https://github.com/hhatto/autopep8) is more lenient and allows more configuration if you want less stringent formatting.
-
-{% raw %}
 
 ```bash
 pip install autopep8
 ```
 
-{% endraw %}
-
 Format python code
-
-{% raw %}
 
 ```bash
 autopep8 [file/folder] --in-place
 ```
 
-{% endraw %}
-
 ### yapf
 
 [yapf](https://github.com/google/yapf) Yet Another Python Formatter is a python formatter from Google based on ideas from gofmt.  This is also more configurable, and a good option for automatic code formatting.
-
-{% raw %}
 
 ```bash
 pip install yapf
 ```
 
-{% endraw %}
-
 Format python code
-
-{% raw %}
 
 ```bash
 yapf [file/folder] --in-place
 ```
-
-{% endraw %}
 
 ## VS Code Extensions
 
@@ -158,20 +110,14 @@ The [`Python language extension`](https://marketplace.visualstudio.com/items?ite
 
 The [`Pyright extension`](https://marketplace.visualstudio.com/items?itemName=ms-pyright.pyright) augments VS Code with static type checking when you use type hints
 
-{% raw %}
-
 ```python
 def add(first_value: int, second_value: int) -> int:
     return first_value + second_value
 ```
 
-{% endraw %}
-
 ## Build validation
 
 To automate linting with `flake8` and testing with `pytest` in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file.
-
-{% raw %}
 
 ```yaml
 trigger:
@@ -227,8 +173,6 @@ jobs:
       testRunTitle: 'Publish test results for Python $(python.version)'
 ```
 
-{% endraw %}
-
 To perform a PR validation on GitHub you can use a similar YAML configuration with [GitHub Actions](https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions)
 
 ## Pre-commit hooks
@@ -239,19 +183,13 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 1. Install pre-commit and add to the requirements.txt
 
-    {% raw %}
-
-```bash
+    ```bash
     pip install pre-commit
     ```
 
-{% endraw %}
-
 2. Add a `.pre-commit-config.yaml` file in the root of the repository, with the desired pre-commit actions
 
-    {% raw %}
-
-```yaml
+    ```yaml
     repos:
     -   repo: https://github.com/ambv/black
         rev: stable
@@ -264,17 +202,11 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
         - id: flake8
     ```
 
-{% endraw %}
-
 3. Each individual developer that wants to set up pre-commit hooks can then run
 
-    {% raw %}
-
-```bash
+    ```bash
     pre-commit install
     ```
-
-{% endraw %}
 
 At the next attempted commit any lint failures will block the commit.
 

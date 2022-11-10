@@ -31,8 +31,6 @@ A simple service implementation can return a static response. For
 RESTful services, the JSON responses for the stubs can be stored as
 application resources or simply as static strings.
 
-{% raw %}
-
 ```C#
 public Task\<UserProfile> GetUserAsync(long userId, CancellationToken
 cancellationToken)
@@ -47,8 +45,6 @@ Newtonsoft.Json.JsonConvert.DeserializeObject\<UserProfile>(
     return Task.FromResult(result);
 }
 ```
-
-{% endraw %}
 
 More sophisticated can randomly return errors to test the app's
 resiliency code paths.
@@ -68,8 +64,6 @@ it easy to switch between mock services and real service client
 implementations. Since both implement the same interface,
 implementations can be registered with the Unity container.
 
-{% raw %}
-
 ```C#
 public static void Bootstrap(IUnityContainer container)
 {
@@ -83,11 +77,7 @@ public static void Bootstrap(IUnityContainer container)
 }
 ```
 
-{% endraw %}
-
 The code consuming the interfaces will not notice the difference.
-
-{% raw %}
 
 ```C#
 public class UserPageModel
@@ -105,8 +95,6 @@ public class UserPageModel
 // ...
 }
 ```
-
-{% endraw %}
 
 ## Local Services
 

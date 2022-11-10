@@ -9,8 +9,6 @@ This document aims to automate this process in Azure DevOps, so the DSs don't ne
 
 A Data Science repository has this folder structure:
 
-{% raw %}
-
 ```bash
 
     .
@@ -26,8 +24,6 @@ A Data Science repository has this folder structure:
        └── Machine Learning Experiments - 03.py
 
 ```
-
-{% endraw %}
 
 The python files are needed to allow Pull Request reviewers to add comments to the notebooks, they can add comments
 to the Python scripts and we apply these comments to the notebooks.
@@ -52,9 +48,7 @@ In the newly created pipeline we add:
 
 1. Trigger to run on ipynb files:
 
-    {% raw %}
-
-```yml
+    ```yml
     trigger:
       paths:
       include:
@@ -62,73 +56,49 @@ In the newly created pipeline we add:
         - '**/*.ipynb'
     ```
 
-{% endraw %}
-
 1. Select the pool as Linux:
 
-    {% raw %}
-
-```yml
+    ```yml
     pool:
       vmImage: ubuntu-latest
     ```
 
-{% endraw %}
-
 1. Set the directory where we want to store the scripts:
 
-    {% raw %}
-
-```yml
+    ```yml
     variables:
       REPO_URL: # Azure DevOps URL in the format: dev.azure.com/<Organization>/<Project>/_git/<RepoName>
     ```
 
-{% endraw %}
-
 1. Now we will start the core of the pipeline:
     1. Upgrade pip
 
-    {% raw %}
-
-```yml
+    ```yml
     - script: |
         python -m pip install --upgrade pip
       displayName: 'Upgrade pip'
 
     ```
 
-{% endraw %}
-
     1. Install `nbconvert` and `ipython`:
 
-    {% raw %}
-
-```yml
+    ```yml
     - script: |
         pip install nbconvert ipython
       displayName: 'install nbconvert & ipython'
     ```
 
-{% endraw %}
-
     1. Install `pandoc`:
 
-    {% raw %}
-
-```yml
+    ```yml
     - script: |
         sudo apt install -y pandoc
       displayName: "Install pandoc"
     ```
 
-{% endraw %}
-
     1. Find the notebook files (`ipynb`) in the last commit to the repo and convert it to scripts (`py`):
 
-    {% raw %}
-
-```yml
+    ```yml
     - task: Bash@3
         inputs:
           targetType: 'inline'
@@ -139,13 +109,9 @@ In the newly created pipeline we add:
         displayName: "Convert Notebook to script"
     ```
 
-{% endraw %}
-
     1. Commit these changes to the repository:
 
-    {% raw %}
-
-```yml
+    ```yml
     - bash: |
         git config --global user.email "build@dev.azure.com"
         git config --global user.name "build"
@@ -154,7 +120,5 @@ In the newly created pipeline we add:
         [ -z "$NO_CHANGES" ] || git push https://$(System.AccessToken)@$(REPO_URL) HEAD:$(Build.SourceBranchName)
       displayName: "Commit notebook to repository"
     ```
-
-{% endraw %}
 
 Now we have a pipeline that will generate the scripts as we commit our notebooks.

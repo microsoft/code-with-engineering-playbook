@@ -12,8 +12,6 @@ implementation:
 The bug we are trying to fix is that if there are multiple empty lines in the configuration file, an
 IndexOutOfRangeException is being thrown. Our class currently looks like this:
 
-{% raw %}
-
 ```csharp
 using System.IO;
 using System.Linq;
@@ -37,8 +35,6 @@ public class Configuration
 }
 ```
 
-{% endraw %}
-
 ## Abstraction
 
 In our example, we have a single dependency: the file system. Rather than just abstracting the file system entirely, let
@@ -51,8 +47,6 @@ When creating abstractions, it can be good practice creating an interface for th
 support it. In the example with C#, we can create an `IConfigurationReader` interface, and instead of just having a
 `ConfigurationReader` class we can be more specific and name if `FileConfigurationReader` to indicate that it reads from
 the file system:
-
-{% raw %}
 
 ```csharp
 // IConfigurationReader.cs
@@ -71,12 +65,8 @@ public class FileConfigurationReader : IConfigurationReader
 }
 ```
 
-{% endraw %}
-
 Now that the file dependency has been abstracted away, we need to update our Configuration class's Initialize method to
 use the new abstraction instead of calling `File.ReadAllLines` directly:
-
-{% raw %}
 
 ```csharp
 public void Initialize()
@@ -92,8 +82,6 @@ public void Initialize()
 }
 ```
 
-{% endraw %}
-
 As you can see, we still have a dependency on the file system, but that dependency has been abstracted out. We will need
 to use other techniques to break the dependency completely.
 
@@ -102,8 +90,6 @@ to use other techniques to break the dependency completely.
 In the previous section, we abstracted the file access into a `FileConfigurationReader` but we still had a dependency on
 the file system in our function. We can use dependency injection to inject the right reader into our `Configuration`
 class:
-
-{% raw %}
 
 ```csharp
 using System.IO;
@@ -135,8 +121,6 @@ public class Configuration
 }
 ```
 
-{% endraw %}
-
 Above, a technique was used called [Constructor Injection](https://en.wikipedia.org/wiki/Dependency_injection#Constructor_injection).
 This uses the object's constructor to set what our dependencies will be, which means whichever object creates the
 `Configuration` object will control which reader needs to get passed in. This is an example of "inversion of control",
@@ -161,8 +145,6 @@ the file system. We could create a mock here, but instead let's create a concret
 simply returns the passed in string[] - we can call it `PassThroughConfigurationReader` (for more details on why this
 approach may be better than mocking, see the page on [mocking](mocking.md))
 
-{% raw %}
-
 ```csharp
 public class PassThroughConfigurationReader : IConfigurationReader
 {
@@ -180,13 +162,9 @@ public class PassThroughConfigurationReader : IConfigurationReader
 }
 ```
 
-{% endraw %}
-
 This simple class will be used in our unit tests, so we can create different states without requiring lots of file
 access. Now that we have this in place, we can go ahead and write our unit tests, starting with the tests that describe
 the current behavior:
-
-{% raw %}
 
 ```csharp
 public class ConfigurationTests
@@ -215,8 +193,6 @@ public class ConfigurationTests
 }
 ```
 
-{% endraw %}
-
 ## Fixing the bug
 
 All our current tests pass, and give us 100% coverage, however as evidenced by the bug, we must not be covering all
@@ -224,8 +200,6 @@ possible inputs and outputs. In the case of the bug, multiple empty lines would 
 `KeyNotFoundException` is not a very friendly exception and is an implementation detail, not something that makes sense
 when designing the Configuration API. Let's add some more tests and align the tests with how we think the
 `Configuration` class should behave:
-
-{% raw %}
 
 ```csharp
 public class ConfigurationTests
@@ -292,13 +266,9 @@ public class ConfigurationTests
 }
 ```
 
-{% endraw %}
-
 Now we have 4 failing tests and 1 passing test, but we have firmly established through the use of these tests how we
 expect callers to user the Configuration class and what is and isn't allowed as inputs. Now we just need to fix the
 `Configuration` class so that our tests pass:
-
-{% raw %}
 
 ```csharp
 public void Initialize()
@@ -327,8 +297,6 @@ public void Initialize()
     this.MyProperty = config["myproperty"];
 }
 ```
-
-{% endraw %}
 
 Now all our tests pass! We have fixed our bug, added unit tests to the `Configuration` class, and have much higher
 confidence in future changes.

@@ -10,15 +10,11 @@ A solution to work with binary files is using Git LFS (or Git Large File System)
 
 The way it works in short, is that a placeholder file is stored in the repo with information for the LFS system. It looks something like this:
 
-{% raw %}
-
 ```shell
 version https://git-lfs.github.com/spec/v1
 oid a747cfbbef63fc0a3f5ffca332ae486ee7bf77c1d1b9b2de02e261ef97d085fe
 size 4923023
 ```
-
-{% endraw %}
 
 The actual file is stored in a separate storage. This way Git will track changes in this placeholder file, not the large file. The combination of using Git and Git LFS will hide this from the developer though. You will just work with the repository and files as before.
 
@@ -47,23 +43,15 @@ For every repository you want to use LFS, you have to go through these steps:
 
 * Setup LFS for the repo:
 
-{% raw %}
-
 ```shell
 git lfs install
 ```
 
-{% endraw %}
-
 * Indicate which files have to be considered as large files (or binary files). As an example, to consider all Photoshop files to be large:
-
-{% raw %}
 
 ```shell
 git lfs track "*.psd"
 ```
-
-{% endraw %}
 
 There are more fine-grained ways to indicate files in a folder and more. See the [Git LFS Documentation](https://github.com/git-lfs/git-lfs/tree/master/docs?utm_source=gitlfs_site&utm_medium=docs_link&utm_campaign=gitlfs).
 
@@ -75,68 +63,44 @@ From here on you just use the standard Git commands to work in the repository. T
 
 Install Git LFS
 
-{% raw %}
-
 ```bash
 git lfs install       # windows
 sudo apt-get git-lfs  # linux
 ```
 
-{% endraw %}
-
 See the [Git LFS installation instructions](https://github.com/git-lfs/git-lfs/wiki/Installation) for installation on other systems
 
 Track .mp4 files with Git LFS
-
-{% raw %}
 
 ```bash
 git lfs track '*.mp4'
 ```
 
-{% endraw %}
-
 Update the `.gitattributes` file listing the files and patterns to track
-
-{% raw %}
 
 ```bash
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 docs/images/* filter=lfs diff=lfs merge=lfs -text
 ```
 
-{% endraw %}
-
 List all patterns tracked
-
-{% raw %}
 
 ```bash
 git lfs track
 ```
 
-{% endraw %}
-
 List all files tracked
-
-{% raw %}
 
 ```bash
 git lfs ls-files
 ```
 
-{% endraw %}
-
 Download files to your working directory
-
-{% raw %}
 
 ```bash
 git lfs pull
 git lfs pull --include="path/to/file"
 ```
-
-{% endraw %}
 
 ## VFS for Git
 
@@ -161,23 +125,15 @@ Download those files and install them on your machine.
 
 To be able to use VFS for Git for a repository, a `.gitattributes` file needs to be added to the repo with this line in it:
 
-{% raw %}
-
 ```shell
 * -text
 ```
 
-{% endraw %}
-
 To clone a repository to your machine using VFS for Git you use `gvfs` instead of `git` like so:
-
-{% raw %}
 
 ```shell
 gvfs clone [URL] [dir]
 ```
-
-{% endraw %}
 
 Once this is done, you have a folder which contains a `src` folder which contains the contents of the repository. This is done because of a practice to put all outputs of build systems outside this tree. This makes it easier to manage `.gitignore` files and to keep Git performant with lots of files.
 
@@ -185,13 +141,9 @@ For working with the repository you just use Git commands as before.
 
 To remove a VFS for Git repository from your machine, make sure the VFS process is stopped and execute this command from the main folder:
 
-{% raw %}
-
 ```shell
 gvfs unmount
 ```
-
-{% endraw %}
 
 This will stop the process and unregister it, after that you can safely remove the folder.
 

@@ -36,8 +36,6 @@ Using the suggested method will allow us to:
 For this tutorial we are going to use a [sample dotnet core api application](https://github.com/itye-msft/cse-engagement-template).
 Here is the docker file for the sample app:
 
-{% raw %}
-
 ```sh
 # https://hub.docker.com/_/microsoft-dotnet
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
@@ -60,14 +58,10 @@ COPY --from=build /app/out .
 ENTRYPOINT ["dotnet", "SampleNetApi.dll"]
 ```
 
-{% endraw %}
-
 This script restores all dependencies, builds and runs tests. The dotnet app includes `stylecop` which fails the build in case of linting issues.
 
 Next we will also create a dockerfile to perform an end-to-end test. Usually this will look like a set of scripts, or a dedicated app which performs actual HTTP calls to a running application.
 For the sake of simplicity the dockerfile itself will run a simple curl command:
-
-{% raw %}
 
 ```sh
 FROM alpine:3.7
@@ -75,11 +69,7 @@ RUN apk --no-cache add curl
 ENTRYPOINT ["curl","0.0.0.0:8080/weatherforecast"]
 ```
 
-{% endraw %}
-
 Now we are ready to combine both of the dockerfiles in a docker-compose script:
-
-{% raw %}
 
 ```sh
 version: '3'
@@ -96,36 +86,24 @@ services:
       context: ./E2E
 ```
 
-{% endraw %}
-
 The docker-compose script will launch the 2 dockerfiles, and it will build them if they were not built before.
 The following command will run docker compose:
-
-{% raw %}
 
 ```sh
 docker-compose up --build -d
 ```
 
-{% endraw %}
-
 Once the images are up, you can make calls to the service. The e2e image will perform the set of e2e tests.
 If you want to skip the tests, you can simply tell compose to run a specific service by appending the name of the service, as follows:
-
-{% raw %}
 
 ```sh
 docker-compose up --build -d app
 ```
 
-{% endraw %}
-
 Now you have a local script which builds and tests you application.
 The next step would be make your CI run the docker-compose script.
 
 Here is an example of a yaml file used by Azure DevOps pipelines:
-
-{% raw %}
 
 ```sh
 trigger:
@@ -149,8 +127,6 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration) SampleApp
   displayName: 'dotnet build $(buildConfiguration)'
 ```
-
-{% endraw %}
 
 In this script the first step is docker-compose, which uses the same file we created the previous steps.
 The next steps, do the same using scripts, and are here for comparison.

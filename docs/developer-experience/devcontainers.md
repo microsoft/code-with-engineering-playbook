@@ -32,18 +32,12 @@ All developers on the team are expected to share and use the dev container defin
 
 The code snippets below demonstrate the common location of a .devcontainer directory and devcontainer.json file within a project repository. They also highlight the correct way to reference a Docker file.
 
-{% raw %}
-
 ```bash
 $ tree vs-code-remote-try-python  # main repo directory
 └───.devcontainers
         ├───Dockerfile
         ├───devcontainer.json
 ```
-
-{% endraw %}
-
-{% raw %}
 
 ```json
 # devcontainer.json
@@ -58,15 +52,11 @@ $ tree vs-code-remote-try-python  # main repo directory
 }
 ```
 
-{% endraw %}
-
 For a list of devcontainer.json configuration properties, visit VS Code documentation on [dev container properties](https://code.visualstudio.com/docs/remote/devcontainerjson-reference).
 
 ## How do I decide which dev container is right for my use case?
 
 Fortunately, VS Code has a repo gallery of platform specific folders that host dev container definitions (.devcontainer directories) to make getting started with dev containers easier. The code snippet below shows a list of gallery folders that come directly from the [VS Code dev container gallery repo](https://github.com/microsoft/vscode-dev-containers/tree/master/containers):
-
-{% raw %}
 
 ```bash
 $ tree vs-code-dev-containers  # main repo directory
@@ -79,8 +69,6 @@ $ tree vs-code-dev-containers  # main repo directory
         |   └───.devcontainers # dev container
         └───....
 ```
-
-{% endraw %}
 
 Here are the final high-level steps it takes to build a dev container:
 

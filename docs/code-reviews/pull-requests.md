@@ -27,8 +27,6 @@ The requirements of pull requests can and should be enforced by policies, which 
 
 The following diagram illustrates this approach.
 
-{% raw %}
-
 ```mermaid
 sequenceDiagram
 New branch->>+Pull request: New PR creation
@@ -39,8 +37,6 @@ Pull request-->>-New branch: Delete branch
 Pull request ->>+ Main branch: Merge after completion
 New branch->>+Main branch: Goal of the Pull request
 ```
-
-{% endraw %}
 
 ## Size Guidance
 
@@ -72,8 +68,6 @@ Well written PR descriptions helps maintain a clean, well-structured change hist
 
 One popular specification for open-source projects and others is the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0-beta.2/), which is structured as:
 
-{% raw %}
-
 ```txt
 <type>[optional scope]: <description>
 
@@ -81,8 +75,6 @@ One popular specification for open-source projects and others is the [Convention
 
 [optional footer]
 ```
-
-{% endraw %}
 
 The `<type>` in this message can be selected from a list of types defined by the team, but many projects use the [list of commit types from the Angular open-source project](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type). It should be clear that `scope`, `body` and `footer` elements are **optional**, but having a required `type` and short description enables the features mentioned above.
 

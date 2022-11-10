@@ -66,13 +66,9 @@ specifics regarding git as described in this section.
 
 In this repo, we use this branch naming approach:
 
-{% raw %}
-
 ```plaintext
 <user alias>/<work item ID>_<title>
 ```
-
-{% endraw %}
 
 ### Linting
 
@@ -142,8 +138,6 @@ Each section consist of the following parts
 
 The following illustrates how the directory structure could be organized.
 
-{% raw %}
-
 ```plaintext
 - /continuous-integration
     - README.md (Conceptual)
@@ -159,8 +153,6 @@ The following illustrates how the directory structure could be organized.
             - ci-pipeline-for-python.md
         - /jenkins
 ```
-
-{% endraw %}
 
 ## Legal Notices
 

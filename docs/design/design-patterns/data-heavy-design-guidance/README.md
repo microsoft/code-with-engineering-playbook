@@ -24,8 +24,6 @@ A simple way to accomplish this on the database side is to increment a version n
 
 > WARNING: the below will not work when using an isolation level at or lower than read uncommitted (eventual consistency).
 
-{% raw %}
-
 ```SQL
 -- Please treat this as pseudo code, and adjust as necessary.
 
@@ -33,8 +31,6 @@ UPDATE <table_name>
 SET field1 = value1, ..., fieldN = valueN, version = $new_version
 WHERE ID = $id AND version = $version
 ```
-
-{% endraw %}
 
 ## Data Tiering (Data Quality)
 

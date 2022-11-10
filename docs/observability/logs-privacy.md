@@ -23,8 +23,6 @@ Use these tools and methods for sensitive data de-identification in logs.
 Application Insights offers telemetry interception in some of the SDKs, that can be done by implementing the `ITelemetryProcessor` interface.
 ITelemetryProcessor processes the telemetry information before it is sent to Application Insights, and can be useful in many situations, such as filtering and modifications. Below is an example of intercepting 'trace' typed telemetry:
 
-{% raw %}
-
 ```csharp
 using Microsoft.ApplicationInsights.DataContracts;
 
@@ -46,8 +44,6 @@ namespace Example
 }
 ```
 
-{% endraw %}
-
 #### Elastic Stack
 
 Elastic Stack (formerly "ELK stack") allows logs interception by Logstash's [filter-plugins](https://www.elastic.co/guide/en/logstash/current/filter-plugins.html).
@@ -65,8 +61,6 @@ Instead of handling the anonymization in the application code, both APIs can be 
 Elastic Stack, for example, can handle PII redaction using the 'ruby' filter plugin to call Presidio in REST HTTP API, or by calling a python script consuming Presidio as a package:
 
 `logstash.conf`
-
-{% raw %}
 
 ```ruby
 input {
@@ -91,5 +85,3 @@ output {
     ...
 }
 ```
-
-{% endraw %}

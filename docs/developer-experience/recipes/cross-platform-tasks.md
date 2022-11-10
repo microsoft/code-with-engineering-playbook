@@ -23,8 +23,6 @@ The following are some good resources to get started with running tasks in DevCo
 
 The example below offers insight into running Node.js executable as a command with tasks.json and how it can be treated differently on Windows and Linux.
 
-{% raw %}
-
 ```json
 {
   "label": "Run Node",
@@ -38,15 +36,11 @@ The example below offers insight into running Node.js executable as a command wi
 }
 ```
 
-{% endraw %}
-
 In this example, to run Node.js, there is a specific windows command, and a specific linux command. This allows for platform specific properties. When these are defined, they will be used instead of the default properties when the command is executed on the Windows operating system or on Linux.
 
 ### Custom Tasks
 
 Not all scripts or tasks can be auto-detected in the workspace. It may be necessary at times to defined your own custom tasks. In this example, we have a script to run in order to set up some environment correctly. The script is stored in a folder inside your workspace and named test.sh for Linux & macOS and test.cmd for Windows. With the tasks.json file, the execution of this script can be made possible with a custom task that defines what to do on different operating systems.
-
-{% raw %}
 
 ```json
 {
@@ -69,8 +63,6 @@ Not all scripts or tasks can be auto-detected in the workspace. It may be necess
 }
 
 ```
-
-{% endraw %}
 
 The command here is a shell command and tells the system to run either the test.sh or test.cmd. By default, it will run test.sh with that given path. This example here also defines Windows specific properties and tells it execute test.cmd instead of the default.
 

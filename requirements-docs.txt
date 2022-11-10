@@ -4,4 +4,3 @@ pymdown-extensions==9.4.*
 markdown==3.3.*
 mdx_truly_sane_lists==1.2
 mkdocs-git-revision-date-localized-plugin==1.0.*
-mkdocs-macros-plugin==0.7.*

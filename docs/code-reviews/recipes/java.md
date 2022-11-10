@@ -22,8 +22,6 @@ It's important to enforce your code style and rules in the CI to avoid any team 
 
 Here is an example yaml for a Maven build task with all three analysis tools enabled:
 
-{% raw %}
-
 ```yaml
     - task: Maven@3
     displayName: 'Maven pom.xml'
@@ -34,11 +32,7 @@ Here is an example yaml for a Maven build task with all three analysis tools ena
         findBugsRunAnalysis: true
 ```
 
-{% endraw %}
-
 Here is an example yaml for a Gradle build task with all three analysis tools enabled:
-
-{% raw %}
 
 ```yaml
     - task: Gradle@2
@@ -48,8 +42,6 @@ Here is an example yaml for a Gradle build task with all three analysis tools en
         findBugsRunAnalysis: true
         pmdRunAnalysis: true
 ```
-
-{% endraw %}
 
 ## Code Review Checklist
 

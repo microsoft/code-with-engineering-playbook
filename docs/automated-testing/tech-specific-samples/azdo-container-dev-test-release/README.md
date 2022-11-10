@@ -21,8 +21,6 @@ The first step in container development, after creating the necessary Dockerfile
 
 The first step in our pipeline is to run the `docker build` command with a temporary tag and the required build arguments:
 
-{% raw %}
-
 ```yaml
 - task: Bash@3
   name: BuildImage
@@ -36,8 +34,6 @@ The first step in our pipeline is to run the `docker build` command with a tempo
     PredefinedPassword: $(Password)
     NewVariable: "newVariableValue"
 ```
-
-{% endraw %}
 
 This task includes the parameters `buildDirectory`, `imageName` and `dockerfileName`, which have to be set beforehand.
 This task can for example be used in a template for multiple containers to improve code reuse.
@@ -53,8 +49,6 @@ For more details on tox please visit the tox section of this repository or visit
 
 Before we test the container, we are checking for exposed credentials in the docker image history.
 If known passwords, used to access our internal resources, are exposed here, the build step will fail:
-
-{% raw %}
 
 ```yml
 - task: Bash@3
@@ -73,8 +67,6 @@ If known passwords, used to access our internal resources, are exposed here, the
     PredefinedPassword: $(Password)
 ```
 
-{% endraw %}
-
 After the credential test, the container is tested through the pytest extension [testinfra](https://testinfra.readthedocs.io/en/latest/).
 Testinfra is a Python-based tool which can be used to start a container, gather prerequisites, test the container and shut it down again, without any effort besides writing the tests. These tests can for example include:
 
@@ -86,8 +78,6 @@ Testinfra is a Python-based tool which can be used to start a container, gather 
 For a complete collection of capabilities and requirements, please visit [the testinfra project on GitHub](https://github.com/pytest-dev/pytest-testinfra).
 
 A few methods of a Linux-based container test can look like this:
-
-{% raw %}
 
 ```python
 def test_dependencies(host):
@@ -137,13 +127,9 @@ def test_listening_simserver_sockets(host):
     assert host.socket("tcp://0.0.0.0:32513").is_listening
 ```
 
-{% endraw %}
-
 To start the test, a [pytest](http://pytest.org) command is executed through tox.
 
 A task containing the tox command can look like this:
-
-{% raw %}
 
 ```yaml
 - task: Bash@3
@@ -157,21 +143,13 @@ A task containing the tox command can look like this:
     failOnStderr: true
 ```
 
-{% endraw %}
-
 Which could trigger the following pytest code, which is contained in the tox.ini file:
-
-{% raw %}
 
 ```bash
 pytest -vv tests/{env:CONTEXT} --container-image={posargs:{env:IMAGE_TAG}} --volume={env:VOLUME}
 ```
 
-{% endraw %}
-
 As a last task of this pipeline to build and test the container, we set a variable called `testsPassed` which is only `true`, if the previous tasks succeeded:
-
-{% raw %}
 
 ```yml
 - task: Bash@3
@@ -183,8 +161,6 @@ As a last task of this pipeline to build and test the container, we set a variab
       echo '##vso[task.setvariable variable=testsPassed]true'
 ```
 
-{% endraw %}
-
 ## Push container
 
 After building and testing, if our container runs as expected, we want to release it to our Azure Container Registry (ACR) to be used by our larger application. Before that, we want to automate the push behavior and define a meaningful tag.
@@ -195,8 +171,6 @@ This can be done by checking for the `testsPassed` variable we introduced at the
 If the test failed, we want to add a failed suffix at the end of the tag:
 
 <!-- markdownlint-disable MD013 -->
-{% raw %}
-
 ```yml
 - task: Bash@3
   name: SetFailedSuffixTag
@@ -208,8 +182,6 @@ If the test failed, we want to add a failed suffix at the end of the tag:
     script: |
       docker tag ${{ parameters.containerRegistry }}/${{ parameters.imageRepository }}:${{ parameters.imageTag }} ${{ parameters.containerRegistry }}/${{ parameters.imageRepository }}:${{ parameters.imageTag }}$(failedSuffix)
 ```
-
-{% endraw %}
 <!-- markdownlint-enable MD013 -->
 
 The condition checks, if the value of `testsPassed` is `false` and also if we
@@ -218,8 +190,6 @@ This helps us to keep our production environment clean.
 
 The value for imageRepository was defined in another template, along with
 the `failedSuffix` and `testsPassed`:
-
-{% raw %}
 
 ```yml
 parameters:
@@ -235,8 +205,6 @@ variables:
     imageRepository: 'dev/${{ parameters.component }}'
 ```
 
-{% endraw %}
-
 The imageTag is open to discussion, as it depends highly on how your team wants
 to use the container. We went for `Build.SourceVersion` which is the commit ID
 of the branch the container was developed in.
@@ -249,8 +217,6 @@ After a tag was added to the container, the image must be pushed.
 This can be done with the following task:
 
 <!-- markdownlint-disable MD013 -->
-{% raw %}
-
 ```yml
 - task: Docker@1
   name: pushFailedDockerImage
@@ -264,16 +230,12 @@ This can be done with the following task:
     command: 'Push an image'
     imageName: '${{ parameters.imageRepository }}:${{ parameters.imageTag }}$(failedSuffix)'
 ```
-
-{% endraw %}
 <!-- markdownlint-enable MD013 -->
 
 Similarly, these are the steps to publish the container to the ACR,
 if the tests succeeded:
 
 <!-- markdownlint-disable MD013 -->
-{% raw %}
-
 ```yml
 - task: Bash@3
   name: SetLatestSuffixTag
@@ -304,8 +266,6 @@ if the tests succeeded:
     command: 'Push an image'
     imageName: '${{ parameters.imageRepository }}:latest'
 ```
-
-{% endraw %}
 <!-- markdownlint-enable MD013 -->
 
 If you don't want to include the `latest` tag, you can also remove the steps

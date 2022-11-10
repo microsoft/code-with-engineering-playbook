@@ -28,33 +28,21 @@ It's available as a [ruby gem](https://github.com/markdownlint/markdownlint), an
 
 Installing the Node.js CLI
 
-{% raw %}
-
 ```bash
 npm install -g markdownlint-cli
 ```
 
-{% endraw %}
-
 Running markdownlint on a Node.js project
-
-{% raw %}
 
 ```bash
 markdownlint **/*.md --ignore node_modules
 ```
 
-{% endraw %}
-
 Fixing errors automatically
-
-{% raw %}
 
 ```bash
 markdownlint **/*.md --ignore node_modules --fix
 ```
-
-{% endraw %}
 
 A comprehensive list of markdownlint rules is available [here](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md).
 
@@ -64,56 +52,36 @@ A comprehensive list of markdownlint rules is available [here](https://github.co
 
 It's available both as a [python package](https://github.com/amperser/proselint/#checks) and a [node package](https://www.npmjs.com/package/proselint).
 
-{% raw %}
-
 ```bash
 pip install proselint
 npm install -g proselint
 ```
 
-{% endraw %}
-
 Run proselint
-
-{% raw %}
 
 ```bash
 proselint document.md
 ```
 
-{% endraw %}
-
 ### write-good
 
 [`write-good`](https://github.com/btford/write-good) is a linter for English text that helps writing better documentation.
-
-{% raw %}
 
 ```bash
 npm install -g write-good
 ```
 
-{% endraw %}
-
 Run write-good
-
-{% raw %}
 
 ```bash
 write-good *.md
 ```
 
-{% endraw %}
-
 Run write-good without installing it
-
-{% raw %}
 
 ```bash
 npx write-good *.md
 ```
-
-{% endraw %}
 
 Write Good is also available as an [extension for VS Code](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
 
@@ -132,8 +100,6 @@ The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemNa
 ### Linting
 
 To automate linting with `markdownlint` for PR [validation in GitHub actions](https://github.com/microsoft/code-with-engineering-playbook/blob/master/.github/workflows/markdownlint.yml) as we do in this repo, use the following YAML.
-
-{% raw %}
 
 ```yaml
 name: Markdownlint
@@ -163,13 +129,9 @@ jobs:
         markdownlint "**/*.md" --ignore node_modules
 ```
 
-{% endraw %}
-
 ### Checking Links
 
 To automate link check in your markdown files add `markdown-link-check` action to your validation pipeline:
-
-{% raw %}
 
 ```yaml
   markdown-link-check:
@@ -178,8 +140,6 @@ To automate link check in your markdown files add `markdown-link-check` action t
     - uses: actions/checkout@master
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
 ```
-
-{% endraw %}
 
 More information about `markdown-link-check` action options can be found at [`markdown-link-check` home page](https://github.com/gaurav-nelson/github-action-markdown-link-check)
 
@@ -248,14 +208,10 @@ Save your guidelines together with your documentation, so they are easy to refer
   > For sections that everyone reading this document needs to be aware of, use blocks
 - Use `backticks` for code, a single backtick for inline code like `pip install flake8` and 3 backticks for code blocks followed by the language for syntax highlighting
 
-  {% raw %}
-
-```python
+  ```python
   def add(num1: int, num2: int):
     return num1 + num2
   ```
-
-{% endraw %}
 
 - Use check boxes for task lists
   - [ ] Item 1

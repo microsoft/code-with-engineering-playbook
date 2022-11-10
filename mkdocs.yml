@@ -22,7 +22,6 @@ theme:
 plugins:
   - search
   - git-revision-date-localized
-  - macros
 
 markdown_extensions:
   - meta

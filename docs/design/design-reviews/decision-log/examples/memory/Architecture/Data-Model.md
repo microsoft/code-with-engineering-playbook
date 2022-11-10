@@ -89,8 +89,6 @@ The full set of data properties available on each vertex and edge
 
 Top most level of categorization
 
-{% raw %}
-
 ```json
 {
     "title": "Software Engineering",
@@ -99,13 +97,9 @@ Top most level of categorization
 }
 ```
 
-{% endraw %}
-
 ### Discipline
 
 Groups of related roles within a profession
-
-{% raw %}
 
 ```json
 {
@@ -115,13 +109,9 @@ Groups of related roles within a profession
 }
 ```
 
-{% endraw %}
-
 ### Role
 
 Individual role mapped to an employee
-
-{% raw %}
 
 ```json
 {
@@ -132,13 +122,9 @@ Individual role mapped to an employee
 }
 ```
 
-{% endraw %}
-
 ### Responsibility
 
 A group of expected outcomes and key results for employees within a role
-
-{% raw %}
 
 ```json
 {
@@ -147,13 +133,9 @@ A group of expected outcomes and key results for employees within a role
 }
 ```
 
-{% endraw %}
-
 ### Competency
 
 A set of behaviors that contribute to success
-
-{% raw %}
 
 ```json
 {
@@ -162,13 +144,9 @@ A set of behaviors that contribute to success
 }
 ```
 
-{% endraw %}
-
 ### Key Result
 
 The expected outcome of performing a responsibility
-
-{% raw %}
 
 ```json
 {
@@ -176,21 +154,15 @@ The expected outcome of performing a responsibility
 }
 ```
 
-{% endraw %}
-
 ### Behavior
 
 The way in which one acts or conducts oneself
-
-{% raw %}
 
 ```json
 {
   "description": "Actively seeks information and tests assumptions."
 }
 ```
-
-{% endraw %}
 
 ### User
 
@@ -230,8 +202,6 @@ However, anyone that an entry is shared with can add commentary on an entry.
 The artifact object contains the relevant data as markdown, or a link to the relevant data.
 
 ## Full Role JSON Example
-
-{% raw %}
 
 ```json
 {
@@ -290,8 +260,6 @@ The artifact object contains the relevant data as markdown, or a link to the rel
   ]
 }
 ```
-
-{% endraw %}
 
 ## API Data Model
 

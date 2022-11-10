@@ -29,8 +29,6 @@ This extension provides Terraform command support, resource graph visualization 
 Ensure you enforce the style guides during build. The following example script can be used to install terraform, and a linter that
 then checks for formatting and common errors.
 
-{% raw %}
-
 ```shell
 #! /bin/bash
 set -e
@@ -66,8 +64,6 @@ terraform init
 echo -e "\n\n>>> Terraform validate"
 terraform validate
 ```
-
-{% endraw %}
 
 ## Code Review Checklist
 

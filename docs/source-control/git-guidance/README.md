@@ -6,16 +6,12 @@ Git is a distributed version control system. This means that - unlike SVN or CVS
 
 For example:
 
-{% raw %}
-
 ```plain
 repo 1: A -> B -> C -> D -> HEAD
 repo 2: A -> B -> HEAD
 repo 3: X -> Y -> Z -> HEAD
 repo 4: A -> J -> HEAD
 ```
-
-{% endraw %}
 
 Since they share a common history, repo 1 and repo 2 can be synchronized fairly easily, repo 4 _may_ be able to synchronize as well, but it's going to have to add a commit (J, and maybe a merge commit) to repo 1. Repo 3 cannot be easily synchronized with the others. Everything related to these commits is stored in a local .git directory in the root of the repository.
 
@@ -31,8 +27,6 @@ A recommended installation is the [Git Lens extension for Visual Studio Code](ht
 
 You can use these commands as well to configure your Git for Visual Studio Code as an editor for merge conflicts and diff tool.
 
-{% raw %}
-
 ```cmd
 git config --global user.name [YOUR FIRST AND LAST NAME]
 git config --global user.email [YOUR E-MAIL ADDRESS]
@@ -44,13 +38,9 @@ git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
 ```
 
-{% endraw %}
-
 ## Basic workflow
 
 A basic Git workflow is as follows; you can find more information on the specific steps below.
-
-{% raw %}
 
 ```cmd
 # pull the latest changes
@@ -78,19 +68,13 @@ git status
 git push --set-upstream origin feature/123-add-git-instructions
 ```
 
-{% endraw %}
-
 ### Cloning
 
 Whenever you want to make a change to a repository, you need to first clone it. Cloning a repository pulls down a full copy of all the repository data, so that you can work on it locally. This copy includes all versions of every file and folder for the project.
 
-{% raw %}
-
 ```cmd
 git clone https://github.com/username/repo-name
 ```
-
-{% endraw %}
 
 You only need to clone the repository the first time. Before any subsequent branches you can sync any changes from the remote repository using `git pull`.
 
@@ -100,14 +84,10 @@ To avoid adding code that has not been peer reviewed to the main branch (ex. `de
 
 Pull the latest changes and create a new branch for your work based on the trunk (in this case `develop`).
 
-{% raw %}
-
 ```cmd
 git pull
 git checkout -b feature/feature-name develop
 ```
-
-{% endraw %}
 
 At any point, you can move between the branches with `git checkout <branch>` as long as you have committed or stashed your work. If you forget the name of your branch use `git branch --all` to list all branches.
 
@@ -119,9 +99,7 @@ To avoid losing work, it is good to commit often in small chunks. This allows yo
 
 2. Check what files were changed
 
-    {% raw %}
-
-```cmd
+    ```cmd
     > git status
     On branch feature/271-basic-commit-info
     Changes not staged for commit:
@@ -130,59 +108,37 @@ To avoid losing work, it is good to commit often in small chunks. This allows yo
             modified:   source-control/git-guidance/README.md
     ```
 
-{% endraw %}
-
 3. Track the files you wish to include in the commit. To track all modified files:
 
-    {% raw %}
-
-```cmd
+    ```cmd
     git add --all
     ```
 
-{% endraw %}
-
    Or to track only specific files:
 
-    {% raw %}
-
-```cmd
+    ```cmd
     git add source-control/git-guidance/README.md
     ```
 
-{% endraw %}
-
 4. Commit the changes to your local branch with a descriptive [commit message](../README.md#commit-best-practices)
 
-    {% raw %}
-
-```cmd
+    ```cmd
     git commit -m "add basic git instructions"
     ```
-
-{% endraw %}
 
 ### Pushing
 
 When you are done working, push your changes to a branch in the remote repository using:
 
-{% raw %}
-
 ```cmd
 git push
 ```
 
-{% endraw %}
-
 The first time you push, you first need to set an upstream branch as follows. After the first push, the --set-upstream parameter and branch name are not needed anymore.
-
-{% raw %}
 
 ```cmd
 git push --set-upstream origin feature/feature-name
 ```
-
-{% endraw %}
 
 Once the feature branch is pushed to the remote repository, it is visible to anyone with access to the code.
 
@@ -195,8 +151,6 @@ The Pull Request (PR) process in [Azure DevOps](https://docs.microsoft.com/en-us
 #### Merge Conflicts
 
 If multiple people make changes to the same files, you may need to resolve any conflicts that have occurred before you can merge.
-
-{% raw %}
 
 ```cmd
 # check out the develop branch and get the latest changes
@@ -215,15 +169,11 @@ git merge develop
 git status
 ```
 
-{% endraw %}
-
 You can start an interactive process that will show which files have conflicts. Sometimes you removed a file, where it was changed in dev. Or you made changes to some lines in a file where another developer made changes as well. If you went through the installation steps mentioned before, Visual Studio Code is set up as merge tool. You can also use a merge tool like [kdiff3](https://github.com/KDE/kdiff3). When editing conflicts occur, the process will automatically open Visual Studio Code where the conflicting parts are highlighted in green and blue, and you have make a choice:
 
 * Accept your changes (current)
 * Accept the changes from dev branch (incoming)
 * Accept them both and fix the code (probably needed)
-
-{% raw %}
 
 ```text
 Here are lines that are either unchanged from the common
@@ -237,11 +187,7 @@ Git makes conflict resolution easy.
 And here is another line that is cleanly resolved or unmodified
 ```
 
-{% endraw %}
-
 When this process is completed, make sure you test the result by executing build, checks, test to validate this merged result.
-
-{% raw %}
 
 ```cmd
 # conclude the merge
@@ -254,15 +200,11 @@ git log
 git push
 ```
 
-{% endraw %}
-
 If no other conflicts appear, the PR can now be merged, and your branch deleted. Use `squash` to reduce your changes into a single commit, so the commit history can be within an acceptable size.
 
 ### Stashing changes
 
 `git stash` is super handy if you have un-committed changes in your working directory, but you want to work on a different branch. You can run `git stash`, save the un-committed work, and revert to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
-
-{% raw %}
 
 ```cmd
 git stash
@@ -270,53 +212,35 @@ git stash
 git stash pop
 ```
 
-{% endraw %}
-
 Or you can move the current state into a new branch:
-
-{% raw %}
 
 ```cmd
 git stash branch <new_branch_to_save_changes>
 ```
 
-{% endraw %}
-
 ### Recovering lost commits
 
 If you "lost" a commit that you want to return to, for example to revert a `git rebase` where your commits got squashed, you can use `git reflog` to find the commit:
-
-{% raw %}
 
 ```cmd
 git reflog
 ```
 
-{% endraw %}
-
 Then you can use the reflog reference (`HEAD@{}`) to reset to a specific commit before the rebase:
-
-{% raw %}
 
 ```cmd
 git reset HEAD@{2}
 ```
 
-{% endraw %}
-
 ## Managing remotes
 
 A local git repository can have one or more backing remote repositories. You can list the remote repositories using `git remote` - by default, the remote repository you cloned from will be called origin
-
-{% raw %}
 
 ```cmd
 > git remote -v
 origin  https://github.com/microsoft/code-with-engineering-playbook.git (fetch)
 origin  https://github.com/microsoft/code-with-engineering-playbook.git (push)
 ```
-
-{% endraw %}
 
 ### Working with forks
 
@@ -326,8 +250,6 @@ For more info on how to set upstream remotes and syncing repositories when worki
 ### Updating the remote if a repository changes names
 
 If the repository is changed in some way, for example a name change, or if you want to switch between HTTPS and SSH you need to update the remote
-
-{% raw %}
 
 ```cmd
 # list the existing remotes
@@ -344,8 +266,6 @@ origin  https://hostname/username/new-repository-name.git (fetch)
 origin  https://hostname/username/new-repository-name.git (push)
 ```
 
-{% endraw %}
-
 ## Rolling back changes
 
 ### Reverting and deleting commits
@@ -356,43 +276,27 @@ To "undo" a commit, run the following two commands: `git revert` and `git reset`
 
 To **delete** the latest commit use `HEAD~`:
 
-{% raw %}
-
 ```bash
 git reset --hard HEAD~1
 ```
 
-{% endraw %}
-
 To delete commits back to a specific commit, use the respective commit id:
-
-{% raw %}
 
 ```bash
 git reset --hard <sha1-commit-id>
 ```
 
-{% endraw %}
-
 after you deleted the unwanted commits, push using `force`:
-
-{% raw %}
 
 ```bash
 git push origin HEAD --force
 ```
 
-{% endraw %}
-
 Interactive rebase for undoing commits:
-
-{% raw %}
 
 ```bash
 git rebase -i HEAD~N
 ```
-
-{% endraw %}
 
 The above command will open an interactive session in an editor (for example vim) with the last N commits sorted from oldest to newest. To undo a commit, delete the corresponding line of the commit and save the file. Git will rewrite the commits in the order listed in the file and because one (or many) commits were deleted, the commit will no longer be part of the history.
 
@@ -404,17 +308,11 @@ Submodules can be useful in more complex deployment and/or development scenarios
 
 Adding a submodule to your repo
 
-{% raw %}
-
 ```bash
 git submodule add -b master <your_submodule>
 ```
 
-{% endraw %}
-
 Initialize and pull a repo with submodules:
-
-{% raw %}
 
 ```bash
 git submodule init
@@ -422,8 +320,6 @@ git submodule update --init --remote
 git submodule foreach git checkout master
 git submodule foreach git pull origin
 ```
-
-{% endraw %}
 
 ## Working with images, video and other binary content
 

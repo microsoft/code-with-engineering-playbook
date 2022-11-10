@@ -53,8 +53,6 @@ Pre-requisites:
 
 Code Snippet:
 
-{% raw %}
-
 ```yaml
 on:
   push:
@@ -85,15 +83,11 @@ jobs:
         run: echo "Flag is available and true"
 ```
 
-{% endraw %}
-
 Available as a .YAML [here](examples/commit-example.yaml).
 
 Code Explanation:
 
 The first part of the code is setting up Push triggers on the working branch and checking out the repository, so we will not explore that in detail.
-
-{% raw %}
 
 ```yaml
 - name: "Set flag from Commit"
@@ -101,13 +95,9 @@ The first part of the code is setting up Push triggers on the working branch and
     COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
 ```
 
-{% endraw %}
-
 This is a named step inside the only Job in our GitHub Actions pipeline. Here, we set an environment variable for the step: Any code or action that the step calls will now have the environment variable available.
 
 `contains` is a GitHub Actions function that is available by default in all workflows. It returns a Boolean `true` or `false` value. In this situation, it checks to see if the commit message on the last push, accessed using `github.event.head_commit.message`. The `${{...}}` is necessary to use the GitHub Context and make the functions and `github.event` variables available for the command.
-
-{% raw %}
 
 ```yaml
 run: |
@@ -120,21 +110,15 @@ run: |
   fi
 ```
 
-{% endraw %}
-
 The `run` command here checks to see if the `COMMIT_VAR` variable has been set to `true`, and if it has, it sets a secondary flag to true, and echoes this behavior. It does the same if the variable is `false`.
 
 The specific reason to do this is to allow for the `flag` variable to be used in further steps instead of having to reuse the `COMMIT_VAR` in every step. Further, it allows for the flag to be used in the `if` step of an action, as in the next part of the snippet.
-
-{% raw %}
 
 ```yaml
 - name: "Use flag if true"
   if: env.flag
   run: echo "Flag is available and true"
 ```
-
-{% endraw %}
 
 In this part of the snippet, the next step in the same job is now using the `flag` that was set in the previous step. This allows the user to:
 
@@ -146,8 +130,6 @@ Shorter Alternative:
 
 The "Set flag from commit" step can be simplified to the following in order to make the code much shorter, although not necessarily more readable:
 
-{% raw %}
-
 ```yaml
 - name: "Set flag from Commit"
   env:
@@ -157,23 +139,17 @@ The "Set flag from commit" step can be simplified to the following in order to m
     echo "set flag to ${COMMIT_VAR}"
 ```
 
-{% endraw %}
-
 Usage:
 
 Including the Variable
 
 1. Push to branch `master`:
 
-   {% raw %}
-
-```cmd
+   ```cmd
    > git add.
    > git commit -m "Running GitHub Actions Test [commit var]"
    > git push
    ```
-
-{% endraw %}
 
 2. This triggers the workflow (as will any push). As the `[commit var]` is in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `true` and result in the following:
 
@@ -183,15 +159,11 @@ Not Including the Variable
 
 1. Push to branch `master`:
 
-   {% raw %}
-
-```cmd
+   ```cmd
    > git add.
    > git commit -m "Running GitHub Actions Test"
    > git push
    ```
-
-{% endraw %}
 
 2. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
 
@@ -208,8 +180,6 @@ Pre-requisites:
 - Pipeline triggers are correctly set up to trigger on a pull request into a specific branch. (Here we will use master as the destination branch.)
 
 Code Snippet:
-
-{% raw %}
 
 ```yaml
 on:
@@ -241,15 +211,11 @@ jobs:
         run: echo "Flag is available and true"
 ```
 
-{% endraw %}
-
 Available as a .YAML [here](examples/pr-example.yaml).
 
 Code Explanation:
 
 The first part of the YAML file simply sets up the Pull Request Trigger. The majority of the following code is identical, so we will only explain the differences.
-
-{% raw %}
 
 ```yaml
 - name: "Set flag from PR"
@@ -257,15 +223,11 @@ The first part of the YAML file simply sets up the Pull Request Trigger. The maj
     PR_VAR: ${{ contains(github.event.pull_request.body, '[pr var]') }}
 ```
 
-{% endraw %}
-
 In this section, the `PR_VAR` environment variable is set to `true` or `false` depending on whether the `[pr var]` string is in the PR Body.
 
 Shorter Alternative:
 
 Similarly to the above, the YAML step can be simplified to the following in order to make the code much shorter, although not necessarily more readable:
-
-{% raw %}
 
 ```yaml
 - name: "Set flag from PR"
@@ -275,8 +237,6 @@ Similarly to the above, the YAML step can be simplified to the following in orde
   echo "flag=${PR_VAR}" >> $GITHUB_ENV
   echo "set flag to ${PR_VAR}"
 ```
-
-{% endraw %}
 
 Usage:
 

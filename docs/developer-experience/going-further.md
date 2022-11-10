@@ -27,8 +27,6 @@ One way to achieve this is to leverage environment variables, with untracked `.e
 
 Consider the following files structure:
 
-{% raw %}
-
 ```bash
 My Application  # main repo directory
 └───.devcontainer
@@ -39,24 +37,16 @@ My Application  # main repo directory
 |       ├───.env-sample
 ```
 
-{% endraw %}
-
 The file `config/.env-sample` is a tracked file where anyone can find environment variables to set (with no values, obviously):
-
-{% raw %}
 
 ```bash
 TENANT_ID=
 SUBSCRIPTION_ID=
 ```
 
-{% endraw %}
-
 Then, each developer who clones the repository can create the file `config/.env` and fills it in with the appropriate values.
 
 In order now to inject the `.env` file into the container, you can update the file `devcontainer.json` with the following:
-
-{% raw %}
 
 ```json
 {
@@ -66,15 +56,11 @@ In order now to inject the `.env` file into the container, you can update the fi
 }
 ```
 
-{% endraw %}
-
 As soon as the Dev Container is started, these environment variables are sent to the container.
 
 Another approach would be to use Docker Compose, a little bit more complex, and probably *too much* for just environment variables. Using Docker Compose can unlock other settings such as custom dns, ports forwarding or multiple containers.
 
 To achieve this, you need to add a file `.devcontainer/docker-compose.yml` with the following:
-
-{% raw %}
 
 ```yaml
 version: '3'
@@ -87,11 +73,7 @@ services:
     command: sleep infinity
 ```
 
-{% endraw %}
-
 Too use the `docker-compose.yml` file instead of `Dockerfile`, we need to adjust `devcontainer.json` with:
-
-{% raw %}
 
 ```json
 {
@@ -102,8 +84,6 @@ Too use the `docker-compose.yml` file instead of `Dockerfile`, we need to adjust
 }
 ```
 
-{% endraw %}
-
 This approach can be applied for many other tools by preparing what would be required. The idea is to simplify developers' lives and new developers joining the project.
 
 ## Custom tools
@@ -113,8 +93,6 @@ While working on a project, any developer might end up writing a script to autom
 Let's say you want to ensure that all markdown files written are validated against specific rules you have set up. As we have seen above, you can include the tool [markdownlint](https://github.com/DavidAnson/markdownlint) in your Dev Container . Having the tool installed does not mean developer will know how to use it!
 
 Consider the following solution structure:
-
-{% raw %}
 
 ```bash
 My Application  # main repo directory
@@ -127,11 +105,7 @@ My Application  # main repo directory
 └───.markdownlint.json
 ```
 
-{% endraw %}
-
 The file `.devcontainer/Dockerfile` installs [markdownlint](https://github.com/DavidAnson/markdownlint)
-
-{% raw %}
 
 ```dockerfile
 ...
@@ -144,13 +118,9 @@ RUN npm install -g markdownlint-cli
 ...
 ```
 
-{% endraw %}
-
 The file `.markdownlint.json` contains the rules you want to validate in your markdown files (please refer to the [markdownlint site](https://github.com/DavidAnson/markdownlint) for details).
 
 And finally, the script `scripts/check-markdown.sh` contains the following code to execute `markdownlint`:
-
-{% raw %}
 
 ```bash
 # Get the repository root
@@ -160,17 +130,11 @@ repoRoot="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." >/dev/null 2>&1 && pwd )"
 markdownlint -c "${repoRoot}"/.markdownlint.json
 ```
 
-{% endraw %}
-
 When the Dev Container is loaded, any developer can now run this script in their terminal:
-
-{% raw %}
 
 ```bash
 /> ./scripts/check-markdown.sh
 ```
-
-{% endraw %}
 
 This is a small use case, there are unlimited other possibilities to capitalize on work done by developers to save time.
 
@@ -187,8 +151,6 @@ To achieve this you need to check the architecture of the host building the Dev 
 
 Here is a snippet to call from the Dockerfile:
 
-{% raw %}
-
 ```bash
 # If Intel based, then use the deb file
 if [[ `dpkg --print-architecture` == "amd64" ]]; then
@@ -201,8 +163,6 @@ else
 fi
 ```
 
-{% endraw %}
-
 ### Reuse of credentials for GitHub
 
 If you develop inside a Dev Container, you will also want to share your GitHub credentials between your host and the Dev Container. Doing so, you would avoid copying your ssh keys back and forth (if you are using ssh to access your repositories).
@@ -210,8 +170,6 @@ If you develop inside a Dev Container, you will also want to share your GitHub c
 One approach would be to mount your local `~/.ssh` folder into your Dev Container. You can either use the `mounts` option of the `devcontainer.json`, or use Docker Compose
 
 * Using `mounts`:
-
-{% raw %}
 
 ```json
 {
@@ -221,13 +179,9 @@ One approach would be to mount your local `~/.ssh` folder into your Dev Containe
 }
 ```
 
-{% endraw %}
-
 As you can see, `${localEnv:HOME}` returns the host `home` folder, and it maps it to the container `home` folder.
 
 * Using Docker Compose:
-
-{% raw %}
 
 ```yaml
 version: '3'
@@ -241,8 +195,6 @@ services:
     command: sleep infinity
 ```
 
-{% endraw %}
-
 Please note that using Docker Compose requires to edit the `devcontainer.json` file as we have seen above.
 
 You can now access GitHub using the same credentials as your host machine, without worrying of persistence.
@@ -255,8 +207,6 @@ For instance, one might want to add aliases to their environment. However, chang
 
 Consider the following solution structure:
 
-{% raw %}
-
 ```bash
 My Application  # main repo directory
 └───.devcontainer
@@ -267,27 +217,17 @@ My Application  # main repo directory
 |       ├───bashrc_extension
 ```
 
-{% endraw %}
-
 The folder `me` is untracked in the repository, leaving developers the flexibility to add personal resources. One of these resources can be a `.bashrc` extension containing customization. For instance:
-
-{% raw %}
 
 ```bash
 # Sample alias
 alias gaa="git add --all"
 ```
 
-{% endraw %}
-
 We can now adapt our `Dockerfile` to load these changes when the Docker image is built (and of course, do nothing if there is no file):
-
-{% raw %}
 
 ```dockerfile
 ...
 RUN echo "[ -f PATH_TO_WORKSPACE/me/bashrc_extension ] && . PATH_TO_WORKSPACE/me/bashrc_extension" >> ~/.bashrc;
 ...
 ```
-
-{% endraw %}
