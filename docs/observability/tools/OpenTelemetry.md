@@ -20,7 +20,6 @@ However, understanding the core implementation patterns will help you know what 
 * Manual tracing: This must be done by coding using the OpenTelemetry SDK, managing the `tracer` objects to obtain Spans, and forming instrumented OpenTelemetry Scopes to identify the code segments to be manually traced. Also, by using the @WithSpan annotations (method decorations in C# and [Java](https://opentelemetry.io/docs/instrumentation/java/automatic/annotations/#creating-spans-around-methods-with-withspan)) to mark whole methods that will be automatically traced.
 * Hybrid approach: Most Production-ready scenarios will require a mix of both techniques, using the automatic instrumentation to collect automatic telemetry and the OpenTelemetry SDK to identify code segments that are important to instrument manually. When considering production-ready scenarios, the hybrid approach is the way to go as it allows for a throughout cover over the whole solution. It provides automatic context propagation and events correlation out of the box.
 
-
 ### Collector
 
 ![Collectors option](../images/collectors.png)

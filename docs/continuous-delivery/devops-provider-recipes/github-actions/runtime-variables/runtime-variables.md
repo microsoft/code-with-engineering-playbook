@@ -167,15 +167,15 @@ Including the Variable
 
    {% raw %}
 
-```cmd
-   > git add.
-   > git commit -m "Running GitHub Actions Test [commit var]"
-   > git push
-   ```
+  ```cmd
+    > git add.
+    > git commit -m "Running GitHub Actions Test [commit var]"
+    > git push
+  ```
 
-{% endraw %}
+  {% endraw %}
 
-2. This triggers the workflow (as will any push). As the `[commit var]` is in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `true` and result in the following:
+1. This triggers the workflow (as will any push). As the `[commit var]` is in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `true` and result in the following:
 
    ![Commit True Scenario](images/CommitTrue.PNG)
 
@@ -185,15 +185,15 @@ Not Including the Variable
 
    {% raw %}
 
-```cmd
+  ```cmd
    > git add.
    > git commit -m "Running GitHub Actions Test"
    > git push
-   ```
+  ```
 
-{% endraw %}
+  {% endraw %}
 
-2. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
+1. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
 
    ![Commit False Scenario](images/CommitFalse.PNG)
 

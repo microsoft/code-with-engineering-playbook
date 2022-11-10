@@ -43,7 +43,7 @@ To use the standard "Run woke" GitHub Action with the default ruleset in a CI pi
 
     {% raw %}
 
-```yaml
+    ```yaml
     name: ci
     on:
       - pull_request
