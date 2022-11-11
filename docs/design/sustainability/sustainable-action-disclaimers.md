@@ -25,3 +25,15 @@ Shipping physical items has its own carbon impact, depending on the mode of tran
 ## ACTION: Consider the energy efficiency of languages
 
 When selecting a programming language, the _most_ energy efficient progamming language may not always be the best choice for development speed, maintenance, integration with dependent systems, and other project factors. But when deciding between languages that all meet the project needs, energy efficiency can be a helpful consideration.
+
+## ACTION: Use caching policies
+
+A cache provides temporary storage of resources that have been requested by an application. Caching can improve application performance by reducing the time required to get a requested resource. Caching can also improve sustainability by decreasing the amount of network traffic.
+
+While caching provides these benefits, it also increases the risk that the resource returned to the application is stale, meaning that it is not identical to the resource that would have been sent by the server if caching were not in use. This can create poor user experiences when data accuracy is critical.
+
+Additionally, caching may allow unauthorized users or processes to read sensitive data. An authenticated response that is cached may be retrieved from the cache without an additional authorization. Due to security concerns like this, caching is **not recommended** for middle tier scenarios.
+
+## ACTION: Consider caching data close to end users with a CDN
+
+Including CDNs in your network architecture adds many additional servers to your software footprint, each with their own  local energy grid mix.  The details of CDN hardware and the impact of the power that runs it is important to determine if the carbon emissions from running them is lower than the emissions from sending the data over the wire from a more distant source.  The larger the volume of data, distance it needs to travel, and frequency of requests, the more this solution becomes appealing.
