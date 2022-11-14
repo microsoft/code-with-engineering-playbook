@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  megalinter-check:
     name: MegaLinter
     runs-on: ubuntu-latest
     steps:
@@ -80,3 +80,28 @@ jobs:
         with:
           branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
           commit_message: "[MegaLinter] Apply linters fixes"
+
+  site-build-check:
+    name: Site Build Checker
+    needs: megalinter-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.7
+          architecture: x64
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip      
+          python3 -m pip install wheel
+          python3 -m pip install -r requirements-docs.txt
+
+      - name: Build site
+        run: mkdocs build
