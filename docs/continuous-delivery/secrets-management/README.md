@@ -50,7 +50,7 @@ These techniques make the loading of secrets  transparent to the developer.
 
 Use the [`file`](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration) attribute of the appSettings element to load secrets from a local file.
 
-``` XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <appSettings file="..\..\secrets.config">
