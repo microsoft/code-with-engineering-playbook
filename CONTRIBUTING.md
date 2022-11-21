@@ -51,7 +51,7 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 There are two ways in which you can help update the content:
 
 - **One-off:** \
-If you are not a regular contributor to the project, but you would like to contribute some changes, the best way to do it is to follow these [steps](#how-to-contribute)
+If you are not a regular contributor to the project, but you would like to contribute some changes, the best way to do it is by [submitting a PR](#submitting-a-pr)
 
 - **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added to the project's Contributors group. Please contact one of the [maintainers](#maintainers) to be added to the group. You will still need to submit a PR against main in order to merge your changes.
