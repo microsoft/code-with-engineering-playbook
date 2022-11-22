@@ -8,7 +8,7 @@ This project welcomes contributions and suggestions.
 
 ## What to contribute
 
-- Patterns and practices that have worked well in engagements, related to our engineering fundamentals.
+- Patterns and practices that have worked well in engagements, related to our engineering fundamentals
 - Content that can be publicly visible (avoid confidential information)
 - Content that is generally applicable (avoid references to internal processes, or very specific information)
 - Short code snippets or links to OSS repos (avoid large code assets)
