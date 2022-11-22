@@ -20,7 +20,7 @@ If you are unsure if your content will match this playbook, you are welcome to c
 - Quality is more important than quantity
 - Write in a way that you would want someone else to explain something to you. Use [`plain english`](http://www.plainenglish.co.uk/how-to-write-in-plain-english.html)
 - Be friendly, technical, professional and concise
-- Communicate as engineers, not marketing. We want to share what we learned, not "sell" our ideas.
+- Communicate as engineers, not marketing; we want to share what we learned, not "sell" our ideas
 - Don't recreate introductory content, link to it
 - Add context around patterns, recipes etc. so that the reader understands when and where a pattern may be applicable and where it may not
 - Think about how readers can discover your content, is it easy to find?
