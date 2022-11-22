@@ -61,7 +61,7 @@ If you plan to update the content semi-regularly or regularly, you can be added 
 ### Submitting a PR
 
 - Add your changes to a new branch `<github alias>/<title>` or by forking the repository
-- Open a PR with a clear description of the changes.
+- Open a PR with a clear description of the changes
 - Tag the PR with the appropriate area, and link any issues that the PR closes
 - Add reviewers (you will need 2 reviewers to merge) to the PR, for example the [maintainers](#maintainers) or anyone from the [EF champs team](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/reviewers.yml).
 
