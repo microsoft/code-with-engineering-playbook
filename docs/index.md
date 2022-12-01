@@ -54,11 +54,10 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 * [Documentation](documentation/README.md)
 * [Engineering Feedback](engineering-feedback/README.md)
 * [Observability](observability/README.md)
-* [Reliability](reliability/README.md)
 * [Security](security/README.md)
 * [Privacy](privacy/README.md)
-* [Reliability](reliability/README.md)
 * [Source Control](source-control/README.md)
+* [Reliability](reliability/README.md)
 
 ## Fundamentals for Specific Technology Areas
 
