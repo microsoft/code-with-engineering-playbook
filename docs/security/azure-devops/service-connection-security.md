@@ -1,7 +1,9 @@
 # Azure DevOps Service Connection Security
 
-In Azure DevOps, Service Connections are used in Azure DevOps Pipelines to connect to external services. These Service Connections can be used to connect to services like Azure, GitHub, Docker, Kubernetes, and many other services.  
-Service Connections are used in an Azure DevOps Pipeline to authenticate to these external services and to invoke diverse types of commands, like create and update resources in Azure, upload container images to Docker, or deploy applications to Kubernetes. To be able to invoke these commands, Service Connections need to have the right permissions to do so.  
+In Azure DevOps, Service Connections are used in Azure DevOps Pipelines to connect to external services, like Azure, GitHub, Docker, Kubernetes, and many other services. Service Connections can be used to authenticate to these external services and to invoke diverse types of commands, like create and update resources in Azure, upload container images to Docker, or deploy applications to Kubernetes.  
+
+To be able to invoke these commands, Service Connections need to have the right permissions to do so.  
+
 Because Service Connections have all the necessary permissions in these external services, it is crucial to secure Service Connections so they cannot be misused by accident or by malicious users.  
 
 ## Secure Service Connection
@@ -19,8 +21,10 @@ What still *isn't* secured however, is **what** can be done with the Service Con
 
 In good practice, [Pull Requests](../../code-reviews/pull-requests.md) and [Code Reviews](../../code-reviews/README.md) should be used to ensure the code that is being deployed, is being reviewed by a second person and potentially automatically being checked for vulnerabilities and other security issues.  
 In the case of YAML Pipelines, there is a small caveat to this process, because YAML Pipelines can be executed without the need for a Pull Request and Code Reviews.  
- The configuration of *when* a pipeline should be triggered is specified in the YAML Pipeline itself and therefore a pipeline can be configured to execute on changes in a temporary branch. In this temporary branch, any changes made to the pipeline itself will be executed without being reviewed.  
- If the given pipeline has been granted [Pipeline-level permissions](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints#pipeline-permissions) to use a specific Service Connection, any command can be executed using that Service Connection, without anyone reviewing the command. Since Service Connections can have a lot of permissions in the external service, executing any pipeline without review could potentially have big consequences.
+
+The configuration of *when* a pipeline should be triggered is specified in the YAML Pipeline itself and therefore a pipeline can be configured to execute on changes in a temporary branch. In this temporary branch, any changes made to the pipeline itself will be executed without being reviewed.  
+
+If the given pipeline has been granted [Pipeline-level permissions](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints#pipeline-permissions) to use a specific Service Connection, any command can be executed using that Service Connection, without anyone reviewing the command. Since Service Connections can have a lot of permissions in the external service, executing any pipeline without review could potentially have big consequences.
 
 ## Service Connection Checks
 
@@ -31,7 +35,9 @@ Configuration can be done in the Approvals and Checks menu on the Service Connec
 ### Branch Control
 
 By configuring Branch Control on a Service Connection, you can control that the Service Connection can only be used in a YAML Pipeline if the pipeline is running from a specific branch.  
+
 By configuring Branch Control to only allow the main branch (and potentially release branches) you can ensure a YAML Pipeline can only use the Service Connection after any changes to that pipeline have been merged into the main branch, and therefore has passed any Pull Requests checks and Code Reviews. As an additional check, Branch Control can verify if Branch Protections (like required Pull Requests and Code Reviews) are actually configured on the allowed branches.  
+
 With Branch Control in place, in combination with Branch Protections, it is not possible anymore to run any commands against a Service Connection without having multiple persons review the commands. Therefore accidental, or malicious, mis-use of the permissions a Service Connection has is not possible anymore.  
 
 **Note: When setting a wildcard for the Allowed Branches, anyone could still create a branch matching that wildcard and would be able to use the Service Connection. Using [git permissions](https://learn.microsoft.com/en-us/azure/devops/repos/git/require-branch-folders#enforce-permissions) it can be configured so only administrators are allowed to create certain branches, like release branches.*
