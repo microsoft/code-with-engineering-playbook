@@ -273,14 +273,9 @@ involving latest (SetLatestSuffixTag & pushSuccessfulDockerImageLatest).
 
 ## References
 
-[DevTest pattern](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas)
-
-[Azure Docs on Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)
-
-[official tox documentation page](https://tox.readthedocs.io/en/latest/example/pytest.html)
-
-[Testinfra](https://testinfra.readthedocs.io/en/latest/)
-
-[Testinfra project on GitHub](https://github.com/pytest-dev/pytest-testinfra)
-
-[pytest](http://pytest.org)
+- [DevTest pattern](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas)
+- [Azure Docs on Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)
+- [official tox documentation page](https://tox.wiki/en/latest/user_guide.html)
+- [Testinfra](https://testinfra.readthedocs.io/en/latest/)
+- [Testinfra project on GitHub](https://github.com/pytest-dev/pytest-testinfra)
+- [pytest](http://pytest.org)
