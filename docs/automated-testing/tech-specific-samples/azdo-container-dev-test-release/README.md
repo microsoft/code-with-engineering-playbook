@@ -45,7 +45,7 @@ If this task succeeds, the Dockerfile was build without errors and we can contin
 ## Test the Container
 
 To test the container, we are using the tox environment.
-For more details on tox please visit the tox section of this repository or visit [the official tox documentation page](https://tox.readthedocs.io/en/latest/example/pytest.html).
+For more details on tox please visit the tox section of this repository or visit [the official tox documentation page](https://tox.wiki/en/latest/user_guide.html).
 
 Before we test the container, we are checking for exposed credentials in the docker image history.
 If known passwords, used to access our internal resources, are exposed here, the build step will fail:
