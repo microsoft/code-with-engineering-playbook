@@ -3108,19 +3108,25 @@
     1. Encrypted Secrets in Git Repositories
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="1. Encrypted Secrets in Git Repositories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#bitnami-sealed-secrets" class="md-nav__link">
     Bitnami Sealed Secrets
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mozilla-sops" class="md-nav__link">
     Mozilla SOPS
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -7073,19 +7079,25 @@
     1. Encrypted Secrets in Git Repositories
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="1. Encrypted Secrets in Git Repositories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#bitnami-sealed-secrets" class="md-nav__link">
     Bitnami Sealed Secrets
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mozilla-sops" class="md-nav__link">
     Mozilla SOPS
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -7124,7 +7136,7 @@
 <li>Encrypted Secrets in Git Repositories</li>
 <li>Reference to secrets stored in the external key vault</li>
 </ol>
-<h3 id="1-encrypted-secrets-in-git-repositories">1. Encrypted Secrets in Git Repositories</h3>
+<h2 id="1-encrypted-secrets-in-git-repositories">1. Encrypted Secrets in Git Repositories</h2>
 <p>In this approach, secrets are manually encrypted by developers using a public key and the custom Kubernetes controller running in the target cluster can only decrypt the key. Some popular tools for his approach are <a href="https://github.com/bitnami-labs/sealed-secrets">Bitnami Sealed Secrets</a>, <a href="https://github.com/mozilla/sops">Mozilla SOPS</a></p>
 <ul>
 <li>
@@ -7153,7 +7165,7 @@
 <li>Does not scale with larger teams as each developer has to encrypt the secrets</li>
 <li>The public key is sufficient for creating brand new files. The secret key is required for decrypting and editing existing files because SOPS computes a MAC on all values.  When using the public key solely to add or remove a field, the whole file should be deleted and recreated.</li>
 </ul>
-<h3 id="2-reference-to-secrets-stored-in-an-external-key-vault-recommended">2. Reference to secrets stored in an external key vault (Recommended)</h3>
+<h2 id="2-reference-to-secrets-stored-in-an-external-key-vault-recommended">2. Reference to secrets stored in an external key vault (Recommended)</h2>
 <p>This approach relies on a key management system like <a href="https://docs.microsoft.com/en-us/azure/key-vault/general/overview">Azure Key Vault</a> to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.</p>
 <p><a href="https://github.com/Azure/secrets-store-csi-driver-provider-azure">Azure Key Vault Provider for Secrets Store CSI Driver</a> is an azure vault provider for <a href="https://github.com/kubernetes-sigs/secrets-store-csi-driver">Kubernetes secret store CSI Driver</a> allows you to get secret content stored in Azure Key vault instance and use the Secrets Store CSI driver interface to mount them into Kubernetes pods.</p>
 <ul>
@@ -7179,7 +7191,7 @@ CSI driver will need access to Azure Key vault either through service principle 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 19, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2022</span>
       
     
   </small>

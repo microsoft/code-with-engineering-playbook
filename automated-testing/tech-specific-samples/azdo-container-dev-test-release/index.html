@@ -7077,7 +7077,7 @@ This task can for example be used in a template for multiple containers to impro
 <p>If this task succeeds, the Dockerfile was build without errors and we can continue to testing the container itself.</p>
 <h2 id="test-the-container">Test the Container</h2>
 <p>To test the container, we are using the tox environment.
-For more details on tox please visit the tox section of this repository or visit <a href="https://tox.readthedocs.io/en/latest/example/pytest.html">the official tox documentation page</a>.</p>
+For more details on tox please visit the tox section of this repository or visit <a href="https://tox.wiki/en/latest/user_guide.html">the official tox documentation page</a>.</p>
 <p>Before we test the container, we are checking for exposed credentials in the docker image history.
 If known passwords, used to access our internal resources, are exposed here, the build step will fail:</p>
 <div class="highlight"><pre><span></span><code>- task: Bash@3
@@ -7270,19 +7270,21 @@ if the tests succeeded:</p>
 <p>If you don't want to include the <code>latest</code> tag, you can also remove the steps
 involving latest (SetLatestSuffixTag &amp; pushSuccessfulDockerImageLatest).</p>
 <h2 id="references">References</h2>
-<p><a href="https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas">DevTest pattern</a></p>
-<p><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&amp;tabs=yaml#build-variables-devops-services">Azure Docs on Azure DevOps</a></p>
-<p><a href="https://tox.readthedocs.io/en/latest/example/pytest.html">official tox documentation page</a></p>
-<p><a href="https://testinfra.readthedocs.io/en/latest/">Testinfra</a></p>
-<p><a href="https://github.com/pytest-dev/pytest-testinfra">Testinfra project on GitHub</a></p>
-<p><a href="http://pytest.org">pytest</a></p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas">DevTest pattern</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&amp;tabs=yaml#build-variables-devops-services">Azure Docs on Azure DevOps</a></li>
+<li><a href="https://tox.wiki/en/latest/user_guide.html">official tox documentation page</a></li>
+<li><a href="https://testinfra.readthedocs.io/en/latest/">Testinfra</a></li>
+<li><a href="https://github.com/pytest-dev/pytest-testinfra">Testinfra project on GitHub</a></li>
+<li><a href="http://pytest.org">pytest</a></li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2022</span>
       
     
   </small>
