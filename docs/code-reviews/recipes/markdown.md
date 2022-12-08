@@ -14,7 +14,7 @@ Using Markdown is different from using a WYSIWYG editor. In an application like 
 
 You can find more information and full documentation [here](https://www.markdownguide.org/).
 
-## Linting
+## Linters
 
 Markdown has specific way of being formatted. It is important to respect this formatting, otherwise some interpreters which are strict won't properly display the document. Linters are often used to help developers properly create documents by both verifying proper Markdown syntax, grammar and proper English language.
 

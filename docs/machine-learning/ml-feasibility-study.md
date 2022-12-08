@@ -1,6 +1,7 @@
 # Feasibility Studies
 
 The main goal of feasibility studies is to assess whether it is feasible to solve the problem satisfactorily using ML with the available data. We want to avoid investing too much in the solution before we have:
+
 * Sufficient evidence that a solution would be the best technical solution given the business case
 * Sufficient evidence that a solution is compatible with the problem context
 * Sufficient evidence that a solution is possible
@@ -29,6 +30,7 @@ Collaboration from individuals with diverse skill sets is desired at this stage,
 ### Deep contextual understanding
 
 Confirm that the following questions can be answered based on what was learned during the Discovery Phase of the project. For items that can not be satisfactorily answered, undertake additional investigation to answer.
+
 * Understanding the people who are using and/or affected by the solution
 * Understanding the contextual forces at play around the problem, including goals, culture, and historical context
 * To accomplish this a researcher will:
@@ -124,7 +126,6 @@ Confirm that the following questions can be answered based on what was learned d
 * Understanding of users and stakeholders’ contexts, needs and concerns to inform development of RAI
 * Testing AI concept and experience elements with users and stakeholders
 * Discussion and feedback from diverse perspectives around any responsible AI concerns
-
 
 ## Output of a feasibility study
 
