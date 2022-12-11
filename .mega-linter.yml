@@ -3,17 +3,16 @@
 
 APPLY_FIXES: all # all, none, or list of linter keys
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
-# ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
-DISABLE:
-  - COPYPASTE # Comment to enable checks of excessive copy-pastes
-  - HTML
-  - DOCKERFILE
-  - JSON
-DISABLE_LINTERS:
-  - REPOSITORY_CHECKOV
-  - REPOSITORY_GITLEAKS
-  - SPELL_MISSPELL
-  - YAML_V8R
+ENABLE_LINTERS:
+  - ACTION_ACTIONLINT
+  - MARKDOWN_MARKDOWNLINT
+  - MARKDOWN_MARKDOWN_LINK_CHECK
+  - MARKDOWN_MARKDOWN_TABLE_FORMATTER
+  - REPOSITORY_SECRETLINT
+  - SPELL_CSPELL
+  - YAML_PRETTIER
+  - YAML_YAMLLINT
+
 SPELL_CSPELL_DISABLE_ERRORS: true
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
