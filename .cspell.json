@@ -58,7 +58,6 @@
     "FHEW",
     "FHIR",
     "FIPS",
-    "Failureas",
     "Fairlearn",
     "Falco",
     "Federica",
@@ -427,8 +426,15 @@
     "Avi",
     "zienis",
     "Customizabile",
+    "CHECKOV",
     "Dodd's",
-    "G\u00e9ron's"
+    "Dodd’s",
+    "G\u00e9ron's",
+    "bugbug",
+    "Bitnami",
+    "Kubeseal",
+    "KSOPS",
+    "OTLP"
   ],
   "version": "0.2"
 }

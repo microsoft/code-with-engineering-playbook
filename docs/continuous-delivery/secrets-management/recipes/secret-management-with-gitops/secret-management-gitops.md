@@ -46,7 +46,7 @@ This approach relies on a key management system like [Azure Key Vault](https://d
 - Supports pod portability with the SecretProviderClass CRD
 
 Azure Key Vault Provider for Secrets Store CSI Driver [install Guide](https://secrets-store-csi-driver.sigs.k8s.io/getting-started/installation.html).
-CSI driver will need access to Azure Key vault either through service principle or managed identity(recommended). To make this access secure you can leverage [Azure Workload Identiy](https://github.com/Azure/azure-workload-identity)(recommended) or [AAD Pod Identify](https://github.com/Azure/aad-pod-identity). Please note AAD pod identity will soon be replaced by Azure WorkLoad Identity.
+CSI driver will need access to Azure Key vault either through service principle or managed identity(recommended). To make this access secure you can leverage [Azure Workload Identity](https://github.com/Azure/azure-workload-identity)(recommended) or [AAD Pod Identify](https://github.com/Azure/aad-pod-identity). Please note AAD pod identity will soon be replaced by Azure WorkLoad Identity.
 
 ## Important Links
 

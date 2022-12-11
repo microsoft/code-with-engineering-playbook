@@ -57,7 +57,7 @@ It enables tracing, metrics, and logging telemetry through a set of single-distr
 
 ![Context Propagation](../images/newarchitecture.png)
 
-Moreover, avoiding any proprietary lockdown and achieving vendor-agnostic neutrality for tracing, monitoring, and logging APIs AND backends allow maximum portability and extensibility patterns.
+Moreover, avoiding any proprietary lock down and achieving vendor-agnostic neutrality for tracing, monitoring, and logging APIs AND backends allow maximum portability and extensibility patterns.
 
 Another good reason to use OpenTelemetry would be whether the stack uses OpenCensus or OpenTracing. As OpenCensus and OpenTracing have carved the way for OpenTelemetry, it makes sense to introduce OpenTelemetry where OpenCensus or OpenTracing is used as it still has backward compatibility.
 
