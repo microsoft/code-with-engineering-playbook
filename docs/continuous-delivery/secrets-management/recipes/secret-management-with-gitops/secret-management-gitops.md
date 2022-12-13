@@ -7,7 +7,7 @@ There are many ways to manage secrets with GitOps and at high level can be categ
 1. Encrypted Secrets in Git Repositories
 1. Reference to secrets stored in the external key vault
 
-### 1. Encrypted Secrets in Git Repositories
+## 1. Encrypted Secrets in Git Repositories
 
 In this approach, secrets are manually encrypted by developers using a public key and the custom Kubernetes controller running in the target cluster can only decrypt the key. Some popular tools for his approach are [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets), [Mozilla SOPS](https://github.com/mozilla/sops)
 
@@ -32,7 +32,7 @@ In this approach, secrets are manually encrypted by developers using a public ke
 - Does not scale with larger teams as each developer has to encrypt the secrets
 - The public key is sufficient for creating brand new files. The secret key is required for decrypting and editing existing files because SOPS computes a MAC on all values.  When using the public key solely to add or remove a field, the whole file should be deleted and recreated.
 
-### 2. Reference to secrets stored in an external key vault (Recommended)
+## 2. Reference to secrets stored in an external key vault (Recommended)
 
 This approach relies on a key management system like [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview) to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.
 
