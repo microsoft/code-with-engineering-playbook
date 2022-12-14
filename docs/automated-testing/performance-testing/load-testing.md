@@ -69,4 +69,4 @@ Of course, it's only as good as your ability to predict the expected load, so it
 
 List additional readings about this test type for those that would like to dive deeper.
 
-- [Microsoft Azure Well-Architected Framework > Load Testing](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing)
+- [Microsoft Azure Well-Architected Framework > Load Testing](https://learn.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing)

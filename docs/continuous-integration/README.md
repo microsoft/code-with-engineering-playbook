@@ -223,7 +223,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 ### Branch strategy
 
-- Release branches should auto trigger the deployment of a build artifact to its target cloud environment. You can find additional guidance on the Azure DevOps documentation site under the [Manage deployments](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-deployments) section
+- Release branches should auto trigger the deployment of a build artifact to its target cloud environment. You can find additional guidance on the Azure DevOps documentation site under the [Manage deployments](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-deployments) section
 
 ## Deliver Quickly and Daily
 
@@ -295,12 +295,12 @@ We recommend integrating Teams or Slack with CI/CD pipeline runs which helps kee
 - [Bedrock Getting Started Quick Guide](https://github.com/microsoft/bedrock#getting-started)
 - [Cobalt Quick Start Guide](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md)
 - [Terraform Azure DevOps Provider](https://github.com/microsoft/terraform-provider-azuredevops)
-- [Azure DevOps multi stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
-- [Azure Pipeline Key Concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
-- [Azure Pipeline Environments](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
-- [Artifacts in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/artifacts-overview?view=azure-devops)
-- [Azure Pipeline permission and security roles](https://docs.microsoft.com/en-us/azure/devops/pipelines/policies/permissions?view=azure-devops)
-- [Azure Environment approvals and checks](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
+- [Azure DevOps multi stage pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
+- [Azure Pipeline Key Concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
+- [Azure Pipeline Environments](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
+- [Artifacts in Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/artifacts-overview?view=azure-devops)
+- [Azure Pipeline permission and security roles](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/permissions?view=azure-devops)
+- [Azure Environment approvals and checks](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
 - [Terraform Getting Started Guide with Azure](https://learn.hashicorp.com/terraform?track=azure#azure)
-- [Terraform Remote State Azure Setup](https://docs.microsoft.com/en-us/azure/terraform/terraform-backend)
+- [Terraform Remote State Azure Setup](https://learn.microsoft.com/en-us/azure/terraform/terraform-backend)
 - [Terratest - Unit and Integration Infrastructure Framework](https://terratest.gruntwork.io/)

@@ -8,7 +8,7 @@ There are two types of code comments, implementation comments and documentation 
 
 They are used for internal documentation, and are intended for anyone who may need to maintain the code in the future, including your future self.
 
-There can be single line and multi-line comments (e.g., [C# Comments](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/lexical-structure#comments)). Comments are human-readable and not executed, thus ignored by the compiler. So you could potentially add as many as you want.
+There can be single line and multi-line comments (e.g., [C# Comments](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/lexical-structure#comments)). Comments are human-readable and not executed, thus ignored by the compiler. So you could potentially add as many as you want.
 
 Now, the use of these comments is often considered a code smell. If you need to clarify your code, that may mean the code is too complex. So you should work towards the removal of the clarification by making the code simpler, easier to read, and understand. Still, these comments can be useful to give overviews of the code, or provide additional context information that is not available in the code itself.
 
@@ -88,7 +88,7 @@ In **C#**, doc comments can be processed by the compiler to generate XML documen
 
 More information:
 
-- [Recommended XML tags for C# documentation comments](https://docs.microsoft.com/dotnet/csharp/language-reference/xmldoc/recommended-tags).
+- [Recommended XML tags for C# documentation comments](https://learn.microsoft.com/dotnet/csharp/language-reference/xmldoc/recommended-tags).
 
 In other languages, you may require external tools. For example, **Java** doc comments can be processed by Javadoc tool to generate HTML documentation files.
 

@@ -30,13 +30,13 @@ There are multiple ways to take a memory dump depending the operating system you
 
 The most common debuggers are:
 
-- Windows - [WinDbg and WinDgbNext](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) (included in the Windows SDK), [Visual Studio](https://visualstudio.microsoft.com/) can also load a memory dump for a .NET Framework and .NET Core process
+- Windows - [WinDbg and WinDgbNext](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) (included in the Windows SDK), [Visual Studio](https://visualstudio.microsoft.com/) can also load a memory dump for a .NET Framework and .NET Core process
 - Linux - [GDB is the GNU Debugger](https://www.gnu.org/software/gdb/)
 - Mac OS - [LLDB Debugger](https://lldb.llvm.org/)
 
 There are a range of developer platform specific diagnostic tools which can be used:
 
-- [.NET Core diagnostic tools](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/#net-core-diagnostic-global-tools), [GitHub repository](https://github.com/dotnet/diagnostics)
+- [.NET Core diagnostic tools](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/#net-core-diagnostic-global-tools), [GitHub repository](https://github.com/dotnet/diagnostics)
 - [Java diagnostic tools - version specific](https://docs.oracle.com/en/java/javase/16/troubleshoot/general-java-troubleshooting.html)
 - [Python debugging and profiling - version specific](https://docs.python.org/3/library/debug.html)
 - [Node.js Diagnostics working group](https://github.com/nodejs/diagnostics)
@@ -47,10 +47,10 @@ To create an application profile as close to production as possible, the environ
 
 ### Diagnostics in containers
 
-For monolithic applications, diagnostics tools can be installed and run on the VM hosting them. Most scalable applications are developed as [microservices](./microservices.md) and have complex interactions which require to install the tools in the containers running the process or to leverage a sidecar container (see [sidecar pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar)). Some platforms expose endpoints to interact with the application and return a dump.
+For monolithic applications, diagnostics tools can be installed and run on the VM hosting them. Most scalable applications are developed as [microservices](./microservices.md) and have complex interactions which require to install the tools in the containers running the process or to leverage a sidecar container (see [sidecar pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar)). Some platforms expose endpoints to interact with the application and return a dump.
 
 Useful links:
 
-- [.NET Core diagnostics in containers](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/diagnostics-in-containers)
+- [.NET Core diagnostics in containers](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/diagnostics-in-containers)
 - [Experimental tool dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/), [What's new](https://devblogs.microsoft.com/dotnet/whats-new-in-dotnet-monitor/), [GItHub repository](https://github.com/dotnet/dotnet-monitor/tree/main/documentation)
 - [Spring Boot actuator endpoints](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#actuator.endpoints)

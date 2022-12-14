@@ -151,4 +151,4 @@ This will stop the process and unregister it, after that you can safely remove t
 
 * [Git LFS getting started](https://git-lfs.github.com/)
 * [Git LFS manual](https://github.com/git-lfs/git-lfs/tree/master/docs)
-* [Git LFS on Azure Repos](https://docs.microsoft.com/en-us/azure/devops/repos/git/manage-large-files?view=azure-devops)
+* [Git LFS on Azure Repos](https://learn.microsoft.com/en-us/azure/devops/repos/git/manage-large-files?view=azure-devops)
