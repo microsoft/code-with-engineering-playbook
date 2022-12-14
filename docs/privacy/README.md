@@ -9,5 +9,5 @@ Microsoft's recommended standard practices and regulations on Privacy and Data H
 
 The playbook currently contains two main parts:
 
-1. [Privacy and Data](data-handling-1.md): Best practices for properly handling sensitive and private data.
+1. [Privacy and Data](data-handling.md): Best practices for properly handling sensitive and private data.
 2. [Privacy frameworks](privacy-frameworks.md): A list of frameworks which could be applied in private data scenarios.
