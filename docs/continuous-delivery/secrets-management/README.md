@@ -15,7 +15,7 @@ to the repo. Add the files to the [.gitignore](https://git-scm.com/docs/gitignor
 Each developer maintains their own local version of the file or, if required, circulate them via private channels e.g. a Teams chat.
 
 In a production system, assuming Azure, create the secrets in the environment of the running process. We can do this by manually editing the 'Applications Settings' section of the resource, but a script using
-the Azure CLI to do the same is a useful time-saving utility. See [az webapp config appsettings](https://docs.microsoft.com/en-us/cli/azure/webapp/config/appsettings?view=azure-cli-latest) for more details.
+the Azure CLI to do the same is a useful time-saving utility. See [az webapp config appsettings](https://learn.microsoft.com/en-us/cli/azure/webapp/config/appsettings?view=azure-cli-latest) for more details.
 
 It's best practice to maintain separate secrets configurations for each environment that you run. e.g. dev, test, prod, local etc
 
@@ -48,7 +48,7 @@ These techniques make the loading of secrets  transparent to the developer.
 
 ### C#/.NET
 
-Use the [`file`](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration) attribute of the appSettings element to load secrets from a local file.
+Use the [`file`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration) attribute of the appSettings element to load secrets from a local file.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -129,8 +129,8 @@ The following steps lay out a clear pathway to creating new secrets and then uti
 
 1. [Install and configure the Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html#set-up-the-cli) on your local machine
 2. [Get the Databricks personal access token](https://docs.databricks.com/api/latest/authentication.html#token-management)
-3. [Create a scope for the secrets](https://docs.microsoft.com/azure/databricks/security/secrets/secret-scopes)
-4. [Create secrets](https://docs.microsoft.com/azure/databricks/security/secrets/)
+3. [Create a scope for the secrets](https://learn.microsoft.com/azure/databricks/security/secrets/secret-scopes)
+4. [Create secrets](https://learn.microsoft.com/azure/databricks/security/secrets/)
 
 ### Validation
 

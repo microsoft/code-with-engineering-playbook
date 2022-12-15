@@ -180,7 +180,7 @@ The following strategies can be used to reduce these dependencies
 
 #### Use an Emulator
 
-If available, emulators are implementations of technologies that are typically only available in cloud environments. A good example is the [CosmosDB emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator).
+If available, emulators are implementations of technologies that are typically only available in cloud environments. A good example is the [CosmosDB emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/local-emulator).
 
 #### Use DI + Toggle to Mock Remote Dependencies
 

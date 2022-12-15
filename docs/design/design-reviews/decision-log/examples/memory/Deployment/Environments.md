@@ -1,6 +1,6 @@
 # Application Deployment
 
-The Memory application leverages [Azure DevOps](https://docs.microsoft.com/en-gb/azure/devops/index?view=azure-devops) for work item tracking as well as continuous integration (CI) and continuous deployment (CD).
+The Memory application leverages [Azure DevOps](https://learn.microsoft.com/en-gb/azure/devops/index?view=azure-devops) for work item tracking as well as continuous integration (CI) and continuous deployment (CD).
 
 ---
 

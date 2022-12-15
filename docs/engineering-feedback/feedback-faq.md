@@ -18,7 +18,7 @@ Customers can also submit their feedback directly via GitHub or UserVoice (as ap
 
 ## How can a Microsoft employee track the status of a specific feedback item?
 
-The easiest way for a Microsoft employee within CSE to track a specific feedback item is to [follow the feedback (a work item)](https://docs.microsoft.com/azure/devops/boards/work-items/follow-work-items?view=azure-devops) in Azure DevOps.
+The easiest way for a Microsoft employee within CSE to track a specific feedback item is to [follow the feedback (a work item)](https://learn.microsoft.com/azure/devops/boards/work-items/follow-work-items?view=azure-devops) in Azure DevOps.
 
 ## As a Microsoft employee within CSE, if I submit a feedback and move to another dev crew engagement, how would my customer get an update on that feedback?
 
@@ -26,7 +26,7 @@ If the feedback is also submitted via GitHub or UserVoice, the customer may elec
 
 ## As a Microsoft employee within CSE, what should I expect/do after submitting feedback via CSE Feedback?
 
-After submitting the feedback, it is recommended to [follow the feedback (a work item)](https://docs.microsoft.com/azure/devops/boards/work-items/follow-work-items?view=azure-devops) in Azure DevOps.  If you have configured Azure DevOps notifications to send an email on work item updates, you will receive an email when the feedback is updated.
+After submitting the feedback, it is recommended to [follow the feedback (a work item)](https://learn.microsoft.com/azure/devops/boards/work-items/follow-work-items?view=azure-devops) in Azure DevOps.  If you have configured Azure DevOps notifications to send an email on work item updates, you will receive an email when the feedback is updated.
 
 If more information about the feedback is needed, a member of the CSE Feedback team will contact you to gather more information.
 

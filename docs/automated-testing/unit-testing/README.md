@@ -91,7 +91,7 @@ Dependency Injection. Being intentional with what dependencies get injected to w
 system.
 
 Many languages include special Dependency Injection frameworks that take care of the boilerplate code and construction
-of the objects. Examples of this are [Spring](https://spring.io/) in Java or built into [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.1)
+of the objects. Examples of this are [Spring](https://spring.io/) in Java or built into [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.1)
 
 An example of using dependency injection can be found [here](authoring_example.md#dependency-injection).
 
@@ -203,7 +203,7 @@ To see if mocking is right for your project, or if a mock-free approach is more 
 These tools allow for constant running of your unit tests with in-line code coverage, making the dev inner loop
 extremely fast and allows for easy TDD:
 
-- [Visual Studio Live Unit Testing](https://docs.microsoft.com/en-us/visualstudio/test/live-unit-testing-intro?view=vs-2019)
+- [Visual Studio Live Unit Testing](https://learn.microsoft.com/en-us/visualstudio/test/live-unit-testing-intro?view=vs-2019)
 - [Wallaby.js](https://wallabyjs.com/)
 - [Infinitest](http://infinitest.github.io/) for Java
 - [PyCrunch](https://plugins.jetbrains.com/plugin/13264-pycrunch--live-testing) for Python
@@ -227,4 +227,4 @@ regressions, bugs, and increase developer velocity.
 
 ## Resources
 
-- [Unit Testing Best Practices](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+- [Unit Testing Best Practices](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)

@@ -20,8 +20,8 @@ The secret rotation process might result in a downtime when the application is r
 
 ## Secrets Rotation Frameworks and Tools
 
-1. For rotation of a secret for resources that use one set of authentication credentials [click here](https://docs.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation)
-1. For rotation of a secret for resources that have two sets of authentication credentials [click here](https://docs.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation-dual?tabs=azure-cli)
+1. For rotation of a secret for resources that use one set of authentication credentials [click here](https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation)
+1. For rotation of a secret for resources that have two sets of authentication credentials [click here](https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation-dual?tabs=azure-cli)
 
 ## Conclusion
 

@@ -21,9 +21,9 @@ Integrating UI Tests in to your CI/CD is necessary but more challenging than uni
 
 Integrations like `BrowserStack` are nice since they provide Azure DevOps reports as part of the test run.
 
-That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
+That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at [Publish Test Results task](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
 
-If you're using an Azure DevOps pipeline to run UI tests, consider using a [self hosted agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser) in order to manage framework versions and avoid unexpected updates.
+If you're using an Azure DevOps pipeline to run UI tests, consider using a [self hosted agent](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser) in order to manage framework versions and avoid unexpected updates.
 
 ## General Guidance
 
@@ -62,7 +62,7 @@ Recommended testing frameworks:
   - [Jest](https://jestjs.io/docs/en/snapshot-testing)
   - [Selenium](https://www.selenium.dev)
 - OS/Mobile Applications
-  - [Coded UI tests (CUITs)](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019)
-  - [Xamarin.UITest](https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/)
+  - [Coded UI tests (CUITs)](https://learn.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019)
+  - [Xamarin.UITest](https://learn.microsoft.com/en-us/appcenter/test-cloud/uitest/)
 
 > Note that the framework listed above that is paid is BrowserStack, it's listed as it's an industry standard, the rest are open source and free.
