@@ -7089,7 +7089,7 @@ the repo is initially private.</p>
 to the repo. Add the files to the <a href="https://git-scm.com/docs/gitignore">.gitignore</a> to prevent that they're checked in.</p>
 <p>Each developer maintains their own local version of the file or, if required, circulate them via private channels e.g. a Teams chat.</p>
 <p>In a production system, assuming Azure, create the secrets in the environment of the running process. We can do this by manually editing the 'Applications Settings' section of the resource, but a script using
-the Azure CLI to do the same is a useful time-saving utility. See <a href="https://docs.microsoft.com/en-us/cli/azure/webapp/config/appsettings?view=azure-cli-latest">az webapp config appsettings</a> for more details.</p>
+the Azure CLI to do the same is a useful time-saving utility. See <a href="https://learn.microsoft.com/en-us/cli/azure/webapp/config/appsettings?view=azure-cli-latest">az webapp config appsettings</a> for more details.</p>
 <p>It's best practice to maintain separate secrets configurations for each environment that you run. e.g. dev, test, prod, local etc</p>
 <p>The <a href="recipes/azure-devops/secrets-per-branch/">secrets-per-branch recipe</a> describes a simple way to manage separate secrets configurations for each environment.</p>
 <blockquote>
@@ -7113,7 +7113,7 @@ the fact that Azure keeps application settings (the environment) encrypted until
 <h2 id="techniques-for-secrets-management">Techniques for Secrets Management</h2>
 <p>These techniques make the loading of secrets  transparent to the developer.</p>
 <h3 id="cnet">C#/.NET</h3>
-<p>Use the <a href="https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration"><code>file</code></a> attribute of the appSettings element to load secrets from a local file.</p>
+<p>Use the <a href="https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration"><code>file</code></a> attribute of the appSettings element to load secrets from a local file.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="nt">&lt;configuration&gt;</span>
   <span class="nt">&lt;appSettings</span> <span class="na">file=</span><span class="s">&quot;..\..\secrets.config&quot;</span><span class="nt">&gt;</span>
@@ -7168,8 +7168,8 @@ let mySecret = process.env(&quot;MY_SECRET&quot;)
 <ol>
 <li><a href="https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html#set-up-the-cli">Install and configure the Databricks CLI</a> on your local machine</li>
 <li><a href="https://docs.databricks.com/api/latest/authentication.html#token-management">Get the Databricks personal access token</a></li>
-<li><a href="https://docs.microsoft.com/azure/databricks/security/secrets/secret-scopes">Create a scope for the secrets</a></li>
-<li><a href="https://docs.microsoft.com/azure/databricks/security/secrets/">Create secrets</a></li>
+<li><a href="https://learn.microsoft.com/azure/databricks/security/secrets/secret-scopes">Create a scope for the secrets</a></li>
+<li><a href="https://learn.microsoft.com/azure/databricks/security/secrets/">Create secrets</a></li>
 </ol>
 <h3 id="validation">Validation</h3>
 <p>Automated credential scanning can be performed on the code regardless of the programming language. Read more about it <a href="../../continuous-integration/dev-sec-ops/secret-management/credential_scanning/">here</a></p>
@@ -7179,7 +7179,7 @@ let mySecret = process.env(&quot;MY_SECRET&quot;)
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

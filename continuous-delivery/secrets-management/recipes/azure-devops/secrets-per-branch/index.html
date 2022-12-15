@@ -7016,7 +7016,7 @@
 
 
 <h1 id="azure-devops-managing-settings-on-a-per-branch-basis">Azure DevOps: Managing Settings on a Per-Branch Basis</h1>
-<p>When using <a href="https://azure.microsoft.com/en-us/services/devops/pipelines/">Azure DevOps Pipelines</a> for CI/CD, it's convenient to leverage the built-in <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables">pipeline variables</a> for <a href="../../../">secrets management</a>, but using pipeline variables for secrets management has its disadvantages:</p>
+<p>When using <a href="https://azure.microsoft.com/en-us/services/devops/pipelines/">Azure DevOps Pipelines</a> for CI/CD, it's convenient to leverage the built-in <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables">pipeline variables</a> for <a href="../../../">secrets management</a>, but using pipeline variables for secrets management has its disadvantages:</p>
 <ul>
 <li><em>Pipeline variables are managed outside the code that references them.</em> This makes it easy to introduce drift between the source code and the secrets, e.g. adding a reference to a new secret in code but forgetting to add it to the pipeline variables (leads to confusing build breaks), or deleting a reference to a secret in code and forgetting to remote it from the pipeline variables (leads to confusing pipeline variables).</li>
 </ul>
@@ -7042,19 +7042,19 @@ cat &gt;&gt; .env.template <span class="o">&lt;&lt;&lt;</span> <span class="s2">
 git add .env.enc .env.template
 git commit -m <span class="s2">&quot;Update secrets&quot;</span>
 </code></pre></div>
-<p>When running the CI/CD, the build server can now access the secrets by decrypting them. E.g. for Azure DevOps, configure <code>ENCRYPTION_KEY</code> as a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables#secret-variables">secret pipeline variable</a> and then add the following step to <code>azure-pipelines.yml</code>:</p>
+<p>When running the CI/CD, the build server can now access the secrets by decrypting them. E.g. for Azure DevOps, configure <code>ENCRYPTION_KEY</code> as a <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables#secret-variables">secret pipeline variable</a> and then add the following step to <code>azure-pipelines.yml</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;$(ENCRYPTION_KEY)&quot; | openssl enc -aes-256-cbc -md sha512 -pass stdin -in .env.enc -out .env -d</span><span class="w"></span>
 <span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Decrypt secrets</span><span class="w"></span>
 </code></pre></div>
-<p>You can also use <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&amp;tabs=yaml#link-secrets-from-an-azure-key-vault">variable groups linked directly to Azure key vault</a> for your pipelines to manage all secrets in one location.</p>
+<p>You can also use <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&amp;tabs=yaml#link-secrets-from-an-azure-key-vault">variable groups linked directly to Azure key vault</a> for your pipelines to manage all secrets in one location.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

@@ -7079,8 +7079,8 @@
 <h2 id="evidence-and-measures">Evidence and Measures</h2>
 <p>Integrating UI Tests in to your CI/CD is necessary but more challenging than unit tests.  The increased challenge is that UI tests either need to run headlessly with something like <a href="https://github.com/puppeteer/puppeteer">Puppeteer</a> or there needs to be more extensive orchestration with Azure DevOps or GitHub that would handle the full testing integration for you like <a href="https://www.browserstack.com/automate/azure">BrowserStack</a></p>
 <p>Integrations like <code>BrowserStack</code> are nice since they provide Azure DevOps reports as part of the test run.</p>
-<p>That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&amp;tabs=yaml">Publish Test Results task</a>.</p>
-<p>If you're using an Azure DevOps pipeline to run UI tests, consider using a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&amp;tabs=browser">self hosted agent</a> in order to manage framework versions and avoid unexpected updates.</p>
+<p>That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&amp;tabs=yaml">Publish Test Results task</a>.</p>
+<p>If you're using an Azure DevOps pipeline to run UI tests, consider using a <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&amp;tabs=browser">self hosted agent</a> in order to manage framework versions and avoid unexpected updates.</p>
 <h2 id="general-guidance">General Guidance</h2>
 <p>The scope of UI testing should be strategic. UI tests can take a significant amount of time to both implement and run, and it's challenging to test every type of user interaction in a production application due to the large number of possible interactions.</p>
 <p>Designing the UI tests around the functional tests makes sense.  For example, given an input form, a UI test would ensure that the visual representation is consistent across devices, is accessible and interactable, and is consistent across code changes.</p>
@@ -7109,8 +7109,8 @@
 </ul>
 </li>
 <li>OS/Mobile Applications<ul>
-<li><a href="https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019">Coded UI tests (CUITs)</a></li>
-<li><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/">Xamarin.UITest</a></li>
+<li><a href="https://learn.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019">Coded UI tests (CUITs)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/appcenter/test-cloud/uitest/">Xamarin.UITest</a></li>
 </ul>
 </li>
 </ul>
@@ -7123,7 +7123,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

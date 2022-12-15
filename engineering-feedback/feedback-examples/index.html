@@ -7100,7 +7100,7 @@
 <h1 id="engineering-feedback-examples">Engineering Feedback Examples</h1>
 <p>The following are real-world examples of Engineering Feedback that have led to product improvements and unblocked customers.</p>
 <h2 id="windows-server-container-support-for-azure-kubernetes-service">Windows Server Container support for Azure Kubernetes Service</h2>
-<p>The Azure Kubernetes Service should have first class Windows container support so solutions that require Windows workloads can be deployed on a wildly popular container orchestration platform. The need was to be able to deploy Windows Server containers on AKS the managed Azure Kubernetes Service. According to <a href="https://docs.microsoft.com/en-us/azure/aks/faq#can-i-run-windows-server-containers-on-aks">this FAQ</a> (and in parallel confirmation) it is not available yet.</p>
+<p>The Azure Kubernetes Service should have first class Windows container support so solutions that require Windows workloads can be deployed on a wildly popular container orchestration platform. The need was to be able to deploy Windows Server containers on AKS the managed Azure Kubernetes Service. According to <a href="https://learn.microsoft.com/en-us/azure/aks/faq#can-i-run-windows-server-containers-on-aks">this FAQ</a> (and in parallel confirmation) it is not available yet.</p>
 <p>We tried to deploy anyway as a test, and it did not work – the deployment would be pending without success.</p>
 <p>More than a dozen large partners/customers are blocked in deploying Windows workloads to AKS due to a lack of support for Windows Server containers. They need this feature so solutions requiring Windows workloads can be deployed to this popular container orchestration platform.</p>
 <p>We are seeing an emergence of companies beginning to try Windows containers as an option to move their Windows workloads to the cloud.  Gartner is claiming that 80% of enterprise apps run on Windows. Containers have become the de facto deployment mechanism in the industry, and deployment consistency and speed are a few of the important factors companies are looking for. Enabling Windows applications and ensuring that developers have a good experience when moving their workloads to Azure via Windows containers is key to keeping existing Windows customers within the Azure ecosystem and driving Azure adoption for new workloads.</p>
@@ -7109,7 +7109,7 @@
 <p>This feedback was created as a high priority feedback and followed up internally until addressed. Here is <a href="https://azure.microsoft.com/en-in/blog/announcing-the-preview-of-windows-server-containers-support-in-azure-kubernetes-service/">the announcement</a>.</p>
 </blockquote>
 <h2 id="support-batch-receiving-with-sessions-in-azure-functions-service-bus-trigger">Support Batch Receiving with Sessions in Azure Functions Service Bus Trigger</h2>
-<p>Customer scenario was to receive a total of 250 messages per second from 50 producers with requirement for ordering &amp; minimum latency, using a Service Bus topic with sessions enabled for ordering. According to <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements#prefetching-and-receivebatch">Microsoft documentation</a>, batch receiving is recommended for better performance but this is not currently supported in Azure Functions Service Bus Trigger. The impact (and work around) was choosing containers over Functions. The Acceptance Criteria is for Azure Functions to support Service Bus sessions with batch and non-batch processing for all Azure Functions GA languages.</p>
+<p>Customer scenario was to receive a total of 250 messages per second from 50 producers with requirement for ordering &amp; minimum latency, using a Service Bus topic with sessions enabled for ordering. According to <a href="https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements#prefetching-and-receivebatch">Microsoft documentation</a>, batch receiving is recommended for better performance but this is not currently supported in Azure Functions Service Bus Trigger. The impact (and work around) was choosing containers over Functions. The Acceptance Criteria is for Azure Functions to support Service Bus sessions with batch and non-batch processing for all Azure Functions GA languages.</p>
 <blockquote>
 <p>This feedback was <a href="https://github.com/Azure/azure-functions-servicebus-extension/issues/15">created as a feedback</a> with the Azure Functions product group and also followed up internally until addressed.</p>
 </blockquote>
@@ -7133,7 +7133,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

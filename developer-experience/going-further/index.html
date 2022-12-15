@@ -7159,16 +7159,16 @@
 <li>Provide custom tools (such as scripts) for other developers.</li>
 </ol>
 <h2 id="existing-tools">Existing tools</h2>
-<p>In the development phase, you will most probably need to use tools not installed by default in your Dev Container. For instance, if your project's target is to be deployed on Azure, you will need <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> and maybe <a href="https://www.terraform.io/">Terraform</a> for resources and application deployment. You can find such Dev Containers in the <a href="https://github.com/microsoft/vscode-dev-containers/tree/master/containers">VS Code dev container gallery repo</a>.</p>
+<p>In the development phase, you will most probably need to use tools not installed by default in your Dev Container. For instance, if your project's target is to be deployed on Azure, you will need <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> and maybe <a href="https://www.terraform.io/">Terraform</a> for resources and application deployment. You can find such Dev Containers in the <a href="https://github.com/microsoft/vscode-dev-containers/tree/master/containers">VS Code dev container gallery repo</a>.</p>
 <p>Some other tools may be:</p>
 <ul>
 <li>Linters for <a href="https://github.com/DavidAnson/markdownlint">markdown</a> files,</li>
 <li>Linters for <a href="https://www.shellcheck.net/">bash</a> scripts,</li>
 <li>Etc...</li>
 </ul>
-<p>Linting files that are not <em>the source code</em> can ensure a common format with common rules for each developer. These checks should be also run in a <a href="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp">Continuous Integration Pipeline</a>, but it is a good practice to run them prior opening a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Request</a>.</p>
+<p>Linting files that are not <em>the source code</em> can ensure a common format with common rules for each developer. These checks should be also run in a <a href="https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp">Continuous Integration Pipeline</a>, but it is a good practice to run them prior opening a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Request</a>.</p>
 <h2 id="limitation-of-custom-tools">Limitation of custom tools</h2>
-<p>If you decide to include <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> in your Dev Container, developers will be able to run commands against their tenant. However, to make the developers' lives easier, we could go further by letting them prefill their connection information, such as the <code>tenant ID</code> and the <code>subscription ID</code> in a secure and persistent way (do not forget that your Dev Container, being a <a href="https://www.docker.com/">Docker</a> container, might get deleted, or the image could be rebuilt, hence, all customization <em>inside</em> will be lost).</p>
+<p>If you decide to include <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> in your Dev Container, developers will be able to run commands against their tenant. However, to make the developers' lives easier, we could go further by letting them prefill their connection information, such as the <code>tenant ID</code> and the <code>subscription ID</code> in a secure and persistent way (do not forget that your Dev Container, being a <a href="https://www.docker.com/">Docker</a> container, might get deleted, or the image could be rebuilt, hence, all customization <em>inside</em> will be lost).</p>
 <p>One way to achieve this is to leverage environment variables, with untracked <code>.env</code> file part of the solution being injected in the Dev Container.</p>
 <p>Consider the following files structure:</p>
 <div class="highlight"><pre><span></span><code>My Application  <span class="c1"># main repo directory</span>
@@ -7251,7 +7251,7 @@ markdownlint -c <span class="s2">&quot;</span><span class="si">${</span><span cl
 <h3 id="platform-architecture">Platform architecture</h3>
 <p>When installing tooling, you also need to ensure that you know what host computers developers are using. All Intel based computers, whether they are running Windows, Linux or MacOs will have the same behavior.
 However, the latest Mac architecture (Apple M1/Silicon) being ARM64, means that the behavior is not the same when building Dev Containers.</p>
-<p>For instance, if you want to install <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> in your Dev Container, you won't be able to do it the same way you do it for Intel based machines. On Intel based computers you can install the <code>deb</code> package. However, this package is not available on ARM architecture. The only way to install <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> on Linux ARM is via the Python installer <code>pip</code>.</p>
+<p>For instance, if you want to install <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> in your Dev Container, you won't be able to do it the same way you do it for Intel based machines. On Intel based computers you can install the <code>deb</code> package. However, this package is not available on ARM architecture. The only way to install <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> on Linux ARM is via the Python installer <code>pip</code>.</p>
 <p>To achieve this you need to check the architecture of the host building the Dev Container, either in the Dockerfile, or by calling an external bash script to install remaining tools not having a universal version.</p>
 <p>Here is a snippet to call from the Dockerfile:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># If Intel based, then use the deb file</span>
@@ -7319,7 +7319,7 @@ However, the latest Mac architecture (Apple M1/Silicon) being ARM64, means that 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 19, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

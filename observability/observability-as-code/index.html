@@ -7074,13 +7074,13 @@
 <h2 id="examples-of-observability-as-code">Examples of Observability as Code</h2>
 <ol>
 <li>
-<p>Dashboards as Code - Monitoring Dashboards can be created as JSON or XML templates. This template is source control maintained and any changes to the dashboards can be reviewed. Automation can be built for enabling the dashboard. <a href="https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically">More about how to do this in Azure</a>. Grafana dashboard can also be <a href="https://grafana.com/blog/2020/02/26/how-to-configure-grafana-as-code/">configured as code</a> which eventually can be source-controlled to be used in automation and pipelines.</p>
+<p>Dashboards as Code - Monitoring Dashboards can be created as JSON or XML templates. This template is source control maintained and any changes to the dashboards can be reviewed. Automation can be built for enabling the dashboard. <a href="https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically">More about how to do this in Azure</a>. Grafana dashboard can also be <a href="https://grafana.com/blog/2020/02/26/how-to-configure-grafana-as-code/">configured as code</a> which eventually can be source-controlled to be used in automation and pipelines.</p>
 </li>
 <li>
 <p>Alerts as Code - Alerts can be created within Azure by using Terraform or ARM templates. Such alerts can be source-controlled and be deployed as part of pipelines (Azure DevOps pipelines, Jenkins, GitHub Actions etc.). Few references of how to do this are: <a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_metric_alert">Terraform Monitor Metric Alert</a>. Alerts can also be created based on log analytics query and can be defined as code using <a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_scheduled_query_rules_alert#example-usage">Terraform Monitor Scheduled Query Rules Alert</a>.</p>
 </li>
 <li>
-<p>Automating Log Analytics Queries - There are several use cases where automation of log analytics queries may be needed. Example, Automatic Report Generation, Running custom queries programmatically for analysis, debugging etc. For these use cases to work, log queries should be source-controlled and automation can be built using <a href="https://dev.loganalytics.io/documentation/Using-the-API">log analytics REST</a> or <a href="https://docs.microsoft.com/en-us/cli/azure/ext/log-analytics/monitor/log-analytics?view=azure-cli-latest">azure cli</a>.</p>
+<p>Automating Log Analytics Queries - There are several use cases where automation of log analytics queries may be needed. Example, Automatic Report Generation, Running custom queries programmatically for analysis, debugging etc. For these use cases to work, log queries should be source-controlled and automation can be built using <a href="https://learn.microsoft.com/en-us/rest/api/loganalytics/">log analytics REST</a> or <a href="https://learn.microsoft.com/en-us/cli/azure/ext/log-analytics/monitor/log-analytics?view=azure-cli-latest">azure cli</a>.</p>
 </li>
 </ol>
 <h2 id="why">Why</h2>
@@ -7110,7 +7110,7 @@ contributions.</li>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

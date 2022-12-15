@@ -7178,13 +7178,13 @@
 <p>There are multiple ways to take a memory dump depending the operating system you are using. Also, each operating system has it own debugger which is able to load this memory dump, and explore the state of the process at the time the memory dump was taken.</p>
 <p>The most common debuggers are:</p>
 <ul>
-<li>Windows - <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools">WinDbg and WinDgbNext</a> (included in the Windows SDK), <a href="https://visualstudio.microsoft.com/">Visual Studio</a> can also load a memory dump for a .NET Framework and .NET Core process</li>
+<li>Windows - <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools">WinDbg and WinDgbNext</a> (included in the Windows SDK), <a href="https://visualstudio.microsoft.com/">Visual Studio</a> can also load a memory dump for a .NET Framework and .NET Core process</li>
 <li>Linux - <a href="https://www.gnu.org/software/gdb/">GDB is the GNU Debugger</a></li>
 <li>Mac OS - <a href="https://lldb.llvm.org/">LLDB Debugger</a></li>
 </ul>
 <p>There are a range of developer platform specific diagnostic tools which can be used:</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/core/diagnostics/#net-core-diagnostic-global-tools">.NET Core diagnostic tools</a>, <a href="https://github.com/dotnet/diagnostics">GitHub repository</a></li>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/core/diagnostics/#net-core-diagnostic-global-tools">.NET Core diagnostic tools</a>, <a href="https://github.com/dotnet/diagnostics">GitHub repository</a></li>
 <li><a href="https://docs.oracle.com/en/java/javase/16/troubleshoot/general-java-troubleshooting.html">Java diagnostic tools - version specific</a></li>
 <li><a href="https://docs.python.org/3/library/debug.html">Python debugging and profiling - version specific</a></li>
 <li><a href="https://github.com/nodejs/diagnostics">Node.js Diagnostics working group</a></li>
@@ -7192,10 +7192,10 @@
 <h2 id="environment-for-profiling">Environment for profiling</h2>
 <p>To create an application profile as close to production as possible, the environment in which the application is intended to run in production has to be considered and it might be necessary to perform a snapshot of the application state <a href="../../automated-testing/performance-testing/">under load</a>.</p>
 <h3 id="diagnostics-in-containers">Diagnostics in containers</h3>
-<p>For monolithic applications, diagnostics tools can be installed and run on the VM hosting them. Most scalable applications are developed as <a href="../microservices/">microservices</a> and have complex interactions which require to install the tools in the containers running the process or to leverage a sidecar container (see <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar">sidecar pattern</a>). Some platforms expose endpoints to interact with the application and return a dump.</p>
+<p>For monolithic applications, diagnostics tools can be installed and run on the VM hosting them. Most scalable applications are developed as <a href="../microservices/">microservices</a> and have complex interactions which require to install the tools in the containers running the process or to leverage a sidecar container (see <a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar">sidecar pattern</a>). Some platforms expose endpoints to interact with the application and return a dump.</p>
 <p>Useful links:</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/core/diagnostics/diagnostics-in-containers">.NET Core diagnostics in containers</a></li>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/core/diagnostics/diagnostics-in-containers">.NET Core diagnostics in containers</a></li>
 <li><a href="https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/">Experimental tool dotnet-monitor</a>, <a href="https://devblogs.microsoft.com/dotnet/whats-new-in-dotnet-monitor/">What's new</a>, <a href="https://github.com/dotnet/dotnet-monitor/tree/main/documentation">GItHub repository</a></li>
 <li><a href="https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#actuator.endpoints">Spring Boot actuator endpoints</a></li>
 </ul>
@@ -7205,7 +7205,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

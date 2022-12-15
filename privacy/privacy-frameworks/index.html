@@ -7463,7 +7463,7 @@ and has access to one or more datasets provided by the data platform.</p>
 <h4 id="eyes-off-machine-learning">Eyes-off machine learning</h4>
 <p>In certain situations, Data Scientists may need to train models on data they are not allowed to see. In these cases, an "eyes-off" approach is recommended.
 An eyes-off approach provides a data scientist with an environment in which scripts can be run on the data but direct access to samples is not allowed.
-When using Azure ML, tools such as the <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-identity-based-data-access">Identity Based Data Access</a> can enable this scenario,
+When using Azure ML, tools such as the <a href="https://learn.microsoft.com/en-us/azure/machine-learning/how-to-identity-based-data-access">Identity Based Data Access</a> can enable this scenario,
 alongside proper role assignment for users.</p>
 <p>During the processing within the eyes-off environment, only certain outputs (e.g. logs) are allowed to be extracted back to the user.
 For example, a user would be able to submit a script which trains a model and inspect the model's performance, but would not be able to see on which samples the model predicted the wrong output.</p>
@@ -7549,7 +7549,7 @@ the approach is to distribute the model to the different data owners and perform
 <h3 id="data-loss-prevention">Data loss prevention</h3>
 <p>Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers.
 To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it.
-This practice is called data loss prevention (DLP). (<a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp">Source</a>)</p>
+This practice is called data loss prevention (DLP). (<a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp">Source</a>)</p>
 <p>Below we focus on two aspects of DLP: Sensitive data classification and Access management.</p>
 <h4 id="sensitive-data-classification">Sensitive data classification</h4>
 <p>Sensitive data classification is an important aspect of DLP, as it allows organizations to track, monitor, secure and identify sensitive and private data.
@@ -7571,7 +7571,7 @@ Furthermore, different sensitivity levels can be applied to different data items
 </thead>
 <tbody>
 <tr>
-<td><a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/information-protection">Microsoft Information Protection</a> (MIP)</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/information-protection">Microsoft Information Protection</a> (MIP)</td>
 <td>A suite for DLP, sensitive data classification, cataloging  and more.</td>
 </tr>
 <tr>
@@ -7579,11 +7579,11 @@ Furthermore, different sensitivity levels can be applied to different data items
 <td>A unified data governance service, which includes the classification and cataloging of sensitive data. Azure Purview leverages the MIP technology for data classification and more.</td>
 </tr>
 <tr>
-<td><a href="https://docs.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview">Data Discovery &amp; Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse</a></td>
+<td><a href="https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview">Data Discovery &amp; Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse</a></td>
 <td>Basic capabilities for discovering, classifying, labeling, and reporting the sensitive data in Azure SQL and Synapse databases.</td>
 </tr>
 <tr>
-<td><a href="https://docs.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver15&amp;tabs=t-sql">Data Discovery &amp; Classification for SQL Server</a></td>
+<td><a href="https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver15&amp;tabs=t-sql">Data Discovery &amp; Classification for SQL Server</a></td>
 <td>Capabilities for discovering, classifying, labeling &amp; reporting the sensitive data in SQL Server databases.</td>
 </tr>
 </tbody>
@@ -7593,14 +7593,14 @@ Refer to <a href="#data-de-identification">de-identification tools</a> for such 
 <p>Additional resources:</p>
 <ul>
 <li><a href="https://www.cmu.edu/iso/governance/guidelines/data-classification.html">Example guidelines for data classification</a></li>
-<li><a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide">Learn about sensitivity levels</a></li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide">Learn about sensitivity levels</a></li>
 </ul>
 <h4 id="access-management">Access management</h4>
 <p>Access control is an important component of privacy by design and falls into overall data lifecycle protection.
 Successful access control will restrict access only to authorized individuals that should have access to data.
 Once data is secure in an environment, it is important to review who should access this data and for what purpose.
 Access control may be audited with a comprehensive logging strategy which may include the integration of
-<a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview">activity logs</a>
+<a href="https://learn.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview">activity logs</a>
 that can provide insight into operations performed on resources in a subscription.</p>
 <ul>
 <li><a href="https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Access_Control_Cheat_Sheet.md">OWASP Access Control Cheat Sheet</a></li>
@@ -7611,7 +7611,7 @@ that can provide insight into operations performed on resources in a subscriptio
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

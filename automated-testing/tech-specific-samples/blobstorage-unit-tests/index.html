@@ -7063,12 +7063,12 @@
 <p>This document determines the approach for writing automated tests with a short feedback loop (i.e. unit tests) against security considerations (private endpoints) for the Azure Blob Storage functionality.</p>
 <p>Once private endpoints are enabled for the Azure Storage accounts, the current tests will fail when executed locally or as part of a pipeline because this connection will be blocked.</p>
 <h2 id="utilize-an-azure-storage-emulator-azurite">Utilize an Azure Storage emulator - Azurite</h2>
-<p>To emulate a local Azure Blob Storage, we can use <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator">Azure Storage Emulator</a>. The Storage Emulator currently runs only on Windows. If you need a Storage Emulator for Linux, one option is the community maintained, open-source Storage Emulator <a href="https://github.com/azure/azurite">Azurite</a>.</p>
+<p>To emulate a local Azure Blob Storage, we can use <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-emulator">Azure Storage Emulator</a>. The Storage Emulator currently runs only on Windows. If you need a Storage Emulator for Linux, one option is the community maintained, open-source Storage Emulator <a href="https://github.com/azure/azurite">Azurite</a>.</p>
 <blockquote>
-<p><em>The Azure Storage Emulator is no longer being actively developed.</em> <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite"><strong>Azurite</strong></a> <em>is the Storage Emulator platform going forward. Azurite supersedes the Azure Storage Emulator. Azurite will continue to be updated to support the latest versions of Azure Storage APIs. For more information, see</em> <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite"><strong>Use the Azurite emulator for local Azure Storage development</strong></a><em>.</em></p>
+<p><em>The Azure Storage Emulator is no longer being actively developed.</em> <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite"><strong>Azurite</strong></a> <em>is the Storage Emulator platform going forward. Azurite supersedes the Azure Storage Emulator. Azurite will continue to be updated to support the latest versions of Azure Storage APIs. For more information, see</em> <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite"><strong>Use the Azurite emulator for local Azure Storage development</strong></a><em>.</em></p>
 </blockquote>
-<p>Some differences in functionality exist between the Storage Emulator and Azure storage services. For more information about these differences, see the <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator#differences-between-the-storage-emulator-and-azure-storage">Differences between the Storage Emulator and Azure Storage</a>.</p>
-<p>There are several ways to install and run Azurite on your local system as listed <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-azurite-by-using-npm">here</a>. In this document we will cover <code>Install and run Azurite using NPM</code> and <code>Install and run the Azurite Docker image</code>.</p>
+<p>Some differences in functionality exist between the Storage Emulator and Azure storage services. For more information about these differences, see the <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-emulator#differences-between-the-storage-emulator-and-azure-storage">Differences between the Storage Emulator and Azure Storage</a>.</p>
+<p>There are several ways to install and run Azurite on your local system as listed <a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-azurite-by-using-npm">here</a>. In this document we will cover <code>Install and run Azurite using NPM</code> and <code>Install and run the Azurite Docker image</code>.</p>
 <h2 id="1-install-and-run-azurite">1. Install and run Azurite</h2>
 <h3 id="a-using-npm">a. Using NPM</h3>
 <p>In order to run Azurite V3 you need Node.js &gt;= 8.0 installed on your system. Azurite works cross-platform on Windows, Linux, and OS X.</p>
@@ -7210,7 +7210,7 @@ steps:
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

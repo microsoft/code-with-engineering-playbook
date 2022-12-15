@@ -7395,7 +7395,7 @@
 <img alt="Context Propagation" src="../../images/contextpropagation.png" /></p>
 <p>It enables tracing, metrics, and logging telemetry through a set of single-distribution multi-language libraries and tools that allow for a plug-and-play telemetry architecture that includes the concept of agents and collectors.</p>
 <p><img alt="Context Propagation" src="../../images/newarchitecture.png" /></p>
-<p>Moreover, avoiding any proprietary lockdown and achieving vendor-agnostic neutrality for tracing, monitoring, and logging APIs AND backends allow maximum portability and extensibility patterns.</p>
+<p>Moreover, avoiding any proprietary lock down and achieving vendor-agnostic neutrality for tracing, monitoring, and logging APIs AND backends allow maximum portability and extensibility patterns.</p>
 <p>Another good reason to use OpenTelemetry would be whether the stack uses OpenCensus or OpenTracing. As OpenCensus and OpenTracing have carved the way for OpenTelemetry, it makes sense to introduce OpenTelemetry where OpenCensus or OpenTracing is used as it still has backward compatibility.</p>
 <p>Apart from adding custom attributes, sampling, collecting data for metrics and traces, OpenTelemetry is governed by specifications and backed up by big players in the Observability landscape like Microsoft, Splunk, AppDynamics, etc. OpenTelemetry will likely become a de-facto open-source standard for enabling metrics and tracing when all features become GA.</p>
 <h2 id="current-status-of-opentelemetry-project">Current Status of OpenTelemetry Project</h2>
@@ -7412,9 +7412,9 @@
 <h3 id="using-the-azure-monitor-opentelemetry-exporter-library">Using the Azure Monitor OpenTelemetry Exporter Library</h3>
 <p>This scenario uses the OpenTelemetry SDK as the core instrumentation library. Basically this means you will instrument your application using the OpenTelemetry libraries, but you will additionally use the Azure Monitor OpenTelemetry Exporter and then added it as an additional exporter with the OpenTelemetry SDK. In this way, the OpenTelemetry traces your application creates will be pushed to your Azure Monitor Instance.</p>
 <h3 id="using-the-application-insights-agent-jar-file-java-only">Using the Application Insights Agent Jar file - Java only</h3>
-<p>Java OpenTelemetry instrumentation provides another way to integrate with Azure Monitor, by using <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent">Applications Insights Java Agent jar</a>.</p>
+<p>Java OpenTelemetry instrumentation provides another way to integrate with Azure Monitor, by using <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent">Applications Insights Java Agent jar</a>.</p>
 <p>When configuring this option, the Applications Insights Agent file is added when executing the application. The <code>applicationinsights.json</code> configuration file must be also be added as part of the applications artifacts. Pay close attention to the preview section, where the <code>"openTelemetryApiSupport": true,</code> property is set to true, enabling the agent to intercept OpenTelemetry telemetry created in the application code pushing it to Azure Monitor.</p>
-<p>OpenTelemetry Java Agent instrumentation supports many <a href="https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#supported-libraries-frameworks-application-servers-and-jvms">libraries and frameworks and application servers</a>. Application Insights Java Agent <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent#auto-instrumentation">enhances</a> this list.
+<p>OpenTelemetry Java Agent instrumentation supports many <a href="https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#supported-libraries-frameworks-application-servers-and-jvms">libraries and frameworks and application servers</a>. Application Insights Java Agent <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent#auto-instrumentation">enhances</a> this list.
 Therefore, the main difference between running the OpenTelemetry Java Agent vs. the Application Insights Java Agent is demonstrated in the amount of traces getting logged in Azure Monitor. When running with Application Insights Java agent there's more telemetry getting pushed to Azure Monitor. On the other hand, when running the solution using the Application Insights agent mode, it is essential to highlight that nothing gets logged on Jaeger (or any other OpenTelemetry exporter). All traces will be pushed exclusively to Azure Monitor. However, both manual instrumentation done via the OpenTelemetry SDK and all automatic traces, dependencies, performance counters, and metrics being instrumented by the Application Insights agent are sent to Azure Monitor. Although there is a rich amount of additional data automatically instrumented by the Application Insights agent, it can be deduced that it is not necessarily OpenTelemetry compliant. Only the traces logged by the manual instrumentation using the OpenTelemetry SDK are.</p>
 <h4 id="opentelemetry-vs-application-insights-agents-compared">OpenTelemetry vs Application Insights agents compared</h4>
 <table>
@@ -7495,7 +7495,7 @@ to the collector web server. Using mocking servers libraries (eg. MockServer or 
 <li><a href="https://github.com/open-telemetry/opentelemetry-java-instrumentation">OpenTelemetry Instrumentation Agent for Java</a></li>
 </ul>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent">Application Insights Java Agent</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent">Application Insights Java Agent</a></li>
 </ul>
 <ul>
 <li><a href="https://github.com/Azure/azure-sdk-for-java/tree/3f31d68eed6fbe11516ca3afe3955c8840a6e974/sdk/monitor/azure-monitor-opentelemetry-exporter">Azure Monitor OpenTelemetry Exporter client library for Java</a></li>
@@ -7512,7 +7512,7 @@ to the collector web server. Using mocking servers libraries (eg. MockServer or 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

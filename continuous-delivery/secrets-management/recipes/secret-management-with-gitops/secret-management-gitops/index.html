@@ -7166,7 +7166,7 @@
 <li>The public key is sufficient for creating brand new files. The secret key is required for decrypting and editing existing files because SOPS computes a MAC on all values.  When using the public key solely to add or remove a field, the whole file should be deleted and recreated.</li>
 </ul>
 <h2 id="2-reference-to-secrets-stored-in-an-external-key-vault-recommended">2. Reference to secrets stored in an external key vault (Recommended)</h2>
-<p>This approach relies on a key management system like <a href="https://docs.microsoft.com/en-us/azure/key-vault/general/overview">Azure Key Vault</a> to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.</p>
+<p>This approach relies on a key management system like <a href="https://learn.microsoft.com/en-us/azure/key-vault/general/overview">Azure Key Vault</a> to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.</p>
 <p><a href="https://github.com/Azure/secrets-store-csi-driver-provider-azure">Azure Key Vault Provider for Secrets Store CSI Driver</a> is an azure vault provider for <a href="https://github.com/kubernetes-sigs/secrets-store-csi-driver">Kubernetes secret store CSI Driver</a> allows you to get secret content stored in Azure Key vault instance and use the Secrets Store CSI driver interface to mount them into Kubernetes pods.</p>
 <ul>
 <li>Mounts secrets/keys/certs to pod using a CSI Inline volume</li>
@@ -7177,7 +7177,7 @@
 <li>Supports pod portability with the SecretProviderClass CRD</li>
 </ul>
 <p>Azure Key Vault Provider for Secrets Store CSI Driver <a href="https://secrets-store-csi-driver.sigs.k8s.io/getting-started/installation.html">install Guide</a>.
-CSI driver will need access to Azure Key vault either through service principle or managed identity(recommended). To make this access secure you can leverage <a href="https://github.com/Azure/azure-workload-identity">Azure Workload Identiy</a>(recommended) or <a href="https://github.com/Azure/aad-pod-identity">AAD Pod Identify</a>. Please note AAD pod identity will soon be replaced by Azure WorkLoad Identity.</p>
+CSI driver will need access to Azure Key vault either through service principle or managed identity(recommended). To make this access secure you can leverage <a href="https://github.com/Azure/azure-workload-identity">Azure Workload Identity</a>(recommended) or <a href="https://github.com/Azure/aad-pod-identity">AAD Pod Identify</a>. Please note AAD pod identity will soon be replaced by Azure WorkLoad Identity.</p>
 <h2 id="important-links">Important Links</h2>
 <ul>
 <li><a href="https://toolkit.fluxcd.io/guides/sealed-secrets/">Sealed Secrets with Flux v2</a></li>
@@ -7191,7 +7191,7 @@ CSI driver will need access to Azure Key vault either through service principle 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

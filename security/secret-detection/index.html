@@ -7284,7 +7284,7 @@ The source location default will point to your repositories root directory.</li>
 <p>The nominal scan will invoke the detect-secrets scanner with the arguments <code>-C &lt;path to root directory&gt; scan --force-use-all-plugins</code>.
 If you would like to point the tool at a specific directory append the desired location in the YAML e.g., <code>$(Build.Repository.LocalPath)/desired_path</code> and you will have to update the searchFolder: <code>$(Build.Repository.LocalPath)</code> path to see the results of the scan.</p>
 <p>If the pipeline is configured without the scanNonGitFiles is configured for your pipeline, then the <code>--all-files</code> argument will be set to scan git artifacts in your pipeline as well.</p>
-<p><code>setFailureasWarning</code> will be set to false unless otherwise indicated, which will fail the task if a finding occurs.</p>
+<p><code>setFailureAsWarning</code> will be set to false unless otherwise indicated, which will fail the task if a finding occurs.</p>
 <h3 id="triage-allow-list-scan-argument-notes">Triage - Allow-List Scan Argument Notes</h3>
 <p>To mitigate against false positives in the nominal you can add an allow list to skip over false positive secrets in future runs.</p>
 <p>You must first add an allow-list in your repository; this is a text file with a name of your choosing containing a list of allow-listed secrets separated by carriage return.</p>
@@ -7321,7 +7321,7 @@ Following both practices provides the best coverage and by following the instruc
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

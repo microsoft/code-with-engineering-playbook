@@ -7183,7 +7183,7 @@
 
 <h1 id="c-code-reviews">C# Code Reviews</h1>
 <h2 id="style-guide">Style Guide</h2>
-<p><a href="../../../CSE/">CSE</a> developers follow Microsoft's <a href="https://docs.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions">C# Coding Conventions</a> and, where applicable, Microsoft's <a href="https://docs.microsoft.com/dotnet/standard/security/secure-coding-guidelines">Secure Coding Guidelines</a>.</p>
+<p><a href="../../../CSE/">CSE</a> developers follow Microsoft's <a href="https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions">C# Coding Conventions</a> and, where applicable, Microsoft's <a href="https://learn.microsoft.com/dotnet/standard/security/secure-coding-guidelines">Secure Coding Guidelines</a>.</p>
 <h2 id="code-analysis-linting">Code Analysis / Linting</h2>
 <p>We strongly believe that consistent style increases readability and maintainability of a code base. Hence, we are recommending analyzers / linters to enforce consistency and style rules.</p>
 <h3 id="project-setup">Project Setup</h3>
@@ -7214,15 +7214,15 @@
   <span class="nt">&lt;Import</span> <span class="na">Project=</span><span class="s">&quot;..\common.props&quot;</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/Project&gt;</span>
 </code></pre></div>
-<p>The <a href="https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019">.editorconfig</a> allows for configuration and overrides of rules. You can have an .editorconfig file at project level to customize rules for different projects (test projects for example).</p>
-<p><a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019">Details about the configuration of different rules</a>.</p>
+<p>The <a href="https://learn.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019">.editorconfig</a> allows for configuration and overrides of rules. You can have an .editorconfig file at project level to customize rules for different projects (test projects for example).</p>
+<p><a href="https://learn.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019">Details about the configuration of different rules</a>.</p>
 <h3 id="net-analyzers">.NET analyzers</h3>
 <p>Microsoft's .NET analyzers has code quality rules and .NET API usage rules implemented as analyzers using the .NET Compiler Platform (Roslyn). This is the replacement for Microsoft's legacy FxCop analyzers.</p>
-<p><a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019">Enable or install first-party .NET analyzers</a>.</p>
-<p>If you are currently using the legacy FxCop analyzers, <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/migrate-from-fxcop-analyzers-to-net-analyzers?view=vs-2019">migrate from FxCop analyzers to .NET analyzers</a>.</p>
+<p><a href="https://learn.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019">Enable or install first-party .NET analyzers</a>.</p>
+<p>If you are currently using the legacy FxCop analyzers, <a href="https://learn.microsoft.com/en-us/visualstudio/code-quality/migrate-from-fxcop-analyzers-to-net-analyzers?view=vs-2019">migrate from FxCop analyzers to .NET analyzers</a>.</p>
 <h3 id="stylecop-analyzer">StyleCop analyzer</h3>
 <p>The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions about braces and spaces. Detailed information can be found here: <a href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers">StyleCop Analyzers for the .NET Compiler Platform</a>.</p>
-<p>The minimum rules set teams should adopt is the <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/managed-minimum-rules-rule-set-for-managed-code?view=vs-2022">Managed Recommended Rules</a> rule set.</p>
+<p>The minimum rules set teams should adopt is the <a href="https://learn.microsoft.com/en-us/visualstudio/code-quality/managed-minimum-rules-rule-set-for-managed-code?view=vs-2022">Managed Recommended Rules</a> rule set.</p>
 <h2 id="automatic-code-formatting">Automatic Code Formatting</h2>
 <p>Use .editorconfig to configure code formatting rules in your project.</p>
 <h2 id="build-validation">Build validation</h2>
@@ -7240,19 +7240,19 @@
 <h2 id="code-review-checklist">Code Review Checklist</h2>
 <p>In addition to the <a href="../../process-guidance/reviewer-guidance/">Code Review Checklist</a> you should also look for these C# specific code review items</p>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" disabled/> Does this code make correct use of <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait">asynchronous programming constructs</a>, including proper use of <code>await</code> and <code>Task.WhenAll</code> including CancellationTokens?</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Does this code make correct use of <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait">asynchronous programming constructs</a>, including proper use of <code>await</code> and <code>Task.WhenAll</code> including CancellationTokens?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Is the code subject to concurrency issues? Are shared objects properly protected?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Is dependency injection (DI) used? Is it setup correctly?</li>
-<li class="task-list-item"><input type="checkbox" disabled/> Are <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&amp;tabs=aspnetcore2x">middleware</a> included in this project configured correctly?</li>
-<li class="task-list-item"><input type="checkbox" disabled/> Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed (<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement">using pattern</a>)?</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Are <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&amp;tabs=aspnetcore2x">middleware</a> included in this project configured correctly?</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed (<a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement">using pattern</a>)?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Is the code creating a lot of short-lived objects. Could we optimize GC pressure?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Is the code written in a way that causes boxing operations to happen?</li>
-<li class="task-list-item"><input type="checkbox" disabled/> Does the code <a href="https://docs.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions">handle exceptions correctly</a>?</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Does the code <a href="https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions">handle exceptions correctly</a>?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Is package management being used (NuGet) instead of committing DLLs?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Does this code use LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.</li>
-<li class="task-list-item"><input type="checkbox" disabled/> Does this code properly validate arguments sanity (i.e. <a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062">CA1062</a>)? Consider leveraging extensions such as <a href="https://github.com/danielwertheim/Ensure.That">Ensure.That</a></li>
-<li class="task-list-item"><input type="checkbox" disabled/> Does this code include telemetry (<a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview">metrics, tracing</a> and <a href="https://serilog.net/">logging</a>) instrumentation?</li>
-<li class="task-list-item"><input type="checkbox" disabled/> Does this code leverage the <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1">options design pattern</a> by using classes to provide strongly typed access to groups of related settings?</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Does this code properly validate arguments sanity (i.e. <a href="https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062">CA1062</a>)? Consider leveraging extensions such as <a href="https://github.com/danielwertheim/Ensure.That">Ensure.That</a></li>
+<li class="task-list-item"><input type="checkbox" disabled/> Does this code include telemetry (<a href="https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview">metrics, tracing</a> and <a href="https://serilog.net/">logging</a>) instrumentation?</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Does this code leverage the <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1">options design pattern</a> by using classes to provide strongly typed access to groups of related settings?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Is proper exception handling set up? Catching the exception base class (<code>catch (Exception)</code>) is generally not the right pattern. Instead, catch the specific exceptions that can happen e.g., <code>IOException</code>.</li>
@@ -7273,7 +7273,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

@@ -7359,7 +7359,7 @@
 <p>The fewer dependencies on components that cannot run a developer's machine translate to fewer steps required to get started. Therefore, fewer dependencies will positively impact the measures above.</p>
 <p>The following strategies can be used to reduce these dependencies</p>
 <h4 id="use-an-emulator">Use an Emulator</h4>
-<p>If available, emulators are implementations of technologies that are typically only available in cloud environments. A good example is the <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator">CosmosDB emulator</a>.</p>
+<p>If available, emulators are implementations of technologies that are typically only available in cloud environments. A good example is the <a href="https://learn.microsoft.com/en-us/azure/cosmos-db/local-emulator">CosmosDB emulator</a>.</p>
 <h4 id="use-di-toggle-to-mock-remote-dependencies">Use DI + Toggle to Mock Remote Dependencies</h4>
 <p>When the solution depends on a technology that cannot be run on a developer's machine, the setup and testing of that solution can be challenging. One strategy that can be employed is to create the ability to swap that dependency for one that can run locally.</p>
 <p>Abstract the layer that has the remote dependency behind an interface owned by the solution (not the remote dependency). Create an implementation of that interface using a technology that can be run locally. Create a factory that decides which instance to use. This decision could be based on environment configuration (i.e. the toggle). Then, the original class that depends on the remote tech instead should depend on the factory to provide which instance to use.</p>
@@ -7410,7 +7410,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

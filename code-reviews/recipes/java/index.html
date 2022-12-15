@@ -7123,7 +7123,7 @@
 <h2 id="automatic-code-formatting">Automatic Code Formatting</h2>
 <p>Eclipse, and other Java IDEs, support automatic code formatting.  If using Maven, some developers also make use of the <a href="https://github.com/revelc/formatter-maven-plugin">formatter-maven-plugin</a>.</p>
 <h2 id="build-validation">Build Validation</h2>
-<p>It's important to enforce your code style and rules in the CI to avoid any team members merging code that does not comply with standards into your git repo.  If building using Azure DevOps, Azure DevOps support <a href="https://docs.microsoft.com/azure/devops/pipelines/tasks/build/maven?view=azure-devops">Maven</a> and <a href="https://docs.microsoft.com/azure/devops/pipelines/tasks/build/gradle?view=azure-devops">Gradle</a> build tasks using <a href="https://pmd.github.io/">PMD</a>, <a href="https://checkstyle.sourceforge.io/">Checkstyle</a>, and <a href="http://findbugs.sourceforge.net/">FindBugs</a> code analysis tools as part of every build.</p>
+<p>It's important to enforce your code style and rules in the CI to avoid any team members merging code that does not comply with standards into your git repo.  If building using Azure DevOps, Azure DevOps support <a href="https://learn.microsoft.com/azure/devops/pipelines/tasks/build/maven?view=azure-devops">Maven</a> and <a href="https://learn.microsoft.com/azure/devops/pipelines/tasks/build/gradle?view=azure-devops">Gradle</a> build tasks using <a href="https://pmd.github.io/">PMD</a>, <a href="https://checkstyle.sourceforge.io/">Checkstyle</a>, and <a href="http://findbugs.sourceforge.net/">FindBugs</a> code analysis tools as part of every build.</p>
 <p>Here is an example yaml for a Maven build task with all three analysis tools enabled:</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Maven@3</span><span class="w"></span>
 <span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Maven</span><span class="nv"> </span><span class="s">pom.xml&#39;</span><span class="w"></span>
@@ -7148,7 +7148,7 @@
 <li class="task-list-item"><input type="checkbox" disabled/> Is dependency injection (DI) used?  Is it setup correctly?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> If the code uses Spring Boot, are you using @Inject instead of @Autowire?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Does the code handle exceptions correctly?</li>
-<li class="task-list-item"><input type="checkbox" disabled/> Is the <a href="https://docs.microsoft.com/en-us/java/azure/jdk/java-jdk-install?view=azure-java-stable">Azul Zulu OpenJDK</a> being used?</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Is the <a href="https://learn.microsoft.com/en-us/java/azure/jdk/java-jdk-install?view=azure-java-stable">Azul Zulu OpenJDK</a> being used?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Is a build automation and package management tool (Gradle or Maven) being used?</li>
 </ul>
 
@@ -7157,7 +7157,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

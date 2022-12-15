@@ -7187,7 +7187,7 @@
 <li><strong>Error</strong> - That part of the system state that may cause a subsequent failure.</li>
 <li><strong>Failure</strong> - An event that occurs when the delivered service deviates from correct state.</li>
 <li><strong>Fault-Error-Failure cycle</strong> - A key mechanism in <a href="https://en.wikipedia.org/wiki/Dependability">dependability</a>: A fault may cause an error. An error may cause further errors within the system boundary; therefore each new error acts as a fault. When error states are observed at the system boundary, they are termed failures.
-(Modeled by <a href="https://www.nasa.gov/pdf/636745main_day_3-algirdas_avizienis.pdf">Laprie/Aviˇzienis</a>)</li>
+(Modeled by <a href="https://www.nasa.gov/pdf/636745main_day_3-algirdas_avizienis.pdf">Laprie/Avizienis</a>)</li>
 </ul>
 <h4 id="fault-injection-testing-basics">Fault Injection Testing Basics</h4>
 <p>Fault injection is an advanced form of testing where the system is subjected to different <a href="https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis">failure modes</a>, and where the testing engineer may know in advance what is the expected outcome, as in the case of release validation tests, or in an exploration to find potential issues in the product, which should be mitigated.</p>
@@ -7205,7 +7205,7 @@ Examples of performing fault injection during the development lifecycle:</p>
 <li>Ad-hoc (manual) validations of fault in the dev environment for new features.</li>
 </ul>
 <h4 id="fault-injection-testing-in-the-release-cycle">Fault injection testing in the release cycle</h4>
-<p>Much like <a href="../synthetic-monitoring-tests/">Synthetic Monitoring Tests</a>, fault injection testing in the release cycle is a part of <a href="https://docs.microsoft.com/en-us/devops/deliver/shift-right-test-production">Shift-Right testing</a> approach, which uses safe methods to perform tests in a production or pre-production environment. Given the nature of distributed, cloud-based applications, it is very difficult to simulate the real behavior of services outside their production environment. Testers are encouraged to run tests where it really matters, on a live system with customer traffic.</p>
+<p>Much like <a href="../synthetic-monitoring-tests/">Synthetic Monitoring Tests</a>, fault injection testing in the release cycle is a part of <a href="https://learn.microsoft.com/en-us/devops/deliver/shift-right-test-production">Shift-Right testing</a> approach, which uses safe methods to perform tests in a production or pre-production environment. Given the nature of distributed, cloud-based applications, it is very difficult to simulate the real behavior of services outside their production environment. Testers are encouraged to run tests where it really matters, on a live system with customer traffic.</p>
 <p>Fault injection tests rely on metrics observability and are usually statistical; The following high-level steps provide a sample of practicing fault injection and chaos engineering:</p>
 <ul>
 <li>Measure and define a steady (healthy) state for the system's interoperability.</li>
@@ -7250,8 +7250,8 @@ Fault injection is a powerful tool and should be used with caution. Cases such a
 <li><a href="https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1">Cindy Sridharan's Testing in production blog post</a></li>
 <li><a href="https://medium.com/@copyconstruct/testing-in-production-the-hard-parts-3f06cefaf592">Cindy Sridharan's Testing in production blog post cont.</a></li>
 <li><a href="https://azure.microsoft.com/es-es/blog/inside-azure-search-chaos-engineering/">Fault injection in Azure Search</a></li>
-<li><a href="https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering">Azure Architecture Framework - Chaos engineering</a></li>
-<li><a href="https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/testing">Azure Architecture Framework - Testing resilience</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering">Azure Architecture Framework - Chaos engineering</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/testing">Azure Architecture Framework - Testing resilience</a></li>
 <li><a href="https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models">Landscape of Software Failure Cause Models</a></li>
 </ul>
 
@@ -7260,7 +7260,7 @@ Fault injection is a powerful tool and should be used with caution. Cases such a
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 25, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

@@ -7124,11 +7124,11 @@ They also need a reliable way to reproduce a training process, such that a given
 <p>There are many model metric evaluation solutions available, both open source (like MLFlow) and proprietary (like Azure Machine Learning Service), and of which some serve different purposes. To capture model metrics, there are a.o. the following options available:</p>
 <p><a href="https://ml.azure.com/">Azure Machine Learning Service SDK</a>
 Azure Machine Learning service provides an SDK for Python, R and C# to capture your evaluation metrics to an Azure Machine Learning service (AML) Experiment. Experiments are viewed in the AML dashboard. Reproducibility is achieved by storing code or notebook snapshot together with viewed metric. You can create versioned Datasets within Azure Machine Learning service.</p>
-<p><a href="https://docs.microsoft.com/en-us/azure/databricks/applications/mlflow/">MLFlow (for Databricks)</a>
+<p><a href="https://learn.microsoft.com/en-us/azure/databricks/applications/mlflow/">MLFlow (for Databricks)</a>
 MLFlow is open source framework, and can be hosted on Azure Databricks as its remote tracking server (it currently is the only solution that offers first-party integration with Databricks). You can use the MLFlow SDK tracking component to capture your evaluation metrics or any parameter you would like and track it at experimentation board in Azure Databricks. Source code and dataset version are also saved with log snapshot to provide reproducibility.</p>
 <p><a href="https://www.tensorflow.org/tensorboard/">TensorBoard</a>
 TensorBoard is a popular tool amongst data scientist to visualize specific metrics of Deep Learning runs, especially of TensorFlow runs. TensorBoard is not an MLOps tool like AML/MLFlow, and therefore does not offer extensive logging capabilities. It is meant to be transient; and can therefore be used as an addition to an end-to-end MLOps tool like AML, but not as a complete MLOps tool.</p>
-<p><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview">Application Insights</a>
+<p><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview">Application Insights</a>
 Application Insights can be used as an alternative sink to capture model metrics, and can therefore offer more extensive options as metrics can be transferred to e.g. a PowerBI dashboard. It also enables log querying. However, this solution means that a custom application needs to be written to send logs to AppInsights (using for example the OpenCensus Python SDK), which would mean extra effort of creating/maintaining custom code.</p>
 <p>An extensive comparison of the four tools can be found as follows:</p>
 <table>
@@ -7193,7 +7193,7 @@ Application Insights can be used as an alternative sink to capture model metrics
 When re-training with AML Pipelines you can monitor information of each run, including the output, logs, and various metrics in the Azure portal experiment dashboard, or manually extract it using the AML SDK</p>
 <h2 id="model-performance-over-time-data-drift">Model performance over time: data drift</h2>
 <p>We re-train machine learning models to improve their performance and make models better aligned with data changing over time. However, in some cases model performance may degrade. This may happen in case data change dramatically and do not exhibit the patterns we observed during model development anymore. This effect is called data drift. Azure Machine Learning Service has preview feature to observe and report data drift.
-This <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets">article</a> describes it in detail.</p>
+This <a href="https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets">article</a> describes it in detail.</p>
 <h2 id="data-versioning">Data versioning</h2>
 <p>It is recommended practice to add version to all datasets. You can create a versioned Azure ML Dataset for this purpose, or manually version it if using other systems.</p>
 
@@ -7202,7 +7202,7 @@ This <a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-mon
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>

@@ -7245,9 +7245,9 @@
 <p>Your release strategy should account for rollback scenarios in the event of unexpected failures following a deployment.</p>
 <p>Rolling back releases can get tricky, especially when database record/object changes occur in result of your deployment (<em>either inadvertently or intentionally</em>). If there are no data changes which need to be backed out, then you can simply trigger a new release candidate for the last known production version and promote that release along your CD pipeline.</p>
 <p>For rollback scenarios involving data changes, there are several approaches to mitigating this which fall outside the scope of this guide. Some involve database record versioning, time machining database records / objects, etc. All data files and databases should be backed up prior to each release so they could be restored. The mitigation strategy for this scenario will vary across our projects. The expectation is that this mitigation strategy should be covered as part of your release strategy.</p>
-<p>Another approach to consider when designing your release strategy is <a href="https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops">deployment rings</a>. This approach simplifies rollback scenarios while limiting the impact of your release to end-users by gradually deploying and validating your changes in production.</p>
+<p>Another approach to consider when designing your release strategy is <a href="https://learn.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops">deployment rings</a>. This approach simplifies rollback scenarios while limiting the impact of your release to end-users by gradually deploying and validating your changes in production.</p>
 <h3 id="zero-downtime-releases">Zero Downtime Releases</h3>
-<p>A hot deployment follows a process of switching users from one release to another with no impact to the user experience. As an example, Azure managed app services allows developers to validate app changes in a staging deployment slot before swapping it with the production slot. App Service slot swapping can also be fully automated once the source slot is fully warmed up (and <a href="https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots#configure-auto-swap">auto swap</a> is enabled). Slot swapping also simplifies release rollbacks once a technical operator restores the slots to their pre-swap states.</p>
+<p>A hot deployment follows a process of switching users from one release to another with no impact to the user experience. As an example, Azure managed app services allows developers to validate app changes in a staging deployment slot before swapping it with the production slot. App Service slot swapping can also be fully automated once the source slot is fully warmed up (and <a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots#configure-auto-swap">auto swap</a> is enabled). Slot swapping also simplifies release rollbacks once a technical operator restores the slots to their pre-swap states.</p>
 <p>Kubernetes natively supports <a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/">rolling updates</a>.</p>
 <h3 id="blue-green-deployments">Blue-Green Deployments</h3>
 <p>Blue / Green is a deployment technique which reduces downtime by running two identical instances of a production environment called <em>Blue</em> and <em>Green</em>.</p>
@@ -7270,13 +7270,13 @@
 <ul>
 <li><a href="https://www.continuousdelivery.com/">Continuous Delivery</a> by Jez Humble, David Farley.</li>
 <li><a href="https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment">Continuous integration vs. continuous delivery vs. continuous deployment</a></li>
-<li><a href="https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops">Deployment Rings</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops">Deployment Rings</a></li>
 </ul>
 <h3 id="tools">Tools</h3>
 <p>Check out the below tools to help with some CD best practices listed above:</p>
 <ul>
 <li><a href="https://fluxcd.io/docs/concepts/">Flux</a> for gitops</li>
-<li><a href="https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd#example-workflow">CI/CD workflow using GitOps</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd#example-workflow">CI/CD workflow using GitOps</a></li>
 <li><a href="https://github.com/tektoncd">Tekton</a> for Kubernetes native pipelines<ul>
 <li>Note Jenkins-X uses Tekton under the hood.</li>
 </ul>
@@ -7291,7 +7291,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
       
     
   </small>
