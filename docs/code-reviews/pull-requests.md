@@ -83,11 +83,11 @@ See also [Pull Request Template](pull-request-template/pull-request-template.md)
 ## Resources
 
 * [Writing a great pull request description](https://www.pullrequest.com/blog/writing-a-great-pull-request-description)
-* [Review code with pull requests (Azure DevOps)](https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)
+* [Review code with pull requests (Azure DevOps)](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)
 * [Collaborating with issues and pull requests (GitHub)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests)
 * [Google approach to PR size](https://google.github.io/eng-practices/review/developer/small-cls.html)
 * [Feature Flags](https://www.martinfowler.com/articles/feature-toggles.html)
 * [Facebook approach to hidden features](https://launchdarkly.com/blog/secret-to-facebooks-hacker-engineering-culture/)
-* [Azure approach to canary releases](https://docs.microsoft.com/azure/architecture/framework/devops/release-engineering-cd#stage-your-workloads)
+* [Azure approach to canary releases](https://learn.microsoft.com/azure/architecture/framework/devops/release-engineering-cd#stage-your-workloads)
 * [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
 * [Angular Commit types](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type)

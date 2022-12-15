@@ -25,7 +25,7 @@ Recipes and Scenarios-
 
 1. [Detect-secrets](./recipes/detect-secrets.md) - detect-secrets is an aptly named module for detecting secrets within a code base.
 1. [detect-secrets inside Azure DevOps Pipeline](./recipes/detect-secrets-ado.md)
-1. [Microsoft Security Code Analysis extension](https://docs.microsoft.com/en-us/azure/security/develop/security-code-analysis-overview)
+1. [Microsoft Security Code Analysis extension](https://learn.microsoft.com/en-us/azure/security/develop/security-code-analysis-overview)
 
 Additional Tools -
 

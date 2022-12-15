@@ -64,7 +64,7 @@ If you would like to point the tool at a specific directory append the desired l
 
 If the pipeline is configured without the scanNonGitFiles is configured for your pipeline, then the `--all-files` argument will be set to scan git artifacts in your pipeline as well.
 
-`setFailureasWarning` will be set to false unless otherwise indicated, which will fail the task if a finding occurs.
+`setFailureAsWarning` will be set to false unless otherwise indicated, which will fail the task if a finding occurs.
 
 ### Triage - Allow-List Scan Argument Notes
 

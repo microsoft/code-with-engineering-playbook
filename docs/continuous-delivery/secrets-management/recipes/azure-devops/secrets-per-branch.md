@@ -1,6 +1,6 @@
 # Azure DevOps: Managing Settings on a Per-Branch Basis
 
-When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) for CI/CD, it's convenient to leverage the built-in [pipeline variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables) for [secrets management](../../README.md), but using pipeline variables for secrets management has its disadvantages:
+When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) for CI/CD, it's convenient to leverage the built-in [pipeline variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables) for [secrets management](../../README.md), but using pipeline variables for secrets management has its disadvantages:
 
 - *Pipeline variables are managed outside the code that references them.* This makes it easy to introduce drift between the source code and the secrets, e.g. adding a reference to a new secret in code but forgetting to add it to the pipeline variables (leads to confusing build breaks), or deleting a reference to a secret in code and forgetting to remote it from the pipeline variables (leads to confusing pipeline variables).
 
@@ -28,7 +28,7 @@ git add .env.enc .env.template
 git commit -m "Update secrets"
 ```
 
-When running the CI/CD, the build server can now access the secrets by decrypting them. E.g. for Azure DevOps, configure `ENCRYPTION_KEY` as a [secret pipeline variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables#secret-variables) and then add the following step to `azure-pipelines.yml`:
+When running the CI/CD, the build server can now access the secrets by decrypting them. E.g. for Azure DevOps, configure `ENCRYPTION_KEY` as a [secret pipeline variable](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables#secret-variables) and then add the following step to `azure-pipelines.yml`:
 
 ```yaml
 steps:
@@ -36,4 +36,4 @@ steps:
     displayName: Decrypt secrets
 ```
 
-You can also use [variable groups linked directly to Azure key vault](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault) for your pipelines to manage all secrets in one location.
+You can also use [variable groups linked directly to Azure key vault](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault) for your pipelines to manage all secrets in one location.

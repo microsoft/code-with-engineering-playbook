@@ -34,7 +34,7 @@ In this approach, secrets are manually encrypted by developers using a public ke
 
 ## 2. Reference to secrets stored in an external key vault (Recommended)
 
-This approach relies on a key management system like [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview) to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.
+This approach relies on a key management system like [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.
 
 [Azure Key Vault Provider for Secrets Store CSI Driver](https://github.com/Azure/secrets-store-csi-driver-provider-azure) is an azure vault provider for [Kubernetes secret store CSI Driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver) allows you to get secret content stored in Azure Key vault instance and use the Secrets Store CSI driver interface to mount them into Kubernetes pods.
 
@@ -46,7 +46,7 @@ This approach relies on a key management system like [Azure Key Vault](https://d
 - Supports pod portability with the SecretProviderClass CRD
 
 Azure Key Vault Provider for Secrets Store CSI Driver [install Guide](https://secrets-store-csi-driver.sigs.k8s.io/getting-started/installation.html).
-CSI driver will need access to Azure Key vault either through service principle or managed identity(recommended). To make this access secure you can leverage [Azure Workload Identiy](https://github.com/Azure/azure-workload-identity)(recommended) or [AAD Pod Identify](https://github.com/Azure/aad-pod-identity). Please note AAD pod identity will soon be replaced by Azure WorkLoad Identity.
+CSI driver will need access to Azure Key vault either through service principle or managed identity(recommended). To make this access secure you can leverage [Azure Workload Identity](https://github.com/Azure/azure-workload-identity)(recommended) or [AAD Pod Identify](https://github.com/Azure/aad-pod-identity). Please note AAD pod identity will soon be replaced by Azure WorkLoad Identity.
 
 ## Important Links
 

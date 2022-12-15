@@ -32,7 +32,7 @@ The Developer Inner Loop is the process that developers go through as they are a
 developer to developer and language to language but typically is something like code -> build -> run -> repeat. When
 unit tests are inserted into the inner loop, developers can get early feedback and results from the code they are
 writing. Since unit tests execute really quickly, running tests shouldn't be seen as a barrier to entry for this loop.
-Tooling such as [Visual Studio Live Unit Testing](https://docs.microsoft.com/en-us/visualstudio/test/live-unit-testing-start?view=vs-2019)
+Tooling such as [Visual Studio Live Unit Testing](https://learn.microsoft.com/en-us/visualstudio/test/live-unit-testing-start?view=vs-2019)
 also help to shorten the inner loop even more.
 
 ## Documentation as code

@@ -6,4 +6,4 @@ Some that we recommend are as follows:
 
 * [Martin Fowler's Patterns of Distributed Systems](https://martinfowler.com/articles/patterns-of-distributed-systems/)
 * [microservices.io](https://microservices.io/index.html)
-* [Azure's Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
+* [Azure's Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)

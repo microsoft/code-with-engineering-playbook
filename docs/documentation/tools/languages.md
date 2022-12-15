@@ -12,7 +12,7 @@ More information:
 - [Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 - [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 - [Extended Syntax](https://www.markdownguide.org/extended-syntax/)
-- [Wiki Markdown Syntax](https://docs.microsoft.com/en-us/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops)
+- [Wiki Markdown Syntax](https://learn.microsoft.com/en-us/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops)
 
 Tools:
 

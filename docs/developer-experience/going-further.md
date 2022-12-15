@@ -9,7 +9,7 @@ Dev containers also allow us to:
 
 ## Existing tools
 
-In the development phase, you will most probably need to use tools not installed by default in your Dev Container. For instance, if your project's target is to be deployed on Azure, you will need [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) and maybe [Terraform](https://www.terraform.io/) for resources and application deployment. You can find such Dev Containers in the [VS Code dev container gallery repo](https://github.com/microsoft/vscode-dev-containers/tree/master/containers).
+In the development phase, you will most probably need to use tools not installed by default in your Dev Container. For instance, if your project's target is to be deployed on Azure, you will need [Azure-cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) and maybe [Terraform](https://www.terraform.io/) for resources and application deployment. You can find such Dev Containers in the [VS Code dev container gallery repo](https://github.com/microsoft/vscode-dev-containers/tree/master/containers).
 
 Some other tools may be:
 
@@ -17,11 +17,11 @@ Some other tools may be:
 * Linters for [bash](https://www.shellcheck.net/) scripts,
 * Etc...
 
-Linting files that are not *the source code* can ensure a common format with common rules for each developer. These checks should be also run in a [Continuous Integration Pipeline](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp), but it is a good practice to run them prior opening a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+Linting files that are not *the source code* can ensure a common format with common rules for each developer. These checks should be also run in a [Continuous Integration Pipeline](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp), but it is a good practice to run them prior opening a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Limitation of custom tools
 
-If you decide to include [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) in your Dev Container, developers will be able to run commands against their tenant. However, to make the developers' lives easier, we could go further by letting them prefill their connection information, such as the `tenant ID` and the `subscription ID` in a secure and persistent way (do not forget that your Dev Container, being a [Docker](https://www.docker.com/) container, might get deleted, or the image could be rebuilt, hence, all customization *inside* will be lost).
+If you decide to include [Azure-cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) in your Dev Container, developers will be able to run commands against their tenant. However, to make the developers' lives easier, we could go further by letting them prefill their connection information, such as the `tenant ID` and the `subscription ID` in a secure and persistent way (do not forget that your Dev Container, being a [Docker](https://www.docker.com/) container, might get deleted, or the image could be rebuilt, hence, all customization *inside* will be lost).
 
 One way to achieve this is to leverage environment variables, with untracked `.env` file part of the solution being injected in the Dev Container.
 
@@ -145,7 +145,7 @@ This is a small use case, there are unlimited other possibilities to capitalize 
 When installing tooling, you also need to ensure that you know what host computers developers are using. All Intel based computers, whether they are running Windows, Linux or MacOs will have the same behavior.
 However, the latest Mac architecture (Apple M1/Silicon) being ARM64, means that the behavior is not the same when building Dev Containers.
 
-For instance, if you want to install [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) in your Dev Container, you won't be able to do it the same way you do it for Intel based machines. On Intel based computers you can install the `deb` package. However, this package is not available on ARM architecture. The only way to install [Azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) on Linux ARM is via the Python installer `pip`.
+For instance, if you want to install [Azure-cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) in your Dev Container, you won't be able to do it the same way you do it for Intel based machines. On Intel based computers you can install the `deb` package. However, this package is not available on ARM architecture. The only way to install [Azure-cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) on Linux ARM is via the Python installer `pip`.
 
 To achieve this you need to check the architecture of the host building the Dev Container, either in the Dockerfile, or by calling an external bash script to install remaining tools not having a universal version.
 

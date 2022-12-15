@@ -6,7 +6,7 @@ The pattern enabled as to build container for development, testing and releasing
 
 We will dive into tools needed to build, test and push a container, our environment and go through each step separately.
 
-Follow this link to dive deeper or revisit the [DevTest pattern](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas).
+Follow this link to dive deeper or revisit the [DevTest pattern](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas).
 
 ## Table of Contents
 
@@ -211,7 +211,7 @@ of the branch the container was developed in.
 This allows you to easily track the origin of the container and aids debugging.
 
 A link to Azure DevOps predefined variables can be found in the
-[Azure Docs on Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)
+[Azure Docs on Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)
 
 After a tag was added to the container, the image must be pushed.
 This can be done with the following task:
@@ -273,8 +273,8 @@ involving latest (SetLatestSuffixTag & pushSuccessfulDockerImageLatest).
 
 ## References
 
-- [DevTest pattern](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas)
-- [Azure Docs on Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)
+- [DevTest pattern](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas)
+- [Azure Docs on Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)
 - [official tox documentation page](https://tox.wiki/en/latest/user_guide.html)
 - [Testinfra](https://testinfra.readthedocs.io/en/latest/)
 - [Testinfra project on GitHub](https://github.com/pytest-dev/pytest-testinfra)

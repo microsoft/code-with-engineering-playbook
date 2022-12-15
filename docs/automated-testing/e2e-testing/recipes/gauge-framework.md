@@ -186,11 +186,14 @@ This section gives specific instructions on setting up Gauge in a macOS environm
    if HomeBrew is working properly, you should see something similar to the following:
 
 ```bash
-==> Downloading https://homebrew.bintray.com/bottles/gauge-1.0.6.mojave.bottle.tar.gz
-==> Downloading from https://akamai.bintray.com/45/45b496b39ee682a95ca49b36a94e8041e03fca3644e80223c36539f495fee384?__gda__=exp=1568017021~hmac=f6ca3a9
+==> Fetching gauge
+==> Downloading https://ghcr.io/v2/homebrew/core/gauge/manifests/1.4.3
 ######################################################################## 100.0%
-==> Pouring gauge-1.0.6.mojave.bottle.tar.gz
-🍺  /usr/local/Cellar/gauge/1.0.6: 3 files, 18.5MB
+==> Downloading https://ghcr.io/v2/homebrew/core/gauge/blobs/sha256:05117bb3c0b2efeafe41e817cd3ad86307c1d2ea7e0e835655c4b51ab2472893
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:05117bb3c0b2efeafe41e817cd3ad86307c1d2ea7e0e835655c4b51ab2472893?se=2022-12-13T12%3A35%3A00Z&sig=I78SuuwNgSMFoBTT
+######################################################################## 100.0%
+==> Pouring gauge--1.4.3.ventura.bottle.tar.gz
+    /usr/local/Cellar/gauge/1.4.3: 6 files, 18.9MB
 ```
 
 ### Step 2 : Installing Gauge extension for Visual Studio Code
