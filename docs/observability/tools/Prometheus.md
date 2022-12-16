@@ -21,7 +21,7 @@ The Prometheus client libraries allow you to add instrumentation to your code an
 
 Prometheus' metrics format is supported by a wide array of tools and services including:
 
-- [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-prometheus-integration)
+- [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-prometheus-integration)
 - [Stackdriver](https://cloud.google.com/stackdriver/docs/solutions/gke/prometheus)
 - [Datadog](https://docs.datadoghq.com/integrations/prometheus/)
 - [CloudWatch](https://aws.amazon.com/blogs/containers/using-prometheus-metrics-in-amazon-cloudwatch/)

@@ -99,11 +99,11 @@ Rolling back releases can get tricky, especially when database record/object cha
 
 For rollback scenarios involving data changes, there are several approaches to mitigating this which fall outside the scope of this guide. Some involve database record versioning, time machining database records / objects, etc. All data files and databases should be backed up prior to each release so they could be restored. The mitigation strategy for this scenario will vary across our projects. The expectation is that this mitigation strategy should be covered as part of your release strategy.
 
-Another approach to consider when designing your release strategy is [deployment rings](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops). This approach simplifies rollback scenarios while limiting the impact of your release to end-users by gradually deploying and validating your changes in production.
+Another approach to consider when designing your release strategy is [deployment rings](https://learn.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops). This approach simplifies rollback scenarios while limiting the impact of your release to end-users by gradually deploying and validating your changes in production.
 
 ### Zero Downtime Releases
 
-A hot deployment follows a process of switching users from one release to another with no impact to the user experience. As an example, Azure managed app services allows developers to validate app changes in a staging deployment slot before swapping it with the production slot. App Service slot swapping can also be fully automated once the source slot is fully warmed up (and [auto swap](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots#configure-auto-swap) is enabled). Slot swapping also simplifies release rollbacks once a technical operator restores the slots to their pre-swap states.
+A hot deployment follows a process of switching users from one release to another with no impact to the user experience. As an example, Azure managed app services allows developers to validate app changes in a staging deployment slot before swapping it with the production slot. App Service slot swapping can also be fully automated once the source slot is fully warmed up (and [auto swap](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots#configure-auto-swap) is enabled). Slot swapping also simplifies release rollbacks once a technical operator restores the slots to their pre-swap states.
 
 Kubernetes natively supports [rolling updates](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/).
 
@@ -145,14 +145,14 @@ Here is a guide for [continuous deployment for Low Code Solutions](low-code-solu
 
 * [Continuous Delivery](https://www.continuousdelivery.com/) by Jez Humble, David Farley.
 * [Continuous integration vs. continuous delivery vs. continuous deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
-* [Deployment Rings](https://docs.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops)
+* [Deployment Rings](https://learn.microsoft.com/en-us/azure/devops/migrate/phase-rollout-with-rings?view=azure-devops)
 
 ### Tools
 
 Check out the below tools to help with some CD best practices listed above:
 
 * [Flux](https://fluxcd.io/docs/concepts/) for gitops
-* [CI/CD workflow using GitOps](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd#example-workflow)
+* [CI/CD workflow using GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-ci-cd#example-workflow)
 * [Tekton](https://github.com/tektoncd) for Kubernetes native pipelines
   * Note Jenkins-X uses Tekton under the hood.
 * [Argo Workflows](https://github.com/argoproj/argo-workflows)

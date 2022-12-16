@@ -9,10 +9,10 @@ In Azure DevOps, you have the following **options for maintaining wiki content**
 
 More information:
 
-- [About Wikis, READMEs, and Markdown](https://docs.microsoft.com/en-us/azure/devops/project/wiki/about-readme-wiki?view=azure-devops).
-- [Provisioned wikis vs. published code as a wiki](https://docs.microsoft.com/en-us/azure/devops/project/wiki/provisioned-vs-published-wiki?view=azure-devops).
-- [Create a Wiki for your project](https://docs.microsoft.com/en-us/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser).
-- [Manage wikis](https://docs.microsoft.com/en-us/azure/devops/project/wiki/manage-wikis?view=azure-devops).
+- [About Wikis, READMEs, and Markdown](https://learn.microsoft.com/en-us/azure/devops/project/wiki/about-readme-wiki?view=azure-devops).
+- [Provisioned wikis vs. published code as a wiki](https://learn.microsoft.com/en-us/azure/devops/project/wiki/provisioned-vs-published-wiki?view=azure-devops).
+- [Create a Wiki for your project](https://learn.microsoft.com/en-us/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser).
+- [Manage wikis](https://learn.microsoft.com/en-us/azure/devops/project/wiki/manage-wikis?view=azure-devops).
 
 ## Wikis vs. digital notebooks (e.g., OneNote)
 

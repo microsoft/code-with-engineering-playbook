@@ -1,6 +1,7 @@
 # Feasibility Studies
 
 The main goal of feasibility studies is to assess whether it is feasible to solve the problem satisfactorily using ML with the available data. We want to avoid investing too much in the solution before we have:
+
 * Sufficient evidence that a solution would be the best technical solution given the business case
 * Sufficient evidence that a solution is compatible with the problem context
 * Sufficient evidence that a solution is possible
@@ -29,6 +30,7 @@ Collaboration from individuals with diverse skill sets is desired at this stage,
 ### Deep contextual understanding
 
 Confirm that the following questions can be answered based on what was learned during the Discovery Phase of the project. For items that can not be satisfactorily answered, undertake additional investigation to answer.
+
 * Understanding the people who are using and/or affected by the solution
 * Understanding the contextual forces at play around the problem, including goals, culture, and historical context
 * To accomplish this a researcher will:
@@ -39,7 +41,7 @@ Confirm that the following questions can be answered based on what was learned d
 * Construct a research plan and necessary preparation documents for the selected research method(s)
 * Conduct research activity with the participants via the selected method(s)
 * Synthesize, analyze, and interpret research findings
-* Where relevant, build frameworks, artefacts and processes that help explore the findings and implications of the research across the team
+* Where relevant, build frameworks, artifacts and processes that help explore the findings and implications of the research across the team
 * Share what was uncovered and understood, and the implications thereof across the engagement team and relevant stakeholders.
 * If the above research was conducted during the Discovery phase, it should be reviewed, and any substantial knowledge gaps should be identified and filled by following the above process.
 
@@ -52,7 +54,7 @@ Confirm that the following questions can be answered based on what was learned d
 
 ### Data discovery
 
-* Hold a [data exploration](./ml-data-exploration.md) workshop and deep dive with domain experts
+* Hold a [data exploration](ml-data-exploration.md) workshop and deep dive with domain experts
 * Understand data availability and confirm the team's access
 * Understand the data dictionary, if available
 * Understand the quality of the data. Is there already a data validation strategy in place?
@@ -124,7 +126,6 @@ Confirm that the following questions can be answered based on what was learned d
 * Understanding of users and stakeholders’ contexts, needs and concerns to inform development of RAI
 * Testing AI concept and experience elements with users and stakeholders
 * Discussion and feedback from diverse perspectives around any responsible AI concerns
-
 
 ## Output of a feasibility study
 

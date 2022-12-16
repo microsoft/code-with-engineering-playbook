@@ -42,4 +42,4 @@ Most used tools to get this process completed are:
 
 ## References
 
-[Application lifecycle management with Microsoft Power Platform](https://docs.microsoft.com/en-us/power-platform/alm/)
+[Application lifecycle management with Microsoft Power Platform](https://learn.microsoft.com/en-us/power-platform/alm/)

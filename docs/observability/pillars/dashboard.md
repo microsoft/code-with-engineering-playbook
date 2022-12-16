@@ -32,13 +32,13 @@ Here are principles to consider when building dashboards:
 
 ## Recommended Tools
 
-- [Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview) - Supporting markdown, Azure Workbooks is tightly integrated with Azure services making this highly customizable without extra tool.
-- [Create dashboard using log query](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-logs-dashboards) - Dashboard can be created using log query on Log Analytics data.
-- [Building dashboards using Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-app-dashboards) - Dashboards can be created using Application Insights as well.
-- [Power Bi](https://docs.microsoft.com/en-us/power-bi/create-reports/service-dashboard-create) - Power Bi is one of the easier tools to create dashboards from data sources and reports.
+- [Azure Monitor Workbooks](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview) - Supporting markdown, Azure Workbooks is tightly integrated with Azure services making this highly customizable without extra tool.
+- [Create dashboard using log query](https://learn.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-logs-dashboards) - Dashboard can be created using log query on Log Analytics data.
+- [Building dashboards using Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-app-dashboards) - Dashboards can be created using Application Insights as well.
+- [Power Bi](https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboard-create) - Power Bi is one of the easier tools to create dashboards from data sources and reports.
 - [Grafana](https://grafana.com/tutorials/) - Getting started with Grafana. Grafana is a popular open source tool for dashboarding and visualization.
 - [Azure Monitor as Grafana data source](https://grafana.com/grafana/plugins/grafana-azure-monitor-datasource) - This provides a step by step integration of Azure Monitor to Grafana.
-- [Brief comparison of various tools](https://docs.microsoft.com/en-us/azure/azure-monitor/visualizations)
+- [Brief comparison of various tools](https://learn.microsoft.com/en-us/azure/azure-monitor/visualizations)
 
 ## Dashboard Samples and Recipes
 
@@ -50,9 +50,9 @@ Here are principles to consider when building dashboards:
 
 ### Application Insights
 
-- [User retention analysis](https://docs.microsoft.com/azure/azure-monitor/app/usage-retention)
-- [User navigation patterns analysis](https://docs.microsoft.com/azure/azure-monitor/app/usage-flows)
-- [User session analysis](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
+- [User retention analysis](https://learn.microsoft.com/azure/azure-monitor/app/usage-retention)
+- [User navigation patterns analysis](https://learn.microsoft.com/azure/azure-monitor/app/usage-flows)
+- [User session analysis](https://learn.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 
 For other tools, these can be used as a reference to recreate if a template is not readily available.
 

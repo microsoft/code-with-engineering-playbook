@@ -109,6 +109,6 @@ For more information on experimentation, refer to the [experimentation](ml-exper
 
 * This is the final phase, where we ensure our model is doing what we expect it to in production.
 * Read more about [ML observability](../observability/ml-observability.md).
-* Read more about [Azure ML's offerings around ML models production monitoring](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection).
-* It is recommended to consider incorporating data drift monitoring process in the production solution. This will assist in detecting potential changes in new datasets presented for inference that may significantly impact model performance. For more info on detecting data drift with Azure ML see the Microsoft docs article on [how to monitor datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets).
+* Read more about [Azure ML's offerings around ML models production monitoring](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection).
+* It is recommended to consider incorporating data drift monitoring process in the production solution. This will assist in detecting potential changes in new datasets presented for inference that may significantly impact model performance. For more info on detecting data drift with Azure ML see the Microsoft docs article on [how to monitor datasets](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets).
 * **Typical output**: Logging and monitoring scripts and tools set up, permissions for users to access monitoring tools.

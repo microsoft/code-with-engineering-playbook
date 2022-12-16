@@ -46,12 +46,15 @@ If there are important nuances to consider, they will be linked in the `Disclaim
 - [Green Software Foundation](https://greensoftware.foundation/)
 - [Microsoft Cloud for Sustainability](https://www.microsoft.com/en-us/sustainability)
 - [Learning Module: Sustainable Software
-Engineering](https://docs.microsoft.com/en-us/learn/modules/sustainable-software-engineering-overview/)
+Engineering](https://learn.microsoft.com/en-us/learn/modules/sustainable-software-engineering-overview/)
 
 ## Tools
 
-- [Emissions Impact Dashboard](https://appsource.microsoft.com/en-us/product/power-bi/coi-sustainability.emissions_impact_dashboard)
-- [Azure GreenAI Carbon-Intensity API](http://azure-uw-cli-2021.azurewebsites.net/home)
 - [Carbon-Aware SDK](https://github.com/Green-Software-Foundation/carbon-aware-sdk)
 - ["Awesome List" of Green Software](https://github.com/Green-Software-Foundation/awesome-green-software)
+- [Emissions Impact](https://appsource.microsoft.com/en-us/product/power-bi/coi-sustainability.emissions_impact_dashboard)
+- [Azure GreenAI Carbon-Intensity API](https://carbon-aware-api.azurewebsites.net/swagger/index.html)
+
+## Projects
+
 - [Sustainability through SpotVMs](https://github.com/hybridflux/SparkOnSpot)

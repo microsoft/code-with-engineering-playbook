@@ -14,7 +14,7 @@ Using Markdown is different from using a WYSIWYG editor. In an application like 
 
 You can find more information and full documentation [here](https://www.markdownguide.org/).
 
-## Linting
+## Linters
 
 Markdown has specific way of being formatted. It is important to respect this formatting, otherwise some interpreters which are strict won't properly display the document. Linters are often used to help developers properly create documents by both verifying proper Markdown syntax, grammar and proper English language.
 
@@ -187,7 +187,7 @@ Save your guidelines together with your documentation, so they are easy to refer
 - Avoid duplication of content, instead link to the `single source of truth`
 - Link but don't summarize. Summarizing content on another page leads to the content living in two places
 - Use meaningful anchor texts, e.g. instead of writing `Follow the instructions [here](../recipes/Markdown.md)` write `Follow the [Markdown guidelines](../recipes/Markdown.md)`
-- Make sure links to Microsoft docs (like `https://docs.microsoft.com/something/somethingelse`) do not contain the language marker `/en-us/` or `/fr-fr/`, as this is automatically determined by the site itself.
+- Make sure links to Microsoft docs (like `https://learn.microsoft.com/something/somethingelse`) do not contain the language marker `/en-us/` or `/fr-fr/`, as this is automatically determined by the site itself.
 
 ### Lists
 

@@ -167,7 +167,6 @@ The biggest advantage of BugBug is its user-friendliness. Most tests created wit
 
 [BugBug Website](https://bugbug.io?utm_source=microsoft_github&utm_medium=referral)
 
-
 ## Conclusion
 
 Hope you learned various aspects of E2E testing like its processes, metrics, the difference between Unit, Integration  and E2E testing, and the various recommended E2E test frameworks and tools.

@@ -30,7 +30,7 @@ On-premises Application Insights is also useful for testing telemetry integratio
 
 ## Azure DevOps Pipelines Reporting with Power BI
 
-The [Azure DevOps Pipelines Report](https://github.com/Azure-Samples/powerbi-pipeline-report) contains a [Power BI](https://docs.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview) template for monitoring project, pipeline, and pipeline run data from an Azure DevOps (AzDO) organization.
+The [Azure DevOps Pipelines Report](https://github.com/Azure-Samples/powerbi-pipeline-report) contains a [Power BI](https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview) template for monitoring project, pipeline, and pipeline run data from an Azure DevOps (AzDO) organization.
 
 This dashboard recipe provides observability for AzDO pipelines by displaying various metrics (i.e. average runtime, run outcome statistics, etc.) in a table. Additionally, the second page of the template visualizes pipeline success and failure trends using Power BI charts. Documentation and setup information can be found in the project README.
 
