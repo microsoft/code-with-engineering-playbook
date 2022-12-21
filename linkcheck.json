@@ -1,0 +1,15 @@
+{
+  "path": "./",
+  "exclude_links": [
+    "http://link-to-feature-or-story-work-item",
+    "http://link-to-work-item",
+    "ftp://ftp.software.ibm.com/software/rational/info/do-more/RAW14109USEN.pdf",
+    "http://link-to-task-work-item",
+    "https://fast.design",
+    "https://www.linkedin.com/pulse/should-technical-program-manager-tpm-nikhil-sachdeva/",
+    "https://www.linkedin.com/pulse/mind-technical-program-manager-nikhil-sachdeva/",
+    "http://www.techoism.com/how-to-install-git-bash-on-windows/",
+    "https://plainenglish.co.uk/how-to-write-in-plain-english.html"
+  ],
+  "only_errors": true
+}
