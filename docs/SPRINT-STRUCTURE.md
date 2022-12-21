@@ -20,7 +20,7 @@ The purpose of this document is to:
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
 - [ ] [Build a Product Backlog](agile-development/advanced-topics/backlog-management/README.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
-  - [INVEST](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) in good User Stories and Acceptance Criteria
+  - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
   - [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md)
 
 ### Day 1

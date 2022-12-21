@@ -4,7 +4,7 @@ The following are real-world examples of Engineering Feedback that have led to p
 
 ## Windows Server Container support for Azure Kubernetes Service
 
-The Azure Kubernetes Service should have first class Windows container support so solutions that require Windows workloads can be deployed on a wildly popular container orchestration platform. The need was to be able to deploy Windows Server containers on AKS the managed Azure Kubernetes Service. According to [this FAQ](https://docs.microsoft.com/en-us/azure/aks/faq#can-i-run-windows-server-containers-on-aks) (and in parallel confirmation) it is not available yet.
+The Azure Kubernetes Service should have first class Windows container support so solutions that require Windows workloads can be deployed on a wildly popular container orchestration platform. The need was to be able to deploy Windows Server containers on AKS the managed Azure Kubernetes Service. According to [this FAQ](https://learn.microsoft.com/en-us/azure/aks/faq#can-i-run-windows-server-containers-on-aks) (and in parallel confirmation) it is not available yet.
 
  We tried to deploy anyway as a test, and it did not work – the deployment would be pending without success.
 
@@ -18,7 +18,7 @@ We are also seeing increased interest, particularly among enterprise customers, 
 
 ## Support Batch Receiving with Sessions in Azure Functions Service Bus Trigger
 
-Customer scenario was to receive a total of 250 messages per second from 50 producers with requirement for ordering & minimum latency, using a Service Bus topic with sessions enabled for ordering. According to [Microsoft documentation](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements#prefetching-and-receivebatch), batch receiving is recommended for better performance but this is not currently supported in Azure Functions Service Bus Trigger. The impact (and work around) was choosing containers over Functions. The Acceptance Criteria is for Azure Functions to support Service Bus sessions with batch and non-batch processing for all Azure Functions GA languages.
+Customer scenario was to receive a total of 250 messages per second from 50 producers with requirement for ordering & minimum latency, using a Service Bus topic with sessions enabled for ordering. According to [Microsoft documentation](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements#prefetching-and-receivebatch), batch receiving is recommended for better performance but this is not currently supported in Azure Functions Service Bus Trigger. The impact (and work around) was choosing containers over Functions. The Acceptance Criteria is for Azure Functions to support Service Bus sessions with batch and non-batch processing for all Azure Functions GA languages.
 
 > This feedback was [created as a feedback](https://github.com/Azure/azure-functions-servicebus-extension/issues/15) with the Azure Functions product group and also followed up internally until addressed.
 

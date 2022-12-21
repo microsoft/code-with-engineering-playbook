@@ -15,7 +15,7 @@ Produces the information required to observe series of correlated operations in 
 
 ## Recommended Tools
 
-- [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) - Umbrella of services including system metrics, log analytics and more.
+- [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/overview) - Umbrella of services including system metrics, log analytics and more.
 - [Jaeger Tracing](https://www.jaegertracing.io) - Open source, end-to-end distributed tracing.
 - [Grafana](https://grafana.com) - Open source dashboard & visualization tool. Supports Log, Metrics and Distributed tracing data sources.
 

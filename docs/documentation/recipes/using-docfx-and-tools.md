@@ -12,7 +12,7 @@ This document is followed best by cloning the sample from <https://github.com/mt
 >
 > If you want a really quick start using Azure DevOps and Azure App Service without reading the what and how, follow these steps:
 >
-> 1. **Azure DevOps:** If you don't have it yet, create a project in Azure DevOps and [create a Service Connection to your Azure environment](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops). Clone the repository.
+> 1. **Azure DevOps:** If you don't have it yet, create a project in Azure DevOps and [create a Service Connection to your Azure environment](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops). Clone the repository.
 > 2. **QuickStart folder:** Copy the contents of the QuickStart folder in there repository that can be found on  <https://github.com/mtirionMSFT/DocFxQuickStart> to the root of the repository.
 > 3. **Azure:** Create a resource group in your Azure environment where the documentation website resources should be created.
 > 4. **Create Azure resources:** Fill in the default values in *infrastructure/variables.tf* and run the commands from [Step 3 - Deploy Azure resources from your local machine](deploy-docfx-azure-website.md#3-Running-the-commands-locally) to create the Azure Resources.
@@ -68,7 +68,7 @@ The contents of the **.pipelines** and **infrastructure** folders are explained 
 
 DocFx can generate reference documentation from code, where C# and Typescript are supported best at the moment. In the QuickStart folder we only used C# projects. For DocFx to generate quality reference documentation, quality triple slash-comments are required. See [Triple-slash (///) Code Comments Support](https://dotnet.github.io/docfx/spec/triple_slash_comments_spec.html). To enforce this, it's a good idea to enforce the use of [StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers). There are a few steps that will give you an easy start with this.
 
-First, you can use the **Directory.Build.props** file in the **/src** folder in combination with the files in the **build/dotnet** folder. By having this, you enforce StyleCop in all Visual Studio project files in it's sub folders with a configuration of which rules should be used or ignored. You can tailor this to your needs of course. For more information, see [Customize your build](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019) and [Use rule sets to group code analysis rules](https://docs.microsoft.com/en-us/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules?view=vs-2019).
+First, you can use the **Directory.Build.props** file in the **/src** folder in combination with the files in the **build/dotnet** folder. By having this, you enforce StyleCop in all Visual Studio project files in it's sub folders with a configuration of which rules should be used or ignored. You can tailor this to your needs of course. For more information, see [Customize your build](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019) and [Use rule sets to group code analysis rules](https://learn.microsoft.com/en-us/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules?view=vs-2019).
 
 To make sure developers are forced to add the triple-slash comments by throwing compiler errors and to have the proper settings for the generation of documentation XML-files, add the **TreatWarningsAsErrors** and **GenerateDocumentationFile** settings to every *.csproj* file. You can add that in the first *PropertyGroup* settings like this:
 
@@ -141,7 +141,7 @@ Below is a good configuration to start with, where documentation is in the **/do
         },
         "markdownEngineName": "markdig",
         "dest": "_site",
-        "xrefService": ["https://xref.docs.microsoft.com/query?uid={uid}"]
+        "xrefService": ["https://xref.learn.microsoft.com/query?uid={uid}"]
     }
 }
 ```

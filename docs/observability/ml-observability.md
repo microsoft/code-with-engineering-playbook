@@ -18,13 +18,13 @@ There are many model metric evaluation solutions available, both open source (li
 [Azure Machine Learning Service SDK](https://ml.azure.com/)
 Azure Machine Learning service provides an SDK for Python, R and C# to capture your evaluation metrics to an Azure Machine Learning service (AML) Experiment. Experiments are viewed in the AML dashboard. Reproducibility is achieved by storing code or notebook snapshot together with viewed metric. You can create versioned Datasets within Azure Machine Learning service.
 
-[MLFlow (for Databricks)](https://docs.microsoft.com/en-us/azure/databricks/applications/mlflow/)
+[MLFlow (for Databricks)](https://learn.microsoft.com/en-us/azure/databricks/applications/mlflow/)
 MLFlow is open source framework, and can be hosted on Azure Databricks as its remote tracking server (it currently is the only solution that offers first-party integration with Databricks). You can use the MLFlow SDK tracking component to capture your evaluation metrics or any parameter you would like and track it at experimentation board in Azure Databricks. Source code and dataset version are also saved with log snapshot to provide reproducibility.
 
 [TensorBoard](https://www.tensorflow.org/tensorboard/)
 TensorBoard is a popular tool amongst data scientist to visualize specific metrics of Deep Learning runs, especially of TensorFlow runs. TensorBoard is not an MLOps tool like AML/MLFlow, and therefore does not offer extensive logging capabilities. It is meant to be transient; and can therefore be used as an addition to an end-to-end MLOps tool like AML, but not as a complete MLOps tool.
 
-[Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
+[Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
 Application Insights can be used as an alternative sink to capture model metrics, and can therefore offer more extensive options as metrics can be transferred to e.g. a PowerBI dashboard. It also enables log querying. However, this solution means that a custom application needs to be written to send logs to AppInsights (using for example the OpenCensus Python SDK), which would mean extra effort of creating/maintaining custom code.
 
 An extensive comparison of the four tools can be found as follows:
@@ -50,7 +50,7 @@ When re-training with AML Pipelines you can monitor information of each run, inc
 ## Model performance over time: data drift
 
 We re-train machine learning models to improve their performance and make models better aligned with data changing over time. However, in some cases model performance may degrade. This may happen in case data change dramatically and do not exhibit the patterns we observed during model development anymore. This effect is called data drift. Azure Machine Learning Service has preview feature to observe and report data drift.
-This [article](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets) describes it in detail.
+This [article](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets) describes it in detail.
 
 ## Data versioning
 

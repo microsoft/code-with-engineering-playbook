@@ -4,7 +4,7 @@ Accessibility is a critical component of any successful project and ensures the 
 
 ## Getting Started
 
-If you are new to accessibility or are looking for an overview of accessibility fundamentals, Microsoft Learn offers a great training course that covers a broad range of topics from creating accessible content in Office to designing accessibility features in your own apps. You can learn more about the course or get started at [Microsoft Learn: Accessibility Fundamentals](https://docs.microsoft.com/en-us/learn/paths/accessibility-fundamentals/).
+If you are new to accessibility or are looking for an overview of accessibility fundamentals, Microsoft Learn offers a great training course that covers a broad range of topics from creating accessible content in Office to designing accessibility features in your own apps. You can learn more about the course or get started at [Microsoft Learn: Accessibility Fundamentals](https://learn.microsoft.com/en-us/learn/paths/accessibility-fundamentals/).
 
 ## Accessibility Insights
 

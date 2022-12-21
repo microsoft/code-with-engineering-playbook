@@ -97,9 +97,9 @@ After a retrospective, every action that requires work should be tracked with it
 
 ## Related information
 
-- [Best practices for Agile project management - Azure Boards | Microsoft Docs](https://docs.microsoft.com/azure/devops/boards/best-practices-agile-project-management?view=azure-devops&tabs=agile-process).
-- [Define features and epics, organize backlog items - Azure Boards | Microsoft Docs](https://docs.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&tabs=scrum-process).
-- [Create your product backlog - Azure Boards | Microsoft Docs](https://docs.microsoft.com/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops&tabs=agile-process).
-- [Add tasks to support sprint planning - Azure Boards | Microsoft Docs](https://docs.microsoft.com/azure/devops/boards/sprints/add-tasks?view=azure-devops).
-- [Define, capture, triage, and manage bugs or code defects - Azure Boards | Microsoft Docs](https://docs.microsoft.com/azure/devops/boards/backlogs/manage-bugs?view=azure-devops).
-- [Add and manage issues or impediments - Azure Boards | Microsoft Docs](https://docs.microsoft.com/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops).
+- [Best practices for Agile project management - Azure Boards | Microsoft Docs](https://learn.microsoft.com/azure/devops/boards/best-practices-agile-project-management?view=azure-devops&tabs=agile-process).
+- [Define features and epics, organize backlog items - Azure Boards | Microsoft Docs](https://learn.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&tabs=scrum-process).
+- [Create your product backlog - Azure Boards | Microsoft Docs](https://learn.microsoft.com/azure/devops/boards/backlogs/create-your-backlog?view=azure-devops&tabs=agile-process).
+- [Add tasks to support sprint planning - Azure Boards | Microsoft Docs](https://learn.microsoft.com/azure/devops/boards/sprints/add-tasks?view=azure-devops).
+- [Define, capture, triage, and manage bugs or code defects - Azure Boards | Microsoft Docs](https://learn.microsoft.com/azure/devops/boards/backlogs/manage-bugs?view=azure-devops).
+- [Add and manage issues or impediments - Azure Boards | Microsoft Docs](https://learn.microsoft.com/azure/devops/boards/backlogs/manage-issues-impediments?view=azure-devops).

@@ -15,7 +15,7 @@ neeeded.
 
 ### Azure Diagnostic Logs
 
-[Azure Diagnostic Logging](https://docs.microsoft.com/en-us/azure/databricks/administration-guide/account-settings/azure-diagnostic-logs) is provided out-of-the-box by Azure Databricks, providing
+[Azure Diagnostic Logging](https://learn.microsoft.com/en-us/azure/databricks/administration-guide/account-settings/azure-diagnostic-logs) is provided out-of-the-box by Azure Databricks, providing
 visibility into actions performed against DBFS, Clusters, Accounts, Jobs, Notebooks, SSH, Workspace,
 Secrets, SQL Permissions, and Instance Pools.
 
@@ -27,13 +27,13 @@ These logs are enabled using Azure Portal or CLI and can be configured to be del
 
 ### Cluster Event Logs
 
-[Cluster Event logs](https://docs.microsoft.com/en-us/azure/databricks/clusters/configure#cluster-log-delivery) provide a quick overview into important Cluster lifecycle events. The
+[Cluster Event logs](https://learn.microsoft.com/en-us/azure/databricks/clusters/configure#cluster-log-delivery) provide a quick overview into important Cluster lifecycle events. The
 log are structured - Timestamp, Event Type and Details. Unfortunately, there is no native way to export
-logs to Log Analytics. Logs will have to be delivered to Log Analytics either using [REST API](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/examples#cluster-log-example) or polled in the dbfs using Azure Functions.
+logs to Log Analytics. Logs will have to be delivered to Log Analytics either using [REST API](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/examples#cluster-log-example) or polled in the dbfs using Azure Functions.
 
 ### VM Performance Metrics (OMS)
 
-[Log Analytics Agent](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-linux) provides insights into the performance counters from the Cluster VMs and helps to understand the
+[Log Analytics Agent](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/oms-linux) provides insights into the performance counters from the Cluster VMs and helps to understand the
 Cluster Utilization patters. Leveraging Linux OMX Agent to onboard VMs into Log Analytics, helps
 provide insights into the VM metrics, performance, inventory and syslog metrics. It is important to
 note that Linux OMS Agent is not specific to Azure Databricks.
@@ -49,11 +49,11 @@ dashboard.
 
 ### Logs via REST API
 
-Azure Databricks also provides [REST API](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/) support. If there's any specific log data that is required, this data can be collected using the REST API calls.
+Azure Databricks also provides [REST API](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/) support. If there's any specific log data that is required, this data can be collected using the REST API calls.
 
 ### NSG Flow Logs
 
-[Network security group (NSG) flow logs](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview) is a feature of Azure Network Watcher that allows you to log
+[Network security group (NSG) flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview) is a feature of Azure Network Watcher that allows you to log
 information about IP traffic flowing through an NSG. Flow data is sent to Azure Storage accounts from
 where you can access it as well as export it to any visualization tool, SIEM, or IDS of your choice.
 This log information is not specific to NSG Flow logs. This data can be used to identify unknown or
