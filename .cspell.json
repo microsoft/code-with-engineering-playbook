@@ -10,7 +10,8 @@
     "**/.devcontainer/**",
     "**/.github/workflows/**",
     "**/.github/reviewers.yml",
-    "**/.gitignore"
+    "**/.gitignore",
+    "**/.mega-linter.yml"
   ],
   "language": "en",
   "noConfigSearch": true,
