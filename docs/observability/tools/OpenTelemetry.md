@@ -136,7 +136,7 @@ to the collector web server. Using mocking servers libraries (eg. MockServer or 
 
 * [OpenTelemetry Java SDK](https://github.com/open-telemetry/opentelemetry-java)
 
-* [Manual Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/manual-instrumentation.md)
+* [Manual Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation#manually-instrumenting)
 
 * [OpenTelemetry Instrumentation Agent for Java](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
 
