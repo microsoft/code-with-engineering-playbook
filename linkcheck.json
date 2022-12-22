@@ -16,5 +16,5 @@
     "https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models",
     "https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf"
   ],
-  "only_errors": false
+  "only_errors": true
 }
