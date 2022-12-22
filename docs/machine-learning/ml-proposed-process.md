@@ -37,7 +37,7 @@ The proposed ML development process consists of:
 
 ### Version control
 
-* During all stages of the process, it is suggested that artifacts should be version-controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more [here](ml-experimentation.md#source-control-and-folderpackage-structure).
+* During all stages of the process, it is suggested that artifacts should be version-controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more [here](ml-experimentation.md#source-control-and-folder-or-package-structure).
 
 ### Understanding the problem
 

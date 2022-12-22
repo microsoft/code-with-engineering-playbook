@@ -2,6 +2,8 @@
   "exclude_links": [
     "http://link-to-feature-or-story-work-item",
     "http://link-to-work-item",
+    "./link-to-the-work-item",
+    "http://link-to-story-work-item ",
     "ftp://ftp.software.ibm.com/software/rational/info/do-more/RAW14109USEN.pdf",
     "http://link-to-task-work-item",
     "https://fast.design",
@@ -9,7 +11,11 @@
     "https://www.linkedin.com/pulse/mind-technical-program-manager-nikhil-sachdeva/",
     "http://www.techoism.com/how-to-install-git-bash-on-windows/",
     "https://plainenglish.co.uk/how-to-write-in-plain-english.html",
-    "https://www.softwaretestinghelp.com/what-is-integration-testing/"
+    "https://www.softwaretestinghelp.com/what-is-integration-testing/",
+    "https://blog.cloudflare.com/cloudflare-outage/",
+    "https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models",
+    "https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf",
+    ""
   ],
   "only_errors": true
 }
