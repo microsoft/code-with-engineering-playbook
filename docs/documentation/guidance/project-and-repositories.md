@@ -54,7 +54,7 @@ Some sections in the documentation of the repository might point to the projectâ
 - [Project Design](../../design/design-reviews/README.md)
   - [High Level / Game Plan](../../design/design-reviews/recipes/high-level-design-recipe.md)
   - [Milestone / Epic Design Review](../../design/design-reviews/recipes/milestone-epic-design-review-recipe.md)
-- [Design Review Templates](../../design/design-reviews/README.md#design-review-templates)
+- [Design Review Recipes](../../design/design-reviews/README.md#Recipes)
   - [Milestone / Epic Design Review Template](../../design/design-reviews/recipes/milestone-epic-design-review-template.md)
   - [Feature / Story Design Review Template](../../design/design-reviews/recipes/feature-story-design-review-template.md)
   - [Task Design Review Template](../../design/design-reviews/recipes/task-design-review-template.md)

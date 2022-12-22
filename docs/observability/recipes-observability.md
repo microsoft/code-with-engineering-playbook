@@ -12,10 +12,6 @@
 
 [GitHub Repo](https://github.com/iamnicoj/OpenTelemetry-Async-Java-with-Jaeger-Prometheus-AzMonitor)
 
-## Example: IoT Edge Distributed Tracing sample
-
-[GitHub Repo](https://github.com/eedorenko/iotedge-logging-and-monitoring-solution/tree/eedorenko/dist-tracing/DistributedTracing)
-
 ## Example: Setup Azure Monitor dashboards and alerts with Terraform
 
 [GitHub Repo](https://github.com/buzzfrog/azure-alert-dashboard-terraform)

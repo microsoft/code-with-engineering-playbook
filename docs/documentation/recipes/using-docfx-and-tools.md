@@ -15,7 +15,7 @@ This document is followed best by cloning the sample from <https://github.com/mt
 > 1. **Azure DevOps:** If you don't have it yet, create a project in Azure DevOps and [create a Service Connection to your Azure environment](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops). Clone the repository.
 > 2. **QuickStart folder:** Copy the contents of the QuickStart folder in there repository that can be found on  <https://github.com/mtirionMSFT/DocFxQuickStart> to the root of the repository.
 > 3. **Azure:** Create a resource group in your Azure environment where the documentation website resources should be created.
-> 4. **Create Azure resources:** Fill in the default values in *infrastructure/variables.tf* and run the commands from [Step 3 - Deploy Azure resources from your local machine](deploy-docfx-azure-website.md#3-Running-the-commands-locally) to create the Azure Resources.
+> 4. **Create Azure resources:** Fill in the default values in *infrastructure/variables.tf* and run the commands from [Step 3 - Deploy Azure resources from your local machine](deploy-docfx-azure-website.md#3-deploy-azure-resources-from-your-local-machine) to create the Azure Resources.
 > 5. **Pipeline:** Fill in the variables in *.pipelines/documentation.yml*, commit the changes and push the contents of the repository to your branch (possibly through a PR).
 >    Now you can create a pipeline in your Azure DevOps project that uses the *.pipelines/documentation.yml* and run it.
 >
