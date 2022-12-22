@@ -1,6 +1,7 @@
 # Configuration file for MegaLinter
 # See all available variables at https://oxsecurity.github.io/megalinter/configuration/ and in linters documentation
-
+PLUGINS:
+  - https://raw.githubusercontent.com/shiranr/linkcheck/main/mega-linter-plugin-linkcheck/linkcheck.megalinter-descriptor.yml
 APPLY_FIXES: all # all, none, or list of linter keys
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
 ENABLE_LINTERS:
@@ -22,5 +23,4 @@ VALIDATE_ALL_CODEBASE: true
 LOG_LEVEL: DEBUG
 MARKDOWN_MARKDOWN_LINK_CHECK_ARGUMENTS: "-q"
 # DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
-PLUGINS:
-  - https://raw.githubusercontent.com/shiranr/linkcheck/main/mega-linter-plugin-linkcheck/linkcheck.megalinter-descriptor.yml
+
