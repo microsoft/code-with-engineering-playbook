@@ -4777,12 +4777,20 @@
             
           
         
+          
+        
+          
+        
       
       
         
         
         <div class="md-nav__link md-nav__link--index md-nav__link--active">
           <a href="./">Sustainability</a>
+          
+            <label for="__nav_11_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
@@ -4793,6 +4801,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sustainable-action-disclaimers/" class="md-nav__link">
+        Disclaimers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sustainable-engineering-principles/" class="md-nav__link">
+        Sustainable Principles
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -6996,90 +7032,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sustainability-in-the-engineering-process" class="md-nav__link">
-    Sustainability in the Engineering process
+  <a href="#goal" class="md-nav__link">
+    Goal
   </a>
-  
-    <nav class="md-nav" aria-label="Sustainability in the Engineering process">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#business-strategy" class="md-nav__link">
-    Business Strategy
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#architecture-design" class="md-nav__link">
-    Architecture Design
-  </a>
-  
-    <nav class="md-nav" aria-label="Architecture Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#platform-vs-infratructure-services" class="md-nav__link">
-    Platform  vs. Infratructure services
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#use-of-virtual-machines" class="md-nav__link">
-    Use of Virtual Machines
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-storage" class="md-nav__link">
-    Data Storage
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#payload" class="md-nav__link">
-    Payload
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#observability" class="md-nav__link">
-    Observability
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cicd-pipelines" class="md-nav__link">
-    CI/CD Pipelines
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#developer-environment" class="md-nav__link">
-    Developer environment
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#guidelines" class="md-nav__link">
-    Guidelines
+  <a href="#sustainable-engineering-checklist" class="md-nav__link">
+    Sustainable Engineering Checklist
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
   </a>
   
 </li>
@@ -7094,13 +7062,6 @@
         <li class="md-nav__item">
   <a href="#projects" class="md-nav__link">
     Projects
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-resources" class="md-nav__link">
-    Other resources
   </a>
   
 </li>
@@ -7120,57 +7081,211 @@
 
 
 <h1 id="sustainable-software-engineering">Sustainable Software Engineering</h1>
-<p>The choices made throughout the engineering process regarding cloud services, software architecture
-design and automation can have a big impact on the carbon footprint of a solution. We can opt for the use of a shared service, which has less Carbon footprint compared to deployed and dedicated VMs in the same region which - depending on the projected load - could potentially could run well below capacity for longer periods of time.  </p>
-<h2 id="sustainability-in-the-engineering-process">Sustainability in the Engineering process</h2>
-<h3 id="business-strategy">Business Strategy</h3>
-<p>Several companies have a strategy and goals to reduce their carbon footprint. During the Envisioning phase of a Software
-Engineering project, aligning with the sustainability strategy of the company and gathering information on the guidelines and implications could prove beneficial for the environment and useful for the project.</p>
-<h3 id="architecture-design">Architecture Design</h3>
-<p>During the <a href="../">design</a> phase, choices on the type of infrastructure and services can have a big impact on the
-carbon footprint of the solution.</p>
-<h4 id="platform-vs-infratructure-services">Platform  vs. Infratructure services</h4>
-<p>Opting for platform or shared services does not only reduce the overall and maintenance cost, it also pushes capacity
-planning to the responsibilities of the provider and has benefits regarding optimal use of resources.</p>
-<h4 id="use-of-virtual-machines">Use of Virtual Machines</h4>
-<p>If VMs within a protected network is a requirement, consider the ability to automate scaling up or down with the current
-or anticipated load.</p>
-<p>In some scenarios, Spot VMs could augment regular VMs to process production workloads. They utilize unused capacity in
-existing data center infrastructure and usually cost just a fraction of on-demand virtual machines. By taking advantage of existing infrastructure, leveraging Spot VMs reduces the the need for more hardware to run in data centers and ultimately reduces future energy consumption.</p>
-<h4 id="data-storage">Data Storage</h4>
-<p>Consider what performance for data access is required, i.e. having different storage layers for fast and slower access.</p>
-<p>Avoid duplication of data if possible and feasible.</p>
-<h4 id="payload">Payload</h4>
-<p>Compression of payload data can reduce the load on network layers.</p>
-<h3 id="observability">Observability</h3>
-<p><a href="../../observability">Observability</a> can surface information on load and capacity of the system. If not already supported by
-the chosen services, consider to automate scaling down when resources are idle.</p>
-<h3 id="cicd-pipelines">CI/CD Pipelines</h3>
-<p><a href="../../continuous-integration">CI/CD pipelines</a> offer the capability to re-create an environment from scratch, and to
-deprovision the whole infrastructure if it is not in-use. Load test or staging environments are often not in use during
-the development cycle and could be deprovisioned after testing.</p>
-<h3 id="developer-environment">Developer environment</h3>
-<p>Turn off idle developer VMs and consider leveraging Spot VMs for non-production workloads.</p>
-<h2 id="guidelines">Guidelines</h2>
+<p>The choices made throughout the engineering process regarding cloud services, software architecture design and automation can have a big impact on the carbon footprint of a solution.
+Some choices are always beneficial, like turning off unused resources.
+Other choices require a more nuanced understanding of the business case at hand and its potential carbon impact.</p>
+<h2 id="goal">Goal</h2>
+<p>One goal of this section is to provide tangible guidance for what sustainable actions you can apply in certain situations and the tools to be able to implement those recommendations.
+Another goal is to highlight the many resources available to learn about the wider domain of sustainable software.</p>
+<h2 id="sustainable-engineering-checklist">Sustainable Engineering Checklist</h2>
+<p>This checklist should be used to quickly identify scenarios for which common sustainable actions exist.
+Check the box if the scenario applies to your project, then go through the actions and tools you can use to build more sustainable software for those cases.
+If there are important nuances to consider, they will be linked in the <code>Disclaimers</code> section.</p>
+<blockquote>
+<p>For readability some considerations are blank, indicating that the action applies to the first consideration above it.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Consideration</th>
+<th>Action</th>
+<th>Principle</th>
+<th>Tools</th>
+<th>Disclaimers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>For any running software/services</td>
+<td>Shutdown unused resources.</td>
+<td><a href="sustainable-engineering-principles/#electricity-consumption">Electricity Consumption</a></td>
+<td><a href="https://devblogs.microsoft.com/scripting/use-powershell-to-identify-unassociated-azure-resources/">Identify Unassociated Resources</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Resize physical or virtual machines to improve utilization.</td>
+<td><a href="sustainable-engineering-principles/#energy-proportionality">Energy Proportionality</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations">Azure Advisor Cost Recommendations</a></td>
+<td><a href="sustainable-action-disclaimers/#action-resize-physical-or-virtual-machines-to-improve-utilization">Understanding Advisor Recommendations</a></td>
+</tr>
+<tr>
+<td></td>
+<td>For development and testing VMs</td>
+<td>Configure VMs to shutdown during off-hours</td>
+<td><a href="sustainable-engineering-principles/#electricity-consumption">Electricity Consumption</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/automation/automation-solution-vm-management-config">Start/Stop VMs during off-hours</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>For VMs with attached volumes</td>
+<td>Limit the amount of attached storage capacity to what you expect to use and expand as necessary</td>
+<td><a href="sustainable-engineering-principles/#electricity-consumption">Electricity Consumption</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/expand-unmanaged-disks">Expanding storage of active VMs</a></td>
+<td><a href="https://www.cloudcarbonfootprint.org/docs/methodology/#storage">Understanding the energy cost of storage</a></td>
+</tr>
+<tr>
+<td></td>
+<td>For systems using object storage (Azure Blob Storage, AWS S3, GCP Cloud Storage, etc)</td>
+<td>Compress infrequently accessed data</td>
+<td><a href="sustainable-engineering-principles/#electricity-consumption">Electricity Consumption</a>, <a href="sustainable-engineering-principles/#embodied-carbon">Embodied Carbon</a></td>
+<td><a href="https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-compress-and-extract-files">Compressing and extracting files in .NET</a></td>
+<td><a href="https://www.cloudcarbonfootprint.org/docs/methodology/#storage">Understanding the energy cost of storage</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Delete data when it is no longer needed</td>
+<td><a href="sustainable-engineering-principles/#electricity-consumption">Electricity Consumption</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-configure">Configuring a lifecycle management policy</a></td>
+<td><a href="https://www.cloudcarbonfootprint.org/docs/methodology/#storage">Understanding the energy cost of storage</a></td>
+</tr>
+<tr>
+<td></td>
+<td>For systems running in on-premise datacenters</td>
+<td>Migrate to hyperscale cloud provider</td>
+<td><a href="sustainable-engineering-principles/#embodied-carbon">Embodied Carbon</a>, <a href="sustainable-engineering-principles/#electricity-consumption">Electricity Consumption</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/adopt/">Cloud Adoption Approaches</a></td>
+<td><a href="sustainable-action-disclaimers/#action-migrate-to-a-hyperscale-cloud-provider">Carbon benefits of cloud computing</a></td>
+</tr>
+<tr>
+<td></td>
+<td>For systems migrating to a hyperscale cloud provider</td>
+<td>Consider physically shipping data to the provider</td>
+<td><a href="sustainable-engineering-principles/#networking">Networking</a></td>
+<td><a href="https://azure.microsoft.com/en-us/services/databox/">Azure Data Box</a></td>
+<td><a href="sustainable-action-disclaimers/#action-consider-physically-shipping-data-to-the-provider">Understanding data shipping tradeoffs</a></td>
+</tr>
+<tr>
+<td></td>
+<td>For <a href="https://docs.microsoft.com/en-us/azure/architecture/best-practices/background-jobs">time-flexible workloads</a></td>
+<td>Utilize "Spot VMs" for compute</td>
+<td><a href="sustainable-engineering-principles/#demand-shaping">Demand Shaping</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/spot-vms">How to use Spot VMs</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>For services with varied utilization patterns</td>
+<td>Configure Autoscaling</td>
+<td><a href="sustainable-engineering-principles/#energy-proportionality">Energy Proportionality</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling">Autoscaling Documentation</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Use serverless functions</td>
+<td><a href="sustainable-engineering-principles/#energy-proportionality">Energy Proportionality</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/architecture/serverless-quest/serverless-overview">Serverless Architecture Design</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>For services with geographically co-located users (EG internal employee apps)</td>
+<td>Select a datacenter region that is physicaly close to them</td>
+<td><a href="sustainable-engineering-principles/#networking">Networking</a></td>
+<td><a href="https://azure.microsoft.com/en-us/global-infrastructure/services/">Azure products available by region</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Consider running edge devices to reduce excessive data transfer</td>
+<td><a href="sustainable-engineering-principles/#networking">Networking</a></td>
+<td><a href="https://azure.microsoft.com/en-us/products/azure-stack/edge/">Azure Stack Edge</a></td>
+<td><a href="sustainable-action-disclaimers/#action-consider-running-an-edge-device">Understanding edge tradeoffs</a></td>
+</tr>
+<tr>
+<td></td>
+<td>For systems sending data over the network</td>
+<td>Use caching policies to keep data on the local machine</td>
+<td><a href="sustainable-engineering-principles/#networking">Networking</a></td>
+<td><a href="https://web.dev/http-cache/">HTTP caching APIs</a>, <a href="https://learn.microsoft.com/en-us/dotnet/framework/network-programming/cache-management-for-network-applications">Cache Management in .NET</a></td>
+<td><a href="sustainable-action-disclaimers/#action-use-caching-policies">Understanding caching tradeoffs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Consider caching data close to end users with a <a href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN</a></td>
+<td><a href="sustainable-engineering-principles/#networking">Networking</a></td>
+<td><a href="https://docs.microsoft.com/en-us/azure/frontdoor/front-door-overview#key-benefits">Benefits of a CDN</a></td>
+<td><a href="sustainable-action-disclaimers/#action-consider-caching-data-close-to-end-users-with-a-CDN">Understanding CDN tradeoffs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Send only the data that will be used</td>
+<td><a href="sustainable-engineering-principles/#networking">Networking</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Compress data to reduce the size</td>
+<td><a href="sustainable-engineering-principles/#networking">Networking</a></td>
+<td><a href="https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-compress-and-extract-files">Compressing and extracting files in .NET</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>When designing for the end user</td>
+<td>Consider giving users visibility and control over their energy usage</td>
+<td><a href="sustainable-engineering-principles/#electricity-consumption">Electricity Consumption</a> <a href="sustainable-engineering-principles/#demand-shaping">Demand Shaping</a></td>
+<td><a href="https://principles.green/principles/demand-shaping/#heading-eco-modes">Designing for eco-mode</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Design and test your application to be compatible for a wide variety of devices, especially older devices</td>
+<td><a href="sustainable-engineering-principles/#embodied-carbon">Embodied Carbon</a></td>
+<td><a href="https://medium.com/google-design/to-make-apps-accessible-make-them-compatible-with-different-devices-11298c6d3f06">Extending device lifespan</a> <a href="https://www.techdim.com/what-is-compatibility-testing/">Compatibility Testing</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>When selecting a programming language</td>
+<td>Consider the energy efficiency of languages</td>
+<td><a href="sustainable-engineering-principles/#electricity-consumption">Electricity Consumption</a></td>
+<td><a href="https://thenewstack.io/which-programming-languages-use-the-least-electricity/">Reasoning about the energy consumption of programming languages</a>, <a href="https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf">Programming Language Energy Efficiency [PDF]</a></td>
+<td><a href="sustainable-action-disclaimers/#action-consider-the-energy-efficiency-of-languages">Making informed progamming language choices</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://principles.green/">Principles of Green Software Engineering</a></li>
+<li><a href="https://greensoftware.foundation/">Green Software Foundation</a></li>
 <li><a href="https://www.microsoft.com/en-us/sustainability">Microsoft Cloud for Sustainability</a></li>
 <li><a href="https://learn.microsoft.com/en-us/learn/modules/sustainable-software-engineering-overview/">Learning Module: Sustainable Software
 Engineering</a></li>
 </ul>
 <h2 id="tools">Tools</h2>
 <ul>
+<li><a href="https://github.com/Green-Software-Foundation/carbon-aware-sdk">Carbon-Aware SDK</a></li>
+<li><a href="https://github.com/Green-Software-Foundation/awesome-green-software">"Awesome List" of Green Software</a></li>
 <li><a href="https://appsource.microsoft.com/en-us/product/power-bi/coi-sustainability.emissions_impact_dashboard">Emissions Impact</a></li>
 <li><a href="https://carbon-aware-api.azurewebsites.net/swagger/index.html">Azure GreenAI Carbon-Intensity API</a></li>
 </ul>
 <h2 id="projects">Projects</h2>
 <ul>
-<li><a href="https://github.com/Energinet-DataHub/green-energy-hub">Green Energy Hub (Energinet)</a></li>
 <li><a href="https://github.com/hybridflux/SparkOnSpot">Sustainability through SpotVMs</a></li>
-</ul>
-<h2 id="other-resources">Other resources</h2>
-<ul>
-<li><a href="https://github.com/Green-Software-Foundation/awesome-green-software">Green Software</a></li>
 </ul>
 
   <hr>
@@ -7178,7 +7293,7 @@ Engineering</a></li>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 24, 2022</span>
       
     
   </small>
@@ -7212,13 +7327,13 @@ Engineering</a></li>
       
       
         
-        <a href="../../developer-experience/" class="md-footer__link md-footer__link--next" aria-label="Next: Developer Experience (DevEx)" rel="next">
+        <a href="sustainable-action-disclaimers/" class="md-footer__link md-footer__link--next" aria-label="Next: Disclaimers" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Developer Experience (DevEx)
+              Disclaimers
             </div>
           </div>
           <div class="md-footer__button md-icon">
