@@ -29,7 +29,8 @@
     "https://github.com/username/repo-name",
     "https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/",
     "https://www.perfecto.io/",
-    "https://learn.microsoft.com/something/somethingelse"
+    "https://learn.microsoft.com/something/somethingelse",
+    "https://thenewstack.io/which-programming-languages-use-the-least-electricity/"
   ],
   "only_errors": true
 }
