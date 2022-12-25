@@ -1,5 +1,8 @@
 {
   "exclude_links": [
+    "http://127.0.0.1:10000/",
+    "http://127.0.0.1:10001/",
+    "http://127.0.0.1:10000/devstoreaccount1/",
     "http://link-to-feature-or-story-work-item",
     "http://link-to-work-item",
     "./link-to-the-work-item",
@@ -15,7 +18,8 @@
     "https://blog.cloudflare.com/cloudflare-outage/",
     "https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models",
     "https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf",
-    "https://opensource.org/licenses/MIT"
+    "https://opensource.org/licenses/MIT",
+    "https://datasciencevademecum.com/2015/11/10/agile-data-science-iteration-0-the-hypothesis-driven-analysis"
   ],
   "only_errors": true
 }
