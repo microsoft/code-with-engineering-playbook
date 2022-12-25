@@ -28,7 +28,8 @@
     "https://pkg-containers.githubusercontent.com/",
     "https://github.com/username/repo-name",
     "https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/",
-    "https://www.perfecto.io/"
+    "https://www.perfecto.io/",
+    "https://learn.microsoft.com/something/somethingelse"
   ],
   "only_errors": true
 }
