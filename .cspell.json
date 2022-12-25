@@ -79,6 +79,7 @@
     "HIPPA",
     "HLQV",
     "Homomorphic",
+    "hyperscale",
     "INFOSEC",
     "IPYNB",
     "Idempotency",
@@ -446,7 +447,8 @@
     "Bitnami",
     "Kubeseal",
     "KSOPS",
-    "OTLP"
+    "OTLP",
+    "Quic"
   ],
   "version": "0.2"
 }
