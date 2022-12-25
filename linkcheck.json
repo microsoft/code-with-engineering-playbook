@@ -16,7 +16,7 @@
     "https://www.linkedin.com/pulse",
     "https://xref.learn.microsoft.com/query?uid=",
     "http://www.techoism.com/how-to-install-git-bash-on-windows/",
-    "https://github.com/koalaman/shellcheck/releases/download/${scversion?}",
+    "https://github.com/koalaman/shellcheck/releases/",
     "https://plainenglish.co.uk/how-to-write-in-plain-english.html",
     "https://github.com/wata727/tflint",
     "https://www.softwaretestinghelp.com/what-is-integration-testing/",
@@ -26,7 +26,9 @@
     "https://opensource.org/licenses/MIT",
     "https://datasciencevademecum.com/2015/11/10/agile-data-science-iteration-0-the-hypothesis-driven-analysis",
     "https://pkg-containers.githubusercontent.com/",
-    "https://github.com/username/repo-name"
+    "https://github.com/username/repo-name",
+    "https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/",
+    "https://www.perfecto.io/"
   ],
   "only_errors": true
 }
