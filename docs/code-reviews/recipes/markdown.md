@@ -99,7 +99,8 @@ The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemNa
 
 ### Linting
 
-To automate linting with `markdownlint` for PR [validation in GitHub actions](https://github.com/microsoft/code-with-engineering-playbook/blob/master/.github/workflows/markdownlint.yml) as we do in this repo, use the following YAML.
+To automate linting with `markdownlint` for PR validation in GitHub actions,
+you can either use linters aggregator as we do with [MegaLinter in this repository](../../../.github/workflows/mega-linter.yml) or use the following YAML.
 
 ```yaml
 name: Markdownlint
@@ -186,7 +187,7 @@ Save your guidelines together with your documentation, so they are easy to refer
 
 - Avoid duplication of content, instead link to the `single source of truth`
 - Link but don't summarize. Summarizing content on another page leads to the content living in two places
-- Use meaningful anchor texts, e.g. instead of writing `Follow the instructions [here](../recipes/Markdown.md)` write `Follow the [Markdown guidelines](../recipes/Markdown.md)`
+- Use meaningful anchor texts, e.g. instead of writing `Follow the instructions [here](../recipes/markdown.md)` write `Follow the [Markdown guidelines](../recipes/markdown.md)`
 - Make sure links to Microsoft docs (like `https://learn.microsoft.com/something/somethingelse`) do not contain the language marker `/en-us/` or `/fr-fr/`, as this is automatically determined by the site itself.
 
 ### Lists

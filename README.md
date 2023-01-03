@@ -51,7 +51,7 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 * [Code Reviews](docs/code-reviews/README.md)
 * [Continuous Delivery (CD)](docs/continuous-delivery/README.md)
 * [Continuous Integration (CI)](docs/continuous-integration/README.md)
-* [Design](docs/design/README.md)
+* [Design](docs/design/readme.md)
 * [Developer Experience](docs/developer-experience/README.md)
 * [Documentation](docs/documentation/README.md)
 * [Engineering Feedback](docs/engineering-feedback/README.md)

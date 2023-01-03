@@ -8,4 +8,4 @@ When we create [Pull Requests](../../code-reviews/pull-requests.md), we must ens
 - Linked worked items
 - Comments
   - As an author, [address all comments](../../code-reviews/process-guidance/author-guidance.md#be-open-to-receive-feedback)
-  - As a reviewer, [make comments clear](../../code-reviews/process-guidance/reviewer-guidance.md#make-comments-clear)
+  - As a reviewer, [make comments clear](../../code-reviews/process-guidance/reviewer-guidance.md)
