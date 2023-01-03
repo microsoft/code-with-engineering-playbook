@@ -98,7 +98,7 @@ git config --global core.editor "code --wait"
 
 References:
 
-* [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+* [How to Write a Git Commit Message](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
 * [A Note About Git Commit Messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 * [On commit messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
 * [Information in commit messages](https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages)
@@ -108,7 +108,7 @@ References:
 
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
 * [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
-* [CSE Git details](git-guidance/README.md) details on how to use Git as part of a [CSE](../CSE.md) project.
+* [CSE Git details](git-guidance/README.md)details on how to use Git as part of a [CSE](../CSE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 * [How Git Works Pluralsight course](https://www.pluralsight.com/courses/how-git-works)
 * [Mastering Git Pluralsight course](https://www.pluralsight.com/courses/master-git)

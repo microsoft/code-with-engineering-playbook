@@ -1,6 +1,6 @@
 # Disclaimers
 
-The following disclaimers provide more details about how to consider the impact of particular actions recommended by the [Sustainable Engineering Checklist](./README.md#sustainabile-engineering-checklist).
+The following disclaimers provide more details about how to consider the impact of particular actions recommended by the [Sustainable Engineering Checklist](readme.md#sustainable-engineering-checklist).
 
 ## ACTION: Resize physical or virtual machines to improve utilization
 
@@ -12,7 +12,7 @@ The sustainable impact of changing VM families can be harder to reason about bec
 
 ## ACTION: Migrate to a hyperscale cloud provider
 
-Carbon savings from hyperscale cloud providers are generally attributable to four key features: IT operational efficiency, IT equipment efficiency, datacenter infrastructure efficiency, and renewable electricity. Microsoft Cloud, for example, is between 22 and 93 percent more energy efficient than traditional enterprise datacenters, depending on the specific comparison being made. When taking into account renewable energy purchases, the Microsoft Cloud is between 72 and 98 percent more carbon efficient. [Source [PDF]](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
+Carbon savings from hyperscale cloud providers are generally attributable to four key features: IT operational efficiency, IT equipment efficiency, data center infrastructure efficiency, and renewable electricity. Microsoft Cloud, for example, is between 22 and 93 percent more energy efficient than traditional enterprise data centers, depending on the specific comparison being made. When taking into account renewable energy purchases, the Microsoft Cloud is between 72 and 98 percent more carbon efficient. [Source (PDF)](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)
 
 ## ACTION: Consider running an edge device
 
@@ -24,7 +24,7 @@ Shipping physical items has its own carbon impact, depending on the mode of tran
 
 ## ACTION: Consider the energy efficiency of languages
 
-When selecting a programming language, the _most_ energy efficient progamming language may not always be the best choice for development speed, maintenance, integration with dependent systems, and other project factors. But when deciding between languages that all meet the project needs, energy efficiency can be a helpful consideration.
+When selecting a programming language, the _most_ energy efficient programming language may not always be the best choice for development speed, maintenance, integration with dependent systems, and other project factors. But when deciding between languages that all meet the project needs, energy efficiency can be a helpful consideration.
 
 ## ACTION: Use caching policies
 
