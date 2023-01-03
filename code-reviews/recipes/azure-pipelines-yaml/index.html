@@ -3774,8 +3774,6 @@
       
         
           
-            
-          
         
           
         
@@ -3785,16 +3783,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3803,6 +3795,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4877,8 +4881,6 @@
       
         
           
-            
-          
         
           
         
@@ -4886,16 +4888,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4904,6 +4900,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7281,36 +7289,36 @@
 <ul>
 <li>
 <p>When we assign variable like below it won't set during initialize time, it'll assign during runtime, then we can retrieve some errors based on when template runs.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AzureWebApp@1</span><span class="w"></span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Deploy</span><span class="nv"> </span><span class="s">Azure</span><span class="nv"> </span><span class="s">Web</span><span class="nv"> </span><span class="s">App</span><span class="nv"> </span><span class="s">:</span><span class="nv"> </span><span class="s">$(webAppName)&#39;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">azureSubscription</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(azureServiceConnectionId)&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">appName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(webAppName)&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">package</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Pipeline.Workspace)/drop/Application$(Build.BuildId).zip</span><span class="w"></span>
-<span class="w">    </span><span class="nt">startUpCommand</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;gunicorn</span><span class="nv"> </span><span class="s">--bind=0.0.0.0</span><span class="nv"> </span><span class="s">--workers=4</span><span class="nv"> </span><span class="s">app:app&#39;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AzureWebApp@1</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Deploy</span><span class="nv"> </span><span class="s">Azure</span><span class="nv"> </span><span class="s">Web</span><span class="nv"> </span><span class="s">App</span><span class="nv"> </span><span class="s">:</span><span class="nv"> </span><span class="s">$(webAppName)&#39;</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">azureSubscription</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(azureServiceConnectionId)&#39;</span>
+<span class="w">    </span><span class="nt">appName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(webAppName)&#39;</span>
+<span class="w">    </span><span class="nt">package</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Pipeline.Workspace)/drop/Application$(Build.BuildId).zip</span>
+<span class="w">    </span><span class="nt">startUpCommand</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;gunicorn</span><span class="nv"> </span><span class="s">--bind=0.0.0.0</span><span class="nv"> </span><span class="s">--workers=4</span><span class="nv"> </span><span class="s">app:app&#39;</span>
 </code></pre></div>
 <p>Error:</p>
 <p><img alt="authorization issue due to initialize time" src="../images/authorization_issue_due_to_initialize_time.png" /></p>
 <p>After passing these variables as parameter, it loads values properly.</p>
-<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">steps-deployment.yaml</span><span class="w"></span>
-<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">azureServiceConnectionId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ variables.azureServiceConnectionId  }}</span><span class="w"></span>
-<span class="w">      </span><span class="nt">webAppName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ variables.webAppName  }}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">steps-deployment.yaml</span>
+<span class="w">    </span><span class="nt">parameters</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">azureServiceConnectionId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ variables.azureServiceConnectionId  }}</span>
+<span class="w">      </span><span class="nt">webAppName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ variables.webAppName  }}</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AzureWebApp@1</span><span class="w"></span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Deploy</span><span class="nv"> </span><span class="s">Azure</span><span class="nv"> </span><span class="s">Web</span><span class="nv"> </span><span class="s">App</span><span class="nv"> </span><span class="s">:${{</span><span class="nv"> </span><span class="s">parameters.webAppName</span><span class="nv"> </span><span class="s">}}&#39;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">azureSubscription</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;${{</span><span class="nv"> </span><span class="s">parameters.azureServiceConnectionId</span><span class="nv"> </span><span class="s">}}&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">appName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;${{</span><span class="nv"> </span><span class="s">parameters.webAppName</span><span class="nv"> </span><span class="s">}}&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">package</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Pipeline.Workspace)/drop/Application$(Build.BuildId).zip</span><span class="w"></span>
-<span class="w">    </span><span class="nt">startUpCommand</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;gunicorn</span><span class="nv"> </span><span class="s">--bind=0.0.0.0</span><span class="nv"> </span><span class="s">--workers=4</span><span class="nv"> </span><span class="s">app:app&#39;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AzureWebApp@1</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Deploy</span><span class="nv"> </span><span class="s">Azure</span><span class="nv"> </span><span class="s">Web</span><span class="nv"> </span><span class="s">App</span><span class="nv"> </span><span class="s">:${{</span><span class="nv"> </span><span class="s">parameters.webAppName</span><span class="nv"> </span><span class="s">}}&#39;</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">azureSubscription</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;${{</span><span class="nv"> </span><span class="s">parameters.azureServiceConnectionId</span><span class="nv"> </span><span class="s">}}&#39;</span>
+<span class="w">    </span><span class="nt">appName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;${{</span><span class="nv"> </span><span class="s">parameters.webAppName</span><span class="nv"> </span><span class="s">}}&#39;</span>
+<span class="w">    </span><span class="nt">package</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(Pipeline.Workspace)/drop/Application$(Build.BuildId).zip</span>
+<span class="w">    </span><span class="nt">startUpCommand</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;gunicorn</span><span class="nv"> </span><span class="s">--bind=0.0.0.0</span><span class="nv"> </span><span class="s">--workers=4</span><span class="nv"> </span><span class="s">app:app&#39;</span>
 </code></pre></div>
 </li>
 </ul>
 <ul>
 <li>
 <p>Use <code>issecret</code> for printing secrets for debugging</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;##vso[task.setvariable variable=token;issecret=true]</span><span class="si">${</span><span class="nv">token</span><span class="si">}</span><span class="s2">&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;##vso[task.setvariable variable=token;issecret=true]</span><span class="si">${</span><span class="nv">token</span><span class="si">}</span><span class="s2">&quot;</span>
 </code></pre></div>
 </li>
 </ul>

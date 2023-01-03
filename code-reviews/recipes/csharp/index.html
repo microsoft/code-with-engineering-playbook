@@ -3774,8 +3774,6 @@
       
         
           
-            
-          
         
           
         
@@ -3785,16 +3783,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3803,6 +3795,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4877,8 +4881,6 @@
       
         
           
-            
-          
         
           
         
@@ -4886,16 +4888,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4904,6 +4900,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7226,28 +7234,28 @@
 <p>We recommend using a common setup for your solution that you can refer to in all the projects that are part of the solution. Create a <code>common.props</code> file that contains the defaults for all of your projects:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;Project&gt;</span>
 ...
-    <span class="nt">&lt;ItemGroup&gt;</span>
-        <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">&quot;Microsoft.CodeAnalysis.NetAnalyzers&quot;</span> <span class="na">Version=</span><span class="s">&quot;5.0.3&quot;</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;PrivateAssets&gt;</span>all<span class="nt">&lt;/PrivateAssets&gt;</span>
-          <span class="nt">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span class="nt">&lt;/IncludeAssets&gt;</span>
-        <span class="nt">&lt;/PackageReference&gt;</span>
-        <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">&quot;StyleCop.Analyzers&quot;</span> <span class="na">Version=</span><span class="s">&quot;1.1.118&quot;</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;PrivateAssets&gt;</span>all<span class="nt">&lt;/PrivateAssets&gt;</span>
-          <span class="nt">&lt;IncludeAssets&gt;</span>runtime; build; native; contentfiles; analyzers; buildtransitive<span class="nt">&lt;/IncludeAssets&gt;</span>
-        <span class="nt">&lt;/PackageReference&gt;</span>
-    <span class="nt">&lt;/ItemGroup&gt;</span>
-    <span class="nt">&lt;PropertyGroup&gt;</span>
-        <span class="nt">&lt;TreatWarningsAsErrors&gt;</span>true<span class="nt">&lt;/TreatWarningsAsErrors&gt;</span>
-    <span class="nt">&lt;/PropertyGroup&gt;</span>
-    <span class="nt">&lt;ItemGroup</span> <span class="na">Condition=</span><span class="s">&quot;Exists(&#39;$(MSBuildThisFileDirectory)../.editorconfig&#39;)&quot;</span> <span class="nt">&gt;</span>
-        <span class="nt">&lt;AdditionalFiles</span> <span class="na">Include=</span><span class="s">&quot;$(MSBuildThisFileDirectory)../.editorconfig&quot;</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;/ItemGroup&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ItemGroup&gt;</span>
+<span class="w">        </span><span class="nt">&lt;PackageReference</span><span class="w"> </span><span class="na">Include=</span><span class="s">&quot;Microsoft.CodeAnalysis.NetAnalyzers&quot;</span><span class="w"> </span><span class="na">Version=</span><span class="s">&quot;5.0.3&quot;</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;PrivateAssets&gt;</span>all<span class="nt">&lt;/PrivateAssets&gt;</span>
+<span class="w">          </span><span class="nt">&lt;IncludeAssets&gt;</span>runtime;<span class="w"> </span>build;<span class="w"> </span>native;<span class="w"> </span>contentfiles;<span class="w"> </span>analyzers;<span class="w"> </span>buildtransitive<span class="nt">&lt;/IncludeAssets&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/PackageReference&gt;</span>
+<span class="w">        </span><span class="nt">&lt;PackageReference</span><span class="w"> </span><span class="na">Include=</span><span class="s">&quot;StyleCop.Analyzers&quot;</span><span class="w"> </span><span class="na">Version=</span><span class="s">&quot;1.1.118&quot;</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;PrivateAssets&gt;</span>all<span class="nt">&lt;/PrivateAssets&gt;</span>
+<span class="w">          </span><span class="nt">&lt;IncludeAssets&gt;</span>runtime;<span class="w"> </span>build;<span class="w"> </span>native;<span class="w"> </span>contentfiles;<span class="w"> </span>analyzers;<span class="w"> </span>buildtransitive<span class="nt">&lt;/IncludeAssets&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/PackageReference&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ItemGroup&gt;</span>
+<span class="w">    </span><span class="nt">&lt;PropertyGroup&gt;</span>
+<span class="w">        </span><span class="nt">&lt;TreatWarningsAsErrors&gt;</span>true<span class="nt">&lt;/TreatWarningsAsErrors&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/PropertyGroup&gt;</span>
+<span class="w">    </span><span class="nt">&lt;ItemGroup</span><span class="w"> </span><span class="na">Condition=</span><span class="s">&quot;Exists(&#39;$(MSBuildThisFileDirectory)../.editorconfig&#39;)&quot;</span><span class="w"> </span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AdditionalFiles</span><span class="w"> </span><span class="na">Include=</span><span class="s">&quot;$(MSBuildThisFileDirectory)../.editorconfig&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/ItemGroup&gt;</span>
 ...
 <span class="nt">&lt;/Project&gt;</span>
 </code></pre></div>
 <p>You can then reference the <code>common.props</code> in your other project files to ensure a consistent setup.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;Project</span> <span class="na">Sdk=</span><span class="s">&quot;Microsoft.NET.Sdk.Web&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;Import</span> <span class="na">Project=</span><span class="s">&quot;..\common.props&quot;</span> <span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Project</span><span class="w"> </span><span class="na">Sdk=</span><span class="s">&quot;Microsoft.NET.Sdk.Web&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Import</span><span class="w"> </span><span class="na">Project=</span><span class="s">&quot;..\common.props&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/Project&gt;</span>
 </code></pre></div>
 <p>The <a href="https://learn.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019">.editorconfig</a> allows for configuration and overrides of rules. You can have an .editorconfig file at project level to customize rules for different projects (test projects for example).</p>
@@ -7264,11 +7272,11 @@
 <h2 id="build-validation">Build validation</h2>
 <p>It's important that you enforce your code style and rules in the CI to avoid any team member merging code that does not comply with your standards into your git repo.</p>
 <p>If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enable those in the CI. You have to make sure you are setting up the project using nuget and .editorconfig (<a href="#project-setup">see Project setup</a>). Once you have this setup, you will have to configure the pipeline to build your code. That's pretty much it. The FxCop analyzers will run and report the result in your build pipeline. If there are rules that are violated, your build will be red.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DotNetCoreCLI@2</span><span class="w"></span>
-<span class="w">      </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Style</span><span class="nv"> </span><span class="s">Check</span><span class="nv"> </span><span class="s">&amp;</span><span class="nv"> </span><span class="s">Build&#39;</span><span class="w"></span>
-<span class="w">      </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;build&#39;</span><span class="w"></span>
-<span class="w">        </span><span class="nt">projects</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;**/*.csproj&#39;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DotNetCoreCLI@2</span>
+<span class="w">      </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Style</span><span class="nv"> </span><span class="s">Check</span><span class="nv"> </span><span class="s">&amp;</span><span class="nv"> </span><span class="s">Build&#39;</span>
+<span class="w">      </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;build&#39;</span>
+<span class="w">        </span><span class="nt">projects</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;**/*.csproj&#39;</span>
 </code></pre></div>
 <h2 id="enable-roslyn-support-in-visual-studio-code">Enable Roslyn Support in Visual Studio Code</h2>
 <p>The above steps also work in VS Code provided you enable Roslyn support for Omnisharp. The setting is <code>omnisharp.enableRoslynAnalyzers</code> and must be set to <code>true</code>. After enabling this setting you must "Restart Omnisharp" (this can be done from the Command Palette in VS Code or by restarting VS Code).</p>

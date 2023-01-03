@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7203,24 +7211,24 @@ This includes customer's sensitive, Personal Identifiable Information (PII), and
 <h4 id="application-insights">Application Insights</h4>
 <p>Application Insights offers telemetry interception in some of the SDKs, that can be done by implementing the <code>ITelemetryProcessor</code> interface.
 ITelemetryProcessor processes the telemetry information before it is sent to Application Insights, and can be useful in many situations, such as filtering and modifications. Below is an example of intercepting 'trace' typed telemetry:</p>
-<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.DataContracts</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.DataContracts</span><span class="p">;</span>
 
-<span class="k">namespace</span><span class="w"> </span><span class="nn">Example</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.Channel</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.Extensibility</span><span class="p">;</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">Example</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.Channel</span><span class="p">;</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.ApplicationInsights.Extensibility</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">internal</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">RedactTelemetryInitializer</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ITelemetryInitializer</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Initialize</span><span class="p">(</span><span class="n">ITelemetry</span><span class="w"> </span><span class="n">telemetry</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">requestTelemetry</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">telemetry</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">TraceTelemetry</span><span class="p">;</span><span class="w"></span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">requestTelemetry</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
-<span class="w">            </span><span class="err">#</span><span class="w"> </span><span class="n">redact</span><span class="w"> </span><span class="n">emails</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="n">parameter</span><span class="w"></span>
-<span class="w">            </span><span class="n">requestTelemetry</span><span class="p">.</span><span class="n">Message</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Regex</span><span class="p">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">requestTelemetry</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span><span class="w"> </span><span class="s">@&quot;[^@\s]+@[^@\s]+\.[^@\s]+&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;[email removed]&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">internal</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">RedactTelemetryInitializer</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ITelemetryInitializer</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Initialize</span><span class="p">(</span><span class="n">ITelemetry</span><span class="w"> </span><span class="n">telemetry</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">requestTelemetry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">telemetry</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">TraceTelemetry</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">requestTelemetry</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">null</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+<span class="w">            </span><span class="err">#</span><span class="w"> </span><span class="n">redact</span><span class="w"> </span><span class="n">emails</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="n">parameter</span>
+<span class="w">            </span><span class="n">requestTelemetry</span><span class="p">.</span><span class="n">Message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Regex</span><span class="p">.</span><span class="n">Replace</span><span class="p">(</span><span class="n">requestTelemetry</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span><span class="w"> </span><span class="s">@&quot;[^@\s]+@[^@\s]+\.[^@\s]+&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;[email removed]&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <h4 id="elastic-stack">Elastic Stack</h4>
 <p>Elastic Stack (formerly "ELK stack") allows logs interception by Logstash's <a href="https://www.elastic.co/guide/en/logstash/current/filter-plugins.html">filter-plugins</a>.
@@ -7235,21 +7243,21 @@ Presidio is containerized for REST HTTP API and also can be installed as a pytho
 Instead of handling the anonymization in the application code, both APIs can be used using external calls.
 Elastic Stack, for example, can handle PII redaction using the 'ruby' filter plugin to call Presidio in REST HTTP API, or by calling a python script consuming Presidio as a package:</p>
 <p><code>logstash.conf</code></p>
-<div class="highlight"><pre><span></span><code><span class="n">input</span> <span class="p">{</span>
-    <span class="o">...</span>
+<div class="highlight"><pre><span></span><code><span class="n">input</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="o">...</span>
 <span class="p">}</span>
 
-<span class="n">filter</span> <span class="p">{</span>
-   <span class="n">ruby</span> <span class="p">{</span>
-    <span class="n">code</span> <span class="o">=&gt;</span> <span class="s1">&#39;require &quot;open3&quot;</span>
+<span class="n">filter</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="n">ruby</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">code</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s1">&#39;require &quot;open3&quot;</span>
 <span class="s1">             message = event.get(&quot;message&quot;)</span>
 <span class="s1">             # Call a python script triggering Presidio analyzer and anonymizer, and printing the result.</span>
 <span class="s1">             cmd =  &quot;python /path/to/presidio/anonymization/script.py </span><span class="se">\&quot;</span><span class="si">#{</span><span class="n">message</span><span class="si">}</span><span class="se">\&quot;</span><span class="s1">&quot;</span>
-<span class="s1">             # Fetch the script&#39;</span><span class="n">s</span> <span class="n">stdout</span>
-             <span class="n">stdin</span><span class="p">,</span> <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="no">Open3</span><span class="o">.</span><span class="n">popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
-             <span class="c1"># Override message with the anonymized text.</span>
-             <span class="n">event</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="n">stdout</span><span class="o">.</span><span class="n">read</span><span class="p">)</span>
-             <span class="n">filter_matched</span><span class="p">(</span><span class="n">event</span><span class="p">)</span><span class="s1">&#39;</span>
+<span class="s1">             # Fetch the script&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">stdout</span>
+<span class="w">             </span><span class="n">stdin</span><span class="p">,</span><span class="w"> </span><span class="n">stdout</span><span class="p">,</span><span class="w"> </span><span class="n">stderr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">Open3</span><span class="o">.</span><span class="n">popen3</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+<span class="w">             </span><span class="c1"># Override message with the anonymized text.</span>
+<span class="w">             </span><span class="n">event</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdout</span><span class="o">.</span><span class="n">read</span><span class="p">)</span>
+<span class="w">             </span><span class="n">filter_matched</span><span class="p">(</span><span class="n">event</span><span class="p">)</span><span class="s1">&#39;</span>
 <span class="s1">   }</span>
 <span class="s1">}</span>
 

@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7209,7 +7217,7 @@
 <p>The following steps can be followed when using the Quick Start folder. In the <strong>infrastructure</strong> folder you can find the Terraform files to create the website in an Azure environment. Out of the box, the script will create a website where the documentation content can be deployed to.</p>
 <h2 id="1-install-terraform">1. Install Terraform</h2>
 <p>You can use tools like <a href="https://chocolatey.org/">Chocolatey</a> to install Terraform:</p>
-<div class="highlight"><pre><span></span><code>choco install terraform
+<div class="highlight"><pre><span></span><code>choco<span class="w"> </span>install<span class="w"> </span>terraform
 </code></pre></div>
 <h2 id="2-set-the-proper-variables">2. Set the proper variables</h2>
 <blockquote>
@@ -7253,22 +7261,22 @@
 <p>Once we have the SSL certificate and there is a complete DNS registration as described, we can uncomment the code in the Terraform script from the Quick Start folder to attach this to the App Service. In this script you need to reference the certificate in the common Key Vault and use it in the custom hostname binding. The custom hostname is assigned in the script as well. The settings <code>ssl_state</code> needs to be <code>SniEnabled</code> if you're using an SSL certificate. Now the creation of the authenticated website with a custom domain is automated.</p>
 <h2 id="3-deploy-azure-resources-from-your-local-machine">3. Deploy Azure resources from your local machine</h2>
 <p>Open up a command prompt. For the commands to be executed, you need to have a connection to your Azure subscription. This can be done using <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli">Azure Cli</a>. Type this command:</p>
-<div class="highlight"><pre><span></span><code>az login
+<div class="highlight"><pre><span></span><code>az<span class="w"> </span>login
 </code></pre></div>
 <p>This will use the web browser to login to your account. You can check the connected subscription with this command:</p>
-<div class="highlight"><pre><span></span><code>az account show
+<div class="highlight"><pre><span></span><code>az<span class="w"> </span>account<span class="w"> </span>show
 </code></pre></div>
 <p>If you have to change to another subscription, use this command where you replace <em>[id]</em> with the id of the subscription to select:</p>
-<div class="highlight"><pre><span></span><code>az account <span class="nb">set</span> --subscription <span class="o">[</span>id<span class="o">]</span>
+<div class="highlight"><pre><span></span><code>az<span class="w"> </span>account<span class="w"> </span><span class="nb">set</span><span class="w"> </span>--subscription<span class="w"> </span><span class="o">[</span>id<span class="o">]</span>
 </code></pre></div>
 <p>Once this is done run this command to initialize:</p>
-<div class="highlight"><pre><span></span><code>terraform init
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>init
 </code></pre></div>
 <p>Now you can run the command to plan what the script will do. You run this command every time changes are made to the terraform scripts:</p>
-<div class="highlight"><pre><span></span><code>terraform plan
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>plan
 </code></pre></div>
 <p>Inspect the result shown. If that is what you expect, apply these changes with this command:</p>
-<div class="highlight"><pre><span></span><code>terraform apply
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>apply
 </code></pre></div>
 <p>When asked for approval, type "yes" and ENTER. You can also add the <em>-auto-approve</em> flag to the apply command.</p>
 <p>The deployment using Terraform is not included in the pipeline from the Quick Start folder as described in the next step, as that asks for more configuration. But of course that can always be added.</p>

@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7236,43 +7244,43 @@ However, development schedules between the client app and the services don't alw
 <h3 id="embedded-mocks">Embedded Mocks</h3>
 <p>An embedded mock solution includes classes that implement the service interfaces locally. Interfaces and data classes, also called models or data transfer objects or DTOs, are often generated from the services' API specs using tools like nswag (<a href="https://github.com/RicoSuter/NSwag">RicoSuter/NSwag: The Swagger/OpenAPI toolchain for .NET, ASP.NET Core and TypeScript. (github.com)</a>) or autorest (<a href="https://github.com/Azure/AutoRest">Azure/autorest: OpenAPI (f.k.a Swagger) Specification code generator. Supports C#, PowerShell, Go, Java, Node.js, TypeScript, Python, Ruby (github.com)</a>).</p>
 <p>A simple service implementation can return a static response. For RESTful services, the JSON responses for the stubs can be stored as application resources or simply as static strings.</p>
-<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="n">Task</span><span class="p">&lt;</span><span class="n">UserProfile</span><span class="p">&gt;</span><span class="w"> </span><span class="n">GetUserAsync</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">userId</span><span class="p">,</span><span class="w"> </span><span class="n">CancellationToken</span><span class="w"> </span><span class="n">cancellationToken</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">PetProfile</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Newtonsoft</span><span class="p">.</span><span class="n">Json</span><span class="p">.</span><span class="n">JsonConvert</span><span class="p">.</span><span class="n">DeserializeObject</span><span class="p">&lt;</span><span class="n">UserProfile</span><span class="p">&gt;(</span><span class="w"></span>
-<span class="w">        </span><span class="n">MockUserProfile</span><span class="p">.</span><span class="n">UserProfile</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Newtonsoft</span><span class="p">.</span><span class="n">Json</span><span class="p">.</span><span class="n">JsonSerializerSettings</span><span class="p">());</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">UserProfile</span><span class="o">&gt;</span><span class="w"> </span><span class="n">GetUserAsync</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">userId</span><span class="p">,</span><span class="w"> </span><span class="n">CancellationToken</span><span class="w"> </span><span class="n">cancellationToken</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">PetProfile</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Newtonsoft</span><span class="p">.</span><span class="n">Json</span><span class="p">.</span><span class="n">JsonConvert</span><span class="p">.</span><span class="n">DeserializeObject</span><span class="o">&lt;</span><span class="n">UserProfile</span><span class="o">&gt;</span><span class="p">(</span>
+<span class="w">        </span><span class="n">MockUserProfile</span><span class="p">.</span><span class="n">UserProfile</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Newtonsoft</span><span class="p">.</span><span class="n">Json</span><span class="p">.</span><span class="n">JsonSerializerSettings</span><span class="p">());</span>
 
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Task</span><span class="p">.</span><span class="n">FromResult</span><span class="p">(</span><span class="n">result</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Task</span><span class="p">.</span><span class="n">FromResult</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>More sophisticated can randomly return errors to test the app's resiliency code paths.</p>
 <p>Mocks can be activated via conditional compilation or dynamically via app configuration. In either case, it is recommended to ensure that mocks, service responses and externalized configurations are not included in the final release to avoid confusing behavior and inclusion of potential vulnerabilities.</p>
 <h4 id="sample-registering-mocks-via-dependency-injection">Sample: Registering Mocks via Dependency Injection</h4>
 <p>Dependency Injection Containers like Unity (<a href="http://unitycontainer.org/articles/introduction.html">Unity Container Introduction | Unity Container</a>) make
 it easy to switch between mock services and real service client implementations. Since both implement the same interface, implementations can be registered with the Unity container.</p>
-<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Bootstrap</span><span class="p">(</span><span class="n">IUnityContainer</span><span class="w"> </span><span class="n">container</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Bootstrap</span><span class="p">(</span><span class="n">IUnityContainer</span><span class="w"> </span><span class="n">container</span><span class="p">)</span>
+<span class="p">{</span>
 
-<span class="cp">#if DEBUG</span><span class="w"></span>
-<span class="w">    </span><span class="n">container</span><span class="p">.</span><span class="n">RegisterSingleton</span><span class="p">&lt;</span><span class="n">IUserServiceClient</span><span class="p">,</span><span class="w"> </span><span class="n">MockUserService</span><span class="p">&gt;();</span><span class="w"></span>
-<span class="cp">#else</span><span class="w"></span>
-<span class="w">    </span><span class="n">container</span><span class="p">.</span><span class="n">RegisterSingleton</span><span class="p">&lt;</span><span class="n">IUserServiceClient</span><span class="p">,</span><span class="w"> </span><span class="n">UserServiceClient</span><span class="p">&gt;();</span><span class="w"></span>
-<span class="cp">#endif</span><span class="w"></span>
+<span class="cp">#if DEBUG</span>
+<span class="w">    </span><span class="n">container</span><span class="p">.</span><span class="n">RegisterSingleton</span><span class="o">&lt;</span><span class="n">IUserServiceClient</span><span class="p">,</span><span class="w"> </span><span class="n">MockUserService</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="cp">#else</span>
+<span class="w">    </span><span class="n">container</span><span class="p">.</span><span class="n">RegisterSingleton</span><span class="o">&lt;</span><span class="n">IUserServiceClient</span><span class="p">,</span><span class="w"> </span><span class="n">UserServiceClient</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="cp">#endif</span>
 
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 </code></pre></div>
 <h4 id="consuming-mocks-via-dependency-injection">Consuming mocks via Dependency Injection</h4>
 <p>The code consuming the interfaces will not notice the difference.</p>
-<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">UserPageModel</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="n">IUserServiceClient</span><span class="w"> </span><span class="n">userServiceClient</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">UserPageModel</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="n">IUserServiceClient</span><span class="w"> </span><span class="n">userServiceClient</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">UserPageModel</span><span class="p">(</span><span class="n">IUserServiceClient</span><span class="w"> </span><span class="n">userServiceClient</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="n">userServiceClient</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">userServiceClient</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">UserPageModel</span><span class="p">(</span><span class="n">IUserServiceClient</span><span class="w"> </span><span class="n">userServiceClient</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="n">userServiceClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">userServiceClient</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="c1">// ...</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 </code></pre></div>
 <h3 id="local-services">Local Services</h3>
 <p>The approach with Locally Running Services is to replace the call in the client from pointing to the actual endpoint (whether dev, QA, prod, etc.) to a local endpoint.</p>

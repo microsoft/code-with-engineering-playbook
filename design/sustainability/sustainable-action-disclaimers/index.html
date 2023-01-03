@@ -3669,8 +3669,6 @@
       
         
           
-            
-          
         
           
         
@@ -3680,16 +3678,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3698,6 +3690,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4774,8 +4778,6 @@
       
         
           
-            
-          
         
           
         
@@ -4783,16 +4785,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4801,6 +4797,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7178,19 +7186,19 @@
 
 
 <h1 id="disclaimers">Disclaimers</h1>
-<p>The following disclaimers provide more details about how to consider the impact of particular actions recommended by the <a href="../#sustainabile-engineering-checklist">Sustainable Engineering Checklist</a>.</p>
+<p>The following disclaimers provide more details about how to consider the impact of particular actions recommended by the <a href="../readme/#sustainable-engineering-checklist">Sustainable Engineering Checklist</a>.</p>
 <h2 id="action-resize-physical-or-virtual-machines-to-improve-utilization">ACTION: Resize physical or virtual machines to improve utilization</h2>
 <p>Recommendations from cost-savings tools are usually aligned with carbon-reduction, but as sustainability is not the purpose of such tools, carbon-savings are not guaranteed. How a cloud provider or data center manages unused capacity is also a factor in determining how impactful this action may be. For example:</p>
 <p>The sustainable impact of using smaller VMs in the same family are typically beneficial or neutral. When cores are no longer reserved they can be used by others instead of bringing new servers online.</p>
 <p>The sustainable impact of changing VM families can be harder to reason about because the underlying hardware and reserved cores may be changing with them.</p>
 <h2 id="action-migrate-to-a-hyperscale-cloud-provider">ACTION: Migrate to a hyperscale cloud provider</h2>
-<p>Carbon savings from hyperscale cloud providers are generally attributable to four key features: IT operational efficiency, IT equipment efficiency, datacenter infrastructure efficiency, and renewable electricity. Microsoft Cloud, for example, is between 22 and 93 percent more energy efficient than traditional enterprise datacenters, depending on the specific comparison being made. When taking into account renewable energy purchases, the Microsoft Cloud is between 72 and 98 percent more carbon efficient. <a href="https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf">Source [PDF]</a></p>
+<p>Carbon savings from hyperscale cloud providers are generally attributable to four key features: IT operational efficiency, IT equipment efficiency, data center infrastructure efficiency, and renewable electricity. Microsoft Cloud, for example, is between 22 and 93 percent more energy efficient than traditional enterprise data centers, depending on the specific comparison being made. When taking into account renewable energy purchases, the Microsoft Cloud is between 72 and 98 percent more carbon efficient. <a href="https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf">Source (PDF)</a></p>
 <h2 id="action-consider-running-an-edge-device">ACTION: Consider running an edge device</h2>
 <p>Running an edge device negates many of the benefits of hyperscale compute facilities, so considering the local energy grid mix and the typical timing of the workloads is important to determine if this is beneficial overall.  The larger volume of data that needs to be transmitted, the more this solution becomes appealing. For example, sending large amounts of audio and video content for processing.</p>
 <h2 id="action-consider-physically-shipping-data-to-the-provider">ACTION: Consider physically shipping data to the provider</h2>
 <p>Shipping physical items has its own carbon impact, depending on the mode of transportation, which needs to be understood before making this decision.  The larger the volume of data that needs to be transmitted the more this options may be beneficial.</p>
 <h2 id="action-consider-the-energy-efficiency-of-languages">ACTION: Consider the energy efficiency of languages</h2>
-<p>When selecting a programming language, the <em>most</em> energy efficient progamming language may not always be the best choice for development speed, maintenance, integration with dependent systems, and other project factors. But when deciding between languages that all meet the project needs, energy efficiency can be a helpful consideration.</p>
+<p>When selecting a programming language, the <em>most</em> energy efficient programming language may not always be the best choice for development speed, maintenance, integration with dependent systems, and other project factors. But when deciding between languages that all meet the project needs, energy efficiency can be a helpful consideration.</p>
 <h2 id="action-use-caching-policies">ACTION: Use caching policies</h2>
 <p>A cache provides temporary storage of resources that have been requested by an application. Caching can improve application performance by reducing the time required to get a requested resource. Caching can also improve sustainability by decreasing the amount of network traffic.</p>
 <p>While caching provides these benefits, it also increases the risk that the resource returned to the application is stale, meaning that it is not identical to the resource that would have been sent by the server if caching were not in use. This can create poor user experiences when data accuracy is critical.</p>
@@ -7203,7 +7211,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 24, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2023</span>
       
     
   </small>
@@ -7221,7 +7229,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sustainable Software Engineering" rel="prev">
+        <a href="../readme/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sustainable Software Engineering" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>

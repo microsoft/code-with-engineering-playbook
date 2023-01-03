@@ -3854,8 +3854,6 @@
       
         
           
-            
-          
         
           
         
@@ -3865,16 +3863,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3883,6 +3875,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4957,8 +4961,6 @@
       
         
           
-            
-          
         
           
         
@@ -4966,16 +4968,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4984,6 +4980,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7388,10 +7396,10 @@ Apart from linting, <a href="https://github.com/mvdan/sh">shfmt</a> can be used 
 <p>Shellcheck extension should be used in VS Code, it provides static code analysis capabilities and auto fixing linting issues. To use vscode-shellcheck in vscode do the following:</p>
 <h4 id="install-shellcheck-on-your-machine">Install shellcheck on your machine</h4>
 <p>For macOS</p>
-<div class="highlight"><pre><span></span><code>brew install shellcheck
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>shellcheck
 </code></pre></div>
 <p>For Ubuntu:</p>
-<div class="highlight"><pre><span></span><code>apt-get install shellcheck
+<div class="highlight"><pre><span></span><code>apt-get<span class="w"> </span>install<span class="w"> </span>shellcheck
 </code></pre></div>
 <h4 id="install-shellcheck-on-vscode">Install shellcheck on vscode</h4>
 <p>Find the vscode-shellcheck extension in vscode and install it.</p>
@@ -7400,32 +7408,32 @@ Apart from linting, <a href="https://github.com/mvdan/sh">shfmt</a> can be used 
 <p>shell-format extension does automatic formatting of your bash scripts, docker files and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:</p>
 <h4 id="install-shfmtrequires-go-113-or-later-on-your-machine">Install shfmt(Requires Go 1.13 or later) on your machine</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">GO111MODULE</span><span class="o">=</span>on go get mvdan.cc/sh/v3/cmd/shfmt
+<div class="highlight"><pre><span></span><code><span class="nv">GO111MODULE</span><span class="o">=</span>on<span class="w"> </span>go<span class="w"> </span>get<span class="w"> </span>mvdan.cc/sh/v3/cmd/shfmt
 </code></pre></div>
 <h4 id="install-shell-format-on-vscode">Install shell-format on vscode</h4>
 <p>Find the shell-format extension in vscode and install it.</p>
 <h2 id="build-validation">Build Validation</h2>
 <p>To automate this process in Azure DevOps you can add the following snippet to you <code>azure-pipelines.yaml</code> file. This will lint any scripts in the <code>./scripts/</code> folder.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
-<span class="w">    </span><span class="no">echo &quot;This checks for formatting and common bash errors. See wiki for error details and ignore options: https://github.com/koalaman/shellcheck/wiki/SC1000&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="no">export scversion=&quot;stable&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="no">wget -qO- &quot;https://github.com/koalaman/shellcheck/releases/download/${scversion?}/shellcheck-${scversion?}.linux.x86_64.tar.xz&quot; | tar -xJv</span><span class="w"></span>
-<span class="w">    </span><span class="no">sudo mv &quot;shellcheck-${scversion}/shellcheck&quot; /usr/bin/</span><span class="w"></span>
-<span class="w">    </span><span class="no">rm -r &quot;shellcheck-${scversion}&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="no">shellcheck ./scripts/*.sh</span><span class="w"></span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Validate</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">Shellcheck&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">echo &quot;This checks for formatting and common bash errors. See wiki for error details and ignore options: https://github.com/koalaman/shellcheck/wiki/SC1000&quot;</span>
+<span class="w">    </span><span class="no">export scversion=&quot;stable&quot;</span>
+<span class="w">    </span><span class="no">wget -qO- &quot;https://github.com/koalaman/shellcheck/releases/download/${scversion?}/shellcheck-${scversion?}.linux.x86_64.tar.xz&quot; | tar -xJv</span>
+<span class="w">    </span><span class="no">sudo mv &quot;shellcheck-${scversion}/shellcheck&quot; /usr/bin/</span>
+<span class="w">    </span><span class="no">rm -r &quot;shellcheck-${scversion}&quot;</span>
+<span class="w">    </span><span class="no">shellcheck ./scripts/*.sh</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Validate</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">Shellcheck&quot;</span>
 </code></pre></div>
 <p>Also, your shell scripts can be formatted in your build pipeline by using the <code>shfmt</code> tool. To integrate <code>shfmt</code> in your build pipeline do the following:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
-<span class="w">    </span><span class="no">echo &quot;This step does auto formatting of shell scripts&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="no">shfmt -l -w ./scripts/*.sh</span><span class="w"></span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Format</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">shfmt&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">echo &quot;This step does auto formatting of shell scripts&quot;</span>
+<span class="w">    </span><span class="no">shfmt -l -w ./scripts/*.sh</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Format</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">shfmt&quot;</span>
 </code></pre></div>
 <p>Unit testing using <a href="https://github.com/kward/shunit2">shunit2</a> can also be added to the build pipeline, using the following block:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
-<span class="w">    </span><span class="no">echo &quot;This step unit tests shell scripts by using shunit2&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="no">./shunit2</span><span class="w"></span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Format</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">shfmt&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">bash</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">echo &quot;This step unit tests shell scripts by using shunit2&quot;</span>
+<span class="w">    </span><span class="no">./shunit2</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Format</span><span class="nv"> </span><span class="s">Scripts:</span><span class="nv"> </span><span class="s">shfmt&quot;</span>
 </code></pre></div>
 <h2 id="pre-commit-hooks">Pre-Commit Hooks</h2>
 <p>All developers should run shellcheck and shfmt as pre-commit hooks.</p>
@@ -7434,26 +7442,26 @@ To use shell-format in vscode do the following:</p>
 Alternatively you can run <code>brew install pre-commit</code> if you are using homebrew.</p>
 <h3 id="step-2-add-shellcheck-and-shfmt">Step 2- Add shellcheck and shfmt</h3>
 <p>Add .pre-commit-config.yaml file to root of the go project. Run shfmt on pre-commit by adding it to .pre-commit-config.yaml file like below.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git://github.com/pecigonzalo/pre-commit-fmt</span><span class="w"></span>
-<span class="w">    </span><span class="nt">sha</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
-<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shell-fmt</span><span class="w"></span>
-<span class="w">          </span><span class="nt">args</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--indent=4</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git://github.com/pecigonzalo/pre-commit-fmt</span>
+<span class="w">    </span><span class="nt">sha</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shell-fmt</span>
+<span class="w">          </span><span class="nt">args</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--indent=4</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/shellcheck-py/shellcheck-py</span><span class="w"></span>
-<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v0.7.1.1</span><span class="w"></span>
-<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shellcheck</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/shellcheck-py/shellcheck-py</span>
+<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v0.7.1.1</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">shellcheck</span>
 </code></pre></div>
 <h3 id="step-3">Step 3</h3>
 <p>Run <code>$ pre-commit install</code> to set up the git hook scripts</p>
 <h2 id="dependencies">Dependencies</h2>
 <p>Bash scripts are often used to 'glue together' other systems and tools. As such, Bash scripts can often have numerous and/or complicated dependencies. Consider using Docker containers to ensure that scripts are executed in a portable and reproducible environment that is guaranteed to contain all the correct dependencies. To ensure that dockerized scripts are nevertheless easy to execute, consider making the use of Docker transparent to the script's caller by wrapping the script in a 'bootstrap' which checks whether the script is running in Docker and re-executes itself in Docker if it's not the case. This provides the best of both worlds: easy script execution and consistent environments.</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">DOCKER</span><span class="si">}</span><span class="s2">&quot;</span> !<span class="o">=</span> <span class="s2">&quot;true&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-  docker build -t my_script -f my_script.Dockerfile . &gt; /dev/null
-  docker run -e <span class="nv">DOCKER</span><span class="o">=</span><span class="nb">true</span> my_script <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
-  <span class="nb">exit</span> <span class="nv">$?</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">DOCKER</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>!<span class="o">=</span><span class="w"> </span><span class="s2">&quot;true&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>my_script<span class="w"> </span>-f<span class="w"> </span>my_script.Dockerfile<span class="w"> </span>.<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+<span class="w">  </span>docker<span class="w"> </span>run<span class="w"> </span>-e<span class="w"> </span><span class="nv">DOCKER</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span>my_script<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="nv">$?</span>
 <span class="k">fi</span>
 
 <span class="c1"># ... implementation of my_script here can assume that all of its dependencies exist since it&#39;s always running in Docker ...</span>

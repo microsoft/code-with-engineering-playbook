@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7271,7 +7279,7 @@
 <li><strong>Azure DevOps:</strong> If you don't have it yet, create a project in Azure DevOps and <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops">create a Service Connection to your Azure environment</a>. Clone the repository.</li>
 <li><strong>QuickStart folder:</strong> Copy the contents of the QuickStart folder in there repository that can be found on  <a href="https://github.com/mtirionMSFT/DocFxQuickStart">https://github.com/mtirionMSFT/DocFxQuickStart</a> to the root of the repository.</li>
 <li><strong>Azure:</strong> Create a resource group in your Azure environment where the documentation website resources should be created.</li>
-<li><strong>Create Azure resources:</strong> Fill in the default values in <em>infrastructure/variables.tf</em> and run the commands from <a href="../deploy-docfx-azure-website/#3-Running-the-commands-locally">Step 3 - Deploy Azure resources from your local machine</a> to create the Azure Resources.</li>
+<li><strong>Create Azure resources:</strong> Fill in the default values in <em>infrastructure/variables.tf</em> and run the commands from <a href="../deploy-docfx-azure-website/#3-deploy-azure-resources-from-your-local-machine">Step 3 - Deploy Azure resources from your local machine</a> to create the Azure Resources.</li>
 <li><strong>Pipeline:</strong> Fill in the variables in <em>.pipelines/documentation.yml</em>, commit the changes and push the contents of the repository to your branch (possibly through a PR).
    Now you can create a pipeline in your Azure DevOps project that uses the <em>.pipelines/documentation.yml</em> and run it.
 </li>
@@ -7305,24 +7313,24 @@
 <p>We'll be using the <code>DocLinkChecker</code> tool to validate all links in documentation and for orphaned attachments. That's the reason we have all attachments in the <code>.attachments</code> folder.</p>
 <p>In the generated website from the QuickStart folder you'll see that the hierarchies of documentation and references is combined in the left table of contents. This is achieved by the definition and use of <strong>x-cross\toc.yml</strong>. If you don't want the hierarchies combined, just remove the  folder and file from your environment and (re)generate the website.</p>
 <p>A <code>.markdownlint.json</code> is included with the contents below. The <a href="https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md013---line-length">MD013 setting</a> is set to false to prevent checking for maximum line length. You can modify this file to your likings to include or exclude certain tests.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;MD013&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;MD013&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>The contents of the <strong>.pipelines</strong> and <strong>infrastructure</strong> folders are explained in the recipe <a href="../deploy-docfx-azure-website/">Deploy the DocFx Documentation website to an Azure Website automatically</a>.</p>
 <h2 id="reference-documentation-from-source-code">Reference documentation from source code</h2>
 <p>DocFx can generate reference documentation from code, where C# and Typescript are supported best at the moment. In the QuickStart folder we only used C# projects. For DocFx to generate quality reference documentation, quality triple slash-comments are required. See <a href="https://dotnet.github.io/docfx/spec/triple_slash_comments_spec.html">Triple-slash (///) Code Comments Support</a>. To enforce this, it's a good idea to enforce the use of <a href="https://github.com/DotNetAnalyzers/StyleCopAnalyzers">StyleCop</a>. There are a few steps that will give you an easy start with this.</p>
 <p>First, you can use the <strong>Directory.Build.props</strong> file in the <strong>/src</strong> folder in combination with the files in the <strong>build/dotnet</strong> folder. By having this, you enforce StyleCop in all Visual Studio project files in it's sub folders with a configuration of which rules should be used or ignored. You can tailor this to your needs of course. For more information, see <a href="https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019">Customize your build</a> and <a href="https://learn.microsoft.com/en-us/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules?view=vs-2019">Use rule sets to group code analysis rules</a>.</p>
 <p>To make sure developers are forced to add the triple-slash comments by throwing compiler errors and to have the proper settings for the generation of documentation XML-files, add the <strong>TreatWarningsAsErrors</strong> and <strong>GenerateDocumentationFile</strong> settings to every <em>.csproj</em> file. You can add that in the first <em>PropertyGroup</em> settings like this:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;Project</span> <span class="na">Sdk=</span><span class="s">&quot;Microsoft.NET.Sdk&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Project</span><span class="w"> </span><span class="na">Sdk=</span><span class="s">&quot;Microsoft.NET.Sdk&quot;</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;PropertyGroup&gt;</span>
-      ...
-    <span class="nt">&lt;GenerateDocumentationFile&gt;</span>true<span class="nt">&lt;/GenerateDocumentationFile&gt;</span>
-    <span class="nt">&lt;TreatWarningsAsErrors&gt;</span>true<span class="nt">&lt;/TreatWarningsAsErrors&gt;</span>
-  <span class="nt">&lt;/PropertyGroup&gt;</span>
+<span class="w">  </span><span class="nt">&lt;PropertyGroup&gt;</span>
+<span class="w">      </span>...
+<span class="w">    </span><span class="nt">&lt;GenerateDocumentationFile&gt;</span>true<span class="nt">&lt;/GenerateDocumentationFile&gt;</span>
+<span class="w">    </span><span class="nt">&lt;TreatWarningsAsErrors&gt;</span>true<span class="nt">&lt;/TreatWarningsAsErrors&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/PropertyGroup&gt;</span>
 
-    ...
+<span class="w">    </span>...
 <span class="nt">&lt;/Project&gt;</span>
 </code></pre></div>
 <p>Now you are all set to generate documentation from your C# code. For more information about languages supported by DocFx and how to configure it, see <a href="https://dotnet.github.io/docfx/tutorial/universalreference/intro_multiple_langs_support.html?q=typescript">Introduction to Multiple Languages Support</a>.</p>
@@ -7332,8 +7340,8 @@
 <h2 id="1-install-docfx-and-markdownlint-cli">1. Install DocFx and markdownlint-cli</h2>
 <p>Go to the <a href="https://dotnet.github.io/docfx/">DocFx</a> website to the Download section and download the latest version of DocFx. Go to the <a href="https://github.com/igorshubovych/markdownlint-cli">github page of markdownlint-cli</a> to find download and install options.</p>
 <p>You can also use tools like <a href="https://chocolatey.org/">Chocolatey</a> to install:</p>
-<div class="highlight"><pre><span></span><code>choco install docfx
-choco install markdownlint-cli
+<div class="highlight"><pre><span></span><code>choco<span class="w"> </span>install<span class="w"> </span>docfx
+choco<span class="w"> </span>install<span class="w"> </span>markdownlint-cli
 </code></pre></div>
 <h2 id="2-configure-docfx">2. Configure DocFx</h2>
 <p>Configuration for DocFx is done in a <code>docfx.json</code> file. Store this file in the root of your repository.</p>
@@ -7341,41 +7349,41 @@ choco install markdownlint-cli
 <p><strong>NOTE:</strong> You can store the docfx.json somewhere else in the hierarchy, but then you need to provide the path of the file as an argument to the docfx command so it can be located.</p>
 </blockquote>
 <p>Below is a good configuration to start with, where documentation is in the <strong>/docs</strong> folder and the sources are in the <strong>/src</strong> folder:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">          </span><span class="nt">&quot;src&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">          </span><span class="p">{</span><span class="w"></span>
-<span class="w">              </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;src/**.csproj&quot;</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
-<span class="w">              </span><span class="nt">&quot;exclude&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;_site/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/bin/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/obj/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/[Tt]ests/**&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"></span>
-<span class="w">          </span><span class="p">}</span><span class="w"></span>
-<span class="w">          </span><span class="p">],</span><span class="w"></span>
-<span class="w">          </span><span class="nt">&quot;dest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reference&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="nt">&quot;disableGitFeatures&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
-<span class="w">       </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;reference/**&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
-<span class="w">            </span><span class="p">{</span><span class="w"></span>
-<span class="w">                </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;**.md&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/toc.yml&quot;</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
-<span class="w">                </span><span class="nt">&quot;exclude&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;_site/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/bin/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/obj/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/[Tt]ests/**&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"></span>
-<span class="w">            </span><span class="p">}</span><span class="w"></span>
-<span class="w">        </span><span class="p">],</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;docs/.attachments/**&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
-<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;web.config&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
-<span class="w">        </span><span class="p">],</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;template&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;templates/cse&quot;</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;globalMetadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;_appTitle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CSE Documentation&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;_enableSearch&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
-<span class="w">        </span><span class="p">},</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;markdownEngineName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;markdig&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;dest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;_site&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;xrefService&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;https://xref.learn.microsoft.com/query?uid={uid}&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;src&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="p">{</span>
+<span class="w">              </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;src/**.csproj&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">              </span><span class="nt">&quot;exclude&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;_site/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/bin/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/obj/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/[Tt]ests/**&quot;</span><span class="w"> </span><span class="p">]</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">          </span><span class="p">],</span>
+<span class="w">          </span><span class="nt">&quot;dest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;reference&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;disableGitFeatures&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">       </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;reference/**&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;**.md&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/toc.yml&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">                </span><span class="nt">&quot;exclude&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;_site/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/bin/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/obj/**&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;**/[Tt]ests/**&quot;</span><span class="w"> </span><span class="p">]</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;docs/.attachments/**&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;web.config&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;template&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;templates/cse&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;globalMetadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;_appTitle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CSE Documentation&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;_enableSearch&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;markdownEngineName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;markdig&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;dest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;_site&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;xrefService&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;https://xref.learn.microsoft.com/query?uid={uid}&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="3-setup-some-basic-documents">3. Setup some basic documents</h2>
 <p>We suggest starting with a basic documentation structure in the <strong>/docs</strong> folder. In the provided QuickStart folder we have a basic setup:</p>
@@ -7424,15 +7432,15 @@ To get started with the setup of this website, read the getting started document
 <p><strong>NOTE:</strong> To explain each step, we'll be going through the various steps in the next few paragraphs. In the provided sample, a batch-file called <strong>GenerateDocWebsite.cmd</strong> is included. This script will take all the necessary steps to compile the tools, execute the checks, generate the table of contents and execute docfx to generate the website.</p>
 </blockquote>
 <p>To check for proper markdown formatting the <strong>markdownlint-cli</strong> tool is used. The command takes it's configuration from the <code>.markdownlint.json</code> file in the root of the project. To check all markdown files, simply execute this command:</p>
-<div class="highlight"><pre><span></span><code>markdownlint **/*.md
+<div class="highlight"><pre><span></span><code>markdownlint<span class="w"> </span>**/*.md
 </code></pre></div>
 <p>In the QuickStart folder you should have copied in the two companion tools <strong>TocDocFxCreation</strong> and <strong>DocLinkChecker</strong> as described in the introduction of this article.</p>
 <p>You can compile the tools from Visual Studio, but you can also run <code>dotnet build</code> in both tool folders.</p>
 <p>The <strong>DocLinkChecker</strong> companion tool is used to validate what's in the docs folder. It validates links between documents and attachments in the docs folder and checks if there aren't orphaned attachments. An example of executing this tool, where the check of attachments is included:</p>
-<div class="highlight"><pre><span></span><code>DocLinkChecker.exe -d ./docs -a
+<div class="highlight"><pre><span></span><code>DocLinkChecker.exe<span class="w"> </span>-d<span class="w"> </span>./docs<span class="w"> </span>-a
 </code></pre></div>
 <p>The <strong>TocDocFxCreation</strong> tool is needed to generate a table of contents for your documentation, so users can navigate between folders and documents. If you have compiled the tool, use this command to generate a table of content file <code>toc.yml</code>. To generate a table of contents with the use of the .order files for determining the sequence of articles and to automatically generate index.md documents if no default document is available in a folder, this command can be used:</p>
-<div class="highlight"><pre><span></span><code>TocDocFxCreation.exe -d ./docs -sri
+<div class="highlight"><pre><span></span><code>TocDocFxCreation.exe<span class="w"> </span>-d<span class="w"> </span>./docs<span class="w"> </span>-sri
 </code></pre></div>
 <h2 id="5-run-docfx-to-generate-the-website">5. Run DocFx to generate the website</h2>
 <p>Run the <code>docfx</code> command to generate the website, by default in the <strong>_site</strong> folder.</p>
@@ -7456,7 +7464,7 @@ To get started with the setup of this website, read the getting started document
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2023</span>
       
     
   </small>

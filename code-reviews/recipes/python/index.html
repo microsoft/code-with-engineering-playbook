@@ -3821,8 +3821,6 @@
       
         
           
-            
-          
         
           
         
@@ -3832,16 +3830,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3850,6 +3842,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4924,8 +4928,6 @@
       
         
           
-            
-          
         
           
         
@@ -4933,16 +4935,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4951,6 +4947,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7322,45 +7330,45 @@
 <h3 id="flake8">Flake8</h3>
 <p>Flake8 is a simple and fast wrapper around <a href="https://github.com/PyCQA/pyflakes"><code>Pyflakes</code></a> (for detecting coding errors) and <a href="https://github.com/PyCQA/pycodestyle"><code>pycodestyle</code></a> (for pep8).</p>
 <p>Install <code>Flake8</code></p>
-<div class="highlight"><pre><span></span><code>pip install flake8
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>flake8
 </code></pre></div>
 <p>Add an extension for the <a href="https://github.com/PyCQA/pydocstyle"><code>pydocstyle</code></a> (for <a href="https://www.python.org/dev/peps/pep-0257/">doc strings</a>) tool to flake8.</p>
-<div class="highlight"><pre><span></span><code>pip install flake8-docstrings
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>flake8-docstrings
 </code></pre></div>
 <p>Add an extension for <a href="https://github.com/PyCQA/pep8-naming"><code>pep8-naming</code></a> (for <a href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">naming conventions</a> in pep8) tool to flake8.</p>
-<div class="highlight"><pre><span></span><code>pip install pep8-naming
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>pep8-naming
 </code></pre></div>
 <p>Run <code>Flake8</code></p>
-<div class="highlight"><pre><span></span><code>flake8 .    <span class="c1"># lint the whole project</span>
+<div class="highlight"><pre><span></span><code>flake8<span class="w"> </span>.<span class="w">    </span><span class="c1"># lint the whole project</span>
 </code></pre></div>
 <h3 id="pylint">Pylint</h3>
 <p>Install <code>Pylint</code></p>
-<div class="highlight"><pre><span></span><code>pip install pylint
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>pylint
 </code></pre></div>
 <p>Run <code>Pylint</code></p>
-<div class="highlight"><pre><span></span><code>pylint src  <span class="c1"># lint the source directory</span>
+<div class="highlight"><pre><span></span><code>pylint<span class="w"> </span>src<span class="w">  </span><span class="c1"># lint the source directory</span>
 </code></pre></div>
 <h2 id="automatic-code-formatting">Automatic Code Formatting</h2>
 <h3 id="black">Black</h3>
 <p><a href="https://github.com/psf/black"><code>Black</code></a> is an unapologetic code formatting tool. It removes all need from <code>pycodestyle</code> nagging about formatting, so the team can focus on content vs style. It's not possible to configure black for your own style needs.</p>
-<div class="highlight"><pre><span></span><code>pip install black
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>black
 </code></pre></div>
 <p>Format python code</p>
-<div class="highlight"><pre><span></span><code>black <span class="o">[</span>file/folder<span class="o">]</span>
+<div class="highlight"><pre><span></span><code>black<span class="w"> </span><span class="o">[</span>file/folder<span class="o">]</span>
 </code></pre></div>
 <h3 id="autopep8">Autopep8</h3>
 <p><a href="https://github.com/hhatto/autopep8"><code>Autopep8</code></a> is more lenient and allows more configuration if you want less stringent formatting.</p>
-<div class="highlight"><pre><span></span><code>pip install autopep8
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>autopep8
 </code></pre></div>
 <p>Format python code</p>
-<div class="highlight"><pre><span></span><code>autopep8 <span class="o">[</span>file/folder<span class="o">]</span> --in-place
+<div class="highlight"><pre><span></span><code>autopep8<span class="w"> </span><span class="o">[</span>file/folder<span class="o">]</span><span class="w"> </span>--in-place
 </code></pre></div>
 <h3 id="yapf">yapf</h3>
 <p><a href="https://github.com/google/yapf">yapf</a> Yet Another Python Formatter is a python formatter from Google based on ideas from gofmt.  This is also more configurable, and a good option for automatic code formatting.</p>
-<div class="highlight"><pre><span></span><code>pip install yapf
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>yapf
 </code></pre></div>
 <p>Format python code</p>
-<div class="highlight"><pre><span></span><code>yapf <span class="o">[</span>file/folder<span class="o">]</span> --in-place
+<div class="highlight"><pre><span></span><code>yapf<span class="w"> </span><span class="o">[</span>file/folder<span class="o">]</span><span class="w"> </span>--in-place
 </code></pre></div>
 <h2 id="vs-code-extensions">VS Code Extensions</h2>
 <h3 id="python">Python</h3>
@@ -7372,57 +7380,57 @@
 </code></pre></div>
 <h2 id="build-validation">Build validation</h2>
 <p>To automate linting with <code>flake8</code> and testing with <code>pytest</code> in Azure Devops you can add the following snippet to you <code>azure-pipelines.yaml</code> file.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">branches</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">include</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">develop</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
-<span class="w">  </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">include</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">src/*</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">branches</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">include</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">develop</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
+<span class="w">  </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">include</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">src/*</span>
 
-<span class="nt">pool</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">vmImage</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ubuntu-latest&#39;</span><span class="w"></span>
+<span class="nt">pool</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">vmImage</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ubuntu-latest&#39;</span>
 
-<span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LintAndTest</span><span class="w"></span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Lint and Test</span><span class="w"></span>
+<span class="nt">jobs</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LintAndTest</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Lint and Test</span>
 
-<span class="w">  </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">steps</span><span class="p">:</span>
 
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">checkout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">self</span><span class="w"></span>
-<span class="w">    </span><span class="nt">lfs</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">checkout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">self</span>
+<span class="w">    </span><span class="nt">lfs</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UsePythonVersion@0</span><span class="w"></span>
-<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Set</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">version</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">3.6&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">versionSpec</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.6&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UsePythonVersion@0</span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Set</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">version</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">3.6&#39;</span>
+<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">versionSpec</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.6&#39;</span>
 
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip3 install --user -r requirements.txt</span><span class="w"></span>
-<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Install</span><span class="nv"> </span><span class="s">dependencies&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip3 install --user -r requirements.txt</span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Install</span><span class="nv"> </span><span class="s">dependencies&#39;</span>
 
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
-<span class="w">      </span><span class="no"># Install Flake8</span><span class="w"></span>
-<span class="w">      </span><span class="no">pip3 install --user flake8</span><span class="w"></span>
-<span class="w">      </span><span class="no"># Install PyTest</span><span class="w"></span>
-<span class="w">      </span><span class="no">pip3 install --user pytest</span><span class="w"></span>
-<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Install</span><span class="nv"> </span><span class="s">Flake8</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">PyTest&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">      </span><span class="no"># Install Flake8</span>
+<span class="w">      </span><span class="no">pip3 install --user flake8</span>
+<span class="w">      </span><span class="no"># Install PyTest</span>
+<span class="w">      </span><span class="no">pip3 install --user pytest</span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Install</span><span class="nv"> </span><span class="s">Flake8</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">PyTest&#39;</span>
 
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
-<span class="w">      </span><span class="no">python3 -m flake8</span><span class="w"></span>
-<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Run</span><span class="nv"> </span><span class="s">Flake8</span><span class="nv"> </span><span class="s">linter&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">      </span><span class="no">python3 -m flake8</span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Run</span><span class="nv"> </span><span class="s">Flake8</span><span class="nv"> </span><span class="s">linter&#39;</span>
 
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
-<span class="w">      </span><span class="no"># Run PyTest tester</span><span class="w"></span>
-<span class="w">      </span><span class="no">python3 -m pytest --junitxml=./test-results.xml</span><span class="w"></span>
-<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Run</span><span class="nv"> </span><span class="s">PyTest</span><span class="nv"> </span><span class="s">Tester&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">      </span><span class="no"># Run PyTest tester</span>
+<span class="w">      </span><span class="no">python3 -m pytest --junitxml=./test-results.xml</span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Run</span><span class="nv"> </span><span class="s">PyTest</span><span class="nv"> </span><span class="s">Tester&#39;</span>
 
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishTestResults@2</span><span class="w"></span>
-<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Publish</span><span class="nv"> </span><span class="s">PyTest</span><span class="nv"> </span><span class="s">results&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">succeededOrFailed()</span><span class="w"></span>
-<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">testResultsFiles</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;**/test-*.xml&#39;</span><span class="w"></span>
-<span class="w">      </span><span class="nt">testRunTitle</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Publish</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">results</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">$(python.version)&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PublishTestResults@2</span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Publish</span><span class="nv"> </span><span class="s">PyTest</span><span class="nv"> </span><span class="s">results&#39;</span>
+<span class="w">    </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">succeededOrFailed()</span>
+<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">testResultsFiles</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;**/test-*.xml&#39;</span>
+<span class="w">      </span><span class="nt">testRunTitle</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Publish</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">results</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">$(python.version)&#39;</span>
 </code></pre></div>
 <p>To perform a PR validation on GitHub you can use a similar YAML configuration with <a href="https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions">GitHub Actions</a></p>
 <h2 id="pre-commit-hooks">Pre-commit hooks</h2>
@@ -7431,26 +7439,26 @@
 <ol>
 <li>
 <p>Install pre-commit and add to the requirements.txt</p>
-<div class="highlight"><pre><span></span><code>pip install pre-commit
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>pre-commit
 </code></pre></div>
 </li>
 <li>
 <p>Add a <code>.pre-commit-config.yaml</code> file in the root of the repository, with the desired pre-commit actions</p>
-<div class="highlight"><pre><span></span><code><span class="nt">repos</span><span class="p">:</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/ambv/black</span><span class="w"></span>
-<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stable</span><span class="w"></span>
-<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span><span class="w"></span>
-<span class="w">    </span><span class="nt">language_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python3.6</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/pre-commit/pre-commit-hooks</span><span class="w"></span>
-<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1.2.3</span><span class="w"></span>
-<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flake8</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">repos</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/ambv/black</span>
+<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stable</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<span class="w">    </span><span class="nt">language_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python3.6</span>
+<span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/pre-commit/pre-commit-hooks</span>
+<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1.2.3</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flake8</span>
 </code></pre></div>
 </li>
 <li>
 <p>Each individual developer that wants to set up pre-commit hooks can then run</p>
-<div class="highlight"><pre><span></span><code>pre-commit install
+<div class="highlight"><pre><span></span><code>pre-commit<span class="w"> </span>install
 </code></pre></div>
 </li>
 </ol>

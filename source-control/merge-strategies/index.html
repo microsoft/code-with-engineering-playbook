@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7164,21 +7172,21 @@ git merge topic
 <h2 id="two-approaches-to-achieve-a-linear-commit-history">Two approaches to achieve a linear commit history</h2>
 <h3 id="rebase-topic-branch-before-merging-into-main">Rebase topic branch before merging into main</h3>
 <p>Before merging <code>topic</code> into <code>main</code>, we rebase <code>topic</code> with the <code>main</code> branch:</p>
-<div class="highlight"><pre><span></span><code>          A---B---C topic
-         /         <span class="se">\</span>
-D---E---F-----------G---H main
+<div class="highlight"><pre><span></span><code><span class="w">          </span>A---B---C<span class="w"> </span>topic
+<span class="w">         </span>/<span class="w">         </span><span class="se">\</span>
+D---E---F-----------G---H<span class="w"> </span>main
 
-git checkout main
-git pull
-git checkout topic
-git rebase origin/main
+git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>pull
+git<span class="w"> </span>checkout<span class="w"> </span>topic
+git<span class="w"> </span>rebase<span class="w"> </span>origin/main
 </code></pre></div>
 <p>Create a PR topic --&gt; main in Azure DevOps and approve using the squash merge option</p>
 <h3 id="rebase-topic-branch-before-squash-merge-into-main">Rebase topic branch before squash merge into main</h3>
 <p><a href="https://learn.microsoft.com/en-us/azure/devops/repos/git/merging-with-squash?view=azure-devops">Squash merging</a> is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of adding each commit on <code>topic</code> to the history of <code>main</code>, a squash merge takes all the file changes and adds them to a single new commit on <code>main</code>.</p>
-<div class="highlight"><pre><span></span><code>          A---B---C topic
-         /
-D---E---F-----------G---H main
+<div class="highlight"><pre><span></span><code><span class="w">          </span>A---B---C<span class="w"> </span>topic
+<span class="w">         </span>/
+D---E---F-----------G---H<span class="w"> </span>main
 </code></pre></div>
 <p>Create a PR topic --&gt; main in Azure DevOps and approve using the squash merge option</p>
 

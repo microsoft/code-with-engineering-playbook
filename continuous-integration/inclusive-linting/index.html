@@ -3730,8 +3730,6 @@
       
         
           
-            
-          
         
           
         
@@ -3741,16 +3739,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3759,6 +3751,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4833,8 +4837,6 @@
       
         
           
-            
-          
         
           
         
@@ -4842,16 +4844,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4860,6 +4856,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7142,11 +7150,11 @@
 <h3 id="woke">[<code>woke</code>]</h3>
 <p>One inclusive linter we recommend is <code>woke</code>. It is a language-agnostic CLI tool that detects non-inclusive language in your source code and recommends alternatives. While <code>woke</code> automatically applies a <a href="https://github.com/get-woke/woke/blob/main/pkg/rule/default.yaml">default ruleset</a> with non-inclusive terms to lint for, you can also apply a custom rule config (via a yaml file) with additional terms to lint for. See [<code>example.yaml</code>] for an example of adding custom rules.</p>
 <p>Running the tool locally on a file or directory is relatively straightforward:</p>
-<div class="highlight"><pre><span></span><code>$ woke test.txt
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>woke<span class="w"> </span>test.txt
 
-test.txt:2:2-6: <span class="sb">`</span>guys<span class="sb">`</span> may be insensitive, use <span class="sb">`</span>folks<span class="sb">`</span>, <span class="sb">`</span>people<span class="sb">`</span> instead <span class="o">(</span>warning<span class="o">)</span>
-* guys
-  ^
+test.txt:2:2-6:<span class="w"> </span><span class="sb">`</span>guys<span class="sb">`</span><span class="w"> </span>may<span class="w"> </span>be<span class="w"> </span>insensitive,<span class="w"> </span>use<span class="w"> </span><span class="sb">`</span>folks<span class="sb">`</span>,<span class="w"> </span><span class="sb">`</span>people<span class="sb">`</span><span class="w"> </span>instead<span class="w"> </span><span class="o">(</span>warning<span class="o">)</span>
+*<span class="w"> </span>guys
+<span class="w">  </span>^
 </code></pre></div>
 <p><code>woke</code> can be run locally on your machine or CI/CD system via CLI and is also available as a two GitHub Actions:</p>
 <ul>
@@ -7157,22 +7165,22 @@ test.txt:2:2-6: <span class="sb">`</span>guys<span class="sb">`</span> may be in
 <ol>
 <li>
 <p>Add the <code>woke</code> action as a step in your project's CI pipeline yaml:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span><span class="w"></span>
-<span class="nt">on</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pull_request</span><span class="w"></span>
-<span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">woke</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">woke</span><span class="w"></span>
-<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
-<span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout</span><span class="w"></span>
-<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span>
+<span class="nt">on</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pull_request</span>
+<span class="nt">jobs</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">woke</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">woke</span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout</span>
+<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
 
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">woke</span><span class="w"></span>
-<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">get-woke/woke-action@v0</span><span class="w"></span>
-<span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
-<span class="w">          </span><span class="c1"># Cause the check to fail on any broke rules</span><span class="w"></span>
-<span class="w">          </span><span class="nt">fail-on-error</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">woke</span>
+<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">get-woke/woke-action@v0</span>
+<span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Cause the check to fail on any broke rules</span>
+<span class="w">          </span><span class="nt">fail-on-error</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 </li>
 <li>

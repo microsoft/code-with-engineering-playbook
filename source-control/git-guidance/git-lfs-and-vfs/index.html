@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7221,9 +7229,9 @@
 <p>Git is very good and keeping track of changes in text-based files like code, but it is not that good at tracking binary files. For instance, if you store a Photoshop image file (PSD) in a repository, with every change, the complete file is stored again in the history. This can make the history of the Git repo very large, which makes a clone of the repository more and more time-consuming.</p>
 <p>A solution to work with binary files is using Git LFS (or Git Large File System). This is an extension to Git and must be installed separately, and it can only be used with a repository platform that supports LFS. GitHub.com and Azure DevOps for instance are platforms that have support for LFS.</p>
 <p>The way it works in short, is that a placeholder file is stored in the repo with information for the LFS system. It looks something like this:</p>
-<div class="highlight"><pre><span></span><code>version https://git-lfs.github.com/spec/v1
-oid a747cfbbef63fc0a3f5ffca332ae486ee7bf77c1d1b9b2de02e261ef97d085fe
-size <span class="m">4923023</span>
+<div class="highlight"><pre><span></span><code>version<span class="w"> </span>https://git-lfs.github.com/spec/v1
+oid<span class="w"> </span>a747cfbbef63fc0a3f5ffca332ae486ee7bf77c1d1b9b2de02e261ef97d085fe
+size<span class="w"> </span><span class="m">4923023</span>
 </code></pre></div>
 <p>The actual file is stored in a separate storage. This way Git will track changes in this placeholder file, not the large file. The combination of using Git and Git LFS will hide this from the developer though. You will just work with the repository and files as before.</p>
 <p>When working with these large files yourself, you'll still see the Git history grown on your own machine, as Git will still start tracking these large files locally, but when you clone the repo, the history is actually pretty small. So it's beneficial for others not working directly on the large files.</p>
@@ -7250,38 +7258,38 @@ size <span class="m">4923023</span>
 <ul>
 <li>Setup LFS for the repo:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>git lfs install
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>lfs<span class="w"> </span>install
 </code></pre></div>
 <ul>
 <li>Indicate which files have to be considered as large files (or binary files). As an example, to consider all Photoshop files to be large:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>git lfs track <span class="s2">&quot;*.psd&quot;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s2">&quot;*.psd&quot;</span>
 </code></pre></div>
 <p>There are more fine-grained ways to indicate files in a folder and more. See the <a href="https://github.com/git-lfs/git-lfs/tree/master/docs?utm_source=gitlfs_site&amp;utm_medium=docs_link&amp;utm_campaign=gitlfs">Git LFS Documentation</a>.</p>
 <p>With these commands a <code>.gitattribute</code> file is created which contains these settings and must be part of the repository.</p>
 <p>From here on you just use the standard Git commands to work in the repository. The rest will be handled by Git and Git LFS.</p>
 <h3 id="common-lfs-commands">Common LFS commands</h3>
 <p>Install Git LFS</p>
-<div class="highlight"><pre><span></span><code>git lfs install       <span class="c1"># windows</span>
-sudo apt-get git-lfs  <span class="c1"># linux</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>lfs<span class="w"> </span>install<span class="w">       </span><span class="c1"># windows</span>
+sudo<span class="w"> </span>apt-get<span class="w"> </span>git-lfs<span class="w">  </span><span class="c1"># linux</span>
 </code></pre></div>
 <p>See the <a href="https://github.com/git-lfs/git-lfs/wiki/Installation">Git LFS installation instructions</a> for installation on other systems</p>
 <p>Track .mp4 files with Git LFS</p>
-<div class="highlight"><pre><span></span><code>git lfs track <span class="s1">&#39;*.mp4&#39;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s1">&#39;*.mp4&#39;</span>
 </code></pre></div>
 <p>Update the <code>.gitattributes</code> file listing the files and patterns to track</p>
-<div class="highlight"><pre><span></span><code>*.mp4 <span class="nv">filter</span><span class="o">=</span>lfs <span class="nv">diff</span><span class="o">=</span>lfs <span class="nv">merge</span><span class="o">=</span>lfs -text
-docs/images/* <span class="nv">filter</span><span class="o">=</span>lfs <span class="nv">diff</span><span class="o">=</span>lfs <span class="nv">merge</span><span class="o">=</span>lfs -text
+<div class="highlight"><pre><span></span><code>*.mp4<span class="w"> </span><span class="nv">filter</span><span class="o">=</span>lfs<span class="w"> </span><span class="nv">diff</span><span class="o">=</span>lfs<span class="w"> </span><span class="nv">merge</span><span class="o">=</span>lfs<span class="w"> </span>-text
+docs/images/*<span class="w"> </span><span class="nv">filter</span><span class="o">=</span>lfs<span class="w"> </span><span class="nv">diff</span><span class="o">=</span>lfs<span class="w"> </span><span class="nv">merge</span><span class="o">=</span>lfs<span class="w"> </span>-text
 </code></pre></div>
 <p>List all patterns tracked</p>
-<div class="highlight"><pre><span></span><code>git lfs track
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>lfs<span class="w"> </span>track
 </code></pre></div>
 <p>List all files tracked</p>
-<div class="highlight"><pre><span></span><code>git lfs ls-files
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>lfs<span class="w"> </span>ls-files
 </code></pre></div>
 <p>Download files to your working directory</p>
-<div class="highlight"><pre><span></span><code>git lfs pull
-git lfs pull --include<span class="o">=</span><span class="s2">&quot;path/to/file&quot;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>lfs<span class="w"> </span>pull
+git<span class="w"> </span>lfs<span class="w"> </span>pull<span class="w"> </span>--include<span class="o">=</span><span class="s2">&quot;path/to/file&quot;</span>
 </code></pre></div>
 <h2 id="vfs-for-git">VFS for Git</h2>
 <p>Imagine a large repository containing multiple projects, ex. one per feature. As a developer you may only be working on some features, and thus you don't want to download all the projects in the repo. By default, with Git however, cloning the repository means you will download <em>all</em> files/projects.</p>
@@ -7297,15 +7305,15 @@ git lfs pull --include<span class="o">=</span><span class="s2">&quot;path/to/fil
 </ul>
 <p>Download those files and install them on your machine.</p>
 <p>To be able to use VFS for Git for a repository, a <code>.gitattributes</code> file needs to be added to the repo with this line in it:</p>
-<div class="highlight"><pre><span></span><code>* -text
+<div class="highlight"><pre><span></span><code>*<span class="w"> </span>-text
 </code></pre></div>
 <p>To clone a repository to your machine using VFS for Git you use <code>gvfs</code> instead of <code>git</code> like so:</p>
-<div class="highlight"><pre><span></span><code>gvfs clone <span class="o">[</span>URL<span class="o">]</span> <span class="o">[</span>dir<span class="o">]</span>
+<div class="highlight"><pre><span></span><code>gvfs<span class="w"> </span>clone<span class="w"> </span><span class="o">[</span>URL<span class="o">]</span><span class="w"> </span><span class="o">[</span>dir<span class="o">]</span>
 </code></pre></div>
 <p>Once this is done, you have a folder which contains a <code>src</code> folder which contains the contents of the repository. This is done because of a practice to put all outputs of build systems outside this tree. This makes it easier to manage <code>.gitignore</code> files and to keep Git performant with lots of files.</p>
 <p>For working with the repository you just use Git commands as before.</p>
 <p>To remove a VFS for Git repository from your machine, make sure the VFS process is stopped and execute this command from the main folder:</p>
-<div class="highlight"><pre><span></span><code>gvfs unmount
+<div class="highlight"><pre><span></span><code>gvfs<span class="w"> </span>unmount
 </code></pre></div>
 <p>This will stop the process and unregister it, after that you can safely remove the folder.</p>
 <h3 id="references">References</h3>

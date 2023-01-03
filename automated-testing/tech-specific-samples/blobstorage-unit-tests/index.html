@@ -3673,8 +3673,6 @@
       
         
           
-            
-          
         
           
         
@@ -3684,16 +3682,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3702,6 +3694,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4776,8 +4780,6 @@
       
         
           
-            
-          
         
           
         
@@ -4785,16 +4787,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4803,6 +4799,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7110,36 +7118,36 @@
 <p>In order to run Azurite V3 you need Node.js &gt;= 8.0 installed on your system. Azurite works cross-platform on Windows, Linux, and OS X.</p>
 <p>After the Node.js installation, you can install Azurite simply with npm which is the Node.js package management tool included with every Node.js installation.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Install Azurite</span>
-npm install -g azurite
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>azurite
 
 <span class="c1"># Create azurite directory</span>
-mkdir c:/azurite
+mkdir<span class="w"> </span>c:/azurite
 
 <span class="c1"># Launch Azurite for Windows</span>
-azurite --silent --location c:<span class="se">\a</span>zurite --debug c:<span class="se">\a</span>zurite<span class="se">\d</span>ebug.log
+azurite<span class="w"> </span>--silent<span class="w"> </span>--location<span class="w"> </span>c:<span class="se">\a</span>zurite<span class="w"> </span>--debug<span class="w"> </span>c:<span class="se">\a</span>zurite<span class="se">\d</span>ebug.log
 </code></pre></div>
 <p>The output will be:</p>
-<div class="highlight"><pre><span></span><code>Azurite Blob service is starting at http://127.0.0.1:10000
-Azurite Blob service is successfully listening at http://127.0.0.1:10000
-Azurite Queue service is starting at http://127.0.0.1:10001
-Azurite Queue service is successfully listening at http://127.0.0.1:10001
+<div class="highlight"><pre><span></span><code>Azurite<span class="w"> </span>Blob<span class="w"> </span>service<span class="w"> </span>is<span class="w"> </span>starting<span class="w"> </span>at<span class="w"> </span>http://127.0.0.1:10000
+Azurite<span class="w"> </span>Blob<span class="w"> </span>service<span class="w"> </span>is<span class="w"> </span>successfully<span class="w"> </span>listening<span class="w"> </span>at<span class="w"> </span>http://127.0.0.1:10000
+Azurite<span class="w"> </span>Queue<span class="w"> </span>service<span class="w"> </span>is<span class="w"> </span>starting<span class="w"> </span>at<span class="w"> </span>http://127.0.0.1:10001
+Azurite<span class="w"> </span>Queue<span class="w"> </span>service<span class="w"> </span>is<span class="w"> </span>successfully<span class="w"> </span>listening<span class="w"> </span>at<span class="w"> </span>http://127.0.0.1:10001
 </code></pre></div>
 <h3 id="b-using-a-docker-image">b. Using a docker image</h3>
 <p>Another way to run Azurite is using docker, using default <code>HTTP</code> endpoint</p>
-<div class="highlight"><pre><span></span><code>docker run -p <span class="m">10000</span>:10000 mcr.microsoft.com/azure-storage/azurite azurite-blob --blobHost <span class="m">0</span>.0.0.0
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">10000</span>:10000<span class="w"> </span>mcr.microsoft.com/azure-storage/azurite<span class="w"> </span>azurite-blob<span class="w"> </span>--blobHost<span class="w"> </span><span class="m">0</span>.0.0.0
 </code></pre></div>
 <p>Docker Compose is another option and can run the same docker image using the <code>docker-compose.yml</code> file below.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.4&#39;</span><span class="w"></span>
-<span class="nt">services</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">azurite</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mcr.microsoft.com/azure-storage/azurite</span><span class="w"></span>
-<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">azurite</span><span class="w"></span>
-<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./cert/azurite:/data</span><span class="w"></span>
-<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;azurite-blob</span><span class="nv"> </span><span class="s">--blobHost</span><span class="nv"> </span><span class="s">0.0.0.0</span><span class="nv"> </span><span class="s">-l</span><span class="nv"> </span><span class="s">/data</span><span class="nv"> </span><span class="s">--cert</span><span class="nv"> </span><span class="s">/data/127.0.0.1.pem</span><span class="nv"> </span><span class="s">--key</span><span class="nv"> </span><span class="s">/data/127.0.0.1-key.pem</span><span class="nv"> </span><span class="s">--oauth</span><span class="nv"> </span><span class="s">basic&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;10000:10000&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;10001:10001&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.4&#39;</span>
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">azurite</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mcr.microsoft.com/azure-storage/azurite</span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">azurite</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./cert/azurite:/data</span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;azurite-blob</span><span class="nv"> </span><span class="s">--blobHost</span><span class="nv"> </span><span class="s">0.0.0.0</span><span class="nv"> </span><span class="s">-l</span><span class="nv"> </span><span class="s">/data</span><span class="nv"> </span><span class="s">--cert</span><span class="nv"> </span><span class="s">/data/127.0.0.1.pem</span><span class="nv"> </span><span class="s">--key</span><span class="nv"> </span><span class="s">/data/127.0.0.1-key.pem</span><span class="nv"> </span><span class="s">--oauth</span><span class="nv"> </span><span class="s">basic&quot;</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;10000:10000&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;10001:10001&quot;</span>
 </code></pre></div>
 <h2 id="2-run-tests-on-your-local-machine">2. Run tests on your local machine</h2>
 <p>Python 3.8.7 is used for this, but it should be fine on other 3.x versions as well.</p>
@@ -7148,14 +7156,14 @@ Azurite Queue service is successfully listening at http://127.0.0.1:10001
 <p>Install and run Azurite for local tests:</p>
 <p>Option 1: using npm:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Install Azurite</span>
-npm install -g azurite
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>azurite
 <span class="c1"># Create azurite directory</span>
-mkdir c:/azurite
+mkdir<span class="w"> </span>c:/azurite
 <span class="c1"># Launch Azurite for Windows</span>
-azurite --silent --location c:<span class="se">\a</span>zurite --debug c:<span class="se">\a</span>zurite<span class="se">\d</span>ebug.log
+azurite<span class="w"> </span>--silent<span class="w"> </span>--location<span class="w"> </span>c:<span class="se">\a</span>zurite<span class="w"> </span>--debug<span class="w"> </span>c:<span class="se">\a</span>zurite<span class="se">\d</span>ebug.log
 </code></pre></div>
 <p>Option 2: using docker</p>
-<div class="highlight"><pre><span></span><code>docker run -p <span class="m">10000</span>:10000 mcr.microsoft.com/azure-storage/azurite azurite-blob --blobHost <span class="m">0</span>.0.0.0
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">10000</span>:10000<span class="w"> </span>mcr.microsoft.com/azure-storage/azurite<span class="w"> </span>azurite-blob<span class="w"> </span>--blobHost<span class="w"> </span><span class="m">0</span>.0.0.0
 </code></pre></div>
 </li>
 <li>
@@ -7195,7 +7203,7 @@ azurite --silent --location c:<span class="se">\a</span>zurite --debug c:<span c
 </li>
 <li>
 <p>Run tests:</p>
-<div class="highlight"><pre><span></span><code>python -m pytest ./tests
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>./tests
 </code></pre></div>
 </li>
 </ol>
@@ -7204,39 +7212,39 @@ azurite --silent --location c:<span class="se">\a</span>zurite --debug c:<span c
 <h2 id="3-run-tests-on-azure-pipelines">3. Run tests on Azure Pipelines</h2>
 <p>After running tests locally we need to make sure these tests pass on Azure Pipelines too. We have 2 options here, we can use docker image as hosted agent on Azure or install an npm package in the Pipeline steps.</p>
 <div class="highlight"><pre><span></span><code>trigger:
-- master
+-<span class="w"> </span>master
 
 steps:
-- task: UsePythonVersion@0
-  displayName: <span class="s1">&#39;Use Python 3.7&#39;</span>
-  inputs:
-    versionSpec: <span class="m">3</span>.7
+-<span class="w"> </span>task:<span class="w"> </span>UsePythonVersion@0
+<span class="w">  </span>displayName:<span class="w"> </span><span class="s1">&#39;Use Python 3.7&#39;</span>
+<span class="w">  </span>inputs:
+<span class="w">    </span>versionSpec:<span class="w"> </span><span class="m">3</span>.7
 
-- bash: <span class="p">|</span>
-    pip install -r requirements_tests.txt
-  displayName: <span class="s1">&#39;Setup requirements for tests&#39;</span>
+-<span class="w"> </span>bash:<span class="w"> </span><span class="p">|</span>
+<span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements_tests.txt
+<span class="w">  </span>displayName:<span class="w"> </span><span class="s1">&#39;Setup requirements for tests&#39;</span>
 
-- bash: <span class="p">|</span>
-    sudo npm install -g azurite
-    sudo mkdir azurite
-    sudo azurite --silent --location azurite --debug azurite<span class="se">\d</span>ebug.log <span class="p">&amp;</span>
-  displayName: <span class="s1">&#39;Install and Run Azurite&#39;</span>
+-<span class="w"> </span>bash:<span class="w"> </span><span class="p">|</span>
+<span class="w">    </span>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>azurite
+<span class="w">    </span>sudo<span class="w"> </span>mkdir<span class="w"> </span>azurite
+<span class="w">    </span>sudo<span class="w"> </span>azurite<span class="w"> </span>--silent<span class="w"> </span>--location<span class="w"> </span>azurite<span class="w"> </span>--debug<span class="w"> </span>azurite<span class="se">\d</span>ebug.log<span class="w"> </span><span class="p">&amp;</span>
+<span class="w">  </span>displayName:<span class="w"> </span><span class="s1">&#39;Install and Run Azurite&#39;</span>
 
-- bash: <span class="p">|</span>
-    python -m pytest --junit-xml<span class="o">=</span>unit_tests_report.xml --cov<span class="o">=</span>tests --cov-report<span class="o">=</span>html --cov-report<span class="o">=</span>xml ./tests
-  displayName: <span class="s1">&#39;Run Tests&#39;</span>
+-<span class="w"> </span>bash:<span class="w"> </span><span class="p">|</span>
+<span class="w">    </span>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>--junit-xml<span class="o">=</span>unit_tests_report.xml<span class="w"> </span>--cov<span class="o">=</span>tests<span class="w"> </span>--cov-report<span class="o">=</span>html<span class="w"> </span>--cov-report<span class="o">=</span>xml<span class="w"> </span>./tests
+<span class="w">  </span>displayName:<span class="w"> </span><span class="s1">&#39;Run Tests&#39;</span>
 
-- task: PublishCodeCoverageResults@1
-  inputs:
-    codeCoverageTool: Cobertura
-    summaryFileLocation: <span class="s1">&#39;$(System.DefaultWorkingDirectory)/**/coverage.xml&#39;</span>
-    reportDirectory: <span class="s1">&#39;$(System.DefaultWorkingDirectory)/**/htmlcov&#39;</span>
+-<span class="w"> </span>task:<span class="w"> </span>PublishCodeCoverageResults@1
+<span class="w">  </span>inputs:
+<span class="w">    </span>codeCoverageTool:<span class="w"> </span>Cobertura
+<span class="w">    </span>summaryFileLocation:<span class="w"> </span><span class="s1">&#39;$(System.DefaultWorkingDirectory)/**/coverage.xml&#39;</span>
+<span class="w">    </span>reportDirectory:<span class="w"> </span><span class="s1">&#39;$(System.DefaultWorkingDirectory)/**/htmlcov&#39;</span>
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: <span class="s1">&#39;JUnit&#39;</span>
-    testResultsFiles: <span class="s1">&#39;**/*_tests_report.xml&#39;</span>
-    failTaskOnFailedTests: <span class="nb">true</span>
+-<span class="w"> </span>task:<span class="w"> </span>PublishTestResults@2
+<span class="w">  </span>inputs:
+<span class="w">    </span>testResultsFormat:<span class="w"> </span><span class="s1">&#39;JUnit&#39;</span>
+<span class="w">    </span>testResultsFiles:<span class="w"> </span><span class="s1">&#39;**/*_tests_report.xml&#39;</span>
+<span class="w">    </span>failTaskOnFailedTests:<span class="w"> </span><span class="nb">true</span>
 </code></pre></div>
 <p>Once we set up our pipeline in Azure Pipelines, result will be like below</p>
 <p><img alt="azure pipelines" src="images/azure_pipeline.png" /></p>

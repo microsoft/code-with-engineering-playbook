@@ -3789,8 +3789,6 @@
       
         
           
-            
-          
         
           
         
@@ -3800,16 +3798,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3818,6 +3810,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4892,8 +4896,6 @@
       
         
           
-            
-          
         
           
         
@@ -4901,16 +4903,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4919,6 +4915,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7289,29 +7297,29 @@
 <li>Build Postman Environment files (local, Dev and/or QA) and parameterize all saved requests of the Postman Collection in a way that references the Postman Environment files.</li>
 <li>
 <p>Use the Postman Script feature to create a shared prefetch script that automatically refreshes expired auth tokens per saved request. This would require referencing secrets from a Postman Environment file.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Please treat this as pseudocode, and adjust as necessary.</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Please treat this as pseudocode, and adjust as necessary.</span>
 
 <span class="cm">/* The request to an oauth2 authorization endpoint that will issue a token </span>
-<span class="cm">based on provided credentials.*/</span><span class="w"></span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">oauth2Request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">POST</span><span class="w"> </span><span class="p">{...};</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">getToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"></span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="p">.</span><span class="nx">environment</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;ACCESS_TOKEN_EXPIRY&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()).</span><span class="nx">getTime</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Token is expired&#39;</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">getToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Token and expiry date are all good&#39;</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">getToken</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">pm</span><span class="p">.</span><span class="nx">sendRequest</span><span class="p">(</span><span class="nx">oauth2Request</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Save the token&#39;</span><span class="p">)</span><span class="w"></span>
-<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">responseJson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span><span class="w"></span>
-<span class="w">            </span><span class="nx">pm</span><span class="p">.</span><span class="nx">environment</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;token&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">responseJson</span><span class="p">.</span><span class="nx">access_token</span><span class="p">)</span><span class="w"></span>
-<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Save the expiry date&#39;</span><span class="p">)</span><span class="w"></span>
-<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">expiryDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span><span class="w"></span>
-<span class="w">            </span><span class="nx">expiryDate</span><span class="p">.</span><span class="nx">setSeconds</span><span class="p">(</span><span class="nx">expiryDate</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">responseJson</span><span class="p">.</span><span class="nx">expires_in</span><span class="p">);</span><span class="w"></span>
-<span class="w">            </span><span class="nx">pm</span><span class="p">.</span><span class="nx">environment</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;ACCESS_TOKEN_EXPIRY&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">expiryDate</span><span class="p">.</span><span class="nx">getTime</span><span class="p">());</span><span class="w"></span>
-<span class="w">    </span><span class="p">});</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="cm">based on provided credentials.*/</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">oauth2Request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">POST</span><span class="w"> </span><span class="p">{...};</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">getToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="p">.</span><span class="nx">environment</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;ACCESS_TOKEN_EXPIRY&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()).</span><span class="nx">getTime</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Token is expired&#39;</span><span class="p">)</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">getToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Token and expiry date are all good&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">getToken</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">pm</span><span class="p">.</span><span class="nx">sendRequest</span><span class="p">(</span><span class="nx">oauth2Request</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Save the token&#39;</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">responseJson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="w">            </span><span class="nx">pm</span><span class="p">.</span><span class="nx">environment</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;token&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">responseJson</span><span class="p">.</span><span class="nx">access_token</span><span class="p">)</span>
+<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Save the expiry date&#39;</span><span class="p">)</span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">expiryDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">            </span><span class="nx">expiryDate</span><span class="p">.</span><span class="nx">setSeconds</span><span class="p">(</span><span class="nx">expiryDate</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">responseJson</span><span class="p">.</span><span class="nx">expires_in</span><span class="p">);</span>
+<span class="w">            </span><span class="nx">pm</span><span class="p">.</span><span class="nx">environment</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;ACCESS_TOKEN_EXPIRY&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">expiryDate</span><span class="p">.</span><span class="nx">getTime</span><span class="p">());</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">}</span>
 </code></pre></div>
 </li>
 <li>
@@ -7441,16 +7449,16 @@
 </li>
 <li>
 <p>Create a yaml file and define a step that will run your test script. (ex. A yaml file targeting Azure Devops that runs a Powershell script.)</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Please treat this as pseudocode, and adjust as necessary.</span><span class="w"></span>
-<span class="c1">############################################################</span><span class="w"></span>
-<span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Run</span><span class="nv"> </span><span class="s">Postman</span><span class="nv"> </span><span class="s">E2E</span><span class="nv"> </span><span class="s">tests&#39;</span><span class="w"></span>
-<span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">targetType</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;filePath&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">filePath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RunPostmanE2eTests.ps1</span><span class="w"></span>
-<span class="nt">env</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">APP_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(environment.appId)</span><span class="w"> </span><span class="c1"># credentials for az cli</span><span class="w"></span>
-<span class="w">    </span><span class="nt">AZURE_SECRET</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(environment.secret)</span><span class="w"></span>
-<span class="w">    </span><span class="nt">AZURE_TENANT</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(environment.tenant)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Please treat this as pseudocode, and adjust as necessary.</span>
+<span class="c1">############################################################</span>
+<span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Run</span><span class="nv"> </span><span class="s">Postman</span><span class="nv"> </span><span class="s">E2E</span><span class="nv"> </span><span class="s">tests&#39;</span>
+<span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">targetType</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;filePath&#39;</span>
+<span class="w">    </span><span class="nt">filePath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RunPostmanE2eTests.ps1</span>
+<span class="nt">env</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">APP_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(environment.appId)</span><span class="w"> </span><span class="c1"># credentials for az cli</span>
+<span class="w">    </span><span class="nt">AZURE_SECRET</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(environment.secret)</span>
+<span class="w">    </span><span class="nt">AZURE_TENANT</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(environment.tenant)</span>
 </code></pre></div>
 </li>
 </ol>

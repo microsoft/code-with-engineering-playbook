@@ -3730,8 +3730,6 @@
       
         
           
-            
-          
         
           
         
@@ -3741,16 +3739,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3759,6 +3751,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4833,8 +4837,6 @@
       
         
           
-            
-          
         
           
         
@@ -4842,16 +4844,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4860,6 +4856,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7133,32 +7141,32 @@
 <p>The baseline file also provides a simple and convenient way of handling false positives. We can white-list the false positive in the baseline file to ignore it on future invocations of the tool.</p>
 <h2 id="setup">Setup</h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># install system dependencies: diff, jq, python3 (if on Linux-based OS)</span>
-apt-get install -y diffutils jq python3 python3-pip
+apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>diffutils<span class="w"> </span>jq<span class="w"> </span>python3<span class="w"> </span>python3-pip
 
 <span class="c1"># install system dependencies: diff, jq, python3 (if on Windows)</span>
-winget install Python.Python.3
-choco install diffutils jq -y
+winget<span class="w"> </span>install<span class="w"> </span>Python.Python.3
+choco<span class="w"> </span>install<span class="w"> </span>diffutils<span class="w"> </span>jq<span class="w"> </span>-y
 
 <span class="c1"># install the detect-secrets tool</span>
-python3 -m pip install detect-secrets
+python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>detect-secrets
 
 <span class="c1"># run the tool to establish a list of known secrets</span>
 <span class="c1"># review this file thoroughly and check it into the repository</span>
-detect-secrets scan &gt; .secrets.baseline
+detect-secrets<span class="w"> </span>scan<span class="w"> </span>&gt;<span class="w"> </span>.secrets.baseline
 </code></pre></div>
 <h2 id="usage">Usage</h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># backup the list of known secrets</span>
-cp .secrets.baseline .secrets.new
+cp<span class="w"> </span>.secrets.baseline<span class="w"> </span>.secrets.new
 
 <span class="c1"># find all the secrets in the repository</span>
-detect-secrets scan --baseline .secrets.new <span class="k">$(</span>find . -type f ! -name <span class="s1">&#39;.secrets.*&#39;</span> ! -path <span class="s1">&#39;*/.git*&#39;</span><span class="k">)</span>
+detect-secrets<span class="w"> </span>scan<span class="w"> </span>--baseline<span class="w"> </span>.secrets.new<span class="w"> </span><span class="k">$(</span>find<span class="w"> </span>.<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>!<span class="w"> </span>-name<span class="w"> </span><span class="s1">&#39;.secrets.*&#39;</span><span class="w"> </span>!<span class="w"> </span>-path<span class="w"> </span><span class="s1">&#39;*/.git*&#39;</span><span class="k">)</span>
 
 <span class="c1"># if there is any difference between the known and newly detected secrets, break the build</span>
-list_secrets<span class="o">()</span> <span class="o">{</span> jq -r <span class="s1">&#39;.results | keys[] as $key | &quot;\($key),\(.[$key] | .[] | .hashed_secret)&quot;&#39;</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="p">|</span> sort<span class="p">;</span> <span class="o">}</span>
+list_secrets<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.results | keys[] as $key | &quot;\($key),\(.[$key] | .[] | .hashed_secret)&quot;&#39;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="p">;</span><span class="w"> </span><span class="o">}</span>
 
-<span class="k">if</span> ! diff &lt;<span class="o">(</span>list_secrets .secrets.baseline<span class="o">)</span> &lt;<span class="o">(</span>list_secrets .secrets.new<span class="o">)</span> &gt;<span class="p">&amp;</span><span class="m">2</span><span class="p">;</span> <span class="k">then</span>
-  <span class="nb">echo</span> <span class="s2">&quot;Detected new secrets in the repo&quot;</span> &gt;<span class="p">&amp;</span><span class="m">2</span>
-  <span class="nb">exit</span> <span class="m">1</span>
+<span class="k">if</span><span class="w"> </span>!<span class="w"> </span>diff<span class="w"> </span>&lt;<span class="o">(</span>list_secrets<span class="w"> </span>.secrets.baseline<span class="o">)</span><span class="w"> </span>&lt;<span class="o">(</span>list_secrets<span class="w"> </span>.secrets.new<span class="o">)</span><span class="w"> </span>&gt;<span class="p">&amp;</span><span class="m">2</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Detected new secrets in the repo&quot;</span><span class="w"> </span>&gt;<span class="p">&amp;</span><span class="m">2</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
 <span class="k">fi</span>
 </code></pre></div>
 

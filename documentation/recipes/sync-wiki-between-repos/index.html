@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7050,25 +7058,25 @@
 <h1 id="how-to-sync-a-wiki-between-repositories">How to Sync a Wiki between Repositories</h1>
 <p>This is a quick guide to mirroring a Project Wiki to another repository.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Clone the wiki</span>
-git clone &lt;<span class="nb">source</span> wiki repo url&gt;
+git<span class="w"> </span>clone<span class="w"> </span>&lt;<span class="nb">source</span><span class="w"> </span>wiki<span class="w"> </span>repo<span class="w"> </span>url&gt;
 
 <span class="c1"># Add mirror repository as a remote</span>
-<span class="nb">cd</span> &lt;<span class="nb">source</span> wiki repo working folder&gt;
-git remote add mirror &lt;mirror repo that must already exist&gt;
+<span class="nb">cd</span><span class="w"> </span>&lt;<span class="nb">source</span><span class="w"> </span>wiki<span class="w"> </span>repo<span class="w"> </span>working<span class="w"> </span>folder&gt;
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>mirror<span class="w"> </span>&lt;mirror<span class="w"> </span>repo<span class="w"> </span>that<span class="w"> </span>must<span class="w"> </span>already<span class="w"> </span>exist&gt;
 </code></pre></div>
 <p>Now each time you wish to sync run the following to get latest from the source wiki repo:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Get everything</span>
-git pull -v
+git<span class="w"> </span>pull<span class="w"> </span>-v
 </code></pre></div>
 <blockquote>
 <p><strong>Warning</strong>: Check that the output of the pull shows "From source repo URL". If this shows the mirror repo url then you've forgotten to reset the tracking. Run <code>git branch -u origin/wikiMaster</code> then continue.</p>
 </blockquote>
 <p>Then run this to push it to the mirror repo and reset the branch to track the source repo again:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Push all branches up to mirror remote</span>
-git push -u mirror
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>mirror
 
 <span class="c1"># Reset local to track source remote</span>
-git branch -u origin/wikiMaster
+git<span class="w"> </span>branch<span class="w"> </span>-u<span class="w"> </span>origin/wikiMaster
 </code></pre></div>
 <p>Your output should look like this when run:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">Git</span><span class="p">\</span><span class="n">MyProject</span><span class="p">.</span><span class="n">wiki</span><span class="p">&gt;</span> <span class="n">git</span> <span class="n">pull</span> <span class="n">-v</span>

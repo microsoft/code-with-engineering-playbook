@@ -3740,8 +3740,6 @@
       
         
           
-            
-          
         
           
         
@@ -3751,16 +3749,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3769,6 +3761,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4843,8 +4847,6 @@
       
         
           
-            
-          
         
           
         
@@ -4852,16 +4854,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4870,6 +4866,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7161,21 +7169,21 @@
 <h2 id="build-validation">Build Validation</h2>
 <p>It's important to enforce your code style and rules in the CI to avoid any team members merging code that does not comply with standards into your git repo.  If building using Azure DevOps, Azure DevOps support <a href="https://learn.microsoft.com/azure/devops/pipelines/tasks/build/maven?view=azure-devops">Maven</a> and <a href="https://learn.microsoft.com/azure/devops/pipelines/tasks/build/gradle?view=azure-devops">Gradle</a> build tasks using <a href="https://pmd.github.io/">PMD</a>, <a href="https://checkstyle.sourceforge.io/">Checkstyle</a>, and <a href="http://findbugs.sourceforge.net/">FindBugs</a> code analysis tools as part of every build.</p>
 <p>Here is an example yaml for a Maven build task with all three analysis tools enabled:</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Maven@3</span><span class="w"></span>
-<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Maven</span><span class="nv"> </span><span class="s">pom.xml&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">mavenPomFile</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(Parameters.mavenPOMFile)&#39;</span><span class="w"></span>
-<span class="w">        </span><span class="nt">checkStyleRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">        </span><span class="nt">pmdRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">        </span><span class="nt">findBugsRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Maven@3</span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Maven</span><span class="nv"> </span><span class="s">pom.xml&#39;</span>
+<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">mavenPomFile</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;$(Parameters.mavenPOMFile)&#39;</span>
+<span class="w">        </span><span class="nt">checkStyleRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">        </span><span class="nt">pmdRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">        </span><span class="nt">findBugsRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 <p>Here is an example yaml for a Gradle build task with all three analysis tools enabled:</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Gradle@2</span><span class="w"></span>
-<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;gradlew</span><span class="nv"> </span><span class="s">build&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">checkStyleRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">        </span><span class="nt">findBugsRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
-<span class="w">        </span><span class="nt">pmdRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Gradle@2</span>
+<span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;gradlew</span><span class="nv"> </span><span class="s">build&#39;</span>
+<span class="w">    </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">checkStyleRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">        </span><span class="nt">findBugsRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">        </span><span class="nt">pmdRunAnalysis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 <h2 id="code-review-checklist">Code Review Checklist</h2>
 <p>In addition to the <a href="../../process-guidance/reviewer-guidance/">Code Review Checklist</a> you should also look for these Java specific code review items</p>

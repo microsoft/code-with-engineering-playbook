@@ -3827,8 +3827,6 @@
       
         
           
-            
-          
         
           
         
@@ -3838,16 +3836,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3856,6 +3848,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4930,8 +4934,6 @@
       
         
           
-            
-          
         
           
         
@@ -4939,16 +4941,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4957,6 +4953,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7424,40 +7432,40 @@ of things. Some assertions can be inefficient and not give you the confidence yo
 mocking a client or configuration and your method passes the mock result directly as a return value without significant
 changes, consider not asserting on the return value. Because if you do, you are mainly asserting whether you set up the
 mock correctly. For a very simple example, look at this class:</p>
-<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SearchController</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ControllerBase</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SearchController</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ControllerBase</span><span class="w"> </span><span class="p">{</span>
 
-<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="n">ISearchClient</span><span class="w"> </span><span class="n">SearchClient</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="n">ISearchClient</span><span class="w"> </span><span class="n">SearchClient</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 
-<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="nf">SearchController</span><span class="p">(</span><span class="n">ISearchClient</span><span class="w"> </span><span class="n">searchClient</span><span class="p">)</span><span class="w"></span>
-<span class="w">   </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="n">SearchClient</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">searchClient</span><span class="p">;</span><span class="w"></span>
-<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="nf">SearchController</span><span class="p">(</span><span class="n">ISearchClient</span><span class="w"> </span><span class="n">searchClient</span><span class="p">)</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="n">SearchClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">searchClient</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
 
-<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">GetName</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">)</span><span class="w"></span>
-<span class="w">   </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">SearchClient</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">);</span><span class="w"></span>
-<span class="w">   </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">GetName</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">)</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">SearchClient</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>When testing the <code>GetName</code> method, you can set up a mock search client to return a certain value. Then, it’s easy to
 assert that the return value is, in fact, this value from the mock.</p>
-<div class="highlight"><pre><span></span><code><span class="n">mockSearchClient</span><span class="p">.</span><span class="n">Setup</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">))</span><span class="w"></span>
-<span class="w">   </span><span class="p">.</span><span class="n">ReturnsAsync</span><span class="p">(</span><span class="s">&quot;myResult&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="kt">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">searchController</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">);</span><span class="w"></span>
-<span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="s">&quot;myResult&quot;</span><span class="p">,</span><span class="n">result</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">mockSearchClient</span><span class="p">.</span><span class="n">Setup</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">))</span>
+<span class="w">   </span><span class="p">.</span><span class="n">ReturnsAsync</span><span class="p">(</span><span class="s">&quot;myResult&quot;</span><span class="p">);</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">searchController</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+<span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="s">&quot;myResult&quot;</span><span class="p">,</span><span class="n">result</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
 </code></pre></div>
 <p>But now, your method could look like this, and the test would still pass:</p>
-<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">GetName</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">   </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;myResult&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">GetName</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">id</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">   </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;myResult&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Similarly, if you set up your mock wrong, the test would fail even though the logic inside the method is sound. For efficient
 assertions that will give you confidence in your SUT, make assertions on your logic, not mock return values.
 The simple example above doesn’t have a lot of logic, but you want to make sure that it calls the search client to retrieve
 the result. For this, you can use the verify method to make sure the search client was called using the right parameters even
 though you don’t care about the result.</p>
-<div class="highlight"><pre><span></span><code><span class="n">mockSearchClient</span><span class="p">.</span><span class="n">Verify</span><span class="p">(</span><span class="n">mock</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="n">mock</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">Times</span><span class="p">.</span><span class="n">Once</span><span class="p">());</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">mockSearchClient</span><span class="p">.</span><span class="n">Verify</span><span class="p">(</span><span class="n">mock</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">mock</span><span class="p">.</span><span class="n">GetName</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">Times</span><span class="p">.</span><span class="n">Once</span><span class="p">());</span>
 </code></pre></div>
 <p>This example is kept simple to visualize the principle of making meaningful assertions. In a real world application, your SUT
 will probably have more logic inside. Pieces of glue code that have as little logic as this example don't always have to be
@@ -7474,27 +7482,27 @@ attribute at all. To avoid this, you can define only the most relevant parameter
 use an <code>any</code>-statement for the others. In this example, the method has a complex search options parameter which would take a
 lot of time to set up manually. Since you only care about 2 attributes in the search options, you use an <code>any</code>-statement and
 store the options in a callback for later assertions.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">var</span><span class="w"> </span><span class="n">actualOptions</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SearchOptions</span><span class="p">();</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">var</span><span class="w"> </span><span class="n">actualOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SearchOptions</span><span class="p">();</span>
 
-<span class="n">mockSearchClient</span><span class="w"></span>
-<span class="w">   </span><span class="p">.</span><span class="n">Setup</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span>
-<span class="w">      </span><span class="n">x</span><span class="p">.</span><span class="n">Search</span><span class="p">(</span><span class="w"></span>
+<span class="n">mockSearchClient</span>
+<span class="w">   </span><span class="p">.</span><span class="n">Setup</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span>
+<span class="w">      </span><span class="n">x</span><span class="p">.</span><span class="n">Search</span><span class="p">(</span>
 <span class="w">         </span><span class="s">&quot;[This parameter is most relevant]&quot;</span><span class="p">,</span><span class="w"> </span>
-<span class="w">         </span><span class="n">It</span><span class="p">.</span><span class="n">IsAny</span><span class="p">&lt;</span><span class="n">SearchOptions</span><span class="p">&gt;()</span><span class="w"></span>
+<span class="w">         </span><span class="n">It</span><span class="p">.</span><span class="n">IsAny</span><span class="o">&lt;</span><span class="n">SearchOptions</span><span class="o">&gt;</span><span class="p">()</span>
 <span class="w">      </span><span class="p">)</span><span class="w"> </span>
-<span class="w">   </span><span class="p">)</span><span class="w"></span>
-<span class="w">   </span><span class="p">.</span><span class="n">Returns</span><span class="p">(</span><span class="n">mockResults</span><span class="p">)</span><span class="w"></span>
-<span class="w">   </span><span class="p">.</span><span class="n">Callback</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="n">SearchOptions</span><span class="p">&gt;((</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="n">searchOptions</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"></span>
-<span class="w">     </span><span class="p">{</span><span class="w"></span>
-<span class="w">       </span><span class="n">actualOptions</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">searchOptions</span><span class="p">;</span><span class="w"></span>
-<span class="w">     </span><span class="p">}</span><span class="w"></span>
-<span class="w">   </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="p">)</span>
+<span class="w">   </span><span class="p">.</span><span class="n">Returns</span><span class="p">(</span><span class="n">mockResults</span><span class="p">)</span>
+<span class="w">   </span><span class="p">.</span><span class="n">Callback</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="n">SearchOptions</span><span class="o">&gt;</span><span class="p">((</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="n">searchOptions</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+<span class="w">     </span><span class="p">{</span>
+<span class="w">       </span><span class="n">actualOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">searchOptions</span><span class="p">;</span>
+<span class="w">     </span><span class="p">}</span>
+<span class="w">   </span><span class="p">);</span>
 </code></pre></div>
 <p>Since you want to test your method logic, you should care only about the parts of the parameter which are influenced by your SUT,
 in this example, let's say the search mode and the search query type. So, with the variable you stored in the callback, you can
 make assertions on only these two attributes.</p>
-<div class="highlight"><pre><span></span><code><span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="n">SearchMode</span><span class="p">.</span><span class="n">All</span><span class="p">,</span><span class="w"> </span><span class="n">actualOptions</span><span class="p">.</span><span class="n">SearchMode</span><span class="p">);</span><span class="w"></span>
-<span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="n">SearchQueryType</span><span class="p">.</span><span class="n">Full</span><span class="p">,</span><span class="w"> </span><span class="n">actualOptions</span><span class="p">.</span><span class="n">QueryType</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="n">SearchMode</span><span class="p">.</span><span class="n">All</span><span class="p">,</span><span class="w"> </span><span class="n">actualOptions</span><span class="p">.</span><span class="n">SearchMode</span><span class="p">);</span>
+<span class="n">Assert</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="n">SearchQueryType</span><span class="p">.</span><span class="n">Full</span><span class="p">,</span><span class="w"> </span><span class="n">actualOptions</span><span class="p">.</span><span class="n">QueryType</span><span class="p">);</span>
 </code></pre></div>
 <p>This makes the test more explicit since it shows which parts of the logic you care about. It’s also more efficient since you don’t
 have to spend a lot of time setting up the parameters for the mock.</p>

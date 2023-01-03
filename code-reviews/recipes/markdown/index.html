@@ -3883,8 +3883,6 @@
       
         
           
-            
-          
         
           
         
@@ -3894,16 +3892,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3912,6 +3904,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4986,8 +4990,6 @@
       
         
           
-            
-          
         
           
         
@@ -4995,16 +4997,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -5013,6 +5009,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7450,33 +7458,33 @@
 <p><a href="https://github.com/markdownlint/markdownlint"><code>markdownlint</code></a> is a linter for markdown that verifies Markdown syntax, and also enforces rules that make the text more readable. <a href="https://github.com/igorshubovych/markdownlint-cli">Markdownlint-cli</a> is an easy-to-use CLI based on Markdownlint.</p>
 <p>It's available as a <a href="https://github.com/markdownlint/markdownlint">ruby gem</a>, an <a href="https://github.com/DavidAnson/markdownlint">npm package</a>, a <a href="https://github.com/igorshubovych/markdownlint-cli">Node.js CLI</a> and a <a href="https://github.com/DavidAnson/vscode-markdownlint">VS Code extension</a>. The VS Code extension <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a> also catches all markdownlint errors.</p>
 <p>Installing the Node.js CLI</p>
-<div class="highlight"><pre><span></span><code>npm install -g markdownlint-cli
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>markdownlint-cli
 </code></pre></div>
 <p>Running markdownlint on a Node.js project</p>
-<div class="highlight"><pre><span></span><code>markdownlint **/*.md --ignore node_modules
+<div class="highlight"><pre><span></span><code>markdownlint<span class="w"> </span>**/*.md<span class="w"> </span>--ignore<span class="w"> </span>node_modules
 </code></pre></div>
 <p>Fixing errors automatically</p>
-<div class="highlight"><pre><span></span><code>markdownlint **/*.md --ignore node_modules --fix
+<div class="highlight"><pre><span></span><code>markdownlint<span class="w"> </span>**/*.md<span class="w"> </span>--ignore<span class="w"> </span>node_modules<span class="w"> </span>--fix
 </code></pre></div>
 <p>A comprehensive list of markdownlint rules is available <a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md">here</a>.</p>
 <h3 id="proselint">proselint</h3>
 <p><a href="http://proselint.com/"><code>proselint</code></a> is a command line utility that lints the text contents of the document.  It checks for jargon, spelling errors, redundancy, corporate speak and other language related issues.</p>
 <p>It's available both as a <a href="https://github.com/amperser/proselint/#checks">python package</a> and a <a href="https://www.npmjs.com/package/proselint">node package</a>.</p>
-<div class="highlight"><pre><span></span><code>pip install proselint
-npm install -g proselint
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>proselint
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>proselint
 </code></pre></div>
 <p>Run proselint</p>
-<div class="highlight"><pre><span></span><code>proselint document.md
+<div class="highlight"><pre><span></span><code>proselint<span class="w"> </span>document.md
 </code></pre></div>
 <h3 id="write-good">write-good</h3>
 <p><a href="https://github.com/btford/write-good"><code>write-good</code></a> is a linter for English text that helps writing better documentation.</p>
-<div class="highlight"><pre><span></span><code>npm install -g write-good
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>write-good
 </code></pre></div>
 <p>Run write-good</p>
-<div class="highlight"><pre><span></span><code>write-good *.md
+<div class="highlight"><pre><span></span><code>write-good<span class="w"> </span>*.md
 </code></pre></div>
 <p>Run write-good without installing it</p>
-<div class="highlight"><pre><span></span><code>npx write-good *.md
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>write-good<span class="w"> </span>*.md
 </code></pre></div>
 <p>Write Good is also available as an <a href="https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter">extension for VS Code</a></p>
 <h2 id="vs-code-extensions">VS Code Extensions</h2>
@@ -7486,40 +7494,41 @@ npm install -g proselint
 <p>The <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"><code>markdownlint extension</code></a> examines the Markdown documents, showing warnings for rule violations while editing.</p>
 <h2 id="build-validation">Build Validation</h2>
 <h3 id="linting">Linting</h3>
-<p>To automate linting with <code>markdownlint</code> for PR <a href="https://github.com/microsoft/code-with-engineering-playbook/blob/master/.github/workflows/markdownlint.yml">validation in GitHub actions</a> as we do in this repo, use the following YAML.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Markdownlint</span><span class="w"></span>
+<p>To automate linting with <code>markdownlint</code> for PR validation in GitHub actions,
+you can either use linters aggregator as we do with <a href="../../../.github/workflows/mega-linter.yml">MegaLinter in this repository</a> or use the following YAML.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Markdownlint</span>
 
-<span class="nt">on</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/*.md&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">paths</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/*.md&quot;</span><span class="w"></span>
+<span class="nt">on</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/*.md&quot;</span>
+<span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/*.md&quot;</span>
 
-<span class="nt">jobs</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">lint</span><span class="p">:</span><span class="w"></span>
+<span class="nt">jobs</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">lint</span><span class="p">:</span>
 
-<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
 
-<span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Use Node.js</span><span class="w"></span>
-<span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v1</span><span class="w"></span>
-<span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">node-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12.x</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run Markdownlint</span><span class="w"></span>
-<span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
-<span class="w">        </span><span class="no">npm i -g markdownlint-cli</span><span class="w"></span>
-<span class="w">        </span><span class="no">markdownlint &quot;**/*.md&quot; --ignore node_modules</span><span class="w"></span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Use Node.js</span>
+<span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v1</span>
+<span class="w">      </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">node-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12.x</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run Markdownlint</span>
+<span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">        </span><span class="no">npm i -g markdownlint-cli</span>
+<span class="w">        </span><span class="no">markdownlint &quot;**/*.md&quot; --ignore node_modules</span>
 </code></pre></div>
 <h3 id="checking-links">Checking Links</h3>
 <p>To automate link check in your markdown files add <code>markdown-link-check</code> action to your validation pipeline:</p>
-<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">markdown-link-check</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span><span class="w"></span>
-<span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@master</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gaurav-nelson/github-action-markdown-link-check@v1</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">markdown-link-check</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@master</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gaurav-nelson/github-action-markdown-link-check@v1</span>
 </code></pre></div>
 <p>More information about <code>markdown-link-check</code> action options can be found at <a href="https://github.com/gaurav-nelson/github-action-markdown-link-check"><code>markdown-link-check</code> home page</a></p>
 <h2 id="code-review-checklist">Code Review Checklist</h2>
@@ -7561,7 +7570,7 @@ Save your guidelines together with your documentation, so they are easy to refer
 <ul>
 <li>Avoid duplication of content, instead link to the <code>single source of truth</code></li>
 <li>Link but don't summarize. Summarizing content on another page leads to the content living in two places</li>
-<li>Use meaningful anchor texts, e.g. instead of writing <code>Follow the instructions [here](../recipes/Markdown.md)</code> write <code>Follow the [Markdown guidelines](../recipes/Markdown.md)</code></li>
+<li>Use meaningful anchor texts, e.g. instead of writing <code>Follow the instructions [here](../recipes/markdown.md)</code> write <code>Follow the [Markdown guidelines](../recipes/markdown.md)</code></li>
 <li>Make sure links to Microsoft docs (like <code>https://learn.microsoft.com/something/somethingelse</code>) do not contain the language marker <code>/en-us/</code> or <code>/fr-fr/</code>, as this is automatically determined by the site itself.</li>
 </ul>
 <h3 id="lists">Lists</h3>
@@ -7634,7 +7643,7 @@ Save your guidelines together with your documentation, so they are easy to refer
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2023</span>
       
     
   </small>

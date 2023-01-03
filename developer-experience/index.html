@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7401,43 +7409,43 @@
 <p>Abstract the layer that has the remote dependency behind an interface owned by the solution (not the remote dependency). Create an implementation of that interface using a technology that can be run locally. Create a factory that decides which instance to use. This decision could be based on environment configuration (i.e. the toggle). Then, the original class that depends on the remote tech instead should depend on the factory to provide which instance to use.</p>
 <p>Much of this strategy can be simplified with proper dependency injection technique and/or framework.</p>
 <p>See example below that swaps Azure Service Bus implementation for RabbitMQ which can be run locally.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="kd">class</span><span class="w"> </span><span class="nx">RabbitMQPublisher</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="c1">//todo: send the message via RabbitMQ</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="kd">class</span><span class="w"> </span><span class="nx">AzureServiceBusPublisher</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="c1">//todo: send the message via Azure Service Bus</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="kd">interface</span><span class="w"> </span><span class="nx">IPublisherFactory</span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">create</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="kd">class</span><span class="w"> </span><span class="nx">PublisherFactory</span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">create</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="c1">// use env var value to determine which instance should be used</span><span class="w"></span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">UseAsb</span><span class="p">){</span><span class="w"></span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">AzureServiceBusPublisher</span><span class="p">();</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">        </span><span class="k">else</span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">RabbitMqPublisher</span><span class="p">();</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyService</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">//inject the factory</span><span class="w"></span>
-<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">publisherFactory</span><span class="o">:</span><span class="w"> </span><span class="kt">IPublisherFactory</span><span class="p">){</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="nx">sendAMessage</span><span class="p">(</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="c1">//use the factory to determine which instance to use</span><span class="w"></span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">publisher</span><span class="o">:</span><span class="w"> </span><span class="kt">IPublisher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">publisherFactory</span><span class="p">.</span><span class="nx">create</span><span class="p">();</span><span class="w"></span>
-<span class="w">        </span><span class="nx">publisher</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
+<span class="p">}</span>
+<span class="kd">class</span><span class="w"> </span><span class="nx">RabbitMQPublisher</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//todo: send the message via RabbitMQ</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">class</span><span class="w"> </span><span class="nx">AzureServiceBusPublisher</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//todo: send the message via Azure Service Bus</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">interface</span><span class="w"> </span><span class="nx">IPublisherFactory</span><span class="p">{</span>
+<span class="w">    </span><span class="nx">create</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">IPublisher</span>
+<span class="p">}</span>
+<span class="kd">class</span><span class="w"> </span><span class="nx">PublisherFactory</span><span class="p">{</span>
+<span class="w">    </span><span class="nx">create</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">IPublisher</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// use env var value to determine which instance should be used</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">UseAsb</span><span class="p">){</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">AzureServiceBusPublisher</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">else</span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">RabbitMqPublisher</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">class</span><span class="w"> </span><span class="nx">MyService</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">//inject the factory</span>
+<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">publisherFactory</span><span class="o">:</span><span class="w"> </span><span class="kt">IPublisherFactory</span><span class="p">){</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">sendAMessage</span><span class="p">(</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//use the factory to determine which instance to use</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">publisher</span><span class="o">:</span><span class="w"> </span><span class="kt">IPublisher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">publisherFactory</span><span class="p">.</span><span class="nx">create</span><span class="p">();</span>
+<span class="w">        </span><span class="nx">publisher</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>The recipes section has a more complete discussion on <a href="recipes/client-app-inner-loop/">DI as part of a high productivity inner dev loop</a>  </p>
 

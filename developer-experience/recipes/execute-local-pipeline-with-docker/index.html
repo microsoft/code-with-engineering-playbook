@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7193,77 +7201,77 @@ In this document we will explore a solution which will allow us to have the loca
 <p>For this tutorial we are going to use a <a href="https://github.com/itye-msft/cse-engagement-template">sample dotnet core api application</a>.
 Here is the docker file for the sample app:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># https://hub.docker.com/_/microsoft-dotnet</span>
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
-WORKDIR /app
+FROM<span class="w"> </span>mcr.microsoft.com/dotnet/sdk:5.0<span class="w"> </span>AS<span class="w"> </span>build
+WORKDIR<span class="w"> </span>/app
 
 <span class="c1"># copy csproj and restore as distinct layers</span>
-COPY ./ ./
-RUN dotnet restore
+COPY<span class="w"> </span>./<span class="w"> </span>./
+RUN<span class="w"> </span>dotnet<span class="w"> </span>restore
 
-RUN dotnet <span class="nb">test</span>
+RUN<span class="w"> </span>dotnet<span class="w"> </span><span class="nb">test</span>
 
 <span class="c1"># copy everything else and build app</span>
-COPY SampleApp/. ./
-RUN dotnet publish -c release -o out --no-restore
+COPY<span class="w"> </span>SampleApp/.<span class="w"> </span>./
+RUN<span class="w"> </span>dotnet<span class="w"> </span>publish<span class="w"> </span>-c<span class="w"> </span>release<span class="w"> </span>-o<span class="w"> </span>out<span class="w"> </span>--no-restore
 
 <span class="c1"># final stage/image</span>
-FROM mcr.microsoft.com/dotnet/aspnet:5.0
-WORKDIR /app
-COPY --from<span class="o">=</span>build /app/out .
-ENTRYPOINT <span class="o">[</span><span class="s2">&quot;dotnet&quot;</span>, <span class="s2">&quot;SampleNetApi.dll&quot;</span><span class="o">]</span>
+FROM<span class="w"> </span>mcr.microsoft.com/dotnet/aspnet:5.0
+WORKDIR<span class="w"> </span>/app
+COPY<span class="w"> </span>--from<span class="o">=</span>build<span class="w"> </span>/app/out<span class="w"> </span>.
+ENTRYPOINT<span class="w"> </span><span class="o">[</span><span class="s2">&quot;dotnet&quot;</span>,<span class="w"> </span><span class="s2">&quot;SampleNetApi.dll&quot;</span><span class="o">]</span>
 </code></pre></div>
 <p>This script restores all dependencies, builds and runs tests. The dotnet app includes <code>stylecop</code> which fails the build in case of linting issues.</p>
 <p>Next we will also create a dockerfile to perform an end-to-end test. Usually this will look like a set of scripts, or a dedicated app which performs actual HTTP calls to a running application.
 For the sake of simplicity the dockerfile itself will run a simple curl command:</p>
-<div class="highlight"><pre><span></span><code>FROM alpine:3.7
-RUN apk --no-cache add curl
-ENTRYPOINT <span class="o">[</span><span class="s2">&quot;curl&quot;</span>,<span class="s2">&quot;0.0.0.0:8080/weatherforecast&quot;</span><span class="o">]</span>
+<div class="highlight"><pre><span></span><code>FROM<span class="w"> </span>alpine:3.7
+RUN<span class="w"> </span>apk<span class="w"> </span>--no-cache<span class="w"> </span>add<span class="w"> </span>curl
+ENTRYPOINT<span class="w"> </span><span class="o">[</span><span class="s2">&quot;curl&quot;</span>,<span class="s2">&quot;0.0.0.0:8080/weatherforecast&quot;</span><span class="o">]</span>
 </code></pre></div>
 <p>Now we are ready to combine both of the dockerfiles in a docker-compose script:</p>
-<div class="highlight"><pre><span></span><code>version: <span class="s1">&#39;3&#39;</span>
+<div class="highlight"><pre><span></span><code>version:<span class="w"> </span><span class="s1">&#39;3&#39;</span>
 services:
-  app:
-    image: app:0.01
-    build:
-      context: .
-    ports:
-      - <span class="s2">&quot;8080:80&quot;</span>
-  e2e:
-    image: e2e:0.01
-    build:
-      context: ./E2E
+<span class="w">  </span>app:
+<span class="w">    </span>image:<span class="w"> </span>app:0.01
+<span class="w">    </span>build:
+<span class="w">      </span>context:<span class="w"> </span>.
+<span class="w">    </span>ports:
+<span class="w">      </span>-<span class="w"> </span><span class="s2">&quot;8080:80&quot;</span>
+<span class="w">  </span>e2e:
+<span class="w">    </span>image:<span class="w"> </span>e2e:0.01
+<span class="w">    </span>build:
+<span class="w">      </span>context:<span class="w"> </span>./E2E
 </code></pre></div>
 <p>The docker-compose script will launch the 2 dockerfiles, and it will build them if they were not built before.
 The following command will run docker compose:</p>
-<div class="highlight"><pre><span></span><code>docker-compose up --build -d
+<div class="highlight"><pre><span></span><code>docker-compose<span class="w"> </span>up<span class="w"> </span>--build<span class="w"> </span>-d
 </code></pre></div>
 <p>Once the images are up, you can make calls to the service. The e2e image will perform the set of e2e tests.
 If you want to skip the tests, you can simply tell compose to run a specific service by appending the name of the service, as follows:</p>
-<div class="highlight"><pre><span></span><code>docker-compose up --build -d app
+<div class="highlight"><pre><span></span><code>docker-compose<span class="w"> </span>up<span class="w"> </span>--build<span class="w"> </span>-d<span class="w"> </span>app
 </code></pre></div>
 <p>Now you have a local script which builds and tests you application.
 The next step would be make your CI run the docker-compose script.</p>
 <p>Here is an example of a yaml file used by Azure DevOps pipelines:</p>
 <div class="highlight"><pre><span></span><code>trigger:
-- master
+-<span class="w"> </span>master
 
 pool:
-  vmImage: <span class="s1">&#39;ubuntu-latest&#39;</span>
+<span class="w">  </span>vmImage:<span class="w"> </span><span class="s1">&#39;ubuntu-latest&#39;</span>
 
 variables:
-  solution: <span class="s1">&#39;**/*.sln&#39;</span>
-  buildPlatform: <span class="s1">&#39;Any CPU&#39;</span>
-  buildConfiguration: <span class="s1">&#39;Release&#39;</span>
+<span class="w">  </span>solution:<span class="w"> </span><span class="s1">&#39;**/*.sln&#39;</span>
+<span class="w">  </span>buildPlatform:<span class="w"> </span><span class="s1">&#39;Any CPU&#39;</span>
+<span class="w">  </span>buildConfiguration:<span class="w"> </span><span class="s1">&#39;Release&#39;</span>
 
 steps:
-- task: DockerCompose@0
-  displayName: Build, Test, E2E
-  inputs:
-    action: Run services
-    dockerComposeFile: docker-compose.yml
-- script: dotnet restore SampleApp
-- script: dotnet build --configuration <span class="k">$(</span>buildConfiguration<span class="k">)</span> SampleApp
-  displayName: <span class="s1">&#39;dotnet build $(buildConfiguration)&#39;</span>
+-<span class="w"> </span>task:<span class="w"> </span>DockerCompose@0
+<span class="w">  </span>displayName:<span class="w"> </span>Build,<span class="w"> </span>Test,<span class="w"> </span>E2E
+<span class="w">  </span>inputs:
+<span class="w">    </span>action:<span class="w"> </span>Run<span class="w"> </span>services
+<span class="w">    </span>dockerComposeFile:<span class="w"> </span>docker-compose.yml
+-<span class="w"> </span>script:<span class="w"> </span>dotnet<span class="w"> </span>restore<span class="w"> </span>SampleApp
+-<span class="w"> </span>script:<span class="w"> </span>dotnet<span class="w"> </span>build<span class="w"> </span>--configuration<span class="w"> </span><span class="k">$(</span>buildConfiguration<span class="k">)</span><span class="w"> </span>SampleApp
+<span class="w">  </span>displayName:<span class="w"> </span><span class="s1">&#39;dotnet build $(buildConfiguration)&#39;</span>
 </code></pre></div>
 <p>In this script the first step is docker-compose, which uses the same file we created the previous steps.
 The next steps, do the same using scripts, and are here for comparison.

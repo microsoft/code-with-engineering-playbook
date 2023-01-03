@@ -3828,8 +3828,6 @@
       
         
           
-            
-          
         
           
         
@@ -3839,16 +3837,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3857,6 +3849,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4931,8 +4935,6 @@
       
         
           
-            
-          
         
           
         
@@ -4940,16 +4942,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4958,6 +4954,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7342,38 +7350,38 @@
 <p>Ensure you enforce the style guides during build. The following example script can be used to install terraform, and a linter that
 then checks for formatting and common errors.</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#! /bin/bash</span>
-<span class="nb">set</span> -e
+<span class="nb">set</span><span class="w"> </span>-e
 
-<span class="nv">SCRIPT_DIR</span><span class="o">=</span><span class="k">$(</span>dirname <span class="s2">&quot;</span><span class="nv">$BASH_SOURCE</span><span class="s2">&quot;</span><span class="k">)</span>
-<span class="nb">cd</span> <span class="s2">&quot;</span><span class="nv">$SCRIPT_DIR</span><span class="s2">&quot;</span>
+<span class="nv">SCRIPT_DIR</span><span class="o">=</span><span class="k">$(</span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$BASH_SOURCE</span><span class="s2">&quot;</span><span class="k">)</span>
+<span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SCRIPT_DIR</span><span class="s2">&quot;</span>
 
 <span class="nv">TF_VERSION</span><span class="o">=</span><span class="m">0</span>.12.4
 <span class="nv">TF_LINT_VERSION</span><span class="o">=</span><span class="m">0</span>.9.1
 
-<span class="nb">echo</span> -e <span class="s2">&quot;\n\n&gt;&gt;&gt; Installing Terraform 0.12&quot;</span>
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n\n&gt;&gt;&gt; Installing Terraform 0.12&quot;</span>
 <span class="c1"># Install terraform tooling for linting terraform</span>
-wget -q https://releases.hashicorp.com/terraform/<span class="si">${</span><span class="nv">TF_VERSION</span><span class="si">}</span>/terraform_<span class="si">${</span><span class="nv">TF_VERSION</span><span class="si">}</span>_linux_amd64.zip -O /tmp/terraform.zip
-sudo unzip -q -o -d /usr/local/bin/ /tmp/terraform.zip
+wget<span class="w"> </span>-q<span class="w"> </span>https://releases.hashicorp.com/terraform/<span class="si">${</span><span class="nv">TF_VERSION</span><span class="si">}</span>/terraform_<span class="si">${</span><span class="nv">TF_VERSION</span><span class="si">}</span>_linux_amd64.zip<span class="w"> </span>-O<span class="w"> </span>/tmp/terraform.zip
+sudo<span class="w"> </span>unzip<span class="w"> </span>-q<span class="w"> </span>-o<span class="w"> </span>-d<span class="w"> </span>/usr/local/bin/<span class="w"> </span>/tmp/terraform.zip
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> -e <span class="s2">&quot;\n\n&gt;&gt;&gt; Install tflint (3rd party)&quot;</span>
-wget -q https://github.com/wata727/tflint/releases/download/v<span class="si">${</span><span class="nv">TF_LINT_VERSION</span><span class="si">}</span>/tflint_linux_amd64.zip -O /tmp/tflint.zip
-sudo unzip -q -o -d /usr/local/bin/ /tmp/tflint.zip
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n\n&gt;&gt;&gt; Install tflint (3rd party)&quot;</span>
+wget<span class="w"> </span>-q<span class="w"> </span>https://github.com/wata727/tflint/releases/download/v<span class="si">${</span><span class="nv">TF_LINT_VERSION</span><span class="si">}</span>/tflint_linux_amd64.zip<span class="w"> </span>-O<span class="w"> </span>/tmp/tflint.zip
+sudo<span class="w"> </span>unzip<span class="w"> </span>-q<span class="w"> </span>-o<span class="w"> </span>-d<span class="w"> </span>/usr/local/bin/<span class="w"> </span>/tmp/tflint.zip
 
-<span class="nb">echo</span> -e <span class="s2">&quot;\n\n&gt;&gt;&gt; Terraform version&quot;</span>
-terraform -version
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n\n&gt;&gt;&gt; Terraform version&quot;</span>
+terraform<span class="w"> </span>-version
 
-<span class="nb">echo</span> -e <span class="s2">&quot;\n\n&gt;&gt;&gt; Terraform Format (if this fails use &#39;terraform fmt -recursive&#39; command to resolve&quot;</span>
-terraform fmt -recursive -diff -check
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n\n&gt;&gt;&gt; Terraform Format (if this fails use &#39;terraform fmt -recursive&#39; command to resolve&quot;</span>
+terraform<span class="w"> </span>fmt<span class="w"> </span>-recursive<span class="w"> </span>-diff<span class="w"> </span>-check
 
-<span class="nb">echo</span> -e <span class="s2">&quot;\n\n&gt;&gt;&gt; tflint&quot;</span>
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n\n&gt;&gt;&gt; tflint&quot;</span>
 tflint
 
-<span class="nb">echo</span> -e <span class="s2">&quot;\n\n&gt;&gt;&gt; Terraform init&quot;</span>
-terraform init
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n\n&gt;&gt;&gt; Terraform init&quot;</span>
+terraform<span class="w"> </span>init
 
-<span class="nb">echo</span> -e <span class="s2">&quot;\n\n&gt;&gt;&gt; Terraform validate&quot;</span>
-terraform validate
+<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n\n&gt;&gt;&gt; Terraform validate&quot;</span>
+terraform<span class="w"> </span>validate
 </code></pre></div>
 <h2 id="code-review-checklist">Code Review Checklist</h2>
 <p>In addition to the <a href="../../process-guidance/reviewer-guidance/">Code Review Checklist</a> you should also look for these Terraform specific code review items</p>

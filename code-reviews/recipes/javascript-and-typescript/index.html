@@ -3787,8 +3787,6 @@
       
         
           
-            
-          
         
           
         
@@ -3798,16 +3796,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3816,6 +3808,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4890,8 +4894,6 @@
       
         
           
-            
-          
         
           
         
@@ -4899,16 +4901,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4917,6 +4913,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7254,80 +7262,80 @@
 TypeScript code should be linted with <a href="https://github.com/eslint/eslint">ESLint</a>. See the <a href="https://typescript-eslint.io/">typescript-eslint</a> documentation for more information around linting TypeScript code with ESLint.</p>
 <p>To <a href="https://typescript-eslint.io/">install and configure linting with ESLint</a>,
 install the following packages as dev-dependencies:</p>
-<div class="highlight"><pre><span></span><code>npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-D<span class="w"> </span>eslint<span class="w"> </span>@typescript-eslint/parser<span class="w"> </span>@typescript-eslint/eslint-plugin
 </code></pre></div>
 <p>Add a <code>.eslintrc.js</code> to the root of your project:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nx">root</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nx">parser</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;@typescript-eslint/parser&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;@typescript-eslint&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="p">],</span><span class="w"></span>
-<span class="w">  </span><span class="k">extends</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;eslint:recommended&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;plugin:@typescript-eslint/eslint-recommended&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;plugin:@typescript-eslint/recommended&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="p">],</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">root</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">parser</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;@typescript-eslint/parser&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;@typescript-eslint&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="k">extends</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;eslint:recommended&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;plugin:@typescript-eslint/eslint-recommended&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;plugin:@typescript-eslint/recommended&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="p">};</span>
 </code></pre></div>
 <p>Add the following to the <code>scripts</code> of your <code>package.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;lint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;lint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>This will lint all <code>.js</code>, <code>.jsx</code>, <code>.ts</code>, <code>.tsx</code> files in your project and omit any files or
 directories specified in your <code>.gitignore</code>.</p>
 <p>You can run linting with:</p>
-<div class="highlight"><pre><span></span><code>npm run lint
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>lint
 </code></pre></div>
 <h2 id="setting-up-prettier">Setting up Prettier</h2>
 <p><a href="https://prettier.io/docs/en/">Prettier</a> is an opinionated code formatter.</p>
 <p><a href="https://prettier.io/docs/en/integrating-with-linters.html">Getting started guide</a>.</p>
 <p>Install with <code>npm</code> as a dev-dependency:</p>
-<div class="highlight"><pre><span></span><code>npm install -D prettier eslint-config-prettier eslint-plugin-prettier
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-D<span class="w"> </span>prettier<span class="w"> </span>eslint-config-prettier<span class="w"> </span>eslint-plugin-prettier
 </code></pre></div>
 <p>Add <code>prettier</code> to your <code>.eslintrc.js</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nx">root</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nx">parser</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;@typescript-eslint/parser&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;@typescript-eslint&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="p">],</span><span class="w"></span>
-<span class="w">  </span><span class="k">extends</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;eslint:recommended&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;plugin:@typescript-eslint/eslint-recommended&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;plugin:@typescript-eslint/recommended&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;prettier/@typescript-eslint&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;plugin:prettier/recommended&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="p">],</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">root</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">parser</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;@typescript-eslint/parser&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;@typescript-eslint&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="k">extends</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;eslint:recommended&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;plugin:@typescript-eslint/eslint-recommended&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;plugin:@typescript-eslint/recommended&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;prettier/@typescript-eslint&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;plugin:prettier/recommended&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="p">};</span>
 </code></pre></div>
 <p>This will apply the <code>prettier</code> rule set when linting with ESLint.</p>
 <h2 id="auto-formatting-with-vs-code">Auto formatting with VS Code</h2>
 <p>VS Code can be configured to automatically perform <code>eslint --fix</code> on save.</p>
 <p>Create a <code>.vscode</code> folder in the root of your project and add the following to your
 <code>.vscode/settings.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;editor.codeActionsOnSave&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;source.fixAll.eslint&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
-<span class="w">  </span><span class="p">},</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;editor.codeActionsOnSave&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;source.fixAll.eslint&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>By default, we use the following overrides should be added to the VS Code configuration to standardize on single quotes, a four space drop, and to do ESLinting:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;prettier.singleQuote&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;prettier.eslintIntegration&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;prettier.tabWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;prettier.singleQuote&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;prettier.eslintIntegration&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;prettier.tabWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="build-validation">Build Validation</h2>
 <p>To automate this process in Azure Devops you can add the following snippet to your pipeline definition yaml file. This will lint any scripts in the <code>./scripts/</code> folder.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Npm@1</span><span class="w"></span>
-<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Lint&#39;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;custom&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">customCommand</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;run</span><span class="nv"> </span><span class="s">lint&#39;</span><span class="w"></span>
-<span class="w">    </span><span class="nt">workingDir</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;./scripts/&#39;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Npm@1</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Lint&#39;</span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;custom&#39;</span>
+<span class="w">    </span><span class="nt">customCommand</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;run</span><span class="nv"> </span><span class="s">lint&#39;</span>
+<span class="w">    </span><span class="nt">workingDir</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;./scripts/&#39;</span>
 </code></pre></div>
 <h2 id="pre-commit-hooks">Pre-commit hooks</h2>
 <p>All developers should run <code>eslint</code> in a pre-commit hook to ensure standard formatting. We highly recommend using an editor integration like <a href="https://github.com/Microsoft/vscode-eslint">vscode-eslint</a> to provide realtime feedback.</p>

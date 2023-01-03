@@ -3769,8 +3769,6 @@
       
         
           
-            
-          
         
           
         
@@ -3780,16 +3778,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3798,6 +3790,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4872,8 +4876,6 @@
       
         
           
-            
-          
         
           
         
@@ -4881,16 +4883,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4899,6 +4895,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7303,7 +7311,7 @@ output &quot;aks_name&quot; {
 }
 </code></pre></div>
 <p>Now, if you execute the Terraform apply for the common module, you get all the shared/common variables in outputs:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>terraform plan -var <span class="nv">environment_name</span><span class="o">=</span><span class="s2">&quot;dev&quot;</span> -var <span class="nv">subscription</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>az account show --query id -o tsv<span class="k">)</span><span class="s2">&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>terraform<span class="w"> </span>plan<span class="w"> </span>-var<span class="w"> </span><span class="nv">environment_name</span><span class="o">=</span><span class="s2">&quot;dev&quot;</span><span class="w"> </span>-var<span class="w"> </span><span class="nv">subscription</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>az<span class="w"> </span>account<span class="w"> </span>show<span class="w"> </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span><span class="s2">&quot;</span>
 
 <span class="go">Changes to Outputs:</span>
 <span class="go">  + aks_name     = &quot;aks-dev&quot;</span>
@@ -7356,7 +7364,7 @@ resource &quot;azurerm_kubernetes_cluster&quot; &quot;aks&quot; {
 
 <span class="go">Terraform will perform the following actions:</span>
 
-<span class="gp">  # </span>azurerm_kubernetes_cluster.aks will be created
+<span class="gp">  # </span>azurerm_kubernetes_cluster.aks<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>created
 <span class="go">  + resource &quot;azurerm_kubernetes_cluster&quot; &quot;aks&quot; {</span>
 <span class="go">      + dns_prefix                          = &quot;aks-dev&quot;</span>
 <span class="go">      + fqdn                                = (known after apply)</span>
@@ -7451,7 +7459,7 @@ module &quot;kubernetes&quot; {
 </code></pre></div>
 <p>The common module as well as all other modules contain variables files for <code>dev</code> and <code>prod</code> environment. <code>tfvars</code> files from the common module will define all the global variables that will be shared with other modules (like subscription, environment name, etc.) and <code>.tfvars</code> files of each module will define only the module-specific values.</p>
 <p>Then, it's possible to merge these files when running the <code>terraform apply</code> or <code>terraform plan</code> command, using the following syntax:</p>
-<div class="highlight"><pre><span></span><code>terraform plan -var-file<span class="o">=</span>&lt;<span class="o">(</span>cat ../common/dev.tfvars ./dev.tfvars<span class="o">)</span>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>plan<span class="w"> </span>-var-file<span class="o">=</span>&lt;<span class="o">(</span>cat<span class="w"> </span>../common/dev.tfvars<span class="w"> </span>./dev.tfvars<span class="o">)</span>
 </code></pre></div>
 <p><em>Note: using this, it is really important to ensure that you have not the same variable names in both files, otherwise that will generate an error.</em></p>
 <h2 id="conclusion">Conclusion</h2>

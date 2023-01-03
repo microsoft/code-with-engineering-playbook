@@ -3667,8 +3667,6 @@
       
         
           
-            
-          
         
           
         
@@ -3678,16 +3676,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/">Design</a>
-          
-            <label for="__nav_11">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Design" data-md-level="1">
         <label class="md-nav__title" for="__nav_11">
@@ -3696,6 +3688,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/readme/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
             
           
             
@@ -4770,8 +4774,6 @@
       
         
           
-            
-          
         
           
         
@@ -4779,16 +4781,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../design/sustainability/">Sustainability</a>
-          
-            <label for="__nav_11_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_11_4">
+          Sustainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Sustainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_11_4">
@@ -4797,6 +4793,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design/sustainability/readme/" class="md-nav__link">
+        Sustainable Software Engineering
+      </a>
+    </li>
+  
+
             
           
             
@@ -7181,7 +7189,7 @@
 </ol>
 <h2 id="tooling">Tooling</h2>
 <p>For the Fake Service approach, we will be using <a href="https://github.com/typicode/json-server">Json-Server</a>. Json-Server is a tool that provides the ability to fully fake REST APIs and run the server locally. It is designed to spin up REST APIs with CRUD functionality with minimal setup. Json-Server requires NodeJS and is installed via NPM.</p>
-<div class="highlight"><pre><span></span><code>npm install -g json-server
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>json-server
 </code></pre></div>
 <h2 id="setup">Setup</h2>
 <p>In order to run Json-Server, it simply requires a source for data and will infer routes, etc. based on the data file. Note that additional customization can be performed for more advanced scenarios (e.g. custom routes). Details can be found <a href="https://github.com/typicode/json-server#add-custom-routes">here</a>.</p>
@@ -7213,15 +7221,15 @@
 </code></pre></div>
 <h2 id="run">Run</h2>
 <p>Running Json-Server can be performed by simply running:</p>
-<div class="highlight"><pre><span></span><code>json-server --watch src/db.json
+<div class="highlight"><pre><span></span><code>json-server<span class="w"> </span>--watch<span class="w"> </span>src/db.json
 </code></pre></div>
 <p>Once running, the User endpoint can be hit on the default localhost port: <code>http:/localhost:3000/user</code></p>
 <p>Note that Json-Server can be configured to use other ports using the following syntax:</p>
-<div class="highlight"><pre><span></span><code>json-server --watch db.json --port <span class="m">3004</span>
+<div class="highlight"><pre><span></span><code>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--port<span class="w"> </span><span class="m">3004</span>
 </code></pre></div>
 <h2 id="endpoint">Endpoint</h2>
 <p>The endpoint can be tested by running curl against it and we can narrow down which user object to get back with the following command:</p>
-<div class="highlight"><pre><span></span><code>curl http://localhost:3000/user/1
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://localhost:3000/user/1
 </code></pre></div>
 <p>which, as expected, returns:</p>
 <div class="highlight"><pre><span></span><code>{
