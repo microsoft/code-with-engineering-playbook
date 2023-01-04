@@ -10,7 +10,8 @@
     "**/.devcontainer/**",
     "**/.github/workflows/**",
     "**/.github/reviewers.yml",
-    "**/.gitignore"
+    "**/.gitignore",
+    "**/.mega-linter.yml"
   ],
   "language": "en",
   "noConfigSearch": true,
@@ -78,6 +79,7 @@
     "HIPPA",
     "HLQV",
     "Homomorphic",
+    "hyperscale",
     "INFOSEC",
     "IPYNB",
     "Idempotency",
@@ -445,7 +447,8 @@
     "Bitnami",
     "Kubeseal",
     "KSOPS",
-    "OTLP"
+    "OTLP",
+    "Quic"
   ],
   "version": "0.2"
 }

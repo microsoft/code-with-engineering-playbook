@@ -30,4 +30,3 @@ For more information, see links under [resources](#resources).
 ## Resources
 
 * [A Guide to Code Inspections](http://www.ganssle.com/inspections.pdf)
-* [Defect Removal Effectiveness](https://www.westfallteam.com/sites/default/files/papers/defect_removal_effectiveness.pdf)

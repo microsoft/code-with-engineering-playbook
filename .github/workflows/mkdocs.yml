@@ -1,3 +1,4 @@
+---
 name: Build and deploy mkdocs to https://microsoft.github.io/code-with-engineering-playbook
 on:
   push:
