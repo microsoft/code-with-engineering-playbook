@@ -15,8 +15,8 @@ Securing Service Connections can be achieved by using several methods.
 After using the above methods, what is secured is **who** can use the Service Connections.
 What still *isn't* secured however, is **what** can be done with the Service Connections.  
 
-Because Service Connections have all the necessary permissions in the external services, it is crucial to secure Service Connections so they cannot be misused by accident or by malicious users. Without the correct security in place, it could be possible to exectue commands on the external services, without any validation or controls being executed.  
-An example of this is a Azure DevOps Pipeline that uses a Service Connection to an Azure Resource Group (or entire subscription) to list all resources and then delete those resources.
+Because Service Connections have all the necessary permissions in the external services, it is crucial to secure Service Connections so they cannot be misused by accident or by malicious users.  
+An example of this is a Azure DevOps Pipeline that uses a Service Connection to an Azure Resource Group (or entire subscription) to list all resources and then delete those resources.  Without the correct security in place, it could be possible to execute this Pipeline, without any validation or reviews being done.  
 ```yaml
 pool:
   vmImage: ubuntu-latest
