@@ -2,7 +2,7 @@
 
 In Azure DevOps, Service Connections are used in Azure DevOps Pipelines to connect to external services, like Azure, GitHub, Docker, Kubernetes, and many other services. Service Connections can be used to authenticate to these external services and to invoke diverse types of commands, like create and update resources in Azure, upload container images to Docker, or deploy applications to Kubernetes.
 
-To be able to invoke these commands, Service Connections need to have the right permissions to do so, for most types of Service Connections the permissions can be scoped to a subset of resources to limit the access they have. To improve the the principle of least privilege, it's often very common to have separate Service Connections for different environments like Dev/Test/QA/Prod.
+To be able to invoke these commands, Service Connections need to have the right permissions to do so, for most types of Service Connections the permissions can be scoped to a subset of resources to limit the access they have. To improve the principle of least privilege, it's often very common to have separate Service Connections for different environments like Dev/Test/QA/Prod.
 
 Because Service Connections have all the necessary permissions in these external services, it is crucial to secure Service Connections so they cannot be misused by accident or by malicious users.  
 
