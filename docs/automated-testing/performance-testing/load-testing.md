@@ -52,6 +52,7 @@ After completing your load test you should be set up to continue on to additiona
 
 Here are a few popular load testing frameworks you may consider, and the languages used to define your scenarios.
 
+- **Azure Load Testing** (<https://learn.microsoft.com/en-us/azure/load-testing/>) - Managed platform for running load tests on Azure. It allows to run and monitor tests automatically, source secrets from the KeyVault, generate traffic at scale, and load test Azure private endpoints. In the simple case, it load-tests with HTTP GET traffic to a given endpoint. For the more complex cases, you can upload your own **JMeter scenarios**.
 - **JMeter** (<https://github.com/apache/jmeter>) - Has built in patterns to test without coding, but can be extended with Java.
 - **Artillery** (<https://artillery.io/>) - Write your scenarios in Javascript, executes a node application.
 - **Gatling** (<https://gatling.io/>) -  Write your scenarios in Scala with their DSL.
