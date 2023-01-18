@@ -1,6 +1,6 @@
 # Secret Management with GitOps
 
-GitOps primarily have git repositories in the center considered a source of truth for managing both infrastructure and application. This Infrastructure and application will require secured access to other resources of the system through secrets. Committing clear text secrets into git repositories is unacceptable even if the repositories are private to your team and organization. Teams need a secure way to handle secrets when using GitOps.
+GitOps primarily have git repositories in the center considered a source of truth for managing both infrastructure and application. This infrastructure and application will require secured access to other resources of the system through secrets. Committing clear-text secrets into git repositories is unacceptable even if the repositories are private to your team and organization. Teams need a secure way to handle secrets when using GitOps.
 
 There are many ways to manage secrets with GitOps and at high level can be categorized into:
 
