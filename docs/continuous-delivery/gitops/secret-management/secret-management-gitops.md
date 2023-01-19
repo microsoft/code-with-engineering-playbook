@@ -18,6 +18,7 @@ All the secret encryption tools share the following:
 - Secret changes are managed by making changes within the GitOps repository which provides great traceability of the changes made
 - All secrets can be rotated by making changes in GitOps, without accessing the cluster
 - Secrets are stored encrypted in the gitops repository, if the private encryption key is leaked, all secrets can be decrypted
+- Supports fully disconnected gitops scenarios
 
 ### [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets)
 
@@ -31,24 +32,28 @@ Some of the key points of using Sealed Secrets are:
 - When sealing secrets developers need a connection to the cluster control plane to fetch the public key or the public key has to be explicitly shared with the developer
 - If the private key in the cluster is lost for some reason all secrets need to be re-encrypted followed by a new key-pair generation
 - Does not scale with multi-cluster, because every cluster will require a controller having its own key pair
+- Can only encrypt `secret` resource type
+- The Flux documentation has inconsistences in the Azure Key Vault examples
 
 ### [Mozilla SOPS](https://github.com/mozilla/sops)
 
-SOPS: Secrets OPerationS is an encryption tool that supports YAML, JSON, ENV, INI, and BINARY formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP and is not just limited to Kubernetes. It supports integration with some common key management systems including Azure Key Vault, where the key management system is used to store the encryption key for encrypting secrets and not the actual secrets.
+SOPS: Secrets OPerationS is an encryption tool that supports YAML, JSON, ENV, INI, and BINARY formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP and is not just limited to Kubernetes. It supports integration with some common key management systems including Azure Key Vault, where one or more key management system is used to store the encryption key for encrypting secrets and not the actual secrets.
 
 Some of the key points of using SOPS are:
 
-- [Flux](https://toolkit.fluxcd.io/guides/mozilla-sops/#azure) has better support for SOPS with cluster-side decryption
+- [Flux](https://toolkit.fluxcd.io/guides/mozilla-sops/#azure) has native support for SOPS with cluster-side decryption
 - Provides an added layer of security as the private key used for decryption is protected in an external key vault
-- Needs plugin to work with Helm ([Helm Secrets](https://github.com/jkroepke/helm-secrets)) and Kustomization ([KSOPS](https://github.com/viaduct-ai/kustomize-sops))([kustomize-sopssecretgenerator](https://github.com/goabout/kustomize-sopssecretgenerator))
+- To use the Helm CLI for encryption the ([Helm Secrets](https://github.com/jkroepke/helm-secrets)) plugin is needed
+- Needs ([KSOPS](https://github.com/viaduct-ai/kustomize-sops))([kustomize-sopssecretgenerator](https://github.com/goabout/kustomize-sopssecretgenerator)) plugin to work with Kustomization
 - Does not scale with larger teams as each developer has to encrypt the secrets
-- The public key is sufficient for creating brand new files. The secret key is required for decrypting and editing existing files because SOPS computes a MAC on all values.  When using the public key solely to add or remove a field, the whole file should be deleted and recreated
+- The public key is sufficient for creating brand new files. The secret key is required for decrypting and editing existing files because SOPS computes a MAC on all values. When using the public key solely to add or remove a field, the whole file should be deleted and recreated
+- Supports several types of keys that can be used in both connected and disconnected state. A secret can have a list of keys and will try do decrypt with all of them.
 
 ## 2. Reference to secrets stored in an external key vault (recommended)
 
 This approach relies on a key management system like [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.
 
-All the below options provide the following:
+All the below tools share the following:
 
 - Secrets are not stored in the repository
 - Supports Prometheus metrics for observability
@@ -105,7 +110,7 @@ Advantages:
 - Resource efficient (single pod) - not test on RPS / resource usage.
 - Open source and high contributions, ([GitHub](https://github.com/external-secrets/external-secrets))
 - Mounting Secrets as volumes is supported via K8S's APIs (see [here](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod))
-- Disconnected scenario support: As ESO is using native K8s secrets the cluster can be offline, and it does not have any implications towards restarting and scaling pods while being offline
+- Partial disconnected scenario support: As ESO is using native K8s secrets the cluster can be offline, and it does not have any implications towards restarting and scaling pods while being offline
 
 Disadvantages:
 
