@@ -11,11 +11,11 @@ In all cases, we recommend storing the exported PNG images from these diagrams i
 
 ## Microsoft Visio
 
-This is the Microsoft diagram tool of choice, the desktop app exists on PC, and there's a great Web app. This is the preferred format of the Azure Architecture Center.
+It contains a lot of shapes out of the box, including Azure icons, the desktop app exists on PC, and there's a great Web app. Most diagrams in the Azure Architecture Center are Visio diagrams.
 
 ## Microsoft PowerPoint
 
-Diagrams can also be easily reused in presentations, a PowerPoint license is pretty common, the desktop app exists on PC and on the Mac, and there's a great Web app. This is the second preferred format of the Azure Architecture Center.
+Diagrams can be easily reused in presentations, a PowerPoint license is pretty common, the desktop app exists on PC and on the Mac, and there's a great Web app.
 
 ## `.drawio.png`
 
