@@ -3,19 +3,19 @@
 At each stage in the engagement process, diagrams are a key part of the design review.
 The preferred tooling for creating and maintaining diagrams is to choose **one** of the following:
 
-- Microsoft PowerPoint
 - Microsoft Visio
+- Microsoft PowerPoint
 - The `.drawio.png` (or `.drawio`) format from [diagrams.net](http://diagrams.net) (formerly [draw.io](http://draw.io))
 
 In all cases, we recommend storing the exported PNG images from these diagrams in the repo along with the source files so they can easily be referenced in documentation and more easily reviewed during PRs. The `.drawio.png` format stores both at once.
 
-## Microsoft PowerPoint
-
-Diagrams can also be easily reused in presentations, a PowerPoint license is pretty common, the desktop app exists on PC and on the Mac, and there's a great Web app. This is one of the preferred formats of the Azure Architecture Center.
-
 ## Microsoft Visio
 
-This is the Microsoft diagram tool of choice, the desktop app exists on PC, and there's a great Web app. This is one of the preferred formats of the Azure Architecture Center.
+This is the Microsoft diagram tool of choice, the desktop app exists on PC, and there's a great Web app. This is the preferred format of the Azure Architecture Center.
+
+## Microsoft PowerPoint
+
+Diagrams can also be easily reused in presentations, a PowerPoint license is pretty common, the desktop app exists on PC and on the Mac, and there's a great Web app. This is the second preferred format of the Azure Architecture Center.
 
 ## `.drawio.png`
 
