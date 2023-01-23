@@ -4647,9 +4647,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Preferred Diagram Tooling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Preferred Diagram Tooling
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft-visio" class="md-nav__link">
+    Microsoft Visio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft-powerpoint" class="md-nav__link">
+    Microsoft PowerPoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawiopng" class="md-nav__link">
+    .drawio.png
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -7045,6 +7090,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft-visio" class="md-nav__link">
+    Microsoft Visio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft-powerpoint" class="md-nav__link">
+    Microsoft PowerPoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawiopng" class="md-nav__link">
+    .drawio.png
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -7059,22 +7133,33 @@
 
 <h1 id="preferred-diagram-tooling">Preferred Diagram Tooling</h1>
 <p>At each stage in the engagement process, diagrams are a key part of the design review.
-The preferred tooling for creating and maintaining diagrams is the <code>.drawio</code> format from <a href="http://diagrams.net">diagrams.net</a> (formerly <a href="http://draw.io">draw.io</a>)</p>
-<p>The <code>.drawio</code> format uses the metadata layer within the PNG file-format to hide SVG vector graphics representation, then renders the .png when saving.
+The preferred tooling for creating and maintaining diagrams is to choose <strong>one</strong> of the following:</p>
+<ul>
+<li>Microsoft Visio</li>
+<li>Microsoft PowerPoint</li>
+<li>The <code>.drawio.png</code> (or <code>.drawio</code>) format from <a href="http://diagrams.net">diagrams.net</a> (formerly <a href="http://draw.io">draw.io</a>)</li>
+</ul>
+<p>In all cases, we recommend storing the exported PNG images from these diagrams in the repo along with the source files so they can easily be referenced in documentation and more easily reviewed during PRs. The <code>.drawio.png</code> format stores both at once.</p>
+<h2 id="microsoft-visio">Microsoft Visio</h2>
+<p>It contains a lot of shapes out of the box, including Azure icons, the desktop app exists on PC, and there's a great Web app. Most diagrams in the Azure Architecture Center are Visio diagrams.</p>
+<h2 id="microsoft-powerpoint">Microsoft PowerPoint</h2>
+<p>Diagrams can be easily reused in presentations, a PowerPoint license is pretty common, the desktop app exists on PC and on the Mac, and there's a great Web app.</p>
+<h2 id="drawiopng"><code>.drawio.png</code></h2>
+<p>There are different desktop, web apps and VS Code extensions. 
+This tooling can be used like Visio or LucidChart, without the licensing/remote storage concerns.
+Furthermore, Diagrams.net has a collection of Azure/Office/Microsoft icons, as well as other well-known tech, so it is not only useful for swimlanes and flow diagrams, but also for architecture diagrams.</p>
+<p><code>.drawio.png</code> should be preferred over the <code>.drawio</code> format.
+The <code>.drawio.png</code> format uses the metadata layer within the PNG file-format to hide SVG vector graphics representation, then renders the .png when saving.
 This clever use of both the meta layer and image layer allows anyone to further edit the PNG file.
 It also renders like a normal PNG in browsers and other viewers, making it easy to transfer and embed.
 Furthermore, it can be edited within VSCode very easily using the <a href="https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio">Draw.io Integration VSCode Extension</a>.</p>
-<p>This tooling can be used like Visio or LucidChart, without the licensing/remote storage concerns.
-Furthermore, Diagrams.net has a collection of Azure/Office/Microsoft icons, as well as other well-known tech, so it is not only useful for swimlanes and flow diagrams, but also for architecture diagrams.</p>
-<p>Furthermore, we recommend storing the exported PNG images from these diagrams in the repo along with the .drawio files so they can easily be referenced in documentation and more easily reviewed during PRs.
-Lastly, while diagrams.net is generally preferred, if any other diagraming tooling is used that can generate diagram images from code, both the diagram file and the image file should be stored together in the repo for the above reasons.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 23, 2023</span>
       
     
   </small>
