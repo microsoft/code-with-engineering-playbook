@@ -48,3 +48,5 @@ It's important to keep in mind that automated tooling alone is not enough - make
 
 * [Microsoft Accessibility Technology & Tools](https://www.microsoft.com/accessibility)
 * [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20/#intro)
+* [Accessibility Guidelines and Requirements | Microsoft Style Guide](https://learn.microsoft.com/en-us/style-guide/accessibility/accessibility-guidelines-requirements)
+* [Google Developer Style Guide: Write Accessible Documentation](https://developers.google.com/style/accessibility)
