@@ -7227,7 +7227,7 @@
 
 <h1 id="load-testing">Load Testing</h1>
 <p>"<em>Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.</em>" - <a href="https://en.wikipedia.org/wiki/Load_testing">Load testing - Wikipedia</a></p>
-<p>A load test is designed to determine how a system behaves under expected normal and peak workloads.  Specifically its main purpose is to confirm if a system can handle the expected load level. Depending on the target system this could be concurrent users, requests per second or data size.</p>
+<p>A load test is designed to determine how a system behaves under expected normal and peak workloads. Specifically its main purpose is to confirm if a system can handle the expected load level. Depending on the target system this could be concurrent users, requests per second or data size.</p>
 <h2 id="why-load-testing">Why Load Testing</h2>
 <p>The main objective is to prove the system can behave normally under the expected normal load before releasing it to production. The criteria which defines "behave normally" will depend on your target, this may be as simple as "the system remains available", but it could also include meeting a response time SLA or error rate.</p>
 <p>Additionally, the results of a load test can also be used as data to help with capacity planning and calculating scalability.</p>
@@ -7238,7 +7238,7 @@
 <p>In order to have meaningful results the system needs to be tested in a production-like environment with a network and hardware which closely resembles the expected deployment environment.</p>
 </li>
 <li>
-<p>The load test will consist of a module which simulates user activity. Of course what the composition of this "user activity" will be vary based on the type of application being tested. For example an e-commerce website might simulate user browsing and purchasing items, but an IoT data ingestion pipeline would simulate a stream of device readings. Please ensure the simulation is as close to real activity as possible taking into account not just volume but also patterns and variability. For example if the simulator data is too uniform or predictable then cache/hit ratios may impact your results.</p>
+<p>The load test will consist of a module which simulates user activity. Of course the composition of this "user activity" will vary based on the type of application being tested. For example, an e-commerce website might simulate user browsing and purchasing items, but an IoT data ingestion pipeline would simulate a stream of device readings. Please ensure the simulation is as close to real activity as possible, and consider not just volume but also patterns and variability. For example, if the simulator data is too uniform or predictable, then cache/hit ratios may impact your results.</p>
 </li>
 <li>
 <p>The load test will be initiated from a component external to the target system which can control the amount of load applied. This can be a single agent, but may need to scaled to multiple agents in order to achieve higher levels of activity.</p>
@@ -7250,8 +7250,8 @@
 <h2 id="applying-the-load-testing">Applying the Load Testing</h2>
 <h3 id="planning">Planning</h3>
 <ol>
-<li><strong>Identify key scenarios to measure</strong>  - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic.</li>
-<li><strong>Determine expected normal and peak load for the scenarios</strong> -  Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.</li>
+<li><strong>Identify key scenarios to measure</strong> - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic.</li>
+<li><strong>Determine expected normal and peak load for the scenarios</strong> - Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.</li>
 <li><strong>Identify success criteria metrics</strong> - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.</li>
 <li><strong>Select the right tool</strong> - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).</li>
 </ol>
@@ -7270,6 +7270,7 @@
 <h2 id="load-testing-frameworks-and-tools">Load Testing Frameworks and Tools</h2>
 <p>Here are a few popular load testing frameworks you may consider, and the languages used to define your scenarios.</p>
 <ul>
+<li><strong>Azure Load Testing</strong> (<a href="https://learn.microsoft.com/en-us/azure/load-testing/">https://learn.microsoft.com/en-us/azure/load-testing/</a>) - Managed platform for running load tests on Azure. It allows to run and monitor tests automatically, source secrets from the KeyVault, generate traffic at scale, and load test Azure private endpoints. In the simple case, it executes load tests with HTTP GET traffic to a given endpoint. For the more complex cases, you can upload your own <strong>JMeter scenarios</strong>.</li>
 <li><strong>JMeter</strong> (<a href="https://github.com/apache/jmeter">https://github.com/apache/jmeter</a>) - Has built in patterns to test without coding, but can be extended with Java.</li>
 <li><strong>Artillery</strong> (<a href="https://artillery.io/">https://artillery.io/</a>) - Write your scenarios in Javascript, executes a node application.</li>
 <li><strong>Gatling</strong> (<a href="https://gatling.io/">https://gatling.io/</a>) -  Write your scenarios in Scala with their DSL.</li>
@@ -7291,7 +7292,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
       
     
   </small>
