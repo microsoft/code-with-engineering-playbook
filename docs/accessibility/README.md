@@ -42,6 +42,8 @@ Accessibility testing is a specialized subset of software testing and includes a
 
 If you are looking to add automated testing to your Azure Pipelines, you may want to consider the [Accessibility Testing extension](https://marketplace.visualstudio.com/items?itemName=DrewLewis.Accessibility) built by Drew Lewis, a former Microsoft employee.
 
+It's important to keep in mind that automated tooling alone is not enough - make sure to augment your automated tests with manual ones. Accessibility Insights (linked above) can guide users through some manual testing steps.
+
 ## Additional Resources
 
 * [Microsoft Accessibility Technology & Tools](https://www.microsoft.com/accessibility)
