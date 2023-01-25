@@ -54,6 +54,7 @@ Before you get to testing, you can make some small changes in how you write code
 - Use headers effectively to break up content by topic. Don't use more than one h1 per page, and don't skip levels (e.g. use an h3 directly under an h1). Avoid using formatting to make something *look* like a header when it's not.
 - Use descriptive link text. Avoid attaching a link to phrases like "Read more" and ensure that the text directly states what it links to. Link text should be able to stand on its own.
 - When including images or diagrams, add alt text. This should never just be "Image" or "Diagram" (or similar). In your description, highlight the purpose of the image or diagram in the page and what it is intended to convey.
+- Prefer tabs to spaces when possible. This allows users to default to their preferred tab width, so users with a range of vision can all take in code easily.
 
 ## Additional Resources
 
