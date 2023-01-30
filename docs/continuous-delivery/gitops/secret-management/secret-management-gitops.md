@@ -12,13 +12,13 @@ There are many ways to manage secrets with GitOps and at high level can be categ
 
 ## Encrypted secrets in git repositories
 
-In this approach, secrets are manually encrypted by developers using a public key and the custom Kubernetes controller running in the target cluster can only decrypt the key. Some popular tools for his approach are [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets), [Mozilla SOPS](https://github.com/mozilla/sops)
+In this approach, Developers manually encrypt secrets using a public key, and the key can only be decrypted by the custom Kubernetes controller running in the target cluster. Some popular tools for his approach are [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets), [Mozilla SOPS](https://github.com/mozilla/sops)
 
 All the secret encryption tools share the following:
 
-- Secret changes are managed by making changes within the GitOps repository which provides great traceability of the changes made
+- Secret changes are managed by making changes within the GitOps repository which provides great traceability
 - All secrets can be rotated by making changes in GitOps, without accessing the cluster
-- Supports fully disconnected gitops scenarios
+- They support fully disconnected gitops scenarios
 - Secrets are stored encrypted in the gitops repository, if the private encryption key is leaked and the attacker has access to the repo, all secrets can be decrypted
 
 ### [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets)
