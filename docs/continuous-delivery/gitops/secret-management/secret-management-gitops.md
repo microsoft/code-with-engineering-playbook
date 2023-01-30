@@ -18,8 +18,8 @@ All the secret encryption tools share the following:
 
 - Secret changes are managed by making changes within the GitOps repository which provides great traceability of the changes made
 - All secrets can be rotated by making changes in GitOps, without accessing the cluster
-- Secrets are stored encrypted in the gitops repository, if the private encryption key is leaked, all secrets can be decrypted
 - Supports fully disconnected gitops scenarios
+- Secrets are stored encrypted in the gitops repository, if the private encryption key is leaked and the attacker has access to the repo, all secrets can be decrypted
 
 ### [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets)
 
