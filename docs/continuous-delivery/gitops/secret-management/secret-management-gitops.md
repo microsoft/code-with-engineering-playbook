@@ -1,4 +1,4 @@
-# Secret Management with GitOps
+# Secret management with GitOps
 
 GitOps projects have git repositories in the center that are considered a source of truth for managing both infrastructure and application. This infrastructure and application will require secured access to other resources of the system through secrets. Committing clear-text secrets into git repositories is unacceptable even if the repositories are private to your team and organization. This is unacceptable for a multitude of reasons, but an example can be because secrets are then stored in clear-text on every developers computer and if a developers computer is compromised, so are all the secrets. Teams need a secure way to handle secrets when using GitOps.
 
@@ -9,7 +9,7 @@ There are many ways to manage secrets with GitOps and at high level can be categ
 
 > **TLDR**: Referencing secrets in an external key vault is the recommended approach, because of, but not limited to, storing encrypted secrets in repo can result in secrets being exposed if the private key is leaked, easier to orchestrate secret rotation and not as scalable to with multiple clusters or teams.
 
-## 1. Encrypted Secrets in Git Repositories
+## Encrypted secrets in git repositories
 
 In this approach, secrets are manually encrypted by developers using a public key and the custom Kubernetes controller running in the target cluster can only decrypt the key. Some popular tools for his approach are [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets), [Mozilla SOPS](https://github.com/mozilla/sops)
 
@@ -49,7 +49,7 @@ Some of the key points of using SOPS are:
 - The public key is sufficient for creating brand new files. The secret key is required for decrypting and editing existing files because SOPS computes a MAC on all values. When using the public key solely to add or remove a field, the whole file should be deleted and recreated
 - Supports several types of keys that can be used in both connected and disconnected state. A secret can have a list of keys and will try do decrypt with all of them.
 
-## 2. Reference to secrets stored in an external key vault (recommended)
+## Reference to secrets stored in an external key vault (recommended)
 
 This approach relies on a key management system like [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.
 
@@ -63,7 +63,7 @@ All the below tools share the following:
 - Easily scalable with multi-cluster and larger teams
 - Both solutions support either Azure Active Directory (Azure AD) [service principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals) or [managed identity](https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview) for [authentication with the Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/authentication).
 
-For secret rotation ideas, see [Secrets Rotation on Environment Variables and Mounted Secrets](#secrets-rotation-on-environment-variables-and-mounted-secrets)
+For secret rotation ideas, see [Secrets Rotation on Environment Variables and Mounted Secrets](secret-rotation-in-pods.md)
 
 For how to authenticate private container registries with a service principal see: [Authenticated Private Container Registry](#authenticated-private-container-registry)
 
@@ -125,63 +125,6 @@ Disadvantages:
 - [Secret management Workflow](https://www.youtube.com/watch?v=-k6HEXaE75k)
 
 ## Appendix
-
-### Secrets Rotation on Environment Variables and Mounted Secrets
-
-1. Mapping Secrets via secretKeyRef with environment variables.
-
-   If we map a K8s native secret via a `secretKeyRef` into an environment variable and we rotate keys the environment variable is not updated even though the K8s native secret has been updated. We need to restart the Pod so changes get populated. [Reloader](https://github.com/stakater/Reloader) solves this issue with a K8S controller.
-
-   ```yaml
-   ...
-        env:
-            - name: EVENTHUB_CONNECTION_STRING
-              valueFrom:
-                secretKeyRef:
-                  name: poc-creds
-                  key: EventhubConnectionString
-   ...
-   ```
-
-2. Mapping Secrets via volumeMounts (ESO way)
-
-   If we map a K8s native secret via a volume mount and we rotate keys the file gets updated. The application needs to then be able pick up the changes without a restart (requiring most likely custom logic in the application to support this). Then no restart of the application is required.
-
-   ```yaml
-   ...
-        volumeMounts:
-        - name: mounted-secret
-          mountPath: /mnt/secrets-store
-          readOnly: true
-      volumes:
-      - name: mounted-secret
-        secret:
-          secretName: poc-creds
-   ...
-   ```
-
-3. Mapping Secrets via volumeMounts (AKVP SSCSID way)
-
-   SSCSID focuses on mounting external secrets into the CSI. Thus if we rotate keys the file gets updated. The application needs to then be able pick up the changes without a restart (requiring most likely custom logic in the application to support this). Then no restart of the application is required.
-
-   ```yaml
-   ...
-        volumeMounts:
-        - name: app-secrets-store-inline
-          mountPath: "/mnt/app-secrets-store"
-          readOnly: true
-      volumes:
-      - name: app-secrets-store-inline
-        csi:
-          driver: secrets-store.csi.k8s.io
-          readOnly: true
-          volumeAttributes:
-            secretProviderClass: akvp-app
-          nodePublishSecretRef:
-            name: secrets-store-sp-creds
-   ...
-   ```
-
 ### Authenticated Private Container Registry
 
 An option on how to authenticate private container registries (e.g., ACR):
