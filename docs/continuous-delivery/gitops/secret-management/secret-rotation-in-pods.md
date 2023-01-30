@@ -2,7 +2,7 @@
 
 This document covers some ways you can do secret rotation with environment variables and mounted secrets in Kubernetes pods
 
-1. Mapping Secrets via secretKeyRef with environment variables.
+## Mapping Secrets via secretKeyRef with environment variables
 
    If we map a K8s native secret via a `secretKeyRef` into an environment variable and we rotate keys the environment variable is not updated even though the K8s native secret has been updated. We need to restart the Pod so changes get populated. [Reloader](https://github.com/stakater/Reloader) solves this issue with a K8S controller.
 
@@ -17,7 +17,7 @@ This document covers some ways you can do secret rotation with environment varia
    ...
    ```
 
-2. Mapping Secrets via volumeMounts (ESO way)
+## Mapping Secrets via volumeMounts (ESO way)
 
    If we map a K8s native secret via a volume mount and we rotate keys the file gets updated. The application needs to then be able pick up the changes without a restart (requiring most likely custom logic in the application to support this). Then no restart of the application is required.
 
@@ -34,7 +34,7 @@ This document covers some ways you can do secret rotation with environment varia
    ...
    ```
 
-3. Mapping Secrets via volumeMounts (AKVP SSCSID way)
+## Mapping Secrets via volumeMounts (AKVP SSCSID way)
 
    SSCSID focuses on mounting external secrets into the CSI. Thus if we rotate keys the file gets updated. The application needs to then be able pick up the changes without a restart (requiring most likely custom logic in the application to support this). Then no restart of the application is required.
 
