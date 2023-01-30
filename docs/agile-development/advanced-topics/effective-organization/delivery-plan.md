@@ -35,7 +35,7 @@ Step 3: Calculate the capacity for the team based on the number of weeks person 
 Step 4: Based on your capacity, you know have the options
 
 - Ask for more resources. Caution: onboarding new resources take time.
-- Reduce the scope to the most MVP.  Caution: as you trim more of the scope, it might be valuable anymore to the customer. Consider a cupcake which is everything you need. You don't want to skim on the frosting.
+- Reduce the scope to the most MVP.  Caution: as you trim more of the scope, it might not be valuable anymore to the customer. Consider a cupcake which is everything you need. You don't want to skim off the frosting.
 - Ask for more time. Usually, this is the most flexible, but if there is a marketing date that you need to hit, this might be as flexible.
 
 ## Tools
