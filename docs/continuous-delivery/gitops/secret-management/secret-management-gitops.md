@@ -1,11 +1,12 @@
 # Secret management with GitOps
 
-GitOps projects have git repositories in the center that are considered a source of truth for managing both infrastructure and application. This infrastructure and application will require secured access to other resources of the system through secrets. Committing clear-text secrets into git repositories is unacceptable even if the repositories are private to your team and organization. This is unacceptable for a multitude of reasons, but an example can be because secrets are then stored in clear-text on every developers computer and if a developers computer is compromised, so are all the secrets. Teams need a secure way to handle secrets when using GitOps.
+GitOps projects have git repositories in the center that are considered a source of truth for managing both infrastructure and application. This infrastructure and application will require secured access to other resources of the system through secrets.
+Committing clear-text secrets into git repositories is unacceptable even if the repositories are private to your team and organization. Teams need a secure way to handle secrets when using GitOps.
 
 There are many ways to manage secrets with GitOps and at high level can be categorized into:
 
 1. Encrypted secrets in git repositories
-1. Reference to secrets stored in the external key vault
+2. Reference to secrets stored in the external key vault
 
 > **TLDR**: Referencing secrets in an external key vault is the recommended approach, because of, but not limited to, storing encrypted secrets in repo can result in secrets being exposed if the private key is leaked, easier to orchestrate secret rotation and not as scalable to with multiple clusters or teams.
 
