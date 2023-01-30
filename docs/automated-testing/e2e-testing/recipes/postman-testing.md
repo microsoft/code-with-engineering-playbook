@@ -1,4 +1,4 @@
-# Overview
+# Postman Testing
 
 This purpose of this document is to provide guidance on how to use Newman in your CI/CD pipeline to run End-to-end (E2E) tests defined in Postman Collections while following security best practices.
 
