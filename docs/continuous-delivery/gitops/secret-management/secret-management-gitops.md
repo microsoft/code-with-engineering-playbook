@@ -8,7 +8,7 @@ There are many ways to manage secrets with GitOps and at high level can be categ
 1. Encrypted secrets in git repositories
 2. Reference to secrets stored in the external key vault
 
-> **TLDR**: Referencing secrets in an external key vault is the recommended approach, because of, but not limited to, storing encrypted secrets in repo can result in secrets being exposed if the private key is leaked, easier to orchestrate secret rotation and not as scalable to with multiple clusters or teams.
+> **TLDR**: Referencing secrets in an external key vault is the recommended approach. It is easier to orchestrate secret rotation and more scalable with multiple clusters and/or teams.
 
 ## Encrypted secrets in git repositories
 
