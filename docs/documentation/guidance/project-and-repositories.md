@@ -66,4 +66,4 @@ Some sections in the documentation of the repository might point to the projectâ
 ## Code Examples
 
 - Folder Structure
-  - [Folder Structure For Python Repository]:(<https://github.com/microsoft/cookiecutter_template_for_python>)
+  - [Folder Structure For Python Repository](<https://github.com/microsoft/cookiecutter_template_for_python>)
