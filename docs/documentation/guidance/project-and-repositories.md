@@ -62,3 +62,8 @@ Some sections in the documentation of the repository might point to the projectâ
   - [Architecture Decision Record (ADR) Template](../../design/design-reviews/decision-log/README.md#architecture-decision-record-(ADR)) ([Example 1](../../design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions.md),
     [Example 2](../../design/design-reviews/decision-log/doc/adr/0002-app-level-logging.md))
   - [Trade Study Template](../../design/design-reviews/trade-studies/template.md)
+
+## Code Examples
+
+- Folder Structure
+  - [Folder Structure For Python Repository]:(<https://github.com/microsoft/cookiecutter_template_for_python>)
