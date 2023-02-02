@@ -90,8 +90,8 @@ Advantages:
 Disadvantages:
 
 - [Missing disconnected scenario support](https://github.com/kubernetes-sigs/secrets-store-csi-driver/issues/446): When the node is offline the SSCSID fails to fetch the secret and thus mounting the volume fails, making scaling and restarting pods not possible while being offline
-- AKVP can only access Key Vault from a non-Azure environment using a [Service Principal](https://azure.github.io/secrets-store-csi-driver-provider-azure/docs/configurations/identity-access-modes/service-principal-mode/#configure-service-principal-to-access-keyvault)
-- The [Kubernetes Secret containing the Service Principal credentials](https://azure.github.io/secrets-store-csi-driver-provider-azure/docs/configurations/identity-access-modes/service-principal-mode/) need to be created as a secret in the same namespace as the application pod. If pods in multiple namespaces need to use the same SP to access Key Vault, this Kubernetes Secret needs to be created in each namespace.
+- AKVP can only access Key Vault from a non-Azure environment using a [service principal](https://azure.github.io/secrets-store-csi-driver-provider-azure/docs/configurations/identity-access-modes/service-principal-mode/#configure-service-principal-to-access-keyvault)
+- The [Kubernetes Secret containing the service principal credentials](https://azure.github.io/secrets-store-csi-driver-provider-azure/docs/configurations/identity-access-modes/service-principal-mode/) need to be created as a secret in the same namespace as the application pod. If pods in multiple namespaces need to use the same SP to access Key Vault, this Kubernetes Secret needs to be created in each namespace.
 - The GitOps repo must contain the name of the Key Vault within the SecretProviderClass
 - Must mount secrets as volumes to allow syncing into Kubernetes Secrets
 - [Missing disconnected scenario support](https://github.com/kubernetes-sigs/secrets-store-csi-driver/issues/446): When the node is offline the SSCSID fails to fetch the secret and thus mounting the volume fails, making scaling and restarting pods not possible while being offline
