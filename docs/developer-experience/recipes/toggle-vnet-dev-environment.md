@@ -29,7 +29,7 @@ Let's implement this use case using `Terraform`.
 
 >  The code below will not contain everything, the purpose is to show the pattern and not how to deploy these resources. For more information on Terraform, please refer to the [official documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs).
 
-There is no `if` *per sé* in Terraform to define whether a specific resource will be deployed or not based a variable value. However, we can use the [`count`](https://developer.hashicorp.com/terraform/language/meta-arguments/count) meta-argument. If, we deploy without VNet, we set count to 0, therefore nothing will be deployed.
+There is no `if` *per sé* in Terraform to define whether a specific resource will be deployed or not based on a variable value. However, we can use the [`count`](https://developer.hashicorp.com/terraform/language/meta-arguments/count) meta-argument. If, we deploy without VNet, we set count to 0, therefore nothing will be deployed.
 
 - variables.tf
 
