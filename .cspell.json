@@ -454,8 +454,8 @@
     "Bitnami",
     "Kubeseal",
     "KSOPS",
-    "Quic",
-    "OTLP"
+    "OTLP",
+    "Quic"
   ],
   "version": "0.2"
 }
