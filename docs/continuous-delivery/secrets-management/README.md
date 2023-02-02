@@ -19,7 +19,7 @@ the Azure CLI to do the same is a useful time-saving utility. See [az webapp con
 
 It's best practice to maintain separate secrets configurations for each environment that you run. e.g. dev, test, prod, local etc
 
-The [secrets-per-branch recipe](./recipes/azure-devops/secrets-per-branch.md) describes a simple way to manage separate secrets configurations for each environment.
+The [secrets-per-branch recipe](./../azure-devops/secret-management-per-branch.md) describes a simple way to manage separate secrets configurations for each environment.
 
 > Note: even if the secret was only pushed to a feature branch and never merged, it's still a part of the git history. Follow [these instructions](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository) to remove any sensitive data and/or regenerate any keys and other sensitive information added to the repo. If a key or secret made it into the code base, rotate the key/secret so that it's no longer active
 
