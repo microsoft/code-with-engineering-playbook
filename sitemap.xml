@@ -456,6 +456,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/azure-devops/service-connection-security/</loc>
+         <lastmod>2023-02-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/dependency-container-scanning/dependency_container_scanning/</loc>
          <lastmod>2023-02-02</lastmod>
          <changefreq>daily</changefreq>
