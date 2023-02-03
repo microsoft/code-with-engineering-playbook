@@ -35,7 +35,7 @@ The purpose of this document is to:
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
 - [ ] [Decide on branch naming](source-control/naming-branches.md)
-- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch.md)
+- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/azure-devops/secret-management-per-branch.md)
 
 ### Day 2
 
