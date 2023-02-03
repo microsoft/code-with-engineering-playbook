@@ -7,7 +7,7 @@ When deploying resources on Azure in a secure environment, resources are usually
 Accessing protected resources from a local machine implies one of the following options:
 
 - Use a VPN
-- Use a **jumpbox**
+- Use a **jump box**
     - With SSH activated (less secure)
     - [With Bastion (recommended approach)](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/connect-to-environments-privately#about-azure-bastion-host-and-jumpboxes)
 
@@ -61,7 +61,7 @@ Here is below the code snippets for this deployment:
     }
 
     resource "azurerm_storage_account" "storage_account" {
-        name                = "mystorage"
+        name                = "storage"
         resource_group_name = "MyResourceGroup"
         location            = "WestEurope"
         tags                = var.tags
