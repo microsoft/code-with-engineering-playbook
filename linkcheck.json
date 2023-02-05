@@ -34,5 +34,5 @@
     "https://www.mend.io/",
     "https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/JsonSerializer.Read.String.cs"
   ],
-  "only_errors": true
+  "only_errors": false
 }
