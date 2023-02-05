@@ -344,6 +344,7 @@
     "nonoptimal",
     "nswag",
     "NPMJS",
+    "OTLP",
     "omnisharp",
     "opensource",
     "opentelemetry",
@@ -454,7 +455,6 @@
     "G\u00e9ron's",
     "Kubeseal",
     "KSOPS",
-    "OTLP",
     "Quic"
   ],
   "version": "0.2"
