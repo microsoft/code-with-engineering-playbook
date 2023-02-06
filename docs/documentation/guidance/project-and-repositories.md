@@ -28,7 +28,7 @@ Some sections in the documentation of the repository might point to the projectâ
   - Stakeholders
   - Definitions
   - Requirements
-- [Onboarding](../../developer-experience/recipes/onboarding-guide-template.md)
+- [Onboarding](../../developer-experience/onboarding-guide-template.md)
 - Repository guide
   - Production, Spikes
 - [Team agreements](../../agile-development/advanced-topics/team-agreements/README.md)
