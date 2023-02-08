@@ -49,7 +49,7 @@ It's important to keep in mind that automated tooling alone is not enough - make
 Before you get to testing, you can make some small changes in how you write code and documentation.
 
 - Document! Beyond text documentation, this also means code comments, clear variable and file naming, and pipeline or script outputs that clearly report success or failure and give details.
-- Avoid smallcase for variable and file names, hashtags, neologisms, etc. Use camelCase, snake_case, or other methods of creating separation between words.
+- Avoid small case for variable and file names, hashtags, neologisms, etc. Use camelCase, snake_case, or other methods of creating separation between words.
 - Introduce abbreviations by spelling the full term out, then the abbreviation in parentheses.
 - Use headers effectively to break up content by topic. Don't use more than one h1 per page, and don't skip levels (e.g. use an h3 directly under an h1). Avoid using formatting to make something *look* like a header when it's not.
 - Use descriptive link text. Avoid attaching a link to phrases like "Read more" and ensure that the text directly states what it links to. Link text should be able to stand on its own.
