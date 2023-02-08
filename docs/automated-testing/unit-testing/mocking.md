@@ -12,8 +12,8 @@ choice and Fakes should be considered instead.
 
 ## Stubs
 
-Most of the time when "mocks" are being used, what is actually being used is a **stub**; a stub simply returns what the
-test expects and has no other logic to it. Stubs typically ignore inputs they do not expect or will always return the
+Most of the time when "mocks" are being used, what is actually being used is a **stub**; a stub simply returns what the 
+test expects and has no other logic to it. Stubs typically ignore inputs they do not expect or will always return the 
 same thing. These are usually simple one lined methods that set up the state that the test expects.
 
 Stubs can be useful especially during early development of a system, but since nearly every test requires its own stubs
