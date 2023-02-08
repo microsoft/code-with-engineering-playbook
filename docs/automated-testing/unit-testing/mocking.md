@@ -12,9 +12,12 @@ choice and Fakes should be considered instead.
 
 ## Stubs
 
-Most of the time when "mocks" are being used, what is actually being used is a **stub**; a stub simply returns what the
-test expects and has no other logic to it. Stubs typically ignore inputs they do not expect or will always return the
-same thing. These are usually simple one lined methods that set up the state that the test expects.
+Stub allows you to have predetermined behavior that substitutes real behavior.
+The dependency (abstract class or interface) is implemented as a stub with a logic as expected by the client.
+Stubs can be useful when the clients of the stubs all expect the same set of responses, e.g. you use a third party service.
+The key concept here is that stubs should never fail a unit or integration test where a mock can.
+Stubs do not require any sort of framework to run, but are usually supported by mocking frameworks to quickly build the stubs.
+Stubs are commonly used in combination with a dependency injection frameworks or libraries, where the real object is replaced by a stub implementation.
 
 Stubs can be useful especially during early development of a system, but since nearly every test requires its own stubs
 (to test the different states), this quickly becomes repetitive and involves a lot of boilerplate code. Rarely will you
@@ -22,6 +25,22 @@ find a codebase that uses only stubs for mocking, they are usually paired with o
 
 Stubs do not require any sort of framework to run, but are usually supported by mocking frameworks to quickly build the
 stubs.
+
+```python
+# Python test example, that creates an application
+# with a dependency injection framework an overrides
+# a service with a stub
+
+class StubTestCase(TestBase):
+    def setUp(self) -> None:
+        super(StubTestCase, self).setUp()
+        self.app.container.service_a.override(StubService())
+        
+    def test_service():
+        service = self.app.container.service_a()
+        self.assertTrue(isinstance(service, StubService))
+
+```
 
 ### Upsides
 
