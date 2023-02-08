@@ -7406,9 +7406,9 @@ term for any "pretend" object used in place of a real one. This term, as well as
 The most commonly used form of test double is Mocks, but there are many cases where Mocks perhaps are not the best
 choice and Fakes should be considered instead.</p>
 <h2 id="stubs">Stubs</h2>
-<p>Stub allows you to have predetermined behaviour that substitutes real behaviour. 
+<p>Stub allows you to have predetermined behavior that substitutes real behavior.
 The dependency (abstract class or interface) is implemented as a stub with a logic as expected by the client.
-Stubs can be useful when the clients of the stubs all expect the same set of responses, e.g. you use a third party service. 
+Stubs can be useful when the clients of the stubs all expect the same set of responses, e.g. you use a third party service.
 The key concept here is that stubs should never fail a unit or integration test where a mock can.
 Stubs do not require any sort of framework to run, but are usually supported by mocking frameworks to quickly build the stubs.
 Stubs are commonly used in combination with a dependency injection frameworks or libraries, where the real object is replaced by a stub implementation.</p>
@@ -7417,7 +7417,7 @@ Stubs are commonly used in combination with a dependency injection frameworks or
 find a codebase that uses only stubs for mocking, they are usually paired with other test doubles.</p>
 <p>Stubs do not require any sort of framework to run, but are usually supported by mocking frameworks to quickly build the
 stubs.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Python test example, that creats an application</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Python test example, that creates an application</span>
 <span class="c1"># with a dependency injection framework an overrides</span>
 <span class="c1"># a service with a stub</span>
 
