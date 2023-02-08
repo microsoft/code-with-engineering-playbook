@@ -4,15 +4,12 @@
 name: MegaLinter
 
 on:
+  pull_request:
   push:
     branches:
       - 'main'
-  pull_request:
-    branches:
-      - 'main'
-
-env: # Comment env block if you do not want to apply fixes
-  # Apply linter fixes configuration
+  
+env:
   APPLY_FIXES: none # When active, APPLY_FIXES must also be defined as environment variable (in github/workflows/mega-linter.yml or other CI tool)
 
 concurrency:
