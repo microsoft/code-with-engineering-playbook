@@ -6,9 +6,6 @@ name: MegaLinter
 on:
   # Trigger mega-linter at every push. Action will also be visible from pull requests to main
   push: # Comment this line to trigger action only on pull-requests (not recommended if you don't pay for GH Actions)
-    branches: 
-      - 'master'
-  pull_request:
 
 
 env: # Comment env block if you do not want to apply fixes
@@ -21,7 +18,6 @@ concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
 
-permissions: write-all
 jobs:
   build:
     name: MegaLinter
@@ -81,7 +77,5 @@ jobs:
         if: steps.ml.outputs.has_updated_sources == 1 && (env.APPLY_FIXES_EVENT == 'all' || env.APPLY_FIXES_EVENT == github.event_name) && env.APPLY_FIXES_MODE == 'commit' && github.ref != 'refs/heads/main' && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository) && !contains(github.event.head_commit.message, 'skip fix')
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          github_token: ${{ secrets.WORKFLOW_TOKEN }}
-          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
           commit_message: "[MegaLinter] Apply linters fixes"
