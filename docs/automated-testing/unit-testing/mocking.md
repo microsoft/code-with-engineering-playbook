@@ -12,9 +12,9 @@ choice and Fakes should be considered instead.
 
 ## Stubs
 
-Stub allows you to have predetermined behaviour that substitutes real behaviour. 
+Stub allows you to have predetermined behaviour that substitutes real behaviour.
 The dependency (abstract class or interface) is implemented as a stub with a logic as expected by the client.
-Stubs can be useful when the clients of the stubs all expect the same set of responses, e.g. you use a third party service. 
+Stubs can be useful when the clients of the stubs all expect the same set of responses, e.g. you use a third party service.
 The key concept here is that stubs should never fail a unit or integration test where a mock can.
 Stubs do not require any sort of framework to run, but are usually supported by mocking frameworks to quickly build the stubs.
 Stubs are commonly used in combination with a dependency injection frameworks or libraries, where the real object is replaced by a stub implementation.
