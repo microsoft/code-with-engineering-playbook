@@ -9,6 +9,8 @@ on:
     branches: 
       - 'master'
   pull_request:
+    branches:
+      - 'master'
 
 env: # Comment env block if you do not want to apply fixes
   # Apply linter fixes configuration
