@@ -80,7 +80,7 @@ Take the time to fabricate scenarios, and run a D&D style campaign to solve your
 
 ### Chaos Testing
 
-Leverage automated chaos testing to see how things break. Check out the list of the following tools:
+Leverage automated chaos testing to see how things break. You can read this playbook's [article on fault injection testing](../automated-testing/fault-injection-testing/README.md) for more information on developing a hypothesis-driven suite of automated chaos test. The following list of chaos testing tools as well as [this section in the article linked above](../automated-testing/fault-injection-testing/README.md#chaos) has more details on available platforms and tooling for this purpose:
 
 * [Chaos Monkey](https://netflix.github.io/chaosmonkey/)
 * [Kraken](https://github.com/cloud-bulldozer/kraken)

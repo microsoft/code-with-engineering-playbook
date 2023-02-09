@@ -1,6 +1,6 @@
 # Fault Injection Testing
 
-Fault injection testing is the deliberate introduction of errors and faults to a system to validate and harden its stability and reliability. The goal is to improve the system's design for resiliency and performance under intermittent failure conditions over time.
+Fault injection testing is the deliberate introduction of errors and faults to a system to validate and harden its [stability and reliability](../../reliability/README.md). The goal is to improve the system's design for resiliency and performance under intermittent failure conditions over time.
 
 ## When To Use
 
@@ -60,11 +60,11 @@ Much like [Synthetic Monitoring Tests](../synthetic-monitoring-tests/README.md),
 Fault injection tests rely on metrics observability and are usually statistical; The following high-level steps provide a sample of practicing fault injection and chaos engineering:
 
 * Measure and define a steady (healthy) state for the system's interoperability.
-* hypothesize based on a fault mode.
+* Create hypotheses based on predicted behavior when a fault is introduces.
 * Introduce real-world fault-events to the system.
 * Measure the state and compare it to the baseline state.
-* Document the process and the observations
-* Identify and act on the result
+* Document the process and the observations.
+* Identify and act on the result.
 
 ## Best Practices and Advice
 
@@ -89,9 +89,11 @@ A test can either succeed or fail. In the event of failure, there will likely be
 
 ### Chaos
 
+* [Azure Chaos Studio](https://learn.microsoft.com/en-US/azure/chaos-studio/chaos-studio-overview) - An in-preview tool for orchestrating controlled fault injection experiments on Azure resources.
 * [Chaos toolkit](https://chaostoolkit.org/) - A declarative, modular chaos platform with many extensions, including the [Azure actions and probes kit](https://github.com/chaostoolkit-incubator/chaostoolkit-azure).
 * [Kraken](https://github.com/openshift-scale/kraken) - An Openshift-specific chaos tool, maintained by Redhat.
 * [Chaos Monkey](https://github.com/netflix/chaosmonkey) - The Netflix platform which popularized chaos engineering (doesn't support Azure OOTB).
+* [Simmy](https://github.com/Polly-Contrib/Simmy) - A .NET library for chaos testing and fault injection integrated with the [Polly](https://github.com/App-vNext/Polly) library resilience engineering.
 
 ## Conclusion
 
