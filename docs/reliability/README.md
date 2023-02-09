@@ -64,7 +64,8 @@ We can build graceful failure (or graceful degradation) into our software stack 
   * [Leader Election](https://en.wikipedia.org/wiki/Leader_election) can be used to keep healthy services on standby in case the leader experiences issues.
   * Entire cluster failover can redirect traffic to another region or availability zone.
   * Propagate downstream failures of **dependent services** up the stack via health checks, so that your ingress points can re-route to healthy services.
-* [Circuit breakers](https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.) can bail early on requests vs. propagating errors throughout the system
+* [Circuit breakers](https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.) can bail early on requests vs. propagating errors throughout the system.
+  Consider using a well-known, tested library such as [Polly](https://github.com/App-vNext/Polly) (.NET) that enables configurable implementations of this and other common resilience and transient fault-handling patterns.
 
 ## Practice
 
@@ -80,7 +81,7 @@ Take the time to fabricate scenarios, and run a D&D style campaign to solve your
 
 ### Chaos Testing
 
-Leverage automated chaos testing to see how things break. You can read this playbook's [article on fault injection testing](../automated-testing/fault-injection-testing/README.md) for more information on developing a hypothesis-driven suite of automated chaos test. The following list of chaos testing tools as well as [this section in the article linked above](../automated-testing/fault-injection-testing/README.md#chaos) has more details on available platforms and tooling for this purpose:
+Leverage automated chaos testing to see how things break. You can read this playbook's [article on fault injection testing](../automated-testing/fault-injection-testing/README.md) for more information on developing a hypothesis-driven suite of automated chaos test. The following list of chaos testing tools as well as [this section in the article linked above](../automated-testing/fault-injection-testing/README.md#chaos) have more details on available platforms and tooling for this purpose:
 
 * [Chaos Monkey](https://netflix.github.io/chaosmonkey/)
 * [Kraken](https://github.com/cloud-bulldozer/kraken)
