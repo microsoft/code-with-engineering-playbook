@@ -2,7 +2,7 @@
 # Git Line Endings            #
 ###############################
 
-# Set default behaviour to automatically normalize line endings.
+# Set default behavior to automatically normalize line endings.
 * text=auto
 
 # Force batch scripts to always use CRLF line endings so that if a repo is accessed

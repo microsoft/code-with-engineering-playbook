@@ -21,3 +21,8 @@ This covers not only technical design of software, but also architecture design 
 ## Recipes
 
 - [Design Recipes](design-reviews/recipes/README.md)
+
+## Code Examples
+
+- Folder Structure
+  - [Folder Structure For Python Repository](https://github.com/microsoft/cookiecutter_template_for_python)

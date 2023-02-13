@@ -19,7 +19,7 @@ Diagrams can be easily reused in presentations, a PowerPoint license is pretty c
 
 ## `.drawio.png`
 
-There are different desktop, web apps and VS Code extensions. 
+There are different desktop, web apps and VS Code extensions.
 This tooling can be used like Visio or LucidChart, without the licensing/remote storage concerns.
 Furthermore, Diagrams.net has a collection of Azure/Office/Microsoft icons, as well as other well-known tech, so it is not only useful for swimlanes and flow diagrams, but also for architecture diagrams.
 
