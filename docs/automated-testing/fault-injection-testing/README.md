@@ -60,7 +60,7 @@ Much like [Synthetic Monitoring Tests](../synthetic-monitoring-tests/README.md),
 Fault injection tests rely on metrics observability and are usually statistical; The following high-level steps provide a sample of practicing fault injection and chaos engineering:
 
 * Measure and define a steady (healthy) state for the system's interoperability.
-* Create hypotheses based on predicted behavior when a fault is introduces.
+* Create hypotheses based on predicted behavior when a fault is introduced.
 * Introduce real-world fault-events to the system.
 * Measure the state and compare it to the baseline state.
 * Document the process and the observations.
