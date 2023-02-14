@@ -83,10 +83,13 @@ Take the time to fabricate scenarios, and run a D&D style campaign to solve your
 
 Leverage automated chaos testing to see how things break. You can read this playbook's [article on fault injection testing](../automated-testing/fault-injection-testing/README.md) for more information on developing a hypothesis-driven suite of automated chaos test. The following list of chaos testing tools as well as [this section in the article linked above](../automated-testing/fault-injection-testing/README.md#chaos) have more details on available platforms and tooling for this purpose:
 
-* [Chaos Monkey](https://netflix.github.io/chaosmonkey/)
-* [Kraken](https://github.com/cloud-bulldozer/kraken)
+* [Azure Chaos Studio](https://learn.microsoft.com/en-US/azure/chaos-studio/chaos-studio-overview) - An in-preview tool for orchestrating controlled fault injection experiments on Azure resources.
+* [Chaos toolkit](https://chaostoolkit.org/) - A declarative, modular chaos platform with many extensions, including the [Azure actions and probes kit](https://github.com/chaostoolkit-incubator/chaostoolkit-azure).
+* [Kraken](https://github.com/openshift-scale/kraken) - An Openshift-specific chaos tool, maintained by Redhat.
+* [Chaos Monkey](https://github.com/netflix/chaosmonkey) - The Netflix platform which popularized chaos engineering (doesn't support Azure OOTB).
 * Many services meshes, like [Linkerd](https://linkerd.io/2/features/fault-injection/), offer fault injection tooling through the use of their sidecars.
 * [Chaos Mesh](https://github.com/chaos-mesh/chaos-mesh)
+* [Simmy](https://github.com/Polly-Contrib/Simmy) - A .NET library for chaos testing and fault injection integrated with the [Polly](https://github.com/App-vNext/Polly) library for resilience engineering.
 
 ## Analyze all Failures
 
