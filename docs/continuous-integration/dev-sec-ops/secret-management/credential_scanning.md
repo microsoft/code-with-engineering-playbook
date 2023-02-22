@@ -10,7 +10,7 @@ Another consideration is that coupling the project's code to its infrastructure 
 
 ## Applying Credential Scanning
 
-Ideally, credential scanning should be run as part of a developer's workflow (e.g. via a [git pre-commit hook](https://githooks.com)), however, to protect against developer error, credential scanning must also be enforced as part of the continuous integration process to ensure that no credentials ever get merged to a project's main branch.
+Ideally, credential scanning should be run as part of a developer's workflow (e.g. via a [git pre-commit hook](https://pre-commit.com/)), however, to protect against developer error, credential scanning must also be enforced as part of the continuous integration process to ensure that no credentials ever get merged to a project's main branch.
 To implement credential scanning for a project, consider the  following:
 
 1. Store secrets in an external secure store that is meant to store sensitive information
