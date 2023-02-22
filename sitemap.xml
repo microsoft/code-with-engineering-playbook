@@ -701,6 +701,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/developer-experience/toggle-vnet-dev-environment/</loc>
+         <lastmod>2023-02-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/developer-experience/recipes/client-app-inner-loop/</loc>
          <lastmod>2023-02-22</lastmod>
          <changefreq>daily</changefreq>
