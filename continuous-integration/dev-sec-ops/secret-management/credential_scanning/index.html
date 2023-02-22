@@ -7217,7 +7217,7 @@
 Another consideration is that coupling the project's code to its infrastructure and deployment specifics is limiting and considered a bad practice. From a software design perspective, the code should be independent of the runtime configuration that will be used to run it, and that runtime configuration includes secrets.
  As such, there should be a clear boundary between code and secrets: secrets should be managed outside of the source code (read more <a href="../../../../continuous-delivery/secrets-management/">here</a>) and credential scanning should be employed to ensure that this boundary is never violated.</p>
 <h2 id="applying-credential-scanning">Applying Credential Scanning</h2>
-<p>Ideally, credential scanning should be run as part of a developer's workflow (e.g. via a <a href="https://githooks.com">git pre-commit hook</a>), however, to protect against developer error, credential scanning must also be enforced as part of the continuous integration process to ensure that no credentials ever get merged to a project's main branch.
+<p>Ideally, credential scanning should be run as part of a developer's workflow (e.g. via a <a href="https://pre-commit.com/">git pre-commit hook</a>), however, to protect against developer error, credential scanning must also be enforced as part of the continuous integration process to ensure that no credentials ever get merged to a project's main branch.
 To implement credential scanning for a project, consider the  following:</p>
 <ol>
 <li>Store secrets in an external secure store that is meant to store sensitive information</li>
@@ -7246,7 +7246,7 @@ To implement credential scanning for a project, consider the  following:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 22, 2023</span>
       
     
   </small>
