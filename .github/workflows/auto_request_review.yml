@@ -16,3 +16,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           config: .github/reviewers.yml # Config file location override
+        continue-on-error: true
+      - name: Exit properly
+        run: exit 0
