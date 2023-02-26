@@ -7284,7 +7284,7 @@
 
 
 <h1 id="fault-injection-testing">Fault Injection Testing</h1>
-<p>Fault injection testing is the deliberate introduction of errors and faults to a system to validate and harden its stability and reliability. The goal is to improve the system's design for resiliency and performance under intermittent failure conditions over time.</p>
+<p>Fault injection testing is the deliberate introduction of errors and faults to a system to validate and harden its <a href="../../reliability/">stability and reliability</a>. The goal is to improve the system's design for resiliency and performance under intermittent failure conditions over time.</p>
 <h2 id="when-to-use">When To Use</h2>
 <h3 id="problem-addressed">Problem Addressed</h3>
 <p>Systems need to be resilient to the conditions that caused inevitable production disruptions. Modern applications are built with an increasing number of dependencies; on infrastructure, platform, network, 3rd party software or APIs, etc. Such systems increase the risk of impact from dependency disruptions. Each dependent component may fail. Furthermore, its interactions with other components may propagate the failure.</p>
@@ -7334,11 +7334,11 @@ Examples of performing fault injection during the development lifecycle:</p>
 <p>Fault injection tests rely on metrics observability and are usually statistical; The following high-level steps provide a sample of practicing fault injection and chaos engineering:</p>
 <ul>
 <li>Measure and define a steady (healthy) state for the system's interoperability.</li>
-<li>hypothesize based on a fault mode.</li>
+<li>Create hypotheses based on predicted behavior when a fault is introduced.</li>
 <li>Introduce real-world fault-events to the system.</li>
 <li>Measure the state and compare it to the baseline state.</li>
-<li>Document the process and the observations</li>
-<li>Identify and act on the result</li>
+<li>Document the process and the observations.</li>
+<li>Identify and act on the result.</li>
 </ul>
 <h2 id="best-practices-and-advice">Best Practices and Advice</h2>
 <p>Experimenting in production has the benefit of running tests against a live system with real user traffic, ensuring its health, or building confidence in its ability to handle errors gracefully. However, it has the potential to cause unnecessary customer pain.
@@ -7361,9 +7361,11 @@ A test can either succeed or fail. In the event of failure, there will likely be
 </ul>
 <h3 id="chaos">Chaos</h3>
 <ul>
+<li><a href="https://learn.microsoft.com/en-US/azure/chaos-studio/chaos-studio-overview">Azure Chaos Studio</a> - An in-preview tool for orchestrating controlled fault injection experiments on Azure resources.</li>
 <li><a href="https://chaostoolkit.org/">Chaos toolkit</a> - A declarative, modular chaos platform with many extensions, including the <a href="https://github.com/chaostoolkit-incubator/chaostoolkit-azure">Azure actions and probes kit</a>.</li>
 <li><a href="https://github.com/openshift-scale/kraken">Kraken</a> - An Openshift-specific chaos tool, maintained by Redhat.</li>
 <li><a href="https://github.com/netflix/chaosmonkey">Chaos Monkey</a> - The Netflix platform which popularized chaos engineering (doesn't support Azure OOTB).</li>
+<li><a href="https://github.com/Polly-Contrib/Simmy">Simmy</a> - A .NET library for chaos testing and fault injection integrated with the <a href="https://github.com/App-vNext/Polly">Polly</a> library for resilience engineering.</li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>From the principals of chaos: "The harder it is to disrupt the steady-state, the more confidence we have in the behavior of the system. If a weakness is uncovered, we now have a target for improvement before that behavior manifests in the system at large".</p>
@@ -7385,7 +7387,7 @@ Fault injection is a powerful tool and should be used with caution. Cases such a
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 26, 2023</span>
       
     
   </small>

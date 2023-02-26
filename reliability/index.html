@@ -7265,7 +7265,8 @@
 <li>Propagate downstream failures of <strong>dependent services</strong> up the stack via health checks, so that your ingress points can re-route to healthy services.</li>
 </ul>
 </li>
-<li><a href="https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.">Circuit breakers</a> can bail early on requests vs. propagating errors throughout the system</li>
+<li><a href="https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.">Circuit breakers</a> can bail early on requests vs. propagating errors throughout the system.
+  Consider using a well-known, tested library such as <a href="https://github.com/App-vNext/Polly">Polly</a> (.NET) that enables configurable implementations of this and other common resilience and transient fault-handling patterns.</li>
 </ul>
 <h2 id="practice">Practice</h2>
 <p><a href="https://thinkmeta.net/2010/11/06/what-is-an-untested-dr-plan-worth/">None of the above recommendations will work if they are not tested</a>. Your backups are meaningless if you don't know how to mount them. Your cluster failover and other mitigations will regress over time if they are not tested. Here are some tips to test the above:</p>
@@ -7274,12 +7275,15 @@
 <h3 id="run-maintenance-exercises">Run maintenance exercises</h3>
 <p>Take the time to fabricate scenarios, and run a D&amp;D style campaign to solve your issues. This can be as elaborate as spinning up a new environment and injecting errors, or as simple as asking the "players" to navigate to a dashboard and describing would they would see in the fabricated scenario (small amounts of imagination required). The playbooks should <strong>easily</strong> navigate the user to the correct solution/mitigation. If not, update your playbooks.</p>
 <h3 id="chaos-testing">Chaos Testing</h3>
-<p>Leverage automated chaos testing to see how things break. Check out the list of the following tools:</p>
+<p>Leverage automated chaos testing to see how things break. You can read this playbook's <a href="../automated-testing/fault-injection-testing/">article on fault injection testing</a> for more information on developing a hypothesis-driven suite of automated chaos test. The following list of chaos testing tools as well as <a href="../automated-testing/fault-injection-testing/#chaos">this section in the article linked above</a> have more details on available platforms and tooling for this purpose:</p>
 <ul>
-<li><a href="https://netflix.github.io/chaosmonkey/">Chaos Monkey</a></li>
-<li><a href="https://github.com/cloud-bulldozer/kraken">Kraken</a></li>
+<li><a href="https://learn.microsoft.com/en-US/azure/chaos-studio/chaos-studio-overview">Azure Chaos Studio</a> - An in-preview tool for orchestrating controlled fault injection experiments on Azure resources.</li>
+<li><a href="https://chaostoolkit.org/">Chaos toolkit</a> - A declarative, modular chaos platform with many extensions, including the <a href="https://github.com/chaostoolkit-incubator/chaostoolkit-azure">Azure actions and probes kit</a>.</li>
+<li><a href="https://github.com/openshift-scale/kraken">Kraken</a> - An Openshift-specific chaos tool, maintained by Redhat.</li>
+<li><a href="https://github.com/netflix/chaosmonkey">Chaos Monkey</a> - The Netflix platform which popularized chaos engineering (doesn't support Azure OOTB).</li>
 <li>Many services meshes, like <a href="https://linkerd.io/2/features/fault-injection/">Linkerd</a>, offer fault injection tooling through the use of their sidecars.</li>
 <li><a href="https://github.com/chaos-mesh/chaos-mesh">Chaos Mesh</a></li>
+<li><a href="https://github.com/Polly-Contrib/Simmy">Simmy</a> - A .NET library for chaos testing and fault injection integrated with the <a href="https://github.com/App-vNext/Polly">Polly</a> library for resilience engineering.</li>
 </ul>
 <h2 id="analyze-all-failures">Analyze all Failures</h2>
 <p>Writing up a <a href="https://en.wikipedia.org/wiki/Postmortem_documentation">post-mortem</a> is a great way to document the root causes, and action items for your failures. They're also a great way to track recurring issues, and create a strong case for prioritizing fixes.</p>
@@ -7290,7 +7294,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 25, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 26, 2023</span>
       
     
   </small>
