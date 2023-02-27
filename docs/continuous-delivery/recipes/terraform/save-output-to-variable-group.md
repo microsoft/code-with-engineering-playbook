@@ -8,6 +8,23 @@ When terraform is used to automate the provisioning of the infrastructure, an [A
 
 Once files are applied, some [Output Values](https://developer.hashicorp.com/terraform/language/values/outputs) (for instance resource group name, app service name) can be referenced and outputted by terraform. These values must be generally retrieved afterwards, used as input variables for the deployment of services happening in separate pipelines.
 
+```tf
+output "core_resource_group_name" {
+  description = "The resource group name"
+  value       = module.core.resource_group_name
+}
+
+output "core_key_vault_name" {
+  description = "The key vault name."
+  value       = module.core.key_vault_name
+}
+
+output "core_key_vault_url" {
+  description = "The key vault url."
+  value       = module.core.key_vault_url
+}
+```
+
 How to make terraform output values available across multiple pipelines ?
 
 ## Solution
@@ -19,6 +36,8 @@ For this purpose, we are using the following commands:
 - [terraform output](https://developer.hashicorp.com/terraform/cli/commands/output) to extract the value of an output variable from the state file (provided by [Terraform CLI](https://developer.hashicorp.com/terraform/cli))
 - [az pipelines variable-group](https://learn.microsoft.com/en-us/cli/azure/pipelines/variable-group?view=azure-cli-latest) to manage variable groups (provided by [Azure DevOps CLI](https://learn.microsoft.com/en-us/azure/devops/cli/?view=azure-devops))
 
+You can use the following script once `terraform apply` is completed to create/update the variable group.
+
 ### Script (update-variablegroup.sh)
 
 #### Parameters
@@ -29,7 +48,10 @@ For this purpose, we are using the following commands:
 | DEVOPS_PROJECT | The name or id of the Azure DevOps project. |
 | GROUP_NAME| The name of the variable group targeted. |
 
-If a variable group exists, a valid option could be to delete it and rebuild it from scratch. However, as authorization could have been updated at the group level, we prefered to avoid this option. The script remove instead existing variables and add them back with latest values.
+Implementation choices:
+
+- If a variable group already exists, a valid option could be to delete and rebuild the group from scratch. However, as authorization could have been updated at the group level, we prefered to avoid this option. The script remove instead all variables in the targeted group and add them back with latest values. Permissions are not impacted.
+- A variable group cannot be empty. It must contains at least one variable. A temporary uuid value is created to mitigate this issue, and removed once variables updated.
 
 ```bash
 #!/bin/bash
@@ -78,12 +100,11 @@ else
 fi
 ```
 
-
-[az devops configure](https://learn.microsoft.com/en-us/cli/azure/devops?view=azure-cli-latest#az-devops-configure)
-`
 ## Authenticate with Azure DevOps
 
-Some Azure DevOps CLI commands that don't call into Azure DevOps, like `az devops configure` and `az devops -h`, do not require any authentication, but most commands interact with Azure DevOps and do require authentication. You can authenticate using the System.AccessToken security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example (see [Azure DevOps CLI in Azure Pipeline YAML](https://learn.microsoft.com/en-us/azure/devops/cli/azure-devops-cli-in-yaml?view=azure-devops#authenticate-with-azure-devops)).
+Most commands used in previous script interact with Azure DevOps and do require authentication. You can authenticate using the `System.AccessToken` security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example (see [Azure DevOps CLI in Azure Pipeline YAML](https://learn.microsoft.com/en-us/azure/devops/cli/azure-devops-cli-in-yaml?view=azure-devops#authenticate-with-azure-devops) for additional information).
+
+In addition, you can notice we are also using [predifined variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables) to target the Azure DevOps organization and project (respecively System.`TeamFoundationCollectionUri` and System.`TeamProjectId`).
 
 ```yaml
   - task: Bash@3
