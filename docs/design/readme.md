@@ -26,3 +26,8 @@ This covers not only technical design of software, but also architecture design 
 
 - Folder Structure
   - [Folder Structure For Python Repository](https://github.com/microsoft/cookiecutter_template_for_python)
+- Project Templates
+  - Rust
+    - [Actix Web, Diesel ORM, Test Containers, Onion Architecture](https://github.com/microsoft/cookiecutter-rust-actix-clean-architecture)
+  - Python
+    - [Flask, SQLAlchemy ORM, Test Containers, Onion Architecture](https://github.com/microsoft/cookiecutter-python-flask-clean-architecture)
