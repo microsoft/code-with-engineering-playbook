@@ -21,8 +21,7 @@
     {"pattern": "^https://www.cmu.edu/iso/governance/guidelines/data-classification.html"},
     {"pattern": "^https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/"},
     {"pattern": "^https://www.perfecto.io/"},
-    {"pattern": "^https://www.ranorex.com/free-trial/"},
-    {"pattern": "^https://dev.azure.com/fabrikamfiber/"}
+    {"pattern": "^https://www.ranorex.com/free-trial/"}
   ],
   "httpHeaders": [
     {

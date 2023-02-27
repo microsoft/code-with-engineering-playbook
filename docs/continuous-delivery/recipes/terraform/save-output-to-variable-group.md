@@ -121,7 +121,7 @@ In addition, you can notice we are also using [predifined variables](https://lea
 | System variables | Description |
 |---|---|
 | [System.AccessToken](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#systemaccesstoken)| Special variable that carries the security token used by the running build. |
-| [System.TeamFoundationCollectionUri](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The URI of the Azure DevOps organization. For example: <https://dev.azure.com/fabrikamfiber/>. |
+| [System.TeamFoundationCollectionUri](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The URI of the Azure DevOps organization. |
 | [System.TeamProjectId](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The ID of the project that this build belongs to. |
 
 ## Library security
