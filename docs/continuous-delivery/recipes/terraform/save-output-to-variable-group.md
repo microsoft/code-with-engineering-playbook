@@ -29,7 +29,7 @@ How to make terraform output values available across multiple pipelines ?
 
 ## Solution
 
-One suggested solution is to store outputted values in a [variable group](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml). Variable groups is a convenient way store values you might want to be passed into a YAML pipeline.
+One suggested solution is to store outputted values in the Library with a [Variable Group](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml). Variable groups is a convenient way store values you might want to be passed into a YAML pipeline. In addition, all assets defined in the Library share a common security model. You can control who can define new items in a library, and who can use an existing item.
 
 For this purpose, we are using the following commands:
 
@@ -50,8 +50,8 @@ You can use the following script once `terraform apply` is completed to create/u
 
 Implementation choices:
 
-- If a variable group already exists, a valid option could be to delete and rebuild the group from scratch. However, as authorization could have been updated at the group level, we prefered to avoid this option. The script remove instead all variables in the targeted group and add them back with latest values. Permissions are not impacted.
-- A variable group cannot be empty. It must contains at least one variable. A temporary uuid value is created to mitigate this issue, and removed once variables updated.
+- If a variable group already exists, a valid option could be to delete and rebuild the group from scratch. However, as authorization could have been updated at the group level, we prefer to avoid this option. The script remove instead all variables in the targeted group and add them back with latest values. Permissions are not impacted.
+- A variable group cannot be empty. It must contains at least one variable. A temporary uuid value is created to mitigate this issue, and removed once variables are updated.
 
 ```bash
 #!/bin/bash
@@ -121,5 +121,20 @@ In addition, you can notice we are also using [predifined variables](https://lea
 | System variables | Description |
 |---|---|
 | [System.AccessToken](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#systemaccesstoken)| System.AccessToken is a special variable that carries the security token used by the running build. |
-| [System.TeamFoundationCollectionUri](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The URI of the Azure DevOps organization. For example: https://dev.azure.com/fabrikamfiber/. |
+| [System.TeamFoundationCollectionUri](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The URI of the Azure DevOps organization. For example: <https://dev.azure.com/fabrikamfiber/>. |
 | [System.TeamProjectId](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The ID of the project that this build belongs to. |
+
+## Library security
+
+Roles are defined for Library items, and membership of these roles governs the operations you can perform on those items.
+
+| Role for library item | Description |
+|---|---|
+| Reader | Can view the item. |
+| User | Can use the item when authoring build or release pipelines. For example, you must be a 'User' for a variable group to use it in a release pipeline. |
+| Administrator | Can also manage membership of all other roles for the item. The user who created an item gets automatically added to the Administrator role for that item. By default, the following groups get added to the Administrator role of the library: Build Administrators, Release Administrators, and Project Administrators. |
+| Creator | Can create new items in the library, but this role doesn't include Reader or User permissions. The Creator role can't manage permissions for other users. |
+
+When using `System.AccessToken`, service account `<ProjectName> Build Service` identity will be used to access the Library.
+
+Please ensure in `Pipelines > Library > Security` section that this service account has `Administrator` role at the `Library` or `Variable Group` level to create/update/delete variables (see. [Library of assets](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/?view=azure-devops) for additional information)).
