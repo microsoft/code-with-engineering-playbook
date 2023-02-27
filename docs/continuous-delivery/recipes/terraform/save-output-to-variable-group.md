@@ -25,7 +25,7 @@ output "core_key_vault_url" {
 }
 ```
 
-How to make terraform output values available across multiple pipelines ?
+The purpose of this recipe is to answer the following statement: How to make terraform output values available across multiple pipelines ?
 
 ## Solution
 
