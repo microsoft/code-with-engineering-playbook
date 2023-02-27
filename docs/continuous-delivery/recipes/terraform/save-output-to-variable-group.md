@@ -104,7 +104,7 @@ fi
 
 Most commands used in previous script interact with Azure DevOps and do require authentication. You can authenticate using the `System.AccessToken` security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example (see [Azure DevOps CLI in Azure Pipeline YAML](https://learn.microsoft.com/en-us/azure/devops/cli/azure-devops-cli-in-yaml?view=azure-devops#authenticate-with-azure-devops) for additional information).
 
-In addition, you can notice we are also using [predifined variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables) to target the Azure DevOps organization and project (respecively System.`TeamFoundationCollectionUri` and System.`TeamProjectId`).
+In addition, you can notice we are also using [predifined variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables) to target the Azure DevOps organization and project (respectively `System.TeamFoundationCollectionUri` and `System.TeamProjectId`).
 
 ```yaml
   - task: Bash@3
@@ -120,7 +120,7 @@ In addition, you can notice we are also using [predifined variables](https://lea
 
 | System variables | Description |
 |---|---|
-| [System.AccessToken](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#systemaccesstoken)| System.AccessToken is a special variable that carries the security token used by the running build. |
+| [System.AccessToken](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#systemaccesstoken)| Special variable that carries the security token used by the running build. |
 | [System.TeamFoundationCollectionUri](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The URI of the Azure DevOps organization. For example: <https://dev.azure.com/fabrikamfiber/>. |
 | [System.TeamProjectId](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The ID of the project that this build belongs to. |
 
