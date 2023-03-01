@@ -1,6 +1,6 @@
 # Save terraform output to a variable group (Azure DevOps)
 
-This recipe applies only to terraform usage with Azure DevOps. It assumes your familiar with terraform commands and Azure Pipelines.
+This recipe applies only to [terraform](https://www.terraform.io/) usage with Azure DevOps. It assumes your familiar with terraform commands and Azure Pipelines.
 
 ## Context
 
