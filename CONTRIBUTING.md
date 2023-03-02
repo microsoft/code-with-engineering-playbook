@@ -76,7 +76,7 @@ When this occurs, do the following
 1. Verify that the link is OK, if it redirects, change the path to be the final link.
 1. If the link is not ok, fix the link (even if it is not in your document) if you find a good equivalent link. If you can't find a good equivalent link, contact one of the [maintainers](#maintainers) for a solution.
 1. Re-run the job, or ask to have the job re-run (if you are a first time contributor). Sometimes the link checker fails due to temporary connectivity issues.
-1. If the link checker still fails, and you have confirmed that the link is ok, exclude the link from checking, in the `.markodownlinkcheck.json` file in the root of the repository.
+1. If the link checker still fails, and you have confirmed that the link is ok, exclude the link from checking, in the `.markdownlinkcheck.json` file in the root of the repository.
 
 ## Running Locally (*Remotely*)
 
@@ -90,7 +90,7 @@ Finally, launch the site locally using the `mkdocs serve` command from the root 
 
 ## Maintainers
 
-For any questions or concerns, please contact [Tess Ferrandez](https://github.com/TessFerrandez), [Shiran Rubin](https://github.com/shiranr) or [Federica Nocera](https://github.com/fnocera)
+For any questions or concerns, please contact [Tess Ferrandez](https://github.com/TessFerrandez), [Shiran Rubin](https://github.com/shiranr) or [Federica Nocera](https://github.com/fnocera).
 
 ## Legal Notices
 
@@ -99,7 +99,7 @@ Microsoft and any contributors grant you a license to the Microsoft documentatio
 Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries. The licenses for this project do not grant you rights to use any Microsoft
 names, logos, or trademarks. Microsoft's general trademark guidelines can be found at <https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks>.
 
-Privacy information can be found at <https://privacy.microsoft.com/en-us/>
+Privacy information can be found at <https://privacy.microsoft.com/en-us/>.
 
 Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents, or trademarks, whether by implication, estoppel
 or otherwise.
