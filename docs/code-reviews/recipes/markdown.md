@@ -100,7 +100,7 @@ The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemNa
 ### Linting
 
 To automate linting with `markdownlint` for PR validation in GitHub actions,
-you can either use linters aggregator as we do with [MegaLinter in this repository](../../../.github/workflows/mega-linter.yml) or use the following YAML.
+you can either use linters aggregator as we do with [MegaLinter in this repository](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/workflows/mega-linter.yml) or use the following YAML.
 
 ```yaml
 name: Markdownlint
