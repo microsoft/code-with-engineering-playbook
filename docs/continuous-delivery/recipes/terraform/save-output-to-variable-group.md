@@ -4,7 +4,7 @@ This recipe applies only to [terraform](https://www.terraform.io/) usage with Az
 
 ## Context
 
-When terraform is used to automate the provisioning of the infrastructure, an [Azure Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) is generally dedicated to apply terraform configuration files. It will create, update, delete Azure resources to provision your infrastructure changes.
+When [terraform](https://www.terraform.io/) is used to automate the provisioning of the infrastructure, an [Azure Pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops) is generally dedicated to apply terraform configuration files. It will create, update, delete Azure resources to provision your infrastructure changes.
 
 Once files are applied, some [Output Values](https://developer.hashicorp.com/terraform/language/values/outputs) (for instance resource group name, app service name) can be referenced and outputted by terraform. These values must be generally retrieved afterwards, used as input variables for the deployment of services happening in separate pipelines.
 
