@@ -1,4 +1,4 @@
-# Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+# Running detect-secrets in Azure DevOps Pipelines
 
 ## Overview
 
