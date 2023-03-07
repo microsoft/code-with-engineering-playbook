@@ -53,7 +53,7 @@ When working in an engineering project, we typically encounter one or more of th
 ## What documentation should exist
 
 - [Project and Repositories](./guidance/project-and-repositories.md)
-- [Commit Messages](../source-control/README.md#commit-best-practices)
+- [Commit Messages](../source-control/git-guidance/README.md#commit-best-practices)
 - [Pull Requests](./guidance/pull-requests.md)
 - [Code](./guidance/code.md)
 - [Work Items](./guidance/work-items.md)
