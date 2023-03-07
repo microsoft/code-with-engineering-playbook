@@ -32,8 +32,7 @@
     "https://learn.microsoft.com/something/somethingelse",
     "https://thenewstack.io/which-programming-languages-use-the-least-electricity/",
     "https://www.mend.io/",
-    "https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/JsonSerializer.Read.String.cs",
-    "https://en.wikipedia.org/wiki"
+    "https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/JsonSerializer.Read.String.cs"
   ],
   "only_errors": true
 }
