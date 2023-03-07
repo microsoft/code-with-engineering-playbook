@@ -10,4 +10,4 @@ E.g. the following pattern will exclude all files with the extension `.private.c
 
 For more details on proper management of credentials and secrets in source control, and handling an accidental commit of secrets to source control, please refer to the [Secrets Management](../continuous-delivery/secrets-management/README.md) document which has further information, split by language as well.
 
-As an extra security measure, apply [credential scanning](../continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets.md) in your CI/CD pipeline.
+As an extra security measure, apply [credential scanning](../continuous-integration/dev-sec-ops/secret-management/credential_scanning.md) in your CI/CD pipeline.
