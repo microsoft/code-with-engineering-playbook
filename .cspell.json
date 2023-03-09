@@ -456,7 +456,8 @@
     "Kubeseal",
     "KSOPS",
     "OTLP",
-    "Quic"
+    "Quic",
+    "Simmy"
   ],
   "version": "0.2"
 }
