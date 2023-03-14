@@ -421,6 +421,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/continuous-delivery/recipes/terraform/save-output-to-variable-group/</loc>
+         <lastmod>2023-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/continuous-delivery/recipes/terraform/share-common-variables-naming-conventions/</loc>
          <lastmod>2023-03-14</lastmod>
          <changefreq>daily</changefreq>
