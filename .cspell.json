@@ -9,7 +9,7 @@
     "report",
     "**/.devcontainer/**",
     "**/.github/workflows/**",
-    "**/.github/reviewers.yml",
+    "**/.github/CODEOWNERS",
     "**/.gitignore",
     "**/.mega-linter.yml"
   ],
