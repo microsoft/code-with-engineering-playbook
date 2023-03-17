@@ -13,7 +13,7 @@ This project welcomes contributions and suggestions.
 - Content that is generally applicable (avoid references to internal processes, or very specific information)
 - Short code snippets or links to OSS repos (avoid large code assets)
 
-If you are unsure if your content will match this playbook, you are welcome to contact one of the [Engineering Fundamentals Champs](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/reviewers.yml) to discuss the contribution.
+If you are unsure if your content will match this playbook, you are welcome to contact one of the [Engineering Fundamentals Champs](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/CODEOWNERS) to discuss the contribution.
 
 ## General guidance
 
@@ -63,7 +63,7 @@ If you plan to update the content semi-regularly or regularly, you can be added 
 - Add your changes to a new branch `<github alias>/<title>` or by forking the repository
 - Open a PR with a clear description of the changes
 - Tag the PR with the appropriate area, and link any issues that the PR closes
-- Add reviewers (you will need 2 reviewers to merge) to the PR, for example the [maintainers](#maintainers) or anyone from the [EF champs team](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/reviewers.yml)
+- Add reviewers (you will need 2 reviewers to merge) to the PR, for example the [maintainers](#maintainers) or anyone from the [EF champs team](https://github.com/microsoft/code-with-engineering-playbook/blob/main/.github/CODEOWNERS)
 
 ### Link checks
 
