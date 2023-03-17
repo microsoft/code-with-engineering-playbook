@@ -44,6 +44,7 @@ The table below maps outcomes -- the results that you may want to achieve in you
 
 ## Sections within Testing
 
+- [Consumer-driven contract (CDC) testing](cdc-testing/README.md)
 - [End-to-End testing](e2e-testing/README.md)
 - [Fault Injection testing](fault-injection-testing/README.md)
 - [Integration testing](integration-testing/README.md)
