@@ -1,4 +1,4 @@
-# Execute Local Pipeline
+# Executing pipelines locally
 
 ## Abstract
 

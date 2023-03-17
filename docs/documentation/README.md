@@ -85,4 +85,3 @@ When working in an engineering project, we typically encounter one or more of th
 ## Resources
 
 - [Software Documentation Types and Best Practices](https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f)
-- [Why is project documentation important?](https://www.greycampus.com/blog/project-management/why-is-project-documentation-important)
