@@ -104,7 +104,7 @@ fi
 
 Most commands used in previous script interact with Azure DevOps and do require authentication. You can authenticate using the `System.AccessToken` security token used by the running pipeline, by assigning it to an environment variable named `AZURE_DEVOPS_EXT_PAT`, as shown in the following example (see [Azure DevOps CLI in Azure Pipeline YAML](https://learn.microsoft.com/en-us/azure/devops/cli/azure-devops-cli-in-yaml?view=azure-devops#authenticate-with-azure-devops) for additional information).
 
-In addition, you can notice we are also using [predifined variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables) to target the Azure DevOps organization and project (respectively `System.TeamFoundationCollectionUri` and `System.TeamProjectId`).
+In addition, you can notice we are also using [predefined variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables) to target the Azure DevOps organization and project (respectively `System.TeamFoundationCollectionUri` and `System.TeamProjectId`).
 
 ```yaml
   - task: Bash@3
