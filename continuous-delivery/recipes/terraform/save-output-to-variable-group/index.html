@@ -5055,6 +5055,12 @@
         
           
         
+          
+        
+          
+        
+          
+        
       
       
         
@@ -5084,7 +5090,7 @@
   
     <li class="md-nav__item">
       <a href="../../../../developer-experience/client-app-inner-loop/" class="md-nav__link">
-        Problem Statement
+        Separating client apps from the services they consume during development
       </a>
     </li>
   
@@ -5111,8 +5117,50 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../developer-experience/cross-platform-tasks/" class="md-nav__link">
+        Cross Platform Tasks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../developer-experience/devcontainers/" class="md-nav__link">
-        Getting Started with Dev Containers
+        Dev Containers: Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../developer-experience/execute-local-pipeline-with-docker/" class="md-nav__link">
+        Executing pipelines locally
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../developer-experience/fake-services-inner-loop/" class="md-nav__link">
+        Fake Services Inner Dev Loop
       </a>
     </li>
   
@@ -5126,7 +5174,21 @@
   
     <li class="md-nav__item">
       <a href="../../../../developer-experience/going-further/" class="md-nav__link">
-        Going further with Dev Containers
+        Dev Containers: Going further
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../developer-experience/onboarding-guide-template/" class="md-nav__link">
+        Onboarding Guide Template
       </a>
     </li>
   
@@ -5142,121 +5204,6 @@
       <a href="../../../../developer-experience/toggle-vnet-dev-environment/" class="md-nav__link">
         Toggle VNet on and off for production and development environment
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_12_7">
-          Recipes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Recipes" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
-          <span class="md-nav__icon md-icon"></span>
-          Recipes
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../developer-experience/recipes/client-app-inner-loop/" class="md-nav__link">
-        Problem Statement
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../developer-experience/recipes/cross-platform-tasks/" class="md-nav__link">
-        Cross Platform Tasks
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../developer-experience/recipes/execute-local-pipeline-with-docker/" class="md-nav__link">
-        Execute Local Pipeline
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../developer-experience/recipes/fake-services-inner-loop/" class="md-nav__link">
-        Fake Services Inner Dev Loop
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../developer-experience/recipes/onboarding-guide-template/" class="md-nav__link">
-        Onboarding Guide Template
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -7383,7 +7330,7 @@ az<span class="w"> </span>devops<span class="w"> </span>configure<span class="w"
 </code></pre></div>
 <h2 id="authenticate-with-azure-devops">Authenticate with Azure DevOps</h2>
 <p>Most commands used in previous script interact with Azure DevOps and do require authentication. You can authenticate using the <code>System.AccessToken</code> security token used by the running pipeline, by assigning it to an environment variable named <code>AZURE_DEVOPS_EXT_PAT</code>, as shown in the following example (see <a href="https://learn.microsoft.com/en-us/azure/devops/cli/azure-devops-cli-in-yaml?view=azure-devops#authenticate-with-azure-devops">Azure DevOps CLI in Azure Pipeline YAML</a> for additional information).</p>
-<p>In addition, you can notice we are also using <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables">predifined variables</a> to target the Azure DevOps organization and project (respectively <code>System.TeamFoundationCollectionUri</code> and <code>System.TeamProjectId</code>).</p>
+<p>In addition, you can notice we are also using <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables">predefined variables</a> to target the Azure DevOps organization and project (respectively <code>System.TeamFoundationCollectionUri</code> and <code>System.TeamProjectId</code>).</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bash@3</span>
 <span class="w">    </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Update</span><span class="nv"> </span><span class="s">variable</span><span class="nv"> </span><span class="s">group</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">terraform</span><span class="nv"> </span><span class="s">outputs&#39;</span>
 <span class="w">    </span><span class="nt">inputs</span><span class="p">:</span>
@@ -7452,7 +7399,7 @@ az<span class="w"> </span>devops<span class="w"> </span>configure<span class="w"
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 14, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2023</span>
       
     
   </small>

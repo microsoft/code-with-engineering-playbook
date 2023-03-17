@@ -4963,6 +4963,12 @@
         
           
         
+          
+        
+          
+        
+          
+        
       
       
         
@@ -4992,7 +4998,7 @@
   
     <li class="md-nav__item">
       <a href="../developer-experience/client-app-inner-loop/" class="md-nav__link">
-        Problem Statement
+        Separating client apps from the services they consume during development
       </a>
     </li>
   
@@ -5019,8 +5025,50 @@
   
   
     <li class="md-nav__item">
+      <a href="../developer-experience/cross-platform-tasks/" class="md-nav__link">
+        Cross Platform Tasks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../developer-experience/devcontainers/" class="md-nav__link">
-        Getting Started with Dev Containers
+        Dev Containers: Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer-experience/execute-local-pipeline-with-docker/" class="md-nav__link">
+        Executing pipelines locally
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer-experience/fake-services-inner-loop/" class="md-nav__link">
+        Fake Services Inner Dev Loop
       </a>
     </li>
   
@@ -5034,7 +5082,21 @@
   
     <li class="md-nav__item">
       <a href="../developer-experience/going-further/" class="md-nav__link">
-        Going further with Dev Containers
+        Dev Containers: Going further
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer-experience/onboarding-guide-template/" class="md-nav__link">
+        Onboarding Guide Template
       </a>
     </li>
   
@@ -5050,121 +5112,6 @@
       <a href="../developer-experience/toggle-vnet-dev-environment/" class="md-nav__link">
         Toggle VNet on and off for production and development environment
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_7" type="checkbox" id="__nav_12_7" >
-      
-      
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_12_7">
-          Recipes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Recipes" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_7">
-          <span class="md-nav__icon md-icon"></span>
-          Recipes
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../developer-experience/recipes/client-app-inner-loop/" class="md-nav__link">
-        Problem Statement
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../developer-experience/recipes/cross-platform-tasks/" class="md-nav__link">
-        Cross Platform Tasks
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../developer-experience/recipes/execute-local-pipeline-with-docker/" class="md-nav__link">
-        Execute Local Pipeline
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../developer-experience/recipes/fake-services-inner-loop/" class="md-nav__link">
-        Fake Services Inner Dev Loop
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../developer-experience/recipes/onboarding-guide-template/" class="md-nav__link">
-        Onboarding Guide Template
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -7171,11 +7118,6 @@
 <td><a href="shadow-testing/">Shadow testing</a></td>
 </tr>
 <tr>
-<td>Development; <a href="integration-testing/">Integration testing</a></td>
-<td>Ensure telemetry is sufficiently detailed and complete to trace and diagnose malfunction in <a href="e2e-testing/">End-to-End testing</a> flows</td>
-<td>Distributed Debug challenges ;  Orphaned call chain analysis</td>
-</tr>
-<tr>
 <td>Development</td>
 <td>Ensure program logic is correct for a variety of expected, mainline, edge and unexpected inputs</td>
 <td><a href="unit-testing/">Unit testing</a>; Functional tests; <a href="cdc-testing/">Consumer-driven Contract Testing</a>; <a href="integration-testing/">Integration testing</a></td>
@@ -7184,11 +7126,6 @@
 <td>Development</td>
 <td>Prevent regressions in logical correctness; earlier is better</td>
 <td><a href="unit-testing/">Unit testing</a>; Functional tests; <a href="cdc-testing/">Consumer-driven Contract Testing</a>; <a href="integration-testing/">Integration testing</a>; Rings (each of these are expanding scopes of coverage)</td>
-</tr>
-<tr>
-<td>Development</td>
-<td>Quickly validate mainline correctness of a point of functionality (e.g. single API), manually</td>
-<td>Manual smoke testing Tools: postman, powershell, curl</td>
 </tr>
 <tr>
 <td>Development</td>
@@ -7212,16 +7149,6 @@
 </tr>
 <tr>
 <td>Development</td>
-<td>Prove correct RBAC and claims interpretation of Authorization code</td>
-<td>Scenario (security)</td>
-</tr>
-<tr>
-<td>Development</td>
-<td>Document and/or enforce valid API usage</td>
-<td><a href="unit-testing/">Unit testing</a>; Functional tests; <a href="cdc-testing/">Consumer-driven Contract Testing</a></td>
-</tr>
-<tr>
-<td>Development</td>
 <td>Prove implementation correctness in advance of a dependency or absent a dependency</td>
 <td><a href="unit-testing/">Unit testing</a> (with mocks); <a href="unit-testing/">Unit testing</a> (with emulators); <a href="cdc-testing/">Consumer-driven Contract Testing</a></td>
 </tr>
@@ -7242,7 +7169,7 @@
 </tr>
 <tr>
 <td>Development</td>
-<td>Detect and prevent &#39;noisy neighbor&#39; phenomena</td>
+<td>Detect and prevent 'noisy neighbor' phenomena</td>
 <td><a href="performance-testing/load-testing/">Load testing</a></td>
 </tr>
 <tr>
@@ -7252,7 +7179,7 @@
 </tr>
 <tr>
 <td>Development</td>
-<td>Prevent regression in &#39;composite&#39; scenario use cases / workflows (e.g. an ecommerce system might have many APIs that used together in a sequence perform a &quot;shop-and-buy&quot; scenario)</td>
+<td>Prevent regression in 'composite' scenario use cases / workflows (e.g. an ecommerce system might have many APIs that used together in a sequence perform a "shop-and-buy" scenario)</td>
 <td><a href="e2e-testing/">End-to-End testing</a>; Scenario</td>
 </tr>
 <tr>
@@ -7353,7 +7280,7 @@
 <tr>
 <td>Development; Operation</td>
 <td>Discover points where a system is not resilient to unpredictable yet inevitable failures (network outage, hardware failure, VM host servicing, rack/switch failures, random acts of the Malevolent Divine, solar flares, sharks that eat undersea cable relays, cosmic radiation, power outages, renegade backhoe operators, wolves chewing on junction boxes, …)</td>
-<td><a href="fault-injection-testing/">Fault injection/chaos testing</a></td>
+<td>Chaos</td>
 </tr>
 <tr>
 <td>Development</td>
@@ -7386,7 +7313,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 26, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2023</span>
       
     
   </small>
