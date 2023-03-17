@@ -6,7 +6,7 @@ Code completion is a feature used in live programming that actively reads the us
 
 ### 1. GitHub Co-Pilot: A Code Completion Tool
 
-![GitHub Code Pilot](./images/github-copilot.png)
+![GitHub Code Pilot](images/github-copilot.png)
 
 Benefits:
 
@@ -38,7 +38,7 @@ Docs:
 
 ### 2. VS Code's Intellisense
 
-![Visual Studio Code - Intellisense](./images/VSCode.png)
+![Visual Studio Code - Intellisense](images/VSCode.png)
 
 Benefits:
 
