@@ -7157,6 +7157,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#commit-best-practices" class="md-nav__link">
+    Commit Best Practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Commit Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commit-message-structure" class="md-nav__link">
+    Commit Message Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#managing-remotes" class="md-nav__link">
     Managing remotes
   </a>
@@ -7333,7 +7353,7 @@ Changes not staged for commit:
 </code></pre></div>
 </li>
 <li>
-<p>Commit the changes to your local branch with a descriptive <a href="../#commit-best-practices">commit message</a></p>
+<p>Commit the changes to your local branch with a descriptive <a href="#commit-best-practices">commit message</a></p>
 <div class="highlight"><pre><span></span><code>git commit -m &quot;add basic git instructions&quot;
 </code></pre></div>
 </li>
@@ -7409,6 +7429,38 @@ git stash pop
 <p>Then you can use the reflog reference (<code>HEAD@{}</code>) to reset to a specific commit before the rebase:</p>
 <div class="highlight"><pre><span></span><code>git reset HEAD@{2}
 </code></pre></div>
+<h2 id="commit-best-practices">Commit Best Practices</h2>
+<p>A commit combines changes into a logical unit. Adding a descriptive commit message can aid in comprehending the code changes and understanding the rationale behind the modifications. Consider the following when making your commits:</p>
+<ul>
+<li>Make small commits. This makes changes easier to review, and if we need to revert a commit, we lose less work. Consider splitting the commit into separate commits with <code>git add -p</code> if it includes more than one logical change or bug fix.</li>
+<li>Don't mix whitespace changes with functional code changes. It is hard to determine if the line has a functional change or only removes a whitespace, so functional changes may go unnoticed.</li>
+<li>Commit complete and well tested code. Never commit incomplete code, get in the habit of testing your code before committing.</li>
+<li>Write good commit messages.<ul>
+<li>Why is it necessary? It may fix a bug, add a feature, improve performance, or just be a change for the sake of correctness</li>
+<li>What effects does this change have? In addition to the obvious ones, this may include benchmarks, side effects etc.</li>
+</ul>
+</li>
+</ul>
+<p>You can specify the default git editor, which allows you to write your commit messages using your favorite editor. The following command makes Visual Studio Code your default git editor:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;code --wait&quot;</span>
+</code></pre></div>
+<h3 id="commit-message-structure">Commit Message Structure</h3>
+<p>The essential parts of a commit message are:
+* subject line: a short description of the commit, maximum 50 characters long
+* body (optional): a longer description of the commit, wrapped at 72 characters, separated from the subject line by a blank line</p>
+<p>You are free to structure commit messages; however, git commands like <code>git log</code> utilize above structure.
+Therefore, it can be helpful to follow a convention within your team and to utilize git best.</p>
+<p>For example, <a href="https://www.conventionalcommits.org/">Conventional Commits</a> is a lightweight convention that complements <a href="https://semver.org/">SemVer</a>, by describing the features, fixes, and breaking changes made in commit messages. See <a href="../component-versioning/">Component Versioning</a> for more information on versioning.</p>
+<p>For more information on commit message conventions, see:</p>
+<ul>
+<li><a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">A Note About Git Commit Messages</a></li>
+<li><a href="https://www.conventionalcommits.org">Conventional Commits</a></li>
+<li><a href="https://medium.com/@nawarpianist/git-commit-best-practices-dab8d722de99">Git commit best practices</a></li>
+<li><a href="https://cbea.ms/git-commit">How to Write a Git Commit Message</a></li>
+<li><a href="https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages">How to Write Better Git Commit Messages</a></li>
+<li><a href="https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages">Information in commit messages</a></li>
+<li><a href="http://who-t.blogspot.com/2009/12/on-commit-messages.html">On commit messages</a></li>
+</ul>
 <h2 id="managing-remotes">Managing remotes</h2>
 <p>A local git repository can have one or more backing remote repositories. You can list the remote repositories using <code>git remote</code> - by default, the remote repository you cloned from will be called origin</p>
 <div class="highlight"><pre><span></span><code>&gt; git remote -v
@@ -7486,7 +7538,7 @@ You can refer to <a href="https://code.visualstudio.com/docs/editor/versioncontr
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2023</span>
       
     
   </small>

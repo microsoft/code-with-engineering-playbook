@@ -7188,13 +7188,11 @@
 <li>Build / Revision: No API change, just a different build.</li>
 </ul>
 <h2 id="semantic-versioning">Semantic Versioning</h2>
-<p>Semantic Versioning is a concept of calculating the version number automatically based on a certain source code repository.</p>
-<p>The <code>semver</code> tool looks at a GIT source control branch and comes up with a <em>repeatable</em> and <em>unique</em> version number based on</p>
+<p>Semantic Versioning is a versioning scheme specifying how to interpret the different version numbers. The most common format is <code>major.minor.patch</code>. The version number is incremented based on the following rules:</p>
 <ul>
-<li>number of commits since last major or minor release</li>
-<li>commit messages</li>
-<li>tags</li>
-<li>branch names</li>
+<li>Major version when you make incompatible API changes,</li>
+<li>Minor version when you add functionality in a backwards-compatible manner, and</li>
+<li>Patch version when you make backwards-compatible bug fixes.</li>
 </ul>
 <p>Examples of semver version numbers:</p>
 <ul>
@@ -7202,18 +7200,28 @@
 <li><strong>2.1.0-beta</strong>: 2.1.0 in beta branch</li>
 <li><strong>2.4.2</strong>: 2.4.2 release</li>
 </ul>
-<p>Version Updates happen through:</p>
+<p>A common practice is to determine the version number during the build process. For this the source control repository is utilized to determine the version number automatically based the source code repository.</p>
+<p>The <code>GitVersion</code> tool uses the git history to generate <em>repeatable</em> and <em>unique</em> version number based on</p>
 <ul>
-<li>Commit messages or tags for Major / Minor / Revision updates.</li>
+<li>number of commits since last major or minor release</li>
+<li>commit messages</li>
+<li>tags</li>
+<li>branch names</li>
+</ul>
+<p>Version updates happen through:</p>
+<ul>
+<li>Commit messages or tags for Major / Minor / Revision updates.<blockquote>
+<p>When using commit messages a convention such as Conventional Commits is recommended (see <a href="../git-guidance/#commit-message-structure">Git Guidance - Commit Message Structure</a>)</p>
+</blockquote>
+</li>
 <li>Branch names (e.g. develop, release/..) for Alpha / Beta / RC</li>
 <li>Otherwise: Number of commits (+12, ...)</li>
 </ul>
-<p>Recommendation is to run semver during your CI process to make each build uniquely identifiable.</p>
 <h2 id="resources">Resources</h2>
 <ul>
+<li><a href="https://gitversion.net/">GitVersion</a></li>
 <li><a href="https://semver.org/">Semantic Versioning</a></li>
 <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/versioning">Versioning in C#</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=geeklearningio.gl-vsts-tasks-semver">SemVer Task for VSTS</a></li>
 </ul>
 
   <hr>
@@ -7221,7 +7229,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2023</span>
       
     
   </small>

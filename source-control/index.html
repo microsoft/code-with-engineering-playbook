@@ -7108,13 +7108,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commit-best-practices" class="md-nav__link">
-    Commit Best Practices
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
     Resources
   </a>
@@ -7176,59 +7169,6 @@
 <li>Manually tag PR's in work items</li>
 <li>Ensure that the scope of work items / tasks align with PR's</li>
 </ul>
-<h2 id="commit-best-practices">Commit Best Practices</h2>
-<ul>
-<li>Make small commits. This makes changes easier to review, and if we need to revert a commit, we lose less work.</li>
-<li>Commit complete and well tested code. Never commit incomplete code, get in the habit of testing your code before committing.</li>
-<li>Don't mix whitespace changes with functional code changes. It is hard to determine if the line has a functional change or only removes a whitespace, so functional changes may go unnoticed.</li>
-<li>Write good commit messages.</li>
-</ul>
-<p>A good commit message should answer these questions:</p>
-<ul>
-<li>Why is it necessary? It may fix a bug, add a feature, improve performance, or just be a change for the sake of correctness</li>
-<li>How does it address the issue? For short, obvious changes, this can be omitted</li>
-<li>What effects does this change have? In addition to the obvious ones, this may include benchmarks, side effects etc.</li>
-<li>What limitations does the current code have?</li>
-</ul>
-<p>Consider this when writing your commit message:</p>
-<ul>
-<li>Don't assume that the code is self-evident/self-documenting</li>
-<li>If it seems difficult to summarize your commit, it may be because it includes more than one logical change or bug fix. If so, it is better to split it into separate commits with <code>git add -p</code></li>
-<li>Don't assume the reviewer understands the original problem. It should be possible to review a change request without reading the contents of the original bug/task.</li>
-</ul>
-<p>Good message structure:</p>
-<ul>
-<li>Separate subject from body with a blank line</li>
-<li>Limit the subject line to 50 characters</li>
-<li>Capitalize the subject line</li>
-<li>Do not end the subject line with a period</li>
-<li>Use the imperative mood in the subject line (<em>Fix typo in log</em> vs. <em>Fixed typo in log</em> or <em>Misc fixes in log code</em>)</li>
-<li>Wrap the body at 72 characters</li>
-<li>Use the body to explain what and why vs. how</li>
-<li>Reference fixed issues with <a href="https://help.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords">closing keywords</a></li>
-</ul>
-<p>Example of a well-structured git commit message:</p>
-<div class="highlight"><pre><span></span><code>Add code review recipe for Go
-
-<span class="k">-</span><span class="w"> </span>Helps teams automate linting and build verification for go projects.
-<span class="k">-</span><span class="w"> </span>Also gives a list of items to verify for go code reviews.
-
-The PR does not add info about VS Code extensions for go, this will
-be added in issue <span class="ni">#124</span>
-
-Closes: <span class="ni">#123</span>
-</code></pre></div>
-<p>You can specify the default git editor, which allows you to write your commit messages using your favorite editor. The following command makes Visual Studio Code your default git editor:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;code --wait&quot;</span>
-</code></pre></div>
-<p>References:</p>
-<ul>
-<li><a href="https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/">How to Write a Git Commit Message</a></li>
-<li><a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">A Note About Git Commit Messages</a></li>
-<li><a href="http://who-t.blogspot.com/2009/12/on-commit-messages.html">On commit messages</a></li>
-<li><a href="https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages">Information in commit messages</a></li>
-<li><a href="https://medium.com/@nawarpianist/git-commit-best-practices-dab8d722de99">Git commit best practices</a></li>
-</ul>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://git-scm.com/">Git</a> <code>--local-branching-on-the-cheap</code></li>
@@ -7244,7 +7184,7 @@ Closes: <span class="ni">#123</span>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2023</span>
       
     
   </small>
