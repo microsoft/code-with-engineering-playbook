@@ -1,6 +1,6 @@
 # Source Control
 
-There are many options when working with Source Control. In [CSE](../CSE.md) we use [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/) for private repositories and [GitHub](https://github.com/) for public repositories.
+There are many options when working with Source Control. In [ISE](../ISE.md) we use [AzureDevOps](https://azure.microsoft.com/en-us/services/devops/) for private repositories and [GitHub](https://github.com/) for public repositories.
 
 ## Sections within Source Control
 
@@ -12,7 +12,7 @@ There are many options when working with Source Control. In [CSE](../CSE.md) we 
 
 ## Goal
 
-* Following industry best practice to work in geo-distributed teams which encourage contributions from all across [CSE](../CSE.md) as well as the broader OSS community
+* Following industry best practice to work in geo-distributed teams which encourage contributions from all across [ISE](../ISE.md) as well as the broader OSS community
 * Improve code quality by enforcing reviews before merging into main branches
 * Improve traceability of features and fixes through a clean commit history
 
@@ -108,7 +108,7 @@ References:
 
 * [Git](https://git-scm.com/) `--local-branching-on-the-cheap`
 * [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
-* [CSE Git details](git-guidance/README.md)details on how to use Git as part of a [CSE](../CSE.md) project.
+* [ISE Git details](git-guidance/README.md)details on how to use Git as part of a [ISE](../ISE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 * [How Git Works Pluralsight course](https://www.pluralsight.com/courses/how-git-works)
 * [Mastering Git Pluralsight course](https://www.pluralsight.com/courses/master-git)
