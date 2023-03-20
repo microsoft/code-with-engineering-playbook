@@ -20,7 +20,7 @@ With its cloud-based infrastructure, GitHub Codespaces presents a highly efficie
 
 ### VSCode Live Share
 
-[VSCode Live Share](https://code.visualstudio.com/learn/collaboration/live-share) it's specifically designed for pair programming and enables you to work on the same codebase, in real-time, with your team members. The arduous process of configuring complex setups, grappling with confusing configurations, straining one's eyes to work on small screens, or physically switching keyboards is not a problem with LiveShare. This innovative solution enables seamless sharing of your development environment with your team members, facilitating smooth collaborative coding experiences. 
+[VSCode Live Share](https://code.visualstudio.com/learn/collaboration/live-share) is specifically designed for pair programming and enables you to work on the same codebase, in real-time, with your team members. The arduous process of configuring complex setups, grappling with confusing configurations, straining one's eyes to work on small screens, or physically switching keyboards is not a problem with LiveShare. This innovative solution enables seamless sharing of your development environment with your team members, facilitating smooth collaborative coding experiences. 
 
 Fully integrated into Visual Studio Code and Visual Studio, LiveShare offers the added benefit of terminal sharing, debug session collaboration, and host machine control. When paired with GitHub Codespaces, it presents a potent toolset for effective pair programming.
 
