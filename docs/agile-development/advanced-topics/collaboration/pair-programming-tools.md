@@ -16,7 +16,7 @@ Additionally, scheduling these working sessions in advance ensures intentional c
 
 [GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces) is a vital component in an efficient development environment, particularly in the context of pair programming. Prioritize setting up a codespace as the initial step of the project, preceding tasks such as local machine project compilation or VSCode plugin installation. To this end, make sure to update the codespace documentation before incorporating any quickstart instructions for local environments. Additionally, consistently demonstrate demos in codespaces environment to ensure its prominent integration into our workflow.
  
-With its cloud-based infrastructure, GitHub Codespaces presents a highly efficient and simplified approach to real-time collaborative coding. As a result, new team members can readily access the GitHub project and begin coding within seconds, without requiring installation on their local machines. This seamless, integrated solution for pair programming offers a streamlined workflow, allowing you to direct your attention towards producing exemplary code,free from the distractions of cumbersome setup processes.
+With its cloud-based infrastructure, GitHub Codespaces presents a highly efficient and simplified approach to real-time collaborative coding. As a result, new team members can easily access the GitHub project and begin coding within seconds, without requiring installation on their local machines. This seamless, integrated solution for pair programming offers a streamlined workflow, allowing you to direct your attention towards producing exemplary code, free from the distractions of cumbersome setup processes.
 
 ### VSCode Live Share
 
