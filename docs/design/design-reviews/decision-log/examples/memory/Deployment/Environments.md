@@ -72,21 +72,21 @@ Changes to this environment are gated by manual approval by your product's leade
 
 ## Environment Variable Group
 
-### Infrastructure Setup (cse-memory-common)
+### Infrastructure Setup (ise-memory-common)
 
 - appName
 - businessUnit
 - serviceConnection
 - subscriptionId
 
-### Development Setup (cse-memory-dev)
+### Development Setup (ise-memory-dev)
 
 - environmentName (placeholder)
 
-### Staging Setup (cse-memory-staging)
+### Staging Setup (ise-memory-staging)
 
 - environmentName (placeholder)
 
-### Production Setup (cse-memory-prod)
+### Production Setup (ise-memory-prod)
 
 - environmentName (placeholder)

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-CSE teams work with a new development team in each customer engagement which requires a phase of introduction & knowledge transfer before starting an engagement.
+ISE teams work with a new development team in each customer engagement which requires a phase of introduction & knowledge transfer before starting an engagement.
 
 Completion of this phase of ice-breakers and discussions about the standards takes time, but is required to start increasing the learning curve of the new team.
 
@@ -28,7 +28,7 @@ A few important points about the team manifesto
 - It aims to give a common understanding about the desired expertise, practices and/or mindset within the team
 - Based on the needs of the team and retrospective results, it can be modified during the engagement.
 
-In CSE, we aim for quality over quantity, and well-crafted software as well as to a comfortable/transparent environment where each team member can reach their highest potential.
+In ISE, we aim for quality over quantity, and well-crafted software as well as to a comfortable/transparent environment where each team member can reach their highest potential.
 
 The difference between the team manifesto and other team documents is that it is used to give a short summary of expectations around the technical way of working and supported mindset in the team, before code-with sprints starts.
 

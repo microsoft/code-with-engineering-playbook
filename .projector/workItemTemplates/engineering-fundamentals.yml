@@ -496,8 +496,8 @@ items:
         acceptanceCriteria: []
         children:
           - name:
-              As a dev crew, we have provided reproducible, actionable, specific and
-              goal-oriented CSE feedback on any blockers or potential
+              As an ISE team, we have provided reproducible, actionable, specific and
+              goal-oriented ISE feedback on any blockers or potential
               improvements identified
             type: story
       - name: Privacy
@@ -506,9 +506,9 @@ items:
         acceptanceCriteria: []
         children:
           - name:
-              As a dev crew, if this engagement is considered a tented project or
+              As an ISE team, if this engagement is considered a tented project or
               sensitive work, we have ensured that project details are not
-              tracked within CSE tooling
+              tracked within ISE tooling
             type: story
           - name:
               As a dev crew, if applicable, all crew members have acknowledged any

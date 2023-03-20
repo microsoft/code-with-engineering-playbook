@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers treat documentation like other source code and follow the same rules and checklists when reviewing documentation as code.
+[ISE](../../ISE.md) developers treat documentation like other source code and follow the same rules and checklists when reviewing documentation as code.
 
 Documentation should both use good Markdown syntax to ensure it's properly parsed, and follow good [writing style guidelines](#writing-style-guidelines) to ensure the document is easy to read and understand.
 

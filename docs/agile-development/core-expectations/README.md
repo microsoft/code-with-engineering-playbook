@@ -1,6 +1,6 @@
 # Agile core expectations
 
-This section contains core expectations for agile practices in CSE:
+This section contains core expectations for agile practices in ISE:
 
 - It should stay concise and link to external documentation for details.
 - Each section contains a list of core expectations and suggestions:
