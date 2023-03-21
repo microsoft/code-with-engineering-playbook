@@ -53,7 +53,7 @@ When working in an engineering project, we typically encounter one or more of th
 ## What documentation should exist
 
 - [Project and Repositories](./guidance/project-and-repositories.md)
-- [Commit Messages](../source-control/README.md#commit-best-practices)
+- [Commit Messages](../source-control/git-guidance/README.md#commit-best-practices)
 - [Pull Requests](./guidance/pull-requests.md)
 - [Code](./guidance/code.md)
 - [Work Items](./guidance/work-items.md)
@@ -85,4 +85,3 @@ When working in an engineering project, we typically encounter one or more of th
 ## Resources
 
 - [Software Documentation Types and Best Practices](https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f)
-- [Why is project documentation important?](https://www.greycampus.com/blog/project-management/why-is-project-documentation-important)

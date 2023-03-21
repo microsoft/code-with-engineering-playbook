@@ -8,8 +8,8 @@ Accessing protected resources from a local machine implies one of the following 
 
 - Use a VPN
 - Use a **jump box**
-    - With SSH activated (less secure)
-    - [With Bastion (recommended approach)](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/connect-to-environments-privately#about-azure-bastion-host-and-jumpboxes)
+  - With SSH activated (less secure)
+  - [With Bastion (recommended approach)](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/connect-to-environments-privately#about-azure-bastion-host-and-jumpboxes)
 
 However, a developer may want to deploy a test environment (in a non-production subscription) for their tests during development phase, without the complexity of networking.
 
@@ -27,7 +27,7 @@ The *magic* variable that will help toggling security will be called `behind_vne
 
 Let's implement this use case using `Terraform`.
 
->  The code below does not contain everything, the purpose is to show the pattern and not how to deploy these resources. For more information on Terraform, please refer to the [official documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs).
+> The code below does not contain everything, the purpose is to show the pattern and not how to deploy these resources. For more information on Terraform, please refer to the [official documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs).
 
 There is no `if` *per se* in Terraform to define whether a specific resource should be deployed or not based on a variable value. However, we can use the [`count`](https://developer.hashicorp.com/terraform/language/meta-arguments/count) meta-argument. The strength of this meta-argument is if its value is `0`, the block is skipped.
 
@@ -46,7 +46,7 @@ Here is below the code snippets for this deployment:
     ```terraform
     resource "azurerm_virtual_network" "vnet" {
         count = var.behind_vnet ? 1 : 0
-        
+
         name                = "MyVnet"
         address_space       = [x.x.x.x/16]
         resource_group_name = "MyResourceGroup"
@@ -73,10 +73,10 @@ Here is below the code snippets for this deployment:
 
     resource "azurerm_private_endpoint" "storage_account_table_private_endpoint" {
         count = var.behind_vnet ? 1 : 0
-        
+
         name                = "pe-storage"
         subnet_id           = azurerm_virtual_network.vnet[0].subnet[0].id
-        
+
         ...
 
         private_service_connection {
