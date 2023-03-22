@@ -11,8 +11,8 @@ This section will share sample tools for diagram generation, provide a high leve
 
 There are two primary classes of diagrams:
 
-1. Structural
-2. Behavior
+- Structural
+- Behavior
 
 Within each of these classes, there are many types of diagrams, each intended to convey specific types of information. When different types of diagrams are effectively used in a solution, system, or repository, one can deliver a cohesive and incrementally detailed design.
 
