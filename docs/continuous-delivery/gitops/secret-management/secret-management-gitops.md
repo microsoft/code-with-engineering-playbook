@@ -102,6 +102,8 @@ The External Secrets Operator (ESO) is an open-sourced Kubernetes operator that 
 
 Docs on using ESO Azure Key vault provider [here](https://external-secrets.io/v0.4.4/provider-azure-key-vault/).
 
+ESO will need access to Azure Key Vault either through the use of a service principal or managed identity (via [Azure AD Workload Identity](https://github.com/Azure/azure-workload-identity)(recommended) or [AAD Pod Identity](https://github.com/Azure/aad-pod-identity)).
+
 Advantages:
 
 - Supports auto rotation of secrets with customizable sync intervals per **secret**.
