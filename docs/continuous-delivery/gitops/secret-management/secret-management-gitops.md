@@ -100,7 +100,7 @@ Disadvantages:
 
 The External Secrets Operator (ESO) is an open-sourced Kubernetes operator that can read secrets from external secret stores (e.g., Azure Key Vault) and sync those into Kubernetes Secrets. In contrast to the CSI Driver, the ESO controller creates the secrets on the cluster as K8s secrets, instead of mounting them as volumes to pods.
 
-Docs on using ESO Azure Key vault provider [here](https://external-secrets.io/v0.4.4/provider-azure-key-vault/).
+Docs on using ESO Azure Key vault provider [here](https://external-secrets.io/v0.8.1/provider/azure-key-vault/).
 
 ESO will need access to Azure Key Vault either through the use of a service principal or managed identity (via [Azure AD Workload Identity](https://github.com/Azure/azure-workload-identity)(recommended) or [AAD Pod Identity](https://github.com/Azure/aad-pod-identity)).
 
