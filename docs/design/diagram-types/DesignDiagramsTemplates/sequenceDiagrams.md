@@ -2,8 +2,6 @@
 
 ## Purpose
 
----
-
 This document is intended to provide a baseline understanding for what, why, and how to incorporate Sequence Diagrams
 as part of an engagement. Regarding the **how**, the section at the bottom will provide tools and plugins to streamline as much as possible when generating Sequence Diagrams through VSCode.
 

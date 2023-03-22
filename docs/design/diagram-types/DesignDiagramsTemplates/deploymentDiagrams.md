@@ -60,8 +60,6 @@ The below approach can be used to assist the team on how often to update the pub
 
 ## Resources
 
----
-
 - [Wikipedia](https://en.wikipedia.org/wiki/Deployment_diagram)
 - [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/)
   - [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - requires a generator from code to PlantUML syntax to generate diagrams
