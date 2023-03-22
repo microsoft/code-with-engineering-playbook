@@ -28,8 +28,7 @@ Class Diagrams should tell a "story", where each Diagram will require Engineers 
 
 ## When to Create?
 
-Because Class Diagrams represent one of the more granular depiction of what a "product" or "system"
-is composed of, it is recommended to begin the creation of these diagrams at the beginning and throughout the engineering portions of an engagement.
+Because Class Diagrams represent one of the more granular depiction of what a "product" or "system" is composed of, it is recommended to begin the creation of these diagrams at the beginning and throughout the engineering portions of an engagement.
 
 This does mean that any code change (new feature, enhancement, code refactor) might involve updating one or many Class Diagrams. Although this might seem like a downside of Class Diagrams, it actually can become a very strong benefit.
 
