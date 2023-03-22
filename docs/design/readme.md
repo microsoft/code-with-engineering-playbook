@@ -13,6 +13,7 @@ This covers not only technical design of software, but also architecture design 
 
 ## Sections
 
+- [Diagram Types](diagram-types/README.md)
 - [Design Patterns](design-patterns/README.md)
 - [Design Reviews](design-reviews/README.md)
 - [Non-Functional Requirements Guidance](design-patterns/non-functional-requirements-capture-guide.md)
