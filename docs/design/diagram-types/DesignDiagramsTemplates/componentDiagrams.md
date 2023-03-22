@@ -21,8 +21,8 @@ A [Component](https://en.wikipedia.org/wiki/Component_(UML)) is a runnable solut
 
 The primary two takeaways from a Component Diagram should be:
 
-1. A quick view of all the various components (User Interface, Service, Data Storage) involved in the system
-2. The immediate "touch points" that a particular Component has with other Components, including how that "touch point" is accomplished (HTTP, FTP, etc...)
+- A quick view of all the various components (User Interface, Service, Data Storage) involved in the system
+- The immediate "touch points" that a particular Component has with other Components, including how that "touch point" is accomplished (HTTP, FTP, etc...)
 
 Depending on the complexity of the system, a team might decide to create several Component Diagrams. Where there is one diagram per Component (depicting all it's immediate "touch points" with other Components).
 
