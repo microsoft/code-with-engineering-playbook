@@ -26,7 +26,7 @@ What is an **object** in this context? It can be:
 - any specific user persona
 - any service
 - any data store
-- a system (blackbox composed of unknown services, data stores or other components)
+- a system (black box composed of unknown services, data stores or other components)
 - an abstract sub-scenario (in order to minimize high complexity of a scenario)
 
 ## Essential Takeaways

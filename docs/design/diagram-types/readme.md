@@ -1,11 +1,11 @@
 # Diagram Types
 
-Creating and maintaing diagrams is a challenge for any team. Common reasons across these challenges include:
+Creating and maintaining diagrams is a challenge for any team. Common reasons across these challenges include:
 
 - Not leveraging tools to assist in generating diagrams
 - Uncertainty on what to include in a diagram and when to create one
 
-Overcoming these challenges and effectively using design diagrams can amplify a team's ability to execute throughout the entire Software Development Lifecycle, from the design phase when proposing various designs to leveraging it as documentation as part of the maintance phase.
+Overcoming these challenges and effectively using design diagrams can amplify a team's ability to execute throughout the entire Software Development Lifecycle, from the design phase when proposing various designs to leveraging it as documentation as part of the maintenance phase.
 
 This section will share sample tools for diagram generation, provide a high level overview of the different types of diagrams and provide examples of some of these types.
 

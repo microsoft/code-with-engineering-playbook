@@ -9,20 +9,20 @@ as part of your engagement. Regarding the **how**, the section at the bottom wil
 
  > _a component diagram depicts how components are wired together to form larger components or software systems._
 
-Component Diagrams are a type of a static structure because it focuses on the responsibility and relationships between components as part of the overal system or solution.
+Component Diagrams are a type of a static structure because it focuses on the responsibility and relationships between components as part of the overall system or solution.
 
 It is not supposed to inform about the data flow, the caller or callee responsibilities, the request flows, nor any other "behavior" related characteristics.
 
 ...Hold on a second... what is a Component?
 
-A [Component](https://en.wikipedia.org/wiki/Component_(UML)) is a runnable solution that performs a set of operations and can possibly be interfaced through a particular API. One can think of Components as a "stand alone" piece of software - think datastores, microservices, nanoservices, user interfaces, etc...
+A [Component](https://en.wikipedia.org/wiki/Component_(UML)) is a runnable solution that performs a set of operations and can possibly be interfaced through a particular API. One can think of Components as a "stand alone" piece of software - think datastores, microservices, serverless functions, user interfaces, etc...
 
 ## Essential Takeaways
 
 The primary two takeaways from a Component Diagram should be:
 
 1. A quick view of all the various components (User Interface, Service, Data Storage) involved in the system
-2. The immediate "touch points" that a particular Component has with other Components, including how that "touch point" is accomplished (HTTP, SMPT, FTP, etc...)
+2. The immediate "touch points" that a particular Component has with other Components, including how that "touch point" is accomplished (HTTP, FTP, etc...)
 
 Depending on the complexity of the system, a team might decide to create several Component Diagrams. Where there is one diagram per Component (depicting all it's immediate "touch points" with other Components).
 

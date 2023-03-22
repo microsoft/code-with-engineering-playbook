@@ -17,7 +17,7 @@ Class Diagrams are a type of a static structure because it focuses on the proper
 
 ## Essential Takeaways
 
-Each "Component" (Stand alone piece of software - think datastores, microservices, nanoservices, user interfaces, etc...) of a Product or System will have it's own Class Diagram.
+Each "Component" (Stand alone piece of software - think datastores, microservices, serverless functions, user interfaces, etc...) of a Product or System will have it's own Class Diagram.
 
 Class Diagrams should tell a "story", where each Diagram will require Engineers to really think about:
 
