@@ -32,8 +32,7 @@ Because Class Diagrams represent one of the more granular depiction of what a "p
 
 This does mean that any code change (new feature, enhancement, code refactor) might involve updating one or many Class Diagrams. Although this might seem like a downside of Class Diagrams, it actually can become a very strong benefit.
 
-Because Class Diagrams tell a "story" for each Component of a product (see the previous section), it requires a
-substantial amount of upfront thought and design considerations. This amount of upfront thought ultimately results in making more effective code changes, and may even minimize the level of refactors in future stages of the engagement.
+Because Class Diagrams tell a "story" for each Component of a product (see the previous section), it requires a substantial amount of upfront thought and design considerations. This amount of upfront thought ultimately results in making more effective code changes, and may even minimize the level of refactors in future stages of the engagement.
 
 Class Diagrams also provides quick "alert indicators" when a refactor might be necessary. Reasons could be due to seeing that a particular class might be doing too much, have too many dependencies, or when the codebase might produce a very "messy" or "chaotic" Class Diagram. **If the Class Diagram is unreadable, the code will probably be unreadable**
 
