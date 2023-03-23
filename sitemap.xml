@@ -61,6 +61,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/advanced-topics/collaboration/pair-programming-tools/</loc>
+         <lastmod>2023-03-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/advanced-topics/collaboration/social-question/</loc>
          <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
