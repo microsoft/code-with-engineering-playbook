@@ -33,7 +33,15 @@
     "https://thenewstack.io/which-programming-languages-use-the-least-electricity/",
     "https://www.mend.io/",
     "https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/JsonSerializer.Read.String.cs",
-    "https://aka.ms/presidio-demo"
+    "https://aka.ms/presidio-demo",
+    "https://code.visualstudio.com/docs/remote/codespaces",
+    "https://code.visualstudio.com/learn/collaboration/live-share",
+    "https://code.visualstudio.com/docs/devcontainers/create-dev-container",
+    "https://www.inverse.com/innovation/how-companies-have-optimized-the-humble-office-water-cooler",
+    "https://www.inverse.com/",
+    "https://www.dynatrace.com/platform/synthetic-monitoring/",
+    "https://miro.com/guides/retrospectives/ideas-games",
+    "https://interpret.ml/"
   ],
   "only_errors": true
 }
