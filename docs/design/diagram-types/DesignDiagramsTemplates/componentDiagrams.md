@@ -41,7 +41,7 @@ Because of the inherent granularity of the system, the Component Diagrams won't 
 - A change to a system Component's interaction APIs
 - A change to a system Component's immediate "touch points" with other Components
 
-Because Component Diagrams focuses on informing the various "touch points" between Components, it requires some upfront though in order to determine what Components are needed abd what interaction mechanisms are most effective per the system requirements. This amount of upfront thought should be approached in a **pragmatic** manner - as the design may evolve over time, and that is perfectly fine,
+Because Component Diagrams focuses on informing the various "touch points" between Components, it requires some upfront thought in order to determine what Components are needed and what interaction mechanisms are most effective per the system requirements. This amount of upfront thought should be approached in a **pragmatic** manner - as the design may evolve over time, and that is perfectly fine,
  as long as changes are influenced based on functional requirements and non-functional requirements.
 
 ## Examples
