@@ -43,7 +43,7 @@ Below are some points which emphasize why inclusivity in code reviews is importa
 
 ## Culture and Code Reviews
 
-We as ISE, may come across situations in which code reviews are not ideal and often we are observing non inclusive code review behaviors. Its important to be aware of the fact that culture and communication style of a particular geography also influences how people interact over pull requests.
+We in ISE, may come across situations in which code reviews are not ideal and often we are observing non inclusive code review behaviors. Its important to be aware of the fact that culture and communication style of a particular geography also influences how people interact over pull requests.
 In such cases, assuming positive intent of the author and reviewer is a good start to start analyzing quality of code reviews.
 
 ## Dealing with the Impostor Phenomenon

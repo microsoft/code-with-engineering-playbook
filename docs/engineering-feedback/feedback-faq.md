@@ -32,7 +32,7 @@ If more information about the feedback is needed, a member of the ISE Feedback t
 
 ## How/when are feedback aggregated?
 
-Members of the ISE Feedback team will make a best effort to triage and review new ISE Feedback items within two weeks of the original submission date.  
+Members of the CSE Feedback team will make a best effort to triage and review new CSE Feedback items within two weeks of the original submission date.  
 
 If there is similarity across multiple feedback items, a member of the ISE Feedback team may decide to create a new feedback item which is an aggregate of similar items.  This is done to aid in the creation of a unified feedback item to present to the appropriate Microsoft engineering team.
 
