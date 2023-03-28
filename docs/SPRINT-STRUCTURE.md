@@ -40,7 +40,7 @@ The purpose of this document is to:
 ### Day 2
 
 - [ ] [Set up Source Control](source-control/README.md)
-  - Agree on [best practices for commits](source-control/README.md#commit-best-practices)
+  - Agree on [best practices for commits](source-control/git-guidance/README.md#commit-best-practices)
 - [ ] [Set up basic Continuous Integration with linters and automated tests](continuous-integration/README.md)
 - [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/core-expectations/README.md)
   - Discuss purpose, goals, participants and facilitation guidance

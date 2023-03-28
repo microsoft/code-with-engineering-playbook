@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Consumers of remote services often find that their development cycle is not in sync with development of remote services, leaving developers of these consumers waiting for the remote services to "catch up". One approach to mitigate this issue and improve the inner dev loop is by decoupling and using Mock Services. Various Mock Service options are detailed [here](../client-app-inner-loop.md).
+Consumers of remote services often find that their development cycle is not in sync with development of remote services, leaving developers of these consumers waiting for the remote services to "catch up". One approach to mitigate this issue and improve the inner dev loop is by decoupling and using Mock Services. Various Mock Service options are detailed [here](client-app-inner-loop.md).
 
 This document will focus on providing an example using the Fake Services approach.
 

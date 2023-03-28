@@ -56,7 +56,9 @@ If you are not a regular contributor to the project, but you would like to contr
 - **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added to the project's Contributors group. Please contact one of the [maintainers](#maintainers) to be added to the group. You will still need to submit a PR against main in order to merge your changes.
 
-> NOTE: You need to be part of the `Microsoft organization` in GitHub to be added to the contributors group.
+> NOTE: You need to be part of the `Microsoft organization` in GitHub to be added to the contributors group. You need to be also part of the `Microsoft/code-with-engineering-playbook-collaborators teams` in github. 
+
+Since this is not considered an internal Microsoft github repo, you cannot use the microsoft github alias for commiting changes. You have to use your personal github account which is linked to Microsoft account. If you use the microsoft github account, you will see this error while trying to create a PR - **"You cannot contribute to repositories outside of your enterprise `Microsoft EMU`"**. 
 
 ### Submitting a PR
 

@@ -15,7 +15,7 @@ The following are some good resources to get started with running tasks in DevCo
 - [Developing inside a container](https://code.visualstudio.com/docs/remote/containers).
 - [Tutorial on Development in Containers](https://code.visualstudio.com/docs/remote/containers-tutorial)
 - For samples projects and dev container templates see [VS Code Dev Containers Recipe](https://github.com/microsoft/vscode-dev-containers)
-- [Dev Containers Library](../devcontainers.md)
+- [Dev Containers Library](devcontainers.md)
 
 ## Tasks in VS Code
 

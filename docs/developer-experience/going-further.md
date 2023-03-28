@@ -1,4 +1,4 @@
-# Going further with Dev Containers
+# Dev Containers: Going further
 
 Dev Containers allow developers to share a common working environment, ensuring that the runtime and all dependencies versions are consistent for all developers.
 

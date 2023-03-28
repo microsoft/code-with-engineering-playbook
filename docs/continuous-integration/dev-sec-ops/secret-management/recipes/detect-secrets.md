@@ -30,7 +30,7 @@ detect-secrets scan > .secrets.baseline
 
 ## Pre-commit hook
 
-It is recommended to use `detect-secrets` in your development environment as a Git pre-commit hook. 
+It is recommended to use `detect-secrets` in your development environment as a Git pre-commit hook.
 
 First, follow the [`pre-commit` installation instructions](https://pre-commit.com/#install) to install the tool in your development environment.
 

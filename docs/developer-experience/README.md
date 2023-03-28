@@ -121,13 +121,13 @@ As opportunities are identified, the DevEx champion can translate these into act
 
 For essential tasks being standardized during the engagement, ensure that different platforms are accounted for. Team members may have different operating systems and ensuring the tasks are cross-platform will provide an additional opportunity to improve the experience.
 
-- See the [making tasks cross platform recipe](./recipes/cross-platform-tasks.md) for guidance on how tasks can be configured to include different platforms.
+- See the [making tasks cross platform recipe](cross-platform-tasks.md) for guidance on how tasks can be configured to include different platforms.
 
 ### Create an Onboarding Guide
 
 When welcoming new team members to the engagement, there are many areas for them to get adjusted to and bring them up to speed including codebase, coding standards, team agreements, and team culture. By adopting a strong onboarding practice such as an onboarding guide in a centralized location that explains the scope of the project, processes, setup details, and software required, new members can have all the necessary resources for them to be efficient, successful and a valuable team member from the start.
 
-See the [onboarding guide recipe](./recipes/onboarding-guide-template.md) for guidance on what an onboarding guide may look like.
+See the [onboarding guide recipe](onboarding-guide-template.md) for guidance on what an onboarding guide may look like.
 
 ### Standardize Essential Tasks
 
@@ -232,4 +232,4 @@ class MyService {
 }
 ```
 
-The recipes section has a more complete discussion on [DI as part of a high productivity inner dev loop](./recipes/client-app-inner-loop.md)  
+The recipes section has a more complete discussion on [DI as part of a high productivity inner dev loop](client-app-inner-loop.md)
