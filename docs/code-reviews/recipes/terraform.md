@@ -2,9 +2,9 @@
 
 ## Style Guide
 
-[ISE](../../ISE.md) developers follow the [terraform style guide](https://github.com/jonbrouse/terraform-style-guide/blob/master/README.md).
+Developers should follow the [terraform style guide](https://github.com/jonbrouse/terraform-style-guide/blob/master/README.md).
 
-[ISE](../../ISE.md) projects should check Terraform scripts with automated tools.
+Projects should check Terraform scripts with automated tools.
 
 ## Code Analysis / Linting
 

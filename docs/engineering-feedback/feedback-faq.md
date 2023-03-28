@@ -6,7 +6,7 @@ The questions below are common questions related to the feedback process. The an
 
 It is appropriate to do both. As a customer or Microsoft employee, you are empowered to create an issue or submit feedback via the medium appropriate for service.
 
-In addition to an issue on GitHub, feedback on UserVoice, or a personal email, Microsoft employees in [ISE](../ISE.md) should submit feedback via ISE Feedback.  In doing so, please reference the GitHub issue, UserVoice feedback, or email by including a link to the item or attaching the email.
+In addition to an issue on GitHub, feedback on UserVoice, or a personal email, Microsoft employees in [CSE](../ISE.md) should submit feedback via CSE Feedback.  In doing so, please reference the GitHub issue, UserVoice feedback, or email by including a link to the item or attaching the email.
 
 Submitting to ISE Feedback allows the ISE Feedback team to coalesce feedback across a wide range of sources, and thus create a unified case to submit to the appropriate Azure engineering team(s).
 

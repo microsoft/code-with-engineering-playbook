@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[ISE](../../ISE.md) developers follow the [Effective Go](https://golang.org/doc/effective_go.html) Style Guide.
+Developers should follow the [Effective Go](https://golang.org/doc/effective_go.html) Style Guide.
 
 ## Code Analysis / Linting
 
@@ -16,7 +16,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 #### go vet
 
-`go vet` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. [ISE](../../ISE.md) Go code should be able to build with no `go vet` errors. This will be part of vscode-go extension.
+`go vet` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. Go code should be able to build with no `go vet` errors. This will be part of vscode-go extension.
 
 #### golint
 
