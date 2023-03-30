@@ -86,7 +86,9 @@ In particular, when working in an existing API ecosystem, be sure to align with 
 ## Additional Resources
 
 * [Microsoft's Recommended Reading List for REST APIs](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#31-recommended-reading)
+* [Documentation - Guidance - REST APIs](https://microsoft.github.io/code-with-engineering-playbook/documentation/guidance/rest-apis/)
 * [Detailed HTTP status code definitions](https://www.restapitutorial.com/httpstatuscodes.html)
 * [Semantic Versioning](https://semver.org/)
 * [Other Public API Guidelines](http://apistylebook.com/design/guidelines/)
 * [OpenAPI Design Practices](https://oai.github.io/Documentation/best-practices.html)
+* [Microsoft TypeSpec](https://github.com/Microsoft/typespec)
