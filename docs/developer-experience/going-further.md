@@ -73,7 +73,7 @@ services:
     command: sleep infinity
 ```
 
-Too use the `docker-compose.yml` file instead of `Dockerfile`, we need to adjust `devcontainer.json` with:
+To use the `docker-compose.yml` file instead of `Dockerfile`, we need to adjust `devcontainer.json` with:
 
 ```json
 {
