@@ -191,6 +191,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
       - "~/.ssh:/home/alex/.ssh"
     command: sleep infinity
 ```
