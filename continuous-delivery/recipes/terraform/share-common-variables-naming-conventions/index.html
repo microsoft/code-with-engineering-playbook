@@ -7437,10 +7437,10 @@
 <li>resource group: rg-dev-network</li>
 </ul>
 <p>Then at some point, you need to inject these values into the Kubernetes module, to get a reference to it through a data source, for example:</p>
-<div class="highlight"><pre><span></span><code>data &quot;azurem_virtual_network&quot; &quot;vnet&quot; {
-    name                = var.vnet_name
-    resource_group_name = var.vnet_rg_name
-}
+<div class="highlight"><pre><span></span><code><span class="kr">data</span><span class="w"> </span><span class="nc">&quot;azurem_virtual_network&quot;</span><span class="w"> </span><span class="nv">&quot;vnet&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">name</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="nv">var.vnet_name</span>
+<span class="w">    </span><span class="na">resource_group_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">var.vnet_rg_name</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>In the snippet above, the virtual network name and resource group are defined through variable. This is great, but if this changes in the future, then the values of these variables must change too. In every module they are used.</p>
 <p>Being able to manage naming in a central place will make sure the code can easily be refactored in the future, without updating all modules.</p>
@@ -7463,46 +7463,46 @@
 <span class="go">│   └── variables.tf</span>
 </code></pre></div>
 <p><em>variables.tf:</em></p>
-<div class="highlight"><pre><span></span><code>variable &quot;environment_name&quot; {
-  type = string
-  description = &quot;The name of the environment.&quot;
-}
+<div class="highlight"><pre><span></span><code><span class="kr">variable</span><span class="w"> </span><span class="nv">&quot;environment_name&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">  </span><span class="na">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;The name of the environment.&quot;</span>
+<span class="p">}</span>
 
-variable &quot;location&quot; {
-  type = string
-  description = &quot;The Azure region where the resources will be created. Default is westeurope.&quot;
-  default = &quot;westeurope&quot;
-}
+<span class="kr">variable</span><span class="w"> </span><span class="nv">&quot;location&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">  </span><span class="na">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;The Azure region where the resources will be created. Default is westeurope.&quot;</span>
+<span class="w">  </span><span class="na">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;westeurope&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p><em>output.tf:</em></p>
-<div class="highlight"><pre><span></span><code># Shared variables
-output &quot;location&quot; {
-  value = var.location
-}
+<div class="highlight"><pre><span></span><code><span class="c1"># Shared variables</span>
+<span class="kr">output</span><span class="w"> </span><span class="nv">&quot;location&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">var.location</span>
+<span class="p">}</span>
 
-output &quot;subscription&quot; {
-  value = var.subscription
-}
+<span class="kr">output</span><span class="w"> </span><span class="nv">&quot;subscription&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">var.subscription</span>
+<span class="p">}</span>
 
-# Virtual Network Naming
+<span class="c1"># Virtual Network Naming</span>
 
-output &quot;vnet_rg_name&quot; {
-  value = &quot;rg-network-${var.environment_name}&quot;
-}
+<span class="kr">output</span><span class="w"> </span><span class="nv">&quot;vnet_rg_name&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;rg-network-${var.environment_name}&quot;</span>
+<span class="p">}</span>
 
-output &quot;vnet_name&quot; {
-  value = &quot;vnet-${var.environment_name}&quot;
-}
+<span class="kr">output</span><span class="w"> </span><span class="nv">&quot;vnet_name&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;vnet-${var.environment_name}&quot;</span>
+<span class="p">}</span>
 
-# AKS Naming
+<span class="c1"># AKS Naming</span>
 
-output &quot;aks_rg_name&quot; {
-  value = &quot;rg-aks-${var.environment_name}&quot;
-}
+<span class="kr">output</span><span class="w"> </span><span class="nv">&quot;aks_rg_name&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;rg-aks-${var.environment_name}&quot;</span>
+<span class="p">}</span>
 
-output &quot;aks_name&quot; {
-  value = &quot;aks-${var.environment_name}&quot;
-}
+<span class="kr">output</span><span class="w"> </span><span class="nv">&quot;aks_name&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;aks-${var.environment_name}&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Now, if you execute the Terraform apply for the common module, you get all the shared/common variables in outputs:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>terraform<span class="w"> </span>plan<span class="w"> </span>-var<span class="w"> </span><span class="nv">environment_name</span><span class="o">=</span><span class="s2">&quot;dev&quot;</span><span class="w"> </span>-var<span class="w"> </span><span class="nv">subscription</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>az<span class="w"> </span>account<span class="w"> </span>show<span class="w"> </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span><span class="s2">&quot;</span>
@@ -7519,34 +7519,34 @@ output &quot;aks_name&quot; {
 </code></pre></div>
 <h3 id="use-the-common-terraform-module">Use the common Terraform module</h3>
 <p>Using the common Terraform module in any other module is super easy. For example, this is what you can do in the Azure Kubernetes module <code>main.tf</code> file:</p>
-<div class="highlight"><pre><span></span><code>module &quot;common&quot; {
-  source           = &quot;../common&quot;
-  environment_name = var.environment_name
-  subscription     = var.subscription
-}
+<div class="highlight"><pre><span></span><code><span class="kr">module</span><span class="w"> </span><span class="nv">&quot;common&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">source</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;../common&quot;</span>
+<span class="w">  </span><span class="na">environment_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">var.environment_name</span>
+<span class="w">  </span><span class="na">subscription</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="nv">var.subscription</span>
+<span class="p">}</span>
 
-data &quot;azurerm_subnet&quot; &quot;aks_subnet&quot; {
-  name                 = &quot;AksSubnet&quot;
-  virtual_network_name = module.common.vnet_name
-  resource_group_name  = module.common.vnet_rg_name
-}
+<span class="kr">data</span><span class="w"> </span><span class="nc">&quot;azurerm_subnet&quot;</span><span class="w"> </span><span class="nv">&quot;aks_subnet&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">name</span><span class="w">                 </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;AksSubnet&quot;</span>
+<span class="w">  </span><span class="na">virtual_network_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.vnet_name</span>
+<span class="w">  </span><span class="na">resource_group_name</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.vnet_rg_name</span>
+<span class="p">}</span>
 
-resource &quot;azurerm_kubernetes_cluster&quot; &quot;aks&quot; {
-  name                = module.common.aks_name
-  resource_group_name = module.common.aks_rg_name
-  location            = module.common.location
-  dns_prefix          = module.common.aks_name
+<span class="kr">resource</span><span class="w"> </span><span class="nc">&quot;azurerm_kubernetes_cluster&quot;</span><span class="w"> </span><span class="nv">&quot;aks&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">name</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.aks_name</span>
+<span class="w">  </span><span class="na">resource_group_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.aks_rg_name</span>
+<span class="w">  </span><span class="na">location</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.location</span>
+<span class="w">  </span><span class="na">dns_prefix</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.aks_name</span>
 
-  identity {
-    type = &quot;SystemAssigned&quot;
-  }
+<span class="w">  </span><span class="nb">identity</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;SystemAssigned&quot;</span>
+<span class="w">  </span><span class="p">}</span>
 
-  default_node_pool {
-    name           = &quot;default&quot;
-    vm_size        = &quot;Standard_DS2_v2&quot;
-    vnet_subnet_id = data.azurerm_subnet.aks_subnet.id
-  }
-}
+<span class="w">  </span><span class="nb">default_node_pool</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">name</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;default&quot;</span>
+<span class="w">    </span><span class="na">vm_size</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Standard_DS2_v2&quot;</span>
+<span class="w">    </span><span class="na">vnet_subnet_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">data.azurerm_subnet.aks_subnet.id</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Then, you can execute the <code>terraform plan</code> and <code>terraform apply</code> commands to deploy!</p>
 <div class="highlight"><pre><span></span><code><span class="go">terraform plan -var environment_name=&quot;dev&quot; -var subscription=&quot;$(az account show --query id -o tsv)&quot;</span>
@@ -7611,23 +7611,23 @@ resource &quot;azurerm_kubernetes_cluster&quot; &quot;aks&quot; {
 <span class="go">Plan: 1 to add, 0 to change, 0 to destroy.</span>
 </code></pre></div>
 <p>Note: the usage of a common module is also valid if you decide to deploy all your modules in the same operation from a main Terraform configuration file, like:</p>
-<div class="highlight"><pre><span></span><code>module &quot;common&quot; {
-  source           = &quot;./common&quot;
-  environment_name = var.environment_name
-  subscription     = var.subscription
-}
+<div class="highlight"><pre><span></span><code><span class="kr">module</span><span class="w"> </span><span class="nv">&quot;common&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">source</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;./common&quot;</span>
+<span class="w">  </span><span class="na">environment_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">var.environment_name</span>
+<span class="w">  </span><span class="na">subscription</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="nv">var.subscription</span>
+<span class="p">}</span>
 
-module &quot;network&quot; {
-  source           = &quot;./network&quot;
-  vnet_name        = module.common.vnet_name
-  vnet_rg_name     = module.common.vnet_rg_name
-}
+<span class="kr">module</span><span class="w"> </span><span class="nv">&quot;network&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">source</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;./network&quot;</span>
+<span class="w">  </span><span class="na">vnet_name</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.vnet_name</span>
+<span class="w">  </span><span class="na">vnet_rg_name</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.vnet_rg_name</span>
+<span class="p">}</span>
 
-module &quot;kubernetes&quot; {
-  source           = &quot;./kubernetes&quot;
-  aks_name         = module.common.aks_name
-  aks_rg           = module.common.aks_rg_name
-}
+<span class="kr">module</span><span class="w"> </span><span class="nv">&quot;kubernetes&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">source</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;./kubernetes&quot;</span>
+<span class="w">  </span><span class="na">aks_name</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.aks_name</span>
+<span class="w">  </span><span class="na">aks_rg</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="nv">module.common.aks_rg_name</span>
+<span class="p">}</span>
 </code></pre></div>
 <h3 id="centralize-input-variables-definitions">Centralize input variables definitions</h3>
 <p>In case you chose to define variables values directly in the source control (e.g. gitops scenario) using <a href="https://www.terraform.io/language/values/variables#variable-definitions-tfvars-files">variables definitions files</a> (<code>.tfvars</code>), having a common module will also help to not have to duplicate the common variables definitions in all modules. Indeed, it is possible to have a global file that is defined once, at the common module level, and merge it with a module-specific variables definitions files at Terraform <code>plan</code> or <code>apply</code> time.</p>
