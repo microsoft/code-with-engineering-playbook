@@ -7441,7 +7441,7 @@
 <span class="w">      </span><span class="nt">dockerfile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Dockerfile</span>
 <span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sleep infinity</span>
 </code></pre></div>
-<p>Too use the <code>docker-compose.yml</code> file instead of <code>Dockerfile</code>, we need to adjust <code>devcontainer.json</code> with:</p>
+<p>To use the <code>docker-compose.yml</code> file instead of <code>Dockerfile</code>, we need to adjust <code>devcontainer.json</code> with:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;My Application&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;dockerComposeFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;docker-compose.yml&quot;</span><span class="p">],</span>
@@ -7525,6 +7525,7 @@ However, the latest Mac architecture (Apple M1/Silicon) being ARM64, means that 
 <span class="w">    </span><span class="nt">build</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">context</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
 <span class="w">      </span><span class="nt">dockerfile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Dockerfile</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;~/.ssh:/home/alex/.ssh&quot;</span>
 <span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sleep infinity</span>
 </code></pre></div>
@@ -7557,7 +7558,7 @@ However, the latest Mac architecture (Apple M1/Silicon) being ARM64, means that 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 18, 2023</span>
       
     
   </small>
