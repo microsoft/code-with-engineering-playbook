@@ -3,7 +3,7 @@
 Below are some points which emphasize why inclusivity in code reviews is important:
 
 * Code reviews are an important part of our job as software professionals.
-* An ISE we work with cross cultural teams from across the globe.
+* In ISE we work with cross cultural teams from across the globe.
 * How we communicate affects team morale.
 * Inclusive code reviews welcome new developers and make them comfortable with the team.
 * Rude or personal attacks doing code reviews alienate - people can unknowingly make rude comments when reviewing pull requests (PRs).
