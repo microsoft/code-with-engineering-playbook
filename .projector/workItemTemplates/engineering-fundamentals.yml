@@ -496,7 +496,7 @@ items:
         acceptanceCriteria: []
         children:
           - name:
-              As a dev crew, we have provided reproducible, actionable, specific and 
+              As a dev crew, we have provided reproducible, actionable, specific and
               goal-oriented CSE feedback on any blockers or potential
               improvements identified
             type: story
