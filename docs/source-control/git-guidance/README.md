@@ -144,7 +144,7 @@ Once the feature branch is pushed to the remote repository, it is visible to any
 
 ### Merging
 
-In [CSE](../../CSE.md) we encourage the use of Pull Request to merge code to the main repository to make sure that all code in the final product is [code reviewed](../../code-reviews/README.md)
+We encourage the use of Pull Request to merge code to the main repository to make sure that all code in the final product is [code reviewed](../../code-reviews/README.md)
 
 The Pull Request (PR) process in [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops), [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and other similar tools make it easy both to start a PR, review a PR and merge a PR.
 
