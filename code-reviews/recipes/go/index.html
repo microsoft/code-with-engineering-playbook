@@ -6,10 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="CSE Code With Engineering Playbook">
+        <meta name="description" content="ISE Code With Engineering Playbook">
       
       
-        <meta name="author" content="Microsoft CSE">
+        <meta name="author" content="Microsoft ISE">
       
       
         <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/code-reviews/recipes/go/">
@@ -216,22 +216,7 @@
   
     <li class="md-nav__item">
       <a href="../../.." class="md-nav__link">
-        CSE Code-With Engineering Playbook
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../CSE/" class="md-nav__link">
-        Who We Are
+        ISE Code-With Engineering Playbook
       </a>
     </li>
   
@@ -247,6 +232,21 @@
     <li class="md-nav__item">
       <a href="../../../ENG-FUNDAMENTALS-CHECKLIST/" class="md-nav__link">
         Engineering Fundamentals Checklist
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ISE/" class="md-nav__link">
+        Who We Are
       </a>
     </li>
   
@@ -6288,7 +6288,7 @@
   
     <li class="md-nav__item">
       <a href="../../../machine-learning/responsible-ai/" class="md-nav__link">
-        Responsible AI in CSE
+        Responsible AI in ISE
       </a>
     </li>
   
@@ -7595,14 +7595,14 @@
 
 <h1 id="go-code-reviews">Go Code Reviews</h1>
 <h2 id="style-guide">Style Guide</h2>
-<p><a href="../../../CSE/">CSE</a> developers follow the <a href="https://golang.org/doc/effective_go.html">Effective Go</a> Style Guide.</p>
+<p>Developers should follow the <a href="https://golang.org/doc/effective_go.html">Effective Go</a> Style Guide.</p>
 <h2 id="code-analysis-linting">Code Analysis / Linting</h2>
 <h3 id="project-setup">Project Setup</h3>
 <p>Below is the project setup that you would like to have in your VS Code.</p>
 <h4 id="vscode-go-extension">vscode-go extension</h4>
 <p>Using the Go extension for Visual Studio Code, you get language features like IntelliSense, code navigation, symbol search, bracket matching, snippets, etc. This extension includes rich language support for go in VS Code.</p>
 <h4 id="go-vet">go vet</h4>
-<p><code>go vet</code> is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. <a href="../../../CSE/">CSE</a> Go code should be able to build with no <code>go vet</code> errors. This will be part of vscode-go extension.</p>
+<p><code>go vet</code> is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. Go code should be able to build with no <code>go vet</code> errors. This will be part of vscode-go extension.</p>
 <h4 id="golint">golint</h4>
 <p><strong>:exclamation: NOTICE: The golint library is deprecated and archived.</strong></p>
 <p>The linter revive (below) might be a suitable replacement.</p>
@@ -7697,7 +7697,7 @@ Alternatively you can run <code>brew install pre-commit</code> if you are using 
 <span class="w">     </span><span class="nt">artifactName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">drop</span>
 </code></pre></div>
 <h2 id="code-review-checklist">Code Review Checklist</h2>
-<p>The Go language team maintains a list of common <a href="https://github.com/golang/go/wiki/CodeReviewComments">Code Review Comments</a> for go that form the basis for a solid checklist for a team working in Go that should be followed in addition to the <a href="../../process-guidance/reviewer-guidance/">CSE Code Review Checklist</a></p>
+<p>The Go language team maintains a list of common <a href="https://github.com/golang/go/wiki/CodeReviewComments">Code Review Comments</a> for go that form the basis for a solid checklist for a team working in Go that should be followed in addition to the <a href="../../process-guidance/reviewer-guidance/">ISE Code Review Checklist</a></p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" disabled/> Does this code <a href="https://golang.org/doc/effective_go.html#errors">handle errors</a> correctly? This includes not throwing away errors with <code>_</code> assignments and returning errors, instead of <a href="https://github.com/golang/go/wiki/CodeReviewComments#in-band-errors">in-band error values</a>?</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Does this code follow Go standards for method <a href="https://github.com/golang/go/wiki/CodeReviewComments#receiver-type">receiver types</a>?</li>
@@ -7716,7 +7716,7 @@ Alternatively you can run <code>brew install pre-commit</code> if you are using 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 24, 2023</span>
       
     
   </small>
