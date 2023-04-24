@@ -2,7 +2,7 @@
 
 ## Java Style Guide
 
-[CSE](../../CSE.md) developers generally follow the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
+Developers should follow the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
 
 ## Code Analysis / Linting
 

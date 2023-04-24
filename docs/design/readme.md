@@ -2,7 +2,7 @@
 
 Designing software well is hard.
 
-CSE has collected a number of practices which we find help in the design process.
+ISE has collected a number of practices which we find help in the design process.
 This covers not only technical design of software, but also architecture design and non-functional requirements gathering for new projects.
 
 ## Goals
