@@ -9,7 +9,7 @@ When running ML projects, we follow the Agile methodology for software developme
 1. Run and manage ML projects effectively
 2. Create effective collaboration between the ML team and the other teams working on the project
 
-To learn more about how CSE runs the Agile process for software development teams, refer to this [doc](../agile-development).
+To learn more about how ISE runs the Agile process for software development teams, refer to this [doc](../agile-development).
 
 Within this framework, the team follows these Agile ceremonies:
 

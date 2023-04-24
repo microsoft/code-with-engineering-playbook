@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers follow the [YAML schema reference](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
+Developers should follow the [YAML schema reference](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
 
 ## Code Analysis / Linting
 

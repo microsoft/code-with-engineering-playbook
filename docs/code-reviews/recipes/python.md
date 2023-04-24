@@ -2,9 +2,9 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers follow the [PEP8 style guide](https://pep8.org/) with [type hints](https://www.python.org/dev/peps/pep-0484/). The use of type hints throughout paired with linting and type hint checking avoids common errors that are tricky to debug.
+Developers should follow the [PEP8 style guide](https://pep8.org/) with [type hints](https://www.python.org/dev/peps/pep-0484/). The use of type hints throughout paired with linting and type hint checking avoids common errors that are tricky to debug.
 
-[CSE](../../CSE.md) projects should check Python code with automated tools.
+Projects should check Python code with automated tools.
 
 Linting should be added to build validation, and both linting and code formatting can be added to your pre-commit hooks and VS Code.
 

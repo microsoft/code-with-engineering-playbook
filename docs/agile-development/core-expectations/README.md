@@ -1,6 +1,6 @@
 # Agile core expectations
 
-This section contains core expectations for agile practices in CSE:
+This section contains core expectations for agile practices in ISE:
 
 - It should stay concise and link to external documentation for details.
 - Each section contains a list of core expectations and suggestions:
@@ -215,7 +215,6 @@ ___
 ### Documentation
 
 - [What Is Scrum?](https://www.scrum.org/resources/what-is-scrum)
-- [10 Sprint Retrospective Ideas and Games for Your Next Sprint](https://miro.com/guides/retrospectives/ideas-games)
 - [Agile Retrospective: Making Good Teams Great](https://www.goodreads.com/book/show/721338.Agile_Retrospectives)
 - [User Stories Applied: For Software Development](https://www.goodreads.com/book/show/3856.User_Stories_Applied)
 - [Essential Scrum: A Practical Guide to The Most Popular Agile Process](https://www.goodreads.com/book/show/13663747-essential-scrum)
