@@ -10,13 +10,17 @@ In the below documet best practices about how resources and artitechture should 
 
 ## Hub and Spoke topology
 
-See [cloud-artitechture-design-guidance#Hub and Spoke topology](..\cloud-artitechture-design-guidance\readme.md#hub-and-spoke-topology)
+The Hub-and-Spoke topology doesn't change much when using cloud/hybrid if configured correctly, The main different is that the hub vnet is peering to the on-prem network via a Expressruote and that all traffic from Azure might exit via the expressroute and the on-prem internet connection.
+
+The generalized best practices are in  [cloud-artitechture-design-guidance#Hub and Spoke topology](..\cloud-artitechture-design-guidance\readme.md#hub-and-spoke-topology)
 
 ### IP allocation
 
-Address space planning: Plan your address space for Azure virtual networks (VNets) and on-premises networks to avoid overlaps.
+When working with Hybrid deployment extra care should be taken when planning IP allocation as there is a much greater risk of overlapping network ranges.
 
-See [cloud-artitechture-design-guidance#ip-allocation](..\cloud-artitechture-design-guidance\readme.md#ip-allocation)
+The generalized best practices are in [cloud-artitechture-design-guidance#ip-allocation](..\cloud-artitechture-design-guidance\readme.md#ip-allocation)
+
+Read more about this at [azure-best-practices/plan-for-ip-addressing](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
 
 ### ExpressRoute
 
@@ -30,7 +34,7 @@ Monitoring: Use Azure Monitor and Network Performance Monitor (NPM) to monitor t
 
 ### DNS
 
-Please see [cloud-artitechture-design-guidance#dns](../cloud-artitechture-design-guidance/readme.md#dns)
+The generalized best practices are in [cloud-artitechture-design-guidance#dns](../cloud-artitechture-design-guidance/readme.md#dns)
 
 When using Azure DNS in a hybrid or multi-cloud enviorment it is important to ensure a consistent dns and forwarding configuration which ensures that records are automatically updated and that all DNS servers are aware of each other and know which server is the authoritative for the different records.
 

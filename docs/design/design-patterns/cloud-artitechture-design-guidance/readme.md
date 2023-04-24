@@ -1,13 +1,11 @@
 # Cloud artitechture Design Guidance
 
 
-In the below documet best practices about how resources and artitechture should be configured and used in Cloud enviorments.
+In the below documet best practices about how network resources and artitechtures should be used in Azure Cloud enviorments.
 
 > **NOTE:** Always work with the relevant stakeholders to ensure that introducing new patterns provides the intended value.
 >
 > When working in an existing cloud environment, it is important to understand any current patterns and how they are used before making a change to them.
->
-
 
 ## Networking and Vnet setup
 
@@ -31,7 +29,7 @@ Implementing a Hub-and-Spoke model in Azure offers several benefits:
 * Scalability: The Hub-and-Spoke model can easily scale to accommodate additional spokes as the organization grows or as new applications and services are introduced.
 * Cost Savings: By centralizing shared services in the hub, organizations can reduce the costs associated with deploying and managing multiple instances of the same services across different VNets.
 
-Read more [here](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
+Read more about [Hub-And-Spoke topology](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
 
 It is recomended deploying hub/spoke in connection with [landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/) to ensure consistency accross all enviorments as well as guiderails to ensure a high level of security while giving devopers freedom within development enviorments.
 
@@ -46,7 +44,7 @@ The best practice method for handling DNS in azure and in clouds in general mean
 * **DNS forwarding:** Set up DNS forwarding between your on-premises DNS servers and Azure DNS servers for name resolution across environments.
 * **Use Azure Private DNS zones for Azure resources:** Configure Azure Private DNS zones for your Azure resources to ensure name resolution is kept within the virtual network.
 
-Read about [Hybrid/Multi-Cloud DNS infrasurecture](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-dns-infra) and [Azure DNS infrazureture](https://learn.microsoft.com/en-us/azure/dns/)
+Read more about [Hybrid/Multi-Cloud DNS infrasurecture](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-dns-infra) and [Azure DNS infrazureture](https://learn.microsoft.com/en-us/azure/dns/)
 
 
 ### IP allocation
@@ -63,3 +61,6 @@ When allocating IP address spaces to Azure Virtual Networks (VNets), it's essent
 * **Consider leaving a buffer between VNets:** While it's not strictly necessary, leaving a buffer between VNets can be beneficial in some cases, especially when you anticipate future growth or when you might need to merge VNets. This can help avoid re-addressing conflicts when expanding or merging networks.
 * **Reserve IP addresses:** Reserve a range of IP addresses within your VNet address space for critical resources or services. This ensures that they have a static IP address, which is essential for specific services or applications.
 * **Plan for hybrid scenarios:** If you're working in a hybrid environment with on-premises or multi-cloud networks, ensure that you plan for IP address allocation across all environments. This includes avoiding overlapping address spaces and reserving IP addresses for specific resources like VPN gateways or ExpressRoute circuits.
+
+
+Read more at [azure-best-practices/plan-for-ip-addressing](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
