@@ -1,7 +1,7 @@
-# Cloud artitechture Design Guidance
+# Cloud architecture Design Guidance
 
 
-In the below documet best practices about how network resources and artitechtures should be used in Azure Cloud enviorments.
+In the below documet best practices about how network resources and architectures should be used in Azure Cloud enviorments.
 
 > **NOTE:** Always work with the relevant stakeholders to ensure that introducing new patterns provides the intended value.
 >

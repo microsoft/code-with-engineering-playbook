@@ -11,5 +11,5 @@ Rather than duplicate or replace the cited sources, this section aims to complim
 * [Distributed System Design Reference](distributed-system-design-reference/README.md)
 * [REST API Design Guidance](rest-api-design-guidance/README.md)
 * [Cloud Resource Design Guidance](cloud-resource-design-guidance/README.md)
-* [Cloud Resource Design Guidance](cloud-artitechture-design-guidance/readme.md)
-* [Hybrid Resource Design Guidance](hybrid-artitechture-design-guidance/readme.md)
+* [Cloud Architecture Design Guidance](cloud-architecture-design-guidance/readme.md)
+* [Hybrid Architecture Design Guidance](hybrid-architecture-design-guidance/readme.md)
