@@ -12,13 +12,13 @@ In the below documet best practices about how resources and architecture should 
 
 The Hub-and-Spoke topology doesn't change much when using cloud/hybrid if configured correctly, The main different is that the hub vnet is peering to the on-prem network via a Expressruote and that all traffic from Azure might exit via the expressroute and the on-prem internet connection.
 
-The generalized best practices are in  [cloud-architecture-design-guidance#Hub and Spoke topology](..\cloud-architecture-design-guidance\readme.md#hub-and-spoke-topology)
+The generalized best practices are in  [cloud-architecture-design-guidance#Hub and Spoke topology](../cloud-architecture-design-guidance/readme.md#hub-and-spoke-topology)
 
 ### IP allocation
 
 When working with Hybrid deployment extra care should be taken when planning IP allocation as there is a much greater risk of overlapping network ranges.
 
-The generalized best practices are in [cloud-architecture-design-guidance#ip-allocation](..\cloud-architecture-design-guidance\readme.md#ip-allocation)
+The generalized best practices are in [cloud-architecture-design-guidance#ip-allocation](../cloud-architecture-design-guidance/readme.md#ip-allocation)
 
 Read more about this at [azure-best-practices/plan-for-ip-addressing](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
 
