@@ -40,11 +40,11 @@ The best practices for handling DNS in azure and in clouds in general include us
 * **DNS forwarding:** Set up DNS forwarding between your on-premises DNS servers and Azure DNS servers for name resolution across environments.
 * **Use Azure Private DNS zones for Azure resources:** Configure Azure Private DNS zones for your Azure resources to ensure name resolution is kept within the virtual network.
 
-Read more about [Hybrid/Multi-Cloud DNS infrasurecture](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-dns-infra) and [Azure DNS infrazureture](https://learn.microsoft.com/en-us/azure/dns/)
+Read more about [Hybrid/Multi-Cloud DNS infrastructure](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-dns-infra) and [Azure DNS infratructure](https://learn.microsoft.com/en-us/azure/dns/)
 
 ### IP allocation
 
-When allocating IP address spaces to Azure Virtual Networks (VNets), it's essential to follow best practices for proper management, and scalability. 
+When allocating IP address spaces to Azure Virtual Networks (VNets), it's essential to follow best practices for proper management, and scalability.
 
 Here are some recommendations for IP allocation to VNets:
 

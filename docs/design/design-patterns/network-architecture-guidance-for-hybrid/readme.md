@@ -34,7 +34,7 @@ General best practices are available in [Network Architecture Guidance for Azure
 
 When using Azure DNS in a hybrid or multi-cloud environment it is important to ensure a consistent DNS and forwarding configuration which ensures that records are automatically updated and that all DNS servers are aware of each other and know which server is the authoritative for the different records.
 
-Read more about [Hybrid/Multi-Cloud DNS infrasurecture](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-dns-infra)
+Read more about [Hybrid/Multi-Cloud DNS infrastructure](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-dns-infra)
 
 ### Resource allocation
 
