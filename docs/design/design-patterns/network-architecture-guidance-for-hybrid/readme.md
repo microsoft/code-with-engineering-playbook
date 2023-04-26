@@ -4,13 +4,13 @@ The following are best practices around how to design and configure resources, u
 
 > **NOTE:** When working in an existing hybrid environment, it is important to understand any current patterns, and how they are used before making any changes.
 
-## Hub and Spoke topology
+## Hub-and-spoke Topology
 
-The Hub-and-Spoke topology doesn't change much when using cloud/hybrid if configured correctly, The main different is that the hub VNet is peering to the on-prem network via a ExpressRoute and that all traffic from Azure might exit via the ExpressRoute and the on-prem internet connection.
+The Hub-and-spoke topology doesn't change much when using cloud/hybrid if configured correctly, The main different is that the hub VNet is peering to the on-prem network via a ExpressRoute and that all traffic from Azure might exit via the ExpressRoute and the on-prem internet connection.
 
 The generalized best practices are in  [Network Architecture Guidance for Azure#Hub and Spoke topology](../network-architecture-guidance-for-azure/readme.md#hub-and-spoke-topology)
 
-### IP allocation
+### IP Allocation
 
 When working with Hybrid deployment, take extra care when planning IP allocation as there is a much greater risk of overlapping network ranges.
 
@@ -36,10 +36,6 @@ When using Azure DNS in a hybrid or multi-cloud environment it is important to e
 
 Read more about [Hybrid/Multi-Cloud DNS infrastructure](https://learn.microsoft.com/azure/architecture/hybrid/hybrid-dns-infra)
 
-### Resource allocation
+### Resource Allocation
 
 For resource allocation the best practices from [Cloud Resource Design Guidance](../cloud-resource-design-guidance/README.md) should be followed.
-
-## Tooling
-
-* [Azure Resource Naming Tool](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready/AzNamingTool)
