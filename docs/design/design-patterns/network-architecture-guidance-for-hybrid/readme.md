@@ -6,7 +6,7 @@ The following are best practices around how to design and configure resources, u
 
 ## Hub-and-spoke Topology
 
-The Hub-and-spoke topology doesn't change much when using cloud/hybrid if configured correctly, The main different is that the hub VNet is peering to the on-prem network via a ExpressRoute and that all traffic from Azure might exit via the ExpressRoute and the on-prem internet connection.
+The hub-and-spoke topology doesn't change much when using cloud/hybrid if configured correctly, The main different is that the hub VNet is peering to the on-prem network via a ExpressRoute and that all traffic from Azure might exit via the ExpressRoute and the on-prem internet connection.
 
 The generalized best practices are in  [Network Architecture Guidance for Azure#Hub and Spoke topology](../network-architecture-guidance-for-azure/readme.md#hub-and-spoke-topology)
 

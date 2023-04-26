@@ -9,20 +9,20 @@ The following are some best practices when setting up and working with network r
 
 ![image](images/spoke-spoke-routing.png)
 
-A Hub-and-spoke network topology is a common architecture pattern used in Azure for organizing and managing network resources. It is based on the concept of a central hub that connects to various spoke networks. This model is particularly useful for organizing resources, maintaining security, and simplifying network management.
+A hub-and-spoke network topology is a common architecture pattern used in Azure for organizing and managing network resources. It is based on the concept of a central hub that connects to various spoke networks. This model is particularly useful for organizing resources, maintaining security, and simplifying network management.
 
-The Hub-and-spoke model is implemented using Azure Virtual Networks (VNet) and VNet peering.
+The hub-and-spoke model is implemented using Azure Virtual Networks (VNet) and VNet peering.
 
 * The hub: The central VNet acts as a hub, providing shared services such as network security, monitoring, and connectivity to on-premises or other cloud environments. Common components in the hub include Network Virtual Appliances (NVAs), Azure Firewall, VPN Gateway, and ExpressRoute Gateway.
 
 * The spokes: The spoke VNets represent separate units or applications within an organization, each with its own set of resources and services. They connect to the hub through VNet peering, which allows for communication between the hub and spoke VNets.
 
-Implementing a Hub-and-spoke model in Azure offers several benefits:
+Implementing a hub-and-spoke model in Azure offers several benefits:
 
 * Isolation and segmentation: By dividing resources into separate spoke VNets, you can isolate and segment workloads, preventing any potential issues or security risks from affecting other parts of the network.
 * Centralized management: The hub VNet acts as a single point of management for shared services, making it easier to maintain, monitor, and enforce policies across the network.
 * Simplified connectivity: VNet peering enables seamless communication between the hub and spoke VNets without the need for complex routing or additional gateways, reducing latency and management overhead.
-* Scalability: The Hub-and-spoke model can easily scale to accommodate additional spokes as the organization grows or as new applications and services are introduced.
+* Scalability: The hub-and-spoke model can easily scale to accommodate additional spokes as the organization grows or as new applications and services are introduced.
 * Cost savings: By centralizing shared services in the hub, organizations can reduce the costs associated with deploying and managing multiple instances of the same services across different VNets.
 
 Read more about [hub-and-spoke topology](https://learn.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
@@ -31,7 +31,7 @@ When deploying hub/spoke, it is recommended that you do so in connection with [l
 
 ### Firewall and Security
 
-When using a Hub-and-spoke topology it is possible to deploy a centralized firewall in the Hub that all outgoing traffic or traffic to/from certain VNets, this allows for centralized threat protection while minimizing costs.
+When using a hub-and-spoke topology it is possible to deploy a centralized firewall in the Hub that all outgoing traffic or traffic to/from certain VNets, this allows for centralized threat protection while minimizing costs.
 
 ### DNS
 
