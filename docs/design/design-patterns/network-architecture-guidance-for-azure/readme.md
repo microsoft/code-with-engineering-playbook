@@ -31,7 +31,7 @@ When deploying hub/spoke, it is recommended that you do so in connection with [l
 
 ### Firewall and security
 
-When using a Hub-and-Spoke topology it is possible to deploy a centralized Firewall instance in the Hub that all outgoing traffic or traffic to/from certain VNets, this allows for centralized threat protection while minimizing costs.
+When using a Hub-and-Spoke topology it is possible to deploy a centralized firewall in the Hub that all outgoing traffic or traffic to/from certain VNets, this allows for centralized threat protection while minimizing costs.
 
 ### DNS
 
