@@ -25,9 +25,9 @@ Implementing a Hub-and-Spoke model in Azure offers several benefits:
 * Scalability: The Hub-and-Spoke model can easily scale to accommodate additional spokes as the organization grows or as new applications and services are introduced.
 * Cost Savings: By centralizing shared services in the hub, organizations can reduce the costs associated with deploying and managing multiple instances of the same services across different VNets.
 
-Read more about [Hub-And-Spoke topology](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
+Read more about [Hub-And-Spoke topology](https://learn.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
 
-When deploying hub/spoke, it is recommended that you do so in connection with [landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/). This ensures consistency across all environments as well as guardrails to ensure a high level of security while giving developers freedom within development environments.
+When deploying hub/spoke, it is recommended that you do so in connection with [landing zones](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/). This ensures consistency across all environments as well as guardrails to ensure a high level of security while giving developers freedom within development environments.
 
 ### Firewall and security
 
@@ -35,12 +35,12 @@ When using a Hub-and-Spoke topology it is possible to deploy a centralized firew
 
 ### DNS
 
-The best practices for handling DNS in azure and in clouds in general include using the managed DNS services. Some of the benefits of using the managed DNS services is that the resources are designed to be secure, and easy to deploy and configure.
+The best practices for handling DNS in Azure, and in cloud environments in general, include using managed DNS services. Some of the benefits of using managed DNS services is that the resources are designed to be secure, easy to deploy and configure.
 
 * **DNS forwarding:** Set up DNS forwarding between your on-premises DNS servers and Azure DNS servers for name resolution across environments.
 * **Use Azure Private DNS zones for Azure resources:** Configure Azure Private DNS zones for your Azure resources to ensure name resolution is kept within the virtual network.
 
-Read more about [Hybrid/Multi-Cloud DNS infrastructure](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-dns-infra) and [Azure DNS infratructure](https://learn.microsoft.com/en-us/azure/dns/)
+Read more about [Hybrid/Multi-Cloud DNS infrastructure](https://learn.microsoft.com/azure/architecture/hybrid/hybrid-dns-infra) and [Azure DNS infratructure](https://learn.microsoft.com/azure/dns/)
 
 ### IP allocation
 
@@ -58,4 +58,4 @@ Here are some recommendations for IP allocation to VNets:
 * **Reserve IP addresses:** Reserve a range of IP addresses within your VNet address space for critical resources or services. This ensures that they have a static IP address, which is essential for specific services or applications.
 * **Plan for hybrid scenarios:** If you're working in a hybrid environment with on-premises or multi-cloud networks, ensure that you plan for IP address allocation across all environments. This includes avoiding overlapping address spaces and reserving IP addresses for specific resources like VPN gateways or ExpressRoute circuits.
 
-Read more at [azure-best-practices/plan-for-ip-addressing](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
+Read more at [azure-best-practices/plan-for-ip-addressing](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
