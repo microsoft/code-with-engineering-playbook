@@ -1,4 +1,4 @@
-# Cloud architecture Design Guidance
+# Network Architecture Guidance for Azure
 The following are some best practices when setting up and working with network resources in Azure Cloud environments.
 
 > **NOTE:** When working in an existing cloud environment, it is important to understand any current patterns, and how they are used, before making a change to them. You should also work with the relevant stakeholders to make sure that any new patterns you introduce provide enough value to make the change.
