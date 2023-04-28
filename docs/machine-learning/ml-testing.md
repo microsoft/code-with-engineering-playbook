@@ -68,7 +68,7 @@ Similarly, we can verify that it's called 0 or multiple times. In the example be
 @patch('utils.pd.read_csv')
 def test_load_data_doesnt_call_read_csv_if_not_exists(mock_isfile, mock_read_csv):
     # arrange
-    # file doesnt exist
+    # file doesn't exist
     utils.os.path.isfile.return_value = False
     filename = 'file.csv'
 

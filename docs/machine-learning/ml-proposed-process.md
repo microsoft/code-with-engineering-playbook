@@ -79,7 +79,7 @@ For more information on experimentation, refer to the [experimentation](ml-exper
 
 ### Model Operationalization
 
-* Taking "experimental" code and preparing it, so it can be deployed. This includes data pre-processing, featurization code, training model code (if required to be trained using CI/CD) and model inference code.
+* Taking "experimental" code and preparing it, so it can be deployed. This includes data pre-processing, code to generate data features, training model code (if required to be trained using CI/CD) and model inference code.
 
 * **Typical output**:
   * Production-grade code (Preferably in the form of a package) for:

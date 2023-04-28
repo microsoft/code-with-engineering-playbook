@@ -19,7 +19,7 @@ The table below maps outcomes -- the results that you may want to achieve in you
 | Development | Prevent regression in user experience | UI automation; [End-to-End testing](e2e-testing/README.md) |
 | Development | Detect and prevent 'noisy neighbor' phenomena | [Load testing](performance-testing/load-testing.md) |
 | Development | Detect availability drops | [Synthetic Transaction testing](synthetic-monitoring-tests/README.md); Outside-in probes |
-| Development | Prevent regression in 'composite' scenario use cases / workflows (e.g. an ecommerce system might have many APIs that used together in a sequence perform a "shop-and-buy" scenario) | [End-to-End testing](e2e-testing/README.md); Scenario |
+| Development | Prevent regression in 'composite' scenario use cases / workflows (e.g. an e-commerce system might have many APIs that used together in a sequence perform a "shop-and-buy" scenario) | [End-to-End testing](e2e-testing/README.md); Scenario |
 | Development; Operations | Prevent regressions in runtime performance metrics e.g. latency / cost / resource consumption; earlier is better | Rings; [Synthetic Transaction testing](synthetic-monitoring-tests/README.md) / Transaction; Rollback Watchdogs |
 | Development; Optimization | Compare any given metric between 2 candidate implementations or variations in functionality | Flighting; A/B testing |
 | Development; Staging | Prove production system of provisioned capacity meets goals for reliability, availability, resource consumption, performance | [Load testing (stress)](performance-testing/load-testing.md); Spike; Soak; [Performance testing](performance-testing/README.md) |
