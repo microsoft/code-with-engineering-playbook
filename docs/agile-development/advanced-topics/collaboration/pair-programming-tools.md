@@ -14,19 +14,19 @@ Additionally, scheduling these working sessions in advance ensures intentional c
 
 ### GitHub Codespaces
 
-[GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces) is a vital component in an efficient development environment, particularly in the context of pair programming. Prioritize setting up a codespace as the initial step of the project, preceding tasks such as local machine project compilation or VSCode plugin installation. To this end, make sure to update the codespace documentation before incorporating any quickstart instructions for local environments. Additionally, consistently demonstrate demos in codespaces environment to ensure its prominent integration into our workflow.
- 
+[GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces) is a vital component in an efficient development environment, particularly in the context of pair programming. Prioritize setting up a Codespace as the initial step of the project, preceding tasks such as local machine project compilation or VSCode plugin installation. To this end, make sure to update the Codespace documentation before incorporating any quick start instructions for local environments. Additionally, consistently demonstrate demos in codespaces environment to ensure its prominent integration into our workflow.
+
 With its cloud-based infrastructure, GitHub Codespaces presents a highly efficient and simplified approach to real-time collaborative coding. As a result, new team members can easily access the GitHub project and begin coding within seconds, without requiring installation on their local machines. This seamless, integrated solution for pair programming offers a streamlined workflow, allowing you to direct your attention towards producing exemplary code, free from the distractions of cumbersome setup processes.
 
 ### VSCode Live Share
 
-[VSCode Live Share](https://code.visualstudio.com/learn/collaboration/live-share) is specifically designed for pair programming and enables you to work on the same codebase, in real-time, with your team members. The arduous process of configuring complex setups, grappling with confusing configurations, straining one's eyes to work on small screens, or physically switching keyboards is not a problem with LiveShare. This innovative solution enables seamless sharing of your development environment with your team members, facilitating smooth collaborative coding experiences. 
+[VSCode Live Share](https://code.visualstudio.com/learn/collaboration/live-share) is specifically designed for pair programming and enables you to work on the same codebase, in real-time, with your team members. The arduous process of configuring complex setups, grappling with confusing configurations, straining one's eyes to work on small screens, or physically switching keyboards is not a problem with LiveShare. This innovative solution enables seamless sharing of your development environment with your team members, facilitating smooth collaborative coding experiences.
 
 Fully integrated into Visual Studio Code and Visual Studio, LiveShare offers the added benefit of terminal sharing, debug session collaboration, and host machine control. When paired with GitHub Codespaces, it presents a potent toolset for effective pair programming.
 
 > Tip: Share VSCode extensions (including Live Share) using a base [devcontainer.json](https://code.visualstudio.com/docs/devcontainers/create-dev-container). This ensure all team members have available the same set of extensions, and allow them to focus in solving the business needs from day one.
 
-# Resources
+## Resources
 
 * [GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces).
 * [VSCode Live Share](https://code.visualstudio.com/learn/collaboration/live-share).
