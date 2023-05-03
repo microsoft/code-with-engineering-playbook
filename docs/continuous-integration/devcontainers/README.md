@@ -32,23 +32,29 @@ Here are below pros and cons for both approaches:
 | The dev container is being tested to include all new tooling in addition to not being broken       |                                                                                                                                |
 
 > &#185;: container size can be reduces by exporting the layer that contains only the tooling needed for the CI pipeline
+>
 > &#178;: could be mitigated via adding image caching without using a container registry
 
 ### Run CI pipelines in the dev container with image registry
 
-| Pros                                                                                               | Cons                                                                                                                                 |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Utilities scripts will work out of the box                                                         | Need to rebuild the container for each run, given that there may be changes within the branch being built                            |
-| No surprise for the developers, local outputs (of linting for instance) will be the same in the CI | Not everything in the container is needed for the CI pipeline&#185;                                                                  |
-| Rules used (for linting or unit tests) will be the same on the CI                                  | Some tools were installed via a definition in `devcontainer.json`, resulting in a different container from the dev environment&#178; |
-| All tooling and their versions defined in a single place                                           | Some pipeline tasks will not be available &#179;                                                                                     |
-| Tools/dependencies are already present                                                             | Require access to a container registry to host the container within the pipeline&#8308;                                              |
-| The dev container is being tested to include all new tooling in addition to not being broken       |                                                                                                                                      |
+| Pros                                                                                                                                                                                                                                                                                            | Cons                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Utilities scripts will work out of the box                                                                                                                                                                                                                                                      | Need to rebuild the container for each run, given that there may be changes within the branch being built                            |
+| No surprise for the developers, local outputs (of linting for instance) will be the same in the CI                                                                                                                                                                                              | Not everything in the container is needed for the CI pipeline&#185;                                                                  |
+| Rules used (for linting or unit tests) will be the same on the CI                                                                                                                                                                                                                               | Some tools were installed via a definition in `devcontainer.json`, resulting in a different container from the dev environment&#178; |
+| All tooling and their versions defined in a single place                                                                                                                                                                                                                                        | Some pipeline tasks will not be available &#179;                                                                                     |
+| Tools/dependencies are already present                                                                                                                                                                                                                                                          | Require access to a container registry to host the container within the pipeline&#8308;                                              |
+| The dev container is being tested to include all new tooling in addition to not being broken                                                                                                                                                                                                    |                                                                                                                                      |
+| Publishing the container built from `devcontainer.json` allows you to reference it in the cacheFrom in `devcontainer.json` (see [docs](https://containers.dev/implementors/json_reference/#image-specific)). By doing this, VS Code will use the published image as a layer cache when building |                                                                                                                                      |
 
 > &#185;: container size can be reduces by exporting the layer that contains only the tooling needed for the CI pipeline. This would require building the image without tasks
+>
 > &#178;: building dev container with [GitHub - devcontainers/ci](https://github.com/devcontainers/ci) builds the container with the `devcontainer.json`. Example here: [devcontainers/ci · Getting Started](https://github.com/devcontainers/ci/blob/main/docs/github-action.md#getting-started)
+>
 > &#179;: using container jobs in AzDO you can use all tasks (as far as I can tell). Reference: [Dockerizing DevOps V2 - AzDO container jobs - DEV Community](https://dev.to/eliises/dockerizing-devops-v2-azdo-container-jobs-3hbf)
-> &#8308;: within GH actions, the default Github Actions token can be used for accessing the container registry, see the example below
+>
+> &#8308;: within GH actions, the default Github Actions token can be used for accessing GHCR without setting up separate registry, see the example below.
+> **NOTE:** This does not build the `Dockerfile` together with the `devcontainer.json`
 
 ```yaml
     - uses: whoan/docker-build-with-cache-action@v5
