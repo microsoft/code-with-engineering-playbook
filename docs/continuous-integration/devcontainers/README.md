@@ -8,7 +8,7 @@ There are three ways to build devcontainers within pipeline:
 
 - With [GitHub - devcontainers/ci](https://github.com/devcontainers/ci) builds the container with the `devcontainer.json`. Example here: [devcontainers/ci · Getting Started](https://github.com/devcontainers/ci/blob/main/docs/github-action.md#getting-started).
 - With [GitHub - devcontainers/cli](https://github.com/devcontainers/cli), which is the same as the above, but using the underlying CLI directly without tasks.
-- Building the `DockerFile` with `docker build`. This option excludes all configuration/packages specified within the `devcontainer.json`.
+- Building the `DockerFile` with `docker build`. This option excludes all configuration/features specified within the `devcontainer.json`.
 
 ## Considered Options
 
