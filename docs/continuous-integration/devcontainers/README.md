@@ -26,8 +26,6 @@ Here are below pros and cons for both approaches:
 | No container registry                                 | Can take some time to start, based on tools/dependencies required                                                                            |
 | Agent will always be up to date with security patches | The dev container should always be built within each run of the CI pipeline, to verify the changes within the branch haven't broken anything |
 
-> Tools can be Terraform/Terragrunt/linting utilities/unit tests framework. Dependencies are what our Python code will require to run (SDK Purview for instance)
-
 ### Run CI pipelines in the dev container with building image locally
 
 | Pros                                                                                               | Cons                                                                                                      |
