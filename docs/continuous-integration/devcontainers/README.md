@@ -26,7 +26,7 @@ Here are below pros and cons for both approaches:
 | No container registry                                 | Can take some time to start, based on tools/dependencies required                                                                            |
 | Agent will always be up to date with security patches | The dev container should always be built within each run of the CI pipeline, to verify the changes within the branch haven't broken anything |
 
-### Run CI pipelines in the dev container with building image locally
+### Run CI pipelines in the dev container without image caching
 
 | Pros                                                                                               | Cons                                                                                                      |
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
