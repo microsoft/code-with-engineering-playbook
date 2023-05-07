@@ -53,14 +53,14 @@ There is also a healthy balancing act in supporting a healthy debate while not h
 
 The dev crew should always participate in all design review sessions
 
-- [CSE](../../CSE.md) Engineering
+- [ISE](../../ISE.md) Engineering
 - Customer Engineering
 
 ### Domain Experts
 
 Domain experts should participate in design review sessions as needed
 
-- CSE Tech Domain
+- ISE Tech Domains
 - Customer subject-matter experts (SME)
 - Senior Leadership
 

@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers use [prettier](https://prettier.io/) to do code formatting for JavaScript.
+Developers should use [prettier](https://prettier.io/) to do code formatting for JavaScript.
 
 Using an automated code formatting tool like Prettier enforces a well accepted style guide that was collaboratively built by a wide range of companies including Microsoft, Facebook, and AirBnB.
 
