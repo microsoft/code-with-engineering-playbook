@@ -69,7 +69,7 @@ As soon the pair finds out that the PBI will warrant swarming, the pair brings i
 
 ## Benefits of increased collaboration
 
-Knowledge sharing and bringing CSE and customer engineers together in a ‘code-with’ manner is an important aspect of CSE engagements. This grows both our customers’ and our CSE team’s capability to build on Azure. We are responsible for demonstrating engineering fundamentals and leaving the customer in a better place after we disengage. This can only happen if we collaborate and engage together as a team. In addition to improved software quality, this also adds a beneficial social aspect to the engagements.
+Knowledge sharing and bringing ISE and customer engineers together in a ‘code-with’ manner is an important aspect of ISE engagements. This grows both our customers’ and our ISE team’s capability to build on Azure. We are responsible for demonstrating engineering fundamentals and leaving the customer in a better place after we disengage. This can only happen if we collaborate and engage together as a team. In addition to improved software quality, this also adds a beneficial social aspect to the engagements.
 
 ## Resources
 
@@ -78,3 +78,5 @@ Knowledge sharing and bringing CSE and customer engineers together in a ‘code-
 - [On Pair Programming - Martin Fowler](https://martinfowler.com/articles/on-pair-programming.html)
 
 - [Pair Programming hands-on lessons](https://github.com/The-V8/pair-programming-sessions) - these can be used (and adapted) to support bringing pair programming into your team (MS internal or including customers)
+
+- [Effortless Pair Programming with GitHub Codespaces and VSCode](./pair-programming-tools.md)

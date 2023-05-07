@@ -85,7 +85,7 @@ To make sure developers are forced to add the triple-slash comments by throwing 
 </Project>
 ```
 
-Now you are all set to generate documentation from your C# code. For more information about languages supported by DocFx and how to configure it, see [Introduction to Multiple Languages Support](https://dotnet.github.io/docfx/tutorial/universalreference/intro_multiple_langs_support.html?q=typescript).
+Now you are all set to generate documentation from your C# code. For more information about languages supported by DocFx and how to configure it, see [Introduction to Multiple Languages Support](https://dotnet.github.io/docfx/spec/metadata_format_spec.html#26-multiple-language-support).
 
 > **NOTE:** You can also add a PropertyGroup definition with the two settings in *Directory.Build.props* to have that settings in all projects. But in that case it will also be inherited in your Test projects.
 
@@ -180,14 +180,14 @@ We suggest starting with a basic documentation structure in the **/docs** folder
 │   ├── index.md                          // Landing page documentation
 ```
 
-You can use templates like working agreements and such from the [CSE Playbook](https://github.com/microsoft/code-with-engineering-playbook/).
+You can use templates like working agreements and such from the [ISE Playbook](https://github.com/microsoft/code-with-engineering-playbook/).
 
 To have a proper landing page of your documentation website, you can use a markdown file called INDEX.MD in the root of your repository. Contents can be something like this:
 
 ```markdown
-# CSE Documentation
+# ISE Documentation
 
-This is the landing page of the CSE Documentation website. This is the page to introduce everything on the website.
+This is the landing page of the ISE Documentation website. This is the page to introduce everything on the website.
 
 You can add specific links that are important to provide direct access.
 

@@ -56,6 +56,7 @@ Important Points to consider:
 
 * If API requirements changes often during initial development phase, than a Design-First approach may not be a good fit as this will introduce additional overhead, requiring repeated updates & maintenance to the API contract definitions.
 * It might be worthwhile to first try out your platform specific code generator and evaluate how much more additional work will be required in order to meet your project requirements and coding guidelines because it is possible that a particular platform specific code generator might not be able to generate a flexible & maintainable implementation of actual code. For instance If your web framework requires annotations to be present on your controller classes (e.g. for API versioning or authentication), make sure that the code generation tool you use fully supports them.
+* [Microsoft TypeSpec](https://github.com/Microsoft/typespec) is a valuable tool for developers who are working on complex APIs. By providing reusable patterns it can streamline API development and promote best practices. We have put together some [samples about how to enforce an API design-first approach in a GitHub CI/CD pipeline](https://github.com/cse-labs/typespec-workflow-samples/) to help accelerate it's adoption in a Design-First Development.
 
 ### Code-First Approach
 
@@ -86,7 +87,10 @@ In particular, when working in an existing API ecosystem, be sure to align with 
 ## Additional Resources
 
 * [Microsoft's Recommended Reading List for REST APIs](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#31-recommended-reading)
+* [Documentation - Guidance - REST APIs](https://microsoft.github.io/code-with-engineering-playbook/documentation/guidance/rest-apis/)
 * [Detailed HTTP status code definitions](https://www.restapitutorial.com/httpstatuscodes.html)
 * [Semantic Versioning](https://semver.org/)
 * [Other Public API Guidelines](http://apistylebook.com/design/guidelines/)
 * [OpenAPI Design Practices](https://oai.github.io/Documentation/best-practices.html)
+* [Microsoft TypeSpec](https://github.com/Microsoft/typespec)
+* [Microsoft TypeSpec GitHub Workflow samples](https://github.com/cse-labs/typespec-workflow-samples/)
