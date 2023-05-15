@@ -7584,18 +7584,14 @@
 
 <h1 id="observability-for-azure-databricks">Observability for Azure Databricks</h1>
 <h2 id="overview">Overview</h2>
-<p>Azure Databricks is an Apache Spark–based analytics service that makes it easy to rapidly develop and
-deploy big data analytics. Monitoring and troubleshooting performance issues is critical when
-operating production Azure Databricks workloads. It is important to log adequate information from Azure
-Databricks so that it is helpful to monitor and troubleshoot performance issues.</p>
-<p>Spark is designed to run on a cluster - a cluster is a set of Virtual Machines (VMs). Spark can
-horizontally scale with bigger workloads needed more VMs. Azure Databricks can scale in and out as
-neeeded.</p>
+<p>Azure Databricks is an Apache Spark–based analytics service that makes it easy to rapidly develop and deploy big data analytics. Monitoring and troubleshooting performance issues is critical when
+operating production Azure Databricks workloads. It is important to log adequate information from Azure Databricks so that it is helpful to monitor and troubleshoot performance issues.</p>
+<p>Spark is designed to run on a cluster - a cluster is a set of Virtual Machines (VMs). Spark can horizontally scale with bigger workloads needed more VMs. Azure Databricks can scale in and out as
+needed.</p>
 <h2 id="approaches-to-observability">Approaches to Observability</h2>
 <h3 id="azure-diagnostic-logs">Azure Diagnostic Logs</h3>
 <p><a href="https://learn.microsoft.com/en-us/azure/databricks/administration-guide/account-settings/azure-diagnostic-logs">Azure Diagnostic Logging</a> is provided out-of-the-box by Azure Databricks, providing
-visibility into actions performed against DBFS, Clusters, Accounts, Jobs, Notebooks, SSH, Workspace,
-Secrets, SQL Permissions, and Instance Pools.</p>
+visibility into actions performed against DBFS, Clusters, Accounts, Jobs, Notebooks, SSH, Workspace, Secrets, SQL Permissions, and Instance Pools.</p>
 <p>These logs are enabled using Azure Portal or CLI and can be configured to be delivered to one of these Azure resources.</p>
 <ul>
 <li>Log Analytics Workspace</li>
@@ -7604,46 +7600,37 @@ Secrets, SQL Permissions, and Instance Pools.</p>
 </ul>
 <h3 id="cluster-event-logs">Cluster Event Logs</h3>
 <p><a href="https://learn.microsoft.com/en-us/azure/databricks/clusters/configure#cluster-log-delivery">Cluster Event logs</a> provide a quick overview into important Cluster lifecycle events. The
-log are structured - Timestamp, Event Type and Details. Unfortunately, there is no native way to export
-logs to Log Analytics. Logs will have to be delivered to Log Analytics either using <a href="https://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/examples#cluster-log-example">REST API</a> or polled in the dbfs using Azure Functions.</p>
+log are structured - Timestamp, Event Type and Details. Unfortunately, there is no native way to export logs to Log Analytics. Logs will have to be delivered to Log Analytics either using <a href="https://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/examples#cluster-log-example">REST API</a> or polled in the dbfs using Azure Functions.</p>
 <h3 id="vm-performance-metrics-oms">VM Performance Metrics (OMS)</h3>
 <p><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/oms-linux">Log Analytics Agent</a> provides insights into the performance counters from the Cluster VMs and helps to understand the
-Cluster Utilization patters. Leveraging Linux OMX Agent to onboard VMs into Log Analytics, helps
-provide insights into the VM metrics, performance, inventory and syslog metrics. It is important to
+Cluster Utilization patters. Leveraging Linux OMX Agent to onboard VMs into Log Analytics, helps provide insights into the VM metrics, performance, inventory and syslog metrics. It is important to
 note that Linux OMS Agent is not specific to Azure Databricks.</p>
 <h3 id="application-logging">Application Logging</h3>
 <p>Of all the logs collected, this is perhaps the most important one. <a href="https://github.com/mspnp/spark-monitoring">Spark Monitoring library</a> collects metrics about the driver, executors, JVM, HDFS, cache
-shuffling, DAGs, and much more. This library provides helpful insights to fine-tune Spark jobs. It
-allows monitoring and tracing each layer within Spark workloads, including performance and resource
-usage on the host and JVM, as well as Spark metrics and application-level logging. The library also
-includes ready-made Grafana dashboards that is a great starting point for building Azure Databricks
+shuffling, DAGs, and much more. This library provides helpful insights to fine-tune Spark jobs. It allows monitoring and tracing each layer within Spark workloads, including performance and resource
+usage on the host and JVM, as well as Spark metrics and application-level logging. The library also includes ready-made Grafana dashboards that is a great starting point for building Azure Databricks
 dashboard.</p>
 <h3 id="logs-via-rest-api">Logs via REST API</h3>
 <p>Azure Databricks also provides <a href="https://learn.microsoft.com/en-us/azure/databricks/dev-tools/api/latest/">REST API</a> support. If there's any specific log data that is required, this data can be collected using the REST API calls.</p>
 <h3 id="nsg-flow-logs">NSG Flow Logs</h3>
 <p><a href="https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview">Network security group (NSG) flow logs</a> is a feature of Azure Network Watcher that allows you to log
-information about IP traffic flowing through an NSG. Flow data is sent to Azure Storage accounts from
-where you can access it as well as export it to any visualization tool, SIEM, or IDS of your choice.
-This log information is not specific to NSG Flow logs. This data can be used to identify unknown or
-undesired traffic and monitor traffic levels and/or bandwidth consumption. This is possible only with
+information about IP traffic flowing through an NSG. Flow data is sent to Azure Storage accounts from where you can access it as well as export it to any visualization tool, SIEM, or IDS of your choice.
+This log information is not specific to NSG Flow logs. This data can be used to identify unknown or undesired traffic and monitor traffic levels and/or bandwidth consumption. This is possible only with
 VNET-injected workspaces.</p>
 <h3 id="platform-logs">Platform Logs</h3>
-<p>Platform logs can be used to review provisioning/de-provisioning operations. This can be used  to
-review activity in Databricks managed resource group. It helps discover operations performed at
+<p>Platform logs can be used to review provisioning/de-provisioning operations. This can be used to review activity in Databricks managed resource group. It helps discover operations performed at
 subscription level (like provisioning of VM, Disk etc.)</p>
 <p>These logs can be enabled via Azure Monitor &gt; Activity Logs and shipped to Log Analytics.</p>
 <h3 id="ganglia-metrics">Ganglia metrics</h3>
-<p>Ganglia metrics is a Cluster Utilization UI and is available on the Azure Databricks. It is great for
-viewing live metrics of interactive clusters. Ganglia metrics is available by default and takes
-snapshot of usage every 15 minutes. Historical metrics are stored as .png files, making it impossible
-to analyze data.</p>
+<p>Ganglia metrics is a Cluster Utilization UI and is available on the Azure Databricks. It is great for viewing live metrics of interactive clusters. Ganglia metrics is available by default and takes
+snapshot of usage every 15 minutes. Historical metrics are stored as .png files, making it impossible to analyze data.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
       
     
   </small>

@@ -7617,9 +7617,9 @@
 <p>Similarly, we can verify that it's called 0 or multiple times. In the example below where we verify that it's not called if the file doesn't exist</p>
 <div class="highlight"><pre><span></span><code><span class="nd">@patch</span><span class="p">(</span><span class="s1">&#39;utils.os.path.isfile&#39;</span><span class="p">)</span>
 <span class="nd">@patch</span><span class="p">(</span><span class="s1">&#39;utils.pd.read_csv&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">test_load_data_doesnt_call_read_csv_if_not_exists</span><span class="p">(</span><span class="n">mock_isfile</span><span class="p">,</span> <span class="n">mock_read_csv</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">test_load_data_does_not_call_read_csv_if_not_exists</span><span class="p">(</span><span class="n">mock_isfile</span><span class="p">,</span> <span class="n">mock_read_csv</span><span class="p">):</span>
     <span class="c1"># arrange</span>
-    <span class="c1"># file doesnt exist</span>
+    <span class="c1"># file doesn&#39;t exist</span>
     <span class="n">utils</span><span class="o">.</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;file.csv&#39;</span>
 
@@ -7737,7 +7737,7 @@ However, the benefits of having simple tests for the ML model help to stop a poo
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 14, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
       
     
   </small>

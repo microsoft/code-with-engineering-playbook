@@ -7622,11 +7622,11 @@ az<span class="w"> </span>devops<span class="w"> </span>configure<span class="w"
 <span class="w">    </span><span class="c1"># get existing variables</span>
 <span class="w">    </span><span class="nv">var_list</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>pipelines<span class="w"> </span>variable-group<span class="w"> </span>variable<span class="w"> </span>list<span class="w"> </span>--group-id<span class="w"> </span><span class="si">${</span><span class="nv">group_id</span><span class="si">}</span><span class="k">)</span>
 
-<span class="w">    </span><span class="c1"># add temporary uuid variable (a variable group cannot be empty) </span>
+<span class="w">    </span><span class="c1"># add temporary uuid variable (a variable group cannot be empty)</span>
 <span class="w">    </span><span class="nv">uuid</span><span class="o">=</span><span class="k">$(</span>cat<span class="w"> </span>/proc/sys/kernel/random/uuid<span class="k">)</span>
 <span class="w">    </span>az<span class="w"> </span>pipelines<span class="w"> </span>variable-group<span class="w"> </span>variable<span class="w"> </span>create<span class="w"> </span>--group-id<span class="w"> </span><span class="si">${</span><span class="nv">group_id</span><span class="si">}</span><span class="w"> </span>--name<span class="w"> </span><span class="si">${</span><span class="nv">uuid</span><span class="si">}</span>
 
-<span class="w">    </span><span class="c1"># delete existing variables </span>
+<span class="w">    </span><span class="c1"># delete existing variables</span>
 <span class="w">    </span><span class="k">for</span><span class="w"> </span>row<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="si">${</span><span class="nv">var_list</span><span class="si">}</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;to_entries[] | &quot;\(.key)&quot;&#39;</span><span class="k">)</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 <span class="w">        </span>az<span class="w"> </span>pipelines<span class="w"> </span>variable-group<span class="w"> </span>variable<span class="w"> </span>delete<span class="w"> </span>--group-id<span class="w"> </span><span class="si">${</span><span class="nv">group_id</span><span class="si">}</span><span class="w"> </span>--name<span class="w"> </span><span class="si">${</span><span class="nv">row</span><span class="si">}</span><span class="w"> </span>--yes
 <span class="w">    </span><span class="k">done</span>
@@ -7716,7 +7716,7 @@ az<span class="w"> </span>devops<span class="w"> </span>configure<span class="w"
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
       
     
   </small>

@@ -7510,7 +7510,7 @@ The best way to authenticate to Azure services is by using a managed identity, b
 <h2 id="why-secrets-rotation">Why Secrets Rotation</h2>
 <p>Secrets are an asset and as such have a potential to be leaked or stolen. By rotating the secrets, we are revoking any secrets that may have been compromised. Therefore, secrets should be rotated frequently.</p>
 <h2 id="managed-identity">Managed Identity</h2>
-<p>Azure Managed identities are automatically issues by Azure in order to indentify individual resources, and can be used for authentication in place of secrets and passwords. The appeal in using Managed Identities is the elimination of management of secrets and credentials. They are not required on developers machines or checked into source control, and they don't need to be rotated. Managed identities are considered safer than the alternatives and is the recommended choice.</p>
+<p>Azure Managed identities are automatically issues by Azure in order to identify individual resources, and can be used for authentication in place of secrets and passwords. The appeal in using Managed Identities is the elimination of management of secrets and credentials. They are not required on developers machines or checked into source control, and they don't need to be rotated. Managed identities are considered safer than the alternatives and is the recommended choice.</p>
 <h2 id="applying-secrets-rotation">Applying Secrets Rotation</h2>
 <p>If Azure Managed Identity can't be used. This and the following sections will explain how rotation of secrets can be achieved:</p>
 <p>To promote frequent rotation of a secret - define an automated periodic secret rotation process.
@@ -7528,7 +7528,7 @@ The secret rotation process might result in a downtime when the application is r
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
       
     
   </small>

@@ -7487,9 +7487,9 @@
 </ul>
 <p>If a user ever makes a mistake, don't ask: "how could somebody possibly do that?", do ask: "how can we prevent this from happening in the future?"</p>
 <h2 id="autoscaling">Autoscaling</h2>
-<p>Whenever possible, leverage autoscaling for your deployments. Vertical autoscaling can scale your VM's by tuning parameters like CPU, disk, and RAM, while horizontal autoscaling can tune the number of running images backing your deployments. Autoscaling can help your system respond to inorganic growth in traffic, and prevent failing requests due to resource starvation.</p>
+<p>Whenever possible, leverage autoscaling for your deployments. Vertical autoscaling can scale your VMs by tuning parameters like CPU, disk, and RAM, while horizontal autoscaling can tune the number of running images backing your deployments. Autoscaling can help your system respond to inorganic growth in traffic, and prevent failing requests due to resource starvation.</p>
 <blockquote>
-<p>Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VM's backing each Pod however, may also need autoscaling to handle an increase in the number of Pods.</p>
+<p>Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VMs backing each Pod however, may also need autoscaling to handle an increase in the number of Pods.</p>
 </blockquote>
 <p>It should also be noted that the parameters that affect autoscaling can be difficult to tune. Typical metrics like CPU or RAM utilization, or request rate may not be enough. Sometimes you might want to consider custom metrics, like cache eviction rate.</p>
 <h2 id="load-shedding-dos-protection">Load shedding &amp; DOS Protection</h2>
@@ -7535,7 +7535,7 @@
 <h2 id="practice">Practice</h2>
 <p><a href="https://thinkmeta.net/2010/11/06/what-is-an-untested-dr-plan-worth/">None of the above recommendations will work if they are not tested</a>. Your backups are meaningless if you don't know how to mount them. Your cluster failover and other mitigations will regress over time if they are not tested. Here are some tips to test the above:</p>
 <h3 id="maintain-playbooks">Maintain Playbooks</h3>
-<p>No software service is complete without playbooks to navigate the devs through unfamiliar territory. Playbooks should be thorough and cover all known failure scenarios and mitigations.</p>
+<p>No software service is complete without playbooks to navigate the developers through unfamiliar territory. Playbooks should be thorough and cover all known failure scenarios and mitigations.</p>
 <h3 id="run-maintenance-exercises">Run maintenance exercises</h3>
 <p>Take the time to fabricate scenarios, and run a D&amp;D style campaign to solve your issues. This can be as elaborate as spinning up a new environment and injecting errors, or as simple as asking the "players" to navigate to a dashboard and describing would they would see in the fabricated scenario (small amounts of imagination required). The playbooks should <strong>easily</strong> navigate the user to the correct solution/mitigation. If not, update your playbooks.</p>
 <h3 id="chaos-testing">Chaos Testing</h3>

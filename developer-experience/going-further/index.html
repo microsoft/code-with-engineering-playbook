@@ -7555,7 +7555,7 @@
 <li>Linters for <a href="https://www.shellcheck.net/">bash</a> scripts,</li>
 <li>Etc...</li>
 </ul>
-<p>Linting files that are not <em>the source code</em> can ensure a common format with common rules for each developer. These checks should be also run in a <a href="https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp">Continuous Integration Pipeline</a>, but it is a good practice to run them prior opening a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Request</a>.</p>
+<p>Linting files that are not <em>the source code</em> can ensure a common format with common rules for each developer. These checks should be also run in a Continuous Integration Pipeline, but it is a good practice to run them prior opening a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Request</a>.</p>
 <h2 id="limitation-of-custom-tools">Limitation of custom tools</h2>
 <p>If you decide to include <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli">Azure-cli</a> in your Dev Container, developers will be able to run commands against their tenant. However, to make the developers' lives easier, we could go further by letting them prefill their connection information, such as the <code>tenant ID</code> and the <code>subscription ID</code> in a secure and persistent way (do not forget that your Dev Container, being a <a href="https://www.docker.com/">Docker</a> container, might get deleted, or the image could be rebuilt, hence, all customization <em>inside</em> will be lost).</p>
 <p>One way to achieve this is to leverage environment variables, with untracked <code>.env</code> file part of the solution being injected in the Dev Container.</p>
@@ -7709,7 +7709,7 @@ However, the latest Mac architecture (Apple M1/Silicon) being ARM64, means that 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 18, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
       
     
   </small>
