@@ -113,7 +113,17 @@ By default, we use the following overrides should be added to the VS Code config
     "prettier.tabWidth": 4
 }
 ```
+## Setting Up Testing
 
+Playwright is highly recommended to be set up within a project. its an open source testing suite created by Microsoft. 
+
+To install it use this command:
+
+```bash
+npm install playwright
+```
+
+Since playwright shows the tests in the browser you have to choose which browser you want it to run if unless using chrome, which is the default. You can do this by
 ## Build Validation
 
 To automate this process in Azure Devops you can add the following snippet to your pipeline definition yaml file. This will lint any scripts in the `./scripts/` folder.
@@ -143,12 +153,12 @@ As an alternative [husky](https://github.com/typicode/husky) can be considered t
 
 In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these JavaScript and TypeScript specific code review items.
 
-### Javascript
+### Javascript / Typescript Checklist
 
 * [ ] Does the code stick to our formatting and code standards? Does running prettier and ESLint over the code should yield no warnings or errors respectively?
 * [ ] Does the change re-implement code that would be better served by pulling in a well known module from the ecosystem?
 * [ ] Is `"use strict";` used to reduce errors with undeclared variables?
-* [ ] Are unit tests used where possible, also for APIs? [Ponicode](https://www.ponicode.com/) can help with test generation. Ponicode creates test files using Jest syntax.
+* [ ] Are unit tests used where possible, also for APIs?
 * [ ] Are tests arranged correctly with the **Arrange/Act/Assert** pattern and properly documented in this way?
 * [ ] Are best practices for error handling followed, as well as `try catch finally` statements?
 * [ ] Are the `doWork().then(doSomething).then(checkSomething)` properly followed for async calls, including `expect`, `done`?
@@ -157,19 +167,9 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
 * [ ] Is a minimum level of logging in place? Are the logging levels used sensible?
 * [ ] Is document fragment manipulation limited to when you need to manipulate multiple sub elements?
-
-### TypeScript
-
-* [ ] Does the code stick to our formatting and code standards? Does running prettier and ESLint over the code should yield no warnings or errors respectively?
-* [ ] Does the change re-implement code that would be better served by pulling in a well known module from the ecosystem?
 * [ ] Does TypeScript code compile without raising linting errors?
 * [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
 * [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why it is there. If the number is repetitive, is there a constant/enum or equivalent?
 * [ ] Is there a proper `/* */` in the various classes and methods?
-* [ ] Are unit tests used where possible? In most cases, tests should be present for APIs, interfaces with data access, transformation, backend elements and models. [Ponicode](https://www.ponicode.com/) can help with test generation. Ponicode creates test files using Jest syntax.
-* [ ] Are tests arranged correctly with the **Arrange/Act/Assert** pattern and properly documented in this way?
-* [ ] If there is an asynchronous method, does the name of the method end with the `Async` suffix?
-* [ ] Is a minimum level of logging in place? Is the logging level is the right one?
-* [ ] Is document fragment manipulation limited to when you need to manipulate multiple sub elements?
 * [ ] Are heavy operations implemented in the backend, leaving the controller as thin as possible?
 * [ ] Is event handling on the html efficiently done?
