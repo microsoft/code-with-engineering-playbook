@@ -9,7 +9,7 @@ Secrets are an asset and as such have a potential to be leaked or stolen. By rot
 
 ## Managed Identity
 
-Azure Managed identities are automatically issues by Azure in order to indentify individual resources, and can be used for authentication in place of secrets and passwords. The appeal in using Managed Identities is the elimination of management of secrets and credentials. They are not required on developers machines or checked into source control, and they don't need to be rotated. Managed identities are considered safer than the alternatives and is the recommended choice.
+Azure Managed identities are automatically issues by Azure in order to identify individual resources, and can be used for authentication in place of secrets and passwords. The appeal in using Managed Identities is the elimination of management of secrets and credentials. They are not required on developers machines or checked into source control, and they don't need to be rotated. Managed identities are considered safer than the alternatives and is the recommended choice.
 
 ## Applying Secrets Rotation
 

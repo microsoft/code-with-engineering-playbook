@@ -2,7 +2,7 @@
 
 ## Goals
 
-In software engineering projects, important characteristics of the system providing for necessary e.g., testability, reliability, scalability, observability, securability, manageability are best considered as first-class citizens in the requirements gathering process.
+In software engineering projects, important characteristics of the system providing for necessary e.g., testability, reliability, scalability, observability, security, manageability are best considered as first-class citizens in the requirements gathering process.
 By defining these non-functional requirements in detail early in the engagement, they can be properly evaluated when the cost of their impact on subsequent design decisions is comparatively low.
 
 To support the process of capturing a project's _comprehensive_ non-functional requirements, this document offers a taxonomy for non-functional requirements and provides a framework for their identification, exploration, assignment of customer stakeholders, and eventual codification into formal engineering requirements as input to subsequent solution design.

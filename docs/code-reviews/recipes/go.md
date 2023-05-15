@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers follow the [Effective Go](https://golang.org/doc/effective_go.html) Style Guide.
+Developers should follow the [Effective Go](https://golang.org/doc/effective_go.html) Style Guide.
 
 ## Code Analysis / Linting
 
@@ -16,7 +16,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 #### go vet
 
-`go vet` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. [CSE](../../CSE.md) Go code should be able to build with no `go vet` errors. This will be part of vscode-go extension.
+`go vet` is a static analysis tool that checks for common go errors, such as incorrect use of range loop variables or misaligned printf arguments. Go code should be able to build with no `go vet` errors. This will be part of vscode-go extension.
 
 #### golint
 
@@ -157,7 +157,7 @@ steps:
 
 ## Code Review Checklist
 
-The Go language team maintains a list of common [Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments) for go that form the basis for a solid checklist for a team working in Go that should be followed in addition to the [CSE Code Review Checklist](../process-guidance/reviewer-guidance.md)
+The Go language team maintains a list of common [Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments) for go that form the basis for a solid checklist for a team working in Go that should be followed in addition to the [ISE Code Review Checklist](../process-guidance/reviewer-guidance.md)
 
 * [ ] Does this code [handle errors](https://golang.org/doc/effective_go.html#errors) correctly? This includes not throwing away errors with `_` assignments and returning errors, instead of [in-band error values](https://github.com/golang/go/wiki/CodeReviewComments#in-band-errors)?
 * [ ] Does this code follow Go standards for method [receiver types](https://github.com/golang/go/wiki/CodeReviewComments#receiver-type)?

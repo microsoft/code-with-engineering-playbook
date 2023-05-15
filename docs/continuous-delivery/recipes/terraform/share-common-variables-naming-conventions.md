@@ -211,7 +211,7 @@ Terraform will perform the following actions:
       + sku_tier                            = "Free"
 
       [...] truncated
-      
+
       + default_node_pool {
           + kubelet_disk_type    = (known after apply)
           + max_pods             = (known after apply)

@@ -1,8 +1,8 @@
 # Contributing
 
-Demonstrating Engineering Fundamentals is core to what we do at CSE and is one of the primary values we bring to our customers, helping them to level up while collaborating on their business scenarios.
+Demonstrating Engineering Fundamentals is core to what we do in ISE and is one of the primary values we bring to our customers, helping them to level up while collaborating on their business scenarios.
 
-The purpose of this repo is to provide guidance to CSE Dev Crews with regards to engineering fundamentals. It describes recommended practices based on continuous project learnings in different areas. It can be used as a tool at the beginning of an engagement that can be shared with customers to help set the project up for success. This repo is *not* intended as a code repo, instead it provides guidance and links to appropriate sample code repos that represent good examples.
+The purpose of this repo is to provide guidance to ISE software engineers and data scientists (together forming a Dev Crew) with regards to engineering fundamentals. It describes recommended practices based on continuous project learnings in different areas. It can be used as a tool at the beginning of an engagement that can be shared with customers to help set the project up for success. This repo is *not* intended as a code repo, instead it provides guidance and links to appropriate sample code repos that represent good examples.
 
 This project welcomes contributions and suggestions.
 
@@ -44,7 +44,7 @@ When you submit a pull request, a CLA-bot will automatically determine whether y
 comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com] (mailto:opencode@microsoft.com) with any additional questions or comments.
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ### Permissions & Contributions
 
@@ -56,9 +56,9 @@ If you are not a regular contributor to the project, but you would like to contr
 - **Periodic and regular contributions:** \
 If you plan to update the content semi-regularly or regularly, you can be added to the project's Contributors group. Please contact one of the [maintainers](#maintainers) to be added to the group. You will still need to submit a PR against main in order to merge your changes.
 
-> NOTE: You need to be part of the `Microsoft organization` in GitHub to be added to the contributors group. You need to be also part of the `Microsoft/code-with-engineering-playbook-collaborators teams` in github. 
+> NOTE: You need to be part of the `Microsoft organization` in GitHub to be added to the contributors group. You need to be also part of the `Microsoft/code-with-engineering-playbook-collaborators teams` in github.
 
-Since this is not considered an internal Microsoft github repo, you cannot use the microsoft github alias for commiting changes. You have to use your personal github account which is linked to Microsoft account. If you use the microsoft github account, you will see this error while trying to create a PR - **"You cannot contribute to repositories outside of your enterprise `Microsoft EMU`"**. 
+Since this is not considered an internal Microsoft github repo, you cannot use the microsoft github alias for committing changes. You have to use your personal github account which is linked to Microsoft account. If you use the microsoft github account, you will see this error while trying to create a PR - **"You cannot contribute to repositories outside of your enterprise `Microsoft EMU`"**.
 
 ### Submitting a PR
 

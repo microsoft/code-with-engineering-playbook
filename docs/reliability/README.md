@@ -1,6 +1,6 @@
 # Reliability
 
-All the other CSE Eng Fundamentals work towards a more reliable infrastructure. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.
+All the other ISE Engineering Fundamentals work towards a more reliable infrastructure. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.
 
 However, there are some additional steps we can take, that don't neatly fit into the previous categories, to help ensure a more reliable solution. We'll explore these below.
 
@@ -18,9 +18,9 @@ If a user ever makes a mistake, don't ask: "how could somebody possibly do that?
 
 ## Autoscaling
 
-Whenever possible, leverage autoscaling for your deployments. Vertical autoscaling can scale your VM's by tuning parameters like CPU, disk, and RAM, while horizontal autoscaling can tune the number of running images backing your deployments. Autoscaling can help your system respond to inorganic growth in traffic, and prevent failing requests due to resource starvation.
+Whenever possible, leverage autoscaling for your deployments. Vertical autoscaling can scale your VMs by tuning parameters like CPU, disk, and RAM, while horizontal autoscaling can tune the number of running images backing your deployments. Autoscaling can help your system respond to inorganic growth in traffic, and prevent failing requests due to resource starvation.
 
-> Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VM's backing each Pod however, may also need autoscaling to handle an increase in the number of Pods.
+> Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VMs backing each Pod however, may also need autoscaling to handle an increase in the number of Pods.
 
 It should also be noted that the parameters that affect autoscaling can be difficult to tune. Typical metrics like CPU or RAM utilization, or request rate may not be enough. Sometimes you might want to consider custom metrics, like cache eviction rate.
 
@@ -73,7 +73,7 @@ We can build graceful failure (or graceful degradation) into our software stack 
 
 ### Maintain Playbooks
 
-No software service is complete without playbooks to navigate the devs through unfamiliar territory. Playbooks should be thorough and cover all known failure scenarios and mitigations.
+No software service is complete without playbooks to navigate the developers through unfamiliar territory. Playbooks should be thorough and cover all known failure scenarios and mitigations.
 
 ### Run maintenance exercises
 
@@ -90,6 +90,7 @@ Leverage automated chaos testing to see how things break. You can read this play
 * Many services meshes, like [Linkerd](https://linkerd.io/2/features/fault-injection/), offer fault injection tooling through the use of their sidecars.
 * [Chaos Mesh](https://github.com/chaos-mesh/chaos-mesh)
 * [Simmy](https://github.com/Polly-Contrib/Simmy) - A .NET library for chaos testing and fault injection integrated with the [Polly](https://github.com/App-vNext/Polly) library for resilience engineering.
+[This ISE dev blog post](https://devblogs.microsoft.com/cse/2023/03/07/build-test-resilience-dotnet-functions/) provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.
 
 ## Analyze all Failures
 

@@ -94,14 +94,15 @@ Disadvantages:
 - The [Kubernetes Secret containing the service principal credentials](https://azure.github.io/secrets-store-csi-driver-provider-azure/docs/configurations/identity-access-modes/service-principal-mode/) need to be created as a secret in the same namespace as the application pod. If pods in multiple namespaces need to use the same SP to access Key Vault, this Kubernetes Secret needs to be created in each namespace.
 - The GitOps repo must contain the name of the Key Vault within the SecretProviderClass
 - Must mount secrets as volumes to allow syncing into Kubernetes Secrets
-- [Missing disconnected scenario support](https://github.com/kubernetes-sigs/secrets-store-csi-driver/issues/446): When the node is offline the SSCSID fails to fetch the secret and thus mounting the volume fails, making scaling and restarting pods not possible while being offline
 - Uses more resources (4 pods; CSI Storage driver and provider) and is a daemonset - not test on RPS / resource usage
 
 ### [External Secrets Operator with Azure Key Vault](https://external-secrets.io/)
 
 The External Secrets Operator (ESO) is an open-sourced Kubernetes operator that can read secrets from external secret stores (e.g., Azure Key Vault) and sync those into Kubernetes Secrets. In contrast to the CSI Driver, the ESO controller creates the secrets on the cluster as K8s secrets, instead of mounting them as volumes to pods.
 
-Docs on using ESO Azure Key vault provider [here](https://external-secrets.io/v0.4.4/provider-azure-key-vault/).
+Docs on using ESO Azure Key vault provider [here](https://external-secrets.io/v0.8.1/provider/azure-key-vault/).
+
+ESO will need access to Azure Key Vault either through the use of a service principal or managed identity (via [Azure AD Workload Identity](https://github.com/Azure/azure-workload-identity)(recommended) or [AAD Pod Identity](https://github.com/Azure/aad-pod-identity)).
 
 Advantages:
 

@@ -6,7 +6,7 @@ In the case of Power Platform products, the adoption of a CI/CD process may seem
 
 ## Environments in Power Platform Solutions
 
-Environments are spaces where Power Platform Solutions exists. They store, manage and share everything related to the solution like data, apps, chatbots, flows and models. They also serve as containers to separate apps that might have different roles, security requirements or just target audiences. They can be used to create different stages of the solution development process, the expected model of working with environments in a CI/CD process will be as the following image suggests.
+Environments are spaces where Power Platform Solutions exists. They store, manage and share everything related to the solution like data, apps, chat bots, flows and models. They also serve as containers to separate apps that might have different roles, security requirements or just target audiences. They can be used to create different stages of the solution development process, the expected model of working with environments in a CI/CD process will be as the following image suggests.
 
 ![image](../images/environments.png)
 
