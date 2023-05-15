@@ -99,7 +99,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
    To test and see how these endpoints are running you can attach your local blob storage to the [**Azure Storage Explorer**](https://azure.microsoft.com/en-us/features/storage-explorer/).
 
-1. Create a virtual python environment  
+1. Create a virtual python environment
    `python -m venv .venv`
 
 1. Container name and initialize env variables: Use conftest.py for test integration.
@@ -122,7 +122,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
    **Note: value for `STORAGE_CONNECTION_STRING` is default value for Azurite, it's not a private key*
 
-1. Install the dependencies  
+1. Install the dependencies
 
     `pip install -r requirements_tests.txt`
 
