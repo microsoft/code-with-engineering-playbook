@@ -51,6 +51,7 @@
     "autorest",
     "azdo",
     "azurewebsites",
+    "Actix",
 
     "BYOK",
     "Bekso",
@@ -95,6 +96,7 @@
     "Craftspersonship",
     "Customizabile",
     "currentuser",
+    "classdiagram",
 
     "Dodd's",
     "DARPA",
@@ -132,6 +134,8 @@
     "dpkg",
     "drawio",
     "dsjson",
+    "daemonset",
+    "dockerconfigjson",
 
     "EUII",
     "Energinet",
@@ -202,6 +206,7 @@
     "ipython",
     "isfile",
     "issecret",
+    "IPAM",
 
     "Javadoc",
     "jsonnet",
@@ -341,6 +346,7 @@
     "pyrpoject",
     "pytest",
     "pythonic",
+    "PAAS",
 
     "Qube",
     "OTLP",
@@ -397,6 +403,7 @@
     "sublicensable",
     "summarise",
     "superfences",
+    "subresource",
 
     "TFHE",
     "TLDR",
@@ -461,6 +468,7 @@
     "winget",
     "workstream",
     "worspace",
+    "whoan",
 
     "Zipkin",
     "Zwemer",
