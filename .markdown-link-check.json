@@ -23,7 +23,8 @@
     {"pattern": "^https://www.perfecto.io/"},
     {"pattern": "^https://www.ranorex.com/free-trial/"},
     {"pattern": "^https://argo-cd.readthedocs.io/"},
-    {"pattern": "^http://pytest.org/"}
+    {"pattern": "^http://pytest.org/"},
+    {"pattern": "^http://code.visualstudio.com/"}
   ],
   "httpHeaders": [
     {
