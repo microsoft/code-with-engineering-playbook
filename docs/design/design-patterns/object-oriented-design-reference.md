@@ -6,6 +6,5 @@ In particular, object-oriented design patterns are well-established in the indus
 
 Please refer to the following resources to create strong object-oriented designs:
 
-* [Class Diagram Overview](https://agilemodeling.com/artifacts/classdiagram.html)
 * [Design Patterns Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns)
 * [Object Oriented Design Website](https://www.oodesign.com/)
