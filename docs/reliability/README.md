@@ -18,9 +18,9 @@ If a user ever makes a mistake, don't ask: "how could somebody possibly do that?
 
 ## Autoscaling
 
-Whenever possible, leverage autoscaling for your deployments. Vertical autoscaling can scale your VM's by tuning parameters like CPU, disk, and RAM, while horizontal autoscaling can tune the number of running images backing your deployments. Autoscaling can help your system respond to inorganic growth in traffic, and prevent failing requests due to resource starvation.
+Whenever possible, leverage autoscaling for your deployments. Vertical autoscaling can scale your VMs by tuning parameters like CPU, disk, and RAM, while horizontal autoscaling can tune the number of running images backing your deployments. Autoscaling can help your system respond to inorganic growth in traffic, and prevent failing requests due to resource starvation.
 
-> Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VM's backing each Pod however, may also need autoscaling to handle an increase in the number of Pods.
+> Note: In environments like K8s, both horizontal and vertical autoscaling are offered as a native solution. The VMs backing each Pod however, may also need autoscaling to handle an increase in the number of Pods.
 
 It should also be noted that the parameters that affect autoscaling can be difficult to tune. Typical metrics like CPU or RAM utilization, or request rate may not be enough. Sometimes you might want to consider custom metrics, like cache eviction rate.
 
@@ -73,7 +73,7 @@ We can build graceful failure (or graceful degradation) into our software stack 
 
 ### Maintain Playbooks
 
-No software service is complete without playbooks to navigate the devs through unfamiliar territory. Playbooks should be thorough and cover all known failure scenarios and mitigations.
+No software service is complete without playbooks to navigate the developers through unfamiliar territory. Playbooks should be thorough and cover all known failure scenarios and mitigations.
 
 ### Run maintenance exercises
 
