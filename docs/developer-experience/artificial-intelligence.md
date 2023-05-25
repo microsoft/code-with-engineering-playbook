@@ -32,7 +32,7 @@ This extention for Copilot is currently in technical preview. It will enable the
 - __Write Code__. Given prompting by the developer it can write code that you can one-click deploy into existing or new files.
 - __Debug__. Copilot can analyze your code and propose solutions to fix bugs.
 
-It can do most of what Labs can do with "brushes" as "topics", but whereas Labs changes the code in your file, the chat functionality just shows what it would change in the window.
+It can do most of what Labs can do with "brushes" as "topics", but whereas Labs changes the code in your file, the chat functionality just shows what it would change in the window. However, there is also an "inline mode" for GitHub Copilot Chat that allows you to make changes to your code inline which does not have this same limitation.
 
 You must sign-up for the preview [here](https://github.com/features/preview/copilot-x). Once you are accepted, you will be able to install the extension from the VS Code Marketplace. You may require the Insiders build of VS Code.
 
