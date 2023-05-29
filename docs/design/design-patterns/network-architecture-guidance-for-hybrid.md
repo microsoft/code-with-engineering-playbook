@@ -8,13 +8,13 @@ The following are best practices around how to design and configure resources, u
 
 The hub-and-spoke topology doesn't change much when using cloud/hybrid if configured correctly, The main different is that the hub VNet is peering to the on-prem network via a ExpressRoute and that all traffic from Azure might exit via the ExpressRoute and the on-prem internet connection.
 
-The generalized best practices are in  [Network Architecture Guidance for Azure#Hub and Spoke topology](../network-architecture-guidance-for-azure/readme.md#hub-and-spoke-topology)
+The generalized best practices are in  [Network Architecture Guidance for Azure#Hub and Spoke topology](network-architecture-guidance-for-azure.md#hub-and-spoke-topology)
 
 ### IP Allocation
 
 When working with Hybrid deployment, take extra care when planning IP allocation as there is a much greater risk of overlapping network ranges.
 
-The general best practices are available in the [Network Architecture Guidance for Azure#ip-allocation](../network-architecture-guidance-for-azure/readme.md#ip-allocation)
+The general best practices are available in the [Network Architecture Guidance for Azure#ip-allocation](network-architecture-guidance-for-azure.md#ip-allocation)
 
 Read more about this in [Azure Best Practices Plan for IP Addressing](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
 
@@ -30,7 +30,7 @@ Monitoring: Use Azure Monitor and Network Performance Monitor (NPM) to monitor t
 
 ### DNS
 
-General best practices are available in [Network Architecture Guidance for Azure#dns](../network-architecture-guidance-for-azure/readme.md#dns)
+General best practices are available in [Network Architecture Guidance for Azure#dns](network-architecture-guidance-for-azure.md#dns)
 
 When using Azure DNS in a hybrid or multi-cloud environment it is important to ensure a consistent DNS and forwarding configuration which ensures that records are automatically updated and that all DNS servers are aware of each other and know which server is the authoritative for the different records.
 
@@ -38,4 +38,4 @@ Read more about [Hybrid/Multi-Cloud DNS infrastructure](https://learn.microsoft.
 
 ### Resource Allocation
 
-For resource allocation the best practices from [Cloud Resource Design Guidance](../cloud-resource-design-guidance/README.md) should be followed.
+For resource allocation the best practices from [Cloud Resource Design Guidance](cloud-resource-design-guidance.md) should be followed.

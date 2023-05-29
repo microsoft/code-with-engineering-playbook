@@ -115,7 +115,7 @@ By default, we use the following overrides should be added to the VS Code config
 ```
 ## Setting Up Testing
 
-Playwright is highly recommended to be set up within a project. its an open source testing suite created by Microsoft. 
+Playwright is highly recommended to be set up within a project. its an open source testing suite created by Microsoft.
 
 To install it use this command:
 

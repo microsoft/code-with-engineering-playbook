@@ -62,4 +62,4 @@ Read more at [azure-best-practices/plan-for-ip-addressing](https://learn.microso
 
 ### Resource Allocation
 
-For resource allocation the best practices from [Cloud Resource Design Guidance](../cloud-resource-design-guidance/README.md) should be followed.
+For resource allocation the best practices from [Cloud Resource Design Guidance](cloud-resource-design-guidance.md) should be followed.
