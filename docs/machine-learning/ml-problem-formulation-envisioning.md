@@ -155,7 +155,5 @@ Below are the links to the exit document template and to some questions which ma
 Many of the ideas presented here - and much more - were inspired by, and can be found in the following resources; all of which are highly recommended.
 
 1. [Aurélien Géron's Machine learning project checklist](https://github.com/ageron/handson-ml/blob/master/ml-project-checklist.md)
-
 2. [Fast.ai's Data project checklist](https://www.fast.ai/2020/01/07/data-questionnaire)
-
 3. [Designing great data products. Jeremy Howard, Margit Zwemer and Mike Loukides](https://www.oreilly.com/radar/drivetrain-approach-data-products/)

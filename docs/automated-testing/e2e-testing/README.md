@@ -12,7 +12,7 @@ In many commercial software application scenarios, a modern software system cons
 
 ![E2E Testing Pyramid](./images/testing-pyramid.png)
 
-The above illustration is a testing pyramid from [Kent C. Dodd’s blog](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c) which is a combination of the pyramids from [Martin Fowler’s blog](https://martinfowler.com/bliki/TestPyramid.html) and the [Google Testing Blog](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html).
+The above illustration is a testing pyramid from [Kent C. Dodd's blog](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c) which is a combination of the pyramids from [Martin Fowler’s blog](https://martinfowler.com/bliki/TestPyramid.html) and the [Google Testing Blog](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html).
 
 The majority of your tests are at the bottom of the pyramid. As you move up the pyramid, the number of tests gets smaller. Also, going up the pyramid, tests get slower and more expensive to write, run, and maintain. Each type of testing vary for its purpose, application and the areas it's supposed to cover. For more information on comparison analysis of different testing types, please see this [## Unit vs Integration vs System vs E2E Testing](../README.md) document.
 
@@ -137,7 +137,7 @@ Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ra
 
 **Ranorex Studio** tests also integrate with Azure DevOps (AzDO), which can be run as part of a build pipeline in AzDO.
 
-[Ranorex Studio Website](https://www.ranorex.com/free-trial/?utm_source=Google&utm_medium=cpc&utm_id=7015a000001ohs3AAA&utm_campaign=14484569941&utm_source=g_c&utm_medium=cpc&utm_content=588982669352&utm_term=p_ranorex%20studio&adgroupid=132316228251&gclid=EAIaIQobChMIsoqzgdzD-AIVygMGAB1pHQrpEAAYASAAEgKed_D_BwE)
+[Ranorex Studio Website](https://www.ranorex.com/free-trial)
 
 ### 5. Katalon Studio
 
@@ -166,7 +166,6 @@ BugBug is an interesting alternative to Selenium because it's actually a complet
 The biggest advantage of BugBug is its user-friendliness. Most tests created with BugBug simply work out of the box. This makes it easier for non-technical people to maintain tests - with BugBug you can save money on hiring a QA engineer.
 
 [BugBug Website](https://bugbug.io?utm_source=microsoft_github&utm_medium=referral)
-
 
 ## Conclusion
 

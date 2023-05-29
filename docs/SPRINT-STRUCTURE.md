@@ -6,7 +6,7 @@ The purpose of this document is to:
 - Provide content in a logical structure which reflects the engineering process
 - Extensible hierarchy to allow teams to share deep subject-matter expertise
 
-## The first week of a CSE Project
+## The first week of an ISE Project
 
 ### Before starting the project
 
@@ -20,7 +20,7 @@ The purpose of this document is to:
   - Add [README.md](resources/templates/README.md), [LICENSE](resources/templates/LICENSE), [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md), .gitignore, etc
 - [ ] [Build a Product Backlog](agile-development/advanced-topics/backlog-management/README.md)
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
-  - [INVEST](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) in good User Stories and Acceptance Criteria
+  - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
   - [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md)
 
 ### Day 1
@@ -35,12 +35,12 @@ The purpose of this document is to:
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
 - [ ] [Decide on branch naming](source-control/naming-branches.md)
-- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/secrets-management/recipes/azure-devops/secrets-per-branch.md)
+- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/azure-devops/secret-management-per-branch.md)
 
 ### Day 2
 
 - [ ] [Set up Source Control](source-control/README.md)
-  - Agree on [best practices for commits](source-control/README.md#commit-best-practices)
+  - Agree on [best practices for commits](source-control/git-guidance/README.md#commit-best-practices)
 - [ ] [Set up basic Continuous Integration with linters and automated tests](continuous-integration/README.md)
 - [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/core-expectations/README.md)
   - Discuss purpose, goals, participants and facilitation guidance

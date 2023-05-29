@@ -1,4 +1,4 @@
-# Overview
+# Postman Testing
 
 This purpose of this document is to provide guidance on how to use Newman in your CI/CD pipeline to run End-to-end (E2E) tests defined in Postman Collections while following security best practices.
 
@@ -95,7 +95,7 @@ Starting with this approach has the following upsides:
 - You've set yourself up for the beginning stages of an E2E postman collection by aggregating the collections into a single file and using environment files to make it easier to switch environments.
 - Token is refreshed automatically on every call in the collection. This saves you time normally lost from manually having to request a token that expired.
 - Grants QA/Dev granular control of submitting combinations of input data per endpoint.
-- Grants devs a common experience via Postman IDE features.
+- Grants developers a common experience via Postman IDE features.
 
 Ending with this approach has the following downsides:
 

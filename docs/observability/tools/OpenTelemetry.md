@@ -20,7 +20,6 @@ However, understanding the core implementation patterns will help you know what 
 * Manual tracing: This must be done by coding using the OpenTelemetry SDK, managing the `tracer` objects to obtain Spans, and forming instrumented OpenTelemetry Scopes to identify the code segments to be manually traced. Also, by using the @WithSpan annotations (method decorations in C# and [Java](https://opentelemetry.io/docs/instrumentation/java/automatic/annotations/#creating-spans-around-methods-with-withspan)) to mark whole methods that will be automatically traced.
 * Hybrid approach: Most Production-ready scenarios will require a mix of both techniques, using the automatic instrumentation to collect automatic telemetry and the OpenTelemetry SDK to identify code segments that are important to instrument manually. When considering production-ready scenarios, the hybrid approach is the way to go as it allows for a throughout cover over the whole solution. It provides automatic context propagation and events correlation out of the box.
 
-
 ### Collector
 
 ![Collectors option](../images/collectors.png)
@@ -58,7 +57,7 @@ It enables tracing, metrics, and logging telemetry through a set of single-distr
 
 ![Context Propagation](../images/newarchitecture.png)
 
-Moreover, avoiding any proprietary lockdown and achieving vendor-agnostic neutrality for tracing, monitoring, and logging APIs AND backends allow maximum portability and extensibility patterns.
+Moreover, avoiding any proprietary lock down and achieving vendor-agnostic neutrality for tracing, monitoring, and logging APIs AND backends allow maximum portability and extensibility patterns.
 
 Another good reason to use OpenTelemetry would be whether the stack uses OpenCensus or OpenTracing. As OpenCensus and OpenTracing have carved the way for OpenTelemetry, it makes sense to introduce OpenTelemetry where OpenCensus or OpenTracing is used as it still has backward compatibility.
 
@@ -88,11 +87,11 @@ This scenario uses the OpenTelemetry SDK as the core instrumentation library. Ba
 
 ### Using the Application Insights Agent Jar file - Java only
 
-Java OpenTelemetry instrumentation provides another way to integrate with Azure Monitor, by using [Applications Insights Java Agent jar](https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent).
+Java OpenTelemetry instrumentation provides another way to integrate with Azure Monitor, by using [Applications Insights Java Agent jar](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent).
 
 When configuring this option, the Applications Insights Agent file is added when executing the application. The `applicationinsights.json` configuration file must be also be added as part of the applications artifacts. Pay close attention to the preview section, where the `"openTelemetryApiSupport": true,` property is set to true, enabling the agent to intercept OpenTelemetry telemetry created in the application code pushing it to Azure Monitor.
 
-OpenTelemetry Java Agent instrumentation supports many [libraries and frameworks and application servers](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#supported-libraries-frameworks-application-servers-and-jvms). Application Insights Java Agent [enhances](https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent#auto-instrumentation) this list.
+OpenTelemetry Java Agent instrumentation supports many [libraries and frameworks and application servers](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#supported-libraries-frameworks-application-servers-and-jvms). Application Insights Java Agent [enhances](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent#auto-instrumentation) this list.
 Therefore, the main difference between running the OpenTelemetry Java Agent vs. the Application Insights Java Agent is demonstrated in the amount of traces getting logged in Azure Monitor. When running with Application Insights Java agent there's more telemetry getting pushed to Azure Monitor. On the other hand, when running the solution using the Application Insights agent mode, it is essential to highlight that nothing gets logged on Jaeger (or any other OpenTelemetry exporter). All traces will be pushed exclusively to Azure Monitor. However, both manual instrumentation done via the OpenTelemetry SDK and all automatic traces, dependencies, performance counters, and metrics being instrumented by the Application Insights agent are sent to Azure Monitor. Although there is a rich amount of additional data automatically instrumented by the Application Insights agent, it can be deduced that it is not necessarily OpenTelemetry compliant. Only the traces logged by the manual instrumentation using the OpenTelemetry SDK are.
 
 #### OpenTelemetry vs Application Insights agents compared
@@ -137,11 +136,11 @@ to the collector web server. Using mocking servers libraries (eg. MockServer or 
 
 * [OpenTelemetry Java SDK](https://github.com/open-telemetry/opentelemetry-java)
 
-* [Manual Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/manual-instrumentation.md)
+* [Manual Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation#manually-instrumenting)
 
 * [OpenTelemetry Instrumentation Agent for Java](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
 
-* [Application Insights Java Agent](https://docs.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent)
+* [Application Insights Java Agent](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent)
 
 * [Azure Monitor OpenTelemetry Exporter client library for Java](https://github.com/Azure/azure-sdk-for-java/tree/3f31d68eed6fbe11516ca3afe3955c8840a6e974/sdk/monitor/azure-monitor-opentelemetry-exporter)
 

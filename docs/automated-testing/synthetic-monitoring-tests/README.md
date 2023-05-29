@@ -81,10 +81,11 @@ Most key monitoring/APM players have an enterprise product that supports synthet
 
 Some organizations prefer running probes on existing infrastructure using known tools such as [Postman](https://www.postman.com/), [Wrk](https://github.com/wg/wrk), [JMeter](https://jmeter.apache.org/), [Selenium](https://www.selenium.dev/) or even custom code to generate the synthetic data. Such solutions must account for isolating and decoupling the probe's production environment from the core product's as well as provide monitoring, geo-distribution, and maintaining test health.
 
-- [Application Insights availability](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability) - Simple availability tests that allow some customization using [Multi-step web test](https://docs.microsoft.com/en-us/azure/azure-monitor/app/availability-multistep)
+- [Application Insights availability](https://learn.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability) - Simple availability tests that allow some customization using [Multi-step web test](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability-multistep)
 - [DataDog Synthetics](https://www.datadoghq.com/dg/apm/synthetics/api-test/)
 - [Dynatrace Synthetic Monitoring](https://www.dynatrace.com/platform/synthetic-monitoring/)
 - [New Relic Synthetics](https://newrelic.com/products/synthetics)
+- [Checkly](https://checklyhq.com)
 
 ## Conclusion
 
@@ -94,5 +95,5 @@ When developing a PaaS/SaaS solution, Synthetic monitoring is key to the success
 ## Resources
 
 - [Google SRE book - Testing Reliability](https://landing.google.com/sre/sre-book/chapters/testing-reliability/)
-- [Microsoft DevOps Architectures - Shift Right to Test in Production](https://docs.microsoft.com/en-us/devops/deliver/shift-right-test-production)
+- [Microsoft DevOps Architectures - Shift Right to Test in Production](https://learn.microsoft.com/en-us/devops/deliver/shift-right-test-production)
 - [Martin Fowler - Synthetic Monitoring](https://martinfowler.com/bliki/SyntheticMonitoring.html)

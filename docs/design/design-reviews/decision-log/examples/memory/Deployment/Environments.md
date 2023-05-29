@@ -1,6 +1,6 @@
 # Application Deployment
 
-The Memory application leverages [Azure DevOps](https://docs.microsoft.com/en-gb/azure/devops/index?view=azure-devops) for work item tracking as well as continuous integration (CI) and continuous deployment (CD).
+The Memory application leverages [Azure DevOps](https://learn.microsoft.com/en-gb/azure/devops/index?view=azure-devops) for work item tracking as well as continuous integration (CI) and continuous deployment (CD).
 
 ---
 
@@ -72,21 +72,21 @@ Changes to this environment are gated by manual approval by your product's leade
 
 ## Environment Variable Group
 
-### Infrastructure Setup (cse-memory-common)
+### Infrastructure Setup (memory-common)
 
 - appName
 - businessUnit
 - serviceConnection
 - subscriptionId
 
-### Development Setup (cse-memory-dev)
+### Development Setup (memory-dev)
 
 - environmentName (placeholder)
 
-### Staging Setup (cse-memory-staging)
+### Staging Setup (memory-staging)
 
 - environmentName (placeholder)
 
-### Production Setup (cse-memory-prod)
+### Production Setup (memory-prod)
 
 - environmentName (placeholder)

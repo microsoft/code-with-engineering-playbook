@@ -8,15 +8,15 @@ The goal of this section is to briefly describe best practices in privacy fundam
 
 ## Introduction
 
-Microsoft runs on trust. Our customers trust CSE to adhere to the highest standards when handling their data.
+Microsoft runs on trust. Our customers trust ISE to adhere to the highest standards when handling their data.
 Protecting our customers' data is a joint responsibility between Microsoft and the customers;
 both have the responsibility to help projects follow the guidelines outlined on this page.
 
-Developers working on CSE projects should implement best practices and guidance on handling data throughout the project phases. This page is not meant to suggest how customers should handle data in their environment. **It does not override**:
+Developers working on ISE projects should implement best practices and guidance on handling data throughout the project phases. This page is not meant to suggest how customers should handle data in their environment. **It does not override**:
 
 - [Microsoft's Information Security Policy](https://aka.ms/CTRMSsecppext)
 - [Limited Data Protection Addendum](https://aka.ms/mpsldpa)
-- [Professional Services Data Protection Addendum](https://www.microsoftvolumelicensing.com/Downloader.aspx?DocumentId=18983)
+- [Professional Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
 
 ## 5 W's of data handling
 
@@ -41,7 +41,7 @@ This is particularly important to clarify the purpose and any restrictions on us
 Please use the above guidelines to ensure the data is used only for intended purposes and thereby gain trust.
 It is important to be aware of data handling best practices and ensure the required clarity is provided to adhere to the above 5Ws.
 
-## Handling data in CSE engagements
+## Handling data in ISE engagements
 
 Data should never leave customer-controlled environments and contractors and/or other members in the engagement
 should never have access to complete customer data sets but use limited customer data sets using the following prioritized approaches:
@@ -56,16 +56,16 @@ follow the Principles of Data Minimization and attempt to work with the fewest r
 
 Before work begins on data, ensure OS patches are up to date and permissions are properly set with no open internet access.
 
-Developers working on CSE projects will work with our customers to define the data needed for each engagement.
+Developers working on ISE projects will work with our customers to define the data needed for each engagement.
 
 If there is a need to access production data,
-CSE needs to review the need with their lead and work with the customer to put audits in place verifying what data was accessed.
+ISE needs to review the need with their lead and work with the customer to put audits in place verifying what data was accessed.
 
 Production data must only be shared with approved members of the engagement team and must not be processed/transferred outside of the customer controlled environment.
 
-Customers should provide CSE with a copy of the requested data in a location managed by the customer.
+Customers should provide ISE with a copy of the requested data in a location managed by the customer.
 The customer should consider turning any logging capabilities on so they can clearly identify who has access and what they do with that access.
-CSE should notify the customer when they are done with the data and suggest the customer destroy copies of the data if they are no longer needed.
+ISE should notify the customer when they are done with the data and suggest the customer destroy copies of the data if they are no longer needed.
 
 ### Our guiding principles when handling data in an engagement
 
@@ -110,6 +110,6 @@ should be reviewed and considered when handling any type of sensitive data.
 - [Tools for responsible AI - Protect](https://www.microsoft.com/en-us/ai/responsible-ai-resources?activetab=pivot1:primaryr5)
 - [Data Protection Resources](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
 - [FAQ and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_AuditedControls)
-- [Microsoft Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide)
-- [Accountability Readiness Checklists](https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-arc?view=o365-worldwide#gdpr-compliance-controls)
+- [Microsoft Compliance Offerings](https://learn.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide)
+- [Accountability Readiness Checklists](https://learn.microsoft.com/en-us/compliance/regulatory/gdpr-arc?view=o365-worldwide#gdpr-compliance-controls)
 - [Privacy by Design The 7 Foundational Principles](https://privacy.ucsc.edu/resources/privacy-by-design---foundational-principles.pdf)

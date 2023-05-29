@@ -21,7 +21,7 @@ The team can collect metrics of code reviews to measure their efficiency. Some u
   * Time used in review sessions
 * Lines of code (LOC) inspected per time unit/meeting
 
-It is a perfectly reasonable solution to track these metrics manually e.g. in an Excel sheet. It is also possible to utilize the features of project management platforms - for example, AzDO enables dashboards for metrics including [tracking bugs](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/manage-bugs?view=azure-devops&tabs=new-web-form). You may find ready-made plugins for various platforms - see [GitHub Marketplace](https://github.com/marketplace) for instance - or you can choose to implement these features yourself.
+It is a perfectly reasonable solution to track these metrics manually e.g. in an Excel sheet. It is also possible to utilize the features of project management platforms - for example, AzDO enables dashboards for metrics including [tracking bugs](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-bugs?view=azure-devops&tabs=new-web-form). You may find ready-made plugins for various platforms - see [GitHub Marketplace](https://github.com/marketplace) for instance - or you can choose to implement these features yourself.
 
 Remember that since defects removed thanks to reviews is far less costly compared to finding them in production, the cost of doing code reviews is actually negative!
 
@@ -30,4 +30,3 @@ For more information, see links under [resources](#resources).
 ## Resources
 
 * [A Guide to Code Inspections](http://www.ganssle.com/inspections.pdf)
-* [Defect Removal Effectiveness](https://www.westfallteam.com/sites/default/files/papers/defect_removal_effectiveness.pdf)

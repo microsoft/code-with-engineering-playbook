@@ -44,7 +44,7 @@ An automated build should encompass the following principles:
 ### Code Style Checks
 
 - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent, and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
-- There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review section](../code-reviews/README.md#language-specific-guidance) of the playbook has suggestions for linters and preferred styles for a number of languages.
+- There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review recipes section](../code-reviews/recipes) of the playbook has suggestions for linters and preferred styles for a number of languages.
 - Your code and documentation should avoid the use of non-inclusive language wherever possible. Follow the [Inclusive Linting section](inclusive-linting.md) to ensure your project promotes an inclusive work environment for both the team and for customers.
 - We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOps, you can add a security scan task to your pipeline by installing the [Microsoft Security Code Analysis Extension](https://secdevtools.azurewebsites.net/#pills-onboard). GitHub Actions supports a similar extension with the [RIPS security scan solution](https://github.com/marketplace/actions/rips-security-scan).
 - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
@@ -54,7 +54,7 @@ An automated build should encompass the following principles:
 - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
 
 ### No IDE Dependencies
-  
+
 - It's essential to have a build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
 ### DevOps security checks
@@ -64,7 +64,7 @@ An automated build should encompass the following principles:
 ## Build Environment Dependencies
 
 ### Automated local environment setup
-  
+
 - We encourage maintaining a consistent developer experience for all team members. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
 - Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies.
 - All developers on the team should be able to emulate the build environment from their local desktop regardless of their OS.
@@ -98,7 +98,7 @@ Terraform resource providers like [Azure DevOps](https://github.com/microsoft/te
 ### Why
 
 - Repeatable and auditable changes to infrastructure make it easier to roll back to known good configurations and to rapidly expand to new stages and regions without having to hand-wire cloud resources
-- Battle tested and templatized IAC reference projects like [Cobalt](https://github.com/microsoft/cobalt) and [Bedrock](https://github.com/microsoft/bedrock) enable more engineering teams deploy secure and scalable solutions at a much more rapid pace
+- Battle tested and templated IAC reference projects like [Cobalt](https://github.com/microsoft/cobalt) and [Bedrock](https://github.com/microsoft/bedrock) enable more engineering teams deploy secure and scalable solutions at a much more rapid pace
 - Simplify “lift and shift” scenarios by abstracting the complexities of cloud-native computing away from application developer teams.
 
 ### IAC DevOPS: Operations by Pull Request
@@ -121,7 +121,7 @@ Terraform resource providers like [Azure DevOps](https://github.com/microsoft/te
 - Provisioning cloud environments should be a repeatable process that's driven off the infrastructure code artifacts checked into our git repository.
 
 #### IAC CI Workflow
-  
+
 - When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by a cloud administrator as a gate check prior to the deployment stage of the pipeline applying the execution plan.
 
 #### Developer Read-Only Access to Cloud Resources
@@ -223,7 +223,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 ### Branch strategy
 
-- Release branches should auto trigger the deployment of a build artifact to its target cloud environment. You can find additional guidance on the Azure DevOps documentation site under the [Manage deployments](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-deployments) section
+- Release branches should auto trigger the deployment of a build artifact to its target cloud environment. You can find additional guidance on the Azure DevOps documentation site under the [Manage deployments](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-deployments) section
 
 ## Deliver Quickly and Daily
 
@@ -295,12 +295,12 @@ We recommend integrating Teams or Slack with CI/CD pipeline runs which helps kee
 - [Bedrock Getting Started Quick Guide](https://github.com/microsoft/bedrock#getting-started)
 - [Cobalt Quick Start Guide](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md)
 - [Terraform Azure DevOps Provider](https://github.com/microsoft/terraform-provider-azuredevops)
-- [Azure DevOps multi stage pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
-- [Azure Pipeline Key Concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
-- [Azure Pipeline Environments](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
-- [Artifacts in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/artifacts-overview?view=azure-devops)
-- [Azure Pipeline permission and security roles](https://docs.microsoft.com/en-us/azure/devops/pipelines/policies/permissions?view=azure-devops)
-- [Azure Environment approvals and checks](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
+- [Azure DevOps multi stage pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops)
+- [Azure Pipeline Key Concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
+- [Azure Pipeline Environments](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments?view=azure-devops)
+- [Artifacts in Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/artifacts/artifacts-overview?view=azure-devops)
+- [Azure Pipeline permission and security roles](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/permissions?view=azure-devops)
+- [Azure Environment approvals and checks](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
 - [Terraform Getting Started Guide with Azure](https://learn.hashicorp.com/terraform?track=azure#azure)
-- [Terraform Remote State Azure Setup](https://docs.microsoft.com/en-us/azure/terraform/terraform-backend)
+- [Terraform Remote State Azure Setup](https://learn.microsoft.com/en-us/azure/terraform/terraform-backend)
 - [Terratest - Unit and Integration Infrastructure Framework](https://terratest.gruntwork.io/)

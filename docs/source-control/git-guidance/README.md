@@ -21,7 +21,7 @@ Be sure to run `git help` after Git installation to find really in-depth explana
 
 ## Installation
 
-Git is a toolset that must be installed. [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
+Git is a tool set that must be installed. [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
 
 A recommended installation is the [Git Lens extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
 
@@ -120,7 +120,7 @@ To avoid losing work, it is good to commit often in small chunks. This allows yo
     git add source-control/git-guidance/README.md
     ```
 
-4. Commit the changes to your local branch with a descriptive [commit message](../README.md#commit-best-practices)
+4. Commit the changes to your local branch with a descriptive [commit message](#commit-best-practices)
 
     ```cmd
     git commit -m "add basic git instructions"
@@ -144,9 +144,9 @@ Once the feature branch is pushed to the remote repository, it is visible to any
 
 ### Merging
 
-In [CSE](../../CSE.md) we encourage the use of Pull Request to merge code to the main repository to make sure that all code in the final product is [code reviewed](../../code-reviews/README.md)
+We encourage the use of Pull Request to merge code to the main repository to make sure that all code in the final product is [code reviewed](../../code-reviews/README.md)
 
-The Pull Request (PR) process in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops), [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and other similar tools make it easy both to start a PR, review a PR and merge a PR.
+The Pull Request (PR) process in [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops), [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and other similar tools make it easy both to start a PR, review a PR and merge a PR.
 
 #### Merge Conflicts
 
@@ -231,6 +231,44 @@ Then you can use the reflog reference (`HEAD@{}`) to reset to a specific commit 
 ```cmd
 git reset HEAD@{2}
 ```
+
+## Commit Best Practices
+
+A commit combines changes into a logical unit. Adding a descriptive commit message can aid in comprehending the code changes and understanding the rationale behind the modifications. Consider the following when making your commits:
+
+* Make small commits. This makes changes easier to review, and if we need to revert a commit, we lose less work. Consider splitting the commit into separate commits with `git add -p` if it includes more than one logical change or bug fix.
+* Don't mix whitespace changes with functional code changes. It is hard to determine if the line has a functional change or only removes a whitespace, so functional changes may go unnoticed.
+* Commit complete and well tested code. Never commit incomplete code, get in the habit of testing your code before committing.
+* Write good commit messages.
+  * Why is it necessary? It may fix a bug, add a feature, improve performance, or just be a change for the sake of correctness
+  * What effects does this change have? In addition to the obvious ones, this may include benchmarks, side effects etc.
+
+You can specify the default git editor, which allows you to write your commit messages using your favorite editor. The following command makes Visual Studio Code your default git editor:
+
+```bash
+git config --global core.editor "code --wait"
+```
+
+### Commit Message Structure
+
+The essential parts of a commit message are:
+* subject line: a short description of the commit, maximum 50 characters long
+* body (optional): a longer description of the commit, wrapped at 72 characters, separated from the subject line by a blank line
+
+You are free to structure commit messages; however, git commands like `git log` utilize above structure.
+Therefore, it can be helpful to follow a convention within your team and to utilize git best.
+
+For example, [Conventional Commits](https://www.conventionalcommits.org/) is a lightweight convention that complements [SemVer](https://semver.org/), by describing the features, fixes, and breaking changes made in commit messages. See [Component Versioning](../component-versioning.md) for more information on versioning.
+
+For more information on commit message conventions, see:
+
+* [A Note About Git Commit Messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+* [Conventional Commits](https://www.conventionalcommits.org)
+* [Git commit best practices](https://medium.com/@nawarpianist/git-commit-best-practices-dab8d722de99)
+* [How to Write a Git Commit Message](https://cbea.ms/git-commit)
+* [How to Write Better Git Commit Messages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages)
+* [Information in commit messages](https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages)
+* [On commit messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
 
 ## Managing remotes
 

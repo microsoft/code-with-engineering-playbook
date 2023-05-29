@@ -15,7 +15,7 @@ Here are some the general challenges -
 
 A Correlation ID is a unique identifier that is added to the very first interaction (incoming request) to  identify the context and is passed to all components that are involved in the transaction flow. Correlation ID becomes the glue that binds the transaction together and helps to draw an overall picture of events.
 
->Note: Before implementing your own Correlation ID, investigate if your telemetry tool of choice provides an auto-generated Correlation ID and that it serves the purposes of your application. For instance, [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/auto-collect-dependencies) offers dependency auto-collection for some application frameworks
+>Note: Before implementing your own Correlation ID, investigate if your telemetry tool of choice provides an auto-generated Correlation ID and that it serves the purposes of your application. For instance, [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/auto-collect-dependencies) offers dependency auto-collection for some application frameworks
 
 ### Recommended Practices
 

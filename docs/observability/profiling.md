@@ -21,5 +21,4 @@ Unfortunately, each profiler tool typically uses its own format for storing prof
 - (Java, Python, Go) [Datadog Continuous profiler](https://www.datadoghq.com/product/code-profiling/)
 - (Java, Python, Go, Node.js) [Instana](https://www.instana.com/blog/instana-announces-the-industrys-first-commercial-continuous-production-profiler/)
 - (Go) [profefe](https://github.com/profefe/profefe), which builds `pprof` to provide continuous profiling
-- (Java) [Opsian](https://opsian.com/)
 - (Java) [Eclipse Memory Analyzer](https://www.eclipse.org/mat/)

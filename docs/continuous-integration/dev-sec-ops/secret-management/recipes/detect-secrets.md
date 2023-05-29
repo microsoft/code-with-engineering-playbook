@@ -28,7 +28,24 @@ python3 -m pip install detect-secrets
 detect-secrets scan > .secrets.baseline
 ```
 
-## Usage
+## Pre-commit hook
+
+It is recommended to use `detect-secrets` in your development environment as a Git pre-commit hook.
+
+First, follow the [`pre-commit` installation instructions](https://pre-commit.com/#install) to install the tool in your development environment.
+
+Then, add the following to your `.pre-commit-config.yaml`:
+
+```yaml
+repos:
+-   repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+    -   id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+```
+
+## Usage in CI pipelines
 
 ```sh
 # backup the list of known secrets

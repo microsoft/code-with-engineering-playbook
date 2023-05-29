@@ -1,3 +1,4 @@
+---
 name: engineering-fundamentals
 description: A template for adding engineering fundamentals tasks to engagement backlog
 items:
@@ -507,7 +508,7 @@ items:
           - name:
               As a dev crew, if this engagement is considered a tented project or
               sensitive work, we have ensured that project details are not
-              tracked within CSE tooling
+              tracked within ISE tooling
             type: story
           - name:
               As a dev crew, if applicable, all crew members have acknowledged any

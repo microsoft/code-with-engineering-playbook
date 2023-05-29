@@ -10,7 +10,7 @@ Another consideration is that coupling the project's code to its infrastructure 
 
 ## Applying Credential Scanning
 
-Ideally, credential scanning should be run as part of a developer's workflow (e.g. via a [git pre-commit hook](https://githooks.com)), however, to protect against developer error, credential scanning must also be enforced as part of the continuous integration process to ensure that no credentials ever get merged to a project's main branch.
+Ideally, credential scanning should be run as part of a developer's workflow (e.g. via a [git pre-commit hook](https://pre-commit.com/)), however, to protect against developer error, credential scanning must also be enforced as part of the continuous integration process to ensure that no credentials ever get merged to a project's main branch.
 To implement credential scanning for a project, consider the  following:
 
 1. Store secrets in an external secure store that is meant to store sensitive information
@@ -23,9 +23,9 @@ To implement credential scanning for a project, consider the  following:
 
 Recipes and Scenarios-
 
-1. [Detect-secrets](./recipes/detect-secrets.md) - detect-secrets is an aptly named module for detecting secrets within a code base.
-1. [detect-secrets inside Azure DevOps Pipeline](./recipes/detect-secrets-ado.md)
-1. [Microsoft Security Code Analysis extension](https://docs.microsoft.com/en-us/azure/security/develop/security-code-analysis-overview)
+1. [detect-secrets](./recipes/detect-secrets.md) is an aptly named module for detecting secrets within a code base.
+1. Use [detect-secrets inside Azure DevOps Pipeline](./recipes/detect-secrets-ado.md)
+1. [Microsoft Security Code Analysis extension](https://learn.microsoft.com/en-us/azure/security/develop/security-code-analysis-overview)
 
 Additional Tools -
 

@@ -35,13 +35,13 @@ Step 3: Calculate the capacity for the team based on the number of weeks person 
 Step 4: Based on your capacity, you know have the options
 
 - Ask for more resources. Caution: onboarding new resources take time.
-- Reduce the scope to the most MVP.  Caution: as you trim more of the scope, it might be valuable anymore to the customer. Consider a cupcake which is everything you need. You don't want to skim on the frosting.
+- Reduce the scope to the most MVP.  Caution: as you trim more of the scope, it might not be valuable anymore to the customer. Consider a cupcake which is everything you need. You don't want to skim off the frosting.
 - Ask for more time. Usually, this is the most flexible, but if there is a marketing date that you need to hit, this might be as flexible.
 
 ## Tools
 
 You can also leverage one of these tools by creating your epics and features and add the weeks estimates.
 
-The [Plans (Preview) feature on Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/project/navigation/preview-features?view=azure-devops) will help you make a plan. Delivery Plans provide a schedule of stories or features your team plan to deliver. Delivery Plans show the scheduled work items by a sprint (iteration path) of selected teams against a calendar view.
+The [Plans (Preview) feature on Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/project/navigation/preview-features?view=azure-devops) will help you make a plan. Delivery Plans provide a schedule of stories or features your team plan to deliver. Delivery Plans show the scheduled work items by a sprint (iteration path) of selected teams against a calendar view.
 
 Confluence JIRA, Trello, Rally, Asana, Basecamp, and GitHub Issues are other similar tools in the market (some are free, others you pay a monthly fee, or you can install on-prem) that you can leverage.

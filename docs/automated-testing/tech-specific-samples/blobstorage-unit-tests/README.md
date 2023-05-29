@@ -6,13 +6,13 @@ Once private endpoints are enabled for the Azure Storage accounts, the current t
 
 ## Utilize an Azure Storage emulator - Azurite
 
-To emulate a local Azure Blob Storage, we can use [Azure Storage Emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator). The Storage Emulator currently runs only on Windows. If you need a Storage Emulator for Linux, one option is the community maintained, open-source Storage Emulator [Azurite](https://github.com/azure/azurite).
+To emulate a local Azure Blob Storage, we can use [Azure Storage Emulator](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-emulator). The Storage Emulator currently runs only on Windows. If you need a Storage Emulator for Linux, one option is the community maintained, open-source Storage Emulator [Azurite](https://github.com/azure/azurite).
 
-> *The Azure Storage Emulator is no longer being actively developed.* [**Azurite**](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite) *is the Storage Emulator platform going forward. Azurite supersedes the Azure Storage Emulator. Azurite will continue to be updated to support the latest versions of Azure Storage APIs. For more information, see* [**Use the Azurite emulator for local Azure Storage development**](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite)*.*
+> *The Azure Storage Emulator is no longer being actively developed.* [**Azurite**](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite) *is the Storage Emulator platform going forward. Azurite supersedes the Azure Storage Emulator. Azurite will continue to be updated to support the latest versions of Azure Storage APIs. For more information, see* [**Use the Azurite emulator for local Azure Storage development**](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite)*.*
 
-Some differences in functionality exist between the Storage Emulator and Azure storage services. For more information about these differences, see the [Differences between the Storage Emulator and Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator#differences-between-the-storage-emulator-and-azure-storage).
+Some differences in functionality exist between the Storage Emulator and Azure storage services. For more information about these differences, see the [Differences between the Storage Emulator and Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-emulator#differences-between-the-storage-emulator-and-azure-storage).
 
-There are several ways to install and run Azurite on your local system as listed [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-azurite-by-using-npm). In this document we will cover `Install and run Azurite using NPM` and `Install and run the Azurite Docker image`.
+There are several ways to install and run Azurite on your local system as listed [here](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-azurite-by-using-npm). In this document we will cover `Install and run Azurite using NPM` and `Install and run the Azurite Docker image`.
 
 ## 1. Install and run Azurite
 
@@ -99,7 +99,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
    To test and see how these endpoints are running you can attach your local blob storage to the [**Azure Storage Explorer**](https://azure.microsoft.com/en-us/features/storage-explorer/).
 
-1. Create a virtual python environment  
+1. Create a virtual python environment
    `python -m venv .venv`
 
 1. Container name and initialize env variables: Use conftest.py for test integration.
@@ -122,7 +122,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
    **Note: value for `STORAGE_CONNECTION_STRING` is default value for Azurite, it's not a private key*
 
-1. Install the dependencies  
+1. Install the dependencies
 
     `pip install -r requirements_tests.txt`
 

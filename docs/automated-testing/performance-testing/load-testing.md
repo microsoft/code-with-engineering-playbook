@@ -2,7 +2,7 @@
 
 "*Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.*" - [Load testing - Wikipedia](https://en.wikipedia.org/wiki/Load_testing)
 
-A load test is designed to determine how a system behaves under expected normal and peak workloads.  Specifically its main purpose is to confirm if a system can handle the expected load level. Depending on the target system this could be concurrent users, requests per second or data size.
+A load test is designed to determine how a system behaves under expected normal and peak workloads. Specifically its main purpose is to confirm if a system can handle the expected load level. Depending on the target system this could be concurrent users, requests per second or data size.
 
 ## Why Load Testing
 
@@ -16,7 +16,7 @@ There are a number of basic component which are required to carry out a load tes
 
 1. In order to have meaningful results the system needs to be tested in a production-like environment with a network and hardware which closely resembles the expected deployment environment.
 
-2. The load test will consist of a module which simulates user activity. Of course what the composition of this "user activity" will be vary based on the type of application being tested. For example an e-commerce website might simulate user browsing and purchasing items, but an IoT data ingestion pipeline would simulate a stream of device readings. Please ensure the simulation is as close to real activity as possible taking into account not just volume but also patterns and variability. For example if the simulator data is too uniform or predictable then cache/hit ratios may impact your results.
+2. The load test will consist of a module which simulates user activity. Of course the composition of this "user activity" will vary based on the type of application being tested. For example, an e-commerce website might simulate user browsing and purchasing items, but an IoT data ingestion pipeline would simulate a stream of device readings. Please ensure the simulation is as close to real activity as possible, and consider not just volume but also patterns and variability. For example, if the simulator data is too uniform or predictable, then cache/hit ratios may impact your results.
 
 3. The load test will be initiated from a component external to the target system which can control the amount of load applied. This can be a single agent, but may need to scaled to multiple agents in order to achieve higher levels of activity.
 
@@ -26,8 +26,8 @@ There are a number of basic component which are required to carry out a load tes
 
 ### Planning
 
-1. **Identify key scenarios to measure**  - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic.
-2. **Determine expected normal and peak load for the scenarios** -  Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
+1. **Identify key scenarios to measure** - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic.
+2. **Determine expected normal and peak load for the scenarios** - Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
 3. **Identify success criteria metrics** - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.
 4. **Select the right tool** - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).
 
@@ -52,6 +52,7 @@ After completing your load test you should be set up to continue on to additiona
 
 Here are a few popular load testing frameworks you may consider, and the languages used to define your scenarios.
 
+- **Azure Load Testing** (<https://learn.microsoft.com/en-us/azure/load-testing/>) - Managed platform for running load tests on Azure. It allows to run and monitor tests automatically, source secrets from the KeyVault, generate traffic at scale, and load test Azure private endpoints. In the simple case, it executes load tests with HTTP GET traffic to a given endpoint. For the more complex cases, you can upload your own **JMeter scenarios**.
 - **JMeter** (<https://github.com/apache/jmeter>) - Has built in patterns to test without coding, but can be extended with Java.
 - **Artillery** (<https://artillery.io/>) - Write your scenarios in Javascript, executes a node application.
 - **Gatling** (<https://gatling.io/>) -  Write your scenarios in Scala with their DSL.
@@ -69,4 +70,4 @@ Of course, it's only as good as your ability to predict the expected load, so it
 
 List additional readings about this test type for those that would like to dive deeper.
 
-- [Microsoft Azure Well-Architected Framework > Load Testing](https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing)
+- [Microsoft Azure Well-Architected Framework > Load Testing](https://learn.microsoft.com/en-us/azure/architecture/framework/scalability/load-testing)

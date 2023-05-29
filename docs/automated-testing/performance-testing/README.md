@@ -8,7 +8,7 @@ A good description of overall performance testing is as follows:
 > Performance testing is a type of testing intended to determine the
 responsiveness, throughput, reliability, and/or scalability of a system under a
 given workload. [Performance Testing Guidance for Web
-Applications](https://docs.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications).
+Applications](https://learn.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications).
 
 Before getting into the different subcategories of performance tests let us
 understand why performance testing is typically done.
@@ -268,4 +268,4 @@ The [Iterative Performance Test Template](./iterative-perf-test-template.md) can
 ## Resources
 
 - [Patters and Practices: Performance Testing Guidance for Web
-  Applications](https://docs.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications)
+  Applications](https://learn.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications)

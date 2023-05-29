@@ -21,7 +21,7 @@ items:
                 description: Understand what workloads will be running on the cluster and the compute requirements including any requirements for mixed clusters (OS, cpu, mem, etc.)
               - name: Evaluate compute options
                 type: task
-                description: Reference this [trade-off doc](https://docs.microsoft.com/azure/architecture/operator-guides/aks/choose-kubernetes-edge-compute-option) to help evaluate trade-offs between bare-metal kubernetes, kubernetes on Azure Stack Edge, and AKS on Azure Stack HCI.
+                description: Reference this [trade-off doc](https://learn.microsoft.com/azure/architecture/operator-guides/aks/choose-kubernetes-edge-compute-option) to help evaluate trade-offs between bare-metal kubernetes, kubernetes on Azure Stack Edge, and AKS on Azure Stack HCI.
               - name: If applicable, evaluate virtualization options
                 type: task
                 description: In the case of bare-metal, you will likely leverage virtualization of host systems. Look into what options are available for the respective host and evaluate against requirements
@@ -98,7 +98,7 @@ items:
             children:
               - name: Identify tooling to be used to spin up Kubernetes
                 type: task
-                description: For baremetal clusters, reference this [decision-tree](https://docs.microsoft.com/azure/architecture/operator-guides/aks/choose-bare-metal-kubernetes) to determine which tooling shall be used
+                description: For baremetal clusters, reference this [decision-tree](https://learn.microsoft.com/azure/architecture/operator-guides/aks/choose-bare-metal-kubernetes) to determine which tooling shall be used
           - name: As a cluster operator, I want to leverage existing tools (AzDO, Ansible or cluster api) to configure my clusters so that configuration may be repeatable and scalable. Note, in cases where cluster setup requires a lot of manual coordination, it's important to determine how to automate and manage configuration such that clusters can be configured at scale
             type: story
             acceptanceCriteria:
@@ -107,7 +107,7 @@ items:
               - name: For baremetal ground-up configuration, refer to sample to leverage Ansible to manage configuration
                 type: task
                 description: Customers have leveraged Ansible's ability to execute scripts remotely and reusable playbooks in order to manage and automate configuration. Check out [this sample](https://github.com/Azure-Samples/k8s-on-windows-host) for reference
-          - name: As a cluster operator, I want to determine a schedule for updating various opensource projects including kubernetes so that I can ensure that my cluster and other open sourced tools are up-to-date with critical updates such as security patches.
+          - name: As a cluster operator, I want to determine a schedule for updating various open source projects including kubernetes so that I can ensure that my cluster and other open sourced tools are up-to-date with critical updates such as security patches.
             type: story
             acceptanceCriteria:
               - Decision record documenting upgrade schedule for appropriate tools, including any maintenance windows, plan for patches, etc.
@@ -115,7 +115,7 @@ items:
             type: story
             acceptanceCriteria:
               - Tests implemented in pipeline to ensure health of clusters post updates
-          - name: As a cluster operator, I want to use a tool like azure arc for k8s (https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/) so that I can manage multiple clusters from a single pane of glass
+          - name: As a cluster operator, I want to use a tool like azure arc for k8s (https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/) so that I can manage multiple clusters from a single pane of glass
             type: story
             acceptanceCriteria:
               - Decision record documenting requirements of single pane view, alternative considerations, and chosen tooling
@@ -158,7 +158,7 @@ items:
                 description: Preventing workloads from arbitrary public repos to be deployed minimizes the risk of unauthorized workloads running on your cluster
               - name: Enforce policies with Gatekeeper/Kyverno/Azure policies
                 type: task
-                description: Use Gatekeeper/Kyverno/Azure policies to enforce policies to further harden the security of your cluster (e.g. prohibiting privileged containers, requiring read-only root filesystems, etc.)
+                description: Use Gatekeeper/Kyverno/Azure policies to enforce policies to further harden the security of your cluster (e.g. prohibiting privileged containers, requiring read-only root file systems, etc.)
           - name: As a cluster operator, I want to ensure the traffic in my cluster is secure so that I can protect information flowing through my cluster
             type: story
             acceptanceCriteria:

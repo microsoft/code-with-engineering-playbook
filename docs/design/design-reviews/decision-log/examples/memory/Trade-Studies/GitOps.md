@@ -37,7 +37,7 @@ The other does the same, with additional features that may or may not be worth t
 1. Repo style: mono versus multi
    - Flux supports both as of v2
 1. Policy Enforcement
-   - [Azure Policy is in Preview](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy)
+   - [Azure Policy is in Preview](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy)
 1. Deployment Methods
    - Define a Helm [release](https://toolkit.fluxcd.io/guides/helmreleases/) using Helm Controllers
    - [Kustomization](https://toolkit.fluxcd.io/get-started/#deploy-podinfo-application) describes deployments
@@ -96,7 +96,7 @@ ArgoCD is a declarative, GitOps-based Continuous Delivery (CD) tool for Kubernet
 1. Repo style: mono versus multi
    - ArgoCD supports both
 1. Policy Enforcement
-   - [Azure Policy is in Preview](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy)
+   - [Azure Policy is in Preview](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy)
 1. Deployment Methods
    - Deploy with [Helm](https://argo-cd.readthedocs.io/en/stable/user-guide/helm/) Chart
    - Use [Kustomize](https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/) to apply some post-rendering to the Helm release templates
@@ -149,8 +149,8 @@ So we have decided at this point to go with ArgoCD.
 ## References
 
 1. [GitOps](https://www.gitops.tech/#:~:text=What%20is%20GitOps?%20GitOps%20is%20a%20way%20of,familiar%20with,%20including%20Git%20and%20Continuous%20Deployment%20tools.)
-1. [Enforcement](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy)
-1. [Monitoring](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-onboard)
-1. [Policies](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes)
-1. [Deployment](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/use-gitops-with-helm)
+1. [Enforcement](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy)
+1. [Monitoring](https://learn.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-onboard)
+1. [Policies](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes)
+1. [Deployment](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-gitops-with-helm)
 1. [Push with ArgoCD in Azure DevOps](https://www.linkedin.com/pulse/azure-devops-gitops-aks-argocd-ajay-vikram-singh?articleId=6677601917633355776)

@@ -68,9 +68,9 @@ When determining the best method for creating synthetic data, it is essential fi
 | [Synthea](https://synthetichealth.github.io/synthea/)                                                                           | Synthea was developed with numerous data sources collected on the internet, including US Census Bureau demographics, Centers for Disease Control and Prevention prevalence and incidence rates, and National Institutes of Health reports. The source code and disease models include annotations and citations for all data, statistics, and treatments. These models of diseases and treatments interact appropriately with the health record. |
 | [PII dataset generator](https://github.com/microsoft/presidio-research/blob/master/presidio_evaluator/data_generator/README.md) | A synthetic data generator developed on top of Fake Name Generator which takes a text file with templates (e.g. my name is *PERSON*) and creates a list of Input Samples which contain fake PII entities instead of placeholders.                                                                                                                                                                                                                |
 | [CheckList](https://github.com/marcotcr/checklist)                                                                              | CheckList provides a framework for perturbation techniques to evaluate specific behavioral capabilities of NLP models systematically                                                                                                                                                                                                                                                                                                             |
-| [Mimesis](https://github.com/lk-geimfari/mimesis )                                                                              | Mimesis a high-performance fake data generator for Python, which provides data for a variety of purposes in a variety of languages.                                                                                                                                                                                                                                                                                                              |
-| [Faker](https://github.com/joke2k/faker )                                                                                       | Faker is a Python package that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you.                                                                                                                                                                                     |
-| [Plaitpy](https://github.com/plaitpy/plaitpy )                                                                                  | The idea behind plait.py is that it should be easy to model fake data that has an interesting shape. Currently, many fake data generators model their data as a collection of IID variables; with plait.py we can stitch together those variables into a more coherent model.                                                                                                                                                                    |
+| [Mimesis](https://github.com/lk-geimfari/mimesis)                                                                               | Mimesis a high-performance fake data generator for Python, which provides data for a variety of purposes in a variety of languages.                                                                                                                                                                                                                                                                                                              |
+| [Faker](https://github.com/joke2k/faker)                                                                                        | Faker is a Python package that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you.                                                                                                                                                                                     |
+| [Plaitpy](https://github.com/plaitpy/plaitpy)                                                                                   | The idea behind plait.py is that it should be easy to model fake data that has an interesting shape. Currently, many fake data generators model their data as a collection of IID variables; with plait.py we can stitch together those variables into a more coherent model.                                                                                                                                                                    |
 
 ### Trusted research and modeling environments
 
@@ -94,7 +94,7 @@ We highlight several alternatives for Trusted Research Environments:
 
 In certain situations, Data Scientists may need to train models on data they are not allowed to see. In these cases, an "eyes-off" approach is recommended.
 An eyes-off approach provides a data scientist with an environment in which scripts can be run on the data but direct access to samples is not allowed.
-When using Azure ML, tools such as the [Identity Based Data Access](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-identity-based-data-access) can enable this scenario,
+When using Azure ML, tools such as the [Identity Based Data Access](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-identity-based-data-access) can enable this scenario,
 alongside proper role assignment for users.
 
 During the processing within the eyes-off environment, only certain outputs (e.g. logs) are allowed to be extracted back to the user.
@@ -167,7 +167,7 @@ Federated learning frameworks:
 
 Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers.
 To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it.
-This practice is called data loss prevention (DLP). ([Source](https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp))
+This practice is called data loss prevention (DLP). ([Source](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp))
 
 Below we focus on two aspects of DLP: Sensitive data classification and Access management.
 
@@ -185,12 +185,12 @@ There are typically four levels data classification levels:
 
 Tools for data classification on Azure:
 
-| Solution                                                                                                                                                                                                      | Notes                                                                                                                                                                               |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Microsoft Information Protection](https://docs.microsoft.com/en-us/microsoft-365/compliance/information-protection) (MIP)                                                                                    | A suite for DLP, sensitive data classification, cataloging  and more.                                                                                                               |
-| [Azure Purview](https://azure.microsoft.com/en-us/services/purview/)                                                                                                                                          | A unified data governance service, which includes the classification and cataloging of sensitive data. Azure Purview leverages the MIP technology for data classification and more. |
-| [Data Discovery & Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse](https://docs.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview) | Basic capabilities for discovering, classifying, labeling, and reporting the sensitive data in Azure SQL and Synapse databases.                                                     |
-| [Data Discovery & Classification for SQL Server](https://docs.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver15&tabs=t-sql)                   | Capabilities for discovering, classifying, labeling & reporting the sensitive data in SQL Server databases.                                                                         |
+| Solution                                                                                                                                                                                                       | Notes                                                                                                                                                                               |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Microsoft Information Protection](https://learn.microsoft.com/en-us/microsoft-365/compliance/information-protection) (MIP)                                                                                    | A suite for DLP, sensitive data classification, cataloging  and more.                                                                                                               |
+| [Azure Purview](https://azure.microsoft.com/en-us/services/purview/)                                                                                                                                           | A unified data governance service, which includes the classification and cataloging of sensitive data. Azure Purview leverages the MIP technology for data classification and more. |
+| [Data Discovery & Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse](https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview) | Basic capabilities for discovering, classifying, labeling, and reporting the sensitive data in Azure SQL and Synapse databases.                                                     |
+| [Data Discovery & Classification for SQL Server](https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver15&tabs=t-sql)                   | Capabilities for discovering, classifying, labeling & reporting the sensitive data in SQL Server databases.                                                                         |
 
 Often, tools used for de-identification can also serve as sensitive data classifiers.
 Refer to [de-identification tools](#data-de-identification) for such tools.
@@ -198,7 +198,7 @@ Refer to [de-identification tools](#data-de-identification) for such tools.
 Additional resources:
 
 - [Example guidelines for data classification](https://www.cmu.edu/iso/governance/guidelines/data-classification.html)
-- [Learn about sensitivity levels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
+- [Learn about sensitivity levels](https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
 
 #### Access management
 
@@ -206,7 +206,7 @@ Access control is an important component of privacy by design and falls into ove
 Successful access control will restrict access only to authorized individuals that should have access to data.
 Once data is secure in an environment, it is important to review who should access this data and for what purpose.
 Access control may be audited with a comprehensive logging strategy which may include the integration of
-[activity logs](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview)
+[activity logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview)
 that can provide insight into operations performed on resources in a subscription.
 
 - [OWASP Access Control Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Access_Control_Cheat_Sheet.md)

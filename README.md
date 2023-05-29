@@ -1,6 +1,6 @@
-# CSE Code-With Customer/Partner Engineering Playbook
+# ISE Code-With Customer/Partner Engineering Playbook
 
-An engineer working for a [CSE](docs/CSE.md) project...
+An engineer or data scientist working on an [ISE](docs/ISE.md) project...
 
 * Has responsibilities to their team – mentor, coach, and lead.
 * Knows their **playbook**. Follows their playbook. Fixes their playbook if it is broken. If they find a better playbook, they copy it. If somebody could use your playbook, give them yours.
@@ -51,7 +51,7 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 * [Code Reviews](docs/code-reviews/README.md)
 * [Continuous Delivery (CD)](docs/continuous-delivery/README.md)
 * [Continuous Integration (CI)](docs/continuous-integration/README.md)
-* [Design](docs/design/README.md)
+* [Design](docs/design/readme.md)
 * [Developer Experience](docs/developer-experience/README.md)
 * [Documentation](docs/documentation/README.md)
 * [Engineering Feedback](docs/engineering-feedback/README.md)

@@ -1,6 +1,6 @@
-# CSE Code-With Engineering Playbook
+# ISE Code-With Engineering Playbook
 
-An engineer working for a [CSE](CSE.md) project...
+An engineer working for a [ISE](ISE.md) project...
 
 * Has responsibilities to their team – mentor, coach, and lead.
 * Knows their **playbook**. Follows their playbook. Fixes their playbook if it is broken. If they find a better playbook, they copy it. If somebody could use their playbook, they share it.
@@ -49,16 +49,15 @@ The [structure of a sprint](SPRINT-STRUCTURE.md) is a breakdown of the sections 
 * [Code Reviews](code-reviews/README.md)
 * [Continuous Delivery (CD)](continuous-delivery/README.md)
 * [Continuous Integration (CI)](continuous-integration/README.md)
-* [Design](design/README.md)
+* [Design](design/readme.md)
 * [Developer Experience](developer-experience/README.md)
 * [Documentation](documentation/README.md)
 * [Engineering Feedback](engineering-feedback/README.md)
 * [Observability](observability/README.md)
-* [Reliability](reliability/README.md)
 * [Security](security/README.md)
 * [Privacy](privacy/README.md)
-* [Reliability](reliability/README.md)
 * [Source Control](source-control/README.md)
+* [Reliability](reliability/README.md)
 
 ## Fundamentals for Specific Technology Areas
 

@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers follow the [YAML schema reference](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
+Developers should follow the [YAML schema reference](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
 
 ## Code Analysis / Linting
 
@@ -14,15 +14,15 @@ There is an [Azure Pipelines for VS Code](https://marketplace.visualstudio.com/i
 
 ## YAML in Azure Pipelines Overview
 
-When the pipeline is triggered, before running the pipeline, there are a few phases such as [Queue Time, Compile Time and Runtime](https://adamtheautomator.com/azure-devops-variables/#Pipeline_Execution_Phases) where variables are interpreted by their [runtime expression syntax](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax).
+When the pipeline is triggered, before running the pipeline, there are a few phases such as [Queue Time, Compile Time and Runtime](https://adamtheautomator.com/azure-devops-variables/#Pipeline_Execution_Phases) where variables are interpreted by their [runtime expression syntax](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax).
 
 When the pipeline is triggered, all nested YAML files are expanded to run in Azure Pipelines. This checklist contains some tips and tricks for reviewing all nested YAML files.
 
 These documents may be useful when reviewing YAML files:
 
-- [Azure Pipelines YAML documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema).
-- [Pipeline run sequence](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runs?view=azure-devops)
-- [Key concepts for new Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
+- [Azure Pipelines YAML documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema).
+- [Pipeline run sequence](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/runs?view=azure-devops)
+- [Key concepts for new Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
 
 **Key concepts overview**
 ![Azure Pipelines key concepts](images/key-concepts-overview.png)
@@ -69,7 +69,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
 ### Troubleshooting Tips
 
-- Consider Variable Syntax with [Runtime Expressions](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax) in the pipeline. Here is a nice sample to understand [Expansion of variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#expansion-of-variables).
+- Consider Variable Syntax with [Runtime Expressions](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#runtime-expression-syntax) in the pipeline. Here is a nice sample to understand [Expansion of variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#expansion-of-variables).
 
 - When we assign variable like below it won't set during initialize time, it'll assign during runtime, then we can retrieve some errors based on when template runs.
 

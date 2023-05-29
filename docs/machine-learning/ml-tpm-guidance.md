@@ -9,7 +9,7 @@ Few considerations for identifying the right fit for the project:
 
 - Engage experts in human experience and employ techniques such as [Design Thinking](https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/) and [Problem Formulation](ml-problem-formulation-envisioning.md) to **understand the customer needs** and human behavior first. Identify the right stakeholders from both business and technical leadership and invite them to these workshops. The outcome should be end-user scenarios and [personas](https://en.wikipedia.org/wiki/Persona_(user_experience)) to determine the real needs of the users.
 
-- Focus on [System Design](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/ai-overview) principles to identify the architectural components, entities, interfaces, constraints. Ask the right questions early and explore design alternatives with the engineering team.
+- Focus on [System Design](https://learn.microsoft.com/en-us/azure/architecture/data-guide/big-data/ai-overview) principles to identify the architectural components, entities, interfaces, constraints. Ask the right questions early and explore design alternatives with the engineering team.
 
 - Think hard about the **costs of ML** and whether we are solving a repetitive problem at scale. Many a times, customer problems can be solved with data analytics, dashboards, or rule-based algorithms as the first phase of the project.
 
@@ -27,9 +27,9 @@ ML projects can be plagued with a phenomenon we can call as the "**Death by Unkn
 
 Notebooks are a great way to kick start Data Analytics and Applied Machine Learning efforts, however for a production releases, additional constraints should be considered:
 
-- Understand the [end-end flow of data management](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/ai-overview), how data will be made available (ingestion flows), what's the frequency, storage, retention of data. Plan user stories and design spikes around these flows to ensure a robust ML pipeline is developed.
+- Understand the [end-end flow of data management](https://learn.microsoft.com/en-us/azure/architecture/data-guide/big-data/ai-overview), how data will be made available (ingestion flows), what's the frequency, storage, retention of data. Plan user stories and design spikes around these flows to ensure a robust ML pipeline is developed.
 
-- Engineering team should follow the same rigor in building ML projects as in any software engineering project. We at CSE (Commercial Software Engineering) have built a good set of resources from our learnings in our [CSE Engineering Playbook](../index.md).
+- Engineering team should follow the same rigor in building ML projects as in any software engineering project. We at ISE (Industry Solutions Engineering) have built a good set of resources from our learnings in our [ISE Engineering Playbook](../index.md).
 - Think about the how the model will be deployed, for example, are there technical constraints due to an edge device, or network constraints that will prevent updating the model. Understanding of the environment is critical, refer to the [Model Production Checklist](ml-model-checklist.md) as a reference to determine model deployment choices.
 
 - ML Focussed projects are not a "one-shot" release solution, they need to be nurtured, evolved, and improved over time. Plan for a continuous improvement lifecycle, the initial phases can be model feasibility and validation to get the good enough prediction rate, the later phases can be then be scaling and improving the models through feedback loops and fresh data sets.

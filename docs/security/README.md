@@ -1,6 +1,6 @@
 # Security
 
-Developers working on [CSE](../CSE.md) projects should adhere to industry-recommended standard practices for secure design and implementation of code. For the purposes of our customers, this means our engineers should understand the [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/), as well as how to mitigate as many of them as possible, using the resources below.
+Developers working on projects should adhere to industry-recommended standard practices for secure design and implementation of code. For the purposes of our customers, this means our engineers should understand the [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/), as well as how to mitigate as many of them as possible, using the resources below.
 
 **If you are looking for a fast way to get started** evaluating your application or design, check out the "Secure Coding Practices Quick Reference" document below, which contains an itemized checklist of high-level concepts you can validate are being done properly. This checklist covers many common errors associated with the OWASP Top 10 list linked above, and should be the minimum amount of effort being put into security.
 
@@ -13,14 +13,14 @@ When requesting a security review for your application, please make sure you hav
 - [Secure Coding Practices Quick Reference](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 - [Web Application Security Quick Reference](https://owasp.org/www-pdf-archive//OWASP_Web_Application_Security_Quick_Reference_Guide_0.3.pdf)
 - [Security Mindset/Creating a Security Program Quick Start](https://github.com/OWASP/Quick-Start-Guide/blob/master/OWASP%20Quick%20Start%20Guide.pdf?raw=true)
-- [Automated Secret Detection](./secret-detection.md)
+- [Credential Scanning / Secret Detection](../continuous-integration/dev-sec-ops/secret-management/credential_scanning.md)
 - [Threat Modelling](./threat-modelling.md)
 
 ## Azure DevOps Security
 
 - [Security Engineering DevSecOps Practices](https://www.microsoft.com/en-us/securityengineering/devsecops)
-- [Azure DevOps Data Protection Overview](https://docs.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops)
-- [Security and Identity in Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/security/about-security-identity?view=azure-devops)
+- [Azure DevOps Data Protection Overview](https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops)
+- [Security and Identity in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/security/about-security-identity?view=azure-devops)
 - [Security Code Analysis](https://secdevtools.azurewebsites.net/)
 
 ## DevSecOps

@@ -1,7 +1,8 @@
+---
 site_name: Code With Engineering Playbook
 site_url: https://microsoft.github.io/code-with-engineering-playbook
-site_description: CSE Code With Engineering Playbook
-site_author: Microsoft CSE
+site_description: ISE Code With Engineering Playbook
+site_author: Microsoft ISE
 
 repo_url: https://github.com/microsoft/code-with-engineering-playbook/
 edit_uri: ""

@@ -17,19 +17,19 @@ UI testing provides the ability to ensure that users have a consistent visual us
 
 ## Evidence and Measures
 
-Integrating UI Tests in to your CI/CD is necessary but more challenging than unit tests.  The increased challenge is that UI tests either need to run headlessly with something like [Puppeteer](https://github.com/puppeteer/puppeteer) or there needs to be more extensive orchestration with Azure DevOps or GitHub that would handle the full testing integration for you like [BrowserStack](https://www.browserstack.com/automate/azure)
+Integrating UI Tests in to your CI/CD is necessary but more challenging than unit tests.  The increased challenge is that UI tests either need to run in headless mode with something like [Puppeteer](https://github.com/puppeteer/puppeteer) or there needs to be more extensive orchestration with Azure DevOps or GitHub that would handle the full testing integration for you like [BrowserStack](https://www.browserstack.com/automate/azure)
 
 Integrations like `BrowserStack` are nice since they provide Azure DevOps reports as part of the test run.
 
-That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
+That said, Azure DevOps supports a variety of test adapters, so you can use any UI Testing framework that supports outputting the test results to one of the output formats listed at [Publish Test Results task](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
 
-If you're using an Azure DevOps pipeline to run UI tests, consider using a [self hosted agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser) in order to manage framework versions and avoid unexpected updates.
+If you're using an Azure DevOps pipeline to run UI tests, consider using a [self hosted agent](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser) in order to manage framework versions and avoid unexpected updates.
 
 ## General Guidance
 
 The scope of UI testing should be strategic. UI tests can take a significant amount of time to both implement and run, and it's challenging to test every type of user interaction in a production application due to the large number of possible interactions.
 
-Designing the UI tests around the functional tests makes sense.  For example, given an input form, a UI test would ensure that the visual representation is consistent across devices, is accessible and interactable, and is consistent across code changes.
+Designing the UI tests around the functional tests makes sense.  For example, given an input form, a UI test would ensure that the visual representation is consistent across devices, is accessible and easy to interact with, and is consistent across code changes.
 
 UI Tests will catch 'runtime' bugs that unit and functional tests won't.  For example if the submit button for an input form is rendered but not clickable due to a positioning bug in the UI, then this could be considered a runtime bug that would not have been caught by unit or functional tests.
 
@@ -42,7 +42,7 @@ Good UI tests follow a few general principles:
 - Choose a UI testing framework that enables quick feedback and is easy to use
 - Design the UI to be easily testable.  For example, add CSS selectors or set the id on elements in a web page to allow easier selecting.
 - Test on all primary devices that the user uses, don't just test on a single device or OS.
-- When a test mutates data ensure that data is created on demand and cleaned up after.  The consequence of not doing this would be inconsistent testing.  
+- When a test mutates data ensure that data is created on demand and cleaned up after.  The consequence of not doing this would be inconsistent testing.
 
 ### Common Issues
 
@@ -50,7 +50,7 @@ UI Testing can get very challenging at the lower level, especially with a testin
 
 This is an important point though.  Depending on the UI testing framework you choose will result in either a smoother test creation experience, or a very frustrating and time-consuming one.  If you were to choose just Selenium the development costs and time costs would likely be very high.  It's better to use either a framework built on top of Selenium or one that attempts to solve many of the problems with something like Selenium.
 
-Note there that there are further considerations as when running headlessly the UI can render differently than what you may see on your development machine, particularly with web applications.  Furthermore, note that when rendering in different page dimensions elements may disappear on the page due to CSS rules, therefore not be selectable by certain frameworks with default options out of the box.  All of these issues can be resolved and worked around, but the rendering demonstrates another particular challenge of UI testing.
+Note there that there are further considerations as when running in headless mode the UI can render differently than what you may see on your development machine, particularly with web applications.  Furthermore, note that when rendering in different page dimensions elements may disappear on the page due to CSS rules, therefore not be selectable by certain frameworks with default options out of the box.  All of these issues can be resolved and worked around, but the rendering demonstrates another particular challenge of UI testing.
 
 ## Specific Guidance
 
@@ -62,7 +62,7 @@ Recommended testing frameworks:
   - [Jest](https://jestjs.io/docs/en/snapshot-testing)
   - [Selenium](https://www.selenium.dev)
 - OS/Mobile Applications
-  - [Coded UI tests (CUITs)](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019)
-  - [Xamarin.UITest](https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/)
+  - [Coded UI tests (CUITs)](https://learn.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019)
+  - [Xamarin.UITest](https://learn.microsoft.com/en-us/appcenter/test-cloud/uitest/)
 
 > Note that the framework listed above that is paid is BrowserStack, it's listed as it's an industry standard, the rest are open source and free.

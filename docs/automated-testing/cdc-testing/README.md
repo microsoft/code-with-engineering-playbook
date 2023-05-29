@@ -70,7 +70,7 @@ Additionally, [the CDC test scope](https://docs.pact.io/getting_started/testing-
 
 ## Resources
 
-* Testing pyramid from [Kent C. Dodd’s blog](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c)
+* Testing pyramid from [Kent C. Dodd's blog](https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c)
 * [Pact](https://docs.pact.io/), a code-first consumer-driven contract testing tool with support for several different programming languages
 * [Consumer-driven contracts](https://martinfowler.com/articles/consumerDrivenContracts.html) from Ian Robinson
 * [Contract test](https://martinfowler.com/bliki/ContractTest.html) from Martin Fowler

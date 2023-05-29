@@ -1,8 +1,8 @@
-# Responsible AI in CSE
+# Responsible AI in ISE
 
 ## Microsoft's Responsible AI principles
 
-Every ML project in CSE goes through a Responsible AI (RAI) assessment to ensure that it upholds Microsoft's [6 Responsible AI principles](https://www.microsoft.com/en-us/ai/responsible-ai):
+Every ML project in ISE goes through a Responsible AI (RAI) assessment to ensure that it upholds Microsoft's [6 Responsible AI principles](https://www.microsoft.com/en-us/ai/responsible-ai):
 
 - Fairness
 - Reliability & Safety
@@ -13,7 +13,7 @@ Every ML project in CSE goes through a Responsible AI (RAI) assessment to ensure
 
 Every project goes through the RAI process, whether we are building a new ML model from scratch, or putting an existing model in production.
 
-## CSE's Responsible AI process
+## ISE's Responsible AI process
 
 The process begins as soon as we start a prospective project. We start to complete a Responsible AI review document, and an impact assessment, which provides a structured way to explore topics such as:
 

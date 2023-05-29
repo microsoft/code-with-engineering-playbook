@@ -48,7 +48,7 @@ All virtual environments frameworks create isolation, some also propose dependen
 
 #### Types of virtual environments
 
-In CSE, we often choose from either `venv`, `Conda` or `Poetry`, depending on the project requirements and complexity.
+In ISE, we often choose from either `venv`, `Conda` or `Poetry`, depending on the project requirements and complexity.
 
 - [venv](https://docs.python.org/3/library/venv.html) is included in Python, is the easiest to use, but lacks more advanced features like dependency management.
 - [Conda](https://docs.conda.io/en/latest/) is a popular package, dependency and environment management framework. It supports multiple stacks (Python, R) and multiple versions of the same environment (e.g. multiple Python versions). `Conda` maintains its own package repository, therefore some packages might not be downloaded and managed directly through `Conda`.
@@ -89,7 +89,7 @@ Experiment tracking tools allow data scientists and researchers to keep track of
 
 #### Types of experiment tracking frameworks
 
-Experiment tracking frameworks differ by the set of features they provide for collecting experiment metadata, and comparing and analyzing experiments. In CSE, we mainly use [MLFlow](https://mlflow.org/) on [Databricks](https://databricks.com/product/managed-mlflow) or [Azure ML Experimentation](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-track-experiments). Note that some experiment tracking frameworks require a deployment, while others are SaaS.
+Experiment tracking frameworks differ by the set of features they provide for collecting experiment metadata, and comparing and analyzing experiments. In ISE, we mainly use [MLFlow](https://mlflow.org/) on [Databricks](https://databricks.com/product/managed-mlflow) or [Azure ML Experimentation](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-track-experiments). Note that some experiment tracking frameworks require a deployment, while others are SaaS.
 
 #### Experiment tracking outcomes
 

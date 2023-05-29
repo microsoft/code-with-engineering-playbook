@@ -30,14 +30,11 @@ Updating the major / minor version indicates changes of the API / interfaces / c
 
 ## Semantic Versioning
 
-Semantic Versioning is a concept of calculating the version number automatically based on a certain source code repository.
+Semantic Versioning is a versioning scheme specifying how to interpret the different version numbers. The most common format is `major.minor.patch`. The version number is incremented based on the following rules:
 
-The `semver` tool looks at a GIT source control branch and comes up with a *repeatable* and *unique* version number based on
-
-* number of commits since last major or minor release
-* commit messages
-* tags
-* branch names
+* Major version when you make incompatible API changes,
+* Minor version when you add functionality in a backwards-compatible manner, and
+* Patch version when you make backwards-compatible bug fixes.
 
 Examples of semver version numbers:
 
@@ -45,16 +42,24 @@ Examples of semver version numbers:
 * **2.1.0-beta**: 2.1.0 in beta branch
 * **2.4.2**: 2.4.2 release
 
-Version Updates happen through:
+A common practice is to determine the version number during the build process. For this the source control repository is utilized to determine the version number automatically based the source code repository.
+
+The `GitVersion` tool uses the git history to generate *repeatable* and *unique* version number based on
+
+* number of commits since last major or minor release
+* commit messages
+* tags
+* branch names
+
+Version updates happen through:
 
 * Commit messages or tags for Major / Minor / Revision updates.
+  > When using commit messages a convention such as Conventional Commits is recommended (see [Git Guidance - Commit Message Structure](git-guidance/README.md#commit-message-structure))
 * Branch names (e.g. develop, release/..) for Alpha / Beta / RC
 * Otherwise: Number of commits (+12, ...)
 
-Recommendation is to run semver during your CI process to make each build uniquely identifiable.
-
 ## Resources
 
+* [GitVersion](https://gitversion.net/)
 * [Semantic Versioning](https://semver.org/)
-* [Versioning in C#](https://docs.microsoft.com/en-us/dotnet/csharp/versioning)
-* [SemVer Task for VSTS](https://marketplace.visualstudio.com/items?itemName=geeklearningio.gl-vsts-tasks-semver)
+* [Versioning in C#](https://learn.microsoft.com/en-us/dotnet/csharp/versioning)

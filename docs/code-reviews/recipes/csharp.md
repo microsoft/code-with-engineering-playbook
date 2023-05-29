@@ -2,7 +2,7 @@
 
 ## Style Guide
 
-[CSE](../../CSE.md) developers follow Microsoft's [C# Coding Conventions](https://docs.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions) and, where applicable, Microsoft's [Secure Coding Guidelines](https://docs.microsoft.com/dotnet/standard/security/secure-coding-guidelines).
+Developers should follow Microsoft's [C# Coding Conventions](https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions) and, where applicable, Microsoft's [Secure Coding Guidelines](https://learn.microsoft.com/dotnet/standard/security/secure-coding-guidelines).
 
 ## Code Analysis / Linting
 
@@ -43,23 +43,23 @@ You can then reference the `common.props` in your other project files to ensure 
 </Project>
 ```
 
-The [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019) allows for configuration and overrides of rules. You can have an .editorconfig file at project level to customize rules for different projects (test projects for example).
+The [.editorconfig](https://learn.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019) allows for configuration and overrides of rules. You can have an .editorconfig file at project level to customize rules for different projects (test projects for example).
 
-[Details about the configuration of different rules](https://docs.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019).
+[Details about the configuration of different rules](https://learn.microsoft.com/en-us/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019).
 
 ### .NET analyzers
 
 Microsoft's .NET analyzers has code quality rules and .NET API usage rules implemented as analyzers using the .NET Compiler Platform (Roslyn). This is the replacement for Microsoft's legacy FxCop analyzers.
 
-[Enable or install first-party .NET analyzers](https://docs.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019).
+[Enable or install first-party .NET analyzers](https://learn.microsoft.com/en-us/visualstudio/code-quality/install-net-analyzers?view=vs-2019).
 
-If you are currently using the legacy FxCop analyzers, [migrate from FxCop analyzers to .NET analyzers](https://docs.microsoft.com/en-us/visualstudio/code-quality/migrate-from-fxcop-analyzers-to-net-analyzers?view=vs-2019).
+If you are currently using the legacy FxCop analyzers, [migrate from FxCop analyzers to .NET analyzers](https://learn.microsoft.com/en-us/visualstudio/code-quality/migrate-from-fxcop-analyzers-to-net-analyzers?view=vs-2019).
 
 ### StyleCop analyzer
 
 The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions about braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
 
-The minimum rules set teams should adopt is the [Managed Recommended Rules](https://docs.microsoft.com/en-us/visualstudio/code-quality/managed-minimum-rules-rule-set-for-managed-code?view=vs-2022) rule set.
+The minimum rules set teams should adopt is the [Managed Recommended Rules](https://learn.microsoft.com/en-us/visualstudio/code-quality/managed-minimum-rules-rule-set-for-managed-code?view=vs-2022) rule set.
 
 ## Automatic Code Formatting
 
@@ -89,19 +89,19 @@ The above steps also work in VS Code provided you enable Roslyn support for Omni
 
 In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these C# specific code review items
 
-* [ ] Does this code make correct use of [asynchronous programming constructs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of ```await``` and ```Task.WhenAll``` including CancellationTokens?
+* [ ] Does this code make correct use of [asynchronous programming constructs](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/#BKMK_AsyncandAwait), including proper use of `await` and `Task.WhenAll` including CancellationTokens?
 * [ ] Is the code subject to concurrency issues? Are shared objects properly protected?
 * [ ] Is dependency injection (DI) used? Is it setup correctly?
-* [ ] Are [middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
-* [ ] Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed ([using pattern](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement))?
+* [ ] Are [middleware](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/index?view=aspnetcore-2.1&tabs=aspnetcore2x) included in this project configured correctly?
+* [ ] Are resources released deterministically using the IDispose pattern? Are all disposable objects properly disposed ([using pattern](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement))?
 * [ ] Is the code creating a lot of short-lived objects. Could we optimize GC pressure?
 * [ ] Is the code written in a way that causes boxing operations to happen?
-* [ ] Does the code [handle exceptions correctly](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)?
+* [ ] Does the code [handle exceptions correctly](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)?
 * [ ] Is package management being used (NuGet) instead of committing DLLs?
 * [ ] Does this code use LINQ appropriately? Pulling LINQ into a project to replace a single short loop or in ways that do not perform well are usually not appropriate.
-* [ ] Does this code properly validate arguments sanity (i.e. [CA1062](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
-* [ ] Does this code include telemetry ([metrics, tracing](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
-* [ ] Does this code leverage the [options design pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
+* [ ] Does this code properly validate arguments sanity (i.e. [CA1062](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062))? Consider leveraging extensions such as [Ensure.That](https://github.com/danielwertheim/Ensure.That)
+* [ ] Does this code include telemetry ([metrics, tracing](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [logging](https://serilog.net/)) instrumentation?
+* [ ] Does this code leverage the [options design pattern](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1) by using classes to provide strongly typed access to groups of related settings?
 * [ ] Instead of using raw strings, are constants used in the main class? Or if these strings are used across files/classes, is there a static class for the constants?
 * [ ] Are magic numbers explained? There should be no number in the code without at least a comment of why this is here. If the number is repetitive, is there a constant/enum or equivalent?
 * [ ] Is proper exception handling set up? Catching the exception base class (`catch (Exception)`) is generally not the right pattern. Instead, catch the specific exceptions that can happen e.g., `IOException`.

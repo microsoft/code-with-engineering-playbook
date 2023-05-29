@@ -1,6 +1,6 @@
 # Fault Injection Testing
 
-Fault injection testing is the deliberate introduction of errors and faults to a system to validate and harden its stability and reliability. The goal is to improve the system's design for resiliency and performance under intermittent failure conditions over time.
+Fault injection testing is the deliberate introduction of errors and faults to a system to validate and harden its [stability and reliability](../../reliability/README.md). The goal is to improve the system's design for resiliency and performance under intermittent failure conditions over time.
 
 ## When To Use
 
@@ -29,7 +29,7 @@ Fault injection methods are a way to increase coverage and validate software rob
 * **Error** - That part of the system state that may cause a subsequent failure.
 * **Failure** - An event that occurs when the delivered service deviates from correct state.
 * **Fault-Error-Failure cycle** - A key mechanism in [dependability](https://en.wikipedia.org/wiki/Dependability): A fault may cause an error. An error may cause further errors within the system boundary; therefore each new error acts as a fault. When error states are observed at the system boundary, they are termed failures.
-(Modeled by [Laprie/Aviˇzienis](https://www.nasa.gov/pdf/636745main_day_3-algirdas_avizienis.pdf))
+(Modeled by [Laprie/Avizienis](https://www.nasa.gov/pdf/636745main_day_3-algirdas_avizienis.pdf))
 
 #### Fault Injection Testing Basics
 
@@ -55,16 +55,16 @@ Examples of performing fault injection during the development lifecycle:
 
 #### Fault injection testing in the release cycle
 
-Much like [Synthetic Monitoring Tests](../synthetic-monitoring-tests/README.md), fault injection testing in the release cycle is a part of [Shift-Right testing](https://docs.microsoft.com/en-us/devops/deliver/shift-right-test-production) approach, which uses safe methods to perform tests in a production or pre-production environment. Given the nature of distributed, cloud-based applications, it is very difficult to simulate the real behavior of services outside their production environment. Testers are encouraged to run tests where it really matters, on a live system with customer traffic.
+Much like [Synthetic Monitoring Tests](../synthetic-monitoring-tests/README.md), fault injection testing in the release cycle is a part of [Shift-Right testing](https://learn.microsoft.com/en-us/devops/deliver/shift-right-test-production) approach, which uses safe methods to perform tests in a production or pre-production environment. Given the nature of distributed, cloud-based applications, it is very difficult to simulate the real behavior of services outside their production environment. Testers are encouraged to run tests where it really matters, on a live system with customer traffic.
 
 Fault injection tests rely on metrics observability and are usually statistical; The following high-level steps provide a sample of practicing fault injection and chaos engineering:
 
 * Measure and define a steady (healthy) state for the system's interoperability.
-* hypothesize based on a fault mode.
+* Create hypotheses based on predicted behavior when a fault is introduced.
 * Introduce real-world fault-events to the system.
 * Measure the state and compare it to the baseline state.
-* Document the process and the observations
-* Identify and act on the result
+* Document the process and the observations.
+* Identify and act on the result.
 
 ## Best Practices and Advice
 
@@ -89,9 +89,12 @@ A test can either succeed or fail. In the event of failure, there will likely be
 
 ### Chaos
 
+* [Azure Chaos Studio](https://learn.microsoft.com/en-US/azure/chaos-studio/chaos-studio-overview) - An in-preview tool for orchestrating controlled fault injection experiments on Azure resources.
 * [Chaos toolkit](https://chaostoolkit.org/) - A declarative, modular chaos platform with many extensions, including the [Azure actions and probes kit](https://github.com/chaostoolkit-incubator/chaostoolkit-azure).
 * [Kraken](https://github.com/openshift-scale/kraken) - An Openshift-specific chaos tool, maintained by Redhat.
 * [Chaos Monkey](https://github.com/netflix/chaosmonkey) - The Netflix platform which popularized chaos engineering (doesn't support Azure OOTB).
+* [Simmy](https://github.com/Polly-Contrib/Simmy) - A .NET library for chaos testing and fault injection integrated with the [Polly](https://github.com/App-vNext/Polly) library for resilience engineering.
+[This ISE dev blog post](https://devblogs.microsoft.com/cse/2023/03/07/build-test-resilience-dotnet-functions/) provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.
 
 ## Conclusion
 
@@ -106,6 +109,6 @@ Fault injection is a powerful tool and should be used with caution. Cases such a
 * [Cindy Sridharan's Testing in production blog post](https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1)
 * [Cindy Sridharan's Testing in production blog post cont.](https://medium.com/@copyconstruct/testing-in-production-the-hard-parts-3f06cefaf592)
 * [Fault injection in Azure Search](https://azure.microsoft.com/es-es/blog/inside-azure-search-chaos-engineering/)
-* [Azure Architecture Framework - Chaos engineering](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering)
-* [Azure Architecture Framework - Testing resilience](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/testing)
+* [Azure Architecture Framework - Chaos engineering](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering)
+* [Azure Architecture Framework - Testing resilience](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/testing)
 * [Landscape of Software Failure Cause Models](https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models)

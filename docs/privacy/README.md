@@ -4,8 +4,7 @@ This part of the engineering playbook focuses on privacy design guidelines and p
 Private data handling and protection requires both the proper design of software,
 systems and databases, as well as the implementation of organizational processes and procedures.
 
-In general, developers working on [CSE](../CSE.md) projects should adhere to
-Microsoft's recommended standard practices and regulations on Privacy and Data Handling.
+In general, developers working on [ISE](../ISE.md) projects should adhere to Microsoft's recommended standard practices and regulations on Privacy and Data Handling.
 
 The playbook currently contains two main parts:
 
