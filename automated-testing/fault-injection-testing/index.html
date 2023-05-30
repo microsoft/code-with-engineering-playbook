@@ -7272,6 +7272,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#fault-injection-testing-in-kubernetes" class="md-nav__link">
+    Fault injection testing in kubernetes
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7401,6 +7408,17 @@ Examples of performing fault injection during the development lifecycle:</p>
 <li>Document the process and the observations.</li>
 <li>Identify and act on the result.</li>
 </ul>
+<h4 id="fault-injection-testing-in-kubernetes">Fault injection testing in kubernetes</h4>
+<p>With the advancement of kubernetes (k8s) as the infrastructure platform, fault injection testing in kubernetes has become inevitable to ensure that system behaves in a reliable manner in the event of a fault or failure. There could be different type of workloads running within a k8s cluster which are written in different languages. For eg. within a K8s cluster, you can run a micro service, a web app and/or a scheduled job. Hence you need to have mechanism to inject fault into any kind of workloads running within the cluster. In addition, kubernetes clusters are managed differently from traditional infrastructure. The tools used for fault injection testing within kubernetes should have compatibility with k8s infrastructure. These are the main characteristics which are required:</p>
+<ul>
+<li>Ease of injecting fault into kubernetes pods.</li>
+<li>Support for faster tool installation within the cluster.</li>
+<li>Support for YAML based configurations which works well with kubernetes.</li>
+<li>Ease of customization to add custom resources.</li>
+<li>Support for workflows to deploy various workloads and faults.</li>
+<li>Ease of maintainability of the tool</li>
+<li>Ease of integration with telemetry</li>
+</ul>
 <h2 id="best-practices-and-advice">Best Practices and Advice</h2>
 <p>Experimenting in production has the benefit of running tests against a live system with real user traffic, ensuring its health, or building confidence in its ability to handle errors gracefully. However, it has the potential to cause unnecessary customer pain.
 A test can either succeed or fail. In the event of failure, there will likely be some impact on the production environment. Thinking about the <strong>Blast Radius</strong> of the effect, should the test fail, is a crucial step to conduct beforehand. The following practices may help minimize such risk:</p>
@@ -7426,8 +7444,9 @@ A test can either succeed or fail. In the event of failure, there will likely be
 <li><a href="https://chaostoolkit.org/">Chaos toolkit</a> - A declarative, modular chaos platform with many extensions, including the <a href="https://github.com/chaostoolkit-incubator/chaostoolkit-azure">Azure actions and probes kit</a>.</li>
 <li><a href="https://github.com/openshift-scale/kraken">Kraken</a> - An Openshift-specific chaos tool, maintained by Redhat.</li>
 <li><a href="https://github.com/netflix/chaosmonkey">Chaos Monkey</a> - The Netflix platform which popularized chaos engineering (doesn't support Azure OOTB).</li>
-<li><a href="https://github.com/Polly-Contrib/Simmy">Simmy</a> - A .NET library for chaos testing and fault injection integrated with the <a href="https://github.com/App-vNext/Polly">Polly</a> library for resilience engineering.
-<a href="https://devblogs.microsoft.com/cse/2023/03/07/build-test-resilience-dotnet-functions/">This ISE dev blog post</a> provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.</li>
+<li><a href="https://github.com/Polly-Contrib/Simmy">Simmy</a> - A .NET library for chaos testing and fault injection integrated with the <a href="https://github.com/App-vNext/Polly">Polly</a> library for resilience engineering.</li>
+<li><a href="https://github.com/litmuschaos/litmus">Litmus</a> - A CNCF open source tool for chaos testing and fault injection for kubernetes cluster.</li>
+<li><a href="https://devblogs.microsoft.com/cse/2023/03/07/build-test-resilience-dotnet-functions/">This ISE dev blog post</a> provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.</li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>From the principals of chaos: "The harder it is to disrupt the steady-state, the more confidence we have in the behavior of the system. If a weakness is uncovered, we now have a target for improvement before that behavior manifests in the system at large".</p>
@@ -7449,7 +7468,7 @@ Fault injection is a powerful tool and should be used with caution. Cases such a
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 30, 2023</span>
       
     
   </small>
