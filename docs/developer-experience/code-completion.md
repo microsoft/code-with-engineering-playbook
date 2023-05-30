@@ -6,35 +6,9 @@ Code completion is a feature used in live programming that actively reads the us
 
 ### 1. GitHub Co-Pilot: A Code Completion Tool
 
-![GitHub Code Pilot](images/github-copilot.png)
+![GitHub Copilot](images/github-copilot.png)
 
-Benefits:
-
-- Autocompletion of verbose boilerplate code
-  - For example, constructors, getters, setters, and other common code
-  - Writing mocks for unit tests
-- Auto-generated code suggestions based on:
-  - function names
-  - descriptive comments
-  - existing code
-- Easy to get started, and works automatically
-- Works with many common languages including Python, JavaScript, TypeScript, Ruby, Go, C#, or C++.
-
-Downsides:
-
-- Experience is limited in offline scenarios.
-
-Usage:
-
-Install the VS Code Extension, and log in to your Microsoft GitHub Account.
-
-Sign Up:
-
-[GitHub-CoPilot - Home Page](https://aka.ms/github/copilot)
-
-Docs:
-
-[GitHub-CoPilot - GitHub - Docs](https://docs.github.com/en/copilot)
+Read more about GitHub Co-Pilot in the [Copilots](./copilots.md) article.
 
 ### 2. VS Code's Intellisense
 

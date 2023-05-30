@@ -1,10 +1,10 @@
-# Artificial Intelligence
+# Copilots
 
 There are a number of AI tools that can improve the developer experience. This article will discuss tooling that is available as well as advice on when it might be appropriate to use such tooling.
 
 ## GitHub Copilot
 
-The current version of GitHub Copilot can provide code completion in Visual Studio Code. It is a VS Code extension that can be installed from the VS Code Marketplace. It is currently in beta and requires a GitHub account to use. It is free to use during the beta period. It is currently available for VS Code only, but there are plans to support other IDEs in the future. It is currently available for the following languages: JavaScript, TypeScript, Ruby, Go, Python, C#, C++, and Java. You can find more information about GitHub Copilot [here](https://copilot.github.com/).
+The current version of GitHub Copilot can provide code completion in many popular IDEs. For instance, the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) that can be installed from the VS Code Marketplace. It requires a GitHub account to use. For more information about what IDEs are supported, what languages are supported, cost, features, etc., please checkout out the information on [Copilot](https://github.com/features/copilot) and [Copilot for Business](https://resources.github.com/copilot-for-business/).
 
 Developers on our team have found the following use-cases for GitHub Copilot:
 
@@ -16,7 +16,7 @@ If you want Copilot to write something useful for you, try writing a comment tha
 
 ## GitHub Copilot Labs
 
-Copilot has extension that offers additional features that are not yet ready for prime-time. You can install it from the VS Code Marketplace. These features include:
+Copilot has a [GitHub Copilot Labs extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-labs) that offers additional features that are not yet ready for prime-time. For VS Code, you can install it from the VS Code Marketplace. These features include:
 
 - __Explain__. Copilot can explain what the code is doing in natural language.
 - __Translate__. Copilot can translate code from one language to another.
@@ -25,7 +25,7 @@ Copilot has extension that offers additional features that are not yet ready for
 
 ## GitHub Copilot X
 
-This extention for Copilot is currently in technical preview. It will enable the following additional features:
+The next version of Copilot offers a number of new use-cases beyond code completion. These include:
 
 - __Chat__. Rather than just providing code completion, Copilot will be able to have a conversation with you about what you want to do. It has context about the code you are working on and can provide suggestions based on that context.
 - __Explain__. Copilot can explain what the code is doing in natural language.
@@ -34,7 +34,7 @@ This extention for Copilot is currently in technical preview. It will enable the
 
 It can do most of what Labs can do with "brushes" as "topics", but whereas Labs changes the code in your file, the chat functionality just shows what it would change in the window. However, there is also an "inline mode" for GitHub Copilot Chat that allows you to make changes to your code inline which does not have this same limitation.
 
-You must sign-up for the preview [here](https://github.com/features/preview/copilot-x). Once you are accepted, you will be able to install the extension from the VS Code Marketplace. You may require the Insiders build of VS Code.
+You must sign-up for the preview [here](https://github.com/features/preview/copilot-x). Once you are accepted, you will be able to install the various extensions from the VS Code Marketplace - most notabably the [GitHub Copilot Chat extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat). You may require the Insiders build of VS Code. To check whether you have been accepted into the preview, you can click [here](https://github.com/github-copilot/chat_waitlist_signup/join).
 
 ## ChatGPT / Bing Chat
 
@@ -46,15 +46,13 @@ Prior to GitHub Copilot X chat availability, we used ChatGPT and Bing Chat to pr
 - __Improve and Validate__. If you are unsure of the implications of writing code a particular way, you can ask ChatGPT questions about it. For instance, you might ask if there is a way to write the code that is more performant or uses less memory. Once it gives you an opinion, you can ask it to provide documentation validating that assertion.
 - __Change Perspective__. ChatGPT can impersonate a persona or even a system and answer questions from that perspective. For example, you can ask it to explain what a particular piece of code does from the perspective of a user. You might have ChatGPT imagine it is a database adminstrator and ask it to explain how to improve a particular query.
 
-When using Bing Chat, we found much better results using Creative Mode.
+While GitHub Copilot X makes the use of ChatGPT and Bing Chat less useful, Copilot will only answer "questions about coding". Copilot's interpretation of that rule can be a little restrictive and there are plenty of other cases, that might require these other tools.
+
+When using Bing Chat, experiment with modes, sometimes changing to creative mode can give the results you need. Our devcrew found much better results using Creative Mode.
 
 ## Prompt Engineering
 
-Prompt Engineering is a cutting edge subject area focused on prompting strategies designed to derive the most value from an AI response.
-
-Most LLM services such as GPT-4 or Bing Chat have a limited number of prompts a user can send to it in a given amount of time. Even outside of that scenario, we want to get the most useful information as quickly as possible.
-
-This is one open source example of documentation around prompt engineering, and should be seen as a jumping off point for further investigation. [Link](https://github.com/brexhq/prompt-engineering)
+Chat AI tools are only as good as the prompts you give them. The quality and appropriateness of the output can vary greatly depending on the prompt. In addition, many of these tools restrict the number of prompts you can send in a given amount of time. To learn more about prompt engineering, you might review some open source documentation [here](https://github.com/brexhq/prompt-engineering).
 
 ## Considerations
 
