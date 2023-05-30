@@ -8,7 +8,7 @@ As cloud usage scales, considerations for subscription design, management groups
 
 ## References
 
-The following references can be used to understand the lastest best practices in organizing cloud resources:
+The following references can be used to understand the latest best practices in organizing cloud resources:
 
 * [Organizing Subscriptions](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions)
 * [Resource Tagging Decision Guide](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/)

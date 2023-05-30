@@ -54,7 +54,7 @@ An automated build should encompass the following principles:
 - A single command should have the capability of building the system. This is also true for builds running on a CI server or on a developers local machine.
 
 ### No IDE Dependencies
-  
+
 - It's essential to have a build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
 ### DevOps security checks
@@ -64,7 +64,7 @@ An automated build should encompass the following principles:
 ## Build Environment Dependencies
 
 ### Automated local environment setup
-  
+
 - We encourage maintaining a consistent developer experience for all team members. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
 - Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies.
 - All developers on the team should be able to emulate the build environment from their local desktop regardless of their OS.
@@ -98,7 +98,7 @@ Terraform resource providers like [Azure DevOps](https://github.com/microsoft/te
 ### Why
 
 - Repeatable and auditable changes to infrastructure make it easier to roll back to known good configurations and to rapidly expand to new stages and regions without having to hand-wire cloud resources
-- Battle tested and templatized IAC reference projects like [Cobalt](https://github.com/microsoft/cobalt) and [Bedrock](https://github.com/microsoft/bedrock) enable more engineering teams deploy secure and scalable solutions at a much more rapid pace
+- Battle tested and templated IAC reference projects like [Cobalt](https://github.com/microsoft/cobalt) and [Bedrock](https://github.com/microsoft/bedrock) enable more engineering teams deploy secure and scalable solutions at a much more rapid pace
 - Simplify “lift and shift” scenarios by abstracting the complexities of cloud-native computing away from application developer teams.
 
 ### IAC DevOPS: Operations by Pull Request
@@ -121,7 +121,7 @@ Terraform resource providers like [Azure DevOps](https://github.com/microsoft/te
 - Provisioning cloud environments should be a repeatable process that's driven off the infrastructure code artifacts checked into our git repository.
 
 #### IAC CI Workflow
-  
+
 - When the IAC template files change through a git-based workflow, A CI build pipeline builds, validates and reconciles the target infrastructure environment's current state with the expected state. The infrastructure execution plan candidate for these fixed environments are reviewed by a cloud administrator as a gate check prior to the deployment stage of the pipeline applying the execution plan.
 
 #### Developer Read-Only Access to Cloud Resources
