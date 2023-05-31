@@ -17,7 +17,7 @@ Some other tools may be:
 * Linters for [bash](https://www.shellcheck.net/) scripts,
 * Etc...
 
-Linting files that are not *the source code* can ensure a common format with common rules for each developer. These checks should be also run in a Continuous Integration Pipeline, but it is a good practice to run them prior opening a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+Linting files that are not *the source code* can ensure a common format with common rules for each developer. These checks should be also run in a [Continuous Integration Pipeline](https://learn.microsoft.com/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture), but it is a good practice to run them prior opening a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Limitation of custom tools
 
