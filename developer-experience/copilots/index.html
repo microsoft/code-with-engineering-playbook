@@ -12,14 +12,14 @@
         <meta name="author" content="Microsoft ISE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/developer-experience/code-completion/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/developer-experience/copilots/">
       
       <link rel="icon" href="../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.2.16">
     
     
       
-        <title>Code Completion - Code With Engineering Playbook</title>
+        <title>Copilots - Code With Engineering Playbook</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#code-completion" class="md-skip">
+        <a href="#copilots" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Code Completion
+              Copilots
             
           </span>
         </div>
@@ -5135,12 +5135,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Code Completion
+          Copilots
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Code Completion
+        Copilots
       </a>
       
         
@@ -5159,29 +5159,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-completion-tools" class="md-nav__link">
-    Code Completion Tools
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Completion Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-github-co-pilot-a-code-completion-tool" class="md-nav__link">
-    1. GitHub Co-Pilot: A Code Completion Tool
+  <a href="#github-copilot" class="md-nav__link">
+    GitHub Copilot
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-vs-codes-intellisense" class="md-nav__link">
-    2. VS Code's Intellisense
+      
+        <li class="md-nav__item">
+  <a href="#github-copilot-labs" class="md-nav__link">
+    GitHub Copilot Labs
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#github-copilot-x" class="md-nav__link">
+    GitHub Copilot X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt-bing-chat" class="md-nav__link">
+    ChatGPT / Bing Chat
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-engineering" class="md-nav__link">
+    Prompt Engineering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considerations" class="md-nav__link">
+    Considerations
+  </a>
   
 </li>
       
@@ -7241,29 +7256,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-completion-tools" class="md-nav__link">
-    Code Completion Tools
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Completion Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-github-co-pilot-a-code-completion-tool" class="md-nav__link">
-    1. GitHub Co-Pilot: A Code Completion Tool
+  <a href="#github-copilot" class="md-nav__link">
+    GitHub Copilot
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-vs-codes-intellisense" class="md-nav__link">
-    2. VS Code's Intellisense
+      
+        <li class="md-nav__item">
+  <a href="#github-copilot-labs" class="md-nav__link">
+    GitHub Copilot Labs
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#github-copilot-x" class="md-nav__link">
+    GitHub Copilot X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt-bing-chat" class="md-nav__link">
+    ChatGPT / Bing Chat
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-engineering" class="md-nav__link">
+    Prompt Engineering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considerations" class="md-nav__link">
+    Considerations
+  </a>
   
 </li>
       
@@ -7281,61 +7311,73 @@
                 
 
 
-<h1 id="code-completion">Code Completion</h1>
-<p>Code completion is a feature used in live programming that actively reads the user's current code in context to present code suggestions in real-time. The code suggestions may be intended to complete the code for efficiency or improve the code quality.</p>
-<h2 id="code-completion-tools">Code Completion Tools</h2>
-<h3 id="1-github-co-pilot-a-code-completion-tool">1. GitHub Co-Pilot: A Code Completion Tool</h3>
-<p><img alt="GitHub Code Pilot" src="../images/github-copilot.png" /></p>
-<p>Benefits:</p>
+<h1 id="copilots">Copilots</h1>
+<p>There are a number of AI tools that can improve the developer experience. This article will discuss tooling that is available as well as advice on when it might be appropriate to use such tooling.</p>
+<h2 id="github-copilot">GitHub Copilot</h2>
+<p>The current version of GitHub Copilot can provide code completion in many popular IDEs. For instance, the <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">VS Code extension</a> that can be installed from the VS Code Marketplace. It requires a GitHub account to use. For more information about what IDEs are supported, what languages are supported, cost, features, etc., please checkout out the information on <a href="https://github.com/features/copilot">Copilot</a> and <a href="https://resources.github.com/copilot-for-business/">Copilot for Business</a>.</p>
+<p>Some example use-cases for GitHub Copilot include:</p>
 <ul>
-<li>Autocompletion of verbose boilerplate code<ul>
-<li>For example, constructors, getters, setters, and other common code</li>
-<li>Writing mocks for unit tests</li>
+<li><strong>Write Documentation</strong>. For example, the above paragraph was written using Copilot.</li>
 </ul>
+<ul>
+<li><strong>Write Unit Tests</strong>. Given that setup and assertions are often consistent across unit tests, Copilot tends to be very accurate.</li>
+</ul>
+<ul>
+<li><strong>Unblock</strong>. It is often hard start writing when staring at a blank page, Copilot can fill the space with something that may or may not be what you ultimately want to do, but it can help get you in the right headspace.</li>
+</ul>
+<p>If you want Copilot to write something useful for you, try writing a comment that describes what your code is going to do - it can often take it from there.</p>
+<h2 id="github-copilot-labs">GitHub Copilot Labs</h2>
+<p>Copilot has a <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-labs">GitHub Copilot Labs extension</a> that offers additional features that are not yet ready for prime-time. For VS Code, you can install it from the VS Code Marketplace. These features include:</p>
+<ul>
+<li><strong>Explain</strong>. Copilot can explain what the code is doing in natural language.</li>
+</ul>
+<ul>
+<li><strong>Translate</strong>. Copilot can translate code from one language to another.</li>
+</ul>
+<ul>
+<li><strong>Brushes</strong>. You can select code that Copilot then modifies inline based on a "brush" you select, for example, to make the code more readable, fix bugs, improve debugging, document, etc.</li>
+</ul>
+<ul>
+<li><strong>Generate Tests</strong>. Copilot can generate unit tests for your code. Though currently this is limited to JavaScript and TypeScript.</li>
+</ul>
+<h2 id="github-copilot-x">GitHub Copilot X</h2>
+<p>The next version of Copilot offers a number of new use-cases beyond code completion. These include:</p>
+<ul>
+<li><strong>Chat</strong>. Rather than just providing code completion, Copilot will be able to have a conversation with you about what you want to do. It has context about the code you are working on and can provide suggestions based on that context. Beyond just writing code, consider using chat to:<p>- <strong>Build SQL Indexes</strong>. Given a query, ChatGPT can generate a SQL index that will improve the performance of the query.</p>
+<p>- <strong>Write Regular Expressions</strong>. These are notoriously difficult to write, but ChatGPT can generate them for you if you give some sample input and describe what you want to extract.</p>
+<p>- <strong>Improve and Validate</strong>. If you are unsure of the implications of writing code a particular way, you can ask questions about it. For instance, you might ask if there is a way to write the code that is more performant or uses less memory. Once it gives you an opinion, you can ask it to provide documentation validating that assertion.</p>
 </li>
-<li>Auto-generated code suggestions based on:<ul>
-<li>function names</li>
-<li>descriptive comments</li>
-<li>existing code</li>
 </ul>
-</li>
-<li>Easy to get started, and works automatically</li>
-<li>Works with many common languages including Python, JavaScript, TypeScript, Ruby, Go, C#, or C++.</li>
-</ul>
-<p>Downsides:</p>
 <ul>
-<li>Experience is limited in offline scenarios.</li>
+<li><strong>Explain</strong>. Copilot can explain what the code is doing in natural language.</li>
 </ul>
-<p>Usage:</p>
-<p>Install the VS Code Extension, and log in to your Microsoft GitHub Account.</p>
-<p>Sign Up:</p>
-<p><a href="https://aka.ms/github/copilot">GitHub-CoPilot - Home Page</a></p>
-<p>Docs:</p>
-<p><a href="https://docs.github.com/en/copilot">GitHub-CoPilot - GitHub - Docs</a></p>
-<h3 id="2-vs-codes-intellisense">2. VS Code's Intellisense</h3>
-<p><img alt="Visual Studio Code - Intellisense" src="../images/VSCode.png" /></p>
-<p>Benefits:</p>
 <ul>
-<li>Native feature of VS Code</li>
-<li>Works with many common languages out of the box (JavaScript, TypeScript, JSON, HTML, CSS, SCSS, and Less)</li>
-<li>Has a marketplace for additional code completion extensions needed for other languages like Python, C/C++, C#, Java, Go, plus more.</li>
-<li>Works offline</li>
+<li><strong>Write Code</strong>. Given prompting by the developer it can write code that you can one-click deploy into existing or new files.</li>
 </ul>
-<p>Downsides:</p>
 <ul>
-<li>Can conflict with GitHub CoPilot if both are enabled.</li>
+<li><strong>Debug</strong>. Copilot can analyze your code and propose solutions to fix bugs.</li>
 </ul>
-<p>Usage:</p>
-<p>Install the VS Code. Install additional extensions for additional language support.</p>
-<p>Docs:</p>
-<p><a href="https://code.visualstudio.com/docs/editor/intellisense">VSCode Intellisense - Docs</a></p>
+<p>It can do most of what Labs can do with "brushes" as "topics", but whereas Labs changes the code in your file, the chat functionality just shows what it would change in the window. However, there is also an "inline mode" for GitHub Copilot Chat that allows you to make changes to your code inline which does not have this same limitation.</p>
+<h2 id="chatgpt-bing-chat">ChatGPT / Bing Chat</h2>
+<p>For coding, generic AI chat tools such as ChatGPT and Bing Chat are less useful, but they still have their place. GitHub Copilot will only answer "questions about coding" and it's interpretation of that rule can be a little restrictive. Some cases for using ChatGPT or Bing Chat include:</p>
+<ul>
+<li><strong>Write Documentation</strong>. Copilot can write documentation, but using ChatGPT or Bing Chat, you can expand your documentation to include business information, use-cases, additional context, etc.</li>
+</ul>
+<ul>
+<li><strong>Change Perspective</strong>. ChatGPT can impersonate a persona or even a system and answer questions from that perspective. For example, you can ask it to explain what a particular piece of code does from the perspective of a user. You might have ChatGPT imagine it is a database adminstrator and ask it to explain how to improve a particular query.</li>
+</ul>
+<p>When using Bing Chat, experiment with modes, sometimes changing to Creative Mode can give the results you need.</p>
+<h2 id="prompt-engineering">Prompt Engineering</h2>
+<p>Chat AI tools are only as good as the prompts you give them. The quality and appropriateness of the output can vary greatly depending on the prompt. In addition, many of these tools restrict the number of prompts you can send in a given amount of time. To learn more about prompt engineering, you might review some open source documentation <a href="https://github.com/brexhq/prompt-engineering">here</a>.</p>
+<h2 id="considerations">Considerations</h2>
+<p>It is important when using AI tools to understand how the data (including private or commercial code) might be used by the system. Read more about how GitHub Copilot handles your data and code <a href="https://resources.github.com/copilot-for-business/">here</a>.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 2, 2023</span>
       
     
   </small>
