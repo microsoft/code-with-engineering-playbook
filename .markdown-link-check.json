@@ -25,7 +25,7 @@
     {"pattern": "^https://argo-cd.readthedocs.io/"},
     {"pattern": "^http://pytest.org/"},
     {"pattern": "^http://code.visualstudio.com/"},
-    {"pattern": "^https://plantuml.com/*"}
+    {"pattern": "^https://plantuml.com/"}
   ],
   "httpHeaders": [
     {
