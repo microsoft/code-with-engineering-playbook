@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
-      pull-requests: writ
+      pull-requests: write
     steps:
       # Git Checkout
       - name: Checkout Code
