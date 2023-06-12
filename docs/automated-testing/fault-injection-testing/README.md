@@ -66,7 +66,7 @@ Fault injection tests rely on metrics observability and are usually statistical;
 * Document the process and the observations.
 * Identify and act on the result.
 
-#### Fault injection testing in kubernetes 
+#### Fault injection testing in kubernetes
 
 With the advancement of kubernetes (k8s) as the infrastructure platform, fault injection testing in kubernetes has become inevitable to ensure that system behaves in a reliable manner in the event of a fault or failure. There could be different type of workloads running within a k8s cluster which are written in different languages. For eg. within a K8s cluster, you can run a micro service, a web app and/or a scheduled job. Hence you need to have mechanism to inject fault into any kind of workloads running within the cluster. In addition, kubernetes clusters are managed differently from traditional infrastructure. The tools used for fault injection testing within kubernetes should have compatibility with k8s infrastructure. These are the main characteristics which are required:
 
