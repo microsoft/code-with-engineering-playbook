@@ -42,11 +42,11 @@ You can use the following script once `terraform apply` is completed to create/u
 
 #### Parameters
 
-| Name | Description |
-| -- | -- |
-| DEVOPS_ORGANIZATION | The URI of the Azure DevOps organization. |
-| DEVOPS_PROJECT | The name or id of the Azure DevOps project. |
-| GROUP_NAME| The name of the variable group targeted. |
+| Name                | Description                                 |
+|---------------------|---------------------------------------------|
+| DEVOPS_ORGANIZATION | The URI of the Azure DevOps organization.   |
+| DEVOPS_PROJECT      | The name or id of the Azure DevOps project. |
+| GROUP_NAME          | The name of the variable group targeted.    |
 
 Implementation choices:
 
