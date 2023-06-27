@@ -6,6 +6,7 @@ The main goal of feasibility studies is to assess whether it is feasible to solv
 * Sufficient evidence that a solution is compatible with the problem context
 * Sufficient evidence that a solution is possible
 * Some vetted direction on what a solution should look like
+
 This effort ensures quality solutions backed by the appropriate, thorough amount of consideration and evidence.
 
 ## When are feasibility studies useful?
@@ -14,7 +15,7 @@ Every engagement can benefit from a feasibility study early in the project.
 
 Architectural discussions can still occur in parallel as the team works towards gaining a solid understanding and definition of what will be built.
 
-Feasibility studies can last between 3-12 weeks, depending on specific problem details, volume of data, state of the data etc. Starting with a 3-week milestone might be useful, during which it can be determined how much more time, if any, is required for completion.
+Feasibility studies can last between 4-16 weeks, depending on specific problem details, volume of data, state of the data etc. Starting with a 4-week milestone might be useful, during which it can be determined how much more time, if any, is required for completion.
 
 ## Who collaborates on feasibility studies?
 
@@ -131,20 +132,13 @@ Confirm that the following questions can be answered based on what was learned d
 
 ### Possible outcomes
 
-If there is not enough evidence to support the hypothesis that this problem can be solved using ML, as aligned with the pre-determined performance measures and business impact
+The main outcome is a feasibility study report, with a recommendation on next steps:
+- If there is not enough evidence to support the hypothesis that this problem can be solved using ML, as aligned with the pre-determined performance measures and business impact:
 
-* We reject this hypothesis, and the feasibility study fails
-* We may scope down the project, if applicable
-* We may look at re-scoping the problem taking into account the findings of the feasibility study
-* We assess the possibility to collect more data or improve data quality
+  * We detail the gaps and challenges that prevented us from reaching a positive outcome
+  * We may scope down the project, if applicable
+  * We may look at re-scoping the problem taking into account the findings of the feasibility study
+  * We assess the possibility to collect more data or improve data quality
 
-If there is enough evidence to support the hypothesis that this problem can be solved using ML
-
-* We accept this hypothesis, and the feasibility study passes
-* We produce a feasibility summary document which details each stage of the feasibility study, outcomes and recommendations on how to proceed
-* Move on to implementation
-
-### Recommendations on how to proceed
-
-* Based on findings and candidate solutions, make recommendations on how to proceed to the implementation phase
-* Include drift and adaptation considerations
+- If there is enough evidence to support the hypothesis that this problem can be solved using ML 
+  * Provide recommendations and technical assets for moving to the operationalization phase
