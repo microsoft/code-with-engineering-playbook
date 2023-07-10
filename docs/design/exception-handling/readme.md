@@ -32,4 +32,5 @@ Below diagram shows a sample hierarchy of custom exceptions.
 2. Defines a number of System exceptions which derive from SystemException class
 3. Defines a number of Business exceptions which derive from BusinessException class
 
-![image](https://github.com/SudhirChandra/code-with-engineering-playbook/assets/23739807/7355ee7b-8722-4e30-8afb-ff3ccd6776ac)
+![ClassDiagram1](https://github.com/SudhirChandra/code-with-engineering-playbook/assets/23739807/1234e529-67ab-4a14-8f7d-fc5c41006015)
+
