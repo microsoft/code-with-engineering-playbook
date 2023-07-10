@@ -28,7 +28,7 @@ Although the platform offers numerous types of exceptions, often we need custom 
 ### Custom exception hierarchy
 Below diagram shows a sample hierarchy of custom exceptions. 
 
-1. It defines a BaseException class which derives from Exception class and parent of all custom exceptions. BaseException also has additional properties for ActionCode and ResultCode. ActionCode represents the "flow" in which the error happened. ResultCode represents the exact error that happened. 
+1. It defines a BaseException class which derives from System.Exception class and parent of all custom exceptions. BaseException also has additional properties for ActionCode and ResultCode. ActionCode represents the "flow" in which the error happened. ResultCode represents the exact error that happened. 
 2. Defines a number of System exceptions which derive from SystemException class
 3. Defines a number of Business exceptions which derive from BusinessException class
 
