@@ -24,3 +24,12 @@ Although the platform offers numerous types of exceptions, often we need custom 
 3. Enrich the exception with more information about the code flow of the error. 
 4. Enrich the exception with more information about the data context of the error. E.g. RecordId in property in DatabaseWriteException which carries the Id of the record failed to update.
 5. Define custom error message which is more business user friendly or support team friendly. 
+
+### Custom exception hierarchy
+Below diagram shows a sample hierarchy of custom exceptions. 
+
+1. It defines a BaseException class which derives from Exception class and parent of all custom exceptions. BaseException also has additional properties for ActionCode and ResultCode. ActionCode represents the "flow" in which the error happened. ResultCode represents the exact error that happened. 
+2. Defines a number of System exceptions which derive from SystemException class
+3. Defines a number of Business exceptions which derive from BusinessException class
+
+![image](https://github.com/SudhirChandra/code-with-engineering-playbook/assets/23739807/7355ee7b-8722-4e30-8afb-ff3ccd6776ac)
