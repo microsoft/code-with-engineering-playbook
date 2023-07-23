@@ -34,3 +34,13 @@ Below diagram shows a sample hierarchy of custom exceptions.
 
 ![ClassDiagram1](https://github.com/SudhirChandra/code-with-engineering-playbook/assets/23739807/1234e529-67ab-4a14-8f7d-fc5c41006015)
 
+## Error details in API response
+When an error occurs in an API, it has to rendered as response with all the necessary fields. There can be custom response schema drafted for these purposes. But one of the popular formats is the problem detail structure
+
+[Problem details](https://datatracker.ietf.org/doc/html/rfc7807)
+
+There are inbuilt problem details middleware library built in ASP.Net core. For further details refer to below link
+
+[Problem details service in ASP.Net core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/error-handling?view=aspnetcore-7.0#pds7)
+
+
