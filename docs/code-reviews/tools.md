@@ -60,3 +60,15 @@ Work with pull requests on Azure DevOps directly out of Visual Studio.
 1. Double-click a pull request - the **Pull Request Details** open
 1. Click on **Checkout** if you want to have the full change locally and have a more integrated experience
 1. Go through the changes and make comments
+
+## Web
+
+### Reviewable: [Seamless multi-round GitHub reviews](https://home.reviewable.io/)
+
+Supports multi-round GitHub code reviews, with keyboard shortcuts and more. VS Code extension is in-progress.
+
+1. Visit the [Review Dashboard](https://reviewable.io/reviews) to see reviews awaiting your action, that have new comments for you, and more.
+1. Select a Pull Request from that list.
+1. Open any file in your browser, in Visual Studio Code, or any editor you've configured by clicking on your profile photo in the top-right
+1. Select an editor under "External editor link template". VS Code is an option, but so is any editor that supports URI's.
+1. Review the diff on an overall or per-file basis, leaving comments, code suggestions, and more

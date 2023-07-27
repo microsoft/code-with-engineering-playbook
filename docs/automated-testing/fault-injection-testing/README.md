@@ -66,6 +66,18 @@ Fault injection tests rely on metrics observability and are usually statistical;
 * Document the process and the observations.
 * Identify and act on the result.
 
+#### Fault injection testing in kubernetes
+
+With the advancement of kubernetes (k8s) as the infrastructure platform, fault injection testing in kubernetes has become inevitable to ensure that system behaves in a reliable manner in the event of a fault or failure. There could be different type of workloads running within a k8s cluster which are written in different languages. For eg. within a K8s cluster, you can run a micro service, a web app and/or a scheduled job. Hence you need to have mechanism to inject fault into any kind of workloads running within the cluster. In addition, kubernetes clusters are managed differently from traditional infrastructure. The tools used for fault injection testing within kubernetes should have compatibility with k8s infrastructure. These are the main characteristics which are required:
+
+* Ease of injecting fault into kubernetes pods.
+* Support for faster tool installation within the cluster.
+* Support for YAML based configurations which works well with kubernetes.
+* Ease of customization to add custom resources.
+* Support for workflows to deploy various workloads and faults.
+* Ease of maintainability of the tool
+* Ease of integration with telemetry
+
 ## Best Practices and Advice
 
 Experimenting in production has the benefit of running tests against a live system with real user traffic, ensuring its health, or building confidence in its ability to handle errors gracefully. However, it has the potential to cause unnecessary customer pain.
@@ -94,7 +106,8 @@ A test can either succeed or fail. In the event of failure, there will likely be
 * [Kraken](https://github.com/openshift-scale/kraken) - An Openshift-specific chaos tool, maintained by Redhat.
 * [Chaos Monkey](https://github.com/netflix/chaosmonkey) - The Netflix platform which popularized chaos engineering (doesn't support Azure OOTB).
 * [Simmy](https://github.com/Polly-Contrib/Simmy) - A .NET library for chaos testing and fault injection integrated with the [Polly](https://github.com/App-vNext/Polly) library for resilience engineering.
-[This ISE dev blog post](https://devblogs.microsoft.com/cse/2023/03/07/build-test-resilience-dotnet-functions/) provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.
+* [Litmus](https://github.com/litmuschaos/litmus) - A CNCF open source tool for chaos testing and fault injection for kubernetes cluster.
+* [This ISE dev blog post](https://devblogs.microsoft.com/cse/2023/03/07/build-test-resilience-dotnet-functions/) provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.
 
 ## Conclusion
 

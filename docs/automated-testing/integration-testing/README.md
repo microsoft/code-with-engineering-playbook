@@ -59,7 +59,7 @@ Many tools and frameworks can be used to write both unit and integration tests. 
 - [moq](https://github.com/moq/moq4)
 - [Cucumber](https://cucumber.io/)
 - [Selenium](https://www.selenium.dev/)
-- [Behave (Python)](https://behave.readthedocs.io/en/latest/tutorial.html)
+- [Behave (Python)](https://behave.readthedocs.io/)
 
 ## Conclusion
 

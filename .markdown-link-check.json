@@ -14,7 +14,7 @@
     {"pattern": "^https://gitlab.com/palisade/palisade-release"},
     {"pattern": "(.*\\.)?.opentelemetry.io"},
     {"pattern": "(.*\\.)?.pluralsight.com"},
-    {"pattern": "(.*\\.)?.github.com"},
+    {"pattern": "^https://www.github.com"},
     {"pattern": "^https://marketplace.visualstudio.com"},
     {"pattern": "^https://opensource.org/licenses/MIT"},
     {"pattern": "^https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models"},
@@ -24,7 +24,8 @@
     {"pattern": "^https://www.ranorex.com/free-trial/"},
     {"pattern": "^https://argo-cd.readthedocs.io/"},
     {"pattern": "^http://pytest.org/"},
-    {"pattern": "^http://code.visualstudio.com/"}
+    {"pattern": "^http://code.visualstudio.com/"},
+    {"pattern": "^https://plantuml.com/"}
   ],
   "httpHeaders": [
     {
