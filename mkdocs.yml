@@ -23,6 +23,7 @@ theme:
 plugins:
   - search
   - git-revision-date-localized
+  - awesome-pages
 
 markdown_extensions:
   - meta

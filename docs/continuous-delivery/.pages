@@ -1,0 +1,5 @@
+nav:
+  - Azure DevOps: azure-devops
+  - DevOps provider recipes: devops-provider-recipes
+  - GitOps: gitops
+  - ...
