@@ -66,7 +66,7 @@ A monorepo, short for "monolithic repository," is a software development practic
 
 ### Challenges with Versioning in a monorepo structure
 
-Versioning in a monorepo involves making decisions about how to assign version numbers to different projects and components contained within the repository. 
+Versioning in a monorepo involves making decisions about how to assign version numbers to different projects and components contained within the repository.
 
 Assigning a single version number to all projects in a monorepo can lead to frequent version increments if changes in one project don't match the significance of changes in another. This might be excessive if some projects undergo rapid development while others evolve more slowly.
 
@@ -83,22 +83,22 @@ Angular Commit Message Conventions serve as the default for `semantic-release`. 
 
 The table below shows which commit message gets you which release type when `semantic-release` runs (using the default configuration):
 
-| Commit message                                             | Release type         |
-|------------------------------------------------------------|----------------------|
-| fix(pencil): stop graphite breaking when too much pressure applied | Patch Fix Release    |
-| feat(pencil): add 'graphiteWidth' option                   | Minor Feature Release |
-| perf(pencil): remove graphiteWidth option   <br>     BREAKING CHANGE: The graphiteWidth option has been removed.  The default graphite width of 10mm is always used for performance reasons.         | Major Breaking Release <br> (Note that the BREAKING CHANGE:  token must be in the footer of the commit)  |
+| Commit message                                                                                                                                                                               | Release type                                                                                            |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| fix(pencil): stop graphite breaking when too much pressure applied                                                                                                                           | Patch Fix Release                                                                                       |
+| feat(pencil): add 'graphiteWidth' option                                                                                                                                                     | Minor Feature Release                                                                                   |
+| perf(pencil): remove graphiteWidth option   <br>     BREAKING CHANGE: The graphiteWidth option has been removed.  The default graphite width of 10mm is always used for performance reasons. | Major Breaking Release <br> (Note that the BREAKING CHANGE:  token must be in the footer of the commit) |
 
 
-The inherent setup of `semantic-release` presumes a direct correspondence between a GitHub repository and a package. Hence changes anywhere in the project result in a version upgrade for the project. 
+The inherent setup of `semantic-release` presumes a direct correspondence between a GitHub repository and a package. Hence changes anywhere in the project result in a version upgrade for the project.
 
-The [semantic-release-monorepo](https://github.com/pmowrer/semantic-release-monorepo) tool permits the utilization of `semantic-release` within a solitary GitHub repository that encompasses numerous packages. 
+The [semantic-release-monorepo](https://github.com/pmowrer/semantic-release-monorepo) tool permits the utilization of `semantic-release` within a solitary GitHub repository that encompasses numerous packages.
 
 Instead of attributing all commits to a single package, commits are assigned to packages based on the files that a commit touched.
 
 If a commit touches a file in or below a package's root, it will be considered for that package's next release. A single commit can belong to multiple packages and may trigger the release of multiple packages.
 
-In order to avoid version collisions, generated git tags are namespaced using the given package's name: <package-name>-<version>.
+In order to avoid version collisions, generated git tags are namespaced using the given package's name: `<package-name>`-`<version>`.
 
 ![monorepo-git-tags](./assets/monorepo-git-tags.png)
 
@@ -110,7 +110,7 @@ In order to avoid version collisions, generated git tags are namespaced using th
 - A release.config.(js|cjs) file that exports an object
 - A release key in the project's package.json file
 
-Here is an example .releaserc file which contains the configuration for: 
+Here is an example .releaserc file which contains the configuration for:
 1. git tags for the releases from different types of branches
 2. Any plugins required, list of supported plugins can be found [here](https://semantic-release.gitbook.io/semantic-release/extending/plugins-list). In this file *semantic-release-monorepo* plugin is extended.
 
