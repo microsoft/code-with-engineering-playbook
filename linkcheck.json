@@ -42,7 +42,9 @@
       "https://www.dynatrace.com/platform/synthetic-monitoring/",
       "https://interpret.ml/",
       "https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf",
-      "https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f"
+      "https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f",
+      "https://towardsdatascience.com/",
+      "https://medium.com/"
     ],
     "only_errors": true
   }
