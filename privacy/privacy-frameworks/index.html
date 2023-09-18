@@ -7471,20 +7471,13 @@
 <p>The following tools/frameworks could be leveraged when data analysis or model development needs to take place on private data.
 Note that the use of such frameworks still requires the solution to adhere to privacy regulations and others, and additional safeguards should be applied.</p>
 <h2 id="typical-scenarios-for-leveraging-a-privacy-framework">Typical scenarios for leveraging a Privacy framework</h2>
-<ol>
-<li>
-<p>Sharing data or results while preserving data subjects' privacy</p>
-</li>
-<li>
-<p>Performing analysis or statistical modeling on private data</p>
-</li>
-<li>
-<p>Developing privacy preserving ML models and data pipelines</p>
-</li>
-</ol>
+<ul>
+<li>Sharing data or results while preserving data subjects' privacy</li>
+<li>Performing analysis or statistical modeling on private data</li>
+<li>Developing privacy preserving ML models and data pipelines</li>
+</ul>
 <h2 id="privacy-frameworks">Privacy frameworks</h2>
-<p>Protecting private data involves the entire data lifecycle, from acquisition, through storage, processing, analysis,
-modeling and usage in reports or machine learning models. Proper safeguards and restrictions should be applied in each of these phases.</p>
+<p>Protecting private data involves the entire data lifecycle, from acquisition, through storage, processing, analysis, modeling and usage in reports or machine learning models. Proper safeguards and restrictions should be applied in each of these phases.</p>
 <p>In this section we provide a <strong>non-exhaustive list</strong> of privacy frameworks which can be leveraged for protecting and preserving privacy.</p>
 <p>We focus on four main use cases in the data lifecycle:</p>
 <ol>
@@ -7538,8 +7531,6 @@ The potential benefit of such synthetic datasets is for sensitive applications â
 <p>When determining the best method for creating synthetic data, it is essential first to consider what type of synthetic data you aim to have. There are two broad categories to choose from, each with different benefits and drawbacks:</p>
 <ul>
 <li>Fully synthetic: This data does not contain any original data, which means that re-identification of any single unit is almost impossible, and all variables are still fully available.</li>
-</ul>
-<ul>
 <li>Partially synthetic: Only sensitive data is replaced with synthetic data, which requires a heavy dependency on the imputation model. This leads to decreased model dependence but does mean that some disclosure is possible due to the actual values within the dataset.</li>
 </ul>
 <table>
@@ -7593,12 +7584,12 @@ and has access to one or more datasets provided by the data platform.</p>
 </thead>
 <tbody>
 <tr>
-<td>Azure Trusted Research Environment</td>
-<td><a href="https://github.com/microsoft/azuretre">Link</a>. An Open Source TRE for Azure.</td>
+<td><a href="https://github.com/microsoft/azuretre">Azure Trusted Research Environment</a></td>
+<td>An Open Source TRE for Azure.</td>
 </tr>
 <tr>
-<td>Aridhia DRE</td>
-<td><a href="https://appsource.microsoft.com/en-us/product/web-apps/aridhiainformatics.analytixagility_workspace_123?tab=Overview">Link</a></td>
+<td><a href="https://appsource.microsoft.com/en-us/product/web-apps/aridhiainformatics.analytixagility_workspace_123?tab=Overview">Aridhia DRE</a></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -7612,8 +7603,7 @@ For example, a user would be able to submit a script which trains a model and in
 <p>In addition to the eyes-off environment, this approach usually entails providing access to an "eyes-on" dataset, which is a representative, cleansed, sample set of data for model design purposes.
 The Eyes-on dataset is often a de-identified subset of the private dataset, or a synthetic dataset generated based on the characteristics of the private dataset.</p>
 <h4 id="private-data-sharing-platforms">Private data sharing platforms</h4>
-<p>Various tools and systems allow different parties to share data with 3rd parties while protecting private entities,
-and securely process data while reducing the likelihood of data exfiltration.
+<p>Various tools and systems allow different parties to share data with 3rd parties while protecting private entities, and securely process data while reducing the likelihood of data exfiltration.
 These tools include <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Secure Multi Party Computation (SMPC)</a> systems,
 <a href="#homomorphic-encryption">Homomorphic Encryption</a> systems, <a href="https://azure.microsoft.com/en-us/solutions/confidential-compute/">Confidential Computing</a>,
 private data analysis frameworks such as <a href="https://github.com/OpenMined/PySyft">PySift</a> among others.</p>
@@ -7621,18 +7611,15 @@ private data analysis frameworks such as <a href="https://github.com/OpenMined/P
 <p>Even when our data is secure, private entities can still be extracted when the data is consumed.
 Privacy preserving data pipelines and ML models focus on minimizing the risk of private data exfiltration during data querying or model predictions.</p>
 <h4 id="differential-privacy">Differential Privacy</h4>
-<p>Differential privacy (DP) is a system that enables one to extract meaningful insights from datasets about subgroups of people,
-while also providing strong guarantees with regards to protecting any given individual's privacy.
+<p>Differential privacy (DP) is a system that enables one to extract meaningful insights from datasets about subgroups of people, while also providing strong guarantees with regards to protecting any given individual's privacy.
 This is typically achieved by adding a small statistical noise to every individual's information,
 thereby introducing uncertainty in the data.
 However, the insights gleaned still accurately represent what we intend to learn about the population in the aggregate.
 This approach is known to be robust to re-identification attacks and data reconstruction by adversaries who possess auxiliary information.
 For a more comprehensive overview,
 check out <a href="https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf?sequence=1&amp;isAllowed=y">Differential privacy: A primer for a non-technical audience</a>.</p>
-<p>DP has been widely adopted in various scenarios such as learning from census data, user telemetry data analysis,
-audience engagement to advertisements, and health data insights where PII protection is of paramount importance. However, DP is less suitable for small datasets.</p>
-<p>Tools that implement DP include <a href="https://github.com/opendifferentialprivacy/smartnoise-samples">SmartNoise</a>,
-<a href="https://github.com/tensorflow/privacy">Tensorflow Privacy</a> among some others.</p>
+<p>DP has been widely adopted in various scenarios such as learning from census data, user telemetry data analysis, audience engagement to advertisements, and health data insights where PII protection is of paramount importance. However, DP is less suitable for small datasets.</p>
+<p>Tools that implement DP include <a href="https://github.com/opendifferentialprivacy/smartnoise-samples">SmartNoise</a>, <a href="https://github.com/tensorflow/privacy">Tensorflow Privacy</a> among some others.</p>
 <h4 id="homomorphic-encryption">Homomorphic Encryption</h4>
 <p>Homomorphic Encryption (HE) is a form of encryption allowing one to perform calculations on encrypted data without decrypting it first.
 The result of the computation <em>F</em> is in an encrypted form, which on decrypting gives us the same result if computation <em>F</em> was done on raw unencrypted data.
@@ -7663,8 +7650,7 @@ The result of the computation <em>F</em> is in an encrypted form, which on decry
 <p>A list of additional OSS tools can be found <a href="https://homomorphicencryption.org/introduction/">here</a>.</p>
 <h4 id="federated-learning">Federated learning</h4>
 <p>Federated learning is a Machine Learning technique which allows the training of ML models in a decentralized way without having to share the actual data.
-Instead of sending data to the processing engine of the model,
-the approach is to distribute the model to the different data owners and perform training in a distributed fashion.</p>
+Instead of sending data to the processing engine of the model, the approach is to distribute the model to the different data owners and perform training in a distributed fashion.</p>
 <p>Federated learning frameworks:</p>
 <table>
 <thead>
@@ -7691,7 +7677,7 @@ the approach is to distribute the model to the different data owners and perform
 <h3 id="data-loss-prevention">Data loss prevention</h3>
 <p>Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers.
 To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it.
-This practice is called data loss prevention (DLP). (<a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp">Source</a>)</p>
+This practice is called <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp">data loss prevention (DLP)</a>.</p>
 <p>Below we focus on two aspects of DLP: Sensitive data classification and Access management.</p>
 <h4 id="sensitive-data-classification">Sensitive data classification</h4>
 <p>Sensitive data classification is an important aspect of DLP, as it allows organizations to track, monitor, secure and identify sensitive and private data.
@@ -7730,8 +7716,7 @@ Furthermore, different sensitivity levels can be applied to different data items
 </tr>
 </tbody>
 </table>
-<p>Often, tools used for de-identification can also serve as sensitive data classifiers.
-Refer to <a href="#data-de-identification">de-identification tools</a> for such tools.</p>
+<p>Often, tools used for de-identification can also serve as sensitive data classifiers. Refer to <a href="#data-de-identification">de-identification tools</a> for such tools.</p>
 <p>Additional resources:</p>
 <ul>
 <li><a href="https://www.cmu.edu/iso/governance/guidelines/data-classification.html">Example guidelines for data classification</a></li>
@@ -7741,9 +7726,7 @@ Refer to <a href="#data-de-identification">de-identification tools</a> for such 
 <p>Access control is an important component of privacy by design and falls into overall data lifecycle protection.
 Successful access control will restrict access only to authorized individuals that should have access to data.
 Once data is secure in an environment, it is important to review who should access this data and for what purpose.
-Access control may be audited with a comprehensive logging strategy which may include the integration of
-<a href="https://learn.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview">activity logs</a>
-that can provide insight into operations performed on resources in a subscription.</p>
+Access control may be audited with a comprehensive logging strategy which may include the integration of <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview">activity logs</a> that can provide insight into operations performed on resources in a subscription.</p>
 <ul>
 <li><a href="https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Access_Control_Cheat_Sheet.md">OWASP Access Control Cheat Sheet</a></li>
 </ul>
@@ -7753,7 +7736,7 @@ that can provide insight into operations performed on resources in a subscriptio
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 18, 2023</span>
       
     
   </small>
