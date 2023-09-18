@@ -31,9 +31,7 @@ Within this framework, the team follows these Agile ceremonies:
 #### Examples of ML deliverables for each sprint
 
 - Working code (e.g. models, pipelines, exploratory code)
-- Documentation of new hypotheses, and the acceptance or rejection of previous hypotheses as part of a Hypothesis Driven Analysis (HDA). See more resources on HDA here:
-  1. [HDA](https://datasciencevademecum.com/2015/11/10/agile-data-science-iteration-0-the-hypothesis-driven-analysis) (from the Data Science Vademecum website).
-  2. [Hypothesis Driven Development](https://barryoreilly.com/explore/blog/how-to-implement-hypothesis-driven-development/) (from Barry Oreilly's website).
+- Documentation of new hypotheses, and the acceptance or rejection of previous hypotheses as part of a Hypothesis Driven Analysis (HDA). For more information see [Hypothesis Driven Development on Barry Oreilly's website](https://barryoreilly.com/explore/blog/how-to-implement-hypothesis-driven-development/)
 - Exploratory Data Analysis (EDA) results and learnings documented
 
 ## Notes on collaboration between ML team and software development team

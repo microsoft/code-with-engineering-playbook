@@ -50,7 +50,7 @@ The benefit of building software applications is that there are truly infinite w
    - Rarely will you have to support legacy browsers; thus, you can rely on modern JavaScript language features! No need for build tools or even TypeScript (did you know you can [type check JavaScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)).
 1. Web Component frameworks
    - Web Components are now standardized in all modern browsers
-   - Microsoft has their own, stable & actively-maintained framework, [Fast](https://fast.design)
+   - Microsoft has their own, stable & actively-maintained framework, [Fast](https://www.fast.design/)
 
 For more information of choosing the right implementation tool, read the [Recommended Technologies](./recommended-technologies.md) document.
 
