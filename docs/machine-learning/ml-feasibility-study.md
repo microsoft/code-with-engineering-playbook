@@ -140,5 +140,5 @@ The main outcome is a feasibility study report, with a recommendation on next st
   * We may look at re-scoping the problem taking into account the findings of the feasibility study
   * We assess the possibility to collect more data or improve data quality
 
-- If there is enough evidence to support the hypothesis that this problem can be solved using ML 
+- If there is enough evidence to support the hypothesis that this problem can be solved using ML
   * Provide recommendations and technical assets for moving to the operationalization phase
