@@ -1,43 +1,17 @@
 {
-  "ignorePatterns": [
-    {"pattern": "^./INSERT_URL_TO_ISSUE"},
-    {"pattern": "^./link-to-the-work-item"},
-    {"pattern": "^https://portal.azure.com"},
-    {"pattern": "^http://link-to-feature-or-story-work-item"},
-    {"pattern": "^http://link-to-task-work-item"},
-    {"pattern": "^http://link-to-story-work-item"},
-    {"pattern": "^http://link-to-work-item"},
-    {"pattern": "^https://tanzu.vmware.com/developer/guides/kubernetes/observability-prometheus-grafana-p1"},
-    {"pattern": "^https://www.w3.org/blog/2019/12/trace-context-enters-proposed-recommendation/"},
-    {"pattern": "^https://blog.cloudflare.com/cloudflare-outage/"},
-    {"pattern": "^https://thanos.io"},
-    {"pattern": "^https://gitlab.com/palisade/palisade-release"},
-    {"pattern": "(.*\\.)?.opentelemetry.io"},
-    {"pattern": "(.*\\.)?.pluralsight.com"},
-    {"pattern": "^https://www.github.com"},
-    {"pattern": "^https://marketplace.visualstudio.com"},
-    {"pattern": "^https://opensource.org/licenses/MIT"},
-    {"pattern": "^https://www.researchgate.net/publication/301839557_The_landscape_of_software_failure_cause_models"},
-    {"pattern": "^https://www.cmu.edu/iso/governance/guidelines/data-classification.html"},
-    {"pattern": "^https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/"},
-    {"pattern": "^https://www.perfecto.io/"},
-    {"pattern": "^https://www.ranorex.com/free-trial/"},
-    {"pattern": "^https://argo-cd.readthedocs.io/"},
-    {"pattern": "^http://pytest.org/"},
-    {"pattern": "^http://code.visualstudio.com/"},
-    {"pattern": "^https://plantuml.com/"}
-  ],
-  "httpHeaders": [
-    {
-      "urls": ["https://docs.github.com/",
-        "https://help.github.com/",
-        "https://github.com/",
-        "https://blog.cloudflare.com/"],
-      "headers": {
-        "Accept-Encoding": "zstd, br, gzip, deflate"
+    "ignorePatterns": [],
+    "httpHeaders": [
+      {
+        "urls": [
+          "https://docs.github.com/",
+          "https://help.github.com/",
+          "https://github.com/",
+          "https://blog.cloudflare.com/"],
+        "headers": {
+          "Accept-Encoding": "zstd, br, gzip, deflate"
+        }
       }
-    }
-  ],
-  "retryOn429": true,
-  "aliveStatusCodes": [200, 206, 302, 0]
-}
+    ],
+    "retryOn429": true,
+    "aliveStatusCodes": [200, 206, 302, 0]
+  }
