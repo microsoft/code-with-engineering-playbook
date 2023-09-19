@@ -45,7 +45,9 @@
       "https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f",
       "https://towardsdatascience.com/",
       "https://medium.com/",
-      "https://github.com/"
+      "https://github.com/",
+      "https://docs.github.com/",
+      "https://behave.readthedocs.io/"
     ],
     "only_errors": true
   }
