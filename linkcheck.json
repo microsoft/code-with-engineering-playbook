@@ -47,7 +47,11 @@
       "https://medium.com/",
       "https://github.com/",
       "https://docs.github.com/",
-      "https://behave.readthedocs.io/"
+      "https://behave.readthedocs.io/",
+      "https://blog.insightdatascience.com",
+      "https://www.w3.org/",
+      "https://mtirion.medium.com/",
+      "https://chrieke.medium.com/"
     ],
     "only_errors": true
   }
