@@ -5,16 +5,13 @@ Note that the use of such frameworks still requires the solution to adhere to pr
 
 ## Typical scenarios for leveraging a Privacy framework
 
-1. Sharing data or results while preserving data subjects' privacy
-
-2. Performing analysis or statistical modeling on private data
-
-3. Developing privacy preserving ML models and data pipelines
+- Sharing data or results while preserving data subjects' privacy
+- Performing analysis or statistical modeling on private data
+- Developing privacy preserving ML models and data pipelines
 
 ## Privacy frameworks
 
-Protecting private data involves the entire data lifecycle, from acquisition, through storage, processing, analysis,
-modeling and usage in reports or machine learning models. Proper safeguards and restrictions should be applied in each of these phases.
+Protecting private data involves the entire data lifecycle, from acquisition, through storage, processing, analysis, modeling and usage in reports or machine learning models. Proper safeguards and restrictions should be applied in each of these phases.
 
 In this section we provide a **non-exhaustive list** of privacy frameworks which can be leveraged for protecting and preserving privacy.
 
@@ -60,7 +57,6 @@ The potential benefit of such synthetic datasets is for sensitive applications â
 When determining the best method for creating synthetic data, it is essential first to consider what type of synthetic data you aim to have. There are two broad categories to choose from, each with different benefits and drawbacks:
 
 - Fully synthetic: This data does not contain any original data, which means that re-identification of any single unit is almost impossible, and all variables are still fully available.
-
 - Partially synthetic: Only sensitive data is replaced with synthetic data, which requires a heavy dependency on the imputation model. This leads to decreased model dependence but does mean that some disclosure is possible due to the actual values within the dataset.
 
 | Solution                                                                                                                        | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -85,10 +81,10 @@ and has access to one or more datasets provided by the data platform.
 
 We highlight several alternatives for Trusted Research Environments:
 
-| Solution                           | Notes                                                                        |
-|------------------------------------|------------------------------------------------------------------------------|
-| Azure Trusted Research Environment | [Link](https://github.com/microsoft/azuretre). An Open Source TRE for Azure. |
-| Aridhia DRE | [Link](https://appsource.microsoft.com/en-us/product/web-apps/aridhiainformatics.analytixagility_workspace_123?tab=Overview)
+| Solution                                                                                                                            | Notes                         |
+|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
+| [Azure Trusted Research Environment](https://github.com/microsoft/azuretre)                                                         | An Open Source TRE for Azure. |
+| [Aridhia DRE](https://appsource.microsoft.com/en-us/product/web-apps/aridhiainformatics.analytixagility_workspace_123?tab=Overview) |                               |
 
 #### Eyes-off machine learning
 
@@ -105,8 +101,7 @@ The Eyes-on dataset is often a de-identified subset of the private dataset, or a
 
 #### Private data sharing platforms
 
-Various tools and systems allow different parties to share data with 3rd parties while protecting private entities,
-and securely process data while reducing the likelihood of data exfiltration.
+Various tools and systems allow different parties to share data with 3rd parties while protecting private entities, and securely process data while reducing the likelihood of data exfiltration.
 These tools include [Secure Multi Party Computation (SMPC)](https://en.wikipedia.org/wiki/Secure_multi-party_computation) systems,
 [Homomorphic Encryption](#homomorphic-encryption) systems, [Confidential Computing](https://azure.microsoft.com/en-us/solutions/confidential-compute/),
 private data analysis frameworks such as [PySift](https://github.com/OpenMined/PySyft) among others.
@@ -118,8 +113,7 @@ Privacy preserving data pipelines and ML models focus on minimizing the risk of 
 
 #### Differential Privacy
 
-Differential privacy (DP) is a system that enables one to extract meaningful insights from datasets about subgroups of people,
-while also providing strong guarantees with regards to protecting any given individual's privacy.
+Differential privacy (DP) is a system that enables one to extract meaningful insights from datasets about subgroups of people, while also providing strong guarantees with regards to protecting any given individual's privacy.
 This is typically achieved by adding a small statistical noise to every individual's information,
 thereby introducing uncertainty in the data.
 However, the insights gleaned still accurately represent what we intend to learn about the population in the aggregate.
@@ -127,11 +121,9 @@ This approach is known to be robust to re-identification attacks and data recons
 For a more comprehensive overview,
 check out [Differential privacy: A primer for a non-technical audience](https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf?sequence=1&isAllowed=y).
 
-DP has been widely adopted in various scenarios such as learning from census data, user telemetry data analysis,
-audience engagement to advertisements, and health data insights where PII protection is of paramount importance. However, DP is less suitable for small datasets.
+DP has been widely adopted in various scenarios such as learning from census data, user telemetry data analysis, audience engagement to advertisements, and health data insights where PII protection is of paramount importance. However, DP is less suitable for small datasets.
 
-Tools that implement DP include [SmartNoise](https://github.com/opendifferentialprivacy/smartnoise-samples),
-[Tensorflow Privacy](https://github.com/tensorflow/privacy) among some others.
+Tools that implement DP include [SmartNoise](https://github.com/opendifferentialprivacy/smartnoise-samples), [Tensorflow Privacy](https://github.com/tensorflow/privacy) among some others.
 
 #### Homomorphic Encryption
 
@@ -152,8 +144,7 @@ A list of additional OSS tools can be found [here](https://homomorphicencryption
 #### Federated learning
 
 Federated learning is a Machine Learning technique which allows the training of ML models in a decentralized way without having to share the actual data.
-Instead of sending data to the processing engine of the model,
-the approach is to distribute the model to the different data owners and perform training in a distributed fashion.
+Instead of sending data to the processing engine of the model, the approach is to distribute the model to the different data owners and perform training in a distributed fashion.
 
 Federated learning frameworks:
 
@@ -167,7 +158,7 @@ Federated learning frameworks:
 
 Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers.
 To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it.
-This practice is called data loss prevention (DLP). ([Source](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp))
+This practice is called [data loss prevention (DLP)](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp).
 
 Below we focus on two aspects of DLP: Sensitive data classification and Access management.
 
@@ -192,8 +183,7 @@ Tools for data classification on Azure:
 | [Data Discovery & Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse](https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview) | Basic capabilities for discovering, classifying, labeling, and reporting the sensitive data in Azure SQL and Synapse databases.                                                     |
 | [Data Discovery & Classification for SQL Server](https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver15&tabs=t-sql)                   | Capabilities for discovering, classifying, labeling & reporting the sensitive data in SQL Server databases.                                                                         |
 
-Often, tools used for de-identification can also serve as sensitive data classifiers.
-Refer to [de-identification tools](#data-de-identification) for such tools.
+Often, tools used for de-identification can also serve as sensitive data classifiers. Refer to [de-identification tools](#data-de-identification) for such tools.
 
 Additional resources:
 
@@ -205,8 +195,6 @@ Additional resources:
 Access control is an important component of privacy by design and falls into overall data lifecycle protection.
 Successful access control will restrict access only to authorized individuals that should have access to data.
 Once data is secure in an environment, it is important to review who should access this data and for what purpose.
-Access control may be audited with a comprehensive logging strategy which may include the integration of
-[activity logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview)
-that can provide insight into operations performed on resources in a subscription.
+Access control may be audited with a comprehensive logging strategy which may include the integration of [activity logs](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview) that can provide insight into operations performed on resources in a subscription.
 
 - [OWASP Access Control Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Access_Control_Cheat_Sheet.md)
