@@ -7171,6 +7171,39 @@
     C#/.NET
   </a>
   
+    <nav class="md-nav" aria-label="C#/.NET">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modern-net-solution" class="md-nav__link">
+    Modern .NET Solution
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern .NET Solution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployment-considerations" class="md-nav__link">
+    Deployment Considerations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#net-framework-solution" class="md-nav__link">
+    .NET Framework Solution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -7255,6 +7288,39 @@ the fact that Azure keeps application settings (the environment) encrypted until
 <h2 id="techniques-for-secrets-management">Techniques for Secrets Management</h2>
 <p>These techniques make the loading of secrets  transparent to the developer.</p>
 <h3 id="cnet">C#/.NET</h3>
+<h4 id="modern-net-solution">Modern .NET Solution</h4>
+<p>For .NET SDK (version 2.0 or higher) we have <code>dotnet secrets</code>, a tool provided by the .NET SDK that allows you to manage and protect sensitive information, such as API keys, connection strings, and other secrets, during development. The secrets are stored securely on your machine and can be accessed by your .NET applications.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Initialize dotnet secret </span>
+dotnet<span class="w"> </span>user-secrets<span class="w"> </span>init
+
+<span class="c1"># Adding secret</span>
+<span class="c1"># dotnet user-secrets set &lt;KEY&gt; &lt;VALUE&gt;</span>
+dotnet<span class="w"> </span>user-secrets<span class="w"> </span><span class="nb">set</span><span class="w"> </span>ExternalServiceApiKey<span class="w"> </span>my-api-key-12345
+
+<span class="c1"># Update Secret</span>
+dotnet<span class="w"> </span>user-secrets<span class="w"> </span><span class="nb">set</span><span class="w"> </span>ExternalServiceApiKey<span class="w"> </span>updated-api-key-67890
+</code></pre></div>
+<p>To access the secrets;</p>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">Microsoft.Extensions.Configuration</span><span class="p">;</span>
+
+<span class="kt">var</span><span class="w"> </span><span class="n">builder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ConfigurationBuilder</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="n">AddUserSecrets</span><span class="o">&lt;</span><span class="n">Startup</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="kt">var</span><span class="w"> </span><span class="n">configuration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">builder</span><span class="p">.</span><span class="n">Build</span><span class="p">();</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">externalServiceApiKey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">configuration</span><span class="p">[</span><span class="s">&quot;ExternalServiceApiKey&quot;</span><span class="p">];</span>
+</code></pre></div>
+<h5 id="deployment-considerations">Deployment Considerations</h5>
+<p>When deploying your application to production, it's essential to ensure that your secrets are securely managed. Here are some deployment-related implications:</p>
+<ul>
+<li>Remove Development Secrets: Before deploying to production, remove any development secrets from your application configuration. You can use environment variables or a more secure secret management solution like Azure Key Vault or AWS Secrets Manager in production.</li>
+</ul>
+<ul>
+<li>Secure Deployment: Ensure that your production server is secure, and access to secrets is controlled. Never store secrets directly in source code or configuration files.</li>
+</ul>
+<ul>
+<li>Key Rotation: Consider implementing a secret rotation policy to regularly update your secrets in production.</li>
+</ul>
+<h4 id="net-framework-solution">.NET Framework Solution</h4>
 <p>Use the <a href="https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration"><code>file</code></a> attribute of the appSettings element to load secrets from a local file.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="nt">&lt;configuration&gt;</span>
@@ -7321,7 +7387,7 @@ let mySecret = process.env(&quot;MY_SECRET&quot;)
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2023</span>
       
     
   </small>
