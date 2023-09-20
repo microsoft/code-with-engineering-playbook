@@ -1595,8 +1595,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#load-testing-frameworks-and-tools" class="md-nav__link">
-    Load Testing Frameworks and Tools
+  <a href="#load-generation-testing-frameworks-and-tools" class="md-nav__link">
+    Load Generation Testing Frameworks and Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-workload-applications" class="md-nav__link">
+    Sample Workload Applications
   </a>
   
 </li>
@@ -7289,8 +7296,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#load-testing-frameworks-and-tools" class="md-nav__link">
-    Load Testing Frameworks and Tools
+  <a href="#load-generation-testing-frameworks-and-tools" class="md-nav__link">
+    Load Generation Testing Frameworks and Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-workload-applications" class="md-nav__link">
+    Sample Workload Applications
   </a>
   
 </li>
@@ -7352,6 +7366,8 @@
 <li><strong>Determine expected normal and peak load for the scenarios</strong> - Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.</li>
 <li><strong>Identify success criteria metrics</strong> - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.</li>
 <li><strong>Select the right tool</strong> - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).</li>
+<li><strong>Observability</strong> - Determine which metrics need to gathered to gain insight into throughput, latency, resource utilization, etc.</li>
+<li><strong>Scalability</strong> - Determine the amount of scale needed by load generator, workload application, CPU, Memory, and network components needed to achieve testing goals. The use of kubernetes on the cloud can be used to make testing infinitely scalable.</li>
 </ol>
 <h3 id="execution">Execution</h3>
 <p>It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios and how to execute those at load. It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.</p>
@@ -7364,8 +7380,9 @@
 <li><strong>Stress Testing</strong> - Gradually increasing the load to find the limits of the system and identify the maximum capacity.</li>
 <li><strong>Spike Testing</strong> - Introduce a sharp short-term increase into the load scenarios.</li>
 <li><strong>Scalability Testing</strong> - Re-testing of a system as your expand horizontally or vertically to measure how it scales.</li>
+<li><strong>Distributed Testing</strong> - Distributed testing allows you to leverage the power of multiple machines to perform larger or more in-depth tests faster. Is necessary when a fully optimized node cannot produce the load required by your extremely large test.</li>
 </ul>
-<h2 id="load-testing-frameworks-and-tools">Load Testing Frameworks and Tools</h2>
+<h2 id="load-generation-testing-frameworks-and-tools">Load Generation Testing Frameworks and Tools</h2>
 <p>Here are a few popular load testing frameworks you may consider, and the languages used to define your scenarios.</p>
 <ul>
 <li><strong>Azure Load Testing</strong> (<a href="https://learn.microsoft.com/en-us/azure/load-testing/">https://learn.microsoft.com/en-us/azure/load-testing/</a>) - Managed platform for running load tests on Azure. It allows to run and monitor tests automatically, source secrets from the KeyVault, generate traffic at scale, and load test Azure private endpoints. In the simple case, it executes load tests with HTTP GET traffic to a given endpoint. For the more complex cases, you can upload your own <strong>JMeter scenarios</strong>.</li>
@@ -7373,8 +7390,16 @@
 <li><strong>Artillery</strong> (<a href="https://artillery.io/">https://artillery.io/</a>) - Write your scenarios in Javascript, executes a node application.</li>
 <li><strong>Gatling</strong> (<a href="https://gatling.io/">https://gatling.io/</a>) -  Write your scenarios in Scala with their DSL.</li>
 <li><strong>Locust</strong> (<a href="https://locust.io/">https://locust.io/</a>) - Write your scenarios in Python using the concept of concurrent user activity.</li>
-<li><strong>K6</strong> (<a href="https://k6.io/">https://k6.io/</a>) - Write your test scenarios in Javascript, available as open source or as SaaS.</li>
+<li><strong>K6</strong> (<a href="https://k6.io/">https://k6.io/</a>) - Write your test scenarios in Javascript, available as open source kubernetes operator, open source Docker image, or as SaaS. Particulary useful for distributed load testing. Integrates easily with prometheus.</li>
 <li><strong>NBomber</strong> (<a href="https://nbomber.com/">https://nbomber.com/</a>) - Write your test scenarios in C# or F#, available integration with test runners (NUnit/xUnit).</li>
+<li><strong>WebValidate</strong> (<a href="https://github.com/microsoft/webvalidate">https://github.com/microsoft/webvalidate</a>) - Web request validation tool used to run end-to-end tests and long-running performance and availability tests.</li>
+</ul>
+<h2 id="sample-workload-applications">Sample Workload Applications</h2>
+<p>In the case where a specific workload application is not being provided and the focus is instead on the system, here are a few popular sample workload applications you may consider.</p>
+<ul>
+<li><strong>HttpBin</strong> (<a href="https://github.com/postmanlabs/httpbin">Python</a>, <a href="https://github.com/mccutchen/go-httpbin">GoLang</a>) - Supports variety of endpoint types and language implementations. Can echo data used in request.</li>
+<li><strong>NGSA</strong> (<a href="https://github.com/retaildevcrews/ngsa-java">Java</a>, <a href="https://github.com/retaildevcrews/ngsa-java">C#</a>) - Intended for Kubernetes Platform and Monitoring Testing. Built on top of IMDB data store with many CRUD endpoints available. Does not need to have a live database connection.</li>
+<li><strong>MockBin</strong> (<a href="https://github.com/Kong/mockbin">https://github.com/Kong/mockbin</a>) - Allows you to generate custom endpoints to test, mock, and track HTTP requests &amp; responses between libraries, sockets and APIs.</li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>A load test is critical step to understand if a target system will be reliable under the expected real world traffic.</p>
@@ -7390,7 +7415,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2023</span>
       
     
   </small>
