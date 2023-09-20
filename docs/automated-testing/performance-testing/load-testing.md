@@ -30,6 +30,8 @@ There are a number of basic component which are required to carry out a load tes
 2. **Determine expected normal and peak load for the scenarios** - Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
 3. **Identify success criteria metrics** - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.
 4. **Select the right tool** - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).
+5. **Observability** - Determine which metrics need to gathered to gain insight into throughput, latency, resource utilization, etc.
+6. **Scalability** - Determine the amount of scale needed by load generator, workload application, CPU, Memory, and network components needed to achieve testing goals. The use of kubernetes on the cloud can be used to make testing infinitely scalable.
 
 ### Execution
 
@@ -47,8 +49,9 @@ After completing your load test you should be set up to continue on to additiona
 - **Stress Testing** - Gradually increasing the load to find the limits of the system and identify the maximum capacity.
 - **Spike Testing** - Introduce a sharp short-term increase into the load scenarios.
 - **Scalability Testing** - Re-testing of a system as your expand horizontally or vertically to measure how it scales.
+- **Distributed Testing** - Distributed testing allows you to leverage the power of multiple machines to perform larger or more in-depth tests faster. Is necessary when a fully optimized node cannot produce the load required by your extremely large test.
 
-## Load Testing Frameworks and Tools
+## Load Generation Testing Frameworks and Tools
 
 Here are a few popular load testing frameworks you may consider, and the languages used to define your scenarios.
 
@@ -57,8 +60,18 @@ Here are a few popular load testing frameworks you may consider, and the languag
 - **Artillery** (<https://artillery.io/>) - Write your scenarios in Javascript, executes a node application.
 - **Gatling** (<https://gatling.io/>) -  Write your scenarios in Scala with their DSL.
 - **Locust** (<https://locust.io/>) - Write your scenarios in Python using the concept of concurrent user activity.
-- **K6** (<https://k6.io/>) - Write your test scenarios in Javascript, available as open source or as SaaS.
+- **K6** (<https://k6.io/>) - Write your test scenarios in Javascript, available as open source kubernetes operator, open source Docker image, or as SaaS. Particulary useful for distributed load testing. Integrates easily with prometheus.
 - **NBomber** (<https://nbomber.com/>) - Write your test scenarios in C# or F#, available integration with test runners (NUnit/xUnit).
+- **WebValidate** (<https://github.com/microsoft/webvalidate>) - Web request validation tool used to run end-to-end tests and long-running performance and availability tests.
+
+## Sample Workload Applications
+
+In the case where a specific workload application is not being provided and the focus is instead on the system, here are a few popular sample workload applications you may consider.
+
+- **HttpBin** ([Python](https://github.com/postmanlabs/httpbin), [GoLang](https://github.com/mccutchen/go-httpbin)) - Supports variety of endpoint types and language implementations. Can echo data used in request.
+- **NGSA** ([Java](https://github.com/retaildevcrews/ngsa-java), [C#](https://github.com/retaildevcrews/ngsa-java)) - Intended for Kubernetes Platform and Monitoring Testing. Built on top of IMDB data store with many CRUD endpoints available. Does not need to have a live database connection.
+- **MockBin** (<https://github.com/Kong/mockbin>) - Allows you to generate custom endpoints to test, mock, and track HTTP requests & responses between libraries, sockets and APIs.
+
 
 ## Conclusion
 

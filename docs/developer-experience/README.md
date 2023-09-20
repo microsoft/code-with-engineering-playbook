@@ -51,7 +51,7 @@ The following are examples of how the Dev Lead might set the bar for dev experie
 
 - Determines development environment (suggested IDE, hosting, etc)
 - Determines source control environment and number of repos required
-- Given development environment and repo structure sets expectations for team to meet in terms of steps to perform the essential dev tasks
+- Given development environment and repo structure, sets expectations for team to meet in terms of steps to perform the essential dev tasks
 - Nominates the DevEx Champion
 
 IDE choice is NOT intended to mandate that all team members must use the same IDE. However, this choice will direct where tight-integration investment will be prioritized. For example, if Visual Studio Code is the **suggested** IDE then, the team would focus on integrating VS code tasks and launch configurations over similar integrations for other IDEs. Team members should still feel free to use their preferred IDE as long as it does not negatively impact the team.
