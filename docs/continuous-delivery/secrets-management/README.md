@@ -48,6 +48,48 @@ These techniques make the loading of secrets  transparent to the developer.
 
 ### C#/.NET
 
+#### Modern .NET Solution
+
+For .NET SDK (version 2.0 or higher) we have `dotnet secrets`, a tool provided by the .NET SDK that allows you to manage and protect sensitive information, such as API keys, connection strings, and other secrets, during development. The secrets are stored securely on your machine and can be accessed by your .NET applications.
+
+```shell
+# Initialize dotnet secret 
+dotnet user-secrets init
+
+# Adding secret
+# dotnet user-secrets set <KEY> <VALUE>
+dotnet user-secrets set ExternalServiceApiKey my-api-key-12345
+
+# Update Secret
+dotnet user-secrets set ExternalServiceApiKey updated-api-key-67890
+
+```
+
+To access the secrets;
+
+```csharp
+using Microsoft.Extensions.Configuration;
+
+var builder = new ConfigurationBuilder()
+    .AddUserSecrets<Startup>();
+
+var configuration = builder.Build();
+var externalServiceApiKey = configuration["ExternalServiceApiKey"];
+
+```
+
+##### Deployment Considerations
+
+When deploying your application to production, it's essential to ensure that your secrets are securely managed. Here are some deployment-related implications:
+
+- Remove Development Secrets: Before deploying to production, remove any development secrets from your application configuration. You can use environment variables or a more secure secret management solution like Azure Key Vault or AWS Secrets Manager in production.
+
+- Secure Deployment: Ensure that your production server is secure, and access to secrets is controlled. Never store secrets directly in source code or configuration files.
+
+- Key Rotation: Consider implementing a secret rotation policy to regularly update your secrets in production.
+
+#### .NET Framework Solution
+
 Use the [`file`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration) attribute of the appSettings element to load secrets from a local file.
 
 ```xml
