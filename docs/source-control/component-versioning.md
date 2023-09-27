@@ -60,7 +60,7 @@ Version updates happen through:
 
 ## Semantic Versioning within a Monorepo
 
-A monorepo, short for "monolithic repository," is a software development practice where multiple related projects, components, or modules are stored within a single version-controlled repository as opposed to maintaining them in separate repositories.
+A monorepo, short for "monolithic repository", is a software development practice where multiple related projects, components, or modules are stored within a single version-controlled repository as opposed to maintaining them in separate repositories.
 
 <img src="./assets/monorepo.png" alt="drawing" width="150"/>
 
