@@ -79,7 +79,7 @@ This strategy allows projects to evolve at their own pace, without forcing all p
 
 `semantic-release` relies on commit messages to assess how codebase changes impact consumers. By adhering to structured conventions for commit messages, `semantic-release` autonomously identifies the subsequent semantic version, compiles a changelog, and releases the software.
 
-Angular Commit Message Conventions serve as the default for `semantic-release`. However, the configuration options of the @semantic-release/commit-analyzer and @semantic-release/release-notes-generator plugins, including presets, can be adjusted to modify the commit message format.
+[Angular Commit Message](https://gist.github.com/brianclements/841ea7bffdb01346392c) Conventions serve as the default for `semantic-release`. However, the configuration options of the @semantic-release/commit-analyzer and @semantic-release/release-notes-generator plugins, including presets, can be adjusted to modify the commit message format.
 
 The table below shows which commit message gets you which release type when `semantic-release` runs (using the default configuration):
 
