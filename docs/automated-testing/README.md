@@ -64,7 +64,7 @@ The table below maps outcomes -- the results that you may want to achieve in you
 
 Testing is a critical part of the development process.  It is important to build your application with testing in mind.  Here are some tips to help you build for testing:
 
-- **Parameterize everything.** Rather than hard-code any variables, consider making everything a configurable parameter with a reasonable default.  This will allow you to easily change the behavior of your application during testing. Particularly during performance testing, it is common to test different values to see what impact that has on performance. If a range of defaults need to change together, consider one or more parameters which set "modes", changing the defaults of a group of parameters together.
+- **Parameterize everything.** Rather than hard-code any variables, consider making everything a configurable parameter with a reasonable default. This will allow you to easily change the behavior of your application during testing. Particularly during performance testing, it is common to test different values to see what impact that has on performance. If a range of defaults need to change together, consider one or more parameters which set "modes", changing the defaults of a group of parameters together.
 
 - **Document at startup.** When your application starts up, it should log all parameters. This ensures the person reviewing the logs and application behavior know exactly how the application is configured.
 
