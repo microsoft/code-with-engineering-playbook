@@ -46,23 +46,6 @@ markdownlint **/*.md --ignore node_modules --fix
 
 A comprehensive list of markdownlint rules is available [here](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md).
 
-### proselint
-
-[`proselint`](http://proselint.com/) is a command line utility that lints the text contents of the document.  It checks for jargon, spelling errors, redundancy, corporate speak and other language related issues.
-
-It's available both as a [python package](https://github.com/amperser/proselint/#checks) and a [node package](https://www.npmjs.com/package/proselint).
-
-```bash
-pip install proselint
-npm install -g proselint
-```
-
-Run proselint
-
-```bash
-proselint document.md
-```
-
 ### write-good
 
 [`write-good`](https://github.com/btford/write-good) is a linter for English text that helps writing better documentation.
