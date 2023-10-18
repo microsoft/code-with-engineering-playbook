@@ -29,7 +29,6 @@ Fault injection methods are a way to increase coverage and validate software rob
 * **Error** - That part of the system state that may cause a subsequent failure.
 * **Failure** - An event that occurs when the delivered service deviates from correct state.
 * **Fault-Error-Failure cycle** - A key mechanism in [dependability](https://en.wikipedia.org/wiki/Dependability): A fault may cause an error. An error may cause further errors within the system boundary; therefore each new error acts as a fault. When error states are observed at the system boundary, they are termed failures.
-(Modeled by [Laprie/Avizienis](https://www.nasa.gov/pdf/636745main_day_3-algirdas_avizienis.pdf))
 
 #### Fault Injection Testing Basics
 
