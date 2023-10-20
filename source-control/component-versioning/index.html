@@ -6933,6 +6933,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#semantic-versioning-within-a-monorepo" class="md-nav__link">
+    Semantic Versioning within a Monorepo
+  </a>
+  
+    <nav class="md-nav" aria-label="Semantic Versioning within a Monorepo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#challenges-with-versioning-in-a-monorepo-structure" class="md-nav__link">
+    Challenges with Versioning in a monorepo structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-release-package-for-versioning" class="md-nav__link">
+    semantic-release package for versioning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-release-configurations" class="md-nav__link">
+    semantic-release configurations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
     Resources
   </a>
@@ -7219,6 +7253,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#semantic-versioning-within-a-monorepo" class="md-nav__link">
+    Semantic Versioning within a Monorepo
+  </a>
+  
+    <nav class="md-nav" aria-label="Semantic Versioning within a Monorepo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#challenges-with-versioning-in-a-monorepo-structure" class="md-nav__link">
+    Challenges with Versioning in a monorepo structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-release-package-for-versioning" class="md-nav__link">
+    semantic-release package for versioning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-release-configurations" class="md-nav__link">
+    semantic-release configurations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
     Resources
   </a>
@@ -7287,11 +7355,92 @@
 <li>Branch names (e.g. develop, release/..) for Alpha / Beta / RC</li>
 <li>Otherwise: Number of commits (+12, ...)</li>
 </ul>
+<h2 id="semantic-versioning-within-a-monorepo">Semantic Versioning within a Monorepo</h2>
+<p>A monorepo, short for "monolithic repository", is a software development practice where multiple related projects, components, or modules are stored within a single version-controlled repository as opposed to maintaining them in separate repositories.</p>
+<p><img src="./assets/monorepo.png" alt="drawing" width="150"/></p>
+<h3 id="challenges-with-versioning-in-a-monorepo-structure">Challenges with Versioning in a monorepo structure</h3>
+<p>Versioning in a monorepo involves making decisions about how to assign version numbers to different projects and components contained within the repository.</p>
+<p>Assigning a single version number to all projects in a monorepo can lead to frequent version increments if changes in one project don't match the significance of changes in another. This might be excessive if some projects undergo rapid development while others evolve more slowly.</p>
+<p>Ideally, we would want each project within the monorepo to have its own version number. Changes in one project shouldn't necessarily trigger version changes in others.
+This strategy allows projects to evolve at their own pace, without forcing all projects to adopt the same version number. It aligns well with the differing release cadences of distinct projects.</p>
+<h3 id="semantic-release-package-for-versioning">semantic-release package for versioning</h3>
+<p><a href="https://github.com/semantic-release/semantic-release">semantic-release</a> simplifies the entire process of releasing a package, which encompasses tasks such as identifying the upcoming version number, producing release notes, and distributing the package. This process severs the direct link between human sentiments and version identifiers. Instead, it rigorously adheres to the Semantic Versioning standards and effectively conveys the significance of alterations to end users.</p>
+<p><code>semantic-release</code> relies on commit messages to assess how codebase changes impact consumers. By adhering to structured conventions for commit messages, <code>semantic-release</code> autonomously identifies the subsequent semantic version, compiles a changelog, and releases the software.</p>
+<p><a href="https://gist.github.com/brianclements/841ea7bffdb01346392c">Angular Commit Message</a> Conventions serve as the default for <code>semantic-release</code>. However, the configuration options of the @semantic-release/commit-analyzer and @semantic-release/release-notes-generator plugins, including presets, can be adjusted to modify the commit message format.</p>
+<p>The table below shows which commit message gets you which release type when <code>semantic-release</code> runs (using the default configuration):</p>
+<table>
+<thead>
+<tr>
+<th>Commit message</th>
+<th>Release type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fix(pencil): stop graphite breaking when too much pressure applied</td>
+<td>Patch Fix Release</td>
+</tr>
+<tr>
+<td>feat(pencil): add 'graphiteWidth' option</td>
+<td>Minor Feature Release</td>
+</tr>
+<tr>
+<td>perf(pencil): remove graphiteWidth option   <br>     BREAKING CHANGE: The graphiteWidth option has been removed.  The default graphite width of 10mm is always used for performance reasons.</td>
+<td>Major Breaking Release <br> (Note that the BREAKING CHANGE:  token must be in the footer of the commit)</td>
+</tr>
+</tbody>
+</table>
+<p>The inherent setup of <code>semantic-release</code> presumes a direct correspondence between a GitHub repository and a package. Hence changes anywhere in the project result in a version upgrade for the project.</p>
+<p>The <a href="https://github.com/pmowrer/semantic-release-monorepo">semantic-release-monorepo</a> tool permits the utilization of <code>semantic-release</code> within a solitary GitHub repository that encompasses numerous packages.</p>
+<p>Instead of attributing all commits to a single package, commits are assigned to packages based on the files that a commit touched.</p>
+<p>If a commit touches a file in or below a package's root, it will be considered for that package's next release. A single commit can belong to multiple packages and may trigger the release of multiple packages.</p>
+<p>In order to avoid version collisions, generated git tags are namespaced using the given package's name: <code>&lt;package-name&gt;</code>-<code>&lt;version&gt;</code>.</p>
+<p><img alt="monorepo-git-tags" src="../assets/monorepo-git-tags.png" /></p>
+<h3 id="semantic-release-configurations">semantic-release configurations</h3>
+<p><code>semantic-release</code>’s options, mode and plugins can be set via either:</p>
+<ul>
+<li>A .releaserc file, written in YAML or JSON, with optional extensions: .yaml/.yml/.json/.js/.cjs</li>
+<li>A release.config.(js|cjs) file that exports an object</li>
+<li>A release key in the project's package.json file</li>
+</ul>
+<p>Here is an example .releaserc file which contains the configuration for:
+1. git tags for the releases from different types of branches
+2. Any plugins required, list of supported plugins can be found <a href="https://semantic-release.gitbook.io/semantic-release/extending/plugins-list">here</a>. In this file <em>semantic-release-monorepo</em> plugin is extended.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ci&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;repositoryUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your repository url&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;branches&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;master&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;feature/*&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;prerelease&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;beta-${name.replace(/\\//g, &#39;-&#39;).replace(/_/g, &#39;-&#39;)}&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[a-zA-Z0-9_]+/[a-zA-Z0-9-_]+&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;prerelease&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dev-${name.replace(/\\//g, &#39;-&#39;).replace(/_/g, &#39;--&#39;)}&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;plugins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;@semantic-release/commit-analyzer&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;@semantic-release/release-notes-generator&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;@semantic-release/exec&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;verifyReleaseCmd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo ${nextRelease.name} &gt; .VERSION&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="s2">&quot;semantic-release-ado&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;extends&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;semantic-release-monorepo&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://gitversion.net/">GitVersion</a></li>
 <li><a href="https://semver.org/">Semantic Versioning</a></li>
 <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/versioning">Versioning in C#</a></li>
+<li><a href="https://github.com/semantic-release/semantic-release">semantic-release</a></li>
+<li><a href="https://github.com/pmowrer/semantic-release-monorepo">semantic-release-monorepo</a></li>
 </ul>
 
   <hr>
@@ -7299,7 +7448,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 20, 2023</span>
       
     
   </small>
