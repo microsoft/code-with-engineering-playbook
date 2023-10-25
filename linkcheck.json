@@ -43,5 +43,5 @@
     "https://miro.com/guides/retrospectives/ideas-games",
     "https://interpret.ml/"
   ],
-  "only_errors": true
+  "only_errors": false
 }
