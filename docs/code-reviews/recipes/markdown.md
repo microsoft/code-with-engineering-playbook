@@ -48,7 +48,7 @@ A comprehensive list of markdownlint rules is available [here](https://github.co
 
 ### proselint
 
-[`proselint`](http://proselint.com/) is a command line utility that lints the text contents of the document.  It checks for jargon, spelling errors, redundancy, corporate speak and other language related issues.
+[`proselint`](https://github.com/amperser/proselint) is a command line utility that lints the text contents of the document.  It checks for jargon, spelling errors, redundancy, corporate speak and other language related issues.
 
 It's available both as a [python package](https://github.com/amperser/proselint/#checks) and a [node package](https://www.npmjs.com/package/proselint).
 
