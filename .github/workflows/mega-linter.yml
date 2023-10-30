@@ -69,7 +69,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: linkcheck_cache
-          path: /output/linkcheck/cache
+          path: megalinter-reports/linkcheck/cache
 
       - name: List Files
         run: ls -R
