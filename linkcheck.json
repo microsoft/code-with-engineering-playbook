@@ -44,5 +44,6 @@
     "https://interpret.ml/"
   ],
   "only_errors": true,
-  "cache_duration": "24h"
+  "cache_duration": "24h",
+  "cache_output_path": "/output/linkcheck/cache"
 }
