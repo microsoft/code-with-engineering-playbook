@@ -51,6 +51,7 @@ jobs:
         with:
           name: MegaLinter reports
           path: |
+            /output/linkcheck/cache
             megalinter-reports
             mega-linter.log
 
@@ -80,10 +81,3 @@ jobs:
         with:
           branch: ${{ github.event.pull_request.head.ref || github.head_ref || github.ref }}
           commit_message: "[MegaLinter] Apply linters fixes"
-
-      - name: 'Upload Artifact'
-        uses: actions/upload-artifact@v3
-        with:
-          name: 'cache'
-          path: /output/linkcheck/cache
-          retention-days: 5
