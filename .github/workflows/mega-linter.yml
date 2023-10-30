@@ -31,6 +31,11 @@ jobs:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
+      - name: Download linkcheck artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: linkcheck_cache
+
       # MegaLinter
       - name: MegaLinter
         id: ml
@@ -51,9 +56,16 @@ jobs:
         with:
           name: MegaLinter reports
           path: |
-            /output/linkcheck/cache
             megalinter-reports
             mega-linter.log
+
+      - name: Archive production artifacts
+        if: ${{ success() }} || ${{ failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: linkcheck_cache
+          path: |
+            /output/linkcheck/cache
 
       # Create pull request if applicable (for now works only on PR from same repository, not from forks)
       - name: Create Pull Request with applied fixes
