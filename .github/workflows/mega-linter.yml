@@ -34,10 +34,10 @@ jobs:
       - name: List Files
         run: ls -R
 
-      - name: Download linkcheck artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: linkcheck_cache
+#      - name: Download linkcheck artifact
+#        uses: actions/download-artifact@v3
+#        with:
+#          name: linkcheck_cache
 
       # MegaLinter
       - name: MegaLinter
@@ -62,13 +62,17 @@ jobs:
             megalinter-reports
             mega-linter.log
 
-      - name: Archive production artifacts
-        if: ${{ success() }} || ${{ failure() }}
+      - name: List Files
+        run: ls -R
+
+      - name: Save linkcheck cache
         uses: actions/upload-artifact@v2
         with:
           name: linkcheck_cache
-          path: |
-            /output/linkcheck/cache
+          path: /output/linkcheck/cache
+
+      - name: List Files
+        run: ls -R
 
       # Create pull request if applicable (for now works only on PR from same repository, not from forks)
       - name: Create Pull Request with applied fixes
