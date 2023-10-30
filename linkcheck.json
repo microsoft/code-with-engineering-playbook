@@ -43,7 +43,7 @@
     "https://miro.com/guides/retrospectives/ideas-games",
     "https://interpret.ml/"
   ],
-  "only_errors": true,
+  "only_errors": false,
   "cache_duration": "24h",
   "cache_output_path": "./megalinter-reports/linkcheck/cache"
 }
