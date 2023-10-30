@@ -54,7 +54,6 @@ jobs:
 
       # Upload MegaLinter artifacts
       - name: Archive production artifacts
-        if: ${{ success() }} || ${{ failure() }}
         uses: actions/upload-artifact@v2
         with:
           name: MegaLinter reports
@@ -62,17 +61,17 @@ jobs:
             megalinter-reports
             mega-linter.log
 
-#      - name: List Files
-#        run: ls -R
+      - name: List Files
+        run: ls -R
 
-#      - name: Save linkcheck cache
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: linkcheck_cache
-#          path: megalinter-reports/linkcheck/cache
+      - name: Save linkcheck cache
+        uses: actions/upload-artifact@v2
+        with:
+          name: linkcheck_cache
+          path: megalinter-reports/linkcheck/cache
 
-#      - name: List Files
-#        run: ls -R
+      - name: List Files
+        run: ls -R
 
       # Create pull request if applicable (for now works only on PR from same repository, not from forks)
       - name: Create Pull Request with applied fixes
