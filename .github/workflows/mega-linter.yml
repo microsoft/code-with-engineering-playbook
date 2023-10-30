@@ -31,10 +31,13 @@ jobs:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Download linkcheck artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: linkcheck_cache
+#      - name: List Files
+#        run: ls -R
+#
+#      - name: Download linkcheck artifact
+#        uses: actions/download-artifact@v3
+#        with:
+#          name: linkcheck_cache
 
       # MegaLinter
       - name: MegaLinter
