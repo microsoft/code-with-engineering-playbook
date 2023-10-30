@@ -45,5 +45,5 @@
   ],
   "only_errors": false,
   "cache_duration": "24h",
-  "cache_output_path": "./megalinter-reports/linkcheck/cache"
+  "cache_output_path": "megalinter-reports/linkcheck/cache"
 }
