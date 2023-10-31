@@ -526,11 +526,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/temp/</loc>
-         <lastmod>2023-10-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/design/design-patterns/</loc>
          <lastmod>2023-10-31</lastmod>
          <changefreq>daily</changefreq>
