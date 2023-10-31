@@ -26,4 +26,4 @@ LOG_LEVEL: WARNING
 MARKDOWN_MARKDOWN_LINK_CHECK_ARGUMENTS: "-q"
 # DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
 PLUGINS:
-  - https://raw.githubusercontent.com/shiranr/linkcheck/v2.0.5.beta/mega-linter-plugin-linkcheck/linkcheck.megalinter-descriptor.yml
+  - https://raw.githubusercontent.com/shiranr/linkcheck/v2.0.6.beta/mega-linter-plugin-linkcheck/linkcheck.megalinter-descriptor.yml
