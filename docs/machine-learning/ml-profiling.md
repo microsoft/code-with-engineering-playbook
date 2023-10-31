@@ -1,6 +1,6 @@
 # Profiling Machine Learning and MLOps Code
 
-Data Science projects, especially the ones that involve Deep Learning techniques, usually are resource intensive. One model training iteration might be multiple hours long. Although large data volumes processing genuinely takes time, minor bugs and nonoptimal implementation of some functional pieces might cause extra resources consumption.
+Data Science projects, especially the ones that involve Deep Learning techniques, usually are resource intensive. One model training iteration might be multiple hours long. Although large data volumes processing genuinely takes time, minor bugs and suboptimal implementation of some functional pieces might cause extra resources consumption.
 
 Profiling can be used to identify performance bottlenecks and see which functions are the costliest in the application code. Based on the outputs of the profiler, one can focus on largest and easiest-to-resolve inefficiencies and therefore achieve better code performance.
 Although profiling follows the same principles of any other software project, the purpose of this document is to provide profiling samples for the most common scenarios in MLOps/Data Science projects.

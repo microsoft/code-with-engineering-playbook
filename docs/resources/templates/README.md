@@ -3,15 +3,15 @@
 
 Description of the project
 
-# Deploying to Azure
+## Deploying to Azure
 
-# Getting started
+## Getting started
 
-# Dependencies
+## Dependencies
 
-# Run it locally
+## Run it locally
 
-#
+## Code of conduct
 
 By participating in this project, you
 agree to abide by the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)

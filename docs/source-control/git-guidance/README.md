@@ -21,7 +21,7 @@ Be sure to run `git help` after Git installation to find really in-depth explana
 
 ## Installation
 
-Git is a toolset that must be installed. [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
+Git is a tool set that must be installed. [Install Git](https://git-scm.com/downloads) and follow the [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
 
 A recommended installation is the [Git Lens extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
 
@@ -144,7 +144,7 @@ Once the feature branch is pushed to the remote repository, it is visible to any
 
 ### Merging
 
-In [CSE](../../CSE.md) we encourage the use of Pull Request to merge code to the main repository to make sure that all code in the final product is [code reviewed](../../code-reviews/README.md)
+We encourage the use of Pull Request to merge code to the main repository to make sure that all code in the final product is [code reviewed](../../code-reviews/README.md)
 
 The Pull Request (PR) process in [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops), [GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and other similar tools make it easy both to start a PR, review a PR and merge a PR.
 
