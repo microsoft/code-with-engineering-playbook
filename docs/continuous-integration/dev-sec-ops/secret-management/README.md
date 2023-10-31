@@ -7,4 +7,4 @@ TODO What is it
 
 - [Credential Scanning](./credential_scanning.md)
 - [Secrets Rotation](./secrets_rotation.md)
-- [Static code analysis](./static-code-analysis/README.md)
+- [Static code analysis](./static-code-analysis.md)
