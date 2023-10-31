@@ -53,7 +53,11 @@
       "https://mtirion.medium.com/",
       "https://chrieke.medium.com/",
       "https://eclipse.dev/mat/",
-      "https://cloud.google.com/blog/products/gcp/cre-life-lessons-what-is-a-dark-launch-and-what-does-it-do-for-me"
+      "https://cloud.google.com/blog/products/gcp/cre-life-lessons-what-is-a-dark-launch-and-what-does-it-do-for-me",
+      "https://miro.com/guides/retrospectives/ideas-games",
+      "https://interpret.ml/"
     ],
-    "only_errors": true
+    "only_errors": false,
+    "cache_duration": "24h",
+    "cache_output_path": "megalinter-reports/linkcheck/cache"
   }
