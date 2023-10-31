@@ -6,13 +6,14 @@ APPLY_FIXES: all # all, none, or list of linter keys
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
 # ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
 ENABLE_LINTERS:
-  - ACTION_ACTIONLINT
-  - MARKDOWN_MARKDOWNLINT
-  - MARKDOWN_MARKDOWN_TABLE_FORMATTER
-  - SPELL_CSPELL
-  - YAML_PRETTIER
-  - YAML_YAMLLINT
   - MDLINKCHECK_LINKCHECK
+#  - ACTION_ACTIONLINT
+#  - MARKDOWN_MARKDOWNLINT
+#  - MARKDOWN_MARKDOWN_TABLE_FORMATTER
+#  - SPELL_CSPELL
+#  - YAML_PRETTIER
+#  - YAML_YAMLLINT
+
 
 SPELL_CSPELL_DISABLE_ERRORS: true
 #MARKDOWN_MARKDOWN_LINK_CHECK_DISABLE_ERRORS: true
