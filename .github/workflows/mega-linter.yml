@@ -1,6 +1,6 @@
 ---
 # MegaLinter GitHub Action configuration file
-# More info at https://oxsecurity.github.io/megalinter
+# More info at https://megalinter.io
 name: MegaLinter
 
 on:
@@ -32,6 +32,14 @@ jobs:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
+#      - name: List Files
+#        run: ls -R
+
+#      - name: Download linkcheck artifact
+#        uses: actions/download-artifact@v3
+#        with:
+#          name: linkcheck_cache
+
       # MegaLinter
       - name: MegaLinter
         id: ml
@@ -40,20 +48,31 @@ jobs:
         uses: oxsecurity/megalinter@v7.1.0
         env:
           # All available variables are described in documentation
-          # https://oxsecurity.github.io/megalinter/configuration/
+          # https://megalinter.io/latest/config-file/
           VALIDATE_ALL_CODEBASE: true # Set ${{ github.event_name == &#39;push&#39; &amp;&amp; github.ref == &#39;refs/heads/main&#39; }} to validate only diff with main branch
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # ADD YOUR CUSTOM ENV VARIABLES HERE TO OVERRIDE VALUES OF .mega-linter.yml AT THE ROOT OF YOUR REPOSITORY
 
       # Upload MegaLinter artifacts
       - name: Archive production artifacts
-        if: ${{ success() }} || ${{ failure() }}
         uses: actions/upload-artifact@v2
         with:
           name: MegaLinter reports
           path: |
             megalinter-reports
             mega-linter.log
+
+      - name: List Files
+        run: ls -R
+
+      - name: Save linkcheck cache
+        uses: actions/upload-artifact@v2
+        with:
+          name: linkcheck_cache
+          path: megalinter-reports/linkcheck/cache
+
+      - name: List Files
+        run: ls -R
 
       # Create pull request if applicable (for now works only on PR from same repository, not from forks)
       - name: Create Pull Request with applied fixes
