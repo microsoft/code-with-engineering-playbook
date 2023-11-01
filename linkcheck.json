@@ -57,7 +57,7 @@
       "https://miro.com/guides/retrospectives/ideas-games",
       "https://interpret.ml/"
     ],
-    "only_errors": false,
+    "only_errors": true,
     "cache_duration": "24h",
     "cache_output_path": "/github/workspace/megalinter-reports/linchcheck_cache"
   }
