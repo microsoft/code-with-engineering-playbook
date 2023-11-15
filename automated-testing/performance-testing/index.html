@@ -7246,6 +7246,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best practices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#performance-monitor-metrics" class="md-nav__link">
     Performance monitor metrics
   </a>
@@ -7458,6 +7465,23 @@ production. Its goal is to identify weaknesses before they manifest system wide.
 Developers often implement fallback procedures for service failure. Chaos
 testing arbitrarily shuts down different parts of the system to validate that
 fallback procedures function correctly.</p>
+<h2 id="best-practices">Best practices</h2>
+<p>Consider the following best practices for performance testing:</p>
+<ul>
+<li><strong>Make one change at a time.</strong> Don't make multiple changes to the system
+  between tests. If you do, you won't know which change caused the performance
+  to improve or degrade.</li>
+</ul>
+<ul>
+<li><strong>Automate testing.</strong> Strive to automate the setup and teardown of resources
+  for a performance run as much as possible. Manual execution can lead to
+  misconfigurations.</li>
+</ul>
+<ul>
+<li><strong>Use different IP addresses.</strong> Some systems will throttle requests from a
+  single IP address. If you are testing a system that has this type of
+  restriction, you can use different IP addresses to simulate multiple users.</li>
+</ul>
 <h2 id="performance-monitor-metrics">Performance monitor metrics</h2>
 <p>When executing the various types of testing approaches, whether it is stress,
 endurance, spike, or chaos testing, it is important to capture various
@@ -7703,7 +7727,7 @@ for the performance characteristics of the system</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 15, 2023</span>
       
     
   </small>
