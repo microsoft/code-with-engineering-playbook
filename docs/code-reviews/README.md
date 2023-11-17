@@ -20,6 +20,6 @@ Take a quick peek at [how to maximize the effectiveness of code reviews](review-
 
 ## Resources
 
-
+- [Sample code review session agenda](sample-agenda.md)
 - [Code review tools](tools.md)
 - [Maximizing the effectiveness of code reviews](review-effectiveness.md)

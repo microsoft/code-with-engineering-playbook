@@ -32,4 +32,4 @@ This structure ensures a thorough, collaborative, and productive code review ses
 
 ## Resources
 
-- [Meeting Template](resources/meeting-template.md)
+- [Meeting Template](resources/meeting-template.oft)
