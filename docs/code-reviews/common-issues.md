@@ -20,6 +20,10 @@ Here are some of the most common issues that code reviews can help catch:
 
 9. **Compatibility Issues**: Checking for compatibility with different browsers, operating systems, or hardware, especially in web and mobile app development.
 
-10. **Design Flaws**: Identifying flaws in the software design, like tightly coupled components or violation of SOLID principles, which can affect flexibility and testability.
+10. **Design Flaws**: Identifying flaws in the software design, like tightly coupled components or violation of [SOLID principles](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design), which can affect flexibility and testability.
 
 Addressing these issues during the review process significantly improves the quality and reliability of the software.
+
+## Resources
+
+- [SOLID Principles](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
