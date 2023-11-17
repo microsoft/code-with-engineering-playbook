@@ -18,8 +18,13 @@ Developers working on projects should conduct peer code reviews on every pull re
 
 Take a quick peek at [how to maximize the effectiveness of code reviews](review-effectiveness.md).
 
+## What are common issues code reviews catch?
+
+Though not an exhaustive list, some of the most common issues that code reviews can help catch are described [here](common-issues.md).
+
 ## Resources
 
 - [Code review tools](tools.md)
+- [Common issues](common-issues.md)
 - [Maximizing the effectiveness of code reviews](review-effectiveness.md)
 - [Sample code review session agenda](sample-agenda.md)

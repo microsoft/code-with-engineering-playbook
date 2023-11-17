@@ -15,7 +15,7 @@ How feedback is given and received can make or break a code review session. Feed
 Check your ego at the door.  Keeping the focus on the quality of the final product helps in setting aside personal preferences and ego. The primary goal is to enhance the code's readability, maintainability, and functionality.
 
 ## The Review Process
-A typical code review involves an overview by the author, a thorough walkthrough of the changes, discussions, and the compilation of action items. It's crucial to be detail-oriented but also keep the big picture in mind, ensuring that the code aligns with the project's overall direction.  For a sample review agenda, see [Sample Code Review Session Agenda](sample-agenda.md).
+A typical code review involves an overview by the author, a thorough walkthrough of the changes, discussions, and the compilation of action items. It's crucial to be detail-oriented but also keep the big picture in mind, ensuring that the code aligns with the project's overall direction.  See [Sample Code Review Session Agenda](sample-agenda.md).
 
 ## Post-Review Actions
 After the review, authors should act on the feedback, refining and improving the code. Follow-up reviews might be necessary for significant changes, ensuring continuous improvement and adherence to project standards.
