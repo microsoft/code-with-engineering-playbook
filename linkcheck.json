@@ -59,6 +59,6 @@
       "https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf?sequence=1&isAllowed=y"
     ],
     "only_errors": true,
-    "cache_duration": "1h",
+    "cache_duration": "24h",
     "cache_output_path": "/github/workspace/megalinter-reports/linchcheck-cache"
   }
