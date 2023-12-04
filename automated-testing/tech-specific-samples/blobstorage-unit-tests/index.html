@@ -7277,6 +7277,7 @@ mkdir<span class="w"> </span>c:/azurite
 <span class="c1"># Launch Azurite for Windows</span>
 azurite<span class="w"> </span>--silent<span class="w"> </span>--location<span class="w"> </span>c:<span class="se">\a</span>zurite<span class="w"> </span>--debug<span class="w"> </span>c:<span class="se">\a</span>zurite<span class="se">\d</span>ebug.log
 </code></pre></div>
+<p>If you want to avoid any disk persistence and destroy the test data when the Azurite process terminates, you can pass the <code>--inMemoryPersistence</code> option, as of Azurite 3.28.0.</p>
 <p>The output will be:</p>
 <div class="highlight"><pre><span></span><code>Azurite<span class="w"> </span>Blob<span class="w"> </span>service<span class="w"> </span>is<span class="w"> </span>starting<span class="w"> </span>at<span class="w"> </span>http://127.0.0.1:10000
 Azurite<span class="w"> </span>Blob<span class="w"> </span>service<span class="w"> </span>is<span class="w"> </span>successfully<span class="w"> </span>listening<span class="w"> </span>at<span class="w"> </span>http://127.0.0.1:10000
@@ -7405,7 +7406,7 @@ steps:
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 4, 2023</span>
       
     
   </small>
