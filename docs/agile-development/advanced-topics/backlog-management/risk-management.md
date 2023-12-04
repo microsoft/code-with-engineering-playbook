@@ -20,4 +20,4 @@ The following guidance aims to provide decision-makers with the information need
 
 ## Opportunity Management
 
-The same process can be applied to opportunities, but while risk management involves mitigating actions to decrease the likelihood of a risk, in opportunity management, you enhance actions to increase the likelihood of a positive outcome.
+The same process can be applied to opportunities, but while risk management involves applying mitigation actions to decrease the likelihood of a risk, in opportunity management, you enhance actions to increase the likelihood of a positive outcome.
