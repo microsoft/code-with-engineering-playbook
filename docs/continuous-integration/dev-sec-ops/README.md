@@ -16,5 +16,5 @@ Topics covered:
 1. [Credential Scanning](./secret-management/credential_scanning.md) - automatically inspecting a project to ensure that no secrets are included in the project's source code.
 1. [Secrets Rotation](./secret-management/secrets_rotation.md) - automated process by which the secret, used by the application, is refreshed and replaced by a new secret.
 1. [Static Code Analysis](./static-code-analysis.md) - analyze source code or compiled versions of code to help find security flaws.
-1. [Penetration Testing](./penetration-testing/penetration_testing.md) - a simulated attack against your application to check for exploitable vulnerabilities.
-1. [Container Dependencies Scanning](./dependency-container-scanning/dependency_container_scanning.md) - search for vulnerabilities in container operating systems, language packages and application dependencies.
+1. [Penetration Testing](./penetration-testing/README.md) - a simulated attack against your application to check for exploitable vulnerabilities.
+1. [Container Dependencies Scanning](./dependency-container-scanning/README.md) - search for vulnerabilities in container operating systems, language packages and application dependencies.
