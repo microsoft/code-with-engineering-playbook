@@ -1,6 +1,6 @@
 # Azure DevOps: Managing Settings on a Per-Branch Basis
 
-When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) for CI/CD, it's convenient to leverage the built-in [pipeline variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables) for [secrets management](../secrets-management/README.md), but using pipeline variables for secrets management has its disadvantages:
+When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) for CI/CD, it's convenient to leverage the built-in [pipeline variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables) for [secrets management](./README.md), but using pipeline variables for secrets management has its disadvantages:
 
 - *Pipeline variables are managed outside the code that references them.* This makes it easy to introduce drift between the source code and the secrets, e.g. adding a reference to a new secret in code but forgetting to add it to the pipeline variables (leads to confusing build breaks), or deleting a reference to a secret in code and forgetting to remote it from the pipeline variables (leads to confusing pipeline variables).
 
