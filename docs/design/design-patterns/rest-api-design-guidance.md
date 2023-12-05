@@ -91,6 +91,6 @@ In particular, when working in an existing API ecosystem, be sure to align with 
 * [Detailed HTTP status code definitions](https://www.restapitutorial.com/httpstatuscodes.html)
 * [Semantic Versioning](https://semver.org/)
 * [Other Public API Guidelines](http://apistylebook.com/design/guidelines/)
-* [OpenAPI Design Practices](https://oai.github.io/Documentation/best-practices.html)
+* [OpenAPI Design Practices](https://learn.openapis.org/best-practices.html)
 * [Microsoft TypeSpec](https://github.com/Microsoft/typespec)
 * [Microsoft TypeSpec GitHub Workflow samples](https://github.com/cse-labs/typespec-workflow-samples/)

@@ -36,4 +36,4 @@ There are currently several UI dashboards available to monitor your applications
 ## References
 
 - [Alternatives to Kubernetes Dashboard](https://octopus.com/blog/alternative-kubernetes-dashboards)
-- [Prometheus and Grafana with Kubernetes](https://tanzu.vmware.com/developer/guides/kubernetes/observability-prometheus-grafana-p1/)
+- [Prometheus and Grafana with Kubernetes](https://www.youtube.com/watch?v=dk2-_DbWb80)
