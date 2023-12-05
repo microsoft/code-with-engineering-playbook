@@ -1,3 +1,5 @@
 # Best Practices
 
-TODO maybe merge the 3 docs into this as they are fairly short
+- [Replacing Documentation with Automation](automation.md)
+- [Establishing and Managing Documentation](establish-and-manage.md)
+- [Creating Good Documentation](good-documentation.md)
