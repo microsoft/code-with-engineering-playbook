@@ -14,9 +14,9 @@ The following guidance aims to provide decision-makers with the information need
 - **Assess** risks in terms of their likelihood and potential impact on the project. Use the [issues](https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/manage-issues-impediments) to report and track risks. Issues represent unplanned activities.
 - **Prioritize** them based on their severity and likelihood, focusing on addressing the most critical ones first.
 - **Mitigate** or reduce the impact and likelihood of the risks.
-- **Monitor** continuously to ensure the effectiveness of the migitation strategies.
+- **Monitor** continuously to ensure the effectiveness of the mitigation strategies.
 - Prepare **contingency plans** for high-impact risks that may still materialize.
-- **Comunicate and report** risks to keep all stakeholders informed.
+- **Communicate and report** risks to keep all stakeholders informed.
 
 ## Opportunity Management
 
