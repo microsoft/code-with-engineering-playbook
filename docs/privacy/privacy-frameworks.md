@@ -84,7 +84,7 @@ We highlight several alternatives for Trusted Research Environments:
 | Solution                                                                                                                            | Notes                         |
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
 | [Azure Trusted Research Environment](https://github.com/microsoft/azuretre)                                                         | An Open Source TRE for Azure. |
-| [Aridhia DRE](https://appsource.microsoft.com/en-us/product/web-apps/aridhiainformatics.analytixagility_workspace_123?tab=Overview) |                               |
+| [Aridhia DRE](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aridhiainformaticsltd1698310428368.aridhia-dre?tab=Overview) |                               |
 
 #### Eyes-off machine learning
 

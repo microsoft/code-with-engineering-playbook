@@ -90,7 +90,7 @@ Leverage automated chaos testing to see how things break. You can read this play
 * Many services meshes, like [Linkerd](https://linkerd.io/2/features/fault-injection/), offer fault injection tooling through the use of their sidecars.
 * [Chaos Mesh](https://github.com/chaos-mesh/chaos-mesh)
 * [Simmy](https://github.com/Polly-Contrib/Simmy) - A .NET library for chaos testing and fault injection integrated with the [Polly](https://github.com/App-vNext/Polly) library for resilience engineering.
-[This ISE dev blog post](https://devblogs.microsoft.com/cse/2023/03/07/build-test-resilience-dotnet-functions/) provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.
+[This ISE dev blog post](https://devblogs.microsoft.com/ise/build-test-resilience-dotnet-functions/) provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.
 
 ## Analyze all Failures
 
