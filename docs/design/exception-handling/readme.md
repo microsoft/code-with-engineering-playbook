@@ -7,7 +7,7 @@ Almost all language platforms offer a construct of exception or equivalent to ha
 3. Navigate the call stack till the right catch block is identified
 4. Automatic collection of call stack
 5. Define different error handling flows thru multiple catch blocks
-6. Define finally block to cleanup resouces 
+6. Define finally block to cleanup resources
 
 Here is some guidance on exception handling in .Net
 
