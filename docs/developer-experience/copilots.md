@@ -18,7 +18,7 @@ If you want Copilot to write something useful for you, try writing a comment tha
 
 ## GitHub Copilot Labs
 
-Copilot has a [GitHub Copilot Labs extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-labs) that offers additional features that are not yet ready for prime-time. For VS Code, you can install it from the VS Code Marketplace. These features include:
+Copilot has a [GitHub Copilot labs extension](https://githubnext.com/projects/copilot-labs/) that offers additional features that are not yet ready for prime-time. For VS Code, you can install it from the VS Code Marketplace. These features include:
 
 - **Explain**. Copilot can explain what the code is doing in natural language.
 
