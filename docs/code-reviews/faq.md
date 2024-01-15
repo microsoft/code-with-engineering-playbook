@@ -37,8 +37,7 @@ Slow code reviews might cause delays in delivering features and cause frustratio
 Checkout the [Tools](./tools.md) for help on how to perform reviews out of Visual Studio or Visual Studio Code.
 
 ## How can we enforce code review policies?
-
-[By configuring Branch Policies](tools.md#Configuring Branch Policies), you can easily enforce code reviews rules.
+By configuring [Branch Policies](./tools.md#Configuring-Branch-Policies) , you can easily enforce code reviews rules.
 
 ## We pair or mob. How should this reflect in our code reviews?
 
