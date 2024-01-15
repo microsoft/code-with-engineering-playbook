@@ -252,6 +252,7 @@ git config --global core.editor "code --wait"
 ### Commit Message Structure
 
 The essential parts of a commit message are:
+
 * subject line: a short description of the commit, maximum 50 characters long
 * body (optional): a longer description of the commit, wrapped at 72 characters, separated from the subject line by a blank line
 
