@@ -93,6 +93,22 @@ Developers often implement fallback procedures for service failure. Chaos
 testing arbitrarily shuts down different parts of the system to validate that
 fallback procedures function correctly.
 
+## Best practices
+
+Consider the following best practices for performance testing:
+
+- **Make one change at a time.** Don't make multiple changes to the system
+  between tests. If you do, you won't know which change caused the performance
+  to improve or degrade.
+
+- **Automate testing.** Strive to automate the setup and teardown of resources
+  for a performance run as much as possible. Manual execution can lead to
+  misconfigurations.
+
+- **Use different IP addresses.** Some systems will throttle requests from a
+  single IP address. If you are testing a system that has this type of
+  restriction, you can use different IP addresses to simulate multiple users.
+
 ## Performance monitor metrics
 
 When executing the various types of testing approaches, whether it is stress,

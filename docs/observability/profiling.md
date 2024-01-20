@@ -20,4 +20,4 @@ Unfortunately, each profiler tool typically uses its own format for storing prof
 - (Java and Go) [Flame](https://github.com/VerizonMedia/kubectl-flame) - profiling containers in Kubernetes
 - (Java, Python, Go) [Datadog Continuous profiler](https://www.datadoghq.com/product/code-profiling/)
 - (Go) [profefe](https://github.com/profefe/profefe), which builds `pprof` to provide continuous profiling
-- (Java) [Eclipse Memory Analyzer](https://www.eclipse.org/mat/)
+- (Java) [Eclipse Memory Analyzer](https://eclipse.dev/mat/)

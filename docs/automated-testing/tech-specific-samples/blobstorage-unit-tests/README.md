@@ -33,6 +33,8 @@ mkdir c:/azurite
 azurite --silent --location c:\azurite --debug c:\azurite\debug.log
 ```
 
+If you want to avoid any disk persistence and destroy the test data when the Azurite process terminates, you can pass the `--inMemoryPersistence` option, as of Azurite 3.28.0.
+
 The output will be:
 
 ```shell
