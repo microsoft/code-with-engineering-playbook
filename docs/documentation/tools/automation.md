@@ -5,10 +5,9 @@ If you want to automate some checks on your Markdown documents, there are severa
 - Code Analysis / Linting
   - [markdownlint](../../code-reviews/recipes/markdown.md#markdownlint) to verify Markdown syntax and enforce rules that make the text more readable.
   - [markdown-link-check](https://github.com/tcort/markdown-link-check) to extract links from markdown texts and check whether each link is alive (200 OK) or dead.
-  - [proselint](../../code-reviews/recipes/markdown.md#proselint) to check for jargon, spelling errors, redundancy, corporate speak and other language related issues.
   - [write-good](../../code-reviews/recipes/markdown.md#write-good) to check English prose.
   - [Docker image for node-markdown-spellcheck](https://github.com/tmaier/docker-markdown-spellcheck), a lightweight docker image to spellcheck markdown files.
-  - [static code analysis](../../continuous-integration/dev-sec-ops/static-code-analysis/static_code_analysis.md)
+  - [static code analysis](../../continuous-integration/dev-sec-ops/secret-management/static-code-analysis.md)
 
 - [VS Code Extensions](../../code-reviews/recipes/markdown.md#vs-code-extensions)
   - [Write Good Linter](../../code-reviews/recipes/markdown.md#write-good-linter) to get grammar and language advice while editing a document.

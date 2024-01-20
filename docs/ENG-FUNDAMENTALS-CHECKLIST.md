@@ -76,6 +76,7 @@ More details on [agile development](agile-development/README.md)
 - [ ] Project advisors are invited to design reviews or asked to give feedback to the design decisions captured in documentation.
 - [ ] Discover all the reviews that the customer's processes require and plan for them.
 - [ ] Clear non-functional requirements captured (see [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md))
+- [ ] Risks and opportunities captured (see [Risk/Opportunity Management](agile-development/advanced-topics/backlog-management/risk-management.md))
 
 More details on [design reviews](design/design-reviews/README.md)
 
