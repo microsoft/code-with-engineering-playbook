@@ -1,5 +1,5 @@
 ---
-name: Build and deploy mkdocs to https://microsoft.github.io/code-with-engineering-playbook
+name: Build and deploy to GitHub Pages
 on:
   push:
     branches:
@@ -15,7 +15,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
-          python-version: "3.7"
+          python-version: "3.12"
           architecture: "x64"
       - name: Install dependencies
         run: |

@@ -1,6 +1,6 @@
 # Code Reviews
 
-Code reviews are an essential part of the software development process, offering numerous benefits such as improved code quality, shared knowledge, and early bug detection. However, the effectiveness of these reviews largely depends on the approach and mindset of the participants.
+Code reviews are a required part of the software development process, offering numerous benefits such as improved code quality, shared knowledge, and early bug detection. However, the effectiveness of these reviews largely depends on the approach and mindset of the participants.
 
 ## Goals
 
@@ -25,6 +25,5 @@ Though not an exhaustive list, some of the most common issues that code reviews 
 ## Resources
 
 - [Code review tools](tools.md)
-- [Common issues](common-issues.md)
-- [Maximizing the effectiveness of code reviews](review-effectiveness.md)
-- [Sample code review session agenda](sample-agenda.md)
+- [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
+- [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)

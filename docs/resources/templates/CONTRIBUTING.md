@@ -1,7 +1,7 @@
 # Contributing
 
 We love pull requests from everyone. By participating in this project, you
-agree to abide by the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
+agree to abide by the [Neudesic Inner Code of Conduct](https://github.com/neudesic/intro-to-innersource/blob/main/CODE_OF_CONDUCT.md)
 
 Fork, then clone the repo
 

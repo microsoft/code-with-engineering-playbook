@@ -14,4 +14,4 @@ Description of the project
 ## Code of conduct
 
 By participating in this project, you
-agree to abide by the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
+agree to abide by the [Neudesic Inner Code of Conduct](https://github.com/neudesic/intro-to-innersource/blob/main/CODE_OF_CONDUCT.md)

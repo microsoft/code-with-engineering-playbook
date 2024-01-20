@@ -1,10 +1,10 @@
 ---
 site_name: Code With Engineering Playbook
-site_url: https://microsoft.github.io/code-with-engineering-playbook
-site_description: ISE Code With Engineering Playbook
-site_author: Microsoft ISE
+site_url: https://neudesic.github.io/engineering-playbook/
+site_description: Neudesic Engineering Excellence Playbook
+site_author: Neudesic Engineering Excellence
 
-repo_url: https://github.com/microsoft/code-with-engineering-playbook/
+repo_url: https://github.com/neudesic/engineering-playbook/
 edit_uri: ""
 
 theme:
@@ -14,8 +14,8 @@ theme:
     text: Roboto
   palette:
     primary: black
-  logo: resources/ms_icon.png
-  favicon: resources/ms_icon.png
+  logo: resources/neu-white-logo.png
+  favicon: resources/neu-white-logo.png
   features:
     - navigation.instant
     - navigation.indexes
