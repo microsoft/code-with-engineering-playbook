@@ -1,4 +1,4 @@
-# Guidelines on Structuring and Testing the Terraform Configuration
+# Guidelines on Structuring the Terraform Configuration
 
 ## Context
 When creating an infrastructure configuration, it is important to follow a consistent and organized structure to ensure maintainability, scalability and reusability of the code. The goal of this section is to briefly describe how to structure your Terraform configuration in order to achieve this.
@@ -42,25 +42,6 @@ modules
 ├── main
 ```
 
-## Testing the configuration
-
-To test Terraform configurations, the [Terratest library](https://terratest.gruntwork.io/) is utilized. A comprehensive guide to best practices with Terratest, including unit tests, integration tests, and end-to-end tests, is available for reference [here](https://terratest.gruntwork.io/docs/testing-best-practices/unit-integration-end-to-end-test/).
-
-### Types of tests
-
-- **Unit Test for Module / Resource**: Write unit tests for individual modules / resources to ensure that each module behaves as expected in isolation. They are particularly valuable in larger, more complex Terraform configurations where individual modules can be reused and are generally quicker in terms of execution time.
-
-- **Integration Test**: These tests verify that the different modules and resources work together as intended.
-
-For simple Terraform configurations, extensive unit testing might be overkill. Integration tests might be sufficient in such cases. However, as the complexity grows, unit tests become more valuable.
-
-### Key aspects to consider
-
-- **Syntax and validation**: Use `terraform fmt` and `terraform validate` to check the syntax and validate the Terraform configuration during development or in the deployment script / pipeline. This ensures that the configuration is correctly formatted and free of syntax errors.
-- **Deployment and existance**: Terraform providers, like the Azure provider, perform certain checks during the execution of terraform apply. If Terraform successfully applies a configuration, it typically means that the specified resources were created or modified as expected. In your code you can skip this validation and focus on particular resource configurations that are more critical, described in the next points.
-- **Resource properties that can break the functionality**: The expectation here is that we're not interested in testing each property of a resource, but to identify the ones that could cause an issue in the system if they are changed, such as access or network policies, service principal permissions and others.
-- **Validation of Key Vault contents**: Ensuring the presence of necessary keys, certificates, or secrets in the Azure Key Vault that are stored as part of resource configuration.
-- **Properties that can influence the cost or location**: This can be achieved by asserting the locations, service tiers, storage settings, depending on the properties available for the resources.
 
 ## Naming convention
 
