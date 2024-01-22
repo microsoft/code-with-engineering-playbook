@@ -30,7 +30,7 @@ There are a number of basic components that are required to carry out a load tes
 2. **Determine expected normal and peak load for the scenarios** - Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
 3. **Identify success criteria metrics** - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.
 4. **Agree on test matrix** - Which load test cases should be run for which combinations of input parameters.
-5. **Select the right tool** - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).  This may also include develepment of a custom load test client, see Preparation phase below.
+5. **Select the right tool** - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).  This may also include development of a custom load test client, see Preparation phase below.
 6. **Observability** - Determine which metrics need to gathered to gain insight into throughput, latency, resource utilization, etc.
 7. **Scalability** - Determine the amount of scale needed by load generator, workload application, CPU, Memory, and network components needed to achieve testing goals. The use of kubernetes on the cloud can be used to make testing infinitely scalable.
 
@@ -61,7 +61,7 @@ You should also consider the origin of your load test traffic. Depending on the 
 **Note:** In general, the preferred approach to load testing would be the usage of a standard test framework such as the ones discussed below.  There are cases, however, where a custom test client may be advantageous.  Examples include batch oriented workloads that can be run under a single security context and the same test data can be re-used for multiple load tests.  In such a scenario it may be beneficial to develop a custom script that can be used interactively as well as non-interactively.
 
 ### Analysis
-The analysis phase represents the work that brings all previuous activities together:
+The analysis phase represents the work that brings all previous activities together:
 * Set aside time to allow for collection of new test data based on the analysis of the load tests.
 * Correlate application metrics and platform metrics to identify potential pitfalls and bottlenecks.
 * Include business stakeholders early in the analysis phase to validate application findings.  Include platform operations to validate platform findings.
