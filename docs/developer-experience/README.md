@@ -100,7 +100,7 @@ Assign hotkeys to each of the essential tasks.
 
 The F5 contract aims for the ability to run the end-to-end solution with the following steps.
 
-1. Clone - git clone \[`my-repo-url-here`\]
+1. Clone - git clone [`my-repo-url-here`]
 2. Configure - set any configuration values that need to be unique to the individual (i.e. update a .env file)
 3. Press F5 - launch the solution with debugging attached.
 
@@ -146,11 +146,11 @@ Automate the ability to execute each essential task across all solution componen
 
 When this is not implemented, the engineers must repeat each of the essential tasks manually for each component in the solution. In this situation, the number of steps required to perform each essential task is multiplied by the number of components in the system
 
-\[Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above\] * \[many solution components\] = TOO MANY STEPS
+[Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [many solution components] = TOO MANY STEPS
 
 VS.
 
-\[Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above\] * \[1 solution\] = MINIMUM NUMBER OF STEPS
+[Configuration steps + Build steps + Start/Debug steps + Stop steps + Run test steps + Documenting all of the above] * [1 solution] = MINIMUM NUMBER OF STEPS
 
 ### Observability
 
@@ -162,11 +162,11 @@ There are many observability strategies a developer can use alongside best engin
 
 Splitting a solution across multiple repositories can negatively impact the above measures. This can also negatively impact other areas such as Pull Requests, Automated Testing, Continuous Integration, and Continuous Delivery. Similar to the IDE instances, the negative impact is multiplied by the number of repositories.
 
-\[Clone steps + Branching steps + Commit steps + CI steps + Pull Request reviews & merges \] * \[many source code repositories\] = TOO MANY STEPS
+[Clone steps + Branching steps + Commit steps + CI steps + Pull Request reviews & merges ] * [many source code repositories] = TOO MANY STEPS
 
 VS.
 
-\[Clone steps + Branching steps + Commit steps + CI steps + Pull Request reviews & merges \] * \[1 source code repository\] = MINIMUM NUMBER OF STEPS
+[Clone steps + Branching steps + Commit steps + CI steps + Pull Request reviews & merges ] * [1 source code repository] = MINIMUM NUMBER OF STEPS
 
 #### Atomic Pull Requests
 

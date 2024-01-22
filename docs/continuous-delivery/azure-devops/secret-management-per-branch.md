@@ -1,12 +1,12 @@
 # Azure DevOps: Managing Settings on a Per-Branch Basis
 
-When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) for CI/CD, it's convenient to leverage the built-in [pipeline variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables) for [secrets management](./README.md), but using pipeline variables for secrets management has its disadvantages:
+When using [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) for CI/CD, it's convenient to leverage the built-in [pipeline variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables) for [secrets management](../secrets-management/README.md), but using pipeline variables for secrets management has its disadvantages:
 
 - *Pipeline variables are managed outside the code that references them.* This makes it easy to introduce drift between the source code and the secrets, e.g. adding a reference to a new secret in code but forgetting to add it to the pipeline variables (leads to confusing build breaks), or deleting a reference to a secret in code and forgetting to remote it from the pipeline variables (leads to confusing pipeline variables).
 
 - *Pipeline variables are global shared state.* This can lead to confusing situations and hard to debug problems when developers make concurrent changes to the pipeline variables which may override each other. Having a single global set of pipeline variables also makes it impossible for secrets to vary per environment (e.g. when using a branch-based deployment model where 'master' deploys using the production secrets, 'development' deploys using the staging secrets, and so forth).
 
-A solution to these limitations is to manage secrets in the Git repository jointly with the project's source code. As described in [secrets management](README.md), don't check secrets into the repository in plain text. Instead we can add an encrypted version of our secrets to the repository and enable our CI/CD agents and developers to decrypt the secrets for local usage with some pre-shared key. This gives us the best of both worlds: a secure storage for secrets as well as side-by-side management of secrets and code.
+A solution to these limitations is to manage secrets in the Git repository jointly with the project's source code. As described in [secrets management](../secrets-management/README.md), don't check secrets into the repository in plain text. Instead we can add an encrypted version of our secrets to the repository and enable our CI/CD agents and developers to decrypt the secrets for local usage with some pre-shared key. This gives us the best of both worlds: a secure storage for secrets as well as side-by-side management of secrets and code.
 
 ```sh
 # first, make sure that we never commit our plain text secrets and generate a strong encryption key

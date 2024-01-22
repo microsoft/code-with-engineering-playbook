@@ -21,7 +21,7 @@ To implement credential scanning for a project, consider the  following:
 
 ## Credential Scanning Frameworks and Tools
 
-Recipes and Scenarios -
+Recipes and Scenarios-
 
 1. [detect-secrets](./recipes/detect-secrets.md) is an aptly named module for detecting secrets within a code base.
 1. Use [detect-secrets inside Azure DevOps Pipeline](./recipes/detect-secrets-ado.md)
