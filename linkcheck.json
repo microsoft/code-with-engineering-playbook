@@ -57,8 +57,7 @@
       "https://miro.com/guides/retrospectives/ideas-games",
       "https://interpret.ml/",
       "https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf?sequence=1&isAllowed=y",
-      "https://hub.docker.com/_/microsoft-dotnet",
-      "https://lldb.llvm.org/"
+      "https://hub.docker.com/_/microsoft-dotnet"
     ],
     "only_errors": true,
     "cache_duration": "24h",
