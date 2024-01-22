@@ -105,7 +105,7 @@ In order to avoid version collisions, generated git tags are namespaced using th
 ### semantic-release configurations
 
 `semantic-release`’s options, mode and plugins can be set via either:
-
+<!-- // cSpell:ignore releaserc -->
 - A .releaserc file, written in YAML or JSON, with optional extensions: .yaml/.yml/.json/.js/.cjs
 - A release.config.(js|cjs) file that exports an object
 - A release key in the project's package.json file

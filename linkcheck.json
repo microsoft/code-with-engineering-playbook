@@ -49,6 +49,7 @@
       "https://docs.github.com/",
       "https://behave.readthedocs.io/",
       "https://blog.insightdatascience.com",
+      "https://hub.docker.com/_/microsoft-dotnet",
       "https://www.w3.org/",
       "https://mtirion.medium.com/",
       "https://chrieke.medium.com/",
@@ -57,7 +58,8 @@
       "https://miro.com/guides/retrospectives/ideas-games",
       "https://interpret.ml/",
       "https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf?sequence=1&isAllowed=y",
-      "https://hub.docker.com/_/microsoft-dotnet"
+      "https://hub.docker.com/_/microsoft-dotnet",
+      "https://lldb.llvm.org/"
     ],
     "only_errors": true,
     "cache_duration": "24h",
