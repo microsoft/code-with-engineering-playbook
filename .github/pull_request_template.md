@@ -10,9 +10,10 @@
 [READY TO PR? Use the check-list below to ensure your branch is ready for PR.]
 
 - [ ] Changes follow the repo structure and land in the appropriate folder and section
-- [ ] No lint check errors
+- [ ] No lint check errors related to your changes
 - [ ] No confidential information
 - [ ] No duplicated content
 - [ ] Labeled appropriately
 - [ ] Added 2 reviewers
-- [ ] Not a developer blog
+
+> Note: It is normal for link checker to fail on links not related to your content. Do not worry about this. Reviewer will help you resolve it.
