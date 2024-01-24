@@ -62,6 +62,7 @@ You should also consider the origin of your load test traffic. Depending on the 
 **Note:** In general, the preferred approach to load testing would be the usage of a standard test framework such as the ones discussed below.  There are cases, however, where a custom test client may be advantageous.  Examples include batch oriented workloads that can be run under a single security context and the same test data can be re-used for multiple load tests.  In such a scenario it may be beneficial to develop a custom script that can be used interactively as well as non-interactively.
 
 ### Analysis
+
 The analysis phase represents the work that brings all previous activities together:
 * Set aside time to allow for collection of new test data based on the analysis of the load tests.
 * Correlate application metrics and platform metrics to identify potential pitfalls and bottlenecks.
