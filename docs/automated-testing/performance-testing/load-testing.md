@@ -35,6 +35,7 @@ There are a number of basic components that are required to carry out a load tes
 7. **Scalability** - Determine the amount of scale needed by load generator, workload application, CPU, Memory, and network components needed to achieve testing goals. The use of kubernetes on the cloud can be used to make testing infinitely scalable.
 
 ### Preparation
+
 The key activity is to replace the end user client with a test bench that simulates one or more instances of the original client.  For standard 3rd party tools it may suffice to configure the existing test UI before initiating the load tests.  
 
 If a custom client is used, code development will be required:
