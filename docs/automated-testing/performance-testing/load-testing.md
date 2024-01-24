@@ -70,7 +70,7 @@ The analysis phase represents the work that brings all previous activities toget
 
 ### Report writing
 
-Summarize your findings from the analysis phase.  Be sure to include application and platform enhancement suggestions, if any.
+Summarize your findings from the analysis phase. Be sure to include application and platform enhancement suggestions, if any.
 
 ### Further Testing
 
