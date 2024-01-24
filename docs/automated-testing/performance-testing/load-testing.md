@@ -66,7 +66,7 @@ You should also consider the origin of your load test traffic. Depending on the 
 The analysis phase represents the work that brings all previous activities together:
 * Set aside time to allow for collection of new test data based on the analysis of the load tests.
 * Correlate application metrics and platform metrics to identify potential pitfalls and bottlenecks.
-* Include business stakeholders early in the analysis phase to validate application findings.  Include platform operations to validate platform findings.
+* Include business stakeholders early in the analysis phase to validate application findings. Include platform operations to validate platform findings.
 
 ### Report writing
 
