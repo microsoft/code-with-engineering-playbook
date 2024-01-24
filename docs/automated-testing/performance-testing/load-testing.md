@@ -30,7 +30,7 @@ There are a number of basic components that are required to carry out a load tes
 2. **Determine expected normal and peak load for the scenarios** - Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
 3. **Identify success criteria metrics** - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.
 4. **Agree on test matrix** - Which load test cases should be run for which combinations of input parameters.
-5. **Select the right tool** - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).  This may also include development of a custom load test client, see Preparation phase below.
+5. **Select the right tool** - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs (Some popular tools are listed below). This may also include development of a custom load test client, see Preparation phase below.
 6. **Observability** - Determine which metrics need to gathered to gain insight into throughput, latency, resource utilization, etc.
 7. **Scalability** - Determine the amount of scale needed by load generator, workload application, CPU, Memory, and network components needed to achieve testing goals. The use of kubernetes on the cloud can be used to make testing infinitely scalable.
 
