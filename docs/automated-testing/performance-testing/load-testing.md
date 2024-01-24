@@ -26,7 +26,7 @@ There are a number of basic components that are required to carry out a load tes
 
 ### Planning
 
-1. **Identify key scenarios to measure** - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic.  The key activity of this phase is to agree on and define the load test cases
+1. **Identify key scenarios to measure** - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic. The key activity of this phase is to agree on and define the load test cases.
 2. **Determine expected normal and peak load for the scenarios** - Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.
 3. **Identify success criteria metrics** - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.
 4. **Agree on test matrix** - Which load test cases should be run for which combinations of input parameters.
