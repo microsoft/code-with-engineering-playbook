@@ -61,7 +61,8 @@
       "https://hub.docker.com/_/microsoft-dotnet",
       "https://lldb.llvm.org/",
       "https://www.microsoft.com/",
-      "https://aka.ms/opensource/security/"
+      "https://aka.ms/opensource/security/",
+      "https://www.pluralsight.com/courses/"
     ],
     "only_errors": true,
     "cache_duration": "24h",
