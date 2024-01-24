@@ -1604,8 +1604,29 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    Preparation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#execution" class="md-nav__link">
     Execution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#report-writing" class="md-nav__link">
+    Report writing
   </a>
   
 </li>
@@ -7339,8 +7360,29 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    Preparation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#execution" class="md-nav__link">
     Execution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#report-writing" class="md-nav__link">
+    Report writing
   </a>
   
 </li>
@@ -7403,10 +7445,10 @@
 <p>"<em>Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.</em>" - <a href="https://en.wikipedia.org/wiki/Load_testing">Load testing - Wikipedia</a></p>
 <p>A load test is designed to determine how a system behaves under expected normal and peak workloads. Specifically its main purpose is to confirm if a system can handle the expected load level. Depending on the target system this could be concurrent users, requests per second or data size.</p>
 <h2 id="why-load-testing">Why Load Testing</h2>
-<p>The main objective is to prove the system can behave normally under the expected normal load before releasing it to production. The criteria which defines "behave normally" will depend on your target, this may be as simple as "the system remains available", but it could also include meeting a response time SLA or error rate.</p>
+<p>The main objective is to prove the system can behave normally under the expected normal load before releasing it to production. The criteria that define "behave normally" will depend on your target, this may be as simple as "the system remains available", but it could also include meeting a response time SLA or error rate.</p>
 <p>Additionally, the results of a load test can also be used as data to help with capacity planning and calculating scalability.</p>
 <h2 id="load-testing-design-blocks">Load Testing Design Blocks</h2>
-<p>There are a number of basic component which are required to carry out a load test.  </p>
+<p>There are a number of basic components that are required to carry out a load test.  </p>
 <ol>
 <li>
 <p>In order to have meaningful results the system needs to be tested in a production-like environment with a network and hardware which closely resembles the expected deployment environment.</p>
@@ -7424,17 +7466,40 @@
 <h2 id="applying-the-load-testing">Applying the Load Testing</h2>
 <h3 id="planning">Planning</h3>
 <ol>
-<li><strong>Identify key scenarios to measure</strong> - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic.</li>
+<li><strong>Identify key scenarios to measure</strong> - Gather these scenarios from Product Owner, they should provide a representative sample of real world traffic. The key activity of this phase is to agree on and define the load test cases.</li>
 <li><strong>Determine expected normal and peak load for the scenarios</strong> - Determine a load level such as concurrent users or requests per second to find the size of the load test you will run.</li>
 <li><strong>Identify success criteria metrics</strong> - These may be on testing side such as response time and error rate, or they may be on the system side such as CPU and memory usage.</li>
-<li><strong>Select the right tool</strong> - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs. (Some popular tools are listed below).</li>
+<li><strong>Agree on test matrix</strong> - Which load test cases should be run for which combinations of input parameters.</li>
+<li><strong>Select the right tool</strong> - Many frameworks exist for load testing so consider if features and limitations are suitable for your needs (Some popular tools are listed below). This may also include development of a custom load test client, see Preparation phase below.</li>
 <li><strong>Observability</strong> - Determine which metrics need to gathered to gain insight into throughput, latency, resource utilization, etc.</li>
 <li><strong>Scalability</strong> - Determine the amount of scale needed by load generator, workload application, CPU, Memory, and network components needed to achieve testing goals. The use of kubernetes on the cloud can be used to make testing infinitely scalable.</li>
 </ol>
+<h3 id="preparation">Preparation</h3>
+<p>The key activity is to replace the end user client with a test bench that simulates one or more instances of the original client. For standard 3rd party tools it may suffice to configure the existing test UI before initiating the load tests.  </p>
+<p>If a custom client is used, code development will be required:</p>
+<ol>
+<li><strong>Custom development</strong> - Design for minimal impact/overhead. Be sure to capture only those features of the production client that are relevant from a load perspective. Does it matter if the same test is duplicated, or must the workload be unique for each test? Can all tests be run under the same user context?</li>
+<li><strong>Test environment</strong> - Create test environment that resembles production environment. This includes the platform as well as external systems, e.g., data sources.</li>
+<li><strong>Security contexts</strong> - Be sure to have all requisite security contexts for the test environment. Automation like pipelines may require special setup, e.g., OAuth2 client credential flow instead of auth code flow, because interactive login is replaced by non-interactive. Allow planning leeway in case admin approval is required for new security contexts.</li>
+<li><strong>Test data strategy</strong> - Make sure that output data format (ascii/binary/...) is compatible with whatever analysis tool is used in the analysis phase. This also includes storage areas (local/cloud/...), which may trigger new security contexts. Bear in mind that it may be necessary to collect data from sources external to the application to correlate potential performance issues with the application behavior. This includes platform and network metrics. Make sure to collect data that covers analysis needs (statistical measures, distributions, graphs, etc.).</li>
+<li><strong>Automation</strong> - Repeatability is critical. It must be possible to re-run a given test multiple times to verify consistency and resilience of the application itself and the underlying platform.  Pipelines are recommended whenever possible.
+Evaluate whether load tests should be run as part of the PR strategy.</li>
+<li><strong>Test client debugging</strong> - All test modules should be carefully debugged to ensure that the execution phase progresses smoothly.</li>
+<li><strong>Test client validation</strong> - All test modules should be validated for extreme values of the input parameters. This reduces the risk of running into unexpected difficulties when stepping through the full test matrix during the execution phase.</li>
+</ol>
 <h3 id="execution">Execution</h3>
-<p>It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios and how to execute those at load. It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.</p>
+<p>It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios and how to execute those at load. Depending on the situation, it may be advisable to coordinate testing activities with the platform operations team.  </p>
+<p>It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.</p>
 <p>You should also consider the origin of your load test traffic. Depending on the scope of the target system you may want to initiate from a different location to better replicate real world traffic such as from a different region.</p>
 <p><strong>Note:</strong> Before starting please be aware of any restrictions on your network such as DDOS protection where you may need to notify a network administrator or apply for an exemption.</p>
+<p><strong>Note:</strong> In general, the preferred approach to load testing would be the usage of a standard test framework such as the ones discussed below.  There are cases, however, where a custom test client may be advantageous. Examples include batch oriented workloads that can be run under a single security context and the same test data can be re-used for multiple load tests.  In such a scenario it may be beneficial to develop a custom script that can be used interactively as well as non-interactively.</p>
+<h3 id="analysis">Analysis</h3>
+<p>The analysis phase represents the work that brings all previous activities together:
+* Set aside time to allow for collection of new test data based on the analysis of the load tests.
+* Correlate application metrics and platform metrics to identify potential pitfalls and bottlenecks.
+* Include business stakeholders early in the analysis phase to validate application findings. Include platform operations to validate platform findings.</p>
+<h3 id="report-writing">Report writing</h3>
+<p>Summarize your findings from the analysis phase. Be sure to include application and platform enhancement suggestions, if any.</p>
 <h3 id="further-testing">Further Testing</h3>
 <p>After completing your load test you should be set up to continue on to additional related testing such as;</p>
 <ul>
@@ -7480,7 +7545,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 15, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 24, 2024</span>
       
     
   </small>
