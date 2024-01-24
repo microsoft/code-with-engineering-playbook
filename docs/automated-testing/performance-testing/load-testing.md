@@ -47,7 +47,7 @@ If a custom client is used, code development will be required:
 5. **Automation** - Repeatability is critical. It must be possible to re-run a given test multiple times to verify consistency and resilience of the application itself and the underlying platform.  Pipelines are recommended whenever possible.
 Evaluate whether load tests should be run as part of the PR strategy.
 6. **Test client debugging** - All test modules should be carefully debugged to ensure that the execution phase progresses smoothly.
-7. **Test client validation** - All test modules should be validated for extreme values of the input parameters.  This reduces the risk of running into unexpected difficulties when stepping through the full test matrix during the execution phase.
+7. **Test client validation** - All test modules should be validated for extreme values of the input parameters. This reduces the risk of running into unexpected difficulties when stepping through the full test matrix during the execution phase.
 
 ### Execution
 
