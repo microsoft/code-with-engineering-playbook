@@ -51,7 +51,7 @@ Evaluate whether load tests should be run as part of the PR strategy.
 
 ### Execution
 
-It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios and how to execute those at load.  Depending on the situation, it may be advisable to coordinate testing activities with the platform operations team.  
+It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios and how to execute those at load. Depending on the situation, it may be advisable to coordinate testing activities with the platform operations team.  
 
 It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.
 
