@@ -130,7 +130,7 @@ to the collector web server. Using mocking servers libraries (eg. MockServer or 
 
 * [OpenTelemetry Official Site](https://opentelemetry.io/)
 
-* [Getting Started with dotnet and OpenTelemetry](https://opentelemetry.io/docs/net/getting-started/)
+* [Getting Started with dotnet and OpenTelemetry](https://opentelemetry.io/docs/languages/net/getting-started/)
 
 * [Using OpenTelemetry Collector](https://opentelemetry.io/docs/collector/getting-started/)
 
