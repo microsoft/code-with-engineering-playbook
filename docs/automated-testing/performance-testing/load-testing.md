@@ -69,6 +69,7 @@ The analysis phase represents the work that brings all previous activities toget
 * Include business stakeholders early in the analysis phase to validate application findings.  Include platform operations to validate platform findings.
 
 ### Report writing
+
 Summarize your findings from the analysis phase.  Be sure to include application and platform enhancement suggestions, if any.
 
 ### Further Testing
