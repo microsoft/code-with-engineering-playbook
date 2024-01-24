@@ -59,7 +59,9 @@
       "https://interpret.ml/",
       "https://dash.harvard.edu/bitstream/handle/1/38323292/4_Wood_Final.pdf?sequence=1&isAllowed=y",
       "https://hub.docker.com/_/microsoft-dotnet",
-      "https://lldb.llvm.org/"
+      "https://lldb.llvm.org/",
+      "https://www.microsoft.com/",
+      "https://aka.ms/opensource/security/"
     ],
     "only_errors": true,
     "cache_duration": "24h",
