@@ -1,4 +1,4 @@
-# ISE Code-With Engineering Playbook
+# ISE Engineering Fundamentals Playbook
 
 An engineer working for a [ISE](ISE.md) project...
 
