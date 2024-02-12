@@ -62,7 +62,8 @@
       "https://lldb.llvm.org/",
       "https://www.microsoft.com/",
       "https://aka.ms/opensource/security/",
-      "https://www.pluralsight.com/courses/"
+      "https://www.pluralsight.com/courses/",
+      "https://www.gartner.com/en/information-technology/glossary/citizen-developer"
     ],
     "only_errors": true,
     "cache_duration": "24h",
