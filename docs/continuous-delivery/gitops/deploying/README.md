@@ -2,7 +2,7 @@
 
 ## What is GitOps?
 
-GitOps is a way of managing your infrastructure and applications so that the whole system is described declaratively and version controlled (most likely in a Git repository), and having an automated process that ensures that the deployed environment matches the state specified in a repository."- [WeaveWorks](https://www.weave.works/technologies/gitops/#what-is-gitops)
+"GitOps is an operational framework that takes DevOps best practices used for application development such as version control, collaboration, compliance, and CI/CD, and applies them to infrastructure automation." See [GitLab: What is GitOps?](https://about.gitlab.com/topics/gitops/).
 
 ## Why should I use GitOps?
 

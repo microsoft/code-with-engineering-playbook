@@ -82,8 +82,8 @@ See also [Pull Request Template](./pull-request-template.md)
 
 ## Resources
 
-* [Writing a great pull request description](https://www.pullrequest.com/blog/writing-a-great-pull-request-description)
-* [Review code with pull requests (Azure DevOps)](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops)
+* [Writing a great pull request description](https://www.pullrequest.com/blog/writing-a-great-pull-request-description/)
+* [Review code-with pull requests (Azure DevOps)](https://learn.microsoft.com/azure/devops/repos/git/pull-requests)
 * [Collaborating with issues and pull requests (GitHub)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests)
 * [Google approach to PR size](https://google.github.io/eng-practices/review/developer/small-cls.html)
 * [Feature Flags](https://www.martinfowler.com/articles/feature-toggles.html)

@@ -2,7 +2,7 @@
 
 [MkDocs](https://www.mkdocs.org/) is a tool built to create static websites from raw markdown files. Other alternatives include [Sphinx](https://www.sphinx-doc.org/en/master/), and [Jekyll](https://jekyllrb.com/).
 
-We used MkDocs to create [ISE Code-With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/) static website from the contents in [the GitHub repository](https://github.com/microsoft/code-with-engineering-playbook). Then we deployed it to [GitHub Pages](https://pages.github.com/).
+We used MkDocs to create [ISE Engineering Fundamentals Playbook](https://microsoft.github.io/code-with-engineering-playbook/) static website from the contents in [the GitHub repository](https://github.com/microsoft/code-with-engineering-playbook). Then we deployed it to [GitHub Pages](https://pages.github.com/).
 
 We found MkDocs to be a good choice since:
 
