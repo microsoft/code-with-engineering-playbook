@@ -6,7 +6,11 @@ on:
       - main
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-
+    permissions:
+      actions: write
+      contents: read
+      deployments: write
     steps:
       - uses: actions/checkout@v3
         with:
