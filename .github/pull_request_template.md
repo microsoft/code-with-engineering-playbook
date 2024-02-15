@@ -4,7 +4,6 @@
 
 - Write a detailed description of all changes - and if appropriate, why they are needed
 
-
 ## Checklist
 
 [READY TO PR? Use the check-list below to ensure your branch is ready for PR.]
