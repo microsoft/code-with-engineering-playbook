@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       actions: write
-      contents: read
+      contents: write
       deployments: write
       issues: write
+      pages: write
       pull-requests: write
     steps:
       - uses: actions/checkout@v3
