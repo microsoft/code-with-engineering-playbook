@@ -33,7 +33,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 ## Quality and not Quantity
 
 - We agree on a [Definition of Done](definition-of-done.md) for our user story's and sprints and live by it.
-- We follow engineering best practices like the [Code With Engineering Playbook](https://github.com/microsoft/code-with-engineering-playbook)
+- We follow engineering best practices like the [Engineering Fundamentals Engineering Playbook](https://github.com/microsoft/code-with-engineering-playbook)
 
 ## Scrum Rhythm
 
@@ -77,7 +77,7 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 
 - We follow the git flow branch naming convention for branches and identify the task number e.g. `feature/123-add-working-agreement`
 - We merge all code into main branches through PRs
-- All PRs are reviewed by one person from [Customer/Partner Name] and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
+- All PRs are reviewed by one person from <Customer/Partner Name> and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
 - We treat documentation as code and apply the same [standards to Markdown](../../../code-reviews/recipes/markdown.md) as code
