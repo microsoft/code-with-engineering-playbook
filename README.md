@@ -1,4 +1,4 @@
-# ISE Code-With Customer/Partner Engineering Playbook
+# ISE Engineering Fundamentals Customer/Partner Engineering Playbook
 
 An engineer or data scientist working on an [ISE](docs/ISE.md) project...
 
