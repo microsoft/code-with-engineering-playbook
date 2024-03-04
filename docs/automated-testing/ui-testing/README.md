@@ -61,7 +61,8 @@ Recommended testing frameworks:
   - [Cypress](https://www.cypress.io)
   - [Jest](https://jestjs.io/docs/en/snapshot-testing)
   - [Selenium](https://www.selenium.dev)
-  - [Appium](https://appium.io) 
+  - [Appium](https://appium.io)
+
 - OS/Mobile Applications
   - [Coded UI tests (CUITs)](https://learn.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2019)
   - [Xamarin.UITest](https://learn.microsoft.com/en-us/appcenter/test-cloud/uitest/)
