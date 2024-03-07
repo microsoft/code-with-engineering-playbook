@@ -6,6 +6,12 @@
 
 ## Clean Code
 
-TODO: WTFs/minute image with introduction to Clean Code.
+Robert C. Martin introduces Clean Code with a humorous anecdote about the number of WTFs/minute that a developer might experience when reading poorly written code.
+
+![WTFs/minute](images/wtf.png)
+
+Robert asks the reader to consider which door represents the code they write, or the code they wish to maintain or troubleshoot. The door on the left is clean, well-organised, and easy to navigate. The door on the right is cluttered, disorganised, and difficult to navigate.
+
+Clean Code is fundamental to writing high-quality code - that is, understandable by humans, and maintainable. In Clean Code, Robert presents a set of principles and best practices for writing high-quality and maintainable code.
 
 [Read more](./clean-code.md)
