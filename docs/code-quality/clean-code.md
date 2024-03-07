@@ -6,17 +6,38 @@ Whilst we recommend reading the book to hear Robert's thoughts in full, we've su
 
 ## Meaningful Names
 
-> Liam's brain dump: Use meaningful, descriptive, and consistent names for variables, functions, classes, and modules. Avoid names that are too long, too short, or ambiguous. Use nouns for classes, verbs for functions, and camelCase for variables. Avoid using prefixes or suffixes that are redundant or misleading. For example, use `name` instead of `strName` or `theName`.
+> Liam's brain dump: Use meaningful, descriptive, and consistent names for variables, functions, classes, and modules. Avoid names that are too long, too short, or ambiguous. Use nouns for classes, verbs for functions, and camelCase for variables. Avoid using prefixes or suffixes that are redundant or misleading. Use domain-specific terminology and avoid abbreviations or acronyms that are not widely known or understood.
+
+For example, use `name` instead of `strName`, `theName`, or `n`.
+```c#
+string name = "John"; // Good
+string strName = "John"; // Bad
+string theName = "John"; // Bad
+string n = "John"; // Bad
+```
 
 ## Functions
 
-> Liam's brain dump: Write short, simple, and focused functions that do one thing well. Each function should have a clear and expressive name that describes its purpose. Use as few parameters as possible, and avoid output parameters or side effects. Prefer returning values over modifying global variables or state. Use exceptions to handle errors, and wrap external APIs or libraries in your own functions. For example, write a function called `calculateInterest` that takes `principal`, `rate`, and `time` as parameters and returns the interest amount, instead of a function called `calc` that takes an array of numbers and modifies a global variable called `result`.
+> Liam's brain dump: Write short, simple, and focused functions that do one thing well. Each function should have a clear and expressive name that describes its purpose. Use as few parameters as possible, and avoid output parameters or side effects. Prefer returning values over modifying global variables or state. Use exceptions to handle errors, and wrap external APIs or libraries in your own functions.
+
+For example, write a function called `CalculateInterest` that takes `principal`, `rate`, and `time` as parameters and returns the interest amount, instead of a function called `Calc` that takes an array of numbers and modifies a global variable called `result`.
+```c#
+public int CalculateInterest(int principal, double rate, int time)
+{
+    return principal * rate * time;
+} // Good
+
+public void Calc(int[] numbers)
+{
+    result = numbers[0] * numbers[1] * numbers[2];
+} // Bad
+```
 
 ## Comments
 
 > Liam's brain dump: Write comments that explain why the code does something, not what it does or how it does it. Use comments to clarify complex or obscure code, to provide additional context or information, or to warn about potential pitfalls or limitations. Avoid writing comments that are redundant, outdated, or misleading. Prefer writing self-documenting code that expresses its intent through meaningful names and clear structure. For example, write a comment that explains why you need to check for a null value, instead of a comment that repeats the code logic or the function name.
 
-##&nbsp;Formatting
+## Formatting
 
 > Liam's brain dump: Format your code in a consistent and readable way that follows the established coding standards and conventions of your language, framework, or project. Use indentation, spacing, and line breaks to separate and group code blocks. Use comments and blank lines to create visual sections and headings. Align and order your code elements logically and intuitively. Use tools or plugins to automate or enforce code formatting. For example, format your code using Prettier, ESLint, or Black, depending on your language and preferences.
 
