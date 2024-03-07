@@ -4,6 +4,10 @@
 
 > "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." - Martin Fowler
 
+## Freedom of Code
+
+**TODO:** Note about freedom of code. This isn't a set of prescriptive rules that *must* be following. Objective is to share a set of patterns and practices. This shouldn't be used as a checklist for code reviews. For advise and guideance for effective code reviews, see [here](../code-reviews/).
+
 ## Clean Code
 
 Robert C. Martin introduces Clean Code with a humorous anecdote about the number of WTFs/minute that a developer might experience when reading poorly written code.
