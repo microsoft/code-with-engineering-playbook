@@ -5,7 +5,7 @@ Identify potential candidates for open-source dependencies and evaluate them aga
 ## Why Evaluate Open Source Software
 
 Open source software is a critical part of modern software development. It is important to evaluate the open source software uses to ensure it meets the needs and is secure.
-Security is not a given with open source software, and furhtermore, what is secure today may not be secure tomorrow so scanning dependencies for known vulnerabilities doesn't always cover all bases.
+Security is not a given with open source software, and furthermore, what is secure today may not be secure tomorrow so scanning dependencies for known vulnerabilities doesn't always cover all bases.
 This is why we need to look for evidence of a strong security posture and a commitment to security from the maintainers of the open source software we use.
 
 ## Applying Open Source Software Evaluation
@@ -24,6 +24,6 @@ When evaluating open source software, consider the following:
 
 ## Tools for Evaluating Open Source Software
 
-- [OpenSSF Scorecards](https://github.com/ossf/scorecard) - This tool actually automates some of the checks in the list above and can be used to evaluate the security posture of open source projects. This can run as a GitHub action or in the Command Line Interface (CLI) to provide a security scorecard for open source projects. Note which metrics are important to you, your organization and the customer's. This tool is used by [known open source program offices (OSPO)](https://securityscorecards.dev/#part-of-the-oss-community) for measuring open source contibutions by their employees.
+- [OpenSSF Scorecards](https://github.com/ossf/scorecard) - This tool actually automates some of the checks in the list above and can be used to evaluate the security posture of open source projects. This can run as a GitHub action or in the Command Line Interface (CLI) to provide a security scorecard for open source projects. Note which metrics are important to you, your organization and the customer's. This tool is used by [known open source program offices (OSPO)](https://securityscorecards.dev/#part-of-the-oss-community) for measuring open source contributions by their employees.
 - [OWASP Dependency-Check](https://owasp.org/www-project-dependency-check/) - a software composition analysis utility that identifies project dependencies and checks if there are any known, publicly disclosed, vulnerabilities.
 - [Concise Guide for Evaluating Open Source Software](https://github.com/ossf/wg-best-practices-os-developers/blob/main/docs/Concise-Guide-for-Evaluating-Open-Source-Software.md) - a guide to help you expand upon the knowledge in this page to evaluate open source software.
