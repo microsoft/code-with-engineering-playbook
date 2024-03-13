@@ -34,11 +34,11 @@ The next version of Copilot offers a number of new use-cases beyond code complet
 
 - **Chat**. Rather than just providing code completion, Copilot will be able to have a conversation with you about what you want to do. It has context about the code you are working on and can provide suggestions based on that context. Beyond just writing code, consider using chat to:
 
-  - **Build SQL Indexes**. Given a query, ChatGPT can generate a SQL index that will improve the performance of the query.
+- **Build SQL Indexes**. Given a query, Copilot can generate a SQL index that will improve the performance of the query.
 
-  - **Write Regular Expressions**. These are notoriously difficult to write, but ChatGPT can generate them for you if you give some sample input and describe what you want to extract.
+- **Write Regular Expressions**. These are notoriously difficult to write, but Copilot can generate them for you if you give some sample input and describe what you want to extract.
 
-  - **Improve and Validate**. If you are unsure of the implications of writing code a particular way, you can ask questions about it. For instance, you might ask if there is a way to write the code that is more performant or uses less memory. Once it gives you an opinion, you can ask it to provide documentation validating that assertion.
+- **Improve and Validate**. If you are unsure of the implications of writing code a particular way, you can ask questions about it. For instance, you might ask if there is a way to write the code that is more performant or uses less memory. Once it gives you an opinion, you can ask it to provide documentation validating that assertion.
 
 - **Explain**. Copilot can explain what the code is doing in natural language.
 
