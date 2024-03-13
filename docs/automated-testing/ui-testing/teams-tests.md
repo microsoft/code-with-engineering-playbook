@@ -1,4 +1,4 @@
-# UI Tests for a Teams application
+# Automated UI Tests for a Teams application
 
 ## Overview
 In this section we will provide an overview on how one could implement UI tests for a custom Teams application.
@@ -180,7 +180,7 @@ Inspecting the app is very useful as you write new tests, as it allows you to fi
 
     1. "appium:deviceName" - is the name of your emulator. In **Useful commands** sections from above, you can see how to get the name of your AVD.
     1. "appium:appPackage" - is the name of the package, should be kept to "**com.microsoft.teams**".
-    1. "appium:appActivity"-  is the name of th eactivity in the app that you want to launch, should be kept to "**com.microsoft.skype.teams.Launcher**"
+    1. "appium:appActivity"-  is the name of the activity in the app that you want to launch, should be kept to "**com.microsoft.skype.teams.Launcher**"
     1. "appium:automationName" - is the name of the driver you are using, in this case, "**UiAutomator2**"
 
     If the appium server runs on your local machine at the default portal, then Remote Host and Remote Port can be kept to the default values.
