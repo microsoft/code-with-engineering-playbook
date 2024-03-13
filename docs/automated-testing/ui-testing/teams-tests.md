@@ -67,7 +67,7 @@ In what follows, we will provide guidance on how to achieve both.
 
 ### 1. Using Android Virtual Devices
 
-This approach enables the creation of Android UI tests using virtual devices. It comes with the advantage of not requiring a paid licenses to certain vendors. However, due to the nature of emulators, compared to real devices, it may prove to be less stable. Always choose the solution that best fits your project requirements and resources. 
+This approach enables the creation of Android UI tests using virtual devices. It comes with the advantage of not requiring a paid license to certain vendors. However, due to the nature of emulators, compared to real devices, it may prove to be less stable. Always choose the solution that best fits your project requirements and resources. 
 
 Overall setup:
 - [AVD - Android Virtual Devices](https://developer.android.com/studio/run/managing-avds) - which are virtual representation of physical Android devices.
