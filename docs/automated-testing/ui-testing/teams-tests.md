@@ -2,7 +2,17 @@
 
 ## Overview
 In this section we will provide an overview on how one could implement UI tests for a custom Teams application.
-Generally, to ensure a great experience for your end users, you would like to implement automated test which covers your features both in a browser as well as on mobile platforms. In what follows, we will go through learnings we have gained based on previous experience with our customers.
+Generally, to ensure a great experience for your end users, you would like to implement automated test which covers your features both in a browser as well as on mobile platforms. 
+
+General observations:
+- Testing in a web browser is easier than on a native app.
+- Testing a Teams app on a mobile device in an automated way is more challenging due to the fact that you are testing an app within an app:
+    - There is no Android Application Package (APK) / iOS App Store Package (IPA) publicly available for Microsoft Teams app itself. 
+    - Mobile testing frameworks are designed with the assumption that you own the APK/IPA of the app under test.
+    - Workarounds need to be found to first automate the installation of Teams. 
+- Should you choose working with emulators, testing in a local Windows box is more stable than in a CI/CD. The latter involves a CI/CD agent and an emulator in a VM.
+
+In what follows, we will go through learnings we have gained based on previous experience with our customers.
 
 ## Web based UI tests 
 To implement web-based UI tests for your Teams application, you can follow the same approach as for testing any other web application with a UI. [UI testing](./README.md) provides good guidance on that. The starting point for your test would be to launch a browser in an automated way (using Selenium, or similar frameworks) and go to https://teams.microsoft.com/. 
