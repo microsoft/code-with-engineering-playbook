@@ -1,4 +1,4 @@
-# UI Tests for a Teams application
+# Automated UI Tests for a Teams application
 
 ## Overview
 In this section we will provide an overview on how one could implement UI tests for a custom Teams application.
