@@ -29,7 +29,7 @@ The packaging of your app could be done automatically in a pipeline and the outp
 ```
 If you would like to test the production version of your app which was already published in the store you would first need to automate the installation of the app from Teams' store for your test user.
 
-Once the app was installed, implement selectors to [access your custom app](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#access-your-app) and to perform various actions within the app. 
+Once the app was installed, implement [selectors](https://www.browserstack.com/guide/css-selectors-in-selenium) to [access your custom app](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#access-your-app) and to perform various actions within the app. 
 
 ### Pipeline
 If you are using Selenium and Edge as the browser, consider leveraging the [selenium/standalone-edge](https://hub.docker.com/r/selenium/standalone-edge) Docker image which contains a standalone Selenium server with the Microsoft Edge browser installed. By default, it would run in headless mode, but by setting `START_XVFB` variable to `True`, you can control whether to start a virtual framebuffer server (Xvfb) that allows GUI applications to run without a display. Below is a code snippet which illustrated the usage of the image in a Gitlab pipeline:
