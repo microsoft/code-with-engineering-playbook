@@ -12,8 +12,7 @@
 - [ ] No confidential information
 - [ ] No duplicated content
 - [ ] Labeled appropriately
-- [ ] Added 2 reviewers
-- [ ] No lint errors
+- [ ] This PR was reviewed by at least one subject matter expert 
 - [ ] No lint check errors related to your changes
       
 > Note: You may see link check errors on pages you have not touched. This is normal, and due to either broken links or sites that reject link checker bots. The reviewer will help you get to a green state on these.
