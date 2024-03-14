@@ -516,6 +516,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/evaluate-oss/</loc>
+         <lastmod>2024-03-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/penetration-testing/</loc>
          <lastmod>2024-03-14</lastmod>
          <changefreq>daily</changefreq>
