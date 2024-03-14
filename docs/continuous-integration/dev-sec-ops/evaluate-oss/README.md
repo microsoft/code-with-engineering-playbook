@@ -8,6 +8,11 @@ Open source software is a critical part of modern software development. It is im
 Security is not a given with open source software, and furthermore, what is secure today may not be secure tomorrow so scanning dependencies for known vulnerabilities doesn't always cover all bases.
 This is why we need to look for evidence of a strong security posture and a commitment to security from the maintainers of the open source software we use.
 
+## When to Evaluate Open Source Software
+
+You should evaluate open source software before you use it in your project. This is especially important if the software is a dependency of your project, as it can introduce security vulnerabilities and other issues into your project.
+Code reviewers should also be aware of the open source software used in the project and be able to use the tools and resources mentioned below to evaluate the security of the open source software that is being added to the project.
+
 ## Applying Open Source Software Evaluation
 
 When evaluating open source software, consider the following:
