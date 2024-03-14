@@ -1,6 +1,6 @@
 # Evaluate Open Source Software
 
-Identify potential candidates for open-source dependencies and evaluate them against your needs and the required security posture.
+Given the rise in threat of [open source software supply chain attakcs](https://devblogs.microsoft.com/engineering-at-microsoft/the-journey-to-secure-the-software-supply-chain-at-microsoft/), developers should identify potential candidates for open-source dependencies and evaluate them against your needs and the required security posture.
 
 ## Why Evaluate Open Source Software
 
@@ -20,9 +20,10 @@ When evaluating open source software, consider the following:
 - Can you avoid adding it as a dependency? The best dependency is the one you don't have.
 - Is it maintained? How often and at what engineering rigor (i.e. code reviews, branch protection, tests)
 - Is there evidence that effort is taken to make it secure?
-- Can you find a reference that it is used significantly downstream by other projects or is referenced by known and trusted documentation?
+- Can you find a reference that it is used significantly downstream by other projects or is referenced by known and trusted documentation? How many stars and forks does it have on GitHub?
 - Is it easy to use securely?
-- Are there instructions on how to report vulnerabilities? 
+- Does the license allow you to use it in your project?
+- Are there instructions on how to report vulnerabilities?
 - Does it have any known vulnerabilities or security issues?
 - Are its dependencies secure, or at least up to date and actively maintained?
 - Has it been audited by a third party such as the [OpenSSF Security Reviews](https://github.com/ossf/security-reviews/blob/main/Overview.md#readme)?
