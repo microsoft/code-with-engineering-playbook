@@ -168,7 +168,8 @@ In order to be able to reach appium server which runs on the VM from outside, th
 1. Restart the AVD.
 
 
-### How to inspect the Teams app in Azure Virtual Device (AVD)
+### Inspecting the Teams app in Azure Virtual Device (AVD)
+
 Inspecting the app is very useful as you write new tests, as it allows you to find the ID of different elements displayed on the screen - similar to DevTools, which allows you to navigate through the DOM of a web page.
 
 [Appium Inspector](https://inspector.appiumpro.com/) is a very useful tool that allows you to inspect an app runing on an emulator.
