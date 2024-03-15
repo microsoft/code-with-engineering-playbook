@@ -31,9 +31,10 @@ The packaging of your app could be done automatically in a pipeline and the outp
 ```
 If you would like to test the production version of your app which was already published in the store you would first need to automate the installation of the app from Teams' store for your test user.
 
-Once the app was installed, implement [selectors](https://www.browserstack.com/guide/css-selectors-in-selenium) to [access your custom app](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#access-your-app) and to perform various actions within the app. 
+Once the app is installed, implement [selectors](https://www.browserstack.com/guide/css-selectors-in-selenium) to [access your custom app](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#access-your-app) and to perform various actions within the app. 
 
 ### Pipeline
+
 If you are using Selenium and Edge as the browser, consider leveraging the [selenium/standalone-edge](https://hub.docker.com/r/selenium/standalone-edge) Docker image which contains a standalone Selenium server with the Microsoft Edge browser installed. By default, it would run in headless mode, but by setting `START_XVFB` variable to `True`, you can control whether to start a virtual framebuffer server (Xvfb) that allows GUI applications to run without a display. Below is a code snippet which illustrated the usage of the image in a Gitlab pipeline:
 
 ```yml
@@ -53,7 +54,7 @@ run-tests-dev:
 ...
 ```
 
-When running your test, you would need to use the Selenium server URL for remote execution. With the definition from above, the URL would be: http://selenium:4444/wd/hub. The code snipped below illustrated how one could initialize the Selenium driver to point to the remote Selenium server using JavaScript:
+When running test, you need to use the Selenium server URL for remote execution. With the definition from above, the URL is: http://selenium:4444/wd/hub. The code snipped below illustrates how one could initialize the Selenium driver to point to the remote Selenium server using JavaScript:
 
 ```javascript
 var { Builder } = require("selenium-webdriver");
@@ -68,16 +69,12 @@ var buildEdgeDriver = function () {
 ```
 
 ## Mobile based UI tests
-Testing your custom Teams application on mobile devices is not as straight forward as for the web-based approach due to its challenging setup.
-Naturally, it implies the usage of actual devices which is generally more complex. Especially running such tests in a CI/CD pipeline can be more difficult and resource-intensive. 
+Testing your custom Teams application on mobile devices is a bit more difficult using the web-based approach as it requires usage of actual or simulated devices. Running such tests in a CI/CD pipeline can be more difficult and resource-intensive. 
 
-One approach is to use real devices or cloud-based emulators from vendors such as [BrowserStack](https://www.browserstack.com/). This requires a license to such vendors. Alternatively, you could use virtual devices hosted in Azure Virtual Machines. 
+One approach is to use real devices or cloud-based emulators from vendors such as [BrowserStack](https://www.browserstack.com/) which requires a license. Alternatively, you can use virtual devices hosted in Azure Virtual Machines. 
 
-In what follows, we will provide guidance on how to achieve both. 
 
-<!-- There are two proven ways through which this can still be achieved for Android, based on previous experience with our customers: -->
-
-### 1. Using Android Virtual Devices
+### Using Android Virtual Devices
 
 This approach enables the creation of Android UI tests using virtual devices. It comes with the advantage of not requiring paid licenses to certain vendors. However, due to the nature of emulators, compared to real devices, it may prove to be less stable. Always choose the solution that best fits your project requirements and resources. 
 
@@ -92,12 +89,15 @@ Overall setup:
         > [Here](https://appium.io/docs/en/2.0/ecosystem/) you can read more about Appium ecosystem
       - The advantage of this architecture is that it opens the possibility of running the server in a VM, and the client in a pipeline, enabling the tests to be ran automatically on scheduled basis as part of CI/CD pipelines. 
 
-### How to run mobile test locally on a Windows machine 
-In order to run locally such tests, you need two things:
-1. An emulator ([AVD - Android Virtual Devices](https://developer.android.com/studio/run/managing-avds)), which will represent the physical device.
-1. [Appium server](https://appium.io/docs/en/2.1/), which will redirect the commands from the test to your virtual device.
+### Running mobile test locally on a Windows machine 
 
-#### a) Steps to create Android Virtual Device:
+This requires:
+
+- An emulator ([AVD - Android Virtual Devices](https://developer.android.com/studio/run/managing-avds)), which will represent the physical device.
+- [Appium server](https://appium.io/docs/en/2.1/), which will redirect the commands from the test to your virtual device.
+
+#### Creating an Android Virtual Device:
+
 1. Install Android Studio from [official link](https://developer.android.com/studio). 
     > Note: At the time of writing the documentation, the latest version available was Android Studio Giraffe, 2022.3.1 Patch 2 for Window.
     1. Set ANDROID_HOME environment variable to point to the installation path of Android SDK. i.e. ` C:Users\<user-name>\AppData\Local\Android\Sdk`
@@ -111,7 +111,7 @@ In order to run locally such tests, you need two things:
     1. Start the emulator by clicking on the Run button from the Device Manage screen.
     1. Manually install Microsoft Teams from Google Playstore on the device. 
 
-####  b) Steps to set up Appium
+####  Setting up Appium
 - Install `appium`:
     1. Download NodeJs, if it is not already installed on your machine: [Download | Node.js (nodejs.org)](https://nodejs.org/en/download)
     1. Install Appium globally: [Install Appium - Appium Documentation](https://appium.io/docs/en/2.0/quickstart/install/)
@@ -120,24 +120,16 @@ In order to run locally such tests, you need two things:
         > [Here](https://appium.io/docs/en/2.0/intro/drivers/) you can read more about Appium Drivers.
     1. Start appium server by running `appium` command in a command prompt.
 ####  Useful commands:
-- To list the emulators that you have previously created, without opening Android Studio:
-    ```cli
-    emulator -list-avds
-    ```
-- To start an emulator, without opening Android Studio:
-    ```cli
-    emulator -avd {name-of-emulator}
-    ```
-- To get the name of your AVD, assuming your emulator is running, you can run:
-    
-    ```cli
-    adb devices
-    ```
-    You should see a response with *List of devices attached*, where your running device will be listed.
 
-### How to set up an Azure VM for running mobile tests in a pipeline
+List emulators that you have previously created, without opening Android Studio:
 
-### 1. VM configuration
+```cli
+emulator -list-avds
+
+### Setting up an Azure VM for running mobile tests in a pipeline
+
+### Configure the VM
+
 This approach essentially hosts a virtual device in a virtual machine. In order to be able to set up the emulator (Android Virtual Device) in an Azure VM, the VM should support [nested virtualization](https://azure.microsoft.com/en-us/blog/nested-virtualization-in-azure/). 
 
 Azure VM configuration which, at the time of writing the documentation, worked successfully with AVD and appium:
@@ -145,10 +137,12 @@ Azure VM configuration which, at the time of writing the documentation, worked s
 - VM generation: V1
 - Size: Standard D4ds v5 16 GiB memory
 
-### 2. Enable connection from outside to Appium server on the VM 
+### Enable connection from outside to Appium server on the VM 
+
 > Note: By default appium server runs on port 4723. The rest of the steps will assume that this is the port where your appium server runs.
 
-In order to be able to reach appium server which runs on the VM from outside, the following steps are needed:
+In order to be able to reach appium server which runs on the VM from outside:
+
 1. Create an [Inbound Rule](https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-port-rule) for port 4723 from within the VM.
 1. Create an Inbound Security Rule in the NSG (Network Security Group) of the VM to be able to connect from that IP address to port 4723.
     - Find out the IP of the machine on which the tests will run on.
@@ -176,7 +170,8 @@ Inspecting the app is very useful as you write new tests, as it allows you to fi
 
 > Note: This section assumes that you have already performed the prerequisites from **How to run mobile end to end tests on a Windows machine**
 
-### Steps to inspect Teams app:
+### Inspect the Teams app:
+
 1. Run the appium server with [--alow-cors flag](https://appium.readthedocs.io/en/latest/en/writing-running-appium/server-args/) by running the following command in a terminal:
     ```
     appium --allow-cors
@@ -206,8 +201,9 @@ Inspecting the app is very useful as you write new tests, as it allows you to fi
     ![teams-appium-inspector](./images/teams-appium-inspector.png)
     - You can do any action on the emulator, and if you press on the "Refresh" button in the browser, the left hand side of the Appium Inspector will reflect your app. In the **App Source** you will be able to see the IDs of the elements, so you can write relevant selectors in your tests. 
 
-#### How to connect to Appium server
-We will provide an example on how to achieve this using JavaScript. Similar approach can be followed for other languages.
+#### Connecting to Appium server
+
+Below is how this can be accomplished with JavaScript. A similar approach can be followed for other languages.
 Assuming you are using [webdriverio](https://webdriver.io/) as the client, you would need to initialize the remote connection as follows:
 
 ```javascript
@@ -235,7 +231,8 @@ Assuming you are using [webdriverio](https://webdriver.io/) as the client, you w
 1. "appium:appActivity": the activity within Teams that you would like to launch on the device. In our case, we would like just to launch the app. The activity name for launching Teams is called "com.microsoft.skype.teams.Launcher".
 1. "appium:automationName": the name of the driver you are using. Note: Appium can communicate to different platforms. This is achieved by installing a dedicated driver, designed for each platform. In our case, it would be [UiAutomator2](https://github.com/appium/appium-uiautomator2-driver) or [Espresso](https://github.com/appium/appium-espresso-driver), since they are both designed for Android platform. 
 
-### 2. Using BrowserStack
+### Using BrowserStack
+
 - BrowserStack does not support out of the box the installation of Teams from the App Store or Play Store. However, there is a workaround, described in [their documentation](https://www.browserstack.com/support/faq/app-automate/app/can-i-install-an-app-from-the-app-store-or-play-store). Therefore, if you choose to go this way, you would first need to implement a step that installs Teams on the cloud-based device, by implementing the workaround described above.
 - You may encounter issues with Google login, as it requires a newly created Google account, in order to log in to the store. To overcome this, make sure to disable 2FA from Google, further described in [Troubleshooting Google login issues](https://www.browserstack.com/docs/app-automate/appium/advanced-features/setup-google-account#nodejs).
 
