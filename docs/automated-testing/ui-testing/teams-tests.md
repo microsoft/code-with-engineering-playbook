@@ -154,7 +154,8 @@ In order to be able to reach appium server which runs on the VM from outside, th
     - Find out the IP of the machine on which the tests will run on.
     - Replace the *Source IP Address* with the IP of your machine.
 
-### 3. Install Android Studio and create AVD inside the VM
+### Installing Android Studio and create AVD inside the VM
+
 1. Follow the instructions from steps a) and b) in **How to run mobile end to end tests on a Windows machine** section above.
 1. When you launch the emulator, it may show a warning as below and will eventually crash:
 
