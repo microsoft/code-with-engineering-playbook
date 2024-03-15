@@ -1,6 +1,7 @@
 # Automated UI Tests for a Teams application
 
 ## Overview
+
 In this section we will provide an overview on how one could implement UI tests for a custom Teams application.
 Generally, to ensure a great experience for your end users, you would like to implement automated test which covers your features both in a browser as well as on mobile platforms. 
 
