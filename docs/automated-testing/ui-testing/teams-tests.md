@@ -21,15 +21,10 @@ To implement web-based UI tests for your Teams application, you can follow the s
 
 If you would like to test a Teams app which was not yet published into the Teams' store, or if you would like to test the DEV/QA version of your app:
 <!-- - Publish the app in a tenant, and use for testing a user which has access to it. In this case, your UI testing focuses on testing your functionalities and threats the Teams' manifest as the *shell* for your code. However, in this case, your test would not catch changes in your [Teams' manifest file](https://learn.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema) (such as: new icons, new names etc).  -->
-- First, using for example [Teams Toolkit](https://github.com/OfficeDev/TeamsFx), package your app based on the [manifest.json](https://learn.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema). See below an example on how to achieve that:
+- Using for example [Teams Toolkit](https://github.com/OfficeDev/TeamsFx), package your app based on the [manifest.json](https://learn.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema). See below an example on how to achieve that:
+
 ```javascript
 npx teamsfx package --env dev --manifest-path ...
-```
- - Then, implement an automated step which [uploads your custom app](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload) into the Teams' of for your test user. 
-```{note}
-The packaging of your app could be done automatically in a pipeline and the output (Zipped file) could be downloaded as part of your UI tests execution.
-```
-If you would like to test the production version of your app which was already published in the store you would first need to automate the installation of the app from Teams' store for your test user.
 
 Once the app is installed, implement [selectors](https://www.browserstack.com/guide/css-selectors-in-selenium) to [access your custom app](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#access-your-app) and to perform various actions within the app. 
 
