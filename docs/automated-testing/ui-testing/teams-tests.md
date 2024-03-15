@@ -13,7 +13,7 @@ General observations:
     - Workarounds need to be found to first automate the installation of Teams. 
 - Should you choose working with emulators, testing in a local Windows box is more stable than in a CI/CD. The latter involves a CI/CD agent and an emulator in a VM.
 
-In what follows, we will go through learnings we have gained based on previous experience with our customers.
+The following are learnings from various engagements
 
 ## Web based UI tests 
 
