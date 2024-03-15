@@ -20,7 +20,6 @@ The following are learnings from various engagements
 To implement web-based UI tests for your Teams application, you can follow the same approach as for testing any other web application with a UI. [UI testing](./README.md) provides good guidance on that. The starting point for your test would be to launch a browser in an automated way (using Selenium, or similar frameworks) and go to [https://teams.microsoft.com/](https://teams.microsoft.com/). 
 
 If you would like to test a Teams app which was not yet published into the Teams' store, or if you would like to test the DEV/QA version of your app:
-<!-- - Publish the app in a tenant, and use for testing a user which has access to it. In this case, your UI testing focuses on testing your functionalities and threats the Teams' manifest as the *shell* for your code. However, in this case, your test would not catch changes in your [Teams' manifest file](https://learn.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema) (such as: new icons, new names etc).  -->
 - Using for example [Teams Toolkit](https://github.com/OfficeDev/TeamsFx), package your app based on the [manifest.json](https://learn.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema). See below an example on how to achieve that:
 
 ```javascript
