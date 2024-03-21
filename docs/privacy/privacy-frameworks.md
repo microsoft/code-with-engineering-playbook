@@ -81,10 +81,10 @@ and has access to one or more datasets provided by the data platform.
 
 We highlight several alternatives for Trusted Research Environments:
 
-| Solution                                                                        | Notes                         |
-|---------------------------------------------------------------------------------|-------------------------------|
-| [Azure Trusted Research Environment](https://github.com/microsoft/azuretre)     | An Open Source TRE for Azure. |
-| [Aridhia DRE](https://www.aridhia.com/)                                         |                               |
+| Solution                                                                    | Notes                         |
+|-----------------------------------------------------------------------------|-------------------------------|
+| [Azure Trusted Research Environment](https://github.com/microsoft/azuretre) | An Open Source TRE for Azure. |
+| [Aridhia DRE](https://www.aridhia.com/)                                     |                               |
 
 #### Eyes-off machine learning
 
