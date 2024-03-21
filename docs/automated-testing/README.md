@@ -57,7 +57,7 @@ The table below maps outcomes -- the results that you may want to achieve in you
 
 ## Technology Specific Testing
 
-- [Using DevTest Pattern for building containers with AzDO](tech-specific-samples/azdo-container-dev-test-release)
+- [Using DevTest Pattern for building containers with AzDO](tech-specific-samples/azdo-container-dev-test-release/README.md)
 - [Using Azurite to run blob storage tests in pipeline](tech-specific-samples/blobstorage-unit-tests/README.md)
 
 ## Build for Testing

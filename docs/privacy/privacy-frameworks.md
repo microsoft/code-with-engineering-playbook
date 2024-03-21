@@ -81,10 +81,10 @@ and has access to one or more datasets provided by the data platform.
 
 We highlight several alternatives for Trusted Research Environments:
 
-| Solution                                                                        | Notes                         |
-|---------------------------------------------------------------------------------|-------------------------------|
-| [Azure Trusted Research Environment](https://github.com/microsoft/azuretre)     | An Open Source TRE for Azure. |
-| [Aridhia DRE](https://www.aridhia.com/)                                         |                               |
+| Solution                                                                    | Notes                         |
+|-----------------------------------------------------------------------------|-------------------------------|
+| [Azure Trusted Research Environment](https://github.com/microsoft/azuretre) | An Open Source TRE for Azure. |
+| [Aridhia DRE](https://www.aridhia.com/)                                     |                               |
 
 #### Eyes-off machine learning
 
@@ -133,11 +133,11 @@ The result of the computation *F* is in an encrypted form, which on decrypting g
 
 Homomorphic Encryption frameworks:
 
-| Solution                                                                          | Notes                                                                                                                                                                                                                                                                                    |
-|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Microsoft SEAL](https://www.microsoft.com/en-us/research/project/microsoft-seal) | Secure Cloud Storage and Computation, ML Modeling. A widely used open-source library from Microsoft that supports the BFV and the CKKS schemes.                                                                                                                                          |
-| [Palisade](https://palisade-crypto.org/)                                          | A widely used open-source library from a consortium of DARPA-funded defense contractors that supports multiple homomorphic encryption schemes such as BGV, BFV, CKKS, TFHE and FHEW, among others, with multiparty support. [Link to repo](https://gitlab.com/palisade/palisade-release) |
-| [PySift](https://github.com/OpenMined/PySyft) | Private deep learning. PySyft decouples private data from model training, using Federated Learning, Differential Privacy, and Encrypted Computation (like Multi-Party Computation (MPC) and Homomorphic Encryption (HE)) within the main Deep Learning frameworks like PyTorch and TensorFlow.
+| Solution                                                                          | Notes                                                                                                                                                                                                                                                                                          |
+|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Microsoft SEAL](https://www.microsoft.com/en-us/research/project/microsoft-seal) | Secure Cloud Storage and Computation, ML Modeling. A widely used open-source library from Microsoft that supports the BFV and the CKKS schemes.                                                                                                                                                |
+| [Palisade](https://palisade-crypto.org/)                                          | A widely used open-source library from a consortium of DARPA-funded defense contractors that supports multiple homomorphic encryption schemes such as BGV, BFV, CKKS, TFHE and FHEW, among others, with multiparty support. [Link to repo](https://gitlab.com/palisade/palisade-release)       |
+| [PySift](https://github.com/OpenMined/PySyft)                                     | Private deep learning. PySyft decouples private data from model training, using Federated Learning, Differential Privacy, and Encrypted Computation (like Multi-Party Computation (MPC) and Homomorphic Encryption (HE)) within the main Deep Learning frameworks like PyTorch and TensorFlow. |
 
 A list of additional OSS tools can be found [here](https://homomorphicencryption.org/introduction/).
 

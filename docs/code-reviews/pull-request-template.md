@@ -1,3 +1,6 @@
+# Pull Request template
+
+```markdown
 # [Work Item ID](./link-to-the-work-item)
 
 For more information about how to contribute to this repo, visit this [page](https://github.com/microsoft/code-with-engineering-playbook/blob/main/CONTRIBUTING.md)
@@ -61,3 +64,4 @@ For more information about how to contribute to this repo, visit this [page](htt
 
 > - Any other information or known dependencies that is important to this PR.
 > - TODO that are to be done after this PR.
+```
