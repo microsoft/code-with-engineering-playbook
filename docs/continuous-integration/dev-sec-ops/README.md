@@ -18,3 +18,4 @@ Topics covered:
 1. [Static Code Analysis](./secret-management/static-code-analysis.md) - analyze source code or compiled versions of code to help find security flaws.
 1. [Penetration Testing](./penetration-testing/README.md) - a simulated attack against your application to check for exploitable vulnerabilities.
 1. [Container Dependencies Scanning](./dependency-container-scanning/README.md) - search for vulnerabilities in container operating systems, language packages and application dependencies.
+1. [Evaluation of Open Source Libraries](./evaluate-oss/README.md) - make it harder to apply open source supply chain attacks by evaluating the libraries you use.
