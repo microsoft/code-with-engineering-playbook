@@ -4,7 +4,7 @@ If you are new to Agile development or if you are looking for a refresher, this 
 
 - [What is Agile](https://learn.microsoft.com/en-us/devops/plan/what-is-agile 'What is Agile')
 - [What is Agile Development](https://learn.microsoft.com/en-us/devops/plan/what-is-agile-development 'What is Agile Development')
-- [Backlog Management](./Backlog%20Management/)
-- [Ceremonies](./Ceremonies/)
-- [Roles](./Roles/)
-- [Sprints](./Sprints/)
+- [Backlog Management](./Backlog%20Management/README.md)
+- [Ceremonies](./Ceremonies/README.md)
+- [Roles](./Roles/README.md)
+- [Sprints](./Sprints/README.md)
