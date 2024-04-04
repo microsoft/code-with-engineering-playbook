@@ -1,6 +1,6 @@
 # Evaluate Open Source Software
 
-Given the rise in threat of [open source software supply chain attakcs](https://devblogs.microsoft.com/engineering-at-microsoft/the-journey-to-secure-the-software-supply-chain-at-microsoft/), developers should identify potential candidates for open-source dependencies and evaluate them against your needs and the required security posture.
+Given the rise in threat of [open source software supply chain attacks](https://devblogs.microsoft.com/engineering-at-microsoft/the-journey-to-secure-the-software-supply-chain-at-microsoft/), developers should identify potential candidates for open-source dependencies and evaluate them against your needs and the required security posture.
 
 ## Why Evaluate Open Source Software
 
