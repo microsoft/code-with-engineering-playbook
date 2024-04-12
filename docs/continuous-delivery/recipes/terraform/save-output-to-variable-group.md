@@ -118,22 +118,22 @@ In addition, you can notice we are also using [predefined variables](https://lea
       AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
 ```
 
-| System variables | Description |
-| -- | -- |
-| [System.AccessToken](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#systemaccesstoken)| Special variable that carries the security token used by the running build. |
-| [System.TeamFoundationCollectionUri](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The URI of the Azure DevOps organization. |
-| [System.TeamProjectId](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The ID of the project that this build belongs to. |
+| System variables                                                                                                                                                            | Description                                                                 |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| [System.AccessToken](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#systemaccesstoken)                                | Special variable that carries the security token used by the running build. |
+| [System.TeamFoundationCollectionUri](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services) | The URI of the Azure DevOps organization.                                   |
+| [System.TeamProjectId](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables-devops-services)               | The ID of the project that this build belongs to.                           |
 
 ## Library security
 
 Roles are defined for Library items, and membership of these roles governs the operations you can perform on those items.
 
-| Role for library item | Description |
-| -- | -- |
-| Reader | Can view the item. |
-| User | Can use the item when authoring build or release pipelines. For example, you must be a 'User' for a variable group to use it in a release pipeline. |
-| Administrator | Can also manage membership of all other roles for the item. The user who created an item gets automatically added to the Administrator role for that item. By default, the following groups get added to the Administrator role of the library: Build Administrators, Release Administrators, and Project Administrators. |
-| Creator | Can create new items in the library, but this role doesn't include Reader or User permissions. The Creator role can't manage permissions for other users. |
+| Role for library item | Description                                                                                                                                                                                                                                                                                                               |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Reader                | Can view the item.                                                                                                                                                                                                                                                                                                        |
+| User                  | Can use the item when authoring build or release pipelines. For example, you must be a 'User' for a variable group to use it in a release pipeline.                                                                                                                                                                       |
+| Administrator         | Can also manage membership of all other roles for the item. The user who created an item gets automatically added to the Administrator role for that item. By default, the following groups get added to the Administrator role of the library: Build Administrators, Release Administrators, and Project Administrators. |
+| Creator               | Can create new items in the library, but this role doesn't include Reader or User permissions. The Creator role can't manage permissions for other users.                                                                                                                                                                 |
 
 When using `System.AccessToken`, service account `<ProjectName> Build Service` identity will be used to access the Library.
 

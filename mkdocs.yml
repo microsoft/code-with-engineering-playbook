@@ -1,7 +1,7 @@
 ---
-site_name: Code With Engineering Playbook
+site_name: Engineering Fundamentals Playbook
 site_url: https://microsoft.github.io/code-with-engineering-playbook
-site_description: ISE Code With Engineering Playbook
+site_description: ISE Engineering Fundamentals Engineering Playbook
 site_author: Microsoft ISE
 
 repo_url: https://github.com/microsoft/code-with-engineering-playbook/
@@ -23,6 +23,7 @@ theme:
 plugins:
   - search
   - git-revision-date-localized
+  - awesome-pages
 
 markdown_extensions:
   - meta

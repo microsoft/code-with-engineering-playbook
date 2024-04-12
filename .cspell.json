@@ -192,6 +192,7 @@
     "Intellij",
     "interactable",
     "interpretability",
+    "IMDB",
     "IPAM",
     "iperf",
     "ipynb",
@@ -271,6 +272,7 @@
     "netcat",
     "newarchitecture",
     "Newtonsoft",
+    "NGSA",
     "Nocera",
     "noninteractive",
     "NPMJS",
@@ -317,7 +319,6 @@
     "profefe",
     "promtail",
     "Promtail",
-    "proselint",
     "Pryce's",
     "pscore",
     "pseudocode",
@@ -344,6 +345,7 @@
     "Ranorex",
     "reapce",
     "reflog",
+    "releaserc",
     "restrospectives",
     "retag",
     "Reviewdog",
@@ -453,7 +455,8 @@
     "yapf",
     "Zipkin",
     "zstd",
-    "Zwemer"
+    "Zwemer",
+    "OSPO"
   ],
   "version": "0.2"
 }

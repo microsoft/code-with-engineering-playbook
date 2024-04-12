@@ -21,7 +21,7 @@ Here are below pros and cons for both approaches:
 ### Run CI pipelines in native environment
 
 | Pros                                                  | Cons                                                                                                                                         |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Can use any pipeline tasks available                  | Need to keep two sets of tooling and their versions in sync                                                                                  |
 | No container registry                                 | Can take some time to start, based on tools/dependencies required                                                                            |
 | Agent will always be up to date with security patches | The dev container should always be built within each run of the CI pipeline, to verify the changes within the branch haven't broken anything |
@@ -29,7 +29,7 @@ Here are below pros and cons for both approaches:
 ### Run CI pipelines in the dev container without image caching
 
 | Pros                                                                                               | Cons                                                                                                      |
-| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Utilities scripts will work out of the box                                                         | Need to rebuild the container for each run, given that there may be changes within the branch being built |
 | Rules used (for linting or unit tests) will be the same on the CI                                  | Not everything in the container is needed for the CI pipeline&#185;                                       |
 | No surprise for the developers, local outputs (of linting for instance) will be the same in the CI | Some pipeline tasks will not be available                                                                 |
@@ -44,7 +44,7 @@ Here are below pros and cons for both approaches:
 ### Run CI pipelines in the dev container with image registry
 
 | Pros                                                                                                                                                                                                                                                                                            | Cons                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Utilities scripts will work out of the box                                                                                                                                                                                                                                                      | Need to rebuild the container for each run, given that there may be changes within the branch being built |
 | No surprise for the developers, local outputs (of linting for instance) will be the same in the CI                                                                                                                                                                                              | Not everything in the container is needed for the CI pipeline&#185;                                       |
 | Rules used (for linting or unit tests) will be the same on the CI                                                                                                                                                                                                                               | Some pipeline tasks will not be available   &#178;                                                        |

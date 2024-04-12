@@ -1,6 +1,6 @@
 ---
 # Configuration file for MegaLinter
-# See all available variables at https://oxsecurity.github.io/megalinter/configuration/ and in linters documentation
+# See all available variables at https://megalinter.io/latest/config-file/ and in linters documentation
 
 APPLY_FIXES: all # all, none, or list of linter keys
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
@@ -20,9 +20,9 @@ SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 PARALLEL: true
 GITHUB_STATUS_REPORTER: true
-VALIDATE_ALL_CODEBASE: true
 LOG_LEVEL: WARNING
 MARKDOWN_MARKDOWN_LINK_CHECK_ARGUMENTS: "-q"
+MARKDOWN_MARKDOWN_TABLE_FORMATTER_ARGUMENTS: "-c"
 # DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
 PLUGINS:
-  - https://raw.githubusercontent.com/shiranr/linkcheck/main/mega-linter-plugin-linkcheck/linkcheck.megalinter-descriptor.yml
+  - https://raw.githubusercontent.com/shiranr/linkcheck/v2.0.20.changed_files/mega-linter-plugin-linkcheck/linkcheck.megalinter-descriptor.yml

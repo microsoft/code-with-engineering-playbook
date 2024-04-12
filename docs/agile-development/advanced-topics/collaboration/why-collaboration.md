@@ -7,7 +7,7 @@ In engagements, we aim to be highly collaborative because when we code together,
 
 There are two common patterns we use for collaboration: Pairing and swarming.
 
-**Pair programming** (“pairing”) - two software engineers assigned to, and working on, one shared story at a time during the sprint. The Dev Lead assigns a user story to two engineers -- one primary engineer (story owner) and one secondary engineer (pairing assignee). The definition aligns with the Agile Alliance’s [definition](https://www.agilealliance.org/glossary/pairing).
+**Pair programming** (“pairing”) - two software engineers assigned to, and working on, one shared story at a time during the sprint. The Dev Lead assigns a user story to two engineers -- one primary engineer (story owner) and one secondary engineer (pairing assignee).
 
 **Swarm programming** (“swarming”) - three or more software engineers collaborating on a high-priority item to bring it to completion.
 
