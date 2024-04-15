@@ -24,6 +24,7 @@ If you would like to test a Teams app which was not yet published into the Teams
 
 ```javascript
 npx teamsfx package --env dev --manifest-path ...
+```
 
 Once the app is installed, implement [selectors](https://www.browserstack.com/guide/css-selectors-in-selenium) to [access your custom app](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#access-your-app) and to perform various actions within the app. 
 
@@ -119,6 +120,7 @@ List emulators that you have previously created, without opening Android Studio:
 
 ```cli
 emulator -list-avds
+```
 
 ### Setting up an Azure VM for running mobile tests in a pipeline
 
@@ -147,7 +149,7 @@ In order to be able to reach appium server which runs on the VM from outside:
 1. Follow the instructions from steps a) and b) in **How to run mobile end to end tests on a Windows machine** section above.
 1. When you launch the emulator, it may show a warning as below and will eventually crash:
 
-    ![failure](./images/warning.png)
+    ![failure](images/warning.png)
 
     Solution to fix it: 
     1. [Enable Windows Hypervisor Platform](https://devblogs.microsoft.com/visualstudio/hyper-v-android-emulator-support/)
@@ -189,10 +191,10 @@ Inspecting the app is very useful as you write new tests, as it allows you to fi
     If the appium server runs on your local machine at the default portal, then Remote Host and Remote Port can be kept to the default values.
 
     The configuration should look similar to the printscren below:
-    ![appium-inspector](./images/appium-inspector.png)
+    ![appium-inspector](images/appium-inspector.png)
 3. Press on **Start Session**.
     - In the browser, you should see a similar view as below:
-    ![teams-appium-inspector](./images/teams-appium-inspector.png)
+    ![teams-appium-inspector](images/teams-appium-inspector.png)
     - You can do any action on the emulator, and if you press on the "Refresh" button in the browser, the left hand side of the Appium Inspector will reflect your app. In the **App Source** you will be able to see the IDs of the elements, so you can write relevant selectors in your tests. 
 
 #### Connecting to Appium server
