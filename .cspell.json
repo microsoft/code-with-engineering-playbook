@@ -456,7 +456,19 @@
     "Zipkin",
     "zstd",
     "Zwemer",
-    "OSPO"
+    "OSPO",
+    "teamsfx",
+    "XVFB",
+    "framebuffer",
+    "Xvfb",
+    "inprivate",
+    "Automator",
+    "Playstore",
+    "avds",
+    "runing",
+    "printscren",
+    "webdriverio",
+    "wdio"
   ],
   "version": "0.2"
 }
