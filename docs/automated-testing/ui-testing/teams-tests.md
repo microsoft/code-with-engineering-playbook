@@ -14,7 +14,7 @@ Generally, to ensure a great experience for your end users, you would implement 
   - Workarounds need to be found to first automate the installation of Teams.
 - Should you choose working with emulators, testing in a local Windows box is more stable than in a CI/CD. The latter involves a CI/CD agent and an emulator in a VM.
 
-The following are learnings from various engagements
+The following are learnings from various engagements:
 
 ## Web based UI tests
 
@@ -67,7 +67,7 @@ var buildEdgeDriver = function () {
 
 ## Mobile based UI tests
 
-Testing your custom Teams application on mobile devices is a bit more difficult using the web-based approach as it requires usage of actual or simulated devices. Running such tests in a CI/CD pipeline can be more difficult and resource-intensive.
+Testing your custom Teams application on mobile devices is a bit more difficult than using the web-based approach as it requires usage of actual or simulated devices. Running such tests in a CI/CD pipeline can be more difficult and resource-intensive.
 
 One approach is to use real devices or cloud-based emulators from vendors such as [BrowserStack](https://www.browserstack.com/) which requires a license. Alternatively, you can use virtual devices hosted in Azure Virtual Machines.
 
