@@ -49,7 +49,7 @@ run-tests-dev:
 ...
 ```
 
-When running test, you need to use the Selenium server URL for remote execution. With the definition from above, the URL is: `http://selenium:4444/wd/hub`.
+When running a test, you need to use the Selenium server URL for remote execution. With the definition from above, the URL is: `http://selenium:4444/wd/hub`.
 
 The code snippet below illustrates how you can initialize the Selenium driver to point to the remote Selenium server using JavaScript:
 
