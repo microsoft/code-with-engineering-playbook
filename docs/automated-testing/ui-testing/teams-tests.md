@@ -145,7 +145,7 @@ emulator -list-avds
 
 ### Configure the VM
 
-This approach essentially hosts a virtual device in a virtual machine. In order to be able to set up the emulator (Android Virtual Device) in an Azure VM, the VM should support [nested virtualization](https://azure.microsoft.com/en-us/blog/nested-virtualization-in-azure/).
+This approach essentially hosts a virtual device in a virtual machine. In order to be able to set up the emulator (Android Virtual Device) in an Azure VM, the VM should support [nested virtualization](https://azure.microsoft.com/blog/nested-virtualization-in-azure/).
 
 Azure VM configuration which, at the time of writing the documentation, worked successfully with AVD and appium:
 - Operating system: Windows (Windows-10 Pro)
