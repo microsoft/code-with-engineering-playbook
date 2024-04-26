@@ -14,8 +14,8 @@ theme:
     text: Roboto
   palette:
     primary: black
-  logo: resources/neu-white-logo.png
-  favicon: resources/neu-white-logo.png
+  logo: resources/Neudesic-N.svg
+  favicon: resources/Neudesic-N.svg
   features:
     - navigation.instant
     - navigation.indexes
