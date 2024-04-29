@@ -29,7 +29,7 @@ Notebooks are a great way to kick start Data Analytics and Applied Machine Learn
 
 - Understand the [end-end flow of data management](https://learn.microsoft.com/en-us/azure/architecture/data-guide/big-data/ai-overview), how data will be made available (ingestion flows), what's the frequency, storage, retention of data. Plan user stories and design spikes around these flows to ensure a robust ML pipeline is developed.
 
-- Engineering team should follow the same rigor in building ML projects as in any software engineering project. We at ISE (Industry Solutions Engineering) have built a good set of resources from our learnings in our [ISE Engineering Playbook](../index.md).
+- Engineering team should follow the same rigor in building ML projects as in any software engineering project. We have built a good set of resources from our learnings in our [Neudesic Engineering Excellence Playbook](../index.md).
 - Think about the how the model will be deployed, for example, are there technical constraints due to an edge device, or network constraints that will prevent updating the model. Understanding of the environment is critical, refer to the [Model Production Checklist](ml-model-checklist.md) as a reference to determine model deployment choices.
 
 - ML Focussed projects are not a "one-shot" release solution, they need to be nurtured, evolved, and improved over time. Plan for a continuous improvement lifecycle, the initial phases can be model feasibility and validation to get the good enough prediction rate, the later phases can be then be scaling and improving the models through feedback loops and fresh data sets.

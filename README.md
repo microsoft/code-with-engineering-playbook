@@ -1,15 +1,15 @@
-# ISE Code-With Customer/Partner Engineering Playbook
+# Neudesic Engineering Excellence Playbook
 
-An engineer or data scientist working on an [ISE](docs/ISE.md) project...
+An engineer or data scientist working on an [NEE](docs/NEE.md) project...
 
 * Has responsibilities to their team – mentor, coach, and lead.
 * Knows their **playbook**. Follows their playbook. Fixes their playbook if it is broken. If they find a better playbook, they copy it. If somebody could use your playbook, give them yours.
 * Leads by example. Models the behaviors we desire both interpersonally and technically.
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 
-This is our playbook. All contributions welcome! Please feel free to submit a [pull request](https://github.com/microsoft/code-with-engineering-playbook/pulls) to get involved.
+This is our playbook. All contributions welcome! Please feel free to submit a [pull request](https://github.com/neudesic/engineering-playbook/pulls) to get involved.
 
-> **Note:** If you are reading this on GitHub - head over to [https://microsoft.github.io/code-with-engineering-playbook/](https://microsoft.github.io/code-with-engineering-playbook/) for a better reading experience
+> **Note:** If you are reading this on GitHub - head over to [https://neudesic.github.io/engineering-playbook/](https://neudesic.github.io/engineering-playbook/) for a better reading experience
 
 ## Why Have A Playbook
 

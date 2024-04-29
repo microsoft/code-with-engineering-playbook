@@ -12,7 +12,7 @@ Even if the feedback has already been raised directly with a product group or on
 
 Capturing and providing high-quality actionable Engineering Feedback is an integral **ongoing** part of all code-with engagements. It is recommended to submit feedback on an ongoing basis instead of batching it up for submission at the end of the engagement.
 
-You should jot down the details of the feedback close to the time when you encounter the specific blockers, challenges, and friction since that is when it is freshest in your mind. The project team can then decide how to prioritize and when to submit the feedback into the official CSE Feedback system (accessible to ISE team members) during each sprint.
+You should jot down the details of the feedback close to the time when you encounter the specific blockers, challenges, and friction since that is when it is freshest in your mind. The project team can then decide how to prioritize and when to submit the feedback into the official CSE Feedback system (accessible to Neudesic Engineering Excellence team members) during each sprint.
 
 ## What is good and high-quality Engineering Feedback
 

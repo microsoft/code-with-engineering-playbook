@@ -1,6 +1,6 @@
 # Agile core expectations
 
-This section contains core expectations for agile practices in ISE:
+This section contains core expectations for agile practices in a project. It is intended to be a high-level guide for the crew to follow. It is not exhaustive and should be adapted to the project's needs.:
 
 - It should stay concise and link to external documentation for details.
 - Each section contains a list of core expectations and suggestions:
