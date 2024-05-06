@@ -93,14 +93,14 @@ Overall setup:
 
   - The advantage of this architecture is that it opens the possibility of running the server in a VM, and the client in a pipeline, enabling the tests to be ran automatically on scheduled basis as part of CI/CD pipelines.
 
-### Running mobile test locally on a Windows machine
+#### Running mobile test locally on a Windows machine
 
 This requires:
 
 - An emulator ([AVD - Android Virtual Devices](https://developer.android.com/studio/run/managing-avds)), which will represent the physical device.
 - [Appium server](https://appium.io/docs/en/2.1/), which will redirect the commands from the test to your virtual device.
 
-#### Creating an Android Virtual Device
+##### Creating an Android Virtual Device
 
 1. Install Android Studio from [official link](https://developer.android.com/studio).
 
@@ -121,7 +121,7 @@ This requires:
     1. Start the emulator by clicking on the Run button from the Device Manage screen.
     1. Manually install Microsoft Teams from Google Playstore on the device.
 
-#### Setting up Appium
+##### Setting up Appium
 
 Install `appium`:
 
@@ -133,7 +133,7 @@ Install `appium`:
 
     1. Start appium server by running `appium` command in a command prompt.
 
-#### Useful commands
+##### Useful commands
 
 List emulators that you have previously created, without opening Android Studio:
 
@@ -141,9 +141,9 @@ List emulators that you have previously created, without opening Android Studio:
 emulator -list-avds
 ```
 
-### Setting up an Azure VM for running mobile tests in a pipeline
+#### Setting up an Azure VM for running mobile tests in a pipeline
 
-### Configure the VM
+##### Configure the VM
 
 This approach essentially hosts a virtual device in a virtual machine. In order to be able to set up the emulator (Android Virtual Device) in an Azure VM, the VM should support [nested virtualization](https://azure.microsoft.com/blog/nested-virtualization-in-azure/).
 
@@ -152,32 +152,32 @@ Azure VM configuration which, at the time of writing the documentation, worked s
 - VM generation: V1
 - Size: Standard D4ds v5 16 GiB memory
 
-### Enable connection from outside to Appium server on the VM
+##### Enable connection from outside to Appium server on the VM
 
 > Note: By default appium server runs on port 4723. The rest of the steps will assume that this is the port where your appium server runs.
 
 In order to be able to reach appium server which runs on the VM from outside:
 
 1. Create an [Inbound Rule](https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-port-rule) for port 4723 from within the VM.
-1. Create an Inbound Security Rule in the NSG (Network Security Group) of the VM to be able to connect from that IP address to port 4723.
-    - Find out the IP of the machine on which the tests will run on.
-    - Replace the *Source IP Address* with the IP of your machine.
+1. Create an Inbound Security Rule in the NSG (Network Security Group) of the VM to be able to connect from that IP address to port 4723:
+- Find out the IP of the machine on which the tests will run on.
+- Replace the *Source IP Address* with the IP of your machine.
 
-### Installing Android Studio and create AVD inside the VM
+##### Installing Android Studio and create AVD inside the VM
 
 1. Follow the instructions under the [end to end tests on a Windows machine section](#running-mobile-test-locally-on-a-windows-machine) to install Android Studio and create an Android Virtual Device.
 1. When you launch the emulator, it may show a warning as below and will eventually crash:
 
     ![failure](images/warning.png)
 
-    Solution to fix it:
-    1. [Enable Windows Hypervisor Platform](https://devblogs.microsoft.com/visualstudio/hyper-v-android-emulator-support/)
-    1. [Enable Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#enable-the-hyper-v-role-through-settings) (if not enabled by default)
+Solution to fix it:
+1. [Enable Windows Hypervisor Platform](https://devblogs.microsoft.com/visualstudio/hyper-v-android-emulator-support/)
+1. [Enable Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#enable-the-hyper-v-role-through-settings) (if not enabled by default)
 1. Restart the VM.
 1. Restart the AVD.
 
 
-### Inspecting the Teams app in Azure Virtual Device (AVD)
+#### Inspecting the Teams app in Azure Virtual Device (AVD)
 
 Inspecting the app is very useful as you write new tests, as it allows you to find the ID of different elements displayed on the screen - similar to DevTools, which allows you to navigate through the DOM of a web page.
 
@@ -185,7 +185,7 @@ Inspecting the app is very useful as you write new tests, as it allows you to fi
 
 > Note: This section assumes that you have already performed the prerequisites from **How to run mobile end to end tests on a Windows machine**
 
-### Inspect the Teams app
+##### Steps
 
 1. Run the appium server with [--alow-cors flag](https://appium.readthedocs.io/en/latest/en/writing-running-appium/server-args/) by running the following command in a terminal:
 
@@ -205,21 +205,23 @@ Inspecting the app is very useful as you write new tests, as it allows you to fi
     }
     ```
 
-    - "appium:deviceName" - is the name of your emulator. In **Useful commands** sections from above, you can see how to get the name of your AVD.
-    - "appium:appPackage" - is the name of the package, should be kept to "**com.microsoft.teams**".
-    - "appium:appActivity"-  is the name of the activity in the app that you want to launch, should be kept to "**com.microsoft.skype.teams.Launcher**"
-    - "appium:automationName" - is the name of the driver you are using, in this case, "**UiAutomator2**"
+- "appium:deviceName" - is the name of your emulator. In **Useful commands** sections from above, you can see how to get the name of your AVD.
+- "appium:appPackage" - is the name of the package, should be kept to "**com.microsoft.teams**".
+- "appium:appActivity"-  is the name of the activity in the app that you want to launch, should be kept to "**com.microsoft.skype.teams.Launcher**"
+- "appium:automationName" - is the name of the driver you are using, in this case, "**UiAutomator2**"
 
-    If the appium server runs on your local machine at the default portal, then Remote Host and Remote Port can be kept to the default values.
+If the appium server runs on your local machine at the default portal, then Remote Host and Remote Port can be kept to the default values.
 
-    The configuration should look similar to the printscren below:
-    ![appium-inspector](images/appium-inspector.png)
+The configuration should look similar to the printscren below:
+![appium-inspector](images/appium-inspector.png)
+
 3. Press on **Start Session**.
-    - In the browser, you should see a similar view as below:
-    ![teams-appium-inspector](images/teams-appium-inspector.png)
-    - You can do any action on the emulator, and if you press on the "Refresh" button in the browser, the left hand side of the Appium Inspector will reflect your app. In the **App Source** you will be able to see the IDs of the elements, so you can write relevant selectors in your tests.
+- In the browser, you should see a similar view as below:
+![teams-appium-inspector](images/teams-appium-inspector.png)
 
-#### Connecting to Appium server
+- You can do any action on the emulator, and if you press on the "Refresh" button in the browser, the left hand side of the Appium Inspector will reflect your app. In the **App Source** you will be able to see the IDs of the elements, so you can write relevant selectors in your tests.
+
+**Connecting to Appium server**
 
 Below is how this can be accomplished with JavaScript. A similar approach can be followed for other languages.
 Assuming you are using [webdriverio](https://webdriver.io/) as the client, you would need to initialize the remote connection as follows:
