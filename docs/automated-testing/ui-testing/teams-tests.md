@@ -251,5 +251,7 @@ Assuming you are using [webdriverio](https://webdriver.io/) as the client, you w
 
 ### b) Using BrowserStack
 
+BrowserStack is an example of cloud-based service that allows developers to test both the web and mobile application across various browsers, operating systems, and real mobile devices. The specific insights provided below relate to implementing such tests for a custom Microsoft Teams application:
+
 - BrowserStack does not support out of the box the installation of Teams from the App Store or Play Store. However, there is a workaround, described in [their documentation](https://www.browserstack.com/support/faq/app-automate/app/can-i-install-an-app-from-the-app-store-or-play-store). Therefore, if you choose to go this way, you would first need to implement a step that installs Teams on the cloud-based device, by implementing the workaround described above.
 - You may encounter issues with Google login, as it requires a newly created Google account, in order to log in to the store. To overcome this, make sure to disable 2FA from Google, further described in [Troubleshooting Google login issues](https://www.browserstack.com/docs/app-automate/appium/advanced-features/setup-google-account#nodejs).
