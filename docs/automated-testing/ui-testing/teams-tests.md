@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is an overview on how you can implement UI tests for a custom Teams application.
+This is an overview on how you can implement UI tests for a custom Teams application. The insights provided can also be applied to automated end-to-end testing.
 
 ### General observations
 
@@ -12,6 +12,7 @@ This is an overview on how you can implement UI tests for a custom Teams applica
   - Mobile testing frameworks are designed with the assumption that you own the APK/IPA of the app under test.
   - Workarounds need to be found to first automate the installation of Teams.
 - Should you choose working with emulators, testing in a local Windows box is more stable than in a CI/CD. The latter involves a CI/CD agent and an emulator in a VM.
+- When deciding whether to implement such tests, consider the project requirements as well as the advantages and disadvantages. Manual UI tests are often an acceptable solution due to their low effort requirements.
 
 The following are learnings from various engagements:
 
@@ -251,7 +252,7 @@ Assuming you are using [webdriverio](https://webdriver.io/) as the client, you w
 
 ### b) Using BrowserStack
 
-BrowserStack is an example of cloud-based service that allows developers to test both the web and mobile application across various browsers, operating systems, and real mobile devices. The specific insights provided below relate to implementing such tests for a custom Microsoft Teams application:
+BrowserStack serves as a cloud-based platform that enables developers to test both the web and mobile application across various browsers, operating systems, and real mobile devices. This can be seen as an alternative solution to the approach described earlier. The specific insights provided below relate to implementing such tests for a custom Microsoft Teams application:
 
 - BrowserStack does not support out of the box the installation of Teams from the App Store or Play Store. However, there is a workaround, described in [their documentation](https://www.browserstack.com/support/faq/app-automate/app/can-i-install-an-app-from-the-app-store-or-play-store). Therefore, if you choose to go this way, you would first need to implement a step that installs Teams on the cloud-based device, by implementing the workaround described above.
 - You may encounter issues with Google login, as it requires a newly created Google account, in order to log in to the store. To overcome this, make sure to disable 2FA from Google, further described in [Troubleshooting Google login issues](https://www.browserstack.com/docs/app-automate/appium/advanced-features/setup-google-account#nodejs).
