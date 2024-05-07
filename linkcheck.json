@@ -63,8 +63,7 @@
       "https://www.microsoft.com/",
       "https://aka.ms/opensource/security/",
       "https://www.pluralsight.com/courses/",
-      "https://www.gartner.com/en/information-technology/glossary/citizen-developer",
-      "https://docs.github.com/rest/commits/statuses#create-a-commit-status"
+      "https://www.gartner.com/en/information-technology/glossary/citizen-developer"
     ],
     "only_errors": true,
     "cache_duration": "24h",
