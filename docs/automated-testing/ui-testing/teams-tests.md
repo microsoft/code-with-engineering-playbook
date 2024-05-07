@@ -3,7 +3,6 @@
 ## Overview
 
 This is an overview on how you can implement UI tests for a custom Teams application.
-Generally, to ensure a great experience for your end users, you would implement automated test which covers your features both in a browser as well as on mobile platforms.
 
 ### General observations
 
@@ -93,7 +92,7 @@ Overall setup:
 
   - The advantage of this architecture is that it opens the possibility of running the server in a VM, and the client in a pipeline, enabling the tests to be ran automatically on scheduled basis as part of CI/CD pipelines.
 
-#### How to run mobile test locally on a Windows machine using AVD?
+#### How to run mobile tests locally on a Windows machine using AVD?
 
 This approach involves:
 
