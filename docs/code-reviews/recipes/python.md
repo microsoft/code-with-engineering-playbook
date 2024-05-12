@@ -102,14 +102,13 @@ yapf [file/folder] --in-place
 
 ### Bandit
 
-[`Bandit`](https://github.com/PyCQA/bandit)Bandit is a tool designed by the Python Code Quality Authority (PyCQA) to perform static analysis of Python code, 
-specifically targeting security issues. 
+[Bandit](https://github.com/PyCQA/bandit) is a tool designed by the Python Code Quality Authority (PyCQA) to perform static analysis of Python code, specifically targeting security issues. 
 It scans for common security issues in Python codebase.
   
 - **Installation**: Add Bandit to your development environment with:
   ```bash
   pip install bandit
-
+  ```
 
 ## VS Code Extensions
 
