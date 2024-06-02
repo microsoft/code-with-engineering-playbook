@@ -99,7 +99,7 @@ It is important to only pull in data that is needed for the problem at hand,
 when this is put in practice we find that we only maintain data that is adequate,
 relevant and limited to what is necessary in relation to the purposes for which they are processed.
 This is particularly important for personal data. Once you have personal data there are many rules and regulations that apply,
-some examples of these might be HIPPA, GDPR, CCPA.
+some examples of these might be HIPAA, GDPR, CCPA.
 The customer should be aware of and surface any applicable regulations that apply to their data.
 Furthermore the [seven principles of privacy by design](https://www.onetrust.com/blog/principles-of-privacy-by-design/)
 should be reviewed and considered when handling any type of sensitive data.
