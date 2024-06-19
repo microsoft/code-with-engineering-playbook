@@ -1,19 +1,9 @@
----
-author: dgregoraz
-description: "Compliance"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: dgregoraz
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Compliance"
----
+# Compliance
 
-## Compliance
 Compliance refers to the adherence to regulatory standards, legal requirements, and organizational policies that govern the handling of data, security practices, and operational procedures. It ensures that the software solution meets specific industry regulations (such as GDPR, HIPAA, PCI-DSS) and internal governance frameworks.
 
 ## Characteristics
+
 - Regulatory Adherence: Compliance requires the software system to adhere to specific regulatory frameworks relevant to its industry or geographic region. This includes laws and regulations related to data protection, privacy, security, financial transactions, healthcare, and more.
 - Data Privacy: Ensuring that the system handles sensitive data in accordance with privacy laws and regulations, such as implementing encryption, access controls, data anonymization, and secure data storage practices.
 - Security Standards: Compliance mandates adherence to security standards and best practices to protect against unauthorized access, data breaches, and cyber threats. This involves implementing measures such as firewalls, intrusion detection systems, secure authentication mechanisms, and regular security audits.
@@ -31,9 +21,7 @@ Implementing compliance involves a systematic approach that integrates regulator
 - Audit and Monitoring: Establishing mechanisms for continuous monitoring, auditing, and logging of activities within the software system to ensure compliance with regulatory requirements. This includes maintaining audit trails, generating compliance reports, and conducting regular security assessments.
 - Documentation and Record Keeping: Maintaining comprehensive documentation of compliance efforts, including policies, procedures, audit reports, risk assessments, and compliance certifications.
 
-### For more information
+## More information
 
 - [General Data Protection Regulation (GDPR)](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)
 - [Purview Compliance Manager](https://aka.ms/ComplianceManager)
-- [Data Governance](../../../code-with-dataops/capabilities/data-governance/index.md)
-- [Policy-as-code](../../../code-with-devsecops/Capabilities/governance/policy.md)

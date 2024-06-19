@@ -1,15 +1,3 @@
----
-author: abigailpham
-description: "Data Integrity"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: abigailpham
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Data Integrity"
----
-
 # Data Integrity
 
 Data Integrity is the maintenance and assurance of the quality of data over its entire lifecycle. This includes the many facets of data quality such as, but not limited to, consistency, accuracy, and reliability. The benefits of this NFR are significant, as it ensures that data is trustworthy and reliable for decision-making, analysis, and reporting.
@@ -46,10 +34,6 @@ Database constraints: Utilize database constraints such as primary keys, foreign
 
 Regular data backups: Implement regular backups of data to prevent loss in case of system failures, errors, or security breaches. Ensure that backup procedures are automated, monitored, and regularly tested.
 
-## Examples
-
-<examples (optional section)>
-
-### For more information
+## More information
 
 - [Great Expectations](https://greatexpectations.io/): A framework to build data validations and test the quality of your data.

@@ -10,7 +10,7 @@ rings:
 title: "Scalability"
 ---
 
-# Scalability
+## Scalability
 
 Scalability is the capability of a system to handle larger volumes, or its potential to accommodate additional growth. For example, a system is considered scalable if it is capable of increasing its total output under an increased load when resources (typically hardware) are added. An example of this is a system that can handle a growing number of requests when more memory is added to it.
 
@@ -18,7 +18,6 @@ Scalability is the capability of a system to handle larger volumes, or its poten
 
 - Elasticity: The system should be able to scale up or down based on demand, and be able to automatically provision or de-provision resources as needed.
 - Latency: The system should be able to maintain low latency even under high load, and be able to handle a large number of concurrent requests without slowing down.
-
 
 ## Examples
 

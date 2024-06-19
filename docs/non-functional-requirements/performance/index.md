@@ -1,15 +1,3 @@
----
-author: dgregoraz
-description: "Performance"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: dgregoraz
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Performance"
----
-
 ## Performance
 Performance refers to the responsiveness, efficiency, and speed with which a system completes tasks and processes user requests. It encompasses several key metrics such as response time, throughput, latency, and resource utilization.
 
@@ -39,5 +27,5 @@ Implementing performance involves a combination of architectural decisions, codi
 
 ### For more information
 
-- [Automated Testing](../../../code-with-engineering/automated-testing/README.md)
-- [Load Testing](../../../code-with-platformops/capabilities/devsecops/load-testing-ingestion/index.md)
+- [Automated Testing](../../automated-testing/README.md)
+

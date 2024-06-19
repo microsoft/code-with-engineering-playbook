@@ -1,19 +1,9 @@
----
-author: dgregoraz
-description: "Capacity"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: dgregoraz
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Capacity"
----
+# Capacity
 
-## Capacity
 Capacity defines the maximum load or volume that a system can handle while maintaining specified performance criteria. This attribute is crucial for ensuring that the system can support the anticipated number of users, transactions, or data volume without degradation in performance.
 
 ## Characteristics
+
 - Maximum Load: Capacity defines the upper limit of user activity or workload that the system can handle without performance degradation. This includes peak loads during high-demand periods.
 - Scalability: The system's capacity should be scalable, meaning it can be expanded or upgraded to accommodate increased workload or data volume as the organization grows.
 - Resource Management: Efficient allocation and management of resources such as CPU, memory, disk space, and network bandwidth are critical for maintaining capacity.
@@ -37,8 +27,6 @@ Capacity is typically implemented through a combination of architectural design,
 - High Availability and Fault Tolerance: Implementing strategies such as redundant servers, failover mechanisms, and disaster recovery plans ensures that the system remains available and operational even in the event of hardware failures or other disruptions.
 - Capacity Planning: Conducting thorough capacity planning based on anticipated growth, usage patterns, and business requirements helps forecast resource needs and proactively scale the system to meet future demands.
 
-### For more information
+## More information
 
-- [Performance Testing](../../../code-with-engineering/automated-testing/performance-testing/README.md)
-- [Application Hosting](../../../code-with-platformops/capabilities/core-infrastructure/application-hosting.md)
-- [Load Testing](../../../code-with-platformops/capabilities/devsecops/load-testing-ingestion/index.md)
+- [Performance Testing](../../automated-testing/performance-testing/README.md)

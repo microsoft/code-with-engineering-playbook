@@ -1,15 +1,3 @@
----
-author: abigailpham
-description: "Usability"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: abigailpham
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Usability"
----
-
 # Usability
 
 Usability is a topic that is often used interchangeably with user experience (UX), but they are not the same thing. Usability is a subset of UX, focusing specifically on the ease of use and effectiveness of a product, i.e., it is the ease with which users can learn and use a product to achieve their goals. Usability is a key factor in determining the success of a product, as it directly impacts user satisfaction, productivity, and overall experience. A system that is difficult to use or understand can lead to frustration, errors, and ultimately, abandonment by users.
@@ -46,7 +34,7 @@ These evaluations can collect two key metrics: **quantitative data** and **quali
 ## Examples
 
 One example of usability in action is the design of a website. A website that is easy to navigate, with clear labels, intuitive menus, and a logical flow of information, is more likely to be successful than one that is cluttered, confusing, and difficult to use. The latter website is likely to have a low rate of user engagement, high [bounce rates](https://backlinko.com/hub/seo/bounce-rate), and low conversion rates, as users will quickly become frustrated and abandon the site.
-### For more information
+## More information
 
 - [GeeksForGeeks: What is Usability?](https://www.geeksforgeeks.org/what-is-usability/)
 - [Usability.gov](https://www.usability.gov/)

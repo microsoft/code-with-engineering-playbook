@@ -1,20 +1,9 @@
----
-author: abigailpham
-description: "Maintainability"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: abigailpham
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Maintainability"
----
-
 # Maintainability
 
 Maintainability is the ease with which a software system can be modified, updated, extended, or repaired over time. It impacts the long-term viability and sustainability of a software system. A maintainable system is one that is easy to understand, has clear and modular code, is well-documented, and has a low risk of introducing errors when changes are made.
 
 ## Characteristics
+
 - Modularity: The software is divided into discrete, independent modules or components, each with a clear and specific functionality. This makes it easier to modify or replace individual parts without affecting the entire system.
 - Readability: Code is written clearly and concisely, following consistent naming conventions, coding standards, and documentation practices. Readable code is easier for developers to understand, troubleshoot, and enhance.
 - Testability: The software is designed to support thorough testing, with components that can be tested independently. This includes unit tests, integration tests, and automated testing frameworks that facilitate ongoing validation of the software's behavior.
@@ -26,6 +15,7 @@ Maintainability is the ease with which a software system can be modified, update
 - Error Handling and Logging: Robust error handling and logging mechanisms are in place to facilitate debugging and maintenance. This includes meaningful error messages, exception handling, and comprehensive logging of system events and errors.
 
 ## Implementations
+
 Implementing maintainability in software systems involves adopting practices, tools, and methodologies that facilitate efficient modification, extension, and troubleshooting of the software over its lifecycle.
 
 - Consistent Naming Conventions: Use meaningful and consistent names for variables, functions, classes, and other entities.

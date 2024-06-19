@@ -1,19 +1,9 @@
----
-author: dgregoraz
-description: "Availability"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: dgregoraz
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Availability"
----
+# Availability
 
-## Availability
 Availability refers to the degree to which a system is operational and accessible when needed for use. It is a critical non-functional requirement that ensures users can rely on the system to perform its intended functions without unexpected downtime. High availability is vital for maintaining user trust and satisfaction, especially in industries where service interruptions can lead to significant financial losses or even jeopardize safety. Achieving high availability often involves strategies like redundancy, failover mechanisms, and robust maintenance practices to minimize both planned and unplanned outages. In essence, availability ensures that the system is there when users need it, which is fundamental for any service-oriented or mission-critical application.
 
 ## Characteristics
+
 - Uptime: This is the proportion of time the system is operational and accessible. It's often measured as a percentage over a specific period (e.g., 99.99% uptime).
 - Redundancy: Implementing backup components or systems that can take over in case of a failure. This ensures continuous operation even if one part fails.
 - Fault Tolerance: The system's ability to continue operating correctly even when part of it fails. This typically involves designing systems that can handle failures gracefully without significant impact on availability.
@@ -38,7 +28,7 @@ Implementing availability involves various strategies and technologies designed 
 - Scheduled Maintenance Windows: Planning and communicating scheduled maintenance periods during off-peak hours to minimize the impact on users. Systems can be designed to perform maintenance tasks without taking the entire service offline.
 - High Availability Software Architectures: Designing software with high availability in mind, using principles like microservices architecture, which isolates different functions of an application. This isolation ensures that a failure in one component doesn’t bring down the entire system.
 
-### For more information
+## More information
 
 - [Recommendations for highly available multi-region design](https://learn.microsoft.com/en-us/azure/well-architected/reliability/highly-available-multi-region-design)
 - [Recommendations for using availability zones and regions](https://learn.microsoft.com/en-us/azure/well-architected/reliability/regions-availability-zones)
