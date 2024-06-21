@@ -1,7 +1,9 @@
-## Performance
+# Performance
+
 Performance refers to the responsiveness, efficiency, and speed with which a system completes tasks and processes user requests. It encompasses several key metrics such as response time, throughput, latency, and resource utilization.
 
 ## Characteristics
+
 - Response Time: The time taken by the system to respond to user interactions or requests. Lower response times indicate better performance and user responsiveness.
 - Throughput: The rate at which the system can process and handle a certain volume of transactions or requests within a given time frame. Higher throughput signifies greater processing capacity and efficiency.
 - Latency: The delay or time lag experienced between initiating a request and receiving a response. Low latency is crucial for real-time applications to ensure timely interactions.
@@ -13,6 +15,7 @@ Performance refers to the responsiveness, efficiency, and speed with which a sys
 - Load Handling: How well the system manages and distributes workload during peak usage periods to maintain optimal performance levels.
 
 ## Implementations
+
 Implementing performance involves a combination of architectural decisions, coding practices, infrastructure setup, and optimization techniques. For example:
 
 - Efficient Algorithms and Data Structures: Choosing algorithms and data structures that are optimized for the specific tasks and operations performed by the system can significantly improve performance. This includes selecting algorithms with lower time complexity (e.g., O(1), O(log n)) for critical operations.
@@ -25,7 +28,7 @@ Implementing performance involves a combination of architectural decisions, codi
 - Scalable Architecture: Designing the system with scalability in mind allows it to handle increased workload by adding resources dynamically (horizontal scaling) or upgrading existing resources (vertical scaling). This involves using microservices architecture, containerization (e.g., Docker), and orchestration tools (e.g., Kubernetes) for efficient resource management.
 - Performance Testing and Monitoring: Conducting performance tests to identify bottlenecks, measure key performance metrics (e.g., response time, throughput), and validate system performance under various load conditions. Continuous monitoring of performance metrics helps detect degradation early and allows for timely optimization and tuning.
 
-### For more information
+## More information
 
 - [Automated Testing](../../automated-testing/README.md)
 

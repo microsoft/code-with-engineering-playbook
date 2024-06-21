@@ -1,16 +1,4 @@
----
-author: abigailpham
-description: "Scalability"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: abigailpham
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Scalability"
----
-
-## Scalability
+# Scalability
 
 Scalability is the capability of a system to handle larger volumes, or its potential to accommodate additional growth. For example, a system is considered scalable if it is capable of increasing its total output under an increased load when resources (typically hardware) are added. An example of this is a system that can handle a growing number of requests when more memory is added to it.
 

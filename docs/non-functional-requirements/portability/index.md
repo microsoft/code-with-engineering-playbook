@@ -1,19 +1,9 @@
----
-author: dgregoraz
-description: "Portability"
-maintainer-team: <GM-level team responsible for keeping this article healthy over time>
-ms.author: dgregoraz
-ms.service: azure
-ms.topic: conceptual
-rings:
-  - internal
-title: "Portability"
----
+# Portability
 
-## Portability
 Portability refers to the ease with which software can be transferred and used in different environments or platforms without requiring significant modification. This includes moving the software across various hardware, operating systems, cloud services, or development frameworks while maintaining its functionality, performance, and usability.
 
 ## Characteristics
+
 - Platform Independence: The ability of the software to run on different operating systems, hardware architectures, and devices without requiring major changes.
 - Minimal Modification: The need for minimal code changes or reconfiguration when moving the software to a different environment.
 - Standard Compliance: Adherence to industry standards and protocols to ensure compatibility across different systems and platforms.
@@ -26,16 +16,20 @@ Portability refers to the ease with which software can be transferred and used i
 ## Implementations
 
 ### Containerization
+
 - Docker: Packaging applications and their dependencies into containers, ensuring consistent behavior across different environments.
 - Kubernetes: Orchestrating containerized applications for deployment across various cloud providers and on-premises infrastructures.
 
 ### Virtual Machines
+
 - Java Virtual Machine (JVM): Writing software in Java or other JVM languages to run on any system with a compatible JVM.
 - VirtualBox or VMware: Using virtual machines to create consistent runtime environments regardless of the underlying hardware.
 
 ### Platform-Agnostic Languages
+
 - Python, JavaScript, and Go: Utilizing programming languages known for their cross-platform capabilities to ensure code runs on multiple operating systems with little to no modification.
 
 ### Standardized Interfaces and Protocols
+
 - APIs: Designing APIs with standardized protocols (e.g., REST, GraphQL) to facilitate interaction between different systems.
 - Data Interchange Formats: Using common data formats like JSON, XML, or Protocol Buffers to ensure data can be exchanged and understood across different systems.
