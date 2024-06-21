@@ -29,4 +29,4 @@ Capacity is typically implemented through a combination of architectural design,
 
 ## More information
 
-- [Performance Testing](../../automated-testing/performance-testing/README.md)
+- [Performance Testing](../automated-testing/performance-testing/README.md)

@@ -30,5 +30,5 @@ Implementing performance involves a combination of architectural decisions, codi
 
 ## More information
 
-- [Automated Testing](../../automated-testing/README.md)
+- [Automated Testing](../automated-testing/README.md)
 
