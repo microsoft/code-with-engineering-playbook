@@ -29,3 +29,5 @@ Internationalization (i18n) and Localization (l10n) refer to the design and adap
 - Locale-Aware Libraries: Leveraging libraries and frameworks that provide built-in support for handling locale-specific data.
 - Automated Testing: Implementing automated tests to verify that the software behaves correctly in different locales.
 - Continuous Localization: Integrating localization processes into the continuous integration/continuous deployment (CI/CD) pipeline to keep translations up-to-date.
+- Coordinated Universal Time: When dealing with times, it is essential to always use UTC for internal storage and processing. Using UTC helps avoid issues related to time zone differences, daylight saving time changes, and other regional time adjustments.
+- Consistent Internal Representation: Store numbers and currency values in a consistent internal representation, such as a standardized numeric format or a base currency, and apply locale-specific formatting only when displaying data to the user. This prevents errors during calculations and data processing.

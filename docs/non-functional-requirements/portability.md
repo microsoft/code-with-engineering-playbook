@@ -27,9 +27,13 @@ Portability refers to the ease with which software can be transferred and used i
 
 ### Platform-Agnostic Languages
 
-- Python, JavaScript, and Go: Utilizing programming languages known for their cross-platform capabilities to ensure code runs on multiple operating systems with little to no modification.
+- Python, JavaScript, and Go: Utilizing programming languages known for their cross-platform capabilities to ensure code runs on multiple operating systems with little to no modification. However, it's important to select a programming language that aligns with the project's requirements and team expertise.
 
 ### Standardized Interfaces and Protocols
 
 - APIs: Designing APIs with standardized protocols (e.g., REST, GraphQL) to facilitate interaction between different systems.
 - Data Interchange Formats: Using common data formats like JSON, XML, or Protocol Buffers to ensure data can be exchanged and understood across different systems.
+
+### Other Practices
+- Debugging and Troubleshooting: Local debugging provides direct access to debugging tools and logs, making it easier to diagnose and resolve issues quickly. 
+- CI/CD Integration: Implementing a CI/CD pipeline to automate the building, testing, and packaging of the solution enhances portability by ensuring consistent and reliable deployments across various platforms and environments.
