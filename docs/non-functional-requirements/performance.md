@@ -20,7 +20,7 @@ Implementing performance involves a combination of architectural decisions, codi
 
 - Efficient Algorithms and Data Structures: Choosing algorithms and data structures that are optimized for the specific tasks and operations performed by the system can significantly improve performance. This includes selecting algorithms with lower time complexity (e.g., O(1), O(log n)) for critical operations.
 - Code Optimization: Writing efficient and optimized code reduces execution time and resource consumption. Techniques such as minimizing loops, reducing unnecessary computations, and using appropriate data types can improve performance.
-- Concurrency: Implementing concurrency models such as threads and async-await techniques optimizes task execution by allowing the system to handle multiple operations simultaneously. 
+- Concurrency: Implementing concurrency models such as threads and async-await techniques optimizes task execution by allowing the system to handle multiple operations simultaneously.
 - Parallel Programming: Enables tasks to be divided into smaller subtasks that can execute concurrently on multi-core processors. This method improves computational efficiency and accelerates the completion of tasks.
 - Caching: Implementing caching mechanisms (e.g., in-memory caching, content delivery networks) to store and retrieve frequently accessed data or computations reduces the need to fetch data from slower storage systems, thereby improving response time and overall system performance.
 - Database Optimization: Optimizing database queries, indexing frequently accessed data, denormalizing data where appropriate, and using database scaling techniques (e.g., sharding, replication) can enhance database performance and reduce latency.

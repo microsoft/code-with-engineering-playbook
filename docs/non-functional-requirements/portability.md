@@ -35,5 +35,5 @@ Portability refers to the ease with which software can be transferred and used i
 - Data Interchange Formats: Using common data formats like JSON, XML, or Protocol Buffers to ensure data can be exchanged and understood across different systems.
 
 ### Other Practices
-- Debugging and Troubleshooting: Local debugging provides direct access to debugging tools and logs, making it easier to diagnose and resolve issues quickly. 
+- Debugging and Troubleshooting: Local debugging provides direct access to debugging tools and logs, making it easier to diagnose and resolve issues quickly.
 - CI/CD Integration: Implementing a CI/CD pipeline to automate the building, testing, and packaging of the solution enhances portability by ensuring consistent and reliable deployments across various platforms and environments.
