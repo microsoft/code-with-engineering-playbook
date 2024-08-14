@@ -1,5 +1,22 @@
-# Agile documentation
+# Agile development
 
-- [Agile Basics](./basics/README.md): Learn or refresh your basic agile knowledge.
-- [Agile Core Expectations](./core-expectations/README.md): What are our core expectations from an Agile team.
-- [Agile Advanced Topics](./advanced-topics/README.md): Go beyond the basics.
+## Why
+
+- We want to be quick to respond to change
+- We want to get to a state of working software fast, and iterate on it to improve it
+- We want to keep the customer/end users involved all the way through
+- We care about individuals and interactions over documents and processes
+
+## The fundamentals
+
+We care about the goal for each activity, but not necessarily about how they are accomplished. The suggestions in parenthesis are common ways to accomplish the goals.
+
+- We keep a shared backlog of work, that everyone in the team can always access (ex. Azure DevOps or GitHub)
+- We plan our work in iterations with clear goals (ex. sprints)
+- We have a clear idea of when work items are ready to implement (ex. definition of ready)
+- We have a clear idea of when work items are completed (ex. definition of done)
+- We communicate the progress in one place that everyone can access, and keep the progress up to date (ex. sprint board and daily standups)
+- We reflect on our work regularly to make improvements (ex. retrospectives)
+- The team has a clear idea of the roles in the project (ex. Dev lead, TPM, Process Lead etc.)
+- The team has a joint idea of how we work together (ex. team agreement)
+- We value and respect the opinions and work of all team members.

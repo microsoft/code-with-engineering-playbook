@@ -1,14 +1,5 @@
 # Agile core expectations
 
-This section contains core expectations for agile practices in ISE:
-
-- It should stay concise and link to external documentation for details.
-- Each section contains a list of core expectations and suggestions:
-  - **Core expectations** are what each dev team is expected to aim for.
-  - **Suggestions** *are not* expectations. They are our learned experience for meeting those expectations, and can be adopted and modified to suit the project.
-
-**Notes:**
-
 - We prefer the usage of "process lead" over "scrum master". It describes the same role.
 - **"Crew"**, in this document, refers to the entire team working on an project (dev team, dev lead, PM, etc.).
 - We follow Agile principles and usually [Scrum](https://www.scrum.org/resources/what-is-scrum)
