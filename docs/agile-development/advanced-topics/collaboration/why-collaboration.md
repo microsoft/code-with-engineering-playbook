@@ -74,9 +74,6 @@ Knowledge sharing and bringing ISE and customer engineers together in a ‘code-
 ## Resources
 
 - [How to add a pairing custom field in Azure DevOps User Stories](./add-pairing-field-azure-devops-cards.md) - adding a custom field of type _Identity_ in Azure DevOps for pairing
-
 - [On Pair Programming - Martin Fowler](https://martinfowler.com/articles/on-pair-programming.html)
-
 - [Pair Programming hands-on lessons](https://github.com/The-V8/pair-programming-sessions) - these can be used (and adapted) to support bringing pair programming into your team (MS internal or including customers)
-
 - [Effortless Pair Programming with GitHub Codespaces and VSCode](./pair-programming-tools.md)
