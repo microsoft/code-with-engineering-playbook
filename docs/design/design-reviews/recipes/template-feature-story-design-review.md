@@ -1,4 +1,6 @@
-# Your Feature or Story Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
+# Template: Feature / Story Design Review
+
+**Your Feature or Story Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)**
 
 > Does the feature re-use or extend existing patterns / interfaces that have already been established for the project?
 > Does the feature expose new patterns or interfaces that will establish a new standard for new future development?
