@@ -14,17 +14,17 @@ To learn more about how ISE runs the Agile process for software development team
 Within this framework, the team follows these Agile ceremonies:
 
 - [Backlog management](../agile-development/advanced-topics/backlog-management/README.md)
-- [Retrospectives](../agile-development/core-expectations/README.md)
+- [Retrospectives](../agile-development/basics/ceremonies.md#retrospectives)
 - [Scrum of Scrums](../agile-development/advanced-topics/effective-organization/scrum-of-scrums.md) (where applicable)
-- [Sprint planning](../agile-development/core-expectations/README.md)
-- [Stand-ups](../agile-development/core-expectations/README.md)
+- [Sprint planning](../agile-development/basics/ceremonies.md#sprint-planning)
+- [Stand-ups](../agile-development/basics/ceremonies.md#stand-up)
 - [Working agreement](../agile-development/advanced-topics/team-agreements/working-agreements.md)
 
 ### Notes on Agile process during exploration and experimentation
 
 1. While acknowledging the fact that ML user stories and research spikes are less predictable than software development ones, we strive to have a deliverable for every user story in every sprint.
 
-2. User stories and spikes are usually estimated using [T-shirt sizes](../agile-development/core-expectations/README.md) or similar, and not in actual days/hours. See more [here](../agile-development/core-expectations/README.md) on story estimation.
+2. User stories and spikes are usually estimated using [T-shirt sizes](../agile-development/basics/ceremonies.md#estimation) or similar, and not in actual days/hours.
 
 3. ML design sessions should be included in each sprint.
 

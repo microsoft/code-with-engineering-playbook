@@ -21,7 +21,7 @@ During this time the team uncovers many unknowns, leveraging all new-found infor
 
 ## Sprint Planning
 
-In many engagements Microsoft works with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../../agile-development/core-expectations/README.md) is a great opportunity to dive deep into the next set of high priority work. Some key points to address are the following:
+In many engagements Microsoft works with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../../agile-development/basics/ceremonies.md#sprint-planning) is a great opportunity to dive deep into the next set of high priority work. Some key points to address are the following:
 
 1. Identify stories that require design reviews
 1. Separate design from implementation for complex stories
@@ -48,7 +48,7 @@ The team can follow the same steps from [sprint planning](#sprint-planning) to h
 
 ## Sprint Retrospectives
 
-[Sprint retrospectives](../../../agile-development/core-expectations/README.md) are a great time to check in with the dev team, identify what is working or not working, and propose changes to keep improving.
+[Sprint retrospectives](../../../agile-development/basics/ceremonies.md#retrospectives) are a great time to check in with the dev team, identify what is working or not working, and propose changes to keep improving.
 
 It is also a great time to check in on design reviews
 
