@@ -13,7 +13,7 @@ The following guidelines outline how Microsoft and the customer can incorporate 
 
 ## Pre-Mortem
 
-A good way to gauge what engineering spikes to conduct is to do a [pre-mortem](https://www.facebook.com/business/m/thinkkit/exercises/strong-starts/pre-mortem).
+A good way to gauge what engineering spikes to conduct is to do a pre-mortem.
 
 ### What is a pre-mortem?
 

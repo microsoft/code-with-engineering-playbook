@@ -97,7 +97,7 @@ More details on [code reviews](code-reviews/README.md)
 - [ ] Experiments have owners and are added to project backlog.
 - [ ] The team conducts longer retrospective for Milestones and project completion.
 
-More details on [retrospectives](agile-development/core-expectations/README.md)
+More details on [retrospectives](agile-development/basics/ceremonies.md#retrospectives)
 
 ## Engineering Feedback
 

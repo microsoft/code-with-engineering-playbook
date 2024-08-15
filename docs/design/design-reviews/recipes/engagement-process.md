@@ -37,7 +37,7 @@ Stories that will benefit from design reviews have one or more of the following 
 
 ## Sprint Backlog Refinement
 
-If your team is not already hosting a [Sprint Backlog Refinement](../../../agile-development/advanced-topics/backlog-management/README.md) session at least once per week you should consider it. It is a great opportunity to:
+If your team is not already hosting a [Sprint Backlog Refinement](../../../agile-development/advanced-topics/backlog-management) session at least once per week you should consider it. It is a great opportunity to:
 
 1. Keep the backlog clean
 1. Re-prioritize work based on shifting business priorities
