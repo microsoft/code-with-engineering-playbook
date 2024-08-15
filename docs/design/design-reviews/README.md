@@ -1,14 +1,5 @@
 # Design Reviews
 
-## Table of Contents
-
-- [Goals](#goals)
-- [Measures](#measures)
-- [Impact](#impact)
-- [Participation](#participation)
-- [Facilitation Guidance](#facilitation-guidance)
-- [Technical Spike](#technical-spike)
-
 ## Goals
 
 - Reduce technical debt for our customers
@@ -52,9 +43,6 @@ There is also a healthy balancing act in supporting a healthy debate while not h
 ### Dev Crew
 
 The dev crew should always participate in all design review sessions
-
-- [ISE](../../ISE.md) Engineering
-- Customer Engineering
 
 ### Domain Experts
 
