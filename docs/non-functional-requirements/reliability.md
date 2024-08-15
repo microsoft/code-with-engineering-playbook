@@ -64,7 +64,7 @@ We can build graceful failure (or graceful degradation) into our software stack 
   * [Leader Election](https://en.wikipedia.org/wiki/Leader_election) can be used to keep healthy services on standby in case the leader experiences issues.
   * Entire cluster failover can redirect traffic to another region or availability zone.
   * Propagate downstream failures of **dependent services** up the stack via health checks, so that your ingress points can re-route to healthy services.
-* [Circuit breakers](https://techblog.constantcontact.com/software-development/circuit-breakers-and-microservices/#:~:text=The%20Circuit%20breaker%20pattern%20helps,unavailable%20or%20have%20high%20latency.) can bail early on requests vs. propagating errors throughout the system.
+* **Circuit breakers** can bail early on requests vs. propagating errors throughout the system.
   Consider using a well-known, tested library such as [Polly](https://github.com/App-vNext/Polly) (.NET) that enables configurable implementations of this and other common resilience and transient fault-handling patterns.
 
 ## Practice
@@ -96,4 +96,4 @@ Leverage automated chaos testing to see how things break. You can read this play
 
 Writing up a [post-mortem](https://en.wikipedia.org/wiki/Postmortem_documentation) is a great way to document the root causes, and action items for your failures. They're also a great way to track recurring issues, and create a strong case for prioritizing fixes.
 
-This can even be tied into your regular Agile [restrospectives](../agile-development/core-expectations/README.md).
+This can even be tied into your regular Agile [restrospectives](../agile-development/basics/ceremonies.md#retrospectives).
