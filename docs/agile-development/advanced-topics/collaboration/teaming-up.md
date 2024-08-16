@@ -15,7 +15,7 @@ Some potential steps in this phase may be as following (not limited):
 - [Working agreement](../team-agreements/working-agreements.md)
 
 - Identification of styles/preferences in communication, sharing, learning, decision making of each team member
-  
+
   - Talking about necessity of pair programming
   - Decisions on backlog management & refinement meetings, weekly design sessions, social time sessions...etc.
   - Sync/Async communication methods, work hours/flexible times
@@ -50,7 +50,7 @@ Just as an example, agility debugging activities may include:
   - Are Acceptance Criteria enough and right?
   - Is everyone ready-to-go after taking the User Story/Task?
 
-- Running [Efficient Retrospectives](../../core-expectations/README.md)
+- Running [Efficient Retrospectives](../../basics/ceremonies.md#retrospectives)
 
 - Is the Sprint Goal clear in every iteration ?
 

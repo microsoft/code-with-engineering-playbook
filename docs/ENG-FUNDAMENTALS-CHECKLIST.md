@@ -20,7 +20,7 @@ More details on [source control](source-control/README.md)
 - [ ] All items are tracked in AzDevOps (or similar).
 - [ ] The board is organized (swim lanes, feature tags, technology tags).
 
-More details on [backlog management](agile-development/advanced-topics/backlog-management/README.md)
+More details on [backlog management](agile-development/advanced-topics/backlog-management)
 
 ## Testing
 
@@ -97,7 +97,7 @@ More details on [code reviews](code-reviews/README.md)
 - [ ] Experiments have owners and are added to project backlog.
 - [ ] The team conducts longer retrospective for Milestones and project completion.
 
-More details on [retrospectives](agile-development/core-expectations/README.md)
+More details on [retrospectives](agile-development/basics/ceremonies.md#retrospectives)
 
 ## Engineering Feedback
 
