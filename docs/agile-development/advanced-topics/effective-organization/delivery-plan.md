@@ -22,7 +22,7 @@ One approach you can take to accomplish is with stickies and a spreadsheet.
 Step 1: Stack rank the features for everything in your backlog
 
 - Functional Features
-- [Non-functional Features] (docs/TECH-LEADS-CHECKLIST.md)
+- [Non-functional Features] (docs/non-functional-requirements)
 - User Research and Design
 - Testing
 - Documentation
