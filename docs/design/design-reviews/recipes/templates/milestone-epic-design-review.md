@@ -2,7 +2,7 @@
 
 **Your Milestone/Epic Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)**
 
-> Please refer to <https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/recipes/milestone-epic-design-review-recipe/> for things to keep in mind when using this template.
+> Please refer to the [milestone/epic design review recipe](../milestone-epic-design-review-recipe.md) for things to keep in mind when using this template.
 
 * Milestone / Epic: [Name](http://link-to-work-item)
 * Project / Engagement: [Project Engagement]

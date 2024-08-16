@@ -16,4 +16,4 @@ Design at epic/milestone level can help the team make better decisions about pri
 
 ## Template
 
-You can download the **[Milestone/Epic Design Review Template](./milestone-epic-design-review-template.md)**, copy it into your project, and use it as described in the [async design review recipe](./async-design-reviews.md).
+You can download the **[Milestone/Epic Design Review Template](./templates/milestone-epic-design-review.md)**, copy it into your project, and use it as described in the [async design review recipe](./async-design-reviews.md).
