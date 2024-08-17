@@ -30,11 +30,9 @@ The [Azure DevOps Pipelines Report](https://github.com/Azure-Samples/powerbi-pip
 
 This dashboard recipe provides observability for AzDO pipelines by displaying various metrics (i.e. average runtime, run outcome statistics, etc.) in a table. Additionally, the second page of the template visualizes pipeline success and failure trends using Power BI charts. Documentation and setup information can be found in the project README.
 
-## Python Logger class for Application Insights using OpenCensus
+## Python OpenTelemetry Examples
 
-This repository contains "AppLogger" class which is a python logger class for Application Insights using Opencensus. It also contains sample code that shows the usage of "AppLogger".
-
-[GitHub Repo](https://github.com/Azure-Samples/azure-monitor-opencensus-python/tree/master/azure_monitor/python_logger_opencensus_azure)
+The Azure SDK for Python contains an [Azure Monitor Opentelemetry Distro client library for Python ](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry). You can view samples of how to use the SDK in this [GitHub Repo](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry/samples). With this SDK you can easily collect traces, metrics, and logs.
 
 ## Java OpenTelemetry Examples
 
