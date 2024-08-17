@@ -32,7 +32,7 @@ This dashboard recipe provides observability for AzDO pipelines by displaying va
 
 ## Python OpenTelemetry Examples
 
-The Azure SDK for Python contains an [Azure Monitor Opentelemetry Distro client library for Python ](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry). You can view samples of how to use the SDK in this [GitHub Repo](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry/samples). With this SDK you can easily collect traces, metrics, and logs.
+The Azure SDK for Python contains an [Azure Monitor Opentelemetry Distro client library for Python ](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry). You can view samples of how to use the library in this [GitHub Repo](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry/samples). With this library you can easily collect traces, metrics, and logs.
 
 ## Java OpenTelemetry Examples
 
