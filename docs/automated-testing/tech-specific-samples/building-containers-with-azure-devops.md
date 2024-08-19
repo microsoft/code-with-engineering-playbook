@@ -8,13 +8,6 @@ We will dive into tools needed to build, test and push a container, our environm
 
 Follow this link to dive deeper or revisit the [DevTest pattern](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas).
 
-## Table of Contents
-
-[Build the Container](#build-the-container)
-[Test the Container](#test-the-container)
-[Push Container](#push-container)
-[References](#references)
-
 ## Build the Container
 
 The first step in container development, after creating the necessary Dockerfiles and source code, is building the container. Even the Dockerfile itself can include some basic testing. Code tests are performed when pushing the code to the repository origin, where it is then used to build the container.
