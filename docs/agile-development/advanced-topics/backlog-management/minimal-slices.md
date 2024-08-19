@@ -3,7 +3,6 @@
 ## Always deliver your work using minimal valuable slices
 
 - Split your work item into small chunks that are contributed in incremental commits.
-
 - Contribute your chunks frequently. Follow an iterative approach by regularly providing updates and changes to the team. This allows for instant feedback and early issue discovery and ensures you are developing in the right direction, both technically and functionally.
 
 - Do NOT work independently on your task without providing any updates to your team.

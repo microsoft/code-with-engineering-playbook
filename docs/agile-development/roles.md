@@ -1,6 +1,6 @@
 # Agile/Scrum Roles
 
-- We prefer the usage of "process lead" over "scrum master". It describes the same role.
+- We prefer using "process lead" over "scrum master". It describes the same role.
 
 This section has links directing you to definitions for the traditional roles within Agile/Scrum.  After reading through the best practices you should have a basic understanding of the key Agile roles in terms of what they are and the expectations for the role.
 
