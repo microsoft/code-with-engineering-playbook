@@ -1,6 +1,8 @@
-# Your Milestone/Epic Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)
+# Template: Milestone / Epic Design Review
 
-> Please refer to <https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/recipes/milestone-epic-design-review-recipe/> for things to keep in mind when using this template.
+**Your Milestone/Epic Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)**
+
+> Please refer to the [milestone/epic design review recipe](../milestone-epic-design-review-recipe.md) for things to keep in mind when using this template.
 
 * Milestone / Epic: [Name](http://link-to-work-item)
 * Project / Engagement: [Project Engagement]
@@ -12,7 +14,7 @@
 
 ## Goals / In-Scope
 
-> List a few bullet points of goals that this milestone/epic will achieve and that are most relevant for the design review discussion. You may include acceptable criteria required to meet the [Definition of Done](../../../agile-development/advanced-topics/team-agreements/definition-of-done.md).
+> List a few bullet points of goals that this milestone/epic will achieve and that are most relevant for the design review discussion. You may include acceptable criteria required to meet the [Definition of Done](../../../../agile-development/advanced-topics/team-agreements/definition-of-done.md).
 
 ## Non-goals / Out-of-Scope
 
