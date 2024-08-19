@@ -96,4 +96,4 @@ Leverage automated chaos testing to see how things break. You can read this play
 
 Writing up a [post-mortem](https://en.wikipedia.org/wiki/Postmortem_documentation) is a great way to document the root causes, and action items for your failures. They're also a great way to track recurring issues, and create a strong case for prioritizing fixes.
 
-This can even be tied into your regular Agile [restrospectives](../agile-development/basics/ceremonies.md#retrospectives).
+This can even be tied into your regular Agile [restrospectives](../agile-development/ceremonies.md#retrospectives).

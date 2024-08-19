@@ -1,6 +1,6 @@
 # Scrum of Scrums
 
-Scrum of scrums is a technique used to scale Scrum to a larger group working towards the same project goal. In Scrum, we consider a team being too big when going over 10-12 individuals. This should be decided on a case by case basis. If the project is set up in multiple work streams that contain a fixed group of people and a common [stand-up](../../basics/ceremonies.md#stand-up) meeting is slowing down productivity: scrum of scrums should be considered. The team would identify the different subgroups that would act as a separate scrum teams with their own backlog, board and stand-up.
+Scrum of scrums is a technique used to scale Scrum to a larger group working towards the same project goal. In Scrum, we consider a team being too big when going over 10-12 individuals. This should be decided on a case by case basis. If the project is set up in multiple work streams that contain a fixed group of people and a common [stand-up](../../ceremonies.md#stand-up) meeting is slowing down productivity: scrum of scrums should be considered. The team would identify the different subgroups that would act as a separate scrum teams with their own backlog, board and stand-up.
 
 ## Goals
 
@@ -15,7 +15,7 @@ The scrum of scrums ceremony happens every day and can be seen as a regular stan
 
 The outcome of the meeting will result in a list of impediments related to coordination of the whole project. Solutions could be: agreeing on interfaces between teams, discussing architecture changes, evolving responsibility boundaries, etc.
 
-This list of impediments is usually managed in a separate [backlog](../../basics/backlog-management.md) but does not have to.
+This list of impediments is usually managed in a separate [backlog](../../backlog-management.md) but does not have to.
 
 ## Participation
 
@@ -29,7 +29,7 @@ When choosing to implement Scrum of Scrums, you need to keep in mind that some t
 
 ## Measures
 
-The easiest way to measure the impact is by tracking the time to resolve issues in the scrum of scrums backlog. You can also track issues reported during the [retrospective](../../basics/ceremonies.md#retrospectives) related to global coordination (is it well done? can it be improved?).
+The easiest way to measure the impact is by tracking the time to resolve issues in the scrum of scrums backlog. You can also track issues reported during the [retrospective](../../ceremonies.md#retrospectives) related to global coordination (is it well done? can it be improved?).
 
 ## Facilitation Guidance
 

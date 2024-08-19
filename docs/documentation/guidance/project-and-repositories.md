@@ -31,16 +31,16 @@ Some sections in the documentation of the repository might point to the projectâ
 - [Onboarding](../../developer-experience/onboarding-guide-template.md)
 - Repository guide
   - Production, Spikes
-- [Team agreements](../../agile-development/advanced-topics/team-agreements/README.md)
-  - [Team Manifesto](../../agile-development/advanced-topics/team-agreements/team-manifesto.md)
+- [Team agreements](../../agile-development/team-agreements/README.md)
+  - [Team Manifesto](../../agile-development/team-agreements/team-manifesto.md)
     - Short summary of expectations around the technical way of working and supported mindset in the team.
     - E.g., ownership, respect, collaboration, transparency.
-  - [Working Agreement](../../agile-development/advanced-topics/team-agreements/working-agreements.md)
+  - [Working Agreement](../../agile-development/team-agreements/working-agreements.md)
     - How we work together as a team and what our expectations and principles are.
     - E.g., communication, work-life balance, scrum rhythm, backlog management, code management.
-  - [Definition of Done](../../agile-development/advanced-topics/team-agreements/definition-of-done.md)
+  - [Definition of Done](../../agile-development/team-agreements/definition-of-done.md)
     - List of tasks that must be completed to close a user story, a sprint, or a milestone.
-  - [Definition of Ready](../../agile-development/advanced-topics/team-agreements/definition-of-ready.md)
+  - [Definition of Ready](../../agile-development/team-agreements/definition-of-ready.md)
     - How complete a user story should be in order to be selected as candidate for estimation in the sprint planning.
 - Contributing Guide
   - Repo structure

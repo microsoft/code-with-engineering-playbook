@@ -21,7 +21,7 @@
 ## Goals/In-Scope
 
 * List a few bullet points of what this task will achieve and that are most relevant for the design review discussion.
-* This should include acceptance criteria required to meet the [definition of done](../../../../agile-development/advanced-topics/team-agreements/definition-of-done.md).
+* This should include acceptance criteria required to meet the [definition of done](../../../../agile-development/team-agreements/definition-of-done.md).
 
 ## Non-goals / Out-of-Scope
 
@@ -30,8 +30,8 @@
 ## Proposed Options
 
 * Describe the detailed design to accomplish the proposed task.
-* What patterns & practices will be used and why were they chosen.  
-* Were any alternate proposals considered?  
+* What patterns & practices will be used and why were they chosen.
+* Were any alternate proposals considered?
 * What new components are required to be developed?
 * Are there any existing components that require updates?
 * Relevant diagrams (e.g. sequence, component, context, deployment) should be included here.
