@@ -1,4 +1,6 @@
-# ~Customer Project~ Case Study
+# Case Study Template
+
+**[Customer Project] Case Study**
 
 ## Background
 
