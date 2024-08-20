@@ -65,7 +65,8 @@
       "https://www.pluralsight.com/courses/",
       "https://www.gartner.com/en/information-technology/glossary/citizen-developer",
       "https://www.onetrust.com/blog/principles-of-privacy-by-design/",
-      "https://docs.github.com/en/rest/commits/statuses"
+      "https://docs.github.com/en/rest/commits/statuses",
+      "https://blog.twitter.com/engineering/en_us/a/2015/diffy-testing-services-without-writing-tests.html"
     ],
     "only_errors": true,
     "cache_duration": "24h",
