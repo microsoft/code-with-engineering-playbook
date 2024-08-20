@@ -31,7 +31,7 @@ Some sections in the documentation of the repository might point to the projectâ
 - [Onboarding](../../developer-experience/onboarding-guide-template.md)
 - Repository guide
   - Production, Spikes
-- [Team agreements](../../agile-development/team-agreements/README.md)
+- [Team agreements](../../agile-development/team-agreements/)
   - [Team Manifesto](../../agile-development/team-agreements/team-manifesto.md)
     - Short summary of expectations around the technical way of working and supported mindset in the team.
     - E.g., ownership, respect, collaboration, transparency.
@@ -55,9 +55,9 @@ Some sections in the documentation of the repository might point to the projectâ
   - [High Level / Game Plan](../../design/design-reviews/recipes/high-level-design-recipe.md)
   - [Milestone / Epic Design Review](../../design/design-reviews/recipes/milestone-epic-design-review-recipe.md)
 - [Design Review Recipes](../../design/design-reviews/README.md#Recipes)
-  - [Milestone / Epic Design Review Template](../../design/design-reviews/recipes/milestone-epic-design-review-template.md)
-  - [Feature / Story Design Review Template](../../design/design-reviews/recipes/feature-story-design-review-template.md)
-  - [Task Design Review Template](../../design/design-reviews/recipes/task-design-review-template.md)
+  - [Milestone / Epic Design Review Template](../../design/design-reviews/recipes/templates/milestone-epic-design-review.md)
+  - [Feature / Story Design Review Template](../../design/design-reviews/recipes/templates/feature-story-design-review.md)
+  - [Task Design Review Template](../../design/design-reviews/recipes/templates/template-task-design-review.md)
   - [Decision Log Template](../../design/design-reviews/decision-log/doc/decision-log.md)
   - [Architecture Decision Record (ADR) Template](../../design/design-reviews/decision-log/README.md#architecture-decision-record-(ADR)) ([Example 1](../../design/design-reviews/decision-log/doc/adr/0001-record-architecture-decisions.md),
     [Example 2](../../design/design-reviews/decision-log/doc/adr/0002-app-level-logging.md))
