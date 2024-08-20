@@ -54,7 +54,7 @@ The table below maps outcomes (the results that you may want to achieve in your 
 | Development | Prove correct RBAC and claims interpretation of Authorization code | Scenario (security) |
 | Development | Document and/or enforce valid API usage | [Unit testing](unit-testing/README.md); Functional tests; [Consumer-driven Contract Testing](cdc-testing/README.md) |
 | Development | Prove implementation correctness in advance of a dependency or absent a dependency | [Unit testing](unit-testing/README.md) (with mocks); [Unit testing](unit-testing/README.md) (with emulators); [Consumer-driven Contract Testing](cdc-testing/README.md) |
-| Development | Ensure that the user interface is accessible | [Accessibility](../accessibility/README.md) |
+| Development | Ensure that the user interface is accessible | [Accessibility](../non-functional-requirements/accessibility.md) |
 | Development | Ensure that users can operate the interface | [UI testing (automated)](ui-testing/README.md) (human usability observation) |
 | Development | Prevent regression in user experience | UI automation; [End-to-End testing](e2e-testing/README.md) |
 | Development | Detect and prevent 'noisy neighbor' phenomena | [Load testing](performance-testing/load-testing.md) |
@@ -84,5 +84,5 @@ The table below maps outcomes (the results that you may want to achieve in your 
 
 ## Technology Specific Testing
 
-- [Using DevTest Pattern for building containers with AzDO](tech-specific-samples/azdo-container-dev-test-release/README.md)
+- [Using DevTest Pattern for building containers with AzDO](tech-specific-samples/building-containers-with-azure-devops.md)
 - [Using Azurite to run blob storage tests in pipeline](tech-specific-samples/blobstorage-unit-tests/README.md)

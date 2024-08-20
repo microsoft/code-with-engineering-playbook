@@ -38,7 +38,7 @@ following:
     the cost of running the hardware and software infrastructure.
 
 - Assess the **system's readiness** for release:
-  
+
   - Evaluating the system's performance characteristics (response time, throughput)
   in a production-like environment.
   The goal is to ensure that performance goals can be achieved upon release.
@@ -49,7 +49,7 @@ following:
     to the values of performance characteristics during previous runs (or
     baseline values), can provide an indication of performance issues (performance regression) or
     enhancements introduced due to a change
-  
+
 ## Key Performance Testing categories
 
 Performance testing is a broad topic. There are many areas where you can perform
