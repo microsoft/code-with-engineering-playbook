@@ -1,4 +1,4 @@
-# Structure of a Sprint
+# The first week of an ISE Project
 
 The purpose of this document is to:
 
@@ -6,9 +6,8 @@ The purpose of this document is to:
 - Provide content in a logical structure which reflects the engineering process
 - Extensible hierarchy to allow teams to share deep subject-matter expertise
 
-## The first week of an ISE Project
 
-### Before starting the project
+## Before starting the project
 
 - [ ] Discuss and start writing the Team Agreements. Update these documents with any process decisions made throughout the project
   - [Working Agreement](agile-development/advanced-topics/team-agreements/working-agreements.md)
@@ -23,7 +22,7 @@ The purpose of this document is to:
   - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
   - [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md)
 
-### Day 1
+## Day 1
 
 - [ ] [Plan the first sprint](agile-development/basics/ceremonies.md#sprint-planning)
   - Agree on a sprint goal, and how to measure the sprint progress
@@ -37,7 +36,7 @@ The purpose of this document is to:
 - [ ] [Decide on branch naming](source-control/naming-branches.md)
 - [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/gitops/secret-management/azure-devops-secret-management-per-branch.md)
 
-### Day 2
+## Day 2
 
 - [ ] [Set up Source Control](source-control/README.md)
   - Agree on [best practices for commits](source-control/git-guidance/README.md#commit-best-practices)
@@ -47,14 +46,14 @@ The purpose of this document is to:
   - Discuss timing, and how to run an efficient stand-up
 - [ ] [If the project has sub-teams, set up a Scrum of Scrums](agile-development/advanced-topics/effective-organization/scrum-of-scrums.md)
 
-### Day 3
+## Day 3
 
 - [ ] [Agree on code style](code-reviews/README.md) and on [how to assign Pull Requests](code-reviews/pull-requests.md)
 - [ ] [Set up Build Validation for Pull Requests (2 reviewers, linters, automated tests)](code-reviews/README.md) and agree on [Definition of Done](agile-development/advanced-topics/team-agreements/definition-of-done.md)
 - [ ] [Agree on a Code Merging strategy](source-control/merge-strategies.md) and update the [CONTRIBUTING.md](resources/templates/CONTRIBUTING.md)
 - [ ] [Agree on logging and observability frameworks and strategies](observability/README.md)
 
-### Day 4
+## Day 4
 
 - [ ] [Set up Continuous Deployment](continuous-delivery/README.md)
   - Determine what environments are appropriate for this solution
@@ -62,7 +61,7 @@ The purpose of this document is to:
 - [ ] [Decide on a versioning strategy](source-control/component-versioning.md)
 - [ ] Agree on how to [Design a feature and conduct a Design Review](design/design-reviews/README.md)
 
-### Day 5
+## Day 5
 
 - [ ] Conduct a [Sprint Demo](agile-development/basics/ceremonies.md#sprint-demo)
 - [ ] Conduct a [Retrospective](agile-development/basics/ceremonies.md#retrospectives)

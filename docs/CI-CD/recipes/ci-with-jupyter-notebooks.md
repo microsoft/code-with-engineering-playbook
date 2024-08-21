@@ -1,4 +1,4 @@
-# Data Science Pipeline
+# CI with Jupyter Notebooks
 
 As Azure DevOps doesn't allow code reviewers to comment directly in Jupyter Notebooks, Data Scientists(DSs) have
 to convert the notebooks to scripts before they commit and push these files to the repository.
@@ -41,7 +41,7 @@ We can add a pipeline with the following steps to the repository to run in `ipyn
 
 1. Go to the *Project Settings* -> *Repositories* -> *Security* -> *User Permissions*
 1. Add the *Build Service* in *Users* the permission to *Contribute*
-    ![Contribute](assets/repository-properties.png)
+    ![Contribute](../images/repository-properties.png)
 1. Create a new pipeline.
 
 In the newly created pipeline we add:

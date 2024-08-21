@@ -4,8 +4,7 @@
 
 Most projects start with spikes, where developers and analysts produce lots of documentation.
 
-Sometimes, these documents don't have a standard and each team member writes them accordingly with their preference. Add to that
-the time a reviewer will spend confirming grammar, searching for typos or non-inclusive language.
+Sometimes, these documents don't have a standard and each team member writes them accordingly with their preference. Add to that the time a reviewer will spend confirming grammar, searching for typos or non-inclusive language.
 
 This pipeline helps address that!
 

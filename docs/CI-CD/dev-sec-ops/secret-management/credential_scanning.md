@@ -4,7 +4,7 @@ Credential scanning is the practice of automatically inspecting a project to ens
 
 ## Why Credential scanning
 
-Including secrets in a project's source code is a significant risk, as it might make those secrets available to unwanted parties. Even if it seems that the source code is accessible to the same people who are privy to the secrets, this situation is likely to change as the project grows. Spreading secrets in different places makes them harder to manage, access control, and revoke efficiently. Secrets that are committed to source control are also harder to discard of, since they will persist in the source's history.  
+Including secrets in a project's source code is a significant risk, as it might make those secrets available to unwanted parties. Even if it seems that the source code is accessible to the same people who are privy to the secrets, this situation is likely to change as the project grows. Spreading secrets in different places makes them harder to manage, access control, and revoke efficiently. Secrets that are committed to source control are also harder to discard of, since they will persist in the source's history.
 Another consideration is that coupling the project's code to its infrastructure and deployment specifics is limiting and considered a bad practice. From a software design perspective, the code should be independent of the runtime configuration that will be used to run it, and that runtime configuration includes secrets.
  As such, there should be a clear boundary between code and secrets: secrets should be managed outside of the source code (read more [here](../../../continuous-delivery/secrets-management/README.md)) and credential scanning should be employed to ensure that this boundary is never violated.
 

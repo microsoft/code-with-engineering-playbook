@@ -12,13 +12,13 @@ Proposed Azure DevOps Pipeline contains multiple steps described below:
 1. Install detect-secrets using pip
 1. Run detect-secrets tool
 1. Publish results in the Pipeline Artifact
-   > NOTE: It's an optional step, but for future investigation .json file with results may be helpful.
+   > **Note:** It's an optional step, but for future investigation .json file with results may be helpful.
 1. Analyzing detect-secrets results
-   > NOTE: This step does a simple analysis of the .json file. If any secret has been detected, then break the build with exit code 1.
+   > **Note:** This step does a simple analysis of the .json file. If any secret has been detected, then break the build with exit code 1.
 
-> NOTE: The below example has 2 jobs: for Linux and Windows agents. You do not have to use both jobs - just adjust the pipeline to your needs.
+> **Note:** The below example has 2 jobs: for Linux and Windows agents. You do not have to use both jobs - just adjust the pipeline to your needs.
 >
-> NOTE: Windows example does not use the latest version of detect-secrets. It is related to the bug in the detect-secret tool (see more in [Issue#452](https://github.com/Yelp/detect-secrets/issues/452)). It is highly recommended to monitor the fix for the issue and use the latest version if possible by removing version tag `==1.0.3` in the pip install command.
+> **Note:** Windows example does not use the latest version of detect-secrets. It is related to the bug in the detect-secret tool (see more in [Issue#452](https://github.com/Yelp/detect-secrets/issues/452)). It is highly recommended to monitor the fix for the issue and use the latest version if possible by removing version tag `==1.0.3` in the pip install command.
 
 ```yaml
 trigger:
