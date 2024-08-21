@@ -10,7 +10,7 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] Commit history is consistent and commit messages are informative (what, why).
 - [ ] Consistent branch naming conventions.
 - [ ] Clear documentation of repository structure.
-- [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](ci-cd/dev-sec-ops/secrets-management/credential_scanning.md))
+- [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](./CI-CD/dev-sec-ops/secrets-management/credential_scanning.md))
 - [ ] Public repositories follow the [OSS guidelines](source-control/README.md#creating-a-new-repository), see `Required files in default branch for public repositories`.
 
 More details on [source control](source-control/README.md)
@@ -35,7 +35,7 @@ More details on [automated testing](automated-testing/README.md)
 - [ ] Project uses CD to manage deployments to a replica environment before PRs are merged.
 - [ ] Main branch is always shippable.
 
-More details on [continuous integration](ci-cd/continuous-integration.md) and [continuous delivery](ci-cd/continuous-delivery.md)
+More details on [continuous integration](./CI-CD/continuous-integration.md) and [continuous delivery](./CI-CD/continuous-delivery.md)
 
 ## Security
 
