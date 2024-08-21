@@ -34,13 +34,13 @@ The purpose of this document is to:
   - Agree on how to separate unit tests from integration, load and smoke tests
   - Design the first test cases
 - [ ] [Decide on branch naming](source-control/naming-branches.md)
-- [ ] [Discuss security needs and verify that secrets are kept out of source control](continuous-delivery/gitops/secret-management/azure-devops-secret-management-per-branch.md)
+- [ ] [Discuss security needs and verify that secrets are kept out of source control](ci-cd/dev-sec-ops/secrets-management/)
 
 ## Day 2
 
 - [ ] [Set up Source Control](source-control/README.md)
   - Agree on [best practices for commits](source-control/git-guidance/README.md#commit-best-practices)
-- [ ] [Set up basic Continuous Integration with linters and automated tests](continuous-integration/README.md)
+- [ ] [Set up basic Continuous Integration with linters and automated tests](ci-cd/continuous-integration.md)
 - [ ] [Set up meetings for Daily Stand-ups and decide on a Process Lead](agile-development/basics/ceremonies.md#stand-up)
   - Discuss purpose, goals, participants and facilitation guidance
   - Discuss timing, and how to run an efficient stand-up
@@ -55,7 +55,7 @@ The purpose of this document is to:
 
 ## Day 4
 
-- [ ] [Set up Continuous Deployment](continuous-delivery/README.md)
+- [ ] [Set up Continuous Deployment](ci-cd/continuous-delivery.md)
   - Determine what environments are appropriate for this solution
   - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
 - [ ] [Decide on a versioning strategy](source-control/component-versioning.md)

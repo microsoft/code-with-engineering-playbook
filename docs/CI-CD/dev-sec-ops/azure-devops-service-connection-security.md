@@ -39,10 +39,10 @@ steps:
 
 YAML pipelines can be triggered without the need for a pull request, this introduces a security risk.
 
-In good practice, [Pull Requests](../../../code-reviews/pull-requests.md) and [Code Reviews](../../../code-reviews/README.md) should be used to ensure the code that is being deployed, is being reviewed by a second person and potentially automatically being checked for vulnerabilities and other security issues.
+In good practice, [Pull Requests](../../code-reviews/pull-requests.md) and Code Reviews should be used to ensure the code that is being deployed, is being reviewed by a second person and potentially automatically being checked for vulnerabilities and other security issues.
 However, YAML Pipelines can be executed without the need for a Pull Request and Code Reviews. This allows the (malicious) user to make changes using the Service Connection which would normally require a reviewer.
 
-The configuration of *when* a pipeline should be triggered is specified in the YAML Pipeline itself and therefore a pipeline can be configured to execute on changes in a temporary branch. In this temporary branch, any changes made to the pipeline itself will be executed without being reviewed.  
+The configuration of *when* a pipeline should be triggered is specified in the YAML Pipeline itself and therefore a pipeline can be configured to execute on changes in a temporary branch. In this temporary branch, any changes made to the pipeline itself will be executed without being reviewed.
 
 If the given pipeline has been granted [Pipeline-level permissions](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints#pipeline-permissions) to use a specific Service Connection, any command can be executed using that Service Connection, without anyone reviewing the command.
 Since Service Connections can have a lot of permissions in the external service, executing any pipeline without review could potentially have big consequences.

@@ -1,11 +1,23 @@
-# Secrets Management
+# Secrets management
 
-Secrets Management refers to the way in which we protect configuration settings and other sensitive data which, if
-made public, would allow unauthorized access to resources. Examples of secrets are usernames, passwords, api keys, SAS
-tokens etc.
+Secret Management refers to the tools and practices used to manage digital authentication credentials (like API keys, tokens, passwords, and certificates). These secrets are used to protect access to sensitive data and services, making their management critical for security.
 
 We should assume any repo we work on may go public at any time and protect our secrets, even if
 the repo is initially private.
+
+## Importance of Secrets Management
+
+In modern software development, applications often need to interact with other software components, APIs, and services. These interactions often require authentication, which is typically handled using secrets. If these secrets are not managed properly, they can be exposed, leading to potential security breaches.
+
+## Best Practices for Secrets Management
+
+1. **Centralized Secret Storage:** Store all secrets in a centralized, encrypted location. This reduces the risk of secrets being lost or exposed.
+1. **Access Control:** Implement strict access control policies. Only authorized entities should have access to secrets.
+1. **Rotation of Secrets:** Regularly change secrets to reduce the risk if a secret is compromised.
+1. **Audit Trails:** Keep a record of when and who accessed which secret. This can help in identifying suspicious activities.
+1. **Automated Secret Management:** Automate the processes of secret creation, rotation, and deletion. This reduces the risk of human error.
+
+Remember, the goal of secret management is to protect sensitive information from unauthorized access and potential security threats.
 
 ## General Approach
 
@@ -53,7 +65,7 @@ These techniques make the loading of secrets  transparent to the developer.
 For .NET SDK (version 2.0 or higher) we have `dotnet secrets`, a tool provided by the .NET SDK that allows you to manage and protect sensitive information, such as API keys, connection strings, and other secrets, during development. The secrets are stored securely on your machine and can be accessed by your .NET applications.
 
 ```shell
-# Initialize dotnet secret 
+# Initialize dotnet secret
 dotnet user-secrets init
 
 # Adding secret
@@ -176,4 +188,4 @@ The following steps lay out a clear pathway to creating new secrets and then uti
 
 ### Validation
 
-Automated credential scanning can be performed on the code regardless of the programming language. Read more about it [here](../../continuous-integration/dev-sec-ops/secret-management/credential_scanning.md)
+Automated [credential scanning](credential_scanning.md) can be performed on the code regardless of the programming language.
