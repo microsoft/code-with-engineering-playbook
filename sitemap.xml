@@ -171,6 +171,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/backlog-management/</loc>
+         <lastmod>2024-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/ceremonies/</loc>
+         <lastmod>2024-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/roles/</loc>
+         <lastmod>2024-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/advanced-topics/backlog-management/external-feedback/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
@@ -226,37 +241,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/advanced-topics/team-agreements/definition-of-done/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-done/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/advanced-topics/team-agreements/definition-of-ready/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/advanced-topics/team-agreements/team-manifesto/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/team-manifesto/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/advanced-topics/team-agreements/working-agreements/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/basics/backlog-management/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/basics/ceremonies/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/basics/roles/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/working-agreements/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
