@@ -67,7 +67,8 @@
       "https://www.onetrust.com/blog/principles-of-privacy-by-design/",
       "https://docs.github.com/en/rest/commits/statuses",
       "https://blog.twitter.com/engineering/en_us/a/2015/diffy-testing-services-without-writing-tests.html",
-      "https://blog.github.com/2012-09-17-contributing-guidelines/"
+      "https://blog.github.com/2012-09-17-contributing-guidelines/",
+      "https://www.fast.design/docs/integrations/react"
     ],
     "only_errors": true,
     "cache_duration": "24h",
