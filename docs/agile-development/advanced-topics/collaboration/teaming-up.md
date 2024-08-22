@@ -12,7 +12,7 @@ However those phases can be extremely fast or sometimes mismatched in teams due 
 In order to minimize the risk and set the expectations on the right way for all parties, an identification phase is important to understand each other.
 Some potential steps in this phase may be as following (not limited):
 
-- [Working agreement](../team-agreements/working-agreements.md)
+- [Working agreement](../../team-agreements/working-agreements.md)
 
 - Identification of styles/preferences in communication, sharing, learning, decision making of each team member
 
@@ -29,7 +29,7 @@ Some potential steps in this phase may be as following (not limited):
 
 - Identification of communication channels, feedback loops and recurrent team call slots out of regular sprint meetings
 
-- Introduction to [Technical Agility Team Manifesto](../team-agreements/team-manifesto.md) and planning the technical delivery by aiming to keep
+- Introduction to [Technical Agility Team Manifesto](../../team-agreements/team-manifesto.md) and planning the technical delivery by aiming to keep
 technical debt risk minimum.
 
 ## Following the Plan and Agile Debugging
@@ -50,7 +50,7 @@ Just as an example, agility debugging activities may include:
   - Are Acceptance Criteria enough and right?
   - Is everyone ready-to-go after taking the User Story/Task?
 
-- Running [Efficient Retrospectives](../../basics/ceremonies.md#retrospectives)
+- Running [efficient retrospectives](../../ceremonies.md#retrospectives)
 
 - Is the Sprint Goal clear in every iteration ?
 

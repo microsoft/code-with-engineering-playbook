@@ -37,6 +37,6 @@ The ready checklist should contain items that apply broadly. Don't include items
 
 In the case that the highest priority work is not yet ready, it still may be possible to make forward progress. Here are some strategies that may help:
 
-* [Backlog Refinement](../backlog-management/README.md) sessions are a good time to validate that high priority user stories are verified to have a clear description, acceptance criteria and demonstrable business value. It is also a good time to breakdown large stories will likely not be completable in a single sprint.
+* Backlog Refinement sessions are a good time to validate that high priority user stories are verified to have a clear description, acceptance criteria and demonstrable business value. It is also a good time to breakdown large stories will likely not be completable in a single sprint.
 * Prioritization sessions are a good time to prioritize user stories that unblock other blocked high priority work.
 * Blocked user stories can often be broken down in a way that unblocks a portion of the original stories scope. This is a good way to make forward progress even when some work is blocked.

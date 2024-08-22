@@ -20,7 +20,7 @@
 ## Goals/In-Scope
 
 * List the goals that the feature/story will help us achieve that are most relevant for the design review discussion.
-* This should include acceptance criteria required to meet [definition of done](../../../../agile-development/advanced-topics/team-agreements/definition-of-done.md).
+* This should include acceptance criteria required to meet [definition of done](../../../../agile-development/team-agreements/definition-of-done.md).
 
 ## Non-goals / Out-of-Scope
 

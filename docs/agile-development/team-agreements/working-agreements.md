@@ -21,7 +21,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 ## Communication
 
 - We communicate all information relevant to the team through the Project Teams channel
-- We add all [technical spikes](../../../design/design-reviews/recipes/technical-spike.md), [trade studies](../../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../../design/design-reviews/recipes/async-design-reviews.md)
+- We add all [technical spikes](../../design/design-reviews/recipes/technical-spike.md), [trade studies](../../design/design-reviews/trade-studies/README.md), and other technical documentation to the project repository through [async design reviews in PRs](../../design/design-reviews/recipes/async-design-reviews.md)
 
 ## Work-life Balance
 
@@ -51,7 +51,7 @@ their own, and adjust times, communication channels, branch naming policies etc.
 The Process Lead is responsible for leading any scrum or agile practices to enable the project to move forward.
 
 - Facilitate standup meetings and hold team accountable for attendance and participation.
-- Keep the meeting moving as described in the [Project Standup](../../basics/ceremonies.md) page.
+- Keep the meeting moving as described in the [Project Standup](../ceremonies.md) page.
 - Make sure all action items are documented and ensure each has an owner and a due date and tracks the open issues.
 - Notes as needed after planning / stand-ups.
 - Make sure that items are moved to the parking lot and ensure follow-up afterwards.
@@ -80,4 +80,4 @@ The Process Lead is responsible for leading any scrum or agile practices to enab
 - All PRs are reviewed by one person from <Customer/Partner Name> and one from Microsoft (for knowledge transfer and to ensure code and security standards are met)
 - We always review existing PRs before starting work on a new task
 - We look through open PRs at the end of stand-up to make sure all PRs have reviewers.
-- We treat documentation as code and apply the same [standards to Markdown](../../../code-reviews/recipes/markdown.md) as code
+- We treat documentation as code and apply the same [standards to Markdown](../../code-reviews/recipes/markdown.md) as code
