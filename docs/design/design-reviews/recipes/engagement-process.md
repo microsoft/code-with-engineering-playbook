@@ -58,7 +58,7 @@ It is also a great time to check in on design reviews
 
 All design artifacts should be treated as a living document. As requirements change or uncover more unknowns the dev crew should retroactively update all design artifacts. Missing this critical step may cause the customer to incur future technical debt. Artifacts that are not up to date are `bugs` in the design.
 
-> **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../../agile-development/team-agreements/definition-of-done.md) for all user stories.
+> **Tip:** Keep your artifacts up to date by adding it to your teams [definition of done](../../../agile-development/team-agreements/definition-of-done.md) for all user stories.
 
 ## Sync Design Reviews
 
