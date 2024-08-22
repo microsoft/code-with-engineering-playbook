@@ -15,7 +15,7 @@ The state of web platform engineering is fast moving. There is no one-size-fits-
 1. [**Accessibility**](../non-functional-requirements/accessibility.md) - ensuring your application is usable and enjoyed by as many people as possible is at the heart of accessibility and inclusive design.
 1. [**Usability**](./usability.md) - how effortless should it be for any given user to use the application? Do they need special training or a document to understand how to use it, or will it be intuitive?
 1. [**Maintainability**](../non-functional-requirements/maintainability.md) - is the application just a proof of concept to showcase an idea for future work, or will it be an MVP and act as the starting point for a larger, production-ready application? Sometimes you don't need React or any other framework. Sometimes you need React, but not all the bells and whistles from create-react-app. Understanding project maintainability requirements can simplify an engagement’s tooling needs significantly and let folks iterate without headaches.
-1. [**Stability**](./stability.md) - what is the cost of adding a dependency? Is it actively stable/updated/maintained? If not, can you afford the tech debt (sometimes the answer can be yes!)? Could you get 90% of the way there without adding another dependency?
+1. **Stability** - what is the cost of adding a dependency? Is it actively stable/updated/maintained? If not, can you afford the tech debt (sometimes the answer can be yes!)? Could you get 90% of the way there without adding another dependency?
 
 More information is available for each general guidance section in the corresponding pages.
 
