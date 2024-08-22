@@ -1,4 +1,4 @@
-# Secret management with GitOps
+# Secrets Management with GitOps
 
 GitOps projects have git repositories in the center that are considered a source of truth for managing both infrastructure and application. This infrastructure and application will require secured access to other resources of the system through secrets.
 Committing clear-text secrets into git repositories is unacceptable even if the repositories are private to your team and organization. Teams need a secure way to handle secrets when using GitOps.
@@ -10,7 +10,7 @@ There are many ways to manage secrets with GitOps and at high level can be categ
 
 > **TLDR**: Referencing secrets in an external key vault is the recommended approach. It is easier to orchestrate secret rotation and more scalable with multiple clusters and/or teams.
 
-## Encrypted secrets in git repositories
+## Encrypted Secrets in Git Repositories
 
 In this approach, Developers manually encrypt secrets using a public key, and the key can only be decrypted by the custom Kubernetes controller running in the target cluster. Some popular tools for his approach are [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets), [Mozilla SOPS](https://github.com/mozilla/sops)
 
@@ -50,7 +50,7 @@ Some of the key points of using SOPS are:
 - The public key is sufficient for creating brand new files. The secret key is required for decrypting and editing existing files because SOPS computes a MAC on all values. When using the public key solely to add or remove a field, the whole file should be deleted and recreated
 - Supports several types of keys that can be used in both connected and disconnected state. A secret can have a list of keys and will try do decrypt with all of them.
 
-## Reference to secrets stored in an external key vault (recommended)
+## Reference to Secrets Stored in an External Key Vault (Recommended)
 
 This approach relies on a key management system like [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) to hold the secrets and the git manifest in the repositories has reference to the key vault secrets. Developers do not perform any cryptographic operations with files in repositories. Kubernetes operators running in the target cluster are responsible for pulling the secrets from the key vault and making them available either as Kubernetes secrets or secrets volume mounted to the pod.
 
@@ -119,7 +119,7 @@ Disadvantages:
 - The GitOps repo must contain the name of the Key Vault within the SecretStore / ClusterSecretStore or a ConfigMap linking to it
 - Must create secrets as K8s secrets
 
-## Important Links
+## Resources
 
 - [Sealed Secrets with Flux v2](https://toolkit.fluxcd.io/guides/sealed-secrets/)
 - [Mozilla SOPS with Flux v2](https://toolkit.fluxcd.io/guides/mozilla-sops/)

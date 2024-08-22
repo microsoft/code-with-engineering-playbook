@@ -49,7 +49,7 @@ Code changes released into the *test* environment typically targets the main bra
 
 The very first deployment of any application should be showcased to the customer in a production-like environment (*UAT*) to solicit feedback early. The UAT environment is used to obtain product owner sign-off acceptance to ultimately promote the release to production.
 
-#### Criteria for a production-like environment
+#### Criteria for a Production-Like Environment
 
 * Runs the same operating system as production.
 * Has the same software installed as production.
@@ -57,7 +57,7 @@ The very first deployment of any application should be showcased to the customer
 * Mirrors production's networking topology.
 * Simulated production-like load tests are executed following a release to surface any latency or throughput degradation.
 
-#### Modeling your Release Pipeline
+#### Modeling Your Release Pipeline
 
 It's critical to model your test and release process to establish a common understanding between the application engineers and customer stakeholders. Specifically aligning expectations for how many cloud environments need to be pre-provisioned as well as defining sign-off gate roles and responsibilities.
 
@@ -85,7 +85,7 @@ The stages within your release workflow are ultimately testing a version of your
 
 A release should be running for a period of time before it's considered live and allowed to accept user traffic. These *warm up* activities may include application server(s) and database(s) pre-fill any dependent cache(s) as well as establish all service connections (eg *connection pool allocations, etc*).
 
-#### Pre-production releases
+#### Pre-production Releases
 
 Application release candidates should be deployed to a staging environment similar to production for carrying out final manual/automated tests (*including capacity testing*). Your production and staging / pre-prod cloud environments should be setup at the beginning of your project.
 
@@ -135,13 +135,13 @@ Canary releases simplify rollbacks as you can avoid routing users to bad applica
 
 Try to limit the number of versions of your application running parallel in production, as it can complicate maintenance and monitoring controls.
 
-### Low code solutions
+### Low Code Solutions
 
 Low code solutions have increased their participation in the applications and processes and because of that it is required that a proper conjunction of disciplines improve their development.
 
 Here is a guide for [continuous deployment for Low Code Solutions](recipes/cd-on-low-code-solutions.md).
 
-## References
+## Resources
 
 * [Continuous Delivery](https://www.continuousdelivery.com/) by Jez Humble, David Farley.
 * [Continuous integration vs. continuous delivery vs. continuous deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)

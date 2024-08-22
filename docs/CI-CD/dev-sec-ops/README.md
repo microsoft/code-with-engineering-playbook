@@ -1,6 +1,6 @@
 # DevSecOps
 
-## The concept of DevSecOps
+## The Concept of DevSecOps
 
 DevSecOps or DevOps security is about introducing security earlier in the life cycle of application development (a.k.a shift-left), thus minimizing the impact of vulnerabilities and bringing security closer to development team.
 

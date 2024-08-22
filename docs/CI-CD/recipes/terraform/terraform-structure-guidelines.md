@@ -3,7 +3,7 @@
 ## Context
 When creating an infrastructure configuration, it is important to follow a consistent and organized structure to ensure maintainability, scalability and reusability of the code. The goal of this section is to briefly describe how to structure your Terraform configuration in order to achieve this.
 
-## Structuring the Terraform configuration
+## Structuring the Terraform Configuration
 
 The recommended structure is as follows:
 
@@ -42,7 +42,7 @@ modules
 ├── main
 ```
 
-## Testing the configuration
+## Testing the Configuration
 
 To test Terraform configurations, the [Terratest library](https://terratest.gruntwork.io/) is utilized. A comprehensive guide to best practices with Terratest, including unit tests, integration tests, and end-to-end tests, is available for reference [here](https://terratest.gruntwork.io/docs/testing-best-practices/unit-integration-end-to-end-test/).
 
@@ -62,7 +62,7 @@ For simple Terraform configurations, extensive unit testing might be overkill. I
 - **Validation of Key Vault contents**: Ensuring the presence of necessary keys, certificates, or secrets in the Azure Key Vault that are stored as part of resource configuration.
 - **Properties that can influence the cost or location**: This can be achieved by asserting the locations, service tiers, storage settings, depending on the properties available for the resources.
 
-## Naming convention
+## Naming Convention
 
 When naming Terraform variables, it's essential to use clear and consistent naming conventions that are easy to understand and follow. The general convention is to use lowercase letters and numbers, with underscores instead of dashes, for example: "azurerm_resource_group".
 When naming resources, start with the provider's name, followed by the target resource, separated by underscores. For instance, "azurerm_postgresql_server" is an appropriate name for an Azure provider resource. When it comes to data sources, use a similar naming convention, but make sure to use plural names for lists of items. For example, "azurerm_resource_groups" is a good name for a data source that represents a list of resource groups.
@@ -70,7 +70,7 @@ Variable and output names should be descriptive and reflect the purpose or use o
 
 Make sure you include a description for outputs and variables, as well as marking the values as 'default' or 'sensitive' when the case. This information will be captured in the generated documentation.
 
-## Generating the documentation
+## Generating the Documentation
 
 The documentation can be automatically generated based on the configuration code in your modules with the help of [terraform-docs](https://terraform-docs.io/). To generate the Terraform module documentation, go to the module folder and enter this command:
 
@@ -84,7 +84,7 @@ Then, the documentation will be generated inside the component root directory.
 
 The approach presented in this section is designed to be flexible and easy to use, making it straight forward to add new resources or update existing ones. The separation of concerns also makes it easy to reuse existing components in other projects, with all the information (modules, examples, documentation and tests) located in one place.
 
-## References and Further Reading
+## Resources
 
 - [Terraform-docs](https://github.com/terraform-docs/terraform-docs)
 - [Terraform Registry](https://registry.terraform.io/browse/modules)

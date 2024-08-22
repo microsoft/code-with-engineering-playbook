@@ -21,7 +21,7 @@ Implementing compliance involves a systematic approach that integrates regulator
 - Audit and Monitoring: Establishing mechanisms for continuous monitoring, auditing, and logging of activities within the software system to ensure compliance with regulatory requirements. This includes maintaining audit trails, generating compliance reports, and conducting regular security assessments.
 - Documentation and Record Keeping: Maintaining comprehensive documentation of compliance efforts, including policies, procedures, audit reports, risk assessments, and compliance certifications.
 
-## More information
+## Resources
 
 - [General Data Protection Regulation (GDPR)](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)
 - [Purview Compliance Manager](https://aka.ms/ComplianceManager)

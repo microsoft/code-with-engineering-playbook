@@ -57,7 +57,7 @@ subscription level (like provisioning of VM, Disk etc.)
 
 These logs can be enabled via Azure Monitor > Activity Logs and shipped to Log Analytics.
 
-### Ganglia metrics
+### Ganglia Metrics
 
 Ganglia metrics is a Cluster Utilization UI and is available on the Azure Databricks. It is great for viewing live metrics of interactive clusters. Ganglia metrics is available by default and takes
 snapshot of usage every 15 minutes. Historical metrics are stored as .png files, making it impossible to analyze data.

@@ -75,7 +75,7 @@ We can build graceful failure (or graceful degradation) into our software stack 
 
 No software service is complete without playbooks to navigate the developers through unfamiliar territory. Playbooks should be thorough and cover all known failure scenarios and mitigations.
 
-### Run maintenance exercises
+### Run Maintenance Exercises
 
 Take the time to fabricate scenarios, and run a D&D style campaign to solve your issues. This can be as elaborate as spinning up a new environment and injecting errors, or as simple as asking the "players" to navigate to a dashboard and describing would they would see in the fabricated scenario (small amounts of imagination required). The playbooks should **easily** navigate the user to the correct solution/mitigation. If not, update your playbooks.
 
@@ -92,7 +92,7 @@ Leverage automated chaos testing to see how things break. You can read this play
 * [Simmy](https://github.com/Polly-Contrib/Simmy) - A .NET library for chaos testing and fault injection integrated with the [Polly](https://github.com/App-vNext/Polly) library for resilience engineering.
 [This ISE dev blog post](https://devblogs.microsoft.com/ise/build-test-resilience-dotnet-functions/) provides code snippets as an example of how to use Polly and Simmy to implement a hypothesis-driven approach to resilience and chaos testing.
 
-## Analyze all Failures
+## Analyze All Failures
 
 Writing up a [post-mortem](https://en.wikipedia.org/wiki/Postmortem_documentation) is a great way to document the root causes, and action items for your failures. They're also a great way to track recurring issues, and create a strong case for prioritizing fixes.
 

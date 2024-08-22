@@ -1,4 +1,4 @@
-# Building Containers with Azure DevOps using DevTest Pattern
+# Building Containers with Azure DevOps Using the DevTest Pattern
 
 In this documents, we highlight learnings from applying the DevTest pattern to container development in Azure DevOps through pipelines.
 
@@ -154,7 +154,7 @@ As a last task of this pipeline to build and test the container, we set a variab
       echo '##vso[task.setvariable variable=testsPassed]true'
 ```
 
-## Push container
+## Push the Container
 
 After building and testing, if our container runs as expected, we want to release it to our Azure Container Registry (ACR) to be used by our larger application. Before that, we want to automate the push behavior and define a meaningful tag.
 
@@ -264,7 +264,7 @@ if the tests succeeded:
 If you don't want to include the `latest` tag, you can also remove the steps
 involving latest (SetLatestSuffixTag & pushSuccessfulDockerImageLatest).
 
-## References
+## Resources
 
 - [DevTest pattern](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/dev-test-paas)
 - [Azure Docs on Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables-devops-services)

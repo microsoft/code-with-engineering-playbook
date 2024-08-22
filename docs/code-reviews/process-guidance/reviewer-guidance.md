@@ -9,9 +9,9 @@ Since parts of reviews can be automated via linters and such, human reviewers ca
 
 Code reviews should use the below guidance and checklists to ensure positive and effective code reviews.
 
-## General guidance
+## General Guidance
 
-### Understand the code you are reviewing
+### Understand the Code You are Reviewing
 
 - Read every line changed.
 - If we have a stakeholder review, it’s not necessary to run the PR unless it aids your understanding of the code.
@@ -19,17 +19,17 @@ Code reviews should use the below guidance and checklists to ensure positive and
 - If you don’t fully understand a change in a file because you don’t have context, click to view the whole file and read through the surrounding code or checkout the changes and view them in IDE.
 - Ask the author to clarify.
 
-### Take your time and keep focus on scope
+### Take Your Time and Keep Focus on Scope
 
 You shouldn't review code hastily but neither take too long in one sitting. If you have many pull requests (PRs) to review or if the complexity of code is demanding, the recommendation is to take a break between the reviews to recover and focus on the ones you are most experienced with.
 
 Always remember that a goal of a code review is to verify that the goals of the corresponding task have been achieved. If you have concerns about the related, adjacent code that isn't in the scope of the PR, address those as separate tasks (e.g., bugs, technical debt). Don't block the current PR due to issues that are out of scope.
 
-## Foster a positive code review culture
+## Foster a Positive Code Review Culture
 
 Code reviews play a critical role in product quality and it should not represent an arena for long discussions or even worse a battle of egos. What matters is a bug caught, not who made it, not who found it, not who fixed it. The only thing that matters is having the best possible product.
 
-## Be considerate
+## Be Considerate
 
 - Be positive – encouraging, appreciation for good practices.
 - Prefix a “point of polish” with “Nit:”.
@@ -68,7 +68,7 @@ Code reviews play a critical role in product quality and it should not represent
 - Does the code add functionality that isn’t needed?
 - Can the code be understood easily by code readers?
 
-### Naming/readability
+### Naming/Readability
 
 - Did the developer pick good names for functions, variables, etc?
 

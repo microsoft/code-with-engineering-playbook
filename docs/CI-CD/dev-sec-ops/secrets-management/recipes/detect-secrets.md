@@ -1,4 +1,4 @@
-# Credential Scanning Tool: detect-secrets
+# Credential Scanning Tool: `detect-secrets`
 
 ## Background
 
@@ -28,7 +28,7 @@ python3 -m pip install detect-secrets
 detect-secrets scan > .secrets.baseline
 ```
 
-## Pre-commit hook
+## Pre-Commit Hook
 
 It is recommended to use `detect-secrets` in your development environment as a Git pre-commit hook.
 
@@ -45,7 +45,7 @@ repos:
         args: ['--baseline', '.secrets.baseline']
 ```
 
-## Usage in CI pipelines
+## Usage in CI Pipelines
 
 ```sh
 # backup the list of known secrets

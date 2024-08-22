@@ -68,13 +68,13 @@ npx write-good *.md
 
 Write Good is also available as an [extension for VS Code](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter)
 
-## VS Code Extensions
+## VSCode Extensions
 
 ### Write Good Linter
 
 The [`Write Good Linter Extension`](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter) integrates with VS Code to give grammar and language advice while editing the document.
 
-### markdownlint extension
+### markdownlint Extension
 
 The [`markdownlint extension`](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) examines the Markdown documents, showing warnings for rule violations while editing.
 
@@ -166,7 +166,7 @@ Save your guidelines together with your documentation, so they are easy to refer
 - Avoid using symbols and special characters in headers, this causes problems with anchor links
 - Avoid links in headers
 
-### Links
+### Resources
 
 - Avoid duplication of content, instead link to the `single source of truth`
 - Link but don't summarize. Summarizing content on another page leads to the content living in two places
@@ -186,7 +186,7 @@ Save your guidelines together with your documentation, so they are easy to refer
 - Name images appropriately, avoiding generic names like `screenshot.png`
 - Avoid adding large images or videos to source control, link to an external location instead
 
-### Emphasis and special sections
+### Emphasis and Special Sections
 
 - Use **bold** or _italic_ to emphasize
   > For sections that everyone reading this document needs to be aware of, use blocks

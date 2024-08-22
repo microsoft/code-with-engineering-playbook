@@ -35,7 +35,7 @@ A Correlation ID is a unique identifier that is added to the very first interact
 
 Log correlation is the ability to track disparate events through different parts of the application. Having a Correlation ID provides more context making it easy to build rules for reporting and analysis.
 
-### Secondary reporting/observer systems
+### Secondary Reporting/Observer Systems
 
 Using Correlation ID helps secondary systems to correlate data without application context. Some examples - generating metrics based on tracing data, integrating runtime/system diagnostics etc. For example, feeding AppInsights data and correlating it to infrastructure issues.
 

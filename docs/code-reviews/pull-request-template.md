@@ -1,4 +1,4 @@
-# Pull Request template
+# Pull Request Template
 
 ```markdown
 # [Work Item ID](./link-to-the-work-item)
@@ -31,7 +31,7 @@ For more information about how to contribute to this repo, visit this [page](htt
 - [ ] I ran the lint checks which produced no new errors nor warnings for my changes.
 - [ ] I have checked to ensure there aren't other open Pull Requests for the same update/change.
 
-## Does this introduce a breaking change?
+## Does This Introduce a Breaking Change?
 
 ---
 
@@ -49,7 +49,7 @@ For more information about how to contribute to this repo, visit this [page](htt
 >   - Which test sets were used.
 >   - Description of test scenarios that you have tried.
 
-## Any relevant logs or outputs
+## Any Relevant Logs or Outputs
 
 ---
 
@@ -58,7 +58,7 @@ For more information about how to contribute to this repo, visit this [page](htt
 > - When you want to share long logs upload to:
 >  `(StorageAccount)/pr-support/attachments/(PR Number)/(yourFiles) using [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)` or [portal.azure.com](https://portal.azure.com) and insert the link here.
 
-## Other information or known dependencies
+## Other Information or Known Dependencies
 
 ---
 

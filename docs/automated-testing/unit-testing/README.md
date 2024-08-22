@@ -140,7 +140,7 @@ public void TrySomething_NoElements_ReturnsFalse()
 }
 ```
 
-#### Keep tests small and test only one thing
+#### Keep Tests Small and Test Only One Thing
 
 Unit tests should be short and test only one thing. This makes it easy to diagnose when there was a failure without
 needing something like which line number the test failed at. When using [Arrange/Act/Assert](#arrangeactassert), think
@@ -150,7 +150,7 @@ There is some disagreement on whether testing one thing means "assert one thing"
 multiple asserts if needed". Both have their advantages and disadvantages, but as with most technical disagreements
 there is no "right" answer. Consistency when writing your tests one way or the other is more important!
 
-#### Using a standard naming convention for all unit tests
+#### Using a Standard Naming Convention for All Unit Tests
 
 Without having a set standard convention for unit test names, unit test names end up being either not descriptive
 enough, or duplicated across multiple different test classes. Establishing a standard is not only important for keeping
@@ -208,9 +208,9 @@ extremely fast and allows for easy TDD:
 - [Infinitest](http://infinitest.github.io/) for Java
 - [PyCrunch](https://plugins.jetbrains.com/plugin/13264-pycrunch--live-testing) for Python
 
-## Things to consider
+## Things to Consider
 
-### Transferring responsibility to integration tests
+### Transferring Responsibility to Integration Tests
 
 In some situations it is worth considering to include the integration tests in the inner development loop to provide a sufficient code coverage to ensure the system is working properly. The prerequisite for this approach to be successful is to have integration tests being able to execute at a speed comparable to that of unit tests both locally and in a CI environment. Modern application frameworks like .NET or Spring Boot combined with the right mocking or stubbing approach for external dependencies offer excellent capabilities to enable such scenarios for testing.
 

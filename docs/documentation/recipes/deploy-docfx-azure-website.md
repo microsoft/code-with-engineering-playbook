@@ -1,4 +1,4 @@
-# Deploy the DocFx Documentation website to an Azure Website automatically
+# Deploy the DocFx Documentation Website to an Azure Website Automatically
 
 In the article [Using DocFx and Companion Tools to generate a Documentation website](using-docfx-and-tools.md) the process is described to generate content of a documentation website using DocFx. This document describes how to setup an Azure Website to host the content and automate the deployment to it using a pipeline in Azure DevOps.
 
@@ -14,9 +14,9 @@ You can use tools like [Chocolatey](https://chocolatey.org/) to install Terrafor
 choco install terraform
 ```
 
-## 2. Set the proper variables
+## 2. Set the Proper Variables
 
-> **IMPORTANT:** Make sure you modify the value of the **app_name**, **rg_name** and **rg_location** variables. The *app_name* value is appended by **azurewebsites.net** and must be unique. Otherwise the script will fail that it cannot create the website.
+> **Note:** Make sure you modify the value of the **app_name**, **rg_name** and **rg_location** variables. The *app_name* value is appended by **azurewebsites.net** and must be unique. Otherwise the script will fail that it cannot create the website.
 
 In the Quick Start, authentication is disabled. If you want that enabled, make sure you have create an *Application* in the Azure AD and have the *client ID*. This client id must be set as the value of the **client_id** variable in *variables.tf*. In the *main.tf* make sure you uncomment the authentication settings in the *app-service*. For more information see [Configure Azure AD authentication - Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad).
 
@@ -44,14 +44,11 @@ Export-PfxCertificate -cert $path -FilePath [FILENAME].pfx -Password $pwd
 The certificate needs to be stored in the common Key Vault. Go to `Settings > Certificates` in the left menu of the Key Vault and click `Generate/Import`. Provide these details:
 
 * Method of Certificate Creation: `Import`
-
 * Certificate name: e.g. `ssl-certificate`
-
 * Upload Certificate File: select the file on disc for this.
-
 * Password: this is the [PASSWORD] we reference earlier.
 
-### Custom domain registration
+### Custom Domain Registration
 
 To use a custom domain a few things need to be done. The process in the Azure portal is described in the article [Tutorial: Map an existing custom DNS name to Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain). An important part is described under the header [Get a domain verification ID](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain#get-a-domain-verification-id). This ID needs to be registered with the DNS description as a TXT record.
 
@@ -61,11 +58,11 @@ Important to know is that this `Custom Domain Verification ID` is the same for a
 
 The Azure App Service needs to access the Key Vault to get the certificate. This is needed for the first run, but also when the certificate is renewed in the Key Vault. For this purpose the Azure App Service accesses the Key Vault with the App Service resource provided identity. This identity can be found with the service principal name **abfa0a7c-a6b6-4736-8310-5855508787cd** or **Microsoft Azure App Service** and is of type **Application**. This ID is the same for all Azure subscriptions. It needs to have Get-permissions on secrets and certificates. For more information see this article [Import a certificate from Key Vault](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate#import-a-certificate-from-key-vault).
 
-### Add the custom domain and SSL certificate to the App Service
+### Add the Custom Domain and SSL Certificate to the App Service
 
 Once we have the SSL certificate and there is a complete DNS registration as described, we can uncomment the code in the Terraform script from the Quick Start folder to attach this to the App Service. In this script you need to reference the certificate in the common Key Vault and use it in the custom hostname binding. The custom hostname is assigned in the script as well. The settings `ssl_state` needs to be `SniEnabled` if you're using an SSL certificate. Now the creation of the authenticated website with a custom domain is automated.
 
-## 3. Deploy Azure resources from your local machine
+## 3. Deploy Azure Resources from Your Local Machine
 
 Open up a command prompt. For the commands to be executed, you need to have a connection to your Azure subscription. This can be done using [Azure Cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli). Type this command:
 
@@ -107,14 +104,14 @@ When asked for approval, type "yes" and ENTER. You can also add the *-auto-appro
 
 The deployment using Terraform is not included in the pipeline from the Quick Start folder as described in the next step, as that asks for more configuration. But of course that can always be added.
 
-## 4. Deploy the website from a pipeline
+## 4. Deploy the Website from a Pipeline
 
 The best way to create the resources and deploy to it, is to do this automatically in a pipeline. For this purpose the **.pipelines/documentation.yml** pipeline is provided. This pipeline is built for an Azure DevOps environment. Create a pipeline and reference this YAML file.
 
-> **IMPORTANT:** the Quick Start folder contains a web.config that is needed for deployment to IIS or Azure App Service. This enables the use of the json file for search requests. If you don't have this in place, the search of text will never return anything and result in 404's under the hood.
+> **Note:** the Quick Start folder contains a web.config that is needed for deployment to IIS or Azure App Service. This enables the use of the json file for search requests. If you don't have this in place, the search of text will never return anything and result in 404's under the hood.
 
 You have to create a Service Connection in your DevOps environment to connect to the Azure Subscription you want to deploy to.
 
-> **IMPORTANT:** set the variables **AzureConnectionName** to the name of the Service Connection and the **AzureAppServiceName** to the name you determined in the *infrastructure/variables.tf*.
+> **Note:** set the variables **AzureConnectionName** to the name of the Service Connection and the **AzureAppServiceName** to the name you determined in the *infrastructure/variables.tf*.
 
 In the Quick Start folder the pipeline uses `master` as trigger, which means that any push being done to master triggers the pipeline. You will probably change this to another branch.

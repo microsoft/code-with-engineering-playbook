@@ -35,7 +35,7 @@ steps:
       }
 ```
 
-## Pipeline Security caveat
+## Pipeline Security Caveat
 
 YAML pipelines can be triggered without the need for a pull request, this introduces a security risk.
 

@@ -34,7 +34,8 @@ These evaluations can collect two key metrics: **quantitative data** and **quali
 ## Examples
 
 One example of usability in action is the design of a website. A website that is easy to navigate, with clear labels, intuitive menus, and a logical flow of information, is more likely to be successful than one that is cluttered, confusing, and difficult to use. The latter website is likely to have a low rate of user engagement, high [bounce rates](https://backlinko.com/hub/seo/bounce-rate), and low conversion rates, as users will quickly become frustrated and abandon the site.
-## More information
+
+## Resources
 
 - [GeeksForGeeks: What is Usability?](https://www.geeksforgeeks.org/what-is-usability/)
 - [Usability.gov](https://www.usability.gov/)

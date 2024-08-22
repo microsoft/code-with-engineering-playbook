@@ -5,7 +5,7 @@ to convert the notebooks to scripts before they commit and push these files to t
 
 This document aims to automate this process in Azure DevOps, so the DSs don't need to execute anything locally.
 
-## Problem statement
+## Problem Statement
 
 A Data Science repository has this folder structure:
 

@@ -1,6 +1,6 @@
 # Template: Task Design Review
 
-**Your Task Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)**
+## [DRAFT/WIP] [Task Design Title]
 
 > When developing a design document for a new task, it should contain a detailed design proposal demonstrating how it will solve the goals outlined below.
 > Not all tasks require a design review, but when they do it is likely that there many unknowns, or the solution may be more complex.
@@ -45,6 +45,6 @@
 
 > List any open questions/concerns here.
 
-## Additional References
+## Resources
 
-> List any additional references here including links to backlog items, work items or other documents.
+> List any additional resources here including links to backlog items, work items or other documents.

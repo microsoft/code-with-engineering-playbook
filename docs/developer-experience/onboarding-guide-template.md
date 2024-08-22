@@ -28,7 +28,7 @@ When developing an onboarding document for a team, it should contain details of 
 * This can include a more in depth description with different areas of the project to help increase the project understanding.
 * It can include different sections on the various components of the project including deployment, e2e testing, repositories.
 
-## Helpful Resources and Links
+## Resources
 
 * This can include any additional links to documents related to the project
 * It may include links to backlog items, work items, wiki pages or project history.

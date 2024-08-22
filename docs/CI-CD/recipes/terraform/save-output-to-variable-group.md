@@ -1,4 +1,4 @@
-# Save terraform output to a variable group (Azure DevOps)
+# Save Terraform Output to a Variable Group (Azure DevOps)
 
 This recipe applies only to [terraform](https://www.terraform.io/) usage with Azure DevOps. It assumes your familiar with terraform commands and Azure Pipelines.
 
@@ -137,4 +137,4 @@ Roles are defined for Library items, and membership of these roles governs the o
 
 When using `System.AccessToken`, service account `<ProjectName> Build Service` identity will be used to access the Library.
 
-Please ensure in `Pipelines > Library > Security` section that this service account has `Administrator` role at the `Library` or `Variable Group` level to create/update/delete variables (see. [Library of assets](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/?view=azure-devops) for additional information)).
+Please ensure in `Pipelines > Library > Security` section that this service account has `Administrator` role at the `Library` or `Variable Group` level to create/update/delete variables (see. [Library of assets](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/?view=azure-devops) for additional information).

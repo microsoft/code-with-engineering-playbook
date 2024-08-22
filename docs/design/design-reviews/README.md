@@ -58,7 +58,7 @@ Domain experts should participate in design review sessions as needed
 
 Please see our [Design Review Recipes](./recipes/README.md) for guidance on design process.
 
-### Sync Design Reviews via in-person / virtual meetings
+### Sync Design Reviews via In-Person / Virtual Meetings
 
 Joint meetings with dev crew, subject-matter experts (SMEs) and customer engineers
 

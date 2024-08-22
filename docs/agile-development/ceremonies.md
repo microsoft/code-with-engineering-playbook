@@ -1,6 +1,6 @@
 # Agile Ceremonies
 
-## Sprint planning
+## Sprint Planning
 
 **Goals**
 
@@ -10,7 +10,7 @@
 
 > **Note:** Self assignment by team members can give a feeling of fairness in how work is split in the team. Sometime, this ends up not being the case as it can give an advantage to the loudest or more experienced voices in the team. Individuals also tend to stay in their comfort zone, which might not be the right approach for their own growth.*
 
-### Sprint goal
+### Sprint Goal
 
 Consider defining a sprint goal, or list of goals for each sprint. Effective sprint goals are a concise bullet point list of items. A Sprint goal can be created first and used as an input to choose the Stories for the sprint. A sprint goal could also be created from the list of stories that were picked for the Sprint.
 
@@ -52,7 +52,7 @@ Examples of approaches for task creation and assignment:
 
 > **Note**: Depending on the seniority of the team, consider splitting into tasks before sprint planning. This can help getting out of sprint planning with all work assigned. It also increase clarity for junior engineers.
 
-### Sprint planning links
+### Sprint Planning Resources
 
 - [Definition of Ready](team-agreements/definition-of-ready.md)
 - [Sprint Goal Template](https://www.scrum.org/resources/blog/five-questions-sprint-goal)
@@ -71,35 +71,35 @@ Examples of approaches for task creation and assignment:
 
 Rough estimation is usually done for a generic SE 2 dev.
 
-### Example 1: T-shirt sizes
+### Example 1: T-shirt Sizes
 
 - The team use t-shirt sizes (S, M, L, XL) and agrees in advance which size fits a sprint. In this example: S, M fits a sprint, L, XL too big for a sprint and need to be split / refined
 - The dev lead with support of the team roughly estimates how much S and M stories can be done in the first sprints
 - This rough estimation is refined over time and used to as an input for future sprint planning and to adjust project end date forecasting
 
-### Example 2: Single indicator
+### Example 2: Single Indicator
 
 - The team uses a single indicator: "does this story fits in one sprint?", if not, the story needs to be split
 - The dev lead with support of the team roughly estimates how many stories can be done in the first sprints
 - How many stories are done in each sprint on average is used as an input for future sprint planning and as an indicator to adjust project end date forecasting
 
-### Example 3: Planning poker
+### Example 3: Planning Poker
 
 - The team does planning poker and estimates in story points
 - Story points are roughly used to estimate how much can be done in next sprint
 - The dev lead and the TPM uses the past sprints and observed velocity to adjust project end date forecasting
 
-### Other considerations
+### Other Considerations
 
 - Estimating stories using story points in smaller project does not always provide the value it would in bigger ones.
 - Avoid converting story points or t-shirt sizes to days.
 
-#### Measure estimation accuracy
+#### Measure Estimation Accuracy
 
 - Collect data to monitor estimation accuracy and sprint completion over time to drive improvements.
 - Use the sprint goal to understand if the estimation was correct. If the sprint goal is met: does anything else matter?
 
-#### Scrum practices
+#### Scrum Practices
 
 While Scrum does not prescribe how to size work, Professional Scrum is biased away from absolute estimation (hours, function points, ideal-days, etc.) and towards relative sizing.
 
@@ -107,15 +107,15 @@ While Scrum does not prescribe how to size work, Professional Scrum is biased aw
 
 Planning Poker is a collaborative technique to assign relative size. Developers may choose whatever units they want - story points and t-shirt sizes are examples of units.
 
-**'Same-Size' PBIs**
+**'Same-Size' Product Backlog Items (PBIs)**
 
 'Same-Size' PBIs is a relative estimation approach that involves breaking items down small enough that they are roughly the same size. Velocity can be understood as a count of PBIs; this is sometimes used by teams doing continuously delivery.
 
-**'Right-Size' PBIs**
+**'Right-Size' Product Backlog Items (PBIs)**
 
 'Right-Size' PBIs is a relative estimation approach that involves breaking things down small enough to deliver value in a certain time period (i.e. get to Done by the end of a Sprint). This is sometimes associated with teams utilizing flow for forecasting. Teams use historical data to determine if they think they can get the PBI done within the confidence level that their historical data says they typically get a PBI done.
 
-### Estimation links
+### Estimation Resources
 
 - [The Most Important Thing You Are Missing about Estimation](https://www.scrum.org/resources/blog/most-important-thing-you-are-missing-about-estimation)
 
@@ -137,11 +137,11 @@ Planning Poker is a collaborative technique to assign relative size. Developers 
 
 Use the following retrospectives techniques to address specific trends that might be emerging on an engagement
 
-### 5 whys
+### 5 Whys
 
 If a team is confronting a problem and is unsure of the exact root cause, the 5 whys exercise taken from the business analysis sector can help get to the bottom of it. For example, if a team cannot get to *Done* each Sprint, that would go at the top of the whiteboard. The team then asks why that problem exists, writing that answer in the box below.  Next, the team asks why again, but this time in response to the *why* they just identified. Continue this process until the team identifies an actual root cause, which usually becomes apparent within five steps.
 
-### Processes, tools, individuals, interactions and the definition of done
+### Processes, Tools, Individuals, Interactions and the Definition of Done
 
 This approach encourages team members to think more broadly.  Ask team members to identify what is going well and ideas for improvement within the categories of processes, tools, individuals/interactions, and the Definition of Done.  Then, ask team members to vote on which improvement ideas to focus on during the upcoming Sprint.
 
@@ -149,7 +149,7 @@ This approach encourages team members to think more broadly.  Ask team members 
 
 This retrospective technique incorporates the concept of visioning. Using this technique, you ask team members where they would like to go?  Decide what the team should look like in 4 weeks, and then ask what is holding them back from that and how they can resolve the impediment.  If you are focusing on specific improvements, you can use this technique for one or two Retrospectives in a row so that the team can see progress over time.
 
-### Retrospective links
+### Retrospective Resources
 
 - [Agile Retrospective: Making Good Teams Great](https://www.goodreads.com/book/show/721338.Agile_Retrospectives)
 - [Retrospective](https://scrumguides.org/scrum-guide.html#sprint-retrospective 'Retrospective')
@@ -165,11 +165,11 @@ This retrospective technique incorporates the concept of visioning. Using this t
 - Consider not pre-recording sprint demos in advance. You can record the demo meeting and archive them.
 - A demo does not have to be about running code. It can be showing documentation that was written.
 
-### Sprint demo links
+### Sprint Demo Resources
 
 - [Sprint Review/Demo](https://scrumguides.org/scrum-guide.html#sprint-review 'Sprint Review')
 
-## Stand-up
+## Stand-Up
 
 **Goals**
 
@@ -185,6 +185,6 @@ This retrospective technique incorporates the concept of visioning. Using this t
 - Stand ups should include everyone involved in the project, including the customer.
 - Projects with widely divergent time zones should be avoided if possible, but if you are on one, you should adapt the standups to meet the needs and time constraints of all team members.
 
-### Stand-up links
+### Stand-Up Resources
 
 - [Stand-Up/Daily Scrum](https://scrumguides.org/scrum-guide.html#daily-scrum 'Stand-up/Daily Scrum')

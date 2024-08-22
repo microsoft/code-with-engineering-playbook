@@ -37,7 +37,7 @@ Describe the components of the technique and how they interact with each other a
 
 Anything required in advance?
 
-### High-level Step-by-step
+### High-level Step-by-Step
 
 1.
 1.

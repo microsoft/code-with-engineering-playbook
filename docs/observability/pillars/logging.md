@@ -49,11 +49,11 @@ This approach isn't without trade-offs:
 - Ensure personal identifiable information policies and restrictions are followed.
 - Ensure errors and exceptions in dependent services are captured and logged. For example, if an application uses Redis cache, Service Bus or any other service, any errors/exceptions raised while accessing these services should be captured and logged.
 
-### If there's sufficient log data, is there a need for instrumenting metrics?
+### If there's Sufficient Log Data, is there a Need for Instrumenting Metrics?
 
 [Logs vs Metrics vs Traces](../log-vs-metric-vs-trace.md) covers some high level guidance on when to utilize metric data and when to use log data. Both have a valuable part to play in creating observable systems.
 
-### Having problems identifying what to log?
+### Having Problems Identifying What to Log?
 
 **At application startup**:
 

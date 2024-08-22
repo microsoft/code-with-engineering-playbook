@@ -3,8 +3,8 @@
 This document is used to track key decisions that are made during the course of the project.
 This can be used at a later stage to understand why decisions were made and by whom.
 
-| **Decision**                      | **Date**   | **Alternatives Considered**                                     | **Reasoning**                                                                                                                                                    | **Detailed doc**                              | **Made By** | **Work Required** |
-|-----------------------------------|------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-------------|-------------------|
+| Decision | Date | Alternatives Considered | Reasoning | Detailed doc | Made By | Work Required |
+| -- | -- | -- | -- | -- | -- | -- |
 | Use Architecture Decision Records | 01/25/2021 | Standard Design Docs                                            | An easy and low cost solution of tracking architecture decisions over the lifetime of a project                                                                  | Record Architecture Decisions                 | Dev Team    | #21654            |
 | Use ArgoCD                        | 01/26/2021 | FluxCD                                                          | ArgoCD is more feature rich, will support more scenarios, and will be a better tool to put in our tool belts. So we have decided at this point to go with ArgoCD | [GitOps Trade Study](Trade-Studies/GitOps.md) | Dev Team    | #21672            |
 | Use Helm                          | 01/28/2021 | Kustomize, Kubes, Gitkube, Draft                                | Platform maturity, templating, ArgoCD support                                                                                                                    | K8s Package Manager Trade Study               | Dev Team    | #21674            |

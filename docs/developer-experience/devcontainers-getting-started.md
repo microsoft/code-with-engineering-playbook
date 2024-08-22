@@ -9,7 +9,7 @@ If you are a developer and have experience with Visual Studio Code (VS Code) or 
 - Experience with VS Code
 - Experience with Docker
 
-## What are dev containers?
+## What are Dev Containers?
 
 Development containers are a VS Code feature that allows developers to package a local development tool stack into the internals of a Docker container while also bringing the VS Code UI experience with them. Have you ever set a breakpoint inside a Docker container? Maybe not. Dev containers make that possible. This is all made possible through a VS Code extension called the [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) that works together with Docker to spin-up a VS Code Server within a Docker container. The VS Code UI component remains local, but your working files are volume mounted into the container. The diagram below, taken directly from the [official VS Code docs](https://code.visualstudio.com/docs/remote/containers), illustrates this:
 
@@ -19,7 +19,7 @@ If the above diagram is not clear, a basic analogy that might help you intuitive
 
 To set yourself up for the dev container experience described above, use your VS Code's Extension Marketplace to install the [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
 
-## How can dev containers improve project collaboration?
+## How can Dev Containers Improve Project Collaboration?
 
 VS Code dev containers have improved project collaboration between developers on recent team projects by addressing two very specific problems:
 
@@ -54,7 +54,7 @@ $ tree vs-code-remote-try-python  # main repo directory
 
 For a list of devcontainer.json configuration properties, visit VS Code documentation on [dev container properties](https://code.visualstudio.com/docs/remote/devcontainerjson-reference).
 
-## How do I decide which dev container is right for my use case?
+## How do I Decide Which Dev Container is Right for my Use Case?
 
 Fortunately, VS Code has a repo gallery of platform specific folders that host dev container definitions (.devcontainer directories) to make getting started with dev containers easier. The code snippet below shows a list of gallery folders that come directly from the [VS Code dev container gallery repo](https://github.com/microsoft/vscode-dev-containers/tree/master/containers):
 
@@ -79,4 +79,4 @@ Here are the final high-level steps it takes to build a dev container:
 
 ## Going further
 
-There are use cases where you would want to go further in configuring your Dev Container. [More details here](going-further.md)
+There are use cases where you would want to go further in configuring your Dev Container. [More details here](devcontainers-going-further.md)

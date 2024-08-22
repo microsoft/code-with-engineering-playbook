@@ -38,7 +38,7 @@ git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
 ```
 
-## Basic workflow
+## Basic Workflow
 
 A basic Git workflow is as follows; you can find more information on the specific steps below.
 
@@ -202,7 +202,7 @@ git push
 
 If no other conflicts appear, the PR can now be merged, and your branch deleted. Use `squash` to reduce your changes into a single commit, so the commit history can be within an acceptable size.
 
-### Stashing changes
+### Stashing Changes
 
 `git stash` is super handy if you have un-committed changes in your working directory, but you want to work on a different branch. You can run `git stash`, save the un-committed work, and revert to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
 
@@ -218,7 +218,7 @@ Or you can move the current state into a new branch:
 git stash branch <new_branch_to_save_changes>
 ```
 
-### Recovering lost commits
+### Recovering Lost Commits
 
 If you "lost" a commit that you want to return to, for example to revert a `git rebase` where your commits got squashed, you can use `git reflog` to find the commit:
 
@@ -271,7 +271,7 @@ For more information on commit message conventions, see:
 * [Information in commit messages](https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages)
 * [On commit messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
 
-## Managing remotes
+## Managing Remotes
 
 A local git repository can have one or more backing remote repositories. You can list the remote repositories using `git remote` - by default, the remote repository you cloned from will be called origin
 
@@ -281,12 +281,12 @@ origin  https://github.com/microsoft/code-with-engineering-playbook.git (fetch)
 origin  https://github.com/microsoft/code-with-engineering-playbook.git (push)
 ```
 
-### Working with forks
+### Working with Forks
 
 You can set multiple remotes. This is useful for example if you want to work with a forked version of the repository.
 For more info on how to set upstream remotes and syncing repositories when working with forks see GitHub's [Working with forks documentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks).
 
-### Updating the remote if a repository changes names
+### Updating the Remote if a Repository Changes Names
 
 If the repository is changed in some way, for example a name change, or if you want to switch between HTTPS and SSH you need to update the remote
 
@@ -305,9 +305,9 @@ origin  https://hostname/username/new-repository-name.git (fetch)
 origin  https://hostname/username/new-repository-name.git (push)
 ```
 
-## Rolling back changes
+## Rolling Back Changes
 
-### Reverting and deleting commits
+### Reverting and Deleting Commits
 
 To "undo" a commit, run the following two commands: `git revert` and `git reset`. `git revert` creates a new commit that undoes commits while `git reset` allows deleting commits entirely from the commit history.
 
@@ -341,7 +341,7 @@ The above command will open an interactive session in an editor (for example vim
 
 Running rebase will locally modify the history, after this one can use `force` to push the changes to remote without the deleted commit.
 
-## Using submodules
+## Using Submodules
 
 Submodules can be useful in more complex deployment and/or development scenarios
 
@@ -360,13 +360,13 @@ git submodule foreach git checkout master
 git submodule foreach git pull origin
 ```
 
-## Working with images, video and other binary content
+## Working with Images, Video and Other Binary Content
 
 Avoid committing frequently changed binary files, such as large images, video or compiled code to your git repository. Binary content is not diffed like text content, so cloning or pulling from the repository may pull each revision of the binary file.
 
 One solution to this problem is `Git LFS (Git Large File Storage)` - an open source Git extension for versioning large files. You can find more information on Git LFS in the [Git LFS and VFS document](git-lfs-and-vfs.md).
 
-## Working with large repositories
+## Working with Large Repositories
 
 When working with a very large repository of which you don't require all the files, you can use `VFS for Git` - an open source Git extension that virtualize the file system beneath your Git repository, so that you seem to work in a regular working directory but while VFS for Git only downloads objects as they are needed. You can find more information on VFS for Git in the [Git LFS and VFS document](git-lfs-and-vfs.md).
 
@@ -374,7 +374,5 @@ When working with a very large repository of which you don't require all the fil
 
 * Visual Studio Code is a cross-platform powerful source code editor with built in git commands. Within Visual Studio Code editor you can review diffs, stage changes, make commits, pull and push to your git repositories.
 You can refer to [Visual Studio Code Git Support](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support) for documentation.
-
 * Use a shell/terminal to work with Git commands instead of relying on [GUI clients](https://git-scm.com/downloads/guis/).
-
 * If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and use your favorite shell/terminal.

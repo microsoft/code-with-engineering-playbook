@@ -1,6 +1,6 @@
 # Template: Milestone / Epic Design Review
 
-**Your Milestone/Epic Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)**
+## [DRAFT/WIP] [Milestone/Epic Design Title]
 
 > Please refer to the [milestone/epic design review recipe](../milestone-epic-design-review-recipe.md) for things to keep in mind when using this template.
 
@@ -71,6 +71,6 @@
 
 > Include any open questions and concerns.
 
-## Additional References
+## Resources
 
-> Include any additional references including links to work items or other documents.
+> Include any additional resources including links to work items or other documents.

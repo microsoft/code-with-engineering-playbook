@@ -2,8 +2,6 @@
 
 The Memory application leverages [Azure DevOps](https://learn.microsoft.com/en-gb/azure/devops/index?view=azure-devops) for work item tracking as well as continuous integration (CI) and continuous deployment (CD).
 
----
-
 ## Environments
 
 The Memory project uses multiple environments to isolate and test changes before promoting releases to the global user base.
@@ -32,8 +30,7 @@ The local environment is used by individual software engineers during the develo
 
 Engineers leverage some components from the deployed development environment that are not available on certain platforms or are unable to run locally.
 
-- CosmosDB
-  - Emulator only exists for Windows
+- CosmosDB (Emulator only exists for Windows)
 
 The local environment also does not use Azure Traffic Manager.
 The frontend web app directly communicates to the backend REST API typically running on a separate localhost port mapping.
@@ -67,8 +64,6 @@ Changes to this environment are gated by manual approval by your product's leade
 - West US (westus)
 - Central US (centralus)
 - East US (eastus)
-
----
 
 ## Environment Variable Group
 

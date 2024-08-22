@@ -1,6 +1,6 @@
 # Template: Technical Spike
 
-**Spike: {Name}**
+## Spike: [Spike Name]
 
 - **Conducted by:** {Names and at least one email address for follow-up questions}
 - **Backlog Work Item:** {Link to the work item to provide more context}

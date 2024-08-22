@@ -1,4 +1,4 @@
-# CI Pipeline for better documentation
+# CI Pipeline for Better Documentation
 
 ## Introduction
 
@@ -20,7 +20,7 @@ ones
 We have been using this pipeline for more than one year in different engagements and always received great feedback from the
 customers!
 
-## How does it work
+## How Does it Work
 
 To start using this pipeline:
 
@@ -32,6 +32,6 @@ To start using this pipeline:
           the name of the `.azdo` folder.
 1. Create the pipeline in Azure DevOps or GitHub
 
-## References
+## Resources
 
 [Markdown Code Reviews in the Engineering Fundamentals Playbook](https://microsoft.github.io/code-with-engineering-playbook/code-reviews/recipes/markdown/#code-review-checklist)

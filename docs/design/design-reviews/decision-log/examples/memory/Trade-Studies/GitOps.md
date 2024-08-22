@@ -146,7 +146,7 @@ This section should contain a table that has each solution rated against each of
 ArgoCD is more feature rich, will support more scenarios, and will be a better tool to put in our tool belts.
 So we have decided at this point to go with ArgoCD.
 
-## References
+## Resources
 
 1. [GitOps](https://www.gitops.tech/#:~:text=What%20is%20GitOps?%20GitOps%20is%20a%20way%20of,familiar%20with,%20including%20Git%20and%20Continuous%20Deployment%20tools.)
 1. [Enforcement](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-azure-policy)

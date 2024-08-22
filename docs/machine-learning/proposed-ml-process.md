@@ -35,11 +35,11 @@ The proposed ML development process consists of:
     * Deployment
     * Monitoring and Observability
 
-### Version control
+### Version Control
 
 * During all stages of the process, it is suggested that artifacts should be version-controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more [here](ml-experimentation.md#source-control-and-folder-or-package-structure).
 
-### Understanding the problem
+### Understanding the Problem
 
 * Define the business problem for the ML project:
   * Agree on the success criteria with the customer.

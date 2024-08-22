@@ -12,11 +12,11 @@ Below are some common operations in MLOps or Data Science projects, along with s
 * [Data validation](#data-validation)
 * [Model testing](#model-testing)
 
-## Saving and loading data
+## Saving and Loading Data
 
 Reading and writing to csv, reading images or loading audio files are common scenarios encountered in MLOps projects.
 
-### Example: Verify that a load function calls read_csv if the file exists
+### Example: Verify that a Load Function Calls read_csv if the File Exists
 
 `utils.py`
 
@@ -80,7 +80,7 @@ def test_load_data_does_not_call_read_csv_if_not_exists(mock_isfile, mock_read_c
     assert utils.pd.read_csv.call_count == 0
 ```
 
-### Example: Using the same sample data for multiple tests
+### Example: Using the Same Sample Data for Multiple Tests
 
 If more than one test will use the same sample data, fixtures are a good way to reuse this sample data. The sample data can be the contents of a json file, or a csv, or a DataFrame, or even an image.
 
@@ -105,7 +105,7 @@ def test_extract_features_extracts_price_per_area(house_features_json):
   assert extracted_features['price_per_area'] == 100
 ```
 
-## Transforming data
+## Transforming Data
 
 For cleaning and transforming data, test fixed input and output, but try to limit each test to one verification.
 
@@ -161,7 +161,7 @@ def test_resize_image_generates_the_correct_size(orig_height, orig_width, expect
   resized_image.shape[:2] = (expected_height, expected_width)
 ```
 
-## Model load or predict
+## Model Load or Predict
 
 When **unit** testing we should mock model load and model predictions similarly to mocking file access.
 

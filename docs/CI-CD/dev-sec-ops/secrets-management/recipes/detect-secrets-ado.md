@@ -1,4 +1,4 @@
-# Running detect-secrets in Azure DevOps Pipelines
+# Running `detect-secrets` in Azure DevOps Pipelines
 
 ## Overview
 

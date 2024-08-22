@@ -6,7 +6,7 @@ At times, these systems are developed in different technologies by different tea
 
 ![End to End Testing](./images/e2e-testing.png)
 
-## Why E2E Testing [The Why]
+## Why E2E Testing
 
 In many commercial software application scenarios, a modern software system consists of its interconnection with multiple sub-systems. These sub-systems can be within the same organization or can be components of different organizations. Also, these sub-systems can have somewhat similar or different lifetime release cycle from the current system. As a result, if there is any failure or fault in any sub-system, it can adversely affect the whole software system leading to its collapse.
 
@@ -16,7 +16,7 @@ The above illustration is a testing pyramid from [Kent C. Dodd's blog](https://b
 
 The majority of your tests are at the bottom of the pyramid. As you move up the pyramid, the number of tests gets smaller. Also, going up the pyramid, tests get slower and more expensive to write, run, and maintain. Each type of testing vary for its purpose, application and the areas it's supposed to cover. For more information on comparison analysis of different testing types, please see this [## Unit vs Integration vs System vs E2E Testing](../README.md) document.
 
-## E2E Testing Design Blocks [The What]
+## E2E Testing Design Blocks
 
 ![E2E Testing Design Framework](./images/e2e-blocks.png)
 
@@ -45,7 +45,7 @@ Following factors should be considered for building test cases:
 - For every scenario, one or more test cases should be created to test each and every functionality of the user functions. If possible, these test cases should be automated through the standard CI/CD build pipeline processes with the track of each successful and failed build in AzDO.
 - Every single condition should be enlisted as a separate test case.
 
-## Applying the E2E testing [The How]
+## Applying the E2E testing
 
 Like any other testing, E2E testing also goes through formal planning, test execution, and closure phases.
 
@@ -74,7 +74,7 @@ E2E testing is done with the following steps:
 - Report the Bugs in the bug reporting tool
 - Re-verify the bug fixes
 
-### Test closure
+### Test Closure
 
 - Test report preparation
 - Evaluation of exit criteria

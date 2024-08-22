@@ -25,7 +25,7 @@ A robust build automation pipeline will:
 
 ## Build Definition Managed in Git
 
-### Code / manifest artifacts required to build your project should be maintained in within your project(s) git repository(s)
+### Code / Manifest Artifacts Required to Build Your Project Should be Maintained Within Your Projects Git Repository
 
 - CI provider-specific build pipeline definition(s) should reside within your project(s) git repository(s).
 
@@ -57,13 +57,13 @@ An automated build should encompass the following principles:
 
 - It's essential to have a build that's runnable through standalone scripts and not dependent on a particular IDE. Build pipeline targets can be triggered locally on their desktops through their IDE of choice. The build process should maintain enough flexibility to run within a CI server as well. As an example, dockerizing your build process offers this level of flexibility as VSCode and IntelliJ supports [docker plugin](https://code.visualstudio.com/docs/containers/overview) extensions.
 
-### DevOps security checks
+### DevOps Security Checks
 
 - Introduce security to your project at early stages. Follow the [DevSecOps section](dev-sec-ops/README.md) to introduce security practices, automation, tools and frameworks as part of the CI.
 
 ## Build Environment Dependencies
 
-### Automated local environment setup
+### Automated Local Environment Setup
 
 - We encourage maintaining a consistent developer experience for all team members. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
 - Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies.
@@ -71,7 +71,7 @@ An automated build should encompass the following principles:
 - For projects using VS Code, leveraging [Dev Containers](../developer-experience/devcontainers.md) can really help standardize the local developer experience across the team.
 - Well established software packaging tools like Docker, Maven, npm, etc should be considered when designing your build automation tool chain.
 
-### Document local setup
+### Document Local Setup
 
 - The setup process for setting up a local build environment should be well documented and easy for developers to follow.
 
@@ -183,16 +183,16 @@ The schema has 30+ [validators](https://json-schema.org/implementations.html#val
 
 An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
 
-### End to end integration tests
+### End-to-End Integration Tests
 
 - Include tests in your pipeline to validate the build candidate conforms to automated business functionality assertions. Any bugs or broken code should be reported in the test results including the failed test and relevant stack trace. All tests should be invoked through a single command.
 - Keep the build fast. Consider automated test runtime when deciding to pull in dependencies like databases, external services and mock data loading into your test harness. Slow builds often become a bottleneck for dev teams when parallel builds on a CI server are not an option. Consider adding max timeout limits for lengthy validations to fail fast and maintain high velocity across the team.
 
-### Avoid checking in broken builds
+### Avoid Checking in Broken Builds
 
 - Automated build checks, tests, lint runs, etc should be validated locally before committing your changes to the scm repo. [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html) is a practice dev crews should consider to help identify bugs and failures as early as possible within the development lifecycle.
 
-### Reporting build failures
+### Reporting Build Failures
 
 - If the build step happens to fail then the build pipeline run status should be reported as failed including relevant logs and stack traces.
 
@@ -206,22 +206,22 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 ## Git Driven Workflow
 
-### Build on commit
+### Build on Commit
 
 - Every commit to the baseline repository should trigger the CI pipeline to create a new build candidate.
 - Build artifact(s) are built, packaged, validated and deployed continuously into a non-production environment per commit. Each commit against the repository results into a CI run which checks out the sources onto the integration machine, initiates a build, and notifies the committer of the result of the build.
 
-### Avoid commenting out failing tests
+### Avoid Commenting Out Failing Tests
 
 - Avoid commenting out tests in the mainline branch. By commenting out tests, we get an incorrect indication of the status of the build.
 
-### Branch policy enforcement
+### Branch Policy Enforcement
 
 - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/about-protected-branches) should be setup on the main branch to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
 - Broken builds should block pull request reviews.
 - Prevent commits directly into main branch.
 
-### Branch strategy
+### Branch Strategy
 
 - Release branches should auto trigger the deployment of a build artifact to its target cloud environment. You can find additional guidance on the Azure DevOps documentation site under the [Manage deployments](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#manage-deployments) section
 
@@ -231,7 +231,7 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 In the spirit of transparency and embracing frequent communication across a dev crew, we encourage developers to commit code on a daily cadence. This approach provides visibility to feature progress and accelerates pair programming across the team. Here are some principles to consider:
 
-### Everyone commits to the git repository each day
+### Everyone Commits to the Git Repository Each Day
 
 - End of day checked-in code should contain unit tests at the minimum.
 - Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://leankit.com/learn/lean/principles-of-lean-development/).
@@ -241,19 +241,19 @@ In the spirit of transparency and embracing frequent communication across a dev 
 
 One of the key goals of build validation is to isolate and identify failures in staging environment(s) and minimize any disruption to live production traffic. Our E2E automated tests should run in an environment which mimics our production environment(as much as possible). This includes consistent software versions, OS, test data volume simulations, network traffic parity with production, etc.
 
-### Test in a clone of production
+### Test in a Clone of Production
 
 - The production environment should be duplicated into a staging environment(QA and/or Pre-Prod) at a minimum.
 
-### Pull request update(s) trigger staged releases
+### Pull Request Updates Trigger Staged Releases
 
 - New commits related to a pull request should trigger a build / release into an integration environment. The production environment should be fully isolated from this process.
 
-### Promote infrastructure changes across fixed environments
+### Promote Infrastructure Changes Across Fixed Environments
 
 - Infrastructure as code changes should be tested in an integration environment and promoted to all staging environment(s) then migrated to production with zero downtime for system users.
 
-### Testing in production
+### Testing in Production
 
 - There are various [approaches](https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1) with safely carrying out automated tests for production deployments. Some of these may include:
   - Feature flagging
@@ -264,11 +264,11 @@ One of the key goals of build validation is to isolate and identify failures in 
 
 Our devops workflow should enable developers to get, install and run the latest system executable. Release executable(s) should be auto generated as part of our CI/CD pipeline(s).
 
-### Developers can access latest executable
+### Developers can Access the Latest Executable
 
 - The latest system executable is available for all developers on the team. There should be a well-known place where developers can reference the release artifact.
 
-### Release artifact is published for each pull request or merges into main branch
+### Release Artifacts are Published for Each Pull Request or Merges into the Main Branch
 
 ## Integration Observability
 
@@ -276,16 +276,16 @@ Applied state changes to the mainline build should be made available and communi
 
 We recommend integrating Teams or Slack with CI/CD pipeline runs which helps keep the team continuously plugged into failures and build candidate status(s).
 
-### Continuous integration top level dashboard
+### Continuous Integration Top Level Dashboard
 
 - Modern CI providers have the capability to consolidate and report build status(s) within a given dashboard.
 - Your CI dashboard should be able to correlate a build failure with a git commit.
 
-### Build status badge in project readme
+### Build Status Badge in the Project Readme
 
 - There should be a build status badge included in the root README of the project.
 
-### Build notifications
+### Build Notifications
 
 - Your CI process should be configured to send notifications to messaging platforms like Teams / Slack once the build completes. We recommend creating a separate channel to help consolidate and isolate these notifications.
 

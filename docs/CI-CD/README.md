@@ -22,7 +22,7 @@ For a much deeper understanding of all of these concepts, the books [Continuous 
 - We want the latest version of the code to always be deployed to our dev/test environments
 - We want a reliable release strategy, where the policies for release are well understood by all
 
-## The fundamentals
+## The Fundamentals
 
 - We run a quality pipeline (with linting, unit tests etc.) on each PR/update of the main branch
 - All cloud resources (including secrets and permissions) are provisioned through infrastructure as code templates – ex. Terraform, Bicep (ARM), Pulumi etc.

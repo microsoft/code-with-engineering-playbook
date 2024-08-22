@@ -1,4 +1,4 @@
-# Backlog Management basics for the Product and Sprint backlog
+# Backlog Management
 
 ## Backlog
 
@@ -14,7 +14,7 @@
 - The team should have a clear understanding of what constitutes good acceptance criteria for a story/task, and decide on how stories/tasks are handled. Eg. in some projects, stories are refined as a crew, but tasks are created by individual developers on an as needed bases.
 - Technical debt is mostly due to shortcuts made in the implementation as well as the future maintenance cost as the natural result of continuous improvement. Shortcuts should generally be avoided. In some rare instances where they happen, prioritizing and planning improvement activities to reduce this debt at a later time is the recommended approach.
 
-## Links
+## Resources
 
 - [Product Backlog](https://scrumguides.org/scrum-guide.html#product-backlog)
 - [Sprint Backlog](https://scrumguides.org/scrum-guide.html#sprint-backlog)

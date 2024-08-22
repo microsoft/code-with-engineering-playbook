@@ -1,4 +1,4 @@
-# The first week of an ISE Project
+# The First Week of an ISE Project
 
 The purpose of this document is to:
 
@@ -7,7 +7,7 @@ The purpose of this document is to:
 - Extensible hierarchy to allow teams to share deep subject-matter expertise
 
 
-## Before starting the project
+## Before Starting the Project
 
 - [ ] Discuss and start writing the Team Agreements. Update these documents with any process decisions made throughout the project
   - [Working Agreement](agile-development/team-agreements/working-agreements.md)

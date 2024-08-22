@@ -1,6 +1,6 @@
 # Sharing Common Variables / Naming Conventions Between Terraform Modules
 
-## What are we trying to solve?
+## What are we Trying to Solve?
 
 When deploying infrastructure using code, it's common practice to split the code into different modules that are responsible for the deployment of a part or a component of the infrastructure. In Terraform, this can be done by using [modules](https://www.terraform.io/language/modules/develop).
 
@@ -15,7 +15,7 @@ There are dependencies between these modules, like the Kubernetes cluster that w
 
 This page explains a way to solve this with Terraform.
 
-## How to do it?
+## How to Do It?
 
 ### Context
 
@@ -51,13 +51,13 @@ In the snippet above, the virtual network name and resource group are defined th
 
 Being able to manage naming in a central place will make sure the code can easily be refactored in the future, without updating all modules.
 
-### About Terraform variables
+### About Terraform Variables
 
 In Terraform, every [input variable](https://www.terraform.io/language/values/variables) must be defined at the configuration (or module) level, using the `variable` block. By convention, this is often done in a `variables.tf` file, in the module. This file contains variable declaration and default values. Values can be set using variables configuration files (.tfvars), environment variables or CLI arg when using the terraform `plan` or `apply` commands.
 
 One of the limitation of the variables declaration is that it's not possible to compose variables, [locals](https://www.terraform.io/language/values/locals) or Terraform [built-in functions](https://www.terraform.io/language/functions) are used for that.
 
-### Common Terraform module
+### Common Terraform Module
 
 One way to bypass this limitations is to introduce a "common" module, that will not deploy any resources, but just compute / calculate and output the resource names and shared variables, and be used by all other modules, as a dependency.
 
@@ -140,7 +140,7 @@ Changes to Outputs:
 You can apply this plan to save these new output values to the Terraform state, without changing any real infrastructure.
 ```
 
-### Use the common Terraform module
+### Use the Common Terraform Module
 
 Using the common Terraform module in any other module is super easy. For example, this is what you can do in the Azure Kubernetes module `main.tf` file:
 
@@ -262,7 +262,7 @@ module "kubernetes" {
 }
 ```
 
-### Centralize input variables definitions
+### Centralize Input Variables Definitions
 
 In case you chose to define variables values directly in the source control (e.g. gitops scenario) using [variables definitions files](https://www.terraform.io/language/values/variables#variable-definitions-tfvars-files) (`.tfvars`), having a common module will also help to not have to duplicate the common variables definitions in all modules. Indeed, it is possible to have a global file that is defined once, at the common module level, and merge it with a module-specific variables definitions files at Terraform `plan` or `apply` time.
 
@@ -297,7 +297,7 @@ Then, it's possible to merge these files when running the `terraform apply` or `
 terraform plan -var-file=<(cat ../common/dev.tfvars ./dev.tfvars)
 ```
 
-*Note: using this, it is really important to ensure that you have not the same variable names in both files, otherwise that will generate an error.*
+> **Note:** using this, it is really important to ensure that you have not the same variable names in both files, otherwise that will generate an error.
 
 ## Conclusion
 

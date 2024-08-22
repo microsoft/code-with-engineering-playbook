@@ -1,8 +1,8 @@
-# Reusing dev containers within a pipeline
+# Reusing Dev Containers Within a Pipeline
 
 Given a repository with a local development container a.k.a. dev container that contains all the tooling required for development, would it make sense to reuse that container for running the tooling in the Continuous Integration pipelines?
 
-## Options for building devcontainers within pipeline
+## Options for Building Dev Containers Within a Pipeline
 
 There are three ways to build devcontainers within pipeline:
 
@@ -10,15 +10,15 @@ There are three ways to build devcontainers within pipeline:
 - With [GitHub - devcontainers/cli](https://github.com/devcontainers/cli), which is the same as the above, but using the underlying CLI directly without tasks.
 - Building the `DockerFile` with `docker build`. This option excludes all configuration/features specified within the `devcontainer.json`.
 
-## Considered options
+## Considered Options
 
-- Run CI pipelines in native environment
+- Run CI pipelines in the native environment
 - Run CI pipelines in the dev container via building image locally
 - Run CI pipelines in the dev container with a container registry
 
 Here are below pros and cons for both approaches:
 
-### Run CI pipelines in native environment
+### Run CI Pipelines in the Native Environment
 
 | Pros | Cons |
 | -- | -- |
@@ -26,7 +26,7 @@ Here are below pros and cons for both approaches:
 | No container registry | Can take some time to start, based on tools/dependencies required |
 | Agent will always be up to date with security patches | The dev container should always be built within each run of the CI pipeline, to verify the changes within the branch haven't broken anything |
 
-### Run CI pipelines in the dev container without image caching
+### Run CI Pipelines in the Dev Container Without Image Caching
 
 | Pros | Cons |
 | -- | -- |
@@ -41,7 +41,7 @@ Here are below pros and cons for both approaches:
 >
 > &#178;: could be mitigated via adding image caching without using a container registry
 
-### Run CI pipelines in the dev container with image registry
+### Run CI Pipelines in the Dev Container with Image Registry
 
 | Pros | Cons |
 | -- | -- |

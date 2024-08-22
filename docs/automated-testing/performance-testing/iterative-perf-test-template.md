@@ -34,4 +34,4 @@ In bullet points document the results from the test.
 
 ### Observations
 
-> Observations are insights derived from test results. Keep the observations brief and as bullet points. Mention outcomes supporting the goal of the iteration. If any of the observation results in a work item (task, story, bug) then add the link to the work item together with the observation.  
+> Observations are insights derived from test results. Keep the observations brief and as bullet points. Mention outcomes supporting the goal of the iteration. If any of the observation results in a work item (task, story, bug) then add the link to the work item together with the observation.

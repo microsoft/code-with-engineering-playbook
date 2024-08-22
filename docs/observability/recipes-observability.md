@@ -4,15 +4,15 @@
 
 [GitHub Repo](https://github.com/Azure-Samples/application-insights-aspnet-sample-opentelemetry), [Article](https://devblogs.microsoft.com/aspnet/observability-asp-net-core-apps/).
 
-## Application Insights/ASP.NET Core with distributed Trace Context propagation to Kafka
+## Application Insights/ASP.NET Core with Distributed Trace Context Propagation to Kafka
 
 [GitHub Repo](https://github.com/MagdaPaj/application-insights-aspnet-sample-trace-context-propagation).
 
-## Example: OpenTelemetry over a message oriented architecture in Java with Jaeger, Prometheus and Azure Monitor
+## Example: OpenTelemetry Over a Message Oriented Architecture in Java with Jaeger, Prometheus and Azure Monitor
 
 [GitHub Repo](https://github.com/iamnicoj/OpenTelemetry-Async-Java-with-Jaeger-Prometheus-AzMonitor)
 
-## Example: Setup Azure Monitor dashboards and alerts with Terraform
+## Example: Setup Azure Monitor Dashboards and Alerts with Terraform
 
 [GitHub Repo](https://github.com/buzzfrog/azure-alert-dashboard-terraform)
 
@@ -30,7 +30,7 @@ The [Azure DevOps Pipelines Report](https://github.com/Azure-Samples/powerbi-pip
 
 This dashboard recipe provides observability for AzDO pipelines by displaying various metrics (i.e. average runtime, run outcome statistics, etc.) in a table. Additionally, the second page of the template visualizes pipeline success and failure trends using Power BI charts. Documentation and setup information can be found in the project README.
 
-## Python Logger class for Application Insights using OpenCensus
+## Python Logger Class for Application Insights using OpenCensus
 
 This repository contains "AppLogger" class which is a python logger class for Application Insights using Opencensus. It also contains sample code that shows the usage of "AppLogger".
 

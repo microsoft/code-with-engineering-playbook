@@ -43,7 +43,7 @@ Select one of the following to describe the lifecycle stage of the engagement th
 
 Describe the impact to the customer and engagement that this feedback implies.
 
-### Time frame
+### Time Frame
 
 Provide a time frame that this feedback item needs to be resolved within (if relevant).
 
@@ -80,14 +80,14 @@ Provide a clear set of repeatable steps that will allow for this feedback to be 
 
 Include items like architecture diagrams, screenshots, logs, traces etc which can help with understanding your notes and the feedback item. Also include details about the scenario customer/partner verbatim as much as possible in the main content.
 
-### What didn't work
+### What Didn't Work
 
 Describe what didn't work or what feature gap you identified.
 
-### What was your expectation or the desired outcome
+### What was Your Expectation or the Desired Outcome
 
 Describe what you expected to happen. What was the outcome that was expected?
 
-### Describe the steps you took
+### Describe the Steps you Took
 
 Provide a clear description of the steps taken and the outcome/description at each point.

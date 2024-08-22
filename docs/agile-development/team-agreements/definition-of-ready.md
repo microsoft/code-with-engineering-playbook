@@ -10,7 +10,7 @@ When the development team picks a user story from the top of the backlog, the us
 
 It can be understood as a checklist that helps the Product Owner to ensure that the user story they wrote contains all the necessary details for the scrum team to understand the work to be done.
 
-### Examples of ready checklist items
+### Examples of Ready Checklist Items
 
 * [ ] Does the description have the details including any input values required to implement the user story?
 * [ ] Does the user story have clear and complete acceptance criteria?
@@ -21,19 +21,19 @@ It can be understood as a checklist that helps the Product Owner to ensure that 
   * The completion of unfinished work
   * A deliverable provided by another team (code artifact, data, etc...)
 
-## Who writes it
+## Who Writes it
 
 The ready checklist can be written by a Product Owner in agreement with the development team and the Process Lead.
 
-## When should a Definition of Ready be updated
+## When Should a Definition of Ready be Updated
 
 Update or change the definition of ready anytime the scrum team observes that there are missing information in the user stories that recurrently impacts the planning.
 
-## What should be avoided
+## What Should be Avoided
 
 The ready checklist should contain items that apply broadly. Don't include items or details that only apply to one or two user stories. This may become an overhead when writing the user stories.
 
-## How to get stories ready
+## How to get Stories Ready
 
 In the case that the highest priority work is not yet ready, it still may be possible to make forward progress. Here are some strategies that may help:
 

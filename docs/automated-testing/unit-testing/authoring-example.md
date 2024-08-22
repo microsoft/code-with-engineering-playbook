@@ -1,4 +1,4 @@
-# Example: Authoring a unit test
+# Writing a Unit Test
 
 To illustrate some unit testing techniques for an object-oriented language, let's start with an example of some
 code we wish to add unit tests for. In this example, we have a configuration class that contains all the startup options

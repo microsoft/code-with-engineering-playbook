@@ -12,7 +12,7 @@ Additionally, the results of a load test can also be used as data to help with c
 
 ## Load Testing Design Blocks
 
-There are a number of basic components that are required to carry out a load test.  
+There are a number of basic components that are required to carry out a load test.
 
 1. In order to have meaningful results the system needs to be tested in a production-like environment with a network and hardware which closely resembles the expected deployment environment.
 
@@ -69,7 +69,7 @@ The analysis phase represents the work that brings all previous activities toget
 - Correlate application metrics and platform metrics to identify potential pitfalls and bottlenecks.
 - Include business stakeholders early in the analysis phase to validate application findings. Include platform operations to validate platform findings.
 
-### Report writing
+### Report Writing
 
 Summarize your findings from the analysis phase. Be sure to include application and platform enhancement suggestions, if any.
 

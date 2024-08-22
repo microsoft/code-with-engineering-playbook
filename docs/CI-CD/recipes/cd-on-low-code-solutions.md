@@ -1,4 +1,4 @@
-# Continuous delivery on low-code and no-code solutions
+# Continuous Delivery on Low-Code and No-Code Solutions
 
 Low-code and no-code platforms have taken a spot in a wide variety of Business Solutions involving process automation, AI models, Bots, Business Applications and Business Intelligence. The scenarios enabled by these platforms are constantly evolving and opening a spot for productive roles. This has been exactly the reason why bringing more professional tools to their development have become necessary such as controlled and automated delivery.
 
@@ -10,11 +10,11 @@ Environments are spaces where Power Platform Solutions exists. They store, manag
 
 ![image](../images/environments.png)
 
-### Environments considerations
+### Environments Considerations
 
 Whenever an environment has been created, its resources can be only accessed by users within the same tenant which is an Azure Active Directory tenant in fact. When you create an app in an environment that app can only interact with data sources that are also deployed in that same environment, this includes connections, flows and Dataverse databases. This is an important consideration when dealing with a CD process.
 
-## Deployment strategy
+## Deployment Strategy
 
 With three environments already created to represent the stages of the deployment, the goal now is to automate the deployment from one environment to another. Each environment will require the creation of its own solution: business logic and data.
 
@@ -36,10 +36,9 @@ Third and final step will import the solution into the production environment, t
 
 Most used tools to get this process completed are:
 
-* [Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools).
-
+* [Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools)
 * There is also a non graphical tool that could be used to work with this CD process. The [Power CLI](https://aka.ms/PowerAppsCLI) tool.
 
-## References
+## Resources
 
 [Application lifecycle management with Microsoft Power Platform](https://learn.microsoft.com/en-us/power-platform/alm/)

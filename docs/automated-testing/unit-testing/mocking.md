@@ -35,7 +35,7 @@ class StubTestCase(TestBase):
     def setUp(self) -> None:
         super(StubTestCase, self).setUp()
         self.app.container.service_a.override(StubService())
-        
+
     def test_service():
         service = self.app.container.service_a()
         self.assertTrue(isinstance(service, StubService))

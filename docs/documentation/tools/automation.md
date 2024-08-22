@@ -22,6 +22,6 @@ Sample output:
 
 ![docs-checks](./images/docs-checks.png)
 
-## On linting rules
+## On Linting Rules
 
 The team needs to be clear what linting rules are required and shouldn't be overridden with tooling or comments. The team should have consensus on when to override tooling rules.

@@ -9,7 +9,7 @@ The main goal of feasibility studies is to assess whether it is feasible to solv
 
 This effort ensures quality solutions backed by the appropriate, thorough amount of consideration and evidence.
 
-## When are feasibility studies useful?
+## When are Feasibility Studies Useful?
 
 Every engagement can benefit from a feasibility study early in the project.
 
@@ -17,18 +17,18 @@ Architectural discussions can still occur in parallel as the team works towards 
 
 Feasibility studies can last between 4-16 weeks, depending on specific problem details, volume of data, state of the data etc. Starting with a 4-week milestone might be useful, during which it can be determined how much more time, if any, is required for completion.
 
-## Who collaborates on feasibility studies?
+## Who Collaborates on Feasibility Studies?
 
 Collaboration from individuals with diverse skill sets is desired at this stage, including data scientists, data engineers, software engineers, PMs, human experience researchers, and domain experts. It embraces the use of engineering fundamentals, with some flexibility. For example, not all experimentation requires full test coverage and code review. Experimentation is typically not part of a CI/CD pipeline. Artifacts may live in the `main` branch as a folder excluded from the CI/CD pipeline, or as a separate experimental branch, depending on customer/team preferences.
 
-## What do feasibility studies entail?
+## What do Feasibility Studies Entail?
 
-### Problem definition and desired outcome
+### Problem Definition and Desired Outcome
 
 * Ensure that the problem is complex enough that coding rules or manual scaling is unrealistic
 * Clear definition of the problem from business and technical perspectives
 
-### Deep contextual understanding
+### Deep Contextual Understanding
 
 Confirm that the following questions can be answered based on what was learned during the Discovery Phase of the project. For items that can not be satisfactorily answered, undertake additional investigation to answer.
 
@@ -46,14 +46,14 @@ Confirm that the following questions can be answered based on what was learned d
 * Share what was uncovered and understood, and the implications thereof across the engagement team and relevant stakeholders.
 * If the above research was conducted during the Discovery phase, it should be reviewed, and any substantial knowledge gaps should be identified and filled by following the above process.
 
-### Data access
+### Data Access
 
 * Verify that the full team has access to the data
 * Set up a dedicated and/or restricted environment if required
 * Perform any required de-identification or redaction of sensitive information
 * Understand data access requirements (retention, role-based access, etc.)
 
-### Data discovery
+### Data Discovery
 
 * Hold a [data exploration](ml-data-exploration.md) workshop and deep dive with domain experts
 * Understand data availability and confirm the team's access
@@ -65,12 +65,12 @@ Confirm that the following questions can be answered based on what was learned d
   * Ideally obtain or create an entity relationship diagram (ERD)
 * Potentially uncover new useful data sources
 
-### Architecture discovery
+### Architecture Discovery
 
 * Clear picture of existing architecture
 * Infrastructure spikes
 
-### Concept ideation and iteration
+### Concept Ideation and Iteration
 
 * Develop value proposition(s) for users and stakeholders based on the contextual understanding developed through the discovery process (e.g. key elements of value, benefits)
 * As relevant, make use of
@@ -80,7 +80,7 @@ Confirm that the following questions can be answered based on what was learned d
 * Identify the next set of hypotheses or unknowns to be tested (see concept testing)
 * Revisit and iterate on the concept throughout discovery as understanding of the problem space evolves
 
-### Exploratory data analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
 * Data deep dive
 * Understand feature and label value distributions
@@ -90,7 +90,7 @@ Confirm that the following questions can be answered based on what was learned d
 * Pave the way of further understanding of what techniques are applicable
 * Establish a mutual understanding of what data is in or out of scope for feasibility, ensuring that the data in scope is significant for the business
 
-### Data pre-processing
+### Data Pre-Processing
 
 * Happens during EDA and hypothesis testing
 * Feature engineering
@@ -98,7 +98,7 @@ Confirm that the following questions can be answered based on what was learned d
 * Scaling and/or discretization
 * Noise handling
 
-### Hypothesis testing
+### Hypothesis Testing
 
 * Design several potential solutions using theoretically applicable algorithms and techniques, starting with the simplest reasonable baseline
 * Train model(s)
@@ -107,7 +107,7 @@ Confirm that the following questions can be answered based on what was learned d
 * Iterate
 * Thoroughly document each step and outcome, plus any resulting hypotheses for easy following of the decision-making process
 
-### Concept testing
+### Concept Testing
 
 * Where relevant, to test the value proposition, concepts or aspects of the experience
 * Plan user, stakeholder and expert research
@@ -117,7 +117,7 @@ Confirm that the following questions can be answered based on what was learned d
 * Ensure that the proposed solution and framing are compatible with and acceptable to affected people
 * Ensure that the proposed solution and framing is compatible with existing business goals and context
 
-### Risk assessment
+### Risk Assessment
 
 * Identification and assessment of risks and constraints
 
@@ -128,17 +128,17 @@ Confirm that the following questions can be answered based on what was learned d
 * Testing AI concept and experience elements with users and stakeholders
 * Discussion and feedback from diverse perspectives around any responsible AI concerns
 
-## Output of a feasibility study
-
-### Possible outcomes
+## Output of a Feasibility Study
 
 The main outcome is a feasibility study report, with a recommendation on next steps:
-- If there is not enough evidence to support the hypothesis that this problem can be solved using ML, as aligned with the pre-determined performance measures and business impact:
 
-  * We detail the gaps and challenges that prevented us from reaching a positive outcome
-  * We may scope down the project, if applicable
-  * We may look at re-scoping the problem taking into account the findings of the feasibility study
-  * We assess the possibility to collect more data or improve data quality
+If there is not enough evidence to support the hypothesis that this problem can be solved using ML, as aligned with the pre-determined performance measures and business impact:
 
-- If there is enough evidence to support the hypothesis that this problem can be solved using ML
-  * Provide recommendations and technical assets for moving to the operationalization phase
+* We detail the gaps and challenges that prevented us from reaching a positive outcome
+* We may scope down the project, if applicable
+* We may look at re-scoping the problem taking into account the findings of the feasibility study
+* We assess the possibility to collect more data or improve data quality
+
+If there is enough evidence to support the hypothesis that this problem can be solved using ML
+
+* Provide recommendations and technical assets for moving to the operationalization phase

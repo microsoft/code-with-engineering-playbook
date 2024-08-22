@@ -31,7 +31,7 @@ Describe any architecture solution were used to monitor, observe and track the v
 
 Describe any testing architecture were built to run E2E testing.
 
-## E2E Testing Implementation (Code samples)
+## E2E Testing Implementation (Code Samples)
 
 Include sample test cases and their implementation in the programming language of choice.
 Include any common reusable code implementation blocks that could be leveraged in the future project's E2E testing implementation.

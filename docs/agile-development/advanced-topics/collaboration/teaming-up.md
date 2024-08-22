@@ -63,5 +63,4 @@ Following that, above suggestions aim to remove agile/team disfunctionalities an
 ## Resources
 
 - [Tuckman's Stages of Group Development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
-
 - [Scrum Values](https://scrumguides.org/scrum-guide.html)

@@ -156,7 +156,7 @@ This getting started guide takes you through the core features of Gauge. By the 
 This section gives specific instructions on setting up Gauge in a Microsoft Windows environment.
 Download the following [installation bundle](https://github.com/getgauge/gauge/releases/download/v1.0.6/gauge-1.0.6-windows.x86_64.exe) to get the latest stable release of Gauge.
 
-### Step 2: Installing Gauge extension for Visual Studio Code
+### Step 2: Installing Gauge Extension for Visual Studio Code
 
 Follow the steps to add the Gauge Visual Studio Code plugin from the IDE
 
@@ -196,7 +196,7 @@ This section gives specific instructions on setting up Gauge in a macOS environm
     /usr/local/Cellar/gauge/1.4.3: 6 files, 18.9MB
 ```
 
-### Step 2 : Installing Gauge extension for Visual Studio Code
+### Step 2 : Installing Gauge Extension for Visual Studio Code
 
 Follow the steps to add the Gauge Visual Studio Code plugin from the IDE
 

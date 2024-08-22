@@ -1,10 +1,10 @@
 # High Level / Game Plan Design Recipe
 
-## Why is this valuable?
+## Why is this Valuable?
 
 Design at macroscopic level shows the interactions between systems and services that will be used to accomplish the project. It is intended to ensure there is high level understanding of the plan for what to build, which off-the-shelf components will be used, and which external components will need to interact with the deliverable.
 
-## Things to keep in mind
+## Things to Keep in Mind
 
 * As with all other aspects of the project, design reviews must provide a friendly and safe environment so that any team member feels comfortable proposing a design for review and can use the opportunity to grow and learn from the constructive / non-judgemental feedback from peers and subject-matter experts (see [Team Agreements](../../../agile-development/team-agreements/)).
 * Attempt to illustrate different personas involved in the use cases and how/which boxes are their entry points.

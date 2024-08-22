@@ -4,7 +4,7 @@ A workflow is a configurable automated process made up of one or more jobs where
 
 Additional information on GitHub actions and GitHub Workflows in the links posted in the [references](#references) section below.
 
-## Workflow Per Environment
+## Workflow per Environment
 
 The general approach is to have one pipeline, where the code is built, tested and deployed, and the artifact is then promoted to the next environment, eventually to be deployed into production.
 
@@ -16,7 +16,7 @@ One way to get around the complexity of a single workflow is to have separate wo
 
 ![Workflow-Designs-Independent-Workflows](images/Workflow-Designs-Independent-Workflows.png)
 
-## References
+## Resources
 
 - [GitHub Actions](https://docs.github.com/en/actions)
 - [GitHub Workflows](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)

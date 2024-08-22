@@ -1,10 +1,10 @@
-# Automated UI Tests for a Teams application
+# Automated UI Tests for a Teams Application
 
 ## Overview
 
 This is an overview on how you can implement UI tests for a custom Teams application. The insights provided can also be applied to automated end-to-end testing.
 
-### General observations
+### General Observations
 
 - Testing in a web browser is easier than on a native app.
 - Testing a Teams app on a mobile device in an automated way is more challenging due to the fact that you are testing an app within an app:
@@ -16,7 +16,7 @@ This is an overview on how you can implement UI tests for a custom Teams applica
 
 The following are learnings from various engagements:
 
-## Web based UI tests
+## Web Based UI Tests
 
 To implement web-based UI tests for your Teams application, follow the same approach as you would for testing any other web application with a UI. [UI testing](README.md) provides valuable guidance in this regard. Your starting point for the test would be to automatically launch a browser (using Selenium or similar frameworks) and navigate to [https://teams.microsoft.com](https://teams.microsoft.com).
 
@@ -65,7 +65,7 @@ var buildEdgeDriver = function () {
 };
 ```
 
-## Mobile based UI tests
+## Mobile Based UI Tests
 
 Testing your custom Teams application on mobile devices is a bit more difficult than using the web-based approach as it requires usage of actual or simulated devices. Running such tests in a CI/CD pipeline can be more difficult and resource-intensive.
 
@@ -93,7 +93,7 @@ Overall setup:
 
   - The advantage of this architecture is that it opens the possibility of running the server in a VM, and the client in a pipeline, enabling the tests to be ran automatically on scheduled basis as part of CI/CD pipelines.
 
-#### How to run mobile tests locally on a Windows machine using AVD?
+#### How to Run Mobile Tests Locally on a Windows Machine Using AVD?
 
 This approach involves:
 

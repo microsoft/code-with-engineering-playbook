@@ -2,7 +2,7 @@
 
 Every source code repository should include documentation that is specific to it (e.g., in a Wiki within the repository), while the project itself should include general documentation that is common to all its associated repositories (e.g., in a Wiki within the backlog management tool).
 
-## Documentation specific to a repository
+## Documentation Specific to a Repository
 
 - Introduction
 - Getting started
@@ -21,7 +21,7 @@ Every source code repository should include documentation that is specific to it
 
 Some sections in the documentation of the repository might point to the project’s documentation (e.g., Onboarding, Working Agreement, Contributing Guide).
 
-## Common documentation to all repositories
+## Common Documentation to all Repositories
 
 - Introduction
   - Project

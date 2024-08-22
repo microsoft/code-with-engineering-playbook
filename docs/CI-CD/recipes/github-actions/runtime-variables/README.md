@@ -39,8 +39,8 @@ Out of Scope:
 - While the solution is obviously extensible using shell scripting or any other means of creating variables, this solution serves well as the proof of the basic concept. No such scripting is provided in this guide.
 - Additionally, teams may wish to formalize this process using a PR Template that has an additional section for the variables being provided. This is not however included in this guide.
 
-> Security Warning:  
-> **This is NOT for injecting secrets** as the commit messages and PR body can be retrieved by a third party, are stored in `git log`, and can otherwise be read by a malicious individual using a variety of tools. Rather, this is for testing a workflow that needs simple variables to be injected into it, as above.  
+> Security Warning:
+> **This is NOT for injecting secrets** as the commit messages and PR body can be retrieved by a third party, are stored in `git log`, and can otherwise be read by a malicious individual using a variety of tools. Rather, this is for testing a workflow that needs simple variables to be injected into it, as above.
 > **If you need to retrieve secrets or sensitive information**, use the [GitHub Action for Azure Key Vault](https://github.com/marketplace/actions/get-secrets-from-azure-key-vault) or some other similar secret storage and retrieval service.
 
 ## Commit Message Variables

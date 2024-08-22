@@ -11,7 +11,7 @@ Below are some common scenarios in MLOps/Data Science projects, along with sugge
 - [PyTorch model training profiling](#pytorch-model-training-profiling)
 - [Azure Machine Learning pipeline profiling](#azure-machine-learning-pipeline-profiling)
 
-## Generic Python profiling
+## Generic Python Profiling
 
 Usually an MLOps/Data Science solution contains plain Python code serving different purposes (e.g. data processing) along
 with specialized model training code. Although many Machine Learning frameworks provide their own profiler,
@@ -52,9 +52,9 @@ python -m cProfile [-o output_file] [-s sort_order] (-m module | myscript.py)
 > Note: one epoch of model training is usually enough for profiling. There's no need to run more epochs and produce
 additional cost.
 
-Refer to [The Python Profilers](https://docs.python.org/3/library/profile.html) for further details.  
+Refer to [The Python Profilers](https://docs.python.org/3/library/profile.html) for further details.
 
-## PyTorch model training profiling
+## PyTorch Model Training Profiling
 
 PyTorch 1.8 includes an updated PyTorch
 [profiler](https://pytorch.org/blog/introducing-pytorch-profiler-the-new-and-improved-performance-tool/)
@@ -92,7 +92,7 @@ More information on *PyTorch profiler*:
 - [PyTorch Profiler Recipe](https://pytorch.org/tutorials/recipes/recipes/profiler_recipe.html)
 - [Introducing PyTorch Profiler - the new and improved performance tool](https://pytorch.org/blog/introducing-pytorch-profiler-the-new-and-improved-performance-tool/)
 
-## Azure Machine Learning pipeline profiling
+## Azure Machine Learning Pipeline Profiling
 
 In our projects we often use [Azure Machine Learning](https://azure.microsoft.com/en-us/services/machine-learning/)
 pipelines to train Machine Learning models. Most of the profilers can also be used in conjunction with Azure Machine Learning.

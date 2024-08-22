@@ -14,9 +14,9 @@ The ability to add additional terms to your linter has the added benefit of enab
 
 ## Getting Started with an Inclusive Linter
 
-### [`woke`]
+### woke
 
-One inclusive linter we recommend is `woke`. It is a language-agnostic CLI tool that detects non-inclusive language in your source code and recommends alternatives. While `woke` automatically applies a [default ruleset] with non-inclusive terms to lint for, you can also apply a custom rule config (via a yaml file) with additional terms to lint for. See [`example.yaml`] for an example of adding custom rules.
+One inclusive linter we recommend is `woke`. It is a language-agnostic CLI tool that detects non-inclusive language in your source code and recommends alternatives. While `woke` automatically applies a default ruleset with non-inclusive terms to lint for, you can also apply a custom rule config (via a yaml file) with additional terms to lint for.
 
 Running the tool locally on a file or directory is relatively straightforward:
 
@@ -30,8 +30,8 @@ test.txt:2:2-6: `guys` may be insensitive, use `folks`, `people` instead (warnin
 
 `woke` can be run locally on your machine or CI/CD system via CLI and is also available as a two GitHub Actions:
 
-- [Run woke]
-- [Run woke with Reviewdog]
+- Run woke
+- Run woke with Reviewdog
 
 To use the standard "Run woke" GitHub Action with the default ruleset in a CI pipeline:
 
@@ -59,11 +59,11 @@ To use the standard "Run woke" GitHub Action with the default ruleset in a CI pi
 1. Run your pipeline
 1. View the output in the "Actions" tab in the main repository view
 
-For more information about additional configuration and usage, see the official [docs].
+## Resources
 
-[`woke`]: https://github.com/get-woke/woke
-[default ruleset]: https://github.com/get-woke/woke/blob/main/pkg/rule/default.yaml
-[`example.yaml`]: https://github.com/get-woke/woke/blob/main/example.yaml
-[Run woke]: https://github.com/marketplace/actions/run-woke
-[Run woke with reviewdog]: https://github.com/marketplace/actions/run-woke-with-reviewdog
-[docs]: https://docs.getwoke.tech/
+- [woke](https://github.com/get-woke/woke)
+- [default ruleset](https://github.com/get-woke/woke/blob/main/pkg/rule/default.yaml)
+- [example.yaml](https://github.com/get-woke/woke/blob/main/example.yaml)
+- [Run woke](https://github.com/marketplace/actions/run-woke)
+- [Run woke with reviewdog](https://github.com/marketplace/actions/run-woke-with-reviewdog)
+- [docs](https://docs.getwoke.tech/)

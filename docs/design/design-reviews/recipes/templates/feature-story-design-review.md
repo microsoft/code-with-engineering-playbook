@@ -1,6 +1,6 @@
 # Template: Feature / Story Design Review
 
-**Your Feature or Story Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)**
+## [DRAFT/WIP] [Feature or Story Design Title]
 
 > Does the feature re-use or extend existing patterns / interfaces that have already been established for the project?
 > Does the feature expose new patterns or interfaces that will establish a new standard for new future development?
@@ -22,7 +22,7 @@
 * List the goals that the feature/story will help us achieve that are most relevant for the design review discussion.
 * This should include acceptance criteria required to meet [definition of done](../../../../agile-development/team-agreements/definition-of-done.md).
 
-## Non-goals / Out-of-Scope
+## Non-Goals / Out-of-Scope
 
 * List the non-goals for the feature/story.
 * This contains work that is beyond the scope of what the feature/component/service is intended for.
@@ -63,6 +63,6 @@
 
 > List any open questions/concerns here.
 
-## Additional References
+## Resources
 
-> List any additional references here including links to backlog items, work items or other documents.
+> List any additional resources here including links to backlog items, work items or other documents.

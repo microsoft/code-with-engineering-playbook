@@ -19,7 +19,7 @@ Some popular GitOps frameworks for Kubernetes backed by [CNCF](https://landscape
 - [Argo CD](https://argo-cd.readthedocs.io/en/stable/)
 - [Rancher Fleet](https://fleet.rancher.io/)
 
-## Deploying using GitOps
+## Deploying Using GitOps
 
 GitOps with Flux v2 can be enabled in Azure Kubernetes Service (AKS) managed clusters or Azure Arc-enabled Kubernetes connected clusters as a cluster extension. After the microsoft.flux cluster extension is installed, you can create one or more fluxConfigurations resources that sync your Git repository sources to the cluster and reconcile the cluster to the desired state. With GitOps, you can use your Git repository as the source of truth for cluster configuration and application deployment.
 

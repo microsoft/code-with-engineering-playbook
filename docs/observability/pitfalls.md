@@ -1,6 +1,6 @@
 # Things to Watch for when Building Observable Systems
 
-## Observability as an afterthought
+## Observability as an Afterthought
 
 One of the design goals when building a system should be to enable monitoring of the system. This helps planning and thinking application availability, logging and metrics at the time of design and development. Observability also acts as a great debugging tool providing developers a bird's eye view of the system. By leaving instrumentation and logging of metrics towards the end, the development teams lose valuable insights during development.
 

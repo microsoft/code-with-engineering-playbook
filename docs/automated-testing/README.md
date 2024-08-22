@@ -1,13 +1,13 @@
 # Testing
 
-## Why testing
+## Why Testing
 
 - Tests allow us to find flaws in our software
 - Good tests document the code by describing the intent
 - Automated tests saves time, compared to manual tests
 - Automated tests allow us to safely change and refactor our code without introducing regressions
 
-## The fundamentals
+## The Fundamentals
 
 - We consider code to be incomplete if it is not accompanied by tests
 - We write unit tests (tests without external dependencies) that can run before every PR merge to validate that we don’t have regressions
@@ -15,7 +15,7 @@
 - We write our tests early and block any further code merging if tests fail.
 - We run load tests/performance tests where appropriate to validate that the system performs under stress
 
-## Build for testing
+## Build for Testing
 
 Testing is a critical part of the development process.  It is important to build your application with testing in mind.  Here are some tips to help you build for testing:
 
@@ -36,7 +36,7 @@ Testing is a critical part of the development process.  It is important to build
 - **Log performance metrics.** Even if you are using App Insights to capture how long dependency calls are taking, it is often useful to know long certain functions of your application took. It then becomes possible to evaluate the performance characteristics of your application as it is deployed on different compute platforms with different limitations on CPU, memory, and network bandwidth. For more information, please see [Metrics](../observability/pillars/metrics.md).
 
 
-## Map of outcomes to testing techniques
+## Map of Outcomes to Testing Techniques
 
 The table below maps outcomes (the results that you may want to achieve in your validation efforts) to one or more techniques that can be used to accomplish that outcome.
 
@@ -82,7 +82,7 @@ The table below maps outcomes (the results that you may want to achieve in your 
 | Development; Operation | Discover points where a system is not resilient to unpredictable yet inevitable failures (network outage, hardware failure, VM host servicing, rack/switch failures, random acts of the Malevolent Divine, solar flares, sharks that eat undersea cable relays, cosmic radiation, power outages, renegade backhoe operators, wolves chewing on junction boxes, …) | Chaos |
 | Development | Perform unit testing on Power platform custom connectors | [Custom Connector Testing](unit-testing/custom-connector.md) |
 
-## Technology specific testing
+## Technology Specific Testing
 
 - [Using DevTest Pattern for building containers with AzDO](tech-specific-samples/building-containers-with-azure-devops.md)
 - [Using Azurite to run blob storage tests in pipeline](tech-specific-samples/blobstorage-unit-tests/README.md)

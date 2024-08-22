@@ -2,7 +2,7 @@
 
 In this document, we explore some of the Program Management considerations for Machine Learning (ML) projects and suggest recommendations for Technical Program Managers (TPM) to effectively work with Data and Applied Machine Learning engineering teams.
 
-## Determine the need for Machine Learning in the project
+## Determine the Need for Machine Learning in the Project
 
 In Artificial Intelligence (AI) projects, the ML component is generally a part of an overall business problem and **NOT** the problem itself. Determine the overall business problem first and then evaluate if ML can help address a part of the problem space.
 Few considerations for identifying the right fit for the project:
@@ -13,7 +13,7 @@ Few considerations for identifying the right fit for the project:
 
 - Think hard about the **costs of ML** and whether we are solving a repetitive problem at scale. Many a times, customer problems can be solved with data analytics, dashboards, or rule-based algorithms as the first phase of the project.
 
-### Set Expectations for high ambiguity in ML components
+### Set Expectations for High Ambiguity in ML components
 
 ML projects can be plagued with a phenomenon we can call as the "**Death by Unknowns**". Unlike software engineering projects, ML focused projects can result in quick success early (aka sudden decrease in error rate), but this may flatten eventually. Few things to consider:
 
@@ -50,11 +50,11 @@ Data quality is a major factor in affecting model performance and production rol
 
 An ML Project has multiple stages, and each stage may require additional roles. For example, Design Research & Designers for Human Experience, Data Engineer for Data Collection, Feature Engineering, a Data Labeler for labeling structured data, engineers for MLOps and model deployment and the list can go on. As a TPM, factor in having these resources available at the right time to avoid any schedule risks.
 
-### Feature Engineering and Hyperparameter tuning
+### Feature Engineering and Hyperparameter Tuning
 
 Feature Engineering enables the transformation of data so that it becomes usable for an algorithm. Creating the right features is an art and may require experimentation as well as domain expertise. Allocate time for domain experts to help with improving and identifying the best features. For example, for a natural language processing engine for text extraction of financial documents, we may involve financial researchers and run a [relevance judgment](https://nlp.stanford.edu/IR-book/html/htmledition/information-retrieval-system-evaluation-1.html) exercise and provide a feedback loop to evaluate model performance.
 
-### Responsible AI considerations
+### Responsible AI Considerations
 
 Bias in machine learning could be the number one issue of a model not performing to its intended needs. Plan to incorporate [Responsible AI principles](responsible-ai.md) from Day 1 to ensure fairness, security, privacy and transparency of the models.  For example, for a person recognition algorithm, if the data source is only feeding a specific skin type, then production scenarios may not provide good results.
 

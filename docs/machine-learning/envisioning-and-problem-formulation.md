@@ -2,7 +2,7 @@
 
 Before beginning a data science investigation, we need to define a problem statement which the data science team can explore; this problem statement can have a significant influence on whether the project is likely to be successful.
 
-## Envisioning goals
+## Envisioning Goals
 
 The main goals of the envisioning process are:
 
@@ -14,7 +14,7 @@ The main goals of the envisioning process are:
 
 The envisioning process usually entails a series of 'envisioning' sessions where the data science team work alongside subject-matter experts to formulate the problem in such a way that there is a shared understanding a shared understanding of the problem domain, a clear goal, and a predefined approach to evaluating a potential solution.
 
-## Understanding the problem domain
+## Understanding the Problem Domain
 
 Generally, before defining a project scope for a data science investigation, we must first understand the problem domain:
 
@@ -23,7 +23,7 @@ Generally, before defining a project scope for a data science investigation, we 
 * Does this problem require a machine learning solution?
 * How would a potential solution be used?
 
-However, establishing this understanding can prove difficult, especially for those unfamiliar with the problem domain. To ease this process, we can approach problems in a structured way by taking the following steps:  
+However, establishing this understanding can prove difficult, especially for those unfamiliar with the problem domain. To ease this process, we can approach problems in a structured way by taking the following steps:
 
 * Identify a measurable problem and define this in business terms. The objective should be clear, and we should have a good understanding of the factors that we can control - that can be used as inputs - and how they affect the objective. Be as specific as possible.
 * Decide how the performance of a solution should be measured and identify whether this is possible within the restrictions of this problem. Make sure it aligns with the business objective and that you have identified the data required to evaluate the solution. Note that the data required to evaluate a solution may differ from the data needed to create a solution.
@@ -35,7 +35,7 @@ or disproved - to guide the exploration of the data science team. Where possible
 
 Once an understanding of the problem domain has been established, it may be necessary to break down the overall problem into smaller, meaningful chunks of work to maintain team focus and ensure a realistic project scope within the given time frame.
 
-## Listening to the end user
+## Listening to the End User
 
 These problems are complex and require understanding from a variety of perspectives. It is not uncommon for the stakeholders to not be the end user of the solution framework. In these cases, listening to the actual end users is critical to the success of the project.
 
@@ -81,7 +81,7 @@ During envisioning sessions, the following may prove useful for guiding the disc
 7. Who would be responsible for maintaining a solution produced during this project?
 8. Are there any restrictions on tooling that must/cannot be used?
 
-## Example - a recommendation engine problem
+## Example: A Recommendation Engine Problem
 
 To illustrate how the above process can be applied to a tangible problem domain, as an example, consider that we are looking at implementing a recommendation engine for a clothing retailer. This example was, in part, inspired by [[3]](#references).
 
@@ -130,7 +130,7 @@ Below are the links to the exit document template and to some questions which ma
 * [List of Resource Access Questions](./ml-data-exploration.md)
 * [List of Data Exploration Workshop Questions](./ml-data-exploration.md)
 
-## References
+## Resources
 
 Many of the ideas presented here - and much more - were inspired by, and can be found in the following resources; all of which are highly recommended.
 

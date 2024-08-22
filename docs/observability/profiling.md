@@ -14,7 +14,7 @@ Different tools visualize profiles differently. Common CPU profiles might use a 
 
 Unfortunately, each profiler tool typically uses its own format for storing profiles, and comes with its own visualization.
 
-## Specific tools
+## Tools
 
 - (Java, Go, Python, Ruby, eBPF) [Pyroscope](https://github.com/pyroscope-io/pyroscope) continuous profiling out of the box.
 - (Java and Go) [Flame](https://github.com/VerizonMedia/kubectl-flame) - profiling containers in Kubernetes

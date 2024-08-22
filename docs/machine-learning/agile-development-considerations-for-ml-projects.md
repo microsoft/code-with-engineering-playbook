@@ -20,7 +20,7 @@ Within this framework, the team follows these Agile ceremonies:
 - [Stand-ups](../agile-development/ceremonies.md#stand-up)
 - [Working agreement](../agile-development/team-agreements/working-agreements.md)
 
-### Notes on Agile process during exploration and experimentation
+## Agile Process During Exploration and Experimentation
 
 1. While acknowledging the fact that ML user stories and research spikes are less predictable than software development ones, we strive to have a deliverable for every user story in every sprint.
 
@@ -28,19 +28,19 @@ Within this framework, the team follows these Agile ceremonies:
 
 3. ML design sessions should be included in each sprint.
 
-#### Examples of ML deliverables for each sprint
+### Examples of ML Deliverables for each Sprint
 
 - Working code (e.g. models, pipelines, exploratory code)
 - Documentation of new hypotheses, and the acceptance or rejection of previous hypotheses as part of a Hypothesis Driven Analysis (HDA). For more information see [Hypothesis Driven Development on Barry Oreilly's website](https://barryoreilly.com/explore/blog/how-to-implement-hypothesis-driven-development/)
 - Exploratory Data Analysis (EDA) results and learnings documented
 
-## Notes on collaboration between ML team and software development team
+## Collaboration Between Data Scientists and Software Developers
 
-- The ML and Software Development teams work together on the project. The team uses one backlog and attend the same Agile ceremonies. In cases where the project has many participants, we will divide into working groups, but still have the entire team join the Agile ceremonies.
+- Data scientists and software developers work together on the project. The team uses one backlog and attend the same Agile ceremonies. In cases where the project has many participants, we will divide into working groups, but still have the entire team join the Agile ceremonies.
 
 - If possible, feasibility study and initial model experimentation takes place before the operationalization work kicks off.
-- The ML team and dev team both share the accountability for the MLOps solution.
+- Everyone shares the accountability for the MLOps solution.
 - The ML model interface (API) is determined as early as possible, to allow the developers to consider its integration into the production pipeline.
-- MLOps artifacts are developed with a continuous collaboration and review of the ML team, to ensure the appropriate approaches for experimentation and
+- MLOps artifacts are developed with a continuous collaboration and review of the data scientists, to ensure the appropriate approaches for experimentation and
 productization are used.
 - Retrospectives and sprint planning are performed on the entire team level, and not the specific work groups level.
