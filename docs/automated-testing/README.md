@@ -82,7 +82,7 @@ The table below maps outcomes (the results that you may want to achieve in your 
 | Development; Operation | Discover points where a system is not resilient to unpredictable yet inevitable failures (network outage, hardware failure, VM host servicing, rack/switch failures, random acts of the Malevolent Divine, solar flares, sharks that eat undersea cable relays, cosmic radiation, power outages, renegade backhoe operators, wolves chewing on junction boxes, …) | Chaos |
 | Development | Perform unit testing on Power platform custom connectors | [Custom Connector Testing](unit-testing/custom-connector.md) |
 
-## Technology Specific Testing
+## Technology specific testing
 
 - [Using DevTest Pattern for building containers with AzDO](tech-specific-samples/building-containers-with-azure-devops.md)
 - [Using Azurite to run blob storage tests in pipeline](tech-specific-samples/blobstorage-unit-tests/README.md)
