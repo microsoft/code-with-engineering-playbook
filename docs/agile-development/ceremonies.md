@@ -99,7 +99,7 @@ Rough estimation is usually done for a generic SE 2 dev.
 - Collect data to monitor estimation accuracy and sprint completion over time to drive improvements.
 - Use the sprint goal to understand if the estimation was correct. If the sprint goal is met: does anything else matter?
 
-#### Scrum Practices
+#### Scrum practices
 
 While Scrum does not prescribe how to size work, Professional Scrum is biased away from absolute estimation (hours, function points, ideal-days, etc.) and towards relative sizing.
 
