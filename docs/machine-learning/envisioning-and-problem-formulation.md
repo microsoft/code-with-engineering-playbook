@@ -51,7 +51,7 @@ The following questions can help guide discussion in understanding the stakehold
 
 ## Envisioning Guidance
 
-During envisioning sessions, the following may prove useful for guiding the discussion. Many of these points are taken directly, or adapted from, [[1]](#references) and [[2]](#references).
+During envisioning sessions, the following may prove useful for guiding the discussion. Many of these points are taken directly, or adapted from, [[1]](#resources) and [[2]](#resources).
 
 ### Problem Framing
 
@@ -83,7 +83,7 @@ During envisioning sessions, the following may prove useful for guiding the disc
 
 ## Example: A Recommendation Engine Problem
 
-To illustrate how the above process can be applied to a tangible problem domain, as an example, consider that we are looking at implementing a recommendation engine for a clothing retailer. This example was, in part, inspired by [[3]](#references).
+To illustrate how the above process can be applied to a tangible problem domain, as an example, consider that we are looking at implementing a recommendation engine for a clothing retailer. This example was, in part, inspired by [[3]](#resources).
 
 Often, the objective may be simply presented, in a form such as "to improve sales". However, whilst this is ultimately the main goal, we would benefit from being more specific here. Suppose that we were to deploy a solution in November and then observed a December sales surge; how would we be able to distinguish how much of this was as a result of the new recommendation engine, as opposed to the fact that December is a peak buying season?
 
@@ -126,9 +126,9 @@ We suggest confirming that you have access to all necessary resources (including
 
 Below are the links to the exit document template and to some questions which may be helpful in confirming resource access.
 
-* [Summary of Scope Exit Document Template](./ml-envisioning-summary-template.md)
-* [List of Resource Access Questions](./ml-data-exploration.md)
-* [List of Data Exploration Workshop Questions](./ml-data-exploration.md)
+* [Summary of Scope Exit Document Template](./envisioning-summary-template.md)
+* [List of Resource Access Questions](./data-exploration.md)
+* [List of Data Exploration Workshop Questions](./data-exploration.md)
 
 ## Resources
 

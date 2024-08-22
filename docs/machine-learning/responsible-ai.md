@@ -32,6 +32,6 @@ The process begins as soon as we start a prospective project. We start to comple
 - Have measures for re-training been considered?
 - How can we address any concerns that arise, and how can we mitigate risk?
 
-At this point we research available [tools and resources](https://www.microsoft.com/en-us/ai/responsible-ai-resources), such as [InterpretML](https://interpret.ml/) or [Fairlearn](https://github.com/fairlearn/fairlearn), that we may use on the project. We may change the project scope or re-define the [ML problem definition](ml-problem-formulation-envisioning.md) if necessary.
+At this point we research available [tools and resources](https://www.microsoft.com/en-us/ai/responsible-ai-resources), such as [InterpretML](https://interpret.ml/) or [Fairlearn](https://github.com/fairlearn/fairlearn), that we may use on the project. We may change the project scope or re-define the [ML problem definition](./envisioning-and-problem-formulation.md) if necessary.
 
-The Responsible AI review documents remain living documents that we re-visit and update throughout project development, through the [feasibility study](ml-feasibility-study.md), as the model is developed and prepared for production, and new information unfolds. The documents can be used and expanded once the model is deployed, and monitored in production.
+The Responsible AI review documents remain living documents that we re-visit and update throughout project development, through the [feasibility study](./feasibility-studies.md), as the model is developed and prepared for production, and new information unfolds. The documents can be used and expanded once the model is deployed, and monitored in production.

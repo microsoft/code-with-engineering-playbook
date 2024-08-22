@@ -27,14 +27,14 @@ The diagram below shows different phases in an ideal ML project. Due to practica
 
 ## General Guidance
 
-* [ML Process Guidance](ml-proposed-process.md)
-* [ML Fundamentals checklist](ml-fundamentals-checklist.md)
-* [Data Exploration](ml-data-exploration.md)
-* [Agile ML development](ml-project-management.md)
-* [Testing Data Science and ML Ops code](ml-testing.md)
-* [Profiling Machine Learning and ML Ops code](ml-profiling.md)
-* [Responsible AI](responsible-ai.md)
-* [Program Management for ML projects](ml-tpm-guidance.md)
+* [ML Process Guidance](./proposed-ml-process.md)
+* [ML Fundamentals checklist](./ml-fundamentals-checklist.md)
+* [Data Exploration](./data-exploration.md)
+* [Agile ML development](./agile-development-considerations-for-ml-projects.md)
+* [Testing Data Science and ML Ops code](./testing-data-science-and-mlops-code.md)
+* [Profiling Machine Learning and ML Ops code](./profiling-ml-and-mlops-code.md)
+* [Responsible AI](./responsible-ai.md)
+* [Program Management for ML projects](./tpm-considerations-for-ml-projects.md)
 
 ## Resources
 

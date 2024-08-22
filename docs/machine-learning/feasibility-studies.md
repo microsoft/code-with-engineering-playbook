@@ -55,7 +55,7 @@ Confirm that the following questions can be answered based on what was learned d
 
 ### Data Discovery
 
-* Hold a [data exploration](ml-data-exploration.md) workshop and deep dive with domain experts
+* Hold a [data exploration](./data-exploration.md) workshop and deep dive with domain experts
 * Understand data availability and confirm the team's access
 * Understand the data dictionary, if available
 * Understand the quality of the data. Is there already a data validation strategy in place?
