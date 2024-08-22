@@ -10,7 +10,7 @@ There are three ways to build devcontainers within pipeline:
 - With [GitHub - devcontainers/cli](https://github.com/devcontainers/cli), which is the same as the above, but using the underlying CLI directly without tasks.
 - Building the `DockerFile` with `docker build`. This option excludes all configuration/features specified within the `devcontainer.json`.
 
-## Considered Options
+## Considered options
 
 - Run CI pipelines in native environment
 - Run CI pipelines in the dev container via building image locally
