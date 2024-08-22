@@ -51,22 +51,23 @@ Evaluate whether load tests should be run as part of the PR strategy.
 
 ### Execution
 
-It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios and how to execute those at load. Depending on the situation, it may be advisable to coordinate testing activities with the platform operations team.  
+It is recommended to use an existing testing framework (see below). These tools will provide a method of both specifying the user activity scenarios and how to execute those at load. Depending on the situation, it may be advisable to coordinate testing activities with the platform operations team.
 
 It is common to slowly ramp up to your desired load to better replicate real world behavior. Once you have reached your defined workload, maintain this level long enough to see if your system stabilizes. To finish up the test you should also ramp to see record how the system slows down as well.
 
 You should also consider the origin of your load test traffic. Depending on the scope of the target system you may want to initiate from a different location to better replicate real world traffic such as from a different region.
 
-**Note:** Before starting please be aware of any restrictions on your network such as DDOS protection where you may need to notify a network administrator or apply for an exemption.
-
-**Note:** In general, the preferred approach to load testing would be the usage of a standard test framework such as the ones discussed below.  There are cases, however, where a custom test client may be advantageous. Examples include batch oriented workloads that can be run under a single security context and the same test data can be re-used for multiple load tests.  In such a scenario it may be beneficial to develop a custom script that can be used interactively as well as non-interactively.
+> **Note:** Before starting please be aware of any restrictions on your network such as DDOS protection where you may need to notify a network administrator or apply for an exemption.
+>
+> **Note:** In general, the preferred approach to load testing would be the usage of a standard test framework such as the ones discussed below.  There are cases, however, where a custom test client may be advantageous. Examples include batch oriented workloads that can be run under a single security context and the same test data can be re-used for multiple load tests.  In such a scenario it may be beneficial to develop a custom script that can be used interactively as well as non-interactively.
 
 ### Analysis
 
 The analysis phase represents the work that brings all previous activities together:
-* Set aside time to allow for collection of new test data based on the analysis of the load tests.
-* Correlate application metrics and platform metrics to identify potential pitfalls and bottlenecks.
-* Include business stakeholders early in the analysis phase to validate application findings. Include platform operations to validate platform findings.
+
+- Set aside time to allow for collection of new test data based on the analysis of the load tests.
+- Correlate application metrics and platform metrics to identify potential pitfalls and bottlenecks.
+- Include business stakeholders early in the analysis phase to validate application findings. Include platform operations to validate platform findings.
 
 ### Report writing
 

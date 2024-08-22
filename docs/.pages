@@ -1,4 +1,5 @@
 nav:
-  - ...
+  - Agile Development: agile-development
+  - Automated Testing: automated-testing
   - CI/CD: ci-cd
   - ...

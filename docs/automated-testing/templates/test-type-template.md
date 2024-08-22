@@ -1,4 +1,6 @@
-# Insert Test Technique Name Here
+# Test Type Template
+
+**[Test Technique Name Here]**
 
 Put a 2-3 sentence overview about the test technique here.
 
@@ -22,7 +24,7 @@ How much is enough?  For example, some opine that unit test ROI drops significan
 - [ ] Build pipelines
 - [ ] Non-production deployments
 - [ ] Production deployments
-  
+
 ## NOTE: If there is great (clear, succinct) documentation for the technique on the web, supply a pointer and skip the rest of this template.  No need to re-type content
 
 ## How to Use
