@@ -141,7 +141,7 @@ Use the following retrospectives techniques to address specific trends that migh
 
 If a team is confronting a problem and is unsure of the exact root cause, the 5 whys exercise taken from the business analysis sector can help get to the bottom of it. For example, if a team cannot get to *Done* each Sprint, that would go at the top of the whiteboard. The team then asks why that problem exists, writing that answer in the box below.  Next, the team asks why again, but this time in response to the *why* they just identified. Continue this process until the team identifies an actual root cause, which usually becomes apparent within five steps.
 
-### Processes, tools, individuals, interactions and the Definition of Done
+### Processes, tools, individuals, interactions and the definition of done
 
 This approach encourages team members to think more broadly.  Ask team members to identify what is going well and ideas for improvement within the categories of processes, tools, individuals/interactions, and the Definition of Done.  Then, ask team members to vote on which improvement ideas to focus on during the upcoming Sprint.
 
