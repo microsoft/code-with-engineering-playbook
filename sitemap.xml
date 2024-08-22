@@ -86,11 +86,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/recipes/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/recipes/detect-secrets-ado/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
@@ -386,7 +381,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/authoring_example/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/authoring-example/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -401,7 +396,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/tdd_example/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/tdd-example/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -457,11 +452,6 @@
     </url>
     <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/code-reviews/process-guidance/reviewer-guidance/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/code-reviews/recipes/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -691,22 +681,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/diagram-types/Templates/classDiagrams/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/diagram-types/Templates/class-diagrams/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/diagram-types/Templates/componentDiagrams/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/diagram-types/Templates/component-diagrams/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/diagram-types/Templates/deploymentDiagrams/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/diagram-types/Templates/deployment-diagrams/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/diagram-types/Templates/sequenceDiagrams/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/design/diagram-types/Templates/sequence-diagrams/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -746,7 +736,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/developer-experience/devcontainers/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/developer-experience/devcontainers-getting-started/</loc>
+         <lastmod>2024-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/developer-experience/devcontainers-going-further/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -757,11 +752,6 @@
     </url>
     <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/developer-experience/fake-services-inner-loop/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/developer-experience/going-further/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -831,11 +821,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/recipes/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/documentation/recipes/deploy-docfx-azure-website/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
@@ -901,22 +886,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-data-exploration/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/agile-development-considerations-for-ml-projects/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-envisioning-summary-template/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/data-exploration/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-experimentation/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/envisioning-and-problem-formulation/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-feasibility-study/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/envisioning-summary-template/</loc>
+         <lastmod>2024-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/feasibility-studies/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -931,37 +921,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-problem-formulation-envisioning/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/model-experimentation/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-profiling/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/profiling-ml-and-mlops-code/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-project-management/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-proposed-process/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-testing/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/ml-tpm-guidance/</loc>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/proposed-ml-process/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/responsible-ai/</loc>
+         <lastmod>2024-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/testing-data-science-and-mlops-code/</loc>
+         <lastmod>2024-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/code-with-engineering-playbook/machine-learning/tpm-considerations-for-ml-projects/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1107,11 +1092,6 @@
     </url>
     <url>
          <loc>https://microsoft.github.io/code-with-engineering-playbook/observability/recipes-observability/</loc>
-         <lastmod>2024-08-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://microsoft.github.io/code-with-engineering-playbook/observability/pillars/</loc>
          <lastmod>2024-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
