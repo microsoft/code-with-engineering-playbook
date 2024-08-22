@@ -1,4 +1,4 @@
-# Effortless Pair Programming with GitHub Codespaces and VSCode
+# Effortless pair programming with GitHub Codespaces and VSCode
 
 Pair programming used to be a software development technique in which two programmers work together on a single computer, sharing one keyboard and mouse, to jointly design, code, test, and debug software. It is one of the patterns explored in the section [why collaboration?](why-collaboration.md) of this playbook, however with teams that work mostly remotely, sharing a physical computer became a challenge, but opened the door to a more efficient approach of pair programming.
 
