@@ -1,6 +1,6 @@
 # Secrets management
 
-Secret Management refers to the tools and practices used to manage digital authentication credentials (like API keys, tokens, passwords, and certificates). These secrets are used to protect access to sensitive data and services, making their management critical for security.
+Secret management refers to the tools and practices used to manage digital authentication credentials (like API keys, tokens, passwords, and certificates). These secrets are used to protect access to sensitive data and services, making their management critical for security.
 
 We should assume any repo we work on may go public at any time and protect our secrets, even if
 the repo is initially private.
