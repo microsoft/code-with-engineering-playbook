@@ -50,7 +50,7 @@ Just as an example, agility debugging activities may include:
   - Are Acceptance Criteria enough and right?
   - Is everyone ready-to-go after taking the User Story/Task?
 
-- Running [Efficient Retrospectives](../../ceremonies.md#retrospectives)
+- Running [efficient retrospectives](../../ceremonies.md#retrospectives)
 
 - Is the Sprint Goal clear in every iteration ?
 
