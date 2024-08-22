@@ -54,7 +54,7 @@ Some advantages of shadow testing are:
 - We can test real-life scenarios with real-life data.
 - We can simulate scale with replicated production traffic.
 
-## References  
+## References
 
 - [Martin Fowler - Dark Launching](https://martinfowler.com/bliki/DarkLaunching.html)
 - [Martin Fowler - Feature Toggle](https://martinfowler.com/bliki/FeatureToggle.html)
