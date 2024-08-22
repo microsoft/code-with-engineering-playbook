@@ -2,7 +2,7 @@
 
 Usability is a topic that is often used interchangeably with user experience (UX), but they are not the same thing. Usability is a subset of UX, focusing specifically on the ease of use and effectiveness of a product, i.e., it is the ease with which users can learn and use a product to achieve their goals. Usability is a key factor in determining the success of a product, as it directly impacts user satisfaction, productivity, and overall experience. A system that is difficult to use or understand can lead to frustration, errors, and ultimately, abandonment by users.
 
-Closely coupled with usability and UX is the concept of [accessibility](../non-functional-requirements/accessibility.md).
+Closely coupled with usability and UX is the concept of [accessibility](./accessibility.md).
 
 ## Characteristics
 
