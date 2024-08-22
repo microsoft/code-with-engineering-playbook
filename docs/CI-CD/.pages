@@ -1,0 +1,6 @@
+nav:
+  - Continuous Delivery: continuous-delivery
+  - Continuous Integration: continuous-integration
+  - DevSecOps: dev-sec-ops
+  - GitOps: gitops
+  - ...
