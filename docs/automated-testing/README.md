@@ -36,7 +36,7 @@ Testing is a critical part of the development process.  It is important to build
 - **Log performance metrics.** Even if you are using App Insights to capture how long dependency calls are taking, it is often useful to know long certain functions of your application took. It then becomes possible to evaluate the performance characteristics of your application as it is deployed on different compute platforms with different limitations on CPU, memory, and network bandwidth. For more information, please see [Metrics](../observability/pillars/metrics.md).
 
 
-## Map of Outcomes to Testing Techniques
+## Map of outcomes to testing techniques
 
 The table below maps outcomes (the results that you may want to achieve in your validation efforts) to one or more techniques that can be used to accomplish that outcome.
 
