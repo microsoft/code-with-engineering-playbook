@@ -133,7 +133,7 @@ Steps may look like the following:
     ```
 
 5. Build a script that automatically generates your environment files.
-    > NOTE: App Configuration references Key Vault, however, your script is responsible for authenticating properly to both App Configuration and Key Vault. The two services don't communicate directly.
+    > **Note:** App Configuration references Key Vault, however, your script is responsible for authenticating properly to both App Configuration and Key Vault. The two services don't communicate directly.
 
     ```powershell (CreatePostmanEnvironmentFiles.ps1)
     # Please treat this as pseudocode, and adjust as necessary.
@@ -172,7 +172,7 @@ Ending with this approach has the following downsides:
 - Secrets may happen to get exposed in the git commit history if .gitIgnore is not updated to ignore Postman Environment files.
 - Collections can only be used locally to hit APIs (local or deployed). Not CI based.
 
-### Use Case - E2E testing With Continuous Integration and Newman
+### Use Case - E2E Testing with Continuous Integration and Newman
 
 A developer or QA analyst may have an existing API test suite of local Postman Collections that follow security best practices for development, however, they now want E2E tests to run as part of automated CI pipeline. With the advent of Newman, you can now more readily use Postman to craft an API test suite executable in your CI.
 
@@ -198,12 +198,12 @@ Steps may look like the following:
     envVars = az appconfig kv list --name PostmanAppConfig --label $env | ConvertFrom-Json
     # 3. step through envVars array to get Key Vault uris
     keyvaultURI = ""
-    @envVars | % {if($_.key -eq 'password'){keyvaultURI = $_.value}} 
+    @envVars | % {if($_.key -eq 'password'){keyvaultURI = $_.value}}
     # 4. parse uris for Key Vault name and secret names
     # 5. get secret from Key Vault
     kvsecret = az keyvault secret show --name $secretName --vault-name $keyvaultName --query "value"
     # 6. set password value to returned Key Vault secret
-    $envVars | % {if($_.key -eq 'password'){$_.value=$kvsecret}}  
+    $envVars | % {if($_.key -eq 'password'){$_.value=$kvsecret}}
     # 7. create environment file
     envFile = @{ "_postman_variable_scope" = "environment", "name" = $env, values = @() }
     foreach($var in $envVars){

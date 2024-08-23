@@ -8,7 +8,7 @@ Developers working on projects should adhere to industry-recommended standard pr
 
 When requesting a security review for your application, please make sure you have familiarized yourself with the [Rules of Engagement](rules-of-engagement.md). This will help you to prepare the application for testing, as well as understand the scope limits of the test.
 
-## Quick References
+## Quick Resources
 
 - [Secure Coding Practices Quick Reference](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 - [Web Application Security Quick Reference](https://owasp.org/www-pdf-archive//OWASP_Web_Application_Security_Quick_Reference_Guide_0.3.pdf)
@@ -93,6 +93,6 @@ Check out the list of tools to help enable security in your projects.
   - [cert-manager](https://github.com/jetstack/cert-manager) for easy certificate provisioning and automatic rotation.
   - [Quickly enable mTLS between your microservices with Linkerd](https://linkerd.io/2/features/automatic-mtls/).
 
-## Useful links
+## Resources
 
 - [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)

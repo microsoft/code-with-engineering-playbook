@@ -20,7 +20,7 @@ More details about these phases can be found at [Threat Modeling Security Fundam
 
    [Here is an example](./threat-modelling-example.md) of a threat modeling document which talks about the architecture and different phases involved in the threat modeling. This document can be used as reference template for creating threat modeling documents.
 
-## References
+## Resources
 
 * [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling)
 * [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)

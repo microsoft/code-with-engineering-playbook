@@ -12,7 +12,7 @@ Virtual work patterns are different from the in-person patterns we are accustome
 
 Pair programming is one way to achieve these results. Red Team Testing (RTT) is an alternate programming method that uses the same principles but with some of the advantages that virtual work methods provide.
 
-## Red Team Testing
+## Red Team Testing (RTT)
 
 Red Team Testing borrows its name from the “Red Team” and “Blue Team” paradigm of penetration testing, and is a collaborative, parallel way of working virtually. In Red Team Testing, two developers jointly decide on the interface, architecture, and design of the program, and then separate for the implementation phase. One developer writes tests using the public interface, attempting to perform edge case testing, input validation, and otherwise stress testing the interface. The second developer is simultaneously writing the implementation which will eventually be tested.
 
@@ -34,7 +34,7 @@ Red Team Testing has the same philosophy as any other Test-Driven Development li
     - Realistic Scenario: The tests have either broken or failed due to flaws in testing. This leads to further clarification of the design and a discussion of why the tests failed.
 1. The developers will repeat the three phases until the code is functional and tested.
 
-## When to follow the RTT strategy
+## When to Follow the RTT Strategy
 
 RTT works well under specific circumstances. If collaboration needs to happen virtually, and all communication is virtual, RTT reduces the need for constant communication while maintaining the benefits of a joint design session. This considers the human element: Virtual communication is more exhausting than in person communication.
 
@@ -50,7 +50,7 @@ RTT has many of the same benefits as Pair Programming and Test-Driven developmen
 - RTT encourages testing to be prioritized alongside implementation, instead of having testing follow or be influenced by the implementation of the code.
 - Documentation is inherently a part of RTT, since both the implementer and the tester need correct, up to date documentation, in the implementation phase.
 
-## What you need for RTT to work well
+## What You Need for RTT to Work Well
 
 - Demand for constant communication and good teamwork may pose a challenge; daily updates amongst team members are essential to maintain alignment on varying code requirements.
 - Clarity of the code design and testing strategy must be established beforehand and documented as reference. Lack of an established design will cause misalignment between the two major pieces of work and a need for time-consuming refactoring.

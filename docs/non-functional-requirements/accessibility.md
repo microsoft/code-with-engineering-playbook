@@ -12,15 +12,15 @@ Inclusive design is a methodology that embraces the full range of human diversit
 
 The Microsoft Inclusive Design methodology includes the following principles:
 
-### Recognize exclusion
+### Recognize Exclusion
 
 Designing for inclusivity not only opens up our products and services to more people, it also reflects how people really are. All humans grow and adapt to the world around them and we want our designs to reflect that.
 
-### Solve for one, extend to many
+### Solve for One, Extend to Many
 
 Everyone has abilities, and limits to those abilities. Designing for people with permanent disabilities actually results in designs that benefit people universally. Constraints are a beautiful thing.
 
-### Learn from diversity
+### Learn from Diversity
 
 Human beings are the real experts in adapting to diversity. Inclusive design puts people in the center from the very start of the process, and those fresh, diverse perspectives are the key to true insight.
 
@@ -56,7 +56,7 @@ Before you get to testing, you can make some small changes in how you write code
 - When including images or diagrams, add alt text. This should never just be "Image" or "Diagram" (or similar). In your description, highlight the purpose of the image or diagram in the page and what it is intended to convey.
 - Prefer tabs to spaces when possible. This allows users to default to their preferred tab width, so users with a range of vision can all take in code easily.
 
-## Additional Resources
+## Resources
 
 * [Microsoft Accessibility Technology & Tools](https://www.microsoft.com/accessibility)
 * [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20/#intro)

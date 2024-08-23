@@ -2,9 +2,9 @@
 
 The following are best practices around how to design and configure resources, used for Hybrid and Multi-Cloud environments.
 
-> **NOTE:** When working in an existing hybrid environment, it is important to understand any current patterns, and how they are used before making any changes.
+> **Note:** When working in an existing hybrid environment, it is important to understand any current patterns, and how they are used before making any changes.
 
-## Hub-and-spoke Topology
+## Hub-and-Spoke Topology
 
 The hub-and-spoke topology doesn't change much when using cloud/hybrid if configured correctly, The main different is that the hub VNet is peering to the on-prem network via a ExpressRoute and that all traffic from Azure might exit via the ExpressRoute and the on-prem internet connection.
 

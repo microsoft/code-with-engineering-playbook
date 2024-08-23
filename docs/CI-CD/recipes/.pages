@@ -1,0 +1,6 @@
+nav:
+  - CD on low code solutions: cd-on-low-code-solutions.md
+  - CI pipeline for better documentation: ci-pipeline-for-better-documentation.md
+  - CI with jupyter notebooks: ci-with-jupyter-notebooks.md
+  - GitHub actions: github-actions
+  - ...

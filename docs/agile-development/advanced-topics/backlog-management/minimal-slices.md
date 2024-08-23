@@ -1,9 +1,8 @@
-# Minimalism Slices
+# Minimal Slices
 
-## Always deliver your work using minimal valuable slices
+## Always Deliver Your Work Using Minimal Valuable Slices
 
 - Split your work item into small chunks that are contributed in incremental commits.
-
 - Contribute your chunks frequently. Follow an iterative approach by regularly providing updates and changes to the team. This allows for instant feedback and early issue discovery and ensures you are developing in the right direction, both technically and functionally.
 
 - Do NOT work independently on your task without providing any updates to your team.
@@ -12,11 +11,11 @@
 
 Imagine you are working on adding UWP (Universal Windows Platform) application building functionality for existing continuous integration service which already has Android/iOS support.
 
-#### Bad approach
+#### Bad Approach
 
 After six weeks of work you created PR with all required functionality, including portal UI (build settings), backend REST API (UWP build functionality), telemetry, unit and integration tests, etc.
 
-#### Good approach
+#### Good Approach
 
 You divided your feature into smaller user stories (which in turn were divided into multiple tasks) and started working on them one by one:
 

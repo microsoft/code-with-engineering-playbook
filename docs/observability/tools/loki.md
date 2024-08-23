@@ -30,7 +30,7 @@ The main reason to use Loki instead of other log aggregation tools, is that Loki
 storage. It does that by following the same pattern as prometheus, which index the labels and make chunks
 of the log itself, using less space than just storing the raw logs.
 
-## References
+## Resources
 
 - [Loki Official Site](https://grafana.com/oss/loki/)
 - [Inserting logs into Loki](https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/)

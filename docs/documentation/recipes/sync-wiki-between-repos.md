@@ -1,4 +1,4 @@
-# How to Sync a Wiki between Repositories
+# How to Sync a Wiki Between Repositories
 
 This is a quick guide to mirroring a Project Wiki to another repository.
 

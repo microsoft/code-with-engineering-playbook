@@ -1,6 +1,6 @@
 # Template: Milestone / Epic Design Review
 
-**Your Milestone/Epic Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)**
+## [DRAFT/WIP] [Milestone/Epic Design Title]
 
 > Please refer to the [milestone/epic design review recipe](../milestone-epic-design-review-recipe.md) for things to keep in mind when using this template.
 
@@ -14,7 +14,7 @@
 
 ## Goals / In-Scope
 
-> List a few bullet points of goals that this milestone/epic will achieve and that are most relevant for the design review discussion. You may include acceptable criteria required to meet the [Definition of Done](../../../../agile-development/advanced-topics/team-agreements/definition-of-done.md).
+> List a few bullet points of goals that this milestone/epic will achieve and that are most relevant for the design review discussion. You may include acceptable criteria required to meet the [Definition of Done](../../../../agile-development/team-agreements/definition-of-done.md).
 
 ## Non-goals / Out-of-Scope
 
@@ -71,6 +71,6 @@
 
 > Include any open questions and concerns.
 
-## Additional References
+## Resources
 
-> Include any additional references including links to work items or other documents.
+> Include any additional resources including links to work items or other documents.

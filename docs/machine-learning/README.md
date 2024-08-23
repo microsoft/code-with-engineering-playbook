@@ -8,12 +8,12 @@ This guideline documents the Machine Learning (ML) practices in ISE. ISE works w
 * Provide clarity on ML process and how it fits within a software engineering project.
 * Provide best practices for the different stages of an ML project.
 
-## How to use these fundamentals
+## How to use these Fundamentals
 
 * If you are starting a new ML project, consider reading through the [general guidance documents](#general-guidance).
 * For specific aspects of an ML project, refer to the guidelines for different [project phases](#ml-project-phases).
 
-## ML Project phases
+## ML Project Phases
 
 The diagram below shows different phases in an ideal ML project. Due to practical constraints and requirements, it might not always be possible to have a project structured in such a manner, however best practices should be followed for each individual phase.
 
@@ -25,7 +25,7 @@ The diagram below shows different phases in an ideal ML project. Due to practica
 * **[Model(s) experimentation](ml-experimentation.md)**: Tools and best practices for conducting successful model experimentation.
 * **Model(s) Operationalization**: [Model readiness for production](ml-model-checklist.md) checklist.
 
-## General guidance
+## General Guidance
 
 * [ML Process Guidance](ml-proposed-process.md)
 * [ML Fundamentals checklist](ml-fundamentals-checklist.md)
@@ -36,6 +36,6 @@ The diagram below shows different phases in an ideal ML project. Due to practica
 * [Responsible AI](responsible-ai.md)
 * [Program Management for ML projects](ml-tpm-guidance.md)
 
-## References
+## Resources
 
 * [Model Operationalization](https://github.com/Microsoft/MLOps)

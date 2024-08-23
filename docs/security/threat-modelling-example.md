@@ -1,6 +1,6 @@
-# Overview
+# Threat Modelling Example
 
-This document covers the threat models for a sample project which takes video frames from video camera and process these frames on IoTEdge device and send them to Azure Cognitive Service to get the audio output.  
+This document covers the threat models for a sample project which takes video frames from video camera and process these frames on IoTEdge device and send them to Azure Cognitive Service to get the audio output.
  These models can be considered as reference template to show how we can construct threat modeling document. Each of the labeled entities in the figures below are accompanied by meta-information which describe the threats, recommended mitigations, and the associated [security principle or goal](#security-principles).
 
 ## Architecture Diagram

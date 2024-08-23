@@ -30,6 +30,6 @@ Implementing performance involves a combination of architectural decisions, codi
 - Performance Testing: Performing rigorous performance tests to pinpoint bottlenecks, measure critical metrics like response time and throughput, and validate system performance across varying load scenarios.
 - Continuous Monitoring: Implementing ongoing monitoring of performance metrics to identify performance degradation.
 
-## More information
+## Resources
 
 - [Automated Testing](../automated-testing/README.md)

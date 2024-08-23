@@ -33,7 +33,7 @@ Prometheus' metrics format is supported by a wide array of tools and services in
 
 There are numerous [exporters](https://prometheus.io/docs/instrumenting/exporters/) which are used in exporting existing metrics from third-party databases, hardware, CI/CD tools, messaging systems, APIs and other monitoring systems. In addition to client libraries and exporters, there is a significant number of [integration points](https://prometheus.io/docs/operating/integrations/) for service discovery, remote storage, alerts and management.
 
-## References
+## Resources
 
 - [Prometheus Docs](https://prometheus.io/docs)
 - [Prometheus Best Practices](https://prometheus.io/docs/practices)

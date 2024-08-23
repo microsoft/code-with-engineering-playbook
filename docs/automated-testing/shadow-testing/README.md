@@ -2,7 +2,7 @@
 
 Shadow testing is one approach to reduce risks before going to production. Shadow testing is also known as "Shadow Deployment" or "Shadowing Traffic" and similarities with "Dark launching".
 
-## When to use
+## When to Use
 
 Shadow Testing reduces risks when you consider replacing the current environment (V-Current) with candidate environment with new feature (V-Next). This approach is monitoring and capturing differences between two environments then compare and reduces all risks before you introduce a new feature/release.
 
@@ -55,7 +55,7 @@ Some advantages of shadow testing are:
 - We can test real-life scenarios with real-life data.
 - We can simulate scale with replicated production traffic.
 
-## References  
+## Resources
 
 - [Martin Fowler - Dark Launching](https://martinfowler.com/bliki/DarkLaunching.html)
 - [Martin Fowler - Feature Toggle](https://martinfowler.com/bliki/FeatureToggle.html)

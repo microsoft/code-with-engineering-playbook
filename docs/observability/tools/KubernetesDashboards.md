@@ -33,6 +33,6 @@ There are currently several UI dashboards available to monitor your applications
 - [Lens](https://k8slens.dev/): Client side desktop tool
 - [Thanos](https://github.com/thanos-io/thanos) and [Cortex](https://cortexmetrics.io/docs/): Multi-cluster implementations
 
-## References
+## Resources
 
 - [Alternatives to Kubernetes Dashboard](https://octopus.com/blog/alternative-kubernetes-dashboards)

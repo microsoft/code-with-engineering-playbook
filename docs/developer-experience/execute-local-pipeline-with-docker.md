@@ -1,4 +1,4 @@
-# Executing pipelines locally
+# Executing Pipelines Locally
 
 ## Abstract
 
@@ -18,7 +18,7 @@ Using the suggested method will allow us to:
 
 [Docker Compose](https://docs.docker.com/compose/) allows you to build push or run multi-container Docker applications.
 
-### Method of work
+### Method of Work
 
 1. Dockerize your application(s), including a build step if possible.
 2. Add a step in your docker file to execute unit tests.
@@ -31,7 +31,7 @@ Using the suggested method will allow us to:
 1. [Docker](https://www.docker.com/products/docker-desktop)
 2. Optional: if you clone the sample app, you need to have [dotnet core](https://dotnet.microsoft.com/download) installed.
 
-### Step by step with examples
+### Step by Step with Examples
 
 For this tutorial we are going to use a [sample dotnet core api application](https://github.com/itye-msft/cse-engagement-template).
 Here is the docker file for the sample app:

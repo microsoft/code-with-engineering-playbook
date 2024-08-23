@@ -1,6 +1,6 @@
 # Template: Task Design Review
 
-**Your Task Design Title Here (prefix with DRAFT/WIP to indicate level of completeness)**
+## [DRAFT/WIP] [Task Design Title]
 
 > When developing a design document for a new task, it should contain a detailed design proposal demonstrating how it will solve the goals outlined below.
 > Not all tasks require a design review, but when they do it is likely that there many unknowns, or the solution may be more complex.
@@ -21,7 +21,7 @@
 ## Goals/In-Scope
 
 * List a few bullet points of what this task will achieve and that are most relevant for the design review discussion.
-* This should include acceptance criteria required to meet the [definition of done](../../../../agile-development/advanced-topics/team-agreements/definition-of-done.md).
+* This should include acceptance criteria required to meet the [definition of done](../../../../agile-development/team-agreements/definition-of-done.md).
 
 ## Non-goals / Out-of-Scope
 
@@ -30,8 +30,8 @@
 ## Proposed Options
 
 * Describe the detailed design to accomplish the proposed task.
-* What patterns & practices will be used and why were they chosen.  
-* Were any alternate proposals considered?  
+* What patterns & practices will be used and why were they chosen.
+* Were any alternate proposals considered?
 * What new components are required to be developed?
 * Are there any existing components that require updates?
 * Relevant diagrams (e.g. sequence, component, context, deployment) should be included here.
@@ -45,6 +45,6 @@
 
 > List any open questions/concerns here.
 
-## Additional References
+## Resources
 
-> List any additional references here including links to backlog items, work items or other documents.
+> List any additional resources here including links to backlog items, work items or other documents.

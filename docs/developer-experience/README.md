@@ -45,7 +45,7 @@ How long does it take to make a change that can be verified/tested locally. A lo
 
 Providing a positive developer experience is a team effort. However, certain members can take ownership of different areas to help hold the entire team accountable.
 
-### Dev Lead - Set the bar
+### Dev Lead - Set the Bar
 
 The following are examples of how the Dev Lead might set the bar for dev experience
 
@@ -232,4 +232,4 @@ class MyService {
 }
 ```
 
-The recipes section has a more complete discussion on [DI as part of a high productivity inner dev loop](client-app-inner-loop.md)
+The recipes section has a more complete discussion on [DI as part of a high productivity inner dev loop](./client-app-inner-loop.md)

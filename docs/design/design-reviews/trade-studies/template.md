@@ -4,7 +4,7 @@ This generic template can be used for any situation where we have a set of requi
 by multiple solutions. They can range in scope from choice of which open source package to use, to full
 architecture designs.
 
-## Trade Study/Design: {study name goes here}
+## Trade Study/Design: [Trade Study Name]
 
 - **Conducted by:** {Names of those that can answer follow-up questions and at least one email address}
 - **Backlog Work Item:** {Link to the work item to provide more context}
@@ -82,9 +82,9 @@ Consider the following prompts when determining application accessibility requir
 
 Enumerate the solutions that are believed to deliver the outcomes defined above.
 
-> NOTE: Limiting the evaluated solutions to 2 or 3 potential candidates can help manage the time spent on the evaluation. If there are more than 3 candidates, prioritize what the team feels are the top 3. If appropriate, the eliminated candidates can be mentioned to capture why they were eliminated. Additionally, there should be at least two options compared, otherwise you didn't need a trade study.
+> **Note:** Limiting the evaluated solutions to 2 or 3 potential candidates can help manage the time spent on the evaluation. If there are more than 3 candidates, prioritize what the team feels are the top 3. If appropriate, the eliminated candidates can be mentioned to capture why they were eliminated. Additionally, there should be at least two options compared, otherwise you didn't need a trade study.
 
-### {Solution 1} - Short and easily recognizable name
+### [Solution 1]
 
 Add a **brief** description of the solution and how its expected to produce the desired outcomes. If appropriate, illustrations/diagrams can be used to reduce the amount of text explanation required to describe the solution.
 
@@ -118,11 +118,11 @@ Present the evidence collected during experimentation that supports the hypothes
 
 > NOTE: **Evidence is not required for every capability, metric, or constraint for the design to be considered done.** Instead, focus on presenting evidence that is most relevant and impactful towards supporting or eliminating the hypothesis.
 
-### {Solution 2}
+### [Solution 2]
 
 ...
 
-### {Solution N}
+### [Solution N]
 
 ...
 
@@ -148,7 +148,7 @@ In the latter case, each question needs an action item and an assigned person fo
 
 In the first case, describe which solution was chosen and why. Summarize what evidence informed the decision and how that evidence mapped to the desired outcomes.
 
-> **IMPORTANT**: Decisions should be made with the understanding that they can change as the team learns more. It's a starting point, not a contract.
+> **Note:** Decisions should be made with the understanding that they can change as the team learns more. It's a starting point, not a contract.
 
 ## Next Steps
 

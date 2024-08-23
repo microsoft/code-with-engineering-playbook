@@ -38,7 +38,7 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 * Report product issues found and provide clear and repeatable engineering feedback!
 * We all own our code and each one of us has an obligation to make all parts of the solution great.
 
-## QuickLinks
+## Resources
 
 * [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)
 * [Structure of a Sprint](docs/SPRINT-STRUCTURE.md)

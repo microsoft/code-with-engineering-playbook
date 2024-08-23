@@ -27,6 +27,6 @@ Capacity is typically implemented through a combination of architectural design,
 - High Availability and Fault Tolerance: Implementing strategies such as redundant servers, failover mechanisms, and disaster recovery plans ensures that the system remains available and operational even in the event of hardware failures or other disruptions.
 - Capacity Planning: Conducting thorough capacity planning based on anticipated growth, usage patterns, and business requirements helps forecast resource needs and proactively scale the system to meet future demands.
 
-## More information
+## Resources
 
 - [Performance Testing](../automated-testing/performance-testing/README.md)

@@ -34,6 +34,6 @@ Building observable systems enables development teams at ISE to measure how well
 - [Observability in Azure Databricks](observability-databricks.md)
 - [Recipes](recipes-observability.md)
 
-## Useful links
+## Resources
 
 - [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)

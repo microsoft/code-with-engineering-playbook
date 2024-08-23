@@ -16,7 +16,7 @@ While the [OpenAPI-Specification (OAI)](https://github.com/OAI/OpenAPI-Specifica
 
 [Microsoft TypeSpec](https://github.com/Microsoft/typespec) is a widely adopted tool within Azure teams, particularly for generating OpenAPI Specifications in complex and interconnected APIs that span multiple teams. To ensure consistency across different parts of the API, teams commonly leverage shared libraries which contain reusable patterns. This makes easier to follow best practices rather than deviating from them. By promoting highly regular API designs that adhere to best practices by construction, TypeSpec can help improve the quality and consistency of APIs developed within an organization.
 
-## References
+## Resources
 
 - [ASP.NET Core web API documentation with Swagger / OpenAPI](https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0).
 - [Microsoft TypeSpec](https://github.com/Microsoft/typespec).
