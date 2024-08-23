@@ -13,7 +13,7 @@ When requesting a security review for your application, please make sure you hav
 - [Secure Coding Practices Quick Reference](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 - [Web Application Security Quick Reference](https://owasp.org/www-pdf-archive//OWASP_Web_Application_Security_Quick_Reference_Guide_0.3.pdf)
 - [Security Mindset/Creating a Security Program Quick Start](https://github.com/OWASP/Quick-Start-Guide/blob/master/OWASP%20Quick%20Start%20Guide.pdf?raw=true)
-- [Credential Scanning / Secret Detection](../continuous-integration/dev-sec-ops/secret-management/credential_scanning.md)
+- [Credential Scanning / Secret Detection](../CI-CD/dev-sec-ops/secrets-management/credential_scanning.md)
 - [Threat Modelling](./threat-modelling.md)
 
 ## Azure DevOps Security
@@ -25,7 +25,7 @@ When requesting a security review for your application, please make sure you hav
 
 ## DevSecOps
 
-Introduce security to your project at early stages. The [DevSecOps section](../continuous-integration/dev-sec-ops/README.md) covers security practices, automation, tools and frameworks as part of the application CI.
+Introduce security to your project at early stages. The [DevSecOps section](../CI-CD/dev-sec-ops/README.md) covers security practices, automation, tools and frameworks as part of the application CI.
 
 ## OWASP Cheat Sheets
 

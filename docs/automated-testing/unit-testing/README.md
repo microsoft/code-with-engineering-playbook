@@ -47,7 +47,7 @@ but the general techniques and best practices of writing a unit test are univers
 ### Techniques
 
 These are some commonly used techniques that will help when authoring unit tests. For some examples, see the pages on
-using [abstraction and dependency injection to author a unit test](./authoring_example.md), or how to do [test-driven development](./tdd-example.md).
+using [abstraction and dependency injection to author a unit test](./authoring-example.md), or how to do [test-driven development](./tdd-example.md).
 
 Note that some of these techniques are more specific to strongly typed, object-oriented languages. Functional languages
 and scripting languages have similar techniques that may look different, but these terms are commonly used in all unit
@@ -68,7 +68,7 @@ should still be used - without that, a change in the way the dependency function
 When building wrappers around third-party dependencies, it is best to keep the implementations with as little logic as
 possible, using a very simple [facade](https://en.wikipedia.org/wiki/Facade_pattern) that calls the dependency.
 
-An example of using abstraction can be found [here](./authoring_example.md#abstraction).
+An example of using abstraction can be found [here](./authoring-example.md#abstraction).
 
 #### Dependency Injection
 
@@ -103,7 +103,7 @@ write your test code first and then write the system under test to match the tes
 design is done up front and by the time you finish writing your system code, you are already at 100% test pass rate and
 test coverage. It also guarantees testable design is built into the system since the test was written first!
 
-For more information on TDD and an example, see the page on [Test-Driven Development](./tdd_example.md)
+For more information on TDD and an example, see the page on [Test-Driven Development](./tdd-example.md)
 
 ### Best Practices
 

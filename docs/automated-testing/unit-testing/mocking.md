@@ -133,7 +133,7 @@ to do a time-intensive refactor to make the code unit testable. A common problem
 languages such as C# is not using dependency injection. Consider using dependency injection so that a mock can easily be injected
 into your Subject Under Test (SUT) during a unit test.
 
-More information on using dependency injection can be found [here](authoring_example.md#dependency-injection).
+More information on using dependency injection can be found [here](./authoring-example.md#dependency-injection).
 
 ### Assertions
 

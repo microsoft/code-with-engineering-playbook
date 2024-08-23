@@ -6,7 +6,7 @@
 
 - The planning supports Diversity and Inclusion principles and provides equal opportunities.
 - The Planning defines how the work is going to be completed in the sprint.
-- Stories fit in a sprint and are [designed](../design/design-reviews) and [ready](team-agreements/definition-of-ready.md) before the planning.
+- Stories fit in a sprint and are [designed](../design/design-reviews) and [ready](./team-agreements/definition-of-ready.md) before the planning.
 
 > **Note:** Self assignment by team members can give a feeling of fairness in how work is split in the team. Sometime, this ends up not being the case as it can give an advantage to the loudest or more experienced voices in the team. Individuals also tend to stay in their comfort zone, which might not be the right approach for their own growth.*
 
