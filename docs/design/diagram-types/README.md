@@ -20,10 +20,10 @@ Within each of these classes, there are many types of diagrams, each intended to
 
 This section contains educational material and examples for the following design diagrams:
 
-- [Class Diagrams](./templates/class-diagrams.md) - Useful to document the structural design of a codebase's relationship between classes, and their corresponding methods
-- [Component Diagrams](./templates/component-diagrams.md) - Useful to document a high level structural overview of all the components and their direct "touch points" with other Components
-- [Sequence Diagrams](./templates/sequence-diagrams.md) - Useful to document a behavior overview of the system, capturing the various "use cases" or "actions" that triggers the system to perform some business logic
-- [Deployment Diagram](./templates/deployment-diagrams.md) - Useful in order to document the networking and hosting environments where the system will operate in
+- [Class Diagrams](templates/class-diagrams.md) - Useful to document the structural design of a codebase's relationship between classes, and their corresponding methods
+- [Component Diagrams](templates/component-diagrams.md) - Useful to document a high level structural overview of all the components and their direct "touch points" with other Components
+- [Sequence Diagrams](templates/sequence-diagrams.md) - Useful to document a behavior overview of the system, capturing the various "use cases" or "actions" that triggers the system to perform some business logic
+- [Deployment Diagram](templates/deployment-diagrams.md) - Useful in order to document the networking and hosting environments where the system will operate in
 
 ## Supplemental Resources
 
