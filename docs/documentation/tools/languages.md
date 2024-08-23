@@ -39,7 +39,7 @@ graph LR
 
 This is an example of how it can be rendered as an image.
 
-![Example mermaid diagram](images/example-mermaid-diagram.png)
+![Example mermaid diagram](./images/example-mermaid-diagram.png)
 
 More information:
 

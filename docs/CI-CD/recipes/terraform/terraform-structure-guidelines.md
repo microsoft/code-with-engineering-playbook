@@ -8,7 +8,6 @@ When creating an infrastructure configuration, it is important to follow a consi
 The recommended structure is as follows:
 
 1. Place each component you want to configure in its own module folder. Analyze your infrastructure code and identify the logical components that can be separated into reusable modules. This will give you a clear separation of concerns and will make it straight forward to include new resources, update existing ones or reuse them in the future. For more details on modules and when to use them, see the [Terraform guidance](https://developer.hashicorp.com/terraform/language/modules/develop#when-to-write-a-module).
-
 2. Place the `.tf` module files at the root of each folder and make sure to include a [`README`](#generating-the-documentation) file in a markdown format which can be automatically generated based on the module code. It's recommended to follow this approach as this file structure will be automatically picked up by the [Terraform Registry](https://registry.terraform.io/browse/modules).
 3. Use a consistent set of files to structure your modules. While this can vary depending on the specific needs of the project, one good example can be the following:
    - **provider.tf**: defines the list of providers according to the plugins used
@@ -25,7 +24,7 @@ The tests folder includes one or more files to test the example module together 
 
 An example configuration structure obtained using the guidelines above is:
 
-```console
+```sh
 modules
 ├── mlops
 │   ├── doc

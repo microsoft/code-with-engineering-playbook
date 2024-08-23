@@ -9,7 +9,7 @@ Agree if you want a linear or non-linear commit history. There are pros and cons
 
 Merging `topic` into `main`
 
-```md
+```sh
   A---B---C topic
  /         \
 D---E---F---G---H main

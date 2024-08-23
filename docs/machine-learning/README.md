@@ -17,7 +17,7 @@ This guideline documents the Machine Learning (ML) practices in ISE. ISE works w
 
 The diagram below shows different phases in an ideal ML project. Due to practical constraints and requirements, it might not always be possible to have a project structured in such a manner, however best practices should be followed for each individual phase.
 
-![Project flow](images/flow.png)
+![Project flow](./images/flow.png)
 
 * **[Envisioning](./envisioning-and-problem-formulation.md)**: Initial problem understanding, customer goals and objectives.
 * **[Feasibility Study](./feasibility-studies.md)**: Assess whether the problem in question is feasible to solve satisfactorily using ML with the available data.

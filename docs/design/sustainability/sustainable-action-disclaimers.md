@@ -1,6 +1,6 @@
 # Disclaimers
 
-The following disclaimers provide more details about how to consider the impact of particular actions recommended by the [Sustainable Engineering Checklist](readme.md#sustainable-engineering-checklist).
+The following disclaimers provide more details about how to consider the impact of particular actions recommended by the [Sustainable Engineering Checklist](./README.md#sustainable-engineering-checklist).
 
 ## ACTION: Resize Physical or Virtual Machines to Improve Utilization
 

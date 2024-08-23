@@ -10,7 +10,6 @@ This document aims to automate this process in Azure DevOps, so the DSs don't ne
 A Data Science repository has this folder structure:
 
 ```bash
-
     .
     ├── notebooks
     │   ├── Machine Learning Experiments - 00.ipynb
@@ -22,7 +21,6 @@ A Data Science repository has this folder structure:
        ├── Machine Learning Experiments - 01.py
        ├── Machine Learning Experiments - 02.py
        └── Machine Learning Experiments - 03.py
-
 ```
 
 The python files are needed to allow Pull Request reviewers to add comments to the notebooks, they can add comments

@@ -6,7 +6,7 @@ Developers working on projects should adhere to industry-recommended standard pr
 
 ## Requesting Security Reviews
 
-When requesting a security review for your application, please make sure you have familiarized yourself with the [Rules of Engagement](rules-of-engagement.md). This will help you to prepare the application for testing, as well as understand the scope limits of the test.
+When requesting a security review for your application, please make sure you have familiarized yourself with the [Rules of Engagement](./rules-of-engagement.md). This will help you to prepare the application for testing, as well as understand the scope limits of the test.
 
 ## Quick Resources
 

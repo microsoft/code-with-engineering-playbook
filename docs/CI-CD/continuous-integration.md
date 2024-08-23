@@ -59,7 +59,7 @@ An automated build should encompass the following principles:
 
 ### DevOps Security Checks
 
-- Introduce security to your project at early stages. Follow the [DevSecOps section](dev-sec-ops/README.md) to introduce security practices, automation, tools and frameworks as part of the CI.
+- Introduce security to your project at early stages. Follow the [DevSecOps section](./dev-sec-ops/README.md) to introduce security practices, automation, tools and frameworks as part of the CI.
 
 ## Build Environment Dependencies
 
@@ -172,7 +172,6 @@ Implementing schema validation is divided in two - the generation of the schemas
 There are two options to generate a schema:
 
 - [From code](https://json-schema.org/implementations.html#from-code) - we can leverage the existing models and objects in the code and generate a customized schema.
-
 - [From data](https://json-schema.org/implementations.html#from-data) - we can take yaml/json samples which reflect the configuration in general and use the various online tools to generate a schema.
 
 ### Validation

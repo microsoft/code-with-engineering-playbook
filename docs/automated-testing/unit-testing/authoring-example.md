@@ -193,7 +193,7 @@ public class ConfigurationTests
 }
 ```
 
-## Fixing the bug
+## Fixing the Bug
 
 All our current tests pass, and give us 100% coverage, however as evidenced by the bug, we must not be covering all
 possible inputs and outputs. In the case of the bug, multiple empty lines would cause an issue. Additionally,
@@ -303,7 +303,7 @@ confidence in future changes.
 
 ## Untestable Code
 
-As described in the [abstraction section](README.md#abstraction), not all code can be properly unit tested. In our case
+As described in the [abstraction section](./README.md#abstraction), not all code can be properly unit tested. In our case
 we have a single class that has 0% test coverage: `FileConfigurationReader`. This is expected; in this case we kept
 `FileConfigurationReader` as light as possible with no additional logic other than calling into the third-party
 dependency. `FileConfigurationReader` is an example of the [facade design pattern](https://en.wikipedia.org/wiki/Facade_pattern).

@@ -32,5 +32,5 @@ Use automation (linting, code analysis etc.) to avoid the need for "[nits](https
 
 ## Role specific guidance
 
-- [Author Guidance](author-guidance.md)
-- [Reviewer Guidance](reviewer-guidance.md)
+- [Author Guidance](./author-guidance.md)
+- [Reviewer Guidance](./reviewer-guidance.md)

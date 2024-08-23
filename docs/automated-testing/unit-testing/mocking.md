@@ -144,7 +144,6 @@ changes, consider not asserting on the return value. Because if you do, you are 
 mock correctly. For a very simple example, look at this class:
 
 ```csharp
-
 public class SearchController : ControllerBase {
 
    public ISearchClient SearchClient { get; }
@@ -212,11 +211,11 @@ store the options in a callback for later assertions.
 var actualOptions = new SearchOptions();
 
 mockSearchClient
-   .Setup(x => 
+   .Setup(x =>
       x.Search(
-         "[This parameter is most relevant]", 
+         "[This parameter is most relevant]",
          It.IsAny<SearchOptions>()
-      ) 
+      )
    )
    .Returns(mockResults)
    .Callback<string, SearchOptions>((query, searchOptions) =>
