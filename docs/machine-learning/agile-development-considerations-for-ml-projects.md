@@ -18,7 +18,7 @@ Within this framework, the team follows these Agile ceremonies:
 - [Scrum of Scrums](../agile-development/advanced-topics/effective-organization/scrum-of-scrums.md) (where applicable)
 - [Sprint planning](../agile-development/ceremonies.md#sprint-planning)
 - [Stand-ups](../agile-development/ceremonies.md#stand-up)
-- [Working agreement](../agile-development/team-agreements/working-agreements.md)
+- [Working agreement](../agile-development/team-agreements/working-agreement.md)
 
 ## Agile Process During Exploration and Experimentation
 

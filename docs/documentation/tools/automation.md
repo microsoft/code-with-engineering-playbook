@@ -7,7 +7,7 @@ If you want to automate some checks on your Markdown documents, there are severa
   - [markdown-link-check](https://github.com/tcort/markdown-link-check) to extract links from markdown texts and check whether each link is alive (200 OK) or dead.
   - [write-good](../../code-reviews/recipes/markdown.md#write-good) to check English prose.
   - [Docker image for node-markdown-spellcheck](https://github.com/tmaier/docker-markdown-spellcheck), a lightweight docker image to spellcheck markdown files.
-  - [static code analysis](../../continuous-integration/dev-sec-ops/secret-management/static-code-analysis.md)
+  - [static code analysis](../../CI-CD/dev-sec-ops/secrets-management/static-code-analysis.md)
 
 - [VS Code Extensions](../../code-reviews/recipes/markdown.md#vs-code-extensions)
   - [Write Good Linter](../../code-reviews/recipes/markdown.md#write-good-linter) to get grammar and language advice while editing a document.
@@ -16,7 +16,7 @@ If you want to automate some checks on your Markdown documents, there are severa
 - Automation
   - [pre-commit](https://pre-commit.com/) to use Git hook scripts to identify simple issues before submitting our code or documentation for review.
   - Check [Build validation](../../code-reviews/recipes/markdown.md#build-validation) to automate linting for PRs.
-  - Check [CI Pipeline for better documentation](../../continuous-integration/markdown-linting/README.md) for a sample pipeline with `markdownlint`, `markdown-link-check` and `write-good`.
+  - Check [CI Pipeline for better documentation](../../CI-CD/recipes/ci-pipeline-for-better-documentation.md) for a sample pipeline with `markdownlint`, `markdown-link-check` and `write-good`.
 
 Sample output:
 
