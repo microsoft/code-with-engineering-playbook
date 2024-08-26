@@ -93,11 +93,11 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
 1. In Azure Storage Explorer, select `Attach to a local emulator`
 
-   ![connect blob](images/blob_storage_connection.png)
+   ![connect blob](./images/blob_storage_connection.png)
 
 1. Provide a Display name and port number, then your connection will be ready, and you can use Storage Explorer to manage your local blob storage.
 
-   ![attach to local](images/blob_storage_connection_attach.png)
+   ![attach to local](./images/blob_storage_connection_attach.png)
 
    To test and see how these endpoints are running you can attach your local blob storage to the [**Azure Storage Explorer**](https://azure.microsoft.com/en-us/features/storage-explorer/).
 
@@ -136,7 +136,7 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
 After running tests, you can see the files in your local blob storage
 
-![https local blob](images/http_local_blob_storage.png)
+![https local blob](./images/http_local_blob_storage.png)
 
 ## 3. Run Tests on Azure Pipelines
 
@@ -181,4 +181,4 @@ steps:
 
 Once we set up our pipeline in Azure Pipelines, result will be like below
 
-![azure pipelines](images/azure_pipeline.png)
+![azure pipelines](./images/azure_pipeline.png)

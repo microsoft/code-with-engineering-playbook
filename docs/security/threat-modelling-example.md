@@ -5,7 +5,7 @@ This document covers the threat models for a sample project which takes video fr
 
 ## Architecture Diagram
 
-![Graphical user interface, application Description automatically generated](images/arch_diagram.png)
+![Graphical user interface, application Description automatically generated](./images/arch_diagram.png)
 
 ## Assets
 
@@ -34,7 +34,7 @@ This document covers the threat models for a sample project which takes video fr
 
 ## Threat List
 
-![Diagram Description automatically generated](images/threat_list.png)
+![Diagram Description automatically generated](./images/threat_list.png)
 
 ## Assumptions
 
@@ -59,7 +59,7 @@ This document covers the threat models for a sample project which takes video fr
 
 ## Threat Model
 
-![A picture containing text, map, indoor Description automatically generated](images/threat_model.png)
+![A picture containing text, map, indoor Description automatically generated](./images/threat_model.png)
 
 ## Threat Properties
 

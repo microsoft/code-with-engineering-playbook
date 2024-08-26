@@ -12,7 +12,7 @@ However those phases can be extremely fast or sometimes mismatched in teams due 
 In order to minimize the risk and set the expectations on the right way for all parties, an identification phase is important to understand each other.
 Some potential steps in this phase may be as following (not limited):
 
-- [Working agreement](../../team-agreements/working-agreements.md)
+- [Working agreement](../../team-agreements/working-agreement.md)
 
 - Identification of styles/preferences in communication, sharing, learning, decision making of each team member
 

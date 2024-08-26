@@ -18,7 +18,7 @@ The following are learnings from various engagements:
 
 ## Web Based UI Tests
 
-To implement web-based UI tests for your Teams application, follow the same approach as you would for testing any other web application with a UI. [UI testing](README.md) provides valuable guidance in this regard. Your starting point for the test would be to automatically launch a browser (using Selenium or similar frameworks) and navigate to [https://teams.microsoft.com](https://teams.microsoft.com).
+To implement web-based UI tests for your Teams application, follow the same approach as you would for testing any other web application with a UI. UI testing provides valuable guidance in this regard. Your starting point for the test would be to automatically launch a browser (using Selenium or similar frameworks) and navigate to [https://teams.microsoft.com](https://teams.microsoft.com).
 
 If you want to test a Teams app that hasn’t been published in the Teams store yet or if you’d like to test the DEV/QA version of your app, you can use the [Teams Toolkit](https://github.com/OfficeDev/TeamsFx) and package your app based on the [manifest.json](https://learn.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
 
@@ -135,7 +135,7 @@ Install `appium`:
 
 List emulators that you have previously created, without opening Android Studio:
 
-```cli
+```sh
 emulator -list-avds
 ```
 
@@ -153,7 +153,7 @@ This approach involves hosting a virtual device within a virtual machine. To set
 
 ##### Enable connection from outside to Appium server on the VM
 
-> Note: By default appium server runs on port 4723. The rest of the steps will assume that this is the port where your appium server runs.
+> **Note:** By default appium server runs on port 4723. The rest of the steps will assume that this is the port where your appium server runs.
 
 In order to be able to reach appium server which runs on the VM from outside:
 
@@ -164,10 +164,10 @@ In order to be able to reach appium server which runs on the VM from outside:
 
 ##### Installing Android Studio and create AVD inside the VM
 
-1. Follow the instructions under the [end to end tests on a Windows machine section](#running-mobile-test-locally-on-a-windows-machine) to install Android Studio and create an Android Virtual Device.
+1. Follow the instructions under the [end to end tests on a Windows machine section](#how-to-run-mobile-tests-locally-on-a-windows-machine-using-avd) to install Android Studio and create an Android Virtual Device.
 1. When you launch the emulator, it may show a warning as below and will eventually crash:
 
-    ![failure](images/warning.png)
+    ![failure](./images/warning.png)
 
 Solution to fix it:
 1. [Enable Windows Hypervisor Platform](https://devblogs.microsoft.com/visualstudio/hyper-v-android-emulator-support/)
@@ -212,11 +212,11 @@ Inspecting the app is highly valuable when writing new tests, as it enables you 
 If the appium server runs on your local machine at the default portal, then Remote Host and Remote Port can be kept to the default values.
 
 The configuration should look similar to the printscren below:
-![appium-inspector](images/appium-inspector.png)
+![appium-inspector](./images/appium-inspector.png)
 
 3. Press on **Start Session**.
 - In the browser, you should see a similar view as below:
-![teams-appium-inspector](images/teams-appium-inspector.png)
+![teams-appium-inspector](./images/teams-appium-inspector.png)
 
 - You can do any action on the emulator, and if you press on the "Refresh" button in the browser, the left hand side of the Appium Inspector will reflect your app. In the **App Source** you will be able to see the IDs of the elements, so you can write relevant selectors in your tests.
 

@@ -10,21 +10,21 @@ There are many options when working with Source Control. In [ISE](../ISE.md) we 
 
 ## General Guidance
 
-Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreements.md) and [Design Reviews](../design/design-reviews/README.md)).
+Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreement.md) and [Design Reviews](../design/design-reviews/README.md)).
 
 ## Creating a New Repository
 
 When creating a new repository, the team should at least do the following
 
 * Agree on the **branch**, **release** and **merge strategy**
-* Define the merge strategy ([linear or non-linear](merge-strategies.md))
+* Define the merge strategy ([linear or non-linear](./merge-strategies.md))
 * Lock the default branch and merge using [pull requests (PRs)](../code-reviews/pull-requests.md)
-* Agree on [branch naming](naming-branches.md) (e.g. `user/your_alias/feature_name`)
+* Agree on [branch naming](./naming-branches.md) (e.g. `user/your_alias/feature_name`)
 * Establish [branch/PR policies](../code-reviews/pull-requests.md)
 * For public repositories the default branch should contain the following files:
-  * [LICENSE](../resources/templates/LICENSE)
-  * [README.md](../resources/templates/README.md)
-  * [CONTRIBUTING.md](../resources/templates/CONTRIBUTING.md)
+  * LICENSE
+  * README.md
+  * contributing.md
 
 ## Contributing to an Existing Repository
 

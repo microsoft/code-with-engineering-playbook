@@ -25,7 +25,7 @@ These documents may be useful when reviewing YAML files:
 - [Key concepts for new Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
 
 **Key concepts overview**
-![Azure Pipelines key concepts](images/key-concepts-overview.png)
+![Azure Pipelines key concepts](./images/key-concepts-overview.png)
 
 - A trigger tells a Pipeline to run.
 - A pipeline is made up of one or more stages. A pipeline can deploy to one or more environments.

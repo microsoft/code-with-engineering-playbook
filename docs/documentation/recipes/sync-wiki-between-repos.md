@@ -33,7 +33,7 @@ git branch -u origin/wikiMaster
 
 Your output should look like this when run:
 
-```powershell
+```ps
 PS C:\Git\MyProject.wiki> git pull -v
 POST git-upload-pack (909 bytes)
 remote: Azure Repos

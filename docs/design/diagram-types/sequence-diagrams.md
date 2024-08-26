@@ -37,7 +37,7 @@ A Sequence Diagram should:
 
 It is okay for a single Sequence Diagram to have many different scenarios if they have some related context that merits them being grouped.
 
-Another important thing to keep in mind, is that the **objects** involved in a Sequence Diagram should refer to existing Components from a [Component Diagram](./componentDiagrams.md).
+Another important thing to keep in mind, is that the **objects** involved in a Sequence Diagram should refer to existing Components from a [Component Diagram](./component-diagrams.md).
 
 There are 2 areas where complexity can result in an overly "crowded" Sequence Diagram, making it costly to maintain. They are:
 
@@ -73,7 +73,7 @@ early on are that:
 - the team will be unable to gain insights in time, from visualizing the various messages and requests sent between Components, in order to perform any potential refactoring
 - the team or other necessary stakeholders won't have a complete understanding of the request/message/data flow within the system
 
-Because of the inherent granularity of the system, the Sequence Diagrams won't have to be updated as often as [Class Diagrams](./classDiagrams.md), but may require more maintenance than [Component Diagrams](./componentDiagrams.md). Things that might merit updating a Sequence Diagram could be:
+Because of the inherent granularity of the system, the Sequence Diagrams won't have to be updated as often as [Class Diagrams](./class-diagrams.md), but may require more maintenance than [Component Diagrams](./component-diagrams.md). Things that might merit updating a Sequence Diagram could be:
 
 - A new request/message/data being sent across Components involved in a scenario
 - A change to one or several Components involved in a Sequence Diagram. Such as splitting a component into multiple ones, or consolidating many Components into a single one

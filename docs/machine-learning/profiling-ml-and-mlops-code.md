@@ -118,5 +118,5 @@ Boolean flag as a pipeline parameter
 The results can be found in the `Outputs+logs` tab, under `outputs/profiler_results` folder.
 6. You might want to download the results and visualize it locally.
 
-> Note: it's not recommended to run profilers simultaneously. Profiles also consume resources, therefore a simultaneous run
+> **Note:** it's not recommended to run profilers simultaneously. Profiles also consume resources, therefore a simultaneous run
 might significantly affect the results.

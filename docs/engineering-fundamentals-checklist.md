@@ -11,23 +11,23 @@ This checklist helps to ensure that our projects meet our Engineering Fundamenta
 - [ ] Consistent branch naming conventions.
 - [ ] Clear documentation of repository structure.
 - [ ] Secrets are not part of the commit history or made public. (see [Credential scanning](./CI-CD/dev-sec-ops/secrets-management/credential_scanning.md))
-- [ ] Public repositories follow the [OSS guidelines](source-control/README.md#creating-a-new-repository), see `Required files in default branch for public repositories`.
+- [ ] Public repositories follow the [OSS guidelines](./source-control/README.md#creating-a-new-repository), see `Required files in default branch for public repositories`.
 
-More details on [source control](source-control/README.md)
+More details on [source control](./source-control/README.md)
 
 ## Work Item Tracking
 
 - [ ] All items are tracked in AzDevOps (or similar).
 - [ ] The board is organized (swim lanes, feature tags, technology tags).
 
-More details on [backlog management](agile-development/advanced-topics/backlog-management)
+More details on [backlog management](./agile-development/backlog-management.md)
 
 ## Testing
 
 - [ ] Unit tests cover the majority of all components (>90% if possible).
 - [ ] Integration tests run to test the solution e2e.
 
-More details on [automated testing](automated-testing/README.md)
+More details on [automated testing](./automated-testing/README.md)
 
 ## CI/CD
 
@@ -44,7 +44,7 @@ More details on [continuous integration](./CI-CD/continuous-integration.md) and 
 - [ ] Data is encrypted in transit (and if necessary at rest) and passwords are hashed
 - [ ] Is the system split into logical segments with separation of concerns? This helps limiting security vulnerabilities.
 
-More details on [security](security/README.md)
+More details on [security](./security/README.md)
 
 ## Observability
 
@@ -53,10 +53,10 @@ More details on [security](security/README.md)
 - [ ] Health of the system is monitored.
 - [ ] The client and server side observability data can be differentiated.
 - [ ] Logging configuration can be modified without code changes (eg: verbose mode).
-- [ ] [Incoming tracing context](observability/correlation-id.md) is propagated to allow for production issue debugging purposes.
+- [ ] [Incoming tracing context](./observability/correlation-id.md) is propagated to allow for production issue debugging purposes.
 - [ ] GDPR compliance is ensured regarding PII (Personally Identifiable Information).
 
-More details on [observability](observability/README.md)
+More details on [observability](./observability/README.md)
 
 ## Agile/Scrum
 
@@ -65,20 +65,20 @@ More details on [observability](observability/README.md)
 - [ ] The Dev Lead (+ PO/Others) are responsible for backlog management and refinement.
 - [ ] A working agreement is established between team members and customer.
 
-More details on [agile development](agile-development/README.md)
+More details on [agile development](./agile-development/README.md)
 
 ## Design Reviews
 
-- [ ] Process for conducting design reviews is included in the [Working Agreement](agile-development/team-agreements/working-agreements.md).
+- [ ] Process for conducting design reviews is included in the [Working Agreement](./agile-development/team-agreements/working-agreement.md).
 - [ ] Design reviews for each major component of the solution are carried out and documented, including alternatives.
 - [ ] Stories and/or PRs link to the design document.
 - [ ] Each user story includes a task for design review by default, which is assigned or removed during sprint planning.
 - [ ] Project advisors are invited to design reviews or asked to give feedback to the design decisions captured in documentation.
 - [ ] Discover all the reviews that the customer's processes require and plan for them.
-- [ ] Clear non-functional requirements captured (see [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md))
-- [ ] Risks and opportunities captured (see [Risk/Opportunity Management](agile-development/advanced-topics/backlog-management/risk-management.md))
+- [ ] Clear non-functional requirements captured (see [Non-Functional Requirements Guidance](./design/design-patterns/non-functional-requirements-capture-guide.md))
+- [ ] Risks and opportunities captured (see [Risk/Opportunity Management](./agile-development/advanced-topics/backlog-management/risk-management.md))
 
-More details on [design reviews](design/design-reviews/README.md)
+More details on [design reviews](./design/design-reviews/README.md)
 
 ## Code Reviews
 
@@ -88,7 +88,7 @@ More details on [design reviews](design/design-reviews/README.md)
 - [ ] Linters/Code Analyzers, unit tests and successful builds for PR merges are set up.
 - [ ] There is a process to enforce a quick review turnaround.
 
-More details on [code reviews](code-reviews/README.md)
+More details on [code reviews](./code-reviews/README.md)
 
 ## Retrospectives
 
@@ -97,7 +97,7 @@ More details on [code reviews](code-reviews/README.md)
 - [ ] Experiments have owners and are added to project backlog.
 - [ ] The team conducts longer retrospective for Milestones and project completion.
 
-More details on [retrospectives](agile-development/ceremonies.md#retrospectives)
+More details on [retrospectives](./agile-development/ceremonies.md#retrospectives)
 
 ## Engineering Feedback
 
@@ -105,7 +105,7 @@ More details on [retrospectives](agile-development/ceremonies.md#retrospectives)
 - [ ] Suggestions for improvements are incorporated in the solution
 - [ ] Feedback is detailed and repeatable
 
-More details on [engineering feedback](engineering-feedback/README.md)
+More details on [engineering feedback](./engineering-feedback/README.md)
 
 ## Developer Experience (DevEx)
 
@@ -118,4 +118,4 @@ Developers on the team can:
 - [ ] Automatically install dependencies by pressing F5 (or equivalent) in their IDE.
 - [ ] Use local dev configuration values (i.e. .env, appsettings.development.json).
 
-More details on [developer experience](developer-experience/README.md)
+More details on [developer experience](./developer-experience/README.md)

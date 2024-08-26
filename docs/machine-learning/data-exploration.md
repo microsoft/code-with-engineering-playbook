@@ -1,6 +1,6 @@
 # Data Exploration
 
-After [envisioning](./ml-problem-formulation-envisioning.md), and typically as part of the [ML feasibility study](./ml-feasibility-study.md), the next step is to confirm resource access and then dive deep into the available data through data exploration workshops.
+After [envisioning](./envisioning-and-problem-formulation.md), and typically as part of the [ML feasibility study](./feasibility-studies.md), the next step is to confirm resource access and then dive deep into the available data through data exploration workshops.
 
 ## Purpose of the Data Exploration Workshop
 

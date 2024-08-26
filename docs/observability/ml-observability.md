@@ -29,18 +29,18 @@ Application Insights can be used as an alternative sink to capture model metrics
 
 An extensive comparison of the four tools can be found as follows:
 
-|                           | Azure ML      | MLFlow      | TensorBoard   | Application Insights |
-|---------------------------| ----------- | ----------- | -----------   | -----------          |
-| **Metrics support**       | Values, images, matrices, logs | Values, images, matrices and plots as files | Metrics relevant to DL research phase | Values, images, matrices, logs
-| **Customizabile**         | Basic | Basic | Very basic | High
-| **Metrics accessible**    | AML portal, AML SDK | MLFlow UI, Tracking service API | Tensorboard UI, history object | Application Insights
-| **Logs accessible**       | Rolling logs written to .txt files in blob storage, accessible via blob or AML portal. Not query-able | Rolling logs are not stored | Rolling logs are not stored | Application Insights in Azure Portal. Query-able with KQL
-| **Ease of use and set up** | Very straightforward, only one portal | More moving parts due to remote tracking server | A bit over process overhead. Also depending on ML framework | More moving parts as a custom app needs to be maintained
-| **Shareability**          | Across people with access to AML workspace | Across people with access to remote tracking server | Across people with access to same directory | Across people with access to AppInsights
+| | Azure ML | MLFlow | TensorBoard | Application Insights |
+| -- | -- | -- | -- | -- |
+| **Metrics support** | Values, images, matrices, logs | Values, images, matrices and plots as files | Metrics relevant to DL research phase | Values, images, matrices, logs |
+| **Customizabile**         | Basic | Basic | Very basic | High |
+| **Metrics accessible**    | AML portal, AML SDK | MLFlow UI, Tracking service API | Tensorboard UI, history object | Application Insights |
+| **Logs accessible**       | Rolling logs written to .txt files in blob storage, accessible via blob or AML portal. Not query-able | Rolling logs are not stored | Rolling logs are not stored | Application Insights in Azure Portal. Query-able with KQL |
+| **Ease of use and set up** | Very straightforward, only one portal | More moving parts due to remote tracking server | A bit over process overhead. Also depending on ML framework | More moving parts as a custom app needs to be maintained |
+| **Shareability**          | Across people with access to AML workspace | Across people with access to remote tracking server | Across people with access to same directory | Across people with access to AppInsights |
 
 ## Model in Production
 
-The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](README.md) section). MLFLow is an alternative way to deploy ML model as a service.
+The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](./README.md) section). MLFLow is an alternative way to deploy ML model as a service.
 
 ## Training and Re-Training
 

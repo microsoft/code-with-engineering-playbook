@@ -26,7 +26,7 @@ The easiest is to work with a [mono repository](https://mtirion.medium.com/monor
 
 In the steps below we'll consider the generation of the documentation website from this content structure:
 
-```xaml
+```sh
 ├── .pipelines             // Azure DevOps pipeline for automatic generation and deployment
 │
 ├── docs                     // all documents
@@ -87,7 +87,7 @@ To make sure developers are forced to add the triple-slash comments by throwing 
 
 Now you are all set to generate documentation from your C# code. For more information about languages supported by DocFx and how to configure it, see [Introduction to Multiple Languages Support](https://dotnet.github.io/docfx/spec/metadata_format_spec.html#26-multiple-language-support).
 
-> **NOTE:** You can also add a PropertyGroup definition with the two settings in *Directory.Build.props* to have that settings in all projects. But in that case it will also be inherited in your Test projects.
+> **Note:** You can also add a PropertyGroup definition with the two settings in *Directory.Build.props* to have that settings in all projects. But in that case it will also be inherited in your Test projects.
 
 ## 1. Install DocFx and markdownlint-cli
 
@@ -104,7 +104,7 @@ choco install markdownlint-cli
 
 Configuration for DocFx is done in a `docfx.json` file. Store this file in the root of your repository.
 
-> **NOTE:** You can store the docfx.json somewhere else in the hierarchy, but then you need to provide the path of the file as an argument to the docfx command so it can be located.
+> **Note:** You can store the docfx.json somewhere else in the hierarchy, but then you need to provide the path of the file as an argument to the docfx command so it can be located.
 
 Below is a good configuration to start with, where documentation is in the **/docs** folder and the sources are in the **/src** folder:
 
@@ -150,7 +150,7 @@ Below is a good configuration to start with, where documentation is in the **/do
 
 We suggest starting with a basic documentation structure in the **/docs** folder. In the provided QuickStart folder we have a basic setup:
 
-```xaml
+```sh
 ├── docs
 │   ├── .attachments                     // All images and other attachments used by documents
 │
@@ -194,7 +194,6 @@ You can add specific links that are important to provide direct access.
 > Try not to duplicate the links on the top of the page, unless it really makes sense.
 
 To get started with the setup of this website, read the getting started document with the title [Using DocFx and Companion Tools](using-docfx-and-tools.md).
-
 ```
 
 ## 4. Compile the Companion Tools and Run Them
