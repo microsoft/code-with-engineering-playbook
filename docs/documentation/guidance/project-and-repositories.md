@@ -35,7 +35,7 @@ Some sections in the documentation of the repository might point to the projectâ
   - [Team Manifesto](../../agile-development/team-agreements/team-manifesto.md)
     - Short summary of expectations around the technical way of working and supported mindset in the team.
     - E.g., ownership, respect, collaboration, transparency.
-  - [Working Agreement](../../agile-development/team-agreements/working-agreements.md)
+  - [Working Agreement](../../agile-development/team-agreements/working-agreement.md)
     - How we work together as a team and what our expectations and principles are.
     - E.g., communication, work-life balance, scrum rhythm, backlog management, code management.
   - [Definition of Done](../../agile-development/team-agreements/definition-of-done.md)
@@ -50,7 +50,7 @@ Some sections in the documentation of the repository might point to the projectâ
   - [Pull Requests](./pull-requests.md)
   - [Code Review Process](../../code-reviews/README.md)
   - [Code Review Checklist](../../code-reviews/process-guidance/reviewer-guidance.md)
-    - [Language Specific Checklists](../../code-reviews/recipes/README.md)
+    - [Language Specific Checklists](../../code-reviews/recipes/)
 - [Project Design](../../design/design-reviews/README.md)
   - [High Level / Game Plan](../../design/design-reviews/recipes/high-level-design-recipe.md)
   - [Milestone / Epic Design Review](../../design/design-reviews/recipes/milestone-epic-design-review-recipe.md)

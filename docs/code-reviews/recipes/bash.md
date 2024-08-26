@@ -6,7 +6,7 @@ Developers should follow [Google's Bash Style Guide](https://google.github.io/st
 
 ## Code Analysis / Linting
 
-Projects must check bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/README.md).
+Projects must check bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../CI-CD/continuous-integration.md).
 Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automatically format shell scripts. There are few vscode code extensions which are based on shfmt like shell-format which can be used to automatically format shell scripts.
 
 ## Project Setup
