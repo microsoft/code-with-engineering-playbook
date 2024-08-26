@@ -15,7 +15,7 @@ It is not supposed to inform about the data flow, the caller or callee responsib
 
 ## Essential Takeaways
 
-The Deployment diagram should contain all Components identified in the [Component Diagram(s)](./componentDiagrams.md), but captured alongside the following elements:
+The Deployment diagram should contain all Components identified in the [Component Diagram(s)](./component-diagrams.md), but captured alongside the following elements:
 
 - Firewalls
 - VNETs and subnets

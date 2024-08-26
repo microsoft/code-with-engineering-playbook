@@ -1,10 +1,8 @@
 # Trade Study: GitOps
 
-Conducted by: Tess and Jeff
-
-Backlog Work Item: #21672
-
-Decision Makers: Wallace, whole team
+- Conducted by: Tess and Jeff
+- Backlog Work Item: #21672
+- Decision Makers: Wallace, whole team
 
 ## Overview
 
