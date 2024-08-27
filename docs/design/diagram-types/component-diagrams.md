@@ -35,7 +35,7 @@ Because Component Diagrams represent a high level overview of the entire system 
 - the team won't be able to identify areas of improvement
 - the team or other necessary stakeholders won't have a full understanding on how the system works as it is being developed
 
-Because of the inherent granularity of the system, the Component Diagrams won't have to be updated as often as [Class Diagrams](./classDiagrams.md). Things that might merit updating a Component Diagram could be:
+Because of the inherent granularity of the system, the Component Diagrams won't have to be updated as often as [Class Diagrams](./class-diagrams.md). Things that might merit updating a Component Diagram could be:
 
 - A deletion or addition of a new Component into the system
 - A change to a system Component's interaction APIs

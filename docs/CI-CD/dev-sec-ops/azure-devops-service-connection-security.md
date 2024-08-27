@@ -51,7 +51,7 @@ Since Service Connections can have a lot of permissions in the external service,
 
 To prevent accidental mis-use of Service Connections there are several checks that can be configured. These checks are configured on the Service Connection itself and therefore can only be configured by the owner or administrator of that Service Connection. A user of a certain YAML Pipeline cannot modify these checks since the checks are not defined in the YAML file itself.
 Configuration can be done in the Approvals and Checks menu on the Service Connection.
-![ApprovalsAndChecks](images/approvals-and-checks.png)
+![ApprovalsAndChecks](./images/approvals-and-checks.png)
 
 ### Branch Control
 
@@ -64,4 +64,4 @@ With Branch Control in place, in combination with Branch Protections, it is not 
 
 > **Note:** When setting a wildcard for the Allowed Branches, anyone could still create a branch matching that wildcard and would be able to use the Service Connection. Using [git permissions](https://learn.microsoft.com/en-us/azure/devops/repos/git/require-branch-folders#enforce-permissions) it can be configured so only administrators are allowed to create certain branches, like release branches.*
 
-![BranchControl](images/branch-control.png)
+![BranchControl](./images/branch-control.png)

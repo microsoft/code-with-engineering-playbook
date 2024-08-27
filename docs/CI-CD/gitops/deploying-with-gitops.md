@@ -9,7 +9,7 @@
 GitOps simply allows faster deployments by having git repositories in the center offering a clear audit trail via git commits and no direct environment access. Read more on [Why should I use GitOps?](https://www.gitops.tech/#why-should-i-use-gitops)
 
 The below diagram compares traditional CI/CD vs GitOps workflow:
-![push based vs pull based deployments](images/GitopsWorflowVsTraditionalPush.jpg)
+![push based vs pull based deployments](./images/GitopsWorflowVsTraditionalPush.jpg)
 
 ## Tools for GitOps
 

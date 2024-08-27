@@ -44,8 +44,8 @@ An automated build should encompass the following principles:
 ### Code Style Checks
 
 - Code across an engineering team must be formatted to agreed coding standards. Such standards keep code consistent, and most importantly easy for the team and customer(s) to read and refactor. Code styling consistency encourages collective ownership for project scrum teams and our partners.
-- There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review recipes section](../code-reviews/recipes/README.md) of the playbook has suggestions for linters and preferred styles for a number of languages.
-- Your code and documentation should avoid the use of non-inclusive language wherever possible. Follow the [Inclusive Linting section](recipes/inclusive-linting.md) to ensure your project promotes an inclusive work environment for both the team and for customers.
+- There are several open source code style validation tools available to choose from ([code style checks](https://github.com/checkstyle/checkstyle), [StyleCop](https://en.wikipedia.org/wiki/StyleCop)). The [Code Review recipes section](../code-reviews/recipes/) of the playbook has suggestions for linters and preferred styles for a number of languages.
+- Your code and documentation should avoid the use of non-inclusive language wherever possible. Follow the [Inclusive Linting section](./recipes/inclusive-linting.md) to ensure your project promotes an inclusive work environment for both the team and for customers.
 - We recommend incorporating security analysis tools within the build stage of your pipeline such as: code credential scanner, security risk detection, static analysis, etc. For Azure DevOps, you can add a security scan task to your pipeline by installing the [Microsoft Security Code Analysis Extension](https://secdevtools.azurewebsites.net/#pills-onboard). GitHub Actions supports a similar extension with the [RIPS security scan solution](https://github.com/marketplace/actions/rips-security-scan).
 - Code standards are maintained within a single configuration file. There should be a step in your build pipeline that asserts code in the latest commit conforms to the known style definition.
 
@@ -59,7 +59,7 @@ An automated build should encompass the following principles:
 
 ### DevOps Security Checks
 
-- Introduce security to your project at early stages. Follow the [DevSecOps section](dev-sec-ops/README.md) to introduce security practices, automation, tools and frameworks as part of the CI.
+- Introduce security to your project at early stages. Follow the [DevSecOps section](./dev-sec-ops/README.md) to introduce security practices, automation, tools and frameworks as part of the CI.
 
 ## Build Environment Dependencies
 
@@ -68,7 +68,7 @@ An automated build should encompass the following principles:
 - We encourage maintaining a consistent developer experience for all team members. There should be a central automated manifest / process that streamlines the installation and setup of any software dependencies. This way developers can replicate the same build environment locally as the one running on a CI server.
 - Build automation scripts often require specific software packages and version pre-installed within the runtime environment of the OS. This presents some challenges as build processes typically version lock these dependencies.
 - All developers on the team should be able to emulate the build environment from their local desktop regardless of their OS.
-- For projects using VS Code, leveraging [Dev Containers](../developer-experience/devcontainers.md) can really help standardize the local developer experience across the team.
+- For projects using VS Code, leveraging [Dev Containers](../developer-experience/devcontainers-getting-started.md) can really help standardize the local developer experience across the team.
 - Well established software packaging tools like Docker, Maven, npm, etc should be considered when designing your build automation tool chain.
 
 ### Document Local Setup
@@ -172,7 +172,6 @@ Implementing schema validation is divided in two - the generation of the schemas
 There are two options to generate a schema:
 
 - [From code](https://json-schema.org/implementations.html#from-code) - we can leverage the existing models and objects in the code and generate a customized schema.
-
 - [From data](https://json-schema.org/implementations.html#from-data) - we can take yaml/json samples which reflect the configuration in general and use the various online tools to generate a schema.
 
 ### Validation

@@ -36,7 +36,7 @@ One way to do this would be to provide a sample file and call the function, and 
 
 A much better way is to **mock** calls to `isfile`, and `read_csv`. Instead of calling the real function, we will return a predefined return value, or call a stub that doesn't have any side effects. This way no files are needed in the repository to execute the test, and the test will always work the same, independent of what machine it runs on.
 
-> Note: Below we mock the specific os and pd functions referenced in the utils file, any others are left unaffected and would run as normal.
+> **Note:** Below we mock the specific os and pd functions referenced in the utils file, any others are left unaffected and would run as normal.
 
 `test_utils.py`
 
@@ -84,7 +84,7 @@ def test_load_data_does_not_call_read_csv_if_not_exists(mock_isfile, mock_read_c
 
 If more than one test will use the same sample data, fixtures are a good way to reuse this sample data. The sample data can be the contents of a json file, or a csv, or a DataFrame, or even an image.
 
-> Note: The sample data is still hard coded if possible, and does not need to be large. Only add as much sample data as required for the tests to make the tests readable.
+> **Note:** The sample data is still hard coded if possible, and does not need to be large. Only add as much sample data as required for the tests to make the tests readable.
 
 Use the fixture to return the sample data, and add this as a parameter to the tests where you want to use the sample data.
 

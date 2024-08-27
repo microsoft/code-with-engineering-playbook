@@ -79,4 +79,4 @@ Here are the final high-level steps it takes to build a dev container:
 
 ## Going further
 
-There are use cases where you would want to go further in configuring your Dev Container. [More details here](devcontainers-going-further.md)
+There are use cases where you would want to go further in configuring your Dev Container. [More details here](./devcontainers-going-further.md)

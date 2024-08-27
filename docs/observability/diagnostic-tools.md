@@ -1,6 +1,6 @@
 # Diagnostic tools
 
-Besides [Logging](pillars/logging.md), [Tracing](pillars/tracing.md) and [Metrics](pillars/metrics.md), there are additional tools to help diagnose issues when applications do not behave as expected. In some scenarios, analyzing the memory consumption and drilling down into why a specific process takes longer than expected may require additional measures. In these cases, platform or programming language specific diagnostic tools come into play and are useful to debug a memory leak, profile the CPU usage, or the cause of delays in multi-threading.
+Besides [Logging](./pillars/logging.md), [Tracing](./pillars/tracing.md) and [Metrics](./pillars/metrics.md), there are additional tools to help diagnose issues when applications do not behave as expected. In some scenarios, analyzing the memory consumption and drilling down into why a specific process takes longer than expected may require additional measures. In these cases, platform or programming language specific diagnostic tools come into play and are useful to debug a memory leak, profile the CPU usage, or the cause of delays in multi-threading.
 
 ## Profilers and Memory Analyzers
 

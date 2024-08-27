@@ -188,4 +188,4 @@ The following steps lay out a clear pathway to creating new secrets and then uti
 
 ### Validation
 
-Automated [credential scanning](credential_scanning.md) can be performed on the code regardless of the programming language.
+Automated [credential scanning](./credential_scanning.md) can be performed on the code regardless of the programming language.

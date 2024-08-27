@@ -64,7 +64,7 @@ All the below tools share the following:
 - Easily scalable with multi-cluster and larger teams
 - Both solutions support either Azure Active Directory (Azure AD) [service principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals) or [managed identity](https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview) for [authentication with the Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/authentication).
 
-For secret rotation ideas, see [Secrets Rotation on Environment Variables and Mounted Secrets](secret-rotation-in-pods.md)
+For secret rotation ideas, see [Secrets Rotation on Environment Variables and Mounted Secrets](./secret-rotation-in-pods.md)
 
 For how to authenticate private container registries with a service principal see: [Authenticated Private Container Registry](#authenticated-private-container-registry)
 

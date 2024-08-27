@@ -37,7 +37,7 @@ The proposed ML development process consists of:
 
 ### Version Control
 
-* During all stages of the process, it is suggested that artifacts should be version-controlled. Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing. See more [here](ml-experimentation.md#source-control-and-folder-or-package-structure).
+* During all stages of the process, it is suggested that artifacts should be [version-controlled](./model-experimentation.md#source-control-and-folder-or-package-structure). Typically, the process is iterative and versioned artifacts can assist in traceability and reviewing.
 
 ### Understanding the Problem
 
@@ -45,8 +45,8 @@ The proposed ML development process consists of:
   * Agree on the success criteria with the customer.
   * Identify potential data sources and determine the availability of these sources.
   * Define performance evaluation metrics on ground truth data
-* Conduct a [Responsible AI assessment](responsible-ai.md) to ensure development and deployment of the ML solution in a responsible manner.
-* Conduct a feasibility study to assess whether the business problem is feasible to solve satisfactorily using ML with the available data. The objective of the feasibility study is to mitigate potential over-investment by ensuring sufficient evidence that ML is possible and would be the best solution. The study also provides initial indications of what the ML solution should look like. This ensures quality solutions supported by thorough consideration and evidence. Refer to [feasibility study](ml-feasibility-study.md).
+* Conduct a [Responsible AI assessment](./responsible-ai.md) to ensure development and deployment of the ML solution in a responsible manner.
+* Conduct a feasibility study to assess whether the business problem is feasible to solve satisfactorily using ML with the available data. The objective of the feasibility study is to mitigate potential over-investment by ensuring sufficient evidence that ML is possible and would be the best solution. The study also provides initial indications of what the ML solution should look like. This ensures quality solutions supported by thorough consideration and evidence. Refer to [feasibility study](./feasibility-studies.md).
 * Exploratory data analysis is performed and discussed with the team
 
 * **Typical output**:
@@ -67,14 +67,14 @@ The proposed ML development process consists of:
 
 * **Typical output**: Rough Jupyter notebooks or scripts in Python or R, initial results from baseline model.
 
-For more information on experimentation, refer to the [experimentation](ml-experimentation.md) section.
+For more information on experimentation, refer to the [experimentation](./model-experimentation.md) section.
 
 ### Model Evaluation
 
 * Compare the effectiveness of different algorithms on the given problem.
 
 * **Typical output**:
-  * Evaluation flow is [fully set up](ml-experimentation.md#model-evaluation).
+  * Evaluation flow is [fully set up](./model-experimentation.md#model-evaluation).
   * Reproducible experiments for the different approaches experimented with.
 
 ### Model Operationalization
@@ -88,22 +88,22 @@ For more information on experimentation, refer to the [experimentation](ml-exper
     * Training a model
   * CI/CD scripts.
   * Reproducibility steps for the model in production.
-  * See more [here](ml-model-checklist.md).
+  * See more [in the ML model checklist](./ml-model-checklist.md).
 
 #### Unit and Integration Testing
 
 * Ensuring that production code behaves in the way we expect it to, and that its results match those we saw during the Model Evaluation and Experimentation phases.
-* Refer to [ML testing](ml-testing.md) post for further details.
+* Refer to [ML testing](./testing-data-science-and-mlops-code.md) post for further details.
 * **Typical output**: Test suite with unit and end-to-end tests is created and completes successfully.
 
 #### Deployment
 
-* [Responsible AI](responsible-ai.md) considerations such as bias and fairness analysis. Additionally, explainability/interpretability of the model should also be considered.
+* [Responsible AI](./responsible-ai.md) considerations such as bias and fairness analysis. Additionally, explainability/interpretability of the model should also be considered.
 * It is recommended for a human-in-the-loop to verify the model and manually approve deployment to production.
 * Getting the model into production where it can start adding value by serving predictions. Typical artifacts are APIs for accessing the model and integrating the model to the solution architecture.
 * Additionally, certain scenarios may require training the model periodically in production.
 * Reproducibility steps of the production model are available.
-* **Typical output**: [model readiness checklist](ml-model-checklist.md) is completed.
+* **Typical output**: [model readiness checklist](./ml-model-checklist.md) is completed.
 
 #### Monitoring and Observability
 

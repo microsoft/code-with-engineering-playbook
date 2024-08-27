@@ -75,7 +75,7 @@ ADRs can be stored and tracked in any version control system such as git. As a r
 
 #### Decision Logs
 
-A decision log is a Markdown file containing a table which provides executive summaries of the decisions contained in ADRs, as well as some other metadata. You can see a template table at [`doc/decision-log.md`](doc/decision-log.md).
+A decision log is a Markdown file containing a table which provides executive summaries of the decisions contained in ADRs, as well as some other metadata. You can see a template table at [`doc/decision-log.md`](./doc/decision-log.md).
 
 ### When to Track ADRs
 
@@ -85,8 +85,8 @@ Architecture design decisions are usually tracked whenever significant decisions
 
 The first ADR could be the decision to use ADRs to track design decisions,
 
-- [0001-record-architecture-decisions.md](doc/adr/0001-record-architecture-decisions.md),
+- [0001-record-architecture-decisions.md](./doc/adr/0001-record-architecture-decisions.md),
 
 followed by actual decisions in the engagement as in the example used above,
 
-- [0002-app-level-logging.md](doc/adr/0002-app-level-logging.md).
+- [0002-app-level-logging.md](./doc/adr/0002-app-level-logging.md).

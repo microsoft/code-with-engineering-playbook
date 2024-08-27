@@ -6,13 +6,13 @@ In the beginning of a new project the team agrees on the project conventions inc
 
 Here's an example of a branch naming convention:
 
-```plaintext
+```sh
 <user alias>/[feature/bug/hotfix]/<work item ID>_<title>
 ```
 
 Which could translate to something as follows:
 
-```plaintext
+```sh
 dickinson/feature/271_add_more_cowbell
 ```
 

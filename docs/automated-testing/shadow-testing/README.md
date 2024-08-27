@@ -8,7 +8,7 @@ Shadow Testing reduces risks when you consider replacing the current environment
 
 In our test cases, code coverage is very important however sometimes providing code coverage can be tricky to replicate real-life combinations and possibilities. In this approach, to test V-Next environment we have side by side deployment, we're replicating the same traffic with V-Current environment and directing same traffic to V-Next environment, the only difference is we don't return any response from V-Next environment to users, but we collect those responses to compare with V-Current responses.
 
-![Shadow Testing Overview](images/shadow-testing.png)
+![Shadow Testing Overview](./images/shadow-testing.png)
 
  Referencing back to one of the Principles of Chaos Engineering, mentions importance of sampling real traffic like below:
 
@@ -40,7 +40,7 @@ As of today Diffy is used in production by Twitter, Airbnb, Baidu and Bytedance 
 
 > Diffy finds potential bugs in your service using running instances of your new code, and your old code side by side. Diffy behaves as a proxy and multicasts whatever requests it receives to each of the running instances. It then compares the responses, and reports any regressions that may surface from those comparisons. The premise for Diffy is that if two implementations of the service return “similar” responses for a sufficiently large and diverse set of requests, then the two implementations can be treated as equivalent, and the newer implementation is regression-free.
 
-![Diffy Shadow Testing Architecture](images/diffy-shadow-testing.png)
+![Diffy Shadow Testing Architecture](./images/diffy-shadow-testing.png)
 
 Diffy architecture
 

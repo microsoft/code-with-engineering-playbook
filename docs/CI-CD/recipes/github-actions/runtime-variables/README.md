@@ -16,13 +16,13 @@ We assume that you, as a CI/CD engineer, want to inject environment variables or
 
 Many integration or end-to-end workflows require specific environment variables that are only available at runtime. For example, a workflow might be doing the following:
 
-![Workflow Diagram](images/workflow-diagram.png)
+![Workflow Diagram](./images/workflow-diagram.png)
 
 In this situation, testing the pipeline is extremely difficult without having to make external calls to the resource. In many cases, making external calls to the resource can be expensive or time-consuming, significantly slowing down inner loop development.
 
 Azure DevOps, as an example, offers a way to define pipeline variables on a manual trigger:
 
-![AzDo Example](images/AzDoExample.PNG)
+![AzDo Example](./images/AzDoExample.PNG)
 
 GitHub Actions does not do so yet.
 
@@ -82,8 +82,6 @@ jobs:
         if: env.flag
         run: echo "Flag is available and true"
 ```
-
-Available as a .YAML [here](examples/commit-example.yaml).
 
 Code Explanation:
 
@@ -153,7 +151,7 @@ Including the Variable
 
 2. This triggers the workflow (as will any push). As the `[commit var]` is in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `true` and result in the following:
 
-   ![Commit True Scenario](images/CommitTrue.PNG)
+   ![Commit True Scenario](./images/CommitTrue.PNG)
 
 Not Including the Variable
 
@@ -167,7 +165,7 @@ Not Including the Variable
 
 2. This triggers the workflow (as will any push). As the `[commit var]` is **not** in the commit message, the `${COMMIT_VAR}` variable in the workflow will be set to `false` and result in the following:
 
-   ![Commit False Scenario](images/CommitFalse.PNG)
+   ![Commit False Scenario](./images/CommitFalse.PNG)
 
 ## PR Body Variables
 
@@ -210,8 +208,6 @@ jobs:
         if: env.flag
         run: echo "Flag is available and true"
 ```
-
-Available as a .YAML [here](examples/pr-example.yaml).
 
 Code Explanation:
 
@@ -256,7 +252,7 @@ There are many real world scenarios where controlling environment variables can 
 
 Developer A is in the process of writing and testing an integration pipeline. The integration pipeline needs to make a call to an external service such as Azure Data Factory or Databricks, wait for a result, and then echo that result. The workflow could look like this:
 
-![Workflow A](images/DevAWorkflow.png)
+![Workflow A](./images/DevAWorkflow.png)
 
 The workflow inherently takes time and is expensive to run, as it involves maintaining a Databricks cluster while also waiting for the response. This external dependency can be removed by essentially mocking the response for the duration of writing and testing other parts of the workflow, and mocking the response in situations where the actual response either does not matter, or is not being directly tested.
 
@@ -264,7 +260,7 @@ The workflow inherently takes time and is expensive to run, as it involves maint
 
 Developer B is in the process of writing and testing a CI/CD pipeline. The pipeline has multiple CI stages, each of which runs sequentially. The workflow might look like this:
 
-![Workflow B](images/DevBWorkflow.png)
+![Workflow B](./images/DevBWorkflow.png)
 
 In this case, each CI stage needs to run before the next one starts, and errors in the middle of the process can cause the entire pipeline to fail. While this might be intended behavior for the pipeline in some situations (Perhaps you don't want to run a more involved, longer build or run a time-consuming test coverage suite if the CI process is failing), it means that steps need to be commented out or deleted when testing the pipeline itself.
 

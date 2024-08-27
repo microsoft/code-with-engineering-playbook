@@ -30,7 +30,7 @@ Slow code reviews might cause delays in delivering features and cause frustratio
 - Add a rule for PR turnaround time to your work agreement.
 - Set up a slot after the standup to go through pending PRs and assign the ones that are inactive.
 - Dedicate a PR review manager who will be responsible to keep things flowing by assigning or notifying people when PR got stale.
-- Use tools to better indicate stale reviews - [Customize ADO - Task Boards](tools.md#task-boards).
+- Use tools to better indicate stale reviews - [Customize ADO - Task Boards](./tools.md#task-boards).
 
 ## Which Tools can I use to Review a Complex PR?
 

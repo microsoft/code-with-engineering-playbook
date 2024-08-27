@@ -1,6 +1,6 @@
 # Sustainable Principles
 
-The following principle overviews provide the foundations supporting specific actions in the [Sustainable Engineering Checklist](./readme.md#sustainable-engineering-checklist). More details about each principle can be found by following the links in the headings or visiting the [Principles of Green Software Engineering website](https://principles.green/).
+The following principle overviews provide the foundations supporting specific actions in the [Sustainable Engineering Checklist](./README.md#sustainable-engineering-checklist). More details about each principle can be found by following the links in the headings or visiting the [Principles of Green Software Engineering website](https://principles.green/).
 
 ## [Electricity Consumption](https://principles.green/principles/electricity/)
 

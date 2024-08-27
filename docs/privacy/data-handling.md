@@ -23,18 +23,14 @@ Developers working on ISE projects should implement best practices and guidance 
 When working on an engagement it is important to address the following 5 **W**'s:
 
 - **Who** – gets access to and with whom will we share the data and/or models developed with the data?
-
 - **What** – data is shared with us and under what expectations and understanding.
 Customers need to be explicit about how the data they share applies to the overarching effort.
 The understanding shouldn't be vague and we shouldn't have access to broad set of data if not necessary.
-
 - **Where** – will the data be stored and what legal jurisdiction will preside over that data.
 This is particularly important in countries like Germany, where different privacy laws apply
 but also important when it comes to responding to legal subpoenas for the data.
-
 - **When** – will the access to data be provided and for how long?
 It is important to not leave straggling access to data once the engagement is completed, and define a priori the data retention policies.
-
 - **Why** – have you given access to the data?
 This is particularly important to clarify the purpose and any restrictions on usage beyond the intended purpose.
 

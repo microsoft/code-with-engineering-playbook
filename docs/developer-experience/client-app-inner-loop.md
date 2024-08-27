@@ -89,10 +89,10 @@ Lower fidelity approaches run stub services, that could be generated from API sp
 
 ## How to Decide
 
-|                | Pros                                   | Cons                        | Example when developing for:    | Example When not to Use                       |
-|----------------|----------------------------------------|-----------------------------|---------------------------------|-----------------------------------------------|
+|| Pros | Cons | Example when developing for: | Example When not to Use |
+| -- | -- | -- | -- | -- |
 | Embedded Mocks | Simplifies the F5 developer experience | Tightly coupled with Client | More static type data scenarios | Testing  (e.g. unit tests, integration tests) |
-|| No external dependencies to manage | Hard coded data | Initial integration with services |
+|| No external dependencies to manage | Hard coded data | Initial integration with services | |
 | | | Mocking via Dependency Injection can be a non-trivial effort | | |
 | High-Fidelity Local Services | Loosely Coupled from Client | Extra tooling required i.e. local infrastructure overhead | URL Routes | When API contract are not available |
 | | Easier to independently modify response | Extra setup and configuration of services | | |

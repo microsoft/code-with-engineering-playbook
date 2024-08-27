@@ -21,7 +21,7 @@ This page explains a way to solve this with Terraform.
 
 Let's consider the following structure for our modules:
 
-```console
+```sh
 modules
 ├── kubernetes
 │   ├── main.tf
@@ -40,7 +40,7 @@ Now, assume that you deploy a virtual network for the development environment, w
 
 Then at some point, you need to inject these values into the Kubernetes module, to get a reference to it through a data source, for example:
 
-```hcl
+```tf
 data "azurem_virtual_network" "vnet" {
     name                = var.vnet_name
     resource_group_name = var.vnet_rg_name
@@ -61,7 +61,7 @@ One of the limitation of the variables declaration is that it's not possible to 
 
 One way to bypass this limitations is to introduce a "common" module, that will not deploy any resources, but just compute / calculate and output the resource names and shared variables, and be used by all other modules, as a dependency.
 
-```console
+```sh
 modules
 ├── common
 │   ├── output.tf
@@ -78,7 +78,7 @@ modules
 
 *variables.tf:*
 
-```hcl
+```tf
 variable "environment_name" {
   type = string
   description = "The name of the environment."
@@ -93,7 +93,7 @@ variable "location" {
 
 *output.tf:*
 
-```hcl
+```tf
 # Shared variables
 output "location" {
   value = var.location
@@ -126,7 +126,7 @@ output "aks_name" {
 
 Now, if you execute the Terraform apply for the common module, you get all the shared/common variables in outputs:
 
-```console
+```sh
 $ terraform plan -var environment_name="dev" -var subscription="$(az account show --query id -o tsv)"
 
 Changes to Outputs:
@@ -144,7 +144,7 @@ You can apply this plan to save these new output values to the Terraform state, 
 
 Using the common Terraform module in any other module is super easy. For example, this is what you can do in the Azure Kubernetes module `main.tf` file:
 
-```hcl
+```tf
 module "common" {
   source           = "../common"
   environment_name = var.environment_name
@@ -177,7 +177,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
 
 Then, you can execute the `terraform plan` and `terraform apply` commands to deploy!
 
-```console
+```sh
 terraform plan -var environment_name="dev" -var subscription="$(az account show --query id -o tsv)"
 data.azurerm_subnet.aks_subnet: Reading...
 data.azurerm_subnet.aks_subnet: Read complete after 1s [id=/subscriptions/01010101-1010-0101-1010-010101010101/resourceGroups/rg-network-dev/providers/Microsoft.Network/virtualNetworks/vnet-dev/subnets/AksSubnet]
@@ -240,9 +240,9 @@ Terraform will perform the following actions:
 Plan: 1 to add, 0 to change, 0 to destroy.
 ```
 
-Note: the usage of a common module is also valid if you decide to deploy all your modules in the same operation from a main Terraform configuration file, like:
+> **Note:** the usage of a common module is also valid if you decide to deploy all your modules in the same operation from a main Terraform configuration file, like:
 
-```hcl
+```tf
 module "common" {
   source           = "./common"
   environment_name = var.environment_name
@@ -268,7 +268,7 @@ In case you chose to define variables values directly in the source control (e.g
 
 Let's consider the following structure:
 
-```console
+```sh
 modules
 ├── common
 │   ├── dev.tfvars

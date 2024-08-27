@@ -104,7 +104,7 @@ yapf [file/folder] --in-place
 
 [Bandit](https://github.com/PyCQA/bandit) is a tool designed by the Python Code Quality Authority (PyCQA) to perform static analysis of Python code, specifically targeting security issues.
 It scans for common security issues in Python codebase.
-  
+
 - **Installation**: Add Bandit to your development environment with:
   ```bash
   pip install bandit
@@ -193,7 +193,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 1. Install pre-commit and add to the requirements.txt
 
-    ```bash
+    ```sh
     pip install pre-commit
     ```
 
@@ -214,7 +214,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 3. Each individual developer that wants to set up pre-commit hooks can then run
 
-    ```bash
+    ```sh
     pre-commit install
     ```
 
