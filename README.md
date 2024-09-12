@@ -19,7 +19,7 @@ This is our playbook. All contributions welcome! Please feel free to submit a [p
 
 ## "The" Checklist
 
-If you do nothing else follow the [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals.
+If you do nothing else follow the [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)! It's here to help follow the Engineering Fundamentals.
 
 ## Structure of a Sprint
 
@@ -40,7 +40,7 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 
 ## Resources
 
-* [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)
+* [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)
 * [Structure of a Sprint](docs/SPRINT-STRUCTURE.md)
 
 ## Engineering Fundamentals
