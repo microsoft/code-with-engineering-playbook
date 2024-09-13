@@ -1,5 +1,22 @@
 # User Interface and User Experience Engineering
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Goal](#goal)
+- [General Guidance](#general-guidance)
+- [Design Process](#design-process)
+- [Design Ops](#design-ops)
+   - [Key Components of Design Ops](#key-components-of-design-ops)
+   - [Benefits of Design Ops for Software Engineers and Product Owners](#benefits-of-design-ops-for-software-engineers-and-product-owners)
+- [Establishing a web application's architecture](#establishing-a-web-applications-architecture)
+   - [Some platforms/frameworks to consider when planning a project](#some-platformsframeworks-to-consider-when-planning-a-project)
+   - [Further information](#further-information)
+
+---
+
+## Introduction
+
 Also known as _UI/UX_, _Front End Development_, or _Web Development_, user interface and user experience engineering is a broad topic and encompasses many different aspects of modern application development. When a user interface is required, ISE primarily develops a **web application**. Web apps can be built in a variety of ways with many different tools.
 
 ## Goal
@@ -86,7 +103,7 @@ Design Ops, short for Design Operations, is a practice that focuses on optimizin
 
 By integrating Design Ops into the development process, software engineers can work more effectively with design teams, leading to better-designed products and a more efficient development cycle.  It also builds trust with a customer to better ideate on what the final outcome of a project could be.
 
-## Establishing a web application's 
+## Establishing a web application's architecture
 
 The benefit of building software applications is that there are truly infinite ways to build something. A team can use the latest shiny tools, or they can utilize the tried-and-tested ones. It is for this reason that focussing completely on the user until a solution is defined is better than obsessing over technology choices. 
 
@@ -141,6 +158,7 @@ When choosing a front-end framework or library, consider the project's complexit
    - Ideal for projects that require a simpler, more declarative approach to adding interactivity to web pages.
    - Works well with server-side frameworks and can be integrated into existing projects with minimal effort.
 
+### Further information
 
 > For more information of utilizing any of these frameworks/platforms, read the [Recommended Technologies](./recommended-technologies.md) document.
 > 

@@ -1,5 +1,38 @@
 # Recommended Technologies
 
+## Table of Contents
+
+- [TypeScript](#typescript)
+    - [Guidance on types and interfaces](#guidance-on-types-and-interfaces)
+        - [Example](#example)
+- [Bootstrapping Web Projects](#bootstrapping-web-projects)
+    - [Vite](#vite)
+        - [Documentation & Recommended Resources](#documentation--recommended-resources)
+            - [Installing Vite](#installing-vite)
+            - [Bootstrapping a project](#bootstrapping-a-project)
+- [React](#react)
+    - [Quick note on create-react-app](#quick-note-on-create-react-app)
+    - [Documentation & Using older React coding patterns](#documentation--using-older-react-coding-patterns)
+    - [Best Practices to Organize Your React Codebase](#best-practices-to-organize-your-react-codebase)
+        - [Project Structure](#project-structure)
+        - [Key Directories and Files](#key-directories-and-files)
+        - [Directory Best Practices](#directory-best-practices)
+    - [Using React with Entra ID](#using-react-with-entra-id)
+        - [Resources](#resources)
+- [Managing Secrets with Environmental Variables in React Projects Using Vite](#managing-secrets-with-environmental-variables-in-react-projects-using-vite)
+    - [Setting Up Environmental Variables](#setting-up-environmental-variables)
+    - [Best Security Practices](#best-security-practices)
+    - [Resources](#resources-1)
+- [Common Security Pitfalls in React Applications](#common-security-pitfalls-in-react-applications)
+    - [Resources](#resources-2)
+- [Incorporating Axios for REST API Calls in React with Bearer Tokens and MSAL](#incorporating-axios-for-rest-api-calls-in-react-with-bearer-tokens-and-msal)
+    - [Setting Up Axios](#setting-up-axios)
+    - [Making API Calls](#making-api-calls)
+    - [Resources](#resources-3)
+
+
+---
+
 The purpose of this page is to review the commonly selected technology options when developing user interface applications. To reiterate from the general guidance section:
 
 > Keep in mind that like all software, there is no "right way" to build a user interface application. Leverage and trust your team's or your customer's experience and expertise for the best development experience.
@@ -64,16 +97,19 @@ There are many different ways to bootstrap web applications. Two great tool sets
 
 From [Scaffolding your First Vite Project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
+##### Installing Vite
+
 ```sh
-# npm 6.x
-npm init vite@latest my-app --template react-ts
-
-# npm 7.x
-npm init vite@latest my-app -- --template react-ts
+# Install Vite
+npm install -D vite
 ```
+##### Bootstrapping a project
+```sh
+npm create vite@latest
+```
+This will start a CLI interface that will create multiple types of projects that Vite supports: React, Angular, Svelte, Solid, Vue, or even Vanilla HTML and JavaScript.
 
-
-
+![Vite Wizard](./images/vite-wizard.png "Vite Wizard")
 
 
 ## React
@@ -91,9 +127,338 @@ From [Adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 npx create-react-app my-app --template typescript
 ```
 
-### Documentation & Recommended Resources
+### Documentation & Using older React coding patterns
 
 One can expect to find a multitude of guides, answers, and posts on how to work with React; don't take everything at face value. The best place to review React concepts is the React documentation. From there, you can review articles from various sources such as [React Community Articles](https://reactjs.org/community/articles.html), [Kent C Dodd's Blog](https://kentcdodds.com/blog?q=react), [CSS Tricks Articles](https://css-tricks.com/?s=react), and [Awesome React](https://github.com/enaqx/awesome-react).
 
 The React API has changed dramatically over time. Older resources may contain solutions or patterns that have since been changed and improved upon. Modern React development uses the [React Hooks](https://reactjs.org/docs/hooks-intro.html) pattern. Rarely will you have to implement something using [React Class](https://reactjs.org/docs/react-component.html) pattern. If you're reading an article/answer/docs that instruct you to use the class pattern you may be looking at an out-of-date resource.
 
+
+## Best Practices to Organize Your React Codebase
+
+Organizing your React codebase effectively can improve maintainability, scalability, and collaboration. Here are some best practices to follow:
+
+#### Project Structure
+
+A well-structured project can make it easier to navigate and manage your codebase. Here's a recommended project structure:
+
+```
+my-react-app/
+├── public/
+│   ├── index.html
+│   └── assets/
+│       ├── favicon.ico
+│       └── logo.png
+├── src/
+│   ├── assets/
+│   │   └── styles/
+│   │       └── main.css
+│   ├── components/
+│   │   ├── Button/
+│   │   │   ├── Button.tsx
+│   │   │   └── Button.test.tsx
+│   │   └── Header/
+│   │       ├── Header.tsx
+│   │       └── Header.test.tsx
+│   ├── hooks/
+│   │   └── useAuth.ts
+│   ├── pages/
+│   │   ├── Home/
+│   │   │   ├── Home.tsx
+│   │   │   └── Home.test.tsx
+│   │   └── About/
+│   │       ├── About.tsx
+│   │       └── About.test.tsx
+│   ├── services/
+│   │   └── apiClient.ts
+│   ├── types/
+│   │   └── index.ts
+│   ├── utils/
+│   │   └── helpers.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── vite-env.d.ts
+├── .env
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+#### Key Directories and Files
+
+- **public/**: Contains static assets like HTML and images.
+- **src/**: Contains the source code of your application.
+    - **assets/**: Contains global assets like styles and images.
+    - **components/**: Contains reusable UI components, each in its own folder.
+    - **hooks/**: Contains custom React hooks.
+    - **pages/**: Contains page components, each in its own folder.
+    - **services/**: Contains service modules for API calls and other business logic.
+    - **types/**: Contains TypeScript type definitions.
+    - **utils/**: Contains utility functions.
+    - **App.tsx**: The root component of your application.
+    - **index.tsx**: The entry point of your application.
+    - **vite-env.d.ts**: TypeScript definitions for Vite-specific features.
+
+#### Directory Best Practices
+
+1. **Component-Based Structure**: Organize your code into small, reusable components.
+2. **Type Safety**: Use TypeScript to define types and interfaces for your components and data structures.
+3. **Custom Hooks**: Encapsulate reusable logic in custom hooks.
+4. **Service Layer**: Abstract API calls and business logic into service modules.
+5. **Consistent Naming**: Follow a consistent naming convention for files and directories.
+6. **Environment Variables**: Use environment variables to manage configuration settings.
+7. **Testing**: Write unit tests for your components, hooks, and services.
+
+
+### Using React with Entra ID
+
+Integrating [React](https://reactjs.org/) applications with [Entra ID](https://azure.microsoft.com/en-us/services/active-directory/) (formerly Azure Active Directory) allows you to secure your web applications with enterprise-grade authentication and authorization. This can be achieved using the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/azure/active-directory/develop/msal-overview).
+
+To get started with Entra ID in your React application, follow these steps:
+
+1. **Install MSAL**:
+    ```sh
+    npm install @azure/msal-browser @azure/msal-react
+    ```
+
+2. **Configure MSAL**:
+    Create a configuration file to set up your MSAL instance with your Entra ID credentials.
+
+    ```javascript
+    import { PublicClientApplication } from "@azure/msal-browser";
+
+    const msalConfig = {
+        auth: {
+            clientId: "your-client-id",
+            authority: "https://login.microsoftonline.com/your-tenant-id",
+            redirectUri: "http://localhost:3000",
+        },
+    };
+
+    export const msalInstance = new PublicClientApplication(msalConfig);
+    ```
+
+3. **Wrap Your Application**:
+    Use the `MsalProvider` to wrap your React application.
+
+    ```javascript
+    import React from "react";
+    import ReactDOM from "react-dom";
+    import { MsalProvider } from "@azure/msal-react";
+    import { msalInstance } from "./authConfig";
+    import App from "./App";
+
+    ReactDOM.render(
+        <MsalProvider instance={msalInstance}>
+            <App />
+        </MsalProvider>,
+        document.getElementById("root")
+    );
+    ```
+
+##### Resources
+
+- [Microsoft Learn: Secure a React single-page application with Entra ID](https://learn.microsoft.com/azure/active-directory/develop/tutorial-v2-react)
+- [MSAL.js Documentation](https://learn.microsoft.com/azure/active-directory/develop/msal-overview)
+- [React MSAL Library](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-react)
+
+
+## Managing Secrets with Environmental Variables in React Projects Using Vite
+
+When developing React applications, it's crucial to manage sensitive information such as API keys, database credentials, and other secrets securely. Vite provides a straightforward way to handle environmental variables.
+
+### Setting Up Environmental Variables
+
+1. **Create an `.env` File**:
+    In the root of your project, create a file named `.env`. This file will store your environmental variables.
+
+    ```plaintext
+    VITE_API_KEY=your_api_key_here
+    VITE_API_URL=https://api.example.com
+    ```
+
+2. **Access Environmental Variables in Your Code**:
+    Vite prefixes all environmental variables with `VITE_` to ensure they are exposed to your client-side code. You can access these variables using `import.meta.env`.
+
+    ```javascript
+    const apiKey = import.meta.env.VITE_API_KEY;
+    const apiUrl = import.meta.env.VITE_API_URL;
+
+    fetch(`${apiUrl}/endpoint`, {
+        headers: {
+            'Authorization': `Bearer ${apiKey}`
+        }
+    })
+    .then(response => response.json())
+    .then(data => console.log(data));
+    ```
+
+### Best Security Practices
+
+- **Do Not Commit `.env` Files**:
+    Ensure your `.env` file is added to `.gitignore` to prevent it from being committed to your version control system.
+
+    ```plaintext
+    # .gitignore
+    .env
+    ```
+
+- **Use Environment-Specific Files**:
+    Vite supports multiple environment files for different stages of development. For example, you can create `.env.development` and `.env.production` files to manage variables for development and production environments, respectively.
+
+    ```plaintext
+    # .env.development
+    VITE_API_URL=https://dev.api.example.com
+
+    # .env.production
+    VITE_API_URL=https://api.example.com
+    ```
+
+- **Validate Environmental Variables**:
+    Consider using a validation library like [zod](https://github.com/colinhacks/zod) or [joi](https://joi.dev/) to validate your environmental variables at runtime, ensuring they meet the required format and constraints.
+### Resources
+
+- [Vite Environmental Variables Guide](https://vitejs.dev/guide/env-and-mode.html)
+- [dotenv Documentation](https://github.com/motdotla/dotenv)
+- [zod Documentation](https://github.com/colinhacks/zod)
+- [joi Documentation](https://github.com/sideway/joi)
+
+
+## Common Security Pitfalls in React Applications
+
+When developing React applications, it's crucial to follow best practices to safeguard your application from common security vulnerabilities. Here are some key things to avoid:
+
+### 1. **Do Not Store Sensitive Data in Local Storage**
+
+Local storage is accessible from any JavaScript code running on the same domain, making it a potential target for attackers. Avoid storing sensitive information like tokens or user data in local storage.  
+
+**Bearer Tokens in sessionStorage and localStorage should be strictly avoided!**
+
+### 2. **Avoid Using `dangerouslySetInnerHTML`**
+
+Using `dangerouslySetInnerHTML` can expose your application to XSS attacks. Always sanitize any HTML content before rendering it.
+
+```javascript
+// Avoid this
+<div dangerouslySetInnerHTML={{ __html: userContent }} />
+
+// Prefer this
+import DOMPurify from 'dompurify';
+
+const sanitizedContent = DOMPurify.sanitize(userContent);
+<div dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
+```
+
+### 3. **Do Not Expose API Keys in the Frontend**
+
+Exposing API keys in your frontend code can lead to unauthorized access to your backend services. Use environment variables and server-side code to keep your API keys secure.
+
+### 4. **Do Not Ignore Security Updates**
+
+Regularly update your dependencies to include the latest security patches. Use tools like `npm audit` to identify and fix vulnerabilities in your project.
+
+### 5. **Avoid Using Untrusted Third-Party Libraries**
+
+Only use third-party libraries from trusted sources. Review the library's code and check for any known vulnerabilities before including it in your project.
+
+### Resources
+
+- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+- [React Security Best Practices](https://reactjs.org/docs/security.html)
+- [npm Audit](https://docs.npmjs.com/cli/v7/commands/npm-audit)
+
+
+## Incorporating Axios for REST API Calls in React with Bearer Tokens and MSAL
+
+When building React applications that interact with REST APIs, [Axios](https://axios-http.com/docs/intro) is a popular library for making HTTP requests. Combined with MSAL, you can securely call APIs using Bearer tokens for authentication.
+
+### Setting Up Axios
+
+1. **Install Axios**:
+    ```sh
+    npm install axios
+    ```
+
+2. **Create an Axios Instance**:
+    Configure an Axios instance to include the Bearer token in the Authorization header for all requests.
+
+    ```typescript
+    import axios, { AxiosRequestConfig } from 'axios';
+    import { msalInstance } from './authConfig';
+    import { AuthenticationResult } from '@azure/msal-browser';
+
+    const apiClient = axios.create({
+        baseURL: 'https://api.example.com',
+    });
+
+    apiClient.interceptors.request.use(async (config: AxiosRequestConfig) => {
+        const accounts = msalInstance.getAllAccounts();
+        if (accounts.length > 0) {
+            const request = {
+                scopes: ['api://your-api-scope/.default'],
+                account: accounts[0],
+            };
+            const response: AuthenticationResult = await msalInstance.acquireTokenSilent(request);
+            if (response && response.accessToken) {
+                config.headers = {
+                    ...config.headers,
+                    Authorization: `Bearer ${response.accessToken}`,
+                };
+            }
+        }
+        return config;
+    });
+
+    export default apiClient;
+    ```
+
+
+### Making API Calls
+
+Use the configured Axios instance to make API calls within your React components.
+
+```typescript
+import React, { useEffect, useState } from 'react';
+import apiClient from './apiClient';
+
+interface DataType {
+    // Define the shape of your data here
+    id: number;
+    name: string;
+    // Add other fields as necessary
+}
+
+const MyComponent: React.FC = () => {
+    const [data, setData] = useState<DataType | null>(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await apiClient.get<DataType>('/endpoint');
+                setData(response.data);
+            } catch (error) {
+                console.error('Error fetching data', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    return (
+        <div>
+            {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
+        </div>
+    );
+};
+
+export default MyComponent;
+```
+
+export default MyComponent;
+```
+
+### Resources
+
+- [Axios Documentation](https://axios-http.com/docs/intro)
+- [MSAL.js Documentation](https://learn.microsoft.com/azure/active-directory/develop/msal-overview)
