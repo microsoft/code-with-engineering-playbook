@@ -45,12 +45,12 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 
 ## Engineering Fundamentals
 
-* [Accessibility](docs/accessibility/README.md)
+* [Accessibility](docs/non-functional-requirements/accessibility.md)
 * [Agile Development](docs/agile-development/README.md)
 * [Automated Testing](docs/automated-testing/README.md)
 * [Code Reviews](docs/code-reviews/README.md)
-* [Continuous Delivery (CD)](docs/continuous-delivery/README.md)
-* [Continuous Integration (CI)](docs/continuous-integration/README.md)
+* [Continuous Delivery (CD)](docs/CI-CD/continuous-delivery.md)
+* [Continuous Integration (CI)](docs/CI-CD/continuous-integration.md)
 * [Design](docs/design/readme.md)
 * [Developer Experience](docs/developer-experience/README.md)
 * [Documentation](docs/documentation/README.md)
@@ -59,12 +59,12 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 * [Security](docs/security/README.md)
 * [Privacy](docs/privacy/README.md)
 * [Source Control](docs/source-control/README.md)
-* [Reliability](docs/reliability/README.md)
+* [Reliability](docs/non-functional-requirements/reliability.md)
 
 ## Fundamentals for Specific Technology Areas
 
 * [Machine Learning Fundamentals](docs/machine-learning/README.md)
-* [User-Interface Engineering](docs/user-interface-engineering/README.md)
+* [User-Interface Engineering](docs/UI-UX/README.md)
 
 ## Contributing
 
