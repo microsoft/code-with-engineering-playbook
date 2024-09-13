@@ -43,6 +43,52 @@ After defining these personas it is clear that whatever the solution is, it requ
 
 After defining the _desired outcomes_ as well as the _personas_, the next step in the design process is to begin conducting [Trade Studies](./../design/design-reviews/trade-studies/README.md) for potential solutions. The first trade study should be high-level and solution oriented. It will utilize the results of previous steps and propose multiple solutions for achieving the desired outcomes with the listed personas in mind. Continuing with the library example, this first trade study may compare various application solutions such as automated emails or text messages, an RSS feed, or an user interface application. There are pros and cons for each solution both from an user experience and a developer experience perspective, but at this stage it is important to focus on the users. After arriving on the best solution, the next trade study can dive into different implementation methods. It is in this subsequent trade studies that developer experience becomes more important.
 
+## Design Ops
+
+Design Ops, short for Design Operations, is a practice that focuses on optimizing and streamlining the design process within an organization. For software engineers, understanding Design Ops can significantly enhance collaboration with design teams and improve the overall efficiency of product development.
+
+### Key Components of Design Ops
+
+1. **Workflow Management**:
+   - Establishing clear processes and workflows for design tasks.
+   - Utilizing project management tools like Azure DevOps, Jira, Trello, or Asana to track design progress and dependencies.
+
+2. **Collaboration Tools**:
+   - Leveraging tools like [Figma](https://www.figma.com/), or [Sketch](https://www.sketch.com/) (Mac OS only) for design collaboration.
+   - Ensuring seamless handoff between design and development through tools like [Zeplin](https://zeplin.io/) or [InVision](https://www.invisionapp.com/).
+   - Validating Product Owner approved designs to be sent for development, and prevent design changes once approved.
+
+3. **Design Systems**:
+   - Creating and maintaining a design system that includes reusable components, style guides, and design tokens.
+   - Promoting consistency and efficiency by using shared design assets.
+   - For most projects within ISE we use [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/controls/webcomponents) to handle most projects, this enables rapid development that allow for web application re-use on non-customer engagements or _white label_ applications.
+   - Other Design Systems used by customers include: [Google's Material Deign](https://mui.com/material-ui/), 
+
+4. **Documentation**:
+   - Documenting design decisions, guidelines, and best practices.
+   - Ensuring that all team members have access to up-to-date design documentation.
+   - Frameworks like [Storybook.js](https://storybook.js.org/) can create _Swagger like_ documentation for UI components.
+
+5. **Feedback Loops**:
+   - Establishing regular design reviews (including product owners and end users) and feedback sessions.
+   - Encouraging iterative improvements based on user and stakeholder feedback.
+
+6. **Metrics and KPIs**:
+   - Defining key performance indicators (KPIs) to measure the effectiveness of design processes.
+   - Using metrics to identify areas for improvement and track progress over time.
+
+### Benefits of Design Ops for Software Engineers and Product Owners
+
+- **Improved Collaboration**: Clear processes and tools facilitate better communication and collaboration between designers and developers.
+- **Consistency**: Design systems ensure a consistent user experience across different parts of the application.
+- **Efficiency**: Streamlined workflows and reusable components reduce redundant work and speed up development.
+- **Quality**: Regular feedback loops and documentation help maintain high design standards and improve the final product.
+
+By integrating Design Ops into the development process, software engineers can work more effectively with design teams, leading to better-designed products and a more efficient development cycle.  It also builds trust with a customer to better ideate on what the final outcome of a project could be.
+
+## Establishing a web application
+
+
 The benefit of building software applications is that there are truly infinite ways to build something. A team can use the latest shiny tools, or they can utilize the tried-and-tested ones. It is for this reason that focussing completely on the user until a solution is defined is better than obsessing over technology choices. Within ISE, we often reach for tools such as the [React](https://reactjs.org/) framework. React is a great tool when wielded by an experienced team. Otherwise, it can create more hurdles than it is worth. Keep in mind that even if _you_ feel capable with React, the rest of your team and your customer's dev team needs to as well. Some other great options to consider when building a proof-of-concept or minimum-viable-product are:
 
 1. HTML/CSS/JavaScript
