@@ -256,14 +256,6 @@ To get started with Entra ID in your React application, follow these steps:
         document.getElementById("root")
     );
     ```
-
-##### Resources
-
-- [Microsoft Learn: Secure a React single-page application with Entra ID](https://learn.microsoft.com/azure/active-directory/develop/tutorial-v2-react)
-- [MSAL.js Documentation](https://learn.microsoft.com/azure/active-directory/develop/msal-overview)
-- [React MSAL Library](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-react)
-
-
 ## Managing Secrets with Environmental Variables in React Projects Using Vite
 
 When developing React applications, it's crucial to manage sensitive information such as API keys, database credentials, and other secrets securely. Vite provides a straightforward way to handle environmental variables.
@@ -317,12 +309,6 @@ When developing React applications, it's crucial to manage sensitive information
 
 - **Validate Environmental Variables**:
     Consider using a validation library like [zod](https://github.com/colinhacks/zod) or [joi](https://joi.dev/) to validate your environmental variables at runtime, ensuring they meet the required format and constraints.
-### Resources
-
-- [Vite Environmental Variables Guide](https://vitejs.dev/guide/env-and-mode.html)
-- [dotenv Documentation](https://github.com/motdotla/dotenv)
-- [zod Documentation](https://github.com/colinhacks/zod)
-- [joi Documentation](https://github.com/sideway/joi)
 
 
 ## Common Security Pitfalls in React Applications
@@ -361,13 +347,6 @@ Regularly update your dependencies to include the latest security patches. Use t
 ### 5. **Avoid Using Untrusted Third-Party Libraries**
 
 Only use third-party libraries from trusted sources. Review the library's code and check for any known vulnerabilities before including it in your project.
-
-### Resources
-
-- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
-- [React Security Best Practices](https://reactjs.org/docs/security.html)
-- [npm Audit](https://docs.npmjs.com/cli/v7/commands/npm-audit)
-
 
 ## Incorporating Axios for REST API Calls in React with Bearer Tokens and MSAL
 
@@ -454,8 +433,3 @@ const MyComponent: React.FC = () => {
 
 export default MyComponent;
 ```
-
-#### Resources
-
-- [Axios Documentation](https://axios-http.com/docs/intro)
-- [MSAL.js Documentation](https://learn.microsoft.com/azure/active-directory/develop/msal-overview)
