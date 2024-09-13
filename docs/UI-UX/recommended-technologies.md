@@ -213,7 +213,7 @@ my-react-app/
 
 ### Using React with Entra ID
 
-Integrating [React](https://reactjs.org/) applications with [Entra ID](https://azure.microsoft.com/en-us/services/active-directory/) (formerly Azure Active Directory) allows you to secure your web applications with enterprise-grade authentication and authorization. This can be achieved using the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/azure/active-directory/develop/msal-overview).
+Integrating [React](https://reactjs.org/) applications with __Entra ID__ (formerly Azure Active Directory) allows you to secure your web applications with enterprise-grade authentication and authorization. This can be achieved using the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/azure/active-directory/develop/msal-overview).
 
 To get started with Entra ID in your React application, follow these steps:
 
@@ -231,8 +231,8 @@ To get started with Entra ID in your React application, follow these steps:
         const msalConfig: Configuration = {
             auth: {
                 clientId: "your-client-id",
-                authority: "https://login.microsoftonline.com/your-tenant-id",
-                redirectUri: "http://localhost:3000",
+                authority: "//login.microsoftonline.com/your-tenant-id",
+                redirectUri: "//localhost:3000",
             },
         };
 
@@ -311,7 +311,7 @@ When developing React applications, it's crucial to manage sensitive information
     ```
 
 - **Validate Environmental Variables**:
-    Consider using a validation library like `zod` (https://github.com/colinhacks/zod) or `joi` (https://joi.dev/) to validate your environmental variables at runtime, ensuring they meet the required format and constraints.
+    Consider using a validation library like `zod` ( https://github.com/colinhacks/zod ) or `joi` ( joi.dev ) to validate your environmental variables at runtime, ensuring they meet the required format and constraints.
 
 
 ## Common Security Pitfalls in React Applications
@@ -371,7 +371,7 @@ When building React applications that interact with REST APIs, [Axios](https://a
     import { AuthenticationResult } from '@azure/msal-browser';
 
     const apiClient = axios.create({
-        baseURL: 'https://api.example.com',
+        baseURL: '[sample URL]',
     });
 
     apiClient.interceptors.request.use(async (config: AxiosRequestConfig) => {
