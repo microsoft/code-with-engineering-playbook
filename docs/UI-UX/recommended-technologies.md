@@ -455,10 +455,7 @@ const MyComponent: React.FC = () => {
 export default MyComponent;
 ```
 
-export default MyComponent;
-```
-
-### Resources
+#### Resources
 
 - [Axios Documentation](https://axios-http.com/docs/intro)
 - [MSAL.js Documentation](https://learn.microsoft.com/azure/active-directory/develop/msal-overview)
