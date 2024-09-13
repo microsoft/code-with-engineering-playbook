@@ -118,7 +118,7 @@ React is a framework developed and maintained by Meta (Formerly Facebook). React
 
 ### Quick note on create-react-app
 
-> __create-react-app is deprecated as of January 2023 and should be avoided for new projects.__ It is recommended to use more modern tools like [Vite](#vite) for better performance and flexibility. For more details, refer to the [official React blog](https://reactjs.org/blog/2022/12/08/react-v18-update.html) and [Vite documentation](https://vitejs.dev/guide/why.html).
+> __create-react-app is deprecated as of January 2023 and should be avoided for new projects.__ It is recommended to use more modern tools like [Vite](#vite) for better performance and flexibility. For more details, refer to the [official React blog](https://react.dev/blog) and [Vite documentation](https://vitejs.dev/guide/why.html).
 
 
 From [Adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
