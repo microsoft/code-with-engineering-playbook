@@ -268,8 +268,8 @@ When developing React applications, it's crucial to manage sensitive information
     In the root of your project, create a file named `.env`. This file will store your environmental variables.
 
     ```plaintext
-    VITE_API_KEY=your_api_key_here
-    VITE_API_URL=https://api.example.com
+    VITE_API_KEY=[sample API Key]
+    VITE_API_URL=[sample URL]
     ```
 
 2. **Access Environmental Variables in Your Code**:
