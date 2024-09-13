@@ -86,17 +86,60 @@ Design Ops, short for Design Operations, is a practice that focuses on optimizin
 
 By integrating Design Ops into the development process, software engineers can work more effectively with design teams, leading to better-designed products and a more efficient development cycle.  It also builds trust with a customer to better ideate on what the final outcome of a project could be.
 
-## Establishing a web application
+## Establishing a web application's 
+
+The benefit of building software applications is that there are truly infinite ways to build something. A team can use the latest shiny tools, or they can utilize the tried-and-tested ones. It is for this reason that focussing completely on the user until a solution is defined is better than obsessing over technology choices. 
+
+When choosing a front-end framework or library, consider the project's complexity, performance, and scalability needs. Evaluate the team's expertise with potential options to ensure efficient development. Assess long-term maintainability and community support. Conduct [Trade Studies](./../design/design-reviews/trade-studies/README.md) to weigh pros and cons, focusing on alignment with project goals and user experience. This thorough analysis helps balance innovation with practicality.
 
 
-The benefit of building software applications is that there are truly infinite ways to build something. A team can use the latest shiny tools, or they can utilize the tried-and-tested ones. It is for this reason that focussing completely on the user until a solution is defined is better than obsessing over technology choices. Within ISE, we often reach for tools such as the [React](https://reactjs.org/) framework. React is a great tool when wielded by an experienced team. Otherwise, it can create more hurdles than it is worth. Keep in mind that even if _you_ feel capable with React, the rest of your team and your customer's dev team needs to as well. Some other great options to consider when building a proof-of-concept or minimum-viable-product are:
+### Some platforms/frameworks to consider when planning a project:
 
 1. HTML/CSS/JavaScript
    - Back to the basics! Start with a single **index.html**, include a popular CSS framework such as [Bootstrap](https://getbootstrap.com/) using their CDN link, and start prototyping!
    - Rarely will you have to support legacy browsers; thus, you can rely on modern JavaScript language features! No need for build tools or even TypeScript (did you know you can [type check JavaScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)).
+   - For static _vanilla_ websites like this; we still recommend a build system like [Vite](https://vitejs.dev/) to build and manage assets for deployment.
+1. React
+   - [React](https://reactjs.org/) allows for the creation of reusable UI components, and is used for most projects in ISE.
+   - Ideal for projects that require a dynamic and responsive user interface.
+   - Works well with a variety of state management libraries like Redux or Context API.
+   - Has a massive 3rd party library support.
+   - Supports [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/controls/webcomponents) directly.
+   - Has [extensive documentation for integrating with Azure on Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/react/).
+1. Angular
+   - A robust framework for building client-side applications. [Angular](https://angular.dev/) provides a comprehensive solution with built-in features like dependency injection, routing, and state management.
+   - Ideal for large-scale applications where maintainability and scalability are crucial.
+   - Better Unit Testing support out of the box than React.
+   - __Angular has no support for Fluent UI, and has tight integration with Google Cloud Platform.__
+1. Blazor
+   - A framework for building interactive web UIs using C# instead of JavaScript. [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) allows you to share code between the client and server.
+   - Great for teams already familiar with the .NET ecosystem.
+   - Fantastic platform where UI elements can be fully hosted and served server-side, adding security.
+   - [Supports Fluent UI with it's own supported library](https://www.fluentui-blazor.net/).
+1. ASP.NET Core
+   - A mature framework for building server-side web applications. [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) supports MVC architecture, making it easier to manage complex applications.
+   - Suitable for enterprise-level applications requiring robust security and performance. **(Great for Government web applications where security is paramount)**
+1. Next.js
+   - A React-based framework that enables server-side rendering and static site generation. [Next.js](https://nextjs.org/) improves performance and SEO.
+   - Great for building fast, scalable web applications with a focus on developer experience.
+   - Provides built-in support for API routes, making it easier to build full-stack applications.
+   - __Recommended by Meta going forward rather than use create-react-app.__
+   - Next.js is very heavy in terms of features, and it doesn't allow for re-use in non-Next.js applications like create-react-app, React-Native, or Electron based apps.
+1. Svelte
+   - [Svelte](https://svelte.dev/) is a modern framework that shifts much of the work to compile time, resulting in highly optimized and performant applications.
+   - Ideal for projects where performance is critical and you want to minimize the amount of JavaScript sent to the client.
+   - Svelte's syntax is simple and intuitive, making it easy to learn and use.
+1. Solid
+   - [Solid](https://solidjs.com/) is a declarative JavaScript library for building user interfaces, focusing on fine-grained reactivity.
+   - Great for projects that require high performance and efficient updates, as Solid compiles to highly optimized JavaScript.
+   - Solid's API is similar to React, making it easier for developers familiar with React to transition.
 1. Web Component frameworks
-   - Web Components are now standardized in all modern browsers
-   - Microsoft has their own, stable & actively-maintained framework, [Fast](https://www.fast.design/)
+   - Web Components are now standardized in all modern browsers.
+   - Microsoft has their own, stable & actively-maintained framework, [Fast](https://www.fast.design/).
+1. HTMX
+   - [HTMX](https://htmx.org/) allows you to access modern browser features directly from HTML, making it easier to build dynamic web applications without relying heavily on JavaScript.
+   - Ideal for projects that require a simpler, more declarative approach to adding interactivity to web pages.
+   - Works well with server-side frameworks and can be integrated into existing projects with minimal effort.
 
 For more information of choosing the right implementation tool, read the [Recommended Technologies](./recommended-technologies.md) document.
 
