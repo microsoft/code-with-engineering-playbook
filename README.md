@@ -19,11 +19,11 @@ This is our playbook. All contributions welcome! Please feel free to submit a [p
 
 ## "The" Checklist
 
-If you do nothing else follow the [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals.
+If you do nothing else follow the [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)! It's here to help follow the Engineering Fundamentals.
 
 ## Structure of a Sprint
 
-A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure of an Agile sprint.
+A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to the structure of an Agile sprint.
 
 ## General Guidance
 
@@ -40,8 +40,8 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 
 ## Resources
 
-* [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)
-* [Structure of a Sprint](docs/SPRINT-STRUCTURE.md)
+* [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)
+* [The first week of an ISE project](docs/the-first-week-of-an-ise-project.md)
 
 ## Engineering Fundamentals
 
