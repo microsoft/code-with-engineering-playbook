@@ -11,13 +11,13 @@ Additionally, while some of these technologies are presented as alternate option
 > TypeScript is JavaScript with syntax for types. TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 > [typescriptlang.org](https://www.typescriptlang.org/)
 
-TypeScript is highly recommended for all new web application projects. The stability it provides for teams is unmatched, and can make it easier for folks with C# backgrounds to work with web technologies.
+TypeScript is __highly recommended__ for all new web application projects. The stability it provides for teams is unmatched, and can make it easier for folks with C# backgrounds to work with web technologies.
 
 There are many ways to integrate TypeScript into a web application. The easiest way to get started is by reviewing the [TypeScript Tooling in 5 Minutes](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html) guide from the official TypeScript docs. The other sections on this page contain information regarding integration with TypeScript.
 
 ## React
 
-React is a framework developed and maintained by Facebook. React is used throughout Microsoft and has a vast open source community.
+React is a framework developed and maintained by Meta (Formerly Facebook). React is used throughout Microsoft's product stack and has a vast open source community.
 
 ### Documentation & Recommended Resources
 
