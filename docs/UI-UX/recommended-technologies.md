@@ -304,14 +304,14 @@ When developing React applications, it's crucial to manage sensitive information
 
     ```plaintext
     # .env.development
-    VITE_API_URL=https://dev.api.example.com
+    VITE_API_URL=[example value]
 
     # .env.production
-    VITE_API_URL=https://api.example.com
+    VITE_API_URL=[example value]
     ```
 
 - **Validate Environmental Variables**:
-    Consider using a validation library like [zod](https://github.com/colinhacks/zod) or [joi](https://joi.dev/) to validate your environmental variables at runtime, ensuring they meet the required format and constraints.
+    Consider using a validation library like `zod` (https://github.com/colinhacks/zod) or `joi` (https://joi.dev/) to validate your environmental variables at runtime, ensuring they meet the required format and constraints.
 
 
 ## Common Security Pitfalls in React Applications
