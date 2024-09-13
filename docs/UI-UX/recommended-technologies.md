@@ -225,37 +225,39 @@ To get started with Entra ID in your React application, follow these steps:
 2. **Configure MSAL**:
     Create a configuration file to set up your MSAL instance with your Entra ID credentials.
 
-    ```javascript
-    import { PublicClientApplication } from "@azure/msal-browser";
+        ```typescript
+        import { PublicClientApplication, Configuration } from "@azure/msal-browser";
 
-    const msalConfig = {
-        auth: {
-            clientId: "your-client-id",
-            authority: "https://login.microsoftonline.com/your-tenant-id",
-            redirectUri: "http://localhost:3000",
-        },
-    };
+        const msalConfig: Configuration = {
+            auth: {
+                clientId: "your-client-id",
+                authority: "https://login.microsoftonline.com/your-tenant-id",
+                redirectUri: "http://localhost:3000",
+            },
+        };
 
-    export const msalInstance = new PublicClientApplication(msalConfig);
-    ```
+        export const msalInstance = new PublicClientApplication(msalConfig);
+        ```
+
 
 3. **Wrap Your Application**:
     Use the `MsalProvider` to wrap your React application.
 
-    ```javascript
-    import React from "react";
-    import ReactDOM from "react-dom";
-    import { MsalProvider } from "@azure/msal-react";
-    import { msalInstance } from "./authConfig";
-    import App from "./App";
+        ```typescript
+        import React from "react";
+        import ReactDOM from "react-dom";
+        import { MsalProvider } from "@azure/msal-react";
+        import { msalInstance } from "./authConfig";
+        import App from "./App";
 
-    ReactDOM.render(
-        <MsalProvider instance={msalInstance}>
-            <App />
-        </MsalProvider>,
-        document.getElementById("root")
-    );
-    ```
+        ReactDOM.render(
+            <MsalProvider instance={msalInstance}>
+                <App />
+            </MsalProvider>,
+            document.getElementById("root")
+        );
+        ```
+
 ## Managing Secrets with Environmental Variables in React Projects Using Vite
 
 When developing React applications, it's crucial to manage sensitive information such as API keys, database credentials, and other secrets securely. Vite provides a straightforward way to handle environmental variables.
@@ -273,9 +275,9 @@ When developing React applications, it's crucial to manage sensitive information
 2. **Access Environmental Variables in Your Code**:
     Vite prefixes all environmental variables with `VITE_` to ensure they are exposed to your client-side code. You can access these variables using `import.meta.env`.
 
-    ```javascript
-    const apiKey = import.meta.env.VITE_API_KEY;
-    const apiUrl = import.meta.env.VITE_API_URL;
+    ```typescript
+    const apiKey: string = import.meta.env.VITE_API_KEY as string;
+    const apiUrl: string = import.meta.env.VITE_API_URL as string;
 
     fetch(`${apiUrl}/endpoint`, {
         headers: {
@@ -283,7 +285,8 @@ When developing React applications, it's crucial to manage sensitive information
         }
     })
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => console.log(data))
+    .catch(error => console.error('Error fetching data:', error));
     ```
 
 ### Best Security Practices
@@ -325,16 +328,16 @@ Local storage is accessible from any JavaScript code running on the same domain,
 
 Using `dangerouslySetInnerHTML` can expose your application to XSS attacks. Always sanitize any HTML content before rendering it.
 
-```javascript
-// Avoid this
-<div dangerouslySetInnerHTML={{ __html: userContent }} />
+    ```typescript
+    // Avoid this
+    <div dangerouslySetInnerHTML={{ __html: userContent }} />
 
-// Prefer this
-import DOMPurify from 'dompurify';
+    // Prefer this
+    import DOMPurify from 'dompurify';
 
-const sanitizedContent = DOMPurify.sanitize(userContent);
-<div dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
-```
+    const sanitizedContent: string = DOMPurify.sanitize(userContent);
+    <div dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
+    ```
 
 ### 3. **Do Not Expose API Keys in the Frontend**
 
