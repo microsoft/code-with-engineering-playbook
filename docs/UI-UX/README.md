@@ -45,13 +45,12 @@ After defining the _desired outcomes_ as well as the _personas_, the next step i
 
 ## Design Ops
 
-Design Ops, short for Design Operations, is a practice that focuses on optimizing and streamlining the design process within an organization. For software engineers, understanding Design Ops can significantly enhance collaboration with design teams and improve the overall efficiency of product development.
+Design Ops, short for Design Operations, is a practice that focuses on optimizing and streamlining the design process within an organization. For software engineers, understanding Design Ops can significantly enhance collaboration with design and engineering teams and improve the overall efficiency of product development.
 
 ### Key Components of Design Ops
 
-1. **Workflow Management**:
-   - Establishing clear processes and workflows for design tasks.
-   - Utilizing project management tools like Azure DevOps, Jira, Trello, or Asana to track design progress and dependencies.
+- Establishing clear processes and workflows for design tasks.
+- Utilizing project management tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [Jira](https://www.atlassian.com/software/jira), [Trello](https://trello.com/), or [Asana](https://asana.com/) to track design progress and dependencies.
 
 2. **Collaboration Tools**:
    - Leveraging tools like [Figma](https://www.figma.com/), or [Sketch](https://www.sketch.com/) (Mac OS only) for design collaboration.
@@ -71,11 +70,12 @@ Design Ops, short for Design Operations, is a practice that focuses on optimizin
 
 5. **Feedback Loops**:
    - Establishing regular design reviews (including product owners and end users) and feedback sessions.
-   - Encouraging iterative improvements based on user and stakeholder feedback.
+   - Encouraging iterative improvements on designs and UI/UX code implementation based on user and stakeholder feedback.
 
 6. **Metrics and KPIs**:
    - Defining key performance indicators (KPIs) to measure the effectiveness of design processes.
    - Using metrics to identify areas for improvement and track progress over time.
+   - __For long-term projects:__ Incorporate _A/B testing_ for better user experiences, and enhancements to the solution.
 
 ### Benefits of Design Ops for Software Engineers and Product Owners
 
@@ -141,8 +141,7 @@ When choosing a front-end framework or library, consider the project's complexit
    - Ideal for projects that require a simpler, more declarative approach to adding interactivity to web pages.
    - Works well with server-side frameworks and can be integrated into existing projects with minimal effort.
 
-For more information of choosing the right implementation tool, read the [Recommended Technologies](./recommended-technologies.md) document.
 
-Continue reading the [Trade Study](./../design/design-reviews/trade-studies/README.md) section of this site for more information on completing this step in the design process.
-
-After iterating through multiple trade study documents, this design process can be considered complete! With an agreed upon solution and implementation in mind, it is now time to begin development. A natural continuation of the design process is to get users (or stakeholders) involved as early as possible. Constantly look for design and usability feedback, and utilize this to improve the application as it is being developed.
+> For more information of utilizing any of these frameworks/platforms, read the [Recommended Technologies](./recommended-technologies.md) document.
+> 
+> Continue reading the [Trade Study](./../design/design-reviews/trade-studies/README.md) section of this site for more information on completing this step in the design process.
