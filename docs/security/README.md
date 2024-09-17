@@ -18,7 +18,7 @@ When requesting a security review for your application, please make sure you hav
 
 ## Azure DevOps Security
 
-- [Security Engineering DevSecOps Practices](https://www.microsoft.com/en-us/securityengineering/devsecops)
+- [Security Engineering DevSecOps Practices](https://wiki.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 - [Azure DevOps Data Protection Overview](https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops)
 - [Security and Identity in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/security/about-security-identity?view=azure-devops)
 - [Security Code Analysis](https://secdevtools.azurewebsites.net/)
