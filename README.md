@@ -19,11 +19,11 @@ This is our playbook. All contributions welcome! Please feel free to submit a [p
 
 ## "The" Checklist
 
-If you do nothing else follow the [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)! It's here to help follow the Engineering Fundamentals.
+If you do nothing else follow the [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)! It's here to help follow the Engineering Fundamentals.
 
 ## Structure of a Sprint
 
-A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure of an Agile sprint.
+A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to the structure of an Agile sprint.
 
 ## General Guidance
 
@@ -40,17 +40,17 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 
 ## Resources
 
-* [Engineering Fundamentals Checklist](docs/ENG-FUNDAMENTALS-CHECKLIST.md)
-* [Structure of a Sprint](docs/SPRINT-STRUCTURE.md)
+* [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)
+* [The first week of an ISE project](docs/the-first-week-of-an-ise-project.md)
 
 ## Engineering Fundamentals
 
-* [Accessibility](docs/accessibility/README.md)
+* [Accessibility](docs/non-functional-requirements/accessibility.md)
 * [Agile Development](docs/agile-development/README.md)
 * [Automated Testing](docs/automated-testing/README.md)
 * [Code Reviews](docs/code-reviews/README.md)
-* [Continuous Delivery (CD)](docs/continuous-delivery/README.md)
-* [Continuous Integration (CI)](docs/continuous-integration/README.md)
+* [Continuous Delivery (CD)](docs/CI-CD/continuous-delivery.md)
+* [Continuous Integration (CI)](docs/CI-CD/continuous-integration.md)
 * [Design](docs/design/readme.md)
 * [Developer Experience](docs/developer-experience/README.md)
 * [Documentation](docs/documentation/README.md)
@@ -59,12 +59,12 @@ A [breakdown of sections](docs/SPRINT-STRUCTURE.md) according to the structure o
 * [Security](docs/security/README.md)
 * [Privacy](docs/privacy/README.md)
 * [Source Control](docs/source-control/README.md)
-* [Reliability](docs/reliability/README.md)
+* [Reliability](docs/non-functional-requirements/reliability.md)
 
 ## Fundamentals for Specific Technology Areas
 
 * [Machine Learning Fundamentals](docs/machine-learning/README.md)
-* [User-Interface Engineering](docs/user-interface-engineering/README.md)
+* [User-Interface Engineering](docs/UI-UX/README.md)
 
 ## Contributing
 
