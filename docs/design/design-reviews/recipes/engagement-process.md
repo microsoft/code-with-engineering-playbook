@@ -21,7 +21,7 @@ During this time the team uncovers many unknowns, leveraging all new-found infor
 
 ## Sprint Planning
 
-In many engagements Microsoft works with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../../agile-development/core-expectations/README.md) is a great opportunity to dive deep into the next set of high priority work. Some key points to address are the following:
+In many engagements Microsoft works with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../../agile-development/ceremonies.md#sprint-planning) is a great opportunity to dive deep into the next set of high priority work. Some key points to address are the following:
 
 1. Identify stories that require design reviews
 1. Separate design from implementation for complex stories
@@ -37,7 +37,7 @@ Stories that will benefit from design reviews have one or more of the following 
 
 ## Sprint Backlog Refinement
 
-If your team is not already hosting a [Sprint Backlog Refinement](../../../agile-development/advanced-topics/backlog-management/README.md) session at least once per week you should consider it. It is a great opportunity to:
+If your team is not already hosting a [Sprint Backlog Refinement](../../../agile-development/advanced-topics/backlog-management) session at least once per week you should consider it. It is a great opportunity to:
 
 1. Keep the backlog clean
 1. Re-prioritize work based on shifting business priorities
@@ -48,7 +48,7 @@ The team can follow the same steps from [sprint planning](#sprint-planning) to h
 
 ## Sprint Retrospectives
 
-[Sprint retrospectives](../../../agile-development/core-expectations/README.md) are a great time to check in with the dev team, identify what is working or not working, and propose changes to keep improving.
+[Sprint retrospectives](../../../agile-development/ceremonies.md#retrospectives) are a great time to check in with the dev team, identify what is working or not working, and propose changes to keep improving.
 
 It is also a great time to check in on design reviews
 
@@ -58,7 +58,7 @@ It is also a great time to check in on design reviews
 
 All design artifacts should be treated as a living document. As requirements change or uncover more unknowns the dev crew should retroactively update all design artifacts. Missing this critical step may cause the customer to incur future technical debt. Artifacts that are not up to date are `bugs` in the design.
 
-> **Tip:** Keep your artifacts up to date by adding it to your teams [Definition of Done](../../../agile-development/advanced-topics/team-agreements/definition-of-done.md) for all user stories.
+> **Tip:** Keep your artifacts up to date by adding it to your teams [definition of done](../../../agile-development/team-agreements/definition-of-done.md) for all user stories.
 
 ## Sync Design Reviews
 

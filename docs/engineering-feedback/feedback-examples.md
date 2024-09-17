@@ -2,7 +2,7 @@
 
 The following are real-world examples of Engineering Feedback that have led to product improvements and unblocked customers.
 
-## Windows Server Container support for Azure Kubernetes Service
+## Windows Server Container Support for Azure Kubernetes Service
 
 The Azure Kubernetes Service should have first class Windows container support so solutions that require Windows workloads can be deployed on a wildly popular container orchestration platform. The need was to be able to deploy Windows Server containers on AKS the managed Azure Kubernetes Service. According to [this FAQ](https://learn.microsoft.com/en-us/azure/aks/faq#can-i-run-windows-server-containers-on-aks) (and in parallel confirmation) it is not available yet.
 
@@ -22,7 +22,7 @@ Customer scenario was to receive a total of 250 messages per second from 50 prod
 
 > This feedback was [created as a feedback](https://github.com/Azure/azure-functions-servicebus-extension/issues/15) with the Azure Functions product group and also followed up internally until addressed.
 
-## Stream Analytics - No support for zero-downtime scale-down
+## Stream Analytics - No Support for Zero-Downtime Scale-Down
 
 In order to update the Streaming Unit number in Stream Analytics you need to stop the service and wait for minutes for it to restart. This unacceptable by customers who need near real-time analysis​. In order to have a job re-started, up to 2 minutes are needed and this is not acceptable for a real-time streaming solution. It would also be optimal if scale-up and scale-down could be done automatically, by setting threshold values that when reached increase or decrease automatically the amount of RU available. This feedback is for customers' request for zero down-time scale-down capability in stream analytics.
 
@@ -36,7 +36,7 @@ Desired Experience: Partners should be able to update the Streaming Unit number 
 
 Several customers already use Python as part of their workflow, and would like to be able to use Python for Azure Functions. This is specially true since many of them are already have scripts running on other clouds and services.
 
-In addition, Python support has been in Preview for a very long time, and it's missing a lot of functionality.  
+In addition, Python support has been in Preview for a very long time, and it's missing a lot of functionality.
 
 This feature request is one of the most asked, and a huge upside potential to pull through Machine Learning (ML) based workloads.
 

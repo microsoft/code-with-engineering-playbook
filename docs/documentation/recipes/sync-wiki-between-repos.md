@@ -1,4 +1,4 @@
-# How to Sync a Wiki between Repositories
+# How to Sync a Wiki Between Repositories
 
 This is a quick guide to mirroring a Project Wiki to another repository.
 
@@ -33,7 +33,7 @@ git branch -u origin/wikiMaster
 
 Your output should look like this when run:
 
-```powershell
+```ps
 PS C:\Git\MyProject.wiki> git pull -v
 POST git-upload-pack (909 bytes)
 remote: Azure Repos

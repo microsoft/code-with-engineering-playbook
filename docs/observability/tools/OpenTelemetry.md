@@ -71,7 +71,7 @@ From the website:
 
 >Our goal is to provide a generally available, production quality release for the tracing data source across most OpenTelemetry components in the first half of 2021. Several components have already reached this milestone! We expect metrics to reach the same status in the second half of 2021 and are targeting logs in 2022.
 
-## What to watch out for
+## What to Watch Out for
 
 As OpenTelemetry is a very recent project (first GA version of some features released in 2020), many features are still in beta hence due diligence needs to be done before using such features in production. Also, OpenTelemetry supports many popular languages but features in all languages are not at par. Some languages offer more features as compared to other languages. It also needs to be called out as some features are not in GA, there may be some incompatibility issues with the tooling. That being said, OpenTelemetry is one of the most active projects of [CNCF](https://www.cncf.io), so it is expected that many more features would reach GA soon.
 
@@ -82,10 +82,10 @@ Apart from the logging specification and implementation that are still marked as
 ## Integration Options with Azure Monitor
 
 ### Using the Azure Monitor OpenTelemetry Exporter Library
-  
+
 This scenario uses the OpenTelemetry SDK as the core instrumentation library. Basically this means you will instrument your application using the OpenTelemetry libraries, but you will additionally use the Azure Monitor OpenTelemetry Exporter and then added it as an additional exporter with the OpenTelemetry SDK. In this way, the OpenTelemetry traces your application creates will be pushed to your Azure Monitor Instance.
 
-### Using the Application Insights Agent Jar file - Java only
+### Using the Application Insights Agent Jar File - Java Only
 
 Java OpenTelemetry instrumentation provides another way to integrate with Azure Monitor, by using [Applications Insights Java Agent jar](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent).
 
@@ -94,7 +94,7 @@ When configuring this option, the Applications Insights Agent file is added when
 OpenTelemetry Java Agent instrumentation supports many [libraries and frameworks and application servers](https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md#supported-libraries-frameworks-application-servers-and-jvms). Application Insights Java Agent [enhances](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent#auto-instrumentation) this list.
 Therefore, the main difference between running the OpenTelemetry Java Agent vs. the Application Insights Java Agent is demonstrated in the amount of traces getting logged in Azure Monitor. When running with Application Insights Java agent there's more telemetry getting pushed to Azure Monitor. On the other hand, when running the solution using the Application Insights agent mode, it is essential to highlight that nothing gets logged on Jaeger (or any other OpenTelemetry exporter). All traces will be pushed exclusively to Azure Monitor. However, both manual instrumentation done via the OpenTelemetry SDK and all automatic traces, dependencies, performance counters, and metrics being instrumented by the Application Insights agent are sent to Azure Monitor. Although there is a rich amount of additional data automatically instrumented by the Application Insights agent, it can be deduced that it is not necessarily OpenTelemetry compliant. Only the traces logged by the manual instrumentation using the OpenTelemetry SDK are.
 
-#### OpenTelemetry vs Application Insights agents compared
+#### OpenTelemetry vs Application Insights Agents Compared
 
 | Highlight                                                                | OpenTelemetry Agent | App Insights Agent |
 |--------------------------------------------------------------------------|---------------------|--------------------|
@@ -116,34 +116,25 @@ Either way, instrumenting your code with OpenTelemetry seems the right approach 
 
 Use the [Azure OpenTelemetry Tracing plugin library for Java](https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/core/azure-core-tracing-opentelemetry) to enable distributed tracing across Azure components through OpenTelemetry.
 
-### Manual trace context propagation
+### Manual Trace Context Propagation
 
 The trace context is stored in Thread-local storage. When the application flow involves multiple threads (eg. multithreaded work-queue, asynchronous processing) then the traces won't get combined into one end-to-end trace chain with automatic [context propagation](https://opentelemetry.io/docs/concepts/signals/traces/#context-propagation).
 To achieve that you need to manually propagate the trace context ([example in Java](https://opentelemetry.io/docs/instrumentation/java/manual/#context-propagation)) by storing the [trace headers](https://www.w3.org/TR/trace-context/#trace-context-http-headers-format) along with the work-queue item.
 
-### Telemetry testing
+### Telemetry Testing
 
 Mission critical telemetry data should be covered by testing. You can cover telemetry by tests by mocking the telemetry collector web server. In automated testing environment the telemetry instrumentation can be configured to use [OTLP exporter](https://opentelemetry.io/docs/reference/specification/protocol/exporter/) and point the [OTLP exporter endpoint](https://github.com/open-telemetry/opentelemetry-java/blob/main/sdk-extensions/autoconfigure/README.md#otlp-exporter-span-metric-and-log-exporters)
 to the collector web server. Using mocking servers libraries (eg. MockServer or WireMock) can help verify the telemetry data pushed to the collector.
 
-## References
+## Resources
 
 * [OpenTelemetry Official Site](https://opentelemetry.io/)
-
 * [Getting Started with dotnet and OpenTelemetry](https://opentelemetry.io/docs/languages/net/getting-started/)
-
 * [Using OpenTelemetry Collector](https://opentelemetry.io/docs/collector/getting-started/)
-
 * [OpenTelemetry Java SDK](https://github.com/open-telemetry/opentelemetry-java)
-
 * [Manual Instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation#manually-instrumenting)
-
 * [OpenTelemetry Instrumentation Agent for Java](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
-
 * [Application Insights Java Agent](https://learn.microsoft.com/en-us/azure/azure-monitor/app/java-in-process-agent)
-
 * [Azure Monitor OpenTelemetry Exporter client library for Java](https://github.com/Azure/azure-sdk-for-java/tree/3f31d68eed6fbe11516ca3afe3955c8840a6e974/sdk/monitor/azure-monitor-opentelemetry-exporter)
-
 * [Azure OpenTelemetry Tracing plugin library for Java](https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/core/azure-core-tracing-opentelemetry)
-
 * [Application Insights Agent's OpenTelemetry configuration](https://github.com/microsoft/ApplicationInsights-Java/wiki/OpenTelemetry-API-support-(3.0))

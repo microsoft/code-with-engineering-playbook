@@ -11,18 +11,6 @@ This covers not only technical design of software, but also architecture design 
 - Reference or define process or checklists to help ensure well-designed software.
 - Collate and point to reference sources (guides, repos, articles) that can help shortcut the learning process.
 
-## Sections
-
-- [Diagram Types](diagram-types/README.md)
-- [Design Patterns](design-patterns/README.md)
-- [Design Reviews](design-reviews/README.md)
-- [Non-Functional Requirements Guidance](design-patterns/non-functional-requirements-capture-guide.md)
-- [Sustainable Software Engineering](sustainability/readme.md)
-
-## Recipes
-
-- [Design Recipes](design-reviews/recipes/README.md)
-
 ## Code Examples
 
 - Folder Structure

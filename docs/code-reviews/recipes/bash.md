@@ -6,7 +6,7 @@ Developers should follow [Google's Bash Style Guide](https://google.github.io/st
 
 ## Code Analysis / Linting
 
-Projects must check bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../continuous-integration/README.md).
+Projects must check bash code with [shellcheck](https://github.com/koalaman/shellcheck) as part of the [CI process](../../CI-CD/continuous-integration.md).
 Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automatically format shell scripts. There are few vscode code extensions which are based on shfmt like shell-format which can be used to automatically format shell scripts.
 
 ## Project Setup
@@ -15,7 +15,7 @@ Apart from linting, [shfmt](https://github.com/mvdan/sh) can be used to automati
 
 Shellcheck extension should be used in VS Code, it provides static code analysis capabilities and auto fixing linting issues. To use vscode-shellcheck in vscode do the following:
 
-#### Install shellcheck on your machine
+#### Install shellcheck on Your Machine
 
 For macOS
 
@@ -29,7 +29,7 @@ For Ubuntu:
 apt-get install shellcheck
 ```
 
-#### Install shellcheck on vscode
+#### Install shellcheck on VSCode
 
 Find the vscode-shellcheck extension in vscode and install it.
 
@@ -40,13 +40,15 @@ Find the vscode-shellcheck extension in vscode and install it.
 shell-format extension does automatic formatting of your bash scripts, docker files and several configuration files. It is dependent on shfmt which can enforce google style guide checks for bash.
 To use shell-format in vscode do the following:
 
-#### Install shfmt(Requires Go 1.13 or later) on your machine
+#### Install shfmt on Your Machine
+
+Requires Go 1.13 or Later
 
 ```bash
 GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
 ```
 
-#### Install shell-format on vscode
+#### Install shell-format on VSCode
 
 Find the shell-format extension in vscode and install it.
 
@@ -140,3 +142,4 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Does the code pass all linting checks as per shellcheck and unit tests as per shunit2 ?
 * [ ] Does the code uses relative paths or absolute paths? Relative paths should be avoided as they are prone to environment attacks. If relative path is needed, check that the `PATH` variable is set.
 * [ ] Does the code take credentials as user input? Are the credentials masked or encrypted in the script?
+S

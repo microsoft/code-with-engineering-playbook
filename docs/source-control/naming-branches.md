@@ -1,4 +1,4 @@
-# Naming branches
+# Naming Branches
 
 When contributing to existing projects, look for and stick with the agreed branch naming convention. In open source projects this information is typically found in the contributing instructions, often in a file named `CONTRIBUTING.md`.
 
@@ -6,13 +6,13 @@ In the beginning of a new project the team agrees on the project conventions inc
 
 Here's an example of a branch naming convention:
 
-```plaintext
+```sh
 <user alias>/[feature/bug/hotfix]/<work item ID>_<title>
 ```
 
 Which could translate to something as follows:
 
-```plaintext
+```sh
 dickinson/feature/271_add_more_cowbell
 ```
 

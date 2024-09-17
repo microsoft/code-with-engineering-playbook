@@ -7,37 +7,34 @@ Pair programming works well under the correct circumstances, but it loses some o
 Virtual work patterns are different from the in-person patterns we are accustomed to. Pair programming at its core is based on the following principles:
 
 1. Generating clarity through communication
-2. Producing higher quality through collaboration
-3. Creating ownership through equal contribution
+1. Producing higher quality through collaboration
+1. Creating ownership through equal contribution
 
 Pair programming is one way to achieve these results. Red Team Testing (RTT) is an alternate programming method that uses the same principles but with some of the advantages that virtual work methods provide.
 
-## Red Team Testing
+## Red Team Testing (RTT)
 
 Red Team Testing borrows its name from the “Red Team” and “Blue Team” paradigm of penetration testing, and is a collaborative, parallel way of working virtually. In Red Team Testing, two developers jointly decide on the interface, architecture, and design of the program, and then separate for the implementation phase. One developer writes tests using the public interface, attempting to perform edge case testing, input validation, and otherwise stress testing the interface. The second developer is simultaneously writing the implementation which will eventually be tested.
 
 Red Team Testing has the same philosophy as any other Test-Driven Development lifecycle: All implementation is separated from the interface, and the interface can be tested with no knowledge of the implementation.
 
-![ptt-diagram](images/PTTdiagram.PNG)
+![ptt-diagram](./images/PTTdiagram.PNG)
 
 ## Steps
 
 1. Design Phase: Both developers design the interface together. This includes:
-    * Method signatures and names
-    * Writing documentation or docstrings for what the methods are intended to do.
-    * Architecture decisions that would influence testing (Factory patterns, etc.)
+    - Method signatures and names
+    - Writing documentation or docstrings for what the methods are intended to do.
+    - Architecture decisions that would influence testing (Factory patterns, etc.)
+1. Implementation Phase: The developers separate and parallelize work, while continuing to communicate.
+    - Developer A will design the implementation of the methods, adhering to the previously decided design.
+    - Developer B will concurrently write tests for the same method signatures, without knowing details of the implementation.
+1. Integration & Testing Phase: Both developers commit their code and run the tests.
+    - Utopian Scenario: All tests run and pass correctly.
+    - Realistic Scenario: The tests have either broken or failed due to flaws in testing. This leads to further clarification of the design and a discussion of why the tests failed.
+1. The developers will repeat the three phases until the code is functional and tested.
 
-2. Implementation Phase: The developers separate and parallelize work, while continuing to communicate.
-    * Developer A will design the implementation of the methods, adhering to the previously decided design.
-    * Developer B will concurrently write tests for the same method signatures, without knowing details of the implementation.
-
-3. Integration & Testing Phase: Both developers commit their code and run the tests.
-    * Utopian Scenario: All tests run and pass correctly.
-    * Realistic Scenario: The tests have either broken or failed due to flaws in testing. This leads to further clarification of the design and a discussion of why the tests failed.
-
-4. The developers will repeat the three phases until the code is functional and tested.
-
-## When to follow the RTT strategy
+## When to Follow the RTT Strategy
 
 RTT works well under specific circumstances. If collaboration needs to happen virtually, and all communication is virtual, RTT reduces the need for constant communication while maintaining the benefits of a joint design session. This considers the human element: Virtual communication is more exhausting than in person communication.
 
@@ -47,20 +44,14 @@ RTT also works well when there is complete consensus, or no consensus at all, on
 
 RTT has many of the same benefits as Pair Programming and Test-Driven development but tries to update them for a virtual setting.
 
-* Code implementation and testing can be done in parallel, over long distances or across time zones, which reduces the overall time taken to finish writing the code.
+- Code implementation and testing can be done in parallel, over long distances or across time zones, which reduces the overall time taken to finish writing the code.
+- RTT maintains the pair programming paradigm, while reducing the need for video communication or constant communication between developers.
+- RTT allows detailed focus on design and engineering alignment before implementing any code, leading to cleaner and simpler interfaces.
+- RTT encourages testing to be prioritized alongside implementation, instead of having testing follow or be influenced by the implementation of the code.
+- Documentation is inherently a part of RTT, since both the implementer and the tester need correct, up to date documentation, in the implementation phase.
 
-* RTT maintains the pair programming paradigm, while reducing the need for video communication or constant communication between developers.
+## What You Need for RTT to Work Well
 
-* RTT allows detailed focus on design and engineering alignment before implementing any code, leading to cleaner and simpler interfaces.
-
-* RTT encourages testing to be prioritized alongside implementation, instead of having testing follow or be influenced by the implementation of the code.
-
-* Documentation is inherently a part of RTT, since both the implementer and the tester need correct, up to date documentation, in the implementation phase.
-
-## What you need for RTT to work well
-
-* Demand for constant communication and good teamwork may pose a challenge; daily updates amongst team members are essential to maintain alignment on varying code requirements.
-
-* Clarity of the code design and testing strategy must be established beforehand and documented as reference. Lack of an established design will cause misalignment between the two major pieces of work and a need for time-consuming refactoring.
-
-* RTT does not work well if only one developer has knowledge of the overall design. Team communication is critical to ensuring that every developer involved in RTT is on the same page.
+- Demand for constant communication and good teamwork may pose a challenge; daily updates amongst team members are essential to maintain alignment on varying code requirements.
+- Clarity of the code design and testing strategy must be established beforehand and documented as reference. Lack of an established design will cause misalignment between the two major pieces of work and a need for time-consuming refactoring.
+- RTT does not work well if only one developer has knowledge of the overall design. Team communication is critical to ensuring that every developer involved in RTT is on the same page.

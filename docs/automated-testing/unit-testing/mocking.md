@@ -35,7 +35,7 @@ class StubTestCase(TestBase):
     def setUp(self) -> None:
         super(StubTestCase, self).setUp()
         self.app.container.service_a.override(StubService())
-        
+
     def test_service():
         service = self.app.container.service_a()
         self.assertTrue(isinstance(service, StubService))
@@ -133,7 +133,7 @@ to do a time-intensive refactor to make the code unit testable. A common problem
 languages such as C# is not using dependency injection. Consider using dependency injection so that a mock can easily be injected
 into your Subject Under Test (SUT) during a unit test.
 
-More information on using dependency injection can be found [here](authoring_example.md#dependency-injection).
+More information on using dependency injection can be found [here](./authoring-example.md#dependency-injection).
 
 ### Assertions
 
@@ -144,7 +144,6 @@ changes, consider not asserting on the return value. Because if you do, you are 
 mock correctly. For a very simple example, look at this class:
 
 ```csharp
-
 public class SearchController : ControllerBase {
 
    public ISearchClient SearchClient { get; }
@@ -212,11 +211,11 @@ store the options in a callback for later assertions.
 var actualOptions = new SearchOptions();
 
 mockSearchClient
-   .Setup(x => 
+   .Setup(x =>
       x.Search(
-         "[This parameter is most relevant]", 
+         "[This parameter is most relevant]",
          It.IsAny<SearchOptions>()
-      ) 
+      )
    )
    .Returns(mockResults)
    .Callback<string, SearchOptions>((query, searchOptions) =>

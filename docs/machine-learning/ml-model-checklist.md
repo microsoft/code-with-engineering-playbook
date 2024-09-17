@@ -1,4 +1,4 @@
-# ML model production checklist
+# ML Model Production Checklist
 
 The purpose of this checklist is to make sure that:
 
@@ -25,7 +25,7 @@ Before putting an individual ML model into production, the following aspects sho
 
 Please note that there might be scenarios where it is not possible to check all the items on this checklist. However, it is advised to go through all items and make informed decisions based on your specific use case.
 
-## Will your model performance be different in production than during training phase
+## Will Your Model Performance be Different in Production than During the Training Phase
 
 Once deployed into production, the model might be performing much worse than expected. This poor performance could be a result of:
 
@@ -33,7 +33,7 @@ Once deployed into production, the model might be performing much worse than exp
 - The feature engineering steps are different or inconsistent in production compared to the training process
 - The performance measure is not consistent (for example your test set covers several months of data where the performance metric for production has been calculated for one month of data)
 
-### Is there a well-defined baseline? Is the model performing better than the baseline?
+### Is there a Well-Defined Baseline? Is the Model Performing Better than the Baseline?
 
 A good way to think of a model baseline is the simplest model one can come up with: either a simple threshold, a random guess or a very basic linear model. This baseline is the reference point your model needs to outperform. A well-defined baseline is different for each problem type and there is no one size fits all approach.
 
@@ -49,14 +49,14 @@ Some questions to ask when comparing to a baseline:
 - How does your model performance compare to applying a simple threshold?
 - How does your model compare with always predicting the most common value?
 
-**Note**: In some cases, human parity might be too ambitious as a baseline, but this should be decided on a case by case basis. Human accuracy is one of the available options, but not the only one.
+> **Note**: In some cases, human parity might be too ambitious as a baseline, but this should be decided on a case by case basis. Human accuracy is one of the available options, but not the only one.
 
 Resources:
 
 - ["How To Get Baseline Results And Why They Matter" article](https://machinelearningmastery.com/how-to-get-baseline-results-and-why-they-matter/)
 - ["Always start with a stupid model, no exceptions." article](https://blog.insightdatascience.com/always-start-with-a-stupid-model-no-exceptions-3a22314b9aaa)
 
-### Are machine learning performance metrics defined for both training and scoring?
+### Are Machine Learning Performance Metrics Defined for Both Training and Scoring?
 
 The methodology of translating the training metrics to scoring metrics should be well-defined and understood. Depending on the data type and model, the model metrics calculation might differ in production and in training. For example, the training procedure calculated metrics for a long period of time (a year, a decade) with different seasonal characteristics while the scoring procedure will calculate the metrics per a restricted time interval (for example a week, a month, a quarter). Well-defined ML performance metrics are essential in production so that a decrease or increase in model performance can be accurately detected.
 
@@ -68,11 +68,11 @@ Things to consider:
 - If sampling techniques (over-sampling, under-sampling) are used to train model when classes are imbalanced, ensure the metrics used during training are comparable with the ones used in scoring.
 - If the number of samples used for training and testing is small, the performance metrics might change significantly as new data is scored.
 
-### Is the model benchmarked?
+### Is the Model Benchmarked?
 
 The trained model to be put into production is well benchmarked if machine learning performance metrics (such as accuracy, recall, RMSE or whatever is appropriate) are measured on the train and test set. Furthermore, the train and test set split should be well documented and reproducible.
 
-### Can ground truth be obtained or inferred in production?
+### Can Ground Truth be Obtained or Inferred in Production?
 
 Without a reliable ground truth, the machine learning metrics cannot be calculated. It is important to identify if the ground truth can be obtained as the model is scoring new data by either manual or automatic means. If the ground truth cannot be obtained systematically, other proxies and methodology should be investigated in order to obtain some measure of model performance.
 
@@ -84,7 +84,7 @@ For clarity, let's consider the following examples (by no means an exhaustive li
 - **Recommender systems**: For recommender system, obtaining the ground truth is a complex problem in most cases as there is no way of identifying the ideal recommendation. For a retail website for example, click/not click, buy/not buy or other user interaction with recommendation can be used as ground truth proxies.
 - **Object detection in images**: For an object detection model, as new images are scored, there are no new labels being generated automatically. One option to obtain the ground truth for the new images is to use people to manually label the images. Human labelling is costly, time-consuming and not 100% accurate, so in most cases, only a subset of images can be labelled. These samples can be chosen at random or by using active learning techniques of selecting the most informative unlabeled samples.
 
-### Has the data distribution of training, testing and validation sets been analyzed?
+### Has the Data Distribution of Training, Testing and Validation Sets Been Analyzed?
 
 The data distribution of your training, test and validation (if applicable) dataset (including labels) should be analyzed to ensure they all come from the same distribution. If this is not the case, some options to consider are: re-shuffling,  re-sampling, modifying the data, more samples need to be gathered or features removed from the dataset.
 
@@ -98,7 +98,7 @@ Resources:
 
 - ["Splitting into train, dev and test" tutorial](http://cs230.stanford.edu/blog/split/)
 
-### Have goals and hard limits for performance, speed of prediction and costs been established, so they can be considered if trade-offs need to be made?
+### Have Goals and Hard Limits for Performance, Speed of Prediction and Costs been Established, so they can be Considered if Trade-Offs Need to be Made?
 
 Some machine learning models achieve high ML performance, but they are costly and time-consuming to run. In those cases, a less performant and cheaper model could be preferred. Hence, it is important to calculate the model performance metrics (accuracy, precision, recall, RMSE etc), but also to gather data on how expensive it will be to run the model and how long it will take to run. Once this data is gathered, an informed decision should be made on what model to productionize.
 
@@ -108,7 +108,7 @@ System metrics to consider:
 - Cost per prediction
 - Time taken to make a prediction
 
-### How will the model be integrated into other systems, and what impact will it have?
+### How Will the Model be Integrated into Other Systems, and what Impact will it Have?
 
 Machine Learning models do not exist in isolation, but rather they are part of a much larger system. These systems could be old, proprietary systems or new systems being developed as a results of the creation a new machine learning model. In both of those cases, it is important to understand where the actual model is going to fit in, what output is expected from the model and how that output is going to be used by the larger system. Additionally, it is essential to decide if the model will be used for batch and/or real-time inference as production paths might differ.
 
@@ -120,7 +120,7 @@ Possible questions to assess model impact:
 - Is the system transparent that there is a model making a prediction and what data is used to make this prediction?
 - What is the cost of a wrong prediction?
 
-### How will incoming data quality be monitored?
+### How Will Incoming Data Quality be Monitored?
 
 As data systems become increasingly complex in the mainstream, it is especially vital to employ data quality monitoring, alerting and rectification protocols. Following data validation best practices can prevent insidious issues from creeping into machine learning models that, at best, reduce the usefulness of the model, and at worst, introduce harm. Data validation, reduces the risk of data downtime (increasing headroom) and technical debt and supports long-term success of machine learning models and other applications that rely on the data.
 
@@ -136,7 +136,7 @@ Resources:
 
 - ["Data Quality Fundamentals" by Moses et al.](https://www.oreilly.com/library/view/data-quality-fundamentals/9781098112035/)
 
-### How will drift in data characteristics be monitored?
+### How Will Drift in Data Characteristics be Monitored?
 
 Data drift detection uncovers legitimate changes in incoming data that are truly representative of the phenomenon being modeled,and are not erroneous (ex. user preferences change). It is imperative to understand if the new data in production will be significantly different from the data in the training phase. It is also important to check that the data distribution information can be obtained for any of the new data coming in. Drift monitoring can inform when changes are occurring and what their characteristics are (ex. abrupt vs gradual) and guide effective adaptation or retraining strategies to maintain performance.
 
@@ -152,7 +152,7 @@ Resources:
 - ["Learning Under Concept Drift: A Review" by Lu at al.](https://arxiv.org/pdf/2004.05785.pdf)
 - [Understanding dataset shift](https://towardsdatascience.com/understanding-dataset-shift-f2a5a262a766)
 
-### How will performance be monitored?
+### How Will Performance be Monitored?
 
 It is important to define how the model will be monitored when it is in production and how that data is going to be used to make decisions. For example, when will a model need retraining as the performance has degraded and how to identify what are the underlying causes of this degradation could be part of this monitoring methodology.
 
@@ -164,6 +164,6 @@ Model monitoring should lead to:
 - Warnings when anomalies in model output are occurring
 - Retraining decisions and adaptation strategy
 
-### Have any ethical concerns been taken into account?
+### Have any Ethical Concerns Been Taken into Account?
 
 Every ML project goes through the [Responsible AI](responsible-ai.md) process to ensure that it upholds Microsoft's [6 Responsible AI principles](https://www.microsoft.com/en-us/ai/responsible-ai).

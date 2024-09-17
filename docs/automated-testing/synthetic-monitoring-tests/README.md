@@ -2,7 +2,7 @@
 
 Synthetic Monitoring Tests are a set of functional tests that target a live system in production. The focus of these tests, which are sometimes named "watchdog", "active monitoring" or "synthetic transactions", is to verify the product's health and resilience continuously.
 
-## Why Synthetic Monitoring tests
+## Why Synthetic Monitoring Tests
 
 Traditionally, software providers rely on testing through CI/CD stages in the well known [testing pyramid](https://martinfowler.com/bliki/TestPyramid.html) (unit, integration, e2e) to validate that the product is healthy and without regressions. Such tests will run on the build agent or in the test/stage environment before being deployed to production and released to live user traffic. During the services' lifetime in the production environment, they are safeguarded by monitoring and alerting tools that rely on Real User Metrics/Monitoring ([RUM](https://en.wikipedia.org/wiki/Real_user_monitoring)).
 
@@ -21,7 +21,7 @@ Synthetic Monitoring tests are a subset of tests that run in production, sometim
 With [Shift-Left](https://en.wikipedia.org/wiki/Shift-left_testing) paradigms that are so popular, the approach is to perform testing as early as possible in the application development lifecycle (i.e., moved left on the project timeline).
 Shift right compliments and adds on top of Shift-Left. It refers to running tests late in the cycle, during deployment, release, and post-release when the product is serving production traffic. They provide modern engineering teams a broader set of tools to assure high SLAs over time.
 
-## Synthetic Monitoring tests Design Blocks
+## Synthetic Monitoring Tests Design Blocks
 
 A synthetic monitoring test is a test that uses synthetic data and real testing accounts to inject user behaviors to the system and validates their effect, usually by passively relying on existing monitoring and alerting capabilities.
 Components of synthetic monitoring tests include **Probes**, test code/ accounts which generates data, and **Monitoring tools** placed to validate both the system's behavior under test and the health of the probes themselves.
@@ -40,7 +40,7 @@ There would usually be a finite set of tests, and key metrics that are used to b
 
 ## Applying Synthetic Monitoring Tests
 
-### Asserting the system under tests
+### Asserting the System under Test
 
 Synthetic monitoring tests are usually statistical. Test metrics are compared against some historical or running average with a time dimension *(Example: Over the last 30 days, for this time of day, the mean average response time is 250ms for AddToCart operation with a standard deviation from the mean of +/- 32ms)*. So if an observed measurement is within a [deviation of the norm](https://en.wikipedia.org/wiki/Standard_deviation) at any time, the services are probably healthy.
 
@@ -53,7 +53,7 @@ At a high level, building synthetic monitors usually consists of the following s
 - Set up monitoring alarms/actions/responses that detect the failure of the system to meet the desired goal of the metric.
 - Run the test case automation continuously at an appropriate interval.
 
-### Monitoring the health of tests
+### Monitoring the Health of Tests
 
 Probes runtime is a production environment on its own, and the health of tests is critical. Many providers offer cloud-based systems that host such runtimes, while some organizations use existing production environments to run these tests on. In either way, a monitor-the-monitor strategy should be a first-class citizen of the production environment's alerting systems.
 
@@ -75,7 +75,7 @@ Testing in production, in general, has a risk factor attached to it, which does 
 - Skewed analytics (traffic funnels, A/B test results, etc.)
 - Auth/AuthZ - Tests are required to run in production where access to tokens and secrets may be restricted or more challenging to retrieve.
 
-## Synthetic Monitoring tests Frameworks and Tools
+## Synthetic Monitoring Tests Frameworks and Tools
 
 Most key monitoring/APM players have an enterprise product that supports synthetic monitoring built into their systems (see list below). Such offerings make some of the risks raised above irrelevant as the integration and runtime aspects of the solution are OOTB. However, such solutions are typically pricey.
 

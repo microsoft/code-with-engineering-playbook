@@ -19,20 +19,20 @@ Delivery Plans ensure your teams are aligning with your organizational goals.
 
 One approach you can take to accomplish is with stickies and a spreadsheet.
 
-Step 1: Stack rank the features for everything in your backlog
+1. Stack rank the features for everything in your backlog
 
-- Functional Features
-- [Non-functional Features] (docs/TECH-LEADS-CHECKLIST.md)
-- User Research and Design
-- Testing
-- Documentation
-- Knowledge Transfer/Support Processes
+    - Functional Features
+    - [Non-functional Features](../../../non-functional-requirements/)
+    - User Research and Design
+    - Testing
+    - Documentation
+    - Knowledge Transfer/Support Processes
 
-Step 2: T-Shirt Features in terms of working weeks per person. In some scenarios, you have no idea how complex the work. In this situation, you can ask for time to conduct a spike (timebox the effort so you can get back on time).
+1. T-Shirt Features in terms of working weeks per person. In some scenarios, you have no idea how complex the work. In this situation, you can ask for time to conduct a spike (timebox the effort so you can get back on time).
 
-Step 3: Calculate the capacity for the team based on the number of weeks person with his/her start and end date and minus holidays, vacation, conferences, training, and onboarding days. Also, minus time if the person is also working on defects and support.
+1. Calculate the capacity for the team based on the number of weeks person with his/her start and end date and minus holidays, vacation, conferences, training, and onboarding days. Also, minus time if the person is also working on defects and support.
 
-Step 4: Based on your capacity, you know have the options
+Based on your capacity, you know have the options
 
 - Ask for more resources. Caution: onboarding new resources take time.
 - Reduce the scope to the most MVP.  Caution: as you trim more of the scope, it might not be valuable anymore to the customer. Consider a cupcake which is everything you need. You don't want to skim off the frosting.

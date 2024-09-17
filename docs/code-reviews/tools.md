@@ -2,12 +2,12 @@
 
 ## Customize ADO
 
-### Task boards
+### Task Boards
 
 - AzDO: [Customize cards](https://learn.microsoft.com/en-us/azure/devops/boards/boards/customize-cards?view=azure-devops)
 - AzDO: [Add columns on task board](https://learn.microsoft.com/en-us/azure/devops/boards/sprints/customize-taskboard?view=azure-devops#add-columns)
 
-### Reviewer policies
+### Reviewer Policies
 
 - Setting required reviewer group in AzDO - [Automatically include code reviewers](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops#automatically-include-code-reviewers)
 
@@ -19,7 +19,7 @@
    2. [Approval count policy](https://learn.microsoft.com/en-us/rest/api/azure/devops/policy/configurations/create?view=azure-devops-rest-5.1#approval-count-policy)
 1. GitHub: [Configuring protected branches](https://help.github.com/en/github/administering-a-repository/about-protected-branches)
 
-## Visual Studio Code
+## VSCode
 
 ### GitHub: [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 

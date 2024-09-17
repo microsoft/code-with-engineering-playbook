@@ -6,9 +6,9 @@ of each solution.
 
 [Trade studies](https://en.wikipedia.org/wiki/Trade_study) are a concept from systems engineering that we adapted for software projects. Trade
 studies have proved to be a critical tool to drive alignment with the stakeholders, earn credibility while doing so and ensure our decisions
-were backed by data and not bias.  
+were backed by data and not bias.
 
-## When to use the tool
+## When to Use
 
 Trade studies go hand in hand with high level architecture design. This usually occurs as project requirements are solidifying, before
 coding begins. Trade studies continue to be useful throughout the project any time there are multiple options that need

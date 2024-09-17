@@ -1,4 +1,4 @@
-# Using Git LFS and VFS for Git introduction
+# Using Git LFS and VFS for Git Introduction
 
 **Git LFS** and **VFS for Git** are solutions for using Git with (large) binary files and large source trees.
 
@@ -59,7 +59,7 @@ With these commands a `.gitattribute` file is created which contains these setti
 
 From here on you just use the standard Git commands to work in the repository. The rest will be handled by Git and Git LFS.
 
-### Common LFS commands
+### Common LFS Commands
 
 Install Git LFS
 
@@ -147,7 +147,7 @@ gvfs unmount
 
 This will stop the process and unregister it, after that you can safely remove the folder.
 
-### References
+### Resources
 
 * [Git LFS getting started](https://git-lfs.github.com/)
 * [Git LFS manual](https://github.com/git-lfs/git-lfs/tree/master/docs)

@@ -28,7 +28,7 @@ Implementing availability involves various strategies and technologies designed 
 - Scheduled Maintenance Windows: Planning and communicating scheduled maintenance periods during off-peak hours to minimize the impact on users. Systems can be designed to perform maintenance tasks without taking the entire service offline.
 - High Availability Software Architectures: Designing software with high availability in mind, using principles like microservices architecture, which isolates different functions of an application. This isolation ensures that a failure in one component doesn’t bring down the entire system.
 
-## More information
+## Resources
 
 - [Recommendations for highly available multi-region design](https://learn.microsoft.com/en-us/azure/well-architected/reliability/highly-available-multi-region-design)
 - [Recommendations for using availability zones and regions](https://learn.microsoft.com/en-us/azure/well-architected/reliability/regions-availability-zones)

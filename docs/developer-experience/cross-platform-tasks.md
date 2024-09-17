@@ -5,7 +5,7 @@ There are several options to alleviate cross-platform compatibility issues.
 - Running tasks in a container
 - Using the tasks-system in VS Code which provides options to allow commands to be executed specific to an operating system.
 
-## Docker or Container based
+## Docker or Container Based
 
 Using containers as development machines allows developers to get started with minimal setup and abstracts the development environment from the host OS by having it run in a container.
 DevContainers can also help in standardizing the local developer experience across the team.
@@ -15,9 +15,9 @@ The following are some good resources to get started with running tasks in DevCo
 - [Developing inside a container](https://code.visualstudio.com/docs/remote/containers).
 - [Tutorial on Development in Containers](https://code.visualstudio.com/docs/remote/containers-tutorial)
 - For samples projects and dev container templates see [VS Code Dev Containers Recipe](https://github.com/microsoft/vscode-dev-containers)
-- [Dev Containers Library](devcontainers.md)
+- [Dev Containers Library](./devcontainers-getting-started.md)
 
-## Tasks in VS Code
+## Tasks in VSCode
 
 ### Running Node.js
 
@@ -66,6 +66,6 @@ Not all scripts or tasks can be auto-detected in the workspace. It may be necess
 
 The command here is a shell command and tells the system to run either the test.sh or test.cmd. By default, it will run test.sh with that given path. This example here also defines Windows specific properties and tells it execute test.cmd instead of the default.
 
-### References
+### Resources
 
 VS Code Docs - [operating system specific properties](https://vscode-docs.readthedocs.io/en/stable/editor/tasks/#operating-system-specific-properties)

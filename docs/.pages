@@ -1,0 +1,10 @@
+nav:
+  - ISE Engineering Fundamentals Playbook: README.md
+  - Engineering Fundamentals Checklist: engineering-fundamentals-checklist.md
+  - The First Week of an ISE Project: the-first-week-of-an-ise-project.md
+  - Who is ISE?: ISE.md
+  - Agile Development: agile-development
+  - Automated Testing: automated-testing
+  - CI/CD: CI-CD
+  - ...
+  - UI/UX: UI-UX

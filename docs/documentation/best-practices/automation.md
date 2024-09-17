@@ -4,13 +4,13 @@ You can document how to set up your dev machine with the right version of the fr
 
 Some examples are provided below:
 
-## Dev containers in Visual Studio Code
+## Dev Containers in Visual Studio Code
 
 The [Visual Studio Code Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a Docker container as a full-featured development environment. It allows you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set.
 
 Additional information: [Developing inside a Container](https://code.visualstudio.com/docs/remote/containers).
 
-## Launch configurations and Tasks in Visual Studio Code
+## Launch Configurations and Tasks in Visual Studio Code
 
 [Launch configurations](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) allows you to configure and save debugging setup details.
 

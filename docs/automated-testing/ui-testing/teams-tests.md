@@ -1,10 +1,10 @@
-# Automated UI Tests for a Teams application
+# Automated UI Tests for a Teams Application
 
 ## Overview
 
 This is an overview on how you can implement UI tests for a custom Teams application. The insights provided can also be applied to automated end-to-end testing.
 
-### General observations
+### General Observations
 
 - Testing in a web browser is easier than on a native app.
 - Testing a Teams app on a mobile device in an automated way is more challenging due to the fact that you are testing an app within an app:
@@ -16,9 +16,9 @@ This is an overview on how you can implement UI tests for a custom Teams applica
 
 The following are learnings from various engagements:
 
-## 1. Web based UI tests
+## Web Based UI Tests
 
-To implement web-based UI tests for your Teams application, follow the same approach as you would for testing any other web application with a UI. [UI testing](README.md) provides valuable guidance in this regard. Your starting point for the test would be to automatically launch a browser (using Selenium or similar frameworks) and navigate to [https://teams.microsoft.com](https://teams.microsoft.com).
+To implement web-based UI tests for your Teams application, follow the same approach as you would for testing any other web application with a UI. UI testing provides valuable guidance in this regard. Your starting point for the test would be to automatically launch a browser (using Selenium or similar frameworks) and navigate to [https://teams.microsoft.com](https://teams.microsoft.com).
 
 If you want to test a Teams app that hasn’t been published in the Teams store yet or if you’d like to test the DEV/QA version of your app, you can use the [Teams Toolkit](https://github.com/OfficeDev/TeamsFx) and package your app based on the [manifest.json](https://learn.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
 
@@ -65,13 +65,13 @@ var buildEdgeDriver = function () {
 };
 ```
 
-## 2. Mobile based UI tests
+## Mobile Based UI Tests
 
 Testing your custom Teams application on mobile devices is a bit more difficult than using the web-based approach as it requires usage of actual or simulated devices. Running such tests in a CI/CD pipeline can be more difficult and resource-intensive.
 
 One approach is to use real devices or cloud-based emulators from vendors such as [BrowserStack](https://www.browserstack.com/) which requires a license. Alternatively, you can use virtual devices hosted in Azure Virtual Machines.
 
-### a) Using Android Virtual Devices (AVD)
+### Option 1: Using Android Virtual Devices (AVD)
 
 This approach enables the creation of Android UI tests using virtual devices. It comes with the advantage of not requiring paid licenses to certain vendors. However, due to the nature of emulators, compared to real devices, it may prove to be less stable. Always choose the solution that best fits your project requirements and resources.
 
@@ -93,7 +93,7 @@ Overall setup:
 
   - The advantage of this architecture is that it opens the possibility of running the server in a VM, and the client in a pipeline, enabling the tests to be ran automatically on scheduled basis as part of CI/CD pipelines.
 
-#### How to run mobile tests locally on a Windows machine using AVD?
+#### How to Run Mobile Tests Locally on a Windows Machine Using AVD?
 
 This approach involves:
 
@@ -135,7 +135,7 @@ Install `appium`:
 
 List emulators that you have previously created, without opening Android Studio:
 
-```cli
+```sh
 emulator -list-avds
 ```
 
@@ -153,7 +153,7 @@ This approach involves hosting a virtual device within a virtual machine. To set
 
 ##### Enable connection from outside to Appium server on the VM
 
-> Note: By default appium server runs on port 4723. The rest of the steps will assume that this is the port where your appium server runs.
+> **Note:** By default appium server runs on port 4723. The rest of the steps will assume that this is the port where your appium server runs.
 
 In order to be able to reach appium server which runs on the VM from outside:
 
@@ -164,10 +164,10 @@ In order to be able to reach appium server which runs on the VM from outside:
 
 ##### Installing Android Studio and create AVD inside the VM
 
-1. Follow the instructions under the [end to end tests on a Windows machine section](#running-mobile-test-locally-on-a-windows-machine) to install Android Studio and create an Android Virtual Device.
+1. Follow the instructions under the [end to end tests on a Windows machine section](#how-to-run-mobile-tests-locally-on-a-windows-machine-using-avd) to install Android Studio and create an Android Virtual Device.
 1. When you launch the emulator, it may show a warning as below and will eventually crash:
 
-    ![failure](images/warning.png)
+    ![failure](./images/warning.png)
 
 Solution to fix it:
 1. [Enable Windows Hypervisor Platform](https://devblogs.microsoft.com/visualstudio/hyper-v-android-emulator-support/)
@@ -212,11 +212,11 @@ Inspecting the app is highly valuable when writing new tests, as it enables you 
 If the appium server runs on your local machine at the default portal, then Remote Host and Remote Port can be kept to the default values.
 
 The configuration should look similar to the printscren below:
-![appium-inspector](images/appium-inspector.png)
+![appium-inspector](./images/appium-inspector.png)
 
 3. Press on **Start Session**.
 - In the browser, you should see a similar view as below:
-![teams-appium-inspector](images/teams-appium-inspector.png)
+![teams-appium-inspector](./images/teams-appium-inspector.png)
 
 - You can do any action on the emulator, and if you press on the "Refresh" button in the browser, the left hand side of the Appium Inspector will reflect your app. In the **App Source** you will be able to see the IDs of the elements, so you can write relevant selectors in your tests.
 
@@ -250,7 +250,7 @@ Assuming you are using [webdriverio](https://webdriver.io/) as the client, you w
 - "appium:appActivity": the activity within Teams that you would like to launch on the device. In our case, we would like just to launch the app. The activity name for launching Teams is called "com.microsoft.skype.teams.Launcher".
 - "appium:automationName": the name of the driver you are using. Note: Appium can communicate to different platforms. This is achieved by installing a dedicated driver, designed for each platform. In our case, it would be [UiAutomator2](https://github.com/appium/appium-uiautomator2-driver) or [Espresso](https://github.com/appium/appium-espresso-driver), since they are both designed for Android platform.
 
-### b) Using BrowserStack
+### Option 2: Using BrowserStack
 
 BrowserStack serves as a cloud-based platform that enables developers to test both the web and mobile application across various browsers, operating systems, and real mobile devices. This can be seen as an alternative solution to the approach described earlier. The specific insights provided below relate to implementing such tests for a custom Microsoft Teams application:
 

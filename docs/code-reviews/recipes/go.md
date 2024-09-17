@@ -10,7 +10,7 @@ Developers should follow the [Effective Go](https://golang.org/doc/effective_go.
 
 Below is the project setup that you would like to have in your VS Code.
 
-#### vscode-go extension
+#### VSCode go Extension
 
 Using the Go extension for Visual Studio Code, you get language features like IntelliSense, code navigation, symbol search, bracket matching, snippets, etc. This extension includes rich language support for go in VS Code.
 
@@ -20,7 +20,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 #### golint
 
-**:exclamation: NOTICE: The golint library is deprecated and archived.**
+> **Note:** The golint library is deprecated and archived.
 
 The linter revive (below) might be a suitable replacement.
 

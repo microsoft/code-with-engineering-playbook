@@ -4,7 +4,7 @@ Pair programming used to be a software development technique in which two progra
 
 Through the effective utilization of a range of tools and techniques, we have successfully implemented both pair and swarm programming methodologies. As such, we are eager to share some of the valuable insights and knowledge gained from this experience.
 
-## How to make pair programming a painless experience?
+## How to Make Pair Programming a Painless Experience?
 
 ### Working Sessions
 

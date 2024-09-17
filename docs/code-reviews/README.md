@@ -12,6 +12,6 @@ Code review is a way to have a conversation about the code where participants wi
 
 ## Resources
 
-- [Code review tools](tools.md)
+- [Code review tools](./tools.md)
 - [Google's Engineering Practices documentation: How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 - [Best Kept Secrets of Peer Code Review](https://static1.smartbear.co/smartbear/media/pdfs/best-kept-secrets-of-peer-code-review_redirected.pdf)

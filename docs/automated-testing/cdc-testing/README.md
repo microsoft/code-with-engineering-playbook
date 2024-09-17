@@ -1,8 +1,8 @@
-# Consumer-driven Contract Testing (CDC)
+# Consumer-Driven Contract Testing (CDC)
 
 Consumer-driven Contract Testing (or CDC for short) is a software testing methodology used to test components of a system in isolation while ensuring that provider components are compatible with the expectations that consumer components have of them.
 
-## Why Consumer-driven Contract Testing
+## Why Consumer-Driven Contract Testing
 
 CDC tries to overcome the [several painful drawbacks](https://pactflow.io/blog/proving-e2e-tests-are-a-scam) of automated E2E tests with components interacting together:
 
@@ -21,7 +21,7 @@ Some E2E tests are still required to verify the system as a whole when deployed 
 
 CDC testing was initially developed for testing RESTful API's, but the pattern scales to all consumer-provider systems and tooling for other messaging protocols besides HTTP does exist.
 
-## Consumer-driven Contract Testing Design Blocks
+## Consumer-Driven Contract Testing Design Blocks
 
 In a [consumer-driven approach](https://martinfowler.com/articles/consumerDrivenContracts.html) the consumer drives changes to contracts between a consumer (the client) and a provider (the server). This may sound counterintuitive, but it helps providers create APIs that fit the real requirements of the consumers rather than trying to guess these in advance. Next we describe the CDC building blocks ordered by their occurrence in the development cycle.
 
