@@ -63,7 +63,7 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 
 ## Fundamentals for Specific Technology Areas
 
-* [Machine Learning Fundamentals](docs/machine-learning/README.md)
+* [Machine Learning/AI Fundamentals](docs/machine-learning-and-ai-projects/README.md)
 * [User-Interface Engineering](docs/UI-UX/README.md)
 
 ## Contributing
