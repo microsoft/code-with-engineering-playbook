@@ -34,6 +34,6 @@ Database constraints: Utilize database constraints such as primary keys, foreign
 
 Regular data backups: Implement regular backups of data to prevent loss in case of system failures, errors, or security breaches. Ensure that backup procedures are automated, monitored, and regularly tested.
 
-## More information
+## Resources
 
 - [Great Expectations](https://greatexpectations.io/): A framework to build data validations and test the quality of your data.

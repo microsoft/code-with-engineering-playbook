@@ -30,11 +30,11 @@ Items of concern to some may include:
 
 ## Best Practices
 
-### When should I use metrics instead of logs?
+### When Should I use Metrics Instead of Logs?
 
 [Logs vs Metrics vs Traces](../log-vs-metric-vs-trace.md) covers some high level guidance on when to utilize metric data and when to use log data. Both have a valuable part to play in creating observable systems.
 
-### What should be tracked?
+### What Should be Tracked?
 
 System critical measurements that relate to the application/machine health, which are usually excellent alert candidates. Work with your engineering and devops peers to identify the metrics, but they may include:
 

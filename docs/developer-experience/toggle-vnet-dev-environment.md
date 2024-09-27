@@ -1,4 +1,4 @@
-# Toggle VNet on and off for production and development environment
+# Toggle VNet On and Off for Production and Development Environment
 
 ## Problem Statement
 

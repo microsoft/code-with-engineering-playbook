@@ -6,13 +6,13 @@ The social question should be chosen before the stand-up. The facilitator should
 
 > **Tip:** having the stand-up facilitator role rotate each sprint lets the facilitator choose the social question independently without burdening any one team member.
 
-## Properties of a good question
+## Properties of a Good Question
 
 A good question has a brief answer with small optional elaboration. A yes or no answer doesn't tell you very much about someone, while knowing that their favorite fruit is a [durian](https://en.wikipedia.org/wiki/Durian) is informative.
 
 Good questions are low in consequence but allow controversy. Watching someone strongly exclaim that salmon and lox on cinnamon-raisin is the best bagel order is endearing. As a corollary, a good question is one someone is likely to be passionate about. You know a little more about a team member's personality if their eyes light up when describing their favorite karaoke song.
 
-## Starter list of questions
+## Starter List of Questions
 
 Potentially good questions include:
 

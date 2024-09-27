@@ -72,7 +72,7 @@ Format python code
 black [file/folder]
 ```
 
-### Autopep8
+### autopep8
 
 [`Autopep8`](https://github.com/hhatto/autopep8) is more lenient and allows more configuration if you want less stringent formatting.
 
@@ -102,15 +102,15 @@ yapf [file/folder] --in-place
 
 ### Bandit
 
-[Bandit](https://github.com/PyCQA/bandit) is a tool designed by the Python Code Quality Authority (PyCQA) to perform static analysis of Python code, specifically targeting security issues. 
+[Bandit](https://github.com/PyCQA/bandit) is a tool designed by the Python Code Quality Authority (PyCQA) to perform static analysis of Python code, specifically targeting security issues.
 It scans for common security issues in Python codebase.
-  
+
 - **Installation**: Add Bandit to your development environment with:
   ```bash
   pip install bandit
   ```
 
-## VS Code Extensions
+## VSCode Extensions
 
 ### Python
 
@@ -125,7 +125,7 @@ def add(first_value: int, second_value: int) -> int:
     return first_value + second_value
 ```
 
-## Build validation
+## Build Validation
 
 To automate linting with `flake8` and testing with `pytest` in Azure Devops you can add the following snippet to you `azure-pipelines.yaml` file.
 
@@ -185,7 +185,7 @@ jobs:
 
 To perform a PR validation on GitHub you can use a similar YAML configuration with [GitHub Actions](https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions)
 
-## Pre-commit hooks
+## Pre-Commit Hooks
 
 Pre-commit hooks allow you to format and lint code locally before submitting the pull request.
 
@@ -193,7 +193,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 1. Install pre-commit and add to the requirements.txt
 
-    ```bash
+    ```sh
     pip install pre-commit
     ```
 
@@ -214,7 +214,7 @@ Adding pre-commit hooks for your python repository is easy using the pre-commit 
 
 3. Each individual developer that wants to set up pre-commit hooks can then run
 
-    ```bash
+    ```sh
     pre-commit install
     ```
 

@@ -1,6 +1,6 @@
 # Diagnostic tools
 
-Besides [Logging](pillars/logging.md), [Tracing](pillars/tracing.md) and [Metrics](pillars/metrics.md), there are additional tools to help diagnose issues when applications do not behave as expected. In some scenarios, analyzing the memory consumption and drilling down into why a specific process takes longer than expected may require additional measures. In these cases, platform or programming language specific diagnostic tools come into play and are useful to debug a memory leak, profile the CPU usage, or the cause of delays in multi-threading.
+Besides [Logging](./pillars/logging.md), [Tracing](./pillars/tracing.md) and [Metrics](./pillars/metrics.md), there are additional tools to help diagnose issues when applications do not behave as expected. In some scenarios, analyzing the memory consumption and drilling down into why a specific process takes longer than expected may require additional measures. In these cases, platform or programming language specific diagnostic tools come into play and are useful to debug a memory leak, profile the CPU usage, or the cause of delays in multi-threading.
 
 ## Profilers and Memory Analyzers
 
@@ -20,7 +20,7 @@ Not all programming languages support instrumentation. Instrumentation is mostly
 
 Once you have your profiling data, there are multiple ways to visualize this information depending of the format you saved it. As an example for .NET (dotnet-trace), there are three available formats to save these traces: Chromium, NetTrace and SpeedScope. Select the output format depending on the tool you are going to use. [SpeedScope](https://www.speedscope.app/) is an online web application you can use to visualize and analyze traces, and you only need a modern browser. Be careful with online tools, as dumps/traces might contain confidential information that you don't want to share outside of your organization.
 
-### Memory analyzers
+### Memory Analyzers
 
 Memory analyzers and memory dumps are another set of diagnostic tools you can use to identify issues in your process.  Normally these types of tools take the whole memory the process is using at a point in time and saves it in a file which  can be analyzed. When using these types of tools, you want to stress your process as much as possible to amplify whatever deficiency you may have in terms of memory management. The memory dump should then be taken when the process is in this stressed state.
 
@@ -41,15 +41,15 @@ There are a range of developer platform specific diagnostic tools which can be u
 - [Python debugging and profiling - version specific](https://docs.python.org/3/library/debug.html)
 - [Node.js Diagnostics working group](https://github.com/nodejs/diagnostics)
 
-## Environment for profiling
+## Environment for Profiling
 
 To create an application profile as close to production as possible, the environment in which the application is intended to run in production has to be considered and it might be necessary to perform a snapshot of the application state [under load](../automated-testing/performance-testing/README.md).
 
-### Diagnostics in containers
+### Diagnostics in Containers
 
 For monolithic applications, diagnostics tools can be installed and run on the VM hosting them. Most scalable applications are developed as [microservices](./microservices.md) and have complex interactions which require to install the tools in the containers running the process or to leverage a sidecar container (see [sidecar pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar)). Some platforms expose endpoints to interact with the application and return a dump.
 
-Useful links:
+#### Resources
 
 - [.NET Core diagnostics in containers](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/diagnostics-in-containers)
 - [Experimental tool dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor/), [What's new](https://devblogs.microsoft.com/dotnet/whats-new-in-dotnet-monitor/), [GItHub repository](https://github.com/dotnet/dotnet-monitor/tree/main/documentation)

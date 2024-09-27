@@ -55,7 +55,7 @@ Microsoft's .NET analyzers has code quality rules and .NET API usage rules imple
 
 If you are currently using the legacy FxCop analyzers, [migrate from FxCop analyzers to .NET analyzers](https://learn.microsoft.com/en-us/visualstudio/code-quality/migrate-from-fxcop-analyzers-to-net-analyzers?view=vs-2019).
 
-### StyleCop analyzer
+### StyleCop Analyzer
 
 The StyleCop analyzer is a nuget package (StyleCop.Analyzers) that can be installed in any of your projects. It's mainly around code style rules and makes sure the team is following the same rules without having subjective discussions about braces and spaces. Detailed information can be found here: [StyleCop Analyzers for the .NET Compiler Platform](https://github.com/DotNetAnalyzers/StyleCopAnalyzers).
 
@@ -65,7 +65,7 @@ The minimum rules set teams should adopt is the [Managed Recommended Rules](http
 
 Use .editorconfig to configure code formatting rules in your project.
 
-## Build validation
+## Build Validation
 
 It's important that you enforce your code style and rules in the CI to avoid any team member merging code that does not comply with your standards into your git repo.
 
@@ -79,7 +79,7 @@ If you are using FxCop analyzers and StyleCop analyzer, it's very simple to enab
         projects: '**/*.csproj'
 ```
 
-## Enable Roslyn Support in Visual Studio Code
+## Enable Roslyn Support in VSCode
 
 The above steps also work in VS Code provided you enable Roslyn support for Omnisharp. The setting is `omnisharp.enableRoslynAnalyzers` and must be set to `true`. After enabling this setting you must "Restart Omnisharp" (this can be done from the Command Palette in VS Code or by restarting VS Code).
 

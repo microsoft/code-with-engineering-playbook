@@ -38,7 +38,7 @@ following:
     the cost of running the hardware and software infrastructure.
 
 - Assess the **system's readiness** for release:
-  
+
   - Evaluating the system's performance characteristics (response time, throughput)
   in a production-like environment.
   The goal is to ensure that performance goals can be achieved upon release.
@@ -49,8 +49,8 @@ following:
     to the values of performance characteristics during previous runs (or
     baseline values), can provide an indication of performance issues (performance regression) or
     enhancements introduced due to a change
-  
-## Key Performance Testing categories
+
+## Key Performance Testing Categories
 
 Performance testing is a broad topic. There are many areas where you can perform
 tests. In broad strokes you can perform tests on the backend and on the front
@@ -79,12 +79,12 @@ does it recover (i.e., scale\-out) or does it just break and fail?
 The goal of endurance testing is to make sure that the system can maintain
 good performance under extended periods of load.
 
-### Spike testing
+### Spike Testing
 
 The goal of Spike testing is to validate that a software system can respond well
 to large and sudden spikes.
 
-### Chaos testing
+### Chaos Testing
 
 Chaos testing or Chaos engineering is the practice of experimenting on a system
 to build confidence that the system can withstand turbulent conditions in
@@ -93,7 +93,7 @@ Developers often implement fallback procedures for service failure. Chaos
 testing arbitrarily shuts down different parts of the system to validate that
 fallback procedures function correctly.
 
-## Best practices
+## Best Practices
 
 Consider the following best practices for performance testing:
 
@@ -109,7 +109,7 @@ Consider the following best practices for performance testing:
   single IP address. If you are testing a system that has this type of
   restriction, you can use different IP addresses to simulate multiple users.
 
-## Performance monitor metrics
+## Performance Monitor Metrics
 
 When executing the various types of testing approaches, whether it is stress,
 endurance, spike, or chaos testing, it is important to capture various
@@ -235,19 +235,19 @@ of data being sent and received within a unit of time.
 | Pages/sec                   | This is actually the sum of &quot;Pages Input/sec&quot; and &quot;Pages Output/sec&quot; counters which is the rate at which pages are being read and written as a result of pages faults. Small spikes with this value do not mean there is an issue but sustained values of greater than 50 can mean that system memory is a bottleneck. |
 | Paging File(_Total)\% Usage | The percentage of the system page file that is currently in use. This is not directly related to performance, but you can run into serious application issues if the page file does become completely full and additional memory is still being requested by applications.                                                                 |
 
-## Key Performance testing activities
+## Key Performance Testing Activities
 
 Performance testing activities vary depending on the subcategory of performance
 testing and the system's requirements and constraints. For specific guidance you can
 follow the link to the subcategory of performance tests listed above.
 The following activities might be included depending on the performance test subcategory:
 
-### Identify the Acceptance criteria for the tests
+### Identify the Acceptance Criteria for the Tests
 
 This will generally include identifying the goals and constraints
 for the performance characteristics of the system
 
-### Plan and design the tests
+### Plan and Design the Tests
 
 In general we need to consider the following points:
 
@@ -271,7 +271,7 @@ In general we need to consider the following points:
 
 - Execute the tests and collect performance metrics.
 
-### Result analysis and re-testing
+### Result Analysis and Re-testing
 
 - Analyze the results/performance metrics from the tests.
 
@@ -283,5 +283,4 @@ The [Iterative Performance Test Template](./iterative-perf-test-template.md) can
 
 ## Resources
 
-- [Patters and Practices: Performance Testing Guidance for Web
-  Applications](https://learn.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications)
+- [Patters and Practices: Performance Testing Guidance for Web Applications](https://learn.microsoft.com/en-us/archive/blogs/dajung/ebook-pnp-performance-testing-guidance-for-web-applications)

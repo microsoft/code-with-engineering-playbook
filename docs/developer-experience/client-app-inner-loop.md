@@ -1,4 +1,4 @@
-# Separating client apps from the services they consume during development
+# Separating Client Apps from the Services They Consume During Development
 
 Client Apps typically rely on remote services to power their apps.
 However, development schedules between the client app and the services don't always fully align. For a high velocity inner dev loop, client app development must be decoupled from the backend services while still allowing the app to "invoke" the services for local testing.
@@ -47,7 +47,7 @@ public static void Bootstrap(IUnityContainer container)
 }
 ```
 
-#### Consuming mocks via Dependency Injection
+#### Consuming Mocks via Dependency Injection
 
 The code consuming the interfaces will not notice the difference.
 
@@ -87,12 +87,12 @@ This approach also enables full fidelity integration testing without spinning up
 
 Lower fidelity approaches run stub services, that could be generated from API specs, or run fake servers like JsonServer ([JsonServer.io: A fake json server API Service for prototyping and testing.](https://www.jsonserver.io/)) or Postman. All these services would respond with predetermined and configured JSON messages.
 
-## How to decide
+## How to Decide
 
-|                | Pros                                   | Cons                        | Example when developing for:    | Example When not to Use                       |
-|----------------|----------------------------------------|-----------------------------|---------------------------------|-----------------------------------------------|
+|| Pros | Cons | Example when developing for: | Example When not to Use |
+| -- | -- | -- | -- | -- |
 | Embedded Mocks | Simplifies the F5 developer experience | Tightly coupled with Client | More static type data scenarios | Testing  (e.g. unit tests, integration tests) |
-|| No external dependencies to manage | Hard coded data | Initial integration with services |
+|| No external dependencies to manage | Hard coded data | Initial integration with services | |
 | | | Mocking via Dependency Injection can be a non-trivial effort | | |
 | High-Fidelity Local Services | Loosely Coupled from Client | Extra tooling required i.e. local infrastructure overhead | URL Routes | When API contract are not available |
 | | Easier to independently modify response | Extra setup and configuration of services | | |

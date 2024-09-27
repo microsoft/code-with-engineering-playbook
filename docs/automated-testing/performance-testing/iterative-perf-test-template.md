@@ -26,7 +26,7 @@
 ### Results
 
 ```md
-In bullet points document the results from the test.  
+In bullet points document the results from the test.
 - Attach any documents supporting the test results.
 - Add links to the dashboard for metrics and logs such as Application Insights.
 - Capture screenshots for metrics and include it in the results. Good candidate for this is CPU/Memory/Disk usage.
@@ -34,4 +34,4 @@ In bullet points document the results from the test.
 
 ### Observations
 
-> Observations are insights derived from test results. Keep the observations brief and as bullet points. Mention outcomes supporting the goal of the iteration. If any of the observation results in a work item (task, story, bug) then add the link to the work item together with the observation.  
+> Observations are insights derived from test results. Keep the observations brief and as bullet points. Mention outcomes supporting the goal of the iteration. If any of the observation results in a work item (task, story, bug) then add the link to the work item together with the observation.

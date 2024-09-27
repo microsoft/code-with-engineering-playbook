@@ -1,14 +1,5 @@
 # Design Reviews
 
-## Table of Contents
-
-- [Goals](#goals)
-- [Measures](#measures)
-- [Impact](#impact)
-- [Participation](#participation)
-- [Facilitation Guidance](#facilitation-guidance)
-- [Technical Spike](#technical-spike)
-
 ## Goals
 
 - Reduce technical debt for our customers
@@ -53,9 +44,6 @@ There is also a healthy balancing act in supporting a healthy debate while not h
 
 The dev crew should always participate in all design review sessions
 
-- [ISE](../../ISE.md) Engineering
-- Customer Engineering
-
 ### Domain Experts
 
 Domain experts should participate in design review sessions as needed
@@ -70,7 +58,7 @@ Domain experts should participate in design review sessions as needed
 
 Please see our [Design Review Recipes](./recipes/README.md) for guidance on design process.
 
-### Sync Design Reviews via in-person / virtual meetings
+### Sync Design Reviews via In-Person / Virtual Meetings
 
 Joint meetings with dev crew, subject-matter experts (SMEs) and customer engineers
 
@@ -85,8 +73,8 @@ A technical spike is most often used for evaluating the impact new technology ha
 ## Design Documentation
 
 - Document and update the architecture design in the project design documentation
-- Track and document design decisions in a [decision log](decision-log/README.md)
-- Document decision process in [trade studies](trade-studies/README.md) when multiple solutions exist for the given problem
+- Track and document design decisions in a [decision log](./decision-log/README.md)
+- Document decision process in [trade studies](./trade-studies/README.md) when multiple solutions exist for the given problem
 
 Early on in engagements, the team must decide where to land artifacts generated from design reviews.
 Typically, we meet the customer where they are at (for example, using their Confluence instance to land documentation if that is their preferred process).

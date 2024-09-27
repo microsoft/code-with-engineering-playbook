@@ -2,13 +2,13 @@
 
 Shadow testing is one approach to reduce risks before going to production. Shadow testing is also known as "Shadow Deployment" or "Shadowing Traffic" and similarities with "Dark launching".
 
-## When to use
+## When to Use
 
 Shadow Testing reduces risks when you consider replacing the current environment (V-Current) with candidate environment with new feature (V-Next). This approach is monitoring and capturing differences between two environments then compare and reduces all risks before you introduce a new feature/release.
 
 In our test cases, code coverage is very important however sometimes providing code coverage can be tricky to replicate real-life combinations and possibilities. In this approach, to test V-Next environment we have side by side deployment, we're replicating the same traffic with V-Current environment and directing same traffic to V-Next environment, the only difference is we don't return any response from V-Next environment to users, but we collect those responses to compare with V-Current responses.
 
-![Shadow Testing Overview](images/shadow-testing.png)
+![Shadow Testing Overview](./images/shadow-testing.png)
 
  Referencing back to one of the Principles of Chaos Engineering, mentions importance of sampling real traffic like below:
 
@@ -32,6 +32,7 @@ There are some tools to implement shadow testing. The main purpose of these tool
 - [Envoy](https://www.envoyproxy.io)
 - [McRouter](https://github.com/facebook/mcrouter)
 - [Scientist](https://github.com/github/scientist)
+- [Keploy](https://github.com/keploy/keploy)
 
 One of the most popular tools is [Diffy](https://github.com/opendiffy/diffy). It was created and used at Twitter. Now the original author and a former Twitter employee maintains their own version of this project, called [Opendiffy](https://github.com/opendiffy/diffy). Twitter announced this tool on their engineering blog as "[Testing services without writing tests](https://blog.twitter.com/engineering/en_us/a/2015/diffy-testing-services-without-writing-tests.html)".
 
@@ -39,7 +40,7 @@ As of today Diffy is used in production by Twitter, Airbnb, Baidu and Bytedance 
 
 > Diffy finds potential bugs in your service using running instances of your new code, and your old code side by side. Diffy behaves as a proxy and multicasts whatever requests it receives to each of the running instances. It then compares the responses, and reports any regressions that may surface from those comparisons. The premise for Diffy is that if two implementations of the service return “similar” responses for a sufficiently large and diverse set of requests, then the two implementations can be treated as equivalent, and the newer implementation is regression-free.
 
-![Diffy Shadow Testing Architecture](images/diffy-shadow-testing.png)
+![Diffy Shadow Testing Architecture](./images/diffy-shadow-testing.png)
 
 Diffy architecture
 
@@ -54,7 +55,7 @@ Some advantages of shadow testing are:
 - We can test real-life scenarios with real-life data.
 - We can simulate scale with replicated production traffic.
 
-## References  
+## Resources
 
 - [Martin Fowler - Dark Launching](https://martinfowler.com/bliki/DarkLaunching.html)
 - [Martin Fowler - Feature Toggle](https://martinfowler.com/bliki/FeatureToggle.html)

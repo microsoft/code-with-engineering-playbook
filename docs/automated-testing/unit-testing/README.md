@@ -47,7 +47,7 @@ but the general techniques and best practices of writing a unit test are univers
 ### Techniques
 
 These are some commonly used techniques that will help when authoring unit tests. For some examples, see the pages on
-using [abstraction and dependency injection to author a unit test](authoring_example.md), or how to do [test-driven development](tdd_example.md).
+using [abstraction and dependency injection to author a unit test](./authoring-example.md), or how to do [test-driven development](./tdd-example.md).
 
 Note that some of these techniques are more specific to strongly typed, object-oriented languages. Functional languages
 and scripting languages have similar techniques that may look different, but these terms are commonly used in all unit
@@ -58,7 +58,7 @@ testing examples.
 Abstraction is when we take an exact implementation detail, and we generalize it into a concept instead. This technique
 can be used in creating testable design and is used often especially in object-oriented languages. For unit tests,
 abstraction is commonly used to break a hard dependency and replace it with an abstraction. That abstraction then allows
-for greater flexibility in the code and allows for the a [mock or simulator](mocking.md) to be used in its place.
+for greater flexibility in the code and allows for the a [mock or simulator](./mocking.md) to be used in its place.
 
 One of the side effects of abstracting dependencies is that you may have an abstraction that has no test coverage. This
 is case where unit testing is not well-suited, you can not expect to unit test everything, things like dependencies will
@@ -68,7 +68,7 @@ should still be used - without that, a change in the way the dependency function
 When building wrappers around third-party dependencies, it is best to keep the implementations with as little logic as
 possible, using a very simple [facade](https://en.wikipedia.org/wiki/Facade_pattern) that calls the dependency.
 
-An example of using abstraction can be found [here](authoring_example.md#abstraction).
+An example of using abstraction can be found [here](./authoring-example.md#abstraction).
 
 #### Dependency Injection
 
@@ -93,7 +93,7 @@ system.
 Many languages include special Dependency Injection frameworks that take care of the boilerplate code and construction
 of the objects. Examples of this are [Spring](https://spring.io/) in Java or built into [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.1)
 
-An example of using dependency injection can be found [here](authoring_example.md#dependency-injection).
+An example of using dependency injection can be found [here](./authoring-example.md#dependency-injection).
 
 #### Test-Driven Development
 
@@ -103,7 +103,7 @@ write your test code first and then write the system under test to match the tes
 design is done up front and by the time you finish writing your system code, you are already at 100% test pass rate and
 test coverage. It also guarantees testable design is built into the system since the test was written first!
 
-For more information on TDD and an example, see the page on [Test-Driven Development](./tdd_example.md)
+For more information on TDD and an example, see the page on [Test-Driven Development](./tdd-example.md)
 
 ### Best Practices
 
@@ -140,7 +140,7 @@ public void TrySomething_NoElements_ReturnsFalse()
 }
 ```
 
-#### Keep tests small and test only one thing
+#### Keep Tests Small and Test Only One Thing
 
 Unit tests should be short and test only one thing. This makes it easy to diagnose when there was a failure without
 needing something like which line number the test failed at. When using [Arrange/Act/Assert](#arrangeactassert), think
@@ -150,7 +150,7 @@ There is some disagreement on whether testing one thing means "assert one thing"
 multiple asserts if needed". Both have their advantages and disadvantages, but as with most technical disagreements
 there is no "right" answer. Consistency when writing your tests one way or the other is more important!
 
-#### Using a standard naming convention for all unit tests
+#### Using a Standard Naming Convention for All Unit Tests
 
 Without having a set standard convention for unit test names, unit test names end up being either not descriptive
 enough, or duplicated across multiple different test classes. Establishing a standard is not only important for keeping
@@ -196,7 +196,7 @@ Many projects start with both a unit test framework, and also add a mock framewo
 uses and sometimes can be a requirement, it should not be something that is added without considering the broader
 implications and risks associated with heavy usage of mocks.
 
-To see if mocking is right for your project, or if a mock-free approach is more appropriate, see the page on [mocking](mocking.md).
+To see if mocking is right for your project, or if a mock-free approach is more appropriate, see the page on [mocking](./mocking.md).
 
 ### Tools
 
@@ -208,9 +208,9 @@ extremely fast and allows for easy TDD:
 - [Infinitest](http://infinitest.github.io/) for Java
 - [PyCrunch](https://plugins.jetbrains.com/plugin/13264-pycrunch--live-testing) for Python
 
-## Things to consider
+## Things to Consider
 
-### Transferring responsibility to integration tests
+### Transferring Responsibility to Integration Tests
 
 In some situations it is worth considering to include the integration tests in the inner development loop to provide a sufficient code coverage to ensure the system is working properly. The prerequisite for this approach to be successful is to have integration tests being able to execute at a speed comparable to that of unit tests both locally and in a CI environment. Modern application frameworks like .NET or Spring Boot combined with the right mocking or stubbing approach for external dependencies offer excellent capabilities to enable such scenarios for testing.
 

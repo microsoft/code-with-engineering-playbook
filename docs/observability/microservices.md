@@ -12,7 +12,7 @@ This is a common issue. When calling other microservices, depending on the techn
 
 More important, we don't have any way to associate our Correlation Id to whatever happens inside that microservice. Therefore, is so important to have a plan in place to be able to extend your traceability and monitoring efforts, especially when using a microservice architecture.
 
-## How to extend your tracing information between microservices
+## How to Extend Your Tracing Information Between Microservices
 
 The W3C consortium is working on a [Trace Context](https://www.w3.org/TR/trace-context/) definition that can be applied when using HTTP as the protocol in a microservice architecture. But let's explain how we can implement this functionality in our software.
 

@@ -25,8 +25,6 @@ It is a perfectly reasonable solution to track these metrics manually e.g. in an
 
 Remember that since defects removed thanks to reviews is far less costly compared to finding them in production, the cost of doing code reviews is actually negative!
 
-For more information, see links under [resources](#resources).
-
 ## Resources
 
 * [A Guide to Code Inspections](http://www.ganssle.com/inspections.pdf)

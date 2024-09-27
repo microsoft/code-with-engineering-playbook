@@ -6,7 +6,7 @@ Git is a distributed version control system. This means that - unlike SVN or CVS
 
 For example:
 
-```plain
+```sh
 repo 1: A -> B -> C -> D -> HEAD
 repo 2: A -> B -> HEAD
 repo 3: X -> Y -> Z -> HEAD
@@ -27,7 +27,7 @@ A recommended installation is the [Git Lens extension for Visual Studio Code](ht
 
 You can use these commands as well to configure your Git for Visual Studio Code as an editor for merge conflicts and diff tool.
 
-```cmd
+```sh
 git config --global user.name [YOUR FIRST AND LAST NAME]
 git config --global user.email [YOUR E-MAIL ADDRESS]
 
@@ -38,11 +38,11 @@ git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
 ```
 
-## Basic workflow
+## Basic Workflow
 
 A basic Git workflow is as follows; you can find more information on the specific steps below.
 
-```cmd
+```sh
 # pull the latest changes
 git pull
 
@@ -72,7 +72,7 @@ git push --set-upstream origin feature/123-add-git-instructions
 
 Whenever you want to make a change to a repository, you need to first clone it. Cloning a repository pulls down a full copy of all the repository data, so that you can work on it locally. This copy includes all versions of every file and folder for the project.
 
-```cmd
+```sh
 git clone https://github.com/username/repo-name
 ```
 
@@ -84,7 +84,7 @@ To avoid adding code that has not been peer reviewed to the main branch (ex. `de
 
 Pull the latest changes and create a new branch for your work based on the trunk (in this case `develop`).
 
-```cmd
+```sh
 git pull
 git checkout -b feature/feature-name develop
 ```
@@ -96,10 +96,9 @@ At any point, you can move between the branches with `git checkout <branch>` as 
 To avoid losing work, it is good to commit often in small chunks. This allows you to revert only the last changes if you discover a problem and also neatly explains exactly what changes were made and why.
 
 1. Make changes to your branch
-
 2. Check what files were changed
 
-    ```cmd
+    ```sh
     > git status
     On branch feature/271-basic-commit-info
     Changes not staged for commit:
@@ -110,19 +109,19 @@ To avoid losing work, it is good to commit often in small chunks. This allows yo
 
 3. Track the files you wish to include in the commit. To track all modified files:
 
-    ```cmd
+    ```sh
     git add --all
     ```
 
    Or to track only specific files:
 
-    ```cmd
+    ```sh
     git add source-control/git-guidance/README.md
     ```
 
 4. Commit the changes to your local branch with a descriptive [commit message](#commit-best-practices)
 
-    ```cmd
+    ```sh
     git commit -m "add basic git instructions"
     ```
 
@@ -130,13 +129,13 @@ To avoid losing work, it is good to commit often in small chunks. This allows yo
 
 When you are done working, push your changes to a branch in the remote repository using:
 
-```cmd
+```sh
 git push
 ```
 
 The first time you push, you first need to set an upstream branch as follows. After the first push, the --set-upstream parameter and branch name are not needed anymore.
 
-```cmd
+```sh
 git push --set-upstream origin feature/feature-name
 ```
 
@@ -152,7 +151,7 @@ The Pull Request (PR) process in [Azure DevOps](https://learn.microsoft.com/en-u
 
 If multiple people make changes to the same files, you may need to resolve any conflicts that have occurred before you can merge.
 
-```cmd
+```sh
 # check out the develop branch and get the latest changes
 git checkout develop
 git pull
@@ -189,7 +188,7 @@ And here is another line that is cleanly resolved or unmodified
 
 When this process is completed, make sure you test the result by executing build, checks, test to validate this merged result.
 
-```cmd
+```sh
 # conclude the merge
 git merge --continue
 
@@ -202,11 +201,11 @@ git push
 
 If no other conflicts appear, the PR can now be merged, and your branch deleted. Use `squash` to reduce your changes into a single commit, so the commit history can be within an acceptable size.
 
-### Stashing changes
+### Stashing Changes
 
 `git stash` is super handy if you have un-committed changes in your working directory, but you want to work on a different branch. You can run `git stash`, save the un-committed work, and revert to the HEAD commit. You can retrieve the saved changes by running `git stash pop`:
 
-```cmd
+```sh
 git stash
 …
 git stash pop
@@ -214,21 +213,21 @@ git stash pop
 
 Or you can move the current state into a new branch:
 
-```cmd
+```sh
 git stash branch <new_branch_to_save_changes>
 ```
 
-### Recovering lost commits
+### Recovering Lost Commits
 
 If you "lost" a commit that you want to return to, for example to revert a `git rebase` where your commits got squashed, you can use `git reflog` to find the commit:
 
-```cmd
+```sh
 git reflog
 ```
 
 Then you can use the reflog reference (`HEAD@{}`) to reset to a specific commit before the rebase:
 
-```cmd
+```sh
 git reset HEAD@{2}
 ```
 
@@ -245,7 +244,7 @@ A commit combines changes into a logical unit. Adding a descriptive commit messa
 
 You can specify the default git editor, which allows you to write your commit messages using your favorite editor. The following command makes Visual Studio Code your default git editor:
 
-```bash
+```sh
 git config --global core.editor "code --wait"
 ```
 
@@ -271,26 +270,26 @@ For more information on commit message conventions, see:
 * [Information in commit messages](https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages)
 * [On commit messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
 
-## Managing remotes
+## Managing Remotes
 
 A local git repository can have one or more backing remote repositories. You can list the remote repositories using `git remote` - by default, the remote repository you cloned from will be called origin
 
-```cmd
+```sh
 > git remote -v
 origin  https://github.com/microsoft/code-with-engineering-playbook.git (fetch)
 origin  https://github.com/microsoft/code-with-engineering-playbook.git (push)
 ```
 
-### Working with forks
+### Working with Forks
 
 You can set multiple remotes. This is useful for example if you want to work with a forked version of the repository.
 For more info on how to set upstream remotes and syncing repositories when working with forks see GitHub's [Working with forks documentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks).
 
-### Updating the remote if a repository changes names
+### Updating the Remote if a Repository Changes Names
 
 If the repository is changed in some way, for example a name change, or if you want to switch between HTTPS and SSH you need to update the remote
 
-```cmd
+```sh
 # list the existing remotes
 > git remote -v
 origin  https://hostname/username/repository-name.git (fetch)
@@ -305,9 +304,9 @@ origin  https://hostname/username/new-repository-name.git (fetch)
 origin  https://hostname/username/new-repository-name.git (push)
 ```
 
-## Rolling back changes
+## Rolling Back Changes
 
-### Reverting and deleting commits
+### Reverting and Deleting Commits
 
 To "undo" a commit, run the following two commands: `git revert` and `git reset`. `git revert` creates a new commit that undoes commits while `git reset` allows deleting commits entirely from the commit history.
 
@@ -341,7 +340,7 @@ The above command will open an interactive session in an editor (for example vim
 
 Running rebase will locally modify the history, after this one can use `force` to push the changes to remote without the deleted commit.
 
-## Using submodules
+## Using Submodules
 
 Submodules can be useful in more complex deployment and/or development scenarios
 
@@ -360,21 +359,19 @@ git submodule foreach git checkout master
 git submodule foreach git pull origin
 ```
 
-## Working with images, video and other binary content
+## Working with Images, Video and Other Binary Content
 
 Avoid committing frequently changed binary files, such as large images, video or compiled code to your git repository. Binary content is not diffed like text content, so cloning or pulling from the repository may pull each revision of the binary file.
 
-One solution to this problem is `Git LFS (Git Large File Storage)` - an open source Git extension for versioning large files. You can find more information on Git LFS in the [Git LFS and VFS document](git-lfs-and-vfs.md).
+One solution to this problem is `Git LFS (Git Large File Storage)` - an open source Git extension for versioning large files. You can find more information on Git LFS in the [Git LFS and VFS document](./git-lfs-and-vfs.md).
 
-## Working with large repositories
+## Working with Large Repositories
 
-When working with a very large repository of which you don't require all the files, you can use `VFS for Git` - an open source Git extension that virtualize the file system beneath your Git repository, so that you seem to work in a regular working directory but while VFS for Git only downloads objects as they are needed. You can find more information on VFS for Git in the [Git LFS and VFS document](git-lfs-and-vfs.md).
+When working with a very large repository of which you don't require all the files, you can use `VFS for Git` - an open source Git extension that virtualize the file system beneath your Git repository, so that you seem to work in a regular working directory but while VFS for Git only downloads objects as they are needed. You can find more information on VFS for Git in the [Git LFS and VFS document](./git-lfs-and-vfs.md).
 
 ## Tools
 
 * Visual Studio Code is a cross-platform powerful source code editor with built in git commands. Within Visual Studio Code editor you can review diffs, stage changes, make commits, pull and push to your git repositories.
 You can refer to [Visual Studio Code Git Support](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support) for documentation.
-
 * Use a shell/terminal to work with Git commands instead of relying on [GUI clients](https://git-scm.com/downloads/guis/).
-
 * If you're working on Windows, [posh-git](https://github.com/dahlbyk/posh-git) is a great PowerShell environment for Git. Another option is to use [Git bash for Windows](http://www.techoism.com/how-to-install-git-bash-on-windows/). On Linux/Mac, install git and use your favorite shell/terminal.

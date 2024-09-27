@@ -6,7 +6,7 @@ Larger applications consist of multiple components that reference each other and
 
 To achieve the goal of loosely coupled applications, each component should be versioned independently hence allowing developers to detect breaking changes or seamless updates just by looking at the version number.
 
-## Version Numbers and Versioning schemes
+## Version Numbers and Versioning Schemes
 
 For developers or other components to detect breaking changes the version number of a component is important.
 
@@ -58,13 +58,13 @@ Version updates happen through:
 * Branch names (e.g. develop, release/..) for Alpha / Beta / RC
 * Otherwise: Number of commits (+12, ...)
 
-## Semantic Versioning within a Monorepo
+## Semantic Versioning Within a Monorepo
 
 A monorepo, short for "monolithic repository", is a software development practice where multiple related projects, components, or modules are stored within a single version-controlled repository as opposed to maintaining them in separate repositories.
 
 <img src="./assets/monorepo.png" alt="drawing" width="150"/>
 
-### Challenges with Versioning in a monorepo structure
+### Challenges with Versioning in a Monorepo Structure
 
 Versioning in a monorepo involves making decisions about how to assign version numbers to different projects and components contained within the repository.
 
@@ -73,7 +73,7 @@ Assigning a single version number to all projects in a monorepo can lead to freq
 Ideally, we would want each project within the monorepo to have its own version number. Changes in one project shouldn't necessarily trigger version changes in others.
 This strategy allows projects to evolve at their own pace, without forcing all projects to adopt the same version number. It aligns well with the differing release cadences of distinct projects.
 
-### semantic-release package for versioning
+### semantic-release Package for Versioning
 
 [semantic-release](https://github.com/semantic-release/semantic-release) simplifies the entire process of releasing a package, which encompasses tasks such as identifying the upcoming version number, producing release notes, and distributing the package. This process severs the direct link between human sentiments and version identifiers. Instead, it rigorously adheres to the Semantic Versioning standards and effectively conveys the significance of alterations to end users.
 
@@ -102,7 +102,7 @@ In order to avoid version collisions, generated git tags are namespaced using th
 
 ![monorepo-git-tags](./assets/monorepo-git-tags.png)
 
-### semantic-release configurations
+### semantic-release Configurations
 
 `semantic-release`’s options, mode and plugins can be set via either:
 <!-- // cSpell:ignore releaserc -->

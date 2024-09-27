@@ -8,5 +8,5 @@ In general, developers working on [ISE](../ISE.md) projects should adhere to Mic
 
 The playbook currently contains two main parts:
 
-1. [Privacy and Data](data-handling.md): Best practices for properly handling sensitive and private data.
-2. [Privacy frameworks](privacy-frameworks.md): A list of frameworks which could be applied in private data scenarios.
+1. [Privacy and Data](./data-handling.md): Best practices for properly handling sensitive and private data.
+2. [Privacy frameworks](./privacy-frameworks.md): A list of frameworks which could be applied in private data scenarios.

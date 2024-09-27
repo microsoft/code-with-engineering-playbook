@@ -36,6 +36,6 @@ Implementing disaster recovery (DR) involves a combination of strategies, techno
 - **Regular Testing and Drills**: Conduct regular simulation drills to test the effectiveness of the DR plan and to ensure that all team members are familiar with their roles.
 - **Comprehensive Documentation**: Develop run books with step-by-step instructions for executing the DR plan, tailored to specific scenarios and systems.
 
-## More information
+## Resources
 
 - [Azure Site Recovery](https://azure.microsoft.com/en-us/products/site-recovery/)

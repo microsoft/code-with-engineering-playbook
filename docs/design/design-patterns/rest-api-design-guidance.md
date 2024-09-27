@@ -77,14 +77,14 @@ Important Points to consider:
 * With Agile development, it is hard to ensure that definitions embedded in runtime code remain stable, especially across rounds of refactoring and when serving multiple concurrent API versions.
 * It might be useful to regularly generate Open API definition and store it in version control system otherwise generating the OpenAPI definition at runtime might makes it more complex in scenarios where that definition is required at development/CI time.
 
-## How to Interpret and Apply The Guidelines
+## How to Interpret and Apply the Guidelines
 
 The API guidelines document includes a section on [how to apply the guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#4-interpreting-the-guidelines) depending on whether the API is new or existing.
 In particular, when working in an existing API ecosystem, be sure to align with stakeholders on a definition of what constitutes a [breaking change](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#123-definition-of-a-breaking-change) to understand the impact of implementing certain best practices.
 
 > We do not recommend making a breaking change to a service that predates these guidelines simply for the sake of compliance.
 
-## Additional Resources
+## Resources
 
 * [Microsoft's Recommended Reading List for REST APIs](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#31-recommended-reading)
 * [Documentation - Guidance - REST APIs](https://microsoft.github.io/code-with-engineering-playbook/documentation/guidance/rest-apis/)

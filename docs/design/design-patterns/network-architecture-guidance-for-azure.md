@@ -1,13 +1,13 @@
 # Network Architecture Guidance for Azure
 The following are some best practices when setting up and working with network resources in Azure Cloud environments.
 
-> **NOTE:** When working in an existing cloud environment, it is important to understand any current patterns, and how they are used, before making a change to them. You should also work with the relevant stakeholders to make sure that any new patterns you introduce provide enough value to make the change.
+> **Note:** When working in an existing cloud environment, it is important to understand any current patterns, and how they are used, before making a change to them. You should also work with the relevant stakeholders to make sure that any new patterns you introduce provide enough value to make the change.
 
-## Networking and VNet setup
+## Networking and VNet Setup
 
-### Hub-and-spoke Topology
+### Hub-and-Spoke Topology
 
-![image](images/spoke-spoke-routing.png)
+![image](./images/spoke-spoke-routing.png)
 
 A hub-and-spoke network topology is a common architecture pattern used in Azure for organizing and managing network resources. It is based on the concept of a central hub that connects to various spoke networks. This model is particularly useful for organizing resources, maintaining security, and simplifying network management.
 

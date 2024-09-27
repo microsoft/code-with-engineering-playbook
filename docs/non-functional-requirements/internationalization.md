@@ -4,7 +4,7 @@ Internationalization (i18n) and Localization (l10n) refer to the design and adap
 
 ## Characteristics
 
-### Main characteristics of Internationalization
+### Main Characteristics of Internationalization
 
 - Text Externalization: Moving all user-facing text to external resource files to facilitate easy translation.
 - Unicode Support: Using Unicode or another character encoding that supports all necessary scripts and characters.
@@ -13,7 +13,7 @@ Internationalization (i18n) and Localization (l10n) refer to the design and adap
 - Locale-Sensitive Data Processing: Adapting data processing to respect locale-specific rules, such as sorting and case conversion.
 - Bidirectional Text Support: Supporting both left-to-right (LTR) and right-to-left (RTL) text orientations where necessary.
 
-### Main characteristics of Localization
+### Main Characteristics of Localization
 
 - Translation: Converting text and UI elements to the target language.
 - Cultural Adaptation: Adapting content and design elements to align with local cultural norms and expectations.

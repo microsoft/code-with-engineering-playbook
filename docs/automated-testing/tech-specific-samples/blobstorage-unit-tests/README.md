@@ -4,7 +4,7 @@ This document determines the approach for writing automated tests with a short f
 
 Once private endpoints are enabled for the Azure Storage accounts, the current tests will fail when executed locally or as part of a pipeline because this connection will be blocked.
 
-## Utilize an Azure Storage emulator - Azurite
+## Utilize an Azure Storage Emulator - Azurite
 
 To emulate a local Azure Blob Storage, we can use [Azure Storage Emulator](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-emulator). The Storage Emulator currently runs only on Windows. If you need a Storage Emulator for Linux, one option is the community maintained, open-source Storage Emulator [Azurite](https://github.com/azure/azurite).
 
@@ -14,7 +14,7 @@ Some differences in functionality exist between the Storage Emulator and Azure s
 
 There are several ways to install and run Azurite on your local system as listed [here](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-azurite-by-using-npm). In this document we will cover `Install and run Azurite using NPM` and `Install and run the Azurite Docker image`.
 
-## 1. Install and run Azurite
+## 1. Install and Run Azurite
 
 ### a. Using NPM
 
@@ -44,7 +44,7 @@ Azurite Queue service is starting at http://127.0.0.1:10001
 Azurite Queue service is successfully listening at http://127.0.0.1:10001
 ```
 
-### b. Using a docker image
+### b. Using a Docker Image
 
 Another way to run Azurite is using docker, using default `HTTP` endpoint
 
@@ -68,7 +68,7 @@ services:
       - "10001:10001"
 ```
 
-## 2. Run tests on your local machine
+## 2. Run Tests on Your Local Machine
 
 Python 3.8.7 is used for this, but it should be fine on other 3.x versions as well.
 
@@ -93,11 +93,11 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
 1. In Azure Storage Explorer, select `Attach to a local emulator`
 
-   ![connect blob](images/blob_storage_connection.png)
+   ![connect blob](./images/blob_storage_connection.png)
 
 1. Provide a Display name and port number, then your connection will be ready, and you can use Storage Explorer to manage your local blob storage.
 
-   ![attach to local](images/blob_storage_connection_attach.png)
+   ![attach to local](./images/blob_storage_connection_attach.png)
 
    To test and see how these endpoints are running you can attach your local blob storage to the [**Azure Storage Explorer**](https://azure.microsoft.com/en-us/features/storage-explorer/).
 
@@ -136,9 +136,9 @@ Python 3.8.7 is used for this, but it should be fine on other 3.x versions as we
 
 After running tests, you can see the files in your local blob storage
 
-![https local blob](images/http_local_blob_storage.png)
+![https local blob](./images/http_local_blob_storage.png)
 
-## 3. Run tests on Azure Pipelines
+## 3. Run Tests on Azure Pipelines
 
 After running tests locally we need to make sure these tests pass on Azure Pipelines too. We have 2 options here, we can use docker image as hosted agent on Azure or install an npm package in the Pipeline steps.
 
@@ -155,7 +155,7 @@ steps:
 - bash: |
     pip install -r requirements_tests.txt
   displayName: 'Setup requirements for tests'
-  
+
 - bash: |
     sudo npm install -g azurite
     sudo mkdir azurite
@@ -181,4 +181,4 @@ steps:
 
 Once we set up our pipeline in Azure Pipelines, result will be like below
 
-![azure pipelines](images/azure_pipeline.png)
+![azure pipelines](./images/azure_pipeline.png)

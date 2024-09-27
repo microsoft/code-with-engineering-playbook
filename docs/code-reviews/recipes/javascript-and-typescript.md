@@ -89,7 +89,7 @@ module.exports = {
 
 This will apply the `prettier` rule set when linting with ESLint.
 
-## Auto formatting with VS Code
+## Auto Formatting with VSCode
 
 VS Code can be configured to automatically perform `eslint --fix` on save.
 
@@ -137,7 +137,7 @@ To automate this process in Azure Devops you can add the following snippet to yo
     workingDir: './scripts/'
 ```
 
-## Pre-commit hooks
+## Pre-Commit Hooks
 
 All developers should run `eslint` in a pre-commit hook to ensure standard formatting. We highly recommend using an editor integration like [vscode-eslint](https://github.com/Microsoft/vscode-eslint) to provide realtime feedback.
 

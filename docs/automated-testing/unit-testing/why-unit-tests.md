@@ -3,7 +3,7 @@
 It is no secret that writing unit tests is hard, and even harder to write well. Writing unit tests also increases the
 development time for every feature. So why should we bother writing them?
 
-## Reduce costs
+## Reduce Costs
 
 There is no question that the later a bug is found, the more expensive it is to fix; especially so if the bug makes it
 into production. A [2008 research study by IBM](ftp://ftp.software.ibm.com/software/rational/info/do-more/RAW14109USEN.pdf)
@@ -17,7 +17,7 @@ Having unit tests also helps with making safe, mechanical refactors that are pro
 refactoring tools to do mechanical refactoring and running unit tests that cover the refactored code should be enough to
 increase confidence in the commit.
 
-## Speed up development
+## Speed Up Development
 
 Unit tests take time to write, but they also speed up development? While this may seem like an oxymoron, it is one of
 the strengths of a unit testing suite - over time it continues to grow and evolve until the tests become an essential
@@ -35,7 +35,7 @@ writing. Since unit tests execute really quickly, running tests shouldn't be see
 Tooling such as [Visual Studio Live Unit Testing](https://learn.microsoft.com/en-us/visualstudio/test/live-unit-testing-start?view=vs-2019)
 also help to shorten the inner loop even more.
 
-## Documentation as code
+## Documentation as Code
 
 Writing unit tests is a great way to show how the units of code you are writing are supposed to be used. In some ways,
 unit tests are better than any documentation or samples because they are (or at least should be) executed with every

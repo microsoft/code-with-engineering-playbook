@@ -20,13 +20,13 @@ Design reviews come in all shapes and sizes. There are also different items to c
 - Design should be more detailed than game plan
 - May require unique deployment, security and/or privacy characteristics from other milestones
 
-### [Feature/story design review](./feature-story-design-review-template.md)
+### [Feature / Story Design Review](./templates/feature-story-design-review.md)
 
 - Design for complex features or stories
 - Will reuse deployment, security and other characteristics defined within game plan or milestone
 - May require new libraries, OSS or patterns to accomplish goals
 
-### [Task design review](./task-design-review-template.md)
+### [Task Design Review](./templates/template-task-design-review.md)
 
 - Highly detailed design for a complex tasks with many unknowns
 - Will integrate into higher level feature/component designs

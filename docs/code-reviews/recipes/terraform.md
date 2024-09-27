@@ -12,7 +12,7 @@ Projects should check Terraform scripts with automated tools.
 
 [`TFLint`](https://github.com/terraform-linters/tflint) is a Terraform linter focused on possible errors, best practices, etc. Once TFLint installed in the environment, it can be invoked using the VS Code [`terraform extension`](https://marketplace.visualstudio.com/items?itemName=mauve.terraform).
 
-## VS Code Extensions
+## VSCode Extensions
 
 The following VS Code extensions are widely used.
 
@@ -80,7 +80,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] The repository contains a `README.md` describing the architecture provisioned?
 * [ ] If Terraform code is mixed with application source code, the Terraform code isolated into a dedicated folder?
 
-### Terraform state
+### Terraform State
 
 * [ ] The Terraform project configured using Azure Storage as remote state backend?
 * [ ] The remote state backend storage account key stored a secure location (e.g. Azure Key Vault)?
@@ -97,7 +97,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 
 * [ ] Unit and integration tests covering the Terraform code exist (e.g. [`Terratest`](https://terratest.gruntwork.io/), [`terratest-abstraction`](https://github.com/microsoft/terratest-abstraction))?
 
-### Naming and code structure
+### Naming and Code Structure
 
 * [ ] Resource definitions and data sources are used correctly in the Terraform scripts?
   * **resource:** Indicates to Terraform that the current configuration is in charge of managing the life cycle of the object
@@ -107,7 +107,7 @@ In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance
 * [ ] Explicit type conversion functions used to normalize types are only returned in module outputs? Explicit type conversions are rarely necessary in Terraform because it will convert types automatically where required.
 * [ ] The `Sensitive` property on schema set to `true` for the fields that contains sensitive information? This will prevent the field's values from showing up in CLI output.
 
-### General recommendations
+### General Recommendations
 
 * Try avoiding nesting sub configuration within resources. Create a separate resource section for resources even though they can be declared as sub-element of a resource. For example, declaring subnets within virtual network vs declaring subnets as a separate resources compared to virtual network on Azure.
 * Never hard-code any value in configuration. Declare them in `locals` section if a variable is needed multiple times as a static value and are internal to the configuration.

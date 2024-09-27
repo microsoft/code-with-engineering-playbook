@@ -4,7 +4,7 @@ You might have heard more than once that **you should write self-documenting cod
 
 There are two types of code comments, implementation comments and documentation comments.
 
-## Implementation comments
+## Implementation Comments
 
 They are used for internal documentation, and are intended for anyone who may need to maintain the code in the future, including your future self.
 
@@ -42,7 +42,7 @@ if (sourceLength < charTextLength
 {
 ```
 
-## Documentation comments
+## Documentation Comments
 
 Doc comments are a special kind of comment, added above the definition of any user-defined type or member, and are intended for anyone who may need to use those types or members in their own code.
 

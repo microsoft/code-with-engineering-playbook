@@ -1,13 +1,4 @@
-# Data Model
-
-## Table of Contents
-
-- [Graph vertices and edges](#graph-vertices-and-edges)
-- [Graph Properties](#graph-properties)
-- [Vertex Descriptions](#vertex-descriptions)
-- [Full Role JSON Example](#full-role-json-example)
-
-## Graph Model
+# Graph Model
 
 ## Graph Vertices and Edges
 
