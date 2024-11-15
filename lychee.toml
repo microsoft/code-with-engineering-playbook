@@ -94,6 +94,8 @@ exclude = [
   "^https://machinelearningmastery.com",
   "^https://www.researchgate.net",
   "^https://github.com/marketplace/?$",
+  # Other:
+  "^https://opensource.org/license/",  # works locally but fails with 403 on Github CI.
 ]
 
 # Exclude these filesystem paths from getting checked.
