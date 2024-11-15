@@ -78,7 +78,7 @@ When this occurs, do the following
 1. Verify that the link is OK, if it redirects, change the path to be the final link.
 1. If the link is not ok, fix the link (even if it is not in your document) if you find a good equivalent link. If you can't find a good equivalent link, contact one of the [maintainers](#maintainers) for a solution.
 1. Re-run the job, or ask to have the job re-run (if you are a first time contributor). Sometimes the link checker fails due to temporary connectivity issues.
-1. If the link checker still fails, and you have confirmed that the link is ok, exclude the link from checking, in the `.markdownlinkcheck.json` file in the root of the repository.
+1. If the link checker still fails, and you have confirmed that the link is ok, exclude the link from checking in the [lychee.toml](./lychee.toml) file.
 
 ## Running Locally (*Remotely*)
 
