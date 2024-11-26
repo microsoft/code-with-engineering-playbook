@@ -1,0 +1,122 @@
+#############################  Display  #############################
+
+# Verbose program output
+# Accepts log level: "error", "warn", "info", "debug", "trace"
+verbose = "info"
+
+# Don't show interactive progress bar while checking links.
+no_progress = false
+
+#############################  Cache  ###############################
+
+# Enable link caching. This can be helpful to avoid checking the same links on
+# multiple runs.
+cache = false
+
+# Discard all cached requests older than this duration.
+max_cache_age = "2d"
+
+#############################  Runtime  #############################
+
+# Number of threads to utilize.
+# Defaults to number of cores available to the system if omitted.
+threads = 2
+
+# Maximum number of allowed redirects.
+max_redirects = 10
+
+# Maximum number of allowed retries before a link is declared dead.
+max_retries = 2
+
+# Maximum number of concurrent link checks.
+max_concurrency = 50
+
+#############################  Requests  ############################
+
+# User agent to send with each request.
+user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:132.0) Gecko/20100101 Firefox/132.0"
+
+# Website timeout from connect to response finished.
+timeout = 40
+
+# Minimum wait time in seconds between retries of failed requests.
+retry_wait_time = 2
+
+# Comma-separated list of accepted status codes for valid links.
+# Supported values are:
+#
+# accept = ["200..=204", "429"]
+# accept = "200..=204, 429"
+# accept = ["200", "429"]
+# accept = "200, 429"
+accept = ["200"]
+
+# Proceed for server connections considered insecure (invalid TLS).
+insecure = false
+
+# When links are available using HTTPS, treat HTTP links as errors.
+require_https = false
+
+# Request method
+method = "get"
+
+# Custom request headers
+header = ["name=value", "other=value"]
+
+# Remap URI matching pattern to different URI.
+remap = []
+
+# HTTP basic auth support. This will be the username and password passed to the
+# authorization HTTP header. See
+# <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization>
+basic_auth = []
+
+#############################  Exclusions  ##########################
+
+# Skip missing input files (default is to error if they don't exist).
+skip_missing = false
+
+# Check links inside `<code>` and `<pre>` blocks as well as Markdown code
+# blocks.
+include_verbatim = false
+
+# Ignore case of paths when matching glob patterns.
+glob_ignore_case = false
+
+# Exclude URLs and mail addresses from checking (supports regex).
+exclude = [
+  # "Example" urls used in some docs:
+  "^http://link-to.*-work-item/",
+  # Websites that block programmatic access:
+  "^https://www.gartner.com",
+  "^https://www.softwaretestinghelp.com",
+  "^https://www.perfecto.io",
+  "^https://machinelearningmastery.com",
+  "^https://www.researchgate.net",
+  "^https://github.com/marketplace/?$",
+  # Other:
+  "^https://opensource.org/license/",  # works locally but fails with 403 on Github CI.
+]
+
+# Exclude these filesystem paths from getting checked.
+exclude_path = []
+
+# URLs to check (supports regex). Has preference over all excludes.
+include = []
+
+# Exclude all private IPs from checking.
+# Equivalent to setting `exclude_private`, `exclude_link_local`, and
+# `exclude_loopback` to true.
+exclude_all_private = true
+
+# Exclude private IP address ranges from checking.
+exclude_private = true
+
+# Exclude link-local IP address range from checking.
+exclude_link_local = true
+
+# Exclude loopback IP address range and localhost from checking.
+exclude_loopback = true
+
+# Check mail addresses
+include_mail = true
