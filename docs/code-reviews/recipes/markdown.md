@@ -115,17 +115,19 @@ jobs:
 
 ### Checking Links
 
-To automate link check in your markdown files add `markdown-link-check` action to your validation pipeline:
+To automate link check in your markdown files add `lycheeverse/lychee-action` action to your validation pipeline:
 
 ```yaml
   markdown-link-check:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+    - uses: actions/checkout@v4
+    - name: Link Checker
+      id: lychee
+      uses: lycheeverse/lychee-action@v2
 ```
 
-More information about `markdown-link-check` action options can be found at [`markdown-link-check` home page](https://github.com/gaurav-nelson/github-action-markdown-link-check)
+More information about this action options can be found at [`lychee-action` home page](https://github.com/lycheeverse/lychee-action).
 
 ## Code Review Checklist
 

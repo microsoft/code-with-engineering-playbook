@@ -44,4 +44,4 @@ For most engagements having a single hosted DevOps environment (i.e. Azure DevOp
 * [ISE Git details](git-guidance/README.md)details on how to use Git as part of a [ISE](../ISE.md) project.
 * [GitHub - Removing sensitive data from a repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 * [How Git Works Pluralsight course](https://www.pluralsight.com/courses/how-git-works)
-* [Mastering Git Pluralsight course](https://www.pluralsight.com/courses/master-git)
+* [Mastering Git Pluralsight course](https://www.pluralsight.com/courses/mastering-git)
