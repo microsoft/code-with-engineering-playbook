@@ -6839,14 +6839,16 @@ you can either use linters aggregator as we do with <a href="https://github.com/
 <span class="w">        </span><span class="no">markdownlint &quot;**/*.md&quot; --ignore node_modules</span>
 </code></pre></div>
 <h3 id="checking-links">Checking Links</h3>
-<p>To automate link check in your markdown files add <code>markdown-link-check</code> action to your validation pipeline:</p>
+<p>To automate link check in your markdown files add <code>lycheeverse/lychee-action</code> action to your validation pipeline:</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">markdown-link-check</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
 <span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@master</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gaurav-nelson/github-action-markdown-link-check@v1</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Link Checker</span>
+<span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lychee</span>
+<span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lycheeverse/lychee-action@v2</span>
 </code></pre></div>
-<p>More information about <code>markdown-link-check</code> action options can be found at <a href="https://github.com/gaurav-nelson/github-action-markdown-link-check"><code>markdown-link-check</code> home page</a></p>
+<p>More information about this action options can be found at <a href="https://github.com/lycheeverse/lychee-action"><code>lychee-action</code> home page</a>.</p>
 <h2 id="code-review-checklist">Code Review Checklist</h2>
 <p>In addition to the <a href="../../process-guidance/reviewer-guidance/">Code Review Checklist</a> you should also look for these documentation specific code review items</p>
 <ul class="task-list">
@@ -6959,7 +6961,7 @@ Save your guidelines together with your documentation, so they are easy to refer
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 22, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 10, 2024</span>
       
     
   </small>
