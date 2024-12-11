@@ -13,8 +13,7 @@ This pipeline helps address that!
 The pipeline uses the following `npm` modules:
 
 - [markdownlint](https://github.com/DavidAnson/markdownlint): add standardization using [rules](https://github.com/DavidAnson/markdownlint#rules--aliases)
-- [markdown-link-check](https://github.com/tcort/markdown-link-check): check the links in the documentation and report broken
-ones
+- [lychee](https://github.com/lycheeverse/lychee): check the links in the documentation and report broken ones
 - [write-good](https://github.com/btford/write-good): linter for English prose
 
 We have been using this pipeline for more than one year in different engagements and always received great feedback from the
