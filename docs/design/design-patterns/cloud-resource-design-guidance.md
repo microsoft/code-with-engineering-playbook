@@ -18,4 +18,4 @@ The following references can be used to understand the latest best practices in 
 
 ## Tooling
 
-* [Azure Resource Naming Tool](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready/AzNamingTool)
+* [Azure Resource Naming Tool](https://github.com/mspnp/AzureNamingTool)
