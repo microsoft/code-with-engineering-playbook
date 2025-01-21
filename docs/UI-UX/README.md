@@ -52,8 +52,8 @@ Design Ops, short for Design Operations, is a practice that focuses on optimizin
 
 ### Key Components of Design Ops
 
-- Establishing clear processes and workflows for design tasks.
-- Utilizing project management tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [Jira](https://www.atlassian.com/software/jira), [Trello](https://trello.com/), or [Asana](https://asana.com/) to track design progress and dependencies.
+1. **Establishing clear processes and workflows for design tasks:**
+   - Utilizing project management tools like [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), [Jira](https://www.atlassian.com/software/jira), [Trello](https://trello.com/), or [Asana](https://asana.com/) to track design progress and dependencies.
 
 2. **Collaboration Tools**:
    - Leveraging tools like [Figma](https://www.figma.com/), or [Sketch](https://www.sketch.com/) (Mac OS only) for design collaboration.
