@@ -1,19 +1,5 @@
 # User Interface and User Experience Engineering
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Goal](#goal)
-- [General Guidance](#general-guidance)
-- [Design Process](#design-process)
-- [Design Ops](#design-ops)
-   - [Key Components of Design Ops](#key-components-of-design-ops)
-   - [Benefits of Design Ops for Software Engineers and Product Owners](#benefits-of-design-ops-for-software-engineers-and-product-owners)
-- [Establishing a web application's architecture](#establishing-a-web-applications-architecture)
-   - [Some platforms/frameworks to consider when planning a project](#some-platformsframeworks-to-consider-when-planning-a-project)
-   - [Further information](#further-information)
-
----
 
 ## Introduction
 
