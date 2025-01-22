@@ -97,11 +97,12 @@ An example of using dependency injection can be found [here](./authoring-example
 
 #### Test-Driven Development
 
-Test-Driven Development (TDD) is less a technique in how your code is designed, but a technique for writing your
-code that will lead you to a testable design from the start. The basic premise of test-driven development is that you
-write your test code first and then write the system under test to match the test you just wrote. This way all the test
-design is done up front and by the time you finish writing your system code, you are already at 100% test pass rate and
-test coverage. It also guarantees testable design is built into the system since the test was written first!
+Test-Driven Development (TDD) is a technique for writing your code that will lead you to a testable design from the start. 
+The basic premise of test-driven development is that you come up with a list behaviors you want your system to have.  
+You then take one behavior from the list, write the test, and then modify the system to make the test pass.  
+Then you move on to the next behavior on your list and repeat this process.
+Once you've exhausted your list, you're done!  This approach has the benefit of guaranteeing a testable design is built into 
+the system since the test was written first.
 
 For more information on TDD and an example, see the page on [Test-Driven Development](./tdd-example.md)
 
