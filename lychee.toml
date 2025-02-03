@@ -102,7 +102,7 @@ exclude = [
 exclude_path = []
 
 # URLs to check (supports regex). Has preference over all excludes.
-include = []
+include = [".*/docs/.*\\.md"]
 
 # Exclude all private IPs from checking.
 # Equivalent to setting `exclude_private`, `exclude_link_local`, and
