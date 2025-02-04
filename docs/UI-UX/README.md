@@ -117,7 +117,7 @@ When choosing a front-end framework or library, consider the project's complexit
    - A framework for building interactive web UIs using C# instead of JavaScript. [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) allows you to share code between the client and server.
    - Great for teams already familiar with the .NET ecosystem.
    - Fantastic platform where UI elements can be fully hosted and served server-side, adding security.
-   - [Supports Fluent UI with it's own supported library](https://www.fluentui-blazor.net/).
+   - [Supports Fluent UI with its own supported library](https://www.fluentui-blazor.net/).
 1. ASP.NET Core
    - A mature framework for building server-side web applications. [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) supports MVC architecture, making it easier to manage complex applications.
    - Suitable for enterprise-level applications requiring robust security and performance. **(Great for Government web applications where security is paramount)**
