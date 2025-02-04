@@ -63,7 +63,7 @@ Design Ops, short for Design Operations, is a practice that focuses on optimizin
    - Creating and maintaining a design system that includes reusable components, style guides, and design tokens.
    - Promoting consistency and efficiency by using shared design assets.
    - For most projects within ISE we use [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/controls/webcomponents) to handle most projects, this enables rapid development that allow for web application re-use on non-customer engagements or _white label_ applications.
-   - Other Design Systems used by customers include: [Google's Material Deign](https://mui.com/material-ui/), 
+   - Other Design Systems used by customers include: [Google's Material Design](https://mui.com/material-ui/), 
 
 4. **Documentation**:
    - Documenting design decisions, guidelines, and best practices.
