@@ -57,25 +57,23 @@ When determining the best method for creating synthetic data, it is essential fi
 - Fully synthetic: This data does not contain any original data, which means that re-identification of any single unit is almost impossible, and all variables are still fully available.
 - Partially synthetic: Only sensitive data is replaced with synthetic data, which requires a heavy dependency on the imputation model. This leads to decreased model dependence but does mean that some disclosure is possible due to the actual values within the dataset.
 
-| Solution                                                                                                                        | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Synthea](https://synthetichealth.github.io/synthea/)                                                                           | Synthea was developed with numerous data sources collected on the internet, including US Census Bureau demographics, Centers for Disease Control and Prevention prevalence and incidence rates, and National Institutes of Health reports. The source code and disease models include annotations and citations for all data, statistics, and treatments. These models of diseases and treatments interact appropriately with the health record. |
-| [PII dataset generator](https://github.com/microsoft/presidio-research/blob/master/presidio_evaluator/data_generator/README.md) | A synthetic data generator developed on top of Fake Name Generator which takes a text file with templates (e.g. my name is *PERSON*) and creates a list of Input Samples which contain fake PII entities instead of placeholders.                                                                                                                                                                                                                |
-| [CheckList](https://github.com/marcotcr/checklist)                                                                              | CheckList provides a framework for perturbation techniques to evaluate specific behavioral capabilities of NLP models systematically                                                                                                                                                                                                                                                                                                             |
-| [Mimesis](https://github.com/lk-geimfari/mimesis)                                                                               | Mimesis a high-performance fake data generator for Python, which provides data for a variety of purposes in a variety of languages.                                                                                                                                                                                                                                                                                                              |
-| [Faker](https://github.com/joke2k/faker)                                                                                        | Faker is a Python package that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you.                                                                                                                                                                                     |
-| [Plaitpy](https://github.com/plaitpy/plaitpy)                                                                                   | The idea behind plait.py is that it should be easy to model fake data that has an interesting shape. Currently, many fake data generators model their data as a collection of IID variables; with plait.py we can stitch together those variables into a more coherent model.                                                                                                                                                                    |
+| Solution | Notes |
+| -- | -- |
+| [Synthea](https://synthetichealth.github.io/synthea/) | Synthea was developed with numerous data sources collected on the internet, including US Census Bureau demographics, Centers for Disease Control and Prevention prevalence and incidence rates, and National Institutes of Health reports. The source code and disease models include annotations and citations for all data, statistics, and treatments. These models of diseases and treatments interact appropriately with the health record. |
+| [PII dataset generator](https://github.com/microsoft/presidio-research/blob/master/presidio_evaluator/data_generator/README.md) | A synthetic data generator developed on top of Fake Name Generator which takes a text file with templates (e.g. my name is *PERSON*) and creates a list of Input Samples which contain fake PII entities instead of placeholders. |
+| [CheckList](https://github.com/marcotcr/checklist) | CheckList provides a framework for perturbation techniques to evaluate specific behavioral capabilities of NLP models systematically |
+| [Mimesis](https://github.com/lk-geimfari/mimesis) | Mimesis a high-performance fake data generator for Python, which provides data for a variety of purposes in a variety of languages. |
+| [Faker](https://github.com/joke2k/faker) | Faker is a Python package that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you. |
+| [Plaitpy](https://github.com/plaitpy/plaitpy) | The idea behind plait.py is that it should be easy to model fake data that has an interesting shape. Currently, many fake data generators model their data as a collection of IID variables; with plait.py we can stitch together those variables into a more coherent model. |
 
 ### Trusted Research and Modeling Environments
 
 #### Trusted Research Environments
 
-Trusted Research Environments (TREs) enable organizations to create secure workspaces for analysts,
-data scientists and researchers who require access to sensitive data.
+Trusted Research Environments (TREs) enable organizations to create secure workspaces for analysts, data scientists and researchers who require access to sensitive data.
 
 TREs enforce a secure boundary around distinct workspaces to enable information governance controls.
-Each workspace is accessible by a set of authorized users, prevents the exfiltration of sensitive data,
-and has access to one or more datasets provided by the data platform.
+Each workspace is accessible by a set of authorized users, prevents the exfiltration of sensitive data, and has access to one or more datasets provided by the data platform.
 
 We highlight several alternatives for Trusted Research Environments:
 
@@ -131,11 +129,11 @@ The result of the computation *F* is in an encrypted form, which on decrypting g
 
 Homomorphic Encryption frameworks:
 
-| Solution                                                                          | Notes                                                                                                                                                                                                                                                                                          |
-|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Microsoft SEAL](https://www.microsoft.com/en-us/research/project/microsoft-seal) | Secure Cloud Storage and Computation, ML Modeling. A widely used open-source library from Microsoft that supports the BFV and the CKKS schemes.                                                                                                                                                |
-| [Palisade](https://palisade-crypto.org/)                                          | A widely used open-source library from a consortium of DARPA-funded defense contractors that supports multiple homomorphic encryption schemes such as BGV, BFV, CKKS, TFHE and FHEW, among others, with multiparty support. [Link to repo](https://gitlab.com/palisade/palisade-release)       |
-| [PySift](https://github.com/OpenMined/PySyft)                                     | Private deep learning. PySyft decouples private data from model training, using Federated Learning, Differential Privacy, and Encrypted Computation (like Multi-Party Computation (MPC) and Homomorphic Encryption (HE)) within the main Deep Learning frameworks like PyTorch and TensorFlow. |
+| Solution | Notes |
+| -- | -- |
+| [Microsoft SEAL](https://www.microsoft.com/en-us/research/project/microsoft-seal) | Secure Cloud Storage and Computation, ML Modeling. A widely used open-source library from Microsoft that supports the BFV and the CKKS schemes. |
+| [Palisade](https://palisade-crypto.org/) | A widely used open-source library from a consortium of DARPA-funded defense contractors that supports multiple homomorphic encryption schemes such as BGV, BFV, CKKS, TFHE and FHEW, among others, with multiparty support. [Link to repo](https://gitlab.com/palisade/palisade-release) |
+| [PySift](https://github.com/OpenMined/PySyft) | Private deep learning. PySyft decouples private data from model training, using Federated Learning, Differential Privacy, and Encrypted Computation (like Multi-Party Computation (MPC) and Homomorphic Encryption (HE)) within the main Deep Learning frameworks like PyTorch and TensorFlow.|
 
 A list of additional OSS tools can be found [here](https://homomorphicencryption.org/introduction/).
 
@@ -146,11 +144,11 @@ Instead of sending data to the processing engine of the model, the approach is t
 
 Federated learning frameworks:
 
-| Solution                                                                 | Notes                                                                                                                          |
-|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [TensorFlow Federated Learning](https://github.com/tensorflow/federated) | OSS federated learning system built on top of TensorFlow                                                                       |
+| Solution | Notes |
+| -- | -- |
+| [TensorFlow Federated Learning](https://github.com/tensorflow/federated) | OSS federated learning system built on top of TensorFlow |
 | [FATE](https://fate.fedai.org/)                                          | An OSS federated learning system with different options for deployment and different algorithms adapted for federated learning |
-| [IBM Federated Learning](https://github.com/IBM/federated-learning-lib)  | A Python based federated learning framework focused on enterprise environments.                                                |
+| [IBM Federated Learning](https://github.com/IBM/federated-learning-lib)  | A Python based federated learning framework focused on enterprise environments. |
 
 ### Data Loss Prevention
 
@@ -174,12 +172,12 @@ There are typically four levels data classification levels:
 
 Tools for data classification on Azure:
 
-| Solution                                                                                                                                                                                                       | Notes                                                                                                                                                                               |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Microsoft Information Protection](https://learn.microsoft.com/en-us/microsoft-365/compliance/information-protection) (MIP)                                                                                    | A suite for DLP, sensitive data classification, cataloging  and more.                                                                                                               |
-| [Azure Purview](https://azure.microsoft.com/en-us/services/purview/)                                                                                                                                           | A unified data governance service, which includes the classification and cataloging of sensitive data. Azure Purview leverages the MIP technology for data classification and more. |
-| [Data Discovery & Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse](https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview) | Basic capabilities for discovering, classifying, labeling, and reporting the sensitive data in Azure SQL and Synapse databases.                                                     |
-| [Data Discovery & Classification for SQL Server](https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver15&tabs=t-sql)                   | Capabilities for discovering, classifying, labeling & reporting the sensitive data in SQL Server databases.                                                                         |
+| Solution | Notes |
+| -- | -- |
+| [Microsoft Information Protection](https://learn.microsoft.com/en-us/microsoft-365/compliance/information-protection) (MIP) | A suite for DLP, sensitive data classification, cataloging  and more. |
+| [Azure Purview](https://azure.microsoft.com/en-us/services/purview/) | A unified data governance service, which includes the classification and cataloging of sensitive data. Azure Purview leverages the MIP technology for data classification and more. |
+| [Data Discovery & Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse](https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview) | Basic capabilities for discovering, classifying, labeling, and reporting the sensitive data in Azure SQL and Synapse databases. |
+| [Data Discovery & Classification for SQL Server](https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver15&tabs=t-sql) | Capabilities for discovering, classifying, labeling & reporting the sensitive data in SQL Server databases. |
 
 Often, tools used for de-identification can also serve as sensitive data classifiers. Refer to [de-identification tools](#data-de-identification) for such tools.
 
