@@ -77,10 +77,10 @@ Each workspace is accessible by a set of authorized users, prevents the exfiltra
 
 We highlight several alternatives for Trusted Research Environments:
 
-| Solution                                                                    | Notes                         |
-|-----------------------------------------------------------------------------|-------------------------------|
+| Solution | Notes |
+| -- | -- |
 | [Azure Trusted Research Environment](https://github.com/microsoft/azuretre) | An Open Source TRE for Azure. |
-| [Aridhia DRE](https://www.aridhia.com/)                                     |                               |
+| [Aridhia DRE](https://www.aridhia.com/) | |
 
 #### Eyes-Off Machine Learning
 
