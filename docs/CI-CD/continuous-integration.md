@@ -171,12 +171,12 @@ Implementing schema validation is divided in two - the generation of the schemas
 
 There are two options to generate a schema:
 
-- [From code](https://json-schema.org/implementations.html#from-code) - we can leverage the existing models and objects in the code and generate a customized schema.
-- [From data](https://json-schema.org/implementations.html#from-data) - we can take yaml/json samples which reflect the configuration in general and use the various online tools to generate a schema.
+- [From code](https://json-schema.org/tools?query=#code-to-schema) - we can leverage the existing models and objects in the code and generate a customized schema.
+- [From data](https://json-schema.org/tools?query=#data-to-schema) - we can take yaml/json samples which reflect the configuration in general and use the various online tools to generate a schema.
 
 ### Validation
 
-The schema has 30+ [validators](https://json-schema.org/implementations.html#validators) for different languages, including 10+ for JavaScript, so no need to code it yourself.
+The schema has 30+ [validators](https://json-schema.org/tools?query=#validator) for different languages, including 10+ for JavaScript, so no need to code it yourself.
 
 ## Integration Validation
 
