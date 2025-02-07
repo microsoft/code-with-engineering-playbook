@@ -1,4 +1,4 @@
-# Agile Development Considerations for ML Projects
+# Agile Development Considerations for Machine Learning/AI Projects
 
 ## Overview
 
