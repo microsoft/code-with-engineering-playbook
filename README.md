@@ -55,15 +55,15 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 * [Developer Experience](docs/developer-experience/README.md)
 * [Documentation](docs/documentation/README.md)
 * [Engineering Feedback](docs/engineering-feedback/README.md)
+* [Non Functional Requirements](docs/non-functional-requirements/)
 * [Observability](docs/observability/README.md)
 * [Security](docs/security/README.md)
-* [Privacy](docs/privacy/README.md)
 * [Source Control](docs/source-control/README.md)
-* [Reliability](docs/non-functional-requirements/reliability.md)
+* [UI/UX](docs/UI-UX/README.md)
 
 ## Fundamentals for Specific Technology Areas
 
-* [Machine Learning Fundamentals](docs/machine-learning/README.md)
+* [Machine Learning/AI Fundamentals](docs/ml-and-ai-projects/README.md)
 * [User-Interface Engineering](docs/UI-UX/README.md)
 
 ## Contributing
