@@ -129,6 +129,29 @@ To automate link check in your markdown files add `lycheeverse/lychee-action` ac
 
 More information about this action options can be found at [`lychee-action` home page](https://github.com/lycheeverse/lychee-action).
 
+> Tip: When triggered on a PR, you can skip checking links that already exist in the main branch. This approach saves time and helps avoid rate limiting issues. Example implementation based on [this recipe](https://github.com/lycheeverse/lychee-action/issues/238#issuecomment-2638242300):
+>
+>  ```bash
+>  set -euxo pipefail
+>
+>  # Remember the current commit
+>  currentCommit=$(git rev-parse HEAD)
+>
+>  # Switch to the commit in main from which the current commit has branched
+>  git fetch origin main
+>  git switch --detach $(git merge-base HEAD refs/remotes/origin/main)
+>
+>  # Collect all links that already existed in main.
+>  # Format them as regular expressions (by escaping special characters) and append to .lycheeignore in order to not check them again.
+>  lychee --dump --include-fragments . | grep '^http' | sed 's/[.^$*+?()[{|\]/\\&/g' | sed 's/^/^/; s/$/$/' >> .lycheeignore
+>
+>  # Switch back to the original commit
+>  git switch --detach "$currentCommit"
+>
+>  # Run lychee that will use the updated .lycheeignore file
+>  lychee -f detailed --include-fragments .
+>  ```
+
 ## Code Review Checklist
 
 In addition to the [Code Review Checklist](../process-guidance/reviewer-guidance.md) you should also look for these documentation specific code review items
