@@ -42,7 +42,7 @@ Following activities should be performed as a part of building conditions based 
 
 Following factors should be considered for building test cases:
 
-- For every scenario, one or more test cases should be created to test each and every functionality of the user functions. If possible, these test cases should be automated through the standard CI/CD build pipeline processes with the track of each successful and failed build in AzDO.
+- For every scenario, one or more test cases should be created to test each and every functionality of the user functions. If possible, these test cases should be automated through the standard CI/CD build pipeline processes with the track of each successful and failed build in the CICD pipeline.
 - Every single condition should be enlisted as a separate test case.
 
 ## Applying the E2E Testing
