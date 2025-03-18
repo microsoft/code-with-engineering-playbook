@@ -1,6 +1,6 @@
 # Engagement Team Development
 
-In every ISE engagement, dynamics are different so are the team requirements. Based on transfer learning among teams, we aim to build right "code-with" environments in every team.
+In every InfoMagnus engagement, dynamics are different so are the team requirements. Based on transfer learning among teams, we aim to build right "code-with" environments in every team.
 
 This documentation gives a high-level template with some suggestions by aiming to accelerate team swarming phase to achieve a high speed agility however it has no intention to provide a list of "must-do" items.
 
