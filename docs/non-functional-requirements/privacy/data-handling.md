@@ -12,11 +12,7 @@ Microsoft runs on trust. Our customers trust ISE to adhere to the highest standa
 Protecting our customers' data is a joint responsibility between Microsoft and the customers;
 both have the responsibility to help projects follow the guidelines outlined on this page.
 
-Developers working on ISE projects should implement best practices and guidance on handling data throughout the project phases. This page is not meant to suggest how customers should handle data in their environment. **It does not override**:
-
-- [Microsoft's Information Security Policy](https://aka.ms/CTRMSsecppext)
-- [Limited Data Protection Addendum](https://aka.ms/mpsldpa)
-- [Professional Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
+Developers working on ISE projects should implement best practices and guidance on handling data throughout the project phases. This page is not meant to suggest how customers should handle data in their environment.
 
 ## 5 W's of Data Handling
 
