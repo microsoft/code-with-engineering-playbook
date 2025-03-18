@@ -1,6 +1,6 @@
-# ISE Engineering Fundamentals Playbook
+# InfoMagnus Engineering Fundamentals Playbook
 
-An engineer working for a [ISE](ISE.md) project...
+An engineer working for an InfoMagnus project...
 
 * Has responsibilities to their team – mentor, coach, and lead.
 * Knows their **playbook**. Follows their playbook. Fixes their playbook if it is broken. If they find a better playbook, they copy it. If somebody could use their playbook, they share it.
@@ -17,7 +17,7 @@ This is our playbook. All contributions are welcome! Please feel free to submit 
 
 If you do nothing else follow the [Engineering Fundamentals Checklist](./engineering-fundamentals-checklist.md)!
 
-The [first week of an ISE project](./the-first-week-of-an-ise-project.md) is a breakdown of the sections of the playbook according to the structure of an Agile sprint.
+The [first week of an InfoMagnus project](./the-first-week-of-an-infomagnus-project.md) is a breakdown of the sections of the playbook according to the structure of an Agile sprint.
 
 ## General Guidance
 
@@ -34,4 +34,4 @@ The [first week of an ISE project](./the-first-week-of-an-ise-project.md) is a b
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/microsoft/code-with-engineering-playbook/tree/master/CONTRIBUTING.md) for contribution guidelines.
+See [CONTRIBUTING.md](./code-with-engineering-playbook/tree/master/CONTRIBUTING.md) for contribution guidelines.
