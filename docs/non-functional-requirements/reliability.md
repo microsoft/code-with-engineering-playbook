@@ -1,6 +1,6 @@
 # Reliability
 
-All the other ISE Engineering Fundamentals work towards a more reliable infrastructure. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.
+Other InfoMagnus Engineering Fundamentals work towards a more reliable infrastructure. Automated integration and deployment ensures code is properly tested, and helps remove human error, while slow releases build confidence in the code. Observability helps more quickly pinpoint errors when they arise to get back to a stable state, and so on.
 
 However, there are some additional steps we can take, that don't neatly fit into the previous categories, to help ensure a more reliable solution. We'll explore these below.
 
