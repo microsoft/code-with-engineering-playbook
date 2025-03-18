@@ -6,14 +6,14 @@ Design reviews should not feel like a burden. Design reviews can be easily incor
 
 - Only create design reviews when needed. Not every story or task requires a complete design review.
 - Leverage this guidance to make changes that best fit in with the team. Every team works differently.
-- Leverage Microsoft subject-matter experts (SME) as needed during design reviews. Not every story needs SME or leadership sign-off. Most design reviews can be fully executed within a dev crew.
+- Leverage subject-matter experts (SME) as needed during design reviews. Not every story needs SME or leadership sign-off. Most design reviews can be fully executed within a dev crew.
 - [Use diagrams](./preferred-diagram-tooling.md) to visualize concepts and architecture.
 
 The following guidelines outline how Microsoft and the customer together can incorporate design reviews into their day-to-day agile processes.
 
 ## Envisioning / Architecture Design Session (ADS)
 
-Early in an engagement Microsoft works with customers to understand their unique goals and objectives and establish a definition of done. Microsoft dives deep into existing customer infrastructure and architecture to understand potential constraints. Additionally, we seek to understand and uncover specific [non-functional requirements](../../design-patterns/non-functional-requirements-capture-guide.md) that influence the solution.
+Early in an engagement InfoMagnus works with customers to understand their unique goals and objectives and establish a definition of done. The project team dives deep into existing customer infrastructure and architecture to understand potential constraints. Additionally, we seek to understand and uncover specific [non-functional requirements](../../design-patterns/non-functional-requirements-capture-guide.md) that influence the solution.
 
 During this time the team uncovers many unknowns, leveraging all new-found information, in order to help generate an impactful design that meets customer goals. After ADS it can be helpful to conduct [Engineering Feasibility Spikes](../recipes/engineering-feasibility-spikes.md) to further de-risk technologies being considered for the engagement.
 
@@ -21,7 +21,7 @@ During this time the team uncovers many unknowns, leveraging all new-found infor
 
 ## Sprint Planning
 
-In many engagements Microsoft works with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../../agile-development/ceremonies.md#sprint-planning) is a great opportunity to dive deep into the next set of high priority work. Some key points to address are the following:
+In many engagements InfoMagnus works with customers using a SCRUM agile development process which begins with sprint planning. [Sprint planning](../../../agile-development/ceremonies.md#sprint-planning) is a great opportunity to dive deep into the next set of high priority work. Some key points to address are the following:
 
 1. Identify stories that require design reviews
 1. Separate design from implementation for complex stories
