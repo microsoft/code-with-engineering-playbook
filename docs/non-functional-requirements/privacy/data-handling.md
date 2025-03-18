@@ -33,7 +33,7 @@ This is particularly important to clarify the purpose and any restrictions on us
 Please use the above guidelines to ensure the data is used only for intended purposes and thereby gain trust.
 It is important to be aware of data handling best practices and ensure the required clarity is provided to adhere to the above 5Ws.
 
-## Handling Data in ISE Engagements
+## Handling Data in Engagements
 
 Data should never leave customer-controlled environments and contractors and/or other members in the engagement
 should never have access to complete customer data sets but use limited customer data sets using the following prioritized approaches:
@@ -48,16 +48,16 @@ follow the Principles of Data Minimization and attempt to work with the fewest r
 
 Before work begins on data, ensure OS patches are up to date and permissions are properly set with no open internet access.
 
-Developers working on ISE projects will work with our customers to define the data needed for each engagement.
+Developers working on projects will work with our customers to define the data needed for each engagement.
 
 If there is a need to access production data,
-ISE needs to review the need with their lead and work with the customer to put audits in place verifying what data was accessed.
+engineers need to review the need with their lead and work with the customer to put audits in place verifying what data was accessed.
 
 Production data must only be shared with approved members of the engagement team and must not be processed/transferred outside of the customer controlled environment.
 
-Customers should provide ISE with a copy of the requested data in a location managed by the customer.
+Customers should provide InfoMagnus with a copy of the requested data in a location managed by the customer.
 The customer should consider turning any logging capabilities on so they can clearly identify who has access and what they do with that access.
-ISE should notify the customer when they are done with the data and suggest the customer destroy copies of the data if they are no longer needed.
+InfoMAgnus should notify the customer when they are done with the data and suggest the customer destroy copies of the data if they are no longer needed.
 
 ### Our Guiding Principles when Handling Data in an Engagement
 
