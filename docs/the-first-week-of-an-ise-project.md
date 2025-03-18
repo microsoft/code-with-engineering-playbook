@@ -1,4 +1,4 @@
-# The First Week of an ISE Project
+# The First Week of an InfoMagnus Project
 
 The purpose of this document is to:
 
