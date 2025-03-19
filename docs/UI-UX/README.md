@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Also known as _UI/UX_, _Front End Development_, or _Web Development_, user interface and user experience engineering is a broad topic and encompasses many different aspects of modern application development. When a user interface is required, ISE primarily develops a **web application**. Web apps can be built in a variety of ways with many different tools.
+Also known as _UI/UX_, _Front End Development_, or _Web Development_, user interface and user experience engineering is a broad topic and encompasses many different aspects of modern application development. When a user interface is required, InfoMagnus primarily develops a **web application**. Web apps can be built in a variety of ways with many different tools.
 
 ## Goal
 
@@ -62,7 +62,7 @@ Design Ops, short for Design Operations, is a practice that focuses on optimizin
 3. **Design Systems**:
    - Creating and maintaining a design system that includes reusable components, style guides, and design tokens.
    - Promoting consistency and efficiency by using shared design assets.
-   - For most projects within ISE we use [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/controls/webcomponents) to handle most projects, this enables rapid development that allow for web application re-use on non-customer engagements or _white label_ applications.
+   - For most projects within InfoMagnus we use [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/controls/webcomponents) to handle most projects, this enables rapid development that allow for web application re-use on non-customer engagements or _white label_ applications.
    - Other Design Systems used by customers include: [Google's Material Design](https://mui.com/material-ui/), 
 
 4. **Documentation**:
@@ -102,7 +102,7 @@ When choosing a front-end framework or library, consider the project's complexit
    - Rarely will you have to support legacy browsers; thus, you can rely on modern JavaScript language features! No need for build tools or even TypeScript (did you know you can [type check JavaScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)).
    - For static _vanilla_ websites like this; we still recommend a build system like [Vite](https://vitejs.dev/) to build and manage assets for deployment.
 1. React
-   - [React](https://reactjs.org/) allows for the creation of reusable UI components, and is used for most projects in ISE.
+   - [React](https://reactjs.org/) allows for the creation of reusable UI components, and is used for most projects in InfoMagnus.
    - Ideal for projects that require a dynamic and responsive user interface.
    - Works well with a variety of state management libraries like Redux or Context API.
    - Has a massive 3rd party library support.
