@@ -33,7 +33,7 @@ Testing is a critical part of the development process.  It is important to build
 
 - **Log metadata.** When logging, it is important to include metadata that is relevant to the activity. For example, a Tenant ID, Customer ID, or Order ID. This allows someone reviewing the logs to understand the context of the activity and filter to a manageable set of logs.
 
-- **Log performance metrics.** Even if you are using App Insights to capture how long dependency calls are taking, it is often useful to know long certain functions of your application took. It then becomes possible to evaluate the performance characteristics of your application as it is deployed on different compute platforms with different limitations on CPU, memory, and network bandwidth. For more information, please see [Metrics](../observability/pillars/metrics.md).
+- **Log performance metrics.** Even if you are using App Insights to capture how long dependency calls are taking, it is often useful to know how long certain functions of your application took. It then becomes possible to evaluate the performance characteristics of your application as it is deployed on different compute platforms with different limitations on CPU, memory, and network bandwidth. For more information, please see [Metrics](../observability/pillars/metrics.md).
 
 
 ## Map of Outcomes to Testing Techniques
