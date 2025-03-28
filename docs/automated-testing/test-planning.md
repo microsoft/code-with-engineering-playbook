@@ -16,11 +16,11 @@ Going through this exercise doesn't only produce test cases, it also helps clari
     - Thoroughly read and understand the acceptance criteria for the story
     - Clarify any ambiguities with the product owner or stake holders
 
-1. Identify Test Scenarios
+2. Identify Test Scenarios
     - Consider both positive and negative scenarios (happy paths, and error cases) to cover edge cases
     - Determine what is in and out of scope, i.e. do we only test functional requirements, or are non-functional requirements such as security, accessibility, reliability etc. in scope for testing?
 
-1. Define Test Cases
+3. Define Test Cases
     - For each test scenario, define detailed test cases
     - Each test case should be documented with
         - **TestCase Title:** What is being tested
@@ -32,11 +32,11 @@ Going through this exercise doesn't only produce test cases, it also helps clari
 
     **Given** the initial context or state, **When** the action or event, **Then** the precise outcome
 
-1. Automate where Possible
+4. Automate where Possible
     - If feasible, automate the test cases
     - Focus on automating hot paths, and critical areas
 
-6. Review and Refine
+5. Review and Refine
     - Review the test cases with peers or stakeholders to ensure that we have covered everything we want to cover, and that expected outcomes are correct
     - Refine the test cases based on feedback
 
