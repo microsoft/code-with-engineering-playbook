@@ -5,7 +5,7 @@ Create a foundational Team Charter to define how the team works together across 
 
 ---
 
-## 🧩 User Story: Define a shared team charter that outlines how we work together
+## User Story: Define a shared team charter that outlines how we work together
 
 ### Tasks:
 - Draft initial Team Charter template
