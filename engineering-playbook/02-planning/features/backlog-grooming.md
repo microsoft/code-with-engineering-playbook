@@ -1,6 +1,6 @@
 # Feature: Establish Backlog Grooming Practices
 
-## 🧩 User Story: Hold regular backlog refinement sessions to ensure sprint readiness
+## User Story: Hold regular backlog refinement sessions to ensure sprint readiness
 
 ### Tasks:
 - Set recurring bi-weekly backlog grooming in calendar
@@ -10,7 +10,7 @@
 
 ---
 
-## 🧩 User Story: Apply prioritization frameworks to focus delivery
+## User Story: Apply prioritization frameworks to focus delivery
 
 ### Tasks:
 - Choose a prioritization method and train the team
