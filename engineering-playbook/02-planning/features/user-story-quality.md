@@ -1,6 +1,6 @@
 # Feature: Improve User Story Structure and Quality
 
-## 🧩 User Story: Write user stories that follow the INVEST model
+## User Story: Write user stories that follow the INVEST model
 
 ### Tasks:
 - Create User Story template in ADO / Confluence
@@ -10,7 +10,7 @@
 
 ---
 
-## 🧩 User Story: Standardize acceptance criteria using Gherkin or checklist format
+## User Story: Standardize acceptance criteria using Gherkin or checklist format
 
 ### Tasks:
 - Use Gherkin syntax for customer-facing features
