@@ -8,7 +8,7 @@ Welcome to the UL Engineering Playbook — a community-built guide capturing our
 
 | Epic No. | Topic                               | View Link |
 |----------|-------------------------------------|-----------|
-| 01       | Team Agreements                     | [View](#/engineering-playbook/01-team-agreements/features/define-working-agreements.md) |
+| 01       | Team Agreements                     | [View](engineering-playbook/01-team-agreements/features/define-working-agreements.md) |
 | 02       | Planning                            | [View](#/engineering-playbook/02-planning/features/align-planning-with-okrs.md) |
 | 03       | DevOps                              | [View](#/engineering-playbook/03-devops/features/ci-cd-pipelines.md) |
 | 04       | Design & Architecture               | [View](#/engineering-playbook/04-design-architecture/features/architecture-decisions.md) |
