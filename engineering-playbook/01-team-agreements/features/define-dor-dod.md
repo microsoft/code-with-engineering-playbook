@@ -5,7 +5,7 @@ Align the team on what it means for work to be ready for a sprint and considered
 
 ---
 
-## 🧩 User Story: Standardize what it means for work to be ready and done
+## User Story: Standardize what it means for work to be ready and done
 
 ### Tasks:
 - Define DoR and DoD standards as a team
