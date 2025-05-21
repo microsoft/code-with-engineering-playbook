@@ -1,6 +1,6 @@
 # Feature: Align Planning with Strategic Objectives
 
-## 🧩 User Story: Define quarterly OKRs to align sprint goals with business impact
+## User Story: Define quarterly OKRs to align sprint goals with business impact
 
 ### Tasks:
 - Collaborate with stakeholders to define OKRs
@@ -10,7 +10,7 @@
 
 ---
 
-## 🧩 User Story: Provide roadmap visibility to all stakeholders
+## User Story: Provide roadmap visibility to all stakeholders
 
 ### Tasks:
 - Create visual roadmap with delivery milestones
