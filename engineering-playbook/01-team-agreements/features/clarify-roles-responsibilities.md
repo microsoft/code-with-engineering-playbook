@@ -5,7 +5,7 @@ Ensure clarity in team roles and responsibilities to reduce confusion, eliminate
 
 ---
 
-## 🧩 User Story: Document team roles and clarify responsibilities
+## User Story: Document team roles and clarify responsibilities
 
 ### Tasks:
 - List roles: PO, Scrum Master, Dev, QA, UX, Stakeholders
