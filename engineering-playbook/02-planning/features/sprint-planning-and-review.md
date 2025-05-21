@@ -1,6 +1,6 @@
 # Feature: Strengthen Sprint Planning and Review Events
 
-## 🧩 User Story: Conduct sprint planning with structured format and consistent goals
+## User Story: Conduct sprint planning with structured format and consistent goals
 
 ### Tasks:
 - Create sprint planning agenda
@@ -10,7 +10,7 @@
 
 ---
 
-## 🧩 User Story: Improve demo structure to focus on outcomes, not features
+## User Story: Improve demo structure to focus on outcomes, not features
 
 ### Tasks:
 - Draft demo script with PO + QA
