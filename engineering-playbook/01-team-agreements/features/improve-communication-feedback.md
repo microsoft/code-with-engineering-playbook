@@ -5,7 +5,7 @@ Establish norms and rituals for async communication, team health checks, and con
 
 ---
 
-## 🧩 User Story: Define async communication rules to support remote collaboration
+## User Story: Define async communication rules to support remote collaboration
 
 ### Tasks:
 - Discuss and agree on async/sync channel purpose
@@ -15,7 +15,7 @@ Establish norms and rituals for async communication, team health checks, and con
 
 ---
 
-## 🧩 User Story: Establish a regular team health check process
+## User Story: Establish a regular team health check process
 
 ### Tasks:
 - Design a 5-question monthly health survey
