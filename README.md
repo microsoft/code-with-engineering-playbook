@@ -25,6 +25,11 @@ This playbook is built by contributions from the UL Architecture and Engineering
 5. Request a **V-Team reviewer** to approve your PR
 6. Once merged, paste the PR link back in the ADO work item and mark it complete
 
+## Visual Workflow
+
+Here’s a simple visual of how to contribute to the playbook from ADO to GitHub:
+
+![UL Engineering Playbook Contribution Flow](docs/playbook-contribution-flow.jpg)
 ---
 
 ## Templates
