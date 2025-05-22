@@ -42,6 +42,16 @@ Use these templates to structure your contributions clearly:
 
 ---
 
+## Sample Contribution
+
+Use the examples below as a reference for what a Playbook contribution looks like:
+
+- [Feature: Code Review Standards](engineering-playbook/01-team-agreements/feature-code-review-standards.md)
+- [User Story: Code Review Checklist](engineering-playbook/01-team-agreements/us-code-review-checklist.md)
+- [Task: Create Code Review Checklist](engineering-playbook/01-team-agreements/task-create-review-checklist.md)
+
+---
+
 ## Need Help?
 
 - Refer to example `.md` files under `engineering-playbook/`
