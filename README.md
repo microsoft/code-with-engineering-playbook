@@ -1,24 +1,46 @@
 # UL Software Engineering Playbook
 
-Welcome to the UL Engineering Playbook — a community-built guide capturing our best practices across planning, DevOps, architecture, testing, and delivery.
+Welcome! This repository contains the official UL Engineering Playbook. It captures our agreed ways of working, technical standards, and engineering best practices.
+
+This playbook is built by contributions from the UL Architecture and Engineering teams. It is structured in a way that ensures every contribution is:
+- Easy to write using markdown templates
+- Reviewed by the V-Team
+- Traceable to Azure DevOps (ADO) work items
 
 ---
 
-## Explore the 13 Epics
+## Repository Structure
 
-| Epic No. | Topic                               | View Link |
-|----------|-------------------------------------|-----------|
-| 01       | Team Agreements                     | [View](engineering-playbook/01-team-agreements/features/define-working-agreements.md) |
-| 02       | Planning                            | [View](engineering-playbook/02-planning/features/align-planning-with-okrs.md) |
-| 03       | DevOps                              | [View](engineering-playbook/03-devops/features/ci-cd-pipelines.md) |
-| 04       | Design & Architecture               | [View](engineering-playbook/04-design-architecture/features/architecture-decisions.md) |
-| 05       | Development                         | [View](engineering-playbook/05-development/features/source-control-standards.md) |
-| 06       | Testing & Quality                   | [View](engineering-playbook/06-testing-quality/features/layered-testing.md) |
-| 07       | Security                            | [View](engineering-playbook/07-security/features/secure-supply-chain.md) |
-| 08       | Infrastructure & Environments       | [View](engineering-playbook/08-infrastructure-environments/features/infrastructure-as-code.md) |
-| 09       | Monitoring & Telemetry              | [View](engineering-playbook/09-monitoring-telemetry/features/centralized-dashboards.md) |
-| 10       | InnerSource & Reuse                 | [View](engineering-playbook/10-innersource-reuse/features/contribution-framework.md) |
-| 11       | Retrospectives                      | [View](engineering-playbook/11-retrospectives/features/retro-cadence-format.md) |
-| 12       | Customer Engagement                 | [View](engineering-playbook/12-customer-engagement/features/personas.md) |
-| 13       | Standardize Work Item Lifecycle     | [View](engineering-playbook/13-work-item-lifecycle/features/hierarchy-definition.md) |
+/UL-Software-Engineering-Playbook
+├── engineering-playbook/ # All Epic-based documentation
+├── templates/ # Templates to help you contribute
+├── README.md # You are here
 
+## How to Contribute
+
+1. Start with your assigned **work item in Azure DevOps** (Epic → Feature → User Story → Task)
+2. Use the correct markdown template from the `/templates` folder below
+3. Add your `.md` file inside the correct Epic folder under `/engineering-playbook`
+4. Open a **Pull Request (PR)** to `main`, link it to the ADO work item
+5. Request a **V-Team reviewer** to approve your PR
+6. Once merged, paste the PR link back in the ADO work item and mark it complete
+
+---
+
+## Templates
+
+Use these templates to structure your contributions clearly:
+
+- [Feature Contribution Template](templates/feature-contribution-template.md)
+- [User Story Contribution Template](templates/user-story-contribution-template.md)
+- [Task Contribution Template](templates/task-contribution-template.md)
+
+---
+
+## Need Help?
+
+- Refer to example `.md` files under `engineering-playbook/`
+- Tag your assigned **V-Team reviewer** in the PR for guidance
+- Still stuck? Drop your question in Teams or comment in the repo
+
+Let’s build this together — one story, one standard at a time.
