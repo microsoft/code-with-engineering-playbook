@@ -1,12 +1,12 @@
 
-# 🛡 GOVERNANCE.md – UL Software Engineering Playbook
+# GOVERNANCE.md – UL Software Engineering Playbook
 
 ## Overview
 Defines the roles, rules, and review model to ensure the Playbook remains high-quality, traceable, and aligned with UL and Microsoft best practices.
 
 ---
 
-## 👥 Roles & Responsibilities
+## Roles & Responsibilities
 
 | Role               | Responsibilities |
 |--------------------|------------------|
@@ -18,7 +18,7 @@ Defines the roles, rules, and review model to ensure the Playbook remains high-q
 
 ---
 
-## 🧩 Structural Requirements
+## Structural Requirements
 
 - All contributions **must**:
   - Use templates
@@ -35,7 +35,7 @@ Defines the roles, rules, and review model to ensure the Playbook remains high-q
 
 ---
 
-## 🔄 Contribution Lifecycle
+## Contribution Lifecycle
 
 ```mermaid
 graph TD
@@ -52,7 +52,7 @@ graph TD
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 | Do This | Avoid This |
 |---------|------------|
