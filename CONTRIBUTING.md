@@ -1,12 +1,12 @@
 
-# 📥 CONTRIBUTING.md – UL Software Engineering Playbook
+# CONTRIBUTING.md – UL Software Engineering Playbook
 
 ## Overview
 This document outlines the process for contributing to the UL Software Engineering Playbook repository using GitHub and Azure DevOps (ADO).
 
 ---
 
-## 🧑‍💻 Step-by-Step Contribution Process
+## Step-by-Step Contribution Process
 
 ### 1. Identify Contribution Need
 - Select a gap or improvement area.
