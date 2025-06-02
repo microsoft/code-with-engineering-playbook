@@ -1,55 +1,58 @@
-# Contributing to the UL Software Engineering Playbook
 
-Thank you for contributing to the UL Engineering Playbook! This document outlines how to contribute your documentation in a clear, reviewable, and reusable format.
+# 📥 CONTRIBUTING.md – UL Software Engineering Playbook
 
----
-
-## Step-by-Step Contribution Process
-
-1. **Start in Azure DevOps (ADO)**
-   - Find your assigned Epic → Feature → User Story → Task.
-   - Each work item should result in a `.md` file contribution.
-
-2. **Use a Template**
-   - Use the markdown templates in the `/templates/` folder:
-     - [Feature](templates/feature-contribution-template.md)
-     - [User Story](templates/user-story-contribution-template.md)
-     - [Task](templates/task-contribution-template.md)
-
-3. **Create a Branch**
-   - Use a clear naming format:  
-     `feature/<epic-topic>` or `us/<user-story-topic>`  
-     _Example:_ `feature/code-review-standards`
-
-4. **Add Your `.md` File**
-   - Place the file inside the correct Epic folder in `/engineering-playbook/`
-   - Example: `/engineering-playbook/01-team-agreements/code-review-checklist.md`
-
-5. **Open a Pull Request (PR)**
-   - Link your PR to the corresponding ADO work item
-   - Use the provided PR template if available
-   - Assign a reviewer from the V-Team
-
-6. **V-Team Review**
-   - The assigned reviewer will check for clarity, completeness, structure, and traceability.
-   - Revisions may be requested before approval and merge.
-
-7. **Link PR Back to ADO**
-   - After merging, paste the PR link in the ADO work item
-   - Mark it as Done or Ready for Sign-off
+## Overview
+This document outlines the process for contributing to the UL Software Engineering Playbook repository using GitHub and Azure DevOps (ADO).
 
 ---
 
-## Contribution Tips
+## 🧑‍💻 Step-by-Step Contribution Process
 
-- Keep documentation concise and relevant
-- Use bullet points, headings, and code blocks to organize content
-- Link to real examples when possible
-- Avoid overusing acronyms or organization-specific jargon
-- Reference the [Sample Contribution](engineering-playbook/01-team-agreements/) to see what "good" looks like
+### 1. Identify Contribution Need
+- Select a gap or improvement area.
+- Refer to the Microsoft Engineering Playbook or internal observations.
+
+### 2. Create ADO Work Item
+- Create a Task or User Story tagged with:
+  - `Playbook-Contribution`
+  - `Epic-ID` (e.g., EPIC-04)
+- Assign it to yourself or the right contributor.
+
+### 3. Fork or Create a Feature Branch
+- Fork the repo or create a new branch from `main`:
+  ```
+  feature/epic04-architecture-patterns
+  ```
+
+### 4. Author Content Using Templates
+- Use the correct template from `/templates/`:
+  - `Feature.md`
+  - `UserStory.md`
+  - `Task.md`
+- Save in appropriate folder under `/engineering-playbook/`.
+
+### 5. Commit and Push
+- Use meaningful commit messages:
+  ```
+  feat: Added checklist for architecture review
+  ```
+
+### 6. Open a Pull Request (PR)
+- Target `main` branch.
+- Include:
+  - Summary of changes
+  - Link to ADO Work Item (`[ADO#12345]`)
+  - Diagrams/screenshots (if applicable)
+- Add appropriate labels:
+  - `needs-review`, `epic-04`, `playbook-contribution`
+- Assign reviewers from V-Team or Epic Owners.
+
+### 7. Review & Approval
+- Address reviewer comments.
+- Once approved, PR is merged by a Maintainer.
+
+### 8. Post-Merge
+- Close ADO Work Item.
+- Announce the update in the Teams channel.
 
 ---
-
-## Questions?
-
-Please reach out via Teams or tag your V-Team reviewer in your PR. Let's keep building this playbook together!
