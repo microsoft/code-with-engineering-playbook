@@ -48,6 +48,10 @@ The next version of Copilot offers a number of new use-cases beyond code complet
 
 It can do most of what Labs can do with "brushes" as "topics", but whereas Labs changes the code in your file, the chat functionality just shows what it would change in the window. However, there is also an "inline mode" for GitHub Copilot Chat that allows you to make changes to your code inline which does not have this same limitation.
 
+## GitHub Copilot Agent
+
+The [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent) is an AI software development agent that can be assigned to work on issues within the GitHub work management system such as bugs or development tasks. The bot analyzes the work item, creates a branch, starts a virtual environment to execute and test the code iteratively, writes commits, and finally opens a pull request for review.
+
 ## ChatGPT / Bing Chat
 
 For coding, generic AI chat tools such as ChatGPT and Bing Chat are less useful, but they still have their place. GitHub Copilot will only answer "questions about coding" and it's interpretation of that rule can be a little restrictive. Some cases for using ChatGPT or Bing Chat include:
