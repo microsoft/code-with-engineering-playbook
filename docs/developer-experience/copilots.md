@@ -68,4 +68,8 @@ Chat AI tools are only as good as the prompts you give them. The quality and app
 
 ## Considerations
 
-It is important when using AI tools to understand how the data (including private or commercial code) might be used by the system. Read more about how GitHub Copilot handles your data and code [here](https://resources.github.com/copilot-for-business/).
+If you make use of AI tools, consider the following:
+
+* It is important when using AI tools to understand how the data (including private or commercial code) might be used by the system. Read more about how GitHub Copilot handles your data and code [here](https://resources.github.com/copilot-for-business/).
+
+* You may want to consider how you will handle [attribution of AI-generated code](../source-control/git-guidance/README.md#ai-assisted-code-authorship) for accountability, code review, and auditing purposes.
