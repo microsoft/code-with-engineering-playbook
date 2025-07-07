@@ -304,6 +304,13 @@ Trailers can be displayed using the [pretty formats](https://git-scm.com/docs/pr
 ```sh
 git log --color --pretty=format:"%C(yellow)%h%C(reset) %C(blue)%an%C(reset) [%C(magenta)%(trailers:key=Assistant-model,valueonly=true,separator=%x2C)%C(reset)] %s%C(bold cyan)%d%C(reset)"
 ```
+```text
+2100e6c Author [GPT-4.1,Claude Sonnet 4] Test commit 4 (HEAD -> work-item-8)
+7120221 Author [GPT-4.1] Test commit 3
+ea03d91 Author [] Test commit 2
+f93fd8e Author [GPT-4o] Test commit 1
+dde0159 Copilot [] Test work item (#7) (origin/main, origin/HEAD)
+```
 
 ## Managing Remotes
 
