@@ -259,7 +259,7 @@ The essential parts of a commit message are:
 You are free to structure commit messages; however, git commands like `git log` utilize above structure.
 Therefore, it can be helpful to follow a convention within your team and to utilize git best.
 
-For example, [Conventional Commits](https://www.conventionalcommits.org/) is a lightweight convention that complements [SemVer](https://semver.org/), by describing the features, fixes, and breaking changes made in commit messages. See [Component Versioning](../component-versioning.md) for more information on versioning.
+For example, [Conventional Commits](https://www.conventionalcommits.org/) is a lightweight convention that complements [SemVer](https://semver.org/), by describing the features, fixes, and breaking changes made in commit messages. See [Component Versioning](../component-versioning.md) for more information on versioning. You might also use Git trailers to add structured metadata to your commits, such as [attributing code generated with AI assistance](../../developer-experience/copilots.md#ide-assistant-attribution).
 
 For more information on commit message conventions, see:
 
