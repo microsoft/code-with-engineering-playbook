@@ -6,9 +6,9 @@ There are a number of AI tools that can improve the developer experience. This a
 
 ### GitHub Copilot Extension
 
-GitHub Copilot is an extension that adds AI-assisted coding capabilities to an IDE. For instance, the [GitHub Copilot for VS Code extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) can be installed from the VS Code Marketplace. It requires a GitHub account to use. For more information about what IDEs are supported, what languages are supported, cost, features, etc., please checkout out the information on [Copilot](https://github.com/features/copilot) and [Copilot for Business](https://resources.github.com/copilot-for-business/).
+GitHub Copilot is an extension that adds AI-assisted coding capabilities to an IDE. For instance, the [GitHub Copilot for VS Code extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) can be installed from the VS Code Marketplace. It requires a GitHub account to use, and usage is limited without a subscription. For more information about what IDEs are supported, what languages are supported, cost, features, etc., please check out the information on [Copilot](https://github.com/features/copilot) and [Copilot for Business](https://resources.github.com/copilot-for-business/).
 
-Some example use-cases for GitHub Copilot include:
+As of late 2025, some example use cases for GitHub Copilot include:
 
 - **Code Completion**. Copilot can provide code completion suggestions as you type. If you want Copilot to write something useful for you, try writing a comment that describes what your code is going to do - it can often take it from there.
 
@@ -16,7 +16,7 @@ Some example use-cases for GitHub Copilot include:
 
 - **Write Unit Tests**. Given that setup and assertions are often consistent across unit tests, Copilot tends to be very accurate.
 
-- **Unblock**. It is often hard to start writing when staring at a blank page.. Copilot can fill the space with something that may or may not be what you ultimately want to do, but it can help get you in the right headspace.
+- **Unblock**. It is often hard to start writing when staring at a blank page. Copilot can fill the space with something that may or may not be what you ultimately want to do, but it can help get you in the right headspace.
 
 - **Explain**. Copilot can explain what the code is doing in natural language.
 
@@ -48,7 +48,7 @@ The [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/age
 
 ### ChatGPT / Copilot Chat
 
-For coding, generic AI chat tools such as ChatGPT and Copilot chat are less useful, but they still have their place. GitHub Copilot will only answer "questions about coding" and it's interpretation of that rule can be a little restrictive. Some cases for using ChatGPT, Copilot chat, or M365 Researcher include:
+For coding, generic AI chat tools such as ChatGPT and Copilot chat are less useful, but they still have their place. GitHub Copilot will only answer "questions about coding" and its interpretation of that rule can be a little restrictive. Some cases for using ChatGPT, Copilot chat, or M365 Researcher include:
 
 - **Write Documentation**. Copilot can write documentation, but using ChatGPT or Copilot chat, you can expand your documentation to include business information, use-cases, additional context, etc.
 
@@ -68,11 +68,11 @@ When using AI tools to generate code, it can be beneficial to maintain transpare
 
 ### Agentic Code Authorship
 
-When using agentic AI tools to generate code, such as the GitHub Coding Agent feature where a GitHub issue (such as a story or task) can be assigned to a software engineering bot that analyzes the request, creates a branch, writes commits, and opens a pull request, authorship is typically attributed using tool-specific mechanisms that follow conventions similar to pair programming. For example, the GitHub Coding Agent creates its commits using the agent as an author with the supervising person acknowledged using the `Co-authored-by` trailer in the commit message. This allows AI-generated code to be attributed to the agent while still giving credit (and accountability) to the person who supervised or initiated the task.
+When using agentic AI tools to generate code, such as the GitHub Coding Agent feature where a GitHub issue (such as a story or task) can be assigned to a software engineering bot that creates a branch, writes commits, and opens a pull request, authorship is typically attributed using tool-specific mechanisms that follow conventions similar to pair programming. For example, the GitHub Coding Agent creates its commits using the agent as an author with the supervising person acknowledged using the `Co-authored-by` trailer in the commit message. This allows AI-generated code to be attributed to the agent while still giving credit (and accountability) to the person who supervised or initiated the task.
 
 ### IDE Assistant Attribution
 
-When using an AI coding assistant inside an IDE, such as the GitHub Copilot extension in Visual Studio Code, consider providing attribution in cases when the commit consists of primarily AI-generated code. This might occur when:
+When using an AI coding assistant inside an IDE, such as the GitHub Copilot extension in Visual Studio Code, consider adopting a team convention to provide attribution in cases when the commit consists of primarily AI-generated code. This might occur when:
 
 * More than 50% of the lines in the commit were generated by AI
 * The AI provided the core logic or algorithmic approach
