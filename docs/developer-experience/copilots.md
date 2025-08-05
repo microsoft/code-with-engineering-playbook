@@ -1,38 +1,28 @@
 # Copilots
 
-There are a number of AI tools that can improve the developer experience. This article will discuss tooling that is available as well as advice on when it might be appropriate to use such tooling.
+There are a number of AI tools that can improve the developer experience. This article will discuss tooling that is available as well as advice on when it might be appropriate to use such tooling and how to attribute AI-generated code.
 
-## GitHub Copilot
+## AI-Assisted Coding Tools
 
-The current version of GitHub Copilot can provide code completion in many popular IDEs. For instance, the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) that can be installed from the VS Code Marketplace. It requires a GitHub account to use. For more information about what IDEs are supported, what languages are supported, cost, features, etc., please checkout out the information on [Copilot](https://github.com/features/copilot) and [Copilot for Business](https://resources.github.com/copilot-for-business/).
+### GitHub Copilot Extension
+
+GitHub Copilot is an extension that adds AI-assisted coding capabilities to an IDE. For instance, the [GitHub Copilot for VS Code extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) can be installed from the VS Code Marketplace. It requires a GitHub account to use. For more information about what IDEs are supported, what languages are supported, cost, features, etc., please checkout out the information on [Copilot](https://github.com/features/copilot) and [Copilot for Business](https://resources.github.com/copilot-for-business/).
 
 Some example use-cases for GitHub Copilot include:
+
+- **Code Completion**. Copilot can provide code completion suggestions as you type. If you want Copilot to write something useful for you, try writing a comment that describes what your code is going to do - it can often take it from there.
 
 - **Write Documentation**. For example, the above paragraph was written using Copilot.
 
 - **Write Unit Tests**. Given that setup and assertions are often consistent across unit tests, Copilot tends to be very accurate.
 
-- **Unblock**. It is often hard start writing when staring at a blank page, Copilot can fill the space with something that may or may not be what you ultimately want to do, but it can help get you in the right head space.
-
-If you want Copilot to write something useful for you, try writing a comment that describes what your code is going to do - it can often take it from there.
-
-## GitHub Copilot Labs
-
-Copilot has a [GitHub Copilot labs extension](https://githubnext.com/projects/copilot-labs/) that offers additional features that are not yet ready for prime-time. For VS Code, you can install it from the VS Code Marketplace. These features include:
+- **Unblock**. It is often hard to start writing when staring at a blank page.. Copilot can fill the space with something that may or may not be what you ultimately want to do, but it can help get you in the right headspace.
 
 - **Explain**. Copilot can explain what the code is doing in natural language.
 
-- **Translate**. Copilot can translate code from one language to another.
+- **Generate Tests**. Copilot can generate unit tests for your code.
 
-- **Brushes**. You can select code that Copilot then modifies inline based on a "brush" you select, for example, to make the code more readable, fix bugs, improve debugging, document, etc.
-
-- **Generate Tests**. Copilot can generate unit tests for your code. Though currently this is limited to JavaScript and TypeScript.
-
-## GitHub Copilot X
-
-The next version of Copilot offers a number of new use-cases beyond code completion. These include:
-
-- **Chat**. Rather than just providing code completion, Copilot will be able to have a conversation with you about what you want to do. It has context about the code you are working on and can provide suggestions based on that context. Beyond just writing code, consider using chat to:
+You can also chat with Copilot to ask it to edit your code, including across multiple files. Beyond just writing code, consider using chat to:
 
 - **Build SQL Indexes**. Given a query, Copilot can generate a SQL index that will improve the performance of the query.
 
@@ -40,36 +30,35 @@ The next version of Copilot offers a number of new use-cases beyond code complet
 
 - **Improve and Validate**. If you are unsure of the implications of writing code a particular way, you can ask questions about it. For instance, you might ask if there is a way to write the code that is more performant or uses less memory. Once it gives you an opinion, you can ask it to provide documentation validating that assertion.
 
-- **Explain**. Copilot can explain what the code is doing in natural language.
-
 - **Write Code**. Given prompting by the developer it can write code that you can one-click deploy into existing or new files.
 
 - **Debug**. Copilot can analyze your code and propose solutions to fix bugs.
 
-It can do most of what Labs can do with "brushes" as "topics", but whereas Labs changes the code in your file, the chat functionality just shows what it would change in the window. However, there is also an "inline mode" for GitHub Copilot Chat that allows you to make changes to your code inline which does not have this same limitation.
+You can also use configuration files and extensions to customize and extend Copilot's capabilities. For example:
 
-## GitHub Copilot Agent
+- **Custom instruction files.** You can create [custom instructions files](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#about-repository-custom-instructions-for-copilot) that provide Copilot with additional context about your project, such as coding conventions, preferred libraries, or specific patterns you want it to follow.
 
-The [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent) is an AI software development agent that can be assigned to work on issues within the GitHub work management system such as bugs or development tasks. The bot analyzes the work item, creates a branch, starts a virtual environment to execute and test the code iteratively, writes commits, and finally opens a pull request for review.
+- **Prompt files.** You can create [prompt files](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions#enabling-and-using-prompt-files) to store reusable prompts or templates that can be easily accessed from the Copilot chat interface.
 
-## ChatGPT / Bing Chat
+- **MCP Servers.** You can use [MCP servers](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) to expand the capabilities of Copilot by providing it access to external tools or services, such as connecting to a project management system (such as Jira or Azure DevOps) or custom APIs (such as the Azure resource manager API).
 
-For coding, generic AI chat tools such as ChatGPT and Bing Chat are less useful, but they still have their place. GitHub Copilot will only answer "questions about coding" and it's interpretation of that rule can be a little restrictive. Some cases for using ChatGPT or Bing Chat include:
+### GitHub Copilot Coding Agent
 
-- **Write Documentation**. Copilot can write documentation, but using ChatGPT or Bing Chat, you can expand your documentation to include business information, use-cases, additional context, etc.
+The [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/agents/copilot-coding-agent) is an AI software development agent that can be assigned to work on issues within the GitHub work management system such as fixing bugs or implementing new features. Once an issue has been assigned to the Copilot Agent, the bot analyzes the work item, creates a branch, starts a virtual environment to execute and test the code iteratively, authors commits, and opens a pull request for review.
+
+### ChatGPT / Copilot Chat
+
+For coding, generic AI chat tools such as ChatGPT and Copilot chat are less useful, but they still have their place. GitHub Copilot will only answer "questions about coding" and it's interpretation of that rule can be a little restrictive. Some cases for using ChatGPT, Copilot chat, or M365 Researcher include:
+
+- **Write Documentation**. Copilot can write documentation, but using ChatGPT or Copilot chat, you can expand your documentation to include business information, use-cases, additional context, etc.
 
 - **Change Perspective**. ChatGPT can impersonate a persona or even a system and answer questions from that perspective. For example, you can ask it to explain what a particular piece of code does from the perspective of a user. You might have ChatGPT imagine it is a database administrator and ask it to explain how to improve a particular query.
 
-When using Bing Chat, experiment with modes, sometimes changing to Creative Mode can give the results you need.
+### Prompt Engineering
 
-## Prompt Engineering
+Chat AI tools are only as good as the prompts you give them. The quality and appropriateness of the output can vary greatly depending on the prompt. In addition, many of these tools restrict the number of prompts you can send in a given amount of time. To learn more about prompt engineering, you might review some [background open source prompt engineering documentation](https://github.com/brexhq/prompt-engineering) and how it applies to [crafting prompts for Copilot chat](https://code.visualstudio.com/docs/copilot/chat/prompt-crafting).
 
-Chat AI tools are only as good as the prompts you give them. The quality and appropriateness of the output can vary greatly depending on the prompt. In addition, many of these tools restrict the number of prompts you can send in a given amount of time. To learn more about prompt engineering, you might review some open source documentation [here](https://github.com/brexhq/prompt-engineering).
+### Considerations
 
-## Considerations
+If you make use of AI tools, it is important to understand how the data (including private or commercial code) might be used by the system. You can read more about how GitHub copilot handles your data and code at the [GitHub Copilot Privacy FAQ](https://github.com/features/copilot/#faq) and how to [manage Copilot policies](https://docs.github.com/en/copilot/how-tos/manage-your-account/manage-policies).
 
-If you make use of AI tools, consider the following:
-
-* It is important when using AI tools to understand how the data (including private or commercial code) might be used by the system. Read more about how GitHub Copilot handles your data and code [here](https://resources.github.com/copilot-for-business/).
-
-* You may want to consider how you will handle [attribution of AI-generated code](../source-control/git-guidance/README.md#ai-assisted-code-authorship) for accountability, code review, and auditing purposes.
