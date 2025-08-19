@@ -107,9 +107,8 @@ HVE principles are being applied to machine learning workflows, enabling:
 
 ## 📚 Resources
 
-- [Engineering Fundamentals Checklist](https://github.com/microsoft/code-with-engineering-playbook/blob/main/docs/engineering-fundamentals-checklist.md)
-- [Developer Experience](https://github.com/microsoft/code-with-engineering-playbook/blob/main/docs/developer-experience/README.md)
-- [Reliability Practices](https://github.com/microsoft/code-with-engineering-playbook/blob/main/docs/reliability/README.md)
-- [ISE Overview](https://github.com/microsoft/code-with-engineering-playbook/blob/main/docs/ISE.md)
-- [Engineering Feasibility Spikes](https://github.com/microsoft/code-with-engineering-playbook/blob/main/docs/design/design-reviews/recipes/engineering-feasibility-spikes.md)
-- [Feature Request for HVE Guidelines](https://github.com/Microsoft/code-with-engineering-playbook/issues/1094)
+- [Engineering Fundamentals Checklist](https://microsoft.github.io/code-with-engineering-playbook/engineering-fundamentals-checklist/)
+- [Developer Experience](https://microsoft.github.io/code-with-engineering-playbook/developer-experience/)
+- [Reliability Practices](https://microsoft.github.io/code-with-engineering-playbook/non-functional-requirements/reliability/)
+- [ISE Overview](https://microsoft.github.io/code-with-engineering-playbook/ISE/)
+- [Engineering Feasibility Spikes](https://microsoft.github.io/code-with-engineering-playbook/design/design-reviews/recipes/engineering-feasibility-spikes/)
