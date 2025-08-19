@@ -26,8 +26,6 @@ governance from the start, enabling rapid iteration and measurable customer impa
 - **Quality Embedded from Start**  
   Guardrails like policy-as-code, automated checks, and secure defaults enforce standards throughout the sprint.
 
----
-
 ## 🧠 AI Agents Across the Lifecycle
 
 HVE teams increasingly use **AI agents** not just for coding, but for:
