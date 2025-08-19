@@ -254,11 +254,12 @@ The essential parts of a commit message are:
 
 * subject line: a short description of the commit, maximum 50 characters long
 * body (optional): a longer description of the commit, wrapped at 72 characters, separated from the subject line by a blank line
+* trailers (optional): additional metadata about the commit in the form of key-value pairs on separate lines such as `Co-authored-by: <name> <email>` that can be used to indicate co-authors, reviewers, or other relevant information
 
 You are free to structure commit messages; however, git commands like `git log` utilize above structure.
 Therefore, it can be helpful to follow a convention within your team and to utilize git best.
 
-For example, [Conventional Commits](https://www.conventionalcommits.org/) is a lightweight convention that complements [SemVer](https://semver.org/), by describing the features, fixes, and breaking changes made in commit messages. See [Component Versioning](../component-versioning.md) for more information on versioning.
+For example, [Conventional Commits](https://www.conventionalcommits.org/) is a lightweight convention that complements [SemVer](https://semver.org/), by describing the features, fixes, and breaking changes made in commit messages. See [Component Versioning](../component-versioning.md) for more information on versioning. You might also use Git trailers to add structured metadata to your commits, such as [attributing code generated with AI assistance](../../developer-experience/copilots.md#ide-assistant-attribution).
 
 For more information on commit message conventions, see:
 
@@ -269,6 +270,7 @@ For more information on commit message conventions, see:
 * [How to Write Better Git Commit Messages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages)
 * [Information in commit messages](https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages)
 * [On commit messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
+* [Git trailers](https://git-scm.com/docs/git-interpret-trailers)
 
 ## Managing Remotes
 
