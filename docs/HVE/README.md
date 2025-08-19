@@ -41,8 +41,6 @@ weeks or months earlier than traditional approaches.
 > ⚠️ **Note**: The use of AI agents does **not eliminate the need for human review**. Human oversight remains essential
 > to ensure correctness, context awareness, ethical compliance, and alignment with business goals.
 
----
-
 ## 📊 Measurable Impact from Real-World Pilots
 
 HVE pilots have demonstrated:
@@ -53,8 +51,6 @@ HVE pilots have demonstrated:
 - **400+ issues managed across 60+ branches**
 
 These results reflect the power of combining AI tooling, engineering fundamentals, and structured planning.
-
----
 
 ## 🧪 Testing Framework for HVE
 
@@ -67,8 +63,6 @@ A proposed testing framework for HVE includes:
 
 This ensures HVE-generated content meets enterprise standards without manual bottlenecks.
 
----
-
 ## 🔐 Security in HVE Workflows
 
 Security guidance for HVE includes:
@@ -78,8 +72,6 @@ Security guidance for HVE includes:
 - Preferring secure infrastructure and prompt engineering best practices
 - Aligning with policy-as-code and secure defaults from day one
 
----
-
 ## 📈 HVE in Data Science
 
 HVE principles are being applied to machine learning workflows, enabling:
@@ -87,8 +79,6 @@ HVE principles are being applied to machine learning workflows, enabling:
 - Full-cycle automation from exploratory analysis to model evaluation
 - Integration of CRISP-DM and hypothesis-driven development
 - Use of LLMs as coding agents for iterative feedback and rapid prototyping
-
----
 
 ## 🧰 Implementation Checklist
 
