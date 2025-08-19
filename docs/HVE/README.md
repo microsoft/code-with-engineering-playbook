@@ -91,7 +91,6 @@ HVE principles are being applied to machine learning workflows, enabling:
 | ✅ Outcome Reviews   | Code reviews focus on business outcomes and user impact                  |
 | ✅ OSS Contribution  | Teams contribute learnings and improvements back to shared assets        |
 
----
 
 ## 📚 Resources
 
