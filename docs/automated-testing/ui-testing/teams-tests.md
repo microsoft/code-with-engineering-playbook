@@ -180,13 +180,13 @@ Solution to fix it:
 
 Inspecting the app is highly valuable when writing new tests, as it enables you to identify the unique IDs of various elements displayed on the screen. This process is similar to using DevTools, which allows you to navigate through the Document Object Model (DOM) of a web page.
 
-[Appium Inspector](https://inspector.appiumpro.com/) is a very useful tool that allows you to inspect an app runing on an emulator.
+[Appium Inspector](https://inspector.appiumpro.com/) is a very useful tool that allows you to inspect an app running on an emulator.
 
 > Note: This section assumes that you have already performed the prerequisites from **How to run mobile test locally on a Windows machine using AVD?**
 
 ##### Steps
 
-1. Run the appium server with [--alow-cors flag](https://appium.readthedocs.io/en/latest/en/writing-running-appium/server-args/) by running the following command in a terminal:
+1. Run the appium server with [--allow-cors flag](https://appium.readthedocs.io/en/latest/en/writing-running-appium/server-args/) by running the following command in a terminal:
 
     ```cmd
     appium --allow-cors

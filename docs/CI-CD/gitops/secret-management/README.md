@@ -34,7 +34,7 @@ Some of the key points of using Sealed Secrets are:
 - If the private key in the cluster is lost for some reason all secrets need to be re-encrypted followed by a new key-pair generation
 - Does not scale with multi-cluster, because every cluster will require a controller having its own key pair
 - Can only encrypt `secret` resource type
-- The Flux documentation has inconsistences in the Azure Key Vault examples
+- The Flux documentation has inconsistencies in the Azure Key Vault examples
 
 ### [Mozilla SOPS](https://github.com/mozilla/sops)
 
