@@ -460,7 +460,6 @@
     "Wireframes",
     "WORKDIR",
     "workstream",
-    "worspace",
     "yapf",
     "Zipkin",
     "zstd",
@@ -474,7 +473,6 @@
     "Automator",
     "Playstore",
     "avds",
-    "runing",
     "printscren",
     "webdriverio",
     "wdio"
