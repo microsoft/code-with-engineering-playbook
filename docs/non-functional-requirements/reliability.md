@@ -54,9 +54,9 @@ Look into the difference between **snapshot** and **incremental** backups. A goo
 
 ## Target Uptime & Failing Gracefully
 
-It's a known fact that systems cannot target 100% uptime. There are too many factors in today's software systems to achieve this, many outside of our control. Even a service that never gets updated and is 100% bug free will fail. Upstream DNS servers have issues all the time. Hardware breaks. Power outages, backup generators fail. The world is chaotic. Good services target a number of "9's" of uptime. Ie: 99.99% uptime means that the system has a "budget" of 4 minutes and 22 seconds of uptime each month. Some months might achieve 100% uptime, which means that the budget gets rolled over to the next month. What uptime means is different for everybody, and it is up to the service to define.
+It's a known fact that systems cannot target 100% uptime. There are too many factors in today's software systems to achieve this, many outside of our control. Even a service that never gets updated and is 100% bug free will fail. Upstream DNS servers have issues all the time. Hardware breaks. Power outages, backup generators fail. The world is chaotic. Good services target a number of "9's" of uptime. Ie, 99.99% uptime means that the system has a "budget" of 4 minutes and 22 seconds of downtime each month. Some months might achieve 100% uptime, which means that the budget gets rolled over to the next month. What uptime means is different for everybody, and it is up to the service to define.
 
-A good practice is to use any leftover budget at the end of the period (ie, year, quarter), to intentionally take that service down, and ensure that the rest of your systems fail as expected. Often times other engineers and services come to rely on that additional achieved availability, and it can be healthy to ensure that systems fail gracefully.
+A good practice is to use any leftover budget at the end of the period (ie, year, quarter), to intentionally take that service down, and ensure that the rest of your systems fail as expected. Often, other engineers and services come to rely on that additional achieved availability, and it can be healthy to ensure that systems fail gracefully.
 
 We can build graceful failure (or graceful degradation) into our software stack by anticipating failures. Some tactics include:
 
