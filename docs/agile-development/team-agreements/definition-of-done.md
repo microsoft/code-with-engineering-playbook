@@ -15,7 +15,7 @@ The development team should decide together what their Definition of Done is and
 - [ ] Code review is complete
 - [ ] UX review is complete (if applicable)
 - [ ] Documentation is updated
-- [ ] The feature is merged into the develop branch
+- [ ] The feature is merged into the project's default integration branch (for example, `main` or `trunk`), or otherwise merged according to the project's agreed branching strategy.
 - [ ] The feature is signed off by the product owner
 
 ## Sprint Goal
@@ -24,7 +24,7 @@ The development team should decide together what their Definition of Done is and
 - [ ] Product backlog is updated
 - [ ] Functional and Integration tests pass
 - [ ] Performance tests pass
-- [ ] End 2 End tests pass
+- [ ] End-to-end tests pass
 - [ ] All bugs are fixed
 - [ ] The sprint is signed off from developers, software architects, project manager, product owner etc.
 
