@@ -30,7 +30,6 @@ Teams are increasingly adapting traditional Scrum practices to take advantage of
 - Favor frequent, lightweight planning and validation over rigid, fixed-length cadences when it helps accelerate feedback loops and reduce cycle time.
 - Use AI-assisted tooling (for example, GitHub Copilot or planning assistants) to accelerate planning, generate drafts for reviews, and improve productivity—while maintaining human oversight and review.
 - Embrace shorter spikes and early validation (especially for UX and data science work) to de-risk solutions earlier.
-- Consider pod models that embed business stakeholders into the delivery team when it helps reduce handoffs and increase decision speed.
 
 These are patterns, not prescriptions — adapt them to fit your engagement and stakeholder needs.
 
