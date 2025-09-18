@@ -42,40 +42,11 @@ jobs:
 - Automate as much of the gate (linting, unit tests, basic security scans) as possible to keep manual review focused on design and architecture.
 - Adapt branch protection to match team size and delivery cadence.
 
----
-
-## Alignment with CI/CD guidance
-This page complements the central CI/CD guidance in `docs/CI-CD/README.md`. Key expectations teams should follow:
+## CI/CD guidance
+This page complements the central [CI/CD guidance](../CI-CD/README.md). Key expectations teams should follow:
 
 - The integration (main) branch should be continuously shippable and stable — at any point we should be able to deploy a build from `main` to production if needed.
 - Run a quality pipeline (linting, unit tests, basic integration tests) on each PR and on merges to the integration branch.
 - Provision cloud resources and environment configuration via infrastructure-as-code (for example Terraform, Bicep, Pulumi) and exercise them in non-production environments.
 - Deploy release candidates automatically to a non-production environment to validate integration and operational concerns.
 - Automate release and rollback procedures so releases are repeatable and auditable.
-
-## Tools (reference)
-Refer to `docs/CI-CD/README.md` for more detail on recommended tools. Common options include:
-- Azure Pipelines — recommended/used across many Microsoft engagements for CI/CD.
-- GitHub Actions, Jenkins, CircleCI, TravisCI — viable alternatives depending on project constraints.
-
-## AI-assisted CI/CD authoring
-AI tools can accelerate writing CI/CD pipeline YAML, jobs, and scripting snippets, but they must be used with explicit guardrails.
-
-Suggested workflow:
-- Use AI to draft CI/CD pipeline templates or job steps as a starting point (for example, generating a minimal GitHub Actions workflow).
-- Run the draft pipeline in a safe non-production environment or CI sandbox to validate syntax and basic behaviour.
-- Require a human reviewer to validate generated steps for correctness, idempotence, and security implications (especially around secrets, permissions, and external actions).
-- Add tests or smoke checks to the pipeline so changes can be validated automatically when the pipeline runs.
-- Promote approved templates into a central location (for example, `.github/workflows/` or a shared pipeline template repository) so teams reuse vetted, audited pipelines.
-
-Guardrails and checklist (before merging AI-generated pipeline changes):
-- [ ] Human review completed and documented in PR
-- [ ] No secrets or credentials are hard-coded
-- [ ] Required linting and syntax checks pass locally and in CI
-- [ ] Security and license scans run and report no critical issues
-- [ ] Pipeline steps are idempotent and have clear rollback strategies where applicable
-- [ ] Generated content is annotated in the PR description (e.g., "AI-assisted draft") so reviewers know to apply extra scrutiny
-
-Notes:
-- AI-generated pipelines are excellent for reducing boilerplate and accelerating iteration, but they do not replace domain knowledge and security review.
-- Maintain a small set of vetted pipeline templates to reduce risk and improve reproducibility.
