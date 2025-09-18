@@ -59,8 +59,7 @@ Below, you can find some including, but not limited, topics many teams touch dur
 | Agile Documentation     | Does team want to use diagrams and tables more rather than detailed KB articles ?                                                                                     |
 | Efficient Documentation | When is it necessary ? Is it a prerequisite to complete tasks/PRs etc.?                                                                                               |
 | Definition of Fun       | How will we have fun for relaxing/enjoying the team spirit during the engagement?                                                                                     |
-
-+ **AI tooling guidance**: Consider adding a short line in the team manifesto that captures expectations for using AI-assisted tools (for example, Copilot), short discovery spikes, and how quickly the team will iterate and validate changes. This helps set shared norms and guardrails for fast-paced work.
+| AI tools                | Does team want to use AI-assisted tools such as Copilot ? If yes, any preferred rules or guidelines ?                                                                |
 
 ## Tools
 
