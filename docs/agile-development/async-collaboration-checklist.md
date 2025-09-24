@@ -10,6 +10,7 @@ Purpose: Practical guidance for distributed teams to collaborate effectively and
 Post the above in a shared channel or issue and use threaded replies for follow-ups.
 
 ## Async demo guidance
+
 - Record a short demo (5-8 minutes) focusing on the outcome and acceptance criteria.
 - Include a short transcript or key bullet points in the PR or release note.
 - Add captions or a brief written summary for accessibility.
