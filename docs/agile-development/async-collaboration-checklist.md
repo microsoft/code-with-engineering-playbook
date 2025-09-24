@@ -24,6 +24,7 @@ Post the above in a shared channel or issue and use threaded replies for follow-
 - Ensure code samples are in accessible font sizes when shared in docs.
 
 ## Meeting scheduling and fairness
+
 - Rotate meeting times or facilitators to share burden across time zones.
 - Use asynchronous agendas: post an agenda in advance and capture decisions in writing.
 
