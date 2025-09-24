@@ -15,6 +15,7 @@ Post the above in a shared channel or issue and use threaded replies for follow-
 - Add captions or a brief written summary for accessibility.
 
 ## Accessibility checklist for artifacts
+
 - Provide alt text for images and diagrams.
 - Ensure headings and lists are semantically correct in markdown.
 - Provide captions/transcripts for videos and demos.
