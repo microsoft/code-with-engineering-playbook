@@ -3,6 +3,7 @@
 Purpose: Practical guidance for distributed teams to collaborate effectively and inclusively across time zones.
 
 ## Async standup template
+
 - Summary (yesterday): short bullet(s)
 - Plan (today): short bullet(s)
 - Blockers / help needed: short bullet(s)
