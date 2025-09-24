@@ -9,6 +9,7 @@ Purpose: Provide a concise, practical policy and examples teams can adopt for in
 - Keep releases simple: use tags/releases from the integration branch and keep release process documented separately.
 
 ## Example branch protection rules
+
 - Require at least one approving reviewer for pull requests.
 - Require successful CI pipeline status checks before merge.
 - Require up-to-date branch before merge if your policy prefers.
