@@ -32,6 +32,7 @@ jobs:
 ```
 
 ## Merge policy checklist (suggested)
+
 - [ ] Code compiles and automated tests pass in CI
 - [ ] At least one approving reviewer has reviewed the change
 - [ ] The change has an associated work item or issue
