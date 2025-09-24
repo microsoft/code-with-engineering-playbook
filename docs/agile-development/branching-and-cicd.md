@@ -3,6 +3,7 @@
 Purpose: Provide a concise, practical policy and examples teams can adopt for integration, branching and CI gating. This page is intentionally short — teams should adapt the policy to their project and toolchain.
 
 ## Recommended approach
+
 - Prefer trunk-based development where possible for new projects. Use short-lived feature branches when necessary and merge frequently into the default integration branch (commonly `main` or `trunk`).
 - Use branch protection rules on the integration branch to enforce quality gates (required passing CI, required code reviews, status checks).
 - Keep releases simple: use tags/releases from the integration branch and keep release process documented separately.
