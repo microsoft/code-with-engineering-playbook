@@ -59,6 +59,7 @@ CircleCI also allows workflows, parallelism and splitting your tests across any 
 AppVeyor is another free CI service for open source projects which also supports Windows-based builds.
 
 ## AI-assisted CI/CD authoring
+
 AI tools can accelerate writing CI/CD pipeline YAML, jobs, and scripting snippets, but they must be used with explicit guardrails.
 
 Suggested workflow:
