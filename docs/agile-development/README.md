@@ -1,6 +1,6 @@
 # Agile Development
 
-In this documentation we refer to the cross-functional delivery team as a **"Crew"** (i.e., the team responsible for delivery on the engagement). This includes the dev team, dev lead, product manager (PM), data scientists, etc.
+In this documentation we refer to the cross-functional delivery team as a **"Crew"** (i.e., the team responsible for delivery on a project). This includes the dev team, dev lead, product manager (PM), data scientists, etc.
 
 ## Why Agile
 
