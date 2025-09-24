@@ -64,7 +64,7 @@ AI tools can accelerate writing CI/CD pipeline YAML, jobs, and scripting snippet
 
 Suggested workflow:
 - Use AI to draft CI/CD pipeline templates or job steps as a starting point (for example, generating a minimal GitHub Actions workflow).
-- Run the draft pipeline in a safe non-production environment or CI sandbox to validate syntax and basic behaviour.
+- Run the draft pipeline in a safe non-production environment or CI sandbox to validate syntax and basic behavior.
 - Require a human reviewer to validate generated steps for correctness, idempotence, and security implications (especially around secrets, permissions, and external actions).
 - Add tests or smoke checks to the pipeline so changes can be validated automatically when the pipeline runs.
 - Promote approved templates into a central location (for example, `.github/workflows/` or a shared pipeline template repository) so teams reuse vetted, audited pipelines.
