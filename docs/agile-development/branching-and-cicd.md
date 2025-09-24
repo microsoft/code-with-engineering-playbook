@@ -45,6 +45,7 @@ jobs:
 - Adapt branch protection to match team size and delivery cadence.
 
 ## CI/CD guidance
+
 This page complements the central [CI/CD guidance](../CI-CD/README.md). Key expectations teams should follow:
 
 - The integration (main) branch should be continuously shippable and stable — at any point we should be able to deploy a build from `main` to production if needed.
