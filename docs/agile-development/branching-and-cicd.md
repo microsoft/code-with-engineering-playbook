@@ -39,6 +39,7 @@ jobs:
 - [ ] Documentation updated where applicable
 
 ## Tips
+
 - Keep feature branches short-lived; frequent merges reduce integration risk.
 - Automate as much of the gate (linting, unit tests, basic security scans) as possible to keep manual review focused on design and architecture.
 - Adapt branch protection to match team size and delivery cadence.
