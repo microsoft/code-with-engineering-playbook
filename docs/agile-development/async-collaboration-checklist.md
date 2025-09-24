@@ -29,5 +29,6 @@ Post the above in a shared channel or issue and use threaded replies for follow-
 - Use asynchronous agendas: post an agenda in advance and capture decisions in writing.
 
 ## PR and review expectations
+
 - Include a short PR description and steps to validate.
 - Mark urgent reviews clearly; otherwise assume a 24-48 hour review window for non-urgent PRs.
