@@ -15,6 +15,7 @@ Purpose: Provide a concise, practical policy and examples teams can adopt for in
 - Require up-to-date branch before merge if your policy prefers.
 
 ## Sample minimal GitHub Actions CI gate (example)
+
 ```yaml
 name: ci
 on: [pull_request]
