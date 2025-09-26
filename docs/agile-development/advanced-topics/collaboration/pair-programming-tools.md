@@ -18,9 +18,9 @@ Additionally, scheduling these working sessions in advance ensures intentional c
 
 With its cloud-based infrastructure, GitHub Codespaces presents a highly efficient and simplified approach to real-time collaborative coding. As a result, new team members can easily access the GitHub project and begin coding within seconds, without requiring installation on their local machines. This seamless, integrated solution for pair programming offers a streamlined workflow, allowing you to direct your attention towards producing exemplary code, free from the distractions of cumbersome setup processes.
 
-### VSCode Live Share
+### Visual Studio Live Share
 
-[VSCode Live Share](https://code.visualstudio.com/learn/collaboration/live-share) is specifically designed for pair programming and enables you to work on the same codebase, in real-time, with your team members. The arduous process of configuring complex setups, grappling with confusing configurations, straining one's eyes to work on small screens, or physically switching keyboards is not a problem with LiveShare. This innovative solution enables seamless sharing of your development environment with your team members, facilitating smooth collaborative coding experiences.
+[Visual Studio Live Share](https://code.visualstudio.com/learn/collaboration/live-share) is specifically designed for pair programming and enables you to work on the same codebase, in real-time, with your team members. The arduous process of configuring complex setups, grappling with confusing configurations, straining one's eyes to work on small screens, or physically switching keyboards is not a problem with LiveShare. This solution enables seamless sharing of your development environment with your team members, facilitating smooth collaborative coding experiences.
 
 Fully integrated into Visual Studio Code and Visual Studio, LiveShare offers the added benefit of terminal sharing, debug session collaboration, and host machine control. When paired with GitHub Codespaces, it presents a potent tool set for effective pair programming.
 
