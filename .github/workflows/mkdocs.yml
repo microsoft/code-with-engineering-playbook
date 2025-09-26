@@ -20,9 +20,9 @@ jobs:
           submodules: "recursive"
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.7"
+          python-version: "3.13"
           architecture: "x64"
       - name: Install dependencies
         run: |
