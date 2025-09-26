@@ -8,7 +8,9 @@
 - The Planning defines how the work is going to be completed in the sprint.
 - Stories fit in a sprint and are [designed](../design/design-reviews) and [ready](./team-agreements/definition-of-ready.md) before the planning.
 
-> **Note:** Self assignment by team members can give a feeling of fairness in how work is split in the team. Sometime, this ends up not being the case as it can give an advantage to the loudest or more experienced voices in the team. Individuals also tend to stay in their comfort zone, which might not be the right approach for their own growth.*
+> **Note:** Self assignment by team members can give a feeling of fairness in how work is split in the team. Sometimes, this ends up not being the case as it can give an advantage to the loudest or more experienced voices in the team. Individuals also tend to stay in their comfort zone, which might not be the right approach for their own growth.*
+
+> Working with AI tools note: Some teams adapt sprint planning cadence to support the faster patterns which AI tools bring — favoring short, lightweight planning events or a continuous planning cadence when this enables faster feedback and delivery. Use AI-assisted planning tools (e.g., Copilot or planning assistants) to draft plans or acceptance criteria, but always validate and adapt output collaboratively with the team.
 
 ### Sprint Goal
 
@@ -29,7 +31,7 @@ Example 1: Preparing in advance
 - The dev lead uses their experience (past and on the current project) and the estimation made for these stories to gauge how many should be in the sprint.
 - The dev lead asks the entire team to look at the tentative sprint backlog in advance of the sprint planning.
 - The dev lead assigns stories to specific developers after confirming with them that it makes sense
-- During the sprint planning meeting, the team reviews the sprint goal and the stories. Everyone confirm they understand the plan and feel it's reasonable.
+- During the sprint planning meeting, the team reviews the sprint goal and the stories. Everyone confirms they understand the plan and feel it's reasonable.
 
 Example 2: Building during the planning meeting
 
@@ -69,7 +71,7 @@ Examples of approaches for task creation and assignment:
 - The estimation process is improved over time and discussed on a regular basis.
 - Estimation is inclusive of the different individuals in the team.
 
-Rough estimation is usually done for a generic SE 2 dev.
+Rough estimation is usually done using a representative mid-level engineer (for example, a typical mid-level developer) or based on team historical velocity.
 
 ### Example 1: T-shirt Sizes
 
@@ -87,7 +89,7 @@ Rough estimation is usually done for a generic SE 2 dev.
 
 - The team does planning poker and estimates in story points
 - Story points are roughly used to estimate how much can be done in next sprint
-- The dev lead and the TPM uses the past sprints and observed velocity to adjust project end date forecasting
+- The dev lead and the Technical Program Manager (TPM) use past sprints and observed velocity to adjust project end date forecasting
 
 ### Other Considerations
 
