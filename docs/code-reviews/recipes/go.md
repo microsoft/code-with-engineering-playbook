@@ -40,23 +40,30 @@ The linter revive (below) might be a suitable replacement.
 
 ### golangci-lint
 
-[golangci-lint](https://github.com/golangci/golangci-lint/) is the replacement for the now deprecated `gometalinter`. It is 2-7x faster than `gometalinter` [along with a host of other benefits](https://github.com/golangci/golangci-lint/#comparison).
-
-golangci-lint is a powerful, customizable aggregator of linters. By default, several are enabled but not all. A full list of linters and their usages can be found [here](https://github.com/golangci/awesome-go-linters).
+golangci-lint is a powerful, customizable aggregator of linters. By default, several are enabled but not all. A full list of linters and their usages can be found [here](https://golangci-lint.run/docs/linters/).
 
 It will allow you to configure each linter and choose which ones you would like to enable in your project.
 
 One awesome feature of `golangci-lint` is that is can be easily introduced to an existing large codebase using the `--new-from-rev COMMITID`. With this setting only newly introduced issues are flagged, allowing a team to improve new code without having to fix all historic issues in a large codebase. This provides a great path to improving code-reviews on existing solutions. golangci-lint can also be setup as the default linter in VS Code.
 
-Installation options for golangci-lint are present at [golangci-lint](https://github.com/golangci/golangci-lint#binary).
+Installation options for golangci-lint are present at [golangci-lint](https://golangci-lint.run/docs/welcome/install/#local-installation).
 
-To use golangci-lint with VS Code, use the below recommended settings:
+To use golangci-lint with VS Code, use the below [recommended settings](https://golangci-lint.run/docs/welcome/integrations/#visual-studio-code):
 
 ```json
-"go.lintTool":"golangci-lint",
-   "go.lintFlags": [
-     "--fast"
-   ]
+"go.lintTool": "golangci-lint",
+"go.lintFlags": [
+  "--path-mode=abs",
+  "--fast-only"
+],
+"go.formatTool": "custom",
+"go.alternateTools": {
+  "customFormatter": "golangci-lint"
+},
+"go.formatFlags": [
+  "fmt",
+  "--stdin"
+]
 ```
 
 ## Pre-Commit Hooks
