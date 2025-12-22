@@ -167,6 +167,18 @@ The biggest advantage of BugBug is its user-friendliness. Most tests created wit
 
 [BugBug Website](https://bugbug.io?utm_source=microsoft_github&utm_medium=referral)
 
+### 7. kogiQA
+
+![kogiQA](images/logo-kogiQA-small.png)
+
+**kogiQA** is a UI automation tool for web applications that does not use CSS or XPath selectors. Instead, it uses a custom algorithm to select the element to interact with in a deterministic way, based on the meaning of the action derived from the DOM tree.
+
+This means that typing `page.click("Add Client")` will click the button labelled `[Add Customer]`.
+
+kogiQA reduces the need for test maintenance as the tests continue to work as long as the meaning of the text on the page remains unchanged. It is also the best option when it is not possible to change the code of the page being tested, for example when testing Microsoft Dynamics 365 or Salesforce applications.
+
+[kogiQA Website](https://kogiQA.com)
+
 ## Conclusion
 
 Hope you learned various aspects of E2E testing like its processes, metrics, the difference between Unit, Integration  and E2E testing, and the various recommended E2E test frameworks and tools.
