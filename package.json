@@ -1,7 +1,7 @@
 {
   "scripts": {},
   "dependencies": {
-    "mega-linter-runner": "^9.0.1",
+    "mega-linter-runner": "^9.3.0",
     "run-script-os": "1.1.5"
   }
 }
