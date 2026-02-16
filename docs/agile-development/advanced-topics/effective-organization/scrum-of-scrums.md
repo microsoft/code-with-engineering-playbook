@@ -4,7 +4,7 @@ Scrum of scrums is a technique used to scale Scrum to a larger group working tow
 
 ## Goals
 
-The goal of the scrum of scrums ceremony is to give sub-teams the agility they need while not loosing visibility and coordination. It also helps to ensure that the sub-teams are achieving their sprint goals, and they are going in the right direction to achieve the overall project goal.
+The goal of the scrum of scrums ceremony is to give sub-teams the agility they need while not losing visibility and coordination. It also helps to ensure that the sub-teams are achieving their sprint goals, and they are going in the right direction to achieve the overall project goal.
 
 The scrum of scrums ceremony happens every day and can be seen as a regular stand-up:
 

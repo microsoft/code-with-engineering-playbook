@@ -186,7 +186,7 @@ As you can see, `${localEnv:HOME}` returns the host `home` folder, and it maps i
 ```yaml
 version: '3'
 services:
-  my-worspace:
+  my-workspace:
     env_file: ../configs/.env
     build:
       context: .

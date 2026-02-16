@@ -29,7 +29,7 @@ log are structured - Timestamp, Event Type and Details. Unfortunately, there is 
 ### VM Performance Metrics (OMS)
 
 [Log Analytics Agent](https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/oms-linux) provides insights into the performance counters from the Cluster VMs and helps to understand the
-Cluster Utilization patters. Leveraging Linux OMX Agent to onboard VMs into Log Analytics, helps provide insights into the VM metrics, performance, inventory and syslog metrics. It is important to
+Cluster Utilization patterns. Leveraging Linux OMX Agent to onboard VMs into Log Analytics, helps provide insights into the VM metrics, performance, inventory and syslog metrics. It is important to
 note that Linux OMS Agent is not specific to Azure Databricks.
 
 ### Application Logging
