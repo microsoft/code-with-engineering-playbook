@@ -86,6 +86,7 @@ Some organizations prefer running probes on existing infrastructure using known 
 - [Dynatrace Synthetic Monitoring](https://www.dynatrace.com/platform/synthetic-monitoring/)
 - [New Relic Synthetics](https://newrelic.com/products/synthetics)
 - [Checkly](https://checklyhq.com)
+- [supaguard ai](https://supaguard.app) - an AI-native monitor that watches your critical flows so they never fail in silence.
 
 ## Conclusion
 
