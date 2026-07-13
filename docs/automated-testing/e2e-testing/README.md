@@ -167,6 +167,16 @@ The biggest advantage of BugBug is its user-friendliness. Most tests created wit
 
 [BugBug Website](https://bugbug.io?utm_source=microsoft_github&utm_medium=referral)
 
+### 7. Endtest
+
+![Endtest](./images/endtest_logo_full.png)
+
+**Endtest** is a cloud-based test automation platform for web and mobile applications. Tests can be created with a visual editor and run across browsers and devices without requiring teams to maintain their own browser-testing infrastructure.
+
+Endtest supports reusable components, data-driven tests, scheduled executions, and CI/CD integrations. Test executions include reports and debugging artifacts such as screenshots, video recordings, and logs.
+
+[Endtest Website](https://endtest.io/) or read the [Endtest documentation](https://endtest.io/docs/)
+
 ## Conclusion
 
 Hope you learned various aspects of E2E testing like its processes, metrics, the difference between Unit, Integration  and E2E testing, and the various recommended E2E test frameworks and tools.
