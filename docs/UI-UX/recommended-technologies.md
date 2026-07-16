@@ -3,32 +3,32 @@
 ## Table of Contents
 
 - [TypeScript](#typescript)
-    - [Guidance on types and interfaces](#guidance-on-types-and-interfaces)
-        - [Example](#example)
+  - [Guidance on types and interfaces](#guidance-on-types-and-interfaces)
+    - [Example](#example)
 - [Bootstrapping Web Projects](#bootstrapping-web-projects)
-    - [Vite](#vite)
-        - [Documentation & Recommended Resources](#documentation--recommended-resources)
-            - [Installing Vite](#installing-vite)
-            - [Bootstrapping a project](#bootstrapping-a-project)
+  - [Vite](#vite)
+    - [Documentation & Recommended Resources](#documentation--recommended-resources)
+      - [Installing Vite](#installing-vite)
+      - [Bootstrapping a project](#bootstrapping-a-project)
 - [React](#react)
-    - [Quick note on create-react-app](#quick-note-on-create-react-app)
-    - [Documentation & Using older React coding patterns](#documentation--using-older-react-coding-patterns)
-    - [Best Practices to Organize Your React Codebase](#best-practices-to-organize-your-react-codebase)
-        - [Project Structure](#project-structure)
-        - [Key Directories and Files](#key-directories-and-files)
-        - [Directory Best Practices](#directory-best-practices)
-    - [Using React with Entra ID](#using-react-with-entra-id)
-        - [Resources](#resources)
+  - [Quick note on create-react-app](#quick-note-on-create-react-app)
+  - [Documentation & Using older React coding patterns](#documentation--using-older-react-coding-patterns)
+  - [Best Practices to Organize Your React Codebase](#best-practices-to-organize-your-react-codebase)
+    - [Project Structure](#project-structure)
+    - [Key Directories and Files](#key-directories-and-files)
+    - [Directory Best Practices](#directory-best-practices)
+  - [Using React with Entra ID](#using-react-with-entra-id)
+    - [Resources](#resources)
 - [Managing Secrets with Environmental Variables in React Projects Using Vite](#managing-secrets-with-environmental-variables-in-react-projects-using-vite)
-    - [Setting Up Environmental Variables](#setting-up-environmental-variables)
-    - [Best Security Practices](#best-security-practices)
-    - [Resources](#resources-1)
+  - [Setting Up Environmental Variables](#setting-up-environmental-variables)
+  - [Best Security Practices](#best-security-practices)
+  - [Resources](#resources-1)
 - [Common Security Pitfalls in React Applications](#common-security-pitfalls-in-react-applications)
-    - [Resources](#resources-2)
+  - [Resources](#resources-2)
 - [Incorporating Axios for REST API Calls in React with Bearer Tokens and MSAL](#incorporating-axios-for-rest-api-calls-in-react-with-bearer-tokens-and-msal)
-    - [Setting Up Axios](#setting-up-axios)
-    - [Making API Calls](#making-api-calls)
-    - [Resources](#resources-3)
+  - [Setting Up Axios](#setting-up-axios)
+  - [Making API Calls](#making-api-calls)
+  - [Resources](#resources-3)
 
 
 ---
@@ -37,7 +37,7 @@ The purpose of this page is to review the commonly selected technology options w
 
 > Keep in mind that like all software, there is no "right way" to build a user interface application. Leverage and trust your team's or your customer's experience and expertise for the best development experience.
 
-Additionally, while some of these technologies are presented as alternate options, many can be combined together. For example, you can use React in a basic HTML/CSS/JS workflow by inline-importing React along with Babel. See the [Add React to a Website](https://reactjs.org/docs/add-react-to-a-website.html) for more details. Similarly, any [Fast](https://www.fast.design/) web component can be [integrated into any existing React application](https://fast.design/docs/integrations#react). And of course, every JavaScript technology can also be used with TypeScript!
+Additionally, while some of these technologies are presented as alternate options, many can be combined together. For example, you can use React in a basic HTML/CSS/JS workflow by inline-importing React along with Babel. See the [Add React to a Website](https://reactjs.org/docs/add-react-to-a-website.html) for more details. Similarly, any [Fast](https://www.fast.design/) web component can be [integrated into any existing React application](https://www.fast.design/docs/3.x/introduction). And of course, every JavaScript technology can also be used with TypeScript!
 
 ## TypeScript
 
@@ -187,28 +187,28 @@ my-react-app/
 
 #### Key Directories and Files
 
-- **public/**: Contains static assets like HTML and images.
-- **src/**: Contains the source code of your application.
-    - **assets/**: Contains global assets like styles and images.
-    - **components/**: Contains reusable UI components, each in its own folder.
-    - **hooks/**: Contains custom React hooks.
-    - **pages/**: Contains page components, each in its own folder.
-    - **services/**: Contains service modules for API calls and other business logic.
-    - **types/**: Contains TypeScript type definitions.
-    - **utils/**: Contains utility functions.
-    - **App.tsx**: The root component of your application.
-    - **index.tsx**: The entry point of your application.
-    - **vite-env.d.ts**: TypeScript definitions for Vite-specific features.
+- __public/__: Contains static assets like HTML and images.
+- __src/__: Contains the source code of your application.
+  - __assets/__: Contains global assets like styles and images.
+  - __components/__: Contains reusable UI components, each in its own folder.
+  - __hooks/__: Contains custom React hooks.
+  - __pages/__: Contains page components, each in its own folder.
+  - __services/__: Contains service modules for API calls and other business logic.
+  - __types/__: Contains TypeScript type definitions.
+  - __utils/__: Contains utility functions.
+  - __App.tsx__: The root component of your application.
+  - __index.tsx__: The entry point of your application.
+  - __vite-env.d.ts__: TypeScript definitions for Vite-specific features.
 
 #### Directory Best Practices
 
-1. **Component-Based Structure**: Organize your code into small, reusable components.
-2. **Type Safety**: Use TypeScript to define types and interfaces for your components and data structures.
-3. **Custom Hooks**: Encapsulate reusable logic in custom hooks.
-4. **Service Layer**: Abstract API calls and business logic into service modules.
-5. **Consistent Naming**: Follow a consistent naming convention for files and directories.
-6. **Environment Variables**: Use environment variables to manage configuration settings.
-7. **Testing**: Write unit tests for your components, hooks, and services.
+1. __Component-Based Structure__: Organize your code into small, reusable components.
+2. __Type Safety__: Use TypeScript to define types and interfaces for your components and data structures.
+3. __Custom Hooks__: Encapsulate reusable logic in custom hooks.
+4. __Service Layer__: Abstract API calls and business logic into service modules.
+5. __Consistent Naming__: Follow a consistent naming convention for files and directories.
+6. __Environment Variables__: Use environment variables to manage configuration settings.
+7. __Testing__: Write unit tests for your components, hooks, and services.
 
 
 ### Using React with Entra ID
@@ -217,12 +217,12 @@ Integrating [React](https://reactjs.org/) applications with __Entra ID__ (former
 
 To get started with Entra ID in your React application, follow these steps:
 
-1. **Install MSAL**:
+1. __Install MSAL__:
     ```sh
     npm install @azure/msal-browser @azure/msal-react
     ```
 
-2. **Configure MSAL**:
+2. __Configure MSAL__:
     Create a configuration file to set up your MSAL instance with your Entra ID credentials.
 
         ```typescript
@@ -240,7 +240,7 @@ To get started with Entra ID in your React application, follow these steps:
         ```
 
 
-3. **Wrap Your Application**:
+3. __Wrap Your Application__:
     Use the `MsalProvider` to wrap your React application.
 
         ```typescript
@@ -264,7 +264,7 @@ When developing React applications, it's crucial to manage sensitive information
 
 ### Setting Up Environmental Variables
 
-1. **Create an `.env` File**:
+1. __Create an `.env` File__:
     In the root of your project, create a file named `.env`. This file will store your environmental variables.
 
     ```plaintext
@@ -272,7 +272,7 @@ When developing React applications, it's crucial to manage sensitive information
     VITE_API_URL=[sample URL]
     ```
 
-2. **Access Environmental Variables in Your Code**:
+2. __Access Environmental Variables in Your Code__:
     Vite prefixes all environmental variables with `VITE_` to ensure they are exposed to your client-side code. You can access these variables using `import.meta.env`.
 
     ```typescript
@@ -291,7 +291,7 @@ When developing React applications, it's crucial to manage sensitive information
 
 ### Best Security Practices
 
-- **Do Not Commit `.env` Files**:
+- __Do Not Commit `.env` Files__:
     Ensure your `.env` file is added to `.gitignore` to prevent it from being committed to your version control system.
 
     ```plaintext
@@ -299,7 +299,7 @@ When developing React applications, it's crucial to manage sensitive information
     .env
     ```
 
-- **Use Environment-Specific Files**:
+- __Use Environment-Specific Files__:
     Vite supports multiple environment files for different stages of development. For example, you can create `.env.development` and `.env.production` files to manage variables for development and production environments, respectively.
 
     ```plaintext
@@ -310,21 +310,21 @@ When developing React applications, it's crucial to manage sensitive information
     VITE_API_URL=[example value]
     ```
 
-- **Validate Environmental Variables**:
-    Consider using a validation library like `zod` ( https://github.com/colinhacks/zod ) or `joi` ( joi.dev ) to validate your environmental variables at runtime, ensuring they meet the required format and constraints.
+- __Validate Environmental Variables__:
+    Consider using a validation library like `zod` ( <https://github.com/colinhacks/zod> ) or `joi` ( joi.dev ) to validate your environmental variables at runtime, ensuring they meet the required format and constraints.
 
 
 ## Common Security Pitfalls in React Applications
 
 When developing React applications, it's crucial to follow best practices to safeguard your application from common security vulnerabilities. Here are some key things to avoid:
 
-### 1. **Do Not Store Sensitive Data in Local Storage**
+### 1. __Do Not Store Sensitive Data in Local Storage__
 
 Local storage is accessible from any JavaScript code running on the same domain, making it a potential target for attackers. Avoid storing sensitive information like tokens or user data in local storage.  
 
-**Bearer Tokens in sessionStorage and localStorage should be strictly avoided!**
+__Bearer Tokens in sessionStorage and localStorage should be strictly avoided!__
 
-### 2. **Avoid Using `dangerouslySetInnerHTML`**
+### 2. __Avoid Using `dangerouslySetInnerHTML`__
 
 Using `dangerouslySetInnerHTML` can expose your application to XSS attacks. Always sanitize any HTML content before rendering it.
 
@@ -339,15 +339,15 @@ Using `dangerouslySetInnerHTML` can expose your application to XSS attacks. Alwa
     <div dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
     ```
 
-### 3. **Do Not Expose API Keys in the Frontend**
+### 3. __Do Not Expose API Keys in the Frontend__
 
 Exposing API keys in your frontend code can lead to unauthorized access to your backend services. Use environment variables and server-side code to keep your API keys secure.
 
-### 4. **Do Not Ignore Security Updates**
+### 4. __Do Not Ignore Security Updates__
 
 Regularly update your dependencies to include the latest security patches. Use tools like `npm audit` to identify and fix vulnerabilities in your project.
 
-### 5. **Avoid Using Untrusted Third-Party Libraries**
+### 5. __Avoid Using Untrusted Third-Party Libraries__
 
 Only use third-party libraries from trusted sources. Review the library's code and check for any known vulnerabilities before including it in your project.
 
@@ -357,12 +357,12 @@ When building React applications that interact with REST APIs, [Axios](https://a
 
 ### Setting Up Axios
 
-1. **Install Axios**:
+1. __Install Axios__:
     ```sh
     npm install axios
     ```
 
-2. **Create an Axios Instance**:
+2. __Create an Axios Instance__:
     Configure an Axios instance to include the Bearer token in the Authorization header for all requests.
 
     ```typescript

@@ -2,6 +2,8 @@
 
 This guideline documents the Machine Learning (ML) practices in ISE. ISE works with customers on ML/AI projects and putting them in production, with an emphasis on engineering and research best practices throughout the project's life cycle.
 
+Modern ML/AI projects may also include generative AI, retrieval-augmented generation, tool-calling agents, or AI-assisted workflows. These systems still need the ML lifecycle guidance in this section, but they also require explicit controls for prompts, grounding data, evaluations, tool permissions, telemetry, and Responsible AI review.
+
 ## Goals
 
 * Provide a set of ML practices to follow in an ML project.
@@ -12,6 +14,15 @@ This guideline documents the Machine Learning (ML) practices in ISE. ISE works w
 
 * If you are starting a new ML project, consider reading through the [general guidance documents](#general-guidance).
 * For specific aspects of an ML project, refer to the guidelines for different [project phases](#ml-project-phases).
+
+## AI-enabled project entry points
+
+Generative AI, LLM, and agent projects need the same ML fundamentals plus additional engineering controls for prompts, retrieval, tool use, autonomy, safety, and monitoring.
+
+* Start with the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared expectations around tool use, review, data handling, testing, security, observability, and traceability.
+* Use [Responsible AI](./responsible-ai.md) early for impact assessment, stakeholder analysis, fallback paths, and ongoing review.
+* Plan evaluation datasets, rubrics, safety checks, and regression gates with the [Testing](../automated-testing/README.md#testing-ai-assisted-and-ai-enabled-changes) guidance.
+* Include AI-specific threat modeling and operational telemetry from the [Security](../security/README.md#ai-and-agent-security) and [Observability](../observability/README.md#ai-observability) guides.
 
 ## ML Project Phases
 
@@ -34,6 +45,7 @@ The diagram below shows different phases in an ideal ML project. Due to practica
 * [Testing Data Science and ML Ops code](./testing-data-science-and-mlops-code.md)
 * [Profiling Machine Learning and ML Ops code](./profiling-ml-and-mlops-code.md)
 * [Responsible AI](./responsible-ai.md)
+* [Generative AI and agentic systems](./generative-ai-and-agentic-systems.md)
 * [Program Management for ML projects](./tpm-considerations-for-ml-projects.md)
 
 ## Resources

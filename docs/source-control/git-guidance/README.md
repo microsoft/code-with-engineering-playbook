@@ -272,6 +272,12 @@ For more information on commit message conventions, see:
 * [On commit messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
 * [Git trailers](https://git-scm.com/docs/git-interpret-trailers)
 
+### AI-assisted change traceability
+
+AI-assisted commits and pull requests follow the same branch, review, test, and work item practices as other changes. Record material AI assistance according to team convention, such as a pull request note, work item comment, or commit trailer when the team adopts one.
+
+Do not commit prompts, transcripts, or generated artifacts that contain secrets, customer data, or unnecessary sensitive context. See the [AI-Assisted Engineering](../../ai-assisted-engineering/README.md) guide for shared data, review, and authorship considerations.
+
 ## Managing Remotes
 
 A local git repository can have one or more backing remote repositories. You can list the remote repositories using `git remote` - by default, the remote repository you cloned from will be called origin

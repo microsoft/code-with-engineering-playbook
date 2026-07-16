@@ -40,6 +40,23 @@ Going through this exercise doesn't only produce test cases, it also helps clari
     - Review the test cases with peers or stakeholders to ensure that we have covered everything we want to cover, and that expected outcomes are correct
     - Refine the test cases based on feedback
 
+### AI Evaluation Planning
+
+When a story uses generative AI, RAG, or tool-calling agents, plan evaluation cases alongside functional test cases. AI behavior can change when prompts, models, grounding data, tool schemas, or safety settings change, so acceptance criteria should name the quality, safety, and operational evidence needed for release.
+
+Include these evaluation patterns when they fit the story risk:
+
+- Golden datasets with representative requests, expected outcomes, allowed variation, and known failure examples
+- Prompt regression suites for system instructions, developer prompts, prompt templates, and canary prompts
+- Scenario tests that cover happy paths, ambiguous requests, out-of-scope requests, refusal behavior, and recovery after a failed answer or action
+- RAG checks for retrieval relevance, groundedness, faithfulness to sources, citation quality, security trimming, and source freshness
+- Safety and adversarial tests for jailbreak attempts, indirect prompt injection, harmful content, sensitive disclosure, and misuse cases
+- Tool-call contract tests for schema validity, argument validation, authorization, idempotency, dry-run behavior, write-path controls, and error handling
+- Human-graded rubrics for judgment-heavy outputs, with stakeholder-approved scoring thresholds and examples of acceptable and unacceptable responses
+- Drift monitoring plans that connect production feedback, safety signals, retrieval changes, prompt changes, and model updates back to the evaluation suite
+
+Define release gates before implementation begins. A gate can require minimum quality scores, no critical safety failures, passing tool-call contract tests, acceptable latency and cost, reviewed red-team findings, and documented follow-up for known limitations. Map the evidence back to story acceptance criteria so product owners, engineers, and QA can decide whether the AI behavior is ready to ship.
+
 ### Examples of Test Cases using the Given-When-Then Format
 
 | User Login | (Positive Test Case) |

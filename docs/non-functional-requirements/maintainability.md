@@ -23,5 +23,5 @@ Implementing maintainability in software systems involves adopting practices, to
 - Code Reviews: Conduct regular [code reviews](../code-reviews/README.md) to ensure adherence to standards and to share knowledge among team members.
 - External Documentation: Maintain up-to-date documentation, including design documents, user manuals, and [API references](../documentation/guidance/rest-apis.md). There are tools to assist with that like Swagger or Postman.
 - README Files: Provide README files in repositories to guide new developers on setup, usage, and contribution guidelines.
-- Automated Testing: Provide unit test, end-to-end tests, smoke and integration tests as well as continuous integration practices.
+- Automated Testing: Provide a layered test suite — see the [automated testing fundamentals](../automated-testing/README.md#the-fundamentals) for the unit, integration, end-to-end, and smoke test taxonomy — alongside continuous integration practices.
 - Code Refactoring: Regularly refactor code to improve its structure, readability, and maintainability without changing its external behavior. Implementing pre-commit hooks in the pipelines to automate the monitoring of code refactoring tasks, like forcing coding standards, run static code analysis, linting, etc.

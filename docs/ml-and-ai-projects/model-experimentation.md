@@ -141,6 +141,23 @@ When deciding on the evaluation of the ML model/process, consider the following 
 - [ ] Evaluation code is unit-tested and reviewed by all team members.
 - [ ] Evaluation flow facilitates further results and error analysis.
 
+### Generative AI and Agent Evaluation
+
+Generative AI and agentic systems need evaluation artifacts that are versioned and reviewed with the same care as code, datasets, and model parameters. Track prompts, model versions, retrieval configuration, tool schemas, safety settings, evaluation datasets, and scoring rubrics so teams can compare behavior across experiments and releases.
+
+Use offline evaluations before release to measure:
+
+- Output quality against golden datasets, scenario tests, and human-graded rubrics
+- Prompt regressions across system instructions, developer prompts, templates, and canary prompts
+- RAG retrieval relevance, groundedness, faithfulness to retrieved sources, citation quality, security trimming, and freshness
+- Safety behavior for jailbreak attempts, prompt injection, indirect prompt injection, harmful content, sensitive disclosure, and misuse cases
+- Tool-call correctness, including schema conformance, argument validation, authorization, dry-run behavior, write-path controls, and recovery from tool failures
+- Operational targets such as latency, token or compute cost, refusal rate, fallback rate, and failure clustering
+
+Record evaluation outcomes in the experiment tracker with the artifact versions that produced them. Each run should identify the prompt or instruction version, model or deployment version, grounding dataset or index version, tool contract version, evaluator version, metric thresholds, reviewer notes, and release decision.
+
+Use release gates when an experiment affects user-facing behavior or agent authority. A gate should state the required scores, the safety failures that block release, the human approvals required for high-impact actions, and the production monitoring signals that will detect drift after release. Re-run the relevant evaluation suite after prompt, model, retrieval, tool, safety policy, or user-population changes.
+
 ## Evaluation Development Process Outcomes
 
 1. Evaluation strategy is agreed upon all stakeholders

@@ -12,6 +12,16 @@ There can be single line and multi-line comments (e.g., [C# Comments](https://le
 
 Now, the use of these comments is often considered a code smell. If you need to clarify your code, that may mean the code is too complex. So you should work towards the removal of the clarification by making the code simpler, easier to read, and understand. Still, these comments can be useful to give overviews of the code, or provide additional context information that is not available in the code itself.
 
+Be especially careful with generated comments and generated code explanations. Treat them as drafts that need the same review as code because they can repeat a wrong assumption with confident wording. Before keeping generated commentary, check that it:
+
+- Explains why the code exists or what constraint it protects, not what each line already says.
+- Matches the current implementation, tests, public API, error behavior, and security or privacy boundary.
+- Does not invent performance claims, compatibility guarantees, architectural intent, or future work.
+- Does not hide unclear code that should be renamed, decomposed, tested, or removed.
+- Does not expose secrets, customer data, internal incident details, or prompt content that should not be documented.
+
+When an AI tool generates a code explanation for documentation or review, anchor the final text in source files, tests, specifications, or design decisions that the team can verify.
+
 Examples of useful comments:
 
 - Single line comment in C# that explains **why** that piece of code is there (from a private method in [System.Text.Json.JsonSerializer](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/JsonSerializer.Read.String.cs)):

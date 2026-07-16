@@ -44,6 +44,30 @@ If you are looking to add automated testing to your Azure Pipelines, you may wan
 
 It's important to keep in mind that automated tooling alone is not enough - make sure to augment your automated tests with manual ones. Accessibility Insights (linked above) can guide users through some manual testing steps.
 
+### AI Experiences
+
+Generative AI and agentic systems need accessibility review because they can create dynamic content, conversational interfaces, citations, multimodal inputs and outputs, and fallback paths that change during a session. Use these prompts with the [Responsible AI](../ml-and-ai-projects/responsible-ai.md) and [generative AI and agentic systems](../ml-and-ai-projects/generative-ai-and-agentic-systems.md) guidance.
+
+- Can screen readers and keyboard users follow generated content as it appears, including streaming responses, loading states, edits, refusals, errors, and tool progress?
+- Does the chat or agent interface preserve focus order, expose status changes through accessible announcements, and avoid trapping users in long-running workflows?
+- Are citations, source links, confidence cues, warnings, and safety messages available as text and associated with the generated claims they support?
+- Are generated images, diagrams, audio, video, and document summaries reviewed for captions, transcripts, alt text, language metadata, and clear alternatives?
+- Can users choose or avoid modalities, such as voice, image upload, camera input, file upload, or generated audio, without losing access to the core task?
+- Does the system avoid presenting hallucinated, low-confidence, or unsupported output in ways that users cannot inspect, correct, copy, report, or retry?
+- Is there a human fallback, deterministic path, or support route when AI output affects access, eligibility, safety, financial, health, legal, or employment-related decisions?
+- Are evaluation datasets and manual tests representative of users with different assistive technologies, languages, literacy levels, cognitive needs, and sensory or motor abilities?
+
+### AI-assisted accessibility work
+
+AI can help draft alt text, captions, documentation, test ideas, and candidate UI changes, but it does not replace manual accessibility validation or assistive technology review.
+
+- Manually validate AI-generated content, UI, alt text, captions, documentation, and user flows for accuracy and usefulness.
+- Check generated UI components for semantic structure, keyboard support, focus order, contrast, labels, and screen-reader behavior.
+- Review generated content for plain language, inclusive language, cognitive accessibility, localization, and cultural context.
+- Confirm which AI tools are approved for this project and data type before uploading screenshots, transcripts, user research, or customer context.
+
+Use the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared accessibility and inclusion practices.
+
 ### Code and Documentation Basics
 
 Before you get to testing, you can make some small changes in how you write code and documentation.

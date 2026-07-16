@@ -30,6 +30,7 @@ For more information about how to contribute to this repo, visit this [page](htt
 - [ ] My code follows the code style of this project.
 - [ ] I ran the lint checks which produced no new errors nor warnings for my changes.
 - [ ] I have checked to ensure there aren't other open Pull Requests for the same update/change.
+- [ ] If AI assistance materially shaped this change, I disclosed it and included validation, dependency/license/security, and eval/test evidence where applicable.
 
 ## Does This Introduce a Breaking Change?
 

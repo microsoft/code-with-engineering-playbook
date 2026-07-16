@@ -8,13 +8,25 @@ Developers working on projects should adhere to industry-recommended standard pr
 
 When requesting a security review for your application, please make sure you have familiarized yourself with the [Rules of Engagement](./rules-of-engagement.md). This will help you to prepare the application for testing, as well as understand the scope limits of the test.
 
+## AI and agent security
+
+AI-enabled systems and coding agents need the same secure engineering discipline as other software, plus threat coverage for model behavior, prompts, context, and tool use. Treat model output as untrusted input before rendering, executing, storing, or sending it to another system.
+
+- Extend threat models using the canonical [AI systems threat-modeling considerations](./threat-modelling.md#ai-systems-threat-modeling-considerations) for prompt injection, tool authority, model and data poisoning, and related AI risks.
+- Scope agent tools, credentials, file access, cloud permissions, and network access to the least privilege needed for the task.
+- Confirm which AI tools are approved for this project and data type before they access customer data, source code, cloud resources, or production systems.
+- Add security tests for malicious prompts, tool-call abuse, data exfiltration, unsafe generated commands, and untrusted retrieved content.
+- Validate generated dependency, container, infrastructure, and CI/CD changes through the normal security review path.
+
+Use the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared data, review, and governance practices.
+
 ## Quick Resources
 
 - [Secure Coding Practices Quick Reference](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 - [Web Application Security Quick Reference](https://owasp.org/www-pdf-archive//OWASP_Web_Application_Security_Quick_Reference_Guide_0.3.pdf)
 - [Security Mindset/Creating a Security Program Quick Start](https://github.com/OWASP/Quick-Start-Guide/blob/master/OWASP%20Quick%20Start%20Guide.pdf?raw=true)
 - [Credential Scanning / Secret Detection](../CI-CD/dev-sec-ops/secrets-management/credential_scanning.md)
-- [Threat Modelling](./threat-modelling.md)
+- [Threat Modelling](./threat-modelling.md), including AI-specific guidance for prompts, retrieval, model dependencies, tool use, agent authority, and human approval gates
 
 ## Azure DevOps Security
 

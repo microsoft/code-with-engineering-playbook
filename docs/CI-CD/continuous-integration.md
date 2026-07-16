@@ -28,6 +28,10 @@ A robust build automation pipeline will:
 ### Code / Manifest Artifacts Required to Build Your Project Should be Maintained Within Your Projects Git Repository
 
 - CI provider-specific build pipeline definition(s) should reside within your project(s) git repository(s).
+- For generative AI and agentic applications, prompts, evaluation datasets, model configuration, grounding index definitions, safety policies, orchestration settings, and tool permission manifests should be maintained as versioned artifacts when they affect product behavior.
+- AI application artifacts should have the same review, test, rollback, and promotion expectations as application code and infrastructure templates.
+- Build validation should fail when prompt, model, retrieval, safety, or tool-permission changes are missing required evaluation evidence or schema checks.
+- Generated indexes, embeddings, and caches do not always belong in git, but the source data selection, transformation logic, index configuration, and release record should be traceable.
 
 ## Build Automation
 
@@ -82,6 +86,7 @@ Manage as much of the following as possible, as code:
 - Configuration Files
 - Configuration Management(ie environment variable automation via [terraform](https://github.com/microsoft/cobalt/blob/master/infra/modules/providers/azure/app-service/main.tf#L49))
 - Secret Management(ie creating Azure secrets via [terraform](https://github.com/microsoft/cobalt/blob/master/infra/templates/az-isolated-service-single-region/app.tf#L84))
+- AI application release artifacts, including prompt templates, eval suites, model settings, grounding index definitions, safety policies, and tool permission manifests
 - Cloud Resource Provisioning
 - Role Assignments
 - Load Test Scenarios
@@ -180,7 +185,7 @@ The schema has 30+ [validators](https://json-schema.org/tools?query=#validator) 
 
 ## Integration Validation
 
-An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system:
+An effective way to identify bugs in your build at a rapid pace is to invest early into a reliable suite of automated tests that validate the baseline functionality of the system. For the unit, integration, and end-to-end testing taxonomy and when to apply each, see the [automated testing fundamentals](../automated-testing/README.md#the-fundamentals) and the [end-to-end testing guide](../automated-testing/e2e-testing/README.md); the points below focus on wiring those tests into CI.
 
 ### End-to-End Integration Tests
 
@@ -216,6 +221,8 @@ An effective way to identify bugs in your build at a rapid pace is to invest ear
 
 ### Branch Policy Enforcement
 
+The canonical branch and pull request workflow lives in [source control](../source-control/README.md#creating-a-new-repository) and the [pull request guidance](../code-reviews/pull-requests.md). The CI-specific enforcement below ensures builds gate reviews and merges:
+
 - Protected [branch policies](https://help.github.com/en/github/administering-a-repository/about-protected-branches) should be setup on the main branch to ensure that CI stage(s) have passed prior to starting a code review. Code review approvers will only start reviewing a pull request once the CI pipeline run passes for the latest pushed git commit.
 - Broken builds should block pull request reviews.
 - Prevent commits directly into main branch.
@@ -233,7 +240,7 @@ In the spirit of transparency and embracing frequent communication across a dev 
 ### Everyone Commits to the Git Repository Each Day
 
 - End of day checked-in code should contain unit tests at the minimum.
-- Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://leankit.com/learn/lean/principles-of-lean-development/).
+- Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://www.planview.com/resources/guide/lean-principles-101/).
 - Isolate work into small chunks which ties directly to business value and refactor incrementally.
 
 ## Isolated Environments

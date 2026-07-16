@@ -14,6 +14,14 @@ Design at macroscopic level shows the interactions between systems and services 
   * Generic box diagrams depicting data flow or call origination/destination are useful. However, the title should clearly define what the arrows show indicate. In most cases, a diagram will show either data flow or call directions but not both.
   * Visualize the contrasting aspects of the system/diagram for ease of communication. e.g. differing technologies employed, modified vs. untouched components, or internet vs. local cloud components. Colors, grouping boxes, and iconography can be used for differentiating.
   * Prefer ease-of-understanding for communicating ideas over strict UML correctness.
+* When the design includes generative AI, retrieval-augmented generation, or tool-using agents, make these decisions visible in the review artifact:
+  * Which model, provider, deployment, or model router is used, and what latency, cost, quality, privacy, or availability trade-off drove that choice?
+  * What sources ground the answers, how are retrieval permissions enforced, and how are citations or source identifiers returned to users and operators?
+  * Which tools can the system call, what side effects can each tool create, and how are tool schemas, inputs, outputs, and errors validated?
+  * What conversation history, memory, cache, or generated summary is stored, how long is it retained, and how can it be deleted?
+  * Which actions require user confirmation, human approval, policy checks, or a second system validation before execution?
+  * What prompt, model, retrieval, safety-filter, tool-call, latency, cost, and user-feedback telemetry is captured without exposing sensitive content?
+  * How does the system respond when the model is unavailable, retrieval quality is low, content is unsafe, costs exceed budget, or a tool call fails partway through?
 * Design reviews should be lightweight and should not feel like an additional process overhead.
 
 ## Examples
