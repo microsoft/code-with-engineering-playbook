@@ -233,7 +233,7 @@ In the spirit of transparency and embracing frequent communication across a dev 
 ### Everyone Commits to the Git Repository Each Day
 
 - End of day checked-in code should contain unit tests at the minimum.
-- Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://leankit.com/learn/lean/principles-of-lean-development/).
+- Run the build locally before checking in to avoid CI pipeline failure saturation. You should verify what caused the error, and try to solve it as soon as possible instead of committing your code. We encourage developers to follow a [lean SDLC principles](https://en.wikipedia.org/wiki/Lean_software_development).
 - Isolate work into small chunks which ties directly to business value and refactor incrementally.
 
 ## Isolated Environments

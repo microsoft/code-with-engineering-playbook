@@ -53,7 +53,7 @@ items:
               The process for design reviews should be documented and available
               to the whole team from the outset of the project. This story is to
               explicitly document that process in the team's [working
-              agreement](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/working-agreements/readme/)
+              agreement](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/working-agreements/)
             acceptanceCriteria:
               - Design review process is well-documented within the working
                 agreement

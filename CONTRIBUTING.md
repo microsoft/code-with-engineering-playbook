@@ -18,7 +18,7 @@ If you are unsure if your content will match this playbook, you are welcome to c
 ## General guidance
 
 - Quality is more important than quantity
-- Write in a way that you would want someone else to explain something to you. Use [`plain english`](http://www.plainenglish.co.uk/how-to-write-in-plain-english.html)
+- Write in a way that you would want someone else to explain something to you. Use [`plain english`](https://www.plainenglish.co.uk/)
 - Be friendly, technical, professional and concise
 - Communicate as engineers, not marketing; we want to share what we learned, not "sell" our ideas
 - Don't recreate introductory content, link to it

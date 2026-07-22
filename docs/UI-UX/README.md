@@ -63,7 +63,7 @@ Design Ops, short for Design Operations, is a practice that focuses on optimizin
    - Creating and maintaining a design system that includes reusable components, style guides, and design tokens.
    - Promoting consistency and efficiency by using shared design assets.
    - For most projects within ISE we use [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/controls/webcomponents) to handle most projects, this enables rapid development that allow for web application re-use on non-customer engagements or _white label_ applications.
-   - Other Design Systems used by customers include: [Google's Material Design](https://mui.com/material-ui/), 
+   - Other Design Systems used by customers include: [Google's Material Design](https://mui.com/material-ui/),
 
 4. **Documentation**:
    - Documenting design decisions, guidelines, and best practices.
@@ -77,7 +77,7 @@ Design Ops, short for Design Operations, is a practice that focuses on optimizin
 6. **Metrics and KPIs**:
    - Defining key performance indicators (KPIs) to measure the effectiveness of design processes.
    - Using metrics to identify areas for improvement and track progress over time.
-   - __For long-term projects:__ Incorporate _A/B testing_ for better user experiences, and enhancements to the solution.
+   - **For long-term projects:** Incorporate _A/B testing_ for better user experiences, and enhancements to the solution.
 
 ### Benefits of Design Ops for Software Engineers and Product Owners
 
@@ -90,19 +90,19 @@ By integrating Design Ops into the development process, software engineers can w
 
 ## Establishing a web application's architecture
 
-The benefit of building software applications is that there are truly infinite ways to build something. A team can use the latest shiny tools, or they can utilize the tried-and-tested ones. It is for this reason that focussing completely on the user until a solution is defined is better than obsessing over technology choices. 
+The benefit of building software applications is that there are truly infinite ways to build something. A team can use the latest shiny tools, or they can utilize the tried-and-tested ones. It is for this reason that focussing completely on the user until a solution is defined is better than obsessing over technology choices.
 
 When choosing a front-end framework or library, consider the project's complexity, performance, and scalability needs. Evaluate the team's expertise with potential options to ensure efficient development. Assess long-term maintainability and community support. Conduct [Trade Studies](./../design/design-reviews/trade-studies/README.md) to weigh pros and cons, focusing on alignment with project goals and user experience. This thorough analysis helps balance innovation with practicality.
 
 
-### Some platforms/frameworks to consider when planning a project:
+### Some platforms/frameworks to consider when planning a project
 
 1. HTML/CSS/JavaScript
    - Back to the basics! Start with a single **index.html**, include a popular CSS framework such as [Bootstrap](https://getbootstrap.com/) using their CDN link, and start prototyping!
    - Rarely will you have to support legacy browsers; thus, you can rely on modern JavaScript language features! No need for build tools or even TypeScript (did you know you can [type check JavaScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)).
-   - For static _vanilla_ websites like this; we still recommend a build system like [Vite](https://vitejs.dev/) to build and manage assets for deployment.
+   - For static _vanilla_ websites like this; we still recommend a build system like [Vite](https://vite.dev/) to build and manage assets for deployment.
 1. React
-   - [React](https://reactjs.org/) allows for the creation of reusable UI components, and is used for most projects in ISE.
+   - [React](https://react.dev/) allows for the creation of reusable UI components, and is used for most projects in ISE.
    - Ideal for projects that require a dynamic and responsive user interface.
    - Works well with a variety of state management libraries like Redux or Context API.
    - Has a massive 3rd party library support.
@@ -112,7 +112,7 @@ When choosing a front-end framework or library, consider the project's complexit
    - A robust framework for building client-side applications. [Angular](https://angular.dev/) provides a comprehensive solution with built-in features like dependency injection, routing, and state management.
    - Ideal for large-scale applications where maintainability and scalability are crucial.
    - Better Unit Testing support out of the box than React.
-   - __Angular has no support for Fluent UI, and has tight integration with Google Cloud Platform.__
+   - **Angular has no support for Fluent UI, and has tight integration with Google Cloud Platform.**
 1. Blazor
    - A framework for building interactive web UIs using C# instead of JavaScript. [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) allows you to share code between the client and server.
    - Great for teams already familiar with the .NET ecosystem.
@@ -125,7 +125,7 @@ When choosing a front-end framework or library, consider the project's complexit
    - A React-based framework that enables server-side rendering and static site generation. [Next.js](https://nextjs.org/) improves performance and SEO.
    - Great for building fast, scalable web applications with a focus on developer experience.
    - Provides built-in support for API routes, making it easier to build full-stack applications.
-   - __Recommended by Meta going forward rather than use create-react-app.__
+   - **Recommended by Meta going forward rather than use create-react-app.**
    - Next.js is very heavy in terms of features, and it doesn't allow for re-use in non-Next.js applications like create-react-app, React-Native, or Electron based apps.
 1. Svelte
    - [Svelte](https://svelte.dev/) is a modern framework that shifts much of the work to compile time, resulting in highly optimized and performant applications.
@@ -146,5 +146,5 @@ When choosing a front-end framework or library, consider the project's complexit
 ### Further information
 
 > For more information of utilizing any of these frameworks/platforms, read the [Recommended Technologies](./recommended-technologies.md) document.
-> 
+>
 > Continue reading the [Trade Study](./../design/design-reviews/trade-studies/README.md) section of this site for more information on completing this step in the design process.

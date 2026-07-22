@@ -345,3 +345,6 @@ _site
 site/
 mkdocs/
 megalinter-reports/
+
+# Copilot project tracking
+.copilot-tracking/

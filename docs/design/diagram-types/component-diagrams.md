@@ -73,4 +73,4 @@ Depending on the tool being used, automatic versioning might be performed whenev
 - VS Code Plugins:
   - [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - requires a generator from code to PlantUML syntax to generate diagrams
     - [PlantUML Syntax](https://plantuml.com/component-diagram)
-    - [Drawing manually](https://towardsdatascience.com/drawing-a-uml-diagram-in-the-vs-code-53c2e67deffe)
+    - Drawing manually
