@@ -23,7 +23,7 @@ If you do nothing else follow the [Engineering Fundamentals Checklist](docs/engi
 
 ## Structure of a Sprint
 
-A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to the structure of an Agile sprint.
+A [project kickoff checklist](docs/start-here/project-kickoff-checklist.md) breaks down the playbook according to the structure of an Agile sprint.
 
 ## General Guidance
 
@@ -40,18 +40,21 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 
 ## Resources
 
+* [Start Here](docs/start-here/README.md)
+* [AI-Assisted Engineering](docs/ai-assisted-engineering/README.md)
 * [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)
-* [The first week of an ISE project](docs/the-first-week-of-an-ise-project.md)
+* [Project Kickoff Checklist](docs/start-here/project-kickoff-checklist.md)
 
 ## Engineering Fundamentals
 
 * [Accessibility](docs/non-functional-requirements/accessibility.md)
+* [AI-Assisted Engineering](docs/ai-assisted-engineering/README.md)
 * [Agile Development](docs/agile-development/README.md)
 * [Automated Testing](docs/automated-testing/README.md)
 * [Code Reviews](docs/code-reviews/README.md)
 * [Continuous Delivery (CD)](docs/CI-CD/continuous-delivery.md)
 * [Continuous Integration (CI)](docs/CI-CD/continuous-integration.md)
-* [Design](docs/design/readme.md)
+* [Design](docs/design/README.md)
 * [Developer Experience](docs/developer-experience/README.md)
 * [Documentation](docs/documentation/README.md)
 * [Engineering Feedback](docs/engineering-feedback/README.md)

@@ -34,6 +34,20 @@ Building observable systems enables development teams at ISE to measure how well
 - [Observability in Azure Databricks](./observability-databricks.md)
 - [Recipes](./recipes-observability.md)
 
+## AI observability
+
+AI-enabled systems need telemetry that helps teams debug behavior, detect drift, and control cost while respecting project privacy and retention rules.
+
+- Capture request context: model, provider, and version; prompt template version; retrieval source IDs; and tool calls.
+- Capture operational signals: latency, token or cost signals, error rates, and fallback paths.
+- Capture safety signals: refusal rates, safety outcomes, and escalation rates.
+- Use traces to follow multi-step agent decisions and tool invocations.
+- Apply project data classification and retention rules before logging prompts, completions, documents, embeddings, or user conversations.
+- Run scheduled quality and safety evaluations to detect behavior drift.
+- Alert when safety, quality, latency, cost, or fallback metrics cross agreed thresholds.
+
+Use the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared observability and privacy considerations.
+
 ## Resources
 
 - [Non-Functional Requirements Guidance](../design/design-patterns/non-functional-requirements-capture-guide.md)

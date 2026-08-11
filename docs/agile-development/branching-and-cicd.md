@@ -4,15 +4,13 @@ Purpose: Provide a concise, practical policy and examples teams can adopt for in
 
 ## Recommended approach
 
-- Prefer trunk-based development where possible for new projects. Use short-lived feature branches when necessary and merge frequently into the default integration branch (commonly `main` or `trunk`).
-- Use branch protection rules on the integration branch to enforce quality gates (required passing CI, required code reviews, status checks).
+- Prefer trunk-based development where possible for new projects. Use short-lived feature branches when necessary and merge frequently into the default integration branch (commonly `main` or `trunk`). The [source control git guidance](../source-control/git-guidance/README.md#branching) owns the canonical feature-branch workflow.
+- Use branch protection rules on the integration branch to enforce quality gates (required passing CI, required code reviews, status checks). The [pull request guidance](../code-reviews/pull-requests.md) owns the canonical pull request and merge policy.
 - Keep releases simple: use tags/releases from the integration branch and keep release process documented separately.
 
-## Example branch protection rules
+## Branch protection and merge policy
 
-- Require at least one approving reviewer for pull requests.
-- Require successful CI pipeline status checks before merge.
-- Require up-to-date branch before merge if your policy prefers.
+Enforce the merge gate through branch protection rules rather than restating it here. The [pull request guidance](../code-reviews/pull-requests.md) and [code review evidence and measures](../code-reviews/evidence-and-measures/README.md) own the canonical policy: changes to the integration branch flow through a pull request that requires at least one approving reviewer, passing CI status checks, a linked work item, and updated documentation.
 
 ## Sample minimal GitHub Actions CI gate (example)
 
@@ -34,13 +32,6 @@ jobs:
         run: npm test
 ```
 
-## Merge policy checklist (suggested)
-
-- [ ] Code compiles and automated tests pass in CI
-- [ ] At least one approving reviewer has reviewed the change
-- [ ] The change has an associated work item or issue
-- [ ] Documentation updated where applicable
-
 ## Tips
 
 - Keep feature branches short-lived; frequent merges reduce integration risk.
@@ -49,10 +40,6 @@ jobs:
 
 ## CI/CD guidance
 
-This page complements the central [CI/CD guidance](../CI-CD/README.md). Key expectations teams should follow:
+This page complements the central [CI/CD guidance](../CI-CD/README.md). For the shared expectations — quality pipeline on every PR, infrastructure-as-code provisioning, automated deployment to non-production, and repeatable release and rollback — follow the [CI/CD fundamentals](../CI-CD/README.md#the-fundamentals).
 
-- The integration (main) branch should be continuously shippable and stable — at any point we should be able to deploy a build from `main` to production if needed.
-- Run a quality pipeline (linting, unit tests, basic integration tests) on each PR and on merges to the integration branch.
-- Provision cloud resources and environment configuration via infrastructure-as-code (for example Terraform, Bicep, Pulumi) and exercise them in non-production environments.
-- Deploy release candidates automatically to a non-production environment to validate integration and operational concerns.
-- Automate release and rollback procedures so releases are repeatable and auditable.
+One branching-specific expectation reinforces those fundamentals: the integration (main) branch should stay continuously shippable and stable, so a build from `main` can be deployed to production at any point if needed.

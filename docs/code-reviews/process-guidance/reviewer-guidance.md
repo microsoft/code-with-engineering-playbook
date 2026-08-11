@@ -57,6 +57,31 @@ Code reviews play a critical role in product quality and it should not represent
 - Do the interactions of the various pieces of code in the PR make sense?
 - Does the code recognize and incorporate architectures and coding patterns?
 
+## AI-Assisted and Agent-Authored Changes
+
+Review AI-assisted changes as untrusted contribution. A human author or supervising engineer is still accountable for correctness, maintainability, security, and validation before merge.
+
+Ask for disclosure when material AI or agent assistance affects review context. This is especially useful when an agent authored commits, a prompt or instruction file shaped the change, generated code makes up most of the PR, or the PR changes AI prompts, model configuration, retrieval behavior, tool permissions, eval datasets, or generated documentation.
+
+During review, check that:
+
+- The PR description explains what was generated or agent-assisted when that context helps reviewers.
+- The changed lines, tests, configuration, prompts, documentation, and generated text were read by a human owner.
+- Validation evidence matches the risk of the change, including linting, unit tests, integration tests, smoke tests, manual checks, or screenshots where appropriate.
+- New dependencies, generated lockfile updates, external actions, model providers, MCP servers, or tool integrations were checked for license, supply-chain, and security impact.
+- Generated code does not call invented APIs, bypass existing abstractions, duplicate stale documentation, broaden permissions, hard-code secrets, or ignore error handling.
+- Tests are meaningful and fail for the right reasons, rather than only asserting generated implementation details or shallow happy paths.
+- Security-sensitive behavior still follows least privilege, input validation, authorization, logging, and privacy expectations.
+
+For generative AI or agentic product features, also review evaluation evidence:
+
+- Prompt, model, retrieval, tool, safety, and evaluation artifacts are versioned or otherwise traceable.
+- The PR includes results from relevant golden datasets, prompt regression tests, groundedness checks, safety or jailbreak tests, and tool-call contract tests.
+- Known limitations, excluded scenarios, and follow-up work are documented in the PR or linked work item.
+- Human approval gates, rollback paths, telemetry, and incident response controls are present for high-impact agent actions.
+
+Use the [Copilots](../../developer-experience/copilots.md#team-operating-model-for-ai-assisted-delivery), [AI evaluation planning](../../automated-testing/test-planning.md#ai-evaluation-planning), and [AI threat modeling](../../security/threat-modelling.md#ai-systems-threat-modeling-considerations) guidance when a review needs deeper evidence.
+
 ## Code Quality Pass
 
 ### Complexity

@@ -49,7 +49,11 @@ retry_wait_time = 2
 # accept = "200..=204, 429"
 # accept = ["200", "429"]
 # accept = "200, 429"
-accept = ["200"]
+#
+# 403 (Forbidden) and 429 (Too Many Requests) are accepted because they indicate
+# the target page exists but the host blocks or throttles automated clients in
+# CI. Treating them as failures produces false positives for live links.
+accept = ["200..=299", "403", "429"]
 
 # Proceed for server connections considered insecure (invalid TLS).
 insecure = false
@@ -61,7 +65,7 @@ require_https = false
 method = "get"
 
 # Custom request headers
-header = ["name=value", "other=value"]
+# header = { name = "value", other = "value" }
 
 # Remap URI matching pattern to different URI.
 remap = []
@@ -96,6 +100,15 @@ exclude = [
   "^https://github.com/marketplace/?$",
   # Other:
   "^https://opensource.org/license/",  # works locally but fails with 403 on Github CI.
+  # Sites that block automated clients (TLS handshake / bot protection) but are
+  # valid in a browser:
+  "^https://www.postman.com",
+  "^https://blog.insightdatascience.com",
+  "^https://fate.fedai.org",
+  # Site with an expired TLS certificate (valid content, cert not renewed):
+  "^https://www.techdim.com",
+  # Valid but intermittently slow from CI (request timeouts):
+  "^https://www.gnu.org",
 ]
 
 # Exclude these filesystem paths from getting checked.

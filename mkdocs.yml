@@ -24,6 +24,10 @@ plugins:
   - search
   - git-revision-date-localized
   - awesome-pages
+  - redirects:
+      redirect_maps:
+        # Removed page kept as a redirect: the URL was shared externally and in the root README.
+        'the-first-week-of-an-ise-project.md': 'start-here/project-kickoff-checklist.md'
 
 markdown_extensions:
   - meta

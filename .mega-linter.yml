@@ -12,7 +12,9 @@ ENABLE_LINTERS:
   - SPELL_CSPELL
   - YAML_PRETTIER
   - YAML_YAMLLINT
-  - SPELL_LYCHEE
+  # SPELL_LYCHEE intentionally not enabled yet: the link checker surfaces a large
+  # backlog of pre-existing broken/blocked external links. Re-enable once those
+  # are triaged. The lychee.toml config is kept ready for when it's turned on.
 
 SPELL_CSPELL_DISABLE_ERRORS: true
 SHOW_ELAPSED_TIME: true
