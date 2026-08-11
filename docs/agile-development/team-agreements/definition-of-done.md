@@ -4,6 +4,8 @@ To close a user story, a sprint, or a milestone it is important to verify that t
 
 The development team should decide together what their Definition of Done is and document this in the project. Below are some examples of checks to verify that the user story, sprint, task is completed.
 
+The test types referenced below (unit, integration, performance, and end-to-end) follow the shared [automated testing fundamentals](../../automated-testing/README.md#the-fundamentals).
+
 ## Feature/User Story
 
 - [ ] Acceptance criteria are met

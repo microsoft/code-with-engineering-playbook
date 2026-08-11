@@ -37,6 +37,19 @@ More details on [automated testing](./automated-testing/README.md)
 
 More details on [continuous integration](./CI-CD/continuous-integration.md) and [continuous delivery](./CI-CD/continuous-delivery.md)
 
+## AI-Assisted Engineering
+
+- [ ] Confirm which AI tools are approved for this project and data type.
+- [ ] Shared AI configuration (custom instructions, prompts, rules) is version-controlled and consistent across the team.
+- [ ] AI-assisted changes go through normal human review, PR policy, tests, and security checks.
+- [ ] Prompts and AI context exclude secrets, credentials, private customer data, and unnecessary sensitive details.
+- [ ] AI-enabled features have quality, safety, security, and regression evaluations.
+- [ ] AI-enabled features have observability for model behavior, tool calls, safety outcomes, cost, latency, and failures.
+- [ ] Team members are ramped up on applying engineering fundamentals with approved AI tools.
+- [ ] Record material AI assistance according to team convention.
+
+More details on [AI-assisted engineering](./ai-assisted-engineering/README.md)
+
 ## Security
 
 - [ ] Access is only granted on an as-needed basis

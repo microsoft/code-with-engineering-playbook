@@ -14,6 +14,18 @@ Capturing and providing high-quality actionable Engineering Feedback is an integ
 
 You should jot down the details of the feedback close to the time when you encounter the specific blockers, challenges, and friction since that is when it is freshest in your mind. The project team can then decide how to prioritize and when to submit the feedback into the official CSE Feedback system (accessible to ISE team members) during each sprint.
 
+## AI Tooling Feedback
+
+AI tooling feedback should be captured when it creates repeatable friction, safety concerns, or product gaps for the team or customer. Useful categories include:
+
+* Hallucinated or unsupported answers that mislead users or require costly rework
+* Unsafe output, insecure code suggestions, excessive permissions, or risky tool actions
+* Poor suggestion quality for the project's languages, frameworks, architecture, or domain
+* Privacy, data handling, policy, retention, or customer-data friction that blocks approved use
+* Product limitations, missing integrations, accessibility barriers, evaluation gaps, or operational issues
+
+When you submit AI tooling feedback, include a reproducible prompt or scenario with sanitized context, describe the expected and actual behavior, and note the impact, any workaround, and the tool name and configuration. Follow the project's [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guidance when deciding what context can be shared.
+
 ## What is Good and High-quality Engineering Feedback
 
 Good engineering feedback provides enough information for those who are not part of the code-with engagement to understand the customer pain, the associated product issues, the impact and priority of these issues, and any potential workarounds that exist to minimize that impact.

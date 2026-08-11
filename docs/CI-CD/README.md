@@ -62,10 +62,19 @@ AppVeyor is another free CI service for open source projects which also supports
 
 AI tools can accelerate writing CI/CD pipeline YAML, jobs, and scripting snippets, but they must be used with explicit guardrails.
 
+For AI-powered applications, CI/CD also needs to validate the release artifacts that shape model behavior. We treat those artifacts as deployable units with owners, review history, rollback paths, and release gates, rather than as loose configuration. The artifacts we version this way include:
+
+- Prompts and safety policies
+- Model configuration and grounding indexes
+- Evaluation datasets and tool permission manifests
+
+Use the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared review, security, and traceability expectations when AI assistance is used to draft pipeline or release automation changes.
+
 Suggested workflow:
 - Use AI to draft CI/CD pipeline templates or job steps as a starting point (for example, generating a minimal GitHub Actions workflow).
 - Run the draft pipeline in a safe non-production environment or CI sandbox to validate syntax and basic behavior.
 - Require a human reviewer to validate generated steps for correctness, idempotence, and security implications (especially around secrets, permissions, and external actions).
+- For generative AI or agentic features, add automated evaluation, safety, grounding, and tool-permission checks before deployment to shared environments.
 - Add tests or smoke checks to the pipeline so changes can be validated automatically when the pipeline runs.
 - Promote approved templates into a central location (for example, `.github/workflows/` or a shared pipeline template repository) so teams reuse vetted, audited pipelines.
 
@@ -74,9 +83,12 @@ Guardrails and checklist (before merging AI-generated pipeline changes):
 - [ ] No secrets or credentials are hard-coded
 - [ ] Required linting and syntax checks pass locally and in CI
 - [ ] Security and license scans run and report no critical issues
+- [ ] Prompt, model, retrieval, safety, and tool-permission changes have evaluation evidence in the PR or release record
+- [ ] AI-enabled systems include evaluation gates for prompt, model, retrieval, and agent behavior, plus safety and regression checks, where applicable
 - [ ] Pipeline steps are idempotent and have clear rollback strategies where applicable
 - [ ] Generated content is annotated in the PR description (e.g., "AI-assisted draft") so reviewers know to apply extra scrutiny
 
 Notes:
 - AI-generated pipelines are excellent for reducing boilerplate and accelerating iteration, but they do not replace domain knowledge and security review.
 - Maintain a small set of vetted pipeline templates to reduce risk and improve reproducibility.
+- Use the [generative AI and agentic systems](../ml-and-ai-projects/generative-ai-and-agentic-systems.md#review-the-system-across-disciplines) guidance when a delivery pipeline changes prompts, grounding data, model settings, safety controls, or agent tools.

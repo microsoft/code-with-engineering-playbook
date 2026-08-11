@@ -9,6 +9,8 @@ An engineer working for a [ISE](ISE.md) project...
 
 This is our playbook. All contributions are welcome! Please feel free to submit a pull request to get involved.
 
+New here? Start with [How to use this playbook](start-here/README.md), then choose the guide for your role.
+
 ## Why Have a Playbook
 
 * To increase overall efficiency for team members and the whole team in general.
@@ -17,7 +19,9 @@ This is our playbook. All contributions are welcome! Please feel free to submit 
 
 If you do nothing else follow the [Engineering Fundamentals Checklist](./engineering-fundamentals-checklist.md)!
 
-The [first week of an ISE project](./the-first-week-of-an-ise-project.md) is a breakdown of the sections of the playbook according to the structure of an Agile sprint.
+The [project kickoff checklist](./start-here/project-kickoff-checklist.md) is a breakdown of the sections of the playbook according to the structure of an Agile sprint.
+
+Use [AI-Assisted Engineering](./ai-assisted-engineering/README.md) as the shared baseline for using AI tools in engineering work while preserving human ownership, validation, security, privacy, accessibility, and project governance.
 
 ## General Guidance
 

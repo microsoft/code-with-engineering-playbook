@@ -21,6 +21,12 @@ This document makes several references to running a solution end-to-end (aka E2E
 - Minimize the amount of time spent manual setup and configuration of tooling
 - Minimize regressions and new defects by making end-to-end testing easy
 
+## AI-assisted developer experience
+
+AI tools can improve the inner development loop when the team treats their output as draft engineering work. Use the [Copilots](copilots.md) guidance for tool setup, prompting, and attribution patterns, and use the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared expectations around data handling, review, testing, security, accessibility, and traceability.
+
+When defining the project's DevEx expectations, include approved AI tools, allowed data and context, repository instructions, prompt files, review responsibilities, and validation commands alongside build, test, start, and debug tasks.
+
 ## Impact
 
 Developer experience can have a significant impact on the efficiency of the day-to-day execution of the team. A positive experience can pay dividends throughout the lifetime of the project; especially as new developers join the team.
