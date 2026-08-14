@@ -13,6 +13,10 @@ This includes customer's sensitive, Personal Identifiable Information (PII), and
 4. Use Structured Logging and include a deny-list for sensitive properties.
 5. Put an extra effort on spotting logging statements with sensitive data during code review, as it is common for reviewers to skip reading logging statements. This can be added as an additional checkbox if you're using Pull Request Templates.
 6. Include mechanisms to detect sensitive data in logs, on your organizational pipelines for QA or Automated Testing.
+7. For generative AI systems, avoid retaining raw prompts, responses, retrieved snippets, tool outputs, and agent memory unless the team has an explicit operational need, data classification, retention period, access control, and deletion path.
+8. Store prompt, response, retrieval, memory, and trace metadata as stable identifiers or classifications where possible. Use prompt template IDs, model versions, retrieval source IDs, citation IDs, tool names, policy outcomes, and redacted hashes instead of full text.
+9. Redact or tokenize sensitive content before it enters logs, traces, analytics events, prompt stores, vector indexes, replay datasets, and support exports. Apply the same controls to sampled traces used for evaluation or incident review.
+10. Treat agent memory and tool traces as user data when they include user intent, private context, retrieved records, or external side effects. Review who can read them, how long they are retained, and how they are removed when a user or policy requires deletion.
 
 ### Tools and Implementation Methods
 

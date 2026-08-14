@@ -17,3 +17,5 @@
 *.{markdown,[mM][aA][rR][kK][dD][oO][wW][nN]} text eol=lf
 *.{markdn,[mM][aA][rR][kK][dD][nN]} text eol=lf
 *.{mdown,[mM][dD][oO][wW][nN]} text eol=lf
+
+.github/workflows/*.lock.yml linguist-generated=true merge=ours

@@ -32,4 +32,4 @@ Each of the above types of diagrams will provide specific resources related to i
 - [Visual Paradigm UML Structural vs Behavior Diagrams](https://www.visual-paradigm.com/cn/guide/uml-unified-modeling-language/uml-)
 - [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - requires a generator from code to PlantUML syntax to generate diagrams
   - [C# to PlantUML](https://marketplace.visualstudio.com/items?itemName=pierre3.csharp-to-plantuml)
-  - [Drawing manually](https://towardsdatascience.com/drawing-a-uml-diagram-in-the-vs-code-53c2e67deffe)
+  - [Drawing manually](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)

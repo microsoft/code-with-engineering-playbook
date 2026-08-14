@@ -14,9 +14,26 @@ both have the responsibility to help projects follow the guidelines outlined on 
 
 Developers working on ISE projects should implement best practices and guidance on handling data throughout the project phases. This page is not meant to suggest how customers should handle data in their environment. **It does not override**:
 
-- [Microsoft's Information Security Policy](https://aka.ms/CTRMSsecppext)
-- [Limited Data Protection Addendum](https://aka.ms/mpsldpa)
+- Microsoft's Information Security Policy
+- [Limited Data Protection Addendum](https://download.microsoft.com/download/a/0/2/a0220b6f-a934-4f78-9128-6368af308985/Microsoft%20Professional%20Services%20Limited%20DPA%20-%20Sept%202022.pdf)
 - [Professional Services Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
+
+## AI tool data handling
+
+Anything we feed to or get back from an AI tool is project data, and we handle it with the same care as the rest of the engagement's data. That includes:
+
+- prompts, context files, and embeddings we send to the tool;
+- transcripts and generated output we get back;
+- screenshots and evaluation datasets we use to test it.
+
+Before we use customer, proprietary, regulated, or security-sensitive context, we confirm which AI tools are approved for this project and data type.
+
+- We keep production data, secrets, regulated data, and unnecessary proprietary context out of unapproved AI tools.
+- We prefer de-identified, redacted, representative, or synthetic examples for prompting and evaluation wherever we can.
+- We agree up front on the retention, logging, access, deletion, and export expectations for AI tool inputs and outputs.
+- We apply the same data-minimization and customer-controlled-environment principles to AI prompts, retrieval indexes, and evaluation data.
+
+Use the [AI-Assisted Engineering](../../ai-assisted-engineering/README.md) guide for shared context hygiene and governance practices.
 
 ## 5 W's of Data Handling
 

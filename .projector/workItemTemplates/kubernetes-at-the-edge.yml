@@ -55,7 +55,7 @@ items:
                 description: Some container networking interfaces are only supported on certain OSes. There may also be special networking requirements
               - name: Evaluate CNI options
                 type: task
-                description: Calico provides a full networking stack but support on Windows has some limitations (https://docs.projectcalico.org/getting-started/windows-calico/limitations)
+                description: Calico provides a full networking stack but support on Windows has some limitations (https://docs.tigera.io/calico/latest/getting-started/kubernetes/windows-calico/limitations)
           - name: As a cluster operator, I want to ensure the network design does not interfere with application networking requirements so that applications can function properly on the cluster
             type: story
             acceptanceCriteria:

@@ -1,10 +1,19 @@
 nav:
   - ISE Engineering Fundamentals Playbook: README.md
-  - Engineering Fundamentals Checklist: engineering-fundamentals-checklist.md
-  - The First Week of an ISE Project: the-first-week-of-an-ise-project.md
+  - Start Here: start-here
   - Who is ISE?: ISE.md
-  - Agile Development: agile-development
+  - Source Control: source-control
+  - Code Reviews: code-reviews
   - Automated Testing: automated-testing
   - CI/CD: CI-CD
-  - ...
+  - AI-Assisted Engineering: ai-assisted-engineering
+  - Security: security
+  - Observability: observability
+  - Agile Development: agile-development
+  - Design: design
+  - Developer Experience: developer-experience
+  - Documentation: documentation
+  - Engineering Feedback: engineering-feedback
+  - Non-Functional Requirements: non-functional-requirements
+  - ML & AI Projects: ml-and-ai-projects
   - UI/UX: UI-UX

@@ -10,11 +10,16 @@ ENABLE_LINTERS:
   - MARKDOWN_MARKDOWNLINT
   - MARKDOWN_MARKDOWN_TABLE_FORMATTER
   - SPELL_CSPELL
+  - SPELL_LYCHEE
   - YAML_PRETTIER
   - YAML_YAMLLINT
-  - SPELL_LYCHEE
 
 SPELL_CSPELL_DISABLE_ERRORS: true
+# Lychee reports broken/blocked links but does not block CI: many external links
+# are valid in a browser yet rejected by, or flaky from, CI runner IPs (bot
+# protection, throttling, transient network errors). This matches the repo's PR
+# template guidance that link-check errors are expected and reviewed manually.
+SPELL_LYCHEE_DISABLE_ERRORS: true
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 PARALLEL: true

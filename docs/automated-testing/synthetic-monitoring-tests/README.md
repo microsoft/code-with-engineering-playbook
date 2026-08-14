@@ -84,7 +84,7 @@ Some organizations prefer running probes on existing infrastructure using known 
 - [Application Insights availability](https://learn.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability) - Simple availability tests that allow some customization using [Multi-step web test](https://learn.microsoft.com/en-us/azure/azure-monitor/app/availability-multistep)
 - [DataDog Synthetics](https://www.datadoghq.com/dg/apm/synthetics/api-test/)
 - [Dynatrace Synthetic Monitoring](https://www.dynatrace.com/platform/synthetic-monitoring/)
-- [New Relic Synthetics](https://newrelic.com/products/synthetics)
+- [New Relic Synthetics](https://newrelic.com/synthetics)
 - [Checkly](https://checklyhq.com)
 
 ## Conclusion

@@ -85,7 +85,7 @@ This approach also enables full fidelity integration testing without spinning up
 
 ### Stub / Fake Services
 
-Lower fidelity approaches run stub services, that could be generated from API specs, or run fake servers like JsonServer ([JsonServer.io: A fake json server API Service for prototyping and testing.](https://www.jsonserver.io/)) or Postman. All these services would respond with predetermined and configured JSON messages.
+Lower fidelity approaches run stub services, that could be generated from API specs, or run fake servers like JsonServer ([json-server: A fake REST API service for prototyping and testing.](https://github.com/typicode/json-server)) or Postman. All these services would respond with predetermined and configured JSON messages.
 
 ## How to Decide
 

@@ -2,6 +2,17 @@
 
 You can document how to set up your dev machine with the right version of the framework required to run the code, which extensions are useful to develop the application with your editor, or how to configure your editor to launch and debug the application. If it is possible, a better solution is to provide the means to automate tool installs, application startup, etc., instead.
 
+Prefer automation over generated setup prose when the reader needs a repeatable result. AI-assisted instructions can help draft context, explain trade-offs, or summarize what a script does, but they should not replace executable setup, validation, or recovery steps that the team can test.
+
+Automation is usually the better artifact when:
+
+- The same commands must run on every developer machine, build agent, or test environment.
+- The instructions include version pinning, environment variables, credentials setup, generated files, or ordered prerequisites.
+- A failure should stop early with a clear error instead of relying on a reader to notice a missed step.
+- The process must stay current as dependencies, toolchains, containers, or cloud resources change.
+
+Use documentation to explain intent, boundaries, troubleshooting, and when not to run the automation. Keep generated prose source-backed by the script, task, container definition, or pipeline it describes.
+
 Some examples are provided below:
 
 ## Dev Containers in Visual Studio Code

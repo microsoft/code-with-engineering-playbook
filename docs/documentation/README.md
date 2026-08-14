@@ -10,6 +10,18 @@ Documentation shouldn't be an afterthought. Different written documents and mate
 - Improve communication and collaboration between teams (especially when distributed across time zones).
 - Improve the transition of the project to another team.
 
+## AI-assisted documentation
+
+AI tools can help us draft outlines, explain code, summarize decisions, and produce examples, but we validate generated documentation before it becomes project guidance.
+
+- Ground AI-assisted drafts in source material such as code, tests, work items, design notes, decisions, and product documentation.
+- Ask subject-matter experts to review generated explanations for accuracy, missing context, and project-specific constraints.
+- Verify generated commands, configuration examples, API behavior, screenshots, diagrams, and troubleshooting steps before publishing.
+- Remove invented behavior, unsupported claims, outdated assumptions, and content that exposes secrets, customer data, or unnecessary proprietary context.
+- Keep generated documentation linked to the same review, traceability, and update process used for other project documentation.
+
+The [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide covers the shared review, data handling, authorship, and accessibility expectations for AI-assisted content.
+
 ## Challenges
 
 When working in an engineering project, we typically encounter one or more of these challenges related to documentation (including some examples):
@@ -29,6 +41,8 @@ When working in an engineering project, we typically encounter one or more of th
   - Missing settings in the "how to run this" document that are required to run the application.
 - **Inaccurate**.
   - Documents not updated along with the code, so they don't mention the right folders, settings, etc.
+  - AI-assisted documentation that describes commands, APIs, configuration, or product behavior without checking the current source, tests, or generated reference output.
+  - Generated explanations that sound plausible but hide uncertainty, omit prerequisites, or invent links, parameters, environment variables, screenshots, metrics, or limitations.
 - **Obsolete**.
   - Design documents that don't apply anymore, sitting next to valid documents. Which one shows the latest decisions?
 - **Out of order (subject / date)**.
@@ -39,6 +53,9 @@ When working in an engineering project, we typically encounter one or more of th
 - **Afterthought**.
   - Key documents created several weeks into the project: onboarding, how to run the app, etc.
   - Documents created last minute just before the end of a project, forgetting that they also help the team while working on the project.
+- **Unreviewed generated content**.
+  - Generated sections that fill space without a clear reader need, source-backed claim, or owner.
+  - Rephrased content that drifts from the original technical meaning, softens warnings, or drops accessibility, security, or privacy details.
 
 ## What Documentation Should Exist
 

@@ -33,6 +33,6 @@ of the log itself, using less space than just storing the raw logs.
 ## Resources
 
 - [Loki Official Site](https://grafana.com/oss/loki/)
-- [Inserting logs into Loki](https://grafana.com/docs/loki/latest/getting-started/get-logs-into-loki/)
+- [Inserting logs into Loki](https://grafana.com/docs/loki/latest/get-started/)
 - [Adding Loki Source to Grafana](https://grafana.com/docs/grafana/latest/datasources/loki/#adding-the-data-source)
 - [Loki Best Practices](https://grafana.com/docs/loki/latest/best-practices/)

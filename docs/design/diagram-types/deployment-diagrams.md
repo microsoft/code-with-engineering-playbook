@@ -64,4 +64,4 @@ The below approach can be used to assist the team on how often to update the pub
 - [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/)
   - [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - requires a generator from code to PlantUML syntax to generate diagrams
     - [PlantUML Syntax](https://plantuml.com/deployment-diagram)
-    - [Drawing manually](https://towardsdatascience.com/drawing-a-uml-diagram-in-the-vs-code-53c2e67deffe)
+    - [Drawing manually](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)

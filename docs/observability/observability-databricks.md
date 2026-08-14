@@ -34,10 +34,8 @@ note that Linux OMS Agent is not specific to Azure Databricks.
 
 ### Application Logging
 
-Of all the logs collected, this is perhaps the most important one. [Spark Monitoring library](https://github.com/mspnp/spark-monitoring) collects metrics about the driver, executors, JVM, HDFS, cache
-shuffling, DAGs, and much more. This library provides helpful insights to fine-tune Spark jobs. It allows monitoring and tracing each layer within Spark workloads, including performance and resource
-usage on the host and JVM, as well as Spark metrics and application-level logging. The library also includes ready-made Grafana dashboards that is a great starting point for building Azure Databricks
-dashboard.
+Of all the logs collected, this is perhaps the most important one. The [Azure Databricks monitoring guidance](https://learn.microsoft.com/en-us/azure/architecture/databricks-monitoring/) describes approaches for collecting and visualizing Spark driver/executor, JVM, HDFS, cache shuffling, DAG, and other application metrics.
+ This guidance includes recommendations and sample dashboards that can be a good starting point for building an Azure Databricks monitoring dashboard.
 
 ### Logs via REST API
 
