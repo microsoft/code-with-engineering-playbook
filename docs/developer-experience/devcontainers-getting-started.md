@@ -34,7 +34,7 @@ The code snippets below demonstrate the common location of a .devcontainer direc
 
 ```bash
 $ tree vs-code-remote-try-python  # main repo directory
-└───.devcontainers
+└───.devcontainer
         ├───Dockerfile
         ├───devcontainer.json
 ```
@@ -62,11 +62,11 @@ Fortunately, VS Code has a repo gallery of platform specific folders that host d
 $ tree vs-code-dev-containers  # main repo directory
 └───containers
         ├───dotnetcore
-        |   └───.devcontainers # dev container
+        |   └───.devcontainer # dev container
         ├───python-3
-        |   └───.devcontainers # dev container
+        |   └───.devcontainer # dev container
         ├───ubuntu
-        |   └───.devcontainers # dev container
+        |   └───.devcontainer # dev container
         └───....
 ```
 
