@@ -42,6 +42,22 @@ An extensive comparison of the four tools can be found as follows:
 
 The trained model can be deployed to production as container. Azure Machine Learning service provides SDK to deploy model as Azure Container Instance and publishes REST endpoint. You can monitor it using microservice observability methods( for more details -refer to [Recipes](./README.md) section). MLFLow is an alternative way to deploy ML model as a service.
 
+### LLM, RAG, and Agent Telemetry
+
+Generative AI and agentic systems need traces that explain the path from user request to model output, retrieval result, tool action, and final response. Capture enough context to debug quality, safety, cost, and latency without storing sensitive prompt or response content by default.
+
+For LLM, RAG, and agent workloads, consider tracking:
+
+* Prompt or template identifier and version, plus system, developer, and user instruction versions where they are managed separately.
+* Model provider, model name, deployment version, routing decision, generation settings, and fallback model if used.
+* Retrieval query metadata, index version, source document or record IDs, citation IDs, freshness signals, and authorization-trimming outcome.
+* Tool-call spans with tool name, schema version, input and output classification, latency, retry count, approval status, side-effect status, and error category.
+* Safety filter, policy, jailbreak, content moderation, refusal, and grounding-check outcomes.
+* Token counts, request cost, embedding cost, cache hits, queue time, model latency, retrieval latency, tool latency, and end-to-end latency.
+* User feedback, escalation reason, correction reason, human-review outcome, and incident or support ticket link when feedback becomes operational work.
+
+Use stable IDs, classifications, hashes, or sampled redacted payloads instead of raw prompts, responses, retrieval snippets, memory contents, or tool outputs unless there is an explicit approved debugging need.
+
 ## Training and Re-Training
 
 To automatically retrain the model you can use AML Pipelines or Azure Databricks.

@@ -12,6 +12,14 @@ There are many options when working with Source Control. In [ISE](../ISE.md) we 
 
 Consistency is important, so agree to the approach as a team before starting to code. Treat this as a design decision, so include a design proposal and review, in the same way as you would document all design decisions (see [Working Agreements](../agile-development/team-agreements/working-agreement.md) and [Design Reviews](../design/design-reviews/README.md)).
 
+When AI assistants or coding agents help author changes, use the team's normal source-control conventions for branch ownership, review, commit messages, and traceability. Cross-link to the [Copilots team operating model](../developer-experience/copilots.md#team-operating-model-for-ai-assisted-delivery) and [AI-assisted authorship guidance](../developer-experience/copilots.md#attributing-ai-assisted-code-authorship) instead of creating separate attribution rules in each repository.
+
+AI assistance does not relax branch protection, pull request review, tests, or work item linkage. Keep AI-assisted changes small enough for a human reviewer to understand and link them to the same evidence expected for other work.
+
+* Require AI agent branches and pull requests to link to a work item, tests, and a human reviewer.
+* Do not commit prompts, transcripts, or generated artifacts that contain secrets or customer data.
+* Use [Git guidance](./git-guidance/README.md#ai-assisted-change-traceability) and the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide for shared authorship and traceability practices, including how to record material AI assistance.
+
 ## Creating a New Repository
 
 When creating a new repository, the team should at least do the following
@@ -21,6 +29,7 @@ When creating a new repository, the team should at least do the following
 * Lock the default branch and merge using [pull requests (PRs)](../code-reviews/pull-requests.md)
 * Agree on [branch naming](./naming-branches.md) (e.g. `user/your_alias/feature_name`)
 * Establish [branch/PR policies](../code-reviews/pull-requests.md)
+* Agree how agent-authored branches and PRs identify the supervising human owner
 * For public repositories the default branch should contain the following files:
   * LICENSE
   * README.md

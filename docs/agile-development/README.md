@@ -33,6 +33,8 @@ Teams are increasingly adapting traditional Scrum practices to take advantage of
 
 These are patterns, not prescriptions — adapt them to fit your engagement and stakeholder needs.
 
+Use the [AI-Assisted Engineering](../ai-assisted-engineering/README.md) guide as the shared baseline for tool approval, human review, data handling, and traceability. The [Engineering Fundamentals Checklist](../engineering-fundamentals-checklist.md#ai-assisted-engineering) includes AI readiness prompts that can be reflected in the team agreement, definition of ready, and definition of done when relevant. The [Project Kickoff Checklist](../start-here/project-kickoff-checklist.md) sequences these readiness checks and the kickoff session at the start of an engagement.
+
 ## References
 
 - [What Is Scrum?](https://www.scrum.org/resources/what-is-scrum)
