@@ -167,6 +167,14 @@ The biggest advantage of BugBug is its user-friendliness. Most tests created wit
 
 [BugBug Website](https://bugbug.io?utm_source=microsoft_github&utm_medium=referral)
 
+### 7. e2e
+
+[e2e](https://github.com/tester-army/e2e) is an open-source TypeScript framework for end-to-end testing of web and mobile apps. Tests can combine natural-language agent steps with locator assertions. Agent actions verified by a later assertion can be recorded and replayed without model calls on subsequent runs.
+
+Its web engine uses Playwright, and its mobile engine supports Android emulators and iOS simulators. Agent steps use a model selected by the test author; tests using only locators and assertions do not require a model.
+
+[e2e documentation](https://e2e.com/docs)
+
 ## Conclusion
 
 Hope you learned various aspects of E2E testing like its processes, metrics, the difference between Unit, Integration  and E2E testing, and the various recommended E2E test frameworks and tools.
